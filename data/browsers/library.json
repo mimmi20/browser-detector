@@ -1220,5 +1220,29 @@
       ]
     },
     "engine": "unknown"
+  },
+  "scalaj-http": {
+    "name": "ScalaJ HTTP",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "scalaj-http"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "go-http-client": {
+    "name": "Go-http-client",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Go http package"
+      ]
+    },
+    "engine": "unknown"
   }
 }

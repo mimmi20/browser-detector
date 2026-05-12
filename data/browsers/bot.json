@@ -1914,18 +1914,6 @@
     },
     "engine": "unknown"
   },
-  "google assess": {
-    "name": "Google DMCA Takedown Tool Bot",
-    "manufacturer": "google",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Assess"
-      ]
-    },
-    "engine": "blink"
-  },
   "google fontanalysis": {
     "name": "Google FontAnalysis",
     "manufacturer": "google",
@@ -2268,18 +2256,6 @@
     },
     "engine": "unknown"
   },
-  "hubspot webcrawler": {
-    "name": "HubSpot Webcrawler",
-    "manufacturer": "hubspot-inc",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "HubSpot Webcrawler"
-      ]
-    },
-    "engine": null
-  },
   "hypercrawl": {
     "name": "HyperCrawl",
     "manufacturer": "seograph",
@@ -2428,18 +2404,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Indy Library"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "infegyatlas": {
-    "name": "InfegyAtlas",
-    "manufacturer": "infegy",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "InfegyAtlas"
       ]
     },
     "engine": "unknown"
@@ -5644,40 +5608,6 @@
     },
     "engine": "unknown"
   },
-  "unisterbot": {
-    "name": "UnisterBot",
-    "manufacturer": "unister",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Unisterbot"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "unisterportale": {
-    "name": "UnisterPortale",
-    "manufacturer": "unister",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "unknown"
-  },
-  "unistertesting": {
-    "name": "UnisterTesting",
-    "manufacturer": "unister",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "UnisterTesting"
-      ]
-    },
-    "engine": "unknown"
-  },
   "univention corporate server": {
     "name": "Univention Corporate Server",
     "manufacturer": "univention",
@@ -6633,18 +6563,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "XING\\-contenttabreceiver"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "xml sitemaps generator": {
-    "name": "XML Sitemaps Generator",
-    "manufacturer": "xml-sitemaps",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "XML\\-Sitemaps"
       ]
     },
     "engine": "unknown"

@@ -942,5 +942,30 @@
       ]
     },
     "engine": null
+  },
+  "mx-player": {
+    "name": "MX Player",
+    "manufacturer": "amazon",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MXPlayer"
+      ]
+    },
+    "engine": null
+  },
+  "boxee": {
+    "name": "Boxee",
+    "manufacturer": "boxee",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Boxee",
+        "boxee"
+      ]
+    },
+    "engine": null
   }
 }

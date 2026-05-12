@@ -46,6 +46,51 @@
   },
   {
     "headers": {
+      "user-agent": "Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (; Philips; 55PUS780912; ; PHILIPSTV;  CE-HTML/1.0 NETTV/4.4.1 SmartTvA/3.0.0 Firmware/014.002.026.129 (PhilipsTV, 3.1.1,)en) ) Presto/2.12.407 Version/12.50"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "55PUS7809/12",
+      "marketingName": "55PUS7809/12",
+      "manufacturer": "Philips",
+      "brand": "Philips",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 55
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "12.50.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.407",
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Opera/9.80 (Linux mips; HbbTV/1.2.1 (; Philips; ; ; ; ) CE-HTML/1.0 NETTV/4.3.3 SIGNON/1.0 PHILIPSTV/1.1.1 Firmware/173.67.0 (PhilipsTV, 1.1.1,) en) Presto/2.12.362 Version/12.11"
     },
     "device": {
@@ -271,21 +316,21 @@
   },
   {
     "headers": {
-      "user-agent": "CE-HTML/1.0 NETTV/6.0.2 SmartTvA/3.0.0 (PhilipsTV, 6.1.1,) enMozilla/5.0 (Linux; Andr0id 6.0.1; PH7M_EU_5596 Build/MASTER) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36 OPR/32.0.2128.0 OMI/4.8.0.35.Sprinter.10"
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; TPM171E Build/OC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.90 Safari/537.36 OPR/52.4.2517.140781"
     },
     "device": {
       "architecture": null,
-      "deviceName": "NetTV Series",
-      "marketingName": "NetTV Series",
+      "deviceName": "TPM171E",
+      "marketingName": "TPM171E",
       "manufacturer": "Philips",
       "brand": "Philips",
       "dualOrientation": false,
       "simCount": 0,
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1920,
+        "height": 1080,
         "touch": false,
-        "size": null
+        "size": 48.3
       },
       "type": "tv",
       "ismobile": false,
@@ -293,16 +338,16 @@
       "bits": null
     },
     "os": {
-      "name": "Android TV",
-      "marketingName": "Android TV",
-      "version": "6.0.1",
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
       "manufacturer": "Google",
       "bits": null
     },
     "client": {
-      "name": "Opera Devices",
+      "name": "Opera Mobile",
       "modus": null,
-      "version": "4.8.0.35",
+      "version": "52.4.2517.140781",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -310,7 +355,52 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "49.0.2623.87",
+      "version": "73.0.3683.90",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0; QM163E Build/OPR5.170623.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36 OPR/32.0.2128.0 OMI/4.8.0.142.Racer2.51"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "QM163E",
+      "marketingName": "QM163E",
+      "manufacturer": "Philips",
+      "brand": "Philips",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 49
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Devices",
+      "modus": null,
+      "version": "4.8.0.142",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "49.0.2623.112",
       "manufacturer": "Google"
     }
   },

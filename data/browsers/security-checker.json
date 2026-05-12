@@ -426,5 +426,18 @@
       ]
     },
     "engine": "unknown"
+  },
+  "l9tcpid": {
+    "name": "l9tcpid",
+    "manufacturer": "unknown",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "l9tcpid\\/v",
+        "l9tcpid"
+      ]
+    },
+    "engine": "unknown"
   }
 }

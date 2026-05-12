@@ -176,6 +176,18 @@ final class MobileDeviceTest extends TestCase
             ['com.huawei.hmos.browser (2in1;OpenHarmony-6.0.2.130;HAD-W24) NetworkSDK/8.0.10.309'],
             ['Sonos/71.0-37271 (Play:3)'],
             ['SonyST27i Build/6.1.1.B.1.10 UpdateCenter/1.2'],
+            ['Mozilla/5.0 (PlayStation 5 3.03/SmartTV) AppleWebKit/605.1.15 (KHTML, like Gecko)'],
+            ['EricssonR520/R201'],
+            ['SM-T817V Build/MMB29K'],
+            ['SPH-L710 Build/KOT49H'],
+            ['STV100-1 Build/MMB29M'],
+            ['thl T9 Build/MRA58K'],
+            ['VK810 4G Build/LRX22G'],
+            ['VS876 Build/KOT49I.VS87612A'],
+            ['XT1045 Build/KXB21.14-L1.45'],
+            ['XT907 Build/KDA20.62-15'],
+            ['AUDIOVOX-SMT5600'],
+            ['CDM-8900'],
         ];
     }
 

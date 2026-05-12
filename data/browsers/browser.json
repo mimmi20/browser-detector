@@ -632,19 +632,6 @@
     },
     "engine": "webkit"
   },
-  "boxee": {
-    "name": "Boxee",
-    "manufacturer": "boxee",
-    "type": "browser",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Boxee",
-        "boxee"
-      ]
-    },
-    "engine": null
-  },
   "brave": {
     "name": "Brave",
     "manufacturer": "brave-software",
@@ -831,6 +818,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "Chromium_",
         "Chromium"
       ]
     },
@@ -2772,7 +2760,7 @@
     "engine": null
   },
   "ntentbrowser": {
-    "name": "NTENTBrowser",
+    "name": "NTENT Browser",
     "manufacturer": "ntent",
     "type": "browser",
     "version": {
@@ -5674,16 +5662,6 @@
     },
     "engine": "arkweb"
   },
-  "arc-search": {
-    "name": "Arc Search",
-    "manufacturer": "the-browser-company",
-    "type": "browser",
-    "version": {
-      "factory": null,
-      "search": null
-    },
-    "engine": null
-  },
   "oceanhero-browser": {
     "name": "OceanHero Browser",
     "manufacturer": "ocean-hero",
@@ -5937,6 +5915,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "Hawk\\/TurboBrowser\\/v",
         "Hawk\\/TurboBrowser"
       ]
     },
@@ -6046,6 +6025,18 @@
     "version": {
       "factory": null,
       "search": null
+    },
+    "engine": null
+  },
+  "gog-galaxy-client": {
+    "name": "GOG Galaxy Client",
+    "manufacturer": "gog",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GOGGalaxyClient"
+      ]
     },
     "engine": null
   }

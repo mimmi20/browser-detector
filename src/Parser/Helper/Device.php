@@ -123,6 +123,7 @@ final class Device implements DeviceInterface
             'a410_4g' => 'acer=acer a410_4g',
             'chromebook 14 (cb3-431)', 'chromebook 14 (cb3-431' => 'acer=acer chromebook 14',
             'm10-11' => 'acer=acer m10-11',
+            'b3-a50' => 'acer=acer b3-a50',
             // AllCall
             'atom' => 'allcall=allcall atom',
             'hero_20_pro' => 'allcall=allcall hero 20 pro',
@@ -178,6 +179,11 @@ final class Device implements DeviceInterface
             'aftbamr311' => 'amazon=amazon aftbamr311',
             'aftb' => 'amazon=amazon aftb',
             'afta' => 'amazon=amazon afta',
+            'aeohp' => 'amazon=amazon aeohp',
+            'aftkrt' => 'amazon=amazon aftkrt',
+            'aftka' => 'amazon=amazon aftka',
+            'aftgazl' => 'amazon=amazon aftgazl',
+            'aeohy' => 'amazon=amazon aeohy',
             // Asus
             'p024' => 'asus=asus p024',
             'asus_x00dd' => 'asus=asus x00dd',
@@ -1391,6 +1397,7 @@ final class Device implements DeviceInterface
             'redmi note 11e' => 'xiaomi=xiaomi redmi note 11e',
             'redmi k30s ultra' => 'xiaomi=xiaomi redmi k30s ultra',
             'mi cc9e' => 'xiaomi=xiaomi mi cc9e',
+            'aftanna0' => 'xiaomi=xiaomi aftanna0',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -1830,7 +1837,7 @@ final class Device implements DeviceInterface
             'sm-a1560', 'samsung sm-a1560' => 'samsung=samsung sm-a1560',
             'sm-a156l', 'samsung sm-a156l' => 'samsung=samsung sm-a156l',
             'sm-a155f' => 'samsung=samsung sm-a155f',
-            'sm-a346e' => 'samsung=samsung sm-a346e',
+            'sm-a346e', 'samsung sm-a346e' => 'samsung=samsung sm-a346e',
             'sm-x216b', 'samsung sm-x216b' => 'samsung=samsung sm-x216b',
             'sm-x216r', 'samsung sm-x216r' => 'samsung=samsung sm-x216r',
             'sm-x216c', 'samsung sm-x216c' => 'samsung=samsung sm-x216c',
@@ -2807,6 +2814,10 @@ final class Device implements DeviceInterface
             'sm-g495f', 'samsung sm-g495f' => 'samsung=samsung sm-g495f',
             'sm-g495u', 'samsung sm-g495u' => 'samsung=samsung sm-g495u',
             'sm-x930n', 'samsung sm-x930n' => 'samsung=samsung sm-x930n',
+            'sm-r720', 'samsung sm-r720' => 'samsung=samsung sm-r720',
+            'sm-r730a', 'samsung sm-r730a' => 'samsung=samsung sm-r730a',
+            'sm-z910f', 'samsung sm-z910f' => 'samsung=samsung sm-z910f',
+            'samsung chromebook 3' => 'samsung=samsung chromebook 3',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -3572,6 +3583,10 @@ final class Device implements DeviceInterface
             'tb336zu' => 'lenovo=lenovo tb336zu',
             'tb361fu' => 'lenovo=lenovo tb361fu',
             'tb361zu' => 'lenovo=lenovo tb361zu',
+            'tb305fu' => 'lenovo=lenovo tb305fu',
+            'lenovo a6600d40' => 'lenovo=lenovo a6600d40',
+            'lenovo a6600a40' => 'lenovo=lenovo a6600a40',
+            'lenovo a7010a48' => 'lenovo=lenovo a7010a48',
             // Nokia
             'nokia g50' => 'nokia=nokia g50',
             'nokia g20' => 'nokia=nokia g20',
@@ -3863,7 +3878,7 @@ final class Device implements DeviceInterface
             'moto g(20)' => 'motorola=motorola moto g20',
             'motorola one' => 'motorola=motorola one',
             'motorola one vision' => 'motorola=motorola one vision',
-            'moto g(8) power' => 'motorola=motorola moto g8 power',
+            'moto g(8) power', 'motorola moto g8 power' => 'motorola=motorola moto g8 power',
             'moto g (4)', 'moto g4' => 'motorola=motorola moto g4',
             'moto g(6)' => 'motorola=motorola moto g6',
             'moto g(6) play' => 'motorola=motorola moto g6 play',
@@ -4840,6 +4855,7 @@ final class Device implements DeviceInterface
             'rugking 4 pro' => 'ulefone=ulefone rugking 4 pro',
             'armor_6' => 'ulefone=ulefone armor 6',
             'note 6' => 'ulefone=ulefone note 6',
+            'note 18 ultra' => 'ulefone=ulefone note 18 ultra',
             // Doogee
             'n40pro', 'doogee n40 pro' => 'doogee=doogee n40 pro',
             's88pro' => 'doogee=doogee s88 pro',
@@ -5763,6 +5779,8 @@ final class Device implements DeviceInterface
             'sh-51a' => 'sharp=sharp sh-51a',
             'shg01' => 'sharp=sharp shg01',
             'sh-rm14' => 'sharp=sharp sh-rm14',
+            'sh01a' => 'sharp=sharp sh01a',
+            'sh3c' => 'sharp=sharp sh3c',
             // kyocera
             'a301kc' => 'kyocera=kyocera a301kc',
             'kyv41' => 'kyocera=kyocera kyv41',
@@ -6260,6 +6278,7 @@ final class Device implements DeviceInterface
             'unia62_s01' => 'unihertz=unihertz unia62_s01',
             'tank 01' => 'unihertz=unihertz tank 01',
             'ticktock-s' => 'unihertz=unihertz ticktock s',
+            'tank x' => 'unihertz=unihertz tank x',
             // coolpad
             'coolpad e502' => 'coolpad=coolpad e502',
             'coolpad c202' => 'coolpad=coolpad c202',
@@ -6349,6 +6368,7 @@ final class Device implements DeviceInterface
             '5164d' => 'tcl=tcl 5164d',
             '6102d' => 'tcl=tcl 6102d',
             '50s451' => 'tcl=tcl 50s451',
+            'vf685' => 'tcl=tcl vf685',
             // general-mobile
             'gm 8' => 'general-mobile=general-mobile gm 8',
             'g314' => 'general-mobile=general-mobile g314',
@@ -7627,6 +7647,7 @@ final class Device implements DeviceInterface
             'tabultracpro' => 'onyx-boox=onyx-boox tab ultra c pro',
             'noteair3c' => 'onyx-boox=onyx-boox note air 3c',
             'lomonosov3' => 'onyx-boox=onyx-boox lomonosov 3',
+            'mc_darwin7' => 'onyx-boox=onyx-boox darwin 7',
             // ghia
             'gk133m3' => 'ghia=ghia gk133m3',
             // eudora
@@ -8296,6 +8317,17 @@ final class Device implements DeviceInterface
             'crd65-uhd11' => 'mag=mag crd65-uhd11',
             // karbonn
             'karbonn a1 pro' => 'karbonn=karbonn a1 pro',
+            // eko
+            'eko android tv' => 'eko=eko android tv',
+            'eko 2k android tv', 'eko android tv 2k' => 'eko=eko 2k android tv',
+            'eko 4k android tv' => 'eko=eko 4k android tv',
+            // evolveo
+            'evolveo smart tv stick d2' => 'evolveo=evolveo smart tv stick d2',
+            // toshiba
+            'toshiba chromebook 2 (2015 edition', 'toshiba chromebook 2 (2015 edition)' => 'toshiba=toshiba chromebook 2 (2015)',
+            // smartisan
+            'oc106' => 'smartisan=smartisan oc106',
+            'de106' => 'smartisan=smartisan de106',
             // other
             default => null,
         };

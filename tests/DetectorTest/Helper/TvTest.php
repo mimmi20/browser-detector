@@ -97,6 +97,7 @@ final class TvTest extends TestCase
             ['Mozilla/5.0 (Linux; Android 10; HIREMCO Matrix Build/QP1A.191105.004) IPTV Pro/6.0.8'],
             ['Mozilla/5.0 (TV; rv:78.0) Gecko/78.0 Firefox/78.0 TvBrowser/5.0'],
             ['Mozilla/5.0 (compatible; U; NETFLIX) AppleWebKit/533.3 (KHTML, like Gecko) Qt/4.7.0 Safari/533.3 Netflix/3.2 (DEVTYPE=RKU-42XXX-; CERTVER=0) QtWebKit/2.2, Roku 3/7.0 (Roku, 4200X, Wireless)'],
+            ['Mozilla/5.0 (Linux; BRAVIA 4K 2015 Build/LMY48E.S265) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36 OPR/28.0.1754.0'],
         ];
     }
 
@@ -148,6 +149,7 @@ final class TvTest extends TestCase
             ['Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.141 CitizenFX/1.0.0.6556 Safari/537.36'],
             ['Mozilla/5.0 (Linux; Android 10; GM1910 Build/QKQ1.190716.003; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MBrowser/6.2 TBS/045008 Mobile Safari/537.36 BiliApp/5531000 mobi_app/android channel/oppo Buvid/<hide> internal_version/5531000'],
             ['Mozilla/5.0 (Linux like Android; de_DE) AppleWebKit/534.34 PocketBook/626 (screen 758x1024; FW O626.4.4.979) Mobile'],
+            ['Mozilla/5.0 (compatible; Google-Apps-Script; beanserver; +https://script.google.com; id: UAEmdDd8MFTwutX_GL17ysBVXBOXQptFZNA)'],
         ];
     }
 }

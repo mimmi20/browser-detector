@@ -5939,5 +5939,148 @@
       ]
     },
     "engine": "unknown"
+  },
+  "xml sitemaps generator": {
+    "name": "XML Sitemaps Generator",
+    "manufacturer": "xml-sitemaps",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "XML\\-Sitemaps"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "clickagy-intelligence-bot": {
+    "name": "Clickagy Intelligence Bot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Clickagy Intelligence Bot v",
+        "Clickagy Intelligence Bot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "boardreader-blog-indexer": {
+    "name": "BoardReader Blog Indexer",
+    "manufacturer": "board-reader",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BoardReader Blog Indexer"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "let-search-bot": {
+    "name": "LetSearch",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "LetsearchBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "link-scanner-bot": {
+    "name": "LinkScannerBot",
+    "manufacturer": "lovable-labs",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "LinkScannerBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "unisterbot": {
+    "name": "UnisterBot",
+    "manufacturer": "unister",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Unisterbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "unisterportale": {
+    "name": "UnisterPortale",
+    "manufacturer": "unister",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "unistertesting": {
+    "name": "UnisterTesting",
+    "manufacturer": "unister",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "UnisterTesting"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "mix-node": {
+    "name": "Mixnode",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Mixnode"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "htmlyse": {
+    "name": "htmlyse",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "htmlyse"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "infegyatlas": {
+    "name": "InfegyAtlas",
+    "manufacturer": "infegy",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "InfegyAtlas"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "hubspot webcrawler": {
+    "name": "HubSpot Webcrawler",
+    "manufacturer": "hubspot-inc",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HubSpot Webcrawler"
+      ]
+    },
+    "engine": null
   }
 }

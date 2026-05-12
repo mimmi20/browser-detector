@@ -13,6 +13,38 @@
       "size": 7
     },
     "type": "smart-display",
-    "platform": "android"
+    "platform": "fire-os"
+  },
+  "amazon aeohp": {
+    "deviceName": "AEOHP",
+    "marketingName": "Echo Show 5",
+    "manufacturer": "amazon",
+    "brand": "amazon",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smart-display",
+    "platform": "fire-os"
+  },
+  "amazon aeohy": {
+    "deviceName": "AEOHY",
+    "marketingName": "Echo Show 15",
+    "manufacturer": "amazon",
+    "brand": "amazon",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 15.6
+    },
+    "type": "smart-display",
+    "platform": "fire-os"
   }
 }

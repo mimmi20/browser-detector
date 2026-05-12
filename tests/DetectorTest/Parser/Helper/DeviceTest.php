@@ -147,6 +147,7 @@ final class DeviceTest extends TestCase
             ['Chromebook 14 (CB3-431)', 'acer=acer chromebook 14'],
             ['Chromebook 14 (CB3-431', 'acer=acer chromebook 14'],
             ['M10-11', 'acer=acer m10-11'],
+            ['B3-A50', 'acer=acer b3-a50'],
             // AllCall
             ['Atom', 'allcall=allcall atom'],
             ['HERO_20_PRO', 'allcall=allcall hero 20 pro'],
@@ -201,6 +202,11 @@ final class DeviceTest extends TestCase
             ['AFTBAMR311', 'amazon=amazon aftbamr311'],
             ['AFTB', 'amazon=amazon aftb'],
             ['AFTA', 'amazon=amazon afta'],
+            ['AEOHP', 'amazon=amazon aeohp'],
+            ['AFTKRT', 'amazon=amazon aftkrt'],
+            ['AFTKA', 'amazon=amazon aftka'],
+            ['AFTGAZL', 'amazon=amazon aftgazl'],
+            ['AEOHY', 'amazon=amazon aeohy'],
             // Asus
             ['P024', 'asus=asus p024'],
             ['ASUS_X00DD', 'asus=asus x00dd'],
@@ -1436,6 +1442,7 @@ final class DeviceTest extends TestCase
             ['Redmi Note 11E', 'xiaomi=xiaomi redmi note 11e'],
             ['Redmi K30S Ultra', 'xiaomi=xiaomi redmi k30s ultra'],
             ['MI CC9e', 'xiaomi=xiaomi mi cc9e'],
+            ['AFTANNA0', 'xiaomi=xiaomi aftanna0'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -2109,6 +2116,7 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-A156L', 'samsung=samsung sm-a156l'],
             ['SM-A155F', 'samsung=samsung sm-a155f'],
             ['SM-A346E', 'samsung=samsung sm-a346e'],
+            ['SAMSUNG SM-A346E', 'samsung=samsung sm-a346e'],
             ['SM-X216B', 'samsung=samsung sm-x216b'],
             ['SAMSUNG SM-X216B', 'samsung=samsung sm-x216b'],
             ['SM-X216R', 'samsung=samsung sm-x216r'],
@@ -3847,6 +3855,13 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-G495U', 'samsung=samsung sm-g495u'],
             ['SM-X930N', 'samsung=samsung sm-x930n'],
             ['SAMSUNG SM-X930N', 'samsung=samsung sm-x930n'],
+            ['SM-R720', 'samsung=samsung sm-r720'],
+            ['SAMSUNG SM-R720', 'samsung=samsung sm-r720'],
+            ['SM-R730A', 'samsung=samsung sm-r730a'],
+            ['SAMSUNG SM-R730A', 'samsung=samsung sm-r730a'],
+            ['SM-Z910F', 'samsung=samsung sm-z910f'],
+            ['SAMSUNG SM-Z910F', 'samsung=samsung sm-z910f'],
+            ['Samsung Chromebook 3', 'samsung=samsung chromebook 3'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['LGE-AN20', 'huawei=huawei lge-an20'],
@@ -4722,6 +4737,10 @@ final class DeviceTest extends TestCase
             ['TB336ZU', 'lenovo=lenovo tb336zu'],
             ['TB361FU', 'lenovo=lenovo tb361fu'],
             ['TB361ZU', 'lenovo=lenovo tb361zu'],
+            ['TB305FU', 'lenovo=lenovo tb305fu'],
+            ['Lenovo A6600d40', 'lenovo=lenovo a6600d40'],
+            ['Lenovo A6600a40', 'lenovo=lenovo a6600a40'],
+            ['Lenovo A7010a48', 'lenovo=lenovo a7010a48'],
             // Nokia
             ['Nokia G50', 'nokia=nokia g50'],
             ['Nokia G20', 'nokia=nokia g20'],
@@ -5014,6 +5033,7 @@ final class DeviceTest extends TestCase
             ['motorola one', 'motorola=motorola one'],
             ['motorola one vision', 'motorola=motorola one vision'],
             ['moto g(8) power', 'motorola=motorola moto g8 power'],
+            ['Motorola Moto G8 Power', 'motorola=motorola moto g8 power'],
             ['Moto G (4)', 'motorola=motorola moto g4'],
             ['moto g(6)', 'motorola=motorola moto g6'],
             ['moto g(6) play', 'motorola=motorola moto g6 play'],
@@ -6009,6 +6029,7 @@ final class DeviceTest extends TestCase
             ['RugKing 4 Pro', 'ulefone=ulefone rugking 4 pro'],
             ['Armor_6', 'ulefone=ulefone armor 6'],
             ['Note 6', 'ulefone=ulefone note 6'],
+            ['Note 18 Ultra', 'ulefone=ulefone note 18 ultra'],
             // Doogee
             ['N40Pro', 'doogee=doogee n40 pro'],
             ['Doogee N40 Pro', 'doogee=doogee n40 pro'],
@@ -6955,6 +6976,8 @@ final class DeviceTest extends TestCase
             ['SH-51A', 'sharp=sharp sh-51a'],
             ['SHG01', 'sharp=sharp shg01'],
             ['SH-RM14', 'sharp=sharp sh-rm14'],
+            ['SH01A', 'sharp=sharp sh01a'],
+            ['SH3C', 'sharp=sharp sh3c'],
             // kyocera
             ['A301KC', 'kyocera=kyocera a301kc'],
             ['KYV41', 'kyocera=kyocera kyv41'],
@@ -7553,6 +7576,7 @@ final class DeviceTest extends TestCase
             ['UNIA62_S01', 'unihertz=unihertz unia62_s01'],
             ['TANK 01', 'unihertz=unihertz tank 01'],
             ['TickTock-S', 'unihertz=unihertz ticktock s'],
+            ['TANK X', 'unihertz=unihertz tank x'],
             // coolpad
             ['Coolpad E502', 'coolpad=coolpad e502'],
             ['COOLPAD C202', 'coolpad=coolpad c202'],
@@ -7642,6 +7666,7 @@ final class DeviceTest extends TestCase
             ['5164D', 'tcl=tcl 5164d'],
             ['6102D', 'tcl=tcl 6102d'],
             ['50S451', 'tcl=tcl 50s451'],
+            ['VF685', 'tcl=tcl vf685'],
             // general-mobile
             ['GM 8', 'general-mobile=general-mobile gm 8'],
             ['G314', 'general-mobile=general-mobile g314'],
@@ -9011,6 +9036,7 @@ final class DeviceTest extends TestCase
             ['TabUltraCPro', 'onyx-boox=onyx-boox tab ultra c pro'],
             ['NoteAir3C', 'onyx-boox=onyx-boox note air 3c'],
             ['LOMONOSOV3', 'onyx-boox=onyx-boox lomonosov 3'],
+            ['MC_DARWIN7', 'onyx-boox=onyx-boox darwin 7'],
             // ghia
             ['GK133M3', 'ghia=ghia gk133m3'],
             // eudora
@@ -9690,6 +9716,19 @@ final class DeviceTest extends TestCase
             ['CRD65-UHD11', 'mag=mag crd65-uhd11'],
             // karbonn
             ['Karbonn A1 Pro', 'karbonn=karbonn a1 pro'],
+            // eko
+            ['EKO Android TV', 'eko=eko android tv'],
+            ['EKO 2K Android TV', 'eko=eko 2k android tv'],
+            ['EKO Android TV 2K', 'eko=eko 2k android tv'],
+            ['EKO 4K Android TV', 'eko=eko 4k android tv'],
+            // evolveo
+            ['EVOLVEO Smart TV stick D2', 'evolveo=evolveo smart tv stick d2'],
+            // toshiba
+            ['Toshiba Chromebook 2 (2015 Edition', 'toshiba=toshiba chromebook 2 (2015)'],
+            ['Toshiba Chromebook 2 (2015 Edition)', 'toshiba=toshiba chromebook 2 (2015)'],
+            // smartisan
+            ['OC106', 'smartisan=smartisan oc106'],
+            ['DE106', 'smartisan=smartisan de106'],
             // other
             ['Model"', null],
             [': "', null],

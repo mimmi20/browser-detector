@@ -2381,6 +2381,8 @@ enum Company: string implements CompanyInterface
 
     case aldi = 'Aldi';
 
+    case aldiNord = 'Aldi Nord';
+
     case pivotalLabs = 'Pivotal Labs';
 
     case zen = 'Zen';
@@ -3739,6 +3741,28 @@ enum Company: string implements CompanyInterface
 
     case trafficCake = 'TrafficCake';
 
+    case purism = 'Purism';
+
+    case eko = 'EKO';
+
+    case pocoSystems = 'Poco Systems';
+
+    case fritz = 'Fritz!';
+
+    case yottaa = 'Yottaa';
+
+    case valleyHosting = 'Valley Hosting';
+
+    case cloudSystemNetworks = 'Cloud System Networks';
+
+    case lovableLabs = 'Lovable Labs';
+
+    case gog = 'GOG';
+
+    case vercel = 'Vercel';
+
+    case vidaa = 'VIDAA';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -4926,7 +4950,8 @@ enum Company: string implements CompanyInterface
             'netzcheck' => self::netzcheck,
             'videocon', 'videocon industries limited' => self::videocon,
             'wiseguys', 'wise-guys' => self::wiseGuys,
-            'aldi', 'aldi-nord', 'aldi nord' => self::aldi,
+            'aldi' => self::aldi,
+            'aldinord', 'aldi-nord', 'aldi nord' => self::aldiNord,
             'pivotallabs', 'pivotal-labs', 'pivotal labs' => self::pivotalLabs,
             'zen', 'zen-mobile', 'zen mobile' => self::zen,
             'alleninstitute', 'allen-institute', 'allen institute for artificial intelligence', 'allen institute' => self::allenInstitute,
@@ -5606,6 +5631,17 @@ enum Company: string implements CompanyInterface
             'bountii', 'bountii inc.' => self::bountii,
             'domainreanimator', 'domain re-animator, llc', 'domain-re-animator', 'domain re-animator' => self::domainReAnimator,
             'trafficcake', 'trafficcake limited', 'traffic-cake' => self::trafficCake,
+            'purism' => self::purism,
+            'eko', 'eko mobile' => self::eko,
+            'pocosystems', 'poco systems inc', 'poco-systems', 'poco systems' => self::pocoSystems,
+            'fritz', 'fritz! gmbh', 'fritz!' => self::fritz,
+            'yottaa', 'yottaa, inc.' => self::yottaa,
+            'valleyhosting', 'valley hosting, llc', 'valley-hosting', 'valley hosting' => self::valleyHosting,
+            'cloudsystemnetworks', 'cloud system networks', 'cloud-system-networks' => self::cloudSystemNetworks,
+            'lovablelabs', 'lovable labs incorporated', 'lovable-labs', 'lovable labs' => self::lovableLabs,
+            'gog', 'gog sp. z o.o.' => self::gog,
+            'vercel', 'vercel inc.' => self::vercel,
+            'vidaa', 'vidaa international holdings b.v.' => self::vidaa,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6065,7 +6101,8 @@ enum Company: string implements CompanyInterface
             self::axandra => 'Axandra GmbH',
             self::become => 'Become, Inc.',
             self::videocon => 'Videocon Industries Limited',
-            self::aldi => 'Aldi Nord',
+            self::aldi => 'Aldi',
+            self::aldiNord => 'Aldi Nord',
             self::zen => 'Zen Mobile',
             self::allenInstitute => 'Allen Institute for Artificial Intelligence',
             self::cyrus => 'Cyrus Technology GmbH',
@@ -6354,6 +6391,15 @@ enum Company: string implements CompanyInterface
             self::bountii => 'Bountii Inc.',
             self::domainReAnimator => 'Domain Re-Animator, LLC',
             self::trafficCake => 'TrafficCake Limited',
+            self::eko => 'Eko Mobile',
+            self::pocoSystems => 'Poco Systems Inc',
+            self::fritz => 'Fritz! GmbH',
+            self::yottaa => 'Yottaa, Inc.',
+            self::valleyHosting => 'Valley Hosting, LLC',
+            self::lovableLabs => 'Lovable Labs Incorporated',
+            self::gog => 'GOG sp. z o.o.',
+            self::vercel => 'Vercel Inc.',
+            self::vidaa => 'VIDAA International Holdings B.V.',
             self::unknown => null,
             default => $this->value,
         };
@@ -6741,7 +6787,8 @@ enum Company: string implements CompanyInterface
             self::steveWaring => 'steve-waring',
             self::internetMemoryFoundation => 'internet-memory-foundation',
             self::wiseGuys => 'wise-guys',
-            self::aldi => 'aldi-nord',
+            self::aldi => 'aldi',
+            self::aldiNord => 'aldi-nord',
             self::pivotalLabs => 'pivotal-labs',
             self::zen => 'zen-mobile',
             self::allenInstitute => 'allen-institute',
@@ -7051,6 +7098,10 @@ enum Company: string implements CompanyInterface
             self::ksMobile => 'ks-mobile',
             self::domainReAnimator => 'domain-re-animator',
             self::trafficCake => 'traffic-cake',
+            self::pocoSystems => 'poco-systems',
+            self::valleyHosting => 'valley-hosting',
+            self::cloudSystemNetworks => 'cloud-system-networks',
+            self::lovableLabs => 'lovable-labs',
             default => $this->name,
         };
     }

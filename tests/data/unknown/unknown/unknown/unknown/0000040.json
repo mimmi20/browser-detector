@@ -1,7 +1,7 @@
 [
   {
     "headers": {
-      "user-agent": "); SELECT BENCHMARK(10000000,MD5(0x5042476f))--"
+      "user-agent": "MAKE_SET(5558=5300,0x4d6f7a696c6c612f342e302028636f6d70617469626c653b204d53494520372e303b2057696e646f7773204e5420352e313b205356313b202e4e455420434c5220322e302e353037323729)"
     },
     "device": {
       "architecture": null,
@@ -46,7 +46,7 @@
   },
   {
     "headers": {
-      "user-agent": "); SELECT COUNT(*) FROM GENERATE_SERIES(1,10000000)--"
+      "user-agent": "zsgO"
     },
     "device": {
       "architecture": null,
@@ -91,7 +91,7 @@
   },
   {
     "headers": {
-      "user-agent": "); SELECT LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(1000000000/2))))--"
+      "user-agent": "rSoc"
     },
     "device": {
       "architecture": null,
@@ -136,7 +136,7 @@
   },
   {
     "headers": {
-      "user-agent": "; SELECT COUNT(*) FROM RDB$FIELDS AS T1,RDB$TYPES AS T2,RDB$COLLATIONS AS T3,RDB$FUNCTIONS AS T4--"
+      "user-agent": "AULS"
     },
     "device": {
       "architecture": null,
@@ -181,7 +181,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL#"
+      "user-agent": "kbrY"
     },
     "device": {
       "architecture": null,
@@ -226,7 +226,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL#"
+      "user-agent": "gAdI"
     },
     "device": {
       "architecture": null,
@@ -271,7 +271,7 @@
   },
   {
     "headers": {
-      "user-agent": ") ORDER BY 1#"
+      "user-agent": "tQjU"
     },
     "device": {
       "architecture": null,
@@ -316,7 +316,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT NULL#"
+      "user-agent": "uONA"
     },
     "device": {
       "architecture": null,
@@ -361,7 +361,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT NULL,NULL,NULL#"
+      "user-agent": "HoES"
     },
     "device": {
       "architecture": null,
@@ -406,7 +406,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT NULL,NULL,NULL,NULL#"
+      "user-agent": "ONbZ"
     },
     "device": {
       "architecture": null,
@@ -451,7 +451,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL#"
+      "user-agent": "ifkX"
     },
     "device": {
       "architecture": null,
@@ -496,7 +496,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
+      "user-agent": "iPqZ"
     },
     "device": {
       "architecture": null,
@@ -541,7 +541,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
+      "user-agent": "cGzI"
     },
     "device": {
       "architecture": null,
@@ -586,7 +586,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
+      "user-agent": "wuEy"
     },
     "device": {
       "architecture": null,
@@ -631,7 +631,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75#"
+      "user-agent": "Mrrc"
     },
     "device": {
       "architecture": null,
@@ -676,7 +676,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75#"
+      "user-agent": "ekGV"
     },
     "device": {
       "architecture": null,
@@ -721,7 +721,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
+      "user-agent": "XvPI"
     },
     "device": {
       "architecture": null,
@@ -766,7 +766,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
+      "user-agent": "raVc"
     },
     "device": {
       "architecture": null,
@@ -811,7 +811,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
+      "user-agent": "flfj"
     },
     "device": {
       "architecture": null,
@@ -856,7 +856,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
+      "user-agent": "FmUC"
     },
     "device": {
       "architecture": null,
@@ -901,7 +901,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
+      "user-agent": "pQTP"
     },
     "device": {
       "architecture": null,
@@ -946,7 +946,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
+      "user-agent": "nSnk"
     },
     "device": {
       "architecture": null,
@@ -991,7 +991,7 @@
   },
   {
     "headers": {
-      "user-agent": ") ORDER BY 1--"
+      "user-agent": "jVem"
     },
     "device": {
       "architecture": null,
@@ -1036,7 +1036,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75--"
+      "user-agent": "LtwU"
     },
     "device": {
       "architecture": null,
@@ -1081,7 +1081,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75--"
+      "user-agent": "gFQc"
     },
     "device": {
       "architecture": null,
@@ -1126,7 +1126,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75--"
+      "user-agent": "hvbV"
     },
     "device": {
       "architecture": null,
@@ -1171,7 +1171,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75--"
+      "user-agent": "gmsI"
     },
     "device": {
       "architecture": null,
@@ -1216,7 +1216,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75--"
+      "user-agent": "JLDs"
     },
     "device": {
       "architecture": null,
@@ -1261,7 +1261,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75--"
+      "user-agent": "Sopi"
     },
     "device": {
       "architecture": null,
@@ -1306,7 +1306,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
+      "user-agent": "eehi"
     },
     "device": {
       "architecture": null,
@@ -1351,7 +1351,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
+      "user-agent": "ALaa"
     },
     "device": {
       "architecture": null,
@@ -1396,7 +1396,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
+      "user-agent": "aaQk"
     },
     "device": {
       "architecture": null,
@@ -1441,7 +1441,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
+      "user-agent": "mKlo"
     },
     "device": {
       "architecture": null,
@@ -1486,7 +1486,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
+      "user-agent": "ovtD"
     },
     "device": {
       "architecture": null,
@@ -1531,7 +1531,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
+      "user-agent": "ubLa"
     },
     "device": {
       "architecture": null,
@@ -1576,7 +1576,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
+      "user-agent": "mkEZ"
     },
     "device": {
       "architecture": null,
@@ -1621,7 +1621,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
+      "user-agent": "OobW"
     },
     "device": {
       "architecture": null,
@@ -1666,7 +1666,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT NULL,NULL,NULL,NULL,NULL#"
+      "user-agent": "YXlV"
     },
     "device": {
       "architecture": null,
@@ -1711,7 +1711,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL#"
+      "user-agent": ")); SELECT BENCHMARK(10000000,MD5(0x5042476f))--"
     },
     "device": {
       "architecture": null,
@@ -1756,7 +1756,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75#"
+      "user-agent": "tbOP"
     },
     "device": {
       "architecture": null,
@@ -1801,7 +1801,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
+      "user-agent": "dvDT"
     },
     "device": {
       "architecture": null,
@@ -1846,7 +1846,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
+      "user-agent": "OSXu"
     },
     "device": {
       "architecture": null,
@@ -1891,7 +1891,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
+      "user-agent": "UuDT"
     },
     "device": {
       "architecture": null,
@@ -1936,7 +1936,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
+      "user-agent": "-8012) ORDER BY 1--"
     },
     "device": {
       "architecture": null,
@@ -1981,7 +1981,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75#"
+      "user-agent": "-2195) ORDER BY 1758--"
     },
     "device": {
       "architecture": null,
@@ -2026,7 +2026,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
+      "user-agent": "-8083)) ORDER BY 1--"
     },
     "device": {
       "architecture": null,
@@ -2071,7 +2071,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
+      "user-agent": "-8119)) ORDER BY 1955--"
     },
     "device": {
       "architecture": null,
@@ -2116,7 +2116,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
+      "user-agent": "-4559') ORDER BY 1--"
     },
     "device": {
       "architecture": null,
@@ -2161,7 +2161,7 @@
   },
   {
     "headers": {
-      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
+      "user-agent": "-3554')) ORDER BY 1--"
     },
     "device": {
       "architecture": null,
@@ -2206,7 +2206,7 @@
   },
   {
     "headers": {
-      "user-agent": "BuiBui-CheckBot/1.0 (email: buibui[at]dadapro[dot]com)"
+      "user-agent": "-4085') ORDER BY 1--"
     },
     "device": {
       "architecture": null,
@@ -2251,7 +2251,7 @@
   },
   {
     "headers": {
-      "user-agent": "Valuethesite.org"
+      "user-agent": "-3639' ORDER BY 1--"
     },
     "device": {
       "architecture": null,
@@ -2296,7 +2296,7 @@
   },
   {
     "headers": {
-      "user-agent": "PopScreen Bot"
+      "user-agent": ")) ORDER BY 1--"
     },
     "device": {
       "architecture": null,
@@ -2341,7 +2341,7 @@
   },
   {
     "headers": {
-      "user-agent": "WebSimilar.Info"
+      "user-agent": "UNION ALL SELECT 75,75,75,':wts:'||'TDRmCfPnSb'||':xkg:',75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -2386,7 +2386,7 @@
   },
   {
     "headers": {
-      "user-agent": "San Francisco Low Impact Robot"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,':wts:'||'MFUSdhuEoA'||':xkg:'--"
     },
     "device": {
       "architecture": null,
@@ -2431,7 +2431,7 @@
   },
   {
     "headers": {
-      "user-agent": "http://www.beppegrillo.it/"
+      "user-agent": "UNION ALL SELECT 75,':wts:'||'BbeIPCFoBZ'||':xkg:',75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -2476,7 +2476,7 @@
   },
   {
     "headers": {
-      "user-agent": "CarlsWellBehavedLowImpactRobot"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,':wts:'||'lmPoilHwmD'||':xkg:',75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -2521,7 +2521,7 @@
   },
   {
     "headers": {
-      "user-agent": "PROJECT HI! http://hi.lukaszgajos.com"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,':wts:'||'wEANvnOjWP'||':xkg:',75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -2566,7 +2566,7 @@
   },
   {
     "headers": {
-      "user-agent": "reversestat.com"
+      "user-agent": "UNION ALL SELECT 75,75,75,':wts:'||'xTBFMaZsJG'||':xkg:',75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -2611,7 +2611,7 @@
   },
   {
     "headers": {
-      "user-agent": "http://reversestat.com/"
+      "user-agent": "UNION ALL SELECT 75,':wts:'||'llEHimpsgk'||':xkg:',75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -2656,7 +2656,7 @@
   },
   {
     "headers": {
-      "user-agent": "LBxRdHFBFCBQFTp5hG0Q9aER9fY7M72/Y/NQCgNmA="
+      "user-agent": "-7445%')) ORDER BY 1--"
     },
     "device": {
       "architecture": null,
@@ -2701,7 +2701,7 @@
   },
   {
     "headers": {
-      "user-agent": "HTTPStreamClient"
+      "user-agent": "-8570%')) ORDER BY 1709--"
     },
     "device": {
       "architecture": null,
@@ -2746,7 +2746,7 @@
   },
   {
     "headers": {
-      "user-agent": "TurtleScanner/1.4 (compatible; Win16; S)"
+      "user-agent": "-2342%' ORDER BY 7988--"
     },
     "device": {
       "architecture": null,
@@ -2768,10 +2768,10 @@
       "bits": null
     },
     "os": {
-      "name": "Windows",
-      "marketingName": "Windows 3.1",
-      "version": "3.1.0",
-      "manufacturer": "Microsoft",
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
       "bits": null
     },
     "client": {
@@ -2791,7 +2791,7 @@
   },
   {
     "headers": {
-      "user-agent": "NoyaBot"
+      "user-agent": "UNION ALL SELECT 75,':wts:'||'PaPROpkloA'||':xkg:',75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -2836,7 +2836,7 @@
   },
   {
     "headers": {
-      "user-agent": "meta-check/0.9"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,':wts:'||'taEDqHHOTC'||':xkg:',75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -2881,7 +2881,7 @@
   },
   {
     "headers": {
-      "user-agent": "RatingBurner (+http://www.ratingburner.com/)"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,':wts:'||'WgZEIWATcb'||':xkg:',75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -2926,7 +2926,7 @@
   },
   {
     "headers": {
-      "user-agent": "\\xa7%%%%%; .NET CLR 2.0.50727; .NET CLR 3.0.04506.648; .NET CLR 3.5.21022; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,':wts:'||'qlYBRRbHFh'||':xkg:',75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -2971,7 +2971,7 @@
   },
   {
     "headers": {
-      "user-agent": "\\xa7$%&%$&%)"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,':wts:'||'sNvBZyfEdr'||':xkg:',75,75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -3016,7 +3016,7 @@
   },
   {
     "headers": {
-      "user-agent": "Jasbot/1.0"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,':wts:'||'rLEKUZzmna'||':xkg:',75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -3061,7 +3061,7 @@
   },
   {
     "headers": {
-      "user-agent": "samfind"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,':wts:'||'DdoGCZoPSk'||':xkg:',75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -3106,7 +3106,7 @@
   },
   {
     "headers": {
-      "user-agent": "InstallChecker"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,':wts:'||'UQpXaPvcYV'||':xkg:',75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -3151,7 +3151,7 @@
   },
   {
     "headers": {
-      "user-agent": "lui88"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,':wts:'||'OJkqLJlTKF'||':xkg:',75,75,75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -3196,7 +3196,7 @@
   },
   {
     "headers": {
-      "user-agent": "LLF"
+      "user-agent": "UNION ALL SELECT 75,75,':wts:'||'BpbfrRyKYk'||':xkg:',75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -3241,7 +3241,7 @@
   },
   {
     "headers": {
-      "user-agent": "for1"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,':wts:'||'kSvriYSdui'||':xkg:',75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -3286,7 +3286,7 @@
   },
   {
     "headers": {
-      "user-agent": "Bka Trojaner"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,':wts:'||'hfTWosyLzW'||':xkg:'--"
     },
     "device": {
       "architecture": null,
@@ -3331,7 +3331,7 @@
   },
   {
     "headers": {
-      "user-agent": "LTID=gfk417144"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,':wts:'||'myFUOfrHmU'||':xkg:',75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -3376,7 +3376,7 @@
   },
   {
     "headers": {
-      "user-agent": "NiX API - http://nixapi.com/"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,':wts:'||'vsPgSEnOkF'||':xkg:',75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -3421,7 +3421,7 @@
   },
   {
     "headers": {
-      "user-agent": "gnome-vfs/2.16.3 neon/0.25.4"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,':wts:'||'RNOILnLKJg'||':xkg:',75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -3466,7 +3466,7 @@
   },
   {
     "headers": {
-      "user-agent": "GoogleProducer"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,':wts:'||'UVnmvHfafJ'||':xkg:',75,75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -3511,7 +3511,7 @@
   },
   {
     "headers": {
-      "user-agent": "CamelHttpStream/1.0 Evolution/3.4.2"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,':wts:'||'sVabIGPrBK'||':xkg:',75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -3556,7 +3556,7 @@
   },
   {
     "headers": {
-      "user-agent": "CamelHttpStream/1.0 Evolution/3.4.1"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,':wts:'||'FPodCMAYAe'||':xkg:',75,75,75,75,75,75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -3601,7 +3601,7 @@
   },
   {
     "headers": {
-      "user-agent": "DLFileHB"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,75,75,75,75,75,75,':wts:'||'tsYcnnlJeZ'||':xkg:',75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -3646,7 +3646,7 @@
   },
   {
     "headers": {
-      "user-agent": "EbDownloadManager"
+      "user-agent": "UNION ALL SELECT 75,75,75,75,75,75,75,75,':wts:'||'tKPwSbgpwd'||':xkg:',75,75,75,75,75,75,75,75,75,75,75,75,75,75--"
     },
     "device": {
       "architecture": null,
@@ -3691,7 +3691,7 @@
   },
   {
     "headers": {
-      "user-agent": "LitlrBot (http://litlr.me/bot.html)"
+      "user-agent": "iJKr"
     },
     "device": {
       "architecture": null,
@@ -3736,7 +3736,7 @@
   },
   {
     "headers": {
-      "user-agent": "Link Detective 1.0"
+      "user-agent": "inVT"
     },
     "device": {
       "architecture": null,
@@ -3781,7 +3781,7 @@
   },
   {
     "headers": {
-      "user-agent": "dirbot/1.0"
+      "user-agent": "cQdT"
     },
     "device": {
       "architecture": null,
@@ -3826,7 +3826,7 @@
   },
   {
     "headers": {
-      "user-agent": "Cuasar.com/1.0 (+http://www.cuasar.com)"
+      "user-agent": "VeJG"
     },
     "device": {
       "architecture": null,
@@ -3871,7 +3871,7 @@
   },
   {
     "headers": {
-      "user-agent": "Spyder/1.4"
+      "user-agent": "gEGG"
     },
     "device": {
       "architecture": null,
@@ -3916,7 +3916,7 @@
   },
   {
     "headers": {
-      "user-agent": "VAIO Gate 2.4.0"
+      "user-agent": "FRcy"
     },
     "device": {
       "architecture": null,
@@ -3961,7 +3961,7 @@
   },
   {
     "headers": {
-      "user-agent": "MorMor v2.6"
+      "user-agent": "JyzW"
     },
     "device": {
       "architecture": null,
@@ -4006,7 +4006,7 @@
   },
   {
     "headers": {
-      "user-agent": "icsbot-0.1"
+      "user-agent": "ZdjJ"
     },
     "device": {
       "architecture": null,
@@ -4051,7 +4051,7 @@
   },
   {
     "headers": {
-      "user-agent": "Tkensaku/x.x(http://www.tkensaku.com/q.html)"
+      "user-agent": "JDBX"
     },
     "device": {
       "architecture": null,
@@ -4096,7 +4096,7 @@
   },
   {
     "headers": {
-      "user-agent": "Skymonk/1.77"
+      "user-agent": "PXGY"
     },
     "device": {
       "architecture": null,
@@ -4141,7 +4141,7 @@
   },
   {
     "headers": {
-      "user-agent": "XXXX XXXX XXXXXX 1.3.8"
+      "user-agent": "nJUa"
     },
     "device": {
       "architecture": null,
@@ -4186,7 +4186,7 @@
   },
   {
     "headers": {
-      "user-agent": "DrupalFinder"
+      "user-agent": "BCCB"
     },
     "device": {
       "architecture": null,
@@ -4231,7 +4231,7 @@
   },
   {
     "headers": {
-      "user-agent": "hawc"
+      "user-agent": "Opnr"
     },
     "device": {
       "architecture": null,
@@ -4276,7 +4276,7 @@
   },
   {
     "headers": {
-      "user-agent": "URL Validator"
+      "user-agent": "MAKE_SET(2595=2595,0x4d6f7a696c6c612f342e302028636f6d70617469626c653b204d53494520372e303b2057696e646f7773204e5420352e313b205356313b202e4e455420434c5220322e302e353037323729)"
     },
     "device": {
       "architecture": null,
@@ -4321,7 +4321,7 @@
   },
   {
     "headers": {
-      "user-agent": "SearchBlox"
+      "user-agent": "yunw"
     },
     "device": {
       "architecture": null,
@@ -4366,7 +4366,7 @@
   },
   {
     "headers": {
-      "user-agent": "TipTop http://feeltiptop.com"
+      "user-agent": "BddI"
     },
     "device": {
       "architecture": null,
@@ -4411,7 +4411,7 @@
   },
   {
     "headers": {
-      "user-agent": "Teleport Pro/1.29"
+      "user-agent": "yQjm"
     },
     "device": {
       "architecture": null,
@@ -4456,7 +4456,7 @@
   },
   {
     "headers": {
-      "user-agent": "Reaper [2.03.10-031204] (http://www.sitesearch.ca/reaper/)"
+      "user-agent": "BvIX"
     },
     "device": {
       "architecture": null,

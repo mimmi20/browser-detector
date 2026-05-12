@@ -347,6 +347,8 @@ final readonly class Headers
                             case 'chatgpt-user-bot':
                             case 'google-inspectiontool':
                             case 'keys-so':
+                            case 'meta-external-agent':
+                            case 'huawei-mobile-services':
                                 $clientCodename = $lastClientCodename;
                                 $clientHeader   = array_last($headersWithClientCode);
 

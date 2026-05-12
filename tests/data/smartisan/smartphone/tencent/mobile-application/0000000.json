@@ -9,7 +9,7 @@
       "marketingName": "M1L",
       "manufacturer": "Smartisan",
       "brand": "Smartisan",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 1,
       "display": {
         "width": 2560,
@@ -54,7 +54,7 @@
       "marketingName": "T1",
       "manufacturer": "Smartisan",
       "brand": "Smartisan",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 1,
       "display": {
         "width": 1920,
@@ -99,7 +99,7 @@
       "marketingName": "T2",
       "manufacturer": "Smartisan",
       "brand": "Smartisan",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 1,
       "display": {
         "width": 1920,
@@ -144,7 +144,7 @@
       "marketingName": "T1",
       "manufacturer": "Smartisan",
       "brand": "Smartisan",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 1,
       "display": {
         "width": 1920,
@@ -189,7 +189,7 @@
       "marketingName": "Nut Pro 3",
       "manufacturer": "Smartisan",
       "brand": "Smartisan",
-      "dualOrientation": null,
+      "dualOrientation": true,
       "simCount": 1,
       "display": {
         "width": 2340,
@@ -221,6 +221,96 @@
     "engine": {
       "name": "Blink",
       "version": "77.0.3865.120",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; DE106 Build/OPM1.171019.026; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120 MQQBrowser/6.2 TBS/045222 Mobile Safari/537.36 MMWEBID/7084 MicroMessenger/7.0.14.1660(0x27000E38) Process/tools NetType/WIFI Language/zh_CN ABI/arm64 WeChat/arm32"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "DE106",
+      "marketingName": "R1",
+      "manufacturer": "Smartisan",
+      "brand": "Smartisan",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2424,
+        "height": 1080,
+        "touch": true,
+        "size": 6.17
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Smartisan OS",
+      "marketingName": "Smartisan OS",
+      "version": "6.0.0",
+      "manufacturer": "Smartisan",
+      "bits": null
+    },
+    "client": {
+      "name": "WeChat App",
+      "modus": null,
+      "version": "7.0.14.1660",
+      "manufacturer": "Tencent",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "77.0.3865.120",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; OD103 Build/NMF26F; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/044504 Mobile Safari/537.36 MMWEBID/3896 MicroMessenger/7.0.3.1400(0x2700033A) Process/tools NetType/WIFI Language/zh_CN"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "OD103",
+      "marketingName": "OD103",
+      "manufacturer": "Smartisan",
+      "brand": "Smartisan",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "WeChat App",
+      "modus": null,
+      "version": "7.0.3.1400",
+      "manufacturer": "Tencent",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "66.0.3359.126",
       "manufacturer": "Google"
     }
   }

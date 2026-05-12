@@ -397,6 +397,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.siber.roboform' => 'roboform',
             'com.meecel.feedreader.rssdemonad' => 'rss-demon',
             'com.ehawk.antivirus.applock.wifi' => 'hi-security',
+            'com.mxtech.videoplayer.ad' => 'mx-player',
             default => null,
         };
     }
