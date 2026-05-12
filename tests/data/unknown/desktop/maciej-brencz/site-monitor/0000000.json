@@ -1,12 +1,12 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.116 Safari/537.36 HubSpot Webcrawler"
+      "user-agent": "phantomas/1.8.0 (PhantomJS/1.9.8; linux x64)"
     },
     "device": {
       "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": false,
@@ -23,24 +23,24 @@
       "bits": null
     },
     "os": {
-      "name": "Windows",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
-      "manufacturer": "Microsoft",
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
       "bits": null
     },
     "client": {
-      "name": "HubSpot Webcrawler",
+      "name": "phantomas",
       "modus": null,
-      "version": null,
-      "manufacturer": "HubSpot",
-      "type": "bot",
+      "version": "1.8.0",
+      "manufacturer": "Maciej Brencz",
+      "type": "site-monitor",
       "isbot": true,
       "bits": null
     },
     "engine": {
       "name": "WebKit",
-      "version": "537.36.0",
+      "version": null,
       "manufacturer": "Apple"
     }
   }

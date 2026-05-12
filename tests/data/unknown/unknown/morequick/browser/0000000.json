@@ -1,15 +1,15 @@
 [
   {
     "headers": {
-      "user-agent": "phantomas/1.8.0 (PhantomJS/1.9.8; linux x64)"
+      "user-agent": "GreenBrowser"
     },
     "device": {
       "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
+      "deviceName": null,
+      "marketingName": null,
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": false,
+      "dualOrientation": null,
       "simCount": 0,
       "display": {
         "width": null,
@@ -17,31 +17,31 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop",
+      "type": "unknown",
       "ismobile": false,
       "istv": false,
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "Linux Foundation",
+      "manufacturer": "unknown",
       "bits": null
     },
     "client": {
-      "name": "phantomas",
+      "name": "GreenBrowser",
       "modus": null,
-      "version": "1.8.0",
-      "manufacturer": "Maciej Brencz",
-      "type": "application",
+      "version": null,
+      "manufacturer": "morequick",
+      "type": "browser",
       "isbot": false,
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
+      "name": "Trident",
       "version": null,
-      "manufacturer": "Apple"
+      "manufacturer": "Microsoft"
     }
   }
 ]
