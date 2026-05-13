@@ -289,6 +289,10 @@ final class MobileDeviceTest extends TestCase
             ['SonicWALL Mobile Connect for OS X 6.2.01 (MacBookPro98,1; OS X 13.3.1)'],
             ['Mozilla/5.0 (Linux; Android 10; HIREMCO Matrix Build/QP1A.191105.004) IPTV Pro/6.0.8'],
             ['Mozilla/5.0 (compatible; U; NETFLIX) AppleWebKit/533.3 (KHTML, like Gecko) Qt/4.7.0 Safari/533.3 Netflix/3.2 (DEVTYPE=RKU-42XXX-; CERTVER=0) QtWebKit/2.2, Roku 3/7.0 (Roku, 4200X, Wireless)'],
+            ['Mozilla/5.0 (X11; Linux i686) AppleWebKit/5340 (KHTML, like Gecko) Chrome/40.0.876.0 Mobile Safari/5340'],
+            ['Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/5360 (KHTML, like Gecko) Chrome/40.0.892.0 Mobile Safari/5360'],
+            ['Mozilla/5.0 (Windows 95) AppleWebKit/5320 (KHTML, like Gecko) Chrome/37.0.805.0 Mobile Safari/5320'],
+            ['Mozilla/5.0 (Windows 98; Win 9x 4.90) AppleWebKit/5331 (KHTML, like Gecko) Chrome/37.0.859.0 Mobile Safari/5331'],
         ];
     }
 }

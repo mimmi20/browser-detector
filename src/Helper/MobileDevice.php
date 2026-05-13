@@ -85,7 +85,7 @@ final class MobileDevice implements MobileDeviceInterface
             return true;
         }
 
-        if (preg_match('/windows nt|macos\/|nook browser/i', $useragent)) {
+        if (preg_match('/windows nt|macos\/|nook browser|linux i686|linux x86_64|windows 9[58]/i', $useragent)) {
             return false;
         }
 
