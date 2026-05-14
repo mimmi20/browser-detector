@@ -2819,6 +2819,12 @@ final class Device implements DeviceInterface
             'sm-r730a', 'samsung sm-r730a' => 'samsung=samsung sm-r730a',
             'sm-z910f', 'samsung sm-z910f' => 'samsung=samsung sm-z910f',
             'samsung chromebook 3' => 'samsung=samsung chromebook 3',
+            'sm-a576b', 'samsung sm-a576b' => 'samsung=samsung sm-a576b',
+            'sm-a576q', 'samsung sm-a576q' => 'samsung=samsung sm-a576q',
+            'sm-a576u1', 'samsung sm-a576u1' => 'samsung=samsung sm-a576u1',
+            'sm-a576w', 'samsung sm-a576w' => 'samsung=samsung sm-a576w',
+            'sm-a576z', 'samsung sm-a576z' => 'samsung=samsung sm-a576z',
+            'sm-a5760', 'samsung sm-a5760' => 'samsung=samsung sm-a5760',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
