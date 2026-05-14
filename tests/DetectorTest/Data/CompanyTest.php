@@ -11278,6 +11278,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'VIDAA',
                 'key' => 'vidaa',
             ],
+            [
+                'type' => 'LINE WORKS',
+                'name' => 'LINE WORKS Corp.',
+                'brandname' => 'LINE WORKS',
+                'key' => 'line-works',
+            ],
         ];
     }
 

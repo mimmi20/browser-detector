@@ -6102,5 +6102,17 @@
       "search": null
     },
     "engine": null
+  },
+  "yahoo ad monitoring": {
+    "name": "Yahoo Ad Monitoring",
+    "manufacturer": "yahoo",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Yahoo Ad monitoring"
+      ]
+    },
+    "engine": null
   }
 }
