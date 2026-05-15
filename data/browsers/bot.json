@@ -1424,18 +1424,6 @@
     },
     "engine": "unknown"
   },
-  "exalead cloudview": {
-    "name": "Exalead CloudView",
-    "manufacturer": "dassault-systemes",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "ExaleadCloudView"
-      ]
-    },
-    "engine": "unknown"
-  },
   "exb language crawler": {
     "name": "ExB Language Crawler",
     "manufacturer": "exb",
@@ -2050,18 +2038,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "gosquared\\-thumbnailer"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "grammarly": {
-    "name": "Grammarly",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Grammarly"
       ]
     },
     "engine": "unknown"
@@ -2773,18 +2749,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "lbot"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "libcurl": {
-    "name": "libcurl",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "libcurl\\-agent"
       ]
     },
     "engine": "unknown"
@@ -5279,16 +5243,6 @@
       "search": [
         "ThemeSearchAndExtraction\\-crawler"
       ]
-    },
-    "engine": "unknown"
-  },
-  "thumbnail.ws bot": {
-    "name": "thumbnail.ws Bot",
-    "manufacturer": "thumbnail.ws",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
     },
     "engine": "unknown"
   },

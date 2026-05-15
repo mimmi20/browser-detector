@@ -46,6 +46,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (SMART-TV; Linux; Tizen 2.2; SAMSUNG SM-Z910F) AppleWebKit/537.3 (KHTML, like Gecko) Version/2.2 TV Safari/538.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-Z910F",
+      "marketingName": "Z",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.8
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Tizen",
+      "marketingName": "Tizen",
+      "version": "2.2.0",
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Tizen Browser",
+      "modus": null,
+      "version": "2.2.0",
+      "manufacturer": "Linux Foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.3.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Tizen 2.2; SAMSUNG SM-Z9005) AppleWebKit/537.3 (KHTML, like Gecko) Version/2.2 Mobile Safari/537.3"
     },
     "device": {
@@ -331,51 +376,6 @@
         "height": 480,
         "touch": true,
         "size": 4
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Tizen",
-      "marketingName": "Tizen",
-      "version": "2.2.0",
-      "manufacturer": "Linux Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Tizen Browser",
-      "modus": null,
-      "version": "2.2.0",
-      "manufacturer": "Linux Foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.3.0",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Tizen 2.2; SAMSUNG SM-Z910F) AppleWebKit/537.3 (KHTML, like Gecko) Version/2.2 Mobile Safari/537.3"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-Z910F",
-      "marketingName": "Z",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 4.8
       },
       "type": "smartphone",
       "ismobile": true,

@@ -6114,5 +6114,27 @@
       ]
     },
     "engine": null
+  },
+  "exalead cloudview": {
+    "name": "Exalead CloudView",
+    "manufacturer": "dassault-systemes",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ExaleadCloudView"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "thumbnail.ws bot": {
+    "name": "thumbnail.ws Bot",
+    "manufacturer": "thumbnail.ws",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
   }
 }

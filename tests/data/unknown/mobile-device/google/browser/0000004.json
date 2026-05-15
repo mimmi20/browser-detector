@@ -1,96 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 11; Fobem 4K SMART TV Build/RTM6.230109.076)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android TV",
-      "marketingName": "Android TV",
-      "version": "11.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Android Browser",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Linux; U; Android 7.1.2; es_US; Black Box Tv Pro; Build/Black_Box_Tv_Pro; Cronet/64.0.3282.137"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.2",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Linux; U; Android 10; tr_TR; Box Q; Build/QTT8.201201.002; Cronet/114.0.5735.33"
     },
     "device": {
@@ -2659,8 +2569,8 @@
   },
   {
     "headers": {
-      "sec-ch-ua-platform": "\"Linux\"",
       "x-requested-with": "XMLHttpRequest",
+      "sec-ch-ua-platform": "\"Linux\"",
       "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
       "sec-ch-ua-mobile": "?0",
       "user-agent": "Audisto Crawler (mobile; essential; +https://audisto.com/bot)"
@@ -2756,8 +2666,8 @@
   },
   {
     "headers": {
-      "sec-ch-ua-platform": "\"Linux\"",
       "x-requested-with": "XMLHttpRequest",
+      "sec-ch-ua-platform": "\"Linux\"",
       "sec-ch-ua": "\"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"",
       "sec-ch-ua-mobile": "?0",
       "user-agent": "Audisto Crawler (mobile; essential; +https://audisto.com/bot)"
@@ -3250,6 +3160,321 @@
     "engine": {
       "name": "WebKit",
       "version": "535.2.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows CE) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/14.0.876.0 Safari/535.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "14.0.876.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "535.1.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows CE) AppleWebKit/531.2 (KHTML, like Gecko) Chrome/36.0.838.0 Safari/531.2"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "36.0.838.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "36.0.838.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows CE) AppleWebKit/531.1 (KHTML, like Gecko) Chrome/47.0.846.0 Safari/531.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "47.0.846.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "47.0.846.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows CE) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/16.0.891.0 Safari/535.2"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "16.0.891.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "535.2.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 15; C61 Build/AP3A.240905.015.A2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Browser",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows CE) AppleWebKit/534.2 (KHTML, like Gecko) Chrome/28.0.811.0 Safari/534.2"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "28.0.811.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "28.0.811.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows CE) AppleWebKit/531.0 (KHTML, like Gecko) Chrome/26.0.870.0 Safari/531.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "26.0.870.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "531.0.0",
       "manufacturer": "Apple"
     }
   }

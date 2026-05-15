@@ -3608,9 +3608,9 @@
   {
     "headers": {
       "sec-ch-ua-model": "\"\"",
+      "x-requested-with": "com.google.android.apps.searchlite",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"\"",
-      "x-requested-with": "com.google.android.apps.searchlite",
       "sec-ch-ua": "\"Android WebView\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"",
       "sec-ch-ua-full-version": "\"\"",
       "sec-ch-ua-bitness": "\"\"",
@@ -3972,6 +3972,51 @@
     "engine": {
       "name": "Blink",
       "version": "140.0.7339.207",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; SM-A165F Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/147.0.7727.137 Mobile Safari/537.36 GoogleApp/17.16.22.ve.arm64"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A165F",
+      "marketingName": "Galaxy A16",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Search App",
+      "modus": null,
+      "version": "17.16.22",
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "147.0.7727.137",
       "manufacturer": "Google"
     }
   }

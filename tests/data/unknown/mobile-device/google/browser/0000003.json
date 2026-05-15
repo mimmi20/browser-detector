@@ -1,51 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Dalvik/2.1.0 Linux; U; Android 8.0; SM-A9 Star Build/LMY47I"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Android Browser",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Dalvik/2.1.0 Linux; U; Android 8.0; SM-A90 Active Build/LMY47I"
     },
     "device": {
@@ -762,51 +717,6 @@
       "name": "Blink",
       "version": "53.0.2785.124",
       "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/FreeBrowser Mobile Safari/537.36 FreeBrowser/34"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "Linux Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "Apple"
     }
   },
   {
@@ -4492,6 +4402,96 @@
       "name": "Android Browser",
       "modus": null,
       "version": "2.1.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 11; Fobem 4K SMART TV Build/RTM6.230109.076)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android TV",
+      "marketingName": "Android TV",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Browser",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Linux; U; Android 7.1.2; es_US; Black Box Tv Pro; Build/Black_Box_Tv_Pro; Cronet/64.0.3282.137"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.2",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": null,
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,

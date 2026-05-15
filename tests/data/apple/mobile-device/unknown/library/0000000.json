@@ -538,5 +538,50 @@
       "version": null,
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Nextcloud/33.0.7 (it.twsweb.Nextcloud; build:5; iOS 26.4.2) Alamofire/5.11.2"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Apple device",
+      "marketingName": "general Apple device",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "26.4.2",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Alamofire",
+      "modus": null,
+      "version": "5.11.2",
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
   }
 ]

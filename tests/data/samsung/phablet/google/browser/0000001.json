@@ -3929,5 +3929,50 @@
       "version": "144.0.0",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 16; Samsung Galaxy Z Fold7 Build/BP2A.250605.031.A3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.7727.111 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Galaxy Z Fold7",
+      "marketingName": "Galaxy Z Fold7",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2184,
+        "height": 1968,
+        "touch": true,
+        "size": 8
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "147.0.7727.111",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "147.0.7727.111",
+      "manufacturer": "Google"
+    }
   }
 ]

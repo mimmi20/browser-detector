@@ -361,51 +361,6 @@
   },
   {
     "headers": {
-      "user-agent": "Opera/9.62 (X11;Linux i686; U; en) Presto/2.2.0/SAMSUNG-GT-I6410-Vodafone/"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "GT-I6410",
-      "marketingName": "M1",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 400,
-        "height": 240,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "Linux Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "9.62.0",
-      "manufacturer": "Opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.2.0",
-      "manufacturer": "Opera"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "SAMSUNG-GT-I8330-Vodafone/I8330BUJF8 Opera/9.8 (SLP; Linux/SLP/R1; U; en) Presto/2.4.21 Version/10.00 SMM-MMS/1.2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
     },
     "device": {
@@ -888,6 +843,51 @@
       "name": "Opera Mobile",
       "modus": null,
       "version": "9.5.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-GT-I6410-Vodafone/I6410BUJC1 Linux/X2/R1 Opera/9.6 SMS-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GT-I6410",
+      "marketingName": "M1",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "9.6.0",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,

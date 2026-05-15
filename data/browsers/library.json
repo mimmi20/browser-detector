@@ -1244,5 +1244,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "libcurl": {
+    "name": "libcurl",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "libcurl\\-agent"
+      ]
+    },
+    "engine": "unknown"
   }
 }

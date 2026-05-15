@@ -91,7 +91,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:72.0) Gecko/20100101 Firefox/72.0 (compatible; mozilla/5.0 (macintosh; intel mac os x 10_13_5) applewebkit/537.36 (khtml, like gecko) chrome/67.0.3396.99 safari/537.36; +https://github.com/rom1504/img2dataset)"
+      "user-agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:72.0) Gecko/20100101 Firefox/72.0 (compatible; mozilla/5.0 (iphone; cpu iphone os 11_0 like mac os x) applewebkit/604.1.38 (khtml, like gecko) version/11.0 mobile/15a372 safari/604.1; +https://github.com/rom1504/img2dataset)"
     },
     "device": {
       "architecture": null,
@@ -129,9 +129,9 @@
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "67.0.3396.99",
-      "manufacturer": "Google"
+      "name": "WebKit",
+      "version": "604.1.38",
+      "manufacturer": "Apple"
     }
   }
 ]

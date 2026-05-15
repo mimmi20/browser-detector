@@ -3632,9 +3632,9 @@
   {
     "headers": {
       "sec-ch-ua-model": "\"SM-X700\"",
+      "x-requested-with": "XMLHttpRequest",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"13.0.0\"",
-      "x-requested-with": "XMLHttpRequest",
       "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\"",
       "sec-ch-ua-full-version": "\"96.0.4664.104\"",
       "sec-ch-ua-mobile": "?0",
@@ -3867,9 +3867,9 @@
   {
     "headers": {
       "sec-ch-ua-model": "\"SM-T720\"",
+      "x-requested-with": "XMLHttpRequest",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"11.0.0\"",
-      "x-requested-with": "XMLHttpRequest",
       "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\"",
       "sec-ch-ua-full-version": "\"96.0.4664.104\"",
       "sec-ch-ua-mobile": "?0",
@@ -3971,8 +3971,8 @@
   },
   {
     "headers": {
-      "sec-ch-ua-platform": "\"Android\"",
       "x-requested-with": "XMLHttpRequest",
+      "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\"",
       "sec-ch-ua-mobile": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-T870) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Safari/537.36"

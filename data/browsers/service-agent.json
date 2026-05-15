@@ -544,5 +544,17 @@
       ]
     },
     "engine": "webkit"
+  },
+  "grammarly": {
+    "name": "Grammarly",
+    "manufacturer": "unknown",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Grammarly"
+      ]
+    },
+    "engine": "unknown"
   }
 }

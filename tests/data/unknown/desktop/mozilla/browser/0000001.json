@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; OpenBSD i386; en-US; rv:1.8.0.7) Gecko/20061017 Firefox/1.5.0.7"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "OpenBSD",
+      "marketingName": "OpenBSD",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "1.5.0.7",
+      "manufacturer": "Mozilla",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.8.0.7",
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (X11; U; SunOS sun4u; en-US; rv:1.8.1.4) Gecko/20070531 Firefox/2.0.0.4"
     },
     "device": {
@@ -4437,51 +4482,6 @@
       "marketingName": null,
       "version": null,
       "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "34.0.0",
-      "manufacturer": "Mozilla",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "34.0.0",
-      "manufacturer": "Mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:34.0) Gecko/20100101 Firefox/34.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "FreeBSD",
-      "marketingName": "FreeBSD",
-      "version": null,
-      "manufacturer": "FreeBSD",
       "bits": null
     },
     "client": {

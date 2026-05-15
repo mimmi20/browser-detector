@@ -133,5 +133,50 @@
       "version": "125.0.6422.72",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 14; ro-ro; 22101316UG Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5970.168 Mobile Safari/537.36 HeyTapBrowser/45.14.0.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "22101316UG",
+      "marketingName": "Redmi Note 12 Pro+ 5G",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "HeyTapBrowser",
+      "modus": null,
+      "version": "45.14.0.1",
+      "manufacturer": "Bravo Unicorn",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "115.0.5970.168",
+      "manufacturer": "Google"
+    }
   }
 ]
