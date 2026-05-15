@@ -3767,6 +3767,8 @@ enum Company: string implements CompanyInterface
 
     case infomir = 'Infomir';
 
+    case freesat = 'Freesat';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5648,6 +5650,7 @@ enum Company: string implements CompanyInterface
             'vidaa', 'vidaa international holdings b.v.' => self::vidaa,
             'lineworks', 'line works corp.', 'line-works', 'line works' => self::lineWorks,
             'infomir', 'infomir,llc' => self::infomir,
+            'freesat', 'everyone tv devices limited' => self::freesat,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6408,6 +6411,7 @@ enum Company: string implements CompanyInterface
             self::vidaa => 'VIDAA International Holdings B.V.',
             self::lineWorks => 'LINE WORKS Corp.',
             self::infomir => 'Infomir,LLC',
+            self::freesat => 'Everyone TV Devices Limited',
             self::unknown => null,
             default => $this->value,
         };

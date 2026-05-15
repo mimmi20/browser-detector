@@ -11290,6 +11290,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Infomir',
                 'key' => 'infomir',
             ],
+            [
+                'type' => 'Freesat',
+                'name' => 'Everyone TV Devices Limited',
+                'brandname' => 'Freesat',
+                'key' => 'freesat',
+            ],
         ];
     }
 

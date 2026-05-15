@@ -82,8 +82,24 @@
   "arris vms4100p2": {
     "deviceName": "VMS4100P2",
     "marketingName": "VMS4100P2",
-    "manufacturer": "verizon",
+    "manufacturer": "arris",
     "brand": "arris",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "tv-media-player",
+    "platform": null
+  },
+  "arris fs-ars-01b": {
+    "deviceName": "FS-ARS-01B",
+    "marketingName": "FS-ARS-01B",
+    "manufacturer": "arris",
+    "brand": "freesat",
     "dualOrientation": false,
     "simCount": 0,
     "display": {
