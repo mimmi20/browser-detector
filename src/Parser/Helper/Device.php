@@ -1399,6 +1399,7 @@ final class Device implements DeviceInterface
             'redmi k30s ultra' => 'xiaomi=xiaomi redmi k30s ultra',
             'mi cc9e' => 'xiaomi=xiaomi mi cc9e',
             'aftanna0' => 'xiaomi=xiaomi aftanna0',
+            'redmi 15' => 'xiaomi=xiaomi redmi 15',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -2825,6 +2826,8 @@ final class Device implements DeviceInterface
             'sm-a576w', 'samsung sm-a576w' => 'samsung=samsung sm-a576w',
             'sm-a576z', 'samsung sm-a576z' => 'samsung=samsung sm-a576z',
             'sm-a5760', 'samsung sm-a5760' => 'samsung=samsung sm-a5760',
+            'samsung galaxy z fold7' => 'samsung=samsung galaxy z fold7',
+            'sm-t517', 'samsung sm-t517' => 'samsung=samsung sm-t517',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -6734,6 +6737,8 @@ final class Device implements DeviceInterface
             'c110l' => 'blu=blu c110l',
             'bold n1' => 'blu=blu bold n1',
             // apple
+            'iphone18,5', 'iph18,5' => 'apple=apple iphone 18,5',
+            'iphone18,4', 'iph18,4' => 'apple=apple iphone 18,4',
             'iphone18,3', 'iph18,3' => 'apple=apple iphone 18,3',
             'iphone18,2', 'iph18,2' => 'apple=apple iphone 18,2',
             'iphone18,1', 'iph18,1' => 'apple=apple iphone 18,1',
@@ -8064,6 +8069,7 @@ final class Device implements DeviceInterface
             // hp
             'hp chromebook x360 11 g1 ee' => 'hp=hp chromebook x360 11 g1 ee',
             'hp chromebook x2' => 'hp=hp chromebook x2',
+            'pvg100' => 'hp=palm pvg100',
             // lnmbbs
             'p40-eea' => 'lnmbbs=lnmbbs p40-eea',
             // tyd

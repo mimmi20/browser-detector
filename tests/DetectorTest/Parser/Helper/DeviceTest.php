@@ -1445,6 +1445,7 @@ final class DeviceTest extends TestCase
             ['Redmi K30S Ultra', 'xiaomi=xiaomi redmi k30s ultra'],
             ['MI CC9e', 'xiaomi=xiaomi mi cc9e'],
             ['AFTANNA0', 'xiaomi=xiaomi aftanna0'],
+            ['Redmi 15', 'xiaomi=xiaomi redmi 15'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -3876,6 +3877,9 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-A576Z', 'samsung=samsung sm-a576z'],
             ['SM-A5760', 'samsung=samsung sm-a5760'],
             ['SAMSUNG SM-A5760', 'samsung=samsung sm-a5760'],
+            ['Samsung Galaxy Z Fold7', 'samsung=samsung galaxy z fold7'],
+            ['SM-T517', 'samsung=samsung sm-t517'],
+            ['SAMSUNG SM-T517', 'samsung=samsung sm-t517'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['LGE-AN20', 'huawei=huawei lge-an20'],
@@ -8169,6 +8173,10 @@ final class DeviceTest extends TestCase
             ['iPh1,2', 'apple=apple iphone 1,2'],
             ['iPhone1,1', 'apple=apple iphone 1,1'],
             ['iPh1,1', 'apple=apple iphone 1,1'],
+            ['iPhone18,4', 'apple=apple iphone 18,4'],
+            ['iPh18,4', 'apple=apple iphone 18,4'],
+            ['iPhone18,5', 'apple=apple iphone 18,5'],
+            ['iPh18,5', 'apple=apple iphone 18,5'],
             // onvo
             ['ONVO_50OV6000U', 'onvo=onvo 50ov6000u'],
             ['50OV6000U', 'onvo=onvo 50ov6000u'],
@@ -9465,6 +9473,7 @@ final class DeviceTest extends TestCase
             // hp
             ['HP Chromebook x360 11 G1 EE', 'hp=hp chromebook x360 11 g1 ee'],
             ['HP Chromebook x2', 'hp=hp chromebook x2'],
+            ['PVG100', 'hp=palm pvg100'],
             // lnmbbs
             ['P40-EEA', 'lnmbbs=lnmbbs p40-eea'],
             // tyd
