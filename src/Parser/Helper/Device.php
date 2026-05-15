@@ -8344,6 +8344,8 @@ final class Device implements DeviceInterface
             // dell
             'dell chromebook 13 (7310', 'dell chromebook 13 (7310)' => 'dell=dell chromebook 13 (7310)',
             'dell chromebook 11 (3180', 'dell chromebook 11 (3180)' => 'dell=dell chromebook 11 (3180)',
+            // infomir
+            'mag200' => 'infomir=infomir mag200',
             // other
             default => null,
         };

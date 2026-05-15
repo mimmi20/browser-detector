@@ -11284,6 +11284,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'LINE WORKS',
                 'key' => 'line-works',
             ],
+            [
+                'type' => 'Infomir',
+                'name' => 'Infomir,LLC',
+                'brandname' => 'Infomir',
+                'key' => 'infomir',
+            ],
         ];
     }
 

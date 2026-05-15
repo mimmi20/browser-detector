@@ -9757,6 +9757,8 @@ final class DeviceTest extends TestCase
             ['Dell Chromebook 13 (7310)', 'dell=dell chromebook 13 (7310)'],
             ['Dell Chromebook 11 (3180', 'dell=dell chromebook 11 (3180)'],
             ['Dell Chromebook 11 (3180)', 'dell=dell chromebook 11 (3180)'],
+            // infomir
+            ['MAG200', 'infomir=infomir mag200'],
             // other
             ['Model"', null],
             [': "', null],
