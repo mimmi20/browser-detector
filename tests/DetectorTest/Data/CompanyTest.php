@@ -11296,6 +11296,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Freesat',
                 'key' => 'freesat',
             ],
+            [
+                'type' => 'Audacy',
+                'name' => 'Audacy, Inc.',
+                'brandname' => 'Audacy',
+                'key' => 'audacy',
+            ],
+            [
+                'type' => 'Philco',
+                'name' => 'Philco',
+                'brandname' => 'Philco',
+                'key' => 'philco',
+            ],
         ];
     }
 

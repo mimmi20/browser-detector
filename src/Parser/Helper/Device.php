@@ -168,15 +168,12 @@ final class Device implements DeviceInterface
             'kfarwi' => 'amazon=amazon kfarwi',
             'kftt' => 'amazon=amazon kftt',
             'kfapwi' => 'amazon=amazon kfapwi',
-            'kfthwi' => 'amazon=amazon kfthwi',
+            'kfthwi', 'kindle fire hdx 7' => 'amazon=amazon kfthwi',
             'kfthwa' => 'amazon=amazon kfthwa',
-            'kfsowi' => 'amazon=amazon kfsowi',
-            'aftrs' => 'amazon=amazon aftrs',
+            'kfsowi', 'amazon kindle fire hd' => 'amazon=amazon kfsowi',
             'aftn' => 'amazon=amazon aftn',
             'aftm' => 'amazon=amazon aftm',
-            'aftkmst12' => 'amazon=amazon aftkmst12',
             'aftjmst12' => 'amazon=amazon aftjmst12',
-            'afteamr311' => 'amazon=amazon afteamr311',
             'aftbamr311' => 'amazon=amazon aftbamr311',
             'aftb' => 'amazon=amazon aftb',
             'afta' => 'amazon=amazon afta',
@@ -185,6 +182,14 @@ final class Device implements DeviceInterface
             'aftka' => 'amazon=amazon aftka',
             'aftgazl' => 'amazon=amazon aftgazl',
             'aeohy' => 'amazon=amazon aeohy',
+            'amazon kindle fire2' => 'amazon=amazon kindle fire 2',
+            'sd4930ur' => 'amazon=amazon sd4930ur',
+            'amazon tate' => 'amazon=amazon tate',
+            'amazon jem' => 'amazon=amazon jem',
+            'amazon kindle fire', 'kindle fire' => 'amazon=amazon d01400',
+            'aeoch' => 'amazon=amazon aeoch',
+            'aftti43' => 'amazon=amazon aftti43',
+            'aftkauk001' => 'amazon=amazon aftkauk001',
             // Asus
             'p024' => 'asus=asus p024',
             'asus_x00dd' => 'asus=asus x00dd',
@@ -231,6 +236,7 @@ final class Device implements DeviceInterface
             'asus_x01bda' => 'asus=asus x01bda',
             'zb631kl' => 'asus=asus zb631kl',
             'zb602kl' => 'asus=asus zb602kl',
+            'asus chromebook flip c101pa' => 'asus=asus chromebook flip c101pa',
             // Google
             'nexus 7' => 'google=google nexus 7',
             'pixel 3', 'aosp on blueline' => 'google=google pixel 3',
@@ -7673,6 +7679,7 @@ final class Device implements DeviceInterface
             'gr-tb10s' => 'grundig=grundig gr-tb10s',
             'grundig google tv', 'grundig android tv' => 'grundig=grundig smart tv',
             'grundig google tv uhd+' => 'grundig=grundig google tv uhd+',
+            'afteu014' => 'grundig=grundig afteu014',
             // dudu-auto
             'dudu7' => 'dudu-auto=dudu-auto dudu7',
             // vorcom
@@ -8118,6 +8125,7 @@ final class Device implements DeviceInterface
             'bauhn 4k android tv' => 'bauhn=bauhn 4k android tv',
             // jvc
             'jvc android tv' => 'jvc=jvc smart tv',
+            'aftso001' => 'jvc=jvc aftso001',
             // beko
             'beko android tv' => 'beko=beko smart tv',
             // altus
@@ -8339,14 +8347,38 @@ final class Device implements DeviceInterface
             'evolveo smart tv stick d2' => 'evolveo=evolveo smart tv stick d2',
             // toshiba
             'toshiba chromebook 2 (2015 edition', 'toshiba chromebook 2 (2015 edition)' => 'toshiba=toshiba chromebook 2 (2015)',
+            'aftdct31' => 'toshiba=toshiba aftdct31',
+            'aftkmst12' => 'toshiba=toshiba aftkmst12',
             // smartisan
+            'dt2002c' => 'smartisan=smartisan dt2002c',
+            'dt1902a' => 'smartisan=smartisan dt1902a',
+            'smartisan u3 pro' => 'smartisan=smartisan u3 pro',
+            'dt1901a' => 'smartisan=smartisan dt1901a',
+            'yq603' => 'smartisan=smartisan yq603',
+            'yq601' => 'smartisan=smartisan yq601',
+            'sm919' => 'smartisan=smartisan sm919',
+            'sm801' => 'smartisan=smartisan sm801',
+            'sm705' => 'smartisan=smartisan sm705',
+            'sm701' => 'smartisan=smartisan sm701',
+            'os105' => 'smartisan=smartisan os105',
+            'os103' => 'smartisan=smartisan os103',
+            'oe106' => 'smartisan=smartisan oe106',
+            'od105' => 'smartisan=smartisan od105',
+            'od103' => 'smartisan=smartisan od103',
             'oc106' => 'smartisan=smartisan oc106',
+            'oc105' => 'smartisan=smartisan oc105',
             'de106' => 'smartisan=smartisan de106',
             // dell
             'dell chromebook 13 (7310', 'dell chromebook 13 (7310)' => 'dell=dell chromebook 13 (7310)',
             'dell chromebook 11 (3180', 'dell chromebook 11 (3180)' => 'dell=dell chromebook 11 (3180)',
             // infomir
             'mag200' => 'infomir=infomir mag200',
+            // digiland
+            'dl1036' => 'digiland=digiland dl1036',
+            // insignia
+            'afteamr311' => 'insignia=insignia afteamr311',
+            // element
+            'aftrs' => 'element=element aftrs',
             // other
             default => null,
         };

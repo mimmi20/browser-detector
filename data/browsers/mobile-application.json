@@ -2702,6 +2702,18 @@
     },
     "engine": null
   },
+  "nrc-nieuws": {
+    "name": "NRC Nieuws",
+    "manufacturer": "mediahuis-nrc",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NRC-Nieuws"
+      ]
+    },
+    "engine": null
+  },
   "luminary": {
     "name": "Luminary",
     "manufacturer": "unknown",
@@ -5393,6 +5405,18 @@
     "version": {
       "factory": null,
       "search": null
+    },
+    "engine": "webkit"
+  },
+  "audacy-app": {
+    "name": "Audacy App",
+    "manufacturer": "audacy",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Radio\\.com"
+      ]
     },
     "engine": "webkit"
   }

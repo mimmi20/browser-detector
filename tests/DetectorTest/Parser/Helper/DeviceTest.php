@@ -193,14 +193,13 @@ final class DeviceTest extends TestCase
             ['KFARWI', 'amazon=amazon kfarwi'],
             ['KFAPWI', 'amazon=amazon kfapwi'],
             ['KFTHWI', 'amazon=amazon kfthwi'],
+            ['Kindle Fire HDX 7', 'amazon=amazon kfthwi'],
             ['KFTHWA', 'amazon=amazon kfthwa'],
             ['KFSOWI', 'amazon=amazon kfsowi'],
-            ['AFTRS', 'amazon=amazon aftrs'],
+            ['Amazon Kindle Fire HD', 'amazon=amazon kfsowi'],
             ['AFTN', 'amazon=amazon aftn'],
             ['AFTM', 'amazon=amazon aftm'],
-            ['AFTKMST12', 'amazon=amazon aftkmst12'],
             ['AFTJMST12', 'amazon=amazon aftjmst12'],
-            ['AFTEAMR311', 'amazon=amazon afteamr311'],
             ['AFTBAMR311', 'amazon=amazon aftbamr311'],
             ['AFTB', 'amazon=amazon aftb'],
             ['AFTA', 'amazon=amazon afta'],
@@ -209,6 +208,15 @@ final class DeviceTest extends TestCase
             ['AFTKA', 'amazon=amazon aftka'],
             ['AFTGAZL', 'amazon=amazon aftgazl'],
             ['AEOHY', 'amazon=amazon aeohy'],
+            ['Amazon Kindle Fire2', 'amazon=amazon kindle fire 2'],
+            ['SD4930UR', 'amazon=amazon sd4930ur'],
+            ['Amazon Tate', 'amazon=amazon tate'],
+            ['Amazon Jem', 'amazon=amazon jem'],
+            ['Amazon Kindle Fire', 'amazon=amazon d01400'],
+            ['Kindle Fire', 'amazon=amazon d01400'],
+            ['AEOCH', 'amazon=amazon aeoch'],
+            ['AFTTI43', 'amazon=amazon aftti43'],
+            ['AFTKAUK001', 'amazon=amazon aftkauk001'],
             // Asus
             ['P024', 'asus=asus p024'],
             ['ASUS_X00DD', 'asus=asus x00dd'],
@@ -256,6 +264,7 @@ final class DeviceTest extends TestCase
             ['ASUS_X01BDA', 'asus=asus x01bda'],
             ['ZB631KL', 'asus=asus zb631kl'],
             ['ZB602KL', 'asus=asus zb602kl'],
+            ['ASUS Chromebook Flip C101PA', 'asus=asus chromebook flip c101pa'],
             // Google
             ['Nexus 7', 'google=google nexus 7'],
             ['Pixel 7 Pro', 'google=google pixel 7 pro'],
@@ -9073,6 +9082,7 @@ final class DeviceTest extends TestCase
             ['Grundig Google TV', 'grundig=grundig smart tv'],
             ['Grundig Android TV', 'grundig=grundig smart tv'],
             ['Grundig Google TV UHD+', 'grundig=grundig google tv uhd+'],
+            ['AFTEU014', 'grundig=grundig afteu014'],
             // dudu-auto
             ['DUDU7', 'dudu-auto=dudu-auto dudu7'],
             // vorcom
@@ -9523,6 +9533,7 @@ final class DeviceTest extends TestCase
             ['BAUHN 4K Android TV', 'bauhn=bauhn 4k android tv'],
             // jvc
             ['JVC Android TV', 'jvc=jvc smart tv'],
+            ['AFTSO001', 'jvc=jvc aftso001'],
             // beko
             ['Beko Android TV', 'beko=beko smart tv'],
             // altus
@@ -9750,9 +9761,27 @@ final class DeviceTest extends TestCase
             // toshiba
             ['Toshiba Chromebook 2 (2015 Edition', 'toshiba=toshiba chromebook 2 (2015)'],
             ['Toshiba Chromebook 2 (2015 Edition)', 'toshiba=toshiba chromebook 2 (2015)'],
+            ['AFTDCT31', 'toshiba=toshiba aftdct31'],
+            ['AFTKMST12', 'toshiba=toshiba aftkmst12'],
             // smartisan
             ['OC106', 'smartisan=smartisan oc106'],
             ['DE106', 'smartisan=smartisan de106'],
+            ['DT2002C', 'smartisan=smartisan dt2002c'],
+            ['DT1902A', 'smartisan=smartisan dt1902a'],
+            ['Smartisan U3 Pro', 'smartisan=smartisan u3 pro'],
+            ['DT1901A', 'smartisan=smartisan dt1901a'],
+            ['YQ603', 'smartisan=smartisan yq603'],
+            ['YQ601', 'smartisan=smartisan yq601'],
+            ['SM919', 'smartisan=smartisan sm919'],
+            ['SM801', 'smartisan=smartisan sm801'],
+            ['SM705', 'smartisan=smartisan sm705'],
+            ['SM701', 'smartisan=smartisan sm701'],
+            ['OS105', 'smartisan=smartisan os105'],
+            ['OS103', 'smartisan=smartisan os103'],
+            ['OE106', 'smartisan=smartisan oe106'],
+            ['OD105', 'smartisan=smartisan od105'],
+            ['OD103', 'smartisan=smartisan od103'],
+            ['OC105', 'smartisan=smartisan oc105'],
             // dell
             ['Dell Chromebook 13 (7310', 'dell=dell chromebook 13 (7310)'],
             ['Dell Chromebook 13 (7310)', 'dell=dell chromebook 13 (7310)'],
@@ -9760,6 +9789,12 @@ final class DeviceTest extends TestCase
             ['Dell Chromebook 11 (3180)', 'dell=dell chromebook 11 (3180)'],
             // infomir
             ['MAG200', 'infomir=infomir mag200'],
+            // digiland
+            ['DL1036', 'digiland=digiland dl1036'],
+            // insignia
+            ['AFTEAMR311', 'insignia=insignia afteamr311'],
+            // element
+            ['AFTRS', 'element=element aftrs'],
             // other
             ['Model"', null],
             [': "', null],

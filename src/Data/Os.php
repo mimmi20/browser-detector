@@ -842,6 +842,7 @@ enum Os: string implements OsInterface
             self::fritzOS => ['factory' => VersionBuilderFactory::class, 'search' => ['FRITZ!OS']],
             self::rokuOS => ['factory' => VersionBuilderFactory::class, 'search' => ['Roku\/DVP-']],
             self::vidaaOS => ['factory' => VersionBuilderFactory::class, 'search' => ['VIDAA']],
+            self::linux => ['factory' => VersionBuilderFactory::class, 'search' => ['Linux']],
             default => ['factory' => null, 'search' => null],
         };
     }

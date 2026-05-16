@@ -136,6 +136,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/^smarttv_(?P<devicecode>[^);\/_]+)_build/i',
             '/^(?P<devicecode>[^);\/]+) build\//i',
             '/mozilla\/[\d.]+ \(qtembedded; linux; c\) applewebkit\/[\d.]+ \(khtml, like gecko\) (?P<devicecode>[^);\/]+) stbapp ver:/i',
+            '/com\.amazon\.sics\/[\d.]+ \((?P<devicecode>[^;]+); android [\d.]+;/i',
         ];
 
         $filtered = array_filter(

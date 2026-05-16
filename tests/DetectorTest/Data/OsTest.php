@@ -1156,7 +1156,7 @@ final class OsTest extends TestCase
                 'name' => 'Linux',
                 'marketingName' => 'Linux',
                 'manufacturer' => Company::linuxFoundation,
-                'version' => ['factory' => null, 'search' => null],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Linux']],
                 'key' => 'linux',
             ],
             [

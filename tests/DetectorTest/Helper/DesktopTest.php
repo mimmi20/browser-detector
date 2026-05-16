@@ -140,6 +140,7 @@ final class DesktopTest extends TestCase
             ['Mozilla/5.0 (X11; U; Linux Core i7-4980HQ; de; rv:32.0; compatible; Jobboerse.com; http://www.xn--jobbrse-d1a.com) Gecko/20100401 Firefox/24.0'],
             ['Microsoft-CryptoAPI/6.3'],
             ['Safari 531.21.10 (OS X 10_6_2 Intel)'],
+            ['Microsoft-CryptoAPI/5.131.2600.2180'],
         ];
     }
 

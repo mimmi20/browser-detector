@@ -3769,6 +3769,10 @@ enum Company: string implements CompanyInterface
 
     case freesat = 'Freesat';
 
+    case audacy = 'Audacy';
+
+    case philco = 'Philco';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5651,6 +5655,8 @@ enum Company: string implements CompanyInterface
             'lineworks', 'line works corp.', 'line-works', 'line works' => self::lineWorks,
             'infomir', 'infomir,llc' => self::infomir,
             'freesat', 'everyone tv devices limited' => self::freesat,
+            'audacy', 'audacy, inc.' => self::audacy,
+            'philco' => self::philco,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6412,6 +6418,7 @@ enum Company: string implements CompanyInterface
             self::lineWorks => 'LINE WORKS Corp.',
             self::infomir => 'Infomir,LLC',
             self::freesat => 'Everyone TV Devices Limited',
+            self::audacy => 'Audacy, Inc.',
             self::unknown => null,
             default => $this->value,
         };

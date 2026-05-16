@@ -5,20 +5,20 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "general Dell device",
-      "marketingName": "general Dell device",
+      "deviceName": "Chromebook 13 (7310)",
+      "marketingName": "Chromebook 13 (7310)",
       "manufacturer": "Dell",
       "brand": "Dell",
-      "dualOrientation": null,
+      "dualOrientation": false,
       "simCount": 0,
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1920,
+        "height": 1080,
         "touch": false,
-        "size": null
+        "size": 13.3
       },
-      "type": "mobile-device",
-      "ismobile": true,
+      "type": "laptop",
+      "ismobile": false,
       "istv": false,
       "bits": null
     },
