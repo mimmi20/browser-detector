@@ -1,12 +1,12 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Windows; rv:36.0) Gecko/20100101 Firefox/36.0"
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64; rv:38.0) Gecko/20100101 Icedove/38.6.0 Lightning/4.0.6"
     },
     "device": {
       "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": false,
@@ -23,24 +23,24 @@
       "bits": null
     },
     "os": {
-      "name": "Windows",
-      "marketingName": "Windows",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": null,
-      "manufacturer": "Microsoft",
+      "manufacturer": "Linux Foundation",
       "bits": null
     },
     "client": {
-      "name": "thumbnail.ws Bot",
+      "name": "Icedove",
       "modus": null,
-      "version": null,
-      "manufacturer": "thumbnail.ws",
-      "type": "bot",
-      "isbot": true,
+      "version": "38.6.0",
+      "manufacturer": "Software in the Public Interest",
+      "type": "pim",
+      "isbot": false,
       "bits": null
     },
     "engine": {
       "name": "Gecko",
-      "version": "36.0.0",
+      "version": "38.0.0",
       "manufacturer": "Mozilla"
     }
   }

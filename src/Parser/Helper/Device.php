@@ -7801,6 +7801,7 @@ final class Device implements DeviceInterface
             'telia nordic stb' => 'telia=telia nordic stb',
             // polaroid
             'smx4k' => 'polaroid=polaroid smx4k',
+            'aosp on r33a0' => 'polaroid=polaroid p5070w',
             // bell
             'bell streamer' => 'bell=bell streamer',
             // everfine

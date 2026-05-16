@@ -9204,6 +9204,7 @@ final class DeviceTest extends TestCase
             ['Telia Nordic STB', 'telia=telia nordic stb'],
             // polaroid
             ['SMX4K', 'polaroid=polaroid smx4k'],
+            ['AOSP on r33a0', 'polaroid=polaroid p5070w'],
             // bell
             ['Bell Streamer', 'bell=bell streamer'],
             // everfine

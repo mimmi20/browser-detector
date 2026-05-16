@@ -1,7 +1,7 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; Exabot/3.0 (BiggerBetter); +http://www.exabot.com/go/robot)"
+      "user-agent": "Mozilla Waterfox 92.002"
     },
     "device": {
       "architecture": null,
@@ -30,23 +30,23 @@
       "bits": null
     },
     "client": {
-      "name": "Exabot",
+      "name": "Waterfox",
       "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "Dassault Systèmes",
-      "type": "crawler",
-      "isbot": true,
+      "version": "92.002.0",
+      "manufacturer": "BrowserWorks",
+      "type": "browser",
+      "isbot": false,
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Gecko",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "Mozilla"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; ExaleadCloudView/5;)"
+      "user-agent": "Mozilla Waterfox 93.315"
     },
     "device": {
       "architecture": null,
@@ -75,18 +75,18 @@
       "bits": null
     },
     "client": {
-      "name": "Exalead CloudView",
+      "name": "Waterfox",
       "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "Dassault Systèmes",
-      "type": "crawler",
-      "isbot": true,
+      "version": "93.315.0",
+      "manufacturer": "BrowserWorks",
+      "type": "browser",
+      "isbot": false,
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Gecko",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "Mozilla"
     }
   }
 ]

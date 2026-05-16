@@ -1,15 +1,15 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; ExaleadCloudView/5;)"
+      "user-agent": "Mozilla/5.0 (Windows; rv:36.0) Gecko/20100101 Firefox/36.0"
     },
     "device": {
       "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
       "manufacturer": "unknown",
       "brand": "unknown",
-      "dualOrientation": null,
+      "dualOrientation": false,
       "simCount": 0,
       "display": {
         "width": null,
@@ -17,31 +17,31 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown",
+      "type": "desktop",
       "ismobile": false,
       "istv": false,
       "bits": null
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "Windows",
+      "marketingName": "Windows",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "Exalead CloudView",
+      "name": "thumbnail.ws Bot",
       "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "Dassault Systèmes",
-      "type": "bot",
+      "version": null,
+      "manufacturer": "thumbnail.ws",
+      "type": "crawler",
       "isbot": true,
       "bits": null
     },
     "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
+      "name": "Gecko",
+      "version": "36.0.0",
+      "manufacturer": "Mozilla"
     }
   }
 ]
