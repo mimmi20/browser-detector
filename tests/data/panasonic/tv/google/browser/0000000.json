@@ -5,8 +5,8 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Viera TV",
-      "marketingName": "Viera TV",
+      "deviceName": "Smart TV (2022)",
+      "marketingName": "Smart TV (2022)",
       "manufacturer": "Panasonic",
       "brand": "Panasonic",
       "dualOrientation": false,
@@ -42,6 +42,51 @@
       "name": "WebKit",
       "version": null,
       "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux armv8l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Safari/537.36 HbbTV/1.5.1 (+DRM; Panasonic; TX-50JX700E; TPM218E_R.101.000.175.000;; _TV_T32_PANA_2021;) FVC/5.0 (Panasonic; com.tpv-tech.TPM218E;) LaTivu_1.0.1_2021"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Viera TV",
+      "marketingName": "Viera TV",
+      "manufacturer": "Panasonic",
+      "brand": "Panasonic",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "55.0.2883.91",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "55.0.2883.91",
+      "manufacturer": "Google"
     }
   }
 ]

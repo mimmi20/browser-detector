@@ -133,5 +133,50 @@
       "version": null,
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Liulo/1.1.4 (iPhone; iOS 12.5.6; Scale/2.00)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "12.5.6",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Liulo",
+      "modus": null,
+      "version": "1.1.4",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
   }
 ]

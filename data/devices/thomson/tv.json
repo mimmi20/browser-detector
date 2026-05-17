@@ -142,5 +142,37 @@
     },
     "type": "tv",
     "platform": "maemo"
+  },
+  "thomson 32hd55": {
+    "deviceName": "32HD55",
+    "marketingName": "32HD55",
+    "manufacturer": "thomson",
+    "brand": "thomson",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 32
+    },
+    "type": "tv",
+    "platform": "maemo"
+  },
+  "thomson 55ud63": {
+    "deviceName": "55UD63",
+    "marketingName": "55UD63",
+    "manufacturer": "thomson",
+    "brand": "thomson",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 3840,
+      "height": 2160,
+      "touch": false,
+      "size": 55
+    },
+    "type": "tv",
+    "platform": "maemo"
   }
 }

@@ -11308,6 +11308,30 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Philco',
                 'key' => 'philco',
             ],
+            [
+                'type' => 'Funai',
+                'name' => 'Funai',
+                'brandname' => 'Funai',
+                'key' => 'funai',
+            ],
+            [
+                'type' => 'Anker',
+                'name' => 'Anker',
+                'brandname' => 'Anker',
+                'key' => 'anker',
+            ],
+            [
+                'type' => 'Sunny',
+                'name' => 'Sunny',
+                'brandname' => 'Sunny',
+                'key' => 'sunny',
+            ],
+            [
+                'type' => 'Insignia',
+                'name' => 'Insignia',
+                'brandname' => 'Insignia',
+                'key' => 'insignia',
+            ],
         ];
     }
 

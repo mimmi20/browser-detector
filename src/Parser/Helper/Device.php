@@ -169,12 +169,11 @@ final class Device implements DeviceInterface
             'kftt' => 'amazon=amazon kftt',
             'kfapwi' => 'amazon=amazon kfapwi',
             'kfthwi', 'kindle fire hdx 7' => 'amazon=amazon kfthwi',
-            'kfthwa' => 'amazon=amazon kfthwa',
+            'kfthwa', 'kindle fire hdx' => 'amazon=amazon kfthwa',
             'kfsowi', 'amazon kindle fire hd' => 'amazon=amazon kfsowi',
             'aftn' => 'amazon=amazon aftn',
             'aftm' => 'amazon=amazon aftm',
             'aftjmst12' => 'amazon=amazon aftjmst12',
-            'aftbamr311' => 'amazon=amazon aftbamr311',
             'aftb' => 'amazon=amazon aftb',
             'afta' => 'amazon=amazon afta',
             'aeohp' => 'amazon=amazon aeohp',
@@ -190,6 +189,11 @@ final class Device implements DeviceInterface
             'aeoch' => 'amazon=amazon aeoch',
             'aftti43' => 'amazon=amazon aftti43',
             'aftkauk001' => 'amazon=amazon aftkauk001',
+            'aftr' => 'amazon=amazon aftr',
+            'aftkm' => 'amazon=amazon aftkm',
+            'aftka002' => 'amazon=amazon aftka002',
+            'aftkauk002' => 'amazon=amazon aftkauk002',
+            'aeocw' => 'amazon=amazon aeocw',
             // Asus
             'p024' => 'asus=asus p024',
             'asus_x00dd' => 'asus=asus x00dd',
@@ -5670,6 +5674,7 @@ final class Device implements DeviceInterface
             'hisense e71' => 'hisense=hisense e71',
             'hisense e50s 128gb' => 'hisense=hisense e50s 128gb',
             'hisense u607' => 'hisense=hisense u607',
+            'aftha001' => 'hisense=hisense aftha001',
             // insys
             'hn2-m16q' => 'insys=insys hn2-m16q',
             // aiwa
@@ -6385,6 +6390,7 @@ final class Device implements DeviceInterface
             '6102d' => 'tcl=tcl 6102d',
             '50s451' => 'tcl=tcl 50s451',
             'vf685' => 'tcl=tcl vf685',
+            'aftmd001' => 'tcl=tcl aftmd001',
             // general-mobile
             'gm 8' => 'general-mobile=general-mobile gm 8',
             'g314' => 'general-mobile=general-mobile g314',
@@ -7680,6 +7686,7 @@ final class Device implements DeviceInterface
             'grundig google tv', 'grundig android tv' => 'grundig=grundig smart tv',
             'grundig google tv uhd+' => 'grundig=grundig google tv uhd+',
             'afteu014' => 'grundig=grundig afteu014',
+            'afteuff014' => 'grundig=grundig afteuff014',
             // dudu-auto
             'dudu7' => 'dudu-auto=dudu-auto dudu7',
             // vorcom
@@ -7837,6 +7844,7 @@ final class Device implements DeviceInterface
             'bid-at200' => 'sk-broadband=sk-broadband bid-at200',
             // blaupunkt
             'a-stream' => 'blaupunkt=blaupunkt a-stream',
+            'blaupunkt 4k android tv' => 'blaupunkt=blaupunkt 4k android tv',
             // transpeed
             '8k618-t' => 'transpeed=transpeed 8k618-t',
             '8k3528-t' => 'transpeed=transpeed 8k3528-t',
@@ -7885,6 +7893,7 @@ final class Device implements DeviceInterface
             'm8s pro' => 'mecool=mecool m8s pro',
             'bb2 pro' => 'mecool=mecool bb2 pro',
             'minim8s ii' => 'mecool=mecool mini m8s ii',
+            'mecool-bb2' => 'mecool=mecool bb2',
             // ox-tab
             'ox-p010-2' => 'ox-tab=ox-tab ox-p010-2',
             // qlink
@@ -8093,10 +8102,12 @@ final class Device implements DeviceInterface
             'konka 2k android tv' => 'konka=konka 2k smart tv',
             // ok
             'ok google tv' => 'ok=ok smart tv',
+            'aftwi001' => 'ok=ok aftwi001',
             // dyon
             'dyon 2k google tv' => 'dyon=dyon 2k smart tv',
             // panasonic
             'panasonic g00gle tv lcd' => 'panasonic=panasonic smart tv',
+            'aftboxe1' => 'panasonic=panasonic aftboxe1',
             // panavox
             'panavox android tv' => 'panavox=panavox smart tv',
             // tv+
@@ -8349,6 +8360,8 @@ final class Device implements DeviceInterface
             'toshiba chromebook 2 (2015 edition', 'toshiba chromebook 2 (2015 edition)' => 'toshiba=toshiba chromebook 2 (2015)',
             'aftdct31' => 'toshiba=toshiba aftdct31',
             'aftkmst12' => 'toshiba=toshiba aftkmst12',
+            'aftha002' => 'toshiba=toshiba aftha002',
+            'aftbamr311' => 'toshiba=toshiba aftbamr311',
             // smartisan
             'dt2002c' => 'smartisan=smartisan dt2002c',
             'dt1902a' => 'smartisan=smartisan dt1902a',
@@ -8379,6 +8392,22 @@ final class Device implements DeviceInterface
             'afteamr311' => 'insignia=insignia afteamr311',
             // element
             'aftrs' => 'element=element aftrs',
+            // funai
+            'aftmon001' => 'funai=funai aftmon001',
+            'aftmon002' => 'funai=funai aftmon002',
+            // innjoo
+            'fire2 plus lte' => 'innjoo=innjoo fire2 plus lte',
+            'max2_plus_3g' => 'innjoo=innjoo max 2 plus',
+            'fire2 3g' => 'innjoo=innjoo fire2 3g',
+            // nous
+            'ns5008' => 'nous=nous ns5008',
+            'ns5006' => 'nous=nous ns5006',
+            'ns5005' => 'nous=nous ns5005',
+            'ns5003' => 'nous=nous ns5003',
+            'ns5002' => 'nous=nous ns5002',
+            'ns6' => 'nous=nous ns6',
+            // anker
+            'aftmm-anker-ak-d3000111' => 'anker=anker aftmm',
             // other
             default => null,
         };

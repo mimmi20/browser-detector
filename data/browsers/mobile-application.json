@@ -5419,5 +5419,27 @@
       ]
     },
     "engine": "webkit"
+  },
+  "overcast": {
+    "name": "Overcast",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "radio-public": {
+    "name": "RadioPublic",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RadioPublic iOS "
+      ]
+    },
+    "engine": "webkit"
   }
 }

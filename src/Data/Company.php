@@ -3773,6 +3773,14 @@ enum Company: string implements CompanyInterface
 
     case philco = 'Philco';
 
+    case funai = 'Funai';
+
+    case anker = 'Anker';
+
+    case sunny = 'Sunny';
+
+    case insignia = 'Insignia';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5657,6 +5665,10 @@ enum Company: string implements CompanyInterface
             'freesat', 'everyone tv devices limited' => self::freesat,
             'audacy', 'audacy, inc.' => self::audacy,
             'philco' => self::philco,
+            'funai' => self::funai,
+            'anker' => self::anker,
+            'sunny' => self::sunny,
+            'insignia' => self::insignia,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(

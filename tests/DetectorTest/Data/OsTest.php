@@ -1540,7 +1540,7 @@ final class OsTest extends TestCase
                 'name' => 'Roku OS',
                 'marketingName' => 'Roku OS',
                 'manufacturer' => Company::roku,
-                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Roku\/DVP-']],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Roku\/DVP-', 'Roku\/Pluto-', 'RokuOS']],
                 'key' => 'roku-os',
             ],
             [

@@ -136,51 +136,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Andr0id 9; AFTSO001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36 OPR/46.0.2207.0 OMI/4.21.0.273.release HbbTV/1.5.1 ( DRM;Amazon;sophia;unknown;unknown;sophia;) FVC/6.0 (Amazon;sophia;) smarttv_AFTSO001_Build_0019126349446_Chromium_84.0.4147.125"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Smart TV",
-      "marketingName": "Smart TV",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "Fire OS",
-      "marketingName": "Fire OS",
-      "version": "7.0.0",
-      "manufacturer": "Amazon",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera Devices",
-      "modus": null,
-      "version": "4.21.0.273",
-      "manufacturer": "Opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "84.0.4147.125",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.140 Safari/537.36 OPR/46.0.2207.0 OMI/4.21.4.112.Catcher4.66 Model/Hisense-MT9602 VIDAA/5.0(SUNNY;SmartTV;VS0350UC1;MTK9602/V0000.01.00M.M1221;UHD)"
     },
     "device": {
@@ -221,6 +176,51 @@
     "engine": {
       "name": "Blink",
       "version": "84.0.4147.140",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Andr0id 9; AFTBOXE1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.59 Safari/537.36 OPR/46.0.2207.0 OMI/4.23.2.73.AFTdev.465 HbbTV/1.5.1 (+DRM;Amazon;AFTBOXE1-TOSHIBA-65UF3D63DA;0024126536068;unknown;com.amazon.m7632;) smarttv_AFTBOXE1-TOSHIBA-65UF3D63DA_Build_0024126536068_Chromium_108.0.5359.59"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Smart TV",
+      "marketingName": "Smart TV",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Fire OS",
+      "marketingName": "Fire OS",
+      "version": "7.0.0",
+      "manufacturer": "Amazon",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Devices",
+      "modus": null,
+      "version": "4.23.2.73",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.5359.59",
       "manufacturer": "Google"
     }
   }

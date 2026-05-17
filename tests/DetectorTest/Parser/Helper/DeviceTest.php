@@ -195,12 +195,12 @@ final class DeviceTest extends TestCase
             ['KFTHWI', 'amazon=amazon kfthwi'],
             ['Kindle Fire HDX 7', 'amazon=amazon kfthwi'],
             ['KFTHWA', 'amazon=amazon kfthwa'],
+            ['Kindle Fire HDX', 'amazon=amazon kfthwa'],
             ['KFSOWI', 'amazon=amazon kfsowi'],
             ['Amazon Kindle Fire HD', 'amazon=amazon kfsowi'],
             ['AFTN', 'amazon=amazon aftn'],
             ['AFTM', 'amazon=amazon aftm'],
             ['AFTJMST12', 'amazon=amazon aftjmst12'],
-            ['AFTBAMR311', 'amazon=amazon aftbamr311'],
             ['AFTB', 'amazon=amazon aftb'],
             ['AFTA', 'amazon=amazon afta'],
             ['AEOHP', 'amazon=amazon aeohp'],
@@ -217,6 +217,11 @@ final class DeviceTest extends TestCase
             ['AEOCH', 'amazon=amazon aeoch'],
             ['AFTTI43', 'amazon=amazon aftti43'],
             ['AFTKAUK001', 'amazon=amazon aftkauk001'],
+            ['AFTR', 'amazon=amazon aftr'],
+            ['AFTKM', 'amazon=amazon aftkm'],
+            ['AFTKA002', 'amazon=amazon aftka002'],
+            ['AFTKAUK002', 'amazon=amazon aftkauk002'],
+            ['AEOCW', 'amazon=amazon aeocw'],
             // Asus
             ['P024', 'asus=asus p024'],
             ['ASUS_X00DD', 'asus=asus x00dd'],
@@ -6878,6 +6883,7 @@ final class DeviceTest extends TestCase
             ['Hisense E71', 'hisense=hisense e71'],
             ['Hisense E50s 128GB', 'hisense=hisense e50s 128gb'],
             ['Hisense U607', 'hisense=hisense u607'],
+            ['AFTHA001', 'hisense=hisense aftha001'],
             // insys
             ['HN2-M16Q', 'insys=insys hn2-m16q'],
             // aiwa
@@ -7694,6 +7700,7 @@ final class DeviceTest extends TestCase
             ['6102D', 'tcl=tcl 6102d'],
             ['50S451', 'tcl=tcl 50s451'],
             ['VF685', 'tcl=tcl vf685'],
+            ['AFTMD001', 'tcl=tcl aftmd001'],
             // general-mobile
             ['GM 8', 'general-mobile=general-mobile gm 8'],
             ['G314', 'general-mobile=general-mobile g314'],
@@ -9083,6 +9090,7 @@ final class DeviceTest extends TestCase
             ['Grundig Android TV', 'grundig=grundig smart tv'],
             ['Grundig Google TV UHD+', 'grundig=grundig google tv uhd+'],
             ['AFTEU014', 'grundig=grundig afteu014'],
+            ['AFTEUFF014', 'grundig=grundig afteuff014'],
             // dudu-auto
             ['DUDU7', 'dudu-auto=dudu-auto dudu7'],
             // vorcom
@@ -9243,6 +9251,7 @@ final class DeviceTest extends TestCase
             ['BID-AT200', 'sk-broadband=sk-broadband bid-at200'],
             // blaupunkt
             ['A-STREAM', 'blaupunkt=blaupunkt a-stream'],
+            ['BLAUPUNKT 4K Android TV', 'blaupunkt=blaupunkt 4k android tv'],
             // transpeed
             ['8K618-T', 'transpeed=transpeed 8k618-t'],
             ['8K3528-T', 'transpeed=transpeed 8k3528-t'],
@@ -9291,6 +9300,7 @@ final class DeviceTest extends TestCase
             ['M8S PRO', 'mecool=mecool m8s pro'],
             ['BB2 PRO', 'mecool=mecool bb2 pro'],
             ['MINIM8S II', 'mecool=mecool mini m8s ii'],
+            ['Mecool-BB2', 'mecool=mecool bb2'],
             // ox-tab
             ['Ox-p010-2', 'ox-tab=ox-tab ox-p010-2'],
             // qlink
@@ -9500,10 +9510,12 @@ final class DeviceTest extends TestCase
             ['KONKA 2K Android TV', 'konka=konka 2k smart tv'],
             // ok
             ['OK Google TV', 'ok=ok smart tv'],
+            ['AFTWI001', 'ok=ok aftwi001'],
             // dyon
             ['DYON 2K Google TV', 'dyon=dyon 2k smart tv'],
             // panasonic
             ['Panasonic G00gle TV LCD', 'panasonic=panasonic smart tv'],
+            ['AFTBOXE1', 'panasonic=panasonic aftboxe1'],
             // panavox
             ['Panavox Android TV', 'panavox=panavox smart tv'],
             // tv+
@@ -9763,6 +9775,8 @@ final class DeviceTest extends TestCase
             ['Toshiba Chromebook 2 (2015 Edition)', 'toshiba=toshiba chromebook 2 (2015)'],
             ['AFTDCT31', 'toshiba=toshiba aftdct31'],
             ['AFTKMST12', 'toshiba=toshiba aftkmst12'],
+            ['AFTHA002', 'toshiba=toshiba aftha002'],
+            ['AFTBAMR311', 'toshiba=toshiba aftbamr311'],
             // smartisan
             ['OC106', 'smartisan=smartisan oc106'],
             ['DE106', 'smartisan=smartisan de106'],
@@ -9795,6 +9809,22 @@ final class DeviceTest extends TestCase
             ['AFTEAMR311', 'insignia=insignia afteamr311'],
             // element
             ['AFTRS', 'element=element aftrs'],
+            // funai
+            ['AFTMON001', 'funai=funai aftmon001'],
+            ['AFTMON002', 'funai=funai aftmon002'],
+            // innjoo
+            ['Fire2 Plus LTE', 'innjoo=innjoo fire2 plus lte'],
+            ['Max2_Plus_3G', 'innjoo=innjoo max 2 plus'],
+            ['Fire2 3G', 'innjoo=innjoo fire2 3g'],
+            // nous
+            ['NS5008', 'nous=nous ns5008'],
+            ['NS5006', 'nous=nous ns5006'],
+            ['NS5005', 'nous=nous ns5005'],
+            ['NS5003', 'nous=nous ns5003'],
+            ['NS5002', 'nous=nous ns5002'],
+            ['NS6', 'nous=nous ns6'],
+            // anker
+            ['AFTMM-Anker-AK-D3000111', 'anker=anker aftmm'],
             // other
             ['Model"', null],
             [': "', null],
