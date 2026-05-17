@@ -2838,6 +2838,9 @@ final class Device implements DeviceInterface
             'sm-a5760', 'samsung sm-a5760' => 'samsung=samsung sm-a5760',
             'samsung galaxy z fold7' => 'samsung=samsung galaxy z fold7',
             'sm-t517', 'samsung sm-t517' => 'samsung=samsung sm-t517',
+            'samsung family hub 6.0' => 'samsung=samsung familyhub 6.0',
+            'samsung family hub 5.0' => 'samsung=samsung familyhub 5.0',
+            'samsung family hub 4.0' => 'samsung=samsung familyhub 4.0',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -6391,6 +6394,7 @@ final class Device implements DeviceInterface
             '50s451' => 'tcl=tcl 50s451',
             'vf685' => 'tcl=tcl vf685',
             'aftmd001' => 'tcl=tcl aftmd001',
+            'aftmm-tcl-ts8011' => 'tcl=tcl aftmm',
             // general-mobile
             'gm 8' => 'general-mobile=general-mobile gm 8',
             'g314' => 'general-mobile=general-mobile g314',
@@ -7687,6 +7691,7 @@ final class Device implements DeviceInterface
             'grundig google tv uhd+' => 'grundig=grundig google tv uhd+',
             'afteu014' => 'grundig=grundig afteu014',
             'afteuff014' => 'grundig=grundig afteuff014',
+            'afteu011' => 'grundig=grundig afteu011',
             // dudu-auto
             'dudu7' => 'dudu-auto=dudu-auto dudu7',
             // vorcom
@@ -8087,6 +8092,8 @@ final class Device implements DeviceInterface
             'hp chromebook x360 11 g1 ee' => 'hp=hp chromebook x360 11 g1 ee',
             'hp chromebook x2' => 'hp=hp chromebook x2',
             'pvg100' => 'hp=palm pvg100',
+            'hp chromebook 13 g1' => 'hp=hp chromebook 13 g1',
+            'hp chromebook 11 g5' => 'hp=hp chromebook 11 g5',
             // lnmbbs
             'p40-eea' => 'lnmbbs=lnmbbs p40-eea',
             // tyd

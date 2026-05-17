@@ -3894,6 +3894,9 @@ final class DeviceTest extends TestCase
             ['Samsung Galaxy Z Fold7', 'samsung=samsung galaxy z fold7'],
             ['SM-T517', 'samsung=samsung sm-t517'],
             ['SAMSUNG SM-T517', 'samsung=samsung sm-t517'],
+            ['SAMSUNG Family Hub 6.0', 'samsung=samsung familyhub 6.0'],
+            ['SAMSUNG Family Hub 5.0', 'samsung=samsung familyhub 5.0'],
+            ['SAMSUNG Family Hub 4.0', 'samsung=samsung familyhub 4.0'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['LGE-AN20', 'huawei=huawei lge-an20'],
@@ -7701,6 +7704,7 @@ final class DeviceTest extends TestCase
             ['50S451', 'tcl=tcl 50s451'],
             ['VF685', 'tcl=tcl vf685'],
             ['AFTMD001', 'tcl=tcl aftmd001'],
+            ['AFTMM-TCL-TS8011', 'tcl=tcl aftmm'],
             // general-mobile
             ['GM 8', 'general-mobile=general-mobile gm 8'],
             ['G314', 'general-mobile=general-mobile g314'],
@@ -9091,6 +9095,7 @@ final class DeviceTest extends TestCase
             ['Grundig Google TV UHD+', 'grundig=grundig google tv uhd+'],
             ['AFTEU014', 'grundig=grundig afteu014'],
             ['AFTEUFF014', 'grundig=grundig afteuff014'],
+            ['AFTEU011', 'grundig=grundig afteu011'],
             // dudu-auto
             ['DUDU7', 'dudu-auto=dudu-auto dudu7'],
             // vorcom
@@ -9495,6 +9500,8 @@ final class DeviceTest extends TestCase
             ['HP Chromebook x360 11 G1 EE', 'hp=hp chromebook x360 11 g1 ee'],
             ['HP Chromebook x2', 'hp=hp chromebook x2'],
             ['PVG100', 'hp=palm pvg100'],
+            ['HP Chromebook 13 G1', 'hp=hp chromebook 13 g1'],
+            ['HP Chromebook 11 G5', 'hp=hp chromebook 11 g5'],
             // lnmbbs
             ['P40-EEA', 'lnmbbs=lnmbbs p40-eea'],
             // tyd

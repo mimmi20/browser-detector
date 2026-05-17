@@ -141,7 +141,7 @@
     "device": {
       "architecture": null,
       "deviceName": "AFTA",
-      "marketingName": "Fire TV Cube",
+      "marketingName": "Fire TV Cube (2018)",
       "manufacturer": "Amazon",
       "brand": "Amazon",
       "dualOrientation": false,
@@ -226,12 +226,57 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; AFTR) AppleWebKit/537.36 (KHTML, like Gecko) Silk/81.1.248 like Chrome/81.0.4044.117 Safari/537.36 comdirect/1.0 (appVersion:20.5.4;deviceType:mobile)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "AFTR",
+      "marketingName": "Fire TV Cube (Gen 2, 2019)",
+      "manufacturer": "Amazon",
+      "brand": "Amazon",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-media-player",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Fire OS",
+      "marketingName": "Fire OS",
+      "version": "7.0.0",
+      "manufacturer": "Amazon",
+      "bits": null
+    },
+    "client": {
+      "name": "Silk",
+      "modus": null,
+      "version": "81.1.248",
+      "manufacturer": "Amazon",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "81.0.4044.117",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; AFTGAZL) AppleWebKit/537.36 (KHTML, like Gecko) Silk/110.6.7 like Chrome/110.0.5481.212 Safari/537.36"
     },
     "device": {
       "architecture": null,
       "deviceName": "AFTGAZL",
-      "marketingName": "Fire TV Cube (Gen 3)",
+      "marketingName": "Fire TV Cube (Gen 3, 2022)",
       "manufacturer": "Amazon",
       "brand": "Amazon",
       "dualOrientation": false,

@@ -17,7 +17,7 @@
     "/[;(] ?arcelik;/i": "arcelik",
     "/[;(] ?mstar;/i": "mstar",
     "/sunny;/i": "sunny",
-    "/aiwa;|rca;/i": "aiwa",
+    "/aiwa;|\\/rca;/i": "aiwa",
     "/[;(] ?lge? ?;|lg google tv|ti320-du|webos\\.tv|lgwebostv|netcast|web0s;/i": "lg",
     "/[;(] ?hisense;|hisense_gx1200v|hisense google tv|hisense-nt72671d|hismart\\-?tv|he55a6103fuwt/i": "hisense",
     "/[;(] ?telefunken;|telefunken,/i": "telefunken",

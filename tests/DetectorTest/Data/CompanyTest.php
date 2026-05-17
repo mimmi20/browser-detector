@@ -11332,6 +11332,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Insignia',
                 'key' => 'insignia',
             ],
+            [
+                'type' => 'Wireshark Foundation',
+                'name' => 'Wireshark Foundation',
+                'brandname' => 'Wireshark Foundation',
+                'key' => 'wireshark-foundation',
+            ],
         ];
     }
 

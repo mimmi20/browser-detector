@@ -85,6 +85,8 @@ enum Engine: string implements EngineInterface
 
     case dillo = 'Dillo';
 
+    case arachne = 'Arachne';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -125,6 +127,7 @@ enum Engine: string implements EngineInterface
             'ekiohflow' => self::ekiohflow,
             'maple' => self::maple,
             'dillo' => self::dillo,
+            'arachne' => self::arachne,
             default => throw new UnexpectedValueException(
                 sprintf('the engine "%s" is unknown', $name),
             ),
@@ -197,6 +200,7 @@ enum Engine: string implements EngineInterface
             self::gecko => ['factory' => GeckoFactory::class, 'search' => null],
             self::trident => ['factory' => TridentFactory::class, 'search' => null],
             self::goanna => ['factory' => GoannaFactory::class, 'search' => null],
+            self::arachne => ['factory' => VersionBuilderFactory::class, 'search' => ['Arachne\\/5\\.']],
             default => ['factory' => null, 'search' => null],
         };
     }

@@ -6028,5 +6028,17 @@
       ]
     },
     "engine": null
+  },
+  "xchaos arachne": {
+    "name": "Arachne",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "xChaos_Arachne\\/5\\."
+      ]
+    },
+    "engine": "arachne"
   }
 }

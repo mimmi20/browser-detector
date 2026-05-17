@@ -1,7 +1,7 @@
 {
   "general thomson tv": {
-    "deviceName": "General Thomson TV",
-    "marketingName": "General Thomson TV",
+    "deviceName": "general Thomson TV",
+    "marketingName": "general Thomson TV",
     "manufacturer": "thomson",
     "brand": "thomson",
     "dualOrientation": false,
@@ -171,6 +171,22 @@
       "height": 2160,
       "touch": false,
       "size": 55
+    },
+    "type": "tv",
+    "platform": "maemo"
+  },
+  "thomson 40fd54": {
+    "deviceName": "40FD54",
+    "marketingName": "40FD54",
+    "manufacturer": "thomson",
+    "brand": "thomson",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 40
     },
     "type": "tv",
     "platform": "maemo"

@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; AEOCW) AppleWebKit/537.36 (KHTML, like Gecko) Silk/94.4.4 like Chrome/94.0.4606.128 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "AEOCW",
+      "marketingName": "Echo Show 8 (2023)",
+      "manufacturer": "Amazon",
+      "brand": "Amazon",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smart-display",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Fire OS",
+      "marketingName": "Fire OS",
+      "version": "6.0.0",
+      "manufacturer": "Amazon",
+      "bits": null
+    },
+    "client": {
+      "name": "Silk",
+      "modus": null,
+      "version": "94.4.4",
+      "manufacturer": "Amazon",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "94.0.4606.128",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; AEOHY) AppleWebKit/537.36 (KHTML, like Gecko) Silk/94.3.10 like Chrome/94.0.4606.126 Safari/537.36"
     },
     "device": {

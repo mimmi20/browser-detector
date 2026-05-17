@@ -294,6 +294,13 @@ final class EngineTest extends TestCase
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Dillo']],
                 'key' => 'dillo',
             ],
+            [
+                'type' => 'Arachne',
+                'name' => 'Arachne',
+                'manufacturer' => Company::unknown,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Arachne\\/5\\.']],
+                'key' => 'arachne',
+            ],
         ];
     }
 }

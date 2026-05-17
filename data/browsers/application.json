@@ -1633,5 +1633,17 @@
       ]
     },
     "engine": "webkit"
+  },
+  "wireshark": {
+    "name": "Wireshark",
+    "manufacturer": "wireshark-foundation",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Wireshark"
+      ]
+    },
+    "engine": null
   }
 }

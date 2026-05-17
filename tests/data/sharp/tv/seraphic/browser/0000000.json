@@ -46,6 +46,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36 SRAF/4.0 HbbTV/1.4.1 (+DRM; UMC-Sharp; FVP6586; v3.5; v1.0; TP.MS6586.U705,LC-50UI8652E; ) CE-HTML/1.0 FVC/3.0 (UMC-Sharp; FVP6586; )"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "LC-50UI8652E",
+      "marketingName": "LC-50UI8652E",
+      "manufacturer": "Sharp",
+      "brand": "Sharp",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 50
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Sraf",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Seraphic",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "47.0.2526.106",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36 SRAF/3.5 HbbTV/1.2.1 (; Sharp_UMC; LC-65CUG8052E; V4.37; v1.0; ); CE-HTML/1.0 FXM-U2FsdGVkX1+qygAVgRBWrx9zKKVQpe5axYxN9SGpzwfOS8DKxsAl6l32YZ5gSuTw-END"
     },
     "device": {
