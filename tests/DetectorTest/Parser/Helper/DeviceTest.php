@@ -7107,6 +7107,8 @@ final class DeviceTest extends TestCase
             ['Onn. 4K Streaming Box', 'onn=onn 4k streaming box'],
             ['100005206', 'onn=onn 100005206'],
             ['100012584', 'onn=onn 100012584'],
+            ['ONA19TB002', 'onn=onn ona19tb002'],
+            ['ONA19TB003', 'onn=onn ona19tb003'],
             // archos
             ['Archos 101c Platinum', 'archos=archos 101c platinum'],
             ['Archos 101b Xenon v2', 'archos=archos 101b xenon v2'],
@@ -8846,6 +8848,8 @@ final class DeviceTest extends TestCase
             ['NOVA60 i', 'condor=condor nova 60i'],
             ['NOVA 70SE', 'condor=condor nova 70 se'],
             ['NOVA 70', 'condor=condor nova 70'],
+            ['TB105L', 'condor=condor tb105l'],
+            ['TB717G', 'condor=condor tb717g'],
             // f-plus/f+
             ['R570E', 'f-plus=f-plus r570e'],
             // ['SH65 2GB/32GB 4800mAh GMS', 'f-plus=f-plus sh65'],
@@ -9242,6 +9246,7 @@ final class DeviceTest extends TestCase
             // polaroid
             ['SMX4K', 'polaroid=polaroid smx4k'],
             ['AOSP on r33a0', 'polaroid=polaroid p5070w'],
+            ['POMDTB006', 'polaroid=polaroid pomdtb006'],
             // bell
             ['Bell Streamer', 'bell=bell streamer'],
             // everfine

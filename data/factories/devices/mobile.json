@@ -557,7 +557,7 @@
     "/h24yq2200gr/i": "hiper",
     "/stb9097/i": "avoca",
     "/nbtb101/i": "new-bridge",
-    "/tb[0-9]{3,4}/i": "acme",
+    "/(?<![a-z])tb[0-9]{3,4}/i": "acme",
     "/nt\\. ?(?:p|i)10g2/i": "ninetec",
     "/tp[0-9]{2}-3g/i": "theq",
     "/ftj?[0-9]{3}|ftj17a00/i": "freetel",

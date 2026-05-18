@@ -5888,6 +5888,8 @@ final class Device implements DeviceInterface
             'onn. 4k streaming box' => 'onn=onn 4k streaming box',
             '100005206' => 'onn=onn 100005206',
             '100012584' => 'onn=onn 100012584',
+            'ona19tb002' => 'onn=onn ona19tb002',
+            'ona19tb003' => 'onn=onn ona19tb003',
             // archos
             'archos 101c platinum' => 'archos=archos 101c platinum',
             'archos 101b xenon v2' => 'archos=archos 101b xenon v2',
@@ -7436,6 +7438,8 @@ final class Device implements DeviceInterface
             'nova60 i' => 'condor=condor nova 60i',
             'nova 70se' => 'condor=condor nova 70 se',
             'nova 70' => 'condor=condor nova 70',
+            'tb105l' => 'condor=condor tb105l',
+            'tb717g' => 'condor=condor tb717g',
             // f-plus/f+
             'r570e' => 'f-plus=f-plus r570e',
             // need to be detected with regex
@@ -7826,6 +7830,7 @@ final class Device implements DeviceInterface
             // polaroid
             'smx4k' => 'polaroid=polaroid smx4k',
             'aosp on r33a0' => 'polaroid=polaroid p5070w',
+            'pomdtb006' => 'polaroid=polaroid pomdtb006',
             // bell
             'bell streamer' => 'bell=bell streamer',
             // everfine
