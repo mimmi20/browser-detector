@@ -623,6 +623,22 @@
     "type": "phablet",
     "platform": "android"
   },
+  "samsung sm-n975c": {
+    "deviceName": "SM-N975C",
+    "marketingName": "Galaxy Note 10+ 4G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 3040,
+      "height": 1440,
+      "touch": true,
+      "size": 6.8
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
   "samsung sm-n976": {
     "deviceName": "SM-N976",
     "marketingName": "Galaxy Note 10+ 5G",
@@ -2735,6 +2751,38 @@
     "type": "phablet",
     "platform": "android"
   },
+  "samsung sm-f711j": {
+    "deviceName": "SM-F711J",
+    "marketingName": "Galaxy Z Flip 3 5G (Japan)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2640,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung scg12": {
+    "deviceName": "SCG12",
+    "marketingName": "Galaxy Z Flip 3 5G (Japan)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2640,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
   "samsung sm-f926b": {
     "deviceName": "SM-F926B",
     "marketingName": "Galaxy Z Fold 3 5G (International)",
@@ -3714,6 +3762,22 @@
   "samsung sm-f9007": {
     "deviceName": "SM-F9007",
     "marketingName": "Galaxy Fold 5G (China, Hong Kong)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2152,
+      "height": 1536,
+      "touch": true,
+      "size": 7.3
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-f900w": {
+    "deviceName": "SM-F900W",
+    "marketingName": "Galaxy Fold 5G (Canada)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,

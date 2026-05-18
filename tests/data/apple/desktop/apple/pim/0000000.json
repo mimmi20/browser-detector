@@ -271,6 +271,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mail/1084 CFNetwork/454.12.4 Darwin/10.8.0 (x86_64) (iMac12%2C1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iMac 12,1",
+      "marketingName": "iMac 21.5\" (2011)",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": false,
+        "size": 21.5
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.6.8",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Apple Mail",
+      "modus": null,
+      "version": "1084.0.0",
+      "manufacturer": "Apple",
+      "type": "pim",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "454.12.4",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mail/1827 CFNetwork/673.0.3 Darwin/13.0.0 (x86_64) (iMac14%2C2)"
     },
     "device": {

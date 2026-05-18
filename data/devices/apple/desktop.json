@@ -15,9 +15,25 @@
     "type": "desktop",
     "platform": null
   },
+  "mac mini 9,1": {
+    "deviceName": "Mac Mini 9,1",
+    "marketingName": "Mac Mini (2020)",
+    "manufacturer": "apple",
+    "brand": "apple",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "desktop",
+    "platform": null
+  },
   "mac mini 8,1": {
     "deviceName": "Mac Mini 8,1",
-    "marketingName": "Mac Mini",
+    "marketingName": "Mac Mini (2018)",
     "manufacturer": "apple",
     "brand": "apple",
     "dualOrientation": false,
@@ -143,6 +159,22 @@
     "type": "desktop",
     "platform": null
   },
+  "macpro 6,1": {
+    "deviceName": "MacPro 6,1",
+    "marketingName": "Mac Pro (2013)",
+    "manufacturer": "apple",
+    "brand": "apple",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "desktop",
+    "platform": null
+  },
   "powermac": {
     "deviceName": "PowerMac",
     "marketingName": "PowerMac",
@@ -175,6 +207,38 @@
     "type": "desktop",
     "platform": null
   },
+  "imac 21,1": {
+    "deviceName": "iMac 21,1",
+    "marketingName": "iMac 23.5\" (2021)",
+    "manufacturer": "apple",
+    "brand": "apple",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 4480,
+      "height": 2520,
+      "touch": false,
+      "size": 23.5
+    },
+    "type": "desktop",
+    "platform": null
+  },
+  "imac 20,2": {
+    "deviceName": "iMac 20,2",
+    "marketingName": "iMac 27\" (2020)",
+    "manufacturer": "apple",
+    "brand": "apple",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 5120,
+      "height": 2880,
+      "touch": false,
+      "size": 27
+    },
+    "type": "desktop",
+    "platform": null
+  },
   "imac 20,1": {
     "deviceName": "iMac 20,1",
     "marketingName": "iMac 27\" (2020)",
@@ -187,6 +251,22 @@
       "height": 2880,
       "touch": false,
       "size": 27
+    },
+    "type": "desktop",
+    "platform": null
+  },
+  "imac 19,2": {
+    "deviceName": "iMac 19,2",
+    "marketingName": "iMac 21.5\" (2019)",
+    "manufacturer": "apple",
+    "brand": "apple",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 4096,
+      "height": 2304,
+      "touch": false,
+      "size": 21.5
     },
     "type": "desktop",
     "platform": null
@@ -287,6 +367,22 @@
     "type": "desktop",
     "platform": null
   },
+  "imac 12,1": {
+    "deviceName": "iMac 12,1",
+    "marketingName": "iMac 21.5\" (2011)",
+    "manufacturer": "apple",
+    "brand": "apple",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 21.5
+    },
+    "type": "desktop",
+    "platform": null
+  },
   "imac 11,3": {
     "deviceName": "iMac 11,3",
     "marketingName": "iMac 27\" (2010)",
@@ -363,38 +459,6 @@
       "height": 900,
       "touch": false,
       "size": 17
-    },
-    "type": "desktop",
-    "platform": null
-  },
-  "imac 20,2": {
-    "deviceName": "iMac 20,2",
-    "marketingName": "iMac 27\" (2020)",
-    "manufacturer": "apple",
-    "brand": "apple",
-    "dualOrientation": false,
-    "simCount": 0,
-    "display": {
-      "width": 5120,
-      "height": 2880,
-      "touch": false,
-      "size": 27
-    },
-    "type": "desktop",
-    "platform": null
-  },
-  "imac 12,1": {
-    "deviceName": "iMac 12,1",
-    "marketingName": "iMac 21.5\" (2011)",
-    "manufacturer": "apple",
-    "brand": "apple",
-    "dualOrientation": false,
-    "simCount": 0,
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": false,
-      "size": 21.5
     },
     "type": "desktop",
     "platform": null

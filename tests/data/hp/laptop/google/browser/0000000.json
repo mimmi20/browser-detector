@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 7.1.1; HP Chromebook 11 G5 Build/R79-12607.81.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Chromebook 11 G5",
+      "marketingName": "Chromebook 11 G5",
+      "manufacturer": "HP",
+      "brand": "HP",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1366,
+        "height": 768,
+        "touch": false,
+        "size": 11.6
+      },
+      "type": "laptop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "ChromeOS",
+      "marketingName": "ChromeOS",
+      "version": "12607.81.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Browser",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Dalvik/2.1.0 (Linux; U; Android 9; HP Chromebook x360 11 G1 EE Build/R80-12739.111.0)"
     },
     "device": {
@@ -42,6 +87,51 @@
       "name": "WebKit",
       "version": null,
       "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; HP Chromebook 13 G1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.162 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Chromebook 13 G1",
+      "marketingName": "Chromebook 13 G1",
+      "manufacturer": "HP",
+      "brand": "HP",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3200,
+        "height": 1800,
+        "touch": false,
+        "size": 13.3
+      },
+      "type": "laptop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "ChromeOS",
+      "marketingName": "ChromeOS",
+      "version": null,
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "80.0.3987.162",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "80.0.3987.162",
+      "manufacturer": "Google"
     }
   }
 ]
