@@ -124,6 +124,7 @@ final class Device implements DeviceInterface
             'chromebook 14 (cb3-431)', 'chromebook 14 (cb3-431' => 'acer=acer chromebook 14',
             'm10-11' => 'acer=acer m10-11',
             'b3-a50' => 'acer=acer b3-a50',
+            'acer chromebook 15 (cb3-532)', 'acer chromebook 15 (cb3-532' => 'acer=acer chromebook 15',
             // AllCall
             'atom' => 'allcall=allcall atom',
             'hero_20_pro' => 'allcall=allcall hero 20 pro',
@@ -167,16 +168,12 @@ final class Device implements DeviceInterface
             'kfarwi' => 'amazon=amazon kfarwi',
             'kftt' => 'amazon=amazon kftt',
             'kfapwi' => 'amazon=amazon kfapwi',
-            'kfthwi' => 'amazon=amazon kfthwi',
-            'kfthwa' => 'amazon=amazon kfthwa',
-            'kfsowi' => 'amazon=amazon kfsowi',
-            'aftrs' => 'amazon=amazon aftrs',
+            'kfthwi', 'kindle fire hdx 7' => 'amazon=amazon kfthwi',
+            'kfthwa', 'kindle fire hdx' => 'amazon=amazon kfthwa',
+            'kfsowi', 'amazon kindle fire hd' => 'amazon=amazon kfsowi',
             'aftn' => 'amazon=amazon aftn',
             'aftm' => 'amazon=amazon aftm',
-            'aftkmst12' => 'amazon=amazon aftkmst12',
             'aftjmst12' => 'amazon=amazon aftjmst12',
-            'afteamr311' => 'amazon=amazon afteamr311',
-            'aftbamr311' => 'amazon=amazon aftbamr311',
             'aftb' => 'amazon=amazon aftb',
             'afta' => 'amazon=amazon afta',
             'aeohp' => 'amazon=amazon aeohp',
@@ -184,6 +181,19 @@ final class Device implements DeviceInterface
             'aftka' => 'amazon=amazon aftka',
             'aftgazl' => 'amazon=amazon aftgazl',
             'aeohy' => 'amazon=amazon aeohy',
+            'amazon kindle fire2' => 'amazon=amazon kindle fire 2',
+            'sd4930ur' => 'amazon=amazon sd4930ur',
+            'amazon tate' => 'amazon=amazon tate',
+            'amazon jem' => 'amazon=amazon jem',
+            'amazon kindle fire', 'kindle fire' => 'amazon=amazon d01400',
+            'aeoch' => 'amazon=amazon aeoch',
+            'aftti43' => 'amazon=amazon aftti43',
+            'aftkauk001' => 'amazon=amazon aftkauk001',
+            'aftr' => 'amazon=amazon aftr',
+            'aftkm' => 'amazon=amazon aftkm',
+            'aftka002' => 'amazon=amazon aftka002',
+            'aftkauk002' => 'amazon=amazon aftkauk002',
+            'aeocw' => 'amazon=amazon aeocw',
             // Asus
             'p024' => 'asus=asus p024',
             'asus_x00dd' => 'asus=asus x00dd',
@@ -230,6 +240,7 @@ final class Device implements DeviceInterface
             'asus_x01bda' => 'asus=asus x01bda',
             'zb631kl' => 'asus=asus zb631kl',
             'zb602kl' => 'asus=asus zb602kl',
+            'asus chromebook flip c101pa' => 'asus=asus chromebook flip c101pa',
             // Google
             'nexus 7' => 'google=google nexus 7',
             'pixel 3', 'aosp on blueline' => 'google=google pixel 3',
@@ -1398,6 +1409,7 @@ final class Device implements DeviceInterface
             'redmi k30s ultra' => 'xiaomi=xiaomi redmi k30s ultra',
             'mi cc9e' => 'xiaomi=xiaomi mi cc9e',
             'aftanna0' => 'xiaomi=xiaomi aftanna0',
+            'redmi 15' => 'xiaomi=xiaomi redmi 15',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -1783,6 +1795,7 @@ final class Device implements DeviceInterface
             'sm-n975', 'samsung sm-n975' => 'samsung=samsung sm-n975',
             'sm-n975u', 'samsung sm-n975u' => 'samsung=samsung sm-n975u',
             'sm-n975u1', 'samsung sm-n975u1' => 'samsung=samsung sm-n975u1',
+            'sm-n975c', 'samsung sm-n975c' => 'samsung=samsung sm-n975c',
             'sm-a805f' => 'samsung=samsung sm-a805f',
             'sm-t535' => 'samsung=samsung sm-t535',
             'sm-t555' => 'samsung=samsung sm-t555',
@@ -1847,7 +1860,7 @@ final class Device implements DeviceInterface
             'sm-s711b', 'samsung sm-s711b' => 'samsung=samsung sm-s711b',
             'sm-t295', 'samsung sm-t295' => 'samsung=samsung sm-t295',
             'sm-t297', 'samsung sm-t297' => 'samsung=samsung sm-t297',
-            'sm-f711u1' => 'samsung=samsung sm-f711u1',
+            'sm-f711u1', 'samsung sm-f711u1' => 'samsung=samsung sm-f711u1',
             'sm-j530fm' => 'samsung=samsung sm-j530fm',
             'sm-s127dl' => 'samsung=samsung sm-s127dl',
             'sm-j810y' => 'samsung=samsung sm-j810y',
@@ -2084,8 +2097,9 @@ final class Device implements DeviceInterface
             'sm-f900u', 'samsung sm-f900u' => 'samsung=samsung sm-f900u',
             'sm-f900u1', 'samsung sm-f900u1' => 'samsung=samsung sm-f900u1',
             'sm-f900f', 'samsung sm-f900f' => 'samsung=samsung sm-f900f',
-            'sm-f9007' => 'samsung=samsung sm-f9007',
-            'sm-f9000' => 'samsung=samsung sm-f9000',
+            'sm-f9007', 'samsung sm-f9007' => 'samsung=samsung sm-f9007',
+            'sm-f9000', 'samsung sm-f9000' => 'samsung=samsung sm-f9000',
+            'sm-f900w', 'samsung sm-f900w' => 'samsung=samsung sm-f900w',
             'sm-f741w' => 'samsung=samsung sm-f741w',
             'sm-f741u1' => 'samsung=samsung sm-f741u1',
             'sm-f741u' => 'samsung=samsung sm-f741u',
@@ -2097,8 +2111,9 @@ final class Device implements DeviceInterface
             'sm-f731n' => 'samsung=samsung sm-f731n',
             'sm-f731j' => 'samsung=samsung sm-f731j',
             'sm-f7310' => 'samsung=samsung sm-f7310',
-            'sm-f711w' => 'samsung=samsung sm-f711w',
-            'sm-f711n' => 'samsung=samsung sm-f711n',
+            'sm-f711w', 'samsung sm-f711w' => 'samsung=samsung sm-f711w',
+            'sm-f711n', 'samsung sm-f711n' => 'samsung=samsung sm-f711n',
+            'sm-f711j', 'samsung sm-f711j' => 'samsung=samsung sm-f711j',
             'sm-f707w', 'samsung sm-f707w' => 'samsung=samsung sm-f707w',
             'sm-f707u1', 'samsung sm-f707u1' => 'samsung=samsung sm-f707u1',
             'sm-f707u', 'samsung sm-f707u' => 'samsung=samsung sm-f707u',
@@ -2264,6 +2279,7 @@ final class Device implements DeviceInterface
             'scg13' => 'samsung=samsung scg13',
             'sc-53c' => 'samsung=samsung sc-53c',
             'scg15' => 'samsung=samsung scg15',
+            'scg12' => 'samsung=samsung scg12',
             'sm-a366b', 'samsung sm-a366b' => 'samsung=samsung sm-a366b',
             'sm-a366e', 'samsung sm-a366e' => 'samsung=samsung sm-a366e',
             'sm-a366u', 'samsung sm-a366u' => 'samsung=samsung sm-a366u',
@@ -2818,6 +2834,17 @@ final class Device implements DeviceInterface
             'sm-r730a', 'samsung sm-r730a' => 'samsung=samsung sm-r730a',
             'sm-z910f', 'samsung sm-z910f' => 'samsung=samsung sm-z910f',
             'samsung chromebook 3' => 'samsung=samsung chromebook 3',
+            'sm-a576b', 'samsung sm-a576b' => 'samsung=samsung sm-a576b',
+            'sm-a576q', 'samsung sm-a576q' => 'samsung=samsung sm-a576q',
+            'sm-a576u1', 'samsung sm-a576u1' => 'samsung=samsung sm-a576u1',
+            'sm-a576w', 'samsung sm-a576w' => 'samsung=samsung sm-a576w',
+            'sm-a576z', 'samsung sm-a576z' => 'samsung=samsung sm-a576z',
+            'sm-a5760', 'samsung sm-a5760' => 'samsung=samsung sm-a5760',
+            'samsung galaxy z fold7' => 'samsung=samsung galaxy z fold7',
+            'sm-t517', 'samsung sm-t517' => 'samsung=samsung sm-t517',
+            'samsung family hub 6.0' => 'samsung=samsung familyhub 6.0',
+            'samsung family hub 5.0' => 'samsung=samsung familyhub 5.0',
+            'samsung family hub 4.0' => 'samsung=samsung familyhub 4.0',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -5654,6 +5681,7 @@ final class Device implements DeviceInterface
             'hisense e71' => 'hisense=hisense e71',
             'hisense e50s 128gb' => 'hisense=hisense e50s 128gb',
             'hisense u607' => 'hisense=hisense u607',
+            'aftha001' => 'hisense=hisense aftha001',
             // insys
             'hn2-m16q' => 'insys=insys hn2-m16q',
             // aiwa
@@ -5781,6 +5809,7 @@ final class Device implements DeviceInterface
             'sh-rm14' => 'sharp=sharp sh-rm14',
             'sh01a' => 'sharp=sharp sh01a',
             'sh3c' => 'sharp=sharp sh3c',
+            'sh03b' => 'sharp=sharp sh03b',
             // kyocera
             'a301kc' => 'kyocera=kyocera a301kc',
             'kyv41' => 'kyocera=kyocera kyv41',
@@ -5859,6 +5888,8 @@ final class Device implements DeviceInterface
             'onn. 4k streaming box' => 'onn=onn 4k streaming box',
             '100005206' => 'onn=onn 100005206',
             '100012584' => 'onn=onn 100012584',
+            'ona19tb002' => 'onn=onn ona19tb002',
+            'ona19tb003' => 'onn=onn ona19tb003',
             // archos
             'archos 101c platinum' => 'archos=archos 101c platinum',
             'archos 101b xenon v2' => 'archos=archos 101b xenon v2',
@@ -6369,6 +6400,8 @@ final class Device implements DeviceInterface
             '6102d' => 'tcl=tcl 6102d',
             '50s451' => 'tcl=tcl 50s451',
             'vf685' => 'tcl=tcl vf685',
+            'aftmd001' => 'tcl=tcl aftmd001',
+            'aftmm-tcl-ts8011' => 'tcl=tcl aftmm',
             // general-mobile
             'gm 8' => 'general-mobile=general-mobile gm 8',
             'g314' => 'general-mobile=general-mobile g314',
@@ -6727,6 +6760,8 @@ final class Device implements DeviceInterface
             'c110l' => 'blu=blu c110l',
             'bold n1' => 'blu=blu bold n1',
             // apple
+            'iphone18,5', 'iph18,5' => 'apple=apple iphone 18,5',
+            'iphone18,4', 'iph18,4' => 'apple=apple iphone 18,4',
             'iphone18,3', 'iph18,3' => 'apple=apple iphone 18,3',
             'iphone18,2', 'iph18,2' => 'apple=apple iphone 18,2',
             'iphone18,1', 'iph18,1' => 'apple=apple iphone 18,1',
@@ -7403,6 +7438,8 @@ final class Device implements DeviceInterface
             'nova60 i' => 'condor=condor nova 60i',
             'nova 70se' => 'condor=condor nova 70 se',
             'nova 70' => 'condor=condor nova 70',
+            'tb105l' => 'condor=condor tb105l',
+            'tb717g' => 'condor=condor tb717g',
             // f-plus/f+
             'r570e' => 'f-plus=f-plus r570e',
             // need to be detected with regex
@@ -7661,6 +7698,9 @@ final class Device implements DeviceInterface
             'gr-tb10s' => 'grundig=grundig gr-tb10s',
             'grundig google tv', 'grundig android tv' => 'grundig=grundig smart tv',
             'grundig google tv uhd+' => 'grundig=grundig google tv uhd+',
+            'afteu014' => 'grundig=grundig afteu014',
+            'afteuff014' => 'grundig=grundig afteuff014',
+            'afteu011' => 'grundig=grundig afteu011',
             // dudu-auto
             'dudu7' => 'dudu-auto=dudu-auto dudu7',
             // vorcom
@@ -7789,6 +7829,8 @@ final class Device implements DeviceInterface
             'telia nordic stb' => 'telia=telia nordic stb',
             // polaroid
             'smx4k' => 'polaroid=polaroid smx4k',
+            'aosp on r33a0' => 'polaroid=polaroid p5070w',
+            'pomdtb006' => 'polaroid=polaroid pomdtb006',
             // bell
             'bell streamer' => 'bell=bell streamer',
             // everfine
@@ -7817,6 +7859,7 @@ final class Device implements DeviceInterface
             'bid-at200' => 'sk-broadband=sk-broadband bid-at200',
             // blaupunkt
             'a-stream' => 'blaupunkt=blaupunkt a-stream',
+            'blaupunkt 4k android tv' => 'blaupunkt=blaupunkt 4k android tv',
             // transpeed
             '8k618-t' => 'transpeed=transpeed 8k618-t',
             '8k3528-t' => 'transpeed=transpeed 8k3528-t',
@@ -7865,6 +7908,7 @@ final class Device implements DeviceInterface
             'm8s pro' => 'mecool=mecool m8s pro',
             'bb2 pro' => 'mecool=mecool bb2 pro',
             'minim8s ii' => 'mecool=mecool mini m8s ii',
+            'mecool-bb2' => 'mecool=mecool bb2',
             // ox-tab
             'ox-p010-2' => 'ox-tab=ox-tab ox-p010-2',
             // qlink
@@ -8057,6 +8101,9 @@ final class Device implements DeviceInterface
             // hp
             'hp chromebook x360 11 g1 ee' => 'hp=hp chromebook x360 11 g1 ee',
             'hp chromebook x2' => 'hp=hp chromebook x2',
+            'pvg100' => 'hp=palm pvg100',
+            'hp chromebook 13 g1' => 'hp=hp chromebook 13 g1',
+            'hp chromebook 11 g5' => 'hp=hp chromebook 11 g5',
             // lnmbbs
             'p40-eea' => 'lnmbbs=lnmbbs p40-eea',
             // tyd
@@ -8072,10 +8119,12 @@ final class Device implements DeviceInterface
             'konka 2k android tv' => 'konka=konka 2k smart tv',
             // ok
             'ok google tv' => 'ok=ok smart tv',
+            'aftwi001' => 'ok=ok aftwi001',
             // dyon
             'dyon 2k google tv' => 'dyon=dyon 2k smart tv',
             // panasonic
             'panasonic g00gle tv lcd' => 'panasonic=panasonic smart tv',
+            'aftboxe1' => 'panasonic=panasonic aftboxe1',
             // panavox
             'panavox android tv' => 'panavox=panavox smart tv',
             // tv+
@@ -8104,6 +8153,7 @@ final class Device implements DeviceInterface
             'bauhn 4k android tv' => 'bauhn=bauhn 4k android tv',
             // jvc
             'jvc android tv' => 'jvc=jvc smart tv',
+            'aftso001' => 'jvc=jvc aftso001',
             // beko
             'beko android tv' => 'beko=beko smart tv',
             // altus
@@ -8325,9 +8375,56 @@ final class Device implements DeviceInterface
             'evolveo smart tv stick d2' => 'evolveo=evolveo smart tv stick d2',
             // toshiba
             'toshiba chromebook 2 (2015 edition', 'toshiba chromebook 2 (2015 edition)' => 'toshiba=toshiba chromebook 2 (2015)',
+            'aftdct31' => 'toshiba=toshiba aftdct31',
+            'aftkmst12' => 'toshiba=toshiba aftkmst12',
+            'aftha002' => 'toshiba=toshiba aftha002',
+            'aftbamr311' => 'toshiba=toshiba aftbamr311',
             // smartisan
+            'dt2002c' => 'smartisan=smartisan dt2002c',
+            'dt1902a' => 'smartisan=smartisan dt1902a',
+            'smartisan u3 pro' => 'smartisan=smartisan u3 pro',
+            'dt1901a' => 'smartisan=smartisan dt1901a',
+            'yq603' => 'smartisan=smartisan yq603',
+            'yq601' => 'smartisan=smartisan yq601',
+            'sm919' => 'smartisan=smartisan sm919',
+            'sm801' => 'smartisan=smartisan sm801',
+            'sm705' => 'smartisan=smartisan sm705',
+            'sm701' => 'smartisan=smartisan sm701',
+            'os105' => 'smartisan=smartisan os105',
+            'os103' => 'smartisan=smartisan os103',
+            'oe106' => 'smartisan=smartisan oe106',
+            'od105' => 'smartisan=smartisan od105',
+            'od103' => 'smartisan=smartisan od103',
             'oc106' => 'smartisan=smartisan oc106',
+            'oc105' => 'smartisan=smartisan oc105',
             'de106' => 'smartisan=smartisan de106',
+            // dell
+            'dell chromebook 13 (7310', 'dell chromebook 13 (7310)' => 'dell=dell chromebook 13 (7310)',
+            'dell chromebook 11 (3180', 'dell chromebook 11 (3180)' => 'dell=dell chromebook 11 (3180)',
+            // infomir
+            'mag200' => 'infomir=infomir mag200',
+            // digiland
+            'dl1036' => 'digiland=digiland dl1036',
+            // insignia
+            'afteamr311' => 'insignia=insignia afteamr311',
+            // element
+            'aftrs' => 'element=element aftrs',
+            // funai
+            'aftmon001' => 'funai=funai aftmon001',
+            'aftmon002' => 'funai=funai aftmon002',
+            // innjoo
+            'fire2 plus lte' => 'innjoo=innjoo fire2 plus lte',
+            'max2_plus_3g' => 'innjoo=innjoo max 2 plus',
+            'fire2 3g' => 'innjoo=innjoo fire2 3g',
+            // nous
+            'ns5008' => 'nous=nous ns5008',
+            'ns5006' => 'nous=nous ns5006',
+            'ns5005' => 'nous=nous ns5005',
+            'ns5003' => 'nous=nous ns5003',
+            'ns5002' => 'nous=nous ns5002',
+            'ns6' => 'nous=nous ns6',
+            // anker
+            'aftmm-anker-ak-d3000111' => 'anker=anker aftmm',
             // other
             default => null,
         };

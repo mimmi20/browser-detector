@@ -102,10 +102,10 @@
       "dualOrientation": false,
       "simCount": 0,
       "display": {
-        "width": 3840,
-        "height": 2160,
+        "width": null,
+        "height": null,
         "touch": false,
-        "size": 65
+        "size": null
       },
       "type": "tv",
       "ismobile": false,
@@ -192,10 +192,10 @@
       "dualOrientation": false,
       "simCount": 0,
       "display": {
-        "width": 3840,
-        "height": 2160,
+        "width": null,
+        "height": null,
         "touch": false,
-        "size": 65
+        "size": null
       },
       "type": "tv",
       "ismobile": false,
@@ -507,10 +507,10 @@
       "dualOrientation": false,
       "simCount": 0,
       "display": {
-        "width": 3840,
-        "height": 2160,
+        "width": null,
+        "height": null,
         "touch": false,
-        "size": 65
+        "size": null
       },
       "type": "tv",
       "ismobile": false,
@@ -537,6 +537,51 @@
       "name": "WebKit",
       "version": "537.41.0",
       "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chr0me/53.0.2785.34 Safari/537.36 LG Browser/8.00.00(LGE; 32LM6300PLA; 05.40.45; 1; DTV_W19R); webOS.TV-2019; LG NetCast.TV-2013 Compatible (LGE, 32LM6300PLA, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "32LM6300PLA",
+      "marketingName": "32LM6300PLA",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": false,
+        "size": 32
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
     }
   }
 ]

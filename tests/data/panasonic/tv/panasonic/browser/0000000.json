@@ -133,5 +133,50 @@
       "version": "420.0.0",
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.4.1 (;Panasonic;Viera2017mid;3.016;3401-0003 0002-0000;Viera2017;) FVC/2.0 (Panasonic;Viera2017;) (avdn/Panasonic.Viera2017mid) Mozilla/5.0 (Linux; U; Viera; en-GB) AppleWebKit/537.36 (KHTML, like Gecko) Viera/4.0.0 Chrome/51.0.2704.100 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "VIERA (2017)",
+      "marketingName": "VIERA (2017)",
+      "manufacturer": "Panasonic",
+      "brand": "Panasonic",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Viera Browser",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Panasonic",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "51.0.2704.100",
+      "manufacturer": "Google"
+    }
   }
 ]

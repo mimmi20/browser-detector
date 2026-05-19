@@ -226,6 +226,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; AFTR Build/PMAIN1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.110 Mobile Safari/537.36 cordova-amazon-fireos/3.4.0 AmazonWebAppPlatform/3.4.0;2.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "AFTR",
+      "marketingName": "Fire TV Cube (Gen 2, 2019)",
+      "manufacturer": "Amazon",
+      "brand": "Amazon",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-media-player",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Fire OS",
+      "marketingName": "Fire OS",
+      "version": "7.0.0",
+      "manufacturer": "Amazon",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome WebView",
+      "modus": null,
+      "version": "70.0.3538.110",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "70.0.3538.110",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; AFTN Build/NS6210; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36 cordova-amazon-fireos/3.4.0 AmazonWebAppPlatform/3.4.0;2.0"
     },
     "device": {
@@ -271,147 +316,12 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; AFTEAMR311 Build/NS6269; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.110 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "AFTEAMR311",
-      "marketingName": "Fire TV Edition - Insignia HD (2018)",
-      "manufacturer": "Amazon",
-      "brand": "Amazon",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv-media-player",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "Fire OS",
-      "marketingName": "Fire OS",
-      "version": "6.0.0",
-      "manufacturer": "Amazon",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome WebView",
-      "modus": null,
-      "version": "70.0.3538.110",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "70.0.3538.110",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 7.1.2; AFTBAMR311 Build/NS6277)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "AFTBAMR311",
-      "marketingName": "Fire TV Edition - Toshiba HD (2018)",
-      "manufacturer": "Amazon",
-      "brand": "Amazon",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv-media-player",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "Fire OS",
-      "marketingName": "Fire OS",
-      "version": "6.0.0",
-      "manufacturer": "Amazon",
-      "bits": null
-    },
-    "client": {
-      "name": "Android Browser",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "smarttv_AFTRS_Build_566140820_Chromium_49.0.2623.87"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "AFTRS",
-      "marketingName": "Fire TV Edition - Element 4K (2017)",
-      "manufacturer": "Amazon",
-      "brand": "Amazon",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv-media-player",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "Fire OS",
-      "marketingName": "Fire OS",
-      "version": null,
-      "manufacturer": "Amazon",
-      "bits": null
-    },
-    "client": {
-      "name": "Chromium",
-      "modus": null,
-      "version": "49.0.2623.87",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "smarttv_AFTGAZL_Build_0017381305986_Chromium_96.0.1234.5"
     },
     "device": {
       "architecture": null,
       "deviceName": "AFTGAZL",
-      "marketingName": "Fire TV Cube (Gen 3)",
+      "marketingName": "Fire TV Cube (Gen 3, 2022)",
       "manufacturer": "Amazon",
       "brand": "Amazon",
       "dualOrientation": false,

@@ -6082,5 +6082,59 @@
       ]
     },
     "engine": null
+  },
+  "online-versicherungsportal.info bot": {
+    "name": "online-versicherungsportal.info Bot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "versicherungssuchmaschine.net bot": {
+    "name": "versicherungssuchmaschine.net Bot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "yahoo ad monitoring": {
+    "name": "Yahoo Ad Monitoring",
+    "manufacturer": "yahoo",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Yahoo Ad monitoring"
+      ]
+    },
+    "engine": null
+  },
+  "exalead cloudview": {
+    "name": "Exalead CloudView",
+    "manufacturer": "dassault-systemes",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ExaleadCloudView"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "thumbnail.ws bot": {
+    "name": "thumbnail.ws Bot",
+    "manufacturer": "thumbnail.ws",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
   }
 }

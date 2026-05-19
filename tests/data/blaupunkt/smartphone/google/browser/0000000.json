@@ -1,21 +1,21 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; Blaupunkt SL 02 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.91 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Blaupunkt SF02) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
-      "deviceName": "SL 02",
-      "marketingName": "SL 02",
+      "deviceName": "SF 02",
+      "marketingName": "SF 02",
       "manufacturer": "Blaupunkt",
       "brand": "Blaupunkt",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
-        "width": 1280,
-        "height": 720,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": 5
+        "size": 4
       },
       "type": "smartphone",
       "ismobile": true,
@@ -25,14 +25,14 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "7.0.0",
+      "version": "10.0.0",
       "manufacturer": "Google",
       "bits": null
     },
     "client": {
       "name": "Chrome",
       "modus": null,
-      "version": "68.0.3440.91",
+      "version": "96.0.4664.104",
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
@@ -40,52 +40,7 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "68.0.3440.91",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; Blaupunkt SL 04) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.67 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SL 04",
-      "marketingName": "SL 04",
-      "manufacturer": "Blaupunkt",
-      "brand": "Blaupunkt",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "75.0.3770.67",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "75.0.3770.67",
+      "version": "96.0.4664.104",
       "manufacturer": "Google"
     }
   },

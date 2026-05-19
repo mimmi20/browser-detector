@@ -1,14 +1,62 @@
 {
+  "general mstar tv": {
+    "deviceName": "general MSTAR TV",
+    "marketingName": "general MSTAR TV",
+    "manufacturer": "mstar",
+    "brand": "mstar",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "tv",
+    "platform": null
+  },
   "mstar t42": {
     "deviceName": "T42",
     "marketingName": "T42",
     "manufacturer": "mstar",
     "brand": "mstar",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": false,
+    "simCount": 0,
     "display": {
       "width": null,
       "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "tv",
+    "platform": null
+  },
+  "mstar 2ktv18": {
+    "deviceName": "2KTV18",
+    "marketingName": "2KTV18",
+    "manufacturer": "mstar",
+    "brand": "mstar",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": null
+    },
+    "type": "tv",
+    "platform": null
+  },
+  "mstar 4ktv18": {
+    "deviceName": "4KTV18",
+    "marketingName": "4KTV18",
+    "manufacturer": "mstar",
+    "brand": "mstar",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 3840,
+      "height": 2160,
       "touch": false,
       "size": null
     },

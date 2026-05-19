@@ -3763,6 +3763,26 @@ enum Company: string implements CompanyInterface
 
     case vidaa = 'VIDAA';
 
+    case lineWorks = 'LINE WORKS';
+
+    case infomir = 'Infomir';
+
+    case freesat = 'Freesat';
+
+    case audacy = 'Audacy';
+
+    case philco = 'Philco';
+
+    case funai = 'Funai';
+
+    case anker = 'Anker';
+
+    case sunny = 'Sunny';
+
+    case insignia = 'Insignia';
+
+    case wiresharkFoundation = 'Wireshark Foundation';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5642,6 +5662,16 @@ enum Company: string implements CompanyInterface
             'gog', 'gog sp. z o.o.' => self::gog,
             'vercel', 'vercel inc.' => self::vercel,
             'vidaa', 'vidaa international holdings b.v.' => self::vidaa,
+            'lineworks', 'line works corp.', 'line-works', 'line works' => self::lineWorks,
+            'infomir', 'infomir,llc' => self::infomir,
+            'freesat', 'everyone tv devices limited' => self::freesat,
+            'audacy', 'audacy, inc.' => self::audacy,
+            'philco' => self::philco,
+            'funai' => self::funai,
+            'anker' => self::anker,
+            'sunny' => self::sunny,
+            'insignia' => self::insignia,
+            'wiresharkfoundation', 'wireshark foundation', 'wireshark-foundation' => self::wiresharkFoundation,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6400,6 +6430,10 @@ enum Company: string implements CompanyInterface
             self::gog => 'GOG sp. z o.o.',
             self::vercel => 'Vercel Inc.',
             self::vidaa => 'VIDAA International Holdings B.V.',
+            self::lineWorks => 'LINE WORKS Corp.',
+            self::infomir => 'Infomir,LLC',
+            self::freesat => 'Everyone TV Devices Limited',
+            self::audacy => 'Audacy, Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -7102,6 +7136,8 @@ enum Company: string implements CompanyInterface
             self::valleyHosting => 'valley-hosting',
             self::cloudSystemNetworks => 'cloud-system-networks',
             self::lovableLabs => 'lovable-labs',
+            self::lineWorks => 'line-works',
+            self::wiresharkFoundation => 'wireshark-foundation',
             default => $this->name,
         };
     }

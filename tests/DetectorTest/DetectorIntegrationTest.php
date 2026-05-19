@@ -1953,9 +1953,9 @@ final class DetectorIntegrationTest extends TestCase
                 [
                     'headers' => [
                         'sec-ch-ua-model' => '"samsung SM-S711B"',
+                        'x-requested-with' => 'AlohaBrowser',
                         'sec-ch-ua-platform' => '"Android"',
                         'sec-ch-ua-platform-version' => '"16"',
-                        'x-requested-with' => 'AlohaBrowser',
                         'sec-ch-ua' => '"Not_A Brand";v="8", "Chromium";v="141", "Android WebView";v="141"',
                         'sec-ch-ua-full-version' => '"141.0.7390.111"',
                         'sec-ch-ua-bitness' => '""',
@@ -2999,9 +2999,9 @@ final class DetectorIntegrationTest extends TestCase
                 [
                     'headers' => [
                         'sec-ch-ua-model' => '"OPD2403"',
+                        'x-requested-with' => 'com.duckduckgo.mobile.android',
                         'sec-ch-ua-platform' => '"Android"',
                         'sec-ch-ua-platform-version' => '"15.0.0"',
-                        'x-requested-with' => 'com.duckduckgo.mobile.android',
                         'sec-ch-ua' => '"Chromium";v="140", "Not=A?Brand";v="24", "DuckDuckGo";v="140"',
                         'sec-ch-ua-full-version' => '"140.0.7339.207"',
                         'sec-ch-ua-bitness' => '""',
@@ -3245,9 +3245,9 @@ final class DetectorIntegrationTest extends TestCase
                 [
                     'headers' => [
                         'sec-ch-ua-model' => '"IN2023"',
+                        'x-requested-with' => 'com.duckduckgo.mobile.android',
                         'sec-ch-ua-platform' => '"Android"',
                         'sec-ch-ua-platform-version' => '"13.0.0"',
-                        'x-requested-with' => 'com.duckduckgo.mobile.android',
                         'sec-ch-ua' => '"DuckDuckGo";v="141", "Not?A_Brand";v="8", "Chromium";v="141"',
                         'sec-ch-ua-full-version' => '"141.0.7390.122"',
                         'sec-ch-ua-bitness' => '""',
@@ -4196,7 +4196,10 @@ final class DetectorIntegrationTest extends TestCase
                 ],
             ],
             [
-                ['user-agent' => 'Mozilla/5.0 (Linux; Android 12; SM-G991B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.127 Mobile Safari/537.36 TuyaSmart/3.38.1 TuyaSmartH5/1.0.0 TuyaHybrid/1.0.0 For Android/31', 'http-x-requested-with' => 'com.tuya.smartlife'],
+                [
+                    'user-agent' => 'Mozilla/5.0 (Linux; Android 12; SM-G991B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.127 Mobile Safari/537.36 TuyaSmart/3.38.1 TuyaSmartH5/1.0.0 TuyaHybrid/1.0.0 For Android/31',
+                    'http-x-requested-with' => 'com.tuya.smartlife',
+                ],
                 [
                     'headers' => [
                         'x-requested-with' => 'com.tuya.smartlife',
@@ -5035,8 +5038,8 @@ final class DetectorIntegrationTest extends TestCase
                 ],
                 [
                     'headers' => [
-                        'sec-ch-ua-platform' => '"Android"',
                         'x-requested-with' => 'de.inseven.dogtorance',
+                        'sec-ch-ua-platform' => '"Android"',
                         'sec-ch-ua' => '"Android WebView";v="143", "Chromium";v="143", "Not A(Brand";v="24"',
                         'sec-ch-ua-mobile' => '?1',
                         'user-agent' => 'finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; SM-S928B Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.34 Mobile Safari/537.36',
@@ -6919,8 +6922,8 @@ final class DetectorIntegrationTest extends TestCase
                 ],
                 [
                     'headers' => [
-                        'sec-ch-ua-platform' => '"Android"',
                         'x-requested-with' => 'com.android.chrome',
+                        'sec-ch-ua-platform' => '"Android"',
                         'sec-ch-ua' => '"Android WebView";v="143", "Chromium";v="143", "Not A(Brand";v="24"',
                         'sec-ch-ua-mobile' => '?1',
                         'user-agent' => 'Mozilla/5.0 (Linux; Android 13; Cyber 13 Pro Build/TP1A.220624.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.146 Mobile Safari/537.36',
@@ -7033,8 +7036,8 @@ final class DetectorIntegrationTest extends TestCase
                 ],
                 [
                     'headers' => [
-                        'sec-ch-ua-platform' => '"Android"',
                         'x-requested-with' => 'com.facebook.katana',
+                        'sec-ch-ua-platform' => '"Android"',
                         'sec-ch-ua' => '"Chromium";v="142", "Android WebView";v="142", "Not_A Brand";v="99"',
                         'sec-ch-ua-mobile' => '?1',
                         'user-agent' => 'Mozilla/5.0 (Linux; Android 16; SM-S911B Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.145 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/539.0.0.54.69;IABMV/1;]',
@@ -8228,8 +8231,8 @@ final class DetectorIntegrationTest extends TestCase
                 ],
                 [
                     'headers' => [
-                        'sec-ch-ua-platform' => '"Android"',
                         'x-requested-with' => 'com.kaweapp.webexplorer',
+                        'sec-ch-ua-platform' => '"Android"',
                         'sec-ch-ua' => '"Chromium";v="146", "Not-A.Brand";v="24", "Android WebView";v="146"',
                         'sec-ch-ua-mobile' => '?1',
                         'user-agent' => 'Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/146.0.7680.164 Mobile Safari/537.36 webexplorer/5',

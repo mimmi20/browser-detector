@@ -1,51 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Pulse/4.0.5 (iPhone; iOS 7.0.6; Scale/2.00)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "7.0.6",
-      "manufacturer": "Apple",
-      "bits": null
-    },
-    "client": {
-      "name": "Pulse",
-      "modus": null,
-      "version": "4.0.5",
-      "manufacturer": "unknown",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Podcat/1.1.4.14639 (iPhone; de-DE; iPhone OS 9.2.1)"
     },
     "device": {
@@ -123,6 +78,51 @@
       "name": "Client",
       "modus": null,
       "version": "103.1.0",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Liulo/1.1.4 (iPhone; iOS 12.5.6; Scale/2.00)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "12.5.6",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Liulo",
+      "modus": null,
+      "version": "1.1.4",
       "manufacturer": "unknown",
       "type": "mobile-application",
       "isbot": false,

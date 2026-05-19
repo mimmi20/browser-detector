@@ -1,21 +1,21 @@
 [
   {
     "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 7.0## Percee TV Build/NTG46)"
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; AFTMD001 Build/PS7657.3645N; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/108.0.5359.160 Mobile Safari/537.36 cordova-amazon-fireos/3.4.0 AmazonWebAppPlatform/3.4.0;2.0"
     },
     "device": {
       "architecture": null,
-      "deviceName": "Percee TV",
-      "marketingName": "Percee TV",
+      "deviceName": "AFTMD001",
+      "marketingName": "Fire TV",
       "manufacturer": "TCL",
       "brand": "TCL",
       "dualOrientation": false,
       "simCount": 0,
       "display": {
-        "width": 1920,
-        "height": 1080,
+        "width": 3840,
+        "height": 2160,
         "touch": false,
-        "size": 49.7
+        "size": null
       },
       "type": "tv",
       "ismobile": false,
@@ -23,61 +23,16 @@
       "bits": null
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
+      "name": "Fire OS",
+      "marketingName": "Fire OS",
       "version": "7.0.0",
-      "manufacturer": "Google",
+      "manufacturer": "Amazon",
       "bits": null
     },
     "client": {
-      "name": "Android Browser",
+      "name": "Chrome WebView",
       "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; Percee TV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Percee TV",
-      "marketingName": "Percee TV",
-      "manufacturer": "TCL",
-      "brand": "TCL",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": false,
-        "size": 49.7
-      },
-      "type": "tv",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "77.0.3865.92",
+      "version": "108.0.5359.160",
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
@@ -85,7 +40,7 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "77.0.3865.92",
+      "version": "108.0.5359.160",
       "manufacturer": "Google"
     }
   }

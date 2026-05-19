@@ -141,7 +141,7 @@
     "device": {
       "architecture": null,
       "deviceName": "AFTA",
-      "marketingName": "Fire TV Cube",
+      "marketingName": "Fire TV Cube (2018)",
       "manufacturer": "Amazon",
       "brand": "Amazon",
       "dualOrientation": false,
@@ -176,51 +176,6 @@
     "engine": {
       "name": "Blink",
       "version": "68.0.3440.85",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; AFTRS Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/65.2.1 like Chrome/65.0.3325.144 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "AFTRS",
-      "marketingName": "Fire TV Edition - Element 4K (2017)",
-      "manufacturer": "Amazon",
-      "brand": "Amazon",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv-media-player",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "Fire OS",
-      "marketingName": "Fire OS",
-      "version": "5.0.0",
-      "manufacturer": "Amazon",
-      "bits": null
-    },
-    "client": {
-      "name": "Silk",
-      "modus": null,
-      "version": "65.2.1",
-      "manufacturer": "Amazon",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "65.0.3325.144",
       "manufacturer": "Google"
     }
   },
@@ -271,12 +226,12 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; AFTKMST12) AppleWebKit/537.36 (KHTML, like Gecko) Silk/73.5.7 like Chrome/73.0.3683.90 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; AFTR) AppleWebKit/537.36 (KHTML, like Gecko) Silk/81.1.248 like Chrome/81.0.4044.117 Safari/537.36 comdirect/1.0 (appVersion:20.5.4;deviceType:mobile)"
     },
     "device": {
       "architecture": null,
-      "deviceName": "AFTKMST12",
-      "marketingName": "Fire TV Edition - Toshiba 4K (2018)",
+      "deviceName": "AFTR",
+      "marketingName": "Fire TV Cube (Gen 2, 2019)",
       "manufacturer": "Amazon",
       "brand": "Amazon",
       "dualOrientation": false,
@@ -295,14 +250,14 @@
     "os": {
       "name": "Fire OS",
       "marketingName": "Fire OS",
-      "version": "6.0.0",
+      "version": "7.0.0",
       "manufacturer": "Amazon",
       "bits": null
     },
     "client": {
       "name": "Silk",
       "modus": null,
-      "version": "73.5.7",
+      "version": "81.1.248",
       "manufacturer": "Amazon",
       "type": "browser",
       "isbot": false,
@@ -310,7 +265,7 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "73.0.3683.90",
+      "version": "81.0.4044.117",
       "manufacturer": "Google"
     }
   },
@@ -321,7 +276,7 @@
     "device": {
       "architecture": null,
       "deviceName": "AFTGAZL",
-      "marketingName": "Fire TV Cube (Gen 3)",
+      "marketingName": "Fire TV Cube (Gen 3, 2022)",
       "manufacturer": "Amazon",
       "brand": "Amazon",
       "dualOrientation": false,

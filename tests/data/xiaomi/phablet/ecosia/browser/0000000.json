@@ -1,96 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; Redmi Note 4 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.230 Mobile Safari/537.36 (Ecosia android@65.0.3325.230)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Redmi Note 4",
-      "marketingName": "Redmi Note 4",
-      "manufacturer": "Xiaomi",
-      "brand": "Xiaomi",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Ecosia",
-      "modus": null,
-      "version": "65.0.3325.230",
-      "manufacturer": "Ecosia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "65.0.3325.230",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; Redmi Note 5 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.230 Mobile Safari/537.36 (Ecosia android@65.0.3325.230)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Redmi Note 5",
-      "marketingName": "Redmi Note 5",
-      "manufacturer": "Xiaomi",
-      "brand": "Xiaomi",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2160,
-        "height": 1080,
-        "touch": true,
-        "size": 5.99
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.1.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Ecosia",
-      "modus": null,
-      "version": "65.0.3325.230",
-      "manufacturer": "Ecosia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "65.0.3325.230",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; Redmi Note 7 Build/PKQ1.180904.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Mobile Safari/537.36 (Ecosia android@69.0.3497.128)"
     },
     "device": {
@@ -1172,9 +1082,9 @@
   {
     "headers": {
       "sec-ch-ua-model": "\"21091116UG\"",
+      "x-requested-with": "XMLHttpRequest",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"11.0.0\"",
-      "x-requested-with": "XMLHttpRequest",
       "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"101\"",
       "sec-ch-ua-full-version": "\"101.0.4951.41\"",
       "sec-ch-ua-mobile": "?1",

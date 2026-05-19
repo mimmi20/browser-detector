@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "ELinks/0.11.3 (textmode; CYGWIN_NT-6.0 1.5.25(0.156/4/2) i686; 130x45-2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": null,
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "ELinks",
+      "modus": null,
+      "version": "0.11.3",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Text",
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "ELinks/0.10.4-7-debian (textmode; GNU/kFreeBSD 5.3-17 i686; 143x53-2)"
     },
     "device": {
@@ -1060,7 +1105,7 @@
     "os": {
       "name": "Linux",
       "marketingName": "Linux",
-      "version": null,
+      "version": "2.2.16.22",
       "manufacturer": "Linux Foundation",
       "bits": null
     },
@@ -1531,6 +1576,51 @@
   },
   {
     "headers": {
+      "user-agent": "xChaos_Arachne/4.1.70;rev.3 (DOS x86;WATTCP/1.05; 640x480"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Arachne",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Arachne",
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 Galeon/1.2.5 (X11; FreeBSD i386; U;) Gecko/0"
     },
     "device": {
@@ -1840,6 +1930,51 @@
     },
     "engine": {
       "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "xChaos_Arachne/4.1.71;UE01 (DOS x86;WATTCP/1.05; 640x480,16c; www.arachne.cz)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Arachne",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Arachne",
       "version": null,
       "manufacturer": "unknown"
     }
@@ -2230,7 +2365,7 @@
     "os": {
       "name": "Linux",
       "marketingName": "Linux",
-      "version": null,
+      "version": "3.8.0",
       "manufacturer": "Linux Foundation",
       "bits": null
     },

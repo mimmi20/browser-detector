@@ -271,51 +271,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 Linux; Android 8.1.0; pendoo X10 plus AppleWebKit/537.36 KHTML, like Gecko Chrome/70.0.3538.80 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "X10 Plus",
-      "marketingName": "X10 Plus",
-      "manufacturer": "Teclast",
-      "brand": "Teclast",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 10.1
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.1.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "70.0.3538.80",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "70.0.3538.80",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; M40(N9H3) Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.127 Safari/537.36"
     },
     "device": {
@@ -767,9 +722,9 @@
   {
     "headers": {
       "sec-ch-ua-model": "\"M40 Pro_ROW\"",
+      "x-requested-with": "XMLHttpRequest",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"12.0.0\"",
-      "x-requested-with": "XMLHttpRequest",
       "sec-ch-ua": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\"",
       "sec-ch-ua-full-version": "\"121.0.6167.143\"",
       "sec-ch-ua-bitness": "\"\"",

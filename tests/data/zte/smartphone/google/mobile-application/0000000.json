@@ -1,51 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; ZTE BLADE V9 Build/OPM1.171019.026; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.73 Mobile Safari/537.36 GSA/10.49.11.21.arm64"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Blade V9",
-      "marketingName": "Blade V9",
-      "manufacturer": "ZTE",
-      "brand": "ZTE",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2160,
-        "height": 1080,
-        "touch": true,
-        "size": 5.7
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.1.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Google Search App",
-      "modus": null,
-      "version": "10.49.11.21",
-      "manufacturer": "Google",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "77.0.3865.73",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; ZTE Blade A7 2019 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/85.0.4183.81 Mobile Safari/537.36 GSA/11.26.7.21.arm64"
     },
     "device": {
@@ -775,9 +730,9 @@
   {
     "headers": {
       "sec-ch-ua-model": "\"\"",
+      "x-requested-with": "com.google.android.apps.searchlite",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"\"",
-      "x-requested-with": "com.google.android.apps.searchlite",
       "sec-ch-ua": "\"Android WebView\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"",
       "sec-ch-ua-full-version": "\"\"",
       "sec-ch-ua-bitness": "\"\"",
@@ -919,8 +874,8 @@
   },
   {
     "headers": {
-      "sec-ch-ua-platform": "\"Android\"",
       "x-requested-with": "com.google.android.apps.searchlite",
+      "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua": "\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Android WebView\";v=\"146\"",
       "sec-ch-ua-mobile": "?1",
       "user-agent": "Mozilla/5.0 (Linux; Android 13; ZTE Blade A34 Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.119 Mobile Safari/537.36"

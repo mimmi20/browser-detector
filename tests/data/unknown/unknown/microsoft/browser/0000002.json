@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "LniWebAgent/1.0 (compatible; MSIE 6.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "6.0.0",
+      "manufacturer": "Microsoft",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "Microsoft"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "IlTrovatore-Setaccio/1.2 (It-bot;compatible;MSIE 6.0;Mozilla/4.0; http://www.iltrovatore.it/bot.html; bot@iltrovatore.it)"
     },
     "device": {
@@ -4451,51 +4496,6 @@
     "engine": {
       "name": "Trident",
       "version": "4.0.0",
-      "manufacturer": "Microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible: MSIE 6.0)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "6.0.0",
-      "manufacturer": "Microsoft",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
       "manufacturer": "Microsoft"
     }
   }

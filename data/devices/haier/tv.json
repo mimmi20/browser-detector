@@ -1,4 +1,20 @@
 {
+  "haier smart tv": {
+    "deviceName": "Smart TV",
+    "marketingName": "Smart TV",
+    "manufacturer": "haier",
+    "brand": "haier",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "tv",
+    "platform": "android-tv"
+  },
   "haier android tv dvb2k": {
     "deviceName": "Android TV DVB2K",
     "marketingName": "Android TV DVB2K",
@@ -27,6 +43,22 @@
       "height": null,
       "touch": false,
       "size": null
+    },
+    "type": "tv",
+    "platform": "android-tv"
+  },
+  "haier le55x7000u": {
+    "deviceName": "LE55X7000U",
+    "marketingName": "LE55X7000U",
+    "manufacturer": "haier",
+    "brand": "haier",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 3840,
+      "height": 2160,
+      "touch": false,
+      "size": 54.6
     },
     "type": "tv",
     "platform": "android-tv"

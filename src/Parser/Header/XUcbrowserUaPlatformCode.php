@@ -34,7 +34,7 @@ final class XUcbrowserUaPlatformCode implements PlatformCodeInterface
             };
         }
 
-        return false;
+        return (bool) preg_match('/ov\((wds|android) [\d_.]+\);/i', $value);
     }
 
     /**
@@ -56,6 +56,18 @@ final class XUcbrowserUaPlatformCode implements PlatformCodeInterface
                 'windows' => Os::windowsphone,
                 '42', '44' => Os::ios,
                 'linux' => Os::android,
+                default => Os::unknown,
+            };
+        }
+
+        $matches = [];
+
+        if (preg_match('/ov\((?P<platform>wds|android) [\d_.]+\);/i', $value, $matches)) {
+            $code = mb_strtolower($matches['platform']);
+
+            return match ($code) {
+                'wds' => Os::windowsphone,
+                'android' => Os::android,
                 default => Os::unknown,
             };
         }

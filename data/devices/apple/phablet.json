@@ -590,5 +590,21 @@
     },
     "type": "phablet",
     "platform": "ios"
+  },
+  "apple iphone 18,5": {
+    "deviceName": "iPhone 18,5",
+    "marketingName": "iPhone 17e",
+    "manufacturer": "apple",
+    "brand": "apple",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2532,
+      "height": 1170,
+      "touch": true,
+      "size": 6.1
+    },
+    "type": "phablet",
+    "platform": "ios"
   }
 }

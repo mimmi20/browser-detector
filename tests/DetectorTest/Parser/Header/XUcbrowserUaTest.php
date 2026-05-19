@@ -1466,6 +1466,23 @@ final class XUcbrowserUaTest extends TestCase
                 'hasEngineVersion' => true,
                 'engineVersion' => '600.1.4.12.4',
             ],
+            [
+                'ua' => 'dv(SM-G930F);pr(UCBrowser/13.4.2.1307);ov(Android 8.0.0);ss(411*731);pi(1440*2560);bt(GJ);pm(0);bv(1);nm(0);im(0);sr(0);nt(2);bi(355);fi(145);dn(40853987512-661df136);ai(720089404747345);',
+                'hasDeviceCode' => true,
+                'deviceCode' => 'samsung=samsung sm-g930f',
+                'hasClientInfo' => true,
+                'clientCode' => 'ucbrowser',
+                'hasClientVersion' => true,
+                'clientVersion' => '13.4.2.1307',
+                'hasPlatformCode' => true,
+                'platformCode' => Os::android,
+                'hasPlatformVersion' => true,
+                'platformVersion' => '8.0.0',
+                'hasEngineCode' => false,
+                'engineCode' => Engine::unknown,
+                'hasEngineVersion' => false,
+                'engineVersion' => null,
+            ],
         ];
     }
 }

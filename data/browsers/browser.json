@@ -1289,7 +1289,7 @@
         "AppleWebKit"
       ]
     },
-    "engine": null
+    "engine": "gecko"
   },
   "espial tv browser": {
     "name": "Espial TV Browser",
@@ -1382,7 +1382,7 @@
         "rv:"
       ]
     },
-    "engine": null
+    "engine": "gecko"
   },
   "firefox klar": {
     "name": "Firefox Klar",
@@ -1782,18 +1782,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "IceCat"
-      ]
-    },
-    "engine": "gecko"
-  },
-  "icedove": {
-    "name": "Icedove",
-    "manufacturer": "software-in-the-public-interest",
-    "type": "browser",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Icedove"
       ]
     },
     "engine": "gecko"
@@ -2930,6 +2918,7 @@
       "search": [
         "OPX",
         "OPRGX",
+        "OperaGX",
         "OPR"
       ]
     },
@@ -6039,5 +6028,17 @@
       ]
     },
     "engine": null
+  },
+  "xchaos arachne": {
+    "name": "Arachne",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "xChaos_Arachne\\/5\\."
+      ]
+    },
+    "engine": "arachne"
   }
 }

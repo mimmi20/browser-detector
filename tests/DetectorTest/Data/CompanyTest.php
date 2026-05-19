@@ -11278,6 +11278,66 @@ final class CompanyTest extends TestCase
                 'brandname' => 'VIDAA',
                 'key' => 'vidaa',
             ],
+            [
+                'type' => 'LINE WORKS',
+                'name' => 'LINE WORKS Corp.',
+                'brandname' => 'LINE WORKS',
+                'key' => 'line-works',
+            ],
+            [
+                'type' => 'Infomir',
+                'name' => 'Infomir,LLC',
+                'brandname' => 'Infomir',
+                'key' => 'infomir',
+            ],
+            [
+                'type' => 'Freesat',
+                'name' => 'Everyone TV Devices Limited',
+                'brandname' => 'Freesat',
+                'key' => 'freesat',
+            ],
+            [
+                'type' => 'Audacy',
+                'name' => 'Audacy, Inc.',
+                'brandname' => 'Audacy',
+                'key' => 'audacy',
+            ],
+            [
+                'type' => 'Philco',
+                'name' => 'Philco',
+                'brandname' => 'Philco',
+                'key' => 'philco',
+            ],
+            [
+                'type' => 'Funai',
+                'name' => 'Funai',
+                'brandname' => 'Funai',
+                'key' => 'funai',
+            ],
+            [
+                'type' => 'Anker',
+                'name' => 'Anker',
+                'brandname' => 'Anker',
+                'key' => 'anker',
+            ],
+            [
+                'type' => 'Sunny',
+                'name' => 'Sunny',
+                'brandname' => 'Sunny',
+                'key' => 'sunny',
+            ],
+            [
+                'type' => 'Insignia',
+                'name' => 'Insignia',
+                'brandname' => 'Insignia',
+                'key' => 'insignia',
+            ],
+            [
+                'type' => 'Wireshark Foundation',
+                'name' => 'Wireshark Foundation',
+                'brandname' => 'Wireshark Foundation',
+                'key' => 'wireshark-foundation',
+            ],
         ];
     }
 

@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (jig browser core; SH03B)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SH03B",
+      "marketingName": "SH03B",
+      "manufacturer": "Sharp",
+      "brand": "Sharp",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": false,
+        "size": 3.7
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "Symbian Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Jig Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "W3C",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/4.0 (jig browser9i 1.1.9; SH01A; 2061)"
     },
     "device": {
@@ -9,7 +54,7 @@
       "marketingName": "SH01A",
       "manufacturer": "Sharp",
       "brand": "Sharp",
-      "dualOrientation": null,
+      "dualOrientation": false,
       "simCount": 1,
       "display": {
         "width": null,
@@ -144,13 +189,13 @@
       "marketingName": "SH3C",
       "manufacturer": "Sharp",
       "brand": "Sharp",
-      "dualOrientation": null,
+      "dualOrientation": false,
       "simCount": 1,
       "display": {
-        "width": null,
-        "height": null,
+        "width": 800,
+        "height": 480,
         "touch": false,
-        "size": null
+        "size": 3.8
       },
       "type": "feature-phone",
       "ismobile": true,
@@ -158,10 +203,10 @@
       "bits": null
     },
     "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
+      "name": "Android",
+      "marketingName": "Android",
       "version": null,
-      "manufacturer": "Sun",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -234,13 +279,13 @@
       "marketingName": "SH01B",
       "manufacturer": "Sharp",
       "brand": "Sharp",
-      "dualOrientation": null,
+      "dualOrientation": false,
       "simCount": 1,
       "display": {
-        "width": null,
-        "height": null,
+        "width": 854,
+        "height": 480,
         "touch": false,
-        "size": null
+        "size": 3.4
       },
       "type": "feature-phone",
       "ismobile": true,

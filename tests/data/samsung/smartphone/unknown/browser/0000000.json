@@ -232,9 +232,9 @@
   {
     "headers": {
       "sec-ch-ua-model": "\"\"",
+      "x-requested-with": "org.lineageos.jelly",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"\"",
-      "x-requested-with": "org.lineageos.jelly",
       "sec-ch-ua": "\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Android WebView\";v=\"120\"",
       "sec-ch-ua-full-version": "\"\"",
       "sec-ch-ua-bitness": "\"\"",
@@ -263,10 +263,10 @@
       "bits": null
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "Google",
+      "name": "Lineage OS",
+      "marketingName": "Lineage OS",
+      "version": "18.0.0",
+      "manufacturer": "unknown",
       "bits": null
     },
     "client": {

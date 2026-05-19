@@ -94,52 +94,6 @@
   {
     "headers": {
       "x-requested-with": "com.emporia.browser",
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Mobile Phone",
-      "marketingName": "general Mobile Phone",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.1.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "emporiaAPP",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Emporia",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "47.0.2526.83",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "x-requested-with": "com.emporia.browser",
       "user-agent": "Mozilla/5.0 (Linux; Android 11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36"
     },
     "device": {
@@ -186,9 +140,9 @@
   {
     "headers": {
       "sec-ch-ua-model": "\"\"",
+      "x-requested-with": "com.emporia.emporiaapprebuild",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"\"",
-      "x-requested-with": "com.emporia.emporiaapprebuild",
       "sec-ch-ua": "\"Android WebView\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"",
       "sec-ch-ua-full-version": "\"\"",
       "sec-ch-ua-bitness": "\"\"",
@@ -240,8 +194,8 @@
   },
   {
     "headers": {
-      "sec-ch-ua-platform": "\"Android\"",
       "x-requested-with": "com.emporia.emporiaapprebuild",
+      "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua": "\"Android WebView\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"",
       "sec-ch-ua-mobile": "?1",
       "user-agent": "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36"
@@ -289,8 +243,8 @@
   },
   {
     "headers": {
-      "sec-ch-ua-platform": "\"Android\"",
       "x-requested-with": "com.emporia.emporiaapprebuild",
+      "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua": "\"Android WebView\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"",
       "user-agent": "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36"
     },

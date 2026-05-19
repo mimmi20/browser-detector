@@ -532,5 +532,29 @@
       ]
     },
     "engine": "unknown"
+  },
+  "overcast-podcast-sync": {
+    "name": "Overcast Podcast Sync",
+    "manufacturer": "overcast radio",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Overcast"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "grammarly": {
+    "name": "Grammarly",
+    "manufacturer": "unknown",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Grammarly"
+      ]
+    },
+    "engine": "unknown"
   }
 }

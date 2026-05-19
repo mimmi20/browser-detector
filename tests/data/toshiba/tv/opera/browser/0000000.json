@@ -676,6 +676,51 @@
   },
   {
     "headers": {
+      "user-agent": "Opera/9.80 (X11;Linux armv7i;NETRANGEMMH;HbbTV/1.1.1;CE-HTML/1.0;Vendor/TOSHIBA;SW-Version/V8-T56ETBS-LF1V253;Cnt/GBR;Lan/eng;U;en) AppleWebKit/534.24 (KHTML, like Gecko) Safari/534.24, Digital-TV/V8-T56ETBS-LF1V253 (TOSHIBA,40L2600,wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Toshiba TV",
+      "marketingName": "general Toshiba TV",
+      "manufacturer": "Toshiba",
+      "brand": "Toshiba",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "9.80.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.24.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Opera/9.80 (Linux mips; ) Presto/2.12.407 Version/12.51 MB97/0.0.39.18 (TOSHIBA, Mxl661L32, wireless) VSTVB_MB97  SmartTvA/3.0.0"
     },
     "device": {

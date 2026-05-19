@@ -1284,8 +1284,8 @@
     "marketingName": "SH01A",
     "manufacturer": "sharp",
     "brand": "sharp",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": false,
+    "simCount": 1,
     "display": {
       "width": null,
       "height": null,
@@ -1300,13 +1300,13 @@
     "marketingName": "SH01B",
     "manufacturer": "sharp",
     "brand": "sharp",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": false,
+    "simCount": 1,
     "display": {
-      "width": null,
-      "height": null,
+      "width": 854,
+      "height": 480,
       "touch": false,
-      "size": null
+      "size": 3.4
     },
     "type": "feature-phone",
     "platform": "java"
@@ -1316,13 +1316,13 @@
     "marketingName": "SH03A",
     "manufacturer": "sharp",
     "brand": "sharp",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": false,
+    "simCount": 1,
     "display": {
-      "width": null,
-      "height": null,
+      "width": 854,
+      "height": 480,
       "touch": false,
-      "size": null
+      "size": 3
     },
     "type": "feature-phone",
     "platform": "java"
@@ -1332,24 +1332,24 @@
     "marketingName": "SH3C",
     "manufacturer": "sharp",
     "brand": "sharp",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": false,
+    "simCount": 1,
     "display": {
-      "width": null,
-      "height": null,
+      "width": 800,
+      "height": 480,
       "touch": false,
-      "size": null
+      "size": 3.8
     },
     "type": "feature-phone",
-    "platform": "java"
+    "platform": "android"
   },
   "sharp sh06b": {
     "deviceName": "SH06B",
     "marketingName": "SH06B",
     "manufacturer": "sharp",
     "brand": "sharp",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": false,
+    "simCount": 1,
     "display": {
       "width": 854,
       "height": 480,
@@ -1364,8 +1364,8 @@
     "marketingName": "SH2101V",
     "manufacturer": "sharp",
     "brand": "sharp",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": false,
+    "simCount": 1,
     "display": {
       "width": 320,
       "height": 240,
@@ -1374,5 +1374,21 @@
     },
     "type": "feature-phone",
     "platform": "java"
+  },
+  "sharp sh03b": {
+    "deviceName": "SH03B",
+    "marketingName": "SH03B",
+    "manufacturer": "sharp",
+    "brand": "sharp",
+    "dualOrientation": false,
+    "simCount": 1,
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": false,
+      "size": 3.7
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
   }
 }
