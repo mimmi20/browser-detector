@@ -1,51 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; BBB100-2 Build/OPM1.171019.026; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/79.0.3945.136 Mobile Safari/537.36 GSA/10.92.10.21.arm64"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "BBB100-2",
-      "marketingName": "KEYone",
-      "manufacturer": "TCL",
-      "brand": "BlackBerry",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1620,
-        "height": 1080,
-        "touch": true,
-        "size": 4.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.1.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Google Search App",
-      "modus": null,
-      "version": "10.92.10.21",
-      "manufacturer": "Google",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "79.0.3945.136",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "x-requested-with": "com.google.android.apps.searchlite",
       "user-agent": "Mozilla/5.0 (Linux; Android 9; 5001D_EEA Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.58 Mobile Safari/537.36"
     },
@@ -87,52 +42,6 @@
     "engine": {
       "name": "Blink",
       "version": "99.0.4844.58",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "x-requested-with": "com.google.android.apps.searchlite",
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; 5033D_EEA Build/O11019) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "5033D_EEA",
-      "marketingName": "1",
-      "manufacturer": "TCL",
-      "brand": "Alcatel",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 960,
-        "height": 480,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.1.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Google Go",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Google",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "107.0.5304.105",
       "manufacturer": "Google"
     }
   },
@@ -184,98 +93,6 @@
   },
   {
     "headers": {
-      "x-requested-with": "com.google.android.apps.searchlite",
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; 5003D_EEA Build/OPM2.171019.012) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "5003D_EEA",
-      "marketingName": "1c (2019)",
-      "manufacturer": "TCL",
-      "brand": "Alcatel",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 960,
-        "height": 480,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.1.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Google Go",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Google",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "70.0.3538.110",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "x-requested-with": "com.google.android.apps.searchlite",
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; 5059X Build/O11019) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "5059X",
-      "marketingName": "1X",
-      "manufacturer": "TCL",
-      "brand": "Alcatel",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1440,
-        "height": 720,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.1.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Google Go",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Google",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "114.0.5735.196",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 11; 6025H_EEA Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.118 Mobile Safari/537.36 GoogleApp/15.14.36.28.arm64"
     },
     "device": {
@@ -316,52 +133,6 @@
     "engine": {
       "name": "Blink",
       "version": "123.0.6312.118",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "x-requested-with": "com.google.android.apps.searchlite",
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; 5033D Build/O11019) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "5033D",
-      "marketingName": "1",
-      "manufacturer": "TCL",
-      "brand": "Alcatel",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 960,
-        "height": 480,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.1.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Google Go",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Google",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "70.0.3538.110",
       "manufacturer": "Google"
     }
   }

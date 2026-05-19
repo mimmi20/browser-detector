@@ -500,17 +500,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "iMac",
-      "marketingName": "iMac",
+      "deviceName": "iMac 19,2",
+      "marketingName": "iMac 21.5\" (2019)",
       "manufacturer": "Apple",
       "brand": "Apple",
       "dualOrientation": false,
       "simCount": 0,
       "display": {
-        "width": null,
-        "height": null,
+        "width": 4096,
+        "height": 2304,
         "touch": false,
-        "size": null
+        "size": 21.5
       },
       "type": "desktop",
       "ismobile": false,
@@ -631,6 +631,51 @@
   },
   {
     "headers": {
+      "user-agent": "Microsoft Office Excel/16.46.212 (Mac OS/10.15.7; Desktop; es-ES; NonAppStore; Apple/iMac14,1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iMac",
+      "marketingName": "iMac",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.15.7",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Excel",
+      "modus": null,
+      "version": "16.46.212",
+      "manufacturer": "Microsoft",
+      "type": "application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Microsoft Office OneNote/16.40/200810 (Mac OS/10.13.6; Desktop; es-MX; NonAppStore; Apple/iMac10,1)"
     },
     "device": {
@@ -725,8 +770,8 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Mac Mini",
-      "marketingName": "Mac Mini",
+      "deviceName": "Mac Mini 9,1",
+      "marketingName": "Mac Mini (2020)",
       "manufacturer": "Apple",
       "brand": "Apple",
       "dualOrientation": false,
@@ -947,6 +992,51 @@
   {
     "headers": {
       "user-agent": "Microsoft Office Word/16.54.1010 (Mac OS/11.6; Desktop; en-US; AppStore; Apple/iMac21,1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iMac 21,1",
+      "marketingName": "iMac 23.5\" (2021)",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 4480,
+        "height": 2520,
+        "touch": false,
+        "size": 23.5
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "11.6.0",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Word",
+      "modus": null,
+      "version": "16.54.1010",
+      "manufacturer": "Microsoft",
+      "type": "application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Microsoft Office Word/16.54.1010 (Mac OS/11.6; Desktop; en-US; AppStore; Apple/iMac21,2)"
     },
     "device": {
       "architecture": null,
