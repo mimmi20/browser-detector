@@ -366,6 +366,7 @@ final class Device implements DeviceInterface
             'ge1gq' => 'google=google ge1gq',
             'gv0bp' => 'google=google gv0bp',
             'g4h7l' => 'google=google g4h7l',
+            'pixel fold' => 'google=google pixel fold',
             // OnePlus
             'ac2003' => 'oneplus=oneplus ac2003',
             'in2023' => 'oneplus=oneplus in2023',
