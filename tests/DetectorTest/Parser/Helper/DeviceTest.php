@@ -403,6 +403,7 @@ final class DeviceTest extends TestCase
             ['GE1GQ', 'google=google ge1gq'],
             ['GV0BP', 'google=google gv0bp'],
             ['G4H7L', 'google=google g4h7l'],
+            ['Pixel Fold', 'google=google pixel fold'],
             // OnePlus
             ['AC2003', 'oneplus=oneplus ac2003'],
             ['IN2023', 'oneplus=oneplus in2023'],

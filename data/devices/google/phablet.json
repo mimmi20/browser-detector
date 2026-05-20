@@ -31,6 +31,22 @@
     "type": "phablet",
     "platform": "android"
   },
+  "google pixel fold": {
+    "deviceName": "Pixel Fold",
+    "marketingName": "Pixel Fold",
+    "manufacturer": "google",
+    "brand": "google",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2208,
+      "height": 1840,
+      "touch": true,
+      "size": 7.6
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
   "google ggh2x": {
     "deviceName": "GGH2X",
     "marketingName": "Pixel 9 Pro Fold",
