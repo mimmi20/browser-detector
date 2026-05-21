@@ -44,5 +44,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "smartseo-checker": {
+    "name": "SmartSeo-Checker",
+    "manufacturer": "unknown",
+    "type": "seo-analytics",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SMARTSEO-checker"
+      ]
+    },
+    "engine": "unknown"
   }
 }
