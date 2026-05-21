@@ -439,5 +439,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "security-audit": {
+    "name": "SecurityAudit",
+    "manufacturer": "unknown",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SecurityAudit"
+      ]
+    },
+    "engine": "unknown"
   }
 }

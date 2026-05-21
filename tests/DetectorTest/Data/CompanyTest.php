@@ -11338,6 +11338,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Wireshark Foundation',
                 'key' => 'wireshark-foundation',
             ],
+            [
+                'type' => 'Cypress',
+                'name' => 'Cypress.io, Inc.',
+                'brandname' => 'Cypress',
+                'key' => 'cypress',
+            ],
         ];
     }
 

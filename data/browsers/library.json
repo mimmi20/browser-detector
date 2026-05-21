@@ -1256,5 +1256,29 @@
       ]
     },
     "engine": "unknown"
+  },
+  "playwright": {
+    "name": "Playwright",
+    "manufacturer": "microsoft",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Playwright"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "cypress": {
+    "name": "Cypress",
+    "manufacturer": "cypress",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Cypress"
+      ]
+    },
+    "engine": "unknown"
   }
 }
