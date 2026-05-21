@@ -6136,5 +6136,101 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "link-scan-processor": {
+    "name": "LinkScanProcessor",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "LinkScanProcessor"
+      ]
+    },
+    "engine": null
+  },
+  "hoolty-bot": {
+    "name": "HooltyBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HooltyBot"
+      ]
+    },
+    "engine": null
+  },
+  "company-matcher": {
+    "name": "CompanyMatcher",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "CompanyMatcher"
+      ]
+    },
+    "engine": null
+  },
+  "akquiso": {
+    "name": "Akquiso",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Akquiso"
+      ]
+    },
+    "engine": null
+  },
+  "querit-bot": {
+    "name": "QueritBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "QueritBot"
+      ]
+    },
+    "engine": null
+  },
+  "domain-html-reachability-probe": {
+    "name": "DomainHtmlReachabilityProbe",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DomainHtmlReachabilityProbe"
+      ]
+    },
+    "engine": null
+  },
+  "vergabefix-bot": {
+    "name": "VergabefixBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "VergabefixBot"
+      ]
+    },
+    "engine": null
+  },
+  "what-vpn": {
+    "name": "what-vpn",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "what-vpn"
+      ]
+    },
+    "engine": null
   }
 }
