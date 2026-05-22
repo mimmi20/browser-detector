@@ -11344,6 +11344,24 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Cypress',
                 'key' => 'cypress',
             ],
+            [
+                'type' => 'TD Systems',
+                'name' => 'TD Systems',
+                'brandname' => 'TD Systems',
+                'key' => 'td-systems',
+            ],
+            [
+                'type' => 'Manhattan',
+                'name' => 'Manhattan',
+                'brandname' => 'Manhattan',
+                'key' => 'manhattan',
+            ],
+            [
+                'type' => 'Pioneer',
+                'name' => 'Pioneer',
+                'brandname' => 'Pioneer',
+                'key' => 'pioneer',
+            ],
         ];
     }
 

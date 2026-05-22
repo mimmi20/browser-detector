@@ -3785,6 +3785,12 @@ enum Company: string implements CompanyInterface
 
     case cypress = 'Cypress';
 
+    case tdSystems = 'TD Systems';
+
+    case manhattan = 'Manhattan';
+
+    case pioneer = 'Pioneer';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5675,6 +5681,9 @@ enum Company: string implements CompanyInterface
             'insignia' => self::insignia,
             'wiresharkfoundation', 'wireshark foundation', 'wireshark-foundation' => self::wiresharkFoundation,
             'cypress', 'cypress.io, inc.' => self::cypress,
+            'tdsystems', 'td-systems', 'td systems' => self::tdSystems,
+            'manhattan' => self::manhattan,
+            'pioneer' => self::pioneer,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -7142,6 +7151,7 @@ enum Company: string implements CompanyInterface
             self::lovableLabs => 'lovable-labs',
             self::lineWorks => 'line-works',
             self::wiresharkFoundation => 'wireshark-foundation',
+            self::tdSystems => 'td-systems',
             default => $this->name,
         };
     }
