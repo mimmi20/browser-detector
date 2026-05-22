@@ -1,7 +1,7 @@
 {
   "rules": {
     "/kdl\\d{2}|nsz\\-gs7\\/gx70|sonydtv|netbox|bravia|; ?sony;|bravia|svp-dtv15|bdp10g_bx/i": "sony",
-    "/; ?tcl;|\\(tcl[0-9]+|tclwebkit|; ?50s451;|; ?scbc;/i": "tcl",
+    "/; ?tcl;|\\(tcl[0-9]+|tclwebkit|; ?50s451;|; ?scbc;|\\(tcl,/i": "tcl",
     "/thomson/i": "thomson",
     "/philips|avm\\-|qm163e|2020\\/2021 uhd android tv/i": "philips",
     "/xbox/i": "microsoft",
@@ -37,9 +37,10 @@
     "/cultraview690/i": "cultraview",
     "/toptech690/i": "top-tech",
     "/atv r[12]/i": "botech",
+    "/tdsystems/i": "td-systems",
     "/brandt/i": "brandt",
     "/aftka/i": "amazon",
-    "/mxl661l32|smart\\-?tv|; ?samsung;/i": "samsung",
+    "/mxl661l32|; ?samsung;/i": "samsung",
     "/tivo|tcd[4-9a-f]{3}000/i": "tivo",
     "/[;(] ?mtk;/i": "mediatek",
     "/netrangemmh/i": "netrange",
@@ -69,9 +70,11 @@
     "/ulx-/i": "yuno",
     "/sun-/i": "sun-wind",
     "/qupi/i": "qupi",
+    "/akai/i": "akai",
     "/hty-/i": "hartens",
     "/xgem/i": "xgem",
     "/jvc/i": "jvc",
+    "/smart\\-?tv/i": "samsung",
     "/lf1v/i": "thomson",
     "/nettv\\//i": "philips"
   },
