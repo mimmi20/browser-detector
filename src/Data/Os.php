@@ -397,6 +397,8 @@ enum Os: string implements OsInterface
 
     case tivoOS = 'TiVo OS';
 
+    case webian = 'Webian';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -586,6 +588,7 @@ enum Os: string implements OsInterface
             'roku os', 'roku-os', 'rokuos' => self::rokuOS,
             'vidaaos', 'vidaa os', 'vidaa-os' => self::vidaaOS,
             'tivoos', 'tivo os', 'tivo-os' => self::tivoOS,
+            'webian' => self::webian,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(

@@ -6232,5 +6232,54 @@
       ]
     },
     "engine": null
+  },
+  "iis site analysis web crawler": {
+    "name": "IIS Site Analysis Web Crawler",
+    "manufacturer": "microsoft",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "iisbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "hub-pages": {
+    "name": "HubPages",
+    "manufacturer": "arena-group",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HubPages V",
+        "HubPages"
+      ]
+    },
+    "engine": null
+  },
+  "ip-guide-crawler": {
+    "name": "IP-Guide Crawler",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "IP-Guide\\.com Crawler"
+      ]
+    },
+    "engine": null
+  },
+  "prit-torrent": {
+    "name": "PritTorrent",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PritTorrent"
+      ]
+    },
+    "engine": null
   }
 }

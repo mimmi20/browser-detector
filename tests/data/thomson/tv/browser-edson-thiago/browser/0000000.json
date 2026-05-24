@@ -46,66 +46,21 @@
   },
   {
     "headers": {
-      "user-agent": "Zeasn/2.0 NETTV/4.5.0 Mozilla/5.0 (Linux;CE-HTML/1.0;U;en), Chrome/42.0.2311.152 Safari/537.36 AppleWebKit 537.36 (KHTML, like Gecko) Tbrowser/2.0, _TV_nt563/V8-NT563LA-LF1V286 (KALLEY,55D1240,wireless)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Thomson TV",
-      "marketingName": "general Thomson TV",
-      "manufacturer": "Thomson",
-      "brand": "Thomson",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "Whale OS",
-      "marketingName": "Whale OS",
-      "version": null,
-      "manufacturer": "Whale TV",
-      "bits": null
-    },
-    "client": {
-      "name": "TBrowser",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "Browser Edson Thiago",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "42.0.2311.152",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Opera/9.80 Zeasn/2.0 NETTV/4.5.0 Mozilla/5.0 (Linux armv7i;CE-HTML/1.0;U;en), Chrome/42.0.2311.152 Safari/537.36 AppleWebKit 537.36 (KHTML, like Gecko) Tbrowser/2.0, _TV_MT5655/V8-S586T02-LF1V052 (THOMSON,55UC6306,wired)"
     },
     "device": {
       "architecture": null,
-      "deviceName": "general Thomson TV",
-      "marketingName": "general Thomson TV",
+      "deviceName": "55UC6306",
+      "marketingName": "55UC6306",
       "manufacturer": "Thomson",
       "brand": "Thomson",
       "dualOrientation": false,
       "simCount": 0,
       "display": {
-        "width": null,
-        "height": null,
+        "width": 3840,
+        "height": 2160,
         "touch": false,
-        "size": null
+        "size": 54.6
       },
       "type": "tv",
       "ismobile": false,
@@ -275,17 +230,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "general Thomson TV",
-      "marketingName": "general Thomson TV",
+      "deviceName": "55UC63",
+      "marketingName": "55UC63",
       "manufacturer": "Thomson",
       "brand": "Thomson",
       "dualOrientation": false,
       "simCount": 0,
       "display": {
-        "width": null,
-        "height": null,
+        "width": 3840,
+        "height": 2160,
         "touch": false,
-        "size": null
+        "size": 54.6
       },
       "type": "tv",
       "ismobile": false,
@@ -320,17 +275,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "general Thomson TV",
-      "marketingName": "general Thomson TV",
+      "deviceName": "49UC6306",
+      "marketingName": "49UC6306",
       "manufacturer": "Thomson",
       "brand": "Thomson",
       "dualOrientation": false,
       "simCount": 0,
       "display": {
-        "width": null,
-        "height": null,
+        "width": 3840,
+        "height": 2160,
         "touch": false,
-        "size": null
+        "size": 48.5
       },
       "type": "tv",
       "ismobile": false,
@@ -401,51 +356,6 @@
     "engine": {
       "name": "Blink",
       "version": "49.0.2623.75",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Zeasn/2.0 NETTV/4.5.0 Mozilla/5.0 (Linux armv7i;CE-HTML/1.0;U;en), Chrome/42.0.2311.152 Safari/537.36 AppleWebKit 537.36 (KHTML, like Gecko) Tbrowser/2.0, _TV_nt563/V8-NT563LA-LF1V140 (KALLEY,43D1800,wireless)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Thomson TV",
-      "marketingName": "general Thomson TV",
-      "manufacturer": "Thomson",
-      "brand": "Thomson",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "Whale OS",
-      "marketingName": "Whale OS",
-      "version": null,
-      "manufacturer": "Whale TV",
-      "bits": null
-    },
-    "client": {
-      "name": "TBrowser",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "Browser Edson Thiago",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "42.0.2311.152",
       "manufacturer": "Google"
     }
   },

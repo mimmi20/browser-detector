@@ -4279,7 +4279,7 @@
     "engine": "unknown"
   },
   "webianshell": {
-    "name": "WebianShell",
+    "name": "Webian Shell",
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
@@ -6049,6 +6049,42 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PicoBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "yolo-browser": {
+    "name": "Yolo Browser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YoloBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "brisk-bard": {
+    "name": "BriskBard",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BriskBard"
+      ]
+    },
+    "engine": null
+  },
+  "arc-search": {
+    "name": "Arc Search",
+    "manufacturer": "the-browser-company",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ArcMobile2"
       ]
     },
     "engine": null

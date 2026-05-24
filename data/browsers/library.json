@@ -420,8 +420,10 @@
     "manufacturer": "unknown",
     "type": "library",
     "version": {
-      "factory": "\\BrowserDetector\\Version\\SafariFactory",
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SafariViewService"
+      ]
     },
     "engine": "unknown"
   },

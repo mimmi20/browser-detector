@@ -11374,6 +11374,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'AXEN',
                 'key' => 'axen',
             ],
+            [
+                'type' => 'The Arena Group',
+                'name' => 'The Arena Group',
+                'brandname' => 'The Arena Group',
+                'key' => 'arena-group',
+            ],
+            [
+                'type' => 'Monitor.Us',
+                'name' => 'Monitor.Us',
+                'brandname' => 'Monitor.Us',
+                'key' => 'monitor.us',
+            ],
         ];
     }
 

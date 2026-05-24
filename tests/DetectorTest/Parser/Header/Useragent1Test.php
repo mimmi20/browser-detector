@@ -27,6 +27,7 @@ use BrowserDetector\Version\ForcedNullVersion;
 use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\Constraint\StringStartsWith;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -128,10 +129,14 @@ final class Useragent1Test extends TestCase
 
         $deviceCodeHelper = $this->createMock(DeviceInterface::class);
         $deviceCodeHelper
-            ->expects(self::once())
+            ->expects(self::exactly(2))
             ->method('getDeviceCode')
-            ->with($deviceUa)
-            ->willReturn($deviceCode);
+            ->willReturnMap(
+                [
+                    [new StringStartsWith('pf'), null],
+                    [$deviceUa, $deviceCode],
+                ],
+            );
 
         $normalizerFactory = new NormalizerFactory();
         $normalizer        = $normalizerFactory->build();
@@ -563,10 +568,14 @@ final class Useragent1Test extends TestCase
 
         $deviceCodeHelper = $this->createMock(DeviceInterface::class);
         $deviceCodeHelper
-            ->expects(self::once())
+            ->expects(self::exactly(2))
             ->method('getDeviceCode')
-            ->with(mb_strtolower($deviceUa))
-            ->willReturn(null);
+            ->willReturnMap(
+                [
+                    [new StringStartsWith('pf'), null],
+                    [mb_strtolower($deviceUa), null],
+                ],
+            );
 
         $normalizerFactory = new NormalizerFactory();
         $normalizer        = $normalizerFactory->build();

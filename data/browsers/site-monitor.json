@@ -684,5 +684,27 @@
       ]
     },
     "engine": "webkit"
+  },
+  "monitor-us": {
+    "name": "Monitor.Us",
+    "manufacturer": "monitor.us",
+    "type": "site-monitor",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "php-server-monitor": {
+    "name": "PHP Server Monitor",
+    "manufacturer": "unknown",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "phpservermon"
+      ]
+    },
+    "engine": null
   }
 }

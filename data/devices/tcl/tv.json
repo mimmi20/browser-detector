@@ -97,7 +97,7 @@
   },
   "tcl aftmd001": {
     "deviceName": "AFTMD001",
-    "marketingName": "Fire TV",
+    "marketingName": "4K Fire TV (2023)",
     "manufacturer": "tcl",
     "brand": "tcl",
     "dualOrientation": false,
@@ -510,5 +510,21 @@
     },
     "type": "tv",
     "platform": null
+  },
+  "tcl aftdec012e": {
+    "deviceName": "AFTDEC012E",
+    "marketingName": "4K Fire TV (2024)",
+    "manufacturer": "tcl",
+    "brand": "tcl",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 3840,
+      "height": 2160,
+      "touch": false,
+      "size": null
+    },
+    "type": "tv",
+    "platform": "android"
   }
 }

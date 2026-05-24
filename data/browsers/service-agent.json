@@ -556,5 +556,25 @@
       ]
     },
     "engine": "unknown"
+  },
+  "lets-encrypt-validation": {
+    "name": "Let's Encrypt Validation",
+    "manufacturer": "isrg",
+    "type": "service-agent",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "amazon-route53-health-check": {
+    "name": "Amazon Route53 Health Check",
+    "manufacturer": "amazon",
+    "type": "service-agent",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
   }
 }

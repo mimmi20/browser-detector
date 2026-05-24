@@ -2302,18 +2302,6 @@
     },
     "engine": "webkit"
   },
-  "iis site analysis web crawler": {
-    "name": "IIS Site Analysis Web Crawler",
-    "manufacturer": "microsoft",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "iisbot"
-      ]
-    },
-    "engine": "unknown"
-  },
   "imagemobile": {
     "name": "ImageMobile",
     "manufacturer": "unknown",
@@ -6762,16 +6750,6 @@
       "search": [
         "Dmbot"
       ]
-    },
-    "engine": "unknown"
-  },
-  "lets-encrypt-validation": {
-    "name": "Let's Encrypt Validation",
-    "manufacturer": "isrg",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
     },
     "engine": "unknown"
   },

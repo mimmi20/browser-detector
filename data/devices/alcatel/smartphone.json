@@ -5583,6 +5583,22 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "alcatel 5054w": {
+    "deviceName": "5054W",
+    "marketingName": "OneTouch Pop 3 (5.5)",
+    "manufacturer": "tcl",
+    "brand": "alcatel",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "alcatel 5051a": {
     "deviceName": "5051A",
     "marketingName": "OneTouch Pop 4",
@@ -8799,41 +8815,9 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "alcatel 4022d": {
-    "deviceName": "4022D",
-    "marketingName": "OneTouch Pixi 3 3.5\"",
-    "manufacturer": "alcatel",
-    "brand": "alcatel",
-    "dualOrientation": false,
-    "simCount": 1,
-    "display": {
-      "width": 480,
-      "height": 320,
-      "touch": false,
-      "size": 3.5
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "alcatel 5059s": {
-    "deviceName": "5059S",
-    "marketingName": "Avalon V",
-    "manufacturer": "alcatel",
-    "brand": "alcatel",
-    "dualOrientation": false,
-    "simCount": 1,
-    "display": {
-      "width": 960,
-      "height": 480,
-      "touch": false,
-      "size": 5.34
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "alcatel a466bg": {
-    "deviceName": "A466BG",
-    "marketingName": "Pixi Unite",
+  "alcatel 7046t": {
+    "deviceName": "7046T",
+    "marketingName": "7046T",
     "manufacturer": "alcatel",
     "brand": "alcatel",
     "dualOrientation": false,
@@ -8842,9 +8826,25 @@
       "width": null,
       "height": null,
       "touch": false,
-      "size": 5
+      "size": null
     },
-    "type": "feature-phone",
-    "platform": "java"
+    "type": "smartphone",
+    "platform": null
+  },
+  "alcatel a845l": {
+    "deviceName": "A845L",
+    "marketingName": "A845L",
+    "manufacturer": "alcatel",
+    "brand": "alcatel",
+    "dualOrientation": false,
+    "simCount": 1,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": null
   }
 }

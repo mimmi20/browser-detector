@@ -149,7 +149,6 @@ final class Device implements DeviceInterface
             'kfquwi' => 'amazon=amazon kfquwi',
             'aftt' => 'amazon=amazon aftt',
             'afttiff43' => 'amazon=amazon afttiff43',
-            'aftdec012e' => 'amazon=amazon aftdec012e',
             'aeobc' => 'amazon=amazon aeobc',
             'aeokn' => 'amazon=amazon aeokn',
             'kfapwa' => 'amazon=amazon kfapwa',
@@ -367,6 +366,8 @@ final class Device implements DeviceInterface
             'gv0bp' => 'google=google gv0bp',
             'g4h7l' => 'google=google g4h7l',
             'pixel fold' => 'google=google pixel fold',
+            'nexus 6' => 'google=google nexus 6',
+            'pixel' => 'google=google pixel',
             // OnePlus
             'ac2003' => 'oneplus=oneplus ac2003',
             'in2023' => 'oneplus=oneplus in2023',
@@ -1538,6 +1539,8 @@ final class Device implements DeviceInterface
             'z5157y' => 'zte=zte z5157y',
             'z5157v' => 'zte=zte z5157v',
             'zte t320' => 'zte=zte t320',
+            'n9130' => 'zte=zte n9130',
+            'n9519' => 'zte=zte n9519',
             // Samsung
             'sm-a505fn' => 'samsung=samsung sm-a505fn',
             'sm-a515f', 'samsung sm-a515f', 'sm-a515f/a515fxxu8hwi1' => 'samsung=samsung sm-a515f',
@@ -2846,6 +2849,18 @@ final class Device implements DeviceInterface
             'samsung family hub 6.0' => 'samsung=samsung familyhub 6.0',
             'samsung family hub 5.0' => 'samsung=samsung familyhub 5.0',
             'samsung family hub 4.0' => 'samsung=samsung familyhub 4.0',
+            'gt-i9300i' => 'samsung=samsung gt-i9300i',
+            'gt-i9500' => 'samsung=samsung gt-i9500',
+            'sch-r970x' => 'samsung=samsung sch-r970x',
+            'sch-r970' => 'samsung=samsung sch-r970',
+            'sgh-t399n' => 'samsung=samsung sgh-t399n',
+            'sm-g386t' => 'samsung=samsung sm-g386t',
+            'sm-g900p' => 'samsung=samsung sm-g900p',
+            'sm-g900v' => 'samsung=samsung sm-g900v',
+            'sm-g900t' => 'samsung=samsung sm-g900t',
+            'sm-n910t' => 'samsung=samsung sm-n910t',
+            'sm-n930v' => 'samsung=samsung sm-n930v',
+            'sm-s320vl' => 'samsung=samsung sm-s320vl',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -3907,7 +3922,7 @@ final class Device implements DeviceInterface
             'motorola one' => 'motorola=motorola one',
             'motorola one vision' => 'motorola=motorola one vision',
             'moto g(8) power', 'motorola moto g8 power' => 'motorola=motorola moto g8 power',
-            'moto g (4)', 'moto g4' => 'motorola=motorola moto g4',
+            'moto g (4)', 'moto g4', 'moto g (4' => 'motorola=motorola moto g4',
             'moto g(6)' => 'motorola=motorola moto g6',
             'moto g(6) play' => 'motorola=motorola moto g6 play',
             'moto g(9) plus' => 'motorola=motorola moto g9 plus',
@@ -4104,6 +4119,7 @@ final class Device implements DeviceInterface
             'motorola one hyper' => 'motorola=motorola one hyper',
             'xt2027-1' => 'motorola=motorola xt2027-1',
             'moto e5 supra' => 'motorola=motorola moto e5 supra',
+            'moto g45 5g' => 'motorola=motorola moto g45 5g',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
@@ -4268,6 +4284,8 @@ final class Device implements DeviceInterface
             'xperia e3 (aosp)', 'xperia e3 (aosp' => 'sony=sony xperia e3',
             'a301so' => 'sony=sony a301so',
             'xperia' => 'sony=sony xperia',
+            'c6606' => 'sony=sony c6606',
+            'd6708' => 'sony=sony d6708',
             // Vivo
             'v2109' => 'vivo=vivo v2109',
             'vivo 1716' => 'vivo=vivo 1716',
@@ -5171,6 +5189,14 @@ final class Device implements DeviceInterface
             '5059s' => 'alcatel=alcatel 5059s',
             'a466bg' => 'alcatel=alcatel a466bg',
             '8082' => 'alcatel=alcatel 8082',
+            '5017b' => 'alcatel=alcatel 5017b',
+            '5054n' => 'alcatel=alcatel 5054n',
+            '5054w' => 'alcatel=alcatel 5054w',
+            '5056n' => 'alcatel=alcatel 5056n',
+            '6045o' => 'alcatel=alcatel 6045o',
+            'a621bl' => 'alcatel=alcatel a621bl',
+            'alcatel 7046t', '7046t' => 'alcatel=alcatel 7046t',
+            'alcatel a845l', 'a845l' => 'alcatel=alcatel a845l',
             // HTC
             'htc desire 19+' => 'htc=htc desire 19 plus',
             'htc u11' => 'htc=htc u11',
@@ -5194,8 +5220,8 @@ final class Device implements DeviceInterface
             'htc 2q4d200', '2q4d200' => 'htc=htc 2q4d200',
             'htc u20 5g' => 'htc=htc u20 5g',
             'htc 2pzm3', '2pzm3' => 'htc=htc 2pzm3',
-            'htc 2pq93' => 'htc=htc 2pq93',
-            'htc 2pq910' => 'htc=htc 2pq910',
+            'htc 2pq93', '2pq93' => 'htc=htc 2pq93',
+            'htc 2pq910', '2pq910' => 'htc=htc 2pq910',
             'htc_a9u' => 'htc=htc a9u',
             'htc_d526h', 'htcd526h' => 'htc=htc desire 526h',
             'htc a103 plus' => 'htc=htc a103 plus',
@@ -5222,6 +5248,12 @@ final class Device implements DeviceInterface
             'htc_desire_601_dual_sim' => 'htc=htc desire 601 dual sim',
             'one s c2' => 'htc=htc c2',
             'sprint apa9292kt' => 'htc=htc 9292',
+            '0pcv1' => 'htc=htc 0pcv1',
+            '0pja2' => 'htc=htc 0pja2',
+            '0pm92' => 'htc=htc 0pm92',
+            '2ps64' => 'htc=htc 2ps64',
+            '2pyb2' => 'htc=htc 2pyb2',
+            'htcd160lvwpp' => 'htc=htc d160lvwpp',
             // teclast
             'p30s_eea' => 'teclast=teclast p30s_eea',
             'p25t_eea', 'p25_t_eea' => 'teclast=teclast p25t_eea',
@@ -5821,6 +5853,9 @@ final class Device implements DeviceInterface
             'kyg03' => 'kyocera=kyocera kyg03',
             's9-kc' => 'kyocera=kyocera s9-kc',
             'a201kc' => 'kyocera=kyocera a201kc',
+            'c6730' => 'kyocera=kyocera c6730',
+            'c6743' => 'kyocera=kyocera c6743',
+            'e6782' => 'kyocera=kyocera e6782',
             // iq-t
             'iq&amp;t n8', 'iq&t n8' => 'iq-t=iq-t n8',
             // packard-bell
@@ -6320,6 +6355,8 @@ final class Device implements DeviceInterface
             'cp12p' => 'coolpad=coolpad cp12p',
             'cp23nv3' => 'coolpad=coolpad cp23nv3',
             'cp07' => 'coolpad=coolpad cp07',
+            'coolpad 3320a' => 'coolpad=coolpad 3320a',
+            'coolpad 3622a' => 'coolpad=coolpad 3622a',
             // tcl
             't766h_eea' => 'tcl=tcl t766h_eea',
             't506k' => 'tcl=tcl t506k',
@@ -6403,6 +6440,7 @@ final class Device implements DeviceInterface
             'vf685' => 'tcl=tcl vf685',
             'aftmd001' => 'tcl=tcl aftmd001',
             'aftmm-tcl-ts8011' => 'tcl=tcl aftmm',
+            'aftdec012e' => 'tcl=tcl aftdec012e',
             // general-mobile
             'gm 8' => 'general-mobile=general-mobile gm 8',
             'g314' => 'general-mobile=general-mobile g314',
@@ -6760,6 +6798,7 @@ final class Device implements DeviceInterface
             'c110v' => 'blu=blu c110v',
             'c110l' => 'blu=blu c110l',
             'bold n1' => 'blu=blu bold n1',
+            'r1 hd' => 'blu=blu r1 hd',
             // apple
             'iphone18,5', 'iph18,5' => 'apple=apple iphone 18,5',
             'iphone18,4', 'iph18,4' => 'apple=apple iphone 18,4',
@@ -7131,6 +7170,8 @@ final class Device implements DeviceInterface
             'quest 2' => 'meta=meta quest 2',
             'quest 3' => 'meta=meta quest 3',
             'quest 3s' => 'meta=meta quest 3s',
+            'quest pro' => 'meta=meta quest pro',
+            'portalgo' => 'meta=meta portal go',
             // acd
             'acd-tab-10s' => 'acd=acd tab 10s',
             // hoco
@@ -8185,6 +8226,8 @@ final class Device implements DeviceInterface
             'v-z80plus' => 'vikusha=vikusha v-z80 plus',
             // verizon
             'qmv7b' => 'verizon=verizon qmv7b',
+            'qmv7a' => 'verizon=verizon qmv7a',
+            'qtaqz3' => 'verizon=verizon qtaqz3',
             // elephone
             'elephone p4000' => 'elephone=elephone p4000',
             // ujj
