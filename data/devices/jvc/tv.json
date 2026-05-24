@@ -33,7 +33,7 @@
   },
   "jvc aftso001": {
     "deviceName": "AFTSO001",
-    "marketingName": "4K (2019)",
+    "marketingName": "Fire TV 4K (2019)",
     "manufacturer": "jvc",
     "brand": "jvc",
     "dualOrientation": false,
@@ -43,6 +43,22 @@
       "height": 2160,
       "touch": false,
       "size": 55
+    },
+    "type": "tv",
+    "platform": "android-tv"
+  },
+  "jvc 32d1290": {
+    "deviceName": "32D1290",
+    "marketingName": "32D1290",
+    "manufacturer": "jvc",
+    "brand": "jvc",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": 32
     },
     "type": "tv",
     "platform": "android-tv"

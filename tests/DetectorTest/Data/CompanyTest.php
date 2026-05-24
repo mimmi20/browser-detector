@@ -11362,6 +11362,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Pioneer',
                 'key' => 'pioneer',
             ],
+            [
+                'type' => 'PICO',
+                'name' => 'PICO Immersive Pte. Ltd.',
+                'brandname' => 'PICO',
+                'key' => 'pico',
+            ],
         ];
     }
 

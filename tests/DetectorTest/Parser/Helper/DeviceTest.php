@@ -8535,6 +8535,7 @@ final class DeviceTest extends TestCase
             ['YQ10SK', 'atozee=atozee yq10sk'],
             ['AT81K', 'atozee=atozee at81k'],
             // meta
+            ['Quest 2', 'meta=meta quest 2'],
             ['Quest 3', 'meta=meta quest 3'],
             ['Quest 3S', 'meta=meta quest 3s'],
             // acd

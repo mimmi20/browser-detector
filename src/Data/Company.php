@@ -3791,6 +3791,8 @@ enum Company: string implements CompanyInterface
 
     case pioneer = 'Pioneer';
 
+    case pico = 'PICO';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5684,6 +5686,7 @@ enum Company: string implements CompanyInterface
             'tdsystems', 'td-systems', 'td systems' => self::tdSystems,
             'manhattan' => self::manhattan,
             'pioneer' => self::pioneer,
+            'pico', 'pico immersive pte. ltd.' => self::pico,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6447,6 +6450,7 @@ enum Company: string implements CompanyInterface
             self::freesat => 'Everyone TV Devices Limited',
             self::audacy => 'Audacy, Inc.',
             self::cypress => 'Cypress.io, Inc.',
+            self::pico => 'PICO Immersive Pte. Ltd.',
             self::unknown => null,
             default => $this->value,
         };

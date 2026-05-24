@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "Opera/9.80 (Linux armv7l; U; NETRANGEMMH;HbbTV/1.1.1;CE-HTML/1.0;Vendor/JVC;SW-Version/V8-MT51F07-LF1V309;Cnt/DNK;Lan/dan) Presto/2.12.362 Version/12.11"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general JVC device",
+      "marketingName": "general JVC device",
+      "manufacturer": "JVC",
+      "brand": "JVC",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "12.11.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.362",
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Opera/9.80 (Linux mips; ) Presto/2.12.407 Version/12.51 MB97/0.45.23.8 (JVC, Mxl66140_V, wired) VSTVB_MB97  SmartTvA/3.0.0"
     },
     "device": {
@@ -446,6 +491,51 @@
     "engine": {
       "name": "Blink",
       "version": "53.0.2785.143",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.128 Safari/537.36 OPR/46.0.2207.0 OMI/4.23.2.96.LIMA2.102 Model/Vestel-MB181 VSTVB MB100 TiVoOS/1.0.0 (Vestel MB181 JVC) SmartTvA/3.0.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general JVC device",
+      "marketingName": "general JVC device",
+      "manufacturer": "JVC",
+      "brand": "JVC",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Devices",
+      "modus": null,
+      "version": "4.23.2.96",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.5359.128",
       "manufacturer": "Google"
     }
   },

@@ -46,6 +46,51 @@
   },
   {
     "headers": {
+      "user-agent": "Opera/9.80 (Linux mips; ) Presto/2.12.407 Version/12.51 MB95/3.6.2.j (FUNAI, Si2157LG32, wireless) HbbTV/1.2.1 (; CUS:FUNAI; MB95; 3.6.2.j; 1.0;) SmartTvA/3.0.0 CE-HTML/1.0 NETRANGEMMH iplayerV3"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Funai TV",
+      "marketingName": "general Funai TV",
+      "manufacturer": "Funai",
+      "brand": "Funai",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Opera TV",
+      "marketingName": "Opera TV",
+      "version": null,
+      "manufacturer": "Opera",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "12.51.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.407",
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36 OPR/46.0.2207.0 OMI/20.11.2.40.Wasabi.275 Model/Funai-Model18-50PFL5703F7 TV Store/20.11"
     },
     "device": {

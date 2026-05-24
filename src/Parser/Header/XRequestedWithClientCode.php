@@ -398,6 +398,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.meecel.feedreader.rssdemonad' => 'rss-demon',
             'com.ehawk.antivirus.applock.wifi' => 'hi-security',
             'com.mxtech.videoplayer.ad' => 'mx-player',
+            'com.pico.browser.overseas' => 'pico-browser',
             default => null,
         };
     }

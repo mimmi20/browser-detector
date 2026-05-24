@@ -5321,7 +5321,7 @@
     "engine": null
   },
   "logicui-tv-browser": {
-    "name": "TV Browser",
+    "name": "LogicUI TV Browser",
     "manufacturer": "logic-ui",
     "type": "browser",
     "version": {
@@ -6040,5 +6040,17 @@
       ]
     },
     "engine": "arachne"
+  },
+  "pico-browser": {
+    "name": "PICO Browser",
+    "manufacturer": "pico",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PicoBrowser"
+      ]
+    },
+    "engine": null
   }
 }

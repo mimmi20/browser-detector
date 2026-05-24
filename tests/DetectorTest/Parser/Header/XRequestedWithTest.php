@@ -576,6 +576,7 @@ final class XRequestedWithTest extends TestCase
             ['com.ehawk.antivirus.applock.wifi', true, 'hi-security', true, null, false, Os::unknown],
             ['cacheposxrequestedwithcachepos<>', false, null, false, null, false, Os::unknown],
             ['com.mxtech.videoplayer.ad', true, 'mx-player', true, null, false, Os::unknown],
+            ['com.pico.browser.overseas', true, 'pico-browser', true, null, false, Os::unknown],
         ];
     }
 }

@@ -7128,6 +7128,7 @@ final class Device implements DeviceInterface
             'yq10sk' => 'atozee=atozee yq10sk',
             'at81k' => 'atozee=atozee at81k',
             // meta
+            'quest 2' => 'meta=meta quest 2',
             'quest 3' => 'meta=meta quest 3',
             'quest 3s' => 'meta=meta quest 3s',
             // acd
