@@ -1551,6 +1551,14 @@ final class OsTest extends TestCase
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['VIDAA']],
                 'key' => 'vidaa-os',
             ],
+            [
+                'type' => 'TiVo OS',
+                'name' => 'TiVo OS',
+                'marketingName' => 'TiVo OS',
+                'manufacturer' => Company::tivo,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['TiVoOS']],
+                'key' => 'tivo-os',
+            ],
         ];
     }
 }

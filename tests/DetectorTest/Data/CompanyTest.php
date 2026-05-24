@@ -11368,6 +11368,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'PICO',
                 'key' => 'pico',
             ],
+            [
+                'type' => 'AXEN',
+                'name' => 'AXEN',
+                'brandname' => 'AXEN',
+                'key' => 'axen',
+            ],
         ];
     }
 

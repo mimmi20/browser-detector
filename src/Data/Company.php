@@ -3793,6 +3793,8 @@ enum Company: string implements CompanyInterface
 
     case pico = 'PICO';
 
+    case axen = 'AXEN';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5687,6 +5689,7 @@ enum Company: string implements CompanyInterface
             'manhattan' => self::manhattan,
             'pioneer' => self::pioneer,
             'pico', 'pico immersive pte. ltd.' => self::pico,
+            'axen' => self::axen,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(

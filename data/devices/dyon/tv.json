@@ -1,7 +1,7 @@
 {
-  "general dyon device": {
-    "deviceName": "general Dyon device",
-    "marketingName": "general Dyon device",
+  "general dyon tv": {
+    "deviceName": "general Dyon TV",
+    "marketingName": "general Dyon TV",
     "manufacturer": "dyon",
     "brand": "dyon",
     "dualOrientation": false,
@@ -27,6 +27,22 @@
       "height": 1080,
       "touch": false,
       "size": null
+    },
+    "type": "tv",
+    "platform": "android-tv"
+  },
+  "dyon smart-32-x-eos": {
+    "deviceName": "Smart 32 X-EOS",
+    "marketingName": "Smart 32 X-EOS",
+    "manufacturer": "dyon",
+    "brand": "dyon",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": 32
     },
     "type": "tv",
     "platform": "android-tv"

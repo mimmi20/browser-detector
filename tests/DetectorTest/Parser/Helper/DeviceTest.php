@@ -9115,7 +9115,8 @@ final class DeviceTest extends TestCase
             ['Grundig Google TV UHD+', 'grundig=grundig google tv uhd+'],
             ['AFTEU014', 'grundig=grundig afteu014'],
             ['AFTEUFF014', 'grundig=grundig afteuff014'],
-            ['AFTEU011', 'grundig=grundig afteu011'],
+            // has conflicts
+            // ['AFTEU011', 'grundig=grundig afteu011'],
             // dudu-auto
             ['DUDU7', 'dudu-auto=dudu-auto dudu7'],
             // vorcom
@@ -9543,7 +9544,8 @@ final class DeviceTest extends TestCase
             ['DYON 2K Google TV', 'dyon=dyon 2k smart tv'],
             // panasonic
             ['Panasonic G00gle TV LCD', 'panasonic=panasonic smart tv'],
-            ['AFTBOXE1', 'panasonic=panasonic aftboxe1'],
+            // has conflicts
+            // ['AFTBOXE1', 'panasonic=panasonic aftboxe1'],
             // panavox
             ['Panavox Android TV', 'panavox=panavox smart tv'],
             // tv+

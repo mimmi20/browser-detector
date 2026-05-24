@@ -395,6 +395,8 @@ enum Os: string implements OsInterface
 
     case vidaaOS = 'VIDAA OS';
 
+    case tivoOS = 'TiVo OS';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -583,6 +585,7 @@ enum Os: string implements OsInterface
             'fritzos', 'fritz!os', 'fritz-os' => self::fritzOS,
             'roku os', 'roku-os', 'rokuos' => self::rokuOS,
             'vidaaos', 'vidaa os', 'vidaa-os' => self::vidaaOS,
+            'tivoos', 'tivo os', 'tivo-os' => self::tivoOS,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -699,6 +702,7 @@ enum Os: string implements OsInterface
             self::fritzOS => Company::fritz,
             self::rokuOS => Company::roku,
             self::vidaaOS => Company::vidaa,
+            self::tivoOS => Company::tivo,
             default => Company::unknown,
         };
     }
@@ -843,6 +847,7 @@ enum Os: string implements OsInterface
             self::rokuOS => ['factory' => VersionBuilderFactory::class, 'search' => ['Roku\/DVP-', 'Roku\/Pluto-', 'RokuOS', 'Roku; AP; ']],
             self::vidaaOS => ['factory' => VersionBuilderFactory::class, 'search' => ['VIDAA']],
             self::linux => ['factory' => VersionBuilderFactory::class, 'search' => ['Linux']],
+            self::tivoOS => ['factory' => VersionBuilderFactory::class, 'search' => ['TiVoOS']],
             default => ['factory' => null, 'search' => null],
         };
     }
@@ -956,6 +961,7 @@ enum Os: string implements OsInterface
             self::fritzOS => 'fritz-os',
             self::rokuOS => 'roku-os',
             self::vidaaOS => 'vidaa-os',
+            self::tivoOS => 'tivo-os',
             default => $this->name,
         };
     }

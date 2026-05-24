@@ -7702,7 +7702,8 @@ final class Device implements DeviceInterface
             'grundig google tv uhd+' => 'grundig=grundig google tv uhd+',
             'afteu014' => 'grundig=grundig afteu014',
             'afteuff014' => 'grundig=grundig afteuff014',
-            'afteu011' => 'grundig=grundig afteu011',
+            // has conflicts
+            // 'afteu011' => 'grundig=grundig afteu011',
             // dudu-auto
             'dudu7' => 'dudu-auto=dudu-auto dudu7',
             // vorcom
@@ -8126,7 +8127,8 @@ final class Device implements DeviceInterface
             'dyon 2k google tv' => 'dyon=dyon 2k smart tv',
             // panasonic
             'panasonic g00gle tv lcd' => 'panasonic=panasonic smart tv',
-            'aftboxe1' => 'panasonic=panasonic aftboxe1',
+            // has conflicts
+            // 'aftboxe1' => 'panasonic=panasonic aftboxe1',
             // panavox
             'panavox android tv' => 'panavox=panavox smart tv',
             // tv+
