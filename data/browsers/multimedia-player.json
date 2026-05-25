@@ -967,5 +967,17 @@
       ]
     },
     "engine": null
+  },
+  "foobar2000": {
+    "name": "Foobar2000",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "foobar2000"
+      ]
+    },
+    "engine": null
   }
 }

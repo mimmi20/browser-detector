@@ -303,6 +303,7 @@ final class DeviceTest extends TestCase
             ['Pixel 5a', 'google=google pixel 5a'],
             ['Pixel 3 XL', 'google=google pixel 3 xl'],
             ['Pixel 2', 'google=google pixel 2'],
+            ['Google Pixel 2', 'google=google pixel 2'],
             ['Nexus 5X', 'google=google nexus 5x'],
             ['Pixel C', 'google=google pixel c'],
             ['Pixel 9 Pro', 'google=google pixel 9 pro'],
@@ -405,6 +406,10 @@ final class DeviceTest extends TestCase
             ['Pixel Fold', 'google=google pixel fold'],
             ['Nexus 6', 'google=google nexus 6'],
             ['Pixel', 'google=google pixel'],
+            ['Google Pixelbook', 'google=google pixelbook'],
+            ['Pixel Tablet', 'google=google pixel tablet'],
+            ['Pixel Tablet 2', 'google=google pixel tablet 2'],
+            ['Google Pixelbook Go', 'google=google pixelbook go'],
             // OnePlus
             ['AC2003', 'oneplus=oneplus ac2003'],
             ['IN2023', 'oneplus=oneplus in2023'],
@@ -3923,6 +3928,7 @@ final class DeviceTest extends TestCase
             ['SM-G900P', 'samsung=samsung sm-g900p'],
             ['SM-G900V', 'samsung=samsung sm-g900v'],
             ['SM-G900T', 'samsung=samsung sm-g900t'],
+            ['SAMSUNG SM-G900T', 'samsung=samsung sm-g900t'],
             ['SM-N910T', 'samsung=samsung sm-n910t'],
             ['SM-N930V', 'samsung=samsung sm-n930v'],
             ['SM-S320VL', 'samsung=samsung sm-s320vl'],
@@ -6400,6 +6406,7 @@ final class DeviceTest extends TestCase
             ['7046T', 'alcatel=alcatel 7046t'],
             ['Alcatel A845L', 'alcatel=alcatel a845l'],
             ['A845L', 'alcatel=alcatel a845l'],
+            ['ALCATELOneTouch4022D', 'alcatel=alcatel 4022d'],
             // HTC
             ['HTC Desire 19+', 'htc=htc desire 19 plus'],
             ['HTC U11', 'htc=htc u11'],
@@ -6867,6 +6874,7 @@ final class DeviceTest extends TestCase
             ['A121', 'micromax=micromax a121'],
             ['E6523', 'micromax=micromax e6523'],
             ['E7533', 'micromax=micromax e7533'],
+            ['Micromax Q402Plus', 'micromax=micromax q402+'],
             // itel
             ['itel L6006', 'itel=itel l6006'],
             ['itel S681LN', 'itel=itel s681ln'],

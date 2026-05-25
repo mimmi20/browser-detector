@@ -11386,6 +11386,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Monitor.Us',
                 'key' => 'monitor.us',
             ],
+            [
+                'type' => 'NET SYSTEMS RESEARCH',
+                'name' => 'NET SYSTEMS RESEARCH LLC',
+                'brandname' => 'NET SYSTEMS RESEARCH',
+                'key' => 'net-systems-research',
+            ],
         ];
     }
 

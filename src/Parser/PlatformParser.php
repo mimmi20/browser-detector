@@ -111,7 +111,7 @@ final readonly class PlatformParser implements PlatformParserInterface
             '/xubuntu/i' => Os::xubuntu,
             '/ubuntu/i' => Os::ubuntu,
             '/debian/i' => Os::debian,
-            '/(?<!no)tizen/i' => Os::tizen,
+            '/(?<!no|ci)tizen/i' => Os::tizen,
             '/remixos|remix (?:pro|mini)/i' => Os::remixOs,
             '/(?<![0-9a-z])bada/i' => Os::bada,
             '/meego/i' => Os::meego,

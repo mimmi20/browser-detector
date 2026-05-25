@@ -131,6 +131,7 @@ final readonly class UseragentPlatformCode implements PlatformCodeInterface
             '/\(speedmode; proxy; (?P<platform>android) [\d.]+;([^);\/]+)\)/i',
             '/com\.huawei\.hmos\.browser \([^;]+;(?P<platform>openharmony)-[\d.]+;[^)]+\)/i',
             '/snapchat\/[\d.]+ \([^;]+; (?P<platform>andr[o0]id) [\d.]+#/i',
+            '/^(?P<platform>A)\/[\d.]+\//',
         ];
 
         $filtered = array_filter(
@@ -149,7 +150,7 @@ final readonly class UseragentPlatformCode implements PlatformCodeInterface
                 // @todo: need to find a solution to find android forks like mocordroid
                 return match ($code) {
                     'android', 'tizen', 'openharmony', 'kaios', 'ios', 'harmonyos' => $code,
-                    'andr0id' => 'android',
+                    'andr0id', 'a' => 'android',
                     default => '',
                 };
             },

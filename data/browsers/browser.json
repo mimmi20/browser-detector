@@ -6088,5 +6088,17 @@
       ]
     },
     "engine": null
+  },
+  "east-browser": {
+    "name": "East Browser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "EastBrowser"
+      ]
+    },
+    "engine": null
   }
 }

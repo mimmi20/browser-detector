@@ -133,7 +133,8 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "MuninBot"
+        "MuninBot",
+        "munin\\/"
       ]
     },
     "engine": null

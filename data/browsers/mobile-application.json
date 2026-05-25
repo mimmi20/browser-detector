@@ -5429,5 +5429,27 @@
       ]
     },
     "engine": "webkit"
+  },
+  "coaf-smart-citizen": {
+    "name": "COAF Smart Citizen",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "bookshelf": {
+    "name": "Bookshelf",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Bookshelf-Android"
+      ]
+    },
+    "engine": "webkit"
   }
 }

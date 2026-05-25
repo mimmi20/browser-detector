@@ -110,5 +110,37 @@
     },
     "type": "tablet",
     "platform": "chromeos"
+  },
+  "google pixel tablet": {
+    "deviceName": "Pixel Tablet",
+    "marketingName": "Pixel Tablet",
+    "manufacturer": "google",
+    "brand": "google",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 10.95
+    },
+    "type": "tablet",
+    "platform": "chromeos"
+  },
+  "google pixel tablet 2": {
+    "deviceName": "Pixel Tablet 2",
+    "marketingName": "Pixel Tablet 2",
+    "manufacturer": "google",
+    "brand": "google",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 10.95
+    },
+    "type": "tablet",
+    "platform": "chromeos"
   }
 }
