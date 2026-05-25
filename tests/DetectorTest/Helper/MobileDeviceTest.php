@@ -298,6 +298,8 @@ final class MobileDeviceTest extends TestCase
             ['Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/5360 (KHTML, like Gecko) Chrome/40.0.892.0 Mobile Safari/5360'],
             ['Mozilla/5.0 (Windows 95) AppleWebKit/5320 (KHTML, like Gecko) Chrome/37.0.805.0 Mobile Safari/5320'],
             ['Mozilla/5.0 (Windows 98; Win 9x 4.90) AppleWebKit/5331 (KHTML, like Gecko) Chrome/37.0.859.0 Mobile Safari/5331'],
+            ['Mozilla/4.0 (compatible; Win32; WinHttp.WinHttpRequest.5)'],
+            ['Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Safari PrcmNovel_iOS/1.11.8'],
         ];
     }
 }

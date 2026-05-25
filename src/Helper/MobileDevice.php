@@ -51,7 +51,7 @@ final class MobileDevice implements MobileDeviceInterface
 
         if (
             preg_match(
-                '/windows nt.*(mobile safari|opera mobi|iphone|openwave)|fbid\/desktop|debian|windowswechat|macwechat|tv safari|andr[o0]id ?tv|g[o0][o0]gle ?tv|gsmart ?tv|iptv pro/i',
+                '/windows nt.*(mobile safari|opera mobi|iphone|openwave)|fbid\/desktop|debian|windowswechat|macwechat|tv safari|andr[o0]id ?tv|g[o0][o0]gle ?tv|gsmart ?tv|iptv pro|prcmnovel_ios/i',
                 $useragent,
             )
         ) {

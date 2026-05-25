@@ -5245,6 +5245,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "splash Version",
         "splash"
       ]
     },
@@ -6100,5 +6101,17 @@
       ]
     },
     "engine": null
+  },
+  "kapiko": {
+    "name": "Kapiko",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Kapiko"
+      ]
+    },
+    "engine": "gecko"
   }
 }

@@ -6291,5 +6291,27 @@
       "search": null
     },
     "engine": null
+  },
+  "snapchat-proxy": {
+    "name": "Snapchat Proxy",
+    "manufacturer": "snap",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "info-tiger-bot": {
+    "name": "InfoTigerBot",
+    "manufacturer": "infotiger",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "InfoTigerBot"
+      ]
+    },
+    "engine": null
   }
 }

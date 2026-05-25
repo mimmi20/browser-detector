@@ -3801,6 +3801,10 @@ enum Company: string implements CompanyInterface
 
     case netSystemsResearch = 'NET SYSTEMS RESEARCH';
 
+    case infotiger = 'Infotiger';
+
+    case signal = 'Signal';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5699,6 +5703,8 @@ enum Company: string implements CompanyInterface
             'arenagroup', 'the arena group', 'arena-group' => self::arenaGroup,
             'monitorus', 'monitor.us' => self::monitorUs,
             'netsystemsresearch', 'net systems research llc', 'net-systems-research', 'net systems research' => self::netSystemsResearch,
+            'infotiger', 'infotiger ug' => self::infotiger,
+            'signal', 'signal messenger llc.' => self::signal,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6464,6 +6470,8 @@ enum Company: string implements CompanyInterface
             self::cypress => 'Cypress.io, Inc.',
             self::pico => 'PICO Immersive Pte. Ltd.',
             self::netSystemsResearch => 'NET SYSTEMS RESEARCH LLC',
+            self::infotiger => 'Infotiger UG',
+            self::signal => 'Signal Messenger LLC.',
             self::unknown => null,
             default => $this->value,
         };

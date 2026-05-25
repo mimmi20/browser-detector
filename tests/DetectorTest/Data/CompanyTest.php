@@ -11392,6 +11392,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'NET SYSTEMS RESEARCH',
                 'key' => 'net-systems-research',
             ],
+            [
+                'type' => 'Infotiger',
+                'name' => 'Infotiger UG',
+                'brandname' => 'Infotiger',
+                'key' => 'infotiger',
+            ],
+            [
+                'type' => 'Signal',
+                'name' => 'Signal Messenger LLC.',
+                'brandname' => 'Signal',
+                'key' => 'signal',
+            ],
         ];
     }
 

@@ -5311,6 +5311,7 @@ final class DeviceTest extends TestCase
             ['XT2027-1', 'motorola=motorola xt2027-1'],
             ['moto e5 supra', 'motorola=motorola moto e5 supra'],
             ['moto g45 5G', 'motorola=motorola moto g45 5g'],
+            ['MB860', 'motorola=motorola mb860'],
             // Sony
             ['XQ-CC54', 'sony=sony xq-cc54'],
             ['XQ-BQ52', 'sony=sony xq-bq52'],
@@ -9911,6 +9912,8 @@ final class DeviceTest extends TestCase
             ['NS6', 'nous=nous ns6'],
             // anker
             ['AFTMM-Anker-AK-D3000111', 'anker=anker aftmm'],
+            // mediatek
+            ['Mediatek MT8173 Chromebook', 'mediatek=mediatek mt8173 chromebook'],
             // other
             ['Model"', null],
             [': "', null],

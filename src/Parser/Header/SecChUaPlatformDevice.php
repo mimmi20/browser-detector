@@ -21,24 +21,22 @@ use function mb_trim;
 
 final class SecChUaPlatformDevice implements DeviceCodeInterface
 {
-    /** @throws void */
+    /**
+     * @throws void
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     */
     #[Override]
     public function hasDeviceCode(string $value): bool
     {
-        $value = mb_trim($value, '"\\\'');
-        $code  = mb_strtolower($value);
-
-        // @todo: uncomment
-        // return !in_array($code, ['', 'unknown', 'linux'], true);
-        return $code === 'windows' || $code === 'win32';
+        // @todo: check again
+        return false;
     }
 
     /**
      * @return non-empty-string|null
      *
      * @throws void
-     *
-     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
     #[Override]
     public function getDeviceCode(string $value): string | null

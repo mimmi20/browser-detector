@@ -4124,6 +4124,7 @@ final class Device implements DeviceInterface
             'xt2027-1' => 'motorola=motorola xt2027-1',
             'moto e5 supra' => 'motorola=motorola moto e5 supra',
             'moto g45 5g' => 'motorola=motorola moto g45 5g',
+            'mb860' => 'motorola=motorola mb860',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
@@ -8478,6 +8479,8 @@ final class Device implements DeviceInterface
             'ns6' => 'nous=nous ns6',
             // anker
             'aftmm-anker-ak-d3000111' => 'anker=anker aftmm',
+            // mediatek
+            'mediatek mt8173 chromebook' => 'mediatek=mediatek mt8173 chromebook',
             // other
             default => null,
         };
