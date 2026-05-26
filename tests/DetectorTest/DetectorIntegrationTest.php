@@ -8943,6 +8943,60 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                 ],
             ],
+            [
+                [
+                    'sec-ch-ua-platform' => '"Windows"',
+                    'sec-ch-ua-mobile' => '?0',
+                    'user-agent' => 'Mozilla/5.0 (Linux; U; Android 2.3.7; en-us; MB860 Build/4.5.141; MROM-1) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
+                ],
+                [
+                    'headers' => [
+                        'sec-ch-ua-platform' => '"Windows"',
+                        'sec-ch-ua-mobile' => '?0',
+                        'user-agent' => 'Mozilla/5.0 (Linux; U; Android 2.3.7; en-us; MB860 Build/4.5.141; MROM-1) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'MB860',
+                        'marketingName' => 'Atrix 4G',
+                        'manufacturer' => 'Motorola',
+                        'brand' => 'Motorola',
+                        'dualOrientation' => true,
+                        'simCount' => 1,
+                        'display' => [
+                            'width' => 960,
+                            'height' => 540,
+                            'touch' => true,
+                            'size' => 4.0,
+                        ],
+                        'type' => 'smartphone',
+                        'ismobile' => false,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Android',
+                        'marketingName' => 'Android',
+                        'version' => '2.3.7',
+                        'manufacturer' => 'Google',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Android Webkit',
+                        'modus' => null,
+                        'version' => '4.0.0',
+                        'manufacturer' => 'Google',
+                        'type' => 'browser',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'WebKit',
+                        'version' => '533.1.0',
+                        'manufacturer' => 'Apple',
+                    ],
+                ],
+            ],
         ];
     }
 }
