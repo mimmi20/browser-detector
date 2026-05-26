@@ -9163,6 +9163,7 @@ final class DeviceTest extends TestCase
             ['cuiud F7', 'cuiud=cuiud f7'],
             // biegedy
             ['B22_EEA', 'biegedy=biegedy b22_eea'],
+            ['B25_EEA', 'biegedy=biegedy b25_eea'],
             // grundig
             ['GR-TB10S', 'grundig=grundig gr-tb10s'],
             ['Grundig Google TV', 'grundig=grundig smart tv'],

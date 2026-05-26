@@ -1559,6 +1559,14 @@ final class OsTest extends TestCase
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['TiVoOS']],
                 'key' => 'tivo-os',
             ],
+            [
+                'type' => 'Ubuntu Touch',
+                'name' => 'Ubuntu Touch',
+                'marketingName' => 'Ubuntu Touch',
+                'manufacturer' => Company::canonical,
+                'version' => ['factory' => UbuntuFactory::class, 'search' => null],
+                'key' => 'ubuntu-touch',
+            ],
         ];
     }
 }

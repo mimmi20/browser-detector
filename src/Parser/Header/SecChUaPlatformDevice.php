@@ -46,6 +46,7 @@ final class SecChUaPlatformDevice implements DeviceCodeInterface
 
         return match ($code) {
             'windows', 'win32' => 'unknown=windows desktop',
+            'macos' => 'apple=macintosh',
             default => null,
         };
     }

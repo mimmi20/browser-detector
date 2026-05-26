@@ -399,6 +399,8 @@ enum Os: string implements OsInterface
 
     case webian = 'Webian';
 
+    case ubuntuTouch = 'Ubuntu Touch';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -589,6 +591,7 @@ enum Os: string implements OsInterface
             'vidaaos', 'vidaa os', 'vidaa-os' => self::vidaaOS,
             'tivoos', 'tivo os', 'tivo-os' => self::tivoOS,
             'webian' => self::webian,
+            'ubuntutouch', 'ubuntu-touch', 'ubuntu touch' => self::ubuntuTouch,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -669,7 +672,7 @@ enum Os: string implements OsInterface
             self::infernoOs => Company::vitanuova,
             self::javaos, self::javaMe => Company::sun,
             self::kaios => Company::kaios,
-            self::kubuntu, self::ubuntu, self::xubuntu => Company::canonical,
+            self::kubuntu, self::ubuntu, self::xubuntu, self::ubuntuTouch => Company::canonical,
             self::linux, self::maemo, self::meego, self::tizen => Company::linuxFoundation,
             self::mandrivaLinux, self::openMandriva => Company::mandriva,
             self::morphos => Company::fabienCoeurjoly,
@@ -765,7 +768,7 @@ enum Os: string implements OsInterface
             self::webos => ['factory' => VersionBuilderFactory::class, 'search' => ['WebOS', 'webOS', 'hpwOS']],
             self::kaios => ['factory' => VersionBuilderFactory::class, 'search' => ['kaios']],
             self::kubuntu => ['factory' => VersionBuilderFactory::class, 'search' => ['Kubuntu', 'kubuntu']],
-            self::ubuntu => ['factory' => UbuntuFactory::class, 'search' => null],
+            self::ubuntu, self::ubuntuTouch => ['factory' => UbuntuFactory::class, 'search' => null],
             self::xubuntu => ['factory' => VersionBuilderFactory::class, 'search' => ['Xubuntu', 'xubuntu']],
             self::maemo => ['factory' => VersionBuilderFactory::class, 'search' => ['Maemo']],
             self::meego => ['factory' => VersionBuilderFactory::class, 'search' => ['MeeGo']],
@@ -965,6 +968,7 @@ enum Os: string implements OsInterface
             self::rokuOS => 'roku-os',
             self::vidaaOS => 'vidaa-os',
             self::tivoOS => 'tivo-os',
+            self::ubuntuTouch => 'ubuntu-touch',
             default => $this->name,
         };
     }

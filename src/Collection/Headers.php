@@ -658,7 +658,11 @@ final readonly class Headers
 
                     if (
                         $lastPlatformCode instanceof \UaData\OsInterface
-                        && $lastPlatformCode === \BrowserDetector\Data\Os::ios
+                        && in_array(
+                            $lastPlatformCode,
+                            [\BrowserDetector\Data\Os::ios, \BrowserDetector\Data\Os::android],
+                            true,
+                        )
                     ) {
                         $platform       = $lastPlatformCode;
                         $platformHeader = array_last($headersWithPlatformCode);

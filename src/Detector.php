@@ -25,6 +25,7 @@ use Psr\SimpleCache\InvalidArgumentException;
 use UaDeviceType\Type;
 use UaLoader\BrowserLoaderInterface;
 use UaLoader\EngineLoaderInterface;
+use UaLoader\Exception\NotFoundException;
 use UaLoader\PlatformLoaderInterface;
 use UaRequest\GenericRequestInterface;
 use UaRequest\Header\HeaderInterface;
@@ -36,8 +37,10 @@ use UnexpectedValueException;
 
 use function array_map;
 use function assert;
+use function in_array;
 use function is_array;
 use function mb_strtolower;
+use function sprintf;
 use function str_contains;
 
 final readonly class Detector implements DetectorInterface
@@ -143,6 +146,27 @@ final readonly class Detector implements DetectorInterface
                 }
             } catch (UnexpectedValueException $e) {
                 $this->logger->info($e);
+            }
+        }
+
+        if ($device->getMarketingName() === 'Windows Desktop') {
+            if (in_array(mb_strtolower($platformName ?? ''), ['macos', 'mac os x'], true)) {
+                $company = 'apple';
+                $key     = 'macintosh';
+
+                try {
+                    $deviceLoader = ($this->deviceLoaderFactory)($company);
+
+                    $device = $deviceLoader->load($key)->getDevice();
+                } catch (NotFoundException $e) {
+                    $this->logger->info(
+                        new UnexpectedValueException(
+                            sprintf('Device "%s" of Manufacturer "%s" was not found', $key, $company),
+                            0,
+                            $e,
+                        ),
+                    );
+                }
             }
         }
 

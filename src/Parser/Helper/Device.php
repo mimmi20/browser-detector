@@ -7744,6 +7744,7 @@ final class Device implements DeviceInterface
             'cuiud f7' => 'cuiud=cuiud f7',
             // biegedy
             'b22_eea' => 'biegedy=biegedy b22_eea',
+            'b25_eea' => 'biegedy=biegedy b25_eea',
             // grundig
             'gr-tb10s' => 'grundig=grundig gr-tb10s',
             'grundig google tv', 'grundig android tv' => 'grundig=grundig smart tv',

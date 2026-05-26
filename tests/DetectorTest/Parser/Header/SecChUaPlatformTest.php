@@ -162,7 +162,7 @@ final class SecChUaPlatformTest extends TestCase
             ['"Chrome OS"', true, Os::chromeos, false, null],
             ['"Linux"', true, Os::linux, false, null],
             ['"ChromeOS"', true, Os::chromeos, false, null],
-            ['"macOS"', true, Os::macosx, false, null],
+            ['"macOS"', true, Os::macosx, false, 'apple=macintosh'],
             ['"Chromium OS"', true, Os::chromeos, false, null],
             ['"Unknown"', false, Os::unknown, false, null],
             ['"Win32"', true, Os::windows, false, 'unknown=windows desktop'],

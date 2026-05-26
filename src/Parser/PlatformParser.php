@@ -109,6 +109,7 @@ final readonly class PlatformParser implements PlatformParserInterface
             '/plasma mobile/i' => Os::plasmaMobile,
             '/kubuntu/i' => Os::kubuntu,
             '/xubuntu/i' => Os::xubuntu,
+            '/ubuntu [\d.]+ like android/i' => Os::ubuntuTouch,
             '/ubuntu/i' => Os::ubuntu,
             '/debian/i' => Os::debian,
             '/(?<!no|ci)tizen/i' => Os::tizen,
