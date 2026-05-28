@@ -6778,9 +6778,9 @@ final class DetectorIntegrationTest extends TestCase
                         'bits' => null,
                     ],
                     'os' => [
-                        'name' => 'Windows NT',
-                        'marketingName' => 'Windows NT',
-                        'version' => null,
+                        'name' => 'Windows',
+                        'marketingName' => 'Windows 11',
+                        'version' => '11.0.0',
                         'manufacturer' => 'Microsoft',
                         'bits' => null,
                     ],
