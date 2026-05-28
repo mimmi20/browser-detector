@@ -29,7 +29,7 @@ final readonly class PlatformParser implements PlatformParserInterface
     }
 
     /**
-     * Gets the information about the browser by User Agent
+     * Gets the information about the platform/OS by User Agent
      *
      * @throws void
      *
@@ -65,6 +65,7 @@ final readonly class PlatformParser implements PlatformParserInterface
             '/windows (phone|iot|ce)|microsoft windows; ppc|iemobile|xblwp7|zunewp7|windows ?mobile|wpdesktop|lumia| wds |wpos:/i' => Os::windowsmobileos,
             '/palm ?os|palmsource/i' => Os::palmOs,
             '/roku\/dvp-|com\.roku\.g000x|roku\/pluto-|rokuos\/|roku; ap;/i' => Os::rokuOS,
+            '/windows[ _]nt 11|windows 11|(?<!dar)win11/i' => Os::windows11,
             '/windows[ _]nt 10|windows 10|(?<!dar)win10/i' => Os::windows10,
             '/windows nt 6\.4|windows 6\.4/i' => Os::windowsnt64,
             '/windows nt 6\.3; arm/i' => Os::windowsrt63,
@@ -110,13 +111,13 @@ final readonly class PlatformParser implements PlatformParserInterface
             '/kubuntu/i' => Os::kubuntu,
             '/xubuntu/i' => Os::xubuntu,
             '/ubuntu [\d.]+ like android/i' => Os::ubuntuTouch,
-            '/ubuntu/i' => Os::ubuntu,
+            '/(?<![0-9])ubuntu/i' => Os::ubuntu,
             '/debian/i' => Os::debian,
             '/(?<!no|ci)tizen/i' => Os::tizen,
             '/remixos|remix (?:pro|mini)/i' => Os::remixOs,
             '/(?<![0-9a-z])bada/i' => Os::bada,
             '/meego/i' => Os::meego,
-            '/sailfish/i' => Os::sailfishOs,
+            '/sailfish|jolla-email/i' => Os::sailfishOs,
             '/chinese operating system|(?<!ma)cos;|\(cos [0-9]|android; cos/i' => Os::cos,
             '/wh\/|whaletv|zeasn/i' => Os::whaleOS,
             '/maemo/i' => Os::maemo,

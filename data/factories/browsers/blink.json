@@ -272,7 +272,7 @@
     "/whatsapp/i": "whatsapp",
     "/basecamp3/i": "basecamp",
     "/bobrowser/i": "bobrowser",
-    "/wayback save page/i": "wayback archive bot",
+    "/(?<!via )wayback save page/i": "wayback archive bot",
     "/google-assess/i": "google assess",
     "/google-ads-overview/i": "google ads overview",
     "/googlebot-mobile/i": "googlebot-mobile",

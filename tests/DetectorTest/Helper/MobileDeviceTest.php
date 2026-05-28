@@ -194,6 +194,11 @@ final class MobileDeviceTest extends TestCase
             ['Mozilla/5.0 (X11; U; Linux i686; Slackware/13.0; ar;) AppleWebKit/530  (OpenSSL/0.9.8l; compatible; KHTML/4.3.2; Smart 2x2; Remote 2x2; rv:1.9.0.15) Gecko/20090412 KDDI-CA33 UP.Browser/6.2.0.10.4 MMP/2.0'],
             ['SoftBank/1.0/821SC/SCJ001/SN000000000000000 Flash/Flash-Lite/2.0'],
             ['Spice M-5180'],
+            ['HUAWEI-U1250'],
+            ['ASUS-J100'],
+            ['AMOI-N810'],
+            ['Alcatel-OT153'],
+            ['SonySO-04E Build/10.1.1.D.2.31 UpdateCenter/1.3.4.A.0.8'],
         ];
     }
 

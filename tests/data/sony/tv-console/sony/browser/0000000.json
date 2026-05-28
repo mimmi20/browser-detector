@@ -88,5 +88,50 @@
       "version": "1.8.0",
       "manufacturer": "Mozilla"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 [ja] (compatible; MSIE 6.0; Linux 2.6.11-1.1369_FC4; Playstation2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "PlayStation 2",
+      "marketingName": "PlayStation 2",
+      "manufacturer": "Sony",
+      "brand": "Sony",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-console",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": "2.6.11.1.1369",
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Playstation Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Sony",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "Microsoft"
+    }
   }
 ]

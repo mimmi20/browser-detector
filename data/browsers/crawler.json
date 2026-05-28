@@ -1521,6 +1521,18 @@
     },
     "engine": "unknown"
   },
+  "swisscows-images": {
+    "name": "Swisscows Images",
+    "manufacturer": "swisscows",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Swisscows Images"
+      ]
+    },
+    "engine": "unknown"
+  },
   "think-chaos": {
     "name": "ThinkChaos",
     "manufacturer": "unknown",

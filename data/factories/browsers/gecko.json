@@ -4,7 +4,7 @@
     "/fireweb navigator/i": "fireweb navigator",
     "/(?<!like )navigator/i": "netscape navigator",
     "/s~virustotalcloud/i": "virus-total-cloud",
-    "/wayback save page/i": "wayback archive bot",
+    "/(?<!via )wayback save page/i": "wayback archive bot",
     "/(?<!_)ruby(?!, )/i": "ruby",
     "/googleimageproxy|ggpht/i": "gmail-image-proxy",
     "/t-online browser|to-browser|(?<![su])tob[ \\/]/i": "t-online browser",

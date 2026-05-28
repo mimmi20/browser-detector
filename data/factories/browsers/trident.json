@@ -50,7 +50,7 @@
     "/sogou-spider/i": "sogou spider",
     "/simplepie/i": "simplepie",
     "/argclrint/i": "argclrint",
-    "/wayback save page/i": "wayback archive bot",
+    "/(?<!via )wayback save page/i": "wayback archive bot",
     "/savewealth/i": "savewealth",
     "/cobalt/i": "cobalt",
     "/polarity/i": "polarity",
