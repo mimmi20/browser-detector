@@ -220,7 +220,6 @@ final readonly class Headers
 
                     switch ($lastEngine) {
                         case \BrowserDetector\Data\Engine::gecko:
-                            $detectedEngine = $lastEngine;
                             if ($client->getName() === 'Firefox') {
                                 $detectedEngine = $lastEngine;
                                 $engineHeader   = array_last($headersWithEngineName);
