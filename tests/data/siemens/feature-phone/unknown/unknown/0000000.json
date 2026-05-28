@@ -2566,6 +2566,51 @@
   },
   {
     "headers": {
+      "user-agent": "SIE-SL5E"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SL5E",
+      "marketingName": "SL5E",
+      "manufacturer": "Siemens",
+      "brand": "Siemens",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "SIE-SL65"
     },
     "device": {
@@ -2759,6 +2804,51 @@
       "display": {
         "width": 220,
         "height": 176,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SIE-SXG75"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SXG75",
+      "marketingName": "SXG75",
+      "manufacturer": "Siemens",
+      "brand": "Siemens",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
         "touch": false,
         "size": 2.2
       },

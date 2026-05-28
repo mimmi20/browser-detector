@@ -1,6 +1,96 @@
 [
   {
     "headers": {
+      "user-agent": "HUAWEI-G7002"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "G700",
+      "marketingName": "Ascend G700",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HUAWEI-T8300"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "T8300",
+      "marketingName": "T8300",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "LG/U8180/v1.0"
     },
     "device": {

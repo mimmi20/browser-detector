@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "Alcatel-OH1C"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "OH1C",
+      "marketingName": "OH1C",
+      "manufacturer": "TCL",
+      "brand": "Alcatel",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 128,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "TCL-Q550"
     },
     "device": {

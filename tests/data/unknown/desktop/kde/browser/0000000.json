@@ -3196,51 +3196,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; Konqueror/3.4; Linux) KHTML/3.4.1 (like Gecko) (Debian package 4:3.4.1-0ubuntu2)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Ubuntu",
-      "marketingName": "Ubuntu",
-      "version": null,
-      "manufacturer": "Canonical",
-      "bits": null
-    },
-    "client": {
-      "name": "Konqueror",
-      "modus": null,
-      "version": "3.4.0",
-      "manufacturer": "KDE",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "KHTML",
-      "version": "3.4.1",
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (compatible; Konqueror/3.4; FreeBSD; en_US) KHTML/3.4.3 (like Gecko)"
     },
     "device": {
@@ -4457,6 +4412,51 @@
   {
     "headers": {
       "user-agent": "Mozilla/5.0 (compatible; Konqueror/3.1; FreeBSD; X11; fr"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "FreeBSD",
+      "marketingName": "FreeBSD",
+      "version": null,
+      "manufacturer": "FreeBSD",
+      "bits": null
+    },
+    "client": {
+      "name": "Konqueror",
+      "modus": null,
+      "version": "3.1.0",
+      "manufacturer": "KDE",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "KHTML",
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; Konqueror/3.1; FreeBSD)"
     },
     "device": {
       "architecture": null,

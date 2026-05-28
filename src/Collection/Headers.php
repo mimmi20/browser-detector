@@ -221,7 +221,10 @@ final readonly class Headers
                     switch ($lastEngine) {
                         case \BrowserDetector\Data\Engine::gecko:
                             $detectedEngine = $lastEngine;
-                            $engineHeader   = array_last($headersWithEngineName);
+                            if ($client->getName() === 'Firefox') {
+                                $detectedEngine = $lastEngine;
+                                $engineHeader   = array_last($headersWithEngineName);
+                            }
 
                             break;
                         case \BrowserDetector\Data\Engine::webkit:
@@ -685,7 +688,7 @@ final readonly class Headers
                         && !array_key_exists('sec-ch-ua-platform-version', $headersWithPlatformVersion)
                         && in_array(
                             $lastPlatformCode,
-                            [\BrowserDetector\Data\Os::windows10, \BrowserDetector\Data\Os::windowsnt62, \BrowserDetector\Data\Os::windowsnt61, \BrowserDetector\Data\Os::windowsnt, \BrowserDetector\Data\Os::ios, \BrowserDetector\Data\Os::android],
+                            [\BrowserDetector\Data\Os::windows10, \BrowserDetector\Data\Os::windowsnt62, \BrowserDetector\Data\Os::windowsnt61, \BrowserDetector\Data\Os::windowsnt, \BrowserDetector\Data\Os::ios, \BrowserDetector\Data\Os::android, \BrowserDetector\Data\Os::macosx],
                             true,
                         )
                     ) {

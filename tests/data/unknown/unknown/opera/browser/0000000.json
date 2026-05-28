@@ -721,51 +721,6 @@
   },
   {
     "headers": {
-      "user-agent": "HUAWEI-M735/001.00 Opera/9.70"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "9.70.0",
-      "manufacturer": "Opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "Opera"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Opera/9.80 WebKit/1.6.3 () PhilipsWebKit/535.4"
     },
     "device": {
@@ -4488,6 +4443,51 @@
       "name": "Opera",
       "modus": null,
       "version": null,
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera 7.53"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "7.53.0",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
