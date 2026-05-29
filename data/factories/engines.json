@@ -8,7 +8,7 @@
     "/[ \\(]t5\\//i": "t5",
     "/presto\\//i": "presto",
     "/tasman/i": "tasman",
-    "/arkweb/i": "arkweb",
+    "/arkweb|com\\.huawei\\.hmos\\.browser/i": "arkweb",
     "/chr[o0]meframe\\//i": "webkit",
     "/trident\\//i": "trident",
     "/goanna|mypal\\//i": "goanna",

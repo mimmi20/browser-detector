@@ -6,7 +6,7 @@
     "/webkit|safari(?!com)|cfnetwork|dalvik|ipad|ipod|iphone|khtml/i": "webkit",
     "/(?<![a-zA-Z])iOS/": "webkit",
     "/presto\\/|(?<![o@])opera(?!t)/i": "presto",
-    "/trident|(?<!not )msie|(?<!allow )like gecko|mspie|pocket internet explorer/i": "trident"
+    "/(?<!zoho)trident(?!mac)|(?<!not )msie|(?<!allow )like gecko|mspie|pocket internet explorer/i": "trident"
   },
   "generic": "genericbrowser"
 }

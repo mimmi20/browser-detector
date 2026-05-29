@@ -215,6 +215,8 @@ enum Os: string implements OsInterface
 
     case harmonyos = 'HarmonyOS';
 
+    case harmonyosNext = 'HarmonyOS NEXT';
+
     case archlinux = 'ArchLinux';
 
     case pardus = 'Pardus';
@@ -499,6 +501,7 @@ enum Os: string implements OsInterface
             'yi' => self::yi,
             'zenwalkgnulinux', 'zenwalk gnu linux' => self::zenwalkgnulinux,
             'harmonyos', 'harmony-os' => self::harmonyos,
+            'harmonyosnext', 'harmonyos next', 'harmony-os-next' => self::harmonyosNext,
             'archlinux', 'arch-linux' => self::archlinux,
             'pardus' => self::pardus,
             'risingos', 'rising-os' => self::risingos,
@@ -658,7 +661,7 @@ enum Os: string implements OsInterface
             self::lgwebos => Company::lg,
             self::windows, self::windows2003, self::windows31, self::windows311, self::windows95, self::windows98, self::windowsce, self::windowsiot, self::windowsme, self::windowsmobileos, self::windowsnt, self::windows10, self::windows11, self::windowsnt31, self::windowsnt35, self::windowsnt351, self::windowsnt40, self::windowsnt41, self::windowsnt410, self::windowsnt50, self::windowsnt501, self::windowsnt51, self::windowsnt52, self::windowsnt53, self::windowsnt60, self::windowsnt61, self::windowsnt62, self::windowsnt63, self::windowsnt64, self::windowsphone, self::windowsphone10, self::windowsphone65, self::windowsphone75, self::windowsphone80, self::windowsphone81, self::windowsrt62, self::windowsrt63, self::azurelinux, self::kinos => Company::microsoft,
             self::yi => Company::baidu,
-            self::harmonyos => Company::huawei,
+            self::harmonyos, self::harmonyosNext => Company::huawei,
             self::aix, self::os2 => Company::ibm,
             self::beos => Company::access,
             self::bsd => Company::berkeley,
@@ -745,6 +748,7 @@ enum Os: string implements OsInterface
             self::wyderos => ['factory' => VersionBuilderFactory::class, 'search' => ['WyderOS']],
             self::yi => ['factory' => VersionBuilderFactory::class, 'search' => ['Yi']],
             self::harmonyos => ['factory' => VersionBuilderFactory::class, 'search' => ['HarmonyOS']],
+            self::harmonyosNext => ['factory' => VersionBuilderFactory::class, 'search' => ['(?:HarmonyOS|hmos.+OpenHarmony)[-/ ]']],
             self::pardus => ['factory' => VersionBuilderFactory::class, 'search' => ['Pardus']],
             self::risingos => ['factory' => VersionBuilderFactory::class, 'search' => ['RisingOS']],
             self::blackpantheros => ['factory' => VersionBuilderFactory::class, 'search' => ['blackPanther OS']],
@@ -913,6 +917,7 @@ enum Os: string implements OsInterface
             self::windowsrt63 => 'windows rt 6.3',
             self::zenwalkgnulinux => 'zenwalk gnu linux',
             self::harmonyos => 'harmony-os',
+            self::harmonyosNext => 'harmony-os-next',
             self::archlinux => 'arch-linux',
             self::risingos => 'rising-os',
             self::azurelinux => 'azure-linux',

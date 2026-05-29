@@ -272,6 +272,11 @@ final readonly class Headers
                         default => array_first($engineVersions),
                     };
 
+                    if ($client->getName() === 'Firefox') {
+                        $detectedEngine = \BrowserDetector\Data\Engine::gecko;
+                        $engineVersion  = $engineVersions['user-agent'];
+                    }
+
                     break;
                 default:
                     $engineVersion = array_first($engineVersions);

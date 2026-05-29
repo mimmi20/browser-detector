@@ -6361,5 +6361,66 @@
       ]
     },
     "engine": null
+  },
+  "leak-scanner": {
+    "name": "LeakScanner",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "LeakScanner"
+      ]
+    },
+    "engine": null
+  },
+  "adsense-detector": {
+    "name": "AdSenseDetector",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AdSenseDetector"
+      ]
+    },
+    "engine": null
+  },
+  "websuse-bot": {
+    "name": "WebSuseBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WebSuseBot",
+        "WebSuse"
+      ]
+    },
+    "engine": null
+  },
+  "go-parser-bot": {
+    "name": "GoParserBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GoParserBot"
+      ]
+    },
+    "engine": null
+  },
+  "android-http-client": {
+    "name": "AndroidHttpClient",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AndroidHttpClient"
+      ]
+    },
+    "engine": "unknown"
   }
 }

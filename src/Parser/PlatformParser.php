@@ -141,6 +141,7 @@ final readonly class PlatformParser implements PlatformParserInterface
             '/smartisan[_ ]|(sm(?:70[15]|801|919)|yq60[1357]|dt2002c|de106|dt190[12]a|o[ce]106|oc105)[ \/;\)]/i' => Os::smartisanOS,
             '/baidu yi/i' => Os::yi,
             '/yunos/i' => Os::yunOs,
+            '/(?:harmonyos|hmos.+openharmony)[-\/ ]([56][.\d]+)/i' => Os::harmonyosNext,
             '/openharmony/i' => Os::openHarmony,
             '/harmonyos/i' => Os::harmonyos,
             '/aosp/i' => Os::aosp,

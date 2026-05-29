@@ -203,10 +203,10 @@
       "bits": null
     },
     "os": {
-      "name": "Windows",
-      "marketingName": "Windows Vista",
-      "version": "6.0.0",
-      "manufacturer": "Microsoft",
+      "name": "Android TV",
+      "marketingName": "Android TV",
+      "version": null,
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -311,51 +311,6 @@
     "engine": {
       "name": "Blink",
       "version": "101.0.4951.15",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (SMART-TV; Linux; Smart TV) AppleWebKit/537.36 (KHTML, like Gecko) Thano/3.0 Chrome/123.0.6312.40 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Smart TV",
-      "marketingName": "Smart TV",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "Android TV",
-      "marketingName": "Android TV",
-      "version": null,
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "123.0.6312.40",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "123.0.6312.40",
       "manufacturer": "Google"
     }
   }

@@ -473,7 +473,7 @@
     "/^apple-(iphone|ip[ao]d)/i": "exchange activesync",
     "/(?<![a-z])ios|iphone|ip[ao]d/i": "mobile safari uiwebview",
     "/cloudflare-amp/i": "cloudflare amp fetcher",
-    "/com\\.apple\\.authenticationservicescore\\.authenticationservicesagent/i": "apple-authentication-services",
+    "/com\\.apple\\.authenticationservicescore\\.authenticationservicesagent/i": "safari",
     "/openwave|up\\.browser| up\\//i": "openwave mobile browser",
     "/wayback machine extension/i": "wayback-machine",
     "/wechatshareextensionnew/i": "wechat-share-extension",
