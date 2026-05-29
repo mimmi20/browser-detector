@@ -1,5 +1,7 @@
 {
   "rules": {
+    "/imacpro1%2c1|imacpro1,1/i": "imac pro 1,1",
+    "/imacpro/i": "imac pro",
     "/imac21%2C2|imac21,2/i": "imac 21,2",
     "/imac21%2C1|imac21,1/i": "imac 21,1",
     "/imac20%2C2|imac20,2/i": "imac 20,2",
@@ -111,6 +113,7 @@
     "/macpro/i": "macpro",
     "/mac15%2c12|mac15,12/i": "mac 15,12",
     "/mac14%2c9|mac14,9/i": "mac 14,9",
+    "/mac14%2c2|mac14,2/i": "mac 14,2",
     "/mac14%2c3|mac14,3/i": "mac 14,3",
     "/powermac|power macintosh/i": "powermac"
   },

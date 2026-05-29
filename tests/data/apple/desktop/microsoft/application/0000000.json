@@ -860,17 +860,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "iMac",
-      "marketingName": "iMac",
+      "deviceName": "iMac 19,1",
+      "marketingName": "iMac 27\" (2019)",
       "manufacturer": "Apple",
       "brand": "Apple",
       "dualOrientation": false,
       "simCount": 0,
       "display": {
-        "width": null,
-        "height": null,
+        "width": 5120,
+        "height": 2880,
         "touch": false,
-        "size": null
+        "size": 27
       },
       "type": "desktop",
       "ismobile": false,
@@ -1171,6 +1171,51 @@
   },
   {
     "headers": {
+      "user-agent": "Microsoft Office Excel/16.54.1010 (Mac OS/12.0.1; Desktop; es-MX; NonAppStore; Apple/iMacPro1,1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iMac",
+      "marketingName": "iMac",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "12.0.1",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Excel",
+      "modus": null,
+      "version": "16.54.1010",
+      "manufacturer": "Microsoft",
+      "type": "application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 12_2_1) AppleWebKit/537.36 (KHTML, like Gecko) Teams/1.5.00.22362 Chrome/96.0.4664.174 Electron/16.2.8 Safari/537.36"
     },
     "device": {
@@ -1261,7 +1306,7 @@
   },
   {
     "headers": {
-      "user-agent": "Microsoft Office Word/16.78.1008 (Mac OS/14.0; Desktop; en-US; NonAppStore; Apple/Mac14,9)"
+      "user-agent": "Microsoft Office Word/16.78.1008 (Mac OS/14.0; Desktop; en-US; NonAppStore; Apple/Mac14,2)"
     },
     "device": {
       "architecture": null,

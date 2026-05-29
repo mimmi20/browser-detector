@@ -542,5 +542,37 @@
     },
     "type": "desktop",
     "platform": null
+  },
+  "imac pro": {
+    "deviceName": "iMac Pro",
+    "marketingName": "iMac Pro",
+    "manufacturer": "apple",
+    "brand": "apple",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "desktop",
+    "platform": null
+  },
+  "imac pro 1,1": {
+    "deviceName": "iMac Pro 1,1",
+    "marketingName": "iMac Pro 27\" (2017)",
+    "manufacturer": "apple",
+    "brand": "apple",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 5120,
+      "height": 2880,
+      "touch": false,
+      "size": 27
+    },
+    "type": "desktop",
+    "platform": null
   }
 }
