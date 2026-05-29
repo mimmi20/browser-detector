@@ -6325,5 +6325,41 @@
       ]
     },
     "engine": null
+  },
+  "huawei-webcat-bot": {
+    "name": "HuaweiWebCatBot",
+    "manufacturer": "huawei",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HuaweiWebCatBot"
+      ]
+    },
+    "engine": null
+  },
+  "tchelebi": {
+    "name": "tchelebi",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "tchelebi"
+      ]
+    },
+    "engine": null
+  },
+  "deepnoc": {
+    "name": "deepnoc",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "deepnoc"
+      ]
+    },
+    "engine": null
   }
 }

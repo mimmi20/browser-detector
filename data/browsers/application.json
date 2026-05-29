@@ -1645,5 +1645,17 @@
       ]
     },
     "engine": null
+  },
+  "visionteacher-for-chromebooks": {
+    "name": "VisionTeacherforChromebooks",
+    "manufacturer": "unknown",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "VisionTeacherforChromebooks"
+      ]
+    },
+    "engine": null
   }
 }
