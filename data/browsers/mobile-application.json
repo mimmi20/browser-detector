@@ -5450,6 +5450,18 @@
       "factory": null,
       "search": null
     },
-    "engine": "webkit"
+    "engine": null
+  },
+  "yandex": {
+    "name": "Yandex",
+    "manufacturer": "yandex",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Yandex"
+      ]
+    },
+    "engine": null
   }
 }

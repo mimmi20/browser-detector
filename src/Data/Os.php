@@ -403,6 +403,8 @@ enum Os: string implements OsInterface
 
     case ubuntuTouch = 'Ubuntu Touch';
 
+    case qnx = 'QNX';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -595,6 +597,7 @@ enum Os: string implements OsInterface
             'tivoos', 'tivo os', 'tivo-os' => self::tivoOS,
             'webian' => self::webian,
             'ubuntutouch', 'ubuntu-touch', 'ubuntu touch' => self::ubuntuTouch,
+            'qnx' => self::qnx,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -712,6 +715,7 @@ enum Os: string implements OsInterface
             self::rokuOS => Company::roku,
             self::vidaaOS => Company::vidaa,
             self::tivoOS => Company::tivo,
+            self::qnx => Company::blackberry,
             default => Company::unknown,
         };
     }

@@ -142,6 +142,8 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/com\.amazon\.sics\/[\d.]+ \((?P<devicecode>[^;]+); android [\d.]+;/i',
             '/bookshelf-android\/[\d.]+ \(android os\/[\d.]+; (?P<devicecode>[^);\/]+)\)/i',
             '/portalmmm\/[\d.]+ (?P<devicecode>[^);\/]+)(?:.*)?\(/i',
+            '/samsung (?P<devicecode>[^);\/]+)(?:.*)? syncml_dm client/i',
+            '/^(?P<devicecode>.+)$/i',
         ];
 
         $filtered = array_filter(

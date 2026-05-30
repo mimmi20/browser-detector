@@ -1575,6 +1575,14 @@ final class OsTest extends TestCase
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['(?:HarmonyOS|hmos.+OpenHarmony)[-/ ]']],
                 'key' => 'harmony-os-next',
             ],
+            [
+                'type' => 'QNX',
+                'name' => 'QNX',
+                'marketingName' => 'QNX',
+                'manufacturer' => Company::blackberry,
+                'version' => ['factory' => null, 'search' => null],
+                'key' => 'qnx',
+            ],
         ];
     }
 }

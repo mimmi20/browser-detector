@@ -199,6 +199,7 @@ final class MobileDeviceTest extends TestCase
             ['AMOI-N810'],
             ['Alcatel-OT153'],
             ['SonySO-04E Build/10.1.1.D.2.31 UpdateCenter/1.3.4.A.0.8'],
+            ['Sony PS2 (Linux)'],
         ];
     }
 

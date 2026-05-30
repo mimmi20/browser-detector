@@ -129,12 +129,13 @@ final class Useragent1Test extends TestCase
 
         $deviceCodeHelper = $this->createMock(DeviceInterface::class);
         $deviceCodeHelper
-            ->expects(self::exactly(2))
+            ->expects(self::exactly(3))
             ->method('getDeviceCode')
             ->willReturnMap(
                 [
                     [new StringStartsWith('pf'), null],
                     [$deviceUa, $deviceCode],
+                    [$ua, null],
                 ],
             );
 
@@ -568,12 +569,13 @@ final class Useragent1Test extends TestCase
 
         $deviceCodeHelper = $this->createMock(DeviceInterface::class);
         $deviceCodeHelper
-            ->expects(self::exactly(2))
+            ->expects(self::exactly(3))
             ->method('getDeviceCode')
             ->willReturnMap(
                 [
                     [new StringStartsWith('pf'), null],
                     [mb_strtolower($deviceUa), null],
+                    [mb_strtolower($ua), null],
                 ],
             );
 

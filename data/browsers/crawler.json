@@ -6422,5 +6422,29 @@
       ]
     },
     "engine": "unknown"
+  },
+  "nalezen-cz-bot": {
+    "name": "NalezenCzBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NalezenCzBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "hubspot-page-screenshot-service": {
+    "name": "HubSpot Page Screenshot Service",
+    "manufacturer": "hubspot-inc",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HubSpot Page Screenshot Service"
+      ]
+    },
+    "engine": null
   }
 }

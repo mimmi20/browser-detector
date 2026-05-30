@@ -21,7 +21,7 @@ use function preg_match;
 final readonly class WindowsPhoneOs implements VersionFactoryInterface
 {
     /** @api */
-    public const array SEARCHES = ['Windows Phone OS', 'Windows Phone', 'Windows Mobile', 'Windows NT', 'WPOS\:'];
+    public const array SEARCHES = ['Windows ?Phone ?OS', 'Windows Phone', 'Windows Mobile', 'Windows NT', 'WPOS\:'];
 
     /** @throws void */
     public function __construct(private VersionBuilderInterface $versionBuilder)

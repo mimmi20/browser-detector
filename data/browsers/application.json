@@ -1657,5 +1657,29 @@
       ]
     },
     "engine": null
+  },
+  "windows-push-notification-services": {
+    "name": "Windows Push Notification Services",
+    "manufacturer": "microsoft",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Microsoft-WNS"
+      ]
+    },
+    "engine": null
+  },
+  "atom": {
+    "name": "Atom",
+    "manufacturer": "github",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Atom"
+      ]
+    },
+    "engine": null
   }
 }

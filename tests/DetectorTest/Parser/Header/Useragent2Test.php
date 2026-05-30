@@ -141,12 +141,13 @@ final class Useragent2Test extends TestCase
 
         $deviceCodeHelper = $this->createMock(DeviceInterface::class);
         $deviceCodeHelper
-            ->expects(self::exactly(2))
+            ->expects(self::exactly(3))
             ->method('getDeviceCode')
             ->willReturnMap(
                 [
                     ['xiaomi; 24030pn60g', null],
                     [$deviceUa, $deviceCode],
+                    [$ua, null],
                 ],
             );
 
@@ -441,10 +442,14 @@ final class Useragent2Test extends TestCase
 
         $deviceCodeHelper = $this->createMock(DeviceInterface::class);
         $deviceCodeHelper
-            ->expects(self::once())
+            ->expects(self::atLeastOnce())
             ->method('getDeviceCode')
-            ->with($deviceUa)
-            ->willReturn($deviceCode);
+            ->willReturnMap(
+                [
+                    [$deviceUa, $deviceCode],
+                    [$ua, null],
+                ],
+            );
 
         $normalizerFactory = new NormalizerFactory();
         $normalizer        = $normalizerFactory->build();

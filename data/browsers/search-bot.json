@@ -1875,5 +1875,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "yandex-catalog": {
+    "name": "YandexCatalog",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexCatalog"
+      ]
+    },
+    "engine": "unknown"
   }
 }

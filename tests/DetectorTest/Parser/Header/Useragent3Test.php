@@ -46,6 +46,7 @@ use UaResult\Device\Architecture;
 use UaResult\Engine\Engine;
 use UnexpectedValueException;
 
+use function mb_strtolower;
 use function sprintf;
 
 /** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */
@@ -147,8 +148,10 @@ final class Useragent3Test extends TestCase
 
         $deviceCodeHelper = $this->createMock(DeviceInterface::class);
         $deviceCodeHelper
-            ->expects(self::never())
-            ->method('getDeviceCode');
+            ->expects(self::once())
+            ->method('getDeviceCode')
+            ->with(mb_strtolower($ua))
+            ->willReturn(null);
 
         $normalizerFactory = new NormalizerFactory();
         $normalizer        = $normalizerFactory->build();
@@ -356,8 +359,8 @@ final class Useragent3Test extends TestCase
                 'engineVersion' => '534.31.0',
             ],
             [
-                'ua' => 'News Republic/12.1.5 (Linux; U; Android 26; en-us) Mobile Safari',
-                'normalizedUa' => 'News Republic/12.1.5 (Linux; U; Android 26; en-us) Mobile Safari',
+                'ua' => 'News Republic/12.1.5 (Linux; Android 26) Mobile Safari',
+                'normalizedUa' => 'News Republic/12.1.5 (Linux; Android 26) Mobile Safari',
                 'hasDeviceInfo' => true,
                 'deviceUa' => 'News Republic/12.1.5 (Linux; Android 26) Mobile Safari',
                 'deviceCode' => 'A369i',
@@ -549,8 +552,12 @@ final class Useragent3Test extends TestCase
         $deviceCodeHelper
             ->expects(self::atLeastOnce())
             ->method('getDeviceCode')
-            ->with($deviceUa)
-            ->willReturn($deviceCode);
+            ->willReturnMap(
+                [
+                    [$deviceUa, $deviceCode],
+                    [$ua, null],
+                ],
+            );
 
         $normalizerFactory = new NormalizerFactory();
         $normalizer        = $normalizerFactory->build();

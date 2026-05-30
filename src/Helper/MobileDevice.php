@@ -29,7 +29,7 @@ final class MobileDevice implements MobileDeviceInterface
     {
         if (
             preg_match(
-                '/wpdesktop|zunewp7|xblwp7|windows (phone|mobile|ce)|polaris|playstation/i',
+                '/wpdesktop|zunewp7|xblwp7|windows (phone|mobile|ce)|polaris|playstation|sony ps2/i',
                 $useragent,
             )
         ) {

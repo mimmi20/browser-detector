@@ -153,7 +153,7 @@
     "/hisearch/i": "hi-search",
     "/amazonbot-video/i": "amazon video bot",
     "/amazonbot/i": "amazon bot",
-    "/openwave\\//i": "openwave mobile browser",
+    "/openwave|up\\.browser| up\\//i": "openwave mobile browser",
     "/avast\\/|avastsecurebrowser|safersurf/i": "avast secure browser",
     "/avg\\//i": "avg secure browser",
     "/ccleaner/i": "ccleaner browser",

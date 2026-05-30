@@ -1304,5 +1304,18 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "kohana-framework": {
+    "name": "Kohana",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Kohana v",
+        "Kohana"
+      ]
+    },
+    "engine": "unknown"
   }
 }

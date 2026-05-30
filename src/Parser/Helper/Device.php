@@ -2865,6 +2865,8 @@ final class Device implements DeviceInterface
             'sm-n910t' => 'samsung=samsung sm-n910t',
             'sm-n930v' => 'samsung=samsung sm-n930v',
             'sm-s320vl' => 'samsung=samsung sm-s320vl',
+            'gt-i9000' => 'samsung=samsung gt-i9000',
+            'gt-i9000m' => 'samsung=samsung gt-i9000m',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
