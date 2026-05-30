@@ -277,6 +277,16 @@ final readonly class Headers
                         $engineVersion  = $engineVersions['user-agent'];
                     }
 
+                    if (
+                        $client->getName() === 'Opera'
+                        && (float) $client->getVersion()->getVersion(
+                            VersionInterface::IGNORE_MICRO,
+                        ) < 12.0
+                    ) {
+                        $detectedEngine = \BrowserDetector\Data\Engine::presto;
+                        $engineVersion  = $engineVersions['user-agent'];
+                    }
+
                     break;
                 default:
                     $engineVersion = array_first($engineVersions);

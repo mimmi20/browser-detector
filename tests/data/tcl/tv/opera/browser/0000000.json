@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "Opera/9.80 X11;Linux armv7i;NETRANGEMMH;HbbTV/1.1.1;CE-HTML/1.0;Vendor/TCL;SW-Version/V8-T56FSPS-LF1V032;Cnt/GBR;Lan/eng;U;en AppleWebKit/534.24 KHTML, like Gecko Safari/534.24, Digital-TV/V8-T56FSPS-LF1V032 TCL,32D1820,wireless"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "32D1820",
+      "marketingName": "32D1820",
+      "manufacturer": "TCL",
+      "brand": "TCL",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": false,
+        "size": 32
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "9.80.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.24.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Opera/9.80 (X11;Linux armv7i;NETRANGEMMH;HbbTV/1.1.1;CE-HTML/1.0;Vendor/TCL;SW-Version/V8-T56FT05-LF1V327;Cnt/GBR;Lan/eng;U;en) AppleWebKit/534.24 (KHTML, like Gecko) Safari/534.24, Digital-TV/V8-T56FT05-LF1V327 (TCL,43S4900,wireless)"
     },
     "device": {
