@@ -81,7 +81,6 @@
     "/sitekiosk/i": "sitekiosk",
     "/webpro[\\/;]/i": "web pro",
     "/googlebot/i": "googlebot",
-    "/safersurf/i": "avast secure browser",
     "/voilabot/i": "voilabot",
     "/webtv\\//i": "webtv/msntv",
     "/oregano/i": "oregano",
@@ -93,7 +92,7 @@
     "/camino/i": "camino",
     "/dillo/i": "dillo",
     "/viber/i": "viber",
-    "/flow[\\/)]/i": "flow-browser"
+    "/(flow|ekioh)[\\/)]/i": "flow-browser"
   },
   "generic": "internet explorer"
 }

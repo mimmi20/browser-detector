@@ -16,7 +16,7 @@
     "/icab/i": "icab",
     "/webkit|cfnetwork|(?<!like )safari|dalvik|(?<!ka|wi)ios|com\\.google\\.android\\.googlequicksearchbox|slack\\//i": "webkit",
     "/khtml|konqueror/i": "khtml",
-    "/ekiohflow/i": "ekiohflow",
+    "/ekioh(?:flow)?/i": "ekiohflow",
     "/maemo browser/i": "gecko",
     "/opera[ \\/][3-6]/i": "elektra",
     "/opera/i": "presto",

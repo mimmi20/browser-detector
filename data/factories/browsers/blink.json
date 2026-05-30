@@ -154,7 +154,7 @@
     "/amazonbot-video/i": "amazon video bot",
     "/amazonbot/i": "amazon bot",
     "/openwave|up\\.browser| up\\//i": "openwave mobile browser",
-    "/avast\\/|avastsecurebrowser|safersurf/i": "avast secure browser",
+    "/avast\\/|avastsecurebrowser|safer(?!surf)/i": "avast secure browser",
     "/avg\\//i": "avg secure browser",
     "/ccleaner/i": "ccleaner browser",
     "/em ?client/i": "em-client",

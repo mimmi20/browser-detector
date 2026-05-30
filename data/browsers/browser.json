@@ -1216,18 +1216,6 @@
     },
     "engine": null
   },
-  "ekioh browser": {
-    "name": "Ekioh Browser",
-    "manufacturer": "ekioh",
-    "type": "browser",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Ekioh"
-      ]
-    },
-    "engine": "webkit"
-  },
   "flow-browser": {
     "name": "Flow",
     "manufacturer": "ekioh",
@@ -1235,7 +1223,8 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "Flow"
+        "Flow",
+        "Ekioh"
       ]
     },
     "engine": "webkit"
@@ -4088,7 +4077,8 @@
       "search": [
         "Version",
         "TizenBrowser",
-        "Tizen Browser"
+        "Tizen Browser",
+        "SLP Browser"
       ]
     },
     "engine": null
@@ -4299,7 +4289,8 @@
       "search": [
         "Version",
         "webOS",
-        "webOSBrowser"
+        "webOSBrowser",
+        "hpwOS"
       ]
     },
     "engine": "webkit"
@@ -6102,5 +6093,29 @@
       ]
     },
     "engine": "gecko"
+  },
+  "sharp-pda-browser": {
+    "name": "Sharp PDA Browser",
+    "manufacturer": "sharp",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "sharp pda browser"
+      ]
+    },
+    "engine": null
+  },
+  "sharp-wd-browser": {
+    "name": "Sharp WD Browser",
+    "manufacturer": "sharp",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "sharp wd browser"
+      ]
+    },
+    "engine": null
   }
 }
