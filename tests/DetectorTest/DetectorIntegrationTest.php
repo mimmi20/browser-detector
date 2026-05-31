@@ -8425,10 +8425,10 @@ final class DetectorIntegrationTest extends TestCase
                         'bits' => null,
                     ],
                     'os' => [
-                        'name' => 'Android',
-                        'marketingName' => 'Android',
-                        'version' => '6.0.1',
-                        'manufacturer' => 'Google',
+                        'name' => 'Mac OS X',
+                        'marketingName' => 'Mac OS X',
+                        'version' => null,
+                        'manufacturer' => 'Apple',
                         'bits' => null,
                     ],
                     'client' => [

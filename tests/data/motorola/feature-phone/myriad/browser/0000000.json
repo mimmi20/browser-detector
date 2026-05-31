@@ -451,6 +451,51 @@
   },
   {
     "headers": {
+      "user-agent": "MOT-v200./10.01 UP/4.1.21b UP.Browser/4.1.21b-XXXX"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "V200",
+      "marketingName": "V200",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "4.1.21-beta",
+      "manufacturer": "Myriad",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "MOT-V290/6.1.0.7 UP.Browser/6.1.0.7 (GUI) MMP/1.0"
     },
     "device": {
@@ -528,6 +573,51 @@
       "name": "Openwave Mobile Browser",
       "modus": null,
       "version": "6.2.3.4",
+      "manufacturer": "Myriad",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "MOT-V70 UP.Browser/4"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "V70",
+      "marketingName": "V70",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 96,
+        "height": 64,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "4.0.0",
       "manufacturer": "Myriad",
       "type": "browser",
       "isbot": false,
@@ -766,6 +856,51 @@
   },
   {
     "headers": {
+      "user-agent": "MOT-W377g/6.1.31[TFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX] UP.Browser/6.3.0.6.c.19 (GUI) MMP/2.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "W377",
+      "marketingName": "W377",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 1.8
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Java ME",
+      "marketingName": "Java ME",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.3.0.6",
+      "manufacturer": "Myriad",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "MOT-W385/1.0 UP.Browser/6.2.3.4.c.1.123 (GUI) MMP/2.0"
     },
     "device": {
@@ -781,6 +916,96 @@
         "height": 128,
         "touch": false,
         "size": 1.8
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Java ME",
+      "marketingName": "Java ME",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.4",
+      "manufacturer": "Myriad",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "MOT-W388_CMCC/1.0 Release/07.30.2008 Browser/OpenWave6.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 Software/0.0.42"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "W388",
+      "marketingName": "W388",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 1.8
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Java ME",
+      "marketingName": "Java ME",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.3.0",
+      "manufacturer": "Myriad",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "MOT-W755/00.62 UP.Browser/6.2.3.4.c.1.123 (GUI) MMP/2.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "W7",
+      "marketingName": "W7",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
       },
       "type": "feature-phone",
       "ismobile": true,

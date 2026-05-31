@@ -3921,6 +3921,7 @@ final class DeviceTest extends TestCase
             ['SAMSUNG Family Hub 4.0', 'samsung=samsung familyhub 4.0'],
             ['GT-I9300I', 'samsung=samsung gt-i9300i'],
             ['GT-I9500', 'samsung=samsung gt-i9500'],
+            ['SAMSUNG-GT-I9500', 'samsung=samsung gt-i9500'],
             ['SCH-R970X', 'samsung=samsung sch-r970x'],
             ['SCH-R970', 'samsung=samsung sch-r970'],
             ['SGH-T399N', 'samsung=samsung sgh-t399n'],

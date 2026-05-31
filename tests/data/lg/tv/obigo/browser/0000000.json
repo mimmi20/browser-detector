@@ -1,14 +1,14 @@
 [
   {
     "headers": {
-      "user-agent": "User-Agent: twoogle498@umich.edu (Linux)"
+      "user-agent": "(LGSmartTV/1.0) AppleWebKit/534.23 OBIGO-T10/2.0"
     },
     "device": {
       "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
+      "deviceName": "general LG TV",
+      "marketingName": "general LG TV",
+      "manufacturer": "LG",
+      "brand": "LG",
       "dualOrientation": false,
       "simCount": 0,
       "display": {
@@ -17,31 +17,31 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop",
+      "type": "tv",
       "ismobile": false,
-      "istv": false,
+      "istv": true,
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "Linux Foundation",
+      "manufacturer": "Sun",
       "bits": null
     },
     "client": {
-      "name": null,
+      "name": "Obigo",
       "modus": null,
       "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
+      "manufacturer": "Obigo",
+      "type": "browser",
       "isbot": false,
       "bits": null
     },
     "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
+      "name": "WebKit",
+      "version": "534.23.0",
+      "manufacturer": "Apple"
     }
   }
 ]

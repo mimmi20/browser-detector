@@ -2854,7 +2854,7 @@ final class Device implements DeviceInterface
             'samsung family hub 5.0' => 'samsung=samsung familyhub 5.0',
             'samsung family hub 4.0' => 'samsung=samsung familyhub 4.0',
             'gt-i9300i' => 'samsung=samsung gt-i9300i',
-            'gt-i9500' => 'samsung=samsung gt-i9500',
+            'gt-i9500', 'samsung-gt-i9500' => 'samsung=samsung gt-i9500',
             'sch-r970x' => 'samsung=samsung sch-r970x',
             'sch-r970' => 'samsung=samsung sch-r970',
             'sgh-t399n' => 'samsung=samsung sgh-t399n',

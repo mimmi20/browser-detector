@@ -92,7 +92,7 @@
     "/camino/i": "camino",
     "/dillo/i": "dillo",
     "/viber/i": "viber",
-    "/(flow|ekioh)[\\/)]/i": "flow-browser"
+    "/((?<!s)flow|ekioh)[\\/)]/i": "flow-browser"
   },
   "generic": "internet explorer"
 }

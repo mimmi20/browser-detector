@@ -149,7 +149,7 @@ final readonly class Detector implements DetectorInterface
             }
         }
 
-        if ($device->getMarketingName() === 'Windows Desktop') {
+        if (in_array($device->getMarketingName(), ['Windows Desktop', 'general Mobile Phone'], true)) {
             if (in_array(mb_strtolower($platformName ?? ''), ['macos', 'mac os x'], true)) {
                 $company = 'apple';
                 $key     = 'macintosh';
@@ -172,8 +172,7 @@ final readonly class Detector implements DetectorInterface
 
         /* detect client */
         $clientData = $headerCollection->getClientData();
-
-        $client = $clientData->getClient();
+        $client     = $clientData->getClient();
 
         /* detect engine */
         $engine = $headerCollection->getEngineData(

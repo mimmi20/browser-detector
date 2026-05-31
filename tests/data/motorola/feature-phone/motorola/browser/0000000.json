@@ -856,6 +856,51 @@
   },
   {
     "headers": {
+      "user-agent": "MOT-v150/AS_G_09.09.0DR MIB/2.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "V150",
+      "marketingName": "V150",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "Motorola Internet Browser",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "Motorola",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "MOT-V180/0B.D1.09R MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0"
     },
     "device": {
@@ -1788,6 +1833,51 @@
       "name": "Motorola Internet Browser",
       "modus": null,
       "version": "2.2.1",
+      "manufacturer": "Motorola",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "MOT-V730/1.0 MIB1.2/v1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "V730",
+      "marketingName": "V730",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "Motorola Internet Browser",
+      "modus": null,
+      "version": "1.2.0",
       "manufacturer": "Motorola",
       "type": "browser",
       "isbot": false,

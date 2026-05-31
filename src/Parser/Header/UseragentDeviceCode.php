@@ -143,6 +143,8 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/bookshelf-android\/[\d.]+ \(android os\/[\d.]+; (?P<devicecode>[^);\/]+)\)/i',
             '/portalmmm\/[\d.]+ (?P<devicecode>[^);\/]+)(?:.*)?\(/i',
             '/samsung (?P<devicecode>[^);\/]+)(?:.*)? syncml_dm client/i',
+            '/mozilla\/[\d.]+ \(samsung; (?P<devicecode>[^);\/]+)(?:.*)? tizen\/[\d.]+ like android;/i',
+            // should be the last entry in the list
             '/^(?P<devicecode>.+)$/i',
         ];
 

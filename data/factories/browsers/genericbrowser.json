@@ -437,7 +437,7 @@
     "/adcrawler/i": "adcrawler",
     "/ioncrawl/i": "ioncrawl",
     "/beehive/i": "beehive crawler",
-    "/voyager/i": "voyager bot",
+    "/(?<!qnx )voyager/i": "voyager bot",
     "/fatbot/i": "fatbot",
     "/owler/i": "owler bot",
     "/lcc \\(\\+http:\\/\\/corpora(?:\\.informatik)?\\.uni-leipzig\\.de/i": "lcc",
