@@ -36,6 +36,7 @@ use UaRequest\GenericRequestInterface;
 use UaRequest\Header\HeaderInterface;
 use UaResult\Bits\Bits;
 use UaResult\Browser\Browser;
+use UaResult\Browser\BrowserInterface;
 use UaResult\Company\Company;
 use UaResult\Device\Architecture;
 use UaResult\Device\Device;
@@ -166,12 +167,16 @@ final readonly class Headers
      * detect the engine data
      *
      * @throws void
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
     public function getEngineData(
         \UaData\EngineInterface $engine,
         string | null $engineCodenameFromClient,
+        BrowserInterface $client,
     ): EngineInterface {
-        $engineHeader = null;
+        $engineHeader   = null;
+        $detectedEngine = $engine;
 
         if ($engine === \BrowserDetector\Data\Engine::unknown) {
             $headersWithEngineName = array_filter(
@@ -179,48 +184,144 @@ final readonly class Headers
                 static fn (HeaderInterface $header): bool => $header->hasEngineCode(),
             );
 
-            $engineHeader = array_first($headersWithEngineName);
+            $engines = array_map(
+                static function (HeaderInterface $engineHeader): \UaData\EngineInterface {
+                    try {
+                        return $engineHeader->getEngineCode();
+                    } catch (\UaRequest\Exception\NotFoundException) {
+                        // do nothing
+                    }
 
-            if ($engineHeader instanceof HeaderInterface) {
+                    return \BrowserDetector\Data\Engine::unknown;
+                },
+                $headersWithEngineName,
+            );
+
+            $firstEngine = array_first($engines);
+
+            assert($firstEngine instanceof \UaData\EngineInterface || $firstEngine === null);
+
+            switch ($firstEngine) {
+                case \BrowserDetector\Data\Engine::blink:
+                    $lastEngine   = array_last($engines);
+                    $engineHeader = array_first($headersWithEngineName);
+
+                    $detectedEngine = $firstEngine;
+
+                    if ($lastEngine === \BrowserDetector\Data\Engine::unknown) {
+                        try {
+                            $lastEngine = \BrowserDetector\Data\Engine::fromName(
+                                (string) $engineCodenameFromClient,
+                            );
+                        } catch (UnexpectedValueException) {
+                            // do nothing
+                        }
+                    }
+
+                    switch ($lastEngine) {
+                        case \BrowserDetector\Data\Engine::gecko:
+                            if ($client->getName() === 'Firefox') {
+                                $detectedEngine = $lastEngine;
+                                $engineHeader   = array_last($headersWithEngineName);
+                            }
+
+                            break;
+                        case \BrowserDetector\Data\Engine::webkit:
+                            if ($client->getName() === 'Chrome for iOS') {
+                                $detectedEngine = $lastEngine;
+                                $engineHeader   = array_last($headersWithEngineName);
+                            }
+
+                            break;
+                        default:
+                            // do nothing
+                    }
+
+                    break;
+                default:
+                    $detectedEngine = $firstEngine;
+
+                    if (
+                        $detectedEngine === null
+                        || $detectedEngine === \BrowserDetector\Data\Engine::unknown
+                    ) {
+                        try {
+                            $detectedEngine = \BrowserDetector\Data\Engine::fromName(
+                                (string) $engineCodenameFromClient,
+                            );
+                        } catch (UnexpectedValueException) {
+                            $detectedEngine = \BrowserDetector\Data\Engine::unknown;
+                        }
+                    }
+
+                    break;
+            }
+        }
+
+        if ($detectedEngine instanceof \UaData\EngineInterface) {
+            $engineVersions = $this->getEngineVersions($detectedEngine);
+
+            switch ($detectedEngine) {
+                case \BrowserDetector\Data\Engine::gecko:
+                    $engineVersion = $engineVersions['user-agent'];
+
+                    break;
+                case \BrowserDetector\Data\Engine::webkit:
+                    $engineVersion = match ($client->getName()) {
+                        'Chrome for iOS' => $engineVersions['user-agent'],
+                        default => array_first($engineVersions),
+                    };
+
+                    if ($client->getName() === 'Firefox') {
+                        $detectedEngine = \BrowserDetector\Data\Engine::gecko;
+                        $engineVersion  = $engineVersions['user-agent'];
+                    }
+
+                    try {
+                        $clientVersion = $client->getVersion()->getVersion(
+                            VersionInterface::IGNORE_MICRO,
+                        );
+                    } catch (UnexpectedValueException) {
+                        $clientVersion = 0.0;
+                    }
+
+                    if ($client->getName() === 'Opera' && (float) $clientVersion < 12.0) {
+                        $detectedEngine = \BrowserDetector\Data\Engine::presto;
+                        $engineVersion  = $engineVersions['user-agent'];
+                    }
+
+                    break;
+                default:
+                    $engineVersion = array_first($engineVersions);
+
+                    break;
+            }
+
+            if ($detectedEngine !== \BrowserDetector\Data\Engine::unknown) {
                 try {
-                    $engine = $engineHeader->getEngineCode();
-                } catch (\UaRequest\Exception\NotFoundException) {
-                    // do nothing
+                    $engineFrom = $this->engineLoader->loadFromEngine(
+                        engine: $detectedEngine,
+                        useragent: $engineHeader instanceof HeaderInterface ? $engineHeader->getValue() : '',
+                    );
+
+                    if (
+                        $engineVersion instanceof VersionInterface
+                        && $engineVersion->getVersion() !== null
+                    ) {
+                        return $engineFrom->withVersion($engineVersion);
+                    }
+
+                    return $engineFrom;
+                } catch (UnexpectedValueException $e) {
+                    $this->logger->info($e);
                 }
-            }
-        }
-
-        if ($engine === \BrowserDetector\Data\Engine::unknown) {
-            try {
-                $engine = \BrowserDetector\Data\Engine::fromName((string) $engineCodenameFromClient);
-            } catch (UnexpectedValueException) {
-                // do nothing
-            }
-        }
-
-        $engineVersion = $this->getEngineVersion($engine);
-
-        if ($engine !== \BrowserDetector\Data\Engine::unknown) {
-            try {
-                $engineFrom = $this->engineLoader->loadFromEngine(
-                    engine: $engine,
-                    useragent: $engineHeader instanceof HeaderInterface ? $engineHeader->getValue() : '',
-                );
-
-                if ($engineVersion->getVersion() !== null) {
-                    return $engineFrom->withVersion($engineVersion);
-                }
-
-                return $engineFrom;
-            } catch (UnexpectedValueException $e) {
-                $this->logger->info($e);
             }
         }
 
         return new Engine(
             name: null,
             manufacturer: new Company(type: 'unknown', name: null, brandname: null),
-            version: $engineVersion,
+            version: $engineVersion ?? new NullVersion(),
         );
     }
 
@@ -574,15 +675,18 @@ final readonly class Headers
                     break;
                 case \BrowserDetector\Data\Os::macosx:
                     $lastPlatformCode = array_last($platformCodes);
+                    $platformHeader   = array_first($headersWithPlatformCode);
 
-                    if (
-                        $lastPlatformCode instanceof \UaData\OsInterface
-                        && $lastPlatformCode === \BrowserDetector\Data\Os::ios
-                    ) {
-                        $platform       = $lastPlatformCode;
-                        $platformHeader = array_last($headersWithPlatformCode);
-                    } else {
-                        $platformHeader = array_first($headersWithPlatformCode);
+                    if ($lastPlatformCode instanceof \UaData\OsInterface) {
+                        switch ($lastPlatformCode) {
+                            case \BrowserDetector\Data\Os::ios:
+                                $platform       = $lastPlatformCode;
+                                $platformHeader = array_last($headersWithPlatformCode);
+
+                                break;
+                            default:
+                                // do nothing
+                        }
                     }
 
                     break;
@@ -600,7 +704,7 @@ final readonly class Headers
                         && !array_key_exists('sec-ch-ua-platform-version', $headersWithPlatformVersion)
                         && in_array(
                             $lastPlatformCode,
-                            [\BrowserDetector\Data\Os::windows10, \BrowserDetector\Data\Os::windowsnt62, \BrowserDetector\Data\Os::windowsnt61, \BrowserDetector\Data\Os::windowsnt],
+                            [\BrowserDetector\Data\Os::windows10, \BrowserDetector\Data\Os::windowsnt62, \BrowserDetector\Data\Os::windowsnt61, \BrowserDetector\Data\Os::windowsnt, \BrowserDetector\Data\Os::ios, \BrowserDetector\Data\Os::android, \BrowserDetector\Data\Os::macosx],
                             true,
                         )
                     ) {
@@ -749,21 +853,24 @@ final readonly class Headers
         );
     }
 
-    /** @throws void */
-    private function getEngineVersion(\UaData\EngineInterface $engine): VersionInterface
+    /**
+     * @return array<string, VersionInterface>
+     *
+     * @throws void
+     */
+    private function getEngineVersions(\UaData\EngineInterface $engine): array
     {
         $headersWithEngineVersion = array_filter(
             $this->headers,
             static fn (HeaderInterface $header): bool => $header->hasEngineVersion(),
         );
 
-        $engineVersionHeader = array_first($headersWithEngineVersion);
-
-        if ($engineVersionHeader instanceof HeaderInterface) {
-            return $engineVersionHeader->getEngineVersionWithEngine($engine);
-        }
-
-        return new NullVersion();
+        return array_map(
+            static fn (HeaderInterface $engineVersionHeader): VersionInterface => $engineVersionHeader->getEngineVersionWithEngine(
+                $engine,
+            ),
+            $headersWithEngineVersion,
+        );
     }
 
     /**

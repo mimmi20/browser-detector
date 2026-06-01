@@ -1,96 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/7.1.33133/37.6781; U; en) Presto/2.12.423 Version/12.16"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Feature Phone",
-      "marketingName": "general Feature Phone",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Java ME",
-      "marketingName": "Java ME",
-      "version": null,
-      "manufacturer": "Sun",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33133",
-      "manufacturer": "Opera",
-      "type": "transcoder",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.423",
-      "manufacturer": "Opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/5.1.22296/22.87; U; en) Presto/2.5.25"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Feature Phone",
-      "marketingName": "general Feature Phone",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Java ME",
-      "marketingName": "Java ME",
-      "version": null,
-      "manufacturer": "Sun",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "5.1.22296",
-      "manufacturer": "Opera",
-      "type": "transcoder",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.5.25",
-      "manufacturer": "Opera"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/4.5.40312/37.6781; U; de) Presto/2.12.423 Version/12.16"
     },
     "device": {
@@ -4488,6 +4398,96 @@
       "name": "Opera Mini",
       "modus": null,
       "version": "3.1.0",
+      "manufacturer": "Opera",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/8.01 (J2ME/MIDP; Opera Mini/2.0.3920/1724; en; U; ssr)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Feature Phone",
+      "marketingName": "general Feature Phone",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Java ME",
+      "marketingName": "Java ME",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "2.0.3920",
+      "manufacturer": "Opera",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.5 (J2ME/MIDP; Opera Mini/4.2 U; ru)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Feature Phone",
+      "marketingName": "general Feature Phone",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Java ME",
+      "marketingName": "Java ME",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "4.2.0",
       "manufacturer": "Opera",
       "type": "transcoder",
       "isbot": false,

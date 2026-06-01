@@ -193,6 +193,15 @@ final class MobileDeviceTest extends TestCase
             ['KONKA V7 KWAP1.2'],
             ['Mozilla/5.0 (X11; U; Linux i686; Slackware/13.0; ar;) AppleWebKit/530  (OpenSSL/0.9.8l; compatible; KHTML/4.3.2; Smart 2x2; Remote 2x2; rv:1.9.0.15) Gecko/20090412 KDDI-CA33 UP.Browser/6.2.0.10.4 MMP/2.0'],
             ['SoftBank/1.0/821SC/SCJ001/SN000000000000000 Flash/Flash-Lite/2.0'],
+            ['Spice M-5180'],
+            ['HUAWEI-U1250'],
+            ['ASUS-J100'],
+            ['AMOI-N810'],
+            ['Alcatel-OT153'],
+            ['SonySO-04E Build/10.1.1.D.2.31 UpdateCenter/1.3.4.A.0.8'],
+            ['Sony PS2 (Linux)'],
+            ['Mozilla/5.0 (PlayBook) AppleWebKit/536.2+ (KHTML, like Gecko) Version/10.0.4.102 Safari/536.2+'],
+            ['Amoi 8512/R18.0 NF-Browser/3.3'],
         ];
     }
 
@@ -297,6 +306,8 @@ final class MobileDeviceTest extends TestCase
             ['Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/5360 (KHTML, like Gecko) Chrome/40.0.892.0 Mobile Safari/5360'],
             ['Mozilla/5.0 (Windows 95) AppleWebKit/5320 (KHTML, like Gecko) Chrome/37.0.805.0 Mobile Safari/5320'],
             ['Mozilla/5.0 (Windows 98; Win 9x 4.90) AppleWebKit/5331 (KHTML, like Gecko) Chrome/37.0.859.0 Mobile Safari/5331'],
+            ['Mozilla/4.0 (compatible; Win32; WinHttp.WinHttpRequest.5)'],
+            ['Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Safari PrcmNovel_iOS/1.11.8'],
         ];
     }
 }

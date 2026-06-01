@@ -136,6 +136,51 @@
   },
   {
     "headers": {
+      "user-agent": "Philips X116"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "X116",
+      "marketingName": "X116",
+      "manufacturer": "Philips",
+      "brand": "Philips",
+      "dualOrientation": false,
+      "simCount": 2,
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Philips X503/MTK 6235.09A 09.32/WAP-2.0/MIDP-2.0/CLDC-1.1"
     },
     "device": {

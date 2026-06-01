@@ -556,5 +556,37 @@
       ]
     },
     "engine": "unknown"
+  },
+  "lets-encrypt-validation": {
+    "name": "Let's Encrypt Validation",
+    "manufacturer": "isrg",
+    "type": "service-agent",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "amazon-route53-health-check": {
+    "name": "Amazon Route53 Health Check",
+    "manufacturer": "amazon",
+    "type": "service-agent",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "xen-foro": {
+    "name": "XenForo",
+    "manufacturer": "unknown",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "XenForo"
+      ]
+    },
+    "engine": "unknown"
   }
 }

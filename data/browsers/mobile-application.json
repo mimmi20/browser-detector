@@ -2198,31 +2198,6 @@
     },
     "engine": "webkit"
   },
-  "podcastaddict": {
-    "name": "Podcast & Radio Addict",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "PodcastAddict\\/v",
-        "PodcastAddict"
-      ]
-    },
-    "engine": "webkit"
-  },
-  "airpodcasts": {
-    "name": "Podcasts",
-    "manufacturer": "apple",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "AirPodcasts"
-      ]
-    },
-    "engine": "webkit"
-  },
   "microsoft-copilot": {
     "name": "Microsoft Copilot",
     "manufacturer": "microsoft",
@@ -2353,30 +2328,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Barcelona"
-      ]
-    },
-    "engine": null
-  },
-  "tunein-radio": {
-    "name": "TuneIn Radio",
-    "manufacturer": "tune-in",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "TuneIn Radio"
-      ]
-    },
-    "engine": null
-  },
-  "tunein-radio-pro": {
-    "name": "TuneIn Radio Pro",
-    "manufacturer": "tune-in",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "TuneIn Radio Pro"
       ]
     },
     "engine": null
@@ -2573,18 +2524,6 @@
     },
     "engine": null
   },
-  "virgin-radio": {
-    "name": "Virgin Radio",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Virgin Radio"
-      ]
-    },
-    "engine": null
-  },
   "npr-app": {
     "name": "NPR: National & Local News",
     "manufacturer": "npr",
@@ -2593,19 +2532,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "nprone_android"
-      ]
-    },
-    "engine": null
-  },
-  "youtube-music": {
-    "name": "Youtube Music",
-    "manufacturer": "google",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "com\\.google\\.android\\.apps\\.youtube\\.music",
-        "YouTubeMusic"
       ]
     },
     "engine": null
@@ -2670,16 +2596,6 @@
     },
     "engine": null
   },
-  "podverse-app": {
-    "name": "Podverse - Podcast Player",
-    "manufacturer": "podverse",
-    "type": "mobile-application",
-    "version": {
-      "factory": null,
-      "search": null
-    },
-    "engine": null
-  },
   "tivi-mate": {
     "name": "TiviMate",
     "manufacturer": "tcl",
@@ -2689,18 +2605,6 @@
       "search": null
     },
     "engine": "blink"
-  },
-  "nrc-audio": {
-    "name": "NRC Audio",
-    "manufacturer": "mediahuis-nrc",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "NRC Audio"
-      ]
-    },
-    "engine": null
   },
   "nrc-nieuws": {
     "name": "NRC Nieuws",
@@ -2751,18 +2655,6 @@
     },
     "engine": null
   },
-  "iheart-radio": {
-    "name": "iHeartRadio",
-    "manufacturer": "iheart-media",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "iHeartRadio"
-      ]
-    },
-    "engine": null
-  },
   "heart": {
     "name": "Heart",
     "manufacturer": "unknown",
@@ -2771,55 +2663,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Heart"
-      ]
-    },
-    "engine": null
-  },
-  "emaudioplayer": {
-    "name": "EMAudioPlayer",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "EMAudioPlayer"
-      ]
-    },
-    "engine": null
-  },
-  "listnr": {
-    "name": "LiSTNR",
-    "manufacturer": "sca-igital",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "LiSTNR\\.au\\.com\\.podcastoneaustralia"
-      ]
-    },
-    "engine": null
-  },
-  "de-standaard": {
-    "name": "De Standaard",
-    "manufacturer": "mediahuis",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "DS podcast",
-        "DS Podcast"
-      ]
-    },
-    "engine": null
-  },
-  "classic-fm": {
-    "name": "Classic FM",
-    "manufacturer": "multimedios-digital",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Classic FM"
       ]
     },
     "engine": null
@@ -3011,18 +2854,6 @@
     },
     "engine": null
   },
-  "radio.de app": {
-    "name": "radio.de App",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "radio.de"
-      ]
-    },
-    "engine": "unknown"
-  },
   "slack app": {
     "name": "Slack App",
     "manufacturer": "slack",
@@ -3176,18 +3007,6 @@
     },
     "engine": null
   },
-  "podcruncher": {
-    "name": "PodCruncher",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "PodCruncher"
-      ]
-    },
-    "engine": "webkit"
-  },
   "turtlecast": {
     "name": "Turtlecast",
     "manufacturer": "unknown",
@@ -3220,18 +3039,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Sodes"
-      ]
-    },
-    "engine": "webkit"
-  },
-  "sonnet": {
-    "name": "Sonnet",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Simple Podcast Player"
       ]
     },
     "engine": "webkit"
@@ -3297,130 +3104,6 @@
     },
     "engine": "webkit"
   },
-  "radio-line": {
-    "name": "Radioline",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Radioline 2"
-      ]
-    },
-    "engine": "webkit"
-  },
-  "get-podcast": {
-    "name": "GetPodcast",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "GetPodcast"
-      ]
-    },
-    "engine": "webkit"
-  },
-  "podyssey": {
-    "name": "Podyssey",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Podyssey"
-      ]
-    },
-    "engine": "webkit"
-  },
-  "podurama": {
-    "name": "Podurama",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Podurama"
-      ]
-    },
-    "engine": "webkit"
-  },
-  "pods": {
-    "name": "Pods",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Pods"
-      ]
-    },
-    "engine": "webkit"
-  },
-  "podopolo": {
-    "name": "Podopolo",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "podopolo"
-      ]
-    },
-    "engine": "webkit"
-  },
-  "pod-me": {
-    "name": "PodMe",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "PodMe",
-        "Podme android app"
-      ]
-    },
-    "engine": "webkit"
-  },
-  "pod-nl": {
-    "name": "PodNL",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "PodNL"
-      ]
-    },
-    "engine": "webkit"
-  },
-  "podimo": {
-    "name": "Podimo",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Podimo"
-      ]
-    },
-    "engine": "webkit"
-  },
-  "pod-hero": {
-    "name": "Podhero",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Podhero Alpha",
-        "Podhero",
-        "Swoot Agent ",
-        "Swoot Agent"
-      ]
-    },
-    "engine": "webkit"
-  },
   "swoot": {
     "name": "Swoot",
     "manufacturer": "unknown",
@@ -3429,125 +3112,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Swoot"
-      ]
-    },
-    "engine": "webkit"
-  },
-  "podeo": {
-    "name": "Podeo",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Podeo"
-      ]
-    },
-    "engine": "webkit"
-  },
-  "pod-clipper": {
-    "name": "Podclipper",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Podclipper"
-      ]
-    },
-    "engine": "webkit"
-  },
-  "podcast-player": {
-    "name": "Podcast Player",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Podcast Player"
-      ]
-    },
-    "engine": "webkit"
-  },
-  "podcast-guru": {
-    "name": "Podcast Guru",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "PodcastGuru"
-      ]
-    },
-    "engine": "webkit"
-  },
-  "pod-bay": {
-    "name": "Podbay",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Podbay"
-      ]
-    },
-    "engine": "webkit"
-  },
-  "player fm": {
-    "name": "Player FM",
-    "manufacturer": "nuvomondo",
-    "type": "mobile-application",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "webkit"
-  },
-  "alpha player fm": {
-    "name": "Alpha Player FM",
-    "manufacturer": "nuvomondo",
-    "type": "mobile-application",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "webkit"
-  },
-  "overhaul-fm": {
-    "name": "Overhaul FM",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Podcast Overhaul"
-      ]
-    },
-    "engine": "webkit"
-  },
-  "my-tuner": {
-    "name": "MyTuner",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "myTuneriOS Free",
-        "myTuner Radio app",
-        "mytuner_podcasts_androidplayer"
-      ]
-    },
-    "engine": "webkit"
-  },
-  "moon-fm": {
-    "name": "MoonFM",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Moon FM",
-        "MoonFM"
       ]
     },
     "engine": "webkit"
@@ -3646,30 +3210,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "KKBOX"
-      ]
-    },
-    "engine": "webkit"
-  },
-  "kids-pod": {
-    "name": "KidsPod",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "KidspodMobileClient"
-      ]
-    },
-    "engine": "webkit"
-  },
-  "kids-listen": {
-    "name": "Kids Listen",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Kids Listen"
       ]
     },
     "engine": "webkit"
@@ -3780,31 +3320,6 @@
         "GoodReaderIPad",
         "GoodReader4",
         "GoodReader"
-      ]
-    },
-    "engine": "webkit"
-  },
-  "good-pods": {
-    "name": "Goodpods",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Goodpods\\.iOS \\/ ",
-        "Goodpods"
-      ]
-    },
-    "engine": "webkit"
-  },
-  "go-loud": {
-    "name": "GoLoud",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "GoLoud"
       ]
     },
     "engine": "webkit"
@@ -4121,26 +3636,6 @@
     },
     "engine": "webkit"
   },
-  "apple-podcasts": {
-    "name": "Podcasts",
-    "manufacturer": "apple",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "팟캐스트",
-        "פודקאסטים",
-        "Podcastok",
-        "Подкасты",
-        "البودكاست",
-        "Подкасти",
-        "פודקאסטים",
-        "ポッドキャスト",
-        "พ็อดคาสท์"
-      ]
-    },
-    "engine": "webkit"
-  },
   "apple-imessage": {
     "name": "iMessage",
     "manufacturer": "apple",
@@ -4191,19 +3686,6 @@
       ]
     },
     "engine": "webkit"
-  },
-  "podcat": {
-    "name": "Podcat",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Podcat 2",
-        "Podcat"
-      ]
-    },
-    "engine": null
   },
   "skyeng-teachers": {
     "name": "Skyeng Teachers",
@@ -4285,18 +3767,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Bose Music"
-      ]
-    },
-    "engine": null
-  },
-  "all-hit-music-radio": {
-    "name": "AllHitMusicRadio",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "AllHitMusicRadio"
       ]
     },
     "engine": null
@@ -4517,18 +3987,6 @@
       ]
     },
     "engine": null
-  },
-  "hatena antenna": {
-    "name": "AntennaPod",
-    "manufacturer": "hatena",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Hatena Antenna"
-      ]
-    },
-    "engine": "unknown"
   },
   "roboform": {
     "name": "RoboForm",
@@ -4797,26 +4255,6 @@
     },
     "engine": null
   },
-  "pod-u": {
-    "name": "podU",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": null,
-      "search": null
-    },
-    "engine": null
-  },
-  "yandex-music": {
-    "name": "Yandex Music",
-    "manufacturer": "yandex",
-    "type": "mobile-application",
-    "version": {
-      "factory": null,
-      "search": null
-    },
-    "engine": null
-  },
   "xiao-yu-zhou": {
     "name": "Xiao Yu Zhou",
     "manufacturer": "unknown",
@@ -4901,84 +4339,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ServeStream Dynamo"
-      ]
-    },
-    "engine": null
-  },
-  "samsung-podcasts": {
-    "name": "Samsung Podcasts",
-    "manufacturer": "samsung",
-    "type": "mobile-application",
-    "version": {
-      "factory": null,
-      "search": null
-    },
-    "engine": null
-  },
-  "rhythmbox": {
-    "name": "Rhythmbox",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "rhythmbox"
-      ]
-    },
-    "engine": null
-  },
-  "podvine": {
-    "name": "Podvine",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Podvine"
-      ]
-    },
-    "engine": null
-  },
-  "pod-trapper": {
-    "name": "PodTrapper",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": null,
-      "search": null
-    },
-    "engine": null
-  },
-  "pod-friend": {
-    "name": "Podfriend",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Podfriend"
-      ]
-    },
-    "engine": null
-  },
-  "pod-chaser": {
-    "name": "Podchaser",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": null,
-      "search": null
-    },
-    "engine": null
-  },
-  "podcastly": {
-    "name": "Podcastly",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Podcastly"
       ]
     },
     "engine": null
@@ -5142,18 +4502,6 @@
     },
     "engine": null
   },
-  "hermes-pod": {
-    "name": "HermesPod",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "hermespod\\.com\\/v"
-      ]
-    },
-    "engine": null
-  },
   "freespoke": {
     "name": "Freespoke",
     "manufacturer": "unknown",
@@ -5184,30 +4532,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Castro 2"
-      ]
-    },
-    "engine": null
-  },
-  "icatcher-podcast-player": {
-    "name": "iCatcher Podcast Player",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Podcast Player"
-      ]
-    },
-    "engine": null
-  },
-  "podcatcher-deluxe": {
-    "name": "Podcatcher Deluxe",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Podcatcher Deluxe"
       ]
     },
     "engine": null
@@ -5268,16 +4592,6 @@
   },
   "apple mobilenotes": {
     "name": "MobileNotes",
-    "manufacturer": "apple",
-    "type": "mobile-application",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "webkit"
-  },
-  "apple-authentication-services": {
-    "name": "Apple AuthenticationServices",
     "manufacturer": "apple",
     "type": "mobile-application",
     "version": {
@@ -5376,18 +4690,6 @@
     },
     "engine": null
   },
-  "arc-search": {
-    "name": "Arc Search",
-    "manufacturer": "the-browser-company",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "ArcMobile2"
-      ]
-    },
-    "engine": null
-  },
   "amazon-fire": {
     "name": "Amazon Fire",
     "manufacturer": "amazon",
@@ -5408,20 +4710,8 @@
     },
     "engine": "webkit"
   },
-  "audacy-app": {
-    "name": "Audacy App",
-    "manufacturer": "audacy",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Radio\\.com"
-      ]
-    },
-    "engine": "webkit"
-  },
-  "overcast": {
-    "name": "Overcast",
+  "coaf-smart-citizen": {
+    "name": "COAF Smart Citizen",
     "manufacturer": "unknown",
     "type": "mobile-application",
     "version": {
@@ -5430,16 +4720,50 @@
     },
     "engine": "webkit"
   },
-  "radio-public": {
-    "name": "RadioPublic",
+  "bookshelf": {
+    "name": "Bookshelf",
     "manufacturer": "unknown",
     "type": "mobile-application",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "RadioPublic iOS "
+        "Bookshelf-Android"
       ]
     },
     "engine": "webkit"
+  },
+  "signal": {
+    "name": "Signal",
+    "manufacturer": "signal",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "yandex": {
+    "name": "Yandex",
+    "manufacturer": "yandex",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Yandex"
+      ]
+    },
+    "engine": null
+  },
+  "numuki-browser": {
+    "name": "NuMuKi Browser",
+    "manufacturer": "yandex",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NuMuKiBrowser"
+      ]
+    },
+    "engine": null
   }
 }

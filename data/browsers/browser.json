@@ -1216,18 +1216,6 @@
     },
     "engine": null
   },
-  "ekioh browser": {
-    "name": "Ekioh Browser",
-    "manufacturer": "ekioh",
-    "type": "browser",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Ekioh"
-      ]
-    },
-    "engine": "webkit"
-  },
   "flow-browser": {
     "name": "Flow",
     "manufacturer": "ekioh",
@@ -1235,7 +1223,8 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "Flow"
+        "Flow",
+        "Ekioh"
       ]
     },
     "engine": "webkit"
@@ -2127,7 +2116,7 @@
     "engine": null
   },
   "kuaiso browser": {
-    "name": "Kuaiso Browser",
+    "name": "7Star",
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
@@ -2377,6 +2366,18 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MiniBrowserMobile"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "minibrowser": {
+    "name": "MiniBrowser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MiniBrowser"
       ]
     },
     "engine": "webkit"
@@ -2989,7 +2990,7 @@
     "engine": "unknown"
   },
   "origin": {
-    "name": "Origin",
+    "name": "Origin In-Game Overlay",
     "manufacturer": "electronic-arts",
     "type": "browser",
     "version": {
@@ -3245,6 +3246,19 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MQQBrowser\\/Mini"
+      ]
+    },
+    "engine": null
+  },
+  "qqbrowser lite": {
+    "name": "QQ Browser Lite",
+    "manufacturer": "tencent",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MQQBrowserLite",
+        "QQBrowserLite"
       ]
     },
     "engine": null
@@ -3687,8 +3701,8 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "Version",
-        "Sleipnir"
+        "Sleipnir",
+        "Version"
       ]
     },
     "engine": null
@@ -4088,7 +4102,8 @@
       "search": [
         "Version",
         "TizenBrowser",
-        "Tizen Browser"
+        "Tizen Browser",
+        "SLP Browser"
       ]
     },
     "engine": null
@@ -4279,7 +4294,7 @@
     "engine": "unknown"
   },
   "webianshell": {
-    "name": "WebianShell",
+    "name": "Webian Shell",
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
@@ -4299,7 +4314,8 @@
       "search": [
         "Version",
         "webOS",
-        "webOSBrowser"
+        "webOSBrowser",
+        "hpwOS"
       ]
     },
     "engine": "webkit"
@@ -5245,6 +5261,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "splash Version",
         "splash"
       ]
     },
@@ -5257,6 +5274,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "bdhonorbrowser\\/",
         "bdhonorbrowser"
       ]
     },
@@ -5321,7 +5339,7 @@
     "engine": null
   },
   "logicui-tv-browser": {
-    "name": "TV Browser",
+    "name": "LogicUI TV Browser",
     "manufacturer": "logic-ui",
     "type": "browser",
     "version": {
@@ -5825,18 +5843,6 @@
     },
     "engine": null
   },
-  "atom": {
-    "name": "Atom",
-    "manufacturer": "github",
-    "type": "browser",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Atom"
-      ]
-    },
-    "engine": null
-  },
   "comet": {
     "name": "Comet",
     "manufacturer": "perplexity",
@@ -6040,5 +6046,101 @@
       ]
     },
     "engine": "arachne"
+  },
+  "pico-browser": {
+    "name": "PICO Browser",
+    "manufacturer": "pico",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PicoBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "yolo-browser": {
+    "name": "Yolo Browser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YoloBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "brisk-bard": {
+    "name": "BriskBard",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BriskBard"
+      ]
+    },
+    "engine": null
+  },
+  "arc-search": {
+    "name": "Arc Search",
+    "manufacturer": "the-browser-company",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ArcMobile2"
+      ]
+    },
+    "engine": null
+  },
+  "east-browser": {
+    "name": "East Browser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "EastBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "kapiko": {
+    "name": "Kapiko",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Kapiko"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "sharp-pda-browser": {
+    "name": "Sharp PDA Browser",
+    "manufacturer": "sharp",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "sharp pda browser"
+      ]
+    },
+    "engine": null
+  },
+  "sharp-wd-browser": {
+    "name": "Sharp WD Browser",
+    "manufacturer": "sharp",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "sharp wd browser"
+      ]
+    },
+    "engine": null
   }
 }

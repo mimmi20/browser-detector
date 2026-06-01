@@ -316,51 +316,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) VisionTeacherforChromebooks/1.6.2 Chrome/78.0.3904.92 Electron/7.0.1 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": null,
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Electron",
-      "modus": null,
-      "version": "7.0.1",
-      "manufacturer": "Microsoft",
-      "type": "application",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "78.0.3904.92",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Microsoft Office Excel/16.42.1011 (Mac OS/10.13.6; Desktop; es-MX; NonAppStore; Apple/Macmini7,1)"
     },
     "device": {
@@ -635,17 +590,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "iMac",
-      "marketingName": "iMac",
+      "deviceName": "iMac 14,1",
+      "marketingName": "iMac 21.5\" (2013)",
       "manufacturer": "Apple",
       "brand": "Apple",
       "dualOrientation": false,
       "simCount": 0,
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1920,
+        "height": 1080,
         "touch": false,
-        "size": null
+        "size": 21.5
       },
       "type": "desktop",
       "ismobile": false,
@@ -781,6 +736,96 @@
         "height": null,
         "touch": false,
         "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "11.2.2",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Excel",
+      "modus": null,
+      "version": "16.46.212",
+      "manufacturer": "Microsoft",
+      "type": "application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Microsoft Office Excel/16.46.212 (Mac OS/11.2.1; Desktop; en-US; NonAppStore; Apple/iMac17,1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iMac 17,1",
+      "marketingName": "iMac 27\" (2015)",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 5120,
+        "height": 2880,
+        "touch": false,
+        "size": 27
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "11.2.1",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Excel",
+      "modus": null,
+      "version": "16.46.212",
+      "manufacturer": "Microsoft",
+      "type": "application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Microsoft Office Excel/16.46.212 (Mac OS/11.2.2; Desktop; es-MX; NonAppStore; Apple/iMac19,1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iMac 19,1",
+      "marketingName": "iMac 27\" (2019)",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 5120,
+        "height": 2880,
+        "touch": false,
+        "size": 27
       },
       "type": "desktop",
       "ismobile": false,
@@ -1040,17 +1085,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "iMac",
-      "marketingName": "iMac",
+      "deviceName": "iMac 21,2",
+      "marketingName": "iMac 23.5\" (2021)",
       "manufacturer": "Apple",
       "brand": "Apple",
       "dualOrientation": false,
       "simCount": 0,
       "display": {
-        "width": null,
-        "height": null,
+        "width": 4480,
+        "height": 2520,
         "touch": false,
-        "size": null
+        "size": 23.5
       },
       "type": "desktop",
       "ismobile": false,
@@ -1066,6 +1111,51 @@
     },
     "client": {
       "name": "Word",
+      "modus": null,
+      "version": "16.54.1010",
+      "manufacturer": "Microsoft",
+      "type": "application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Microsoft Office Excel/16.54.1010 (Mac OS/12.0.1; Desktop; es-MX; NonAppStore; Apple/iMacPro1,1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iMac Pro 1,1",
+      "marketingName": "iMac Pro 27\" (2017)",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 5120,
+        "height": 2880,
+        "touch": false,
+        "size": 27
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "12.0.1",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Excel",
       "modus": null,
       "version": "16.54.1010",
       "manufacturer": "Microsoft",
@@ -1122,6 +1212,141 @@
       "name": "Blink",
       "version": "96.0.4664.174",
       "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Microsoft Office Word/16.70.212 (Mac OS/13.2.1; Desktop; de-DE; AppStore; Apple/Mac14,3)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Mac 14,3",
+      "marketingName": "Mac Mini (2023)",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "13.2.1",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Word",
+      "modus": null,
+      "version": "16.70.212",
+      "manufacturer": "Microsoft",
+      "type": "application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Microsoft Office Word/16.78.1008 (Mac OS/14.0; Desktop; en-US; NonAppStore; Apple/Mac13,1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Mac 13,1",
+      "marketingName": "Mac Studio 27\" (2022)",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "14.0.0",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Word",
+      "modus": null,
+      "version": "16.78.1008",
+      "manufacturer": "Microsoft",
+      "type": "application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Microsoft Office Word/16.78.1008 (Mac OS/14.0; Desktop; en-US; NonAppStore; Apple/Mac13,2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "14.0.0",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Word",
+      "modus": null,
+      "version": "16.78.1008",
+      "manufacturer": "Microsoft",
+      "type": "application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   },
   {

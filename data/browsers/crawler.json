@@ -1521,6 +1521,18 @@
     },
     "engine": "unknown"
   },
+  "swisscows-images": {
+    "name": "Swisscows Images",
+    "manufacturer": "swisscows",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Swisscows Images"
+      ]
+    },
+    "engine": "unknown"
+  },
   "think-chaos": {
     "name": "ThinkChaos",
     "manufacturer": "unknown",
@@ -6134,6 +6146,352 @@
     "version": {
       "class": null,
       "search": null
+    },
+    "engine": "unknown"
+  },
+  "link-scan-processor": {
+    "name": "LinkScanProcessor",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "LinkScanProcessor"
+      ]
+    },
+    "engine": null
+  },
+  "hoolty-bot": {
+    "name": "HooltyBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HooltyBot"
+      ]
+    },
+    "engine": null
+  },
+  "company-matcher": {
+    "name": "CompanyMatcher",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "CompanyMatcher"
+      ]
+    },
+    "engine": null
+  },
+  "akquiso": {
+    "name": "Akquiso",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Akquiso"
+      ]
+    },
+    "engine": null
+  },
+  "querit-bot": {
+    "name": "QueritBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "QueritBot"
+      ]
+    },
+    "engine": null
+  },
+  "domain-html-reachability-probe": {
+    "name": "DomainHtmlReachabilityProbe",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DomainHtmlReachabilityProbe"
+      ]
+    },
+    "engine": null
+  },
+  "vergabefix-bot": {
+    "name": "VergabefixBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "VergabefixBot"
+      ]
+    },
+    "engine": null
+  },
+  "what-vpn": {
+    "name": "what-vpn",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "what-vpn"
+      ]
+    },
+    "engine": null
+  },
+  "iis site analysis web crawler": {
+    "name": "IIS Site Analysis Web Crawler",
+    "manufacturer": "microsoft",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "iisbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "hub-pages": {
+    "name": "HubPages",
+    "manufacturer": "arena-group",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HubPages V",
+        "HubPages"
+      ]
+    },
+    "engine": null
+  },
+  "ip-guide-crawler": {
+    "name": "IP-Guide Crawler",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "IP-Guide\\.com Crawler"
+      ]
+    },
+    "engine": null
+  },
+  "prit-torrent": {
+    "name": "PritTorrent",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PritTorrent"
+      ]
+    },
+    "engine": null
+  },
+  "page-thing": {
+    "name": "PageThing",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "snapchat-proxy": {
+    "name": "Snapchat Proxy",
+    "manufacturer": "snap",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "info-tiger-bot": {
+    "name": "InfoTigerBot",
+    "manufacturer": "infotiger",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "InfoTigerBot"
+      ]
+    },
+    "engine": null
+  },
+  "huawei-webcat-bot": {
+    "name": "HuaweiWebCatBot",
+    "manufacturer": "huawei",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HuaweiWebCatBot"
+      ]
+    },
+    "engine": null
+  },
+  "tchelebi": {
+    "name": "tchelebi",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "tchelebi"
+      ]
+    },
+    "engine": null
+  },
+  "deepnoc": {
+    "name": "deepnoc",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "deepnoc"
+      ]
+    },
+    "engine": null
+  },
+  "leak-scanner": {
+    "name": "LeakScanner",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "LeakScanner"
+      ]
+    },
+    "engine": null
+  },
+  "adsense-detector": {
+    "name": "AdSenseDetector",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AdSenseDetector"
+      ]
+    },
+    "engine": null
+  },
+  "websuse-bot": {
+    "name": "WebSuseBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WebSuseBot",
+        "WebSuse"
+      ]
+    },
+    "engine": null
+  },
+  "go-parser-bot": {
+    "name": "GoParserBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GoParserBot"
+      ]
+    },
+    "engine": null
+  },
+  "android-http-client": {
+    "name": "AndroidHttpClient",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AndroidHttpClient"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "nalezen-cz-bot": {
+    "name": "NalezenCzBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NalezenCzBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "hubspot-page-screenshot-service": {
+    "name": "HubSpot Page Screenshot Service",
+    "manufacturer": "hubspot-inc",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HubSpot Page Screenshot Service"
+      ]
+    },
+    "engine": null
+  },
+  "trendsmap-resolver": {
+    "name": "TrendsmapResolver",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TrendsmapResolver"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ryowl-engine": {
+    "name": "Ryowl Engine",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RyowlEngine"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "cincraw": {
+    "name": "Cincraw",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Cincraw"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "serendeputy-bot": {
+    "name": "Serendeputy Bot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SerendeputyBot"
+      ]
     },
     "engine": "unknown"
   }

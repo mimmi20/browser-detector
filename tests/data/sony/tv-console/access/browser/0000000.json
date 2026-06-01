@@ -91,6 +91,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (PLAYSTATION 3; 1.00)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "PlayStation 3",
+      "marketingName": "PlayStation 3",
+      "manufacturer": "Sony",
+      "brand": "Sony",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-console",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "CellOS",
+      "marketingName": "CellOS",
+      "version": "1.00.0",
+      "manufacturer": "Sony",
+      "bits": null
+    },
+    "client": {
+      "name": "NetFront",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Access",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/4.0 (PS2; PlayStation BB Navigator 1.0) NetFront/3.0"
     },
     "device": {
@@ -177,6 +222,51 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (PlayStation 4 PRO) AppleWebKit/531.3 (KHTML, like Gecko, HEVC, HDR, UHD) SCEE/1.0 Nuanti/2.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "PlayStation 4 Pro",
+      "marketingName": "PlayStation 4 Pro",
+      "manufacturer": "Sony",
+      "brand": "Sony",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-console",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Orbis OS",
+      "marketingName": "Orbis OS",
+      "version": null,
+      "manufacturer": "Sony",
+      "bits": null
+    },
+    "client": {
+      "name": "NetFront",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Access",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "531.3.0",
+      "manufacturer": "Apple"
     }
   }
 ]

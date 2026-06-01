@@ -1551,6 +1551,46 @@ final class OsTest extends TestCase
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['VIDAA']],
                 'key' => 'vidaa-os',
             ],
+            [
+                'type' => 'TiVo OS',
+                'name' => 'TiVo OS',
+                'marketingName' => 'TiVo OS',
+                'manufacturer' => Company::tivo,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['TiVoOS']],
+                'key' => 'tivo-os',
+            ],
+            [
+                'type' => 'Ubuntu Touch',
+                'name' => 'Ubuntu Touch',
+                'marketingName' => 'Ubuntu Touch',
+                'manufacturer' => Company::canonical,
+                'version' => ['factory' => UbuntuFactory::class, 'search' => null],
+                'key' => 'ubuntu-touch',
+            ],
+            [
+                'type' => 'HarmonyOS NEXT',
+                'name' => 'HarmonyOS NEXT',
+                'marketingName' => 'HarmonyOS NEXT',
+                'manufacturer' => Company::huawei,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['(?:HarmonyOS|hmos.+OpenHarmony)[-/ ]']],
+                'key' => 'harmony-os-next',
+            ],
+            [
+                'type' => 'QNX',
+                'name' => 'QNX',
+                'marketingName' => 'QNX',
+                'manufacturer' => Company::blackberry,
+                'version' => ['factory' => null, 'search' => null],
+                'key' => 'qnx',
+            ],
+            [
+                'type' => 'PICO OS',
+                'name' => 'PICO OS',
+                'marketingName' => 'PICO OS',
+                'manufacturer' => Company::pico,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['PICO \d OS']],
+                'key' => 'pico-os',
+            ],
         ];
     }
 }

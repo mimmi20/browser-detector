@@ -160,7 +160,7 @@
     "os": {
       "name": "Debian",
       "marketingName": "Debian",
-      "version": "1.0.0",
+      "version": null,
       "manufacturer": "Software in the Public Interest",
       "bits": null
     },
@@ -717,6 +717,51 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9) Gecko/20080705 Firefox/3.0 Kapiko/3.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows XP",
+      "version": "5.1.0",
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Kapiko",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.9.0",
+      "manufacturer": "Mozilla"
     }
   },
   {
@@ -2386,6 +2431,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.94 Safari/537.36 MRCHROME"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows 8",
+      "version": "8.0.0",
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Amigo",
+      "modus": null,
+      "version": "27.0.1453.94",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "IBrowse 2.4 (AmigaOS 4.5)"
     },
     "device": {
@@ -2836,51 +2926,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (X11; Linux i686; U;) Gecko/0 Kazehakase/0.4.3 Debian/0.4.3-1ubuntu1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Ubuntu",
-      "marketingName": "Ubuntu",
-      "version": null,
-      "manufacturer": "Canonical",
-      "bits": null
-    },
-    "client": {
-      "name": "Kazehakase",
-      "modus": null,
-      "version": "0.4.3",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "Mozilla"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (OS/2; U; Warp 4.5; en-US; rv:1.9a1) Gecko/20051119 MultiZilla/1.8.1.0s SeaMonkey/1.5a"
     },
     "device": {
@@ -3263,14 +3308,14 @@
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": "Webian",
+      "marketingName": "Webian",
       "version": null,
-      "manufacturer": "Linux Foundation",
+      "manufacturer": "unknown",
       "bits": null
     },
     "client": {
-      "name": "WebianShell",
+      "name": "Webian Shell",
       "modus": null,
       "version": "0.1.0",
       "manufacturer": "unknown",
@@ -3736,6 +3781,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 5.1  NCLIENT50_AAPA4F6F58538E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.122 CoRom/27.0.1453.122 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows XP",
+      "version": "5.1.0",
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "CoRom Browser",
+      "modus": null,
+      "version": "27.0.1453.122",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2745.1 Kuaiso/1.42.501.426 Safari/537.36"
     },
     "device": {
@@ -3765,7 +3855,7 @@
       "bits": null
     },
     "client": {
-      "name": "Kuaiso Browser",
+      "name": "7Star",
       "modus": null,
       "version": "1.42.501.426",
       "manufacturer": "unknown",
@@ -4096,6 +4186,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; FTC-IBrowser1-2001; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows XP",
+      "version": "5.1.0",
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "IBrowse",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "Microsoft"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/4.0 (compatible; IBrowse 3.0; AmigaOS4.0)"
     },
     "device": {
@@ -4215,7 +4350,7 @@
       "bits": null
     },
     "client": {
-      "name": "iBrowser",
+      "name": "MiniBrowser",
       "modus": null,
       "version": "2.11.0",
       "manufacturer": "unknown",
@@ -4224,9 +4359,9 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -4362,141 +4497,6 @@
       "name": "Gecko",
       "version": null,
       "manufacturer": "Mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "EVE-minibrowser/3.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "iBrowser",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "ELinks/0.9.1 (textmode; SunOS 5.9 sun4u; 122x42)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "SunOS",
-      "marketingName": "SunOS",
-      "version": "5.9.0",
-      "manufacturer": "Oracle",
-      "bits": null
-    },
-    "client": {
-      "name": "ELinks",
-      "modus": null,
-      "version": "0.9.1",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Text",
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "ELinks/0.11.4rc1 (textmode; FreeBSD 7.1-PRERELEASE i386; 160x64-2)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "FreeBSD",
-      "marketingName": "FreeBSD",
-      "version": "7.1.0-dev",
-      "manufacturer": "FreeBSD",
-      "bits": null
-    },
-    "client": {
-      "name": "ELinks",
-      "modus": null,
-      "version": "0.11.4-RC+1",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Text",
-      "version": null,
-      "manufacturer": "unknown"
     }
   }
 ]

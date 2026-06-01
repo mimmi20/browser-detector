@@ -51,7 +51,7 @@
     "device": {
       "architecture": null,
       "deviceName": "AFTSO001",
-      "marketingName": "4K (2019)",
+      "marketingName": "Fire TV 4K (2019)",
       "manufacturer": "JVC",
       "brand": "JVC",
       "dualOrientation": false,
@@ -84,9 +84,99 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "Apple"
+      "name": "Blink",
+      "version": "59.0.2883.91",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 HbbTV/1.6.1 (+DRM; LGE/JPE/JVC; LT-65NQ7155; WEBOS22 04.42.26; W22_K8LP; DTV_C22P;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "LT-65NQ7155",
+      "marketingName": "LT-65NQ7155",
+      "manufacturer": "JVC",
+      "brand": "JVC",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 65
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": "22.0.0",
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "87.0.4280.88",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "87.0.4280.88",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 HbbTV/1.6.1 (+DRM; LGE/SILICONPLAYER/JVC; LT-50NQ7155; WEBOS22 04.42.26; W22_K8LP; DTV_C22P;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general JVC device",
+      "marketingName": "general JVC device",
+      "manufacturer": "JVC",
+      "brand": "JVC",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": "22.0.0",
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "87.0.4280.88",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "87.0.4280.88",
+      "manufacturer": "Google"
     }
   }
 ]

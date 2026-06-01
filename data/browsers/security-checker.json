@@ -439,5 +439,27 @@
       ]
     },
     "engine": "unknown"
+  },
+  "security-audit": {
+    "name": "SecurityAudit",
+    "manufacturer": "unknown",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SecurityAudit"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "net-systems-research": {
+    "name": "NetSystemsResearch",
+    "manufacturer": "net-systems-research",
+    "type": "security-checker",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
   }
 }

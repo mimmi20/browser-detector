@@ -733,8 +733,6 @@ enum Company: string implements CompanyInterface
 
     case skyworth = 'SkyWorth';
 
-    case tesla = 'Tesla';
-
     case inew = 'iNew';
 
     case goclever = 'GOCLEVER';
@@ -3783,6 +3781,32 @@ enum Company: string implements CompanyInterface
 
     case wiresharkFoundation = 'Wireshark Foundation';
 
+    case cypress = 'Cypress';
+
+    case tdSystems = 'TD Systems';
+
+    case manhattan = 'Manhattan';
+
+    case pioneer = 'Pioneer';
+
+    case pico = 'Pico';
+
+    case axen = 'AXEN';
+
+    case arenaGroup = 'The Arena Group';
+
+    case monitorUs = 'Monitor.Us';
+
+    case netSystemsResearch = 'NET SYSTEMS RESEARCH';
+
+    case infotiger = 'Infotiger';
+
+    case signal = 'Signal';
+
+    case hkPro = 'HKPro';
+
+    case comTradeTesla = 'ComTrade Tesla';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -4147,7 +4171,6 @@ enum Company: string implements CompanyInterface
             'magenta' => self::magenta,
             'redline' => self::redline,
             'skyworth', 'sky-worth' => self::skyworth,
-            'tesla' => self::tesla,
             'inew' => self::inew,
             'goclever' => self::goclever,
             'irbis' => self::irbis,
@@ -5672,6 +5695,19 @@ enum Company: string implements CompanyInterface
             'sunny' => self::sunny,
             'insignia' => self::insignia,
             'wiresharkfoundation', 'wireshark foundation', 'wireshark-foundation' => self::wiresharkFoundation,
+            'cypress', 'cypress.io, inc.' => self::cypress,
+            'tdsystems', 'td-systems', 'td systems' => self::tdSystems,
+            'manhattan' => self::manhattan,
+            'pioneer' => self::pioneer,
+            'pico', 'pico immersive pte. ltd.' => self::pico,
+            'axen' => self::axen,
+            'arenagroup', 'the arena group', 'arena-group' => self::arenaGroup,
+            'monitorus', 'monitor.us' => self::monitorUs,
+            'netsystemsresearch', 'net systems research llc', 'net-systems-research', 'net systems research' => self::netSystemsResearch,
+            'infotiger', 'infotiger ug' => self::infotiger,
+            'signal', 'signal messenger llc.' => self::signal,
+            'hkpro', 'hk-pro' => self::hkPro,
+            'comtradetesla', 'comtrade tesla', 'comtrade-tesla' => self::comTradeTesla,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6434,6 +6470,11 @@ enum Company: string implements CompanyInterface
             self::infomir => 'Infomir,LLC',
             self::freesat => 'Everyone TV Devices Limited',
             self::audacy => 'Audacy, Inc.',
+            self::cypress => 'Cypress.io, Inc.',
+            self::pico => 'PICO Immersive Pte. Ltd.',
+            self::netSystemsResearch => 'NET SYSTEMS RESEARCH LLC',
+            self::infotiger => 'Infotiger UG',
+            self::signal => 'Signal Messenger LLC.',
             self::unknown => null,
             default => $this->value,
         };
@@ -7138,6 +7179,12 @@ enum Company: string implements CompanyInterface
             self::lovableLabs => 'lovable-labs',
             self::lineWorks => 'line-works',
             self::wiresharkFoundation => 'wireshark-foundation',
+            self::tdSystems => 'td-systems',
+            self::arenaGroup => 'arena-group',
+            self::monitorUs => 'monitor.us',
+            self::netSystemsResearch => 'net-systems-research',
+            self::hkPro => 'hk-pro',
+            self::comTradeTesla => 'comtrade-tesla',
             default => $this->name,
         };
     }

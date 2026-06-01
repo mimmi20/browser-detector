@@ -1,52 +1,7 @@
 [
   {
     "headers": {
-      "user-agent": "Opera/9.80 (Linux sh4; U; HbbTV/1.1.1 (; INTEK; Vantage Full HD Model;;;) hdplusSmartTV/1.0 (NETRANGEMMH;) Bee/3.2 CE-HTML/1.0; FXM-U2FsdGVkX19WaYSyGq70V2qt2C4bR92ULIOEtQrDKma1eRx3WQlWfuTO6eCHMYQm-END; en) Presto/2.10.250 Version/11.60"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Smart TV",
-      "marketingName": "Smart TV",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "Linux Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "11.60.0",
-      "manufacturer": "Opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.10.250",
-      "manufacturer": "Opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 Safari/537.36 OPR/25.0.1620.0 OMI/4.3.18.7.Dominik.0 VSTVB MB100 HbbTV/1.2.1 (; HHW HAIER; MB100; 0.1.33.5; ;) SmartTvA/3.0.0 UID(00:09:DF:C2:EA:02/MB100/HHW HAIER/0.1"
+      "user-agent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36 OPR/31.0.1890.0 OMI/4.6.1.40.Dominik2.193 VSTVB MB100 HbbTV/1.2.1 (; ALDISUED; MB110; 2.32.6.0; ;) SmartTvA/3.0.0 CE-HTML/1.0 FXM-U2FsdGVkX1+oZew0140/QCzgqn6R82S6VWA1hFHBAWpCjMv031tHTZtgjzEHshea-END"
     },
     "device": {
       "architecture": null,
@@ -77,7 +32,7 @@
     "client": {
       "name": "Opera Devices",
       "modus": null,
-      "version": "4.3.18.7",
+      "version": "4.6.1.40",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -85,13 +40,13 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "38.0.2125.122",
+      "version": "44.0.2403.130",
       "manufacturer": "Google"
     }
   },
   {
     "headers": {
-      "user-agent": "Opera/9.80 (Linux mips; ) Presto/2.12.407 Version/12.51 MB97/0.45.23.8 (JVC, Mxl66140_V, wired) VSTVB_MB97  SmartTvA/3.0.0"
+      "user-agent": "Opera/9.80 (Linux mips; ) Presto/2.12.407 Version/12.51 MB97/0.39.24.3 (DIGIHOME, Mxl661L32, wireless) VSTVB_MB97 SmartTvA/3.0.0"
     },
     "device": {
       "architecture": null,
@@ -176,6 +131,51 @@
     "engine": {
       "name": "Blink",
       "version": "84.0.4147.140",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.128 Safari/537.36 OPR/46.0.2207.0 OMI/4.23.2.96.LIMA2.91 Model/Vestel-MB181 VSTVB MB100 TiVoOS/1.0.0 (Vestel MB181 FINLUX) SmartTvA/3.0.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Smart TV",
+      "marketingName": "Smart TV",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "TiVo OS",
+      "marketingName": "TiVo OS",
+      "version": "1.0.0",
+      "manufacturer": "TiVo",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Devices",
+      "modus": null,
+      "version": "4.23.2.96",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.5359.128",
       "manufacturer": "Google"
     }
   }

@@ -95,6 +95,51 @@
     },
     "device": {
       "architecture": null,
+      "deviceName": "47LA660S-ZA",
+      "marketingName": "47LA660S-ZA",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": 47
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "6.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.1.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Unknown; Linux armv7l) AppleWebKit/537.1+ (KHTML, like Gecko) Safari/537.1+ LG Browser/6.00.00(+mouse+3D+SCREEN+TUNER; LGE; 27MT93S-PZQ; 04.22.07; 0x00000001;); LG NetCast.TV-2013 /04.22.07 (LG, 27MT93S-PZQ, wireless)"
+    },
+    "device": {
+      "architecture": null,
       "deviceName": "NetCast",
       "marketingName": "NetCast",
       "manufacturer": "LG",
@@ -181,7 +226,1717 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 32LH590U-ZE; 03.01.00; 1; DTV_W16R); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 32LH590U-ZE, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "32LH590U-ZE",
+      "marketingName": "32LH590U-ZE",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1366,
+        "height": 768,
+        "touch": false,
+        "size": 32
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 32LH604V-ZB; 03.00.75; 1; DTV_W16R); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 32LH604V-ZB, wired)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "32LH604V-ZB",
+      "marketingName": "32LH604V-ZB",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": false,
+        "size": 32
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 40UH630V-ZA; 03.00.41; 1; DTV_W16N); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 40UH630V-ZA, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "40UH630V-ZA",
+      "marketingName": "40UH630V-ZA",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 40
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 43LH590V-ZD; 03.00.85; 1; DTV_W16R); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 43LH590V-ZD, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "NetCast",
+      "marketingName": "NetCast",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 43LH604V-ZB; 03.00.80; 1; DTV_W16R); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 43LH604V-ZB, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "43LH604V-ZB",
+      "marketingName": "43LH604V-ZB",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": false,
+        "size": 43
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 43UH620V-ZA; 03.00.75; 1; DTV_W16P); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 43UH620V-ZA, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "43UH620V-ZA",
+      "marketingName": "43UH620V-ZA",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 43
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 43UH661V-ZF; 03.05.10; 1; DTV_W16N); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 43UH661V-ZF, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "43UH661V-ZF",
+      "marketingName": "43UH661V-ZF",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 43
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 43UH664V-ZC; 03.20.05; 1; DTV_W16N); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 43UH664V-ZC, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "43UH664V-ZC",
+      "marketingName": "43UH664V-ZC",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 43
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 43UH668V-ZA; 03.00.80; 1; DTV_W16N); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 43UH668V-ZA, wired)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "43UH668V-ZA",
+      "marketingName": "43UH668V-ZA",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 43
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 43UH750V-ZA; 03.00.75; 1; DTV_W16N); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 43UH750V-ZA, wired)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "43UH750V-ZA",
+      "marketingName": "43UH750V-ZA",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 43
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 49LH590V-ZD; 03.00.85; 1; DTV_W16R); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 49LH590V-ZD, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "49LH590V-ZD",
+      "marketingName": "49LH590V-ZD",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": false,
+        "size": 49
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 49LH604V-ZB; 03.00.80; 1; DTV_W16R); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 49LH604V-ZB, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "49LH604V-ZB",
+      "marketingName": "49LH604V-ZB",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": false,
+        "size": 49
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 49UH610V-ZB; 03.00.75; 1; DTV_W16P); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 49UH610V-ZB, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "49UH610V-ZB",
+      "marketingName": "49UH610V-ZB",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 49
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 49UH620V-ZA; 03.00.75; 1; DTV_W16P); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 49UH620V-ZA, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "49UH620V-ZA",
+      "marketingName": "49UH620V-ZA",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 49
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 49UH661V-ZF; 03.00.87; 1; DTV_W16N); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 49UH661V-ZF, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "49UH661V-ZF",
+      "marketingName": "49UH661V-ZF",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 49
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 49UH664V-ZC; 03.00.75; 1; DTV_W16N); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 49UH664V-ZC, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "49UH664V-ZC",
+      "marketingName": "49UH664V-ZC",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 49
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 49UH668V-ZA; 03.00.87; 1; DTV_W16N); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 49UH668V-ZA, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "49UH668V-ZA",
+      "marketingName": "49UH668V-ZA",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 49
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 49UH770V-ZA; 03.00.25; 1; DTV_W16K); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 49UH770V-ZA, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "49UH770V-ZA",
+      "marketingName": "49UH770V-ZA",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 49
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 49UH850V-ZA; 03.00.76; 1; DTV_W16M); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 49UH850V-ZA, wired)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "49UH850V-ZA",
+      "marketingName": "49UH850V-ZA",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 49
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 50UH635V-ZA; 03.01.10; 1; DTV_W16N); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 50UH635V-ZA, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "50UH635V-ZA",
+      "marketingName": "50UH635V-ZA",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 50
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 55UH6159-ZB; 03.20.05; 1; DTV_W16P); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 55UH6159-ZB, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "55UH6159-ZB",
+      "marketingName": "55UH6159-ZB",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 55
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 55UH625V-ZA; 03.00.75; 1; DTV_W16P); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 55UH625V-ZA, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "55UH625V-ZA",
+      "marketingName": "55UH625V-ZA",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 55
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 55UH650V-ZB; 03.20.05; 1; DTV_W16N); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 55UH650V-ZB, wired)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "55UH650V-ZB",
+      "marketingName": "55UH650V-ZB",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 55
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 55UH661V-ZF; 03.00.87; 1; DTV_W16N); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 55UH661V-ZF, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "55UH661V-ZF",
+      "marketingName": "55UH661V-ZF",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 55
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 55UH668V-ZA; 03.00.87; 1; DTV_W16N); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 55UH668V-ZA, wired)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "55UH668V-ZA",
+      "marketingName": "55UH668V-ZA",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 55
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 55UH770V-ZA; 03.00.09; 1; DTV_W16K); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 55UH770V-ZA, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "55UH770V-ZA",
+      "marketingName": "55UH770V-ZA",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 55
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 55UH850V-ZA; 03.00.12; 1; DTV_W16M); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 55UH850V-ZA, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "55UH850V-ZA",
+      "marketingName": "55UH850V-ZA",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 55
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 55UH950V-ZA; 03.00.76; 1; DTV_W16M); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 55UH950V-ZA, wired)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "55UH950V-ZA",
+      "marketingName": "55UH950V-ZA",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 55
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 58UH635V-ZA; 03.00.41; 1; DTV_W16N); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 58UH635V-ZA, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "58UH635V-ZA",
+      "marketingName": "58UH635V-ZA",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 58
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 60UH850V-ZA; 03.00.50; 1; DTV_W16M); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 60UH850V-ZA, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "60UH850V-ZA",
+      "marketingName": "60UH850V-ZA",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 60
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 65UH625V-ZA; 03.00.80; 1; DTV_W16P); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 65UH625V-ZA, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "65UH625V-ZA",
+      "marketingName": "65UH625V-ZA",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 65
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 65UH661V-ZF; 03.01.10; 1; DTV_W16N); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 65UH661V-ZF, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "65UH661V-ZF",
+      "marketingName": "65UH661V-ZF",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 65
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 65UH850V-ZA; 03.00.50; 1; DTV_W16M); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 65UH850V-ZA, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "65UH850V-ZA",
+      "marketingName": "65UH850V-ZA",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 65
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; OLED55C6V-Z; 03.10.17; 1; DTV_W16M); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, OLED55C6V-Z, wired)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "OLED55C6V-Z",
+      "marketingName": "OLED55C6V-Z",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": 55
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; OLED55E6V-Z; 03.05.20; 1; DTV_W16M); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, OLED55E6V-Z, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "OLED55E6V-Z",
+      "marketingName": "OLED55E6V-Z",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": 55
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; OLED65B6V-Z; 03.10.23; 1; DTV_W16K); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, OLED65B6V-Z, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "OLED65B6V-Z",
+      "marketingName": "OLED65B6V-Z",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": 65
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; WEBOS3; 02.02.00; 1; DTV_W16P); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, WEBOS3, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "webOSTV",
+      "marketingName": "webOSTV",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": "3.0.0",
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "8.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 32LB650V-ZN; 03.00.72; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 32LB650V-ZN, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "32LB650V-ZN",
+      "marketingName": "32LB650V-ZN",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": 32
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "7.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.41.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 32LB652V-ZA; 05.00.55; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 32LB652V-ZA, wired)"
     },
     "device": {
       "architecture": null,
@@ -222,6 +1977,816 @@
       "name": "WebKit",
       "version": "537.41.0",
       "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 42LB630V-ZA; 03.00.56; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 42LB630V-ZA, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "42LB630V-ZA",
+      "marketingName": "42LB630V-ZA",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": 42
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "7.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.41.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 42LB650V-ZN; 03.00.65; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 42LB650V-ZN, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "42LB650V-ZN",
+      "marketingName": "42LB650V-ZN",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": 42
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "7.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.41.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 42LB670V-ZA; 03.23.36; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 42LB670V-ZA, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "42LB670V-ZA",
+      "marketingName": "42LB670V-ZA",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": 42
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "7.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.41.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 42LB671V-ZB; 03.23.38; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 42LB671V-ZB, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "42LB671V-ZB",
+      "marketingName": "42LB671V-ZB",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": 42
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "7.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.41.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 42LB700V-ZG; 03.23.15; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 42LB700V-ZG, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "42LB700V-ZG",
+      "marketingName": "42LB700V-ZG",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": 42
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "7.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.41.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 42LB730V-ZD; 03.00.69; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 42LB730V-ZD, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "42LB730V-ZD",
+      "marketingName": "42LB730V-ZD",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": 42
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "7.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.41.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 42LB731V-ZE; 04.41.32; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 42LB731V-ZE, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "42LB731V-ZE",
+      "marketingName": "42LB731V-ZE",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": 42
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "7.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.41.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 47LB630V-ZA; 03.23.38; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 47LB630V-ZA, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "47LB630V-ZA",
+      "marketingName": "47LB630V-ZA",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": 47
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "7.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.41.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 47LB650V-ZN; 03.00.84; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 47LB650V-ZN, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "47LB650V-ZN",
+      "marketingName": "47LB650V-ZN",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": 47
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "7.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.41.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 47LB671V-ZB; 03.23.24; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 47LB671V-ZB, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "47LB671V-ZB",
+      "marketingName": "47LB671V-ZB",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": false,
+        "size": 47
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "7.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.41.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 47LB731V-ZE; 03.23.24; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 47LB731V-ZE, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "47LB731V-ZE",
+      "marketingName": "47LB731V-ZE",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": 47
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "7.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.41.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 49UB850V-ZD; 03.13.33; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 49UB850V-ZD, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "49UB850V-ZD",
+      "marketingName": "49UB850V-ZD",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 49
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "7.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.41.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 50LB650V-ZN; 03.23.18; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 50LB650V-ZN, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "50LB650V-ZN",
+      "marketingName": "50LB650V-ZN",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": 50
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "7.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.41.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 55LB650V-ZN; 03.23.36; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 55LB650V-ZN, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "55LB650V-ZN",
+      "marketingName": "55LB650V-ZN",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": 55
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "7.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.41.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 55LB731V-ZE; 03.23.24; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 55LB731V-ZE, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "55LB731V-ZE",
+      "marketingName": "55LB731V-ZE",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": 55
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "7.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.41.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 60LB650V-ZN; 03.00.84; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 60LB650V-ZN, wired)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "60LB650V-ZN",
+      "marketingName": "60LB650V-ZN",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": 60
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": null,
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "7.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.41.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; WEBOS1; 04.41.32; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, WEBOS1, wireless)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "webOSTV",
+      "marketingName": "webOSTV",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": "1.0.0",
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "7.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.41.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG Browser/7.00.00(LGE; WEBOS1; 00.00.00) webOS.TV-2015)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "webOSTV",
+      "marketingName": "webOSTV",
+      "manufacturer": "LG",
+      "brand": "LG",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "webOS",
+      "marketingName": "webOS",
+      "version": "1.0.0",
+      "manufacturer": "HP",
+      "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "7.00.00",
+      "manufacturer": "LG",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   },
   {
@@ -500,8 +3065,8 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "NetCast",
-      "marketingName": "NetCast",
+      "deviceName": "webOSTV",
+      "marketingName": "webOSTV",
       "manufacturer": "LG",
       "brand": "LG",
       "dualOrientation": false,

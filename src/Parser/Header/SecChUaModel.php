@@ -38,8 +38,6 @@ final class SecChUaModel implements DeviceCodeInterface
      * @return non-empty-string|null
      *
      * @throws void
-     *
-     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
     #[Override]
     public function getDeviceCode(string $value): string | null

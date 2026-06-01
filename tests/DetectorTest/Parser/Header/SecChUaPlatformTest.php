@@ -16,6 +16,7 @@ namespace BrowserDetectorTest\Parser\Header;
 use BrowserDetector\Data\Engine;
 use BrowserDetector\Data\Os;
 use BrowserDetector\Parser\Header\SecChUaPlatform;
+use BrowserDetector\Parser\Header\SecChUaPlatformDevice;
 use BrowserDetector\Version\NullVersion;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -23,7 +24,7 @@ use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UaRequest\Exception\NotFoundException;
-use UaRequest\Header\PlatformCodeOnlyHeader;
+use UaRequest\Header\SecChUaPlatformHeader;
 use UaResult\Bits\Bits;
 use UaResult\Device\Architecture;
 
@@ -38,11 +39,17 @@ final class SecChUaPlatformTest extends TestCase
      * @throws NotFoundException
      */
     #[DataProvider('providerUa')]
-    public function testData(string $ua, bool $hasPlatform, Os $platform): void
-    {
-        $header = new PlatformCodeOnlyHeader(
+    public function testData(
+        string $ua,
+        bool $hasPlatform,
+        Os $platform,
+        bool $hasDeviceCode,
+        string | null $deviceCode,
+    ): void {
+        $header = new SecChUaPlatformHeader(
             value: $ua,
             platformCode: new SecChUaPlatform(),
+            deviceCode: new SecChUaPlatformDevice(),
         );
 
         self::assertSame($ua, $header->getValue(), sprintf('value mismatch for ua "%s"', $ua));
@@ -77,8 +84,13 @@ final class SecChUaPlatformTest extends TestCase
             $header->getDeviceIsMobile(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
-        self::assertFalse($header->hasDeviceCode(), sprintf('device info mismatch for ua "%s"', $ua));
-        self::assertNull(
+        self::assertSame(
+            $hasDeviceCode,
+            $header->hasDeviceCode(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertSame(
+            $deviceCode,
             $header->getDeviceCode(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
@@ -137,31 +149,31 @@ final class SecChUaPlatformTest extends TestCase
     }
 
     /**
-     * @return list<list<bool|Os|string>>
+     * @return list<list<bool|Os|string|null>>
      *
      * @throws void
      */
     public static function providerUa(): array
     {
         return [
-            ['Android', true, Os::android],
-            ['"Android"', true, Os::android],
-            ['"Windows"', true, Os::windows],
-            ['"Chrome OS"', true, Os::chromeos],
-            ['"Linux"', true, Os::linux],
-            ['"ChromeOS"', true, Os::chromeos],
-            ['"macOS"', true, Os::macosx],
-            ['"Chromium OS"', true, Os::chromeos],
-            ['"Unknown"', false, Os::unknown],
-            ['"Win32"', true, Os::windows],
-            ['"Mac OS X"', true, Os::macosx],
-            ['\"Windows\"', true, Os::windows],
-            ['Lindows', true, Os::lindows],
-            ['\'Linux\'', true, Os::linux],
-            ['\'Linux x86_64\'', true, Os::linux],
-            ['"MacIntel"', true, Os::macosx],
-            ['"Fuchsia"', true, Os::fuchsia],
-            ['""', false, Os::unknown],
+            ['Android', true, Os::android, false, null],
+            ['"Android"', true, Os::android, false, null],
+            ['"Windows"', true, Os::windows, false, 'unknown=windows desktop'],
+            ['"Chrome OS"', true, Os::chromeos, false, null],
+            ['"Linux"', true, Os::linux, false, null],
+            ['"ChromeOS"', true, Os::chromeos, false, null],
+            ['"macOS"', true, Os::macosx, false, 'apple=macintosh'],
+            ['"Chromium OS"', true, Os::chromeos, false, null],
+            ['"Unknown"', false, Os::unknown, false, null],
+            ['"Win32"', true, Os::windows, false, 'unknown=windows desktop'],
+            ['"Mac OS X"', true, Os::macosx, false, null],
+            ['\"Windows\"', true, Os::windows, false, 'unknown=windows desktop'],
+            ['Lindows', true, Os::lindows, false, null],
+            ['\'Linux\'', true, Os::linux, false, null],
+            ['\'Linux x86_64\'', true, Os::linux, false, null],
+            ['"MacIntel"', true, Os::macosx, false, null],
+            ['"Fuchsia"', true, Os::fuchsia, false, null],
+            ['""', false, Os::unknown, false, null],
         ];
     }
 
@@ -171,9 +183,10 @@ final class SecChUaPlatformTest extends TestCase
      */
     public function testHeaderWithDerivate(): void
     {
-        $header = new PlatformCodeOnlyHeader(
+        $header = new SecChUaPlatformHeader(
             value: '"Android"',
             platformCode: new SecChUaPlatform(),
+            deviceCode: new SecChUaPlatformDevice(),
         );
 
         self::assertSame(
@@ -188,9 +201,10 @@ final class SecChUaPlatformTest extends TestCase
      */
     public function testHeaderWithDerivate2(): void
     {
-        $header = new PlatformCodeOnlyHeader(
+        $header = new SecChUaPlatformHeader(
             value: '"Android"',
             platformCode: new SecChUaPlatform(),
+            deviceCode: new SecChUaPlatformDevice(),
         );
 
         self::assertSame(

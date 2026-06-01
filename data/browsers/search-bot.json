@@ -1767,5 +1767,137 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "yandex-turbo": {
+    "name": "YandexTurbo",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexTurbo"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandex-tracker": {
+    "name": "YandexTracker",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexTracker"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandex-search-shop": {
+    "name": "YandexSearchShop",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexSearchShop"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandex-rca": {
+    "name": "YandexRCA",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexRCA"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandex-partner": {
+    "name": "YandexPartner",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexPartner"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandex-onto-db-api": {
+    "name": "YandexOntoDBAPI",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexOntoDBAPI"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandex-onto-db": {
+    "name": "YandexOntoDB",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexOntoDB"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandex-mobile-screenshot-bot": {
+    "name": "YandexMobileScreenShotBot",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexMobileScreenShotBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "google-page-renderer": {
+    "name": "Google-PageRenderer",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Google\\-PageRenderer"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandex-catalog": {
+    "name": "YandexCatalog",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexCatalog"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "haosouspider": {
+    "name": "HaosouSpider",
+    "manufacturer": "qihoo",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "360Spider"
+      ]
+    },
+    "engine": "unknown"
   }
 }

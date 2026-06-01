@@ -181,7 +181,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.13) Gecko/20101203 Firefox/3.6.13 (.NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; msnbot/2.1) Jakarta Commons-HttpClient/3.0-rc3 PHPCrawl GStreamer souphttpsrc libsoup/2.27.4 PycURL/7.19.0 XML-RPC for PHP 2.2.1 GoogleFriendConnect/1.0 HTMLParser/1.6 gPodder/0.15.2 ( http://gpodder.org/) anw webtool LoadControl/1.3 WinHttp urlgrabber/3.1.0"
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Safari/537.36"
     },
     "device": {
       "architecture": null,
@@ -203,25 +203,70 @@
       "bits": null
     },
     "os": {
-      "name": "Windows",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
-      "manufacturer": "Microsoft",
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
       "bits": null
     },
     "client": {
       "name": "BingBot",
       "modus": null,
-      "version": "2.1.0",
+      "version": "2.0.0",
       "manufacturer": "Microsoft",
       "type": "search-bot",
       "isbot": true,
       "bits": null
     },
     "engine": {
-      "name": "Gecko",
-      "version": "1.9.2.13",
-      "manufacturer": "Mozilla"
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/86.0.4240.68 Safari/537.36 Edg/86.0.622.31"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "BingBot",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "Microsoft",
+      "type": "search-bot",
+      "isbot": true,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "86.0.4240.68",
+      "manufacturer": "Google"
     }
   }
 ]

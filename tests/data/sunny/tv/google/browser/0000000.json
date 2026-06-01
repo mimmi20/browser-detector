@@ -5,17 +5,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "general Sunny TV",
-      "marketingName": "general Sunny TV",
+      "deviceName": "SN50FMN242-0246",
+      "marketingName": "SN50FMN242-0246",
       "manufacturer": "Sunny",
       "brand": "Sunny",
       "dualOrientation": false,
       "simCount": 0,
       "display": {
-        "width": null,
-        "height": null,
+        "width": 3840,
+        "height": 2160,
         "touch": false,
-        "size": null
+        "size": 50
       },
       "type": "tv",
       "ismobile": false,
@@ -86,6 +86,51 @@
     "engine": {
       "name": "Blink",
       "version": "87.0.4280.88",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36 HbbTV/1.5.1 (+DRM; LGE/KONKA; SN55FMN243-0246; WEBOS5.0 04.50.63; W50_K6LP; DTV_C20P;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SN55FMN243-0246",
+      "marketingName": "SN55FMN243-0246",
+      "manufacturer": "Sunny",
+      "brand": "Sunny",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 55
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "lg webOS",
+      "marketingName": "lg webOS",
+      "version": "5.0.0",
+      "manufacturer": "LG",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "68.0.3440.106",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "68.0.3440.106",
       "manufacturer": "Google"
     }
   }

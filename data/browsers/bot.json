@@ -2006,18 +2006,6 @@
     },
     "engine": "unknown"
   },
-  "google-page-renderer": {
-    "name": "Google-PageRenderer",
-    "manufacturer": "google",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Google\\-PageRenderer"
-      ]
-    },
-    "engine": "unknown"
-  },
   "goose-extractor": {
     "name": "goose-extractor",
     "manufacturer": "unknown",
@@ -2108,18 +2096,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "GWPImages"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "haosouspider": {
-    "name": "HaosouSpider",
-    "manufacturer": "qihoo",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "360Spider"
       ]
     },
     "engine": "unknown"
@@ -2301,18 +2277,6 @@
       ]
     },
     "engine": "webkit"
-  },
-  "iis site analysis web crawler": {
-    "name": "IIS Site Analysis Web Crawler",
-    "manufacturer": "microsoft",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "iisbot"
-      ]
-    },
-    "engine": "unknown"
   },
   "imagemobile": {
     "name": "ImageMobile",
@@ -6765,16 +6729,6 @@
     },
     "engine": "unknown"
   },
-  "lets-encrypt-validation": {
-    "name": "Let's Encrypt Validation",
-    "manufacturer": "isrg",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "unknown"
-  },
   "onbbot": {
     "name": "ONBbot",
     "manufacturer": "oesterreichische nationalbibliothek",
@@ -7454,18 +7408,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "qutrigobot"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "android-http-client": {
-    "name": "AndroidHttpClient",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "AndroidHttpClient"
       ]
     },
     "engine": "unknown"

@@ -96,6 +96,8 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/^mozilla\/[\d.]+ \((?:smart-tv; )?(?:linux|andr[o0]id);(?: arm(?:_64)?;| x86;)? (?:andr[o0]id|tizen)? ?[\d.]+;(?: arm(?:_64)?;| harmonyos;| mobile;)? (?P<devicecode>[^);\/]+)[^)]*\)/i',
             '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi|androidhttpclient|worksmobile)\/[\d.]+ \(linux; (?:(?:andr[o0]id|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)(?:;? +(?:build|hmscore))[^)]+\)/i',
             '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi|androidhttpclient|worksmobile)\/[\d.]+ \(linux; (?:(?:andr[o0]id|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)[^)]*\)/i',
+            '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi|androidhttpclient|worksmobile)\/[\d.]+ \(linux; (?:(?:andr[o0]id|tizen);(?: harmonyos;)?) (?P<devicecode>[^);\/]+)(?:;? +(?:build|hmscore))[^)]+\)/i',
+            '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi|androidhttpclient|worksmobile)\/[\d.]+ \(linux; (?:(?:andr[o0]id|tizen);(?: harmonyos;)?) (?P<devicecode>[^);\/]+)[^)]*\)/i',
             '/dalvik\/[\d.]+ \(linux; (?:andr[o0]id [\d.]+;) (?P<devicecode>[^);\/]+)(?:[);\/]?[^);\/]* +(?:build|hmscore|miui)[^)]+)\)/i',
             '/dalvik\/[\d.]+ \(linux; andr[o0]id [\d.]+\/viber [\d.]+ ; (?P<devicecode>[^);\/]+)[su]p1a/i',
             '/\(speedmode; proxy; android [\d.]+;(?P<devicecode>[^);\/]+)\)/i',
@@ -111,6 +113,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/; model: (?P<devicecode>[^);\/]+)\)/i',
             '/(lbc|heart)\/[\d.]+ andr[o0]id [\d.]+\/(?P<devicecode>[^);\/]+)/i',
             '/mozilla\/[\d.]+ \(mobile; (?P<devicecode>[^;]+)(?:;android)?; rv:[^)]+\) gecko\/[\d.]+ firefox\/[\d.]+ kaios\/[\d.]+/i',
+            '/mozilla\/[\d.]+ \(mobile; (?P<devicecode>[^;]+)(?:;android)?; rv:[^)]+\) gecko\/[\d.]+ firefox\/[\d.]+/i',
             '/virgin radio\/[\d.]+ \/ \(linux; andr[o0]id [\d.]+\) exoplayerlib\/[\d.]+ \/ samsung \((?P<devicecode>[^)]+)\)/i',
             '/pugpigbolt [\d.]+ \([^);\/,]+, (android|ios) [\d.]+\) on phone \(model (?P<devicecode>[^)]+)\)/i',
             '/nrc audio\/[\d.]+ \(nl\.nrc\.audio; build:[\d.]+; andr[o0]id [\d.]+; sdk:[\d.]+; manufacturer:[^;]+; model: (?P<devicecode>[^)]+)\) okhttp\/[\d.]+/i',
@@ -134,10 +137,15 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/mozilla\/[\d.]+ \(jig browser(?: web;|9i?| core)?(?: [\d.]+)?; (?P<devicecode>[^);]+)/i',
             '/^amazon;(?P<devicecode>[^);\/]+);/i',
             '/^smarttv_(?P<devicecode>[^);\/_]+)_build/i',
-            '/^(?P<devicecode>[^);\/]+) build\//i',
+            '/^(?P<devicecode>[^);\/]+)(?:.*)? build\//i',
             '/mozilla\/[\d.]+ \(qtembedded; linux; c\) applewebkit\/[\d.]+ \(khtml, like gecko\) (?P<devicecode>[^);\/]+) stbapp ver:/i',
             '/com\.amazon\.sics\/[\d.]+ \((?P<devicecode>[^;]+); android [\d.]+;/i',
             '/bookshelf-android\/[\d.]+ \(android os\/[\d.]+; (?P<devicecode>[^);\/]+)\)/i',
+            '/portalmmm\/[\d.]+ (?P<devicecode>[^);\/]+)(?:.*)?\(/i',
+            '/samsung (?P<devicecode>[^);\/]+)(?:.*)? syncml_dm client/i',
+            '/mozilla\/[\d.]+ \(samsung; (?P<devicecode>[^);\/]+)(?:.*)? tizen\/[\d.]+ like android;/i',
+            // should be the last entry in the list
+            '/^(?P<devicecode>.+)$/i',
         ];
 
         $filtered = array_filter(

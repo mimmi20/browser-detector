@@ -1036,51 +1036,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.3; es-419; KFASWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.47 like Chrome/37.0.2026.117 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Kindle",
-      "marketingName": "Kindle",
-      "manufacturer": "Amazon",
-      "brand": "Amazon",
-      "dualOrientation": true,
-      "simCount": 0,
-      "display": {
-        "width": 800,
-        "height": 600,
-        "touch": true,
-        "size": null
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Fire OS",
-      "marketingName": "Fire OS",
-      "version": "4.5.1",
-      "manufacturer": "Amazon",
-      "bits": null
-    },
-    "client": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.47.0",
-      "manufacturer": "Amazon",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "37.0.2026.117",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFSUWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/61.2.1 like Chrome/61.0.3163.98 Safari/537.36"
     },
     "device": {
@@ -1391,6 +1346,51 @@
     "engine": {
       "name": "Blink",
       "version": "90.0.4430.91",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; AEOBP) AppleWebKit/537.36 (KHTML, like Gecko) Silk/91.3.4 like Chrome/91.0.4472.133 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Kindle",
+      "marketingName": "Kindle",
+      "manufacturer": "Amazon",
+      "brand": "Amazon",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 800,
+        "height": 600,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Fire OS",
+      "marketingName": "Fire OS",
+      "version": "5.0.0",
+      "manufacturer": "Amazon",
+      "bits": null
+    },
+    "client": {
+      "name": "Silk",
+      "modus": null,
+      "version": "91.3.4",
+      "manufacturer": "Amazon",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "91.0.4472.133",
       "manufacturer": "Google"
     }
   },

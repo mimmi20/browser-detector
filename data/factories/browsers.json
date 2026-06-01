@@ -2,11 +2,11 @@
   "rules": {
     "/(?<![l_])edge\\//i": "edge",
     "/(?<![4\\(])chr[o0]me(?!book|cast|\\))|crmo|com\\.tcl\\.browser/i": "blink",
+    "/(?<!like )gecko|firefox|minefield|shiretoko|bonecho|namoroka|treco/i": "gecko",
     "/webkit|safari(?!com)|cfnetwork|dalvik|ipad|ipod|iphone|khtml/i": "webkit",
     "/(?<![a-zA-Z])iOS/": "webkit",
     "/presto\\/|(?<![o@])opera(?!t)/i": "presto",
-    "/trident|(?<!not )msie|(?<!allow )like gecko|mspie|pocket internet explorer/i": "trident",
-    "/(?<!like )gecko|firefox|minefield|shiretoko|bonecho|namoroka|treco/i": "gecko"
+    "/(?<!zoho)trident(?!mac)|(?<!not )msie|(?<!allow )like gecko|mspie|pocket internet explorer/i": "trident"
   },
   "generic": "genericbrowser"
 }

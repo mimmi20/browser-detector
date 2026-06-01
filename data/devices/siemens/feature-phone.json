@@ -2030,5 +2030,21 @@
     },
     "type": "feature-phone",
     "platform": "java"
+  },
+  "siemens sxg75": {
+    "deviceName": "SXG75",
+    "marketingName": "SXG75",
+    "manufacturer": "siemens",
+    "brand": "siemens",
+    "dualOrientation": false,
+    "simCount": 1,
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
   }
 }

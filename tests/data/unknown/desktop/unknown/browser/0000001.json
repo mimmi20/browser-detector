@@ -1,6 +1,141 @@
 [
   {
     "headers": {
+      "user-agent": "EVE-minibrowser/3.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "MiniBrowser",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "ELinks/0.9.1 (textmode; SunOS 5.9 sun4u; 122x42)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "SunOS",
+      "marketingName": "SunOS",
+      "version": "5.9.0",
+      "manufacturer": "Oracle",
+      "bits": null
+    },
+    "client": {
+      "name": "ELinks",
+      "modus": null,
+      "version": "0.9.1",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Text",
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "ELinks/0.11.4rc1 (textmode; FreeBSD 7.1-PRERELEASE i386; 160x64-2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "FreeBSD",
+      "marketingName": "FreeBSD",
+      "version": "7.1.0-dev",
+      "manufacturer": "FreeBSD",
+      "bits": null
+    },
+    "client": {
+      "name": "ELinks",
+      "modus": null,
+      "version": "0.11.4-RC+1",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Text",
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "ELinks/0.11.3 (textmode; CYGWIN_NT-6.0 1.5.25(0.156/4/2) i686; 130x45-2)"
     },
     "device": {
@@ -1380,7 +1515,7 @@
       "bits": null
     },
     "client": {
-      "name": "iBrowser",
+      "name": "MiniBrowser",
       "modus": null,
       "version": null,
       "manufacturer": "unknown",
@@ -1389,9 +1524,9 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -1437,51 +1572,6 @@
       "name": "WebKit",
       "version": "533.3.0",
       "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.17) Gecko/20110424 Conkeror/0.9.2 (Debian-0.9.2+git100804-1ubuntu1)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Ubuntu",
-      "marketingName": "Ubuntu",
-      "version": null,
-      "manufacturer": "Canonical",
-      "bits": null
-    },
-    "client": {
-      "name": "Conkeror",
-      "modus": null,
-      "version": "0.9.2",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "1.9.2.17",
-      "manufacturer": "Mozilla"
     }
   },
   {
@@ -2743,6 +2833,51 @@
       "name": "Text",
       "version": null,
       "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 Galeon 1.2.5 (X11; Linux i686; U;) Gecko/0-pie MSIE 6.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Galeon",
+      "modus": null,
+      "version": "1.2.5",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "Microsoft"
     }
   },
   {
@@ -4232,6 +4367,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 4.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1709.113 Amigo/32.0.1709.113 MRCHROME SOC Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows NT",
+      "marketingName": "Windows NT",
+      "version": "4.0.0",
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Amigo",
+      "modus": null,
+      "version": "32.0.1709.113",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "32.0.1709.113",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Windows; U; Windows NT 6.1; cs-CZ) AppleWebKit/532.4 (KHTML, like Gecko) MiniBrowser/3.0 Safari/532.4"
     },
     "device": {
@@ -4261,7 +4441,7 @@
       "bits": null
     },
     "client": {
-      "name": "iBrowser",
+      "name": "MiniBrowser",
       "modus": null,
       "version": "3.0.0",
       "manufacturer": "unknown",
@@ -4277,12 +4457,12 @@
   },
   {
     "headers": {
-      "user-agent": "IBrowse 2.4demo"
+      "user-agent": "BriskBard/1.0 (Windows 6.1) BriskBard/1.0"
     },
     "device": {
       "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": false,
@@ -4299,16 +4479,16 @@
       "bits": null
     },
     "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
+      "name": "Windows",
+      "marketingName": "Windows 7",
+      "version": "7.0.0",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "IBrowse",
+      "name": "BriskBard",
       "modus": null,
-      "version": "2.4.0-dev",
+      "version": "1.0.0",
       "manufacturer": "unknown",
       "type": "browser",
       "isbot": false,
@@ -4318,152 +4498,6 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "sec-ch-ua-model": "\"\"",
-      "sec-ch-ua-platform": "\"Windows\"",
-      "sec-ch-ua-platform-version": "\"10.0.0\"",
-      "sec-ch-ua": "\".Not/A)Brand\";v=\"99\", \"WaveBrowser\";v=\"103\", \"WaveBrowser\";v=\"103\"",
-      "sec-ch-ua-full-version": "\"1.2.8.1\"",
-      "sec-ch-ua-bitness": "\"64\"",
-      "sec-ch-ua-arch": "\"x86\"",
-      "sec-ch-ua-mobile": "?0",
-      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.53 Safari/537.36"
-    },
-    "device": {
-      "architecture": "x86",
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": 64
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows 10",
-      "version": "10.0.0",
-      "manufacturer": "Microsoft",
-      "bits": 64
-    },
-    "client": {
-      "name": "Wave Browser",
-      "modus": null,
-      "version": "103.0.0",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false,
-      "bits": 64
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "103.0.0",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "sec-ch-ua-platform": "\"Windows\"",
-      "sec-ch-ua": "\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"YaBrowser\";v=\"24.1\", \"Yowser\";v=\"2.5\"",
-      "sec-ch-ua-mobile": "?0",
-      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows 10",
-      "version": "10.0.0",
-      "manufacturer": "Microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "Yowser",
-      "modus": null,
-      "version": "2.5.0",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "120.0.0",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Unknown; U; UNIX BSD/SYSV system; C -) AppleWebKit/527 (KHTML, like Gecko, Safari/419.3) Arora/0.10.2"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "BSD",
-      "marketingName": "BSD",
-      "version": null,
-      "manufacturer": "Berkeley",
-      "bits": null
-    },
-    "client": {
-      "name": "Arora",
-      "modus": null,
-      "version": "0.10.2",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "527.0.0",
-      "manufacturer": "Apple"
     }
   }
 ]

@@ -16,6 +16,7 @@
     "/sl commerce client/i": "second live commerce client",
     "/uc ?browser|ucweb/i": "ucbrowser",
     "/baidubrowser|bdbrowser/i": "baidu browser",
+    "/qqbrowserlite/i": "qqbrowser lite",
     "/qqbrowser/i": "qqbrowser",
     "/iemobile|wpdesktop|zunewp7|xblwp7/i": "iemobile",
     "/bingpreview/i": "bing preview",
@@ -50,7 +51,7 @@
     "/sogou-spider/i": "sogou spider",
     "/simplepie/i": "simplepie",
     "/argclrint/i": "argclrint",
-    "/wayback save page/i": "wayback archive bot",
+    "/(?<!via )wayback save page/i": "wayback archive bot",
     "/savewealth/i": "savewealth",
     "/cobalt/i": "cobalt",
     "/polarity/i": "polarity",
@@ -81,7 +82,6 @@
     "/sitekiosk/i": "sitekiosk",
     "/webpro[\\/;]/i": "web pro",
     "/googlebot/i": "googlebot",
-    "/safersurf/i": "avast secure browser",
     "/voilabot/i": "voilabot",
     "/webtv\\//i": "webtv/msntv",
     "/oregano/i": "oregano",
@@ -93,7 +93,7 @@
     "/camino/i": "camino",
     "/dillo/i": "dillo",
     "/viber/i": "viber",
-    "/flow[\\/)]/i": "flow-browser"
+    "/((?<!s)flow|ekioh)[\\/)]/i": "flow-browser"
   },
   "generic": "internet explorer"
 }

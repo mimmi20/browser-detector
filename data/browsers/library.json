@@ -420,8 +420,10 @@
     "manufacturer": "unknown",
     "type": "library",
     "version": {
-      "factory": "\\BrowserDetector\\Version\\SafariFactory",
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SafariViewService"
+      ]
     },
     "engine": "unknown"
   },
@@ -1253,6 +1255,89 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "libcurl\\-agent"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "playwright": {
+    "name": "Playwright",
+    "manufacturer": "microsoft",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Playwright"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "cypress": {
+    "name": "Cypress",
+    "manufacturer": "cypress",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Cypress"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "docker": {
+    "name": "docker",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "docker"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "quic-go": {
+    "name": "quic-go",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "kohana-framework": {
+    "name": "Kohana",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Kohana v",
+        "Kohana"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "jaunt": {
+    "name": "Jaunt",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Jaunt"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ultimate-sitemap-parser": {
+    "name": "Ultimate Sitemap Parser",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ultimate_sitemap_parser"
       ]
     },
     "engine": "unknown"

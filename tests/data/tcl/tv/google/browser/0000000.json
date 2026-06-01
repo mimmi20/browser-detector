@@ -6,7 +6,7 @@
     "device": {
       "architecture": null,
       "deviceName": "AFTMD001",
-      "marketingName": "Fire TV",
+      "marketingName": "4K Fire TV (2023)",
       "manufacturer": "TCL",
       "brand": "TCL",
       "dualOrientation": false,
@@ -41,6 +41,51 @@
     "engine": {
       "name": "Blink",
       "version": "108.0.5359.160",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; AFTDEC012E Build/RS8113.2338N; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.248 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "AFTDEC012E",
+      "marketingName": "4K Fire TV (2024)",
+      "manufacturer": "TCL",
+      "brand": "TCL",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Fire OS",
+      "marketingName": "Fire OS",
+      "version": "8.0.0",
+      "manufacturer": "Amazon",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome WebView",
+      "modus": null,
+      "version": "124.0.6367.248",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "124.0.6367.248",
       "manufacturer": "Google"
     }
   }

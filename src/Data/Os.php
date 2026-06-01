@@ -215,6 +215,8 @@ enum Os: string implements OsInterface
 
     case harmonyos = 'HarmonyOS';
 
+    case harmonyosNext = 'HarmonyOS NEXT';
+
     case archlinux = 'ArchLinux';
 
     case pardus = 'Pardus';
@@ -395,6 +397,16 @@ enum Os: string implements OsInterface
 
     case vidaaOS = 'VIDAA OS';
 
+    case tivoOS = 'TiVo OS';
+
+    case webian = 'Webian';
+
+    case ubuntuTouch = 'Ubuntu Touch';
+
+    case qnx = 'QNX';
+
+    case picoOS = 'PICO OS';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -493,6 +505,7 @@ enum Os: string implements OsInterface
             'yi' => self::yi,
             'zenwalkgnulinux', 'zenwalk gnu linux' => self::zenwalkgnulinux,
             'harmonyos', 'harmony-os' => self::harmonyos,
+            'harmonyosnext', 'harmonyos next', 'harmony-os-next' => self::harmonyosNext,
             'archlinux', 'arch-linux' => self::archlinux,
             'pardus' => self::pardus,
             'risingos', 'rising-os' => self::risingos,
@@ -583,6 +596,11 @@ enum Os: string implements OsInterface
             'fritzos', 'fritz!os', 'fritz-os' => self::fritzOS,
             'roku os', 'roku-os', 'rokuos' => self::rokuOS,
             'vidaaos', 'vidaa os', 'vidaa-os' => self::vidaaOS,
+            'tivoos', 'tivo os', 'tivo-os' => self::tivoOS,
+            'webian' => self::webian,
+            'ubuntutouch', 'ubuntu-touch', 'ubuntu touch' => self::ubuntuTouch,
+            'qnx' => self::qnx,
+            'picoos', 'pico os', 'pico-os' => self::picoOS,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -649,7 +667,7 @@ enum Os: string implements OsInterface
             self::lgwebos => Company::lg,
             self::windows, self::windows2003, self::windows31, self::windows311, self::windows95, self::windows98, self::windowsce, self::windowsiot, self::windowsme, self::windowsmobileos, self::windowsnt, self::windows10, self::windows11, self::windowsnt31, self::windowsnt35, self::windowsnt351, self::windowsnt40, self::windowsnt41, self::windowsnt410, self::windowsnt50, self::windowsnt501, self::windowsnt51, self::windowsnt52, self::windowsnt53, self::windowsnt60, self::windowsnt61, self::windowsnt62, self::windowsnt63, self::windowsnt64, self::windowsphone, self::windowsphone10, self::windowsphone65, self::windowsphone75, self::windowsphone80, self::windowsphone81, self::windowsrt62, self::windowsrt63, self::azurelinux, self::kinos => Company::microsoft,
             self::yi => Company::baidu,
-            self::harmonyos => Company::huawei,
+            self::harmonyos, self::harmonyosNext => Company::huawei,
             self::aix, self::os2 => Company::ibm,
             self::beos => Company::access,
             self::bsd => Company::berkeley,
@@ -663,7 +681,7 @@ enum Os: string implements OsInterface
             self::infernoOs => Company::vitanuova,
             self::javaos, self::javaMe => Company::sun,
             self::kaios => Company::kaios,
-            self::kubuntu, self::ubuntu, self::xubuntu => Company::canonical,
+            self::kubuntu, self::ubuntu, self::xubuntu, self::ubuntuTouch => Company::canonical,
             self::linux, self::maemo, self::meego, self::tizen => Company::linuxFoundation,
             self::mandrivaLinux, self::openMandriva => Company::mandriva,
             self::morphos => Company::fabienCoeurjoly,
@@ -699,6 +717,9 @@ enum Os: string implements OsInterface
             self::fritzOS => Company::fritz,
             self::rokuOS => Company::roku,
             self::vidaaOS => Company::vidaa,
+            self::tivoOS => Company::tivo,
+            self::qnx => Company::blackberry,
+            self::picoOS => Company::pico,
             default => Company::unknown,
         };
     }
@@ -735,6 +756,7 @@ enum Os: string implements OsInterface
             self::wyderos => ['factory' => VersionBuilderFactory::class, 'search' => ['WyderOS']],
             self::yi => ['factory' => VersionBuilderFactory::class, 'search' => ['Yi']],
             self::harmonyos => ['factory' => VersionBuilderFactory::class, 'search' => ['HarmonyOS']],
+            self::harmonyosNext => ['factory' => VersionBuilderFactory::class, 'search' => ['(?:HarmonyOS|hmos.+OpenHarmony)[-/ ]']],
             self::pardus => ['factory' => VersionBuilderFactory::class, 'search' => ['Pardus']],
             self::risingos => ['factory' => VersionBuilderFactory::class, 'search' => ['RisingOS']],
             self::blackpantheros => ['factory' => VersionBuilderFactory::class, 'search' => ['blackPanther OS']],
@@ -758,7 +780,7 @@ enum Os: string implements OsInterface
             self::webos => ['factory' => VersionBuilderFactory::class, 'search' => ['WebOS', 'webOS', 'hpwOS']],
             self::kaios => ['factory' => VersionBuilderFactory::class, 'search' => ['kaios']],
             self::kubuntu => ['factory' => VersionBuilderFactory::class, 'search' => ['Kubuntu', 'kubuntu']],
-            self::ubuntu => ['factory' => UbuntuFactory::class, 'search' => null],
+            self::ubuntu, self::ubuntuTouch => ['factory' => UbuntuFactory::class, 'search' => null],
             self::xubuntu => ['factory' => VersionBuilderFactory::class, 'search' => ['Xubuntu', 'xubuntu']],
             self::maemo => ['factory' => VersionBuilderFactory::class, 'search' => ['Maemo']],
             self::meego => ['factory' => VersionBuilderFactory::class, 'search' => ['MeeGo']],
@@ -843,6 +865,8 @@ enum Os: string implements OsInterface
             self::rokuOS => ['factory' => VersionBuilderFactory::class, 'search' => ['Roku\/DVP-', 'Roku\/Pluto-', 'RokuOS', 'Roku; AP; ']],
             self::vidaaOS => ['factory' => VersionBuilderFactory::class, 'search' => ['VIDAA']],
             self::linux => ['factory' => VersionBuilderFactory::class, 'search' => ['Linux']],
+            self::tivoOS => ['factory' => VersionBuilderFactory::class, 'search' => ['TiVoOS']],
+            self::picoOS => ['factory' => VersionBuilderFactory::class, 'search' => ['PICO \d OS']],
             default => ['factory' => null, 'search' => null],
         };
     }
@@ -902,6 +926,7 @@ enum Os: string implements OsInterface
             self::windowsrt63 => 'windows rt 6.3',
             self::zenwalkgnulinux => 'zenwalk gnu linux',
             self::harmonyos => 'harmony-os',
+            self::harmonyosNext => 'harmony-os-next',
             self::archlinux => 'arch-linux',
             self::risingos => 'rising-os',
             self::azurelinux => 'azure-linux',
@@ -956,6 +981,9 @@ enum Os: string implements OsInterface
             self::fritzOS => 'fritz-os',
             self::rokuOS => 'roku-os',
             self::vidaaOS => 'vidaa-os',
+            self::tivoOS => 'tivo-os',
+            self::ubuntuTouch => 'ubuntu-touch',
+            self::picoOS => 'pico-os',
             default => $this->name,
         };
     }

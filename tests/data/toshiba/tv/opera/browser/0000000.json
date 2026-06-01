@@ -680,8 +680,8 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "general Toshiba TV",
-      "marketingName": "general Toshiba TV",
+      "deviceName": "40L2600",
+      "marketingName": "40L2600",
       "manufacturer": "Toshiba",
       "brand": "Toshiba",
       "dualOrientation": false,
@@ -690,7 +690,7 @@
         "width": null,
         "height": null,
         "touch": false,
-        "size": null
+        "size": 40
       },
       "type": "tv",
       "ismobile": false,
@@ -714,9 +714,54 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
+      "name": "Presto",
       "version": "534.24.0",
-      "manufacturer": "Apple"
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Andr0id 9; AFTBOXE1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.59 Safari/537.36 OPR/46.0.2207.0 OMI/4.23.2.73.AFTdev.465 HbbTV/1.5.1 (+DRM;Amazon;AFTBOXE1-TOSHIBA-65UF3D63DA;0024126536068;unknown;com.amazon.m7632;) smarttv_AFTBOXE1-TOSHIBA-65UF3D63DA_Build_0024126536068_Chromium_108.0.5359.59"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "65UF3D63DA",
+      "marketingName": "65UF3D63DA",
+      "manufacturer": "Toshiba",
+      "brand": "Toshiba",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 65
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Fire OS",
+      "marketingName": "Fire OS",
+      "version": "7.0.0",
+      "manufacturer": "Amazon",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Devices",
+      "modus": null,
+      "version": "4.23.2.73",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.5359.59",
+      "manufacturer": "Google"
     }
   },
   {

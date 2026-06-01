@@ -30,7 +30,6 @@ use UaRequest\Header\DeviceCodeOnlyHeader;
 use UaRequest\Header\FullHeader;
 use UaRequest\Header\HeaderInterface;
 use UaRequest\Header\HeaderLoaderInterface;
-use UaRequest\Header\PlatformCodeOnlyHeader;
 use UaRequest\Header\PlatformHeader;
 use UaRequest\Header\PlatformVersionOnlyHeader;
 use UaRequest\Header\SecChUaArch;
@@ -38,6 +37,7 @@ use UaRequest\Header\SecChUaBitness;
 use UaRequest\Header\SecChUaFormFactors;
 use UaRequest\Header\SecChUaFullVersion;
 use UaRequest\Header\SecChUaMobile;
+use UaRequest\Header\SecChUaPlatformHeader;
 use UaRequest\Header\SecChUaWow64;
 use UaRequest\Header\XOperaminiPhoneUa;
 use UaRequest\Header\XPuffinUa;
@@ -125,9 +125,10 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
                 value: $value,
                 deviceCode: new SecChUaModel(),
             ),
-            Headers::HEADER_SEC_CH_UA_PLATFORM => new PlatformCodeOnlyHeader(
+            Headers::HEADER_SEC_CH_UA_PLATFORM => new SecChUaPlatformHeader(
                 value: $value,
                 platformCode: new SecChUaPlatform(),
+                deviceCode: new SecChUaPlatformDevice(),
             ),
             Headers::HEADER_SEC_CH_UA_PLATFORM_VERSION => new PlatformVersionOnlyHeader(
                 value: $value,

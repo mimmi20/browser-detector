@@ -1891,6 +1891,51 @@
   },
   {
     "headers": {
+      "user-agent": "SAGEM-9XX/0.0 UP/4.1.19is"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "9XX",
+      "marketingName": "9XX",
+      "manufacturer": "Sagem",
+      "brand": "Sagem",
+      "dualOrientation": null,
+      "simCount": 1,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "4.1.19",
+      "manufacturer": "Myriad",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "SAGEM-VF526/1.0/EVN_HF MIDP/2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.6.c.1.414 (GUI)"
     },
     "device": {

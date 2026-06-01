@@ -84,9 +84,9 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
+      "name": "Presto",
       "version": "3860.200.71",
-      "manufacturer": "Apple"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -129,9 +129,9 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
+      "name": "Presto",
       "version": "3826.500.131",
-      "manufacturer": "Apple"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -219,9 +219,9 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
+      "name": "Presto",
       "version": "1335.0.3.4",
-      "manufacturer": "Apple"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -264,9 +264,9 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
+      "name": "Presto",
       "version": "3860.200.71",
-      "manufacturer": "Apple"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -309,9 +309,9 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
+      "name": "Presto",
       "version": "3826.600.41",
-      "manufacturer": "Apple"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -399,9 +399,9 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
+      "name": "Presto",
       "version": "3860.100.1",
-      "manufacturer": "Apple"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -489,9 +489,9 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
+      "name": "Presto",
       "version": "3860.200.71",
-      "manufacturer": "Apple"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -534,9 +534,9 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
+      "name": "Presto",
       "version": "3860.300.31",
-      "manufacturer": "Apple"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -669,9 +669,9 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
+      "name": "Presto",
       "version": "3826.600.41",
-      "manufacturer": "Apple"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -714,9 +714,9 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
+      "name": "Presto",
       "version": "3860.300.31",
-      "manufacturer": "Apple"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -804,9 +804,9 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
+      "name": "Presto",
       "version": "3860.400.22",
-      "manufacturer": "Apple"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -894,9 +894,9 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
+      "name": "Presto",
       "version": "3826.400.120",
-      "manufacturer": "Apple"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -984,9 +984,9 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
+      "name": "Presto",
       "version": "3860.400.51",
-      "manufacturer": "Apple"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -1074,9 +1074,9 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
+      "name": "Presto",
       "version": "3860.400.51",
-      "manufacturer": "Apple"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -1119,9 +1119,9 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
+      "name": "Presto",
       "version": "3860.500.112",
-      "manufacturer": "Apple"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -1164,9 +1164,9 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
+      "name": "Presto",
       "version": "3860.300.31",
-      "manufacturer": "Apple"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -1299,9 +1299,9 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
+      "name": "Presto",
       "version": "3826.500.131",
-      "manufacturer": "Apple"
+      "manufacturer": "Opera"
     }
   },
   {
@@ -1392,6 +1392,51 @@
       "name": "WebKit",
       "version": "3860.500.112",
       "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/5 CFNetwork/3860.600.12 Darwin/25.5.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Apple device",
+      "marketingName": "general Apple device",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "26.5.0",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "3860.600.12",
+      "manufacturer": "Opera"
     }
   }
 ]

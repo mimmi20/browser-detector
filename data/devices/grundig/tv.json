@@ -65,7 +65,7 @@
   },
   "grundig afteu011": {
     "deviceName": "AFTEU011",
-    "marketingName": "Vision 6",
+    "marketingName": "Vision 6 HD (2019)",
     "manufacturer": "grundig",
     "brand": "grundig",
     "dualOrientation": false,
@@ -75,6 +75,22 @@
       "height": 1080,
       "touch": false,
       "size": 32
+    },
+    "type": "tv",
+    "platform": "android-tv"
+  },
+  "grundig 40fhdmga": {
+    "deviceName": "40FHDMGA",
+    "marketingName": "40FHDMGA",
+    "manufacturer": "grundig",
+    "brand": "grundig",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 40
     },
     "type": "tv",
     "platform": "android-tv"

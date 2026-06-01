@@ -2195,12 +2195,6 @@ final class CompanyTest extends TestCase
                 'key' => 'sky-worth',
             ],
             [
-                'type' => 'Tesla',
-                'name' => 'Tesla',
-                'brandname' => 'Tesla',
-                'key' => 'tesla',
-            ],
-            [
                 'type' => 'iNew',
                 'name' => 'iNew',
                 'brandname' => 'iNew',
@@ -11337,6 +11331,84 @@ final class CompanyTest extends TestCase
                 'name' => 'Wireshark Foundation',
                 'brandname' => 'Wireshark Foundation',
                 'key' => 'wireshark-foundation',
+            ],
+            [
+                'type' => 'Cypress',
+                'name' => 'Cypress.io, Inc.',
+                'brandname' => 'Cypress',
+                'key' => 'cypress',
+            ],
+            [
+                'type' => 'TD Systems',
+                'name' => 'TD Systems',
+                'brandname' => 'TD Systems',
+                'key' => 'td-systems',
+            ],
+            [
+                'type' => 'Manhattan',
+                'name' => 'Manhattan',
+                'brandname' => 'Manhattan',
+                'key' => 'manhattan',
+            ],
+            [
+                'type' => 'Pioneer',
+                'name' => 'Pioneer',
+                'brandname' => 'Pioneer',
+                'key' => 'pioneer',
+            ],
+            [
+                'type' => 'Pico',
+                'name' => 'PICO Immersive Pte. Ltd.',
+                'brandname' => 'Pico',
+                'key' => 'pico',
+            ],
+            [
+                'type' => 'AXEN',
+                'name' => 'AXEN',
+                'brandname' => 'AXEN',
+                'key' => 'axen',
+            ],
+            [
+                'type' => 'The Arena Group',
+                'name' => 'The Arena Group',
+                'brandname' => 'The Arena Group',
+                'key' => 'arena-group',
+            ],
+            [
+                'type' => 'Monitor.Us',
+                'name' => 'Monitor.Us',
+                'brandname' => 'Monitor.Us',
+                'key' => 'monitor.us',
+            ],
+            [
+                'type' => 'NET SYSTEMS RESEARCH',
+                'name' => 'NET SYSTEMS RESEARCH LLC',
+                'brandname' => 'NET SYSTEMS RESEARCH',
+                'key' => 'net-systems-research',
+            ],
+            [
+                'type' => 'Infotiger',
+                'name' => 'Infotiger UG',
+                'brandname' => 'Infotiger',
+                'key' => 'infotiger',
+            ],
+            [
+                'type' => 'Signal',
+                'name' => 'Signal Messenger LLC.',
+                'brandname' => 'Signal',
+                'key' => 'signal',
+            ],
+            [
+                'type' => 'HKPro',
+                'name' => 'HKPro',
+                'brandname' => 'HKPro',
+                'key' => 'hk-pro',
+            ],
+            [
+                'type' => 'ComTrade Tesla',
+                'name' => 'ComTrade Tesla',
+                'brandname' => 'ComTrade Tesla',
+                'key' => 'comtrade-tesla',
             ],
         ];
     }

@@ -141,6 +141,8 @@ final class DesktopTest extends TestCase
             ['Microsoft-CryptoAPI/6.3'],
             ['Safari 531.21.10 (OS X 10_6_2 Intel)'],
             ['Microsoft-CryptoAPI/5.131.2600.2180'],
+            ['WinHttp516864'],
+            ['Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Safari PrcmNovel_iOS/1.11.8'],
         ];
     }
 

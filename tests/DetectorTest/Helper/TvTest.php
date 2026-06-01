@@ -151,6 +151,8 @@ final class TvTest extends TestCase
             ['Mozilla/5.0 (Linux; Android 10; GM1910 Build/QKQ1.190716.003; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MBrowser/6.2 TBS/045008 Mobile Safari/537.36 BiliApp/5531000 mobi_app/android channel/oppo Buvid/<hide> internal_version/5531000'],
             ['Mozilla/5.0 (Linux like Android; de_DE) AppleWebKit/534.34 PocketBook/626 (screen 758x1024; FW O626.4.4.979) Mobile'],
             ['Mozilla/5.0 (compatible; Google-Apps-Script; beanserver; +https://script.google.com; id: UAEmdDd8MFTwutX_GL17ysBVXBOXQptFZNA)'],
+            ['Mozilla/4.0 (compatible; Win32; WinHttp.WinHttpRequest.5)'],
+            ['Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Safari PrcmNovel_iOS/1.11.8'],
         ];
     }
 }
