@@ -6446,5 +6446,53 @@
       ]
     },
     "engine": null
+  },
+  "trendsmap-resolver": {
+    "name": "TrendsmapResolver",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TrendsmapResolver"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ryowl-engine": {
+    "name": "Ryowl Engine",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RyowlEngine"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "cincraw": {
+    "name": "Cincraw",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Cincraw"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "serendeputy-bot": {
+    "name": "Serendeputy Bot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SerendeputyBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

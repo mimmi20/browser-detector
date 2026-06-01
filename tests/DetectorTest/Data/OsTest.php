@@ -1583,6 +1583,14 @@ final class OsTest extends TestCase
                 'version' => ['factory' => null, 'search' => null],
                 'key' => 'qnx',
             ],
+            [
+                'type' => 'PICO OS',
+                'name' => 'PICO OS',
+                'marketingName' => 'PICO OS',
+                'manufacturer' => Company::pico,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['PICO \d OS']],
+                'key' => 'pico-os',
+            ],
         ];
     }
 }

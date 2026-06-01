@@ -201,6 +201,7 @@ final class MobileDeviceTest extends TestCase
             ['SonySO-04E Build/10.1.1.D.2.31 UpdateCenter/1.3.4.A.0.8'],
             ['Sony PS2 (Linux)'],
             ['Mozilla/5.0 (PlayBook) AppleWebKit/536.2+ (KHTML, like Gecko) Version/10.0.4.102 Safari/536.2+'],
+            ['Amoi 8512/R18.0 NF-Browser/3.3'],
         ];
     }
 

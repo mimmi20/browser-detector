@@ -2195,12 +2195,6 @@ final class CompanyTest extends TestCase
                 'key' => 'sky-worth',
             ],
             [
-                'type' => 'Tesla',
-                'name' => 'Tesla',
-                'brandname' => 'Tesla',
-                'key' => 'tesla',
-            ],
-            [
                 'type' => 'iNew',
                 'name' => 'iNew',
                 'brandname' => 'iNew',
@@ -11363,9 +11357,9 @@ final class CompanyTest extends TestCase
                 'key' => 'pioneer',
             ],
             [
-                'type' => 'PICO',
+                'type' => 'Pico',
                 'name' => 'PICO Immersive Pte. Ltd.',
-                'brandname' => 'PICO',
+                'brandname' => 'Pico',
                 'key' => 'pico',
             ],
             [
@@ -11403,6 +11397,18 @@ final class CompanyTest extends TestCase
                 'name' => 'Signal Messenger LLC.',
                 'brandname' => 'Signal',
                 'key' => 'signal',
+            ],
+            [
+                'type' => 'HKPro',
+                'name' => 'HKPro',
+                'brandname' => 'HKPro',
+                'key' => 'hk-pro',
+            ],
+            [
+                'type' => 'ComTrade Tesla',
+                'name' => 'ComTrade Tesla',
+                'brandname' => 'ComTrade Tesla',
+                'key' => 'comtrade-tesla',
             ],
         ];
     }

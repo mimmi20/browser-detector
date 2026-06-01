@@ -1317,5 +1317,29 @@
       ]
     },
     "engine": "unknown"
+  },
+  "jaunt": {
+    "name": "Jaunt",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Jaunt"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ultimate-sitemap-parser": {
+    "name": "Ultimate Sitemap Parser",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ultimate_sitemap_parser"
+      ]
+    },
+    "engine": "unknown"
   }
 }

@@ -215,7 +215,8 @@ final class DeviceTest extends TestCase
             ['Kindle Fire', 'amazon=amazon d01400'],
             ['AEOCH', 'amazon=amazon aeoch'],
             ['AFTTI43', 'amazon=amazon aftti43'],
-            ['AFTKAUK001', 'amazon=amazon aftkauk001'],
+            // has conflicts with another amazon device
+            // ['AFTKAUK001', 'amazon=amazon aftkauk001'],
             ['AFTR', 'amazon=amazon aftr'],
             ['AFTKM', 'amazon=amazon aftkm'],
             ['AFTKA002', 'amazon=amazon aftka002'],

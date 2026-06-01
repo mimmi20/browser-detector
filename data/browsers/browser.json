@@ -2370,6 +2370,18 @@
     },
     "engine": "webkit"
   },
+  "minibrowser": {
+    "name": "MiniBrowser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MiniBrowser"
+      ]
+    },
+    "engine": "webkit"
+  },
   "minimo": {
     "name": "Minimo",
     "manufacturer": "mozilla-foundation",
@@ -3234,6 +3246,19 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MQQBrowser\\/Mini"
+      ]
+    },
+    "engine": null
+  },
+  "qqbrowser lite": {
+    "name": "QQ Browser Lite",
+    "manufacturer": "tencent",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MQQBrowserLite",
+        "QQBrowserLite"
       ]
     },
     "engine": null

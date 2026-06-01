@@ -405,6 +405,8 @@ enum Os: string implements OsInterface
 
     case qnx = 'QNX';
 
+    case picoOS = 'PICO OS';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -598,6 +600,7 @@ enum Os: string implements OsInterface
             'webian' => self::webian,
             'ubuntutouch', 'ubuntu-touch', 'ubuntu touch' => self::ubuntuTouch,
             'qnx' => self::qnx,
+            'picoos', 'pico os', 'pico-os' => self::picoOS,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -716,6 +719,7 @@ enum Os: string implements OsInterface
             self::vidaaOS => Company::vidaa,
             self::tivoOS => Company::tivo,
             self::qnx => Company::blackberry,
+            self::picoOS => Company::pico,
             default => Company::unknown,
         };
     }
@@ -862,6 +866,7 @@ enum Os: string implements OsInterface
             self::vidaaOS => ['factory' => VersionBuilderFactory::class, 'search' => ['VIDAA']],
             self::linux => ['factory' => VersionBuilderFactory::class, 'search' => ['Linux']],
             self::tivoOS => ['factory' => VersionBuilderFactory::class, 'search' => ['TiVoOS']],
+            self::picoOS => ['factory' => VersionBuilderFactory::class, 'search' => ['PICO \d OS']],
             default => ['factory' => null, 'search' => null],
         };
     }
@@ -978,6 +983,7 @@ enum Os: string implements OsInterface
             self::vidaaOS => 'vidaa-os',
             self::tivoOS => 'tivo-os',
             self::ubuntuTouch => 'ubuntu-touch',
+            self::picoOS => 'pico-os',
             default => $this->name,
         };
     }

@@ -576,5 +576,17 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "xen-foro": {
+    "name": "XenForo",
+    "manufacturer": "unknown",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "XenForo"
+      ]
+    },
+    "engine": "unknown"
   }
 }

@@ -733,8 +733,6 @@ enum Company: string implements CompanyInterface
 
     case skyworth = 'SkyWorth';
 
-    case tesla = 'Tesla';
-
     case inew = 'iNew';
 
     case goclever = 'GOCLEVER';
@@ -3791,7 +3789,7 @@ enum Company: string implements CompanyInterface
 
     case pioneer = 'Pioneer';
 
-    case pico = 'PICO';
+    case pico = 'Pico';
 
     case axen = 'AXEN';
 
@@ -3804,6 +3802,10 @@ enum Company: string implements CompanyInterface
     case infotiger = 'Infotiger';
 
     case signal = 'Signal';
+
+    case hkPro = 'HKPro';
+
+    case comTradeTesla = 'ComTrade Tesla';
 
     /**
      * @throws UnexpectedValueException
@@ -4169,7 +4171,6 @@ enum Company: string implements CompanyInterface
             'magenta' => self::magenta,
             'redline' => self::redline,
             'skyworth', 'sky-worth' => self::skyworth,
-            'tesla' => self::tesla,
             'inew' => self::inew,
             'goclever' => self::goclever,
             'irbis' => self::irbis,
@@ -5705,6 +5706,8 @@ enum Company: string implements CompanyInterface
             'netsystemsresearch', 'net systems research llc', 'net-systems-research', 'net systems research' => self::netSystemsResearch,
             'infotiger', 'infotiger ug' => self::infotiger,
             'signal', 'signal messenger llc.' => self::signal,
+            'hkpro', 'hk-pro' => self::hkPro,
+            'comtradetesla', 'comtrade tesla', 'comtrade-tesla' => self::comTradeTesla,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -7180,6 +7183,8 @@ enum Company: string implements CompanyInterface
             self::arenaGroup => 'arena-group',
             self::monitorUs => 'monitor.us',
             self::netSystemsResearch => 'net-systems-research',
+            self::hkPro => 'hk-pro',
+            self::comTradeTesla => 'comtrade-tesla',
             default => $this->name,
         };
     }

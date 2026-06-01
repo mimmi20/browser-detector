@@ -187,7 +187,8 @@ final class Device implements DeviceInterface
             'amazon kindle fire', 'kindle fire' => 'amazon=amazon d01400',
             'aeoch' => 'amazon=amazon aeoch',
             'aftti43' => 'amazon=amazon aftti43',
-            'aftkauk001' => 'amazon=amazon aftkauk001',
+            // has conflicts with another amazon device
+            // 'aftkauk001' => 'amazon=amazon aftkauk001',
             'aftr' => 'amazon=amazon aftr',
             'aftkm' => 'amazon=amazon aftkm',
             'aftka002' => 'amazon=amazon aftka002',

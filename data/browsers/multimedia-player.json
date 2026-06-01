@@ -979,5 +979,717 @@
       ]
     },
     "engine": null
+  },
+  "golden-pod": {
+    "name": "GoldenPod",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GoldenPod"
+      ]
+    },
+    "engine": null
+  },
+  "podcastaddict": {
+    "name": "Podcast & Radio Addict",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PodcastAddict\\/v",
+        "PodcastAddict"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "get-podcast": {
+    "name": "GetPodcast",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GetPodcast"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "podyssey": {
+    "name": "Podyssey",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Podyssey"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "podurama": {
+    "name": "Podurama",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Podurama"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "pods": {
+    "name": "Pods",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Pods"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "podopolo": {
+    "name": "Podopolo",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "podopolo"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "pod-me": {
+    "name": "PodMe",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PodMe",
+        "Podme android app"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "pod-nl": {
+    "name": "PodNL",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PodNL"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "podimo": {
+    "name": "Podimo",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Podimo"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "pod-hero": {
+    "name": "Podhero",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Podhero Alpha",
+        "Podhero",
+        "Swoot Agent ",
+        "Swoot Agent"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "podcruncher": {
+    "name": "PodCruncher",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PodCruncher"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "airpodcasts": {
+    "name": "Podcasts",
+    "manufacturer": "apple",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AirPodcasts"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "podverse-app": {
+    "name": "Podverse - Podcast Player",
+    "manufacturer": "podverse",
+    "type": "multimedia-player",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "nrc-audio": {
+    "name": "NRC Audio",
+    "manufacturer": "mediahuis-nrc",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NRC Audio"
+      ]
+    },
+    "engine": null
+  },
+  "listnr": {
+    "name": "LiSTNR",
+    "manufacturer": "sca-igital",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "LiSTNR\\.au\\.com\\.podcastoneaustralia"
+      ]
+    },
+    "engine": null
+  },
+  "classic-fm": {
+    "name": "Classic FM",
+    "manufacturer": "multimedios-digital",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Classic FM"
+      ]
+    },
+    "engine": null
+  },
+  "de-standaard": {
+    "name": "De Standaard",
+    "manufacturer": "mediahuis",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DS podcast",
+        "DS Podcast"
+      ]
+    },
+    "engine": null
+  },
+  "sonnet": {
+    "name": "Sonnet",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Simple Podcast Player"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "podeo": {
+    "name": "Podeo",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Podeo"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "pod-clipper": {
+    "name": "Podclipper",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Podclipper"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "podcast-player": {
+    "name": "Podcast Player",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Podcast Player"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "podcast-guru": {
+    "name": "Podcast Guru",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PodcastGuru"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "pod-bay": {
+    "name": "Podbay",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Podbay"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "player fm": {
+    "name": "Player FM",
+    "manufacturer": "nuvomondo",
+    "type": "multimedia-player",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "alpha player fm": {
+    "name": "Alpha Player FM",
+    "manufacturer": "nuvomondo",
+    "type": "multimedia-player",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "overhaul-fm": {
+    "name": "Overhaul FM",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Podcast Overhaul"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "my-tuner": {
+    "name": "MyTuner",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "myTuneriOS Free",
+        "myTuner Radio app",
+        "mytuner_podcasts_androidplayer"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "moon-fm": {
+    "name": "MoonFM",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Moon FM",
+        "MoonFM"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "kids-pod": {
+    "name": "KidsPod",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "KidspodMobileClient"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "kids-listen": {
+    "name": "Kids Listen",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Kids Listen"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "good-pods": {
+    "name": "Goodpods",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Goodpods\\.iOS \\/ ",
+        "Goodpods"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "go-loud": {
+    "name": "GoLoud",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GoLoud"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "apple-podcasts": {
+    "name": "Podcasts",
+    "manufacturer": "apple",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "팟캐스트",
+        "פודקאסטים",
+        "Podcastok",
+        "Подкасты",
+        "البودكاست",
+        "Подкасти",
+        "פודקאסטים",
+        "ポッドキャスト",
+        "พ็อดคาสท์"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "podcat": {
+    "name": "Podcat",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Podcat 2",
+        "Podcat"
+      ]
+    },
+    "engine": null
+  },
+  "hatena antenna": {
+    "name": "AntennaPod",
+    "manufacturer": "hatena",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Hatena Antenna"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "pod-u": {
+    "name": "podU",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "yandex-music": {
+    "name": "Yandex Music",
+    "manufacturer": "yandex",
+    "type": "multimedia-player",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "samsung-podcasts": {
+    "name": "Samsung Podcasts",
+    "manufacturer": "samsung",
+    "type": "multimedia-player",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "rhythmbox": {
+    "name": "Rhythmbox",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "rhythmbox"
+      ]
+    },
+    "engine": null
+  },
+  "podvine": {
+    "name": "Podvine",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Podvine"
+      ]
+    },
+    "engine": null
+  },
+  "pod-trapper": {
+    "name": "PodTrapper",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "pod-friend": {
+    "name": "Podfriend",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Podfriend"
+      ]
+    },
+    "engine": null
+  },
+  "pod-chaser": {
+    "name": "Podchaser",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "podcastly": {
+    "name": "Podcastly",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Podcastly"
+      ]
+    },
+    "engine": null
+  },
+  "hermes-pod": {
+    "name": "HermesPod",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "hermespod\\.com\\/v"
+      ]
+    },
+    "engine": null
+  },
+  "icatcher-podcast-player": {
+    "name": "iCatcher Podcast Player",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Podcast Player"
+      ]
+    },
+    "engine": null
+  },
+  "podcatcher-deluxe": {
+    "name": "Podcatcher Deluxe",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Podcatcher Deluxe"
+      ]
+    },
+    "engine": null
+  },
+  "tunein-radio": {
+    "name": "TuneIn Radio",
+    "manufacturer": "tune-in",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TuneIn Radio"
+      ]
+    },
+    "engine": null
+  },
+  "tunein-radio-pro": {
+    "name": "TuneIn Radio Pro",
+    "manufacturer": "tune-in",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TuneIn Radio Pro"
+      ]
+    },
+    "engine": null
+  },
+  "virgin-radio": {
+    "name": "Virgin Radio",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Virgin Radio"
+      ]
+    },
+    "engine": null
+  },
+  "youtube-music": {
+    "name": "Youtube Music",
+    "manufacturer": "google",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "com\\.google\\.android\\.apps\\.youtube\\.music",
+        "YouTubeMusic"
+      ]
+    },
+    "engine": null
+  },
+  "iheart-radio": {
+    "name": "iHeartRadio",
+    "manufacturer": "iheart-media",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "iHeartRadio"
+      ]
+    },
+    "engine": null
+  },
+  "emaudioplayer": {
+    "name": "EMAudioPlayer",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "EMAudioPlayer"
+      ]
+    },
+    "engine": null
+  },
+  "radio.de app": {
+    "name": "radio.de App",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "radio.de"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "radio-line": {
+    "name": "Radioline",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Radioline 2"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "all-hit-music-radio": {
+    "name": "AllHitMusicRadio",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AllHitMusicRadio"
+      ]
+    },
+    "engine": null
+  },
+  "audacy-app": {
+    "name": "Audacy App",
+    "manufacturer": "audacy",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Radio\\.com"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "radio-public": {
+    "name": "RadioPublic",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RadioPublic iOS "
+      ]
+    },
+    "engine": "webkit"
   }
 }
