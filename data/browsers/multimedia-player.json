@@ -1691,5 +1691,53 @@
       ]
     },
     "engine": "webkit"
+  },
+  "media-monkey": {
+    "name": "MediaMonkey",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MediaMonkey"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "clementine": {
+    "name": "Clementine",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Clementine"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "sony-media-go": {
+    "name": "Sony Media Go",
+    "manufacturer": "sony",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MediaGo"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "banshee": {
+    "name": "Banshee",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Banshee"
+      ]
+    },
+    "engine": "webkit"
   }
 }

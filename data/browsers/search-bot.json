@@ -1887,5 +1887,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "haosouspider": {
+    "name": "HaosouSpider",
+    "manufacturer": "qihoo",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "360Spider"
+      ]
+    },
+    "engine": "unknown"
   }
 }
