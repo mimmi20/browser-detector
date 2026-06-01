@@ -1,96 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Nokia309/2.0 (05.85) Profile/MIDP-2.1 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "309",
-      "marketingName": "Asha 309",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 400,
-        "height": 240,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NokiaC1-01/2.0 (06.05) Profile/MIDP-2.1 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "C1-01",
-      "marketingName": "C1",
-      "manufacturer": "Nokia",
-      "brand": "Nokia",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": 1.8
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "Symbian Foundation",
-      "bits": null
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "NokiaC1-02/2.0 (06.15) Profile/MIDP-2.1 Configuration/CLDC-1.1 UNTRUSTED/1.0"
     },
     "device": {
@@ -1456,6 +1366,51 @@
         "height": 240,
         "touch": false,
         "size": 2.6
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "Symbian Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Nokia5230"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "5230",
+      "marketingName": "Nuron",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": false,
+        "size": 3.2
       },
       "type": "feature-phone",
       "ismobile": true,
