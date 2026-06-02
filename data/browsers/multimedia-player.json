@@ -1739,5 +1739,17 @@
       ]
     },
     "engine": "webkit"
+  },
+  "mpv": {
+    "name": "mpv",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "mpv"
+      ]
+    },
+    "engine": null
   }
 }

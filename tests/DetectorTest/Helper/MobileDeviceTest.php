@@ -202,6 +202,7 @@ final class MobileDeviceTest extends TestCase
             ['Sony PS2 (Linux)'],
             ['Mozilla/5.0 (PlayBook) AppleWebKit/536.2+ (KHTML, like Gecko) Version/10.0.4.102 Safari/536.2+'],
             ['Amoi 8512/R18.0 NF-Browser/3.3'],
+            ['Echo/1.0(APNG)'],
         ];
     }
 
