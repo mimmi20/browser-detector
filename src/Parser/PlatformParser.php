@@ -64,7 +64,7 @@ final readonly class PlatformParser implements PlatformParserInterface
             '/Windows Phone OS|XBLWP7|ZuneWP7|Windows Phone(?! 6)|WPDesktop| wds |WPOS\:|Windows Mobile (?:7|8|10)|Windows NT (?:7|8|10)(?:[\.\d]+)?; ARM; (?:Lumia|RM-)/' => Os::windowsphone,
             '/windows (phone|iot|ce)|microsoft windows; ppc|iemobile|xblwp7|zunewp7|windows ?mobile|wpdesktop|lumia| wds |wpos:/i' => Os::windowsmobileos,
             '/palm ?os|palmsource|palmscape/i' => Os::palmOs,
-            '/roku\/dvp-|com\.roku\.g000x|roku\/pluto-|rokuos\/|roku; ap;|roku; ui;/i' => Os::rokuOS,
+            '/roku(?:[a-z0-9]+)?\/dvp-|com\.roku\.g000x|roku\/pluto-|rokuos\/|roku; ap;|roku; ui;/i' => Os::rokuOS,
             '/windows[ _]nt[ _]11|windows[ _]11|(?<!dar)win11/i' => Os::windows11,
             '/windows[ _]nt[ _]10|windows[ _]10|(?<!dar)win10|microsoft-wns\/10|microsoft-cryptoapi\/10|microsoft-delivery-optimization\/10/i' => Os::windows10,
             '/windows nt 6\.4|windows 6\.4/i' => Os::windowsnt64,

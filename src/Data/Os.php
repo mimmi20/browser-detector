@@ -862,7 +862,7 @@ enum Os: string implements OsInterface
             self::googleTv => ['factory' => VersionBuilderFactory::class, 'search' => ['GoogleTV']],
             self::contiki => ['factory' => VersionBuilderFactory::class, 'search' => ['Contiki']],
             self::fritzOS => ['factory' => VersionBuilderFactory::class, 'search' => ['FRITZ!OS']],
-            self::rokuOS => ['factory' => VersionBuilderFactory::class, 'search' => ['Roku\/DVP-', 'Roku\/Pluto-', 'RokuOS', 'Roku; AP; ']],
+            self::rokuOS => ['factory' => VersionBuilderFactory::class, 'search' => ['Roku(?:[A-Z0-9]+)?\/DVP-', 'Roku\/Pluto-', 'RokuOS', 'Roku; AP; ']],
             self::vidaaOS => ['factory' => VersionBuilderFactory::class, 'search' => ['VIDAA']],
             self::linux => ['factory' => VersionBuilderFactory::class, 'search' => ['Linux']],
             self::tivoOS => ['factory' => VersionBuilderFactory::class, 'search' => ['TiVoOS']],

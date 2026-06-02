@@ -172,7 +172,6 @@ final class Device implements DeviceInterface
             'kfsowi', 'amazon kindle fire hd' => 'amazon=amazon kfsowi',
             'aftn' => 'amazon=amazon aftn',
             'aftm' => 'amazon=amazon aftm',
-            'aftjmst12' => 'amazon=amazon aftjmst12',
             'aftb' => 'amazon=amazon aftb',
             'afta' => 'amazon=amazon afta',
             'aeohp' => 'amazon=amazon aeohp',
@@ -194,6 +193,7 @@ final class Device implements DeviceInterface
             'aftka002' => 'amazon=amazon aftka002',
             'aftkauk002' => 'amazon=amazon aftkauk002',
             'aeocw' => 'amazon=amazon aeocw',
+            'aeobp' => 'amazon=amazon aeobp',
             // Asus
             'p024' => 'asus=asus p024',
             'asus_x00dd' => 'asus=asus x00dd',
@@ -8465,6 +8465,7 @@ final class Device implements DeviceInterface
             'dl1036' => 'digiland=digiland dl1036',
             // insignia
             'afteamr311' => 'insignia=insignia afteamr311',
+            'aftjmst12' => 'insignia=insignia aftjmst12',
             // element
             'aftrs' => 'element=element aftrs',
             // funai

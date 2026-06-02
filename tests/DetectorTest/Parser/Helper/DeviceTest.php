@@ -199,7 +199,6 @@ final class DeviceTest extends TestCase
             ['Amazon Kindle Fire HD', 'amazon=amazon kfsowi'],
             ['AFTN', 'amazon=amazon aftn'],
             ['AFTM', 'amazon=amazon aftm'],
-            ['AFTJMST12', 'amazon=amazon aftjmst12'],
             ['AFTB', 'amazon=amazon aftb'],
             ['AFTA', 'amazon=amazon afta'],
             ['AEOHP', 'amazon=amazon aeohp'],
@@ -222,6 +221,7 @@ final class DeviceTest extends TestCase
             ['AFTKA002', 'amazon=amazon aftka002'],
             ['AFTKAUK002', 'amazon=amazon aftkauk002'],
             ['AEOCW', 'amazon=amazon aeocw'],
+            ['AEOBP', 'amazon=amazon aeobp'],
             // Asus
             ['P024', 'asus=asus p024'],
             ['ASUS_X00DD', 'asus=asus x00dd'],
@@ -9899,6 +9899,7 @@ final class DeviceTest extends TestCase
             ['DL1036', 'digiland=digiland dl1036'],
             // insignia
             ['AFTEAMR311', 'insignia=insignia afteamr311'],
+            ['AFTJMST12', 'insignia=insignia aftjmst12'],
             // element
             ['AFTRS', 'element=element aftrs'],
             // funai

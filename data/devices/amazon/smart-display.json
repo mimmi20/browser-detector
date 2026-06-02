@@ -78,5 +78,21 @@
     },
     "type": "smart-display",
     "platform": "fire-os"
+  },
+  "amazon aeobp": {
+    "deviceName": "AEOBP",
+    "marketingName": "Echo Show (2nd Gen)",
+    "manufacturer": "amazon",
+    "brand": "amazon",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "smart-display",
+    "platform": "fire-os"
   }
 }
