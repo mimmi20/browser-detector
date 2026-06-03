@@ -181,6 +181,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; AEOBP) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "AEOBP",
+      "marketingName": "Echo Show (2nd Gen)",
+      "manufacturer": "Amazon",
+      "brand": "Amazon",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "smart-display",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Fire OS",
+      "marketingName": "Fire OS",
+      "version": "5.0.0",
+      "manufacturer": "Amazon",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "100.0.4896.127",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "100.0.4896.127",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; OS 1.1; AEOHP user/43; wv) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Chrome/118.0.5993.159 Safari/537.36"
     },
     "device": {

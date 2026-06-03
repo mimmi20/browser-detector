@@ -754,18 +754,6 @@
     },
     "engine": "unknown"
   },
-  "caremedicom": {
-    "name": "CareMediCom",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "CareMediCom"
-      ]
-    },
-    "engine": "gecko"
-  },
   "cars-app-browser": {
     "name": "cars-app-browser",
     "manufacturer": "unknown",
@@ -1053,18 +1041,6 @@
     "version": {
       "class": null,
       "search": null
-    },
-    "engine": "unknown"
-  },
-  "curb": {
-    "name": "Curb",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Curb"
-      ]
     },
     "engine": "unknown"
   },
@@ -2767,18 +2743,6 @@
     },
     "engine": "unknown"
   },
-  "link_thumbnailer": {
-    "name": "link_thumbnailer",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "link_thumbnailer"
-      ]
-    },
-    "engine": "unknown"
-  },
   "linklint": {
     "name": "LinkLint",
     "manufacturer": "unknown",
@@ -3701,16 +3665,6 @@
       "search": [
         "PageFreezer"
       ]
-    },
-    "engine": "unknown"
-  },
-  "pagepeeker screenshot maker": {
-    "name": "PagePeeker Screenshot Maker",
-    "manufacturer": "page-peeker",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
     },
     "engine": "unknown"
   },
@@ -5712,18 +5666,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "voyager"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "vsentry": {
-    "name": "vSentry",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Bromium Safari"
       ]
     },
     "engine": "unknown"

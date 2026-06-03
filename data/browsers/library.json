@@ -1341,5 +1341,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "grequests": {
+    "name": "GRequests",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GRequests"
+      ]
+    },
+    "engine": "unknown"
   }
 }
