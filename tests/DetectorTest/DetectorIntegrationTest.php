@@ -9355,6 +9355,62 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                 ],
             ],
+            [
+                [
+                    'sec-ch-ua-platform' => '"Android"',
+                    'sec-ch-ua' => '"Not(A:Brand";v="8", "Chromium";v="144"',
+                    'sec-ch-ua-mobile' => '?1',
+                    'user-agent' => 'Mozilla/5.0 (Linux; U; Android 12; zh-cn; VOG-AL00 Build/HUAWEIBRA-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.0.0 MQQBrowser/14.6 Mobile Safari/537.36 COVC/046801',
+                ],
+                [
+                    'headers' => [
+                        'sec-ch-ua-platform' => '"Android"',
+                        'sec-ch-ua' => '"Not(A:Brand";v="8", "Chromium";v="144"',
+                        'sec-ch-ua-mobile' => '?1',
+                        'user-agent' => 'Mozilla/5.0 (Linux; U; Android 12; zh-cn; VOG-AL00 Build/HUAWEIBRA-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.0.0 MQQBrowser/14.6 Mobile Safari/537.36 COVC/046801',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'VOG-AL00',
+                        'marketingName' => 'P30 Pro',
+                        'manufacturer' => 'Huawei',
+                        'brand' => 'Huawei',
+                        'dualOrientation' => true,
+                        'simCount' => 1,
+                        'display' => [
+                            'width' => 2340,
+                            'height' => 1080,
+                            'touch' => true,
+                            'size' => 6.47,
+                        ],
+                        'type' => 'smartphone',
+                        'ismobile' => true,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Android',
+                        'marketingName' => 'Android',
+                        'version' => '12.0.0',
+                        'manufacturer' => 'Google',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'QQ Browser',
+                        'modus' => null,
+                        'version' => '14.6.0',
+                        'manufacturer' => 'Tencent',
+                        'type' => 'browser',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '144.0.0',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
         ];
     }
 }

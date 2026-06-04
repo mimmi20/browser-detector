@@ -711,6 +711,7 @@ final class Device implements DeviceInterface
             'oppo a79' => 'oppo=oppo a79',
             'oppo a79k' => 'oppo=oppo a79k',
             'oppo a79kt' => 'oppo=oppo a79kt',
+            'cph1803' => 'oppo=oppo cph1803',
             // Xiaomi/Poco
             'redmi note 9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro', 'redmi_note_8_pro' => 'xiaomi=xiaomi redmi note 8 pro',
@@ -2879,6 +2880,12 @@ final class Device implements DeviceInterface
             'sm-a075f', 'samsung sm-a075f' => 'samsung=samsung sm-a075f',
             'sm-a075b', 'samsung sm-a075b' => 'samsung=samsung sm-a075b',
             'sm-a075m', 'samsung sm-a075m' => 'samsung=samsung sm-a075m',
+            'sm-a376b', 'samsung sm-a376b' => 'samsung=samsung sm-a376b',
+            'sm-a376e', 'samsung sm-a376e' => 'samsung=samsung sm-a376e',
+            'sm-a376u', 'samsung sm-a376u' => 'samsung=samsung sm-a376u',
+            'sm-a376u1', 'samsung sm-a376u1' => 'samsung=samsung sm-a376u1',
+            'sm-a376w', 'samsung sm-a376w' => 'samsung=samsung sm-a376w',
+            'sm-a3760', 'samsung sm-a3760' => 'samsung=samsung sm-a3760',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',

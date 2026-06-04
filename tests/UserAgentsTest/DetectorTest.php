@@ -38,10 +38,8 @@ use UaLoader\Exception\NotFoundException;
 use UnexpectedValueException;
 
 use function assert;
-use function count;
 use function file_get_contents;
 use function is_array;
-use function is_countable;
 use function is_iterable;
 use function is_scalar;
 use function is_string;

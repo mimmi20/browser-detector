@@ -164,6 +164,7 @@ final readonly class AndroidOs implements VersionFactoryInterface
     private function mapSdkVersion(string $sdkVersion): string
     {
         return match ($sdkVersion) {
+            '37' => '17',
             '36' => '16',
             '35' => '15',
             '34' => '14',
