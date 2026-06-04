@@ -386,6 +386,7 @@ final readonly class Headers
                             case 'aol desktop':
                             case 'qtwebengine':
                             case 'pumoxbot':
+                            case 'sogou web spider':
                                 $clientCodename = $lastClientCodename;
                                 $clientHeader   = array_last($headersWithClientCode);
 

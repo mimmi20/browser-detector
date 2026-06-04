@@ -1610,6 +1610,7 @@ final class DeviceTest extends TestCase
             ['ZTE T320', 'zte=zte t320'],
             ['N9130', 'zte=zte n9130'],
             ['N9519', 'zte=zte n9519'],
+            ['Z2468N', 'zte=zte z2468n'],
             // Samsung
             ['SM-A415F', 'samsung=samsung sm-a415f'],
             ['SM-A505FN', 'samsung=samsung sm-a505fn'],
@@ -6323,6 +6324,7 @@ final class DeviceTest extends TestCase
             ['Maxwell-10', 'gigaset=gigaset maxwell 10'],
             ['E940-2849-01', 'gigaset=gigaset e940-2849-01'],
             ['E940-2797-01', 'gigaset=gigaset e940-2797-01'],
+            ['E940-3043-00', 'gigaset=gigaset e940-3043-00'],
             // wiko
             ['W-V750BN-EEA', 'wiko=wiko w-v750bn-eea'],
             ['W-V680-EEA', 'wiko=wiko w-v680-eea'],
@@ -6693,6 +6695,7 @@ final class DeviceTest extends TestCase
             ['Tab 11', 'blackview=blackview tab 11'],
             ['BV8100', 'blackview=blackview bv8100'],
             ['Tab 10 Pro', 'blackview=blackview tab 10 pro'],
+            ['BV7200', 'blackview=blackview bv7200'],
             // medion
             ['B5532', 'medion=medion b5532'],
             ['LIFETAB_P733X', 'medion=medion lifetab p733x'],

@@ -399,6 +399,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.ehawk.antivirus.applock.wifi' => 'hi-security',
             'com.mxtech.videoplayer.ad' => 'mx-player',
             'com.pico.browser.overseas' => 'pico-browser',
+            'org.mozilla.rocket' => 'firefox rocket',
             default => null,
         };
     }

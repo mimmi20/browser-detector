@@ -1546,6 +1546,7 @@ final class Device implements DeviceInterface
             'zte t320' => 'zte=zte t320',
             'n9130' => 'zte=zte n9130',
             'n9519' => 'zte=zte n9519',
+            'z2468n' => 'zte=zte z2468n',
             // Samsung
             'sm-a505fn' => 'samsung=samsung sm-a505fn',
             'sm-a515f', 'samsung sm-a515f', 'sm-a515f/a515fxxu8hwi1' => 'samsung=samsung sm-a515f',
@@ -5119,6 +5120,7 @@ final class Device implements DeviceInterface
             'maxwell-10' => 'gigaset=gigaset maxwell 10',
             'e940-2849-01' => 'gigaset=gigaset e940-2849-01',
             'e940-2797-01' => 'gigaset=gigaset e940-2797-01',
+            'e940-3043-00' => 'gigaset=gigaset e940-3043-00',
             // wiko
             'w-v750bn-eea' => 'wiko=wiko w-v750bn-eea',
             'w-v680-eea' => 'wiko=wiko w-v680-eea',
@@ -5468,6 +5470,7 @@ final class Device implements DeviceInterface
             'tab 11' => 'blackview=blackview tab 11',
             'bv8100' => 'blackview=blackview bv8100',
             'tab 10 pro' => 'blackview=blackview tab 10 pro',
+            'bv7200' => 'blackview=blackview bv7200',
             // medion
             'b5532' => 'medion=medion b5532',
             'lifetab_p733x' => 'medion=medion lifetab p733x',

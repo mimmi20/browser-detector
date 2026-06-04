@@ -577,6 +577,7 @@ final class XRequestedWithTest extends TestCase
             ['cacheposxrequestedwithcachepos<>', false, null, false, null, false, Os::unknown],
             ['com.mxtech.videoplayer.ad', true, 'mx-player', true, null, false, Os::unknown],
             ['com.pico.browser.overseas', true, 'pico-browser', true, null, false, Os::unknown],
+            ['org.mozilla.rocket', true, 'firefox rocket', true, null, false, Os::unknown],
         ];
     }
 }
