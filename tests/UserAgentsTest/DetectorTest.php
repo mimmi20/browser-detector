@@ -363,46 +363,6 @@ final class DetectorTest extends TestCase
                     continue;
                 }
 
-                if (
-                    (is_countable($expectedResult['headers']) ? count(
-                        $expectedResult['headers'],
-                    ) : 0) !== 1
-                ) {
-                    continue;
-                }
-
-                // if (isset($expectedResult['headers'][Constants::HEADER_UA_OS])) {
-                //    continue;
-                // }
-                //
-                // if (isset($expectedResult['headers'][Constants::HEADER_REQUESTED_WITH])) {
-                //    continue;
-                // }
-                //
-                // if (!isset($expectedResult['headers'][Constants::HEADER_UCBROWSER_UA])) {
-                //    continue;
-                // }
-                //
-                // if (isset($expectedResult['headers'][Constants::HEADER_OPERAMINI_PHONE_UA])) {
-                //    continue;
-                // }
-                //
-                // if (isset($expectedResult['headers'][Constants::HEADER_BAIDU_FLYFLOW])) {
-                //    continue;
-                // }
-                //
-                // if (isset($expectedResult['headers'][Constants::HEADER_PUFFIN_UA])) {
-                //    continue;
-                // }
-                //
-                // if (isset($expectedResult['headers'][Constants::HEADER_DEVICE_STOCK_UA])) {
-                //    continue;
-                // }
-                //
-                // if (!isset($expectedResult['headers'][Constants::HEADER_DEVICE_STOCK_UA])) {
-                //    continue;
-                // }
-
                 $index = sprintf('file:%s test:%d', $filepath, $i);
 
                 $data[$index] = [

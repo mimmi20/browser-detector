@@ -1469,6 +1469,7 @@ final class DeviceTest extends TestCase
             ['AFTANNA0', 'xiaomi=xiaomi aftanna0'],
             ['Redmi 15', 'xiaomi=xiaomi redmi 15'],
             ['2511FPC34G', 'xiaomi=xiaomi 2511fpc34g'],
+            ['2602BPC18G', 'xiaomi=xiaomi 2602bpc18g'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -3953,6 +3954,12 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-S901B', 'samsung=samsung sm-s901b'],
             ['SM-S9010', 'samsung=samsung sm-s9010'],
             ['SAMSUNG SM-S9010', 'samsung=samsung sm-s9010'],
+            ['SM-A075F', 'samsung=samsung sm-a075f'],
+            ['SAMSUNG SM-A075F', 'samsung=samsung sm-a075f'],
+            ['SM-A075B', 'samsung=samsung sm-a075b'],
+            ['SAMSUNG SM-A075B', 'samsung=samsung sm-a075b'],
+            ['SM-A075M', 'samsung=samsung sm-a075m'],
+            ['SAMSUNG SM-A075M', 'samsung=samsung sm-a075m'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['LGE-AN20', 'huawei=huawei lge-an20'],

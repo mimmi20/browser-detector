@@ -1418,6 +1418,7 @@ final class Device implements DeviceInterface
             'aftanna0' => 'xiaomi=xiaomi aftanna0',
             'redmi 15' => 'xiaomi=xiaomi redmi 15',
             '2511fpc34g' => 'xiaomi=xiaomi 2511fpc34g',
+            '2602bpc18g' => 'xiaomi=xiaomi 2602bpc18g',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -2875,6 +2876,9 @@ final class Device implements DeviceInterface
             'sm-s901e', 'samsung sm-s901e' => 'samsung=samsung sm-s901e',
             'sm-s901b', 'samsung sm-s901b' => 'samsung=samsung sm-s901b',
             'sm-s9010', 'samsung sm-s9010' => 'samsung=samsung sm-s9010',
+            'sm-a075f', 'samsung sm-a075f' => 'samsung=samsung sm-a075f',
+            'sm-a075b', 'samsung sm-a075b' => 'samsung=samsung sm-a075b',
+            'sm-a075m', 'samsung sm-a075m' => 'samsung=samsung sm-a075m',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',

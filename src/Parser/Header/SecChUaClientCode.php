@@ -78,6 +78,7 @@ final class SecChUaClientCode implements ClientCodeInterface
             'opera mini android' => 'opera mini',
             'island' => 'the-enterprise-browser',
             'xiaomibrowser' => 'miui browser',
+            'copilot' => 'microsoft-copilot',
             default => $code,
         };
     }

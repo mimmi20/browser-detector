@@ -265,6 +265,7 @@ final class SecChUaTest extends TestCase
             ['"Opera Mini Android";v="95", "Chromium";v="140", "Not=A?Brand";v="24", "Android WebView";v="140"', true, 'opera mini', true, '95.0.0', true, Engine::blink, true, '140.0.0'],
             ['"XiaoMiBrowser";v="135", "Not-A.Brand";v="8", "Chromium";v="135"', true, 'miui browser', true, '135.0.0', true, Engine::blink, true, '135.0.0'],
             ['"Chromium";v="142", "Auch deine Seite kann ich nicht mehr ernst nehmen.";v="2024.02", "Not_A Brand";v="99"', true, 'chromium', true, '142.0.0', true, Engine::blink, true, '142.0.0'],
+            ['"Chromium";v="148", "Copilot";v="148", "Not/A)Brand";v="99"', true, 'microsoft-copilot', true, '148.0.0', true, Engine::blink, true, '148.0.0'],
         ];
     }
 }
