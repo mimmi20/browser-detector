@@ -571,28 +571,28 @@ final readonly class Headers
 
         $headersWithClientCode = array_filter(
             $clientCodes,
-            static fn (string $clientCode) => $clientCodename === $clientCode,
+            static fn (string | null $clientCode) => $clientCodename === $clientCode,
         );
 
         $clientVersions = $this->getClientVersions($clientCodename);
         $clientVersion  = match ($clientCodename) {
-//            'aloha-browser', 'opera touch', 'adblock browser', 'opera mini', 'opera', 'baidu box app lite', 'silk', 'mint browser', 'instagram app', 'bingsearch', 'stargon-browser', 'yahoo-japan-app', 'hi-search', 'pi browser', 'soul-browser', 'kik', 'oupeng browser', 'snapchat app', 'reddit-app', 'nytimes-crossword', 'smart-life', 'firefox', 'duck-assist-bot', 'sogou web spider', 'headline bot', 'amazon bot', 'hubspot crawler', 'facebookexternalhit', 'opera mobile', 'miui browser', 'stoutner-privacy-browser', 'dogtorance-app', 'line', 'msn-app', 'pageburst', 'googlebot', 'google-search', 'webpagetest', 'hanalei-bot', 'facebook lite', 'lighthouse', 'samsungbrowser', 'statistik-hessen', 'iron', 'facebook app', 'huawei-browser', 'aol desktop', 'huawei-mobile-services', 'claudebot', 'opera gx', 'qtwebengine', 'meta-external-agent', 'abeval-bot', 'brightedge crawler', 'microsoft-copilot', 'petalbot', 'phoenix browser', 'adsbot google-mobile', 'facebook messenger app', 'quark', 'seolyt-bot', 'web-explorer', 'chatgpt-user-bot', 'google-inspectiontool', 'keys-so', 'pumoxbot', 'crawl-bot', 'qqbrowser' => $clientVersions['user-agent']
-//                ?? array_last($clientVersions),
-//            'duckduck app', 'ucbrowser', 'edge', 'headless-chrome' => $clientVersions['sec-ch-ua-full-version-list']
-//                ?? $clientVersions['sec-ch-ua']
-//                ?? $clientVersions['sec-ch-ua-full-version']
-//                ?? array_last($clientVersions),
-//            'ecosia' => $clientVersions['sec-ch-ua-full-version']
-//                ?? array_last($clientVersions),
+            // 'aloha-browser', 'opera touch', 'adblock browser', 'opera mini', 'opera', 'baidu box app lite', 'silk', 'mint browser', 'instagram app', 'bingsearch', 'stargon-browser', 'yahoo-japan-app', 'hi-search', 'pi browser', 'soul-browser', 'kik', 'oupeng browser', 'snapchat app', 'reddit-app', 'nytimes-crossword', 'smart-life', 'firefox', 'duck-assist-bot', 'sogou web spider', 'headline bot', 'amazon bot', 'hubspot crawler', 'facebookexternalhit', 'opera mobile', 'miui browser', 'stoutner-privacy-browser', 'dogtorance-app', 'line', 'msn-app', 'pageburst', 'googlebot', 'google-search', 'webpagetest', 'hanalei-bot', 'facebook lite', 'lighthouse', 'samsungbrowser', 'statistik-hessen', 'iron', 'facebook app', 'huawei-browser', 'aol desktop', 'huawei-mobile-services', 'claudebot', 'opera gx', 'qtwebengine', 'meta-external-agent', 'abeval-bot', 'brightedge crawler', 'microsoft-copilot', 'petalbot', 'phoenix browser', 'adsbot google-mobile', 'facebook messenger app', 'quark', 'seolyt-bot', 'web-explorer', 'chatgpt-user-bot', 'google-inspectiontool', 'keys-so', 'pumoxbot', 'crawl-bot', 'qqbrowser' => $clientVersions['user-agent']
+            //    ?? array_last($clientVersions),
+            // 'duckduck app', 'ucbrowser', 'edge', 'headless-chrome' => $clientVersions['sec-ch-ua-full-version-list']
+            //    ?? $clientVersions['sec-ch-ua']
+            //    ?? $clientVersions['sec-ch-ua-full-version']
+            //    ?? array_last($clientVersions),
+            // 'ecosia' => $clientVersions['sec-ch-ua-full-version']
+            //    ?? array_last($clientVersions),
             'miui browser', 'huawei-browser' => $clientVersions['user-agent'] ?? array_last(
                 $clientVersions,
             ),
-            'vivaldi' => array_key_exists(
+            'vivaldi', 'samsungbrowser' => array_key_exists(
                 'sec-ch-ua-full-version-list',
                 $headersWithClientCode,
-            ) ? $clientVersions['sec-ch-ua-full-version-list'] :
-                (array_key_exists('sec-ch-ua', $headersWithClientCode) ? $clientVersions['sec-ch-ua'] :
-                    (array_key_exists(
+            ) ? $clientVersions['sec-ch-ua-full-version-list']
+                : (array_key_exists('sec-ch-ua', $headersWithClientCode) ? $clientVersions['sec-ch-ua']
+                    : (array_key_exists(
                         'user-agent',
                         $headersWithClientCode,
                     ) ? $clientVersions['user-agent'] : array_last($clientVersions))),
@@ -604,12 +604,12 @@ final readonly class Headers
             default => array_key_exists(
                 'sec-ch-ua-full-version-list',
                 $headersWithClientCode,
-            ) ? $clientVersions['sec-ch-ua-full-version-list'] :
-                (array_key_exists(
+            ) ? $clientVersions['sec-ch-ua-full-version-list']
+                : (array_key_exists(
                     'sec-ch-ua',
                     $headersWithClientCode,
-                ) ? ($clientVersions['sec-ch-ua-full-version'] ?? $clientVersions['sec-ch-ua']) :
-                    (array_key_exists(
+                ) ? ($clientVersions['sec-ch-ua-full-version'] ?? $clientVersions['sec-ch-ua'])
+                    : (array_key_exists(
                         'user-agent',
                         $headersWithClientCode,
                     ) ? $clientVersions['user-agent'] : array_last($clientVersions))),
