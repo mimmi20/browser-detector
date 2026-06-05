@@ -34,6 +34,7 @@ final readonly class Ios implements VersionFactoryInterface
         'watchOS',
         'tvOS',
         'IphoneOSX',
+        'CPU OS 18_7.+Version',
         'CPU OS_?',
         'CPU iOS',
         'CPU iPad ?OS',
@@ -58,6 +59,7 @@ final readonly class Ios implements VersionFactoryInterface
     ];
 
     private const array DARWIN_MAP = [
+        '/darwin\/25\.6/i' => '26.6',
         '/darwin\/25\.5/i' => '26.5',
         '/darwin\/25\.4/i' => '26.4',
         '/darwin\/25\.3/i' => '26.3',

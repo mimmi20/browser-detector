@@ -348,261 +348,291 @@ final readonly class Headers
         $clientCodename      = $firstClientCodename;
         $chromeClientVersion = null;
 
-        if (is_string($firstClientCodename)) {
-            switch ($firstClientCodename) {
-                case 'android webview':
-                    $lastClientCodename = array_last($clientCodes);
-                    $clientHeader       = array_first($headersWithClientCode);
+        if (!is_string($firstClientCodename)) {
+            return new ClientData(
+                client: new Browser(
+                    name: null,
+                    manufacturer: new Company(type: 'unknown', name: null, brandname: null),
+                    version: new NullVersion(),
+                    type: \UaBrowserType\Type::Unknown,
+                    bits: Bits::unknown,
+                ),
+                engine: null,
+            );
+        }
 
-                    if (
-                        is_string($lastClientCodename)
-                        && $lastClientCodename !== $firstClientCodename
-                    ) {
-                        $clientCodename = $lastClientCodename;
-                        $clientHeader   = array_last($headersWithClientCode);
-                    }
+        switch ($firstClientCodename) {
+            case 'android webview':
+                $lastClientCodename = array_last($clientCodes);
+                $clientHeader       = array_first($headersWithClientCode);
 
-                    break;
-                case 'chromium':
-                    $lastClientCodename = array_last($clientCodes);
-                    $clientHeader       = array_first($headersWithClientCode);
-
-                    if (is_string($lastClientCodename)) {
-                        switch ($lastClientCodename) {
-                            case 'opera':
-                            case 'silk':
-                            case 'adblock browser':
-                            case 'google-nest-hub':
-                            case 'chrome for ios':
-                            case 'ecosia':
-                            case 'firefox':
-                            case 'headline bot':
-                            case 'hubspot crawler':
-                            case 'headless-chrome':
-                            case 'samsungbrowser':
-                            case 'edge':
-                            case 'google-search':
-                            case 'iron':
-                            case 'aol desktop':
-                            case 'qtwebengine':
-                            case 'pumoxbot':
-                            case 'sogou web spider':
-                            case 'qqbrowser':
-                                $clientCodename = $lastClientCodename;
-                                $clientHeader   = array_last($headersWithClientCode);
-
-                                break;
-                            case 'chrome':
-                                $headersWithPlatformCode = array_filter(
-                                    $this->headers,
-                                    static fn (HeaderInterface $header): bool => $header->hasPlatformCode(),
-                                );
-
-                                try {
-                                    $platformCodes = array_map(
-                                        static fn (HeaderInterface $platformHeader): \UaData\OsInterface => $platformHeader->getPlatformCode(),
-                                        $headersWithPlatformCode,
-                                    );
-                                } catch (\UaRequest\Exception\NotFoundException) {
-                                    $platformCodes = [\BrowserDetector\Data\Os::unknown];
-                                }
-
-                                if (($platformCodes['sec-ch-ua-platform'] ?? null) === \BrowserDetector\Data\Os::linux) {
-                                    $clientCodename = $lastClientCodename;
-                                    $clientHeader   = array_last($headersWithClientCode);
-
-                                    $clientVersions      = $this->getClientVersions($clientCodename);
-                                    $chromeClientVersion = array_last($clientVersions);
-                                }
-
-                                break;
-                            default:
-                                // do nothing
-                        }
-                    }
-
-                    break;
-                case 'chrome':
-                    $lastClientCodename = array_last($clientCodes);
-                    $clientHeader       = array_first($headersWithClientCode);
-
-                    if (is_string($lastClientCodename)) {
-                        switch ($lastClientCodename) {
-                            case 'opera':
-                            case 'silk':
-                            case 'adblock browser':
-                            case 'google-nest-hub':
-                            case 'chrome for ios':
-                            case 'ecosia':
-                            case 'duck-assist-bot':
-                            case 'sogou web spider':
-                            case 'googlebot':
-                            case 'google-search':
-                            case 'webpagetest':
-                            case 'facebook lite':
-                            case 'lighthouse':
-                            case 'pageburst':
-                            case 'brightedge crawler':
-                            case 'adsbot google-mobile':
-                            case 'quark':
-                            case 'seolyt-bot':
-                            case 'bingsearch':
-                            case 'chatgpt-user-bot':
-                            case 'google-inspectiontool':
-                            case 'keys-so':
-                            case 'meta-external-agent':
-                            case 'huawei-mobile-services':
-                                $clientCodename = $lastClientCodename;
-                                $clientHeader   = array_last($headersWithClientCode);
-
-                                break;
-                            default:
-                                // do nothing
-                        }
-                    }
-
-                    break;
-                case 'headless-chrome':
-                    $lastClientCodename = array_last($clientCodes);
-                    $clientHeader       = array_first($headersWithClientCode);
-
-                    if (is_string($lastClientCodename)) {
-                        switch ($lastClientCodename) {
-                            case 'amazon bot':
-                            case 'facebookexternalhit':
-                            case 'headline bot':
-                            case 'hanalei-bot':
-                            case 'statistik-hessen':
-                            case 'claudebot':
-                            case 'meta-external-agent':
-                            case 'abeval-bot':
-                            case 'petalbot':
-                            case 'crawl-bot':
-                                $clientCodename = $lastClientCodename;
-                                $clientHeader   = array_last($headersWithClientCode);
-
-                                break;
-                            default:
-                                // do nothing
-                        }
-                    }
-
-                    break;
-                case 'brave':
-                    $lastClientCodename = array_last($clientCodes);
-                    $clientHeader       = array_first($headersWithClientCode);
-
-                    if (is_string($lastClientCodename)) {
-                        switch ($lastClientCodename) {
-                            case 'pageburst':
-                                $clientCodename = $lastClientCodename;
-                                $clientHeader   = array_last($headersWithClientCode);
-
-                                break;
-                            default:
-                                // do nothing
-                        }
-                    }
-
-                    break;
-                case 'huawei-browser':
-                    $lastClientCodename = array_last($clientCodes);
-                    $clientHeader       = array_first($headersWithClientCode);
-
-                    if (is_string($lastClientCodename)) {
-                        switch ($lastClientCodename) {
-                            case 'huawei-mobile-services':
-                                $clientCodename = $lastClientCodename;
-                                $clientHeader   = array_last($headersWithClientCode);
-
-                                break;
-                            default:
-                                // do nothing
-                        }
-                    }
-
-                    break;
-                case 'edge':
-                    $lastClientCodename = array_last($clientCodes);
-                    $clientHeader       = array_first($headersWithClientCode);
-
-                    if (is_string($lastClientCodename)) {
-                        switch ($lastClientCodename) {
-                            case 'chatgpt-user-bot':
-                                $clientCodename = $lastClientCodename;
-                                $clientHeader   = array_last($headersWithClientCode);
-
-                                break;
-                            default:
-                                // do nothing
-                        }
-                    }
-
-                    break;
-                case 'keplr-app':
-                case 'lookr-app':
-                case 'kimi-app':
-                case 'opera mini':
-                case 'baidu box app lite':
-                case 'baidu box app':
-                case 'nytimes-crossword':
-                case 'visha':
-                case 'search-craft':
-                case 'duckduck app':
-                    $clientHeader = array_last($headersWithClientCode);
-
-                    break;
-                default:
-                    $clientHeader = array_first($headersWithClientCode);
-
-                    break;
-            }
-
-            assert($clientHeader instanceof HeaderInterface);
-
-            $clientVersions = $this->getClientVersions($clientCodename);
-            $clientVersion  = match ($clientCodename) {
-                'aloha-browser', 'opera touch', 'adblock browser', 'opera mini', 'baidu box app lite', 'silk', 'mint browser', 'instagram app', 'bingsearch', 'stargon-browser', 'yahoo-japan-app', 'hi-search', 'pi browser', 'soul-browser', 'kik', 'oupeng browser', 'snapchat app', 'reddit-app', 'nytimes-crossword', 'smart-life', 'firefox', 'duck-assist-bot', 'sogou web spider', 'headline bot', 'amazon bot', 'hubspot crawler', 'facebookexternalhit', 'opera mobile', 'miui browser', 'stoutner-privacy-browser', 'dogtorance-app', 'line', 'msn-app', 'pageburst', 'googlebot', 'google-search', 'webpagetest', 'hanalei-bot', 'facebook lite', 'lighthouse', 'samsungbrowser', 'statistik-hessen', 'iron', 'facebook app', 'huawei-browser', 'aol desktop', 'huawei-mobile-services', 'claudebot', 'opera gx', 'qtwebengine', 'meta-external-agent', 'abeval-bot', 'brightedge crawler', 'microsoft-copilot', 'petalbot', 'phoenix browser', 'adsbot google-mobile', 'facebook messenger app', 'quark', 'seolyt-bot', 'web-explorer', 'chatgpt-user-bot', 'google-inspectiontool', 'keys-so', 'pumoxbot', 'crawl-bot', 'qqbrowser' => $clientVersions['user-agent']
-                    ?? array_last($clientVersions),
-                'duckduck app', 'ucbrowser', 'edge', 'headless-chrome' => $clientVersions['sec-ch-ua-full-version-list']
-                    ?? $clientVersions['sec-ch-ua']
-                    ?? $clientVersions['sec-ch-ua-full-version']
-                    ?? array_last($clientVersions),
-                'ecosia' => $clientVersions['sec-ch-ua-full-version']
-                    ?? array_last($clientVersions),
-                'vivaldi' => $clientVersions['sec-ch-ua']
-                    ?? array_last($clientVersions),
-                'opera' => $clientVersions['sec-ch-ua']
-                    ?? $clientVersions['sec-ch-ua-full-version']
-                    ?? $clientVersions['user-agent']
-                    ?? array_last($clientVersions),
-                'chrome' => $chromeClientVersion
-                    ?? $clientVersions['sec-ch-ua-full-version-list']
-                    ?? $clientVersions['sec-ch-ua']
-                    ?? $clientVersions['sec-ch-ua-full-version']
-                    ?? array_last($clientVersions),
-                default => array_first($clientVersions),
-            };
-
-            try {
-                $clientData = $this->browserLoader->load(
-                    key: (string) $clientCodename,
-                    useragent: $clientHeader->getValue(),
-                );
-
-                if ($clientVersion?->getVersion() !== null) {
-                    $client = $clientData->getClient();
-
-                    return new ClientData(
-                        client: $client->withVersion($clientVersion),
-                        engine: $clientData->getEngine(),
-                    );
+                if (is_string($lastClientCodename) && $lastClientCodename !== $firstClientCodename) {
+                    $clientCodename = $lastClientCodename;
+                    $clientHeader   = array_last($headersWithClientCode);
                 }
 
-                return $clientData;
-            } catch (UnexpectedValueException $e) {
-                $this->logger->info($e);
+                break;
+            case 'chromium':
+                $lastClientCodename = array_last($clientCodes);
+                $clientHeader       = array_first($headersWithClientCode);
+
+                if (is_string($lastClientCodename)) {
+                    switch ($lastClientCodename) {
+                        case 'opera':
+                        case 'silk':
+                        case 'adblock browser':
+                        case 'google-nest-hub':
+                        case 'chrome for ios':
+                        case 'ecosia':
+                        case 'firefox':
+                        case 'headline bot':
+                        case 'hubspot crawler':
+                        case 'headless-chrome':
+                        case 'samsungbrowser':
+                        case 'edge':
+                        case 'google-search':
+                        case 'iron':
+                        case 'aol desktop':
+                        case 'qtwebengine':
+                        case 'pumoxbot':
+                        case 'sogou web spider':
+                        case 'qqbrowser':
+                            $clientCodename = $lastClientCodename;
+                            $clientHeader   = array_last($headersWithClientCode);
+
+                            break;
+                        case 'chrome':
+                            $headersWithPlatformCode = array_filter(
+                                $this->headers,
+                                static fn (HeaderInterface $header): bool => $header->hasPlatformCode(),
+                            );
+
+                            try {
+                                $platformCodes = array_map(
+                                    static fn (HeaderInterface $platformHeader): \UaData\OsInterface => $platformHeader->getPlatformCode(),
+                                    $headersWithPlatformCode,
+                                );
+                            } catch (\UaRequest\Exception\NotFoundException) {
+                                $platformCodes = [\BrowserDetector\Data\Os::unknown];
+                            }
+
+                            if (($platformCodes['sec-ch-ua-platform'] ?? null) === \BrowserDetector\Data\Os::linux) {
+                                $clientCodename = $lastClientCodename;
+                                $clientHeader   = array_last($headersWithClientCode);
+
+                                $clientVersions      = $this->getClientVersions($clientCodename);
+                                $chromeClientVersion = array_last($clientVersions);
+                            }
+
+                            break;
+                        default:
+                            // do nothing
+                    }
+                }
+
+                break;
+            case 'chrome':
+                $lastClientCodename = array_last($clientCodes);
+                $clientHeader       = array_first($headersWithClientCode);
+
+                if (is_string($lastClientCodename)) {
+                    switch ($lastClientCodename) {
+                        case 'opera':
+                        case 'silk':
+                        case 'adblock browser':
+                        case 'google-nest-hub':
+                        case 'chrome for ios':
+                        case 'ecosia':
+                        case 'duck-assist-bot':
+                        case 'sogou web spider':
+                        case 'googlebot':
+                        case 'google-search':
+                        case 'webpagetest':
+                        case 'facebook lite':
+                        case 'lighthouse':
+                        case 'pageburst':
+                        case 'brightedge crawler':
+                        case 'adsbot google-mobile':
+                        case 'quark':
+                        case 'seolyt-bot':
+                        case 'bingsearch':
+                        case 'chatgpt-user-bot':
+                        case 'google-inspectiontool':
+                        case 'keys-so':
+                        case 'meta-external-agent':
+                        case 'huawei-mobile-services':
+                            $clientCodename = $lastClientCodename;
+                            $clientHeader   = array_last($headersWithClientCode);
+
+                            break;
+                        default:
+                            // do nothing
+                    }
+                }
+
+                break;
+            case 'headless-chrome':
+                $lastClientCodename = array_last($clientCodes);
+                $clientHeader       = array_first($headersWithClientCode);
+
+                if (is_string($lastClientCodename)) {
+                    switch ($lastClientCodename) {
+                        case 'amazon bot':
+                        case 'facebookexternalhit':
+                        case 'headline bot':
+                        case 'hanalei-bot':
+                        case 'statistik-hessen':
+                        case 'claudebot':
+                        case 'meta-external-agent':
+                        case 'abeval-bot':
+                        case 'petalbot':
+                        case 'crawl-bot':
+                            $clientCodename = $lastClientCodename;
+                            $clientHeader   = array_last($headersWithClientCode);
+
+                            break;
+                        default:
+                            // do nothing
+                    }
+                }
+
+                break;
+            case 'brave':
+                $lastClientCodename = array_last($clientCodes);
+                $clientHeader       = array_first($headersWithClientCode);
+
+                if (is_string($lastClientCodename)) {
+                    switch ($lastClientCodename) {
+                        case 'pageburst':
+                            $clientCodename = $lastClientCodename;
+                            $clientHeader   = array_last($headersWithClientCode);
+
+                            break;
+                        default:
+                            // do nothing
+                    }
+                }
+
+                break;
+            case 'huawei-browser':
+                $lastClientCodename = array_last($clientCodes);
+                $clientHeader       = array_first($headersWithClientCode);
+
+                if (is_string($lastClientCodename)) {
+                    switch ($lastClientCodename) {
+                        case 'huawei-mobile-services':
+                            $clientCodename = $lastClientCodename;
+                            $clientHeader   = array_last($headersWithClientCode);
+
+                            break;
+                        default:
+                            // do nothing
+                    }
+                }
+
+                break;
+            case 'edge':
+                $lastClientCodename = array_last($clientCodes);
+                $clientHeader       = array_first($headersWithClientCode);
+
+                if (is_string($lastClientCodename)) {
+                    switch ($lastClientCodename) {
+                        case 'chatgpt-user-bot':
+                            $clientCodename = $lastClientCodename;
+                            $clientHeader   = array_last($headersWithClientCode);
+
+                            break;
+                        default:
+                            // do nothing
+                    }
+                }
+
+                break;
+            case 'keplr-app':
+            case 'lookr-app':
+            case 'kimi-app':
+            case 'opera mini':
+            case 'baidu box app lite':
+            case 'baidu box app':
+            case 'nytimes-crossword':
+            case 'visha':
+            case 'search-craft':
+            case 'duckduck app':
+                $clientHeader = array_last($headersWithClientCode);
+
+                break;
+            default:
+                $clientHeader = array_first($headersWithClientCode);
+
+                break;
+        }
+
+        assert($clientHeader instanceof HeaderInterface);
+
+        $headersWithClientCode = array_filter(
+            $clientCodes,
+            static fn (string $clientCode) => $clientCodename === $clientCode,
+        );
+
+        $clientVersions = $this->getClientVersions($clientCodename);
+        $clientVersion  = match ($clientCodename) {
+//            'aloha-browser', 'opera touch', 'adblock browser', 'opera mini', 'opera', 'baidu box app lite', 'silk', 'mint browser', 'instagram app', 'bingsearch', 'stargon-browser', 'yahoo-japan-app', 'hi-search', 'pi browser', 'soul-browser', 'kik', 'oupeng browser', 'snapchat app', 'reddit-app', 'nytimes-crossword', 'smart-life', 'firefox', 'duck-assist-bot', 'sogou web spider', 'headline bot', 'amazon bot', 'hubspot crawler', 'facebookexternalhit', 'opera mobile', 'miui browser', 'stoutner-privacy-browser', 'dogtorance-app', 'line', 'msn-app', 'pageburst', 'googlebot', 'google-search', 'webpagetest', 'hanalei-bot', 'facebook lite', 'lighthouse', 'samsungbrowser', 'statistik-hessen', 'iron', 'facebook app', 'huawei-browser', 'aol desktop', 'huawei-mobile-services', 'claudebot', 'opera gx', 'qtwebengine', 'meta-external-agent', 'abeval-bot', 'brightedge crawler', 'microsoft-copilot', 'petalbot', 'phoenix browser', 'adsbot google-mobile', 'facebook messenger app', 'quark', 'seolyt-bot', 'web-explorer', 'chatgpt-user-bot', 'google-inspectiontool', 'keys-so', 'pumoxbot', 'crawl-bot', 'qqbrowser' => $clientVersions['user-agent']
+//                ?? array_last($clientVersions),
+//            'duckduck app', 'ucbrowser', 'edge', 'headless-chrome' => $clientVersions['sec-ch-ua-full-version-list']
+//                ?? $clientVersions['sec-ch-ua']
+//                ?? $clientVersions['sec-ch-ua-full-version']
+//                ?? array_last($clientVersions),
+//            'ecosia' => $clientVersions['sec-ch-ua-full-version']
+//                ?? array_last($clientVersions),
+            'miui browser', 'huawei-browser' => $clientVersions['user-agent'] ?? array_last(
+                $clientVersions,
+            ),
+            'vivaldi' => array_key_exists(
+                'sec-ch-ua-full-version-list',
+                $headersWithClientCode,
+            ) ? $clientVersions['sec-ch-ua-full-version-list'] :
+                (array_key_exists('sec-ch-ua', $headersWithClientCode) ? $clientVersions['sec-ch-ua'] :
+                    (array_key_exists(
+                        'user-agent',
+                        $headersWithClientCode,
+                    ) ? $clientVersions['user-agent'] : array_last($clientVersions))),
+            'chrome' => $chromeClientVersion
+                ?? $clientVersions['sec-ch-ua-full-version-list']
+                ?? $clientVersions['sec-ch-ua']
+                ?? $clientVersions['sec-ch-ua-full-version']
+                ?? array_last($clientVersions),
+            default => array_key_exists(
+                'sec-ch-ua-full-version-list',
+                $headersWithClientCode,
+            ) ? $clientVersions['sec-ch-ua-full-version-list'] :
+                (array_key_exists(
+                    'sec-ch-ua',
+                    $headersWithClientCode,
+                ) ? ($clientVersions['sec-ch-ua-full-version'] ?? $clientVersions['sec-ch-ua']) :
+                    (array_key_exists(
+                        'user-agent',
+                        $headersWithClientCode,
+                    ) ? $clientVersions['user-agent'] : array_last($clientVersions))),
+        };
+
+        try {
+            $clientData = $this->browserLoader->load(
+                key: (string) $clientCodename,
+                useragent: $clientHeader->getValue(),
+            );
+
+            if ($clientVersion?->getVersion() !== null) {
+                $client = $clientData->getClient();
+
+                return new ClientData(
+                    client: $client->withVersion($clientVersion),
+                    engine: $clientData->getEngine(),
+                );
             }
+
+            return $clientData;
+        } catch (UnexpectedValueException $e) {
+            $this->logger->info($e);
         }
 
         return new ClientData(

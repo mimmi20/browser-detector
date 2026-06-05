@@ -1362,7 +1362,7 @@ final class DetectorIntegrationTest extends TestCase
                     'client' => [
                         'name' => 'Edge',
                         'modus' => null,
-                        'version' => '138.0.0',
+                        'version' => '138.0.3351.95',
                         'manufacturer' => 'Microsoft',
                         'type' => 'browser',
                         'isbot' => false,
@@ -2172,7 +2172,7 @@ final class DetectorIntegrationTest extends TestCase
                     'client' => [
                         'name' => 'Chromium',
                         'modus' => null,
-                        'version' => '125.0.0',
+                        'version' => '125.0.6422.165',
                         'manufacturer' => 'Google',
                         'type' => 'browser',
                         'isbot' => false,
@@ -2245,7 +2245,7 @@ final class DetectorIntegrationTest extends TestCase
                     'client' => [
                         'name' => 'Ecosia',
                         'modus' => null,
-                        'version' => '142.0.7444.48',
+                        'version' => '142.0.0.0',
                         'manufacturer' => 'Ecosia',
                         'type' => 'browser',
                         'isbot' => false,
@@ -2544,7 +2544,7 @@ final class DetectorIntegrationTest extends TestCase
                     'client' => [
                         'name' => 'Chromium',
                         'modus' => null,
-                        'version' => '138.0.0',
+                        'version' => '138.0.7204.97',
                         'manufacturer' => 'Google',
                         'type' => 'browser',
                         'isbot' => false,
@@ -2610,7 +2610,7 @@ final class DetectorIntegrationTest extends TestCase
                     'client' => [
                         'name' => 'Google Nest Hub',
                         'modus' => null,
-                        'version' => '126.0.0',
+                        'version' => '1.56.500000',
                         'manufacturer' => 'Google',
                         'type' => 'mobile-application',
                         'isbot' => false,
@@ -3040,7 +3040,7 @@ final class DetectorIntegrationTest extends TestCase
                     'client' => [
                         'name' => 'DuckDuckGo Privacy Browser',
                         'modus' => null,
-                        'version' => '140.0.0',
+                        'version' => '140.0.7339.207',
                         'manufacturer' => 'Duck Duck Go',
                         'type' => 'browser',
                         'isbot' => false,
@@ -3286,7 +3286,7 @@ final class DetectorIntegrationTest extends TestCase
                     'client' => [
                         'name' => 'DuckDuckGo Privacy Browser',
                         'modus' => null,
-                        'version' => '141.0.0',
+                        'version' => '141.0.7390.122',
                         'manufacturer' => 'Duck Duck Go',
                         'type' => 'browser',
                         'isbot' => false,
@@ -3394,7 +3394,7 @@ final class DetectorIntegrationTest extends TestCase
                     'client' => [
                         'name' => 'Chrome for iOS',
                         'modus' => null,
-                        'version' => '138.0.0',
+                        'version' => '142.0.7444.128',
                         'manufacturer' => 'Google',
                         'type' => 'browser',
                         'isbot' => false,
@@ -4136,7 +4136,7 @@ final class DetectorIntegrationTest extends TestCase
                     'client' => [
                         'name' => 'Chromium',
                         'modus' => null,
-                        'version' => '124.0.0',
+                        'version' => '124.0.6327.4',
                         'manufacturer' => 'Google',
                         'type' => 'browser',
                         'isbot' => false,
@@ -6043,7 +6043,7 @@ final class DetectorIntegrationTest extends TestCase
                     'client' => [
                         'name' => 'Headless Chrome',
                         'modus' => null,
-                        'version' => '143.0.0',
+                        'version' => '143.0.0.0',
                         'manufacturer' => 'Google',
                         'type' => 'browser',
                         'isbot' => false,
@@ -6099,7 +6099,7 @@ final class DetectorIntegrationTest extends TestCase
                     'client' => [
                         'name' => 'Opera GX',
                         'modus' => null,
-                        'version' => '125.0.0.0',
+                        'version' => '125.0.0',
                         'manufacturer' => 'Opera',
                         'type' => 'browser',
                         'isbot' => false,
@@ -6391,7 +6391,7 @@ final class DetectorIntegrationTest extends TestCase
                     'client' => [
                         'name' => 'Edge',
                         'modus' => null,
-                        'version' => '138.0.0',
+                        'version' => '143.0.0.0',
                         'manufacturer' => 'Microsoft',
                         'type' => 'browser',
                         'isbot' => false,
@@ -8930,7 +8930,7 @@ final class DetectorIntegrationTest extends TestCase
                     'client' => [
                         'name' => 'Chrome for iOS',
                         'modus' => null,
-                        'version' => '101.0.0',
+                        'version' => '124.0.6367.88',
                         'manufacturer' => 'Google',
                         'type' => 'browser',
                         'isbot' => false,

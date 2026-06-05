@@ -1681,5 +1681,17 @@
       ]
     },
     "engine": null
+  },
+  "codex": {
+    "name": "Codex",
+    "manufacturer": "openai",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Codex"
+      ]
+    },
+    "engine": null
   }
 }
