@@ -14,6 +14,7 @@ declare(strict_types = 1);
 namespace Parser\Header;
 
 use BrowserDetector\Data\Engine;
+use BrowserDetector\Parser\Header\SetVersionTrait;
 use BrowserDetector\Parser\Header\UseragentEngineVersion;
 use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\NullVersion;
@@ -31,6 +32,7 @@ use UaResult\Engine\EngineInterface;
 use UnexpectedValueException;
 
 #[CoversClass(UseragentEngineVersion::class)]
+#[CoversClass(SetVersionTrait::class)]
 final class UseragentEngineVersionTest extends TestCase
 {
     /**
@@ -525,6 +527,48 @@ final class UseragentEngineVersionTest extends TestCase
         $resultVersion = $header->getEngineVersionWithEngine($value, $engine);
 
         self::assertInstanceOf(NullVersion::class, $resultVersion);
+    }
+
+    /**
+     * @throws Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
+    public function testWithUas(): void
+    {
+        $value = 'WhatsApp/2.2587.9 A';
+
+        $engineParser = $this->createMock(EngineParserInterface::class);
+        $engineParser
+            ->expects(self::never())
+            ->method('parse');
+
+        $engineLoader = $this->createMock(EngineLoaderInterface::class);
+        $engineLoader
+            ->expects(self::never())
+            ->method('load');
+        $engineLoader
+            ->expects(self::never())
+            ->method('loadFromEngine');
+
+        $normalizer = $this->createMock(NormalizerInterface::class);
+        $normalizer
+            ->expects(self::once())
+            ->method('normalize')
+            ->with($value)
+            ->willThrowException(new \UaNormalizer\Normalizer\Exception\Exception('a'));
+
+        $header = new UseragentEngineVersion(
+            engineParser: $engineParser,
+            engineLoader: $engineLoader,
+            normalizer: $normalizer,
+        );
+
+        self::assertTrue($header->hasEngineVersion($value));
+        self::assertInstanceOf(
+            ForcedNullVersion::class,
+            $header->getEngineVersionWithEngine($value, Engine::unknown),
+        );
     }
 
     /**
