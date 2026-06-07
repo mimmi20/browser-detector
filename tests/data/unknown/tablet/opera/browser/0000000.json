@@ -534,7 +534,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "68.3.3557.64528",
+      "version": "68.0.0",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -2168,7 +2168,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "86.0.0.0",
+      "version": "86.0.0",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -2576,7 +2576,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "91.0.0.0",
+      "version": "91.0.0",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -2984,7 +2984,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "92.0.0.0",
+      "version": "92.0.0",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -3122,7 +3122,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "85.0.0.0",
+      "version": "85.0.0",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -3260,7 +3260,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "93.0.0.0",
+      "version": "93.0.0",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -3353,7 +3353,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "90.0.0.0",
+      "version": "90.0.0",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -3401,7 +3401,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "94.0.0.0",
+      "version": "94.0.0",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -3449,7 +3449,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "94.0.0.0",
+      "version": "94.0.0",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -3587,7 +3587,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "95.0.0.0",
+      "version": "95.0.0",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -3770,7 +3770,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "96.0.0.0",
+      "version": "96.0.0",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -4133,7 +4133,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "97.0.0.0",
+      "version": "97.0.0",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -4226,7 +4226,55 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "98.0.0.0",
+      "version": "98.0.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "147.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\" Not;A Brand\";v=\"99\", \"Opera\";v=\"131\", \"Chromium\";v=\"147\", \"OperaMobile\";v=\"98\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 OPR/98.0.0.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "98.0.0",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,

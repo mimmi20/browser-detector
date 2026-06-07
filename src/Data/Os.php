@@ -407,6 +407,8 @@ enum Os: string implements OsInterface
 
     case picoOS = 'PICO OS';
 
+    case routerOS = 'RouterOS';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -601,6 +603,7 @@ enum Os: string implements OsInterface
             'ubuntutouch', 'ubuntu-touch', 'ubuntu touch' => self::ubuntuTouch,
             'qnx' => self::qnx,
             'picoos', 'pico os', 'pico-os' => self::picoOS,
+            'routeros', 'router-os'=> self::routerOS,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -720,6 +723,7 @@ enum Os: string implements OsInterface
             self::tivoOS => Company::tivo,
             self::qnx => Company::blackberry,
             self::picoOS => Company::pico,
+            self::routerOS => Company::mikrotik,
             default => Company::unknown,
         };
     }
@@ -867,6 +871,7 @@ enum Os: string implements OsInterface
             self::linux => ['factory' => VersionBuilderFactory::class, 'search' => ['Linux']],
             self::tivoOS => ['factory' => VersionBuilderFactory::class, 'search' => ['TiVoOS']],
             self::picoOS => ['factory' => VersionBuilderFactory::class, 'search' => ['PICO \d OS']],
+            self::routerOS => ['factory' => VersionBuilderFactory::class, 'search' => ['Mikrotik\/', 'RouterOS']],
             default => ['factory' => null, 'search' => null],
         };
     }
@@ -984,6 +989,7 @@ enum Os: string implements OsInterface
             self::tivoOS => 'tivo-os',
             self::ubuntuTouch => 'ubuntu-touch',
             self::picoOS => 'pico-os',
+            self::routerOS => 'router-os',
             default => $this->name,
         };
     }

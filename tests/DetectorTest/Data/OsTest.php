@@ -1591,6 +1591,14 @@ final class OsTest extends TestCase
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['PICO \d OS']],
                 'key' => 'pico-os',
             ],
+            [
+                'type' => 'RouterOS',
+                'name' => 'RouterOS',
+                'marketingName' => 'RouterOS',
+                'manufacturer' => Company::mikrotik,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Mikrotik\/', 'RouterOS']],
+                'key' => 'router-os',
+            ],
         ];
     }
 }

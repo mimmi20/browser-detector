@@ -1353,5 +1353,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "mikrotik-fetch": {
+    "name": "Mikrotik Fetch",
+    "manufacturer": "mikrotik",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Mikrotik"
+      ]
+    },
+    "engine": "unknown"
   }
 }

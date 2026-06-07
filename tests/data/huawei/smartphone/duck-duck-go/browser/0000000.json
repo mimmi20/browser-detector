@@ -89,7 +89,7 @@
     "client": {
       "name": "DuckDuckGo Privacy Browser",
       "modus": null,
-      "version": "143.0.0",
+      "version": "143.0.7499.115",
       "manufacturer": "Duck Duck Go",
       "type": "browser",
       "isbot": false,
@@ -145,7 +145,7 @@
     "client": {
       "name": "DuckDuckGo Privacy Browser",
       "modus": null,
-      "version": "142.0.0",
+      "version": "142.0.7444.171",
       "manufacturer": "Duck Duck Go",
       "type": "browser",
       "isbot": false,
@@ -201,7 +201,7 @@
     "client": {
       "name": "DuckDuckGo Privacy Browser",
       "modus": null,
-      "version": "145.0.0",
+      "version": "145.0.7632.79",
       "manufacturer": "Duck Duck Go",
       "type": "browser",
       "isbot": false,
@@ -257,7 +257,63 @@
     "client": {
       "name": "DuckDuckGo Privacy Browser",
       "modus": null,
+      "version": "147.0.7727.111",
+      "manufacturer": "Duck Duck Go",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
       "version": "147.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"MAR-LX1A\"",
+      "x-requested-with": "com.duckduckgo.mobile.android",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"10.0.0\"",
+      "sec-ch-ua": "\"DuckDuckGo\";v=\"147\", \"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"147\"",
+      "sec-ch-ua-full-version": "\"147.0.7727.137\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-wow64": "?0",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MAR-LX1A",
+      "marketingName": "P30 Lite",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2312,
+        "height": 1080,
+        "touch": true,
+        "size": 6.15
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "DuckDuckGo Privacy Browser",
+      "modus": null,
+      "version": "147.0.7727.137",
       "manufacturer": "Duck Duck Go",
       "type": "browser",
       "isbot": false,

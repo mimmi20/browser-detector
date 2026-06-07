@@ -2517,7 +2517,7 @@
     "client": {
       "name": "Ecosia",
       "modus": null,
-      "version": "141.0.7390.70",
+      "version": "141.0.0.0",
       "manufacturer": "Ecosia",
       "type": "browser",
       "isbot": false,
@@ -2572,7 +2572,7 @@
     "client": {
       "name": "Ecosia",
       "modus": null,
-      "version": "144.0.7559.90",
+      "version": "144.0.0.0",
       "manufacturer": "Ecosia",
       "type": "browser",
       "isbot": false,
@@ -2581,6 +2581,61 @@
     "engine": {
       "name": "Blink",
       "version": "144.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"LLY-NX1\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"16.0.0\"",
+      "sec-ch-ua": "\"Chromium\";v=\"145\", \"Not:A-Brand\";v=\"99\"",
+      "sec-ch-ua-full-version": "\"145.0.7632.45\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-wow64": "?0",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Mobile Safari/537.36 (Ecosia android@145.0.0.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "LLY-NX1",
+      "marketingName": "200 Lite 5G",
+      "manufacturer": "Huawei",
+      "brand": "Honor",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2412,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Ecosia",
+      "modus": null,
+      "version": "145.0.0.0",
+      "manufacturer": "Ecosia",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "145.0.0",
       "manufacturer": "Google"
     }
   }

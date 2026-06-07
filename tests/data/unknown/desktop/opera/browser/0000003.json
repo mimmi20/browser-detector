@@ -1890,7 +1890,7 @@
     "client": {
       "name": "Opera",
       "modus": null,
-      "version": null,
+      "version": "78.0.0",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -1938,7 +1938,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "117.0.0.0",
+      "version": "87.0.0",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -2085,6 +2085,54 @@
     "engine": {
       "name": "Blink",
       "version": "140.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
+      "sec-ch-ua": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Microsoft Edge\";v=\"134",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Opera/9.55.(X11; Linux x86_64; ka-GE) Presto/2.9.188 Version/12.00"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": null,
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "12.00.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "134.0.0",
       "manufacturer": "Google"
     }
   }

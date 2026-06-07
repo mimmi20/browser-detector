@@ -41,7 +41,7 @@
     "client": {
       "name": "DuckDuckGo Privacy Browser",
       "modus": null,
-      "version": "120.0.0",
+      "version": "120.0.6099.230",
       "manufacturer": "Duck Duck Go",
       "type": "browser",
       "isbot": false,
@@ -95,7 +95,7 @@
     "client": {
       "name": "DuckDuckGo Privacy Browser",
       "modus": null,
-      "version": "127.0.0",
+      "version": "127.0.6533.103",
       "manufacturer": "Duck Duck Go",
       "type": "browser",
       "isbot": false,
@@ -149,7 +149,7 @@
     "client": {
       "name": "DuckDuckGo Privacy Browser",
       "modus": null,
-      "version": "123.0.0",
+      "version": "123.0.6312.99",
       "manufacturer": "Duck Duck Go",
       "type": "browser",
       "isbot": false,
@@ -203,7 +203,7 @@
     "client": {
       "name": "DuckDuckGo Privacy Browser",
       "modus": null,
-      "version": "135.0.0",
+      "version": "135.0.7049.113",
       "manufacturer": "Duck Duck Go",
       "type": "browser",
       "isbot": false,
@@ -259,7 +259,7 @@
     "client": {
       "name": "DuckDuckGo Privacy Browser",
       "modus": null,
-      "version": "138.0.0",
+      "version": "138.0.7204.157",
       "manufacturer": "Duck Duck Go",
       "type": "browser",
       "isbot": false,
@@ -315,7 +315,7 @@
     "client": {
       "name": "DuckDuckGo Privacy Browser",
       "modus": null,
-      "version": "141.0.0",
+      "version": "141.0.7390.122",
       "manufacturer": "Duck Duck Go",
       "type": "browser",
       "isbot": false,
@@ -371,7 +371,7 @@
     "client": {
       "name": "DuckDuckGo Privacy Browser",
       "modus": null,
-      "version": "142.0.0",
+      "version": "142.0.7444.171",
       "manufacturer": "Duck Duck Go",
       "type": "browser",
       "isbot": false,
@@ -427,7 +427,7 @@
     "client": {
       "name": "DuckDuckGo Privacy Browser",
       "modus": null,
-      "version": "144.0.0",
+      "version": "144.0.7559.132",
       "manufacturer": "Duck Duck Go",
       "type": "browser",
       "isbot": false,
@@ -483,7 +483,7 @@
     "client": {
       "name": "DuckDuckGo Privacy Browser",
       "modus": null,
-      "version": "145.0.0",
+      "version": "145.0.7632.79",
       "manufacturer": "Duck Duck Go",
       "type": "browser",
       "isbot": false,
@@ -539,7 +539,7 @@
     "client": {
       "name": "DuckDuckGo Privacy Browser",
       "modus": null,
-      "version": "144.0.0",
+      "version": "144.0.7559.132",
       "manufacturer": "Duck Duck Go",
       "type": "browser",
       "isbot": false,
@@ -595,7 +595,7 @@
     "client": {
       "name": "DuckDuckGo Privacy Browser",
       "modus": null,
-      "version": "146.0.0",
+      "version": "146.0.7680.119",
       "manufacturer": "Duck Duck Go",
       "type": "browser",
       "isbot": false,
@@ -651,7 +651,7 @@
     "client": {
       "name": "DuckDuckGo Privacy Browser",
       "modus": null,
-      "version": "145.0.0",
+      "version": "145.0.7632.159",
       "manufacturer": "Duck Duck Go",
       "type": "browser",
       "isbot": false,
@@ -707,7 +707,7 @@
     "client": {
       "name": "DuckDuckGo Privacy Browser",
       "modus": null,
-      "version": "146.0.0",
+      "version": "146.0.7680.177",
       "manufacturer": "Duck Duck Go",
       "type": "browser",
       "isbot": false,
@@ -763,7 +763,7 @@
     "client": {
       "name": "DuckDuckGo Privacy Browser",
       "modus": null,
-      "version": "146.0.0",
+      "version": "146.0.7680.177",
       "manufacturer": "Duck Duck Go",
       "type": "browser",
       "isbot": false,
@@ -772,6 +772,118 @@
     "engine": {
       "name": "Blink",
       "version": "146.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"motorola edge 50 fusion\"",
+      "x-requested-with": "com.duckduckgo.mobile.android",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"15.0.0\"",
+      "sec-ch-ua": "\"DuckDuckGo\";v=\"147\", \"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"147\"",
+      "sec-ch-ua-full-version": "\"147.0.7727.138\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-wow64": "?0",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Edge 50 Fusion",
+      "marketingName": "Edge 50 Fusion",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "DuckDuckGo Privacy Browser",
+      "modus": null,
+      "version": "147.0.7727.138",
+      "manufacturer": "Duck Duck Go",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "147.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"moto g24\"",
+      "x-requested-with": "com.duckduckgo.mobile.android",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"14.0.0\"",
+      "sec-ch-ua": "\"DuckDuckGo\";v=\"147\", \"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"147\"",
+      "sec-ch-ua-full-version": "\"147.0.7727.137\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-wow64": "?0",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Moto G24",
+      "marketingName": "Moto G24",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1612,
+        "height": 720,
+        "touch": true,
+        "size": 6.56
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "DuckDuckGo Privacy Browser",
+      "modus": null,
+      "version": "147.0.7727.137",
+      "manufacturer": "Duck Duck Go",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "147.0.0",
       "manufacturer": "Google"
     }
   }

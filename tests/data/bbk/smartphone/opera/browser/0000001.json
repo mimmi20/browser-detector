@@ -2155,7 +2155,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "83.0.0.0",
+      "version": "83.1.4388.80509",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -2524,7 +2524,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "90.0.0.0",
+      "version": "90.5.4752.84763",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -2713,7 +2713,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "97.0.0.0",
+      "version": "97.3.5038.88255",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -2722,6 +2722,51 @@
     "engine": {
       "name": "Blink",
       "version": "146.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; CPH2307 Build/UKQ1.230924.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.178 Mobile Safari/537.36 OPX/3.2"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CPH2307",
+      "marketingName": "Find X5",
+      "manufacturer": "BBK",
+      "brand": "OPPO",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.55
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera GX",
+      "modus": null,
+      "version": "3.2.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "148.0.7778.178",
       "manufacturer": "Google"
     }
   }

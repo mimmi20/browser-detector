@@ -11410,6 +11410,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'ComTrade Tesla',
                 'key' => 'comtrade-tesla',
             ],
+            [
+                'type' => 'MikroTik',
+                'name' => 'SIA Mikrotīkls',
+                'brandname' => 'MikroTik',
+                'key' => 'mikrotik',
+            ],
         ];
     }
 

@@ -3807,6 +3807,8 @@ enum Company: string implements CompanyInterface
 
     case comTradeTesla = 'ComTrade Tesla';
 
+    case mikrotik = 'MikroTik';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5708,6 +5710,7 @@ enum Company: string implements CompanyInterface
             'signal', 'signal messenger llc.' => self::signal,
             'hkpro', 'hk-pro' => self::hkPro,
             'comtradetesla', 'comtrade tesla', 'comtrade-tesla' => self::comTradeTesla,
+            'mikrotik', 'sia mikrotīkls' => self::mikrotik,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6475,6 +6478,7 @@ enum Company: string implements CompanyInterface
             self::netSystemsResearch => 'NET SYSTEMS RESEARCH LLC',
             self::infotiger => 'Infotiger UG',
             self::signal => 'Signal Messenger LLC.',
+            self::mikrotik => 'SIA Mikrotīkls',
             self::unknown => null,
             default => $this->value,
         };
