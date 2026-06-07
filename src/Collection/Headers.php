@@ -209,13 +209,9 @@ final readonly class Headers
                     $detectedEngine = $firstEngine;
 
                     if ($lastEngine === \BrowserDetector\Data\Engine::unknown) {
-                        try {
-                            $lastEngine = \BrowserDetector\Data\Engine::fromName(
-                                (string) $engineCodenameFromClient,
-                            );
-                        } catch (UnexpectedValueException) {
-                            // do nothing
-                        }
+                        $lastEngine = \BrowserDetector\Data\Engine::fromName(
+                            (string) $engineCodenameFromClient,
+                        );
                     }
 
                     switch ($lastEngine) {
@@ -245,13 +241,9 @@ final readonly class Headers
                         $detectedEngine === null
                         || $detectedEngine === \BrowserDetector\Data\Engine::unknown
                     ) {
-                        try {
-                            $detectedEngine = \BrowserDetector\Data\Engine::fromName(
-                                (string) $engineCodenameFromClient,
-                            );
-                        } catch (UnexpectedValueException) {
-                            $detectedEngine = \BrowserDetector\Data\Engine::unknown;
-                        }
+                        $detectedEngine = \BrowserDetector\Data\Engine::fromName(
+                            (string) $engineCodenameFromClient,
+                        );
                     }
 
                     break;
@@ -669,15 +661,9 @@ final readonly class Headers
         }
 
         $firstPlatformCode      = array_first($platformCodes);
-        $platformCodeFromDevice = null;
-
-        try {
-            $platformCodeFromDevice = \BrowserDetector\Data\Os::fromName(
-                (string) $platformCodenameFromDevice,
-            );
-        } catch (UnexpectedValueException) {
-            // do nothing
-        }
+        $platformCodeFromDevice = \BrowserDetector\Data\Os::fromName(
+            (string) $platformCodenameFromDevice,
+        );
 
         if (
             (

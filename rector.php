@@ -54,8 +54,6 @@ return static function (RectorConfig $rectorConfig): void {
             __DIR__ . '/src/Loader/InitData/Client.php',
             __DIR__ . '/src/Loader/InitData/Company.php',
             __DIR__ . '/src/Loader/InitData/Device.php',
-            __DIR__ . '/src/Loader/InitData/Engine.php',
-            __DIR__ . '/src/Loader/InitData/Os.php',
         ],
         RecastingRemovalRector::class => [
             __DIR__ . '/src/Loader/InitData/Device.php',

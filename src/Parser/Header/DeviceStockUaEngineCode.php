@@ -38,13 +38,7 @@ final class DeviceStockUaEngineCode implements EngineCodeInterface
         $matches = [];
 
         if (preg_match('/(?P<engine>trident|presto|webkit|gecko)/i', $value, $matches)) {
-            $code = mb_strtolower($matches['engine']);
-
-            try {
-                return Engine::fromName($code);
-            } catch (UnexpectedValueException) {
-                return Engine::unknown;
-            }
+            return Engine::fromName(mb_strtolower($matches['engine']));
         }
 
         return Engine::unknown;

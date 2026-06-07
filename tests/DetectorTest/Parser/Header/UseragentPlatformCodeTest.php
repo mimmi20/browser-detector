@@ -70,4 +70,94 @@ final class UseragentPlatformCodeTest extends TestCase
             ['WhatsApp/2.2587.9/i', Os::ios],
         ];
     }
+
+    /**
+     * @throws Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
+    public function testWithUasWithoutDeviceCode2(): void
+    {
+        $value = 'WhatsApp/2.2587.9 A';
+
+        $platformParser = $this->createMock(PlatformParserInterface::class);
+        $platformParser
+            ->expects(self::never())
+            ->method('parse');
+
+        $normalizer = $this->createMock(NormalizerInterface::class);
+        $normalizer
+            ->expects(self::once())
+            ->method('normalize')
+            ->with($value)
+            ->willReturn('');
+
+        $header = new UseragentPlatformCode(platformParser: $platformParser, normalizer: $normalizer);
+
+        self::assertTrue($header->hasPlatformCode($value));
+        self::assertSame(
+            Os::unknown,
+            $header->getPlatformCode($value),
+        );
+    }
+
+    /**
+     * @throws Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
+    public function testWithUasWithoutDeviceCode3(): void
+    {
+        $value = 'WhatsApp/2.2587.9 A';
+
+        $platformParser = $this->createMock(PlatformParserInterface::class);
+        $platformParser
+            ->expects(self::never())
+            ->method('parse');
+
+        $normalizer = $this->createMock(NormalizerInterface::class);
+        $normalizer
+            ->expects(self::once())
+            ->method('normalize')
+            ->with($value)
+            ->willThrowException(new \UaNormalizer\Normalizer\Exception\Exception('x'));
+
+        $header = new UseragentPlatformCode(platformParser: $platformParser, normalizer: $normalizer);
+
+        self::assertTrue($header->hasPlatformCode($value));
+        self::assertSame(
+            Os::unknown,
+            $header->getPlatformCode($value),
+        );
+    }
+
+    /**
+     * @throws Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
+    public function testWithUasWithoutDeviceCode4(): void
+    {
+        $value = 'A/8.1.0/ANS/L51/msm8909/unknown/QCX3/l3584062258010650401/-/+490760838/-/ANS/110712/110713/-/2.5/1/W';
+
+        $platformParser = $this->createMock(PlatformParserInterface::class);
+        $platformParser
+            ->expects(self::never())
+            ->method('parse');
+
+        $normalizer = $this->createMock(NormalizerInterface::class);
+        $normalizer
+            ->expects(self::once())
+            ->method('normalize')
+            ->with($value)
+            ->willReturn($value);
+
+        $header = new UseragentPlatformCode(platformParser: $platformParser, normalizer: $normalizer);
+
+        self::assertTrue($header->hasPlatformCode($value));
+        self::assertSame(
+            Os::android,
+            $header->getPlatformCode($value),
+        );
+    }
 }

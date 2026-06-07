@@ -85,11 +85,7 @@ final readonly class UseragentEngineCode implements EngineCodeInterface
         $code = array_first($results);
 
         if ($code !== null && $code !== false && $code !== '') {
-            try {
-                return Engine::fromName($code);
-            } catch (UnexpectedValueException) {
-                return Engine::unknown;
-            }
+            return Engine::fromName($code);
         }
 
         return $this->engineParser->parse($normalizedValue);

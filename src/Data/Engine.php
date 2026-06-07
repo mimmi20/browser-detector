@@ -88,7 +88,7 @@ enum Engine: string implements EngineInterface
     case arachne = 'Arachne';
 
     /**
-     * @throws UnexpectedValueException
+     * @throws void
      *
      * @api
      *
@@ -98,7 +98,6 @@ enum Engine: string implements EngineInterface
     {
         // the last one
         return match (mb_strtolower($name)) {
-            'unknown', '' => self::unknown,
             'black-berry', 'blackberry' => self::blackberry,
             'blink' => self::blink,
             'clecko' => self::clecko,
@@ -128,9 +127,7 @@ enum Engine: string implements EngineInterface
             'maple' => self::maple,
             'dillo' => self::dillo,
             'arachne' => self::arachne,
-            default => throw new UnexpectedValueException(
-                sprintf('the engine "%s" is unknown', $name),
-            ),
+            default => self::unknown,
         };
     }
 

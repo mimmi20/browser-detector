@@ -410,7 +410,7 @@ enum Os: string implements OsInterface
     case routerOS = 'RouterOS';
 
     /**
-     * @throws UnexpectedValueException
+     * @throws void
      *
      * @api
      *
@@ -604,11 +604,7 @@ enum Os: string implements OsInterface
             'qnx' => self::qnx,
             'picoos', 'pico os', 'pico-os' => self::picoOS,
             'routeros', 'router-os'=> self::routerOS,
-            // the last one
-            'unknown', '' => self::unknown,
-            default => throw new UnexpectedValueException(
-                sprintf('the os "%s" is unknown', $name),
-            ),
+            default => self::unknown,
         };
     }
 

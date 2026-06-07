@@ -219,6 +219,14 @@ final class AndroidOsTest extends TestCase
                 'Microsoft Office/16.0 (OMDroid 12; officemobile 16.0.15629; Pro)',
                 '12.0.0',
             ],
+            [
+                'ddg_android/5.92.1 (com.duckduckgo.mobile.android; Android API 37)',
+                '17.0.0',
+            ],
+            [
+                'ddg_android/5.92.1 (com.duckduckgo.mobile.android; Android API 36)',
+                '16.0.0',
+            ],
         ];
     }
 

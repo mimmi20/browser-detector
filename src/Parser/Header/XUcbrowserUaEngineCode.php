@@ -40,11 +40,7 @@ final class XUcbrowserUaEngineCode implements EngineCodeInterface
         if (preg_match('/(?<!o)re\((?P<engine>[^\/)]+)(?:\/[\d.]+)?/', $value, $matches)) {
             $code = mb_strtolower($matches['engine']);
 
-            try {
-                return Engine::fromName($code);
-            } catch (UnexpectedValueException) {
-                return Engine::unknown;
-            }
+            return Engine::fromName($code);
         }
 
         return Engine::unknown;

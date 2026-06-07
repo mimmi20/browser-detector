@@ -160,11 +160,7 @@ final readonly class UseragentPlatformCode implements PlatformCodeInterface
         $code = array_first($results);
 
         if ($code !== null && $code !== '') {
-            try {
-                return Os::fromName($code);
-            } catch (UnexpectedValueException) {
-                return Os::unknown;
-            }
+            return Os::fromName($code);
         }
 
         return $this->platformParser->parse($normalizedValue);

@@ -1140,6 +1140,23 @@ final class XUcbrowserUaTest extends TestCase
                 'hasEngineVersion' => true,
                 'engineVersion' => '600.1.4.12.4',
             ],
+            [
+                'ua' => 'la(en-US);re(U2/1.0.0);dv(NOKIA RM-914_eu_turkey_355);pr(UCBrowser/3.0.1.302);ov(wds 8.0);pi(480*800);ss(480*800);er(U);bt(GJ);nm(0);im(0);sr(0);nt(1);pm(0);',
+                'hasDeviceCode' => true,
+                'deviceCode' => '',
+                'hasClientInfo' => true,
+                'clientCode' => 'ucbrowser',
+                'hasClientVersion' => true,
+                'clientVersion' => '3.0.1.302',
+                'hasPlatformCode' => true,
+                'platformCode' => Os::windowsphone,
+                'hasPlatformVersion' => true,
+                'platformVersion' => '8.0.0',
+                'hasEngineCode' => true,
+                'engineCode' => Engine::u2,
+                'hasEngineVersion' => true,
+                'engineVersion' => '1.0.0',
+            ],
         ];
     }
 

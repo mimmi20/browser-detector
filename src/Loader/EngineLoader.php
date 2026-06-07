@@ -40,11 +40,7 @@ final class EngineLoader implements EngineLoaderInterface
     #[Override]
     public function load(string $key, string $useragent = ''): EngineInterface
     {
-        try {
-            $engine = \BrowserDetector\Data\Engine::fromName($key);
-        } catch (UnexpectedValueException) {
-            $engine = \BrowserDetector\Data\Engine::unknown;
-        }
+        $engine = \BrowserDetector\Data\Engine::fromName($key);
 
         return $this->loadFromEngine($engine, $useragent);
     }

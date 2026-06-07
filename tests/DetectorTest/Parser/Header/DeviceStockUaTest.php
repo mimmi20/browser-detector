@@ -15,6 +15,7 @@ namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Data\Engine;
 use BrowserDetector\Data\Os;
+use BrowserDetector\Parser\DeviceParser;
 use BrowserDetector\Parser\Header\DeviceStockUaClientCode;
 use BrowserDetector\Parser\Header\DeviceStockUaClientVersion;
 use BrowserDetector\Parser\Header\DeviceStockUaDeviceCode;
@@ -165,20 +166,20 @@ final class DeviceStockUaTest extends TestCase
         self::assertSame(
             $hasClientVersion,
             $header->hasClientVersion(),
-            sprintf('browser info mismatch for ua "%s"', $ua),
+            sprintf('browser version info mismatch for ua "%s"', $ua),
         );
 
         if ($clientVersion === null) {
             self::assertInstanceOf(
                 ForcedNullVersion::class,
                 $header->getClientVersion(),
-                sprintf('browser info mismatch for ua "%s"', $ua),
+                sprintf('browser version info mismatch for ua "%s"', $ua),
             );
         } else {
             self::assertSame(
                 $clientVersion,
                 $header->getClientVersion()->getVersion(),
-                sprintf('browser info mismatch for ua "%s"', $ua),
+                sprintf('browser version info mismatch for ua "%s"', $ua),
             );
         }
 
@@ -195,20 +196,20 @@ final class DeviceStockUaTest extends TestCase
         self::assertSame(
             $hasPlatformVersion,
             $header->hasPlatformVersion(),
-            sprintf('platform info mismatch for ua "%s"', $ua),
+            sprintf('platform version info mismatch for ua "%s"', $ua),
         );
 
         if ($platformVersion === null) {
             self::assertInstanceOf(
                 ForcedNullVersion::class,
                 $header->getPlatformVersionWithOs(Os::unknown),
-                sprintf('platform info mismatch for ua "%s"', $ua),
+                sprintf('platform version info mismatch for ua "%s"', $ua),
             );
         } else {
             self::assertSame(
                 $platformVersion,
                 $header->getPlatformVersionWithOs(Os::unknown)->getVersion(),
-                sprintf('platform info mismatch for ua "%s"', $ua),
+                sprintf('platform version info mismatch for ua "%s"', $ua),
             );
         }
 
@@ -225,20 +226,20 @@ final class DeviceStockUaTest extends TestCase
         self::assertSame(
             $hasEngineVersion,
             $header->hasEngineVersion(),
-            sprintf('engine info mismatch for ua "%s"', $ua),
+            sprintf('engine version info mismatch for ua "%s"', $ua),
         );
 
         if ($engineVersion === null) {
             self::assertInstanceOf(
                 ForcedNullVersion::class,
                 $header->getEngineVersionWithEngine(Engine::unknown),
-                sprintf('engine info mismatch for ua "%s"', $ua),
+                sprintf('engine version info mismatch for ua "%s"', $ua),
             );
         } else {
             self::assertSame(
                 $engineVersion,
                 $header->getEngineVersionWithEngine(Engine::unknown)->getVersion(),
-                sprintf('engine info mismatch for ua "%s"', $ua),
+                sprintf('engine version info mismatch for ua "%s"', $ua),
             );
         }
     }

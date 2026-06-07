@@ -16,6 +16,15 @@ namespace BrowserDetectorTest;
 use BrowserDetector\Collection\Headers;
 use BrowserDetector\Detector;
 use BrowserDetector\DetectorFactory;
+use BrowserDetector\Loader\BrowserLoader;
+use BrowserDetector\Loader\DeviceLoader;
+use BrowserDetector\Loader\DeviceLoaderFactory;
+use BrowserDetector\Loader\EngineLoader;
+use BrowserDetector\Loader\PlatformLoader;
+use BrowserDetector\Parser\BrowserParser;
+use BrowserDetector\Parser\DeviceParser;
+use BrowserDetector\Parser\EngineParser;
+use BrowserDetector\Parser\PlatformParser;
 use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -33,6 +42,15 @@ use UnexpectedValueException;
 /** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */
 #[CoversClass(Detector::class)]
 #[CoversClass(Headers::class)]
+#[CoversClass(PlatformParser::class)]
+#[CoversClass(BrowserParser::class)]
+#[CoversClass(DeviceParser::class)]
+#[CoversClass(EngineParser::class)]
+#[CoversClass(DeviceLoaderFactory::class)]
+#[CoversClass(DeviceLoader::class)]
+#[CoversClass(EngineLoader::class)]
+#[CoversClass(BrowserLoader::class)]
+#[CoversClass(PlatformLoader::class)]
 final class DetectorIntegrationTest extends TestCase
 {
     /**
