@@ -32,7 +32,7 @@ final class UseragentPlatformCodeTest extends TestCase
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     #[DataProvider('providerUa1')]
-    public function testWithUasWithoutDeviceCode(string $value, Os $expected): void
+    public function testWithUas(string $value, Os $expected): void
     {
         $platformParser = $this->createMock(PlatformParserInterface::class);
         $platformParser
@@ -76,7 +76,7 @@ final class UseragentPlatformCodeTest extends TestCase
      * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
-    public function testWithUasWithoutDeviceCode2(): void
+    public function testWithUas2(): void
     {
         $value = 'WhatsApp/2.2587.9 A';
 
@@ -106,7 +106,7 @@ final class UseragentPlatformCodeTest extends TestCase
      * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
-    public function testWithUasWithoutDeviceCode3(): void
+    public function testWithUas3(): void
     {
         $value = 'WhatsApp/2.2587.9 A';
 
@@ -136,7 +136,7 @@ final class UseragentPlatformCodeTest extends TestCase
      * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
-    public function testWithUasWithoutDeviceCode4(): void
+    public function testWithUas4(): void
     {
         $value = 'A/8.1.0/ANS/L51/msm8909/unknown/QCX3/l3584062258010650401/-/+490760838/-/ANS/110712/110713/-/2.5/1/W';
 

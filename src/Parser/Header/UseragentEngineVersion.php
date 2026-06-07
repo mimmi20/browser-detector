@@ -60,12 +60,6 @@ final readonly class UseragentEngineVersion implements EngineVersionInterface
     #[Override]
     public function getEngineVersionWithEngine(string $value, EngineInterface $engine): VersionInterface
     {
-        return $this->getVersion($value, $engine);
-    }
-
-    /** @throws void */
-    private function getVersion(string $value, EngineInterface $engine): VersionInterface
-    {
         try {
             $normalizedValue = $this->normalizer->normalize($value);
         } catch (Exception) {
