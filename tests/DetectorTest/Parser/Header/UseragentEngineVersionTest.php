@@ -37,6 +37,7 @@ final class UseragentEngineVersionTest extends TestCase
      * @throws Exception
      * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
+     * @throws UnexpectedValueException
      */
     #[DataProvider('providerUa1')]
     public function testWithoutParsing(string $value, string $expected): void
