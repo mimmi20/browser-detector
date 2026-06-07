@@ -36,6 +36,8 @@ use function sprintf;
 
 #[CoversClass(CrawledByClientCode::class)]
 #[CoversClass(CrawledByClientVersion::class)]
+#[CoversClass(CrawledByEngineCode::class)]
+#[CoversClass(CrawledByEngineVersion::class)]
 final class CrawledByTest extends TestCase
 {
     /**

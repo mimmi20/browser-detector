@@ -37,6 +37,8 @@ use function sprintf;
 
 #[CoversClass(SecChUaClientCode::class)]
 #[CoversClass(SecChUaClientVersion::class)]
+#[CoversClass(SecChUaEngineCode::class)]
+#[CoversClass(SecChUaEngineVersion::class)]
 final class SecChUaTest extends TestCase
 {
     /**
