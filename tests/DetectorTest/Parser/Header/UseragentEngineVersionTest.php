@@ -14,7 +14,6 @@ declare(strict_types = 1);
 namespace Parser\Header;
 
 use BrowserDetector\Data\Engine;
-use BrowserDetector\Parser\Header\SetVersionTrait;
 use BrowserDetector\Parser\Header\UseragentEngineVersion;
 use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\NullVersion;
@@ -32,7 +31,6 @@ use UaResult\Engine\EngineInterface;
 use UnexpectedValueException;
 
 #[CoversClass(UseragentEngineVersion::class)]
-#[CoversClass(SetVersionTrait::class)]
 final class UseragentEngineVersionTest extends TestCase
 {
     /**
