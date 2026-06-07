@@ -461,6 +461,76 @@ final class UseragentEngineVersionTest extends TestCase
      * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
+    public function testWithParsing7(): void
+    {
+        $value  = 'WhatsApp/2.2587.9 W';
+        $engine = Engine::blink;
+        $v      = 'x';
+
+        $version = $this->createMock(VersionInterface::class);
+        $version
+            ->expects(self::once())
+            ->method('getVersion')
+            ->willReturn($v);
+
+        $loadedEngine = $this->createMock(EngineInterface::class);
+        $loadedEngine
+            ->expects(self::once())
+            ->method('getVersion')
+            ->willReturn($version);
+        $loadedEngine
+            ->expects(self::never())
+            ->method('getManufacturer');
+        $loadedEngine
+            ->expects(self::never())
+            ->method('getName');
+        $loadedEngine
+            ->expects(self::never())
+            ->method('toArray');
+        $loadedEngine
+            ->expects(self::never())
+            ->method('withVersion');
+
+        $engineParser = $this->createMock(EngineParserInterface::class);
+        $engineParser
+            ->expects(self::never())
+            ->method('parse');
+
+        $engineLoader = $this->createMock(EngineLoaderInterface::class);
+        $engineLoader
+            ->expects(self::never())
+            ->method('load');
+        $engineLoader
+            ->expects(self::once())
+            ->method('loadFromEngine')
+            ->with($engine, $value)
+            ->willReturn($loadedEngine);
+
+        $normalizer = $this->createMock(NormalizerInterface::class);
+        $normalizer
+            ->expects(self::once())
+            ->method('normalize')
+            ->with($value)
+            ->willReturn($value);
+
+        $header = new UseragentEngineVersion(
+            engineParser: $engineParser,
+            engineLoader: $engineLoader,
+            normalizer: $normalizer,
+        );
+
+        self::assertTrue($header->hasEngineVersion($value));
+
+        $resultVersion = $header->getEngineVersionWithEngine($value, $engine);
+
+        self::assertInstanceOf(NullVersion::class, $resultVersion);
+    }
+
+    /**
+     * @throws Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
     public function testWithUas2(): void
     {
         $value = 'WhatsApp/2.2587.9 A';
