@@ -30,10 +30,8 @@ use BrowserDetector\Version\WindowsPhoneOsFactory;
 use Override;
 use UaData\CompanyInterface;
 use UaData\OsInterface;
-use UnexpectedValueException;
 
 use function mb_strtolower;
-use function sprintf;
 
 enum Os: string implements OsInterface
 {
@@ -603,7 +601,7 @@ enum Os: string implements OsInterface
             'ubuntutouch', 'ubuntu-touch', 'ubuntu touch' => self::ubuntuTouch,
             'qnx' => self::qnx,
             'picoos', 'pico os', 'pico-os' => self::picoOS,
-            'routeros', 'router-os'=> self::routerOS,
+            'routeros', 'router-os' => self::routerOS,
             default => self::unknown,
         };
     }

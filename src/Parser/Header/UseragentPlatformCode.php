@@ -20,7 +20,6 @@ use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\Normalizer\NormalizerInterface;
 use UaParser\PlatformCodeInterface;
 use UaParser\PlatformParserInterface;
-use UnexpectedValueException;
 
 use function array_filter;
 use function array_first;

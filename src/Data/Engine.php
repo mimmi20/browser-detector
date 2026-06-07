@@ -20,10 +20,8 @@ use BrowserDetector\Version\VersionBuilderFactory;
 use Override;
 use UaData\CompanyInterface;
 use UaData\EngineInterface;
-use UnexpectedValueException;
 
 use function mb_strtolower;
-use function sprintf;
 
 enum Engine: string implements EngineInterface
 {

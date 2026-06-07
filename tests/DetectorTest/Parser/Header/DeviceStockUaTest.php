@@ -15,7 +15,6 @@ namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Data\Engine;
 use BrowserDetector\Data\Os;
-use BrowserDetector\Parser\DeviceParser;
 use BrowserDetector\Parser\Header\DeviceStockUaClientCode;
 use BrowserDetector\Parser\Header\DeviceStockUaClientVersion;
 use BrowserDetector\Parser\Header\DeviceStockUaDeviceCode;

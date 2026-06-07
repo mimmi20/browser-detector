@@ -21,7 +21,6 @@ use UaLoader\Exception\NotFoundException;
 use UaResult\Company\Company;
 use UaResult\Engine\Engine;
 use UaResult\Engine\EngineInterface;
-use UnexpectedValueException;
 
 final class EngineLoader implements EngineLoaderInterface
 {

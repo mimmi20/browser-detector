@@ -18,7 +18,6 @@ use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use Override;
 use UaData\EngineInterface;
 use UaParser\EngineParserInterface;
-use UnexpectedValueException;
 
 final readonly class EngineParser implements EngineParserInterface
 {
