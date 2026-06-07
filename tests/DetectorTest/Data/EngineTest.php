@@ -35,7 +35,6 @@ final class EngineTest extends TestCase
      *
      * @param array{factory: string|null, search: list<string>|null} $version
      *
-     * @throws UnexpectedValueException
      * @throws ExpectationFailedException
      */
     #[DataProvider('provider')]
