@@ -15,6 +15,7 @@ namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Data\Engine;
 use BrowserDetector\Data\Os;
+use BrowserDetector\Parser\Header\SetVersionTrait;
 use BrowserDetector\Parser\Header\XUcbrowserUaClientCode;
 use BrowserDetector\Parser\Header\XUcbrowserUaClientVersion;
 use BrowserDetector\Parser\Header\XUcbrowserUaDeviceCode;
@@ -26,6 +27,7 @@ use BrowserDetector\Parser\Helper\Device;
 use BrowserDetector\Version\ForcedNullVersion;
 use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Attributes\CoversTrait;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
@@ -48,6 +50,7 @@ use function sprintf;
 #[CoversClass(XUcbrowserUaPlatformCode::class)]
 #[CoversClass(XUcbrowserUaPlatformVersion::class)]
 #[CoversClass(Device::class)]
+#[CoversTrait(SetVersionTrait::class)]
 final class XUcbrowserUaTest extends TestCase
 {
     /**

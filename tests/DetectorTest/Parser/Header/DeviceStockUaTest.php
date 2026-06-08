@@ -22,9 +22,11 @@ use BrowserDetector\Parser\Header\DeviceStockUaEngineCode;
 use BrowserDetector\Parser\Header\DeviceStockUaEngineVersion;
 use BrowserDetector\Parser\Header\DeviceStockUaPlatformCode;
 use BrowserDetector\Parser\Header\DeviceStockUaPlatformVersion;
+use BrowserDetector\Parser\Header\SetVersionTrait;
 use BrowserDetector\Version\ForcedNullVersion;
 use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Attributes\CoversTrait;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
@@ -45,6 +47,7 @@ use function sprintf;
 #[CoversClass(DeviceStockUaEngineCode::class)]
 #[CoversClass(DeviceStockUaEngineVersion::class)]
 #[CoversClass(DeviceStockUaDeviceCode::class)]
+#[CoversTrait(SetVersionTrait::class)]
 final class DeviceStockUaTest extends TestCase
 {
     /**

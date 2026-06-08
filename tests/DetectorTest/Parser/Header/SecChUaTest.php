@@ -19,9 +19,11 @@ use BrowserDetector\Parser\Header\SecChUaClientCode;
 use BrowserDetector\Parser\Header\SecChUaClientVersion;
 use BrowserDetector\Parser\Header\SecChUaEngineCode;
 use BrowserDetector\Parser\Header\SecChUaEngineVersion;
+use BrowserDetector\Parser\Header\SetVersionTrait;
 use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\NullVersion;
 use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Attributes\CoversTrait;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
@@ -39,6 +41,7 @@ use function sprintf;
 #[CoversClass(SecChUaClientVersion::class)]
 #[CoversClass(SecChUaEngineCode::class)]
 #[CoversClass(SecChUaEngineVersion::class)]
+#[CoversTrait(SetVersionTrait::class)]
 final class SecChUaTest extends TestCase
 {
     /**

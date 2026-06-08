@@ -14,6 +14,7 @@ declare(strict_types = 1);
 namespace Parser\Header;
 
 use BrowserDetector\Data\Engine;
+use BrowserDetector\Parser\Header\SetVersionTrait;
 use BrowserDetector\Parser\Header\UseragentEngineVersion;
 use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\NullVersion;
@@ -21,6 +22,7 @@ use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Attributes\CoversTrait;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\TestCase;
@@ -31,6 +33,7 @@ use UaResult\Engine\EngineInterface;
 use UnexpectedValueException;
 
 #[CoversClass(UseragentEngineVersion::class)]
+#[CoversTrait(SetVersionTrait::class)]
 final class UseragentEngineVersionTest extends TestCase
 {
     /**

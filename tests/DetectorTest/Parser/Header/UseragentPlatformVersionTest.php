@@ -15,6 +15,7 @@ namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Data\Company;
 use BrowserDetector\Data\Os;
+use BrowserDetector\Parser\Header\SetVersionTrait;
 use BrowserDetector\Parser\Header\UseragentPlatformVersion;
 use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\NullVersion;
@@ -24,6 +25,7 @@ use JsonException;
 use Override;
 use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Attributes\CoversTrait;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 use UaLoader\Exception\NotFoundException;
@@ -39,6 +41,7 @@ use function json_encode;
 use const JSON_THROW_ON_ERROR;
 
 #[CoversClass(UseragentPlatformVersion::class)]
+#[CoversTrait(SetVersionTrait::class)]
 final class UseragentPlatformVersionTest extends TestCase
 {
     /**
