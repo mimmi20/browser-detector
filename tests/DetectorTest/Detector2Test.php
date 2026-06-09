@@ -18,14 +18,12 @@ use BrowserDetector\Detector;
 use BrowserDetector\Loader\Data\DeviceData;
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
 use BrowserDetector\Version\NullVersion;
-use Override;
 use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\InvalidArgumentException;
-use RuntimeException;
 use Stringable;
 use UaDeviceType\Type;
 use UaLoader\BrowserLoaderInterface;
@@ -50,18 +48,6 @@ use function sprintf;
 #[CoversClass(Detector::class)]
 final class Detector2Test extends TestCase
 {
-    /**
-     * Sets up the fixture, for example, open a network connection.
-     * This method is called before a test is executed.
-     *
-     * @throws RuntimeException
-     */
-    #[Override]
-    protected function setUp(): void
-    {
-        self::markTestSkipped('need to rewrite tests');
-    }
-
     /**
      * @throws Exception
      * @throws InvalidArgumentException

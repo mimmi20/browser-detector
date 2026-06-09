@@ -25,7 +25,6 @@ use BrowserDetector\Parser\BrowserParser;
 use BrowserDetector\Parser\DeviceParser;
 use BrowserDetector\Parser\EngineParser;
 use BrowserDetector\Parser\PlatformParser;
-use Override;
 use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -54,18 +53,6 @@ use UnexpectedValueException;
 #[CoversClass(PlatformLoader::class)]
 final class DetectorIntegrationTest extends TestCase
 {
-    /**
-     * Sets up the fixture, for example, open a network connection.
-     * This method is called before a test is executed.
-     *
-     * @throws RuntimeException
-     */
-    #[Override]
-    protected function setUp(): void
-    {
-        self::markTestSkipped('need to rewrite tests');
-    }
-
     /**
      * @param array<non-empty-string, non-empty-string> $headers
      * @param array<string, mixed>                      $expected
