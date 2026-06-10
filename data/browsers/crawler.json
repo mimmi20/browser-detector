@@ -6564,5 +6564,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "voyager bot": {
+    "name": "Voyager Bot",
+    "manufacturer": "cosmix",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "voyager"
+      ]
+    },
+    "engine": "unknown"
   }
 }

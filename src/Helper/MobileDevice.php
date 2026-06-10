@@ -60,7 +60,7 @@ final class MobileDevice implements MobileDeviceInterface
 
         if (
             preg_match(
-                '/Puffin\/[\d.]+WD|(?:CrOS [a-z0-9_]+ |.*Build\/R\d+-)\d{4,5}\.\d+\.\d+[^)]*\) .* Chrome\/\d+[\d.]+|(?:CrOS [a-z0-9_]+ |.*Build\/R\d+-)\d+[\d.]+/',
+                '/Puffin\/[\d.]+[MW]D|(?:CrOS [a-z0-9_]+ |.*Build\/R\d+-)\d{4,5}\.\d+\.\d+[^)]*\) .* Chrome\/\d+[\d.]+|(?:CrOS [a-z0-9_]+ |.*Build\/R\d+-)\d+[\d.]+/',
                 $useragent,
             )
         ) {

@@ -11416,6 +11416,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'MikroTik',
                 'key' => 'mikrotik',
             ],
+            [
+                'type' => 'Unimax',
+                'name' => 'Unimax',
+                'brandname' => 'Unimax',
+                'key' => 'unimax',
+            ],
         ];
     }
 

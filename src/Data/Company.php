@@ -3809,6 +3809,8 @@ enum Company: string implements CompanyInterface
 
     case mikrotik = 'MikroTik';
 
+    case unimax = 'Unimax';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5711,6 +5713,7 @@ enum Company: string implements CompanyInterface
             'hkpro', 'hk-pro' => self::hkPro,
             'comtradetesla', 'comtrade tesla', 'comtrade-tesla' => self::comTradeTesla,
             'mikrotik', 'sia mikrotīkls' => self::mikrotik,
+            'unimax' => self::unimax,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(

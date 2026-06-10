@@ -963,7 +963,7 @@
     "/acd\\-/i": "acd",
     "/voix/i": "voix",
     "/ckk/i": "ckk",
-    "/agm/i": "agm",
+    "/(?<!t)agm/i": "agm",
     "/hmd/i": "hmd-global",
     "/ai\\+/i": "ai-plus",
     "/(?<![a-z])ios([;\\/\\.\\- ]|$)/i": "apple",

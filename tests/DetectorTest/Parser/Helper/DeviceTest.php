@@ -9959,6 +9959,8 @@ final class DeviceTest extends TestCase
             ['AFTMM-Anker-AK-D3000111', 'anker=anker aftmm'],
             // mediatek
             ['Mediatek MT8173 Chromebook', 'mediatek=mediatek mt8173 chromebook'],
+            // unimax
+            ['U693CL', 'unimax=unimax u693cl'],
             // other
             ['Model"', null],
             [': "', null],

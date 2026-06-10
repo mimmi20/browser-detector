@@ -241,6 +241,18 @@
     },
     "engine": "unknown"
   },
+  "yahoo-mail": {
+    "name": "Yahoo! Mail",
+    "manufacturer": "yahoo",
+    "type": "pim",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Yahoo Mail"
+      ]
+    },
+    "engine": "unknown"
+  },
   "the-bat": {
     "name": "The Bat!",
     "manufacturer": "ritlabs",
@@ -248,6 +260,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "The Bat! Voyager",
         "The Bat!"
       ]
     },
@@ -322,5 +335,41 @@
       ]
     },
     "engine": "gecko"
+  },
+  "windows-mail": {
+    "name": "Windows Mail",
+    "manufacturer": "microsoft",
+    "type": "pim",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WindowsMail"
+      ]
+    },
+    "engine": null
+  },
+  "jane-view": {
+    "name": "JaneView",
+    "manufacturer": "unknown",
+    "type": "pim",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "JaneView"
+      ]
+    },
+    "engine": null
+  },
+  "live-5ch": {
+    "name": "Live5ch",
+    "manufacturer": "unknown",
+    "type": "pim",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Live5ch"
+      ]
+    },
+    "engine": null
   }
 }

@@ -99,6 +99,7 @@ final class TvTest extends TestCase
             ['Mozilla/5.0 (compatible; U; NETFLIX) AppleWebKit/533.3 (KHTML, like Gecko) Qt/4.7.0 Safari/533.3 Netflix/3.2 (DEVTYPE=RKU-42XXX-; CERTVER=0) QtWebKit/2.2, Roku 3/7.0 (Roku, 4200X, Wireless)'],
             ['Mozilla/5.0 (Linux; BRAVIA 4K 2015 Build/LMY48E.S265) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36 OPR/28.0.1754.0'],
             ['TiVo TCDD12000 TiVo_STB/TiVo PACEMi3 (Linux) 21.11.1.v16-D12-6-D12'],
+            ['PrimeVideo/2.9.1 (AppleTV6,2; tvOS 26.4; Scale/2.0)'],
         ];
     }
 

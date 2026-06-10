@@ -624,7 +624,7 @@ final readonly class Headers
 
             return $clientData;
         } catch (UnexpectedValueException $e) {
-            $this->logger->info($e);
+            $this->logger->info($e, ['headers' => $this->headers]);
         }
 
         return new ClientData(

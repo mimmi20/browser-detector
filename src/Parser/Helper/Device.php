@@ -8506,6 +8506,8 @@ final class Device implements DeviceInterface
             'aftmm-anker-ak-d3000111' => 'anker=anker aftmm',
             // mediatek
             'mediatek mt8173 chromebook' => 'mediatek=mediatek mt8173 chromebook',
+            // unimax
+            'u693cl' => 'unimax=unimax u693cl',
             // other
             default => null,
         };

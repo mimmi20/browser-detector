@@ -93,7 +93,7 @@ final readonly class PlatformParser implements PlatformParserInterface
             '/windows nt 3\.1|winnt3\.1/i' => Os::windowsnt31,
             '/windows nt|winnt/i' => Os::windowsnt,
             '/windows 3\.11/i' => Os::windows311,
-            '/win16|windows 3\.1/i' => Os::windows31,
+            '/(?<!dar)win16|windows 3\.1/i' => Os::windows31,
             '/(?<!on microsoft |pia|for)windows|(?<!dar)win ?(?:10|9|8|7|vista|xp|2000|me|9x|98|95|nt|31|32|16|64)|barca|the bat!|cygwin_(?:nt|9[58]|me)|[\-\( ]mingw32|winhttp|ms-office|microsoft-webdav-miniredir|microsoft bits|microsoft-cryptoapi|microsoft-delivery-optimization|ddg[_-]win/i' => Os::windows,
             '/commoncrawler|msie or firefox mutant|not on windows server/i' => Os::unknown,
             '/symbian\/3/i' => Os::symbianOs,
@@ -152,7 +152,7 @@ final readonly class PlatformParser implements PlatformParserInterface
             '/(?<!o)andr[0o]id|silk|juc ?\(linux;|adr |gingerbread|ucweb\/2\.0 \(linux;|vre;|beyondpod|htc_sensation_z710e|puffin\/[\d\.]+a[tp]|okhttp|fban\/fb4a.*fbsv\/|ddg[_-]android|omdroid|podkicker\/|podkicker pro\//i' => Os::android,
             '/watchos|apple watch|watch os/i' => Os::watchos,
             '/mobilesafari\/.*cfnetwork|(?<!like |t)iphone|cpu i?os|like mac os x|(?<!prcmnovel)[\/ \(\._\-]ios([ \);\/\.\-]|$)|airplay/i' => Os::ios,
-            '/mac[ \+]?os[ \+]?[x\/,]|os\=mac [0-9]+|(;|for) os x [0-9]+|macos version [0-9]+|macOS\([^)]+\) (?:[\d\.]+)|zoom\.mac/i' => Os::macosx,
+            '/mac[ \+]?os[ \+]?[x\/,]|os\=mac [0-9]+|(;|for) os x [0-9]+|macos version [0-9]+|macOS\([^)]+\) (?:[\d\.]+)|zoom\.mac|[\( ]macos[-\/ ]/i' => Os::macosx,
             '/morphos/i' => Os::morphos,
             '/mac_powerpc|ppc|68k/i' => Os::macintosh,
             '/safari\/.*cfnetwork|power macintosh|nook browser|macbookpro|mac; mac os/i' => Os::macosx,
@@ -224,6 +224,8 @@ final readonly class PlatformParser implements PlatformParserInterface
             '/inferno/i' => Os::infernoOs,
             '/fuchsia/i' => Os::fuchsia,
             '/contiki/i' => Os::contiki,
+            '/darwin[;\/\.\- ]/i' => Os::macintosh,
+            '/tvOS[;\/\.\- ]/' => Os::tvos,
             '/(?<![a-z])ios[;\/\.\- ]/i' => Os::ios,
         ];
 
