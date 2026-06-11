@@ -655,7 +655,7 @@ final class Device implements DeviceInterface
             'cph2701' => 'oppo=oppo cph2701',
             'cph2711' => 'oppo=oppo cph2711',
             'cph2729' => 'oppo=oppo cph2729',
-            'cph2625' => 'oppo=oppo cph2625',
+            'cph2625', 'oppo cph2625' => 'oppo=oppo cph2625',
             'cph2617' => 'oppo=oppo cph2617',
             'cph2607' => 'oppo=oppo cph2607',
             'cph2603' => 'oppo=oppo cph2603',
@@ -4312,6 +4312,7 @@ final class Device implements DeviceInterface
             'xperia' => 'sony=sony xperia',
             'c6606' => 'sony=sony c6606',
             'd6708' => 'sony=sony d6708',
+            'xq-at72' => 'sony=sony xq-at72',
             // Vivo
             'v2109' => 'vivo=vivo v2109',
             'vivo 1716' => 'vivo=vivo 1716',
@@ -5745,6 +5746,7 @@ final class Device implements DeviceInterface
             'hisense e50s 128gb' => 'hisense=hisense e50s 128gb',
             'hisense u607' => 'hisense=hisense u607',
             'aftha001' => 'hisense=hisense aftha001',
+            'hisense e20s' => 'hisense=hisense e20s',
             // insys
             'hn2-m16q' => 'insys=insys hn2-m16q',
             // aiwa

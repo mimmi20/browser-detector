@@ -693,6 +693,7 @@ final class DeviceTest extends TestCase
             ['CPH2711', 'oppo=oppo cph2711'],
             ['CPH2729', 'oppo=oppo cph2729'],
             ['CPH2625', 'oppo=oppo cph2625'],
+            ['OPPO CPH2625', 'oppo=oppo cph2625'],
             ['CPH2617', 'oppo=oppo cph2617'],
             ['CPH2607', 'oppo=oppo cph2607'],
             ['CPH2603', 'oppo=oppo cph2603'],
@@ -5520,6 +5521,7 @@ final class DeviceTest extends TestCase
             ['Xperia', 'sony=sony xperia'],
             ['C6606', 'sony=sony c6606'],
             ['D6708', 'sony=sony d6708'],
+            ['XQ-AT72', 'sony=sony xq-at72'],
             // Vivo
             ['V2109', 'vivo=vivo v2109'],
             ['vivo 1716', 'vivo=vivo 1716'],
@@ -6990,6 +6992,7 @@ final class DeviceTest extends TestCase
             ['Hisense E50s 128GB', 'hisense=hisense e50s 128gb'],
             ['Hisense U607', 'hisense=hisense u607'],
             ['AFTHA001', 'hisense=hisense aftha001'],
+            ['Hisense E20s', 'hisense=hisense e20s'],
             // insys
             ['HN2-M16Q', 'insys=insys hn2-m16q'],
             // aiwa
