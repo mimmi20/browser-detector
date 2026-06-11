@@ -66,7 +66,7 @@ final readonly class PlatformParser implements PlatformParserInterface
             '/palm ?os|palmsource|palmscape/i' => Os::palmOs,
             '/roku(?:[a-z0-9]+)?\/dvp-|com\.roku\.g000x|roku\/pluto-|rokuos\/|roku; ap;|roku; ui;/i' => Os::rokuOS,
             '/windows[ _]nt[ _]11|windows[ _]11|(?<!dar)win11/i' => Os::windows11,
-            '/windows[ _]nt[ _]10|windows[ _]10|(?<!dar)win10|microsoft-wns\/10|microsoft-cryptoapi\/10|microsoft-delivery-optimization\/10/i' => Os::windows10,
+            '/windows[ _]nt[ _]10|windows[ _]10|(?<!dar)win10|microsoft-wns\/10|microsoft-cryptoapi\/10|microsoft-delivery-optimization\/10|windows_64\/10/i' => Os::windows10,
             '/windows nt 6\.4|windows 6\.4/i' => Os::windowsnt64,
             '/windows nt 6\.3; arm/i' => Os::windowsrt63,
             '/windows[ _]nt[ _]6\.3|windows[ _]6\.3|windows 8\.1|microsoft-wns\/6\.3/i' => Os::windowsnt63,

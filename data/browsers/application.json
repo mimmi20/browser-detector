@@ -1380,6 +1380,19 @@
     },
     "engine": null
   },
+  "adobe-acrobat-reader": {
+    "name": "Acrobat Reader",
+    "manufacturer": "adobe",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Acrobat",
+        "ReaderServices"
+      ]
+    },
+    "engine": null
+  },
   "taobao": {
     "name": "Taobao",
     "manufacturer": "alibaba",

@@ -2229,6 +2229,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "DeepSeek Chat",
         "DeepSeek"
       ]
     },
@@ -4764,6 +4765,91 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NuMuKiBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "seekr-app": {
+    "name": "Seekr",
+    "manufacturer": "seekr",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Seekr"
+      ]
+    },
+    "engine": null
+  },
+  "appdb": {
+    "name": "appdb",
+    "manufacturer": "aengix",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "appdb"
+      ]
+    },
+    "engine": null
+  },
+  "deepl-app": {
+    "name": "DeepL",
+    "manufacturer": "deepl",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DeepL"
+      ]
+    },
+    "engine": null
+  },
+  "webex-teams": {
+    "name": "Webex Teams",
+    "manufacturer": "cisco-systems",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WebexTeams"
+      ]
+    },
+    "engine": null
+  },
+  "heartfocus-education": {
+    "name": "HeartFocus Education",
+    "manufacturer": "deski",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HFEducationIOS"
+      ]
+    },
+    "engine": null
+  },
+  "heartfocus": {
+    "name": "HeartFocus",
+    "manufacturer": "deski",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HFIOS"
+      ]
+    },
+    "engine": null
+  },
+  "go-euro-app": {
+    "name": "GoEuro",
+    "manufacturer": "omio",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GoEuroAndroid",
+        "GoEuroIOS "
       ]
     },
     "engine": null

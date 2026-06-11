@@ -23,7 +23,7 @@ final class Os implements BitsInterface
     #[Override]
     public function getBits(string $useragent): int | null
     {
-        if (preg_match('/x64|win64|wow64|x86_64|amd64|ppc64|sparc64|osf1|arm_64/i', $useragent)) {
+        if (preg_match('/x64|win64|wow64|x86_64|amd64|ppc64|sparc64|osf1|arm_64|windows_64/i', $useragent)) {
             return 64;
         }
 

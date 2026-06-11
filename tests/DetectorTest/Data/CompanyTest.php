@@ -11422,6 +11422,42 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Unimax',
                 'key' => 'unimax',
             ],
+            [
+                'type' => 'Seekr',
+                'name' => 'Seekr Technologies Inc.',
+                'brandname' => 'Seekr',
+                'key' => 'seekr',
+            ],
+            [
+                'type' => 'AENGIX',
+                'name' => 'AENGIX S.L.',
+                'brandname' => 'AENGIX',
+                'key' => 'aengix',
+            ],
+            [
+                'type' => 'DeepL',
+                'name' => 'DeepL SE',
+                'brandname' => 'DeepL',
+                'key' => 'deepL',
+            ],
+            [
+                'type' => 'Cisco Systems',
+                'name' => 'Cisco Systems, Inc.',
+                'brandname' => 'Cisco Systems',
+                'key' => 'cisco-systems',
+            ],
+            [
+                'type' => 'DESKi',
+                'name' => 'DESKi',
+                'brandname' => 'DESKi',
+                'key' => 'deski',
+            ],
+            [
+                'type' => 'Omio',
+                'name' => 'Omio Corp.',
+                'brandname' => 'Omio',
+                'key' => 'omio',
+            ],
         ];
     }
 

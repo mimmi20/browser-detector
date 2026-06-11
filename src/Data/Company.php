@@ -3811,6 +3811,18 @@ enum Company: string implements CompanyInterface
 
     case unimax = 'Unimax';
 
+    case seekr = 'Seekr';
+
+    case aengix = 'AENGIX';
+
+    case deepL = 'DeepL';
+
+    case ciscoSystems = 'Cisco Systems';
+
+    case deski = 'DESKi';
+
+    case omio = 'Omio';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5714,6 +5726,12 @@ enum Company: string implements CompanyInterface
             'comtradetesla', 'comtrade tesla', 'comtrade-tesla' => self::comTradeTesla,
             'mikrotik', 'sia mikrotīkls' => self::mikrotik,
             'unimax' => self::unimax,
+            'seekr', 'seekr technologies inc.' => self::seekr,
+            'aengix', 'aengix s.l.' => self::aengix,
+            'deepl', 'deepl se' => self::deepL,
+            'ciscosystems', 'cisco systems, inc.', 'cisco-systems', 'cisco systems' => self::ciscoSystems,
+            'deski' => self::deski,
+            'omio', 'omio corp.' => self::omio,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6482,6 +6500,11 @@ enum Company: string implements CompanyInterface
             self::infotiger => 'Infotiger UG',
             self::signal => 'Signal Messenger LLC.',
             self::mikrotik => 'SIA Mikrotīkls',
+            self::seekr => 'Seekr Technologies Inc.',
+            self::aengix => 'AENGIX S.L.',
+            self::deepL => 'DeepL SE',
+            self::ciscoSystems => 'Cisco Systems, Inc.',
+            self::omio => 'Omio Corp.',
             self::unknown => null,
             default => $this->value,
         };
@@ -7192,6 +7215,7 @@ enum Company: string implements CompanyInterface
             self::netSystemsResearch => 'net-systems-research',
             self::hkPro => 'hk-pro',
             self::comTradeTesla => 'comtrade-tesla',
+            self::ciscoSystems => 'cisco-systems',
             default => $this->name,
         };
     }
