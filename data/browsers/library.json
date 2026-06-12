@@ -1365,5 +1365,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "r": {
+    "name": "R",
+    "manufacturer": "r-foundation",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "R"
+      ]
+    },
+    "engine": "unknown"
   }
 }

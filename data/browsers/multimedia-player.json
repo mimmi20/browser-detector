@@ -1752,5 +1752,17 @@
       ]
     },
     "engine": null
+  },
+  "plex-media-server": {
+    "name": "Plex Media Server",
+    "manufacturer": "plex",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PlexMediaServer"
+      ]
+    },
+    "engine": null
   }
 }

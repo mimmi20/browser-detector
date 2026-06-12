@@ -156,6 +156,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "whatsapp-linux-app",
         "WhatsApp"
       ]
     },
@@ -4507,7 +4508,7 @@
   },
   "freespoke": {
     "name": "Freespoke",
-    "manufacturer": "unknown",
+    "manufacturer": "freedom-fries",
     "type": "mobile-application",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -4886,6 +4887,162 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "jpameblo;"
+      ]
+    },
+    "engine": null
+  },
+  "redditor": {
+    "name": "Redditor",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Redditor"
+      ]
+    },
+    "engine": null
+  },
+  "yo-whatsapp": {
+    "name": "Yo WhatsApp",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YoYoWhatsApp"
+      ]
+    },
+    "engine": null
+  },
+  "gb-whatsapp": {
+    "name": "GB WhatsApp",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YoGBWhatsApp"
+      ]
+    },
+    "engine": null
+  },
+  "fm-whatsapp": {
+    "name": "FM WhatsApp",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YoFMWhatsApp"
+      ]
+    },
+    "engine": null
+  },
+  "bitwarden-app": {
+    "name": "Bitwarden",
+    "manufacturer": "bitwarden",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Bitwarden_Mobile"
+      ]
+    },
+    "engine": null
+  },
+  "klarna-app": {
+    "name": "Klarna",
+    "manufacturer": "klarna",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Klarna"
+      ]
+    },
+    "engine": null
+  },
+  "http-request-maker": {
+    "name": "HTTP Request Maker",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HTTPrequestmaker"
+      ]
+    },
+    "engine": null
+  },
+  "audible": {
+    "name": "Audible",
+    "manufacturer": "amazon",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Audible"
+      ]
+    },
+    "engine": null
+  },
+  "yo-whatsapp-2+": {
+    "name": "Yo WhatsApp 2+",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YoWhatsApp2Plus"
+      ]
+    },
+    "engine": null
+  },
+  "jitsi-meet": {
+    "name": "Jitsi Meet",
+    "manufacturer": "8×8",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "jitsi-meet"
+      ]
+    },
+    "engine": null
+  },
+  "dogecoin-core": {
+    "name": "Dogecoin Core",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Shibetoshi:"
+      ]
+    },
+    "engine": null
+  },
+  "bitcoin-core": {
+    "name": "Bitcoin Core",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Satoshi:"
+      ]
+    },
+    "engine": null
+  },
+  "ballz": {
+    "name": "Ballz",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Ballz"
       ]
     },
     "engine": null

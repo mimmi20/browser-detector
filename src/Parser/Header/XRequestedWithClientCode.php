@@ -237,7 +237,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'jp.gocro.smartnews.android' => 'smart-news-app',
             'jp.hazuki.yuzubrowser' => 'yuzu-browser',
             'kik.android' => 'kik',
-            'mark.via.gp' => 'via-browser',
+            'mark.via.gp', 'mark.via.gq' => 'via-browser',
             'me.android.browser' => 'me browser',
             'me.webalert' => 'web-alert-app',
             'miada.tv.webbrowser' => 'internet-web-browser',
@@ -402,6 +402,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'org.mozilla.rocket' => 'firefox rocket',
             'com.sofi.mobile' => 'so-fi-app',
             'jp.ameba' => 'ameba',
+            'org.torbrowser.torproject' => 'tor-browser',
             default => null,
         };
     }

@@ -268,6 +268,7 @@ final class XRequestedWithTest extends TestCase
             ['com.totalav.android', true, 'total-av-mobile-security', true, null, false, Os::unknown],
             ['com.turtc', true, 'türkiye-milli-arama-motoru', true, null, false, Os::unknown],
             ['mark.via.gp', true, 'via-browser', true, null, false, Os::unknown],
+            ['mark.via.gq', true, 'via-browser', true, null, false, Os::unknown],
             ['com.kiwibrowser.browser', true, 'kiwi', true, null, false, Os::unknown],
             ['com.brave.browser', true, 'brave', true, null, false, Os::unknown],
             ['org.mozilla.focus', true, 'firefox focus', true, null, false, Os::unknown],
@@ -580,6 +581,7 @@ final class XRequestedWithTest extends TestCase
             ['org.mozilla.rocket', true, 'firefox rocket', true, null, false, Os::unknown],
             ['com.sofi.mobile', true, 'so-fi-app', true, null, false, Os::unknown],
             ['jp.ameba', true, 'ameba', true, null, false, Os::unknown],
+            ['org.torbrowser.torproject', true, 'tor-browser', true, null, false, Os::unknown],
         ];
     }
 }

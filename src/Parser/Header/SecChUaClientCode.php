@@ -79,6 +79,15 @@ final class SecChUaClientCode implements ClientCodeInterface
             'island' => 'the-enterprise-browser',
             'xiaomibrowser' => 'miui browser',
             'copilot' => 'microsoft-copilot',
+            'viasat browser' => 'viasat-browser',
+            'at' => 'avg secure browser',
+            'pluma' => 'pluma-browser',
+            'spark' => 'baidu spark',
+            'mises' => 'mises-browser',
+            'herond' => 'herond-browser',
+            'quetta' => 'quetta-browser',
+            'ace' => 'ace-browser',
+            'ray' => 'ray-browser',
             default => $code,
         };
     }

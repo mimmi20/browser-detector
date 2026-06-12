@@ -6142,5 +6142,125 @@
       ]
     },
     "engine": null
+  },
+  "viasat-browser": {
+    "name": "Viasat Browser",
+    "manufacturer": "viasat",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Viasat Browser"
+      ]
+    },
+    "engine": null
+  },
+  "sidekick": {
+    "name": "Sidekick",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Sidekick"
+      ]
+    },
+    "engine": null
+  },
+  "catsxp": {
+    "name": "Catsxp",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Catsxp"
+      ]
+    },
+    "engine": null
+  },
+  "veera": {
+    "name": "Veera",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Veera"
+      ]
+    },
+    "engine": null
+  },
+  "cromite": {
+    "name": "Cromite",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Cromite"
+      ]
+    },
+    "engine": null
+  },
+  "mises-browser": {
+    "name": "Mises Browser",
+    "manufacturer": "mises-network",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Mises"
+      ]
+    },
+    "engine": null
+  },
+  "herond-browser": {
+    "name": "Herond Browser",
+    "manufacturer": "herond",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Herond"
+      ]
+    },
+    "engine": null
+  },
+  "quetta-browser": {
+    "name": "Quetta Browser",
+    "manufacturer": "quetta-networks",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Quetta"
+      ]
+    },
+    "engine": null
+  },
+  "ace-browser": {
+    "name": "Ace Browser",
+    "manufacturer": "browse-ai",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Ace"
+      ]
+    },
+    "engine": null
+  },
+  "ray-browser": {
+    "name": "Ray Browser",
+    "manufacturer": "browse-ai",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Ray"
+      ]
+    },
+    "engine": null
   }
 }

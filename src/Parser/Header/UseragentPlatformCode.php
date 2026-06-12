@@ -95,7 +95,11 @@ final readonly class UseragentPlatformCode implements PlatformCodeInterface
         $matches = [];
 
         if (
-            preg_match('/^WhatsApp\/[0-9.]+[ \/](?P<code>[ANWi])$/', $normalizedValue, $matches)
+            preg_match(
+                '/^(?:(?:Yo[a-zA-Z]{2})?WhatsApp|YoWhatsApp2Plus)\/[0-9.]+[ \/](?P<code>[ANWi])$/',
+                $normalizedValue,
+                $matches,
+            )
             && array_key_exists('code', $matches)
         ) {
             return match ($matches['code']) {

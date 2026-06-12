@@ -271,6 +271,19 @@ final class SecChUaTest extends TestCase
             ['"XiaoMiBrowser";v="135", "Not-A.Brand";v="8", "Chromium";v="135"', true, 'miui browser', true, '135.0.0', true, Engine::blink, true, '135.0.0'],
             ['"Chromium";v="142", "Auch deine Seite kann ich nicht mehr ernst nehmen.";v="2024.02", "Not_A Brand";v="99"', true, 'chromium', true, '142.0.0', true, Engine::blink, true, '142.0.0'],
             ['"Chromium";v="148", "Copilot";v="148", "Not/A)Brand";v="99"', true, 'microsoft-copilot', true, '148.0.0', true, Engine::blink, true, '148.0.0'],
+            ['" Not;A Brand";v="99", "Viasat Browser";v="91", "Chromium";v="91"', true, 'viasat-browser', true, '91.0.0', true, Engine::blink, true, '91.0.0'],
+            ['" Not A;Brand";v="99", "Chromium";v="98", "Sidekick";v="98"', true, 'sidekick', true, '98.0.0', true, Engine::blink, true, '98.0.0'],
+            ['"AT";v="1.0.0", "Chromium";v="113", "Not-A.Brand";v="24"', true, 'avg secure browser', true, '1.0.0', true, Engine::blink, true, '113.0.0'],
+            ['"Chromium";v="122", "Not(A:Brand";v="24", "Catsxp";v="122"', true, 'catsxp', true, '122.0.0', true, Engine::blink, true, '122.0.0'],
+            ['"Pluma";v="119.0.0.0", "Chromium";v="119.0.0.0", "Not?A_Brand";v="24.0.0.0"', true, 'pluma-browser', true, '119.0.0.0', true, Engine::blink, true, '119.0.0.0'],
+            ['"Spark";v="119.0.0.0", "Chromium";v="119.0.0.0", "Not?A_Brand";v="24.0.0.0"', true, 'baidu spark', true, '119.0.0.0', true, Engine::blink, true, '119.0.0.0'],
+            ['"Veera";v="119.0.0.0", "Chromium";v="119.0.0.0", "Not?A_Brand";v="24.0.0.0"', true, 'veera', true, '119.0.0.0', true, Engine::blink, true, '119.0.0.0'],
+            ['"Cromite";v="119.0.0.0", "Chromium";v="119.0.0.0", "Not?A_Brand";v="24.0.0.0"', true, 'cromite', true, '119.0.0.0', true, Engine::blink, true, '119.0.0.0'],
+            ['"Mises";v="119.0.0.0", "Chromium";v="119.0.0.0", "Not?A_Brand";v="24.0.0.0"', true, 'mises-browser', true, '119.0.0.0', true, Engine::blink, true, '119.0.0.0'],
+            ['"Herond";v="119.0.0.0", "Chromium";v="119.0.0.0", "Not?A_Brand";v="24.0.0.0"', true, 'herond-browser', true, '119.0.0.0', true, Engine::blink, true, '119.0.0.0'],
+            ['"Quetta";v="119.0.0.0", "Chromium";v="119.0.0.0", "Not?A_Brand";v="24.0.0.0"', true, 'quetta-browser', true, '119.0.0.0', true, Engine::blink, true, '119.0.0.0'],
+            ['"Not)A;Brand";v="8.0.0.0", "Chromium";v="138.0.7208.0", "Ace";v="138.0.7208.0"', true, 'ace-browser', true, '138.0.7208.0', true, Engine::blink, true, '138.0.7208.0'],
+            ['"Chromium";v="140.0.7339.2657", "Not=A?Brand";v="24.0.0.0", "Ray";v="140.0.7339.2657"', true, 'ray-browser', true, '140.0.7339.2657', true, Engine::blink, true, '140.0.7339.2657'],
         ];
     }
 }

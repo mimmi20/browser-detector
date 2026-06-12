@@ -11470,6 +11470,78 @@ final class CompanyTest extends TestCase
                 'brandname' => 'CyberAgent',
                 'key' => 'cyber-agent',
             ],
+            [
+                'type' => 'Freedom Fries',
+                'name' => 'Freedom Fries, LLC',
+                'brandname' => 'Freedom Fries',
+                'key' => 'freedom-fries',
+            ],
+            [
+                'type' => 'Bitwarden',
+                'name' => 'Bitwarden, Inc.',
+                'brandname' => 'Bitwarden',
+                'key' => 'bitwarden',
+            ],
+            [
+                'type' => 'R Foundation',
+                'name' => 'The R Foundation',
+                'brandname' => 'R Foundation',
+                'key' => 'r-foundation',
+            ],
+            [
+                'type' => '8×8',
+                'name' => '8×8, Inc.',
+                'brandname' => '8×8',
+                'key' => '8×8',
+            ],
+            [
+                'type' => 'Plex',
+                'name' => 'Plex, Inc.',
+                'brandname' => 'Plex',
+                'key' => 'plex',
+            ],
+            [
+                'type' => 'Viasat',
+                'name' => 'Viasat Inc.',
+                'brandname' => 'Viasat',
+                'key' => 'viasat',
+            ],
+            [
+                'type' => 'Qflair',
+                'name' => 'Qflair LLC',
+                'brandname' => 'Qflair',
+                'key' => 'qflair',
+            ],
+            [
+                'type' => 'Mises Network',
+                'name' => 'Mises Network PTE. Ltd.',
+                'brandname' => 'Mises Network',
+                'key' => 'mises-network',
+            ],
+            [
+                'type' => 'Herond',
+                'name' => 'Herond Labs',
+                'brandname' => 'Herond',
+                'key' => 'herond',
+            ],
+            [
+                'type' => 'Quetta Networks',
+                'name' => 'Quetta Networks Limited',
+                'brandname' => 'Quetta Networks',
+                'key' => 'quetta-networks',
+            ],
+            [
+                'type' => 'BrowseAI',
+                'name' => 'BrowseAI LLC',
+                'brandname' => 'BrowseAI',
+                'key' => 'browse-ai',
+            ],
+            [
+                'type' => 'Ray Browser',
+                'name' => 'Ray Browser Ltd.',
+                'brandname' => 'Ray Browser',
+                'key' => 'ray-browser',
+            ],
         ];
     }
 

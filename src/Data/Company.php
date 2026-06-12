@@ -3827,6 +3827,30 @@ enum Company: string implements CompanyInterface
 
     case cyberAgent = 'CyberAgent';
 
+    case freedomFries = 'Freedom Fries';
+
+    case bitwarden = 'Bitwarden';
+
+    case rFoundation = 'R Foundation';
+
+    case eightXeight = '8×8';
+
+    case plex = 'Plex';
+
+    case viasat = 'Viasat';
+
+    case qflair = 'Qflair';
+
+    case misesNetwork = 'Mises Network';
+
+    case herond = 'Herond';
+
+    case quettaNetworks = 'Quetta Networks';
+
+    case browseAI = 'BrowseAI';
+
+    case rayBrowser = 'Ray Browser';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5738,6 +5762,18 @@ enum Company: string implements CompanyInterface
             'omio', 'omio corp.' => self::omio,
             'socialfinance', 'social finance, llc', 'social-finance', 'social finance' => self::socialFinance,
             'cyberagent', 'cyberagent inc.', 'cyber-agent' => self::cyberAgent,
+            'freedomfries', 'freedom fries, llc', 'freedom-fries', 'freedom fries' => self::freedomFries,
+            'bitwarden', 'bitwarden, inc.' => self::bitwarden,
+            'rfoundation', 'the r foundation', 'r-foundation', 'r foundation' => self::rFoundation,
+            'eightxeight', '8×8, inc.', '8×8' => self::eightXeight,
+            'plex', 'plex, inc.' => self::plex,
+            'viasat', 'viasat inc.' => self::viasat,
+            'qflair', 'qflair llc' => self::qflair,
+            'misesnetwork', 'mises network pte. ltd.', 'mises-network', 'mises network' => self::misesNetwork,
+            'herond', 'herond labs' => self::herond,
+            'quettanetworks', 'quetta networks limited', 'quetta-networks', 'quetta networks' => self::quettaNetworks,
+            'browseai', 'browseai llc', 'browse-ai' => self::browseAI,
+            'raybrowser', 'ray browser ltd.', 'ray-browser', 'ray browser' => self::rayBrowser,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6513,6 +6549,18 @@ enum Company: string implements CompanyInterface
             self::omio => 'Omio Corp.',
             self::socialFinance => 'Social Finance, LLC',
             self::cyberAgent => 'CyberAgent Inc.',
+            self::freedomFries => 'Freedom Fries, LLC',
+            self::bitwarden => 'Bitwarden, Inc.',
+            self::rFoundation => 'The R Foundation',
+            self::eightXeight => '8×8, Inc.',
+            self::plex => 'Plex, Inc.',
+            self::viasat => 'Viasat Inc.',
+            self::qflair => 'Qflair LLC',
+            self::misesNetwork => 'Mises Network PTE. Ltd.',
+            self::herond => 'Herond Labs',
+            self::quettaNetworks => 'Quetta Networks Limited',
+            self::browseAI => 'BrowseAI LLC',
+            self::rayBrowser => 'Ray Browser Ltd.',
             self::unknown => null,
             default => $this->value,
         };
@@ -7226,6 +7274,13 @@ enum Company: string implements CompanyInterface
             self::ciscoSystems => 'cisco-systems',
             self::socialFinance => 'social-finance',
             self::cyberAgent => 'cyber-agent',
+            self::freedomFries => 'freedom-fries',
+            self::rFoundation => 'r-foundation',
+            self::eightXeight => '8×8',
+            self::misesNetwork => 'mises-network',
+            self::quettaNetworks => 'quetta-networks',
+            self::browseAI => 'browse-ai',
+            self::rayBrowser => 'ray-browser',
             default => $this->name,
         };
     }
