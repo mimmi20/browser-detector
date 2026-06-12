@@ -11458,6 +11458,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Omio',
                 'key' => 'omio',
             ],
+            [
+                'type' => 'Social Finance',
+                'name' => 'Social Finance, LLC',
+                'brandname' => 'Social Finance',
+                'key' => 'social-finance',
+            ],
+            [
+                'type' => 'CyberAgent',
+                'name' => 'CyberAgent Inc.',
+                'brandname' => 'CyberAgent',
+                'key' => 'cyber-agent',
+            ],
         ];
     }
 

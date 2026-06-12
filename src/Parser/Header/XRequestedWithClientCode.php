@@ -400,6 +400,8 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.mxtech.videoplayer.ad' => 'mx-player',
             'com.pico.browser.overseas' => 'pico-browser',
             'org.mozilla.rocket' => 'firefox rocket',
+            'com.sofi.mobile' => 'so-fi-app',
+            'jp.ameba' => 'ameba',
             default => null,
         };
     }

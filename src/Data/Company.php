@@ -3823,6 +3823,10 @@ enum Company: string implements CompanyInterface
 
     case omio = 'Omio';
 
+    case socialFinance = 'Social Finance';
+
+    case cyberAgent = 'CyberAgent';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5732,6 +5736,8 @@ enum Company: string implements CompanyInterface
             'ciscosystems', 'cisco systems, inc.', 'cisco-systems', 'cisco systems' => self::ciscoSystems,
             'deski' => self::deski,
             'omio', 'omio corp.' => self::omio,
+            'socialfinance', 'social finance, llc', 'social-finance', 'social finance' => self::socialFinance,
+            'cyberagent', 'cyberagent inc.', 'cyber-agent' => self::cyberAgent,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6505,6 +6511,8 @@ enum Company: string implements CompanyInterface
             self::deepL => 'DeepL SE',
             self::ciscoSystems => 'Cisco Systems, Inc.',
             self::omio => 'Omio Corp.',
+            self::socialFinance => 'Social Finance, LLC',
+            self::cyberAgent => 'CyberAgent Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -7216,6 +7224,8 @@ enum Company: string implements CompanyInterface
             self::hkPro => 'hk-pro',
             self::comTradeTesla => 'comtrade-tesla',
             self::ciscoSystems => 'cisco-systems',
+            self::socialFinance => 'social-finance',
+            self::cyberAgent => 'cyber-agent',
             default => $this->name,
         };
     }

@@ -4853,5 +4853,41 @@
       ]
     },
     "engine": null
+  },
+  "so-fi-app": {
+    "name": "SoFi",
+    "manufacturer": "social-finance",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SOFI_APP_VERSION="
+      ]
+    },
+    "engine": null
+  },
+  "an-whatsapp": {
+    "name": "AN WhatsApp",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ANWhatsApp"
+      ]
+    },
+    "engine": null
+  },
+  "ameba": {
+    "name": "Ameba",
+    "manufacturer": "cyber-agent",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "jpameblo;"
+      ]
+    },
+    "engine": null
   }
 }
