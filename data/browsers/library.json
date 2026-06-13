@@ -1377,5 +1377,161 @@
       ]
     },
     "engine": "unknown"
+  },
+  "hubot": {
+    "name": "Hubot",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Hubot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "lodestone-php-parser": {
+    "name": "Lodestone PHP Parser",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Lodestone PHP Parser"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "bic-tracker": {
+    "name": "BIC Tracker",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BIC Tracker"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "apidog": {
+    "name": "Apidog",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Apidog"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "vimeo-php": {
+    "name": "vimeo.php",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "vimeo\\.php"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "cygwin-setup": {
+    "name": "Cygwin Setup",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Cygwin-Setup"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ip-info-client": {
+    "name": "IPinfo",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "IPinfoClient\\/[^\\/]+\\/"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "icap-client-library": {
+    "name": "ICAP Client",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ICAP-Client-Library"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "httprs": {
+    "name": "httprs",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "httprs"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "electron-fetch": {
+    "name": "Electron Fetch",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "electron-fetch"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "mandrill-php": {
+    "name": "Mandrill PHP",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Mandrill-PHP"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "kiwi-tcms": {
+    "name": "Kiwi TCMS",
+    "manufacturer": "otb",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "kiwi-tcms"
+      ]
+    },
+    "engine": null
+  },
+  "kiwi-tcms-api": {
+    "name": "Kiwi TCMS API",
+    "manufacturer": "otb",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "tcms-api"
+      ]
+    },
+    "engine": null
   }
 }

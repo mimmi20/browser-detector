@@ -3418,5 +3418,50 @@
       "version": "420.0.0",
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "LightSpeed [FBAN/MessengerLiteForiOS;FBAV/270.1.0.54.119;FBBV/225524353;FBDV/iPad7,5;FBMD/iPad;FBSN/iOS;FBSV/13.5.1;FBSS/2;FBCR/;FBID/tablet;FBLC/es_ES;FBOP/0]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad 7,5",
+      "marketingName": "iPad 9.7\" (6th Gen) Wi-Fi",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.5.1",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook Messenger Lite",
+      "modus": null,
+      "version": "270.1.0.54.119",
+      "manufacturer": "Meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
   }
 ]

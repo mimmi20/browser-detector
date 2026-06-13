@@ -18,7 +18,8 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "MicroMessenger"
+        "MicroMessenger",
+        "WeChat"
       ]
     },
     "engine": null
@@ -3693,7 +3694,7 @@
   },
   "skyeng-teachers": {
     "name": "Skyeng Teachers",
-    "manufacturer": "unknown",
+    "manufacturer": "skyeng",
     "type": "mobile-application",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -5043,6 +5044,227 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Ballz"
+      ]
+    },
+    "engine": null
+  },
+  "macrium-reflect": {
+    "name": "Macrium Reflect",
+    "manufacturer": "paramount-software-uk",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "group-me": {
+    "name": "GroupMe",
+    "manufacturer": "microsoft",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GroupMe"
+      ]
+    },
+    "engine": null
+  },
+  "expedia-app": {
+    "name": "Expedia",
+    "manufacturer": "expedia",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "d-stream-air": {
+    "name": "DStream Air",
+    "manufacturer": "skideev-industrial",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "skyeng-app": {
+    "name": "Skyeng",
+    "manufacturer": "skyeng",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Skyeng App"
+      ]
+    },
+    "engine": null
+  },
+  "my-bentley": {
+    "name": "My Bentley",
+    "manufacturer": "bentley-motors",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "My Bentley"
+      ]
+    },
+    "engine": null
+  },
+  "uconnect-live": {
+    "name": "Uconnect LIVE",
+    "manufacturer": "stellantis",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "UconnectLive"
+      ]
+    },
+    "engine": null
+  },
+  "discord-updater": {
+    "name": "Discord Updater",
+    "manufacturer": "discord",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Discord-Updater"
+      ]
+    },
+    "engine": null
+  },
+  "discord-app": {
+    "name": "Discord",
+    "manufacturer": "discord",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Discord"
+      ]
+    },
+    "engine": null
+  },
+  "blue-stacks": {
+    "name": "BlueStacks",
+    "manufacturer": "now-gg",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BlueStacks 5",
+        "BlueStacks"
+      ]
+    },
+    "engine": null
+  },
+  "paint-by-number": {
+    "name": "Paint by Number",
+    "manufacturer": "oakever-games",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "com\\.paint\\.bynumber"
+      ]
+    },
+    "engine": null
+  },
+  "bible-kjv": {
+    "name": "Bible KJV",
+    "manufacturer": "mr-rocco-internet",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "com\\.meevii\\.bibleKJV"
+      ]
+    },
+    "engine": null
+  },
+  "word-cookies": {
+    "name": "Word Cookies!",
+    "manufacturer": "bitmango",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "wordcookies"
+      ]
+    },
+    "engine": null
+  },
+  "battle-net": {
+    "name": "Battle.net",
+    "manufacturer": "blizzard-entertainment",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Battle\\.net"
+      ]
+    },
+    "engine": null
+  },
+  "flipp-app": {
+    "name": "Flipp",
+    "manufacturer": "flipp",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Flipp-iOS"
+      ]
+    },
+    "engine": null
+  },
+  "opal-travel": {
+    "name": "Opal Travel",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Opal"
+      ]
+    },
+    "engine": null
+  },
+  "the-wall-street-journal": {
+    "name": "The Wall Street Journal",
+    "manufacturer": "dow-jones",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "wattpad": {
+    "name": "Wattpad",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Wattpad"
+      ]
+    },
+    "engine": null
+  },
+  "clovia": {
+    "name": "Clovia",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Clovia"
       ]
     },
     "engine": null

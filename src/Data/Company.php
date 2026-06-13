@@ -3851,6 +3851,38 @@ enum Company: string implements CompanyInterface
 
     case rayBrowser = 'Ray Browser';
 
+    case paramountSoftwareUK = 'Paramount Software UK';
+
+    case expedia = 'Expedia';
+
+    case skideevIndustrial = 'Skideev Industrial';
+
+    case sedatOzdemir = 'Sedat Ozdemir';
+
+    case skyeng = 'Skyeng';
+
+    case bentleyMotors = 'Bentley Motors';
+
+    case stellantis = 'Stellantis';
+
+    case nowgg = 'now.gg';
+
+    case oakeverGames = 'Oakever Games';
+
+    case metaquotes = 'MetaQuotes';
+
+    case mrRoccoInternet = 'MR ROCCO INTERNET';
+
+    case bitmango = 'BitMango';
+
+    case blizzardEntertainment = 'Blizzard Entertainment';
+
+    case epicGames = 'Epic Games';
+
+    case flipp = 'Flipp';
+
+    case dowJones = 'Dow Jones';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5117,7 +5149,7 @@ enum Company: string implements CompanyInterface
             'zookabot' => self::zookabot,
             'aboutus', 'about-us' => self::aboutus,
             'bibliothequenationaledefrance', 'bibliotheque-nationale-de-france', 'bibliotheque nationale de france' => self::bibliothequeNationaleDeFrance,
-            'discord' => self::discord,
+            'discord', 'discord inc.' => self::discord,
             'linkpad' => self::linkpad,
             'readitlater', 'read-it-later', 'read it later, inc.', 'read it later' => self::readItLater,
             'swoppensystems', 'swoppen-systems', 'swoppen systems gmbh', 'swoppen systems' => self::swoppenSystems,
@@ -5774,6 +5806,22 @@ enum Company: string implements CompanyInterface
             'quettanetworks', 'quetta networks limited', 'quetta-networks', 'quetta networks' => self::quettaNetworks,
             'browseai', 'browseai llc', 'browse-ai' => self::browseAI,
             'raybrowser', 'ray browser ltd.', 'ray-browser', 'ray browser' => self::rayBrowser,
+            'paramountsoftwareuk', 'paramount software uk limited', 'paramount-software-uk', 'paramount software uk' => self::paramountSoftwareUK,
+            'expedia', 'expedia, inc.' => self::expedia,
+            'skideevindustrial', 'skideev industrial corp.', 'skideev-industrial', 'skideev industrial' => self::skideevIndustrial,
+            'sedatozdemir', 'sedat ozdemir', 'sedat-ozdemir' => self::sedatOzdemir,
+            'skyeng', 'skyeng lcc' => self::skyeng,
+            'bentleymotors', 'bentley motors limited', 'bentley-motors', 'bentley motors' => self::bentleyMotors,
+            'stellantis', 'stellantis n.v.' => self::stellantis,
+            'nowgg', 'now.gg, inc.', 'now.gg', 'now-gg' => self::nowgg,
+            'oakevergames', 'oakever games pte. ltd.', 'oakever-games', 'oakever games' => self::oakeverGames,
+            'metaquotes', 'metaquotes ltd.' => self::metaquotes,
+            'mrroccointernet', 'mr rocco internet ltda', 'mr-rocco-internet', 'mr rocco internet' => self::mrRoccoInternet,
+            'bitmango', 'bitmango, inc.' => self::bitmango,
+            'blizzardentertainment', 'blizzard entertainment, inc.', 'blizzard-entertainment', 'blizzard entertainment' => self::blizzardEntertainment,
+            'epicgames', 'epic games, inc.', 'epic-games', 'epic games' => self::epicGames,
+            'flipp', 'flipp corporation inc.' => self::flipp,
+            'dowjones', 'dow jones & company, inc.', 'dow-jones', 'dow jones' => self::dowJones,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6561,6 +6609,22 @@ enum Company: string implements CompanyInterface
             self::quettaNetworks => 'Quetta Networks Limited',
             self::browseAI => 'BrowseAI LLC',
             self::rayBrowser => 'Ray Browser Ltd.',
+            self::paramountSoftwareUK => 'Paramount Software UK Limited',
+            self::expedia => 'Expedia, Inc.',
+            self::skideevIndustrial => 'Skideev Industrial Corp.',
+            self::skyeng => 'Skyeng LCC',
+            self::bentleyMotors => 'Bentley Motors Limited',
+            self::stellantis => 'Stellantis N.V.',
+            self::discord => 'Discord Inc.',
+            self::nowgg => 'now.gg, Inc.',
+            self::oakeverGames => 'Oakever Games PTE. Ltd.',
+            self::metaquotes => 'MetaQuotes Ltd.',
+            self::mrRoccoInternet => 'MR ROCCO INTERNET LTDA',
+            self::bitmango => 'BitMango, Inc.',
+            self::blizzardEntertainment => 'Blizzard Entertainment, Inc.',
+            self::epicGames => 'Epic Games, Inc.',
+            self::flipp => 'Flipp Corporation Inc.',
+            self::dowJones => 'Dow Jones & Company, Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -7281,6 +7345,16 @@ enum Company: string implements CompanyInterface
             self::quettaNetworks => 'quetta-networks',
             self::browseAI => 'browse-ai',
             self::rayBrowser => 'ray-browser',
+            self::paramountSoftwareUK => 'paramount-software-uk',
+            self::skideevIndustrial => 'skideev-industrial',
+            self::sedatOzdemir => 'sedat-ozdemir',
+            self::bentleyMotors => 'bentley-motors',
+            self::nowgg => 'now-gg',
+            self::oakeverGames => 'oakever-games',
+            self::mrRoccoInternet => 'mr-rocco-internet',
+            self::blizzardEntertainment => 'blizzard-entertainment',
+            self::epicGames => 'epic-games',
+            self::dowJones => 'dow-jones',
             default => $this->name,
         };
     }

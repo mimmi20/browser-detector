@@ -102,6 +102,10 @@ final class WindowsPhoneOsTest extends TestCase
                 'Mozilla/5.0 (Windows 10 Mobile; rv:60.0) Gecko/20100101 Firefox/60.0',
                 '10.0.0',
             ],
+            [
+                'Mozilla/5.0 (osmeta like iPhone; U; osmeta 8.3.31975207; RM-1116_15357) AppleWebKit/602.1.1 (KHTML, like Gecko) Mobile/31975207 [FBAN/MessengerForWinPhone;FBAV/75.0.0.28.70;FBBV/31986830;FBRV/0;FBDV/WindowsPhone;FBMD/RM-1116_15357;FBSN/Windows Phone;FBSV/10.0.14364.0;FBSS/3;FBCR/;FBID/phone;FBLC/en_US;FBOP/45]',
+                '10.0.14364.0',
+            ],
         ];
     }
 

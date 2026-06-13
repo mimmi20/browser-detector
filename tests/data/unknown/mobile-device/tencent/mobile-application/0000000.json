@@ -88,5 +88,50 @@
       "version": null,
       "manufacturer": "unknown"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Phone; OpenHarmony 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 ArkWeb/4.1.6.1 Mobile MicroMessenger/8.0.9.39(0xf3100927) Weixin NetType/WIFI Language/zh_CN MMWEBID/2777 MMWEBSDK/202507060011 XWEB/1140307"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "OpenHarmony",
+      "marketingName": "OpenHarmony",
+      "version": "5.1.0",
+      "manufacturer": "OpenAtom Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "WeChat App",
+      "modus": null,
+      "version": "8.0.9.39",
+      "manufacturer": "Tencent",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "ArkWeb",
+      "version": "4.1.6.1",
+      "manufacturer": "Huawei"
+    }
   }
 ]

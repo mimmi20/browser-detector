@@ -88,5 +88,50 @@
       "version": "534.11.7",
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "server-bag [iPhone OS,10.3.2,14F89,iPod7,1]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPod Touch 7,1",
+      "marketingName": "iPod Touch (6th Gen)",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1136,
+        "height": 640,
+        "touch": true,
+        "size": 4
+      },
+      "type": "mobile-media-player",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.3.2",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Mobile Safari UIWebView",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Apple",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
   }
 ]

@@ -43,5 +43,52 @@
       "version": "105.0.5195.68",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "Android",
+      "sec-ch-ua-platform-version": "10.0.0",
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64; PICO 4 OS5.4.0 like Quest) AppleWebKit/537.36 (KHTML, like Gecko) PicoBrowser/3.3.22 Chrome/105.0.5195.68 VR Safari/537.36  OculusBrowser/7.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "4",
+      "marketingName": "4",
+      "manufacturer": "Pico",
+      "brand": "Pico",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 2160,
+        "height": 2160,
+        "touch": true,
+        "size": 2.56
+      },
+      "type": "wearable",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "PICO Browser",
+      "modus": null,
+      "version": "3.3.22",
+      "manufacturer": "Pico",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "105.0.5195.68",
+      "manufacturer": "Google"
+    }
   }
 ]

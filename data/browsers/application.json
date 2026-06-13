@@ -1707,5 +1707,89 @@
       ]
     },
     "engine": null
+  },
+  "windows-antivirus": {
+    "name": "Windows Antivirus",
+    "manufacturer": "microsoft",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Windows Antivirus"
+      ]
+    },
+    "engine": null
+  },
+  "microsoft-store": {
+    "name": "Microsoft Store",
+    "manufacturer": "microsoft",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WindowsStoreSDK"
+      ]
+    },
+    "engine": null
+  },
+  "adobe-synchronizer": {
+    "name": "Adobe Synchronizer",
+    "manufacturer": "adobe",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Adobe Synchronizer"
+      ]
+    },
+    "engine": null
+  },
+  "metatrader-5-terminal": {
+    "name": "MetaTrader 5 Terminal",
+    "manufacturer": "metaquotes",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MetaTrader 5 Terminal"
+      ]
+    },
+    "engine": null
+  },
+  "epic-games-launcher": {
+    "name": "Epic Games Launcher",
+    "manufacturer": "epic-games",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "EpicGamesLauncher"
+      ]
+    },
+    "engine": null
+  },
+  "chrome-update": {
+    "name": "Chrome Update",
+    "manufacturer": "google",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GoogleSoftwareUpdate"
+      ]
+    },
+    "engine": null
+  },
+  "zoho-chat": {
+    "name": "Zoho Chat",
+    "manufacturer": "zoho",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Zoho Chat"
+      ]
+    },
+    "engine": null
   }
 }

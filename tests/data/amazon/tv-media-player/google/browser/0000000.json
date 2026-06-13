@@ -403,5 +403,50 @@
       "version": "96.0.1234.5",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "smarttv_AFTS_Build_565189620_Chromium_34.0.1847.114"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "AFTS",
+      "marketingName": "Fire TV (2nd Gen)",
+      "manufacturer": "Amazon",
+      "brand": "Amazon",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-media-player",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Fire OS",
+      "marketingName": "Fire OS",
+      "version": null,
+      "manufacturer": "Amazon",
+      "bits": null
+    },
+    "client": {
+      "name": "Chromium",
+      "modus": null,
+      "version": "34.0.1847.114",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "34.0.1847.114",
+      "manufacturer": "Google"
+    }
   }
 ]

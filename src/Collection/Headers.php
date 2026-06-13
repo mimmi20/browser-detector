@@ -742,7 +742,7 @@ final readonly class Headers
                         $lastPlatformCode instanceof \UaData\OsInterface
                         && in_array(
                             $lastPlatformCode,
-                            [\BrowserDetector\Data\Os::fireos, \BrowserDetector\Data\Os::harmonyos],
+                            [\BrowserDetector\Data\Os::fireos, \BrowserDetector\Data\Os::harmonyos, \BrowserDetector\Data\Os::picoOS],
                             true,
                         )
                     ) {

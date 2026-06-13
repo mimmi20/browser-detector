@@ -1764,5 +1764,65 @@
       ]
     },
     "engine": null
+  },
+  "radio-italiane": {
+    "name": "Radio Italiane",
+    "manufacturer": "sedat-ozdemir",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Radio Italiane"
+      ]
+    },
+    "engine": null
+  },
+  "orange-radio": {
+    "name": "Orange Radio",
+    "manufacturer": "orange",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "OrangeRadio"
+      ]
+    },
+    "engine": null
+  },
+  "qq-music": {
+    "name": "QQMusic",
+    "manufacturer": "tencent",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "QQMusic"
+      ]
+    },
+    "engine": null
+  },
+  "dev-casts": {
+    "name": "DevCasts",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "devcasts"
+      ]
+    },
+    "engine": null
+  },
+  "studio-display": {
+    "name": "StudioDisplay",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "StudioDisplay"
+      ]
+    },
+    "engine": null
   }
 }
