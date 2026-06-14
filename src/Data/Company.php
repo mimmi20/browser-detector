@@ -3883,6 +3883,50 @@ enum Company: string implements CompanyInterface
 
     case dowJones = 'Dow Jones';
 
+    case tovSolk = 'TOV Solk';
+
+    case blazerbrowser = 'blazerbrowser.com';
+
+    case ifbrowser = 'Ifbrowser';
+
+    case droiDigitalUniverse = 'Droi Digital Universe';
+
+    case staybrowser = 'staybrowser.com';
+
+    case innovaLife = 'InnovaLife';
+
+    case iberapps = 'iberapps';
+
+    case browserAndroidDev = 'Browser Android Dev';
+
+    case shuxinInnovation = 'Shuxin Innovation';
+
+    case saiGopal = 'Sai Gopal';
+
+    case innover = 'Innover';
+
+    case tactixLabs = 'Tactix Labs';
+
+    case hesha = 'Hesha';
+
+    case gauklerFaun = 'Gaukler Faun';
+
+    case seekee = 'Seekee';
+
+    case pixelTivraStudios = 'PixelTivraStudios';
+
+    case netskyTech = 'NetskyTech';
+
+    case curLemurTechnology = 'CurLemur Technology';
+
+    case holaVpn = 'Hola VPN';
+
+    case powerDaoTech = 'PowerDAO Tech';
+
+    case artistScope = 'ArtistScope';
+
+    case movingClocksCloud = 'MovingClocksCloud';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5563,7 +5607,7 @@ enum Company: string implements CompanyInterface
             'logicui', 'logic-ui' => self::logicUi,
             'maciejbrencz', 'maciej-brencz', 'maciej brencz' => self::maciejBrencz,
             'megafon' => self::megafon,
-            'metax', 'meta-x' => self::metaX,
+            'metax', 'meta-x', 'metax software pte.ltd.' => self::metaX,
             'metamaskweb3wallet', 'metamask-web3-wallet', 'metamask web3 wallet' => self::metaMaskWeb3Wallet,
             'mobiuspace', 'mobiu-space' => self::mobiuspace,
             'mythtv', 'myth-tv' => self::mythTV,
@@ -5822,6 +5866,28 @@ enum Company: string implements CompanyInterface
             'epicgames', 'epic games, inc.', 'epic-games', 'epic games' => self::epicGames,
             'flipp', 'flipp corporation inc.' => self::flipp,
             'dowjones', 'dow jones & company, inc.', 'dow-jones', 'dow jones' => self::dowJones,
+            'tovsolk', 'tov solk', 'tov-solk' => self::tovSolk,
+            'blazerbrowser', 'blazerbrowser.com lcc', 'blazerbrowser-com', 'blazerbrowser.com' => self::blazerbrowser,
+            'ifbrowser' => self::ifbrowser,
+            'droidigitaluniverse', 'droi digital universe', 'droi-digital-universe' => self::droiDigitalUniverse,
+            'staybrowser', 'staybrowser.com', 'staybrowser-com' => self::staybrowser,
+            'innovalife', 'innova-life' => self::innovaLife,
+            'iberapps' => self::iberapps,
+            'browserandroiddev', 'browser android dev', 'browser-android-dev' => self::browserAndroidDev,
+            'shuxininnovation', 'shuxin innovation tech', 'shuxin-innovation', 'shuxin innovation' => self::shuxinInnovation,
+            'saigopal', 'sai gopal', 'sai-gopal' => self::saiGopal,
+            'innover', 'innover group' => self::innover,
+            'tactixlabs', 'tactix labs global limited', 'tactix-labs', 'tactix labs' => self::tactixLabs,
+            'hesha' => self::hesha,
+            'gauklerfaun', 'gaukler faun', 'gaukler-faun' => self::gauklerFaun,
+            'seekee', 'seekee ltd' => self::seekee,
+            'pixeltivrastudios', 'pixel-tivra-studios' => self::pixelTivraStudios,
+            'netskytech', 'netsky-tech' => self::netskyTech,
+            'curlemurtechnology', 'curlemur technology co., ltd.', 'curlemur-technology', 'curlemur technology' => self::curLemurTechnology,
+            'holavpn', 'hola vpn ltd.', 'hola-vpn', 'hola vpn' => self::holaVpn,
+            'powerdaotech', 'powerdao tech global ltd.', 'powerdao-tech', 'powerdao tech' => self::powerDaoTech,
+            'artistscope', 'artist-scope' => self::artistScope,
+            'movingclockscloud', 'moving-clocks-cloud' => self::movingClocksCloud,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6625,6 +6691,15 @@ enum Company: string implements CompanyInterface
             self::epicGames => 'Epic Games, Inc.',
             self::flipp => 'Flipp Corporation Inc.',
             self::dowJones => 'Dow Jones & Company, Inc.',
+            self::blazerbrowser => 'blazerbrowser.com LCC',
+            self::shuxinInnovation => 'Shuxin Innovation Tech',
+            self::innover => 'Innover Group',
+            self::tactixLabs => 'Tactix Labs Global Limited',
+            self::seekee => 'Seekee Ltd',
+            self::curLemurTechnology => 'CurLemur Technology Co., Ltd.',
+            self::holaVpn => 'Hola VPN Ltd.',
+            self::powerDaoTech => 'PowerDAO Tech Global Ltd.',
+            self::metaX => 'MetaX Software PTE.Ltd.',
             self::unknown => null,
             default => $this->value,
         };
@@ -7355,6 +7430,23 @@ enum Company: string implements CompanyInterface
             self::blizzardEntertainment => 'blizzard-entertainment',
             self::epicGames => 'epic-games',
             self::dowJones => 'dow-jones',
+            self::tovSolk => 'tov-solk',
+            self::blazerbrowser => 'blazerbrowser-com',
+            self::droiDigitalUniverse => 'droi-digital-universe',
+            self::staybrowser => 'staybrowser-com',
+            self::innovaLife => 'innova-life',
+            self::browserAndroidDev => 'browser-android-dev',
+            self::shuxinInnovation => 'shuxin-innovation',
+            self::saiGopal => 'sai-gopal',
+            self::tactixLabs => 'tactix-labs',
+            self::gauklerFaun => 'gaukler-faun',
+            self::pixelTivraStudios => 'pixel-tivra-studios',
+            self::netskyTech => 'netsky-tech',
+            self::curLemurTechnology => 'curlemur-technology',
+            self::holaVpn => 'hola-vpn',
+            self::powerDaoTech => 'powerdao-tech',
+            self::artistScope => 'artist-scope',
+            self::movingClocksCloud => 'moving-clocks-cloud',
             default => $this->name,
         };
     }

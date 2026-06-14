@@ -4147,6 +4147,7 @@ final class Device implements DeviceInterface
             'moto e5 supra' => 'motorola=motorola moto e5 supra',
             'moto g45 5g' => 'motorola=motorola moto g45 5g',
             'mb860' => 'motorola=motorola mb860',
+            'moto g 5g (2022)', 'moto g 5g (2022' => 'motorola=motorola moto g 5g 2022',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
@@ -4747,6 +4748,9 @@ final class Device implements DeviceInterface
             'vivo z3x' => 'vivo=vivo z3x',
             'vivo y85a' => 'vivo=vivo y85a',
             'vivo 1915' => 'vivo=vivo 1915',
+            'v2037' => 'vivo=vivo v2037',
+            'v2065' => 'vivo=vivo v2065',
+            'v2065a' => 'vivo=vivo v2065a',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
@@ -5639,6 +5643,7 @@ final class Device implements DeviceInterface
             'note 12' => 'infinix=infinix note 12',
             'infinix x682b' => 'infinix=infinix x682b',
             'infinix x682c' => 'infinix=infinix x682c',
+            'infinix x6532' => 'infinix=infinix x6532',
             // cyrus
             'cs24' => 'cyrus=cyrus cs24',
             // facetel
@@ -5959,6 +5964,7 @@ final class Device implements DeviceInterface
             '100012584' => 'onn=onn 100012584',
             'ona19tb002' => 'onn=onn ona19tb002',
             'ona19tb003' => 'onn=onn ona19tb003',
+            'onn. full hd streaming device' => 'onn=onn full hd streaming device',
             // archos
             'archos 101c platinum' => 'archos=archos 101c platinum',
             'archos 101b xenon v2' => 'archos=archos 101b xenon v2',

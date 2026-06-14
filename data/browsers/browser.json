@@ -1538,7 +1538,19 @@
         "Google ?Earth"
       ]
     },
-    "engine": "webkit"
+    "engine": null
+  },
+  "google earth pro": {
+    "name": "Google Earth Pro",
+    "manufacturer": "google",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Google ?Earth ?Pro"
+      ]
+    },
+    "engine": null
   },
   "googletv": {
     "name": "GoogleTV",
@@ -4676,7 +4688,7 @@
   },
   "foss-browser": {
     "name": "Foss Browser",
-    "manufacturer": "unknown",
+    "manufacturer": "gaukler-faun",
     "type": "browser",
     "version": {
       "class": null,
@@ -5727,6 +5739,16 @@
     },
     "engine": null
   },
+  "puffin-incognito-browser": {
+    "name": "Puffin Incognito Browser",
+    "manufacturer": "cloud-mosa",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\PuffinFactory",
+      "search": null
+    },
+    "engine": null
+  },
   "firefox-reality": {
     "name": "Firefox Reality",
     "manufacturer": "mozilla-foundation",
@@ -6260,6 +6282,252 @@
       "search": [
         "Ray"
       ]
+    },
+    "engine": null
+  },
+  "clario-browser": {
+    "name": "Clario Browser",
+    "manufacturer": "tov-solk",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Clario"
+      ]
+    },
+    "engine": null
+  },
+  "blazer": {
+    "name": "Blazer",
+    "manufacturer": "blazerbrowser-com",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Blazer"
+      ]
+    },
+    "engine": null
+  },
+  "if-browser": {
+    "name": "Ifbrowser",
+    "manufacturer": "ifbrowser",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "ddu-browser": {
+    "name": "DDU Browser",
+    "manufacturer": "droi-digital-universe",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "stay-browser": {
+    "name": "Stay Browser",
+    "manufacturer": "staybrowser",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "ask-browser": {
+    "name": "Ask Browser",
+    "manufacturer": "innova-life",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "clear-tv-web-browser": {
+    "name": "Clear TV Web Browser",
+    "manufacturer": "iberapps",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "vc-browser-mini-pro": {
+    "name": "VC Browser Mini Pro",
+    "manufacturer": "browser-android-dev",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "nova-browser": {
+    "name": "Nova Browser",
+    "manufacturer": "shuxin-innovation",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "black-browser": {
+    "name": "Black Browser",
+    "manufacturer": "sai-gopal",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "browse-safe": {
+    "name": "Browse Safe",
+    "manufacturer": "innover",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "anonyv-browser": {
+    "name": "Anonyv Browser",
+    "manufacturer": "tactix-labs",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "snap-browser": {
+    "name": "Snap Browser",
+    "manufacturer": "hesha",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "neuro-browser": {
+    "name": "Neuro Browser",
+    "manufacturer": "pixel-tivra-studios",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "tincat-browser": {
+    "name": "Tincat Browser",
+    "manufacturer": "netsky-tech",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "lemur": {
+    "name": "Lemur Browser",
+    "manufacturer": "curlemur-technology",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Lemur"
+      ]
+    },
+    "engine": null
+  },
+  "hola": {
+    "name": "hola! Browser",
+    "manufacturer": "hola-vpn",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Hola"
+      ]
+    },
+    "engine": null
+  },
+  "power": {
+    "name": "Power Browser",
+    "manufacturer": "powerdao-tech",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Power"
+      ]
+    },
+    "engine": null
+  },
+  "artis-browser": {
+    "name": "ArtisBrowser",
+    "manufacturer": "artist-scope",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ArtisReader"
+      ]
+    },
+    "engine": null
+  },
+  "cloak-private-browser": {
+    "name": "Cloak Private Browser",
+    "manufacturer": "moving-clocks-cloud",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "rca-tor-explorer": {
+    "name": "RCA Tor Explorer",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RCATorExplorer"
+      ]
+    },
+    "engine": null
+  },
+  "tq-browser": {
+    "name": "TQ Browser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TQBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "open-browser-lite": {
+    "name": "Open Browser Lite",
+    "manufacturer": "meta-x",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
     },
     "engine": null
   }

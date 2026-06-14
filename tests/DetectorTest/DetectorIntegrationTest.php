@@ -9429,6 +9429,58 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                 ],
             ],
+            [
+                [
+                    'sec-ch-ua' => '"Chromium";v="116.0.5845.96", "Not)A;Brand";v="24.0.0.0", "Hola";v="116.0.5845.96"',
+                    'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Hola/1.216.565',
+                ],
+                [
+                    'headers' => [
+                        'sec-ch-ua' => '"Chromium";v="116.0.5845.96", "Not)A;Brand";v="24.0.0.0", "Hola";v="116.0.5845.96"',
+                        'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Hola/1.216.565',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'Windows Desktop',
+                        'marketingName' => 'Windows Desktop',
+                        'manufacturer' => 'unknown',
+                        'brand' => 'unknown',
+                        'dualOrientation' => false,
+                        'simCount' => 0,
+                        'display' => [
+                            'width' => null,
+                            'height' => null,
+                            'touch' => false,
+                            'size' => null,
+                        ],
+                        'type' => 'desktop',
+                        'ismobile' => false,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Windows',
+                        'marketingName' => 'Windows 10',
+                        'version' => '10.0.0',
+                        'manufacturer' => 'Microsoft',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'hola! Browser',
+                        'modus' => null,
+                        'version' => '1.216.565',
+                        'manufacturer' => 'Hola VPN',
+                        'type' => 'browser',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '116.0.5845.96',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
         ];
     }
 }

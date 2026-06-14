@@ -1,14 +1,14 @@
 [
   {
     "headers": {
-      "user-agent": "YouView (Humax; DTRT2120; 84B08520; CDS/22.18.0; API/2.10.4; PS/2.10.32) (+DVR+FLASH+HTML+MHEG+IPCMC)"
+      "user-agent": "Battle.net/2.6.0.13147 (retail)"
     },
     "device": {
       "architecture": null,
-      "deviceName": "general Humax TV",
-      "marketingName": "general Humax TV",
-      "manufacturer": "Humax",
-      "brand": "Humax",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
       "dualOrientation": null,
       "simCount": 0,
       "display": {
@@ -17,9 +17,9 @@
         "touch": false,
         "size": null
       },
-      "type": "tv-set-top-box",
+      "type": "unknown",
       "ismobile": false,
-      "istv": true,
+      "istv": false,
       "bits": null
     },
     "os": {
@@ -30,11 +30,11 @@
       "bits": null
     },
     "client": {
-      "name": null,
+      "name": "Battle.net",
       "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
+      "version": "2.6.0.13147",
+      "manufacturer": "Blizzard Entertainment",
+      "type": "mobile-application",
       "isbot": false,
       "bits": null
     },

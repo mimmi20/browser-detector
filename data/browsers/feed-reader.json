@@ -805,5 +805,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "stringer": {
+    "name": "Stringer",
+    "manufacturer": "unknown",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Stringer"
+      ]
+    },
+    "engine": "unknown"
   }
 }

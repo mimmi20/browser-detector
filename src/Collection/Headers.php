@@ -576,7 +576,7 @@ final readonly class Headers
             //    ?? array_last($clientVersions),
             // 'ecosia' => $clientVersions['sec-ch-ua-full-version']
             //    ?? array_last($clientVersions),
-            'miui browser', 'huawei-browser' => $clientVersions['user-agent'] ?? array_last(
+            'miui browser', 'huawei-browser', 'hola' => $clientVersions['user-agent'] ?? array_last(
                 $clientVersions,
             ),
             'vivaldi', 'samsungbrowser' => array_key_exists(

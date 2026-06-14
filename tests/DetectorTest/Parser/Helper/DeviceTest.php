@@ -5356,6 +5356,8 @@ final class DeviceTest extends TestCase
             ['moto e5 supra', 'motorola=motorola moto e5 supra'],
             ['moto g45 5G', 'motorola=motorola moto g45 5g'],
             ['MB860', 'motorola=motorola mb860'],
+            ['moto g 5G (2022)', 'motorola=motorola moto g 5g 2022'],
+            ['moto g 5G (2022', 'motorola=motorola moto g 5g 2022'],
             // Sony
             ['XQ-CC54', 'sony=sony xq-cc54'],
             ['XQ-BQ52', 'sony=sony xq-bq52'],
@@ -5961,6 +5963,9 @@ final class DeviceTest extends TestCase
             ['vivo Z3x', 'vivo=vivo z3x'],
             ['vivo Y85A', 'vivo=vivo y85a'],
             ['Vivo 1915', 'vivo=vivo 1915'],
+            ['V2037', 'vivo=vivo v2037'],
+            ['V2065', 'vivo=vivo v2065'],
+            ['V2065A', 'vivo=vivo v2065a'],
             // Fairphone
             ['FP4', 'fairphone=fairphone fp4'],
             ['FP3', 'fairphone=fairphone fp3'],
@@ -6887,6 +6892,7 @@ final class DeviceTest extends TestCase
             ['Note 12', 'infinix=infinix note 12'],
             ['Infinix X682B', 'infinix=infinix x682b'],
             ['Infinix X682C', 'infinix=infinix x682c'],
+            ['Infinix X6532', 'infinix=infinix x6532'],
             // cyrus
             ['CS24', 'cyrus=cyrus cs24'],
             // facetel
@@ -7207,6 +7213,7 @@ final class DeviceTest extends TestCase
             ['100012584', 'onn=onn 100012584'],
             ['ONA19TB002', 'onn=onn ona19tb002'],
             ['ONA19TB003', 'onn=onn ona19tb003'],
+            ['onn. Full HD Streaming Device', 'onn=onn full hd streaming device'],
             // archos
             ['Archos 101c Platinum', 'archos=archos 101c platinum'],
             ['Archos 101b Xenon v2', 'archos=archos 101b xenon v2'],

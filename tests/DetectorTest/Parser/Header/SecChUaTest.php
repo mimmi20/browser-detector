@@ -20,6 +20,7 @@ use BrowserDetector\Parser\Header\SecChUaClientVersion;
 use BrowserDetector\Parser\Header\SecChUaEngineCode;
 use BrowserDetector\Parser\Header\SecChUaEngineVersion;
 use BrowserDetector\Parser\Header\SetVersionTrait;
+use BrowserDetector\Parser\Header\SortTrait;
 use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\NullVersion;
 use PHPUnit\Framework\Attributes\CoversClass;
@@ -42,6 +43,7 @@ use function sprintf;
 #[CoversClass(SecChUaEngineCode::class)]
 #[CoversClass(SecChUaEngineVersion::class)]
 #[CoversTrait(SetVersionTrait::class)]
+#[CoversTrait(SortTrait::class)]
 final class SecChUaTest extends TestCase
 {
     /**
@@ -284,6 +286,10 @@ final class SecChUaTest extends TestCase
             ['"Quetta";v="119.0.0.0", "Chromium";v="119.0.0.0", "Not?A_Brand";v="24.0.0.0"', true, 'quetta-browser', true, '119.0.0.0', true, Engine::blink, true, '119.0.0.0'],
             ['"Not)A;Brand";v="8.0.0.0", "Chromium";v="138.0.7208.0", "Ace";v="138.0.7208.0"', true, 'ace-browser', true, '138.0.7208.0', true, Engine::blink, true, '138.0.7208.0'],
             ['"Chromium";v="140.0.7339.2657", "Not=A?Brand";v="24.0.0.0", "Ray";v="140.0.7339.2657"', true, 'ray-browser', true, '140.0.7339.2657', true, Engine::blink, true, '140.0.7339.2657'],
+            ['"Blazer";v="3", "Chromium";v="140", "Blazer";v="140", "Not=A?Brand";v="24"', true, 'blazer', true, '140.0.0', true, Engine::blink, true, '140.0.0'],
+            ['"Lemur";v="3", "Chromium";v="140", "Not=A?Brand";v="24"', true, 'lemur', true, '3.0.0', true, Engine::blink, true, '140.0.0'],
+            ['"Chromium";v="116.0.5845.96", "Not)A;Brand";v="24.0.0.0", "Hola";v="116.0.5845.96"', true, 'hola', true, '116.0.5845.96', true, Engine::blink, true, '116.0.5845.96'],
+            ['"Chromium";v="116.0.5845.96", "Not)A;Brand";v="24.0.0.0", "power";v="116.0.5845.96"', true, 'power', true, '116.0.5845.96', true, Engine::blink, true, '116.0.5845.96'],
         ];
     }
 }
