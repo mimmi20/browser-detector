@@ -194,6 +194,7 @@ final class Device implements DeviceInterface
             'aftkauk002' => 'amazon=amazon aftkauk002',
             'aeocw' => 'amazon=amazon aeocw',
             'aeobp' => 'amazon=amazon aeobp',
+            'aeocn' => 'amazon=amazon aeocn',
             // Asus
             'p024' => 'asus=asus p024',
             'asus_x00dd' => 'asus=asus x00dd',
@@ -1420,6 +1421,7 @@ final class Device implements DeviceInterface
             'redmi 15' => 'xiaomi=xiaomi redmi 15',
             '2511fpc34g' => 'xiaomi=xiaomi 2511fpc34g',
             '2602bpc18g' => 'xiaomi=xiaomi 2602bpc18g',
+            'aftbtx4' => 'xiaomi=xiaomi aftbtx4',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -6480,6 +6482,8 @@ final class Device implements DeviceInterface
             'aftmd001' => 'tcl=tcl aftmd001',
             'aftmm-tcl-ts8011' => 'tcl=tcl aftmm',
             'aftdec012e' => 'tcl=tcl aftdec012e',
+            'aftmd002' => 'tcl=tcl aftmd002',
+            'aftshn02' => 'tcl=tcl aftshn02',
             // general-mobile
             'gm 8' => 'general-mobile=general-mobile gm 8',
             'g314' => 'general-mobile=general-mobile g314',
@@ -6543,8 +6547,8 @@ final class Device implements DeviceInterface
             's19 max pro s edge' => 'reeder=reeder s19 max pro s edge',
             's19 max' => 'reeder=reeder s19 max',
             'reeder tv' => 'reeder=reeder smart tv',
-            // tesla
-            'explr 9' => 'tesla=tesla explorer 9',
+            // comtrade-tesla
+            'explr 9' => 'comtrade-tesla=comtrade-tesla explorer 9',
             // chuwi
             'hipad x', 'hipadx' => 'chuwi=chuwi hipad x',
             'hipad xpro' => 'chuwi=chuwi hipad x pro',
@@ -8239,6 +8243,7 @@ final class Device implements DeviceInterface
             // jvc
             'jvc android tv' => 'jvc=jvc smart tv',
             'aftso001' => 'jvc=jvc aftso001',
+            'aftjuli1' => 'jvc=jvc aftjuli1',
             // beko
             'beko android tv' => 'beko=beko smart tv',
             // altus

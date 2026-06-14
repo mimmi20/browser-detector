@@ -222,6 +222,7 @@ final class DeviceTest extends TestCase
             ['AFTKAUK002', 'amazon=amazon aftkauk002'],
             ['AEOCW', 'amazon=amazon aeocw'],
             ['AEOBP', 'amazon=amazon aeobp'],
+            ['AEOCN', 'amazon=amazon aeocn'],
             // Asus
             ['P024', 'asus=asus p024'],
             ['ASUS_X00DD', 'asus=asus x00dd'],
@@ -1472,6 +1473,7 @@ final class DeviceTest extends TestCase
             ['Redmi 15', 'xiaomi=xiaomi redmi 15'],
             ['2511FPC34G', 'xiaomi=xiaomi 2511fpc34g'],
             ['2602BPC18G', 'xiaomi=xiaomi 2602bpc18g'],
+            ['AFTBTX4', 'xiaomi=xiaomi aftbtx4'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -7829,6 +7831,8 @@ final class DeviceTest extends TestCase
             ['AFTMD001', 'tcl=tcl aftmd001'],
             ['AFTMM-TCL-TS8011', 'tcl=tcl aftmm'],
             ['AFTDEC012E', 'tcl=tcl aftdec012e'],
+            ['AFTMD002', 'tcl=tcl aftmd002'],
+            ['AFTSHN02', 'tcl=tcl aftshn02'],
             // general-mobile
             ['GM 8', 'general-mobile=general-mobile gm 8'],
             ['G314', 'general-mobile=general-mobile g314'],
@@ -7892,8 +7896,8 @@ final class DeviceTest extends TestCase
             ['S19 Max Pro S Edge', 'reeder=reeder s19 max pro s edge'],
             ['S19 Max', 'reeder=reeder s19 max'],
             ['REEDER TV', 'reeder=reeder smart tv'],
-            // tesla
-            ['Explr 9', 'tesla=tesla explorer 9'],
+            // comtrade-tesla
+            ['Explr 9', 'comtrade-tesla=comtrade-tesla explorer 9'],
             // chuwi
             ['HiPad X', 'chuwi=chuwi hipad x'],
             ['HiPadX', 'chuwi=chuwi hipad x'],
@@ -9687,6 +9691,7 @@ final class DeviceTest extends TestCase
             // jvc
             ['JVC Android TV', 'jvc=jvc smart tv'],
             ['AFTSO001', 'jvc=jvc aftso001'],
+            ['AFTJULI1', 'jvc=jvc aftjuli1'],
             // beko
             ['Beko Android TV', 'beko=beko smart tv'],
             // altus

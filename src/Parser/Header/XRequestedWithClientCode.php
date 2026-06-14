@@ -421,6 +421,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.cloudmosa.puffincloudbrowser' => 'puffin-cloud-browser',
             'com.cloudmosa.puffinincognito' => 'puffin-incognito-browser',
             'com.metax.browser' => 'open-browser-lite',
+            'com.neurobro.browser' => 'neuro-browser',
             default => null,
         };
     }

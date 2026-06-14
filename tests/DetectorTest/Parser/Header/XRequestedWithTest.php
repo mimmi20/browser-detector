@@ -604,6 +604,7 @@ final class XRequestedWithTest extends TestCase
             ['com.cloudmosa.puffinCloudBrowser', true, 'puffin-cloud-browser', true, null, false, Os::unknown],
             ['com.cloudmosa.puffinIncognito', true, 'puffin-incognito-browser', true, null, false, Os::unknown],
             ['com.metax.browser', true, 'open-browser-lite', true, null, false, Os::unknown],
+            ['com.neurobro.browser', true, 'neuro-browser', true, null, false, Os::unknown],
         ];
     }
 }

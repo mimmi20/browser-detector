@@ -2062,8 +2062,8 @@ final class SecChUaModelTest extends TestCase
             // reeder
             ['"P13 Blue Max 128 GB 2022"', true, 'reeder=reeder p13 blue max 128 gb 2022'],
             ['"P13 Blue Max Pro Lite 2022"', true, 'reeder=reeder p13 blue max pro lite 2022'],
-            // tesla
-            ['"Explr 9"', true, 'tesla=tesla explorer 9'],
+            // comtrade-tesla
+            ['"Explr 9"', true, 'comtrade-tesla=comtrade-tesla explorer 9'],
             // chuwi
             ['"HiPad X"', true, 'chuwi=chuwi hipad x'],
             ['"HiPad XPro"', true, 'chuwi=chuwi hipad x pro'],

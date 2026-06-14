@@ -1650,6 +1650,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "go-containerregistry\\/v",
         "go-containerregistry"
       ]
     },
