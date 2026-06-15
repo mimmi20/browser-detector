@@ -2646,7 +2646,7 @@
         "NF3"
       ]
     },
-    "engine": null
+    "engine": "netfront"
   },
   "netfront nx": {
     "name": "NetFront NX",
@@ -3245,7 +3245,8 @@
         "MQQBrowser",
         "QQBrowser",
         " QQ\\/",
-        "V1\\_AND\\_SQ\\_"
+        "V1\\_AND\\_SQ\\_",
+        "QQ浏览器"
       ]
     },
     "engine": null
@@ -3377,6 +3378,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "Quick Search TV\\/Wild Moon Edition",
         "Quick Search TV"
       ]
     },
@@ -6590,5 +6592,129 @@
       "search": null
     },
     "engine": null
+  },
+  "tusk-browser": {
+    "name": "TUSK",
+    "manufacturer": "virtual-world-computing",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TUSK"
+      ]
+    },
+    "engine": null
+  },
+  "ojr-browser": {
+    "name": "OJR Browser",
+    "manufacturer": "ojr-studio-mobile",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "OJR Browser"
+      ]
+    },
+    "engine": null
+  },
+  "nyxone-browser": {
+    "name": "NyxOne Browser",
+    "manufacturer": "cleararc-digital",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "dark-web-private": {
+    "name": "Dark Web Private",
+    "manufacturer": "bir-apps",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "proxyium-browser": {
+    "name": "Proxyium",
+    "manufacturer": "proxyium",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "keyboard-browser": {
+    "name": "Keyboard Browser",
+    "manufacturer": "alain-grange",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "surfy-browser": {
+    "name": "Surfy Browser",
+    "manufacturer": "outcoder",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SurfyBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "ninetails": {
+    "name": "Ninetails",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Ninetails"
+      ]
+    },
+    "engine": null
+  },
+  "vibe-mate": {
+    "name": "VibeMate",
+    "manufacturer": "vibe-mate",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "VibeMate"
+      ]
+    },
+    "engine": null
+  },
+  "vd-browser": {
+    "name": "VD Browser",
+    "manufacturer": "ds-tools",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "\\[VD\\/"
+      ]
+    },
+    "engine": "blink"
+  },
+  "smartview-browser": {
+    "name": "SmartView Browser",
+    "manufacturer": "ds-tools",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "\\[HS\\/"
+      ]
+    },
+    "engine": "blink"
   }
 }

@@ -610,6 +610,17 @@ final class XRequestedWithTest extends TestCase
             ['com.onionsearchengine.focus', true, 'onion-browser', true, null, false, Os::unknown],
             ['com.keepsolid.privatebrowser', true, 'keepsolid-browser', true, null, false, Os::unknown],
             ['com.vielianztlabs.browser', true, 'proxy-max', true, null, false, Os::unknown],
+            ['com.vworldc.tusk', true, 'tusk-browser', true, null, false, Os::unknown],
+            ['com.ojr.browser.anti.blokir', true, 'ojr-browser', true, null, false, Os::unknown],
+            ['com.browser.pintar.vpn', true, 'nyxone-browser', true, null, false, Os::unknown],
+            ['birapp.dark.web.private', true, 'dark-web-private', true, null, false, Os::unknown],
+            ['app.proxyiumbrowser.android', true, 'proxyium-browser', true, null, false, Os::unknown],
+            ['fr.agrange.bbbrowser', true, 'keyboard-browser', true, null, false, Os::unknown],
+            ['com.qihoo.contents', true, '360 secure browser', true, null, false, Os::unknown],
+            ['com.outcoder.browser', true, 'surfy-browser', true, null, false, Os::unknown],
+            ['com.lovense.vibemate', true, 'vibe-mate', true, null, false, Os::unknown],
+            ['vpn.video.downloader', true, 'vd-browser', true, null, false, Os::unknown],
+            ['com.hotsurf.browser', true, 'smartview-browser', true, null, false, Os::unknown],
         ];
     }
 }

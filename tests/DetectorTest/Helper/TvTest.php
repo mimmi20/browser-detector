@@ -101,6 +101,7 @@ final class TvTest extends TestCase
             ['TiVo TCDD12000 TiVo_STB/TiVo PACEMi3 (Linux) 21.11.1.v16-D12-6-D12'],
             ['PrimeVideo/2.9.1 (AppleTV6,2; tvOS 26.4; Scale/2.0)'],
             ['Mozilla/5.0(compatible; U; InfiNet 0.1; Diga) AppleWebKit/420+ (KHTML, like Gecko)(avdn/Panasonic.bd.pxs2p.2017)'],
+            ['Mozilla/5.0 (X11; Linux x86_64; MBX4K Maverick Build/QT; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/108.0.5359.128 Safari/537.36 Quick Search TV/Wild Moon Edition 120.13'],
         ];
     }
 

@@ -12,7 +12,7 @@
     "/chr[o0]meframe\\//i": "webkit",
     "/trident\\//i": "trident",
     "/goanna|mypal\\//i": "goanna",
-    "/(?:chr[o0]me|chromium)[\\/_](?:2[89]|[3-9][0-9]|[1-9][0-9]{2})(?:\\D|$)|opr\\/|ddg_android|ddg_win/i": "blink",
+    "/(?:chr[o0]me|chromium)[\\/_](?:2[89]|[3-9][0-9]|[1-9][0-9]{2})(?:\\D|$)|opr\\/|ddg_android|ddg_win|\\[(vd|hs)\\//i": "blink",
     "/icab/i": "icab",
     "/webkit|cfnetwork|(?<!like )safari|dalvik|(?<!ka|wi)ios|com\\.google\\.android\\.googlequicksearchbox|slack\\//i": "webkit",
     "/khtml|konqueror/i": "khtml",

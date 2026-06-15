@@ -11794,6 +11794,54 @@ final class CompanyTest extends TestCase
                 'brandname' => 'VIELianzt Labs',
                 'key' => 'vielianzt-labs',
             ],
+            [
+                'type' => 'Virtual World Computing',
+                'name' => 'Virtual World Computing, LLC',
+                'brandname' => 'Virtual World Computing',
+                'key' => 'virtual-world-computing',
+            ],
+            [
+                'type' => 'OJR Studio Mobile',
+                'name' => 'OJR Studio Mobile',
+                'brandname' => 'OJR Studio Mobile',
+                'key' => 'ojr-studio-mobile',
+            ],
+            [
+                'type' => 'ClearArc Digital',
+                'name' => 'ClearArc Digital',
+                'brandname' => 'ClearArc Digital',
+                'key' => 'cleararc-digital',
+            ],
+            [
+                'type' => 'BirApps',
+                'name' => 'BirApps',
+                'brandname' => 'BirApps',
+                'key' => 'bir-apps',
+            ],
+            [
+                'type' => 'Proxyium',
+                'name' => 'Proxyium',
+                'brandname' => 'Proxyium',
+                'key' => 'proxyium',
+            ],
+            [
+                'type' => 'Alain Grange',
+                'name' => 'Alain Grange',
+                'brandname' => 'Alain Grange',
+                'key' => 'alain-grange',
+            ],
+            [
+                'type' => 'Outcoder',
+                'name' => 'Outcoder',
+                'brandname' => 'Outcoder',
+                'key' => 'outcoder',
+            ],
+            [
+                'type' => 'VibeMate',
+                'name' => 'VibeMate',
+                'brandname' => 'VibeMate',
+                'key' => 'vibe-mate',
+            ],
         ];
     }
 

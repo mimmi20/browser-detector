@@ -427,6 +427,17 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.onionsearchengine.focus' => 'onion-browser',
             'com.keepsolid.privatebrowser' => 'keepsolid-browser',
             'com.vielianztlabs.browser' => 'proxy-max',
+            'com.vworldc.tusk' => 'tusk-browser',
+            'com.ojr.browser.anti.blokir' => 'ojr-browser',
+            'com.browser.pintar.vpn' => 'nyxone-browser',
+            'birapp.dark.web.private' => 'dark-web-private',
+            'app.proxyiumbrowser.android' => 'proxyium-browser',
+            'fr.agrange.bbbrowser' => 'keyboard-browser',
+            'com.qihoo.contents' => '360 secure browser',
+            'com.outcoder.browser' => 'surfy-browser',
+            'com.lovense.vibemate' => 'vibe-mate',
+            'vpn.video.downloader' => 'vd-browser',
+            'com.hotsurf.browser' => 'smartview-browser',
             default => null,
         };
     }

@@ -3935,6 +3935,22 @@ enum Company: string implements CompanyInterface
 
     case vielianztLabs = 'VIELianzt Labs';
 
+    case virtualWorldComputing = 'Virtual World Computing';
+
+    case ojrStudioMobile = 'OJR Studio Mobile';
+
+    case clearArcDigital = 'ClearArc Digital';
+
+    case birApps = 'BirApps';
+
+    case proxyium = 'Proxyium';
+
+    case alainGrange = 'Alain Grange';
+
+    case outcoder = 'Outcoder';
+
+    case vibeMate = 'VibeMate';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5900,6 +5916,14 @@ enum Company: string implements CompanyInterface
             'onionsearchengine', 'onion search engine llc', 'onion-search-engine', 'onion search engine' => self::onionSearchEngine,
             'keepsolid', 'keepsolid inc.', 'keep-solid' => self::keepSolid,
             'vielianztlabs', 'vielianzt labs', 'vielianzt-labs' => self::vielianztLabs,
+            'virtualworldcomputing', 'virtual world computing, llc', 'virtual-world-computing', 'virtual world computing' => self::virtualWorldComputing,
+            'ojrstudiomobile', 'ojr studio mobile', 'ojr-studio-mobile' => self::ojrStudioMobile,
+            'cleararcdigital', 'cleararc digital', 'cleararc-digital' => self::clearArcDigital,
+            'birapps', 'bir-apps' => self::birApps,
+            'proxyium' => self::proxyium,
+            'alaingrange', 'alain grange', 'alain-grange' => self::alainGrange,
+            'outcoder' => self::outcoder,
+            'vibemate', 'vibe-mate' => self::vibeMate,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6715,6 +6739,7 @@ enum Company: string implements CompanyInterface
             self::xinwangTechnology => 'Beijing XINWANG Technology Co Ltd.',
             self::onionSearchEngine => 'Onion Search Engine LLC',
             self::keepSolid => 'KeepSolid Inc.',
+            self::virtualWorldComputing => 'Virtual World Computing, LLC',
             self::unknown => null,
             default => $this->value,
         };
@@ -7466,6 +7491,12 @@ enum Company: string implements CompanyInterface
             self::onionSearchEngine => 'onion-search-engine',
             self::keepSolid => 'keep-solid',
             self::vielianztLabs => 'vielianzt-labs',
+            self::virtualWorldComputing => 'virtual-world-computing',
+            self::ojrStudioMobile => 'ojr-studio-mobile',
+            self::clearArcDigital => 'cleararc-digital',
+            self::birApps => 'bir-apps',
+            self::alainGrange => 'alain-grange',
+            self::vibeMate => 'vibe-mate',
             default => $this->name,
         };
     }
