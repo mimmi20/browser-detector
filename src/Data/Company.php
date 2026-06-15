@@ -3927,6 +3927,14 @@ enum Company: string implements CompanyInterface
 
     case movingClocksCloud = 'MovingClocksCloud';
 
+    case xinwangTechnology = 'XINWANG Technology';
+
+    case onionSearchEngine = 'Onion Search Engine';
+
+    case keepSolid = 'KeepSolid';
+
+    case vielianztLabs = 'VIELianzt Labs';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5888,6 +5896,10 @@ enum Company: string implements CompanyInterface
             'powerdaotech', 'powerdao tech global ltd.', 'powerdao-tech', 'powerdao tech' => self::powerDaoTech,
             'artistscope', 'artist-scope' => self::artistScope,
             'movingclockscloud', 'moving-clocks-cloud' => self::movingClocksCloud,
+            'xinwangtechnology', 'beijing xinwang technology co ltd.', 'xinwang-technology', 'xinwang technology' => self::xinwangTechnology,
+            'onionsearchengine', 'onion search engine llc', 'onion-search-engine', 'onion search engine' => self::onionSearchEngine,
+            'keepsolid', 'keepsolid inc.', 'keep-solid' => self::keepSolid,
+            'vielianztlabs', 'vielianzt labs', 'vielianzt-labs' => self::vielianztLabs,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6700,6 +6712,9 @@ enum Company: string implements CompanyInterface
             self::holaVpn => 'Hola VPN Ltd.',
             self::powerDaoTech => 'PowerDAO Tech Global Ltd.',
             self::metaX => 'MetaX Software PTE.Ltd.',
+            self::xinwangTechnology => 'Beijing XINWANG Technology Co Ltd.',
+            self::onionSearchEngine => 'Onion Search Engine LLC',
+            self::keepSolid => 'KeepSolid Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -7447,6 +7462,10 @@ enum Company: string implements CompanyInterface
             self::powerDaoTech => 'powerdao-tech',
             self::artistScope => 'artist-scope',
             self::movingClocksCloud => 'moving-clocks-cloud',
+            self::xinwangTechnology => 'xinwang-technology',
+            self::onionSearchEngine => 'onion-search-engine',
+            self::keepSolid => 'keep-solid',
+            self::vielianztLabs => 'vielianzt-labs',
             default => $this->name,
         };
     }

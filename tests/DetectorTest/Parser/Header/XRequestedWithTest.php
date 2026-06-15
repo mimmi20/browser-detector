@@ -605,6 +605,11 @@ final class XRequestedWithTest extends TestCase
             ['com.cloudmosa.puffinIncognito', true, 'puffin-incognito-browser', true, null, false, Os::unknown],
             ['com.metax.browser', true, 'open-browser-lite', true, null, false, Os::unknown],
             ['com.neurobro.browser', true, 'neuro-browser', true, null, false, Os::unknown],
+            ['com.tvwebbrowserpaid.v22', true, 'internet-browser-tv', true, null, false, Os::unknown],
+            ['com.mmbox.xbrowser', true, 'mmbox-x-browser', true, null, false, Os::unknown],
+            ['com.onionsearchengine.focus', true, 'onion-browser', true, null, false, Os::unknown],
+            ['com.keepsolid.privatebrowser', true, 'keepsolid-browser', true, null, false, Os::unknown],
+            ['com.vielianztlabs.browser', true, 'proxy-max', true, null, false, Os::unknown],
         ];
     }
 }

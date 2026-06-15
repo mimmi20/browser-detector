@@ -422,6 +422,11 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.cloudmosa.puffinincognito' => 'puffin-incognito-browser',
             'com.metax.browser' => 'open-browser-lite',
             'com.neurobro.browser' => 'neuro-browser',
+            'com.tvwebbrowserpaid.v22' => 'internet-browser-tv',
+            'com.mmbox.xbrowser' => 'mmbox-x-browser',
+            'com.onionsearchengine.focus' => 'onion-browser',
+            'com.keepsolid.privatebrowser' => 'keepsolid-browser',
+            'com.vielianztlabs.browser' => 'proxy-max',
             default => null,
         };
     }

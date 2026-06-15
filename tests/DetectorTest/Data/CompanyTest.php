@@ -11770,6 +11770,30 @@ final class CompanyTest extends TestCase
                 'brandname' => 'MovingClocksCloud',
                 'key' => 'moving-clocks-cloud',
             ],
+            [
+                'type' => 'XINWANG Technology',
+                'name' => 'Beijing XINWANG Technology Co Ltd.',
+                'brandname' => 'XINWANG Technology',
+                'key' => 'xinwang-technology',
+            ],
+            [
+                'type' => 'Onion Search Engine',
+                'name' => 'Onion Search Engine LLC',
+                'brandname' => 'Onion Search Engine',
+                'key' => 'onion-search-engine',
+            ],
+            [
+                'type' => 'KeepSolid',
+                'name' => 'KeepSolid Inc.',
+                'brandname' => 'KeepSolid',
+                'key' => 'keep-solid',
+            ],
+            [
+                'type' => 'VIELianzt Labs',
+                'name' => 'VIELianzt Labs',
+                'brandname' => 'VIELianzt Labs',
+                'key' => 'vielianzt-labs',
+            ],
         ];
     }
 
