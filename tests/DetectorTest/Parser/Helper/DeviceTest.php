@@ -5528,6 +5528,7 @@ final class DeviceTest extends TestCase
             ['C6606', 'sony=sony c6606'],
             ['D6708', 'sony=sony d6708'],
             ['XQ-AT72', 'sony=sony xq-at72'],
+            ['Xperia SP', 'sony=sony xperia sp'],
             // Vivo
             ['V2109', 'vivo=vivo v2109'],
             ['vivo 1716', 'vivo=vivo 1716'],

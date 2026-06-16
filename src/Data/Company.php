@@ -3951,6 +3951,18 @@ enum Company: string implements CompanyInterface
 
     case vibeMate = 'VibeMate';
 
+    case alfredoSpadafina = 'Alfredo Spadafina';
+
+    case crowbarSolutions = 'Crowbar Solutions';
+
+    case strongerApps = 'Stronger Apps';
+
+    case pawxy = 'Pawxy';
+
+    case arvinStudio = 'Arvin Studio';
+
+    case lightninglinkNetworks = 'LIGHTNINGLINK NETWORKS';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5924,6 +5936,12 @@ enum Company: string implements CompanyInterface
             'alaingrange', 'alain grange', 'alain-grange' => self::alainGrange,
             'outcoder' => self::outcoder,
             'vibemate', 'vibe-mate' => self::vibeMate,
+            'alfredospadafina', 'Alfredo Spadafina', 'alfredo-spadafina' => self::alfredoSpadafina,
+            'crowbarsolutions', 'crowbar solutions', 'crowbar-solutions' => self::crowbarSolutions,
+            'strongerapps', 'stronger apps', 'stronger-apps' => self::strongerApps,
+            'pawxy', 'pawxy inc.' => self::pawxy,
+            'arvinstudio', 'arvin studio', 'arvin-studio' => self::arvinStudio,
+            'lightninglinknetworks', 'lightninglink networks pte. ltd.', 'lightninglink-networks', 'lightninglink networks' => self::lightninglinkNetworks,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6740,6 +6758,8 @@ enum Company: string implements CompanyInterface
             self::onionSearchEngine => 'Onion Search Engine LLC',
             self::keepSolid => 'KeepSolid Inc.',
             self::virtualWorldComputing => 'Virtual World Computing, LLC',
+            self::pawxy => 'Pawxy Inc.',
+            self::lightninglinkNetworks => 'LIGHTNINGLINK NETWORKS PTE. LTD.',
             self::unknown => null,
             default => $this->value,
         };
@@ -7497,6 +7517,11 @@ enum Company: string implements CompanyInterface
             self::birApps => 'bir-apps',
             self::alainGrange => 'alain-grange',
             self::vibeMate => 'vibe-mate',
+            self::alfredoSpadafina => 'alfredo-spadafina',
+            self::crowbarSolutions => 'crowbar-solutions',
+            self::strongerApps => 'stronger-apps',
+            self::arvinStudio => 'arvin-studio',
+            self::lightninglinkNetworks => 'lightninglink-networks',
             default => $this->name,
         };
     }

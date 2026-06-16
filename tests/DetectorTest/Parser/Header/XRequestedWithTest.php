@@ -621,6 +621,12 @@ final class XRequestedWithTest extends TestCase
             ['com.lovense.vibemate', true, 'vibe-mate', true, null, false, Os::unknown],
             ['vpn.video.downloader', true, 'vd-browser', true, null, false, Os::unknown],
             ['com.hotsurf.browser', true, 'smartview-browser', true, null, false, Os::unknown],
+            ['com.crowbar.beaverlite', true, 'frost', true, null, false, Os::unknown],
+            ['com.ornet.torbrowser', true, 'ornet-browser', true, null, false, Os::unknown],
+            ['com.pawxy.browser', true, 'pawxy-browser', true, null, false, Os::unknown],
+            ['com.arvin.browser', true, 'arvin-browser', true, null, false, Os::unknown],
+            ['com.seraphic.openinet.cvte', true, 'metax-open-browser', true, null, false, Os::unknown],
+            ['com.security.xvpn.z35kb.amazon', true, 'x-vpn', true, null, false, Os::unknown],
         ];
     }
 }

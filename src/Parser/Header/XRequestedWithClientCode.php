@@ -308,7 +308,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.fsecure.ms.actshield' => 'act-shield',
             'com.fsecure.ms.kpn.veilig' => 'veilig-virusscanner',
             'com.twitter.android' => 'twitter app',
-            'com.seraphic.openinet.pre' => 'metax-open-browser',
+            'com.seraphic.openinet.pre', 'com.seraphic.openinet.cvte' => 'metax-open-browser',
             'com.android.media.module.services' => 'mediaservices-apk',
             'mojeek.app' => 'mojeek-app',
             'com.castify' => 'cast-to-tv-plus',
@@ -438,6 +438,11 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.lovense.vibemate' => 'vibe-mate',
             'vpn.video.downloader' => 'vd-browser',
             'com.hotsurf.browser' => 'smartview-browser',
+            'com.crowbar.beaverlite' => 'frost',
+            'com.ornet.torbrowser' => 'ornet-browser',
+            'com.pawxy.browser' => 'pawxy-browser',
+            'com.arvin.browser' => 'arvin-browser',
+            'com.security.xvpn.z35kb.amazon' => 'x-vpn',
             default => null,
         };
     }

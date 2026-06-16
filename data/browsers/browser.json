@@ -6716,5 +6716,69 @@
       ]
     },
     "engine": "blink"
+  },
+  "f-get": {
+    "name": "fGet",
+    "manufacturer": "alfredo-spadafina",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "fGet"
+      ]
+    },
+    "engine": null
+  },
+  "frost": {
+    "name": "Frost",
+    "manufacturer": "crowbar-solutions",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "ornet-browser": {
+    "name": "OrNET Browser",
+    "manufacturer": "stronger-apps",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "pawxy-browser": {
+    "name": "Pawxy",
+    "manufacturer": "pawxy",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "arvin-browser": {
+    "name": "Arvin",
+    "manufacturer": "arvin-studio",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Arvin"
+      ]
+    },
+    "engine": null
+  },
+  "x-vpn": {
+    "name": "X-VPN",
+    "manufacturer": "lightninglink-networks",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
   }
 }

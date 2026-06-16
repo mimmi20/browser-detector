@@ -4317,6 +4317,7 @@ final class Device implements DeviceInterface
             'c6606' => 'sony=sony c6606',
             'd6708' => 'sony=sony d6708',
             'xq-at72' => 'sony=sony xq-at72',
+            'xperia sp' => 'sony=sony xperia sp',
             // Vivo
             'v2109' => 'vivo=vivo v2109',
             'vivo 1716' => 'vivo=vivo 1716',

@@ -11842,6 +11842,42 @@ final class CompanyTest extends TestCase
                 'brandname' => 'VibeMate',
                 'key' => 'vibe-mate',
             ],
+            [
+                'type' => 'Alfredo Spadafina',
+                'name' => 'Alfredo Spadafina',
+                'brandname' => 'Alfredo Spadafina',
+                'key' => 'alfredo-spadafina',
+            ],
+            [
+                'type' => 'Crowbar Solutions',
+                'name' => 'Crowbar Solutions',
+                'brandname' => 'Crowbar Solutions',
+                'key' => 'crowbar-solutions',
+            ],
+            [
+                'type' => 'Stronger Apps',
+                'name' => 'Stronger Apps',
+                'brandname' => 'Stronger Apps',
+                'key' => 'stronger-apps',
+            ],
+            [
+                'type' => 'Pawxy',
+                'name' => 'Pawxy Inc.',
+                'brandname' => 'Pawxy',
+                'key' => 'pawxy',
+            ],
+            [
+                'type' => 'Arvin Studio',
+                'name' => 'Arvin Studio',
+                'brandname' => 'Arvin Studio',
+                'key' => 'arvin-studio',
+            ],
+            [
+                'type' => 'LIGHTNINGLINK NETWORKS',
+                'name' => 'LIGHTNINGLINK NETWORKS PTE. LTD.',
+                'brandname' => 'LIGHTNINGLINK NETWORKS',
+                'key' => 'lightninglink-networks',
+            ],
         ];
     }
 

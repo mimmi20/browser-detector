@@ -9793,6 +9793,58 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                 ],
             ],
+            [
+                [
+                    'http-x-requested-with' => 'com.arvin.browser',
+                    'user-agent' => 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Arvin/2.0.0 Chrome/113.0.5672.162 Mobile Safari/537.36',
+                ],
+                [
+                    'headers' => [
+                        'x-requested-with' => 'com.arvin.browser',
+                        'user-agent' => 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Arvin/2.0.0 Chrome/113.0.5672.162 Mobile Safari/537.36',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'general Mobile Phone',
+                        'marketingName' => 'general Mobile Phone',
+                        'manufacturer' => 'unknown',
+                        'brand' => 'unknown',
+                        'dualOrientation' => true,
+                        'simCount' => 1,
+                        'display' => [
+                            'width' => null,
+                            'height' => null,
+                            'touch' => true,
+                            'size' => null,
+                        ],
+                        'type' => 'smartphone',
+                        'ismobile' => true,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Android',
+                        'marketingName' => 'Android',
+                        'version' => '13.0.0',
+                        'manufacturer' => 'Google',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Arvin',
+                        'modus' => null,
+                        'version' => '2.0.0',
+                        'manufacturer' => 'Arvin Studio',
+                        'type' => 'browser',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '113.0.5672.162',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
         ];
     }
 }

@@ -568,7 +568,7 @@ final readonly class Headers
 
         $clientVersions = $this->getClientVersions($clientCodename);
         $clientVersion  = match ($clientCodename) {
-            'miui browser', 'huawei-browser', 'hola', 'tusk-browser', 'ojr-browser', 'surfy-browser', 'smartview-browser', 'vibe-mate', 'vd-browser' => $clientVersions['user-agent'] ?? array_last(
+            'miui browser', 'huawei-browser', 'hola', 'tusk-browser', 'ojr-browser', 'surfy-browser', 'smartview-browser', 'vibe-mate', 'vd-browser', 'arvin-browser' => $clientVersions['user-agent'] ?? array_last(
                 $clientVersions,
             ),
             'vivaldi', 'samsungbrowser' => array_key_exists(
