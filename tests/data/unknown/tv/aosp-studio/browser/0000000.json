@@ -5,8 +5,8 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
       "manufacturer": "unknown",
       "brand": "unknown",
       "dualOrientation": false,
@@ -17,9 +17,9 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop",
+      "type": "tv",
       "ismobile": false,
-      "istv": false,
+      "istv": true,
       "bits": null
     },
     "os": {
@@ -32,7 +32,7 @@
     "client": {
       "name": "Quick Search TV",
       "modus": null,
-      "version": null,
+      "version": "120.13.0",
       "manufacturer": "AOSP STUDIO",
       "type": "browser",
       "isbot": false,

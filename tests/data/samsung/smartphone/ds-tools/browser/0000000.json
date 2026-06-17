@@ -44,5 +44,51 @@
       "version": "108.0.0.0",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.hotsurf.browser",
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 13; SM-A042M Build/TP1A.220624.014) AppleWebKit [HS/28]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A042M",
+      "marketingName": "Galaxy A04e",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "SmartView Browser",
+      "modus": null,
+      "version": "28.0.0",
+      "manufacturer": "DS tools",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
   }
 ]

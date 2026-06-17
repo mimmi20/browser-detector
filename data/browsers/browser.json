@@ -5821,6 +5821,18 @@
     },
     "engine": "webkit"
   },
+  "perfect browser pro": {
+    "name": "Perfect Browser Pro",
+    "manufacturer": "app-simply",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PerfectBrowserPro"
+      ]
+    },
+    "engine": "webkit"
+  },
   "every-browser": {
     "name": "Every Browser",
     "manufacturer": "pixel-motion",
@@ -6778,6 +6790,55 @@
     "version": {
       "factory": null,
       "search": null
+    },
+    "engine": null
+  },
+  "sushi-browser": {
+    "name": "Sushi Browser",
+    "manufacturer": "kura52",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SushiBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "lt-browser": {
+    "name": "LT Browser",
+    "manufacturer": "lambda-test",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "LTBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "dot-browser": {
+    "name": "Dot Browser",
+    "manufacturer": "dot-hq",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DotBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "sp-browser": {
+    "name": "SP Browser",
+    "manufacturer": "sp-browser",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SP Browser",
+        "Private Browser"
+      ]
     },
     "engine": null
   }

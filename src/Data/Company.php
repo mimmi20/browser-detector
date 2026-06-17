@@ -3963,6 +3963,14 @@ enum Company: string implements CompanyInterface
 
     case lightninglinkNetworks = 'LIGHTNINGLINK NETWORKS';
 
+    case kura52 = 'kura52';
+
+    case lambdatest = 'LambdaTest';
+
+    case dothq = 'Dot HQ';
+
+    case spBrowser = 'SP Browser';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5936,12 +5944,16 @@ enum Company: string implements CompanyInterface
             'alaingrange', 'alain grange', 'alain-grange' => self::alainGrange,
             'outcoder' => self::outcoder,
             'vibemate', 'vibe-mate' => self::vibeMate,
-            'alfredospadafina', 'Alfredo Spadafina', 'alfredo-spadafina' => self::alfredoSpadafina,
+            'alfredospadafina', 'alfredo spadafina', 'alfredo-spadafina' => self::alfredoSpadafina,
             'crowbarsolutions', 'crowbar solutions', 'crowbar-solutions' => self::crowbarSolutions,
             'strongerapps', 'stronger apps', 'stronger-apps' => self::strongerApps,
             'pawxy', 'pawxy inc.' => self::pawxy,
             'arvinstudio', 'arvin studio', 'arvin-studio' => self::arvinStudio,
             'lightninglinknetworks', 'lightninglink networks pte. ltd.', 'lightninglink-networks', 'lightninglink networks' => self::lightninglinkNetworks,
+            'kura52' => self::kura52,
+            'lambdatest', 'lambdatest, inc.', 'lambda-test' => self::lambdatest,
+            'dothq', 'dot hq', 'dot-hq' => self::dothq,
+            'spbrowser', 'sp browser', 'sp-browser' => self::spBrowser,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6760,6 +6772,7 @@ enum Company: string implements CompanyInterface
             self::virtualWorldComputing => 'Virtual World Computing, LLC',
             self::pawxy => 'Pawxy Inc.',
             self::lightninglinkNetworks => 'LIGHTNINGLINK NETWORKS PTE. LTD.',
+            self::lambdatest => 'LambdaTest, Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -7522,6 +7535,9 @@ enum Company: string implements CompanyInterface
             self::strongerApps => 'stronger-apps',
             self::arvinStudio => 'arvin-studio',
             self::lightninglinkNetworks => 'lightninglink-networks',
+            self::lambdatest => 'lambda-test',
+            self::dothq => 'dot-hq',
+            self::spBrowser => 'sp-browser',
             default => $this->name,
         };
     }

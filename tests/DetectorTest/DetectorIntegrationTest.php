@@ -9845,6 +9845,58 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                 ],
             ],
+            [
+                [
+                    'http-x-requested-with' => 'privatebrowser.securebrowser.com.klar',
+                    'user-agent' => 'Mozilla/5.0 (Linux; Android 9) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Private Browser/4.0 Chrome/98.0.4758.101 Mobile Safari/537.36',
+                ],
+                [
+                    'headers' => [
+                        'x-requested-with' => 'privatebrowser.securebrowser.com.klar',
+                        'user-agent' => 'Mozilla/5.0 (Linux; Android 9) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Private Browser/4.0 Chrome/98.0.4758.101 Mobile Safari/537.36',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'general Mobile Phone',
+                        'marketingName' => 'general Mobile Phone',
+                        'manufacturer' => 'unknown',
+                        'brand' => 'unknown',
+                        'dualOrientation' => true,
+                        'simCount' => 1,
+                        'display' => [
+                            'width' => null,
+                            'height' => null,
+                            'touch' => true,
+                            'size' => null,
+                        ],
+                        'type' => 'smartphone',
+                        'ismobile' => true,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Android',
+                        'marketingName' => 'Android',
+                        'version' => '9.0.0',
+                        'manufacturer' => 'Google',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'SP Browser',
+                        'modus' => null,
+                        'version' => '4.0.0',
+                        'manufacturer' => 'SP Browser',
+                        'type' => 'browser',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '98.0.4758.101',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
         ];
     }
 }

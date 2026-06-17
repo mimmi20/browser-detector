@@ -11878,6 +11878,30 @@ final class CompanyTest extends TestCase
                 'brandname' => 'LIGHTNINGLINK NETWORKS',
                 'key' => 'lightninglink-networks',
             ],
+            [
+                'type' => 'kura52',
+                'name' => 'kura52',
+                'brandname' => 'kura52',
+                'key' => 'kura52',
+            ],
+            [
+                'type' => 'LambdaTest',
+                'name' => 'LambdaTest, Inc.',
+                'brandname' => 'LambdaTest',
+                'key' => 'lambda-test',
+            ],
+            [
+                'type' => 'Dot HQ',
+                'name' => 'Dot HQ',
+                'brandname' => 'Dot HQ',
+                'key' => 'dot-hq',
+            ],
+            [
+                'type' => 'SP Browser',
+                'name' => 'SP Browser',
+                'brandname' => 'SP Browser',
+                'key' => 'sp-browser',
+            ],
         ];
     }
 

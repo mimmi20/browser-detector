@@ -443,6 +443,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.pawxy.browser' => 'pawxy-browser',
             'com.arvin.browser' => 'arvin-browser',
             'com.security.xvpn.z35kb.amazon' => 'x-vpn',
+            'privatebrowser.securebrowser.com.klar' => 'sp-browser',
             default => null,
         };
     }
