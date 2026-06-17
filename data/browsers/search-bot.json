@@ -1909,5 +1909,17 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "yandex-accessibility-bot": {
+    "name": "YandexAccessibilityBot",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexAccessibilityBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

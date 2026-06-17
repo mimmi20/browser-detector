@@ -6841,5 +6841,17 @@
       ]
     },
     "engine": null
+  },
+  "amazon-bedrock-agentcore-browser": {
+    "name": "Amazon Bedrock AgentCore Browser",
+    "manufacturer": "amazon",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Amazon-Bedrock-AgentCore-Browser"
+      ]
+    },
+    "engine": null
   }
 }

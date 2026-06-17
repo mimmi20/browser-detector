@@ -21665,7 +21665,7 @@
   },
   "samsung sm-g350": {
     "deviceName": "SM-G350",
-    "marketingName": "Galaxy Star Advance",
+    "marketingName": "Galaxy Core Plus",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -35257,6 +35257,22 @@
     "display": {
       "width": 2340,
       "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-e075f": {
+    "deviceName": "SM-E075F",
+    "marketingName": "Galaxy F07 4G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
       "touch": true,
       "size": 6.7
     },

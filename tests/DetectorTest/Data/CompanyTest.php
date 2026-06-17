@@ -11902,6 +11902,36 @@ final class CompanyTest extends TestCase
                 'brandname' => 'SP Browser',
                 'key' => 'sp-browser',
             ],
+            [
+                'type' => 'Bliss',
+                'name' => 'Bliss',
+                'brandname' => 'Bliss',
+                'key' => 'bliss',
+            ],
+            [
+                'type' => 'Vertex',
+                'name' => 'Vertex',
+                'brandname' => 'Vertex',
+                'key' => 'vertex',
+            ],
+            [
+                'type' => 'Vonino',
+                'name' => 'Vonino Inc.',
+                'brandname' => 'Vonino',
+                'key' => 'vonino',
+            ],
+            [
+                'type' => 'Sohu',
+                'name' => 'Sohu.com Inc.',
+                'brandname' => 'Sohu',
+                'key' => 'sohu',
+            ],
+            [
+                'type' => 'Simao Gomes Viana',
+                'name' => 'Simao Gomes Viana',
+                'brandname' => 'Simao Gomes Viana',
+                'key' => 'simao-gomes-viana',
+            ],
         ];
     }
 

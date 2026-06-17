@@ -2273,7 +2273,7 @@
   },
   "xiaomi 21061119al": {
     "deviceName": "21061119AL",
-    "marketingName": "Redmi 10",
+    "marketingName": "Redmi 10 (2022)",
     "manufacturer": "xiaomi",
     "brand": "xiaomi",
     "dualOrientation": true,
@@ -2289,7 +2289,7 @@
   },
   "xiaomi 21061119ag": {
     "deviceName": "21061119AG",
-    "marketingName": "Redmi 10",
+    "marketingName": "Redmi 10 (2022)",
     "manufacturer": "xiaomi",
     "brand": "xiaomi",
     "dualOrientation": true,
@@ -9103,6 +9103,22 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "xiaomi 25062rn2dl": {
+    "deviceName": "25062RN2DL",
+    "marketingName": "Redmi 15 4G",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.9
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "xiaomi 25069ptebg": {
     "deviceName": "25069PTEBG",
     "marketingName": "15T",
@@ -9950,5 +9966,21 @@
     },
     "type": "smartphone",
     "platform": "android"
-  }
+  },
+  "xiaomi 15t": {
+    "deviceName": "15T",
+    "marketingName": "15T",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2772,
+      "height": 1280,
+      "touch": true,
+      "size": 6.83
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
 }

@@ -3971,6 +3971,16 @@ enum Company: string implements CompanyInterface
 
     case spBrowser = 'SP Browser';
 
+    case bliss = 'Bliss';
+
+    case vertex = 'Vertex';
+
+    case vonino = 'Vonino';
+
+    case sohu = 'Sohu';
+
+    case simaoGomesViana = 'Simao Gomes Viana';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5954,6 +5964,11 @@ enum Company: string implements CompanyInterface
             'lambdatest', 'lambdatest, inc.', 'lambda-test' => self::lambdatest,
             'dothq', 'dot hq', 'dot-hq' => self::dothq,
             'spbrowser', 'sp browser', 'sp-browser' => self::spBrowser,
+            'bliss' => self::bliss,
+            'vertex' => self::vertex,
+            'vonino', 'vonino inc.' => self::vonino,
+            'sohu', 'sohu.com inc.' => self::sohu,
+            'simaogomesviana', 'simao-gomes-viana', 'simao gomes viana' => self::simaoGomesViana,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6773,6 +6788,8 @@ enum Company: string implements CompanyInterface
             self::pawxy => 'Pawxy Inc.',
             self::lightninglinkNetworks => 'LIGHTNINGLINK NETWORKS PTE. LTD.',
             self::lambdatest => 'LambdaTest, Inc.',
+            self::vonino => 'Vonino Inc.',
+            self::sohu => 'Sohu.com Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -7538,6 +7555,7 @@ enum Company: string implements CompanyInterface
             self::lambdatest => 'lambda-test',
             self::dothq => 'dot-hq',
             self::spBrowser => 'sp-browser',
+            self::simaoGomesViana => 'simao-gomes-viana',
             default => $this->name,
         };
     }

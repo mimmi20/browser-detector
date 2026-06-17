@@ -1791,5 +1791,17 @@
       ]
     },
     "engine": null
+  },
+  "open vulnerability assessment system": {
+    "name": "Open Vulnerability Assessment System",
+    "manufacturer": "open-vas",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "OpenVAS-VT"
+      ]
+    },
+    "engine": "unknown"
   }
 }
