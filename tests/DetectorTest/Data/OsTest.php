@@ -1597,6 +1597,14 @@ final class OsTest extends TestCase
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Mikrotik\/', 'RouterOS']],
                 'key' => 'router-os',
             ],
+            [
+                'type' => 'Vega OS',
+                'name' => 'Vega OS',
+                'marketingName' => 'Vega OS',
+                'manufacturer' => Company::amazon,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Kepler']],
+                'key' => 'vega-os',
+            ],
         ];
     }
 }

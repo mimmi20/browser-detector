@@ -407,6 +407,8 @@ enum Os: string implements OsInterface
 
     case routerOS = 'RouterOS';
 
+    case vegaOS = 'Vega OS';
+
     /**
      * @throws void
      *
@@ -602,6 +604,7 @@ enum Os: string implements OsInterface
             'qnx' => self::qnx,
             'picoos', 'pico os', 'pico-os' => self::picoOS,
             'routeros', 'router-os' => self::routerOS,
+            'vegaos', 'vega os', 'vega-os' => self::vegaOS,
             default => self::unknown,
         };
     }
@@ -658,7 +661,7 @@ enum Os: string implements OsInterface
             self::tvos, self::audioos, self::ios, self::macosx, self::darwin, self::macintosh, self::watchos => Company::apple,
             self::bada, self::orsay => Company::samsung,
             self::cellos, self::orbisos, self::newsos => Company::sony,
-            self::fireos => Company::amazon,
+            self::fireos, self::vegaOS => Company::amazon,
             self::firefoxos => Company::mozilla,
             self::miuios => Company::xiaomi,
             self::lgwebos => Company::lg,
@@ -866,6 +869,7 @@ enum Os: string implements OsInterface
             self::tivoOS => ['factory' => VersionBuilderFactory::class, 'search' => ['TiVoOS']],
             self::picoOS => ['factory' => VersionBuilderFactory::class, 'search' => ['PICO \d OS']],
             self::routerOS => ['factory' => VersionBuilderFactory::class, 'search' => ['Mikrotik\/', 'RouterOS']],
+            self::vegaOS => ['factory' => VersionBuilderFactory::class, 'search' => ['Kepler']],
             default => ['factory' => null, 'search' => null],
         };
     }
@@ -984,6 +988,7 @@ enum Os: string implements OsInterface
             self::ubuntuTouch => 'ubuntu-touch',
             self::picoOS => 'pico-os',
             self::routerOS => 'router-os',
+            self::vegaOS => 'vega-os',
             default => $this->name,
         };
     }

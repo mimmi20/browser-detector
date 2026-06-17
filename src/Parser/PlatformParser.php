@@ -136,6 +136,7 @@ final readonly class PlatformParser implements PlatformParserInterface
             '/unix/i' => Os::unix,
             '/kukui|(?<!i)cros(?!s)|build\/r\d+-\d+[.\d]+|(?<!for)chromebook/i' => Os::chromeos,
             '/fire os|(?:andr[o0]id (\d([\d.])*);? |amazon;|smarttv_)aft|aeo[acbhkt]|[ (]kf[adfgjkmorstq]|.+firetvstick2018|cordova-amazon-fireos/i' => Os::fireos,
+            '/kepler[\\/ ]/i' => Os::vegaOS,
             '/kaios/i' => Os::kaios,
             '/spreadtrum/i' => Os::mocorOS,
             '/smartisan[_ ]|(sm(?:70[15]|801|919)|yq60[1357]|dt2002c|de106|dt190[12]a|o[ce]106|oc105)[ \/;\)]/i' => Os::smartisanOS,

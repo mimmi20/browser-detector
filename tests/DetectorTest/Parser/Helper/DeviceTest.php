@@ -223,6 +223,7 @@ final class DeviceTest extends TestCase
             ['AEOCW', 'amazon=amazon aeocw'],
             ['AEOBP', 'amazon=amazon aeobp'],
             ['AEOCN', 'amazon=amazon aeocn'],
+            ['AFTBU001', 'amazon=amazon aftbu001'],
             // Asus
             ['P024', 'asus=asus p024'],
             ['ASUS_X00DD', 'asus=asus x00dd'],
