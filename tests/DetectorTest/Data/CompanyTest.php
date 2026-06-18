@@ -11950,6 +11950,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'RNPS',
                 'key' => 'rnps',
             ],
+            [
+                'type' => 'Disney Mobile',
+                'name' => 'Disney Mobile',
+                'brandname' => 'Disney Mobile',
+                'key' => 'disney-mobile',
+            ],
         ];
     }
 

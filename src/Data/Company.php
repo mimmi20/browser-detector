@@ -3987,6 +3987,8 @@ enum Company: string implements CompanyInterface
 
     case rnps = 'RNPS';
 
+    case disneyMobile = 'Disney Mobile';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5978,6 +5980,7 @@ enum Company: string implements CompanyInterface
             'instabooks', 'insta-books' => self::instaBooks,
             'savysoda', 'savy-soda', 'savy soda' => self::savySoda,
             'rnps' => self::rnps,
+            'disneymobile', 'disney-mobile', 'disney mobile' => self::disneyMobile,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -7567,6 +7570,7 @@ enum Company: string implements CompanyInterface
             self::simaoGomesViana => 'simao-gomes-viana',
             self::instaBooks => 'insta-books',
             self::savySoda => 'savy-soda',
+            self::disneyMobile => 'disney-mobile',
             default => $this->name,
         };
     }
