@@ -628,6 +628,7 @@ final class XRequestedWithTest extends TestCase
             ['com.seraphic.openinet.cvte', true, 'metax-open-browser', true, null, false, Os::unknown],
             ['com.security.xvpn.z35kb.amazon', true, 'x-vpn', true, null, false, Os::unknown],
             ['privatebrowser.securebrowser.com.klar', true, 'sp-browser', true, null, false, Os::unknown],
+            ['SavySoda.PrivateBrowsing', true, 'sp-browser', true, null, false, Os::unknown],
         ];
     }
 }

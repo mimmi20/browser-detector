@@ -1803,5 +1803,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "rnps-action-cards": {
+    "name": "RNPS Action Cards",
+    "manufacturer": "rnps",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "rnps-action-cards"
+      ]
+    },
+    "engine": "unknown"
   }
 }

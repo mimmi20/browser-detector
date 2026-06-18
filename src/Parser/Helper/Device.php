@@ -196,6 +196,8 @@ final class Device implements DeviceInterface
             'aeobp' => 'amazon=amazon aeobp',
             'aeocn' => 'amazon=amazon aeocn',
             'aftbu001' => 'amazon=amazon aftbu001',
+            'aftca002' => 'amazon=amazon aftca002',
+            'aftcl001' => 'amazon=amazon aftcl001',
             // Asus
             'p024' => 'asus=asus p024',
             'asus_x00dd' => 'asus=asus x00dd',

@@ -3981,6 +3981,12 @@ enum Company: string implements CompanyInterface
 
     case simaoGomesViana = 'Simao Gomes Viana';
 
+    case instaBooks = 'InstaBooks';
+
+    case savySoda = 'Savy Soda';
+
+    case rnps = 'RNPS';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5969,6 +5975,9 @@ enum Company: string implements CompanyInterface
             'vonino', 'vonino inc.' => self::vonino,
             'sohu', 'sohu.com inc.' => self::sohu,
             'simaogomesviana', 'simao-gomes-viana', 'simao gomes viana' => self::simaoGomesViana,
+            'instabooks', 'insta-books' => self::instaBooks,
+            'savysoda', 'savy-soda', 'savy soda' => self::savySoda,
+            'rnps' => self::rnps,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -7556,6 +7565,8 @@ enum Company: string implements CompanyInterface
             self::dothq => 'dot-hq',
             self::spBrowser => 'sp-browser',
             self::simaoGomesViana => 'simao-gomes-viana',
+            self::instaBooks => 'insta-books',
+            self::savySoda => 'savy-soda',
             default => $this->name,
         };
     }

@@ -5256,5 +5256,17 @@
       ]
     },
     "engine": null
+  },
+  "hulu": {
+    "name": "Hulu",
+    "manufacturer": "disney-mobile",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Hulu"
+      ]
+    },
+    "engine": null
   }
 }

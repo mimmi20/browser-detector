@@ -11932,6 +11932,24 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Simao Gomes Viana',
                 'key' => 'simao-gomes-viana',
             ],
+            [
+                'type' => 'InstaBooks',
+                'name' => 'InstaBooks',
+                'brandname' => 'InstaBooks',
+                'key' => 'insta-books',
+            ],
+            [
+                'type' => 'Savy Soda',
+                'name' => 'Savy Soda',
+                'brandname' => 'Savy Soda',
+                'key' => 'savy-soda',
+            ],
+            [
+                'type' => 'RNPS',
+                'name' => 'RNPS',
+                'brandname' => 'RNPS',
+                'key' => 'rnps',
+            ],
         ];
     }
 

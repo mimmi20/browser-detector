@@ -146,6 +146,8 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/mozilla\/[\d.]+ \(samsung; (?P<devicecode>[^);\/]+)(?:.*)? tizen\/[\d.]+ like android;/i',
             '/goeuroandroid\/[\d.]+ \((?P<devicecode>[^);\/]+); android [\d.]+; okhttp\/[\d.]+\) webview/i',
             '/bitwarden_mobile\/[\d.]+ \(android [\d.]+; sdk [\d.]+; model (?P<devicecode>[^);\/]+)/i',
+            '/amazon (?P<devicecode>[^);\/]+) kepler\/[\d.]+/i',
+            '/kepler\/[\d.]+ \(linux; (?P<devicecode>[^);\/]+)\)/i',
             // should be the last entry in the list
             '/^(?P<devicecode>.+)$/i',
         ];

@@ -444,6 +444,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.arvin.browser' => 'arvin-browser',
             'com.security.xvpn.z35kb.amazon' => 'x-vpn',
             'privatebrowser.securebrowser.com.klar' => 'sp-browser',
+            'savysoda.privatebrowsing' => 'private-browsing',
             default => null,
         };
     }

@@ -290,6 +290,7 @@ final class SecChUaTest extends TestCase
             ['"Lemur";v="3", "Chromium";v="140", "Not=A?Brand";v="24"', true, 'lemur', true, '3.0.0', true, Engine::blink, true, '140.0.0'],
             ['"Chromium";v="116.0.5845.96", "Not)A;Brand";v="24.0.0.0", "Hola";v="116.0.5845.96"', true, 'hola', true, '116.0.5845.96', true, Engine::blink, true, '116.0.5845.96'],
             ['"Chromium";v="116.0.5845.96", "Not)A;Brand";v="24.0.0.0", "power";v="116.0.5845.96"', true, 'power', true, '116.0.5845.96', true, Engine::blink, true, '116.0.5845.96'],
+            ['"Not.A/Brand";v="99", "PrivateBrowsing";v="136"', true, 'private-browsing', true, '136.0.0', true, Engine::blink, true, '116.0.5845.96'],
         ];
     }
 }

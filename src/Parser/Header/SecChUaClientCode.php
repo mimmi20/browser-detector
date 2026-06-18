@@ -88,6 +88,7 @@ final class SecChUaClientCode implements ClientCodeInterface
             'quetta' => 'quetta-browser',
             'ace' => 'ace-browser',
             'ray' => 'ray-browser',
+            'privatebrowsing' => 'private-browsing',
             default => $code,
         };
     }

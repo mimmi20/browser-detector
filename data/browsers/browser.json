@@ -6853,5 +6853,29 @@
       ]
     },
     "engine": null
+  },
+  "safe-browser": {
+    "name": "SafeBrowser",
+    "manufacturer": "insta-books",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SafeBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "private-browsing": {
+    "name": "PrivateBrowsing",
+    "manufacturer": "savy-soda",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PrivateBrowsing"
+      ]
+    },
+    "engine": "blink"
   }
 }
