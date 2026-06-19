@@ -10782,7 +10782,7 @@ final class CompanyTest extends TestCase
             ],
             [
                 'type' => 'VK',
-                'name' => 'VK',
+                'name' => 'VK LLC',
                 'brandname' => 'VK',
                 'key' => 'vk',
             ],
@@ -11955,6 +11955,30 @@ final class CompanyTest extends TestCase
                 'name' => 'Disney Mobile',
                 'brandname' => 'Disney Mobile',
                 'key' => 'disney-mobile',
+            ],
+            [
+                'type' => 'Naver',
+                'name' => 'Naver Corporation',
+                'brandname' => 'Naver',
+                'key' => 'naver',
+            ],
+            [
+                'type' => 'Exaring',
+                'name' => 'Exaring AG',
+                'brandname' => 'Exaring',
+                'key' => 'exaring',
+            ],
+            [
+                'type' => 'WPS SOFTWARE',
+                'name' => 'WPS SOFTWARE PTE. LTD.',
+                'brandname' => 'WPS SOFTWARE',
+                'key' => 'wps-software',
+            ],
+            [
+                'type' => 'Azureus Software',
+                'name' => 'Azureus Software Inc.',
+                'brandname' => 'Azureus Software',
+                'key' => 'azureus-software',
             ],
         ];
     }

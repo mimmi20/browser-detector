@@ -3989,6 +3989,14 @@ enum Company: string implements CompanyInterface
 
     case disneyMobile = 'Disney Mobile';
 
+    case naver = 'Naver';
+
+    case exaring = 'Exaring';
+
+    case wpsSoftware = 'WPS SOFTWARE';
+
+    case azureusSoftware = 'Azureus Software';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5785,7 +5793,7 @@ enum Company: string implements CompanyInterface
             'shareaholic', 'shareaholic, inc.' => self::shareaholic,
             'youview', 'youview tv ltd', 'youview tv' => self::youview,
             'wdes', 'wdes sas' => self::wdes,
-            'vk' => self::vk,
+            'vk', 'vk llc' => self::vk,
             'trentwiles', 'trent-wiles', 'trent wiles' => self::trentWiles,
             'modesco' => self::modesco,
             'kontur' => self::kontur,
@@ -5981,6 +5989,10 @@ enum Company: string implements CompanyInterface
             'savysoda', 'savy-soda', 'savy soda' => self::savySoda,
             'rnps' => self::rnps,
             'disneymobile', 'disney-mobile', 'disney mobile' => self::disneyMobile,
+            'naver', 'naver corporation' => self::naver,
+            'exaring', 'exaring ag' => self::exaring,
+            'wpssoftware', 'wps software pte. ltd.', 'wps-software', 'wps software' => self::wpsSoftware,
+            'azureussoftware', 'azureus software inc.', 'azureus-software', 'azureus software' => self::azureusSoftware,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6802,6 +6814,11 @@ enum Company: string implements CompanyInterface
             self::lambdatest => 'LambdaTest, Inc.',
             self::vonino => 'Vonino Inc.',
             self::sohu => 'Sohu.com Inc.',
+            self::naver => 'Naver Corporation',
+            self::vk => 'VK LLC',
+            self::exaring => 'Exaring AG',
+            self::wpsSoftware => 'WPS SOFTWARE PTE. LTD.',
+            self::azureusSoftware => 'Azureus Software Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -7571,6 +7588,8 @@ enum Company: string implements CompanyInterface
             self::instaBooks => 'insta-books',
             self::savySoda => 'savy-soda',
             self::disneyMobile => 'disney-mobile',
+            self::wpsSoftware => 'wps-software',
+            self::azureusSoftware => 'azureus-software',
             default => $this->name,
         };
     }

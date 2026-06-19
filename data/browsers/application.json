@@ -553,7 +553,7 @@
   },
   "matome": {
     "name": "Matome",
-    "manufacturer": "nhn-corporation",
+    "manufacturer": "naver",
     "type": "application",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -1824,6 +1824,18 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "GitHub Desktop"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "azureus-vuze": {
+    "name": "Vuze",
+    "manufacturer": "azureus-software",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Azureus"
       ]
     },
     "engine": "unknown"

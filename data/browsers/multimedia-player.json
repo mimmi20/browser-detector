@@ -405,8 +405,10 @@
     "manufacturer": "overcast radio",
     "type": "multimedia-player",
     "version": {
-      "class": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Overcast"
+      ]
     },
     "engine": "webkit"
   },
@@ -1846,6 +1848,18 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "JHV\\/SWHV-"
+      ]
+    },
+    "engine": null
+  },
+  "waipu-tv": {
+    "name": "waipu.tv",
+    "manufacturer": "exaring",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "waipu"
       ]
     },
     "engine": null

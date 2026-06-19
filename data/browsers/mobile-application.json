@@ -158,6 +158,7 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "whatsapp-linux-app",
+        "WhatsAppElectron",
         "WhatsApp"
       ]
     },
@@ -1692,8 +1693,10 @@
     "manufacturer": "itech",
     "type": "mobile-application",
     "version": {
-      "factory": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Instabridge"
+      ]
     },
     "engine": null
   },
@@ -2464,7 +2467,7 @@
   },
   "naver": {
     "name": "Naver",
-    "manufacturer": "nhn-corporation",
+    "manufacturer": "naver",
     "type": "mobile-application",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -4977,6 +4980,8 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "com.audible.playersdk.player",
+        "Audible, Android, ",
         "Audible"
       ]
     },
@@ -5319,6 +5324,122 @@
       "search": [
         "Kwai_Pro"
       ]
+    },
+    "engine": null
+  },
+  "naver-dictionary": {
+    "name": "NAVER Dictionary",
+    "manufacturer": "naver",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "naverdicapp; [^;]+; "
+      ]
+    },
+    "engine": null
+  },
+  "zen": {
+    "name": "Zen",
+    "manufacturer": "vk",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ZenKit"
+      ]
+    },
+    "engine": null
+  },
+  "de-telegraaf": {
+    "name": "De Telegraaf",
+    "manufacturer": "mediahuis-nrc",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "De Telegraaf"
+      ]
+    },
+    "engine": null
+  },
+  "hotels-com": {
+    "name": "Hotels.com",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HCom"
+      ]
+    },
+    "engine": null
+  },
+  "hidex": {
+    "name": "HideX",
+    "manufacturer": "flatfish",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "cam-scanner": {
+    "name": "CamScanner",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "CamScanner"
+      ]
+    },
+    "engine": null
+  },
+  "my-watch-party": {
+    "name": "My Watch Party",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MyWatchParty"
+      ]
+    },
+    "engine": null
+  },
+  "ali-pay": {
+    "name": "Alipay",
+    "manufacturer": "alibaba",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AP\\/"
+      ]
+    },
+    "engine": null
+  },
+  "wps-office": {
+    "name": "WPS Office",
+    "manufacturer": "wps-software",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WpsMoffice"
+      ]
+    },
+    "engine": null
+  },
+  "google-photos": {
+    "name": "Google Photos",
+    "manufacturer": "google",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
     },
     "engine": null
   }
