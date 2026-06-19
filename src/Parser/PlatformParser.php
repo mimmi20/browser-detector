@@ -150,6 +150,7 @@ final readonly class PlatformParser implements PlatformParserInterface
             '/mocordroid/i' => Os::mocordroid,
             '/andr0id|android tv|g[o0][o0]gle tv|smarttv 4k|smart tv/i' => Os::androidtv,
             '/sm-r[0-9]{3}/i' => Os::wearos,
+            '/Android (\d+[.\d]*);.+release\.go$/i' => Os::androidGo,
             '/(?<!o)andr[0o]id|silk|juc ?\(linux;|adr |gingerbread|ucweb\/2\.0 \(linux;|vre;|beyondpod|htc_sensation_z710e|puffin\/[\d\.]+a[tp]|okhttp|fban\/fb4a.*fbsv\/|ddg[_-]android|omdroid|podkicker\/|podkicker pro\//i' => Os::android,
             '/watchos|apple watch|watch os/i' => Os::watchos,
             '/mobilesafari\/.*cfnetwork|(?<!like |t)iphone|cpu i?os|like mac os x|(?<!prcmnovel)[\/ \(\._\-]ios([ \);\/\.\-]|$)|airplay/i' => Os::ios,

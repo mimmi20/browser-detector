@@ -371,5 +371,65 @@
       ]
     },
     "engine": null
+  },
+  "mail-master": {
+    "name": "Mail Master",
+    "manufacturer": "unknown",
+    "type": "pim",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MailMaster_Android_Mobile"
+      ]
+    },
+    "engine": null
+  },
+  "gmail": {
+    "name": "Gmail",
+    "manufacturer": "google",
+    "type": "pim",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Android-Gmail"
+      ]
+    },
+    "engine": null
+  },
+  "naver-mail": {
+    "name": "NAVER Mail",
+    "manufacturer": "nhn-corporation",
+    "type": "pim",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NaverMailApp"
+      ]
+    },
+    "engine": null
+  },
+  "bathy-scaphe": {
+    "name": "BathyScaphe",
+    "manufacturer": "unknown",
+    "type": "pim",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BathyScaphe"
+      ]
+    },
+    "engine": null
+  },
+  "davdroid": {
+    "name": "DAVdroid",
+    "manufacturer": "unknown",
+    "type": "pim",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DAVdroid"
+      ]
+    },
+    "engine": null
   }
 }

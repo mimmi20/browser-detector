@@ -1772,8 +1772,10 @@
     "manufacturer": "sk-communications",
     "type": "mobile-application",
     "version": {
-      "factory": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "nate_app;appver:"
+      ]
     },
     "engine": null
   },
@@ -2123,6 +2125,7 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AppName\\/musical_ly app_version",
+        "trill app_version",
         "musical_ly_",
         "TikTok"
       ]
@@ -2134,8 +2137,10 @@
     "manufacturer": "google",
     "type": "mobile-application",
     "version": {
-      "class": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NSTNWV"
+      ]
     },
     "engine": null
   },
@@ -5266,6 +5271,53 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Hulu"
+      ]
+    },
+    "engine": null
+  },
+  "genspark": {
+    "name": "Genspark",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "edmodo": {
+    "name": "Edmodo",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "EdmodoAndroid"
+      ]
+    },
+    "engine": null
+  },
+  "tiktok-lite": {
+    "name": "TikTok Lite",
+    "manufacturer": "tiktok",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AppName\\/musically_go app_version",
+        "ultralite app_version"
+      ]
+    },
+    "engine": null
+  },
+  "kwai-pro": {
+    "name": "Kwai Pro",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Kwai_Pro"
       ]
     },
     "engine": null

@@ -1605,6 +1605,14 @@ final class OsTest extends TestCase
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Kepler']],
                 'key' => 'vega-os',
             ],
+            [
+                'type' => 'Android Go',
+                'name' => 'Android Go',
+                'marketingName' => 'Android Go',
+                'manufacturer' => Company::google,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Andr[o0]id']],
+                'key' => 'android-go',
+            ],
         ];
     }
 }

@@ -409,6 +409,8 @@ enum Os: string implements OsInterface
 
     case vegaOS = 'Vega OS';
 
+    case androidGo = 'Android Go';
+
     /**
      * @throws void
      *
@@ -605,6 +607,7 @@ enum Os: string implements OsInterface
             'picoos', 'pico os', 'pico-os' => self::picoOS,
             'routeros', 'router-os' => self::routerOS,
             'vegaos', 'vega os', 'vega-os' => self::vegaOS,
+            'androidgo', 'android go', 'android-go' => self::androidGo,
             default => self::unknown,
         };
     }
@@ -656,7 +659,7 @@ enum Os: string implements OsInterface
     public function getManufacturer(): CompanyInterface
     {
         return match ($this) {
-            self::android, self::chromeos, self::fuchsia, self::wearos, self::androidtv, self::googleTv => Company::google,
+            self::android, self::chromeos, self::fuchsia, self::wearos, self::androidtv, self::googleTv, self::androidGo => Company::google,
             self::asha, self::nokiaos, self::series30, self::series40, self::series60 => Company::nokia,
             self::tvos, self::audioos, self::ios, self::macosx, self::darwin, self::macintosh, self::watchos => Company::apple,
             self::bada, self::orsay => Company::samsung,
@@ -816,7 +819,7 @@ enum Os: string implements OsInterface
             self::openSuse => ['factory' => VersionBuilderFactory::class, 'search' => ['openSUSE']],
             self::backtracklinux => ['factory' => VersionBuilderFactory::class, 'search' => ['BackTrack Linux']],
             self::linspire => ['factory' => VersionBuilderFactory::class, 'search' => ['Linspire']],
-            self::aosp, self::androidtv => ['factory' => VersionBuilderFactory::class, 'search' => ['Andr[o0]id']],
+            self::aosp, self::androidtv, self::androidGo => ['factory' => VersionBuilderFactory::class, 'search' => ['Andr[o0]id']],
             self::hpux => ['factory' => VersionBuilderFactory::class, 'search' => ['HP-UX']],
             self::whaleOS => ['factory' => VersionBuilderFactory::class, 'search' => ['WH\/', 'WhaleTV']],
             self::series60 => ['factory' => VersionBuilderFactory::class, 'search' => ['Series ?60', 'S60 ?V']],
@@ -989,6 +992,7 @@ enum Os: string implements OsInterface
             self::picoOS => 'pico-os',
             self::routerOS => 'router-os',
             self::vegaOS => 'vega-os',
+            self::androidGo => 'android-go',
             default => $this->name,
         };
     }

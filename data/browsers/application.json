@@ -1815,5 +1815,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "github-desktop": {
+    "name": "GitHub Desktop",
+    "manufacturer": "github",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GitHub Desktop"
+      ]
+    },
+    "engine": "unknown"
   }
 }
