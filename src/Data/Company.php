@@ -3997,6 +3997,24 @@ enum Company: string implements CompanyInterface
 
     case azureusSoftware = 'Azureus Software';
 
+    case mintmark = 'Mintmark';
+
+    case avidTechnology = 'Avid Technology';
+
+    case mirmay = 'Mirmay';
+
+    case lagatos = 'Lagatos';
+
+    case lucasReade = 'Lucas Reade';
+
+    case blueLinkLabs = 'Blue Link Labs';
+
+    case yelp = 'Yelp';
+
+    case andrewStuartTanenbaum = 'Andrew Stuart Tanenbaum';
+
+    case plan9Foundation = 'Plan 9 Foundation';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5993,6 +6011,15 @@ enum Company: string implements CompanyInterface
             'exaring', 'exaring ag' => self::exaring,
             'wpssoftware', 'wps software pte. ltd.', 'wps-software', 'wps software' => self::wpsSoftware,
             'azureussoftware', 'azureus software inc.', 'azureus-software', 'azureus software' => self::azureusSoftware,
+            'mintmark', 'mintmark ltd' => self::mintmark,
+            'avidtechnology', 'avid technology, inc.', 'avid-technology', 'avid technology' => self::avidTechnology,
+            'mirmay' => self::mirmay,
+            'lagatos' => self::lagatos,
+            'lucasreade', 'lucas reade', 'lucas-reade' => self::lucasReade,
+            'bluelinklabs', 'blue link labs', 'blue-link-labs' => self::blueLinkLabs,
+            'yelp', 'yelp, inc.' => self::yelp,
+            'andrewstuarttanenbaum', 'andrew stuart tanenbaum', 'andrew-stuart-tanenbaum' => self::andrewStuartTanenbaum,
+            'plan9foundation', 'plan 9 foundation', 'plan-9-foundation' => self::plan9Foundation,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6819,6 +6846,9 @@ enum Company: string implements CompanyInterface
             self::exaring => 'Exaring AG',
             self::wpsSoftware => 'WPS SOFTWARE PTE. LTD.',
             self::azureusSoftware => 'Azureus Software Inc.',
+            self::mintmark => 'Mintmark Ltd',
+            self::avidTechnology => 'Avid Technology, Inc.',
+            self::yelp => 'Yelp, Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -7590,6 +7620,11 @@ enum Company: string implements CompanyInterface
             self::disneyMobile => 'disney-mobile',
             self::wpsSoftware => 'wps-software',
             self::azureusSoftware => 'azureus-software',
+            self::avidTechnology => 'avid-technology',
+            self::lucasReade => 'lucas-reade',
+            self::blueLinkLabs => 'blue-link-labs',
+            self::andrewStuartTanenbaum => 'andrew-stuart-tanenbaum',
+            self::plan9Foundation => 'plan-9-foundation',
             default => $this->name,
         };
     }

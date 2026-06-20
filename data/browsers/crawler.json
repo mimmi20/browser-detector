@@ -6576,5 +6576,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "yelp-bot": {
+    "name": "YelpBot",
+    "manufacturer": "yelp",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YelpBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

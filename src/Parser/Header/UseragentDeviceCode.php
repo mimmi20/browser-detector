@@ -150,6 +150,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/kepler\/[\d.]+ \(linux; (?P<devicecode>[^);\/]+)\)/i',
             '/mozilla\/[\d.]+ \(linux; kepler [\d.]+; (?P<devicecode>[^);\/]+) user\/[\d.]+; wv\)/i',
             '/navermailapp\/[\d.]+ \(android [\d.]+; (?P<devicecode>[^);\/]+)\)/i',
+            '/hulu\/[\d.]+ \(fire os [\d.]+ \([^)]+\);[^;]+; (?P<devicecode>[^);\/]+); build/i',
             // should be the last entry in the list
             '/^(?P<devicecode>.+)$/i',
         ];

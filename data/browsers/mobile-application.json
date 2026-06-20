@@ -5442,5 +5442,29 @@
       "search": null
     },
     "engine": null
+  },
+  "walla-news": {
+    "name": "Walla News",
+    "manufacturer": "mintmark",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WallaNews"
+      ]
+    },
+    "engine": null
+  },
+  "yelp-mobile": {
+    "name": "Yelp Mobile",
+    "manufacturer": "yelp",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YelpApp"
+      ]
+    },
+    "engine": null
   }
 }

@@ -11980,6 +11980,60 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Azureus Software',
                 'key' => 'azureus-software',
             ],
+            [
+                'type' => 'Mintmark',
+                'name' => 'Mintmark Ltd',
+                'brandname' => 'Mintmark',
+                'key' => 'mintmark',
+            ],
+            [
+                'type' => 'Avid Technology',
+                'name' => 'Avid Technology, Inc.',
+                'brandname' => 'Avid Technology',
+                'key' => 'avid-technology',
+            ],
+            [
+                'type' => 'Mirmay',
+                'name' => 'Mirmay',
+                'brandname' => 'Mirmay',
+                'key' => 'mirmay',
+            ],
+            [
+                'type' => 'Lagatos',
+                'name' => 'Lagatos',
+                'brandname' => 'Lagatos',
+                'key' => 'lagatos',
+            ],
+            [
+                'type' => 'Lucas Reade',
+                'name' => 'Lucas Reade',
+                'brandname' => 'Lucas Reade',
+                'key' => 'lucas-reade',
+            ],
+            [
+                'type' => 'Blue Link Labs',
+                'name' => 'Blue Link Labs',
+                'brandname' => 'Blue Link Labs',
+                'key' => 'blue-link-labs',
+            ],
+            [
+                'type' => 'Yelp',
+                'name' => 'Yelp, Inc.',
+                'brandname' => 'Yelp',
+                'key' => 'yelp',
+            ],
+            [
+                'type' => 'Andrew Stuart Tanenbaum',
+                'name' => 'Andrew Stuart Tanenbaum',
+                'brandname' => 'Andrew Stuart Tanenbaum',
+                'key' => 'andrew-stuart-tanenbaum',
+            ],
+            [
+                'type' => 'Plan 9 Foundation',
+                'name' => 'Plan 9 Foundation',
+                'brandname' => 'Plan 9 Foundation',
+                'key' => 'plan-9-foundation',
+            ],
         ];
     }
 

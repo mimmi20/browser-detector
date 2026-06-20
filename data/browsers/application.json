@@ -1839,5 +1839,41 @@
       ]
     },
     "engine": "unknown"
+  },
+  "avid-link": {
+    "name": "Avid Link",
+    "manufacturer": "avid-technology",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Avid Link Desktop App"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "onedrive": {
+    "name": "OneDrive",
+    "manufacturer": "microsoft",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "OneDrive"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "onedrive-for-business": {
+    "name": "OneDrive for Business",
+    "manufacturer": "microsoft",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "OneDrive for Business"
+      ]
+    },
+    "engine": "unknown"
   }
 }

@@ -500,7 +500,7 @@
     "engine": null
   },
   "baidu spark": {
-    "name": "Baidu Spark",
+    "name": "Spark",
     "manufacturer": "baidu",
     "type": "browser",
     "version": {
@@ -6877,5 +6877,54 @@
       ]
     },
     "engine": "blink"
+  },
+  "lagatos-browser": {
+    "name": "Lagatos Browser",
+    "manufacturer": "lagatos",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "lagatos-browser"
+      ]
+    },
+    "engine": null
+  },
+  "kode-browser": {
+    "name": "Kode Browser",
+    "manufacturer": "mirmay",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "KodeiOS",
+        "Kode"
+      ]
+    },
+    "engine": null
+  },
+  "ohhai-browser": {
+    "name": "OhHai Browser",
+    "manufacturer": "lucas-reade",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "OhHaiBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "beaker-browser": {
+    "name": "Beaker Browser",
+    "manufacturer": "blue-link-labs",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BeakerBrowser"
+      ]
+    },
+    "engine": null
   }
 }

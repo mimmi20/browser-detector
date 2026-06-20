@@ -411,6 +411,12 @@ enum Os: string implements OsInterface
 
     case androidGo = 'Android Go';
 
+    case nuttX = 'NuttX';
+
+    case minix = 'MINIX';
+
+    case plan9 = 'Plan 9';
+
     /**
      * @throws void
      *
@@ -608,6 +614,9 @@ enum Os: string implements OsInterface
             'routeros', 'router-os' => self::routerOS,
             'vegaos', 'vega os', 'vega-os' => self::vegaOS,
             'androidgo', 'android go', 'android-go' => self::androidGo,
+            'nuttx' => self::nuttX,
+            'minix' => self::minix,
+            'plan9', 'plan 9', 'plan-9' => self::plan9,
             default => self::unknown,
         };
     }
@@ -724,6 +733,9 @@ enum Os: string implements OsInterface
             self::qnx => Company::blackberry,
             self::picoOS => Company::pico,
             self::routerOS => Company::mikrotik,
+            self::nuttX => Company::apache,
+            self::minix => Company::andrewStuartTanenbaum,
+            self::plan9 => Company::plan9Foundation,
             default => Company::unknown,
         };
     }
@@ -873,6 +885,10 @@ enum Os: string implements OsInterface
             self::picoOS => ['factory' => VersionBuilderFactory::class, 'search' => ['PICO \d OS']],
             self::routerOS => ['factory' => VersionBuilderFactory::class, 'search' => ['Mikrotik\/', 'RouterOS']],
             self::vegaOS => ['factory' => VersionBuilderFactory::class, 'search' => ['Kepler']],
+            self::nuttX => ['factory' => VersionBuilderFactory::class, 'search' => ['NuttX']],
+            self::minix => ['factory' => VersionBuilderFactory::class, 'search' => ['Minix']],
+            self::plan9 => ['factory' => VersionBuilderFactory::class, 'search' => ['Plan 9']],
+            self::fireos => ['factory' => VersionBuilderFactory::class, 'search' => ['Fire OS']],
             default => ['factory' => null, 'search' => null],
         };
     }
@@ -993,6 +1009,8 @@ enum Os: string implements OsInterface
             self::routerOS => 'router-os',
             self::vegaOS => 'vega-os',
             self::androidGo => 'android-go',
+            self::nuttX => 'nuttx',
+            self::plan9 => 'plan-9',
             default => $this->name,
         };
     }
