@@ -12034,6 +12034,24 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Plan 9 Foundation',
                 'key' => 'plan-9-foundation',
             ],
+            [
+                'type' => 'Deepin Technology',
+                'name' => 'Deepin Technology Co., Ltd.',
+                'brandname' => 'Deepin Technology',
+                'key' => 'deepin-technology',
+            ],
+            [
+                'type' => 'BMW',
+                'name' => 'BMW',
+                'brandname' => 'BMW',
+                'key' => 'bmw',
+            ],
+            [
+                'type' => 'Christopher Albert',
+                'name' => 'Christopher Albert',
+                'brandname' => 'Christopher Albert',
+                'key' => 'christopher-albert',
+            ],
         ];
     }
 

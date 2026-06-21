@@ -4015,6 +4015,12 @@ enum Company: string implements CompanyInterface
 
     case plan9Foundation = 'Plan 9 Foundation';
 
+    case deepinTechnology = 'Deepin Technology';
+
+    case bmw = 'BMW';
+
+    case christopherAlbert = 'Christopher Albert';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -6020,6 +6026,9 @@ enum Company: string implements CompanyInterface
             'yelp', 'yelp, inc.' => self::yelp,
             'andrewstuarttanenbaum', 'andrew stuart tanenbaum', 'andrew-stuart-tanenbaum' => self::andrewStuartTanenbaum,
             'plan9foundation', 'plan 9 foundation', 'plan-9-foundation' => self::plan9Foundation,
+            'deepinTechnology', 'deepin technology co., ltd.', 'deepin-technology', 'deepin technology' => self::deepinTechnology,
+            'bmw' => self::bmw,
+            'christopheralbert', 'christopher albert', 'christopher-albert' => self::christopherAlbert,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6849,6 +6858,7 @@ enum Company: string implements CompanyInterface
             self::mintmark => 'Mintmark Ltd',
             self::avidTechnology => 'Avid Technology, Inc.',
             self::yelp => 'Yelp, Inc.',
+            self::deepinTechnology => 'Deepin Technology Co., Ltd.',
             self::unknown => null,
             default => $this->value,
         };
@@ -7625,6 +7635,8 @@ enum Company: string implements CompanyInterface
             self::blueLinkLabs => 'blue-link-labs',
             self::andrewStuartTanenbaum => 'andrew-stuart-tanenbaum',
             self::plan9Foundation => 'plan-9-foundation',
+            self::deepinTechnology => 'deepin-technology',
+            self::christopherAlbert => 'christopher-albert',
             default => $this->name,
         };
     }

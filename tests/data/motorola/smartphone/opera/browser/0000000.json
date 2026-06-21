@@ -3266,5 +3266,50 @@
       "version": "142.0.0",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "zanur/1.0 (Linux; Iphone 8.0; MOTOROLA MOTO X PLAY XT1562Build/LPD23) AppleWebKit/536.1 (KHTML, like Gecko) Dzanur/54.0.1885.126 Mobile Opera/1.0.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "XT1562",
+      "marketingName": "Moto X Play",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": null,
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "1.0.1",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "536.1.0",
+      "manufacturer": "Opera"
+    }
   }
 ]

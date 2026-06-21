@@ -1637,6 +1637,14 @@ final class OsTest extends TestCase
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Plan 9']],
                 'key' => 'plan-9',
             ],
+            [
+                'type' => 'Deepin',
+                'name' => 'Deepin',
+                'marketingName' => 'Deepin',
+                'manufacturer' => Company::deepinTechnology,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Deepin']],
+                'key' => 'deepin',
+            ],
         ];
     }
 }

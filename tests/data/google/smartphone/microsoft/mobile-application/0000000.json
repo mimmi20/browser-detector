@@ -30,9 +30,9 @@
       "bits": null
     },
     "client": {
-      "name": "Microsoft Copilot",
+      "name": "Bing Search",
       "modus": null,
-      "version": "27.7.411216610",
+      "version": null,
       "manufacturer": "Microsoft",
       "type": "mobile-application",
       "isbot": false,
@@ -92,7 +92,8 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 14; Pixel 6a Build/AP2A.240605.024; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36  BingSapphire/28.7.420703022"
+      "x-requested-with": "com.microsoft.copilot",
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; Pixel 6a Build/UQ1A.231205.015; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36  CopilotSapphire/27.7.411216610"
     },
     "device": {
       "architecture": null,
@@ -121,9 +122,9 @@
       "bits": null
     },
     "client": {
-      "name": "Bing Search",
+      "name": "Microsoft Copilot",
       "modus": null,
-      "version": "28.7.420703022",
+      "version": "27.7.411216610",
       "manufacturer": "Microsoft",
       "type": "mobile-application",
       "isbot": false,
@@ -131,7 +132,7 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "121.0.0.0",
+      "version": "114.0.0.0",
       "manufacturer": "Google"
     }
   },

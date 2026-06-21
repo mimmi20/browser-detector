@@ -70,7 +70,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "26.2.0",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -520,7 +520,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "18.7.3",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -572,7 +572,7 @@
     "client": {
       "name": "Safari",
       "modus": null,
-      "version": "26.5.0",
+      "version": "27.0.0",
       "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
@@ -1015,7 +1015,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "26.3.0",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -1240,7 +1240,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "26.4.0",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -1292,7 +1292,7 @@
     "client": {
       "name": "Safari",
       "modus": null,
-      "version": "26.5.0",
+      "version": "27.0.0",
       "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
@@ -1330,7 +1330,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "17.5.0",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -1697,7 +1697,7 @@
     "client": {
       "name": "Safari",
       "modus": null,
-      "version": "26.5.0",
+      "version": "27.0.0",
       "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
@@ -1735,7 +1735,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "16.6.2",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -1960,7 +1960,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "18.7.4",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -2102,7 +2102,7 @@
     "client": {
       "name": "Safari",
       "modus": null,
-      "version": "26.5.0",
+      "version": "27.0.0",
       "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
@@ -2192,7 +2192,7 @@
     "client": {
       "name": "Safari",
       "modus": null,
-      "version": "26.5.0",
+      "version": "27.0.0",
       "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
@@ -2455,7 +2455,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "18.7.5",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -2777,7 +2777,7 @@
     "client": {
       "name": "Safari",
       "modus": null,
-      "version": "26.5.0",
+      "version": "27.0.0",
       "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
@@ -2815,7 +2815,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "26.5.0",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -3002,7 +3002,7 @@
     "client": {
       "name": "Safari",
       "modus": null,
-      "version": "26.5.0",
+      "version": "27.0.0",
       "manufacturer": "Apple",
       "type": "browser",
       "isbot": false,
@@ -3040,7 +3040,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "18.7.6",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -3146,6 +3146,231 @@
     "engine": {
       "name": "WebKit",
       "version": "1286.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NetworkingExtension/8624.2.5.10.4 Network/5812.122.1 iOS/26.5.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Apple device",
+      "marketingName": "general Apple device",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "26.5.1",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Safari",
+      "modus": null,
+      "version": "26.5.1",
+      "manufacturer": "Apple",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "com.apple.AuthenticationServicesCore.AuthenticationServicesAgent/8625.1.18.10.4 CFNetwork/3886.100.1 Darwin/27.0.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Apple device",
+      "marketingName": "general Apple device",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": null,
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Safari",
+      "modus": null,
+      "version": "6.0.0",
+      "manufacturer": "Apple",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "3886.100.1",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NetworkingExtension/8625.1.18.10.4 Network/6681.0.372.502.1 iOS/27.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Apple device",
+      "marketingName": "general Apple device",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "27.0.0",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Safari",
+      "modus": null,
+      "version": "27.0.0",
+      "manufacturer": "Apple",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "com.apple.AuthenticationServicesCore.AuthenticationServicesAgent/8624.2.5.10.4 CFNetwork/3860.600.12 Darwin/25.6.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Apple device",
+      "marketingName": "general Apple device",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "26.6.0",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Safari",
+      "modus": null,
+      "version": "6.0.0",
+      "manufacturer": "Apple",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "3860.600.12",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "FinanzApp-iOS"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Apple device",
+      "marketingName": "general Apple device",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": null,
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Mobile Safari UIWebView",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Apple",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
       "manufacturer": "Apple"
     }
   }

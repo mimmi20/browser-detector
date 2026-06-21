@@ -417,6 +417,8 @@ enum Os: string implements OsInterface
 
     case plan9 = 'Plan 9';
 
+    case deepin = 'Deepin';
+
     /**
      * @throws void
      *
@@ -617,6 +619,7 @@ enum Os: string implements OsInterface
             'nuttx' => self::nuttX,
             'minix' => self::minix,
             'plan9', 'plan 9', 'plan-9' => self::plan9,
+            'deepin' => self::deepin,
             default => self::unknown,
         };
     }
@@ -736,6 +739,7 @@ enum Os: string implements OsInterface
             self::nuttX => Company::apache,
             self::minix => Company::andrewStuartTanenbaum,
             self::plan9 => Company::plan9Foundation,
+            self::deepin => Company::deepinTechnology,
             default => Company::unknown,
         };
     }
@@ -889,6 +893,7 @@ enum Os: string implements OsInterface
             self::minix => ['factory' => VersionBuilderFactory::class, 'search' => ['Minix']],
             self::plan9 => ['factory' => VersionBuilderFactory::class, 'search' => ['Plan 9']],
             self::fireos => ['factory' => VersionBuilderFactory::class, 'search' => ['Fire OS']],
+            self::deepin => ['factory' => VersionBuilderFactory::class, 'search' => ['Deepin']],
             default => ['factory' => null, 'search' => null],
         };
     }

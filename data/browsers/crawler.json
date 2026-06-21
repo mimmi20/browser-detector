@@ -6588,5 +6588,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "slop-search": {
+    "name": "slopsearch",
+    "manufacturer": "christopher-albert",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "slopsearch-macos-crawler"
+      ]
+    },
+    "engine": "unknown"
   }
 }
