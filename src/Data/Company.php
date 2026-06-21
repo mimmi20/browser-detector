@@ -6026,7 +6026,7 @@ enum Company: string implements CompanyInterface
             'yelp', 'yelp, inc.' => self::yelp,
             'andrewstuarttanenbaum', 'andrew stuart tanenbaum', 'andrew-stuart-tanenbaum' => self::andrewStuartTanenbaum,
             'plan9foundation', 'plan 9 foundation', 'plan-9-foundation' => self::plan9Foundation,
-            'deepinTechnology', 'deepin technology co., ltd.', 'deepin-technology', 'deepin technology' => self::deepinTechnology,
+            'deepintechnology', 'deepin technology co., ltd.', 'deepin-technology', 'deepin technology' => self::deepinTechnology,
             'bmw' => self::bmw,
             'christopheralbert', 'christopher albert', 'christopher-albert' => self::christopherAlbert,
             // the last one
