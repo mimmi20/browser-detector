@@ -12052,6 +12052,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Christopher Albert',
                 'key' => 'christopher-albert',
             ],
+            [
+                'type' => 'VPN Tech Studio',
+                'name' => 'VPN Tech Studio Inc',
+                'brandname' => 'VPN Tech Studio',
+                'key' => 'vpn-tech-studio',
+            ],
         ];
     }
 

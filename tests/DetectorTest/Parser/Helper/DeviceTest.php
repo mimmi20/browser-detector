@@ -4894,6 +4894,7 @@ final class DeviceTest extends TestCase
             ['Lenovo A6600d40', 'lenovo=lenovo a6600d40'],
             ['Lenovo A6600a40', 'lenovo=lenovo a6600a40'],
             ['Lenovo A7010a48', 'lenovo=lenovo a7010a48'],
+            ['Lenovo ThinkPad 11e 3rd Gen Chromebook', 'lenovo=lenovo thinkpad 11e 3rd gen chromebook'],
             // Nokia
             ['Nokia G50', 'nokia=nokia g50'],
             ['Nokia G20', 'nokia=nokia g20'],
@@ -6939,6 +6940,8 @@ final class DeviceTest extends TestCase
             ['Infinix X682C', 'infinix=infinix x682c'],
             ['Infinix X6532', 'infinix=infinix x6532'],
             ['Infinix X692', 'infinix=infinix x692'],
+            ['Infinix X612B', 'infinix=infinix x612b'],
+            ['Infinix X612', 'infinix=infinix x612'],
             // cyrus
             ['CS24', 'cyrus=cyrus cs24'],
             // facetel

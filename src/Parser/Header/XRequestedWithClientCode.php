@@ -445,6 +445,8 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.security.xvpn.z35kb.amazon' => 'x-vpn',
             'privatebrowser.securebrowser.com.klar' => 'sp-browser',
             'savysoda.privatebrowsing' => 'private-browsing',
+            'com.azka.browser.anti.blokir', 'com.azka.browser' => 'azka-browser',
+            'com.micromaxinfo.browser' => 'mmx-browser',
             default => null,
         };
     }

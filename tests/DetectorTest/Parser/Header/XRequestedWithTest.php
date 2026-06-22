@@ -629,6 +629,9 @@ final class XRequestedWithTest extends TestCase
             ['com.security.xvpn.z35kb.amazon', true, 'x-vpn', true, null, false, Os::unknown],
             ['privatebrowser.securebrowser.com.klar', true, 'sp-browser', true, null, false, Os::unknown],
             ['SavySoda.PrivateBrowsing', true, 'private-browsing', true, null, false, Os::unknown],
+            ['com.azka.browser.anti.blokir', true, 'azka-browser', true, null, false, Os::unknown],
+            ['com.azka.browser', true, 'azka-browser', true, null, false, Os::unknown],
+            ['com.micromaxinfo.browser', true, 'mmx-browser', true, null, false, Os::unknown],
         ];
     }
 }

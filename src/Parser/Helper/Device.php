@@ -3679,6 +3679,7 @@ final class Device implements DeviceInterface
             'lenovo a6600d40' => 'lenovo=lenovo a6600d40',
             'lenovo a6600a40' => 'lenovo=lenovo a6600a40',
             'lenovo a7010a48' => 'lenovo=lenovo a7010a48',
+            'lenovo thinkpad 11e 3rd gen chromebook' => 'lenovo=lenovo thinkpad 11e 3rd gen chromebook',
             // Nokia
             'nokia g50' => 'nokia=nokia g50',
             'nokia g20' => 'nokia=nokia g20',
@@ -5673,6 +5674,8 @@ final class Device implements DeviceInterface
             'infinix x682c' => 'infinix=infinix x682c',
             'infinix x6532' => 'infinix=infinix x6532',
             'infinix x692' => 'infinix=infinix x692',
+            'infinix x612b' => 'infinix=infinix x612b',
+            'infinix x612' => 'infinix=infinix x612',
             // cyrus
             'cs24' => 'cyrus=cyrus cs24',
             // facetel
