@@ -4023,6 +4023,8 @@ enum Company: string implements CompanyInterface
 
     case vpnTechStudio = 'VPN Tech Studio';
 
+    case mdArman = 'Md.Arman';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -6032,6 +6034,7 @@ enum Company: string implements CompanyInterface
             'bmw' => self::bmw,
             'christopheralbert', 'christopher albert', 'christopher-albert' => self::christopherAlbert,
             'vpntechstudio', 'vpn tech studio inc', 'vpn-tech-studio', 'vpn tech studio' => self::vpnTechStudio,
+            'mdarman', 'md.arman', 'md-arman' => self::mdArman,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -7642,6 +7645,7 @@ enum Company: string implements CompanyInterface
             self::deepinTechnology => 'deepin-technology',
             self::christopherAlbert => 'christopher-albert',
             self::vpnTechStudio => 'vpn-tech-studio',
+            self::mdArman => 'md-arman',
             default => $this->name,
         };
     }

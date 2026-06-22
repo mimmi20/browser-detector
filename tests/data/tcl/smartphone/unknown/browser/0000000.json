@@ -43,5 +43,50 @@
       "version": "532.9.0",
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "TCL_J720/1.0 WoPhone/1.0 UPhone/1.0 Browser/UPhoneWebBrowser1.0 Profile/MIDP-1.0 Configuration/CLDC-1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "J720",
+      "marketingName": "J720",
+      "manufacturer": "TCL",
+      "brand": "TCL",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "WoPhone",
+      "marketingName": "WoPhone",
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "UPhone Browser",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "Google"
+    }
   }
 ]

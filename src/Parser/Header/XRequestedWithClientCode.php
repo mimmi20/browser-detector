@@ -447,6 +447,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'savysoda.privatebrowsing' => 'private-browsing',
             'com.azka.browser.anti.blokir', 'com.azka.browser' => 'azka-browser',
             'com.micromaxinfo.browser' => 'mmx-browser',
+            'com.wdesibrowser_13255326' => 'desi-browser-4g',
             default => null,
         };
     }

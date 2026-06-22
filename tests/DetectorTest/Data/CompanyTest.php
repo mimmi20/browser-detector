@@ -12058,6 +12058,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'VPN Tech Studio',
                 'key' => 'vpn-tech-studio',
             ],
+            [
+                'type' => 'Md.Arman',
+                'name' => 'Md.Arman',
+                'brandname' => 'Md.Arman',
+                'key' => 'md-arman',
+            ],
         ];
     }
 
