@@ -940,7 +940,7 @@ final class XUcbrowserUaTest extends TestCase
                 'engineVersion' => '537.51.1',
             ],
             [
-                'ua' => 'pf(Java);la(Pt-BR);re(U2/1.0.0);dv(maui e800);pr(UCBrowser/9.2.0.311);ov(MIDP-2.0);pi(320*240);ss(320*240);up(U2/1.0.0);er(U);bt(GJ);pm(1);bv(0);nm(2);im(0);sr(0);nt(99);',
+                'ua' => 'pf(Java);la(Pt-BR);re(U2/1.0.0);dv(maui e800_);pr(UCBrowser/9.2.0.311);ov(MIDP-2.0);pi(320*240);ss(320*240);up(U2/1.0.0);er(U);bt(GJ);pm(1);bv(0);nm(2);im(0);sr(0);nt(99);',
                 'hasDeviceCode' => true,
                 'deviceCode' => 'test-device-code',
                 'hasClientInfo' => true,

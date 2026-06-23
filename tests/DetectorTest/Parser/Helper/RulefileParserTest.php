@@ -27,8 +27,6 @@ use Throwable;
 use function assert;
 use function sprintf;
 
-use const DIRECTORY_SEPARATOR;
-
 #[CoversClass(RulefileParser::class)]
 final class RulefileParserTest extends TestCase
 {
@@ -390,7 +388,7 @@ final class RulefileParserTest extends TestCase
             ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(DIRECTORY_SEPARATOR === '\\' ? self::never() : self::once())
+            ->expects(/*DIRECTORY_SEPARATOR === '\\' ? self::never() : self::once()/**/ self::never())
             ->method('error')
             ->willReturnCallback(
                 static function (string | Stringable $message, array $context = []): void {
@@ -458,7 +456,7 @@ final class RulefileParserTest extends TestCase
             ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(DIRECTORY_SEPARATOR === '\\' ? self::never() : self::once())
+            ->expects(/*DIRECTORY_SEPARATOR === '\\' ? self::never() : self::once()/**/ self::never())
             ->method('error')
             ->willReturnCallback(
                 static function (string | Stringable $message, array $context = []): void {
@@ -526,7 +524,7 @@ final class RulefileParserTest extends TestCase
             ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(DIRECTORY_SEPARATOR === '\\' ? self::never() : self::once())
+            ->expects(/*DIRECTORY_SEPARATOR === '\\' ? self::never() : self::once()/**/ self::never())
             ->method('error')
             ->willReturnCallback(
                 static function (string | Stringable $message, array $context = []): void {

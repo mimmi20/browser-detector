@@ -14,6 +14,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Parser\Header\XUcbrowserDevice;
+use BrowserDetector\Parser\Helper\DeviceInterface;
 use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
@@ -46,7 +47,16 @@ final class XUcbrowserDevice2Test extends TestCase
             ->with($value)
             ->willThrowException($exception);
 
-        $object = new XUcbrowserDevice(deviceParser: $deviceParser, normalizer: $normalizer);
+        $deviceCodeHelper = $this->createMock(DeviceInterface::class);
+        $deviceCodeHelper
+            ->expects(self::never())
+            ->method('getDeviceCode');
+
+        $object = new XUcbrowserDevice(
+            deviceParser: $deviceParser,
+            normalizer: $normalizer,
+            deviceCodeHelper: $deviceCodeHelper,
+        );
 
         self::assertNull($object->getDeviceCode($value));
     }
@@ -72,7 +82,16 @@ final class XUcbrowserDevice2Test extends TestCase
             ->with($value)
             ->willReturn(null);
 
-        $object = new XUcbrowserDevice(deviceParser: $deviceParser, normalizer: $normalizer);
+        $deviceCodeHelper = $this->createMock(DeviceInterface::class);
+        $deviceCodeHelper
+            ->expects(self::never())
+            ->method('getDeviceCode');
+
+        $object = new XUcbrowserDevice(
+            deviceParser: $deviceParser,
+            normalizer: $normalizer,
+            deviceCodeHelper: $deviceCodeHelper,
+        );
 
         self::assertNull($object->getDeviceCode($value));
     }
@@ -98,7 +117,16 @@ final class XUcbrowserDevice2Test extends TestCase
             ->with($value)
             ->willReturn('');
 
-        $object = new XUcbrowserDevice(deviceParser: $deviceParser, normalizer: $normalizer);
+        $deviceCodeHelper = $this->createMock(DeviceInterface::class);
+        $deviceCodeHelper
+            ->expects(self::never())
+            ->method('getDeviceCode');
+
+        $object = new XUcbrowserDevice(
+            deviceParser: $deviceParser,
+            normalizer: $normalizer,
+            deviceCodeHelper: $deviceCodeHelper,
+        );
 
         self::assertNull($object->getDeviceCode($value));
     }
