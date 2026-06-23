@@ -91,6 +91,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; AFTBU001) AppleWebKit/537.36 (KHTML, like Gecko) Silk/96.1.237 like Chrome/96.0.4664.128 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "AFTBU001",
+      "marketingName": "AmazonBasics HD/FHD Fire TV",
+      "manufacturer": "Amazon",
+      "brand": "Amazon",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Fire OS",
+      "marketingName": "Fire OS",
+      "version": "6.0.0",
+      "manufacturer": "Amazon",
+      "bits": null
+    },
+    "client": {
+      "name": "Silk",
+      "modus": null,
+      "version": "96.1.237",
+      "manufacturer": "Amazon",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "96.0.4664.128",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; AFTKAUK002) AppleWebKit/537.36 (KHTML, like Gecko) Silk/118.3.1 like Chrome/118.0.5993.155 Safari/537.36"
     },
     "device": {

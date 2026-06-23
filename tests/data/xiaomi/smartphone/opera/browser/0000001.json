@@ -1165,7 +1165,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "89.0.0.0",
+      "version": "89.3.4705.84083",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -1309,7 +1309,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "93.0.0.0",
+      "version": "93.4.4906.86552",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -1408,7 +1408,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "96.0.0.0",
+      "version": "96.1.5010.87740",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -1462,7 +1462,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "96.0.0.0",
+      "version": "96.3.5010.87899",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -1516,6 +1516,52 @@
     "engine": {
       "name": "Blink",
       "version": "147.0.7727.55",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.opera.browser.afin",
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 13; en-in; 21091116UI Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.128 Mobile Safari/537.36 Lite Browser/75.2.3978.72588"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "21091116UI",
+      "marketingName": "Mi 11i HyperCharge 5G",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "61.0.3163.128",
       "manufacturer": "Google"
     }
   }

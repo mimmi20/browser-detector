@@ -1171,51 +1171,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 11; SM-M625F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 BroPP/1.0 SA/3 YaSearchBrowser/21.81.1 YaApp_Android/21.81.1 ru.yandex.searchplugin/21.81.210801043 (samsung SM-M625F; Android 11) ZenKit/21.8.1."
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-M625F",
-      "marketingName": "Galaxy M62 (International)",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.7
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Yandex Search Browser",
-      "modus": null,
-      "version": "21.81.1",
-      "manufacturer": "Yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "92.0.4515.159",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 11; SM-G988W) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 YaBrowser/20.11.2.69.00 Mobile Safari/537.36"
     },
     "device": {
@@ -4505,6 +4460,51 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.991",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; SM-A3560) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.702 YaApp_Android/24.43.1 YaSearchBrowser/24.43.1 BroPP/1.0 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A3560",
+      "marketingName": "Galaxy A35 5G (China)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "24.43.1",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "122.0.6261.702",
       "manufacturer": "Google"
     }
   }

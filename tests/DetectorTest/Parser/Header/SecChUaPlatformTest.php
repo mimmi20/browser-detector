@@ -31,6 +31,7 @@ use UaResult\Device\Architecture;
 use function sprintf;
 
 #[CoversClass(SecChUaPlatform::class)]
+#[CoversClass(SecChUaPlatformDevice::class)]
 final class SecChUaPlatformTest extends TestCase
 {
     /**

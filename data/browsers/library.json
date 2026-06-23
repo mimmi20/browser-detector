@@ -1341,5 +1341,416 @@
       ]
     },
     "engine": "unknown"
+  },
+  "grequests": {
+    "name": "GRequests",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GRequests"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "mikrotik-fetch": {
+    "name": "Mikrotik Fetch",
+    "manufacturer": "mikrotik",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Mikrotik"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "r": {
+    "name": "R",
+    "manufacturer": "r-foundation",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "R"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "hubot": {
+    "name": "Hubot",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Hubot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "lodestone-php-parser": {
+    "name": "Lodestone PHP Parser",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Lodestone PHP Parser"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "bic-tracker": {
+    "name": "BIC Tracker",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BIC Tracker"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "apidog": {
+    "name": "Apidog",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Apidog"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "vimeo-php": {
+    "name": "vimeo.php",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "vimeo\\.php"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "cygwin-setup": {
+    "name": "Cygwin Setup",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Cygwin-Setup"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ip-info-client": {
+    "name": "IPinfo",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "IPinfoClient\\/[^\\/]+\\/"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "icap-client-library": {
+    "name": "ICAP Client",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ICAP-Client-Library"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "httprs": {
+    "name": "httprs",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "httprs"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "electron-fetch": {
+    "name": "Electron Fetch",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "electron-fetch"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "mandrill-php": {
+    "name": "Mandrill PHP",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Mandrill-PHP"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "kiwi-tcms": {
+    "name": "Kiwi TCMS",
+    "manufacturer": "otb",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "kiwi-tcms"
+      ]
+    },
+    "engine": null
+  },
+  "kiwi-tcms-api": {
+    "name": "Kiwi TCMS API",
+    "manufacturer": "otb",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "tcms-api"
+      ]
+    },
+    "engine": null
+  },
+  "stealer": {
+    "name": "Stealer",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Stealer"
+      ]
+    },
+    "engine": null
+  },
+  "slim-framework": {
+    "name": "Slim Framework",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Slim Framework"
+      ]
+    },
+    "engine": null
+  },
+  "azure-data-factory": {
+    "name": "Azure Data Factory",
+    "manufacturer": "microsoft",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "azure-data-factory"
+      ]
+    },
+    "engine": null
+  },
+  "harbor-registry-client": {
+    "name": "Harbor Registry Client",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "harbor-registry-client"
+      ]
+    },
+    "engine": null
+  },
+  "helm": {
+    "name": "Helm",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Helm"
+      ]
+    },
+    "engine": null
+  },
+  "skopeo": {
+    "name": "Skopeo",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "skopeo"
+      ]
+    },
+    "engine": null
+  },
+  "open-build-service": {
+    "name": "Open Build Service",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BSRPC"
+      ]
+    },
+    "engine": null
+  },
+  "build-kit": {
+    "name": "BuildKit",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "buildkit\\/v",
+        "buildkit"
+      ]
+    },
+    "engine": null
+  },
+  "buildah": {
+    "name": "Buildah",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Buildah"
+      ]
+    },
+    "engine": null
+  },
+  "go-container-registry": {
+    "name": "go-container registry",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "go-containerregistry\\/v",
+        "go-containerregistry"
+      ]
+    },
+    "engine": null
+  },
+  "cri-o": {
+    "name": "cri-o",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "cri-o"
+      ]
+    },
+    "engine": null
+  },
+  "containerd": {
+    "name": "Containerd",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "containerd\\/v",
+        "containerd"
+      ]
+    },
+    "engine": null
+  },
+  "containers": {
+    "name": "containers",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "containers"
+      ]
+    },
+    "engine": null
+  },
+  "artifactory": {
+    "name": "Artifactory",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Artifactory"
+      ]
+    },
+    "engine": null
+  },
+  "pa11y": {
+    "name": "Pa11y",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "pa11y"
+      ]
+    },
+    "engine": null
+  },
+  "geoip-update": {
+    "name": "GeoIP Update",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "geoipupdate"
+      ]
+    },
+    "engine": null
+  },
+  "cpp-rest-sdk": {
+    "name": "C++ REST SDK",
+    "manufacturer": "microsoft",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "cpprestsdk"
+      ]
+    },
+    "engine": null
+  },
+  "perl-rest-client": {
+    "name": "Perl REST::Client",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "REST::Client"
+      ]
+    },
+    "engine": null
   }
 }

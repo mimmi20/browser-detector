@@ -20,7 +20,6 @@ use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\Normalizer\NormalizerInterface;
 use UaParser\EngineCodeInterface;
 use UaParser\EngineParserInterface;
-use UnexpectedValueException;
 
 use function array_filter;
 use function array_first;
@@ -85,11 +84,7 @@ final readonly class UseragentEngineCode implements EngineCodeInterface
         $code = array_first($results);
 
         if ($code !== null && $code !== false && $code !== '') {
-            try {
-                return Engine::fromName($code);
-            } catch (UnexpectedValueException) {
-                return Engine::unknown;
-            }
+            return Engine::fromName($code);
         }
 
         return $this->engineParser->parse($normalizedValue);

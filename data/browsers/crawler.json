@@ -6494,5 +6494,111 @@
       ]
     },
     "engine": "unknown"
+  },
+  "pagepeeker screenshot maker": {
+    "name": "PagePeeker Screenshot Maker",
+    "manufacturer": "page-peeker",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "curb": {
+    "name": "Curb",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Curb"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "link_thumbnailer": {
+    "name": "link_thumbnailer",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "link_thumbnailer"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "vsentry": {
+    "name": "vSentry",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Bromium Safari"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "caremedicom": {
+    "name": "CareMediCom",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "CareMediCom"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "melt-water-news": {
+    "name": "MeltwaterNews",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MeltwaterNews"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "voyager bot": {
+    "name": "Voyager Bot",
+    "manufacturer": "cosmix",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "voyager"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yelp-bot": {
+    "name": "YelpBot",
+    "manufacturer": "yelp",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YelpBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "slop-search": {
+    "name": "slopsearch",
+    "manufacturer": "christopher-albert",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "slopsearch-macos-crawler"
+      ]
+    },
+    "engine": "unknown"
   }
 }

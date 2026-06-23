@@ -30,10 +30,8 @@ use BrowserDetector\Version\WindowsPhoneOsFactory;
 use Override;
 use UaData\CompanyInterface;
 use UaData\OsInterface;
-use UnexpectedValueException;
 
 use function mb_strtolower;
-use function sprintf;
 
 enum Os: string implements OsInterface
 {
@@ -407,8 +405,22 @@ enum Os: string implements OsInterface
 
     case picoOS = 'PICO OS';
 
+    case routerOS = 'RouterOS';
+
+    case vegaOS = 'Vega OS';
+
+    case androidGo = 'Android Go';
+
+    case nuttX = 'NuttX';
+
+    case minix = 'MINIX';
+
+    case plan9 = 'Plan 9';
+
+    case deepin = 'Deepin';
+
     /**
-     * @throws UnexpectedValueException
+     * @throws void
      *
      * @api
      *
@@ -601,11 +613,14 @@ enum Os: string implements OsInterface
             'ubuntutouch', 'ubuntu-touch', 'ubuntu touch' => self::ubuntuTouch,
             'qnx' => self::qnx,
             'picoos', 'pico os', 'pico-os' => self::picoOS,
-            // the last one
-            'unknown', '' => self::unknown,
-            default => throw new UnexpectedValueException(
-                sprintf('the os "%s" is unknown', $name),
-            ),
+            'routeros', 'router-os' => self::routerOS,
+            'vegaos', 'vega os', 'vega-os' => self::vegaOS,
+            'androidgo', 'android go', 'android-go' => self::androidGo,
+            'nuttx' => self::nuttX,
+            'minix' => self::minix,
+            'plan9', 'plan 9', 'plan-9' => self::plan9,
+            'deepin' => self::deepin,
+            default => self::unknown,
         };
     }
 
@@ -656,12 +671,12 @@ enum Os: string implements OsInterface
     public function getManufacturer(): CompanyInterface
     {
         return match ($this) {
-            self::android, self::chromeos, self::fuchsia, self::wearos, self::androidtv, self::googleTv => Company::google,
+            self::android, self::chromeos, self::fuchsia, self::wearos, self::androidtv, self::googleTv, self::androidGo => Company::google,
             self::asha, self::nokiaos, self::series30, self::series40, self::series60 => Company::nokia,
             self::tvos, self::audioos, self::ios, self::macosx, self::darwin, self::macintosh, self::watchos => Company::apple,
             self::bada, self::orsay => Company::samsung,
             self::cellos, self::orbisos, self::newsos => Company::sony,
-            self::fireos => Company::amazon,
+            self::fireos, self::vegaOS => Company::amazon,
             self::firefoxos => Company::mozilla,
             self::miuios => Company::xiaomi,
             self::lgwebos => Company::lg,
@@ -720,6 +735,11 @@ enum Os: string implements OsInterface
             self::tivoOS => Company::tivo,
             self::qnx => Company::blackberry,
             self::picoOS => Company::pico,
+            self::routerOS => Company::mikrotik,
+            self::nuttX => Company::apache,
+            self::minix => Company::andrewStuartTanenbaum,
+            self::plan9 => Company::plan9Foundation,
+            self::deepin => Company::deepinTechnology,
             default => Company::unknown,
         };
     }
@@ -815,14 +835,14 @@ enum Os: string implements OsInterface
             self::openSuse => ['factory' => VersionBuilderFactory::class, 'search' => ['openSUSE']],
             self::backtracklinux => ['factory' => VersionBuilderFactory::class, 'search' => ['BackTrack Linux']],
             self::linspire => ['factory' => VersionBuilderFactory::class, 'search' => ['Linspire']],
-            self::aosp, self::androidtv => ['factory' => VersionBuilderFactory::class, 'search' => ['Andr[o0]id']],
+            self::aosp, self::androidtv, self::androidGo => ['factory' => VersionBuilderFactory::class, 'search' => ['Andr[o0]id']],
             self::hpux => ['factory' => VersionBuilderFactory::class, 'search' => ['HP-UX']],
             self::whaleOS => ['factory' => VersionBuilderFactory::class, 'search' => ['WH\/', 'WhaleTV']],
             self::series60 => ['factory' => VersionBuilderFactory::class, 'search' => ['Series ?60', 'S60 ?V']],
             self::operaTv => ['factory' => VersionBuilderFactory::class, 'search' => ['TV Store']],
             self::qtopia => ['factory' => VersionBuilderFactory::class, 'search' => ['Qtopia']],
             self::symbianOs => ['factory' => VersionBuilderFactory::class, 'search' => ['SymbianOS']],
-            self::windows => ['factory' => VersionBuilderFactory::class, 'search' => ['Microsoft-WebDAV-MiniRedir', 'Windows[;\/]']],
+            self::windows => ['factory' => VersionBuilderFactory::class, 'search' => ['Microsoft-WebDAV-MiniRedir', 'Windows[;\/]', 'WINDOWS_64']],
             self::android => ['factory' => AndroidOsFactory::class, 'search' => null],
             self::tvos, self::audioos, self::ios, self::watchos => ['factory' => IosFactory::class, 'search' => null],
             self::chromeos => ['factory' => ChromeOsFactory::class, 'search' => null],
@@ -862,11 +882,18 @@ enum Os: string implements OsInterface
             self::googleTv => ['factory' => VersionBuilderFactory::class, 'search' => ['GoogleTV']],
             self::contiki => ['factory' => VersionBuilderFactory::class, 'search' => ['Contiki']],
             self::fritzOS => ['factory' => VersionBuilderFactory::class, 'search' => ['FRITZ!OS']],
-            self::rokuOS => ['factory' => VersionBuilderFactory::class, 'search' => ['Roku\/DVP-', 'Roku\/Pluto-', 'RokuOS', 'Roku; AP; ']],
+            self::rokuOS => ['factory' => VersionBuilderFactory::class, 'search' => ['Roku(?:[A-Z0-9]+)?\/DVP-', 'Roku\/Pluto-', 'RokuOS', 'Roku; AP; ']],
             self::vidaaOS => ['factory' => VersionBuilderFactory::class, 'search' => ['VIDAA']],
             self::linux => ['factory' => VersionBuilderFactory::class, 'search' => ['Linux']],
             self::tivoOS => ['factory' => VersionBuilderFactory::class, 'search' => ['TiVoOS']],
             self::picoOS => ['factory' => VersionBuilderFactory::class, 'search' => ['PICO \d OS']],
+            self::routerOS => ['factory' => VersionBuilderFactory::class, 'search' => ['Mikrotik\/', 'RouterOS']],
+            self::vegaOS => ['factory' => VersionBuilderFactory::class, 'search' => ['Kepler']],
+            self::nuttX => ['factory' => VersionBuilderFactory::class, 'search' => ['NuttX']],
+            self::minix => ['factory' => VersionBuilderFactory::class, 'search' => ['Minix']],
+            self::plan9 => ['factory' => VersionBuilderFactory::class, 'search' => ['Plan 9']],
+            self::fireos => ['factory' => VersionBuilderFactory::class, 'search' => ['Fire OS']],
+            self::deepin => ['factory' => VersionBuilderFactory::class, 'search' => ['Deepin']],
             default => ['factory' => null, 'search' => null],
         };
     }
@@ -984,6 +1011,11 @@ enum Os: string implements OsInterface
             self::tivoOS => 'tivo-os',
             self::ubuntuTouch => 'ubuntu-touch',
             self::picoOS => 'pico-os',
+            self::routerOS => 'router-os',
+            self::vegaOS => 'vega-os',
+            self::androidGo => 'android-go',
+            self::nuttX => 'nuttx',
+            self::plan9 => 'plan-9',
             default => $this->name,
         };
     }

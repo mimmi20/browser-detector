@@ -18,7 +18,8 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "MicroMessenger"
+        "MicroMessenger",
+        "WeChat"
       ]
     },
     "engine": null
@@ -156,6 +157,8 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "whatsapp-linux-app",
+        "WhatsAppElectron",
         "WhatsApp"
       ]
     },
@@ -1690,8 +1693,10 @@
     "manufacturer": "itech",
     "type": "mobile-application",
     "version": {
-      "factory": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Instabridge"
+      ]
     },
     "engine": null
   },
@@ -1770,8 +1775,10 @@
     "manufacturer": "sk-communications",
     "type": "mobile-application",
     "version": {
-      "factory": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "nate_app;appver:"
+      ]
     },
     "engine": null
   },
@@ -2121,6 +2128,7 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AppName\\/musical_ly app_version",
+        "trill app_version",
         "musical_ly_",
         "TikTok"
       ]
@@ -2132,8 +2140,10 @@
     "manufacturer": "google",
     "type": "mobile-application",
     "version": {
-      "class": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NSTNWV"
+      ]
     },
     "engine": null
   },
@@ -2229,6 +2239,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "DeepSeek Chat",
         "DeepSeek"
       ]
     },
@@ -2456,7 +2467,7 @@
   },
   "naver": {
     "name": "Naver",
-    "manufacturer": "nhn-corporation",
+    "manufacturer": "naver",
     "type": "mobile-application",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -2497,8 +2508,10 @@
     "manufacturer": "google",
     "type": "mobile-application",
     "version": {
-      "class": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "CrKey"
+      ]
     },
     "engine": null
   },
@@ -3689,7 +3702,7 @@
   },
   "skyeng-teachers": {
     "name": "Skyeng Teachers",
-    "manufacturer": "unknown",
+    "manufacturer": "skyeng",
     "type": "mobile-application",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -3829,6 +3842,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "InstacastHD",
         "Instacast"
       ]
     },
@@ -4504,7 +4518,7 @@
   },
   "freespoke": {
     "name": "Freespoke",
-    "manufacturer": "unknown",
+    "manufacturer": "freedom-fries",
     "type": "mobile-application",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -4521,18 +4535,6 @@
     "version": {
       "factory": null,
       "search": null
-    },
-    "engine": null
-  },
-  "castro-2": {
-    "name": "Castro 2",
-    "manufacturer": "unknown",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Castro 2"
-      ]
     },
     "engine": null
   },
@@ -4762,6 +4764,705 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NuMuKiBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "seekr-app": {
+    "name": "Seekr",
+    "manufacturer": "seekr",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Seekr"
+      ]
+    },
+    "engine": null
+  },
+  "appdb": {
+    "name": "appdb",
+    "manufacturer": "aengix",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "appdb"
+      ]
+    },
+    "engine": null
+  },
+  "deepl-app": {
+    "name": "DeepL",
+    "manufacturer": "deepl",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DeepL"
+      ]
+    },
+    "engine": null
+  },
+  "webex-teams": {
+    "name": "Webex Teams",
+    "manufacturer": "cisco-systems",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WebexTeams"
+      ]
+    },
+    "engine": null
+  },
+  "heartfocus-education": {
+    "name": "HeartFocus Education",
+    "manufacturer": "deski",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HFEducationIOS"
+      ]
+    },
+    "engine": null
+  },
+  "heartfocus": {
+    "name": "HeartFocus",
+    "manufacturer": "deski",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HFIOS"
+      ]
+    },
+    "engine": null
+  },
+  "go-euro-app": {
+    "name": "GoEuro",
+    "manufacturer": "omio",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GoEuroAndroid",
+        "GoEuroIOS "
+      ]
+    },
+    "engine": null
+  },
+  "so-fi-app": {
+    "name": "SoFi",
+    "manufacturer": "social-finance",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SOFI_APP_VERSION="
+      ]
+    },
+    "engine": null
+  },
+  "an-whatsapp": {
+    "name": "AN WhatsApp",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ANWhatsApp"
+      ]
+    },
+    "engine": null
+  },
+  "ameba": {
+    "name": "Ameba",
+    "manufacturer": "cyber-agent",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "jpameblo;"
+      ]
+    },
+    "engine": null
+  },
+  "redditor": {
+    "name": "Redditor",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Redditor"
+      ]
+    },
+    "engine": null
+  },
+  "yo-whatsapp": {
+    "name": "Yo WhatsApp",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YoYoWhatsApp"
+      ]
+    },
+    "engine": null
+  },
+  "gb-whatsapp": {
+    "name": "GB WhatsApp",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YoGBWhatsApp"
+      ]
+    },
+    "engine": null
+  },
+  "fm-whatsapp": {
+    "name": "FM WhatsApp",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YoFMWhatsApp"
+      ]
+    },
+    "engine": null
+  },
+  "bitwarden-app": {
+    "name": "Bitwarden",
+    "manufacturer": "bitwarden",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Bitwarden_Mobile"
+      ]
+    },
+    "engine": null
+  },
+  "klarna-app": {
+    "name": "Klarna",
+    "manufacturer": "klarna",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Klarna"
+      ]
+    },
+    "engine": null
+  },
+  "http-request-maker": {
+    "name": "HTTP Request Maker",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HTTPrequestmaker"
+      ]
+    },
+    "engine": null
+  },
+  "audible": {
+    "name": "Audible",
+    "manufacturer": "amazon",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "com.audible.playersdk.player",
+        "Audible, Android, ",
+        "Audible"
+      ]
+    },
+    "engine": null
+  },
+  "yo-whatsapp-2+": {
+    "name": "Yo WhatsApp 2+",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YoWhatsApp2Plus"
+      ]
+    },
+    "engine": null
+  },
+  "jitsi-meet": {
+    "name": "Jitsi Meet",
+    "manufacturer": "8×8",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "jitsi-meet"
+      ]
+    },
+    "engine": null
+  },
+  "dogecoin-core": {
+    "name": "Dogecoin Core",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Shibetoshi:"
+      ]
+    },
+    "engine": null
+  },
+  "bitcoin-core": {
+    "name": "Bitcoin Core",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Satoshi:"
+      ]
+    },
+    "engine": null
+  },
+  "ballz": {
+    "name": "Ballz",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Ballz"
+      ]
+    },
+    "engine": null
+  },
+  "macrium-reflect": {
+    "name": "Macrium Reflect",
+    "manufacturer": "paramount-software-uk",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "group-me": {
+    "name": "GroupMe",
+    "manufacturer": "microsoft",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GroupMe"
+      ]
+    },
+    "engine": null
+  },
+  "expedia-app": {
+    "name": "Expedia",
+    "manufacturer": "expedia",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "d-stream-air": {
+    "name": "DStream Air",
+    "manufacturer": "skideev-industrial",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "skyeng-app": {
+    "name": "Skyeng",
+    "manufacturer": "skyeng",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Skyeng App"
+      ]
+    },
+    "engine": null
+  },
+  "my-bentley": {
+    "name": "My Bentley",
+    "manufacturer": "bentley-motors",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "My Bentley"
+      ]
+    },
+    "engine": null
+  },
+  "uconnect-live": {
+    "name": "Uconnect LIVE",
+    "manufacturer": "stellantis",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "UconnectLive"
+      ]
+    },
+    "engine": null
+  },
+  "discord-updater": {
+    "name": "Discord Updater",
+    "manufacturer": "discord",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Discord-Updater"
+      ]
+    },
+    "engine": null
+  },
+  "discord-app": {
+    "name": "Discord",
+    "manufacturer": "discord",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Discord"
+      ]
+    },
+    "engine": null
+  },
+  "blue-stacks": {
+    "name": "BlueStacks",
+    "manufacturer": "now-gg",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BlueStacks 5",
+        "BlueStacks"
+      ]
+    },
+    "engine": null
+  },
+  "paint-by-number": {
+    "name": "Paint by Number",
+    "manufacturer": "oakever-games",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "com\\.paint\\.bynumber"
+      ]
+    },
+    "engine": null
+  },
+  "bible-kjv": {
+    "name": "Bible KJV",
+    "manufacturer": "mr-rocco-internet",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "com\\.meevii\\.bibleKJV"
+      ]
+    },
+    "engine": null
+  },
+  "word-cookies": {
+    "name": "Word Cookies!",
+    "manufacturer": "bitmango",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "wordcookies"
+      ]
+    },
+    "engine": null
+  },
+  "battle-net": {
+    "name": "Battle.net",
+    "manufacturer": "blizzard-entertainment",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Battle\\.net"
+      ]
+    },
+    "engine": null
+  },
+  "flipp-app": {
+    "name": "Flipp",
+    "manufacturer": "flipp",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Flipp-iOS"
+      ]
+    },
+    "engine": null
+  },
+  "opal-travel": {
+    "name": "Opal Travel",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Opal"
+      ]
+    },
+    "engine": null
+  },
+  "the-wall-street-journal": {
+    "name": "The Wall Street Journal",
+    "manufacturer": "dow-jones",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "wattpad": {
+    "name": "Wattpad",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Wattpad"
+      ]
+    },
+    "engine": null
+  },
+  "clovia": {
+    "name": "Clovia",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Clovia"
+      ]
+    },
+    "engine": null
+  },
+  "hulu": {
+    "name": "Hulu",
+    "manufacturer": "disney-mobile",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Hulu"
+      ]
+    },
+    "engine": null
+  },
+  "genspark": {
+    "name": "Genspark",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "edmodo": {
+    "name": "Edmodo",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "EdmodoAndroid"
+      ]
+    },
+    "engine": null
+  },
+  "tiktok-lite": {
+    "name": "TikTok Lite",
+    "manufacturer": "tiktok",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AppName\\/musically_go app_version",
+        "ultralite app_version"
+      ]
+    },
+    "engine": null
+  },
+  "kwai-pro": {
+    "name": "Kwai Pro",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Kwai_Pro"
+      ]
+    },
+    "engine": null
+  },
+  "naver-dictionary": {
+    "name": "NAVER Dictionary",
+    "manufacturer": "naver",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "naverdicapp; [^;]+; "
+      ]
+    },
+    "engine": null
+  },
+  "zen": {
+    "name": "Zen",
+    "manufacturer": "vk",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ZenKit"
+      ]
+    },
+    "engine": null
+  },
+  "de-telegraaf": {
+    "name": "De Telegraaf",
+    "manufacturer": "mediahuis-nrc",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "De Telegraaf"
+      ]
+    },
+    "engine": null
+  },
+  "hotels-com": {
+    "name": "Hotels.com",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HCom"
+      ]
+    },
+    "engine": null
+  },
+  "hidex": {
+    "name": "HideX",
+    "manufacturer": "flatfish",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "cam-scanner": {
+    "name": "CamScanner",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "CamScanner"
+      ]
+    },
+    "engine": null
+  },
+  "my-watch-party": {
+    "name": "My Watch Party",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MyWatchParty"
+      ]
+    },
+    "engine": null
+  },
+  "ali-pay": {
+    "name": "Alipay",
+    "manufacturer": "alibaba",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AP\\/"
+      ]
+    },
+    "engine": null
+  },
+  "wps-office": {
+    "name": "WPS Office",
+    "manufacturer": "wps-software",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WpsMoffice"
+      ]
+    },
+    "engine": null
+  },
+  "google-photos": {
+    "name": "Google Photos",
+    "manufacturer": "google",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "walla-news": {
+    "name": "Walla News",
+    "manufacturer": "mintmark",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WallaNews"
+      ]
+    },
+    "engine": null
+  },
+  "yelp-mobile": {
+    "name": "Yelp Mobile",
+    "manufacturer": "yelp",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YelpApp"
       ]
     },
     "engine": null

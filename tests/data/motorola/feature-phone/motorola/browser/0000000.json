@@ -676,51 +676,6 @@
   },
   {
     "headers": {
-      "user-agent": "MOT-KLGO iTunes/0E.30.16R MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "KLGO",
-      "marketingName": "KLGO",
-      "manufacturer": "Motorola",
-      "brand": "Motorola",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 128,
-        "height": 128,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Java ME",
-      "marketingName": "Java ME",
-      "version": null,
-      "manufacturer": "Sun",
-      "bits": null
-    },
-    "client": {
-      "name": "Motorola Internet Browser",
-      "modus": null,
-      "version": "2.2.1",
-      "manufacturer": "Motorola",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "MOT-L6/00.00.00 MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1"
     },
     "device": {
@@ -3076,6 +3031,51 @@
         "height": 128,
         "touch": false,
         "size": 1.8
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Java ME",
+      "marketingName": "Java ME",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "Motorola Internet Browser",
+      "modus": null,
+      "version": "2.2.1",
+      "manufacturer": "Motorola",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "MOT-KLGO/0E.30.14I MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Link/1.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "KLGO",
+      "marketingName": "KLGO",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 128,
+        "height": 128,
+        "touch": false,
+        "size": 2.2
       },
       "type": "feature-phone",
       "ismobile": true,

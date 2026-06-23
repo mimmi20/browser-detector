@@ -1,6 +1,96 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; 2201116PI) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.61 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "2201116PI",
+      "marketingName": "X4 Pro 5G",
+      "manufacturer": "Xiaomi",
+      "brand": "Poco",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "101.0.4951.61",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "101.0.4951.61",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; Xiaomi 11 Lite NE) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "11 Lite NE",
+      "marketingName": "11 Lite NE",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.55
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "100.0.4896.127",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "100.0.4896.127",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 12; 2201123G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Mobile Safari/537.36"
     },
     "device": {
@@ -1043,7 +1133,7 @@
     "client": {
       "name": "Chromium",
       "modus": null,
-      "version": "102.0.0",
+      "version": "102.0.5005.167",
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
@@ -1096,7 +1186,7 @@
     "client": {
       "name": "Chromium",
       "modus": null,
-      "version": "102.0.0",
+      "version": "102.0.5005.167",
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
@@ -1149,7 +1239,7 @@
     "client": {
       "name": "Chromium",
       "modus": null,
-      "version": "101.0.0",
+      "version": "101.0.4951.40",
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
@@ -2416,7 +2506,7 @@
     "client": {
       "name": "Chromium",
       "modus": null,
-      "version": "101.0.0",
+      "version": "101.0.4951.40",
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
@@ -2828,7 +2918,7 @@
     "client": {
       "name": "Chromium",
       "modus": null,
-      "version": "107.0.0",
+      "version": "107.0.5304.67",
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
@@ -2881,7 +2971,7 @@
     "client": {
       "name": "Chromium",
       "modus": null,
-      "version": "96.0.0",
+      "version": "96.0.4664.104",
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
@@ -3473,7 +3563,7 @@
     "client": {
       "name": "Chromium",
       "modus": null,
-      "version": "108.0.0",
+      "version": "108.0.5359.216",
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
@@ -4155,7 +4245,7 @@
     "client": {
       "name": "Chromium",
       "modus": null,
-      "version": "96.0.0",
+      "version": "96.0.4664.104",
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
@@ -4479,96 +4569,6 @@
     "engine": {
       "name": "Blink",
       "version": "112.0.0.0",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; 2209129SC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "2209129SC",
-      "marketingName": "Civi 2",
-      "manufacturer": "Xiaomi",
-      "brand": "Xiaomi",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.55
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "113.0.0.0",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "113.0.0.0",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; 220233L2G Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.136 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "220233L2G",
-      "marketingName": "Redmi 10A",
-      "manufacturer": "Xiaomi",
-      "brand": "Xiaomi",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.53
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome WebView",
-      "modus": null,
-      "version": "112.0.5615.136",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "112.0.5615.136",
       "manufacturer": "Google"
     }
   }

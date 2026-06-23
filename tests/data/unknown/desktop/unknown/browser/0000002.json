@@ -1,6 +1,141 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 4.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1709.113 Amigo/32.0.1709.113 MRCHROME SOC Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows NT",
+      "marketingName": "Windows NT",
+      "version": "4.0.0",
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Amigo",
+      "modus": null,
+      "version": "32.0.1709.113",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "32.0.1709.113",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows; U; Windows NT 6.1; cs-CZ) AppleWebKit/532.4 (KHTML, like Gecko) MiniBrowser/3.0 Safari/532.4"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows 7",
+      "version": "7.0.0",
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "MiniBrowser",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "532.4.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BriskBard/1.0 (Windows 6.1) BriskBard/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows 7",
+      "version": "7.0.0",
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "BriskBard",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36 EastBrowser/3.0"
     },
     "device": {
@@ -130,7 +265,7 @@
     "client": {
       "name": "Wave Browser",
       "modus": null,
-      "version": "103.0.0",
+      "version": "1.2.8.1",
       "manufacturer": "unknown",
       "type": "browser",
       "isbot": false,
@@ -278,6 +413,97 @@
       "name": "WebKit",
       "version": "527.0.0",
       "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:68.9) Gecko/20100101 Goanna/4.6 Firefox/68.9 Lolifox/28.12.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows 10",
+      "version": "10.0.0",
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Lolifox",
+      "modus": null,
+      "version": "28.12.0",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Goanna",
+      "version": "4.6.0",
+      "manufacturer": "Moonchild"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Catsxp\";v=\"122\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows 10",
+      "version": "10.0.0",
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Catsxp",
+      "modus": null,
+      "version": "122.0.0",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "122.0.0",
+      "manufacturer": "Google"
     }
   }
 ]

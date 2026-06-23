@@ -1663,5 +1663,50 @@
       "version": null,
       "manufacturer": "unknown"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "server-bag [Watch OS,4.3.2,15U70,Watch1,2]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Watch 1,2",
+      "marketingName": "Watch (42mm)",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 390,
+        "height": 312,
+        "touch": true,
+        "size": 1.65
+      },
+      "type": "smart-watch",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "watchOS",
+      "marketingName": "watchOS",
+      "version": "4.3.2",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
   }
 ]

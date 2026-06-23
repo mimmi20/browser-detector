@@ -133,5 +133,50 @@
       "version": null,
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "PodcastRepublic/18.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "14.7.1",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "PodcastRepublic",
+      "modus": null,
+      "version": "18.0.0",
+      "manufacturer": "unknown",
+      "type": "multimedia-player",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
   }
 ]

@@ -18,7 +18,6 @@ use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use Override;
 use UaData\EngineInterface;
 use UaParser\EngineParserInterface;
-use UnexpectedValueException;
 
 final readonly class EngineParser implements EngineParserInterface
 {
@@ -40,10 +39,6 @@ final readonly class EngineParser implements EngineParserInterface
     {
         $code = $this->fileParser->parseFile(self::GENERIC_FILE, $useragent, 'unknown');
 
-        try {
-            return Engine::fromName($code);
-        } catch (UnexpectedValueException) {
-            return Engine::unknown;
-        }
+        return Engine::fromName($code);
     }
 }

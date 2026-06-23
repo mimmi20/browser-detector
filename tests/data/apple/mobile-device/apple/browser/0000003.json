@@ -1,51 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Apple device",
-      "marketingName": "general Apple device",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "macOS",
-      "marketingName": "macOS",
-      "version": "10.15.6",
-      "manufacturer": "Apple",
-      "bits": null
-    },
-    "client": {
-      "name": "Safari",
-      "modus": null,
-      "version": "16.0.0",
-      "manufacturer": "Apple",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "MobileSafari/8614.1.14.0.14 CFNetwork/1378.1 Darwin/22.0.0"
     },
     "device": {
@@ -430,7 +385,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "16.0.0",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -971,7 +926,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "16.1.0",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -1739,7 +1694,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "16.2.0",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -2054,7 +2009,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "16.3.0",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -2373,7 +2328,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "16.2.0",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -2463,7 +2418,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "16.4.0",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -2868,7 +2823,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "16.5.0",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -3004,7 +2959,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "16.3.0",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -3184,7 +3139,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "16.6.0",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -3364,7 +3319,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "16.5.2",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -3454,7 +3409,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "16.5.1",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -3679,7 +3634,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "17.0.0",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -4399,7 +4354,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "17.0.1",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -4466,6 +4421,51 @@
   {
     "headers": {
       "user-agent": "MobileSafari/8616.2.9.10.10 CFNetwork/1485 Darwin/23.1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Apple device",
+      "marketingName": "general Apple device",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "17.1.0",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Safari",
+      "modus": null,
+      "version": "6.0.0",
+      "manufacturer": "Apple",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "1485.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "MobileSafari/8616.2.9.10.5 CFNetwork/1485 Darwin/23.1.0"
     },
     "device": {
       "architecture": null,

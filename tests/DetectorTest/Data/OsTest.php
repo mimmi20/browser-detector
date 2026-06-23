@@ -33,7 +33,6 @@ use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-use UnexpectedValueException;
 
 use function in_array;
 use function sprintf;
@@ -47,7 +46,6 @@ final class OsTest extends TestCase
      *
      * @param array{factory: string|null, search: list<string>|null} $version
      *
-     * @throws UnexpectedValueException
      * @throws ExpectationFailedException
      */
     #[DataProvider('provider')]
@@ -276,7 +274,7 @@ final class OsTest extends TestCase
                 'name' => 'Fire OS',
                 'marketingName' => 'Fire OS',
                 'manufacturer' => Company::amazon,
-                'version' => ['factory' => null, 'search' => null],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Fire OS']],
                 'key' => 'fire-os',
             ],
             [
@@ -508,7 +506,7 @@ final class OsTest extends TestCase
                 'name' => 'Windows',
                 'marketingName' => 'Windows',
                 'manufacturer' => Company::microsoft,
-                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Microsoft-WebDAV-MiniRedir', 'Windows[;\/]']],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Microsoft-WebDAV-MiniRedir', 'Windows[;\/]', 'WINDOWS_64']],
                 'key' => 'windows',
             ],
             [
@@ -1540,7 +1538,7 @@ final class OsTest extends TestCase
                 'name' => 'Roku OS',
                 'marketingName' => 'Roku OS',
                 'manufacturer' => Company::roku,
-                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Roku\/DVP-', 'Roku\/Pluto-', 'RokuOS', 'Roku; AP; ']],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Roku(?:[A-Z0-9]+)?\/DVP-', 'Roku\/Pluto-', 'RokuOS', 'Roku; AP; ']],
                 'key' => 'roku-os',
             ],
             [
@@ -1590,6 +1588,62 @@ final class OsTest extends TestCase
                 'manufacturer' => Company::pico,
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['PICO \d OS']],
                 'key' => 'pico-os',
+            ],
+            [
+                'type' => 'RouterOS',
+                'name' => 'RouterOS',
+                'marketingName' => 'RouterOS',
+                'manufacturer' => Company::mikrotik,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Mikrotik\/', 'RouterOS']],
+                'key' => 'router-os',
+            ],
+            [
+                'type' => 'Vega OS',
+                'name' => 'Vega OS',
+                'marketingName' => 'Vega OS',
+                'manufacturer' => Company::amazon,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Kepler']],
+                'key' => 'vega-os',
+            ],
+            [
+                'type' => 'Android Go',
+                'name' => 'Android Go',
+                'marketingName' => 'Android Go',
+                'manufacturer' => Company::google,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Andr[o0]id']],
+                'key' => 'android-go',
+            ],
+            [
+                'type' => 'NuttX',
+                'name' => 'NuttX',
+                'marketingName' => 'NuttX',
+                'manufacturer' => Company::apache,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['NuttX']],
+                'key' => 'nuttx',
+            ],
+            [
+                'type' => 'MINIX',
+                'name' => 'MINIX',
+                'marketingName' => 'MINIX',
+                'manufacturer' => Company::andrewStuartTanenbaum,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Minix']],
+                'key' => 'minix',
+            ],
+            [
+                'type' => 'Plan 9',
+                'name' => 'Plan 9',
+                'marketingName' => 'Plan 9',
+                'manufacturer' => Company::plan9Foundation,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Plan 9']],
+                'key' => 'plan-9',
+            ],
+            [
+                'type' => 'Deepin',
+                'name' => 'Deepin',
+                'marketingName' => 'Deepin',
+                'manufacturer' => Company::deepinTechnology,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Deepin']],
+                'key' => 'deepin',
             ],
         ];
     }

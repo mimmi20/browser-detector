@@ -20,7 +20,6 @@ use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\Normalizer\NormalizerInterface;
 use UaParser\PlatformCodeInterface;
 use UaParser\PlatformParserInterface;
-use UnexpectedValueException;
 
 use function array_filter;
 use function array_first;
@@ -96,7 +95,11 @@ final readonly class UseragentPlatformCode implements PlatformCodeInterface
         $matches = [];
 
         if (
-            preg_match('/^WhatsApp\/[0-9.]+[ \/](?P<code>[ANWi])$/', $normalizedValue, $matches)
+            preg_match(
+                '/^(?:(?:Yo[a-zA-Z]{2}|GB)?WhatsApp|YoWhatsApp2Plus)\/[0-9.]+[ \/](?P<code>[ANWi])$/',
+                $normalizedValue,
+                $matches,
+            )
             && array_key_exists('code', $matches)
         ) {
             return match ($matches['code']) {
@@ -160,11 +163,7 @@ final readonly class UseragentPlatformCode implements PlatformCodeInterface
         $code = array_first($results);
 
         if ($code !== null && $code !== '') {
-            try {
-                return Os::fromName($code);
-            } catch (UnexpectedValueException) {
-                return Os::unknown;
-            }
+            return Os::fromName($code);
         }
 
         return $this->platformParser->parse($normalizedValue);

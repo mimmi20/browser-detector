@@ -44,11 +44,7 @@ final class PlatformLoader implements PlatformLoaderInterface
     #[Override]
     public function load(string $key, string $useragent = ''): OsInterface
     {
-        try {
-            $os = \BrowserDetector\Data\Os::fromName($key);
-        } catch (UnexpectedValueException) {
-            $os = \BrowserDetector\Data\Os::unknown;
-        }
+        $os = \BrowserDetector\Data\Os::fromName($key);
 
         return $this->loadFromOs($os, $useragent);
     }

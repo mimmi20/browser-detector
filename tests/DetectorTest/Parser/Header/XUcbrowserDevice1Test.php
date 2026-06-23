@@ -16,6 +16,7 @@ namespace BrowserDetectorTest\Parser\Header;
 use BrowserDetector\Data\Engine;
 use BrowserDetector\Data\Os;
 use BrowserDetector\Parser\Header\XUcbrowserDevice;
+use BrowserDetector\Parser\Helper\DeviceInterface;
 use BrowserDetector\Version\NullVersion;
 use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
@@ -72,11 +73,19 @@ final class XUcbrowserDevice1Test extends TestCase
             ->with($normalitedUa)
             ->willReturn($deviceCode);
 
+        $deviceCodeHelper = $this->createMock(DeviceInterface::class);
+        $deviceCodeHelper
+            ->expects(!$searchCode ? self::never() : self::once())
+            ->method('getDeviceCode')
+            ->with(mb_strtolower($normalitedUa))
+            ->willReturn(null);
+
         $header = new DeviceCodeOnlyHeader(
             value: $ua,
             deviceCode: new XUcbrowserDevice(
                 deviceParser: $deviceParser,
                 normalizer: $normalizer,
+                deviceCodeHelper: $deviceCodeHelper,
             ),
         );
 

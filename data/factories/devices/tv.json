@@ -32,7 +32,7 @@
     "/[;(] ?medion;/i": "medion",
     "/viera|panasonic|aftboxe1/i": "panasonic",
     "/aquosbrowser|sharp,|sharp_umc|umc-sharp/i": "sharp",
-    "/apple tv/i": "apple",
+    "/apple ?tv/i": "apple",
     "/hc7620|sky_?worth|skw690|swtv[;,)]/i": "sky-worth",
     "/vap430|vizio/i": "vizio",
     "/gtv100/i": "netgear",

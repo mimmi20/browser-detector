@@ -23,7 +23,6 @@ use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-use UnexpectedValueException;
 
 use function sprintf;
 
@@ -35,7 +34,6 @@ final class EngineTest extends TestCase
      *
      * @param array{factory: string|null, search: list<string>|null} $version
      *
-     * @throws UnexpectedValueException
      * @throws ExpectationFailedException
      */
     #[DataProvider('provider')]

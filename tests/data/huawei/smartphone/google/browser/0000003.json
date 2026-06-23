@@ -1,51 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; ANG-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.116 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "ANG-AN00",
-      "marketingName": "nova 8 5G",
-      "manufacturer": "Huawei",
-      "brand": "Huawei",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.57
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "79.0.3945.116",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "79.0.3945.116",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; ASK-AL20 Build/HONORASK-AL20; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120"
     },
     "device": {
@@ -2246,9 +2201,9 @@
     "device": {
       "architecture": null,
       "deviceName": "CMA-LX3",
-      "marketingName": "Honor X7",
+      "marketingName": "X7",
       "manufacturer": "Huawei",
-      "brand": "Huawei",
+      "brand": "Honor",
       "dualOrientation": true,
       "simCount": 1,
       "display": {
@@ -3015,7 +2970,7 @@
     "client": {
       "name": "Chromium",
       "modus": null,
-      "version": "96.0.0",
+      "version": "96.0.4664.104",
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
@@ -3067,7 +3022,7 @@
     "client": {
       "name": "Chromium",
       "modus": null,
-      "version": "96.0.0",
+      "version": "96.0.4664.104",
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
@@ -4564,6 +4519,51 @@
     "engine": {
       "name": "Blink",
       "version": "106.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; CTR-LX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.79 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CTR-LX3",
+      "marketingName": "nova Y90",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2388,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "100.0.4896.79",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "100.0.4896.79",
       "manufacturer": "Google"
     }
   }

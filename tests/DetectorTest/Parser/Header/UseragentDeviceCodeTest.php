@@ -23,6 +23,8 @@ use PHPUnit\Framework\TestCase;
 use UaNormalizer\Normalizer\NormalizerInterface;
 use UaParser\DeviceParserInterface;
 
+use function mb_strtolower;
+
 #[CoversClass(UseragentDeviceCode::class)]
 final class UseragentDeviceCodeTest extends TestCase
 {
@@ -78,5 +80,123 @@ final class UseragentDeviceCodeTest extends TestCase
             ['WhatsApp/2.2587.9 N', 'apple=macintosh'],
             ['WhatsApp/2.2587.9/i', 'apple=general apple device'],
         ];
+    }
+
+    /**
+     * @throws Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
+    public function testWithUas2(): void
+    {
+        $value = 'WhatsApp/2.2587.9 A';
+
+        $deviceParser = $this->createMock(DeviceParserInterface::class);
+        $deviceParser
+            ->expects(self::never())
+            ->method('parse');
+
+        $deviceCodeHelper = $this->createMock(DeviceInterface::class);
+        $deviceCodeHelper
+            ->expects(self::never())
+            ->method('getDeviceCode');
+
+        $normalizer = $this->createMock(NormalizerInterface::class);
+        $normalizer
+            ->expects(self::once())
+            ->method('normalize')
+            ->with($value)
+            ->willReturn('');
+
+        $header = new UseragentDeviceCode(
+            deviceParser: $deviceParser,
+            normalizer: $normalizer,
+            deviceCodeHelper: $deviceCodeHelper,
+        );
+
+        self::assertTrue($header->hasDeviceCode($value));
+        self::assertNull(
+            $header->getDeviceCode($value),
+        );
+    }
+
+    /**
+     * @throws Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
+    public function testWithUas3(): void
+    {
+        $value = 'WhatsApp/2.2587.9 A';
+
+        $deviceParser = $this->createMock(DeviceParserInterface::class);
+        $deviceParser
+            ->expects(self::never())
+            ->method('parse');
+
+        $deviceCodeHelper = $this->createMock(DeviceInterface::class);
+        $deviceCodeHelper
+            ->expects(self::never())
+            ->method('getDeviceCode');
+
+        $normalizer = $this->createMock(NormalizerInterface::class);
+        $normalizer
+            ->expects(self::once())
+            ->method('normalize')
+            ->with($value)
+            ->willThrowException(new \UaNormalizer\Normalizer\Exception\Exception('x'));
+
+        $header = new UseragentDeviceCode(
+            deviceParser: $deviceParser,
+            normalizer: $normalizer,
+            deviceCodeHelper: $deviceCodeHelper,
+        );
+
+        self::assertTrue($header->hasDeviceCode($value));
+        self::assertNull(
+            $header->getDeviceCode($value),
+        );
+    }
+
+    /**
+     * @throws Exception
+     * @throws NoPreviousThrowableException
+     * @throws \PHPUnit\Framework\MockObject\Exception
+     */
+    public function testWithUas4(): void
+    {
+        $value = 'A/8.1.0/ANS/L51/msm8909/unknown/QCX3/l3584062258010650401/-/+490760838/-/ANS/110712/110713/-/2.5/1/W';
+
+        $deviceParser = $this->createMock(DeviceParserInterface::class);
+        $deviceParser
+            ->expects(self::once())
+            ->method('parse')
+            ->with($value)
+            ->willReturn('');
+
+        $deviceCodeHelper = $this->createMock(DeviceInterface::class);
+        $deviceCodeHelper
+            ->expects(self::once())
+            ->method('getDeviceCode')
+            ->with(mb_strtolower($value))
+            ->willReturn(null);
+
+        $normalizer = $this->createMock(NormalizerInterface::class);
+        $normalizer
+            ->expects(self::once())
+            ->method('normalize')
+            ->with($value)
+            ->willReturn($value);
+
+        $header = new UseragentDeviceCode(
+            deviceParser: $deviceParser,
+            normalizer: $normalizer,
+            deviceCodeHelper: $deviceCodeHelper,
+        );
+
+        self::assertTrue($header->hasDeviceCode($value));
+        self::assertNull(
+            $header->getDeviceCode($value),
+        );
     }
 }

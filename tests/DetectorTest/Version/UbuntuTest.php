@@ -66,6 +66,10 @@ final class UbuntuTest extends TestCase
                 'ddg_android/5.92.1 (com.duckduckgo.mobile.android; Android API 36)',
                 null,
             ],
+            [
+                'R/3.6.0 (ubuntu-16.04) R (3.6.0 x86_64-pc-linux-gnu x86_64 linux-gnu)',
+                '16.04.0',
+            ],
         ];
     }
 }

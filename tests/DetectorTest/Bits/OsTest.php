@@ -136,6 +136,10 @@ final class OsTest extends TestCase
                 'Mozilla/5.0 (X11; U; Linux SPARC; en-US; rv:1.5) Gecko/20041129',
                 32,
             ],
+            [
+                'Acrobat/24.3.20180.6 NGL Client/1.38.0.10 (WINDOWS_64/10.0.19045.1)',
+                64,
+            ],
         ];
     }
 }

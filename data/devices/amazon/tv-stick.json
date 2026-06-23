@@ -126,5 +126,37 @@
     },
     "type": "tv-stick",
     "platform": "android"
+  },
+  "amazon aftca002": {
+    "deviceName": "AFTCA002",
+    "marketingName": "Fire TV Stick 4K Select (2025)",
+    "manufacturer": "amazon",
+    "brand": "amazon",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "tv-stick",
+    "platform": "vega-os"
+  },
+  "amazon aftcl001": {
+    "deviceName": "AFTCL001",
+    "marketingName": "Fire TV Stick HD (2026)",
+    "manufacturer": "amazon",
+    "brand": "amazon",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "tv-stick",
+    "platform": "vega-os"
   }
 }

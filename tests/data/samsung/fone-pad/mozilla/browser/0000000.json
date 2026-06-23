@@ -43,5 +43,51 @@
       "version": "20.0.0",
       "manufacturer": "Mozilla"
     }
+  },
+  {
+    "headers": {
+      "x-requested-with": "org.mozilla.rocket",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-T725 Build/RP1A.200720.012; rv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Rocket/2.6.0(20651) Chrome/87.0.4280.141 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-T725",
+      "marketingName": "Galaxy Tab S5e 10.5\" LTE",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 10.5
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Firefox Rocket",
+      "modus": null,
+      "version": "2.6.0.20651",
+      "manufacturer": "Mozilla",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "87.0.4280.141",
+      "manufacturer": "Google"
+    }
   }
 ]

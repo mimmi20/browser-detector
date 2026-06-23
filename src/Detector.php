@@ -52,7 +52,7 @@ final readonly class Detector implements DetectorInterface
      */
     public function __construct(
         /**
-         * an logger instance
+         * a logger instance
          */
         private LoggerInterface $logger,
         private CacheInterface $cache,

@@ -1,6 +1,141 @@
 [
   {
     "headers": {
+      "user-agent": "IBrowse/2.3 (AmigaOS 3.5)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Amiga OS",
+      "marketingName": "Amiga OS",
+      "version": "3.5.0",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "IBrowse",
+      "modus": null,
+      "version": "2.3.0",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "IBrowse/1.22 (AmigaOS 3.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Amiga OS",
+      "marketingName": "Amiga OS",
+      "version": "3.0.0",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "IBrowse",
+      "modus": null,
+      "version": "1.22.0",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Galeon (IE4 compatible; Galeon; Windows XP)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows XP",
+      "version": "5.1.0",
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Galeon",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "EVE-minibrowser/3.0"
     },
     "device": {
@@ -4363,141 +4498,6 @@
       "name": "WebKit",
       "version": "533.3.0",
       "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows NT 4.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1709.113 Amigo/32.0.1709.113 MRCHROME SOC Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows NT",
-      "marketingName": "Windows NT",
-      "version": "4.0.0",
-      "manufacturer": "Microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "Amigo",
-      "modus": null,
-      "version": "32.0.1709.113",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "32.0.1709.113",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows; U; Windows NT 6.1; cs-CZ) AppleWebKit/532.4 (KHTML, like Gecko) MiniBrowser/3.0 Safari/532.4"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows 7",
-      "version": "7.0.0",
-      "manufacturer": "Microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "MiniBrowser",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "532.4.0",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "BriskBard/1.0 (Windows 6.1) BriskBard/1.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows 7",
-      "version": "7.0.0",
-      "manufacturer": "Microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "BriskBard",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
     }
   }
 ]

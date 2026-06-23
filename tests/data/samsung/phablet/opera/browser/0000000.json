@@ -894,7 +894,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "72.3.3767.68685",
+      "version": "106.0.5249.126",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -1437,7 +1437,7 @@
     "client": {
       "name": "Opera",
       "modus": null,
-      "version": "94.0.2254.78762",
+      "version": "94.0.0",
       "manufacturer": "Opera",
       "type": "browser",
       "isbot": false,
@@ -1446,6 +1446,61 @@
     "engine": {
       "name": "Blink",
       "version": "139.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"SM-F946U\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"10.0\"",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Opera\";v=\"129\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-full-version": "\"129.0.5823.65\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Desktop\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-wow64": "?0",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-F946U",
+      "marketingName": "Galaxy Z Fold 5 (USA)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2176,
+        "height": 1812,
+        "touch": true,
+        "size": 7.6
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": 64
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": 64
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "129.0.5823.65",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 64
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "145.0.0",
       "manufacturer": "Google"
     }
   }

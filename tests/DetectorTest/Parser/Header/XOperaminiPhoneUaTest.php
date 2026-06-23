@@ -15,6 +15,7 @@ namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Data\Engine;
 use BrowserDetector\Data\Os;
+use BrowserDetector\Parser\Header\SetVersionTrait;
 use BrowserDetector\Parser\Header\XOperaminiPhoneUaClientCode;
 use BrowserDetector\Parser\Header\XOperaminiPhoneUaClientVersion;
 use BrowserDetector\Parser\Header\XOperaminiPhoneUaDeviceCode;
@@ -24,6 +25,7 @@ use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\NullVersion;
 use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Attributes\CoversTrait;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -43,6 +45,7 @@ use function sprintf;
 #[CoversClass(XOperaminiPhoneUaDeviceCode::class)]
 #[CoversClass(XOperaminiPhoneUaEngineCode::class)]
 #[CoversClass(XOperaminiPhoneUaPlatformCode::class)]
+#[CoversTrait(SetVersionTrait::class)]
 final class XOperaminiPhoneUaTest extends TestCase
 {
     /**

@@ -320,17 +320,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "MacBook Pro",
-      "marketingName": "MacBook Pro",
+      "deviceName": "MacBook Pro 1,1",
+      "marketingName": "MacBook Pro 15\" (2006)",
       "manufacturer": "Apple",
       "brand": "Apple",
       "dualOrientation": false,
       "simCount": 0,
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1440,
+        "height": 900,
         "touch": false,
-        "size": null
+        "size": 15.4
       },
       "type": "laptop",
       "ismobile": false,
@@ -356,6 +356,51 @@
     "engine": {
       "name": "WebKit",
       "version": "454.11.5",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "CoverScout%203/3.0.1 CFNetwork/339.5 Darwin/9.5.0 (i386) (MacBookPro3,1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Pro 3,1",
+      "marketingName": "MacBook Pro 15\" (2007)",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1440,
+        "height": 900,
+        "touch": false,
+        "size": 15.4
+      },
+      "type": "laptop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.5.5",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "CFNetwork",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Apple",
+      "type": "application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "339.5.0",
       "manufacturer": "Apple"
     }
   },
@@ -676,6 +721,51 @@
   },
   {
     "headers": {
+      "user-agent": "RealPlayer%20Downloader/1379 CFNetwork/454.11.5 Darwin/10.6.0 (i386) (MacBookPro5%2C4)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Pro 5,4",
+      "marketingName": "MacBook Pro 15\" (2009)",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1440,
+        "height": 900,
+        "touch": false,
+        "size": 15.4
+      },
+      "type": "laptop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.6.6",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "CFNetwork",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Apple",
+      "type": "application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "454.11.5",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "RealPlayer%20Download-Manager/884 CFNetwork/454.11.5 Darwin/10.6.0 (i386) (MacBookPro5%2C3)"
     },
     "device": {
@@ -761,6 +851,51 @@
     "engine": {
       "name": "WebKit",
       "version": "520.0.13",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "RealPlayer%20Downloader/1444 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (MacBookPro2%2C1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Pro 2,1",
+      "marketingName": "MacBook Pro 17\" (2006)",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1680,
+        "height": 1050,
+        "touch": false,
+        "size": 17
+      },
+      "type": "laptop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.6.8",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "CFNetwork",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Apple",
+      "type": "application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "454.12.4",
       "manufacturer": "Apple"
     }
   },

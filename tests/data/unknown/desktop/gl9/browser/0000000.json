@@ -677,5 +677,50 @@
       "version": "127.0.0",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "NetSurf/3.7 (Linux; Arch Linux)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "ArchLinux",
+      "marketingName": "ArchLinux",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "SurfBrowser",
+      "modus": null,
+      "version": "3.7.0",
+      "manufacturer": "gl9",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "NetSurf",
+      "version": "3.7.0",
+      "manufacturer": "unknown"
+    }
   }
 ]

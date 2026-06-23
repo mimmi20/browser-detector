@@ -33,7 +33,7 @@
     "client": {
       "name": "InstaPro",
       "modus": null,
-      "version": null,
+      "version": "215.0.0.27.359",
       "manufacturer": "unknown",
       "type": "mobile-application",
       "isbot": false,
@@ -134,6 +134,51 @@
       "name": "WebKit",
       "version": null,
       "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; M2103K19G Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.123 Mobile Safari/537.36 CamScanner/6.64.1.2405070000;webank/h5face;webank/2.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "M2103K19G",
+      "marketingName": "Redmi Note 10 5G",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "CamScanner",
+      "modus": null,
+      "version": "6.64.1.2405070000",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "124.0.6367.123",
+      "manufacturer": "Google"
     }
   }
 ]

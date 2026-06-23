@@ -1,51 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "MobileSafari/8616.2.9.10.5 CFNetwork/1485 Darwin/23.1.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Apple device",
-      "marketingName": "general Apple device",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "17.1.0",
-      "manufacturer": "Apple",
-      "bits": null
-    },
-    "client": {
-      "name": "Safari",
-      "modus": null,
-      "version": "6.0.0",
-      "manufacturer": "Apple",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "1485.0.0",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Mobile/15E148 Safari/604.1"
     },
     "device": {
@@ -70,7 +25,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "17.1.0",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -475,7 +430,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "17.1.1",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -971,7 +926,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "17.1.2",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -1016,7 +971,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "17.2.0",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -1061,7 +1016,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "17.3.0",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -1691,7 +1646,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "17.3.1",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -1736,7 +1691,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "17.4.0",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -1781,7 +1736,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "17.4.1",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -2141,7 +2096,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "16.6.0",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -2186,7 +2141,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "17.5.0",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -3221,7 +3176,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "17.6.0",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -3266,7 +3221,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "18.0.0",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -4211,7 +4166,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "17.7.0",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -4256,7 +4211,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "18.0.1",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -4301,7 +4256,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.15.7",
+      "version": "18.1.0",
       "manufacturer": "Apple",
       "bits": null
     },
@@ -4458,6 +4413,51 @@
   {
     "headers": {
       "user-agent": "NetworkingExtension/8619.2.8.10.3 Network/4277.42.1 iOS/18.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Apple device",
+      "marketingName": "general Apple device",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "18.1.0",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Safari",
+      "modus": null,
+      "version": "18.1.0",
+      "manufacturer": "Apple",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NetworkingExtension/8619.2.8.10.7 Network/4277.42.2 iOS/18.1"
     },
     "device": {
       "architecture": null,

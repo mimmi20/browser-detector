@@ -95,8 +95,8 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Mac Mini",
-      "marketingName": "Mac Mini",
+      "deviceName": "Mac Mini 5,2",
+      "marketingName": "Mac Mini (2011)",
       "manufacturer": "Apple",
       "brand": "Apple",
       "dualOrientation": false,
@@ -581,6 +581,96 @@
     "engine": {
       "name": "WebKit",
       "version": "673.2.1",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Unibox/190 CFNetwork/673.4 Darwin/13.1.0 (x86_64) (Macmini6%2C1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Mac Mini 6,1",
+      "marketingName": "Mac Mini (2012)",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.9.1",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Unibox",
+      "modus": null,
+      "version": "190.0.0",
+      "manufacturer": "eightloops",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "673.4.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Unibox/190 CFNetwork/673.4 Darwin/13.2.0 (x86_64) (Macmini5%2C1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Mac Mini 5,1",
+      "marketingName": "Mac Mini (2011)",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.9.2",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Unibox",
+      "modus": null,
+      "version": "190.0.0",
+      "manufacturer": "eightloops",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "673.4.0",
       "manufacturer": "Apple"
     }
   },

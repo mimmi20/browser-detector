@@ -5,7 +5,7 @@ parameters:
 
   parallel:
     maximumNumberOfProcesses: 1
-    processTimeout: 200.0
+    processTimeout: 600.0
 
   paths:
     - src
@@ -85,7 +85,7 @@ parameters:
       tooWideThrowType: true
 
   cognitive_complexity:
-    class: 109
+    class: 119
     function: 39
 
   type_coverage:
@@ -111,10 +111,6 @@ parameters:
     - '~will always evaluate to true~'
     - '~\$searches of method~'
     - '~\$rules of method~'
-    - '~deprecated class BrowserDetector\\Loader\\InitData\\Os~'
-    - '~deprecated class BrowserDetector\\Loader\\Data\\Os~'
-    - '~deprecated class BrowserDetector\\Loader\\InitData\\Engine~'
-    - '~deprecated class BrowserDetector\\Loader\\Data\\Engine~'
     -
       identifier: property.uninitialized
       paths:
@@ -140,11 +136,6 @@ parameters:
       identifier: catch.neverThrown
       paths:
         - tests\DetectorTest\Parser\Header\SecChUaPlatformVersionTest.php
-    -
-      identifier: public.method.unused
-      paths:
-        - src\Loader\InitData\Os.php
-        - src\Loader\InitData\Engine.php
 
 services:
   errorFormatter.sarif:

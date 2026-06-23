@@ -17,9 +17,11 @@ use BrowserDetector\Data\Engine;
 use BrowserDetector\Data\Os;
 use BrowserDetector\Parser\Header\Exception\VersionContainsDerivateException;
 use BrowserDetector\Parser\Header\SecChUaPlatformVersion;
+use BrowserDetector\Parser\Header\SetVersionTrait;
 use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\NullVersion;
 use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Attributes\CoversTrait;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
@@ -33,6 +35,7 @@ use UnexpectedValueException;
 use function sprintf;
 
 #[CoversClass(SecChUaPlatformVersion::class)]
+#[CoversTrait(SetVersionTrait::class)]
 final class SecChUaPlatformVersionTest extends TestCase
 {
     /**

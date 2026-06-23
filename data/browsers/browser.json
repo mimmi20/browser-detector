@@ -500,7 +500,7 @@
     "engine": null
   },
   "baidu spark": {
-    "name": "Baidu Spark",
+    "name": "Spark",
     "manufacturer": "baidu",
     "type": "browser",
     "version": {
@@ -1538,7 +1538,19 @@
         "Google ?Earth"
       ]
     },
-    "engine": "webkit"
+    "engine": null
+  },
+  "google earth pro": {
+    "name": "Google Earth Pro",
+    "manufacturer": "google",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Google ?Earth ?Pro"
+      ]
+    },
+    "engine": null
   },
   "googletv": {
     "name": "GoogleTV",
@@ -2634,7 +2646,7 @@
         "NF3"
       ]
     },
-    "engine": null
+    "engine": "netfront"
   },
   "netfront nx": {
     "name": "NetFront NX",
@@ -3233,7 +3245,8 @@
         "MQQBrowser",
         "QQBrowser",
         " QQ\\/",
-        "V1\\_AND\\_SQ\\_"
+        "V1\\_AND\\_SQ\\_",
+        "QQ浏览器"
       ]
     },
     "engine": null
@@ -3365,6 +3378,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "Quick Search TV\\/Wild Moon Edition",
         "Quick Search TV"
       ]
     },
@@ -4366,7 +4380,7 @@
   },
   "whale browser": {
     "name": "Whale Browser",
-    "manufacturer": "nhn-corporation",
+    "manufacturer": "naver",
     "type": "browser",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -4676,7 +4690,7 @@
   },
   "foss-browser": {
     "name": "Foss Browser",
-    "manufacturer": "unknown",
+    "manufacturer": "gaukler-faun",
     "type": "browser",
     "version": {
       "class": null,
@@ -5727,6 +5741,16 @@
     },
     "engine": null
   },
+  "puffin-incognito-browser": {
+    "name": "Puffin Incognito Browser",
+    "manufacturer": "cloud-mosa",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\PuffinFactory",
+      "search": null
+    },
+    "engine": null
+  },
   "firefox-reality": {
     "name": "Firefox Reality",
     "manufacturer": "mozilla-foundation",
@@ -5793,6 +5817,18 @@
         "Perfect Browser",
         "Perfect Browser\\-iPad",
         "Perfect Browser"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "perfect browser pro": {
+    "name": "Perfect Browser Pro",
+    "manufacturer": "app-simply",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PerfectBrowserPro"
       ]
     },
     "engine": "webkit"
@@ -6140,6 +6176,784 @@
       "search": [
         "sharp wd browser"
       ]
+    },
+    "engine": null
+  },
+  "viasat-browser": {
+    "name": "Viasat Browser",
+    "manufacturer": "viasat",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Viasat Browser"
+      ]
+    },
+    "engine": null
+  },
+  "sidekick": {
+    "name": "Sidekick",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Sidekick"
+      ]
+    },
+    "engine": null
+  },
+  "catsxp": {
+    "name": "Catsxp",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Catsxp"
+      ]
+    },
+    "engine": null
+  },
+  "veera": {
+    "name": "Veera",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Veera"
+      ]
+    },
+    "engine": null
+  },
+  "cromite": {
+    "name": "Cromite",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Cromite"
+      ]
+    },
+    "engine": null
+  },
+  "mises-browser": {
+    "name": "Mises Browser",
+    "manufacturer": "mises-network",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Mises"
+      ]
+    },
+    "engine": null
+  },
+  "herond-browser": {
+    "name": "Herond Browser",
+    "manufacturer": "herond",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Herond"
+      ]
+    },
+    "engine": null
+  },
+  "quetta-browser": {
+    "name": "Quetta Browser",
+    "manufacturer": "quetta-networks",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Quetta"
+      ]
+    },
+    "engine": null
+  },
+  "ace-browser": {
+    "name": "Ace Browser",
+    "manufacturer": "browse-ai",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Ace"
+      ]
+    },
+    "engine": null
+  },
+  "ray-browser": {
+    "name": "Ray Browser",
+    "manufacturer": "ray-browser",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Ray"
+      ]
+    },
+    "engine": null
+  },
+  "clario-browser": {
+    "name": "Clario Browser",
+    "manufacturer": "tov-solk",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Clario"
+      ]
+    },
+    "engine": null
+  },
+  "blazer": {
+    "name": "Blazer",
+    "manufacturer": "blazerbrowser-com",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Blazer"
+      ]
+    },
+    "engine": null
+  },
+  "if-browser": {
+    "name": "Ifbrowser",
+    "manufacturer": "ifbrowser",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "ddu-browser": {
+    "name": "DDU Browser",
+    "manufacturer": "droi-digital-universe",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "stay-browser": {
+    "name": "Stay Browser",
+    "manufacturer": "staybrowser",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "ask-browser": {
+    "name": "Ask Browser",
+    "manufacturer": "innova-life",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "clear-tv-web-browser": {
+    "name": "Clear TV Web Browser",
+    "manufacturer": "iberapps",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "vc-browser-mini-pro": {
+    "name": "VC Browser Mini Pro",
+    "manufacturer": "browser-android-dev",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "nova-browser": {
+    "name": "Nova Browser",
+    "manufacturer": "shuxin-innovation",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "black-browser": {
+    "name": "Black Browser",
+    "manufacturer": "sai-gopal",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "browse-safe": {
+    "name": "Browse Safe",
+    "manufacturer": "innover",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "anonyv-browser": {
+    "name": "Anonyv Browser",
+    "manufacturer": "tactix-labs",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "snap-browser": {
+    "name": "Snap Browser",
+    "manufacturer": "hesha",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "neuro-browser": {
+    "name": "Neuro Browser",
+    "manufacturer": "pixel-tivra-studios",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "tincat-browser": {
+    "name": "Tincat Browser",
+    "manufacturer": "netsky-tech",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "lemur": {
+    "name": "Lemur Browser",
+    "manufacturer": "curlemur-technology",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Lemur"
+      ]
+    },
+    "engine": null
+  },
+  "hola": {
+    "name": "hola! Browser",
+    "manufacturer": "hola-vpn",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Hola"
+      ]
+    },
+    "engine": null
+  },
+  "power": {
+    "name": "Power Browser",
+    "manufacturer": "powerdao-tech",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Power"
+      ]
+    },
+    "engine": null
+  },
+  "artis-browser": {
+    "name": "ArtisBrowser",
+    "manufacturer": "artist-scope",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ArtisReader"
+      ]
+    },
+    "engine": null
+  },
+  "cloak-private-browser": {
+    "name": "Cloak Private Browser",
+    "manufacturer": "moving-clocks-cloud",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "rca-tor-explorer": {
+    "name": "RCA Tor Explorer",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RCATorExplorer"
+      ]
+    },
+    "engine": null
+  },
+  "tq-browser": {
+    "name": "TQ Browser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TQBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "open-browser-lite": {
+    "name": "Open Browser Lite",
+    "manufacturer": "meta-x",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "seekee": {
+    "name": "Seekee",
+    "manufacturer": "seekee",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "internet-browser-tv": {
+    "name": "Internet Browser (TV)",
+    "manufacturer": "hayer",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "mmbox-x-browser": {
+    "name": "XBrowser",
+    "manufacturer": "xinwang-technology",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "onion-browser": {
+    "name": "ONIONBrowser",
+    "manufacturer": "onion-search-engine",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "keepsolid-browser": {
+    "name": "KeepSolid Browser",
+    "manufacturer": "keep-solid",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "proxy-max": {
+    "name": "ProxyMax",
+    "manufacturer": "vielianzt-labs",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "tusk-browser": {
+    "name": "TUSK",
+    "manufacturer": "virtual-world-computing",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TUSK"
+      ]
+    },
+    "engine": null
+  },
+  "ojr-browser": {
+    "name": "OJR Browser",
+    "manufacturer": "ojr-studio-mobile",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "OJR Browser"
+      ]
+    },
+    "engine": null
+  },
+  "nyxone-browser": {
+    "name": "NyxOne Browser",
+    "manufacturer": "cleararc-digital",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "dark-web-private": {
+    "name": "Dark Web Private",
+    "manufacturer": "bir-apps",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "proxyium-browser": {
+    "name": "Proxyium",
+    "manufacturer": "proxyium",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "keyboard-browser": {
+    "name": "Keyboard Browser",
+    "manufacturer": "alain-grange",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "surfy-browser": {
+    "name": "Surfy Browser",
+    "manufacturer": "outcoder",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SurfyBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "ninetails": {
+    "name": "Ninetails",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Ninetails"
+      ]
+    },
+    "engine": null
+  },
+  "vibe-mate": {
+    "name": "VibeMate",
+    "manufacturer": "vibe-mate",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "VibeMate"
+      ]
+    },
+    "engine": null
+  },
+  "vd-browser": {
+    "name": "VD Browser",
+    "manufacturer": "ds-tools",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "\\[VD\\/"
+      ]
+    },
+    "engine": "blink"
+  },
+  "smartview-browser": {
+    "name": "SmartView Browser",
+    "manufacturer": "ds-tools",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "\\[HS\\/"
+      ]
+    },
+    "engine": "blink"
+  },
+  "f-get": {
+    "name": "fGet",
+    "manufacturer": "alfredo-spadafina",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "fGet"
+      ]
+    },
+    "engine": null
+  },
+  "frost": {
+    "name": "Frost",
+    "manufacturer": "crowbar-solutions",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "ornet-browser": {
+    "name": "OrNET Browser",
+    "manufacturer": "stronger-apps",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "pawxy-browser": {
+    "name": "Pawxy",
+    "manufacturer": "pawxy",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "arvin-browser": {
+    "name": "Arvin",
+    "manufacturer": "arvin-studio",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Arvin"
+      ]
+    },
+    "engine": null
+  },
+  "x-vpn": {
+    "name": "X-VPN",
+    "manufacturer": "lightninglink-networks",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "sushi-browser": {
+    "name": "Sushi Browser",
+    "manufacturer": "kura52",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SushiBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "lt-browser": {
+    "name": "LT Browser",
+    "manufacturer": "lambda-test",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "LTBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "dot-browser": {
+    "name": "Dot Browser",
+    "manufacturer": "dot-hq",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DotBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "sp-browser": {
+    "name": "SP Browser",
+    "manufacturer": "sp-browser",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SP Browser",
+        "Private Browser"
+      ]
+    },
+    "engine": null
+  },
+  "amazon-bedrock-agentcore-browser": {
+    "name": "Amazon Bedrock AgentCore Browser",
+    "manufacturer": "amazon",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Amazon-Bedrock-AgentCore-Browser"
+      ]
+    },
+    "engine": null
+  },
+  "safe-browser": {
+    "name": "SafeBrowser",
+    "manufacturer": "insta-books",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SafeBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "private-browsing": {
+    "name": "PrivateBrowsing",
+    "manufacturer": "savy-soda",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PrivateBrowsing"
+      ]
+    },
+    "engine": "blink"
+  },
+  "lagatos-browser": {
+    "name": "Lagatos Browser",
+    "manufacturer": "lagatos",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "lagatos-browser"
+      ]
+    },
+    "engine": null
+  },
+  "kode-browser": {
+    "name": "Kode Browser",
+    "manufacturer": "mirmay",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "KodeiOS",
+        "Kode"
+      ]
+    },
+    "engine": null
+  },
+  "ohhai-browser": {
+    "name": "OhHai Browser",
+    "manufacturer": "lucas-reade",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "OhHaiBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "beaker-browser": {
+    "name": "Beaker Browser",
+    "manufacturer": "blue-link-labs",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BeakerBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "azka-browser": {
+    "name": "Azka Browser",
+    "manufacturer": "vpn-tech-studio",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "mmx-browser": {
+    "name": "M!Browser",
+    "manufacturer": "micromax",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "desi-browser-4g": {
+    "name": "Desi Browser 4G",
+    "manufacturer": "md-arman",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
     },
     "engine": null
   }

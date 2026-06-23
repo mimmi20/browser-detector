@@ -222,6 +222,7 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
                 deviceCode: new XUcbrowserDevice(
                     deviceParser: $this->deviceParser,
                     normalizer: $normalizer,
+                    deviceCodeHelper: $deviceCodeHelper,
                 ),
             ),
             Headers::HEADER_UCBROWSER_DEVICE_UA => new XUcbrowserDeviceUa(

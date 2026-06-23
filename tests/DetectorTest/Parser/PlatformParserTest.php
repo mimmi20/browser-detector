@@ -36,4 +36,18 @@ final class PlatformParserTest extends TestCase
 
         self::assertSame(Os::unknown, $parserResult);
     }
+
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
+    public function testParse2(): void
+    {
+        $useragent = 'Mozilla/5.0 (Fuchsia) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 CrKey/1.56.500000';
+
+        $parser       = new PlatformParser();
+        $parserResult = $parser->parse($useragent);
+
+        self::assertSame(Os::fuchsia, $parserResult);
+    }
 }

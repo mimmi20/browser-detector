@@ -88,5 +88,50 @@
       "version": "602.1.50",
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "iPhone12,1_15.0.2_weibo_11.10.1_iPhone_wifi ijkplayer WBFPlayer"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone 12,1",
+      "marketingName": "iPhone 11",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1792,
+        "height": 828,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "15.0.2",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Weibo App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Sina Weibo",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
   }
 ]

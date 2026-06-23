@@ -3807,6 +3807,224 @@ enum Company: string implements CompanyInterface
 
     case comTradeTesla = 'ComTrade Tesla';
 
+    case mikrotik = 'MikroTik';
+
+    case unimax = 'Unimax';
+
+    case seekr = 'Seekr';
+
+    case aengix = 'AENGIX';
+
+    case deepL = 'DeepL';
+
+    case ciscoSystems = 'Cisco Systems';
+
+    case deski = 'DESKi';
+
+    case omio = 'Omio';
+
+    case socialFinance = 'Social Finance';
+
+    case cyberAgent = 'CyberAgent';
+
+    case freedomFries = 'Freedom Fries';
+
+    case bitwarden = 'Bitwarden';
+
+    case rFoundation = 'R Foundation';
+
+    case eightXeight = '8×8';
+
+    case plex = 'Plex';
+
+    case viasat = 'Viasat';
+
+    case qflair = 'Qflair';
+
+    case misesNetwork = 'Mises Network';
+
+    case herond = 'Herond';
+
+    case quettaNetworks = 'Quetta Networks';
+
+    case browseAI = 'BrowseAI';
+
+    case rayBrowser = 'Ray Browser';
+
+    case paramountSoftwareUK = 'Paramount Software UK';
+
+    case expedia = 'Expedia';
+
+    case skideevIndustrial = 'Skideev Industrial';
+
+    case sedatOzdemir = 'Sedat Ozdemir';
+
+    case skyeng = 'Skyeng';
+
+    case bentleyMotors = 'Bentley Motors';
+
+    case stellantis = 'Stellantis';
+
+    case nowgg = 'now.gg';
+
+    case oakeverGames = 'Oakever Games';
+
+    case metaquotes = 'MetaQuotes';
+
+    case mrRoccoInternet = 'MR ROCCO INTERNET';
+
+    case bitmango = 'BitMango';
+
+    case blizzardEntertainment = 'Blizzard Entertainment';
+
+    case epicGames = 'Epic Games';
+
+    case flipp = 'Flipp';
+
+    case dowJones = 'Dow Jones';
+
+    case tovSolk = 'TOV Solk';
+
+    case blazerbrowser = 'blazerbrowser.com';
+
+    case ifbrowser = 'Ifbrowser';
+
+    case droiDigitalUniverse = 'Droi Digital Universe';
+
+    case staybrowser = 'staybrowser.com';
+
+    case innovaLife = 'InnovaLife';
+
+    case iberapps = 'iberapps';
+
+    case browserAndroidDev = 'Browser Android Dev';
+
+    case shuxinInnovation = 'Shuxin Innovation';
+
+    case saiGopal = 'Sai Gopal';
+
+    case innover = 'Innover';
+
+    case tactixLabs = 'Tactix Labs';
+
+    case hesha = 'Hesha';
+
+    case gauklerFaun = 'Gaukler Faun';
+
+    case seekee = 'Seekee';
+
+    case pixelTivraStudios = 'PixelTivraStudios';
+
+    case netskyTech = 'NetskyTech';
+
+    case curLemurTechnology = 'CurLemur Technology';
+
+    case holaVpn = 'Hola VPN';
+
+    case powerDaoTech = 'PowerDAO Tech';
+
+    case artistScope = 'ArtistScope';
+
+    case movingClocksCloud = 'MovingClocksCloud';
+
+    case xinwangTechnology = 'XINWANG Technology';
+
+    case onionSearchEngine = 'Onion Search Engine';
+
+    case keepSolid = 'KeepSolid';
+
+    case vielianztLabs = 'VIELianzt Labs';
+
+    case virtualWorldComputing = 'Virtual World Computing';
+
+    case ojrStudioMobile = 'OJR Studio Mobile';
+
+    case clearArcDigital = 'ClearArc Digital';
+
+    case birApps = 'BirApps';
+
+    case proxyium = 'Proxyium';
+
+    case alainGrange = 'Alain Grange';
+
+    case outcoder = 'Outcoder';
+
+    case vibeMate = 'VibeMate';
+
+    case alfredoSpadafina = 'Alfredo Spadafina';
+
+    case crowbarSolutions = 'Crowbar Solutions';
+
+    case strongerApps = 'Stronger Apps';
+
+    case pawxy = 'Pawxy';
+
+    case arvinStudio = 'Arvin Studio';
+
+    case lightninglinkNetworks = 'LIGHTNINGLINK NETWORKS';
+
+    case kura52 = 'kura52';
+
+    case lambdatest = 'LambdaTest';
+
+    case dothq = 'Dot HQ';
+
+    case spBrowser = 'SP Browser';
+
+    case bliss = 'Bliss';
+
+    case vertex = 'Vertex';
+
+    case vonino = 'Vonino';
+
+    case sohu = 'Sohu';
+
+    case simaoGomesViana = 'Simao Gomes Viana';
+
+    case instaBooks = 'InstaBooks';
+
+    case savySoda = 'Savy Soda';
+
+    case rnps = 'RNPS';
+
+    case disneyMobile = 'Disney Mobile';
+
+    case naver = 'Naver';
+
+    case exaring = 'Exaring';
+
+    case wpsSoftware = 'WPS SOFTWARE';
+
+    case azureusSoftware = 'Azureus Software';
+
+    case mintmark = 'Mintmark';
+
+    case avidTechnology = 'Avid Technology';
+
+    case mirmay = 'Mirmay';
+
+    case lagatos = 'Lagatos';
+
+    case lucasReade = 'Lucas Reade';
+
+    case blueLinkLabs = 'Blue Link Labs';
+
+    case yelp = 'Yelp';
+
+    case andrewStuartTanenbaum = 'Andrew Stuart Tanenbaum';
+
+    case plan9Foundation = 'Plan 9 Foundation';
+
+    case deepinTechnology = 'Deepin Technology';
+
+    case bmw = 'BMW';
+
+    case christopherAlbert = 'Christopher Albert';
+
+    case vpnTechStudio = 'VPN Tech Studio';
+
+    case mdArman = 'Md.Arman';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5073,7 +5291,7 @@ enum Company: string implements CompanyInterface
             'zookabot' => self::zookabot,
             'aboutus', 'about-us' => self::aboutus,
             'bibliothequenationaledefrance', 'bibliotheque-nationale-de-france', 'bibliotheque nationale de france' => self::bibliothequeNationaleDeFrance,
-            'discord' => self::discord,
+            'discord', 'discord inc.' => self::discord,
             'linkpad' => self::linkpad,
             'readitlater', 'read-it-later', 'read it later, inc.', 'read it later' => self::readItLater,
             'swoppensystems', 'swoppen-systems', 'swoppen systems gmbh', 'swoppen systems' => self::swoppenSystems,
@@ -5487,7 +5705,7 @@ enum Company: string implements CompanyInterface
             'logicui', 'logic-ui' => self::logicUi,
             'maciejbrencz', 'maciej-brencz', 'maciej brencz' => self::maciejBrencz,
             'megafon' => self::megafon,
-            'metax', 'meta-x' => self::metaX,
+            'metax', 'meta-x', 'metax software pte.ltd.' => self::metaX,
             'metamaskweb3wallet', 'metamask-web3-wallet', 'metamask web3 wallet' => self::metaMaskWeb3Wallet,
             'mobiuspace', 'mobiu-space' => self::mobiuspace,
             'mythtv', 'myth-tv' => self::mythTV,
@@ -5603,7 +5821,7 @@ enum Company: string implements CompanyInterface
             'shareaholic', 'shareaholic, inc.' => self::shareaholic,
             'youview', 'youview tv ltd', 'youview tv' => self::youview,
             'wdes', 'wdes sas' => self::wdes,
-            'vk' => self::vk,
+            'vk', 'vk llc' => self::vk,
             'trentwiles', 'trent-wiles', 'trent wiles' => self::trentWiles,
             'modesco' => self::modesco,
             'kontur' => self::kontur,
@@ -5708,6 +5926,115 @@ enum Company: string implements CompanyInterface
             'signal', 'signal messenger llc.' => self::signal,
             'hkpro', 'hk-pro' => self::hkPro,
             'comtradetesla', 'comtrade tesla', 'comtrade-tesla' => self::comTradeTesla,
+            'mikrotik', 'sia mikrotīkls' => self::mikrotik,
+            'unimax' => self::unimax,
+            'seekr', 'seekr technologies inc.' => self::seekr,
+            'aengix', 'aengix s.l.' => self::aengix,
+            'deepl', 'deepl se' => self::deepL,
+            'ciscosystems', 'cisco systems, inc.', 'cisco-systems', 'cisco systems' => self::ciscoSystems,
+            'deski' => self::deski,
+            'omio', 'omio corp.' => self::omio,
+            'socialfinance', 'social finance, llc', 'social-finance', 'social finance' => self::socialFinance,
+            'cyberagent', 'cyberagent inc.', 'cyber-agent' => self::cyberAgent,
+            'freedomfries', 'freedom fries, llc', 'freedom-fries', 'freedom fries' => self::freedomFries,
+            'bitwarden', 'bitwarden, inc.' => self::bitwarden,
+            'rfoundation', 'the r foundation', 'r-foundation', 'r foundation' => self::rFoundation,
+            'eightxeight', '8×8, inc.', '8×8' => self::eightXeight,
+            'plex', 'plex, inc.' => self::plex,
+            'viasat', 'viasat inc.' => self::viasat,
+            'qflair', 'qflair llc' => self::qflair,
+            'misesnetwork', 'mises network pte. ltd.', 'mises-network', 'mises network' => self::misesNetwork,
+            'herond', 'herond labs' => self::herond,
+            'quettanetworks', 'quetta networks limited', 'quetta-networks', 'quetta networks' => self::quettaNetworks,
+            'browseai', 'browseai llc', 'browse-ai' => self::browseAI,
+            'raybrowser', 'ray browser ltd.', 'ray-browser', 'ray browser' => self::rayBrowser,
+            'paramountsoftwareuk', 'paramount software uk limited', 'paramount-software-uk', 'paramount software uk' => self::paramountSoftwareUK,
+            'expedia', 'expedia, inc.' => self::expedia,
+            'skideevindustrial', 'skideev industrial corp.', 'skideev-industrial', 'skideev industrial' => self::skideevIndustrial,
+            'sedatozdemir', 'sedat ozdemir', 'sedat-ozdemir' => self::sedatOzdemir,
+            'skyeng', 'skyeng lcc' => self::skyeng,
+            'bentleymotors', 'bentley motors limited', 'bentley-motors', 'bentley motors' => self::bentleyMotors,
+            'stellantis', 'stellantis n.v.' => self::stellantis,
+            'nowgg', 'now.gg, inc.', 'now.gg', 'now-gg' => self::nowgg,
+            'oakevergames', 'oakever games pte. ltd.', 'oakever-games', 'oakever games' => self::oakeverGames,
+            'metaquotes', 'metaquotes ltd.' => self::metaquotes,
+            'mrroccointernet', 'mr rocco internet ltda', 'mr-rocco-internet', 'mr rocco internet' => self::mrRoccoInternet,
+            'bitmango', 'bitmango, inc.' => self::bitmango,
+            'blizzardentertainment', 'blizzard entertainment, inc.', 'blizzard-entertainment', 'blizzard entertainment' => self::blizzardEntertainment,
+            'epicgames', 'epic games, inc.', 'epic-games', 'epic games' => self::epicGames,
+            'flipp', 'flipp corporation inc.' => self::flipp,
+            'dowjones', 'dow jones & company, inc.', 'dow-jones', 'dow jones' => self::dowJones,
+            'tovsolk', 'tov solk', 'tov-solk' => self::tovSolk,
+            'blazerbrowser', 'blazerbrowser.com lcc', 'blazerbrowser-com', 'blazerbrowser.com' => self::blazerbrowser,
+            'ifbrowser' => self::ifbrowser,
+            'droidigitaluniverse', 'droi digital universe', 'droi-digital-universe' => self::droiDigitalUniverse,
+            'staybrowser', 'staybrowser.com', 'staybrowser-com' => self::staybrowser,
+            'innovalife', 'innova-life' => self::innovaLife,
+            'iberapps' => self::iberapps,
+            'browserandroiddev', 'browser android dev', 'browser-android-dev' => self::browserAndroidDev,
+            'shuxininnovation', 'shuxin innovation tech', 'shuxin-innovation', 'shuxin innovation' => self::shuxinInnovation,
+            'saigopal', 'sai gopal', 'sai-gopal' => self::saiGopal,
+            'innover', 'innover group' => self::innover,
+            'tactixlabs', 'tactix labs global limited', 'tactix-labs', 'tactix labs' => self::tactixLabs,
+            'hesha' => self::hesha,
+            'gauklerfaun', 'gaukler faun', 'gaukler-faun' => self::gauklerFaun,
+            'seekee', 'seekee ltd' => self::seekee,
+            'pixeltivrastudios', 'pixel-tivra-studios' => self::pixelTivraStudios,
+            'netskytech', 'netsky-tech' => self::netskyTech,
+            'curlemurtechnology', 'curlemur technology co., ltd.', 'curlemur-technology', 'curlemur technology' => self::curLemurTechnology,
+            'holavpn', 'hola vpn ltd.', 'hola-vpn', 'hola vpn' => self::holaVpn,
+            'powerdaotech', 'powerdao tech global ltd.', 'powerdao-tech', 'powerdao tech' => self::powerDaoTech,
+            'artistscope', 'artist-scope' => self::artistScope,
+            'movingclockscloud', 'moving-clocks-cloud' => self::movingClocksCloud,
+            'xinwangtechnology', 'beijing xinwang technology co ltd.', 'xinwang-technology', 'xinwang technology' => self::xinwangTechnology,
+            'onionsearchengine', 'onion search engine llc', 'onion-search-engine', 'onion search engine' => self::onionSearchEngine,
+            'keepsolid', 'keepsolid inc.', 'keep-solid' => self::keepSolid,
+            'vielianztlabs', 'vielianzt labs', 'vielianzt-labs' => self::vielianztLabs,
+            'virtualworldcomputing', 'virtual world computing, llc', 'virtual-world-computing', 'virtual world computing' => self::virtualWorldComputing,
+            'ojrstudiomobile', 'ojr studio mobile', 'ojr-studio-mobile' => self::ojrStudioMobile,
+            'cleararcdigital', 'cleararc digital', 'cleararc-digital' => self::clearArcDigital,
+            'birapps', 'bir-apps' => self::birApps,
+            'proxyium' => self::proxyium,
+            'alaingrange', 'alain grange', 'alain-grange' => self::alainGrange,
+            'outcoder' => self::outcoder,
+            'vibemate', 'vibe-mate' => self::vibeMate,
+            'alfredospadafina', 'alfredo spadafina', 'alfredo-spadafina' => self::alfredoSpadafina,
+            'crowbarsolutions', 'crowbar solutions', 'crowbar-solutions' => self::crowbarSolutions,
+            'strongerapps', 'stronger apps', 'stronger-apps' => self::strongerApps,
+            'pawxy', 'pawxy inc.' => self::pawxy,
+            'arvinstudio', 'arvin studio', 'arvin-studio' => self::arvinStudio,
+            'lightninglinknetworks', 'lightninglink networks pte. ltd.', 'lightninglink-networks', 'lightninglink networks' => self::lightninglinkNetworks,
+            'kura52' => self::kura52,
+            'lambdatest', 'lambdatest, inc.', 'lambda-test' => self::lambdatest,
+            'dothq', 'dot hq', 'dot-hq' => self::dothq,
+            'spbrowser', 'sp browser', 'sp-browser' => self::spBrowser,
+            'bliss' => self::bliss,
+            'vertex' => self::vertex,
+            'vonino', 'vonino inc.' => self::vonino,
+            'sohu', 'sohu.com inc.' => self::sohu,
+            'simaogomesviana', 'simao-gomes-viana', 'simao gomes viana' => self::simaoGomesViana,
+            'instabooks', 'insta-books' => self::instaBooks,
+            'savysoda', 'savy-soda', 'savy soda' => self::savySoda,
+            'rnps' => self::rnps,
+            'disneymobile', 'disney-mobile', 'disney mobile' => self::disneyMobile,
+            'naver', 'naver corporation' => self::naver,
+            'exaring', 'exaring ag' => self::exaring,
+            'wpssoftware', 'wps software pte. ltd.', 'wps-software', 'wps software' => self::wpsSoftware,
+            'azureussoftware', 'azureus software inc.', 'azureus-software', 'azureus software' => self::azureusSoftware,
+            'mintmark', 'mintmark ltd' => self::mintmark,
+            'avidtechnology', 'avid technology, inc.', 'avid-technology', 'avid technology' => self::avidTechnology,
+            'mirmay' => self::mirmay,
+            'lagatos' => self::lagatos,
+            'lucasreade', 'lucas reade', 'lucas-reade' => self::lucasReade,
+            'bluelinklabs', 'blue link labs', 'blue-link-labs' => self::blueLinkLabs,
+            'yelp', 'yelp, inc.' => self::yelp,
+            'andrewstuarttanenbaum', 'andrew stuart tanenbaum', 'andrew-stuart-tanenbaum' => self::andrewStuartTanenbaum,
+            'plan9foundation', 'plan 9 foundation', 'plan-9-foundation' => self::plan9Foundation,
+            'deepintechnology', 'deepin technology co., ltd.', 'deepin-technology', 'deepin technology' => self::deepinTechnology,
+            'bmw' => self::bmw,
+            'christopheralbert', 'christopher albert', 'christopher-albert' => self::christopherAlbert,
+            'vpntechstudio', 'vpn tech studio inc', 'vpn-tech-studio', 'vpn tech studio' => self::vpnTechStudio,
+            'mdarman', 'md.arman', 'md-arman' => self::mdArman,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6475,6 +6802,70 @@ enum Company: string implements CompanyInterface
             self::netSystemsResearch => 'NET SYSTEMS RESEARCH LLC',
             self::infotiger => 'Infotiger UG',
             self::signal => 'Signal Messenger LLC.',
+            self::mikrotik => 'SIA Mikrotīkls',
+            self::seekr => 'Seekr Technologies Inc.',
+            self::aengix => 'AENGIX S.L.',
+            self::deepL => 'DeepL SE',
+            self::ciscoSystems => 'Cisco Systems, Inc.',
+            self::omio => 'Omio Corp.',
+            self::socialFinance => 'Social Finance, LLC',
+            self::cyberAgent => 'CyberAgent Inc.',
+            self::freedomFries => 'Freedom Fries, LLC',
+            self::bitwarden => 'Bitwarden, Inc.',
+            self::rFoundation => 'The R Foundation',
+            self::eightXeight => '8×8, Inc.',
+            self::plex => 'Plex, Inc.',
+            self::viasat => 'Viasat Inc.',
+            self::qflair => 'Qflair LLC',
+            self::misesNetwork => 'Mises Network PTE. Ltd.',
+            self::herond => 'Herond Labs',
+            self::quettaNetworks => 'Quetta Networks Limited',
+            self::browseAI => 'BrowseAI LLC',
+            self::rayBrowser => 'Ray Browser Ltd.',
+            self::paramountSoftwareUK => 'Paramount Software UK Limited',
+            self::expedia => 'Expedia, Inc.',
+            self::skideevIndustrial => 'Skideev Industrial Corp.',
+            self::skyeng => 'Skyeng LCC',
+            self::bentleyMotors => 'Bentley Motors Limited',
+            self::stellantis => 'Stellantis N.V.',
+            self::discord => 'Discord Inc.',
+            self::nowgg => 'now.gg, Inc.',
+            self::oakeverGames => 'Oakever Games PTE. Ltd.',
+            self::metaquotes => 'MetaQuotes Ltd.',
+            self::mrRoccoInternet => 'MR ROCCO INTERNET LTDA',
+            self::bitmango => 'BitMango, Inc.',
+            self::blizzardEntertainment => 'Blizzard Entertainment, Inc.',
+            self::epicGames => 'Epic Games, Inc.',
+            self::flipp => 'Flipp Corporation Inc.',
+            self::dowJones => 'Dow Jones & Company, Inc.',
+            self::blazerbrowser => 'blazerbrowser.com LCC',
+            self::shuxinInnovation => 'Shuxin Innovation Tech',
+            self::innover => 'Innover Group',
+            self::tactixLabs => 'Tactix Labs Global Limited',
+            self::seekee => 'Seekee Ltd',
+            self::curLemurTechnology => 'CurLemur Technology Co., Ltd.',
+            self::holaVpn => 'Hola VPN Ltd.',
+            self::powerDaoTech => 'PowerDAO Tech Global Ltd.',
+            self::metaX => 'MetaX Software PTE.Ltd.',
+            self::xinwangTechnology => 'Beijing XINWANG Technology Co Ltd.',
+            self::onionSearchEngine => 'Onion Search Engine LLC',
+            self::keepSolid => 'KeepSolid Inc.',
+            self::virtualWorldComputing => 'Virtual World Computing, LLC',
+            self::pawxy => 'Pawxy Inc.',
+            self::lightninglinkNetworks => 'LIGHTNINGLINK NETWORKS PTE. LTD.',
+            self::lambdatest => 'LambdaTest, Inc.',
+            self::vonino => 'Vonino Inc.',
+            self::sohu => 'Sohu.com Inc.',
+            self::naver => 'Naver Corporation',
+            self::vk => 'VK LLC',
+            self::exaring => 'Exaring AG',
+            self::wpsSoftware => 'WPS SOFTWARE PTE. LTD.',
+            self::azureusSoftware => 'Azureus Software Inc.',
+            self::mintmark => 'Mintmark Ltd',
+            self::avidTechnology => 'Avid Technology, Inc.',
+            self::yelp => 'Yelp, Inc.',
+            self::deepinTechnology => 'Deepin Technology Co., Ltd.',
+            self::vpnTechStudio => 'VPN Tech Studio Inc',
             self::unknown => null,
             default => $this->value,
         };
@@ -7185,6 +7576,76 @@ enum Company: string implements CompanyInterface
             self::netSystemsResearch => 'net-systems-research',
             self::hkPro => 'hk-pro',
             self::comTradeTesla => 'comtrade-tesla',
+            self::ciscoSystems => 'cisco-systems',
+            self::socialFinance => 'social-finance',
+            self::cyberAgent => 'cyber-agent',
+            self::freedomFries => 'freedom-fries',
+            self::rFoundation => 'r-foundation',
+            self::eightXeight => '8×8',
+            self::misesNetwork => 'mises-network',
+            self::quettaNetworks => 'quetta-networks',
+            self::browseAI => 'browse-ai',
+            self::rayBrowser => 'ray-browser',
+            self::paramountSoftwareUK => 'paramount-software-uk',
+            self::skideevIndustrial => 'skideev-industrial',
+            self::sedatOzdemir => 'sedat-ozdemir',
+            self::bentleyMotors => 'bentley-motors',
+            self::nowgg => 'now-gg',
+            self::oakeverGames => 'oakever-games',
+            self::mrRoccoInternet => 'mr-rocco-internet',
+            self::blizzardEntertainment => 'blizzard-entertainment',
+            self::epicGames => 'epic-games',
+            self::dowJones => 'dow-jones',
+            self::tovSolk => 'tov-solk',
+            self::blazerbrowser => 'blazerbrowser-com',
+            self::droiDigitalUniverse => 'droi-digital-universe',
+            self::staybrowser => 'staybrowser-com',
+            self::innovaLife => 'innova-life',
+            self::browserAndroidDev => 'browser-android-dev',
+            self::shuxinInnovation => 'shuxin-innovation',
+            self::saiGopal => 'sai-gopal',
+            self::tactixLabs => 'tactix-labs',
+            self::gauklerFaun => 'gaukler-faun',
+            self::pixelTivraStudios => 'pixel-tivra-studios',
+            self::netskyTech => 'netsky-tech',
+            self::curLemurTechnology => 'curlemur-technology',
+            self::holaVpn => 'hola-vpn',
+            self::powerDaoTech => 'powerdao-tech',
+            self::artistScope => 'artist-scope',
+            self::movingClocksCloud => 'moving-clocks-cloud',
+            self::xinwangTechnology => 'xinwang-technology',
+            self::onionSearchEngine => 'onion-search-engine',
+            self::keepSolid => 'keep-solid',
+            self::vielianztLabs => 'vielianzt-labs',
+            self::virtualWorldComputing => 'virtual-world-computing',
+            self::ojrStudioMobile => 'ojr-studio-mobile',
+            self::clearArcDigital => 'cleararc-digital',
+            self::birApps => 'bir-apps',
+            self::alainGrange => 'alain-grange',
+            self::vibeMate => 'vibe-mate',
+            self::alfredoSpadafina => 'alfredo-spadafina',
+            self::crowbarSolutions => 'crowbar-solutions',
+            self::strongerApps => 'stronger-apps',
+            self::arvinStudio => 'arvin-studio',
+            self::lightninglinkNetworks => 'lightninglink-networks',
+            self::lambdatest => 'lambda-test',
+            self::dothq => 'dot-hq',
+            self::spBrowser => 'sp-browser',
+            self::simaoGomesViana => 'simao-gomes-viana',
+            self::instaBooks => 'insta-books',
+            self::savySoda => 'savy-soda',
+            self::disneyMobile => 'disney-mobile',
+            self::wpsSoftware => 'wps-software',
+            self::azureusSoftware => 'azureus-software',
+            self::avidTechnology => 'avid-technology',
+            self::lucasReade => 'lucas-reade',
+            self::blueLinkLabs => 'blue-link-labs',
+            self::andrewStuartTanenbaum => 'andrew-stuart-tanenbaum',
+            self::plan9Foundation => 'plan-9-foundation',
+            self::deepinTechnology => 'deepin-technology',
+            self::christopherAlbert => 'christopher-albert',
+            self::vpnTechStudio => 'vpn-tech-studio',
+            self::mdArman => 'md-arman',
             default => $this->name,
         };
     }

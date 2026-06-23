@@ -16,6 +16,15 @@ namespace BrowserDetectorTest;
 use BrowserDetector\Collection\Headers;
 use BrowserDetector\Detector;
 use BrowserDetector\DetectorFactory;
+use BrowserDetector\Loader\BrowserLoader;
+use BrowserDetector\Loader\DeviceLoader;
+use BrowserDetector\Loader\DeviceLoaderFactory;
+use BrowserDetector\Loader\EngineLoader;
+use BrowserDetector\Loader\PlatformLoader;
+use BrowserDetector\Parser\BrowserParser;
+use BrowserDetector\Parser\DeviceParser;
+use BrowserDetector\Parser\EngineParser;
+use BrowserDetector\Parser\PlatformParser;
 use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -33,6 +42,15 @@ use UnexpectedValueException;
 /** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */
 #[CoversClass(Detector::class)]
 #[CoversClass(Headers::class)]
+#[CoversClass(PlatformParser::class)]
+#[CoversClass(BrowserParser::class)]
+#[CoversClass(DeviceParser::class)]
+#[CoversClass(EngineParser::class)]
+#[CoversClass(DeviceLoaderFactory::class)]
+#[CoversClass(DeviceLoader::class)]
+#[CoversClass(EngineLoader::class)]
+#[CoversClass(BrowserLoader::class)]
+#[CoversClass(PlatformLoader::class)]
 final class DetectorIntegrationTest extends TestCase
 {
     /**
@@ -1362,7 +1380,7 @@ final class DetectorIntegrationTest extends TestCase
                     'client' => [
                         'name' => 'Edge',
                         'modus' => null,
-                        'version' => '138.0.0',
+                        'version' => '138.0.3351.95',
                         'manufacturer' => 'Microsoft',
                         'type' => 'browser',
                         'isbot' => false,
@@ -2172,7 +2190,7 @@ final class DetectorIntegrationTest extends TestCase
                     'client' => [
                         'name' => 'Chromium',
                         'modus' => null,
-                        'version' => '125.0.0',
+                        'version' => '125.0.6422.165',
                         'manufacturer' => 'Google',
                         'type' => 'browser',
                         'isbot' => false,
@@ -2245,7 +2263,7 @@ final class DetectorIntegrationTest extends TestCase
                     'client' => [
                         'name' => 'Ecosia',
                         'modus' => null,
-                        'version' => '142.0.7444.48',
+                        'version' => '142.0.0.0',
                         'manufacturer' => 'Ecosia',
                         'type' => 'browser',
                         'isbot' => false,
@@ -2544,7 +2562,7 @@ final class DetectorIntegrationTest extends TestCase
                     'client' => [
                         'name' => 'Chromium',
                         'modus' => null,
-                        'version' => '138.0.0',
+                        'version' => '138.0.7204.97',
                         'manufacturer' => 'Google',
                         'type' => 'browser',
                         'isbot' => false,
@@ -2610,7 +2628,7 @@ final class DetectorIntegrationTest extends TestCase
                     'client' => [
                         'name' => 'Google Nest Hub',
                         'modus' => null,
-                        'version' => '126.0.0',
+                        'version' => '1.56.500000',
                         'manufacturer' => 'Google',
                         'type' => 'mobile-application',
                         'isbot' => false,
@@ -3040,7 +3058,7 @@ final class DetectorIntegrationTest extends TestCase
                     'client' => [
                         'name' => 'DuckDuckGo Privacy Browser',
                         'modus' => null,
-                        'version' => '140.0.0',
+                        'version' => '140.0.7339.207',
                         'manufacturer' => 'Duck Duck Go',
                         'type' => 'browser',
                         'isbot' => false,
@@ -3286,7 +3304,7 @@ final class DetectorIntegrationTest extends TestCase
                     'client' => [
                         'name' => 'DuckDuckGo Privacy Browser',
                         'modus' => null,
-                        'version' => '141.0.0',
+                        'version' => '141.0.7390.122',
                         'manufacturer' => 'Duck Duck Go',
                         'type' => 'browser',
                         'isbot' => false,
@@ -3394,7 +3412,7 @@ final class DetectorIntegrationTest extends TestCase
                     'client' => [
                         'name' => 'Chrome for iOS',
                         'modus' => null,
-                        'version' => '138.0.0',
+                        'version' => '142.0.7444.128',
                         'manufacturer' => 'Google',
                         'type' => 'browser',
                         'isbot' => false,
@@ -4136,7 +4154,7 @@ final class DetectorIntegrationTest extends TestCase
                     'client' => [
                         'name' => 'Chromium',
                         'modus' => null,
-                        'version' => '124.0.0',
+                        'version' => '124.0.6327.4',
                         'manufacturer' => 'Google',
                         'type' => 'browser',
                         'isbot' => false,
@@ -6043,7 +6061,7 @@ final class DetectorIntegrationTest extends TestCase
                     'client' => [
                         'name' => 'Headless Chrome',
                         'modus' => null,
-                        'version' => '143.0.0',
+                        'version' => '143.0.0.0',
                         'manufacturer' => 'Google',
                         'type' => 'browser',
                         'isbot' => false,
@@ -6099,7 +6117,7 @@ final class DetectorIntegrationTest extends TestCase
                     'client' => [
                         'name' => 'Opera GX',
                         'modus' => null,
-                        'version' => '125.0.0.0',
+                        'version' => '125.0.0',
                         'manufacturer' => 'Opera',
                         'type' => 'browser',
                         'isbot' => false,
@@ -6391,7 +6409,7 @@ final class DetectorIntegrationTest extends TestCase
                     'client' => [
                         'name' => 'Edge',
                         'modus' => null,
-                        'version' => '138.0.0',
+                        'version' => '143.0.0.0',
                         'manufacturer' => 'Microsoft',
                         'type' => 'browser',
                         'isbot' => false,
@@ -8930,7 +8948,7 @@ final class DetectorIntegrationTest extends TestCase
                     'client' => [
                         'name' => 'Chrome for iOS',
                         'modus' => null,
-                        'version' => '101.0.0',
+                        'version' => '124.0.6367.88',
                         'manufacturer' => 'Google',
                         'type' => 'browser',
                         'isbot' => false,
@@ -9295,6 +9313,657 @@ final class DetectorIntegrationTest extends TestCase
                     'engine' => [
                         'name' => 'Blink',
                         'version' => '124.0.6367.248',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
+            [
+                [
+                    'sec-ch-ua-platform' => '"Windows"',
+                    'sec-ch-ua' => '"Chromium";v="136", "Not.A/Brand";v="99"',
+                    'sec-ch-ua-mobile' => '?0',
+                    'user-agent' => 'Sogou web spider/4.0(+http://www.sogou.com/docs/help/webmasters.htm#07)',
+                ],
+                [
+                    'headers' => [
+                        'sec-ch-ua-platform' => '"Windows"',
+                        'sec-ch-ua' => '"Chromium";v="136", "Not.A/Brand";v="99"',
+                        'sec-ch-ua-mobile' => '?0',
+                        'user-agent' => 'Sogou web spider/4.0(+http://www.sogou.com/docs/help/webmasters.htm#07)',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => null,
+                        'marketingName' => null,
+                        'manufacturer' => 'unknown',
+                        'brand' => 'unknown',
+                        'dualOrientation' => null,
+                        'simCount' => 0,
+                        'display' => [
+                            'width' => null,
+                            'height' => null,
+                            'touch' => false,
+                            'size' => null,
+                        ],
+                        'type' => 'unknown',
+                        'ismobile' => false,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Windows',
+                        'marketingName' => 'Windows',
+                        'version' => null,
+                        'manufacturer' => 'Microsoft',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Sogou Web Spider',
+                        'modus' => null,
+                        'version' => '4.0.0',
+                        'manufacturer' => 'Sogou',
+                        'type' => 'search-bot',
+                        'isbot' => true,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '136.0.0',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
+            [
+                [
+                    'sec-ch-ua-platform' => '"Android"',
+                    'sec-ch-ua' => '"Not(A:Brand";v="8", "Chromium";v="144"',
+                    'sec-ch-ua-mobile' => '?1',
+                    'user-agent' => 'Mozilla/5.0 (Linux; U; Android 12; zh-cn; VOG-AL00 Build/HUAWEIBRA-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.0.0 MQQBrowser/14.6 Mobile Safari/537.36 COVC/046801',
+                ],
+                [
+                    'headers' => [
+                        'sec-ch-ua-platform' => '"Android"',
+                        'sec-ch-ua' => '"Not(A:Brand";v="8", "Chromium";v="144"',
+                        'sec-ch-ua-mobile' => '?1',
+                        'user-agent' => 'Mozilla/5.0 (Linux; U; Android 12; zh-cn; VOG-AL00 Build/HUAWEIBRA-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.0.0 MQQBrowser/14.6 Mobile Safari/537.36 COVC/046801',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'VOG-AL00',
+                        'marketingName' => 'P30 Pro',
+                        'manufacturer' => 'Huawei',
+                        'brand' => 'Huawei',
+                        'dualOrientation' => true,
+                        'simCount' => 1,
+                        'display' => [
+                            'width' => 2340,
+                            'height' => 1080,
+                            'touch' => true,
+                            'size' => 6.47,
+                        ],
+                        'type' => 'smartphone',
+                        'ismobile' => true,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Android',
+                        'marketingName' => 'Android',
+                        'version' => '12.0.0',
+                        'manufacturer' => 'Google',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'QQ Browser',
+                        'modus' => null,
+                        'version' => '14.6.0',
+                        'manufacturer' => 'Tencent',
+                        'type' => 'browser',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '144.0.0',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
+            [
+                [
+                    'sec-ch-ua' => '"Chromium";v="116.0.5845.96", "Not)A;Brand";v="24.0.0.0", "Hola";v="116.0.5845.96"',
+                    'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Hola/1.216.565',
+                ],
+                [
+                    'headers' => [
+                        'sec-ch-ua' => '"Chromium";v="116.0.5845.96", "Not)A;Brand";v="24.0.0.0", "Hola";v="116.0.5845.96"',
+                        'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Hola/1.216.565',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'Windows Desktop',
+                        'marketingName' => 'Windows Desktop',
+                        'manufacturer' => 'unknown',
+                        'brand' => 'unknown',
+                        'dualOrientation' => false,
+                        'simCount' => 0,
+                        'display' => [
+                            'width' => null,
+                            'height' => null,
+                            'touch' => false,
+                            'size' => null,
+                        ],
+                        'type' => 'desktop',
+                        'ismobile' => false,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Windows',
+                        'marketingName' => 'Windows 10',
+                        'version' => '10.0.0',
+                        'manufacturer' => 'Microsoft',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'hola! Browser',
+                        'modus' => null,
+                        'version' => '1.216.565',
+                        'manufacturer' => 'Hola VPN',
+                        'type' => 'browser',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '116.0.5845.96',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
+            [
+                [
+                    'http-x-requested-with' => 'com.vworldc.tusk',
+                    'user-agent' => 'Mozilla/5.0 (Linux; Android 13; motorola edge 5G UW (2021) Build/T1RM33.1-110-17; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/126.0.6478.71 Mobile Safari/537.36 TUSK/0.2.01',
+                ],
+                [
+                    'headers' => [
+                        'x-requested-with' => 'com.vworldc.tusk',
+                        'user-agent' => 'Mozilla/5.0 (Linux; Android 13; motorola edge 5G UW (2021) Build/T1RM33.1-110-17; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/126.0.6478.71 Mobile Safari/537.36 TUSK/0.2.01',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'Edge 5G UW (2021)',
+                        'marketingName' => 'Edge 5G UW (2021)',
+                        'manufacturer' => 'Motorola',
+                        'brand' => 'Motorola',
+                        'dualOrientation' => true,
+                        'simCount' => 1,
+                        'display' => [
+                            'width' => 2460,
+                            'height' => 1080,
+                            'touch' => true,
+                            'size' => 6.8,
+                        ],
+                        'type' => 'smartphone',
+                        'ismobile' => true,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Android',
+                        'marketingName' => 'Android',
+                        'version' => '13.0.0',
+                        'manufacturer' => 'Google',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'TUSK',
+                        'modus' => null,
+                        'version' => '0.2.01',
+                        'manufacturer' => 'Virtual World Computing',
+                        'type' => 'browser',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '126.0.6478.71',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
+            [
+                [
+                    'http-x-requested-with' => 'com.ojr.browser.anti.blokir',
+                    'user-agent' => 'Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 OJR Browser/10.0 Chrome/121.0.6167.144 Mobile Safari/537.36',
+                ],
+                [
+                    'headers' => [
+                        'x-requested-with' => 'com.ojr.browser.anti.blokir',
+                        'user-agent' => 'Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 OJR Browser/10.0 Chrome/121.0.6167.144 Mobile Safari/537.36',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'general Mobile Phone',
+                        'marketingName' => 'general Mobile Phone',
+                        'manufacturer' => 'unknown',
+                        'brand' => 'unknown',
+                        'dualOrientation' => true,
+                        'simCount' => 1,
+                        'display' => [
+                            'width' => null,
+                            'height' => null,
+                            'touch' => true,
+                            'size' => null,
+                        ],
+                        'type' => 'smartphone',
+                        'ismobile' => true,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Android',
+                        'marketingName' => 'Android',
+                        'version' => '14.0.0',
+                        'manufacturer' => 'Google',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'OJR Browser',
+                        'modus' => null,
+                        'version' => '10.0.0',
+                        'manufacturer' => 'OJR Studio Mobile',
+                        'type' => 'browser',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '121.0.6167.144',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
+            [
+                [
+                    'http-x-requested-with' => 'com.outcoder.browser',
+                    'user-agent' => 'Mozilla/5.0 (Linux; Android 13; SM-A528B Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/117.0.0.0 Mobile Safari/537.36 SurfyBrowser/2.41',
+                ],
+                [
+                    'headers' => [
+                        'x-requested-with' => 'com.outcoder.browser',
+                        'user-agent' => 'Mozilla/5.0 (Linux; Android 13; SM-A528B Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/117.0.0.0 Mobile Safari/537.36 SurfyBrowser/2.41',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'SM-A528B',
+                        'marketingName' => 'Galaxy A52s 5G (International)',
+                        'manufacturer' => 'Samsung',
+                        'brand' => 'Samsung',
+                        'dualOrientation' => true,
+                        'simCount' => 1,
+                        'display' => [
+                            'width' => 2400,
+                            'height' => 1080,
+                            'touch' => true,
+                            'size' => 6.5,
+                        ],
+                        'type' => 'smartphone',
+                        'ismobile' => true,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Android',
+                        'marketingName' => 'Android',
+                        'version' => '13.0.0',
+                        'manufacturer' => 'Google',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Surfy Browser',
+                        'modus' => null,
+                        'version' => '2.41.0',
+                        'manufacturer' => 'Outcoder',
+                        'type' => 'browser',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '117.0.0.0',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
+            [
+                [
+                    'http-x-requested-with' => 'com.lovense.vibemate',
+                    'user-agent' => 'Mozilla/5.0 (Linux; Android 13; SM-S918B Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/116.0.0.0 Mobile Safari/537.36 VibeMate',
+                ],
+                [
+                    'headers' => [
+                        'x-requested-with' => 'com.lovense.vibemate',
+                        'user-agent' => 'Mozilla/5.0 (Linux; Android 13; SM-S918B Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/116.0.0.0 Mobile Safari/537.36 VibeMate',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'SM-S918B',
+                        'marketingName' => 'Galaxy S23 Ultra (International)',
+                        'manufacturer' => 'Samsung',
+                        'brand' => 'Samsung',
+                        'dualOrientation' => true,
+                        'simCount' => 1,
+                        'display' => [
+                            'width' => 3088,
+                            'height' => 1440,
+                            'touch' => true,
+                            'size' => 6.8,
+                        ],
+                        'type' => 'smartphone',
+                        'ismobile' => true,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Android',
+                        'marketingName' => 'Android',
+                        'version' => '13.0.0',
+                        'manufacturer' => 'Google',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'VibeMate',
+                        'modus' => null,
+                        'version' => null,
+                        'manufacturer' => 'VibeMate',
+                        'type' => 'browser',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '116.0.0.0',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
+            [
+                [
+                    'http-x-requested-with' => 'com.hotsurf.browser',
+                    'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 13; SM-A042M Build/TP1A.220624.014) AppleWebKit [HS/28]',
+                ],
+                [
+                    'headers' => [
+                        'x-requested-with' => 'com.hotsurf.browser',
+                        'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 13; SM-A042M Build/TP1A.220624.014) AppleWebKit [HS/28]',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'SM-A042M',
+                        'marketingName' => 'Galaxy A04e',
+                        'manufacturer' => 'Samsung',
+                        'brand' => 'Samsung',
+                        'dualOrientation' => true,
+                        'simCount' => 1,
+                        'display' => [
+                            'width' => 1600,
+                            'height' => 720,
+                            'touch' => true,
+                            'size' => 6.5,
+                        ],
+                        'type' => 'smartphone',
+                        'ismobile' => true,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Android',
+                        'marketingName' => 'Android',
+                        'version' => '13.0.0',
+                        'manufacturer' => 'Google',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'SmartView Browser',
+                        'modus' => null,
+                        'version' => '28.0.0',
+                        'manufacturer' => 'DS tools',
+                        'type' => 'browser',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => null,
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
+            [
+                [
+                    'http-x-requested-with' => 'vpn.video.downloader',
+                    'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 13; moto g 5G (2022) Build/T1SA33.73-40) AppleWebKit [VD/240]',
+                ],
+                [
+                    'headers' => [
+                        'x-requested-with' => 'vpn.video.downloader',
+                        'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 13; moto g 5G (2022) Build/T1SA33.73-40) AppleWebKit [VD/240]',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'Moto G 5G (2022)',
+                        'marketingName' => 'Moto G 5G (2022)',
+                        'manufacturer' => 'Lenovo',
+                        'brand' => 'Motorola',
+                        'dualOrientation' => true,
+                        'simCount' => 2,
+                        'display' => [
+                            'width' => 1600,
+                            'height' => 720,
+                            'touch' => true,
+                            'size' => 6.5,
+                        ],
+                        'type' => 'smartphone',
+                        'ismobile' => true,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Android',
+                        'marketingName' => 'Android',
+                        'version' => '13.0.0',
+                        'manufacturer' => 'Google',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'VD Browser',
+                        'modus' => null,
+                        'version' => '240.0.0',
+                        'manufacturer' => 'DS tools',
+                        'type' => 'browser',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => null,
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
+            [
+                [
+                    'http-x-requested-with' => 'com.arvin.browser',
+                    'user-agent' => 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Arvin/2.0.0 Chrome/113.0.5672.162 Mobile Safari/537.36',
+                ],
+                [
+                    'headers' => [
+                        'x-requested-with' => 'com.arvin.browser',
+                        'user-agent' => 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Arvin/2.0.0 Chrome/113.0.5672.162 Mobile Safari/537.36',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'general Mobile Phone',
+                        'marketingName' => 'general Mobile Phone',
+                        'manufacturer' => 'unknown',
+                        'brand' => 'unknown',
+                        'dualOrientation' => true,
+                        'simCount' => 1,
+                        'display' => [
+                            'width' => null,
+                            'height' => null,
+                            'touch' => true,
+                            'size' => null,
+                        ],
+                        'type' => 'smartphone',
+                        'ismobile' => true,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Android',
+                        'marketingName' => 'Android',
+                        'version' => '13.0.0',
+                        'manufacturer' => 'Google',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Arvin',
+                        'modus' => null,
+                        'version' => '2.0.0',
+                        'manufacturer' => 'Arvin Studio',
+                        'type' => 'browser',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '113.0.5672.162',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
+            [
+                [
+                    'http-x-requested-with' => 'privatebrowser.securebrowser.com.klar',
+                    'user-agent' => 'Mozilla/5.0 (Linux; Android 9) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Private Browser/4.0 Chrome/98.0.4758.101 Mobile Safari/537.36',
+                ],
+                [
+                    'headers' => [
+                        'x-requested-with' => 'privatebrowser.securebrowser.com.klar',
+                        'user-agent' => 'Mozilla/5.0 (Linux; Android 9) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Private Browser/4.0 Chrome/98.0.4758.101 Mobile Safari/537.36',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'general Mobile Phone',
+                        'marketingName' => 'general Mobile Phone',
+                        'manufacturer' => 'unknown',
+                        'brand' => 'unknown',
+                        'dualOrientation' => true,
+                        'simCount' => 1,
+                        'display' => [
+                            'width' => null,
+                            'height' => null,
+                            'touch' => true,
+                            'size' => null,
+                        ],
+                        'type' => 'smartphone',
+                        'ismobile' => true,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Android',
+                        'marketingName' => 'Android',
+                        'version' => '9.0.0',
+                        'manufacturer' => 'Google',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'SP Browser',
+                        'modus' => null,
+                        'version' => '4.0.0',
+                        'manufacturer' => 'SP Browser',
+                        'type' => 'browser',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '98.0.4758.101',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
+            [
+                [
+                    'sec-ch-prefers-color-scheme' => 'light',
+                    'sec-ch-prefers-reduced-motion' => 'no-preference',
+                    'sec-ch-prefers-reduced-transparency' => 'no-preference',
+                    'sec-ch-ua' => '"Not)A;Brand";v="8", "Chromium";v="138"',
+                    'sec-ch-ua-arch' => '""',
+                    'sec-ch-ua-bitness' => '""',
+                    'sec-ch-ua-full-version' => '""',
+                    'sec-ch-ua-mobile' => '?0',
+                    'sec-ch-ua-model' => '""',
+                    'sec-ch-ua-platform' => '"Linux"',
+                    'sec-ch-ua-platform-version' => '""',
+                    'sec-ch-ua-wow64' => '?0',
+                    'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+                ],
+                [
+                    'headers' => [
+                        'sec-ch-ua-model' => '""',
+                        'sec-ch-ua-platform' => '"Linux"',
+                        'sec-ch-ua-platform-version' => '""',
+                        'sec-ch-ua' => '"Not)A;Brand";v="8", "Chromium";v="138"',
+                        'sec-ch-ua-full-version' => '""',
+                        'sec-ch-ua-bitness' => '""',
+                        'sec-ch-ua-arch' => '""',
+                        'sec-ch-ua-mobile' => '?0',
+                        'sec-ch-ua-wow64' => '?0',
+                        'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'Nexus 5X',
+                        'marketingName' => 'Nexus 5X',
+                        'manufacturer' => 'LG',
+                        'brand' => 'Google',
+                        'dualOrientation' => true,
+                        'simCount' => 1,
+                        'display' => [
+                            'width' => 1920,
+                            'height' => 1080,
+                            'touch' => true,
+                            'size' => 5.2,
+                        ],
+                        'type' => 'smartphone',
+                        'ismobile' => false,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Android',
+                        'marketingName' => 'Android',
+                        'version' => '6.0.1',
+                        'manufacturer' => 'Google',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Google Bot',
+                        'modus' => null,
+                        'version' => '2.1.0',
+                        'manufacturer' => 'Google',
+                        'type' => 'search-bot',
+                        'isbot' => true,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '138.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],

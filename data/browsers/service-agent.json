@@ -588,5 +588,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "2gdpr": {
+    "name": "2GDPR",
+    "manufacturer": "unknown",
+    "type": "service-agent",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "2GDPR"
+      ]
+    },
+    "engine": "unknown"
   }
 }

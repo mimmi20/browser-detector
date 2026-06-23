@@ -754,18 +754,6 @@
     },
     "engine": "unknown"
   },
-  "caremedicom": {
-    "name": "CareMediCom",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "CareMediCom"
-      ]
-    },
-    "engine": "gecko"
-  },
   "cars-app-browser": {
     "name": "cars-app-browser",
     "manufacturer": "unknown",
@@ -1053,18 +1041,6 @@
     "version": {
       "class": null,
       "search": null
-    },
-    "engine": "unknown"
-  },
-  "curb": {
-    "name": "Curb",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Curb"
-      ]
     },
     "engine": "unknown"
   },
@@ -1877,16 +1853,6 @@
       "search": [
         "gooblog"
       ]
-    },
-    "engine": "unknown"
-  },
-  "google ads overview": {
-    "name": "Google Ads Overview",
-    "manufacturer": "google",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
     },
     "engine": "unknown"
   },
@@ -2777,18 +2743,6 @@
     },
     "engine": "unknown"
   },
-  "link_thumbnailer": {
-    "name": "link_thumbnailer",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "link_thumbnailer"
-      ]
-    },
-    "engine": "unknown"
-  },
   "linklint": {
     "name": "LinkLint",
     "manufacturer": "unknown",
@@ -2872,7 +2826,7 @@
   },
   "livedoor": {
     "name": "Livedoor",
-    "manufacturer": "nhn-corporation",
+    "manufacturer": "naver",
     "type": "bot",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -2884,7 +2838,7 @@
   },
   "livedoor-feed-fetcher": {
     "name": "Livedoor FeedFetcher",
-    "manufacturer": "nhn-corporation",
+    "manufacturer": "naver",
     "type": "bot",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -2896,7 +2850,7 @@
   },
   "livedoor-mobile-gateway": {
     "name": "livedoor-Mobile-Gateway",
-    "manufacturer": "nhn-corporation",
+    "manufacturer": "naver",
     "type": "bot",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -3551,16 +3505,6 @@
     },
     "engine": "unknown"
   },
-  "open vulnerability assessment system": {
-    "name": "Open Vulnerability Assessment System",
-    "manufacturer": "open-vas",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "unknown"
-  },
   "openbsd ftp": {
     "name": "OpenBSD ftp",
     "manufacturer": "unknown",
@@ -3711,16 +3655,6 @@
       "search": [
         "PageFreezer"
       ]
-    },
-    "engine": "unknown"
-  },
-  "pagepeeker screenshot maker": {
-    "name": "PagePeeker Screenshot Maker",
-    "manufacturer": "page-peeker",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
     },
     "engine": "unknown"
   },
@@ -5710,30 +5644,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Voyager"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "voyager bot": {
-    "name": "Voyager Bot",
-    "manufacturer": "cosmix",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "voyager"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "vsentry": {
-    "name": "vSentry",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Bromium Safari"
       ]
     },
     "engine": "unknown"

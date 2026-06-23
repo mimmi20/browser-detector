@@ -44,5 +44,51 @@
       "version": "108.0.5359.128",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.dolphin.browser.zero",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; Pixel 5a Build/SQ1A.211205.008; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.92 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Pixel 5a",
+      "marketingName": "Pixel 5a",
+      "manufacturer": "Google",
+      "brand": "Google",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.34
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Dolphin Zero",
+      "modus": null,
+      "version": null,
+      "manufacturer": "MopoTab",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "96.0.4664.92",
+      "manufacturer": "Google"
+    }
   }
 ]

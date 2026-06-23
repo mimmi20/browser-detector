@@ -15,6 +15,7 @@ namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Data\Engine;
 use BrowserDetector\Data\Os;
+use BrowserDetector\Parser\Header\SetVersionTrait;
 use BrowserDetector\Parser\Header\XUcbrowserUaClientCode;
 use BrowserDetector\Parser\Header\XUcbrowserUaClientVersion;
 use BrowserDetector\Parser\Header\XUcbrowserUaDeviceCode;
@@ -26,6 +27,7 @@ use BrowserDetector\Parser\Helper\Device;
 use BrowserDetector\Version\ForcedNullVersion;
 use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Attributes\CoversTrait;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
@@ -48,6 +50,7 @@ use function sprintf;
 #[CoversClass(XUcbrowserUaPlatformCode::class)]
 #[CoversClass(XUcbrowserUaPlatformVersion::class)]
 #[CoversClass(Device::class)]
+#[CoversTrait(SetVersionTrait::class)]
 final class XUcbrowserUaTest extends TestCase
 {
     /**
@@ -937,7 +940,7 @@ final class XUcbrowserUaTest extends TestCase
                 'engineVersion' => '537.51.1',
             ],
             [
-                'ua' => 'pf(Java);la(Pt-BR);re(U2/1.0.0);dv(maui e800);pr(UCBrowser/9.2.0.311);ov(MIDP-2.0);pi(320*240);ss(320*240);up(U2/1.0.0);er(U);bt(GJ);pm(1);bv(0);nm(2);im(0);sr(0);nt(99);',
+                'ua' => 'pf(Java);la(Pt-BR);re(U2/1.0.0);dv(maui e800_);pr(UCBrowser/9.2.0.311);ov(MIDP-2.0);pi(320*240);ss(320*240);up(U2/1.0.0);er(U);bt(GJ);pm(1);bv(0);nm(2);im(0);sr(0);nt(99);',
                 'hasDeviceCode' => true,
                 'deviceCode' => 'test-device-code',
                 'hasClientInfo' => true,
@@ -1139,6 +1142,23 @@ final class XUcbrowserUaTest extends TestCase
                 'engineCode' => Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '600.1.4.12.4',
+            ],
+            [
+                'ua' => 'la(en-US);re(U2/1.0.0);dv(NOKIA RM-914_eu_turkey_355);pr(UCBrowser/3.0.1.302);ov(wds 8.0);pi(480*800);ss(480*800);er(U);bt(GJ);nm(0);im(0);sr(0);nt(1);pm(0);',
+                'hasDeviceCode' => true,
+                'deviceCode' => '',
+                'hasClientInfo' => true,
+                'clientCode' => 'ucbrowser',
+                'hasClientVersion' => true,
+                'clientVersion' => '3.0.1.302',
+                'hasPlatformCode' => true,
+                'platformCode' => Os::windowsphone,
+                'hasPlatformVersion' => true,
+                'platformVersion' => '8.0.0',
+                'hasEngineCode' => true,
+                'engineCode' => Engine::u2,
+                'hasEngineVersion' => true,
+                'engineVersion' => '1.0.0',
             ],
         ];
     }
