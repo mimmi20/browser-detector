@@ -1567,7 +1567,7 @@ final class Device implements DeviceInterface
             'z2468n' => 'zte=zte z2468n',
             'z2459' => 'zte=zte z2459',
             // Samsung
-            'sm-a505fn' => 'samsung=samsung sm-a505fn',
+            'sm-a505fn', 'samsung sm-a505fn' => 'samsung=samsung sm-a505fn',
             'sm-a515f', 'samsung sm-a515f', 'sm-a515f/a515fxxu8hwi1' => 'samsung=samsung sm-a515f',
             'sm-a515u', 'samsung sm-a515u' => 'samsung=samsung sm-a515u',
             'sm-a515u1', 'samsung sm-a515u1' => 'samsung=samsung sm-a515u1',
@@ -2961,6 +2961,7 @@ final class Device implements DeviceInterface
             'els-n04', 'huawei els-n04' => 'huawei=huawei els-n04',
             'ane-lx1', 'huawei ane-lx1' => 'huawei=huawei ane-lx1',
             'ane-lx2', 'huawei ane-lx2' => 'huawei=huawei ane-lx2',
+            'ane-lx2j', 'huawei ane-lx2j' => 'huawei=huawei ane-lx2j',
             'ane-lx3', 'huawei ane-lx3' => 'huawei=huawei ane-lx3',
             'ane-l22', 'huawei ane-l22' => 'huawei=huawei ane-l22',
             'ane-al00', 'huawei ane-al00' => 'huawei=huawei ane-al00',

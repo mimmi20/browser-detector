@@ -1638,6 +1638,7 @@ final class DeviceTest extends TestCase
             // Samsung
             ['SM-A415F', 'samsung=samsung sm-a415f'],
             ['SM-A505FN', 'samsung=samsung sm-a505fn'],
+            ['SAMSUNG SM-A505FN', 'samsung=samsung sm-a505fn'],
             ['SM-A515F', 'samsung=samsung sm-a515f'],
             ['SAMSUNG SM-A515F', 'samsung=samsung sm-a515f'],
             ['SM-A515F/A515FXXU8HWI1', 'samsung=samsung sm-a515f'],
@@ -4077,6 +4078,8 @@ final class DeviceTest extends TestCase
             ['HUAWEI ANE-LX1', 'huawei=huawei ane-lx1'],
             ['ANE-LX2', 'huawei=huawei ane-lx2'],
             ['HUAWEI ANE-LX2', 'huawei=huawei ane-lx2'],
+            ['ANE-LX2J', 'huawei=huawei ane-lx2j'],
+            ['HUAWEI ANE-LX2J', 'huawei=huawei ane-lx2j'],
             ['ANE-LX3', 'huawei=huawei ane-lx3'],
             ['HUAWEI ANE-LX3', 'huawei=huawei ane-lx3'],
             ['ANE-L22', 'huawei=huawei ane-l22'],
