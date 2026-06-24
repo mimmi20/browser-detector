@@ -1491,6 +1491,7 @@ final class DeviceTest extends TestCase
             ['MI 8 Explorer Edition', 'xiaomi=xiaomi mi 8 explorer edition'],
             ['Redmi 8A Pro', 'xiaomi=xiaomi redmi 8a pro'],
             ['Redmi 8A Dual', 'xiaomi=xiaomi redmi 8a dual'],
+            ['2510DPC44G', 'xiaomi=xiaomi 2510dpc44g'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -3617,6 +3618,14 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-G930', 'samsung=samsung sm-g930'],
             ['SM-G930W8', 'samsung=samsung sm-g930w8'],
             ['SAMSUNG SM-G930W8', 'samsung=samsung sm-g930w8'],
+            ['SM-G9300', 'samsung=samsung sm-g9300'],
+            ['SAMSUNG SM-G9300', 'samsung=samsung sm-g9300'],
+            ['SM-G930S', 'samsung=samsung sm-g930s'],
+            ['SAMSUNG SM-G930S', 'samsung=samsung sm-g930s'],
+            ['SM-G930L', 'samsung=samsung sm-g930l'],
+            ['SAMSUNG SM-G930L', 'samsung=samsung sm-g930l'],
+            ['SM-G930K', 'samsung=samsung sm-g930k'],
+            ['SAMSUNG SM-G930K', 'samsung=samsung sm-g930k'],
             ['SM-G950U1', 'samsung=samsung sm-g950u1'],
             ['SAMSUNG SM-G950U1', 'samsung=samsung sm-g950u1'],
             ['SM-G950U', 'samsung=samsung sm-g950u'],
@@ -5453,6 +5462,7 @@ final class DeviceTest extends TestCase
             ['moto g 5G (2022)', 'motorola=motorola moto g 5g 2022'],
             ['moto g 5G (2022', 'motorola=motorola moto g 5g 2022'],
             ['moto g77', 'motorola=motorola moto g77'],
+            ['motorola razr fold', 'motorola=motorola razr fold'],
             // Sony
             ['XQ-CC54', 'sony=sony xq-cc54'],
             ['XQ-BQ52', 'sony=sony xq-bq52'],
@@ -6251,6 +6261,7 @@ final class DeviceTest extends TestCase
             ['Armor_6', 'ulefone=ulefone armor 6'],
             ['Note 6', 'ulefone=ulefone note 6'],
             ['Note 18 Ultra', 'ulefone=ulefone note 18 ultra'],
+            ['Armor_3W', 'ulefone=ulefone armor 3w'],
             // Doogee
             ['N40Pro', 'doogee=doogee n40 pro'],
             ['Doogee N40 Pro', 'doogee=doogee n40 pro'],
@@ -7072,6 +7083,7 @@ final class DeviceTest extends TestCase
             ['E6523', 'micromax=micromax e6523'],
             ['E7533', 'micromax=micromax e7533'],
             ['Micromax Q402Plus', 'micromax=micromax q402+'],
+            ['Micromax A069', 'micromax=micromax a069'],
             // itel
             ['itel L6006', 'itel=itel l6006'],
             ['itel S681LN', 'itel=itel s681ln'],
@@ -7364,6 +7376,7 @@ final class DeviceTest extends TestCase
             ['Archos 50 Power', 'archos=archos 50 power'],
             ['AC45BHE', 'archos=archos ac45bhe'],
             ['Tikeasy 10d', 'archos=archos tikeasy 10d'],
+            ['Archos T 101 4G', 'archos=archos t101 4g'],
             // land-rover
             ['Land Rover Explore', 'land-rover=land-rover explore'],
             ['Land Rover LUXURY', 'land-rover=land-rover luxury'],
@@ -7592,6 +7605,7 @@ final class DeviceTest extends TestCase
             ['A001', 'nothing-phone=nothing-phone a001'],
             ['A024', 'nothing-phone=nothing-phone a024'],
             ['Nothing; A065', 'nothing-phone=nothing-phone a065'],
+            ['A069', 'nothing-phone=nothing-phone a069'],
             // doro
             ['DSB-0220', 'doro=doro dsb-0220'],
             ['DSB-0230', 'doro=doro dsb-0230'],
@@ -10188,6 +10202,8 @@ final class DeviceTest extends TestCase
             ['Alba7Q', 'alba=alba alba7q'],
             // benq
             ['maui e800', 'benq=benq maui e800'],
+            // vernee
+            ['V2 Pro', 'vernee=vernee v2 pro'],
             // other
             ['Model"', null],
             [': "', null],

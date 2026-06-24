@@ -12064,6 +12064,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Md.Arman',
                 'key' => 'md-arman',
             ],
+            [
+                'type' => 'Selecy',
+                'name' => 'Selecy SAS',
+                'brandname' => 'Selecy',
+                'key' => 'selecy',
+            ],
         ];
     }
 

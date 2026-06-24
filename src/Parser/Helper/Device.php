@@ -1435,6 +1435,7 @@ final class Device implements DeviceInterface
             'mi 8 explorer edition' => 'xiaomi=xiaomi mi 8 explorer edition',
             'redmi 8a pro' => 'xiaomi=xiaomi redmi 8a pro',
             'redmi 8a dual' => 'xiaomi=xiaomi redmi 8a dual',
+            '2510dpc44g' => 'xiaomi=xiaomi 2510dpc44g',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -2698,6 +2699,10 @@ final class Device implements DeviceInterface
             'sm-g9308', 'samsung sm-g9308' => 'samsung=samsung sm-g9308',
             'sm-g930', 'samsung sm-g930' => 'samsung=samsung sm-g930',
             'sm-g930w8', 'samsung sm-g930w8' => 'samsung=samsung sm-g930w8',
+            'sm-g9300', 'samsung sm-g9300' => 'samsung=samsung sm-g9300',
+            'sm-g930s', 'samsung sm-g930s' => 'samsung=samsung sm-g930s',
+            'sm-g930l', 'samsung sm-g930l' => 'samsung=samsung sm-g930l',
+            'sm-g930k', 'samsung sm-g930k' => 'samsung=samsung sm-g930k',
             'sm-g950u1', 'samsung sm-g950u1' => 'samsung=samsung sm-g950u1',
             'sm-g950u', 'samsung sm-g950u' => 'samsung=samsung sm-g950u',
             'sm-g950t', 'samsung sm-g950t' => 'samsung=samsung sm-g950t',
@@ -4195,6 +4200,7 @@ final class Device implements DeviceInterface
             'mb860' => 'motorola=motorola mb860',
             'moto g 5g (2022)', 'moto g 5g (2022' => 'motorola=motorola moto g 5g 2022',
             'moto g77' => 'motorola=motorola moto g77',
+            'motorola razr fold' => 'motorola=motorola razr fold',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
@@ -4982,6 +4988,7 @@ final class Device implements DeviceInterface
             'armor_6' => 'ulefone=ulefone armor 6',
             'note 6' => 'ulefone=ulefone note 6',
             'note 18 ultra' => 'ulefone=ulefone note 18 ultra',
+            'armor_3w' => 'ulefone=ulefone armor 3w',
             // Doogee
             'n40pro', 'doogee n40 pro' => 'doogee=doogee n40 pro',
             's88pro' => 'doogee=doogee s88 pro',
@@ -5776,6 +5783,7 @@ final class Device implements DeviceInterface
             'e6523' => 'micromax=micromax e6523',
             'e7533' => 'micromax=micromax e7533',
             'micromax q402plus' => 'micromax=micromax q402+',
+            'micromax a069' => 'micromax=micromax a069',
             // itel
             'itel l6006' => 'itel=itel l6006',
             'itel s681ln' => 'itel=itel s681ln',
@@ -6067,6 +6075,7 @@ final class Device implements DeviceInterface
             'archos 50 power' => 'archos=archos 50 power',
             'ac45bhe' => 'archos=archos ac45bhe',
             'tikeasy 10d' => 'archos=archos tikeasy 10d',
+            'archos t 101 4g' => 'archos=archos t101 4g',
             // land-rover
             'land rover explore' => 'land-rover=land-rover explore',
             'land rover luxury' => 'land-rover=land-rover luxury',
@@ -6284,6 +6293,7 @@ final class Device implements DeviceInterface
             'a001' => 'nothing-phone=nothing-phone a001',
             'a024' => 'nothing-phone=nothing-phone a024',
             'nothing; a065' => 'nothing-phone=nothing-phone a065',
+            'a069' => 'nothing-phone=nothing-phone a069',
             // doro
             'dsb-0220' => 'doro=doro dsb-0220',
             'dsb-0230' => 'doro=doro dsb-0230',
@@ -8672,6 +8682,8 @@ final class Device implements DeviceInterface
             'alba7q' => 'alba=alba alba7q',
             // benq
             'maui e800' => 'benq=benq maui e800',
+            // vernee
+            'v2 pro' => 'vernee=vernee v2 pro',
             // other
             default => null,
         };
