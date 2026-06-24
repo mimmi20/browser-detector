@@ -3584,6 +3584,10 @@ final class Device implements DeviceInterface
             'hma-lx9', 'huawei hma-lx9' => 'huawei=huawei hma-lx9',
             'hma-l29', 'huawei hma-l29' => 'huawei=huawei hma-l29',
             'hma-l09', 'huawei hma-l09' => 'huawei=huawei hma-l09',
+            'ebg-tn00', 'huawei ebg-tn00' => 'huawei=huawei ebg-tn00',
+            'ebg-an10', 'huawei ebg-an10' => 'huawei=huawei ebg-an10',
+            'ebg-an00', 'huawei ebg-an00' => 'huawei=huawei ebg-an00',
+            'ebg-n19', 'huawei ebg-n19' => 'huawei=huawei ebg-n19',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -6204,6 +6208,7 @@ final class Device implements DeviceInterface
             'meizu 16th plus', 'mz-16th plus', '16th plus' => 'meizu=meizu 16th plus',
             'm6 note' => 'meizu=meizu m6 note',
             'meizu note21 pro' => 'meizu=meizu note 21 pro',
+            '15 plus' => 'meizu=meizu 15 plus',
             // peaq
             'peaq pet 100' => 'peaq=peaq pet 100',
             'peaq pet 100 lte' => 'peaq=peaq pet 100 lte',
@@ -6473,6 +6478,8 @@ final class Device implements DeviceInterface
             'tecno kg6p', 'tecno mobile kg6p' => 'tecno=tecno kg6p',
             'tecno kg6k', 'tecno mobile kg6k' => 'tecno=tecno kg6k',
             'tecno kg6', 'tecno mobile kg6' => 'tecno=tecno kg6',
+            'tecno c8', 'tecno mobile c8', 'tecno-c8' => 'tecno=tecno c8',
+            'tecno la7', 'tecno mobile la7' => 'tecno=tecno la7',
             // foxxd
             'foxxd c65' => 'foxxd=foxxd c65',
             // ceibal

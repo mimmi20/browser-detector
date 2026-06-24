@@ -4818,6 +4818,14 @@ final class DeviceTest extends TestCase
             ['HUAWEI HMA-L29', 'huawei=huawei hma-l29'],
             ['HMA-L09', 'huawei=huawei hma-l09'],
             ['HUAWEI HMA-L09', 'huawei=huawei hma-l09'],
+            ['EBG-TN00', 'huawei=huawei ebg-tn00'],
+            ['HUAWEI EBG-TN00', 'huawei=huawei ebg-tn00'],
+            ['EBG-AN10', 'huawei=huawei ebg-an10'],
+            ['HUAWEI EBG-AN10', 'huawei=huawei ebg-an10'],
+            ['EBG-AN00', 'huawei=huawei ebg-an00'],
+            ['HUAWEI EBG-AN00', 'huawei=huawei ebg-an00'],
+            ['EBG-N19', 'huawei=huawei ebg-n19'],
+            ['HUAWEI EBG-N19', 'huawei=huawei ebg-n19'],
             // Lenovo
             ['Lenovo TB-X304F', 'lenovo=lenovo tb-x304f'],
             ['X1030X', 'lenovo=lenovo x1030x'],
@@ -7515,6 +7523,7 @@ final class DeviceTest extends TestCase
             ['16th plus', 'meizu=meizu 16th plus'],
             ['M6 Note', 'meizu=meizu m6 note'],
             ['MEIZU Note21 Pro', 'meizu=meizu note 21 pro'],
+            ['15 Plus', 'meizu=meizu 15 plus'],
             // peaq
             ['PEAQ PET 100', 'peaq=peaq pet 100'],
             ['PEAQ PET 100 LTE', 'peaq=peaq pet 100 lte'],
@@ -7885,6 +7894,11 @@ final class DeviceTest extends TestCase
             ['TECNO Mobile KG6k', 'tecno=tecno kg6k'],
             ['TECNO KG6', 'tecno=tecno kg6'],
             ['TECNO Mobile KG6', 'tecno=tecno kg6'],
+            ['TECNO C8', 'tecno=tecno c8'],
+            ['TECNO Mobile C8', 'tecno=tecno c8'],
+            ['TECNO-C8', 'tecno=tecno c8'],
+            ['TECNO LA7', 'tecno=tecno la7'],
+            ['TECNO Mobile LA7', 'tecno=tecno la7'],
             // foxxd
             ['FOXXD C65', 'foxxd=foxxd c65'],
             // ceibal
