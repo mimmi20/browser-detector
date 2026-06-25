@@ -12070,6 +12070,30 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Selecy',
                 'key' => 'selecy',
             ],
+            [
+                'type' => 'Ioplee',
+                'name' => 'Ioplee',
+                'brandname' => 'Ioplee',
+                'key' => 'ioplee',
+            ],
+            [
+                'type' => 'Edenwood',
+                'name' => 'Edenwood',
+                'brandname' => 'Edenwood',
+                'key' => 'edenwood',
+            ],
+            [
+                'type' => 'Coles',
+                'name' => 'Coles',
+                'brandname' => 'Coles',
+                'key' => 'coles',
+            ],
+            [
+                'type' => 'AWOX',
+                'name' => 'AWOX',
+                'brandname' => 'AWOX',
+                'key' => 'awox',
+            ],
         ];
     }
 

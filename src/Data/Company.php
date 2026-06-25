@@ -4027,6 +4027,14 @@ enum Company: string implements CompanyInterface
 
     case selecy = 'Selecy';
 
+    case ioplee = 'Ioplee';
+
+    case edenwood = 'Edenwood';
+
+    case coles = 'Coles';
+
+    case awox = 'AWOX';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -6038,6 +6046,10 @@ enum Company: string implements CompanyInterface
             'vpntechstudio', 'vpn tech studio inc', 'vpn-tech-studio', 'vpn tech studio' => self::vpnTechStudio,
             'mdarman', 'md.arman', 'md-arman' => self::mdArman,
             'selecy', 'selecy sas' => self::selecy,
+            'ioplee' => self::ioplee,
+            'edenwood' => self::edenwood,
+            'coles' => self::coles,
+            'awox' => self::awox,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
