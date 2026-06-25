@@ -57,6 +57,7 @@ use function assert;
 use function explode;
 use function in_array;
 use function is_string;
+use function mb_strtolower;
 use function sprintf;
 
 final readonly class Headers
@@ -174,11 +175,15 @@ final readonly class Headers
         \UaData\EngineInterface $engine,
         string | null $engineCodenameFromClient,
         BrowserInterface $client,
+        string | null $platformName,
     ): EngineInterface {
         $engineHeader   = null;
         $detectedEngine = $engine;
 
-        if ($engine === \BrowserDetector\Data\Engine::unknown) {
+        if (
+            $engine === \BrowserDetector\Data\Engine::unknown
+            && mb_strtolower($platformName ?? '') !== 'ios'
+        ) {
             $headersWithEngineName = array_filter(
                 $this->headers,
                 static fn (HeaderInterface $header): bool => $header->hasEngineCode(),
@@ -248,6 +253,8 @@ final readonly class Headers
 
                     break;
             }
+        } elseif (mb_strtolower($platformName ?? '') === 'ios') {
+            $detectedEngine = \BrowserDetector\Data\Engine::webkit;
         }
 
         if ($detectedEngine instanceof \UaData\EngineInterface) {

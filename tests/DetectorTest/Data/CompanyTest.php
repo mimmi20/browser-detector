@@ -12094,6 +12094,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'AWOX',
                 'key' => 'awox',
             ],
+            [
+                'type' => 'ELCO',
+                'name' => 'ELCO',
+                'brandname' => 'ELCO',
+                'key' => 'elco',
+            ],
         ];
     }
 
