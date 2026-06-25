@@ -9968,6 +9968,52 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                 ],
             ],
+            [
+                ['user-agent' => 'Opera/1 CFNetwork/3860.700.1 Darwin/25.6.0'],
+                [
+                    'headers' => ['user-agent' => 'Opera/1 CFNetwork/3860.700.1 Darwin/25.6.0'],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'general Apple device',
+                        'marketingName' => 'general Apple device',
+                        'manufacturer' => 'Apple',
+                        'brand' => 'Apple',
+                        'dualOrientation' => null,
+                        'simCount' => 0,
+                        'display' => [
+                            'width' => null,
+                            'height' => null,
+                            'touch' => false,
+                            'size' => null,
+                        ],
+                        'type' => 'mobile-device',
+                        'ismobile' => true,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'iOS',
+                        'marketingName' => 'iOS',
+                        'version' => '26.6.0',
+                        'manufacturer' => 'Apple',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Opera',
+                        'modus' => null,
+                        'version' => '1.0.0',
+                        'manufacturer' => 'Opera',
+                        'type' => 'browser',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'WebKit',
+                        'version' => '3860.700.1',
+                        'manufacturer' => 'Apple',
+                    ],
+                ],
+            ],
         ];
     }
 }

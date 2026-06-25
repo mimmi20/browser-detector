@@ -179,11 +179,9 @@ final readonly class Headers
     ): EngineInterface {
         $engineHeader   = null;
         $detectedEngine = $engine;
+        $isIos          = mb_strtolower($platformName ?? '') === 'ios';
 
-        if (
-            $engine === \BrowserDetector\Data\Engine::unknown
-            && mb_strtolower($platformName ?? '') !== 'ios'
-        ) {
+        if ($engine === \BrowserDetector\Data\Engine::unknown && !$isIos) {
             $headersWithEngineName = array_filter(
                 $this->headers,
                 static fn (HeaderInterface $header): bool => $header->hasEngineCode(),
@@ -253,7 +251,7 @@ final readonly class Headers
 
                     break;
             }
-        } elseif (mb_strtolower($platformName ?? '') === 'ios') {
+        } elseif ($isIos) {
             $detectedEngine = \BrowserDetector\Data\Engine::webkit;
         }
 
@@ -284,7 +282,7 @@ final readonly class Headers
                         $clientVersion = 0.0;
                     }
 
-                    if ($client->getName() === 'Opera' && (float) $clientVersion < 12.0) {
+                    if (!$isIos && $client->getName() === 'Opera' && (float) $clientVersion < 15.0) {
                         $detectedEngine = \BrowserDetector\Data\Engine::presto;
                         $engineVersion  = $engineVersions['user-agent'];
                     }
