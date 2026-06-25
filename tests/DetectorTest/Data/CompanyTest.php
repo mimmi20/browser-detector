@@ -12100,6 +12100,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'ELCO',
                 'key' => 'elco',
             ],
+            [
+                'type' => 'Clikon',
+                'name' => 'Clikon',
+                'brandname' => 'Clikon',
+                'key' => 'clikon',
+            ],
+            [
+                'type' => 'Bona Fide',
+                'name' => 'Bona Fide NGO',
+                'brandname' => 'Bona Fide',
+                'key' => 'bona-fide',
+            ],
         ];
     }
 

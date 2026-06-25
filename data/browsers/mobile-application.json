@@ -689,8 +689,10 @@
     "manufacturer": "surf-shark",
     "type": "mobile-application",
     "version": {
-      "factory": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SurfsharkAndroid"
+      ]
     },
     "engine": "unknown"
   },
@@ -779,8 +781,10 @@
     "manufacturer": "hago",
     "type": "mobile-application",
     "version": {
-      "factory": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "hago-and"
+      ]
     },
     "engine": "unknown"
   },
@@ -2115,7 +2119,8 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "BingSapphire"
+        "BingSapphire",
+        "Sapphire"
       ]
     },
     "engine": null
@@ -2409,7 +2414,8 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "com\\.google\\.ios\\.youtube"
+        "com\\.google\\.ios\\.youtube",
+        "YouTube"
       ]
     },
     "engine": null
@@ -5463,6 +5469,19 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "YelpApp"
+      ]
+    },
+    "engine": null
+  },
+  "trace-pal": {
+    "name": "TracePal",
+    "manufacturer": "bona-fide",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "tracepal\\.app",
+        "tracepal"
       ]
     },
     "engine": null

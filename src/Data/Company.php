@@ -4037,6 +4037,10 @@ enum Company: string implements CompanyInterface
 
     case elco = 'ELCO';
 
+    case clikon = 'Clikon';
+
+    case bonaFide = 'Bona Fide';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -6053,6 +6057,8 @@ enum Company: string implements CompanyInterface
             'coles' => self::coles,
             'awox' => self::awox,
             'elco' => self::elco,
+            'clikon' => self::clikon,
+            'bonafide', 'bona fide ngo', 'bona-fide', 'bona fide' => self::bonaFide,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6885,6 +6891,7 @@ enum Company: string implements CompanyInterface
             self::deepinTechnology => 'Deepin Technology Co., Ltd.',
             self::vpnTechStudio => 'VPN Tech Studio Inc',
             self::selecy => 'Selecy SAS',
+            self::bonaFide => 'Bona Fide NGO',
             self::unknown => null,
             default => $this->value,
         };
@@ -7665,6 +7672,7 @@ enum Company: string implements CompanyInterface
             self::christopherAlbert => 'christopher-albert',
             self::vpnTechStudio => 'vpn-tech-studio',
             self::mdArman => 'md-arman',
+            self::bonaFide => 'bona-fide',
             default => $this->name,
         };
     }
