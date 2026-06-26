@@ -1863,5 +1863,17 @@
       ]
     },
     "engine": null
+  },
+  "imo-international-calls-chat": {
+    "name": "IMO International Calls & Chat",
+    "manufacturer": "imo",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "imoAndroid"
+      ]
+    },
+    "engine": "unknown"
   }
 }

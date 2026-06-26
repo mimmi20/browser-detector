@@ -4189,18 +4189,6 @@
     },
     "engine": "unknown"
   },
-  "imo-international-calls-chat": {
-    "name": "IMO International Calls & Chat",
-    "manufacturer": "imo",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "imoAndroid"
-      ]
-    },
-    "engine": "unknown"
-  },
   "zalo": {
     "name": "Zalo",
     "manufacturer": "unknown",
@@ -5527,5 +5515,39 @@
       "search": null
     },
     "engine": null
+  },
+  "net-mede": {
+    "name": "NET.mede",
+    "manufacturer": "anacom",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "google-tag-manager": {
+    "name": "Google Tag Manager",
+    "manufacturer": "google",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GoogleTagManager"
+      ]
+    },
+    "engine": null
+  },
+  "blackboard-app": {
+    "name": "Blackboard",
+    "manufacturer": "anthology",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Blackboard"
+      ]
+    },
+    "engine": "unknown"
   }
 }

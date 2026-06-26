@@ -4045,6 +4045,8 @@ enum Company: string implements CompanyInterface
 
     case bancoComercial = 'Banco Comercial';
 
+    case anacom = 'ANACOM';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -6065,6 +6067,7 @@ enum Company: string implements CompanyInterface
             'bonafide', 'bona fide ngo', 'bona-fide', 'bona fide' => self::bonaFide,
             'bankmillennium', 'bank millennium sa', 'bank-millennium', 'bank millennium' => self::bankMillennium,
             'bancocomercial', 'banco comercial português, s.a.', 'banco-comercial', 'banco comercial' => self::bancoComercial,
+            'anacom' => self::anacom,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(

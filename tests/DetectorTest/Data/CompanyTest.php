@@ -12124,6 +12124,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Banco Comercial',
                 'key' => 'banco-comercial',
             ],
+            [
+                'type' => 'ANACOM',
+                'name' => 'ANACOM',
+                'brandname' => 'ANACOM',
+                'key' => 'anacom',
+            ],
         ];
     }
 
