@@ -12112,6 +12112,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Bona Fide',
                 'key' => 'bona-fide',
             ],
+            [
+                'type' => 'Bank Millennium',
+                'name' => 'Bank Millennium SA',
+                'brandname' => 'Bank Millennium',
+                'key' => 'bank-millennium',
+            ],
+            [
+                'type' => 'Banco Comercial',
+                'name' => 'Banco Comercial Português, S.A.',
+                'brandname' => 'Banco Comercial',
+                'key' => 'banco-comercial',
+            ],
         ];
     }
 

@@ -5485,5 +5485,47 @@
       ]
     },
     "engine": null
+  },
+  "top-secret-chat": {
+    "name": "TopSecret Chat",
+    "manufacturer": "bona-fide",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "topsecret\\.chat"
+      ]
+    },
+    "engine": null
+  },
+  "bank-millennium": {
+    "name": "Bank Millennium",
+    "manufacturer": "bank-millennium",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "millennium-empresas": {
+    "name": "Millennium Empresas",
+    "manufacturer": "banco-comercial",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "mbolsa": {
+    "name": "MBolsa",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
   }
 }
