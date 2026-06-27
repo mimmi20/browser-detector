@@ -12130,6 +12130,54 @@ final class CompanyTest extends TestCase
                 'brandname' => 'ANACOM',
                 'key' => 'anacom',
             ],
+            [
+                'type' => 'ARRQW',
+                'name' => 'ARRQW',
+                'brandname' => 'ARRQW',
+                'key' => 'arrqw',
+            ],
+            [
+                'type' => 'Nextcloud',
+                'name' => 'Nextcloud',
+                'brandname' => 'Nextcloud',
+                'key' => 'nextcloud',
+            ],
+            [
+                'type' => 'Rave',
+                'name' => 'Rave',
+                'brandname' => 'Rave',
+                'key' => 'rave',
+            ],
+            [
+                'type' => 'Harman International Industries',
+                'name' => 'Harman International Industries, Inc.',
+                'brandname' => 'Harman International Industries',
+                'key' => 'harman-international-industries',
+            ],
+            [
+                'type' => 'Michael Sotnikov',
+                'name' => 'Michael Sotnikov',
+                'brandname' => 'Michael Sotnikov',
+                'key' => 'michael-sotnikov',
+            ],
+            [
+                'type' => 'Handelsblatt Media',
+                'name' => 'Handelsblatt Media Group GmbH & Co. KG',
+                'brandname' => 'Handelsblatt Media',
+                'key' => 'handelsblatt-media',
+            ],
+            [
+                'type' => 'Zalo',
+                'name' => 'Zalo Group',
+                'brandname' => 'Zalo',
+                'key' => 'zalo',
+            ],
+            [
+                'type' => 'Cellock',
+                'name' => 'Cellock Ltd',
+                'brandname' => 'Cellock',
+                'key' => 'cellock',
+            ],
         ];
     }
 

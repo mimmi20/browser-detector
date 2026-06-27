@@ -1864,16 +1864,28 @@
     },
     "engine": null
   },
-  "imo-international-calls-chat": {
-    "name": "IMO International Calls & Chat",
-    "manufacturer": "imo",
+  "aha-radio-2": {
+    "name": "Aha Radio 2",
+    "manufacturer": "harman-international-industries",
     "type": "multimedia-player",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "imoAndroid"
+        "AhaRadio2"
       ]
     },
-    "engine": "unknown"
+    "engine": null
+  },
+  "tvirl": {
+    "name": "TVirl",
+    "manufacturer": "michael-sotnikov",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TVirl"
+      ]
+    },
+    "engine": null
   }
 }

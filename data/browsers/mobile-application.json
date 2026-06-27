@@ -4191,7 +4191,7 @@
   },
   "zalo": {
     "name": "Zalo",
-    "manufacturer": "unknown",
+    "manufacturer": "zalo",
     "type": "mobile-application",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -5546,6 +5546,160 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Blackboard"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "imo-international-calls-chat": {
+    "name": "IMO International Calls & Chat",
+    "manufacturer": "imo",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "imoAndroid"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "imo-hd-video-calls-chat": {
+    "name": "IMO HD Video Calls & Chat",
+    "manufacturer": "imo",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "imoAndroid"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "facebook-audience-network": {
+    "name": "Facebook Audience Network",
+    "manufacturer": "meta",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "FBAV"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "nextcloud": {
+    "name": "Nextcloud",
+    "manufacturer": "nextcloud",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Nextcloud-android"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "rave-social": {
+    "name": "Rave Social",
+    "manufacturer": "rave",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RaveSocial"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ali-express": {
+    "name": "AliExpress",
+    "manufacturer": "alibaba",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AliexpressAndroid",
+        "Aliexpress"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "odnoklassniki": {
+    "name": "Odnoklassniki",
+    "manufacturer": "vk",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "OKAndroid",
+        "OKiOS"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "wirtschafts-woche": {
+    "name": "WirtschaftsWoche",
+    "manufacturer": "handelsblatt-media",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WirtschaftsWoche-iOS-"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "whisper": {
+    "name": "Whisper",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "wh-questions": {
+    "name": "WH Questions",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WH Questions"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "show-me": {
+    "name": "ShowMe",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ShowMe"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "sport1": {
+    "name": "SPORT1",
+    "manufacturer": "cellock",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "shopee": {
+    "name": "Shopee",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ShopeeVN"
       ]
     },
     "engine": "unknown"

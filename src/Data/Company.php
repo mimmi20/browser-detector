@@ -4047,6 +4047,22 @@ enum Company: string implements CompanyInterface
 
     case anacom = 'ANACOM';
 
+    case arrqw = 'ARRQW';
+
+    case nextcloud = 'Nextcloud';
+
+    case rave = 'Rave';
+
+    case harmanInternationalIndustries = 'Harman International Industries';
+
+    case michaelSotnikov = 'Michael Sotnikov';
+
+    case handelsblattMedia = 'Handelsblatt Media';
+
+    case zalo = 'Zalo';
+
+    case cellock = 'Cellock';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -6068,6 +6084,14 @@ enum Company: string implements CompanyInterface
             'bankmillennium', 'bank millennium sa', 'bank-millennium', 'bank millennium' => self::bankMillennium,
             'bancocomercial', 'banco comercial português, s.a.', 'banco-comercial', 'banco comercial' => self::bancoComercial,
             'anacom' => self::anacom,
+            'arrqw' => self::arrqw,
+            'nextcloud' => self::nextcloud,
+            'rave' => self::rave,
+            'harmaninternationalindustries', 'harman international industries, inc.', 'harman-international-industries', 'harman international industries' => self::harmanInternationalIndustries,
+            'michaelsotnikov', 'michael sotnikov', 'michael-sotnikov' => self::michaelSotnikov,
+            'handelsblattmedia', 'handelsblatt media group gmbh & co. kg', 'handelsblatt-media', 'handelsblatt media' => self::handelsblattMedia,
+            'zalo', 'zalo group' => self::zalo,
+            'cellock', 'cellock ltd' => self::cellock,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6903,6 +6927,10 @@ enum Company: string implements CompanyInterface
             self::bonaFide => 'Bona Fide NGO',
             self::bankMillennium => 'Bank Millennium SA',
             self::bancoComercial => 'Banco Comercial Português, S.A.',
+            self::harmanInternationalIndustries => 'Harman International Industries, Inc.',
+            self::handelsblattMedia => 'Handelsblatt Media Group GmbH & Co. KG',
+            self::zalo => 'Zalo Group',
+            self::cellock => 'Cellock Ltd',
             self::unknown => null,
             default => $this->value,
         };
@@ -7686,6 +7714,9 @@ enum Company: string implements CompanyInterface
             self::bonaFide => 'bona-fide',
             self::bankMillennium => 'bank-millennium',
             self::bancoComercial => 'banco-comercial',
+            self::harmanInternationalIndustries => 'harman-international-industries',
+            self::michaelSotnikov => 'michael-sotnikov',
+            self::handelsblattMedia => 'handelsblatt-media',
             default => $this->name,
         };
     }
