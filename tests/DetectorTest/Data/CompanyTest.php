@@ -12178,6 +12178,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Cellock',
                 'key' => 'cellock',
             ],
+            [
+                'type' => 'Quiche Industries',
+                'name' => 'Quiche Industries',
+                'brandname' => 'Quiche Industries',
+                'key' => 'quiche-industries',
+            ],
         ];
     }
 
