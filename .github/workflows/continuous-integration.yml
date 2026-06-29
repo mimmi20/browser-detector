@@ -133,7 +133,7 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: "actions/checkout@v6"
+        uses: "actions/checkout@v7"
         with:
           # Disabling shallow clone is recommended for improving relevancy of reporting
           fetch-depth: 0
@@ -141,7 +141,7 @@ jobs:
           persist-credentials: false
 
       - name: "Install PHP"
-        uses: "shivammathur/setup-php@2.37.1"
+        uses: "shivammathur/setup-php@2.37.2"
         with:
           php-version: "${{ matrix.php-version }}"
           extensions: "none, phar, json, opcache, ctype, curl, dom, iconv, intl, mbstring, simplexml, tokenizer, xml, xmlwriter"
