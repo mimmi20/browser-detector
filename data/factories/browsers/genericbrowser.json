@@ -1081,7 +1081,7 @@
     "/bbc\\.co\\.uk\\/display\\/men\\/page\\+monitor/i": "bbc-page-monitor",
     "/kaspersky lab content filtering research/i": "kaspersky-content-filtering-research",
     "/cloudflare custom hostname verification/i": "cloudflare-custom-hostname-verification",
-    "/(?<!a)lebrowser|com\\.lenovo\\.browser/i": "lenovo browser",
+    "/(?<![ap])lebrowser|com\\.lenovo\\.browser/i": "lenovo browser",
     "/com\\.meecel\\.feedreader\\.rssdemonad/i": "rss-demon",
     "/com\\.apple\\.invitation-registration/i": "apple-invites",
     "/microb|maemo ?browser|tablet browser/i": "microb",

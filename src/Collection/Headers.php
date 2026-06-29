@@ -740,7 +740,7 @@ final readonly class Headers
                         $lastPlatformCode instanceof \UaData\OsInterface
                         && in_array(
                             $lastPlatformCode,
-                            [\BrowserDetector\Data\Os::fireos, \BrowserDetector\Data\Os::harmonyos, \BrowserDetector\Data\Os::picoOS],
+                            [\BrowserDetector\Data\Os::fireos, \BrowserDetector\Data\Os::harmonyos, \BrowserDetector\Data\Os::picoOS, \BrowserDetector\Data\Os::chromeos],
                             true,
                         )
                     ) {
@@ -765,6 +765,7 @@ final readonly class Headers
                 \BrowserDetector\Data\Os::lineageos => $this->getVersionForLineageOs(),
                 \BrowserDetector\Data\Os::fireos => $this->getVersionForFireOs(),
                 \BrowserDetector\Data\Os::windows => $this->getVersionForWindows(),
+                \BrowserDetector\Data\Os::chromeos => $this->getVersionForChromeOs(),
                 default => $this->getVersionForGeneric($platform, $platformHeader),
             };
 
@@ -961,6 +962,25 @@ final readonly class Headers
             return $fireOsVersion->getVersion($androidVersion ?? '');
         } catch (VersionContainsDerivateException | UnexpectedValueException | NotNumericException) {
             // do nothing
+        }
+
+        return new NullVersion();
+    }
+
+    /** @throws void */
+    private function getVersionForChromeOs(): VersionInterface
+    {
+        $platform = \BrowserDetector\Data\Os::chromeos;
+
+        $headersWithPlatformVersion = array_filter(
+            $this->headers,
+            static fn (HeaderInterface $header): bool => $header->hasPlatformVersion(),
+        );
+
+        $platformHeaderVersion = array_last($headersWithPlatformVersion);
+
+        if ($platformHeaderVersion instanceof HeaderInterface) {
+            return $platformHeaderVersion->getPlatformVersionWithOs($platform);
         }
 
         return new NullVersion();
