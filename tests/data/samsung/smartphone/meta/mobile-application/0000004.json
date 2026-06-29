@@ -999,6 +999,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-G973F Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.74 Mobile Safari/537.36 [FBAN/AudienceNetworkForAndroid;FBSN/Android;FBSV/11;FBAB/com.dopuz.klotski.riddle;FBAV/5.1701;FBBV/51701;FBVS/6.7.0;FBLC/en_GB]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-G973F",
+      "marketingName": "Galaxy S10 (Global)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 3040,
+        "height": 1440,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook Audience Network",
+      "modus": null,
+      "version": "5.1701.0",
+      "manufacturer": "Meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "95.0.4638.74",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; SM-J415F Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.101 Mobile Safari/537.36[FBAN/EMA;FBLC/ar_AR;FBAV/201.0.0.7.119;]"
     },
     "device": {
@@ -2165,6 +2210,96 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "[FBAN/FB4A;FBAV/566.0.0.48.73;FBBV/997672753;FBDM/{density=3.0,width=1080,height=2340};FBLC/de_DE;FBRV/0;FBCR/o2 - de;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-S906B;FBSV/16;FBOP/1;FBCA/arm64-v8a:;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-S906B",
+      "marketingName": "Galaxy S22+ 5G (International)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "566.0.0.48.73",
+      "manufacturer": "Meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 16; SM-A176B Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.107 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/565.0.0.49.74;IABMV/1;] FBNV/500"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A176B",
+      "marketingName": "Galaxy A17 5G (International)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "565.0.0.49.74",
+      "manufacturer": "Meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "149.0.7827.107",
+      "manufacturer": "Google"
     }
   }
 ]
