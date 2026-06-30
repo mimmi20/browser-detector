@@ -57,6 +57,7 @@ use function assert;
 use function explode;
 use function in_array;
 use function is_string;
+use function mb_strtolower;
 use function sprintf;
 
 final readonly class Headers
@@ -174,11 +175,13 @@ final readonly class Headers
         \UaData\EngineInterface $engine,
         string | null $engineCodenameFromClient,
         BrowserInterface $client,
+        string | null $platformName,
     ): EngineInterface {
         $engineHeader   = null;
         $detectedEngine = $engine;
+        $isIos          = mb_strtolower($platformName ?? '') === 'ios';
 
-        if ($engine === \BrowserDetector\Data\Engine::unknown) {
+        if ($engine === \BrowserDetector\Data\Engine::unknown && !$isIos) {
             $headersWithEngineName = array_filter(
                 $this->headers,
                 static fn (HeaderInterface $header): bool => $header->hasEngineCode(),
@@ -248,6 +251,8 @@ final readonly class Headers
 
                     break;
             }
+        } elseif ($isIos) {
+            $detectedEngine = \BrowserDetector\Data\Engine::webkit;
         }
 
         if ($detectedEngine instanceof \UaData\EngineInterface) {
@@ -277,7 +282,7 @@ final readonly class Headers
                         $clientVersion = 0.0;
                     }
 
-                    if ($client->getName() === 'Opera' && (float) $clientVersion < 12.0) {
+                    if (!$isIos && $client->getName() === 'Opera' && (float) $clientVersion < 15.0) {
                         $detectedEngine = \BrowserDetector\Data\Engine::presto;
                         $engineVersion  = $engineVersions['user-agent'];
                     }
@@ -735,7 +740,7 @@ final readonly class Headers
                         $lastPlatformCode instanceof \UaData\OsInterface
                         && in_array(
                             $lastPlatformCode,
-                            [\BrowserDetector\Data\Os::fireos, \BrowserDetector\Data\Os::harmonyos, \BrowserDetector\Data\Os::picoOS],
+                            [\BrowserDetector\Data\Os::fireos, \BrowserDetector\Data\Os::harmonyos, \BrowserDetector\Data\Os::picoOS, \BrowserDetector\Data\Os::chromeos],
                             true,
                         )
                     ) {
@@ -760,6 +765,7 @@ final readonly class Headers
                 \BrowserDetector\Data\Os::lineageos => $this->getVersionForLineageOs(),
                 \BrowserDetector\Data\Os::fireos => $this->getVersionForFireOs(),
                 \BrowserDetector\Data\Os::windows => $this->getVersionForWindows(),
+                \BrowserDetector\Data\Os::chromeos => $this->getVersionForChromeOs(),
                 default => $this->getVersionForGeneric($platform, $platformHeader),
             };
 
@@ -956,6 +962,25 @@ final readonly class Headers
             return $fireOsVersion->getVersion($androidVersion ?? '');
         } catch (VersionContainsDerivateException | UnexpectedValueException | NotNumericException) {
             // do nothing
+        }
+
+        return new NullVersion();
+    }
+
+    /** @throws void */
+    private function getVersionForChromeOs(): VersionInterface
+    {
+        $platform = \BrowserDetector\Data\Os::chromeos;
+
+        $headersWithPlatformVersion = array_filter(
+            $this->headers,
+            static fn (HeaderInterface $header): bool => $header->hasPlatformVersion(),
+        );
+
+        $platformHeaderVersion = array_last($headersWithPlatformVersion);
+
+        if ($platformHeaderVersion instanceof HeaderInterface) {
+            return $platformHeaderVersion->getPlatformVersionWithOs($platform);
         }
 
         return new NullVersion();

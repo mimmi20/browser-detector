@@ -4025,6 +4025,46 @@ enum Company: string implements CompanyInterface
 
     case mdArman = 'Md.Arman';
 
+    case selecy = 'Selecy';
+
+    case ioplee = 'Ioplee';
+
+    case edenwood = 'Edenwood';
+
+    case coles = 'Coles';
+
+    case awox = 'AWOX';
+
+    case elco = 'ELCO';
+
+    case clikon = 'Clikon';
+
+    case bonaFide = 'Bona Fide';
+
+    case bankMillennium = 'Bank Millennium';
+
+    case bancoComercial = 'Banco Comercial';
+
+    case anacom = 'ANACOM';
+
+    case arrqw = 'ARRQW';
+
+    case nextcloud = 'Nextcloud';
+
+    case rave = 'Rave';
+
+    case harmanInternationalIndustries = 'Harman International Industries';
+
+    case michaelSotnikov = 'Michael Sotnikov';
+
+    case handelsblattMedia = 'Handelsblatt Media';
+
+    case zalo = 'Zalo';
+
+    case cellock = 'Cellock';
+
+    case quicheIndustries = 'Quiche Industries';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -6035,6 +6075,26 @@ enum Company: string implements CompanyInterface
             'christopheralbert', 'christopher albert', 'christopher-albert' => self::christopherAlbert,
             'vpntechstudio', 'vpn tech studio inc', 'vpn-tech-studio', 'vpn tech studio' => self::vpnTechStudio,
             'mdarman', 'md.arman', 'md-arman' => self::mdArman,
+            'selecy', 'selecy sas' => self::selecy,
+            'ioplee' => self::ioplee,
+            'edenwood' => self::edenwood,
+            'coles' => self::coles,
+            'awox' => self::awox,
+            'elco' => self::elco,
+            'clikon' => self::clikon,
+            'bonafide', 'bona fide ngo', 'bona-fide', 'bona fide' => self::bonaFide,
+            'bankmillennium', 'bank millennium sa', 'bank-millennium', 'bank millennium' => self::bankMillennium,
+            'bancocomercial', 'banco comercial português, s.a.', 'banco-comercial', 'banco comercial' => self::bancoComercial,
+            'anacom' => self::anacom,
+            'arrqw' => self::arrqw,
+            'nextcloud' => self::nextcloud,
+            'rave' => self::rave,
+            'harmaninternationalindustries', 'harman international industries, inc.', 'harman-international-industries', 'harman international industries' => self::harmanInternationalIndustries,
+            'michaelsotnikov', 'michael sotnikov', 'michael-sotnikov' => self::michaelSotnikov,
+            'handelsblattmedia', 'handelsblatt media group gmbh & co. kg', 'handelsblatt-media', 'handelsblatt media' => self::handelsblattMedia,
+            'zalo', 'zalo group' => self::zalo,
+            'cellock', 'cellock ltd' => self::cellock,
+            'quicheindustries', 'quiche industries', 'quiche-industries' => self::quicheIndustries,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6866,6 +6926,14 @@ enum Company: string implements CompanyInterface
             self::yelp => 'Yelp, Inc.',
             self::deepinTechnology => 'Deepin Technology Co., Ltd.',
             self::vpnTechStudio => 'VPN Tech Studio Inc',
+            self::selecy => 'Selecy SAS',
+            self::bonaFide => 'Bona Fide NGO',
+            self::bankMillennium => 'Bank Millennium SA',
+            self::bancoComercial => 'Banco Comercial Português, S.A.',
+            self::harmanInternationalIndustries => 'Harman International Industries, Inc.',
+            self::handelsblattMedia => 'Handelsblatt Media Group GmbH & Co. KG',
+            self::zalo => 'Zalo Group',
+            self::cellock => 'Cellock Ltd',
             self::unknown => null,
             default => $this->value,
         };
@@ -7646,6 +7714,13 @@ enum Company: string implements CompanyInterface
             self::christopherAlbert => 'christopher-albert',
             self::vpnTechStudio => 'vpn-tech-studio',
             self::mdArman => 'md-arman',
+            self::bonaFide => 'bona-fide',
+            self::bankMillennium => 'bank-millennium',
+            self::bancoComercial => 'banco-comercial',
+            self::harmanInternationalIndustries => 'harman-international-industries',
+            self::michaelSotnikov => 'michael-sotnikov',
+            self::handelsblattMedia => 'handelsblatt-media',
+            self::quicheIndustries => 'quiche-industries',
             default => $this->name,
         };
     }

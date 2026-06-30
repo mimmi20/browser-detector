@@ -689,8 +689,10 @@
     "manufacturer": "surf-shark",
     "type": "mobile-application",
     "version": {
-      "factory": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SurfsharkAndroid"
+      ]
     },
     "engine": "unknown"
   },
@@ -779,8 +781,10 @@
     "manufacturer": "hago",
     "type": "mobile-application",
     "version": {
-      "factory": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "hago-and"
+      ]
     },
     "engine": "unknown"
   },
@@ -2115,7 +2119,8 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "BingSapphire"
+        "BingSapphire",
+        "Sapphire"
       ]
     },
     "engine": null
@@ -2409,7 +2414,8 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "com\\.google\\.ios\\.youtube"
+        "com\\.google\\.ios\\.youtube",
+        "YouTube"
       ]
     },
     "engine": null
@@ -4183,21 +4189,9 @@
     },
     "engine": "unknown"
   },
-  "imo-international-calls-chat": {
-    "name": "IMO International Calls & Chat",
-    "manufacturer": "imo",
-    "type": "mobile-application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "imoAndroid"
-      ]
-    },
-    "engine": "unknown"
-  },
   "zalo": {
     "name": "Zalo",
-    "manufacturer": "unknown",
+    "manufacturer": "zalo",
     "type": "mobile-application",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -5466,5 +5460,248 @@
       ]
     },
     "engine": null
+  },
+  "trace-pal": {
+    "name": "TracePal",
+    "manufacturer": "bona-fide",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "tracepal\\.app",
+        "tracepal"
+      ]
+    },
+    "engine": null
+  },
+  "top-secret-chat": {
+    "name": "TopSecret Chat",
+    "manufacturer": "bona-fide",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "topsecret\\.chat"
+      ]
+    },
+    "engine": null
+  },
+  "bank-millennium": {
+    "name": "Bank Millennium",
+    "manufacturer": "bank-millennium",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "millennium-empresas": {
+    "name": "Millennium Empresas",
+    "manufacturer": "banco-comercial",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "mbolsa": {
+    "name": "MBolsa",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "net-mede": {
+    "name": "NET.mede",
+    "manufacturer": "anacom",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "google-tag-manager": {
+    "name": "Google Tag Manager",
+    "manufacturer": "google",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GoogleTagManager"
+      ]
+    },
+    "engine": null
+  },
+  "blackboard-app": {
+    "name": "Blackboard",
+    "manufacturer": "anthology",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Blackboard"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "imo-international-calls-chat": {
+    "name": "IMO International Calls & Chat",
+    "manufacturer": "imo",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "imoAndroid"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "imo-hd-video-calls-chat": {
+    "name": "IMO HD Video Calls & Chat",
+    "manufacturer": "imo",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "imoAndroid"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "facebook-audience-network": {
+    "name": "Facebook Audience Network",
+    "manufacturer": "meta",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "FBAV"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "nextcloud": {
+    "name": "Nextcloud",
+    "manufacturer": "nextcloud",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Nextcloud-android"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "rave-social": {
+    "name": "Rave Social",
+    "manufacturer": "rave",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RaveSocial"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ali-express": {
+    "name": "AliExpress",
+    "manufacturer": "alibaba",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AliexpressAndroid",
+        "Aliexpress"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "odnoklassniki": {
+    "name": "Odnoklassniki",
+    "manufacturer": "vk",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "OKAndroid",
+        "OKiOS"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "wirtschafts-woche": {
+    "name": "WirtschaftsWoche",
+    "manufacturer": "handelsblatt-media",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WirtschaftsWoche-iOS-"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "whisper": {
+    "name": "Whisper",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "wh-questions": {
+    "name": "WH Questions",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WH Questions"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "show-me": {
+    "name": "ShowMe",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ShowMe"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "sport1": {
+    "name": "SPORT1",
+    "manufacturer": "cellock",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "shopee": {
+    "name": "Shopee",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ShopeeVN"
+      ]
+    },
+    "engine": "unknown"
   }
 }

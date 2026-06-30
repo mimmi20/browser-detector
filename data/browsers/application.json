@@ -736,6 +736,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "Pinterest for Android Tablet",
         "Pinterest for iOS",
         "Pinterest"
       ]
@@ -1872,6 +1873,18 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "OneDrive for Business"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "publisher": {
+    "name": "Publisher",
+    "manufacturer": "microsoft",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Publisher"
       ]
     },
     "engine": "unknown"

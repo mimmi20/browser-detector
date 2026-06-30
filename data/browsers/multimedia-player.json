@@ -1863,5 +1863,29 @@
       ]
     },
     "engine": null
+  },
+  "aha-radio-2": {
+    "name": "Aha Radio 2",
+    "manufacturer": "harman-international-industries",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AhaRadio2"
+      ]
+    },
+    "engine": null
+  },
+  "tvirl": {
+    "name": "TVirl",
+    "manufacturer": "michael-sotnikov",
+    "type": "multimedia-player",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TVirl"
+      ]
+    },
+    "engine": null
   }
 }

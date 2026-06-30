@@ -979,7 +979,7 @@
     "client": {
       "name": "Bing Search",
       "modus": null,
-      "version": null,
+      "version": "23.3.401205602",
       "manufacturer": "Microsoft",
       "type": "mobile-application",
       "isbot": false,
@@ -1033,6 +1033,52 @@
     "engine": {
       "name": "Blink",
       "version": "148.0.7778.215",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.microsoft.bingintl",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; CTR-L81 Build/HUAWEICTR-L81; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.196 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CTR-L81",
+      "marketingName": "Nova 12i",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2388,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Bing Search",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Microsoft",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.5735.196",
       "manufacturer": "Google"
     }
   }

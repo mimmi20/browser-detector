@@ -179,6 +179,7 @@ final readonly class Detector implements DetectorInterface
             engine: $engineCodename,
             engineCodenameFromClient: $clientData->getEngine(),
             client: $client,
+            platformName: $platformName,
         );
 
         $architecture = $headerCollection->getDeviceArchitecture();

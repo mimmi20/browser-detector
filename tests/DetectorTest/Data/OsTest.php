@@ -1645,6 +1645,14 @@ final class OsTest extends TestCase
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Deepin']],
                 'key' => 'deepin',
             ],
+            [
+                'type' => 'KolibriOS',
+                'name' => 'KolibriOS',
+                'marketingName' => 'KolibriOS',
+                'manufacturer' => Company::unknown,
+                'version' => ['factory' => null, 'search' => null],
+                'key' => 'kolibri-os',
+            ],
         ];
     }
 }

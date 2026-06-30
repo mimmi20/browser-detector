@@ -419,6 +419,8 @@ enum Os: string implements OsInterface
 
     case deepin = 'Deepin';
 
+    case kolibriOS = 'KolibriOS';
+
     /**
      * @throws void
      *
@@ -620,6 +622,7 @@ enum Os: string implements OsInterface
             'minix' => self::minix,
             'plan9', 'plan 9', 'plan-9' => self::plan9,
             'deepin' => self::deepin,
+            'kolibrios', 'kolibri-os' => self::kolibriOS,
             default => self::unknown,
         };
     }
@@ -1016,6 +1019,7 @@ enum Os: string implements OsInterface
             self::androidGo => 'android-go',
             self::nuttX => 'nuttx',
             self::plan9 => 'plan-9',
+            self::kolibriOS => 'kolibri-os',
             default => $this->name,
         };
     }

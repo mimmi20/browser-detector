@@ -2904,7 +2904,7 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "OPR",
-        "Version",
+        "Opera\\/9\\.80.*Version",
         "Opera"
       ]
     },
@@ -2945,7 +2945,7 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "OPR",
-        "Version",
+        "Opera\\/9\\.80.*Version",
         "Opera",
         "Opera Mobi"
       ]
@@ -6950,6 +6950,26 @@
   "desi-browser-4g": {
     "name": "Desi Browser 4G",
     "manufacturer": "md-arman",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "lightpanda": {
+    "name": "Lightpanda",
+    "manufacturer": "selecy",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "quiche-browser": {
+    "name": "Quiche Browser",
+    "manufacturer": "quiche-industries",
     "type": "browser",
     "version": {
       "factory": null,
