@@ -780,7 +780,7 @@ enum Os: string implements OsInterface
             self::wyderos => ['factory' => VersionBuilderFactory::class, 'search' => ['WyderOS']],
             self::yi => ['factory' => VersionBuilderFactory::class, 'search' => ['Yi']],
             self::harmonyos => ['factory' => VersionBuilderFactory::class, 'search' => ['HarmonyOS']],
-            self::harmonyosNext => ['factory' => VersionBuilderFactory::class, 'search' => ['(?:HarmonyOS|hmos.+OpenHarmony)[-/ ]']],
+            self::harmonyosNext => ['factory' => VersionBuilderFactory::class, 'search' => ['(?:HarmonyOS|hmos.+OpenHarmony)[-\/ ]']],
             self::pardus => ['factory' => VersionBuilderFactory::class, 'search' => ['Pardus']],
             self::risingos => ['factory' => VersionBuilderFactory::class, 'search' => ['RisingOS']],
             self::blackpantheros => ['factory' => VersionBuilderFactory::class, 'search' => ['blackPanther OS']],

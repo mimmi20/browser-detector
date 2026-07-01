@@ -1571,7 +1571,7 @@ final class OsTest extends TestCase
                 'name' => 'HarmonyOS NEXT',
                 'marketingName' => 'HarmonyOS NEXT',
                 'manufacturer' => Company::huawei,
-                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['(?:HarmonyOS|hmos.+OpenHarmony)[-/ ]']],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['(?:HarmonyOS|hmos.+OpenHarmony)[-\/ ]']],
                 'key' => 'harmony-os-next',
             ],
             [

@@ -37,6 +37,10 @@ final readonly class Ubuntu implements VersionFactoryInterface
     #[Override]
     public function detectVersion(string $useragent): VersionInterface
     {
+        if (preg_match('/ubuntu[\/ \-]feisty/i', $useragent, $matches)) {
+            return $this->versionBuilder->set('7.04.0');
+        }
+
         if (
             preg_match('/ubuntu[\/ \-](?<version>\d{1,2}\.\d+)/i', $useragent, $matches)
             && array_key_exists('version', $matches)
