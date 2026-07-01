@@ -12184,6 +12184,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Quiche Industries',
                 'key' => 'quiche-industries',
             ],
+            [
+                'type' => 'Essentiel B',
+                'name' => 'Essentiel B',
+                'brandname' => 'Essentiel B',
+                'key' => 'essentiel-b',
+            ],
         ];
     }
 

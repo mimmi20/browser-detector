@@ -27,6 +27,7 @@ use BrowserDetector\Version\RimOsFactory;
 use BrowserDetector\Version\SmartisanOsFactory;
 use BrowserDetector\Version\UbuntuFactory;
 use BrowserDetector\Version\VersionBuilderFactory;
+use BrowserDetector\Version\WebosFactory;
 use BrowserDetector\Version\WindowsMobileOsFactory;
 use BrowserDetector\Version\WindowsPhoneOsFactory;
 use PHPUnit\Framework\Attributes\CoversClass;
@@ -498,7 +499,7 @@ final class OsTest extends TestCase
                 'name' => 'lg webOS',
                 'marketingName' => 'lg webOS',
                 'manufacturer' => Company::lg,
-                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Web0S', 'WEBOS']],
+                'version' => ['factory' => WebosFactory::class, 'search' => null],
                 'key' => 'lgwebos',
             ],
             [
@@ -1098,7 +1099,7 @@ final class OsTest extends TestCase
                 'name' => 'webOS',
                 'marketingName' => 'webOS',
                 'manufacturer' => Company::hp,
-                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['WebOS', 'webOS', 'hpwOS']],
+                'version' => ['factory' => WebosFactory::class, 'search' => null],
                 'key' => 'webos',
             ],
             [
