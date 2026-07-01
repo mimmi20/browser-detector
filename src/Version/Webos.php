@@ -19,7 +19,7 @@ use Override;
 use function array_key_exists;
 use function preg_match;
 
-final readonly class Ubuntu implements VersionFactoryInterface
+final readonly class Webos implements VersionFactoryInterface
 {
     /** @throws void */
     public function __construct(private VersionBuilderInterface $versionBuilder)
@@ -37,15 +37,31 @@ final readonly class Ubuntu implements VersionFactoryInterface
     #[Override]
     public function detectVersion(string $useragent): VersionInterface
     {
-        if (preg_match('/ubuntu[\/ \-]feisty/i', $useragent, $matches)) {
-            return $this->versionBuilder->set('7.04.0');
-        }
-
         if (
-            preg_match('/ubuntu[\/ \-](?<version>\d{1,2}\.\d+)/i', $useragent, $matches)
+            preg_match('/(?:webos|hpwos)\/(?<version>\d+[.\d]+)/i', $useragent, $matches)
             && array_key_exists('version', $matches)
         ) {
             return $this->versionBuilder->set($matches['version']);
+        }
+
+        $versions = [
+            26 => '/web0s; linux\/smarttv.+chr[o0]me\/132/i',
+            25 => '/web0s; linux\/smarttv.+chr[o0]me\/120/i',
+            24 => '/web0s; linux\/smarttv.+chr[o0]me\/108/i',
+            23 => '/web0s; linux\/smarttv.+chr[o0]me\/94/i',
+            22 => '/web0s; linux\/smarttv.+chr[o0]me\/87/i',
+            6 => '/web0s; linux\/smarttv.+chr[o0]me\/79/i',
+            5 => '/web0s; linux\/smarttv.+chr[o0]me\/68/i',
+            4 => '/web0s; linux\/smarttv.+chr[o0]me\/53/i',
+            3 => '/web0s; linux\/smarttv.+chr[o0]me\/38/i',
+            2 => '/web0s; linux\/smarttv.+safari\/538/i',
+            1 => '/webos1|web0s; linux\/smarttv.+safari\/537/i',
+        ];
+
+        foreach ($versions as $version => $regex) {
+            if (preg_match($regex, $useragent)) {
+                return $this->versionBuilder->set((string) $version);
+            }
         }
 
         return new NullVersion();

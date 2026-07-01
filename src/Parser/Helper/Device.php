@@ -97,6 +97,7 @@ final class Device implements DeviceInterface
             'lg v60' => 'lg=lg v60',
             'lg-d333' => 'lg=lg d333',
             'lg-d295' => 'lg=lg d295',
+            'lg spirit 4g lte' => 'lg=lg spirit 4g lte',
             // Acer
             'a100' => 'acer=acer a100',
             'a1-734' => 'acer=acer a1-734',
@@ -1436,6 +1437,7 @@ final class Device implements DeviceInterface
             'redmi 8a pro' => 'xiaomi=xiaomi redmi 8a pro',
             'redmi 8a dual' => 'xiaomi=xiaomi redmi 8a dual',
             '2510dpc44g' => 'xiaomi=xiaomi 2510dpc44g',
+            'mi 14 ultra' => 'xiaomi=xiaomi mi 14 ultra',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',

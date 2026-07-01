@@ -119,6 +119,7 @@ final class DeviceTest extends TestCase
             ['LG V60', 'lg=lg v60'],
             ['LG-D333', 'lg=lg d333'],
             ['LG-D295', 'lg=lg d295'],
+            ['LG Spirit 4G LTE', 'lg=lg spirit 4g lte'],
             // Acer
             ['A100', 'acer=acer a100'],
             ['B1-860A', 'acer=acer b1-860a'],
@@ -1492,6 +1493,7 @@ final class DeviceTest extends TestCase
             ['Redmi 8A Pro', 'xiaomi=xiaomi redmi 8a pro'],
             ['Redmi 8A Dual', 'xiaomi=xiaomi redmi 8a dual'],
             ['2510DPC44G', 'xiaomi=xiaomi 2510dpc44g'],
+            ['Mi 14 Ultra', 'xiaomi=xiaomi mi 14 ultra'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],

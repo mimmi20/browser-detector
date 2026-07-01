@@ -204,6 +204,7 @@ final class MobileDeviceTest extends TestCase
             ['Amoi 8512/R18.0 NF-Browser/3.3'],
             ['Echo/1.0(APNG)'],
             ['ios/14.8 com.paint.bynumber/2.72.0'],
+            ['Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 (Ecosia android@148.0.0.0)'],
         ];
     }
 

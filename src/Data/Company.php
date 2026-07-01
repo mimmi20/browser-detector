@@ -4065,6 +4065,8 @@ enum Company: string implements CompanyInterface
 
     case quicheIndustries = 'Quiche Industries';
 
+    case essentielB = 'Essentiel B';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -6095,6 +6097,7 @@ enum Company: string implements CompanyInterface
             'zalo', 'zalo group' => self::zalo,
             'cellock', 'cellock ltd' => self::cellock,
             'quicheindustries', 'quiche industries', 'quiche-industries' => self::quicheIndustries,
+            'essentielb', 'essentiel-b', 'essentiel b' => self::essentielB,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -7721,6 +7724,7 @@ enum Company: string implements CompanyInterface
             self::michaelSotnikov => 'michael-sotnikov',
             self::handelsblattMedia => 'handelsblatt-media',
             self::quicheIndustries => 'quiche-industries',
+            self::essentielB => 'essentiel-b',
             default => $this->name,
         };
     }

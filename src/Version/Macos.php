@@ -31,7 +31,7 @@ final readonly class Macos implements VersionFactoryInterface
     public const array SEARCHES = [
         'Mac OS X Version',
         'Mac OS X v',
-        'Mac ?OS ?X 10_15_7.+Version',
+        'Mac ?OS ?X 15_7.+Version',
         'Mac ?OS ?X',
         '(?<!for )OS X',
         'os=mac ',

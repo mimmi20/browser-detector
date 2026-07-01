@@ -25,6 +25,7 @@ use BrowserDetector\Version\RimOsFactory;
 use BrowserDetector\Version\SmartisanOsFactory;
 use BrowserDetector\Version\UbuntuFactory;
 use BrowserDetector\Version\VersionBuilderFactory;
+use BrowserDetector\Version\WebosFactory;
 use BrowserDetector\Version\WindowsMobileOsFactory;
 use BrowserDetector\Version\WindowsPhoneOsFactory;
 use Override;
@@ -775,11 +776,11 @@ enum Os: string implements OsInterface
             self::openbsd => ['factory' => VersionBuilderFactory::class, 'search' => ['OpenBSD']],
             self::riscos => ['factory' => VersionBuilderFactory::class, 'search' => ['RISC OS-NC', 'RISC OS', 'RISC']],
             self::unix => ['factory' => VersionBuilderFactory::class, 'search' => ['Unix OS', 'Unix']],
-            self::lgwebos => ['factory' => VersionBuilderFactory::class, 'search' => ['Web0S', 'WEBOS']],
+            self::lgwebos, self::webos => ['factory' => WebosFactory::class, 'search' => null],
             self::wyderos => ['factory' => VersionBuilderFactory::class, 'search' => ['WyderOS']],
             self::yi => ['factory' => VersionBuilderFactory::class, 'search' => ['Yi']],
             self::harmonyos => ['factory' => VersionBuilderFactory::class, 'search' => ['HarmonyOS']],
-            self::harmonyosNext => ['factory' => VersionBuilderFactory::class, 'search' => ['(?:HarmonyOS|hmos.+OpenHarmony)[-/ ]']],
+            self::harmonyosNext => ['factory' => VersionBuilderFactory::class, 'search' => ['(?:HarmonyOS|hmos.+OpenHarmony)[-\/ ]']],
             self::pardus => ['factory' => VersionBuilderFactory::class, 'search' => ['Pardus']],
             self::risingos => ['factory' => VersionBuilderFactory::class, 'search' => ['RisingOS']],
             self::blackpantheros => ['factory' => VersionBuilderFactory::class, 'search' => ['blackPanther OS']],
@@ -800,7 +801,6 @@ enum Os: string implements OsInterface
             self::freebsd => ['factory' => VersionBuilderFactory::class, 'search' => ['FreeBSD', 'freebsd']],
             self::openvms => ['factory' => VersionBuilderFactory::class, 'search' => ['OpenVMS V', 'OpenVMS']],
             self::tru64unix => ['factory' => VersionBuilderFactory::class, 'search' => ['Tru64 UNIX', 'Digital Unix']],
-            self::webos => ['factory' => VersionBuilderFactory::class, 'search' => ['WebOS', 'webOS', 'hpwOS']],
             self::kaios => ['factory' => VersionBuilderFactory::class, 'search' => ['kaios']],
             self::kubuntu => ['factory' => VersionBuilderFactory::class, 'search' => ['Kubuntu', 'kubuntu']],
             self::ubuntu, self::ubuntuTouch => ['factory' => UbuntuFactory::class, 'search' => null],
