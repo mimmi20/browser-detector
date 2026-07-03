@@ -5703,5 +5703,45 @@
       ]
     },
     "engine": "unknown"
+  },
+  "citrix-vpn": {
+    "name": "Citrix VPN",
+    "manufacturer": "citrix",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "CitrixVPN"
+      ]
+    },
+    "engine": null
+  },
+  "citrix-workspace": {
+    "name": "Citrix Workspace",
+    "manufacturer": "citrix",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Citrix Workspace",
+        "CitrixReceiver",
+        "CitrixViewer",
+        "CWAWEBVIEW",
+        "CWA"
+      ]
+    },
+    "engine": null
+  },
+  "general-motors": {
+    "name": "General Motors",
+    "manufacturer": "general-motors",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GM-Android"
+      ]
+    },
+    "engine": null
   }
 }

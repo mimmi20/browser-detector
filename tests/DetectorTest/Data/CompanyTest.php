@@ -3786,7 +3786,7 @@ final class CompanyTest extends TestCase
             ],
             [
                 'type' => 'Citrix',
-                'name' => 'Citrix',
+                'name' => 'Citrix Systems, Inc.',
                 'brandname' => 'Citrix',
                 'key' => 'citrix',
             ],
@@ -12189,6 +12189,24 @@ final class CompanyTest extends TestCase
                 'name' => 'Essentiel B',
                 'brandname' => 'Essentiel B',
                 'key' => 'essentiel-b',
+            ],
+            [
+                'type' => 'Bomix',
+                'name' => 'Bomix',
+                'brandname' => 'Bomix',
+                'key' => 'bomix',
+            ],
+            [
+                'type' => 'Idea',
+                'name' => 'Idea',
+                'brandname' => 'Idea',
+                'key' => 'idea',
+            ],
+            [
+                'type' => 'General Motors',
+                'name' => 'General Motors',
+                'brandname' => 'General Motors',
+                'key' => 'general-motors',
             ],
         ];
     }

@@ -1569,6 +1569,7 @@ final class Device implements DeviceInterface
             'n9519' => 'zte=zte n9519',
             'z2468n' => 'zte=zte z2468n',
             'z2459' => 'zte=zte z2459',
+            'zte blade a7s' => 'zte=zte blade a7s',
             // Samsung
             'sm-a505fn', 'samsung sm-a505fn' => 'samsung=samsung sm-a505fn',
             'sm-a515f', 'samsung sm-a515f', 'sm-a515f/a515fxxu8hwi1' => 'samsung=samsung sm-a515f',

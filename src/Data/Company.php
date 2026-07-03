@@ -4067,6 +4067,12 @@ enum Company: string implements CompanyInterface
 
     case essentielB = 'Essentiel B';
 
+    case bomix = 'Bomix';
+
+    case idea = 'Idea';
+
+    case generalMotors = 'General Motors';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -4696,7 +4702,7 @@ enum Company: string implements CompanyInterface
             'globalmediaentertainment', 'global media & entertainment', 'global-media-entertainment' => self::globalMediaEntertainment,
             'kajabi' => self::kajabi,
             'iheartmedia', 'iheartmedia management services, inc.', 'iheart-media' => self::iHeartMedia,
-            'citrix' => self::citrix,
+            'citrix', 'citrix systems, inc.' => self::citrix,
             'vaporware' => self::vaporware,
             'netscape' => self::netscape,
             'oregan', 'oregan networks ltd' => self::oregan,
@@ -6098,6 +6104,9 @@ enum Company: string implements CompanyInterface
             'cellock', 'cellock ltd' => self::cellock,
             'quicheindustries', 'quiche industries', 'quiche-industries' => self::quicheIndustries,
             'essentielb', 'essentiel-b', 'essentiel b' => self::essentielB,
+            'bomix' => self::bomix,
+            'idea' => self::idea,
+            'generalmotors', 'general motors', 'general-motors' => self::generalMotors,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6937,6 +6946,7 @@ enum Company: string implements CompanyInterface
             self::handelsblattMedia => 'Handelsblatt Media Group GmbH & Co. KG',
             self::zalo => 'Zalo Group',
             self::cellock => 'Cellock Ltd',
+            self::citrix => 'Citrix Systems, Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -7725,6 +7735,7 @@ enum Company: string implements CompanyInterface
             self::handelsblattMedia => 'handelsblatt-media',
             self::quicheIndustries => 'quiche-industries',
             self::essentielB => 'essentiel-b',
+            self::generalMotors => 'general-motors',
             default => $this->name,
         };
     }

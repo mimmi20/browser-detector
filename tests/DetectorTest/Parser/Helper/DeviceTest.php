@@ -1638,6 +1638,7 @@ final class DeviceTest extends TestCase
             ['N9519', 'zte=zte n9519'],
             ['Z2468N', 'zte=zte z2468n'],
             ['Z2459', 'zte=zte z2459'],
+            ['ZTE Blade A7s', 'zte=zte blade a7s'],
             // Samsung
             ['SM-A415F', 'samsung=samsung sm-a415f'],
             ['SM-A505FN', 'samsung=samsung sm-a505fn'],
