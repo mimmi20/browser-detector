@@ -81,68 +81,68 @@ final class SecChUaTest extends TestCase
         );
         self::assertFalse(
             $header->hasDeviceArchitecture(),
-            sprintf('device info mismatch for ua "%s"', $ua),
+            sprintf('device arch info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             Architecture::unknown,
             $header->getDeviceArchitecture(),
-            sprintf('device info mismatch for ua "%s"', $ua),
+            sprintf('device arch info mismatch for ua "%s"', $ua),
         );
         self::assertFalse(
             $header->hasDeviceBitness(),
-            sprintf('device info mismatch for ua "%s"', $ua),
+            sprintf('device bits info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             Bits::unknown,
             $header->getDeviceBitness(),
-            sprintf('device info mismatch for ua "%s"', $ua),
+            sprintf('device bits info mismatch for ua "%s"', $ua),
         );
         self::assertFalse(
             $header->hasDeviceIsMobile(),
-            sprintf('device info mismatch for ua "%s"', $ua),
+            sprintf('device mobile info mismatch for ua "%s"', $ua),
         );
         self::assertNull(
             $header->getDeviceIsMobile(),
-            sprintf('device info mismatch for ua "%s"', $ua),
+            sprintf('device mobile info mismatch for ua "%s"', $ua),
         );
-        self::assertFalse($header->hasDeviceCode(), sprintf('device info mismatch for ua "%s"', $ua));
+        self::assertFalse($header->hasDeviceCode(), sprintf('device code info mismatch for ua "%s"', $ua));
         self::assertNull(
             $header->getDeviceCode(),
-            sprintf('device info mismatch for ua "%s"', $ua),
+            sprintf('device code info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             $hasClientCode,
             $header->hasClientCode(),
-            sprintf('browser info mismatch for ua "%s"', $ua),
+            sprintf('browser code info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             $clientCode,
             $header->getClientCode(),
-            sprintf('browser info mismatch for ua "%s"', $ua),
+            sprintf('browser code info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             $hasClientVersion,
             $header->hasClientVersion(),
-            sprintf('browser info mismatch for ua "%s"', $ua),
+            sprintf('browser version info mismatch for ua "%s"', $ua),
         );
 
         if ($clientVersion === null) {
             self::assertInstanceOf(
                 ForcedNullVersion::class,
                 $header->getClientVersion(),
-                sprintf('browser info mismatch for ua "%s"', $ua),
+                sprintf('browser version info mismatch for ua "%s"', $ua),
             );
         } else {
             self::assertSame(
                 $clientVersion,
                 $header->getClientVersion()->getVersion(),
-                sprintf('browser info mismatch for ua "%s"', $ua),
+                sprintf('browser version info mismatch for ua "%s"', $ua),
             );
         }
 
         self::assertFalse(
             $header->hasPlatformCode(),
-            sprintf('platform info mismatch for ua "%s"', $ua),
+            sprintf('platform code info mismatch for ua "%s"', $ua),
         );
 
         try {
@@ -155,31 +155,31 @@ final class SecChUaTest extends TestCase
 
         self::assertFalse(
             $header->hasPlatformVersion(),
-            sprintf('platform info mismatch for ua "%s"', $ua),
+            sprintf('platform version info mismatch for ua "%s"', $ua),
         );
 
         self::assertInstanceOf(
             NullVersion::class,
             $header->getPlatformVersionWithOs(Os::unknown),
-            sprintf('platform info mismatch for ua "%s"', $ua),
+            sprintf('platform version info mismatch for ua "%s"', $ua),
         );
 
         self::assertSame(
             $hasEngineInfo,
             $header->hasEngineCode(),
-            sprintf('engine info mismatch for ua "%s"', $ua),
+            sprintf('engine code info mismatch for ua "%s"', $ua),
         );
 
         self::assertSame(
             $engineCode,
             $header->getEngineCode(),
-            sprintf('engine info mismatch for ua "%s"', $ua),
+            sprintf('engine code info mismatch for ua "%s"', $ua),
         );
 
         self::assertSame(
             $hasEngineVersion,
             $header->hasEngineVersion(),
-            sprintf('engine info mismatch for ua "%s"', $ua),
+            sprintf('engine version info mismatch for ua "%s"', $ua),
         );
 
         if ($engineVersion === null) {
@@ -187,20 +187,20 @@ final class SecChUaTest extends TestCase
                 self::assertInstanceOf(
                     NullVersion::class,
                     $header->getEngineVersionWithEngine(Engine::unknown),
-                    sprintf('engine info mismatch for ua "%s"', $ua),
+                    sprintf('engine version info mismatch for ua "%s"', $ua),
                 );
             } else {
                 self::assertInstanceOf(
                     ForcedNullVersion::class,
                     $header->getEngineVersionWithEngine(Engine::unknown),
-                    sprintf('engine info mismatch for ua "%s"', $ua),
+                    sprintf('engine version info mismatch for ua "%s"', $ua),
                 );
             }
         } else {
             self::assertSame(
                 $engineVersion,
                 $header->getEngineVersionWithEngine(Engine::unknown)->getVersion(),
-                sprintf('engine info mismatch for ua "%s"', $ua),
+                sprintf('engine version info mismatch for ua "%s"', $ua),
             );
         }
     }
@@ -291,6 +291,7 @@ final class SecChUaTest extends TestCase
             ['"Chromium";v="116.0.5845.96", "Not)A;Brand";v="24.0.0.0", "Hola";v="116.0.5845.96"', true, 'hola', true, '116.0.5845.96', true, Engine::blink, true, '116.0.5845.96'],
             ['"Chromium";v="116.0.5845.96", "Not)A;Brand";v="24.0.0.0", "power";v="116.0.5845.96"', true, 'power', true, '116.0.5845.96', true, Engine::blink, true, '116.0.5845.96'],
             ['"Not.A/Brand";v="99", "PrivateBrowsing";v="136"', true, 'private-browsing', true, '136.0.0', true, Engine::blink, true, '136.0.0'],
+            ['"Lightpanda";v="1"', true, 'lightpanda', true, '1.0.0', true, Engine::blink, false, null],
         ];
     }
 }

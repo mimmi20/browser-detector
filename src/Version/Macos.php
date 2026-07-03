@@ -31,7 +31,6 @@ final readonly class Macos implements VersionFactoryInterface
     public const array SEARCHES = [
         'Mac OS X Version',
         'Mac OS X v',
-        'Mac ?OS ?X 15_7.+Version',
         'Mac ?OS ?X',
         '(?<!for )OS X',
         'os=mac ',
@@ -259,6 +258,20 @@ final readonly class Macos implements VersionFactoryInterface
                 } catch (NotNumericException) {
                     return new NullVersion();
                 }
+            }
+        }
+
+        $doMatch = preg_match(
+            '/Mac OS X 10_15_7.+Version\/(?P<version>2[67][.\d]+)/i',
+            $useragent,
+            $matches,
+        );
+
+        if ($doMatch) {
+            try {
+                return $this->versionBuilder->set($matches['version']);
+            } catch (NotNumericException) {
+                // do nothing
             }
         }
 

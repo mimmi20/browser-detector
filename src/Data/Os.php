@@ -840,7 +840,7 @@ enum Os: string implements OsInterface
             self::linspire => ['factory' => VersionBuilderFactory::class, 'search' => ['Linspire']],
             self::aosp, self::androidtv, self::androidGo => ['factory' => VersionBuilderFactory::class, 'search' => ['Andr[o0]id']],
             self::hpux => ['factory' => VersionBuilderFactory::class, 'search' => ['HP-UX']],
-            self::whaleOS => ['factory' => VersionBuilderFactory::class, 'search' => ['WH\/', 'WhaleTV']],
+            self::whaleOS => ['factory' => VersionBuilderFactory::class, 'search' => ['WH\/', 'WhaleTV', 'WH']],
             self::series60 => ['factory' => VersionBuilderFactory::class, 'search' => ['Series ?60', 'S60 ?V']],
             self::operaTv => ['factory' => VersionBuilderFactory::class, 'search' => ['TV Store']],
             self::qtopia => ['factory' => VersionBuilderFactory::class, 'search' => ['Qtopia']],

@@ -32,7 +32,19 @@ final class SecChUaEngineVersion implements EngineVersionInterface
     #[Override]
     public function hasEngineVersion(string $value): bool
     {
-        return $this->sortForEngine($value) !== [];
+        $list = $this->sortForEngine($value);
+
+        if ($list === []) {
+            return false;
+        }
+
+        $key  = array_key_first($list);
+        $code = mb_strtolower($key ?? '');
+
+        return match ($code) {
+            'lightpanda' => false,
+            default => true,
+        };
     }
 
     /**
@@ -55,6 +67,7 @@ final class SecChUaEngineVersion implements EngineVersionInterface
         $code = mb_strtolower($key ?? '');
 
         return match ($code) {
+            'lightpanda' => new ForcedNullVersion(),
             default => $this->setVersion($version),
         };
     }

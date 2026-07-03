@@ -1435,7 +1435,7 @@ final class OsTest extends TestCase
                 'name' => 'Whale OS',
                 'marketingName' => 'Whale OS',
                 'manufacturer' => Company::whaleTV,
-                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['WH\/', 'WhaleTV']],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['WH\/', 'WhaleTV', 'WH']],
                 'key' => 'whale-os',
             ],
             [

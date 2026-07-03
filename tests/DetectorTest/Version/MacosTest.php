@@ -200,6 +200,10 @@ final class MacosTest extends TestCase
                 'Mozilla/5.0 (Mac OSX 7.1) AppleWebKit/931.66 (KHTML, like Gecko) Chrome/14.2.1335.173 Safari/931.66',
                 '7.1.0',
             ],
+            [
+                'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.3 Safari/605.1.15 Ddg/26.3',
+                '26.3.0',
+            ],
         ];
     }
 
