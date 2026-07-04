@@ -4141,6 +4141,10 @@ enum Company: string implements CompanyInterface
 
     case zidoo = 'Zidoo';
 
+    case superbox = 'SuperBOX';
+
+    case aceline = 'Aceline';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -6209,6 +6213,8 @@ enum Company: string implements CompanyInterface
             'winmax' => self::winmax,
             'xgimi', 'chengdu xgimi technology co.,ltd.' => self::xgimi,
             'zidoo' => self::zidoo,
+            'superbox' => self::superbox,
+            'aceline' => self::aceline,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(

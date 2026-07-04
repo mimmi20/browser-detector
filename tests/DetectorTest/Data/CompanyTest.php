@@ -12412,6 +12412,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Zidoo',
                 'key' => 'zidoo',
             ],
+            [
+                'type' => 'SuperBOX',
+                'name' => 'SuperBOX',
+                'brandname' => 'SuperBOX',
+                'key' => 'superbox',
+            ],
+            [
+                'type' => 'Aceline',
+                'name' => 'Aceline',
+                'brandname' => 'Aceline',
+                'key' => 'aceline',
+            ],
         ];
     }
 
