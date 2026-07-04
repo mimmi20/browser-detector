@@ -2,7 +2,7 @@
   "rules": {
     "/raspbian|debian.*rpi/": "raspberry-pi-foundation",
     "/eeepc|np0[26789]|maau|asjb|asu2/i": "asus",
-    "/mdd[crs]/i": "dell",
+    "/mdd[crs]|(?:warthog|wtos)(?:\\/((?!1\\.)\\d+(?:\\.\\d+)*))?/i": "dell",
     "/mafs/i": "fujitsu",
     "/(?<!g)maar|predator g9-793|acer chromebook/i": "acer",
     "/mas[aep]|bravia \\d+/i": "sony",

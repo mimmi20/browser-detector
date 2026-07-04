@@ -105,7 +105,10 @@ final class SecChUaTest extends TestCase
             $header->getDeviceIsMobile(),
             sprintf('device mobile info mismatch for ua "%s"', $ua),
         );
-        self::assertFalse($header->hasDeviceCode(), sprintf('device code info mismatch for ua "%s"', $ua));
+        self::assertFalse(
+            $header->hasDeviceCode(),
+            sprintf('device code info mismatch for ua "%s"', $ua),
+        );
         self::assertNull(
             $header->getDeviceCode(),
             sprintf('device code info mismatch for ua "%s"', $ua),

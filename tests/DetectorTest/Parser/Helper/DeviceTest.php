@@ -1494,6 +1494,9 @@ final class DeviceTest extends TestCase
             ['Redmi 8A Dual', 'xiaomi=xiaomi redmi 8a dual'],
             ['2510DPC44G', 'xiaomi=xiaomi 2510dpc44g'],
             ['Mi 14 Ultra', 'xiaomi=xiaomi mi 14 ultra'],
+            ['2603ARP14G', 'xiaomi=xiaomi 2603arp14g'],
+            ['2604ERP4DG', 'xiaomi=xiaomi 2604erp4dg'],
+            ['25102RKBEC', 'xiaomi=xiaomi 25102rkbec'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -8078,6 +8081,7 @@ final class DeviceTest extends TestCase
             // vodafone
             ['VFD 600', 'vodafone=vodafone vfd 600'],
             ['VFD 1400', 'vodafone=vodafone vfd 1400'],
+            ['Vodafone TV 3', 'vodafone=vodafone tv 3'],
             // feonal
             ['K118_EEA', 'feonal=feonal k118_eea'],
             ['D118_EEA', 'feonal=feonal d118_eea'],
@@ -10229,6 +10233,21 @@ final class DeviceTest extends TestCase
             ['maui e800', 'benq=benq maui e800'],
             // vernee
             ['V2 Pro', 'vernee=vernee v2 pro'],
+            // rokid
+            ['RES102', 'rokid=rokid res102'],
+            // aloys
+            ['Formuler Z mini', 'aloys=aloys formuler z mini'],
+            ['Formuler Z12 Ultra', 'aloys=aloys formuler z12 ultra'],
+            ['Formuler Z10 SE', 'aloys=aloys formuler z10 se'],
+            ['Formuler Z10 Neo', 'aloys=aloys formuler z10 neo'],
+            ['Formuler Z11 Pro', 'aloys=aloys formuler z11 pro'],
+            ['Formuler Z11 Pro MAX', 'aloys=aloys formuler z11 pro max'],
+            // bulsatcom
+            ['IMTM741', 'bulsatcom=bulsatcom imtm741'],
+            // yutmart
+            ['YUTMART-MXQPRO', 'yutmart=yutmart mxq pro'],
+            // b2go
+            ['MXQPRO', 'b2go=b2go mxq pro'],
             // other
             ['Model"', null],
             [': "', null],

@@ -4073,6 +4073,16 @@ enum Company: string implements CompanyInterface
 
     case generalMotors = 'General Motors';
 
+    case rokid = 'Rokid';
+
+    case aloys = 'Aloys';
+
+    case formuler = 'Formuler';
+
+    case bulsatcom = 'Bulsatcom';
+
+    case yutmart = 'Yutmart';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -6107,6 +6117,11 @@ enum Company: string implements CompanyInterface
             'bomix' => self::bomix,
             'idea' => self::idea,
             'generalmotors', 'general motors', 'general-motors' => self::generalMotors,
+            'rokid' => self::rokid,
+            'aloys', 'aloys inc.' => self::aloys,
+            'formuler' => self::formuler,
+            'bulsatcom' => self::bulsatcom,
+            'yutmart' => self::yutmart,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6947,6 +6962,7 @@ enum Company: string implements CompanyInterface
             self::zalo => 'Zalo Group',
             self::cellock => 'Cellock Ltd',
             self::citrix => 'Citrix Systems, Inc.',
+            self::aloys => 'Aloys Inc.',
             self::unknown => null,
             default => $this->value,
         };

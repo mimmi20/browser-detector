@@ -422,6 +422,8 @@ enum Os: string implements OsInterface
 
     case kolibriOS = 'KolibriOS';
 
+    case thinOS = 'ThinOS';
+
     /**
      * @throws void
      *
@@ -624,6 +626,7 @@ enum Os: string implements OsInterface
             'plan9', 'plan 9', 'plan-9' => self::plan9,
             'deepin' => self::deepin,
             'kolibrios', 'kolibri-os' => self::kolibriOS,
+            'thinos', 'thin-os' => self::thinOS,
             default => self::unknown,
         };
     }
@@ -744,6 +747,7 @@ enum Os: string implements OsInterface
             self::minix => Company::andrewStuartTanenbaum,
             self::plan9 => Company::plan9Foundation,
             self::deepin => Company::deepinTechnology,
+            self::thinOS => Company::dell,
             default => Company::unknown,
         };
     }
@@ -897,6 +901,7 @@ enum Os: string implements OsInterface
             self::plan9 => ['factory' => VersionBuilderFactory::class, 'search' => ['Plan 9']],
             self::fireos => ['factory' => VersionBuilderFactory::class, 'search' => ['Fire OS']],
             self::deepin => ['factory' => VersionBuilderFactory::class, 'search' => ['Deepin']],
+            self::thinOS => ['factory' => VersionBuilderFactory::class, 'search' => ['Warthog', 'WTOS']],
             default => ['factory' => null, 'search' => null],
         };
     }
@@ -1020,6 +1025,7 @@ enum Os: string implements OsInterface
             self::nuttX => 'nuttx',
             self::plan9 => 'plan-9',
             self::kolibriOS => 'kolibri-os',
+            self::thinOS => 'thin-os',
             default => $this->name,
         };
     }

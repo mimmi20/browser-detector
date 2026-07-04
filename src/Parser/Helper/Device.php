@@ -1438,6 +1438,9 @@ final class Device implements DeviceInterface
             'redmi 8a dual' => 'xiaomi=xiaomi redmi 8a dual',
             '2510dpc44g' => 'xiaomi=xiaomi 2510dpc44g',
             'mi 14 ultra' => 'xiaomi=xiaomi mi 14 ultra',
+            '2603arp14g' => 'xiaomi=xiaomi 2603arp14g',
+            '2604erp4dg' => 'xiaomi=xiaomi 2604erp4dg',
+            '25102rkbec' => 'xiaomi=xiaomi 25102rkbec',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -6658,6 +6661,7 @@ final class Device implements DeviceInterface
             // vodafone
             'vfd 600' => 'vodafone=vodafone vfd 600',
             'vfd 1400' => 'vodafone=vodafone vfd 1400',
+            'vodafone tv 3' => 'vodafone=vodafone tv 3',
             // feonal
             'k118_eea' => 'feonal=feonal k118_eea',
             'd118_eea' => 'feonal=feonal d118_eea',
@@ -8702,6 +8706,21 @@ final class Device implements DeviceInterface
             'maui e800' => 'benq=benq maui e800',
             // vernee
             'v2 pro' => 'vernee=vernee v2 pro',
+            // rokid
+            'res102' => 'rokid=rokid res102',
+            // aloys
+            'formuler z mini' => 'aloys=aloys formuler z mini',
+            'formuler z12 ultra' => 'aloys=aloys formuler z12 ultra',
+            'formuler z10 se' => 'aloys=aloys formuler z10 se',
+            'formuler z10 neo' => 'aloys=aloys formuler z10 neo',
+            'formuler z11 pro' => 'aloys=aloys formuler z11 pro',
+            'formuler z11 pro max' => 'aloys=aloys formuler z11 pro max',
+            // bulsatcom
+            'imtm741' => 'bulsatcom=bulsatcom imtm741',
+            // yutmart
+            'yutmart-mxqpro' => 'yutmart=yutmart mxq pro',
+            // b2go
+            'mxqpro' => 'b2go=b2go mxq pro',
             // other
             default => null,
         };

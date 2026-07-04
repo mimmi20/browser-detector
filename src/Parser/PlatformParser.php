@@ -205,6 +205,7 @@ final readonly class PlatformParser implements PlatformParserInterface
             '/fuchsia/i' => Os::fuchsia,
             '/Minix /' => Os::minix,
             '/plan 9/i' => Os::plan9,
+            '/(?:warthog|wtos)(?:\/((?!1\.)\d+(?:\.\d+)*))?/i' => Os::thinOS,
             '/linux|esx|netcast|dillo|gvfs|libvlc|lynx|tinybrowser|akregator|installatron|nettv|hbbtv|smart-tv|x11|wayland/i' => Os::linux,
             '/rim tablet|playbook/i' => Os::rimTabletOs,
             '/blackberry|bb10; ?(kbd|touch)/i' => Os::rimOs,

@@ -1654,6 +1654,14 @@ final class OsTest extends TestCase
                 'version' => ['factory' => null, 'search' => null],
                 'key' => 'kolibri-os',
             ],
+            [
+                'type' => 'ThinOS',
+                'name' => 'ThinOS',
+                'marketingName' => 'ThinOS',
+                'manufacturer' => Company::dell,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Warthog', 'WTOS']],
+                'key' => 'thin-os',
+            ],
         ];
     }
 }

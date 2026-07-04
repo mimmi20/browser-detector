@@ -5743,5 +5743,17 @@
       ]
     },
     "engine": null
+  },
+  "kobo-ereader": {
+    "name": "Kobo eReader",
+    "manufacturer": "kobo",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Kobo.+\\/"
+      ]
+    },
+    "engine": null
   }
 }

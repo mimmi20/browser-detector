@@ -12208,6 +12208,36 @@ final class CompanyTest extends TestCase
                 'brandname' => 'General Motors',
                 'key' => 'general-motors',
             ],
+            [
+                'type' => 'Rokid',
+                'name' => 'Rokid',
+                'brandname' => 'Rokid',
+                'key' => 'rokid',
+            ],
+            [
+                'type' => 'Aloys',
+                'name' => 'Aloys Inc.',
+                'brandname' => 'Aloys',
+                'key' => 'aloys',
+            ],
+            [
+                'type' => 'Formuler',
+                'name' => 'Formuler',
+                'brandname' => 'Formuler',
+                'key' => 'formuler',
+            ],
+            [
+                'type' => 'Bulsatcom',
+                'name' => 'Bulsatcom',
+                'brandname' => 'Bulsatcom',
+                'key' => 'bulsatcom',
+            ],
+            [
+                'type' => 'Yutmart',
+                'name' => 'Yutmart',
+                'brandname' => 'Yutmart',
+                'key' => 'yutmart',
+            ],
         ];
     }
 
