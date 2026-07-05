@@ -12424,6 +12424,30 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Aceline',
                 'key' => 'aceline',
             ],
+            [
+                'type' => 'Amedia',
+                'name' => 'Shenzhen Amedia Technology Co., Ltd.',
+                'brandname' => 'Amedia',
+                'key' => 'amedia',
+            ],
+            [
+                'type' => 'ATFLY',
+                'name' => 'ATFLY',
+                'brandname' => 'ATFLY',
+                'key' => 'atfly',
+            ],
+            [
+                'type' => 'ATID',
+                'name' => 'ATID',
+                'brandname' => 'ATID',
+                'key' => 'atid',
+            ],
+            [
+                'type' => 'BarTon',
+                'name' => 'BarTon',
+                'brandname' => 'BarTon',
+                'key' => 'barton',
+            ],
         ];
     }
 

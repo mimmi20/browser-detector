@@ -781,6 +781,7 @@ final class Device implements DeviceInterface
             'oppo a79k' => 'oppo=oppo a79k',
             'oppo a79kt' => 'oppo=oppo a79kt',
             'cph1803' => 'oppo=oppo cph1803',
+            'find x2' => 'oppo=oppo find x2',
             // Xiaomi/Poco
             'redmi note 9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro', 'redmi_note_8_pro' => 'xiaomi=xiaomi redmi note 8 pro',
@@ -3069,7 +3070,6 @@ final class Device implements DeviceInterface
             'bah-w09' => 'huawei=huawei bah-w09',
             'ele-l29' => 'huawei=huawei ele-l29',
             'mar-lx1a' => 'huawei=huawei mar-lx1a',
-            'bla-l09' => 'huawei=huawei bla-l09',
             'cmr-al09' => 'huawei=huawei cmr-al09',
             'eml-l29' => 'huawei=huawei eml-l29',
             'mrd-lx1' => 'huawei=huawei mrd-lx1',
@@ -3090,7 +3090,6 @@ final class Device implements DeviceInterface
             'pot-lx1a' => 'huawei=huawei pot-lx1a',
             'eml-l09' => 'huawei=huawei eml-l09',
             'cmr-w09' => 'huawei=huawei cmr-w09',
-            'bla-l29' => 'huawei=huawei bla-l29',
             'stf-l09' => 'huawei=huawei stf-l09',
             'stf-al10' => 'huawei=huawei stf-al10',
             'stf-al00' => 'huawei=huawei stf-al00',
@@ -3667,6 +3666,13 @@ final class Device implements DeviceInterface
             'nla-lx3', 'huawei nla-lx3' => 'huawei=huawei nla-lx3',
             'lgn-nx1', 'huawei lgn-nx1' => 'huawei=huawei lgn-nx1',
             'lgn-nx3', 'huawei lgn-nx3' => 'huawei=huawei lgn-nx3',
+            'bla-l09s', 'huawei bla-l09s' => 'huawei=huawei bla-l09s',
+            'bla-tl00', 'huawei bla-tl00' => 'huawei=huawei bla-tl00',
+            'bla-al10', 'huawei bla-al10' => 'huawei=huawei bla-al10',
+            'bla-l09', 'huawei bla-l09' => 'huawei=huawei bla-l09',
+            'bla-al00', 'huawei bla-al00' => 'huawei=huawei bla-al00',
+            'bla-l29', 'huawei bla-l29' => 'huawei=huawei bla-l29',
+            'bla-a09', 'huawei bla-a09' => 'huawei=huawei bla-a09',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -4452,6 +4458,7 @@ final class Device implements DeviceInterface
             'd6708' => 'sony=sony d6708',
             'xq-at72' => 'sony=sony xq-at72',
             'xperia sp' => 'sony=sony xperia sp',
+            'bravia 4k vh22' => 'sony=sony bravia 4k vh22',
             // Vivo
             'v2109' => 'vivo=vivo v2109',
             'vivo 1716' => 'vivo=vivo 1716',
@@ -5189,7 +5196,7 @@ final class Device implements DeviceInterface
             // Cubot/Hafury
             'gt20' => 'cubot=cubot gt20',
             'cubot king kong' => 'cubot=cubot king kong',
-            'kingkong 9' => 'cubot=cubot kingkong 9',
+            'cubot kingkong 9', 'kingkong 9' => 'cubot=cubot kingkong 9',
             'kingkong 7' => 'cubot=cubot kingkong 7',
             'cubot dinosaur' => 'cubot=cubot dinosaur',
             'king_kong_3' => 'cubot=cubot kingkong 3',
@@ -6088,6 +6095,7 @@ final class Device implements DeviceInterface
             'c6730' => 'kyocera=kyocera c6730',
             'c6743' => 'kyocera=kyocera c6743',
             'e6782' => 'kyocera=kyocera e6782',
+            'e4811' => 'kyocera=kyocera e4811',
             // iq-t
             'iq&amp;t n8', 'iq&t n8' => 'iq-t=iq-t n8',
             // packard-bell
@@ -6890,6 +6898,7 @@ final class Device implements DeviceInterface
             'buzz 7 lite' => 'ace=ace buzz 7 lite',
             'buzz 7 prime' => 'ace=ace buzz 7 prime',
             'buzz 7 note' => 'ace=ace buzz 7 note',
+            'buzz 3 lite' => 'ace=ace buzz 3 lite',
             // senkatel
             'senkatel_t9702' => 'senkatel=senkatel t9702',
             'senkatel_t1009' => 'senkatel=senkatel t1009',
@@ -8809,6 +8818,16 @@ final class Device implements DeviceInterface
             'artel android tv' => 'artel=artel android tv',
             // aceline
             'ag-216' => 'aceline=aceline ag-216',
+            // amedia
+            'x96q' => 'amedia=amedia x96q',
+            // atfly
+            'at17 pro max' => 'atfly=atfly at17 pro max',
+            // atid
+            'at908' => 'atid=atid at908',
+            // barton
+            'barton smart box sa-2408' => 'barton=barton smart box sa-2408',
+            // gionee
+            'gionee max' => 'gionee=gionee max',
             // other
             default => null,
         };

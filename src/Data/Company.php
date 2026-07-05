@@ -4145,6 +4145,14 @@ enum Company: string implements CompanyInterface
 
     case aceline = 'Aceline';
 
+    case amedia = 'Amedia';
+
+    case atfly = 'ATFLY';
+
+    case atid = 'ATID';
+
+    case barton = 'BarTon';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -6215,6 +6223,10 @@ enum Company: string implements CompanyInterface
             'zidoo' => self::zidoo,
             'superbox' => self::superbox,
             'aceline' => self::aceline,
+            'amedia', 'shenzhen amedia technology co., ltd.' => self::amedia,
+            'atfly' => self::atfly,
+            'atid' => self::atid,
+            'barton' => self::barton,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -7060,6 +7072,7 @@ enum Company: string implements CompanyInterface
             self::mpie => 'Shenzhen Hengyuan Dingye Science and Technology Development Co. Ltd',
             self::kingzone => 'Shenzhen Kingzone Communication Co.,Ltd',
             self::xgimi => 'CHENGDU XGIMI TECHNOLOGY CO.,LTD.',
+            self::amedia => 'Shenzhen Amedia Technology Co., Ltd.',
             self::unknown => null,
             default => $this->value,
         };
