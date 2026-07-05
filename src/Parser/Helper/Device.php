@@ -3011,6 +3011,8 @@ final class Device implements DeviceInterface
             'agr-w09' => 'huawei=huawei agr-w09',
             'ags3k-w09' => 'huawei=huawei ags3k-w09',
             'ags3k-w00' => 'huawei=huawei ags3k-w00',
+            'ags3k-al20' => 'huawei=huawei ags3k-al20',
+            'ags3k-l09' => 'huawei=huawei ags3k-l09',
             'nth-nx9' => 'huawei=huawei nth-nx9',
             'hlk-l41' => 'huawei=huawei hlk-l41',
             'bah3-w59' => 'huawei=huawei bah3-w59',
@@ -3372,7 +3374,7 @@ final class Device implements DeviceInterface
             'hjc-an90' => 'huawei=huawei hjc-an90',
             'fio-bd00' => 'huawei=huawei fio-bd00',
             'ang-an00' => 'huawei=huawei ang-an00',
-            'ang-lx1' => 'huawei=huawei ang-lx1',
+            'ang-lx1', 'huawei ang-lx1' => 'huawei=huawei ang-lx1',
             'ang-lx2' => 'huawei=huawei ang-lx2',
             'brq-al00' => 'huawei=huawei brq-al00',
             'brq-an00' => 'huawei=huawei brq-an00',
@@ -3673,6 +3675,10 @@ final class Device implements DeviceInterface
             'bla-al00', 'huawei bla-al00' => 'huawei=huawei bla-al00',
             'bla-l29', 'huawei bla-l29' => 'huawei=huawei bla-l29',
             'bla-a09', 'huawei bla-a09' => 'huawei=huawei bla-a09',
+            'honor 30 pro' => 'huawei=huawei honor 30 pro',
+            'bmh-tn10', 'huawei bmh-tn10' => 'huawei=huawei bmh-tn10',
+            'bmh-an20', 'huawei bmh-an20' => 'huawei=huawei bmh-an20',
+            'bmh-an10', 'huawei bmh-an10' => 'huawei=huawei bmh-an10',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -5952,6 +5958,7 @@ final class Device implements DeviceInterface
             'hisense u607' => 'hisense=hisense u607',
             'aftha001' => 'hisense=hisense aftha001',
             'hisense e20s' => 'hisense=hisense e20s',
+            'hisense u7g' => 'hisense=hisense u7g',
             // insys
             'hn2-m16q' => 'insys=insys hn2-m16q',
             // aiwa
@@ -8828,6 +8835,8 @@ final class Device implements DeviceInterface
             'barton smart box sa-2408' => 'barton=barton smart box sa-2408',
             // gionee
             'gionee max' => 'gionee=gionee max',
+            // heji
+            'heji goe' => 'heji=heji goe',
             // other
             default => null,
         };

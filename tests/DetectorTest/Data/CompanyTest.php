@@ -12448,6 +12448,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'BarTon',
                 'key' => 'barton',
             ],
+            [
+                'type' => 'HEJI',
+                'name' => 'HEJI',
+                'brandname' => 'HEJI',
+                'key' => 'heji',
+            ],
         ];
     }
 

@@ -4122,6 +4122,8 @@ final class DeviceTest extends TestCase
             ['AGR-W09', 'huawei=huawei agr-w09'],
             ['AGS3K-W09', 'huawei=huawei ags3k-w09'],
             ['AGS3K-W00', 'huawei=huawei ags3k-w00'],
+            ['AGS3K-AL20', 'huawei=huawei ags3k-al20'],
+            ['AGS3K-L09', 'huawei=huawei ags3k-l09'],
             ['NTH-NX9', 'huawei=huawei nth-nx9'],
             ['NOH-AN01', 'huawei=huawei noh-an01'],
             ['HLK-L41', 'huawei=huawei hlk-l41'],
@@ -4521,6 +4523,7 @@ final class DeviceTest extends TestCase
             ['FIO-BD00', 'huawei=huawei fio-bd00'],
             ['ANG-AN00', 'huawei=huawei ang-an00'],
             ['ANG-LX1', 'huawei=huawei ang-lx1'],
+            ['HUAWEI ANG-LX1', 'huawei=huawei ang-lx1'],
             ['ANG-LX2', 'huawei=huawei ang-lx2'],
             ['BRQ-AL00', 'huawei=huawei brq-al00'],
             ['BRQ-AN00', 'huawei=huawei brq-an00'],
@@ -4924,6 +4927,13 @@ final class DeviceTest extends TestCase
             ['HUAWEI BLA-L29', 'huawei=huawei bla-l29'],
             ['BLA-A09', 'huawei=huawei bla-a09'],
             ['HUAWEI BLA-A09', 'huawei=huawei bla-a09'],
+            ['Honor 30 Pro', 'huawei=huawei honor 30 pro'],
+            ['BMH-TN10', 'huawei=huawei bmh-tn10'],
+            ['HUAWEI BMH-TN10', 'huawei=huawei bmh-tn10'],
+            ['BMH-AN20', 'huawei=huawei bmh-an20'],
+            ['HUAWEI BMH-AN20', 'huawei=huawei bmh-an20'],
+            ['BMH-AN10', 'huawei=huawei bmh-an10'],
+            ['HUAWEI BMH-AN10', 'huawei=huawei bmh-an10'],
             // Lenovo
             ['Lenovo TB-X304F', 'lenovo=lenovo tb-x304f'],
             ['X1030X', 'lenovo=lenovo x1030x'],
@@ -7270,6 +7280,7 @@ final class DeviceTest extends TestCase
             ['Hisense U607', 'hisense=hisense u607'],
             ['AFTHA001', 'hisense=hisense aftha001'],
             ['Hisense E20s', 'hisense=hisense e20s'],
+            ['Hisense U7G', 'hisense=hisense u7g'],
             // insys
             ['HN2-M16Q', 'insys=insys hn2-m16q'],
             // aiwa
@@ -10369,6 +10380,8 @@ final class DeviceTest extends TestCase
             ['BARTON Smart Box SA-2408', 'barton=barton smart box sa-2408'],
             // gionee
             ['GIONEE MAX', 'gionee=gionee max'],
+            // heji
+            ['HEJI GOE', 'heji=heji goe'],
             // other
             ['Model"', null],
             [': "', null],
