@@ -4934,6 +4934,18 @@ final class DeviceTest extends TestCase
             ['HUAWEI BMH-AN20', 'huawei=huawei bmh-an20'],
             ['BMH-AN10', 'huawei=huawei bmh-an10'],
             ['HUAWEI BMH-AN10', 'huawei=huawei bmh-an10'],
+            ['EVE-LX9N', 'huawei=huawei eve-lx9n'],
+            ['HUAWEI EVE-LX9N', 'huawei=huawei eve-lx9n'],
+            ['EVE-LX9', 'huawei=huawei eve-lx9'],
+            ['HUAWEI EVE-LX9', 'huawei=huawei eve-lx9'],
+            ['EVE-LX3', 'huawei=huawei eve-lx3'],
+            ['HUAWEI EVE-LX3', 'huawei=huawei eve-lx3'],
+            ['JDY-LX3P', 'huawei=huawei jdy-lx3p'],
+            ['HUAWEI JDY-LX3P', 'huawei=huawei jdy-lx3p'],
+            ['JEF-N29', 'huawei=huawei jef-n29'],
+            ['HUAWEI JEF-N29', 'huawei=huawei jef-n29'],
+            ['JSC-AN00A', 'huawei=huawei jsc-an00a'],
+            ['HUAWEI JSC-AN00A', 'huawei=huawei jsc-an00a'],
             // Lenovo
             ['Lenovo TB-X304F', 'lenovo=lenovo tb-x304f'],
             ['X1030X', 'lenovo=lenovo x1030x'],
@@ -6190,6 +6202,11 @@ final class DeviceTest extends TestCase
             ['V2065', 'vivo=vivo v2065'],
             ['V2065A', 'vivo=vivo v2065a'],
             ['I2508', 'vivo=vivo i2508'],
+            ['iQOO 3 5G', 'vivo=vivo iqoo 3 5g'],
+            ['iQOO 3', 'vivo=vivo iqoo 3 5g'],
+            ['V1955A', 'vivo=vivo v1955a'],
+            ['I1927', 'vivo=vivo i1927'],
+            ['I1928', 'vivo=vivo i1928'],
             // Fairphone
             ['FP4', 'fairphone=fairphone fp4'],
             ['FP3', 'fairphone=fairphone fp3'],
@@ -7171,6 +7188,7 @@ final class DeviceTest extends TestCase
             ['Infinix X675', 'infinix=infinix x675'],
             ['Infinix X6512', 'infinix=infinix x6512'],
             ['Infinix X652', 'infinix=infinix x652'],
+            ['Infinix Zero 50', 'infinix=infinix zero 50'],
             // cyrus
             ['CS24', 'cyrus=cyrus cs24'],
             // facetel
@@ -7255,6 +7273,7 @@ final class DeviceTest extends TestCase
             ['itel S663L', 'itel=itel s663l'],
             ['itel A669W', 'itel=itel a669w'],
             ['itel A27', 'itel=itel a27'],
+            ['Itel S26', 'itel=itel s26'],
             // vontar
             ['HK1RBOX-X4', 'vontar=vontar hk1 rbox x4'],
             ['HK1 Mini+', 'vontar=vontar hk1 mini plus'],
@@ -8524,6 +8543,7 @@ final class DeviceTest extends TestCase
             ['LXX513', 'lava=lava lxx513'],
             ['LAVA LE9830', 'lava=lava le9830'],
             ['LAVA LXX510', 'lava=lava lxx510'],
+            ['LAVA LMX04', 'lava=lava lmx04'],
             // yestel
             ['T5_EEA', 'yestel=yestel t5_eea'],
             ['T5-EEA', 'yestel=yestel t5_eea'],
@@ -9710,6 +9730,7 @@ final class DeviceTest extends TestCase
             // iconbit
             ['iconBIT XLR3089', 'iconbit=iconbit xlr3089'],
             ['iconBIT XLR3090', 'iconbit=iconbit xlr3090'],
+            ['iconBIT XLR3094', 'iconbit=iconbit xlr3094'],
             // alpsmart
             ['AS516', 'alpsmart=alpsmart as516'],
             ['AS515', 'alpsmart=alpsmart as515'],

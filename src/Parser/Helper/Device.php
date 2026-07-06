@@ -3679,6 +3679,12 @@ final class Device implements DeviceInterface
             'bmh-tn10', 'huawei bmh-tn10' => 'huawei=huawei bmh-tn10',
             'bmh-an20', 'huawei bmh-an20' => 'huawei=huawei bmh-an20',
             'bmh-an10', 'huawei bmh-an10' => 'huawei=huawei bmh-an10',
+            'eve-lx9n', 'huawei eve-lx9n' => 'huawei=huawei eve-lx9n',
+            'eve-lx9', 'huawei eve-lx9' => 'huawei=huawei eve-lx9',
+            'eve-lx3', 'huawei eve-lx3' => 'huawei=huawei eve-lx3',
+            'jdy-lx3p', 'huawei jdy-lx3p' => 'huawei=huawei jdy-lx3p',
+            'jef-n29', 'huawei jef-n29' => 'huawei=huawei jef-n29',
+            'jsc-an00a', 'huawei jsc-an00a' => 'huawei=huawei jsc-an00a',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -4902,6 +4908,10 @@ final class Device implements DeviceInterface
             'v2065' => 'vivo=vivo v2065',
             'v2065a' => 'vivo=vivo v2065a',
             'i2508' => 'vivo=vivo i2508',
+            'iqoo 3 5g', 'iqoo 3' => 'vivo=vivo iqoo 3 5g',
+            'v1955a' => 'vivo=vivo v1955a',
+            'i1927' => 'vivo=vivo i1927',
+            'i1928' => 'vivo=vivo i1928',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
@@ -5848,6 +5858,7 @@ final class Device implements DeviceInterface
             'infinix x675' => 'infinix=infinix x675',
             'infinix x6512' => 'infinix=infinix x6512',
             'infinix x652' => 'infinix=infinix x652',
+            'infinix zero 50' => 'infinix=infinix zero 50',
             // cyrus
             'cs24' => 'cyrus=cyrus cs24',
             // facetel
@@ -5933,6 +5944,7 @@ final class Device implements DeviceInterface
             'itel s663l' => 'itel=itel s663l',
             'itel a669w' => 'itel=itel a669w',
             'itel a27' => 'itel=itel a27',
+            'itel s26' => 'itel=itel s26',
             // vontar
             'hk1rbox-x4' => 'vontar=vontar hk1 rbox x4',
             'hk1 mini+' => 'vontar=vontar hk1 mini plus',
@@ -7078,6 +7090,7 @@ final class Device implements DeviceInterface
             'lxx513' => 'lava=lava lxx513',
             'lava le9830' => 'lava=lava le9830',
             'lava lxx510' => 'lava=lava lxx510',
+            'lava lmx04' => 'lava=lava lmx04',
             // yestel
             't5_eea', 't5-eea' => 'yestel=yestel t5_eea',
             't13_eea' => 'yestel=yestel t13_eea',
@@ -8175,6 +8188,7 @@ final class Device implements DeviceInterface
             // iconbit
             'iconbit xlr3089' => 'iconbit=iconbit xlr3089',
             'iconbit xlr3090' => 'iconbit=iconbit xlr3090',
+            'iconbit xlr3094' => 'iconbit=iconbit xlr3094',
             // alpsmart
             'as516' => 'alpsmart=alpsmart as516',
             'as515' => 'alpsmart=alpsmart as515',
