@@ -175,6 +175,22 @@
     "type": "fone-pad",
     "platform": "android"
   },
+  "huawei matepad pro": {
+    "deviceName": "MatePad Pro",
+    "marketingName": "MatePad Pro 10.8\" LTE (2019)",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 10.8
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
   "huawei mediapad 7 classic": {
     "deviceName": "MediaPad 7 Classic",
     "marketingName": "MediaPad 7 Classic",
@@ -1231,9 +1247,41 @@
     "type": "fone-pad",
     "platform": "android"
   },
+  "huawei matepad lte": {
+    "deviceName": "MatePad LTE",
+    "marketingName": "MatePad 10.4\" LTE",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2000,
+      "height": 1200,
+      "touch": true,
+      "size": 10.4
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
   "huawei bah3-an10": {
     "deviceName": "BAH3-AN10",
-    "marketingName": "MatePad 10.4\" LTE",
+    "marketingName": "MatePad 10.4\" 5G",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2000,
+      "height": 1200,
+      "touch": true,
+      "size": 10.4
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "huawei matepad 5g": {
+    "deviceName": "MatePad 5G",
+    "marketingName": "MatePad 10.4\" 5G",
     "manufacturer": "huawei",
     "brand": "huawei",
     "dualOrientation": true,
@@ -1377,6 +1425,22 @@
   },
   "huawei scmr-al09": {
     "deviceName": "SCMR-AL09",
+    "marketingName": "MatePad 10.8\" LTE",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 10.8
+    },
+    "type": "fone-pad",
+    "platform": null
+  },
+  "huawei matepad 10.8 lte": {
+    "deviceName": "MatePad 10.8 LTE",
     "marketingName": "MatePad 10.8\" LTE",
     "manufacturer": "huawei",
     "brand": "huawei",
@@ -1745,6 +1809,22 @@
   },
   "huawei mrx-an19": {
     "deviceName": "MRX-AN19",
+    "marketingName": "MatePad Pro 10.8\" 5G",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 10.8
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "huawei matepad pro 5g": {
+    "deviceName": "MatePad Pro 5G",
     "marketingName": "MatePad Pro 10.8\" 5G",
     "manufacturer": "huawei",
     "brand": "huawei",

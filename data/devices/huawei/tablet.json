@@ -95,6 +95,22 @@
     "type": "tablet",
     "platform": "android"
   },
+  "huawei matepad pro wi-fi": {
+    "deviceName": "MatePad Pro Wi-Fi",
+    "marketingName": "MatePad Pro 10.8\" Wi-Fi (2019)",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 10.8
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
   "huawei mediapad 10 fhd": {
     "deviceName": "MediaPad 10 FHD",
     "marketingName": "MediaPad 10 FHD",
@@ -769,6 +785,22 @@
   },
   "huawei bah3-w09": {
     "deviceName": "BAH3-W09",
+    "marketingName": "MatePad 10.4\" Wi-Fi",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2000,
+      "height": 1200,
+      "touch": true,
+      "size": 10.4
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "huawei matepad wi-fi": {
+    "deviceName": "MatePad Wi-Fi",
     "marketingName": "MatePad 10.4\" Wi-Fi",
     "manufacturer": "huawei",
     "brand": "huawei",
@@ -1758,5 +1790,37 @@
     },
     "type": "tablet",
     "platform": "android"
+  },
+  "huawei matepad 10.8 wi-fi": {
+    "deviceName": "MatePad 10.8 Wi-Fi",
+    "marketingName": "MatePad 10.8\" Wi-Fi",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 10.8
+    },
+    "type": "tablet",
+    "platform": null
+  },
+  "huawei scmr-w09": {
+    "deviceName": "SCMR-W09",
+    "marketingName": "MatePad 10.8\" Wi-Fi",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 10.8
+    },
+    "type": "tablet",
+    "platform": null
   }
 }
