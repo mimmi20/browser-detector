@@ -988,5 +988,50 @@
       "version": null,
       "manufacturer": "unknown"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; Nokia C20 Build/RP1A.201005.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.109 Mobile Safari/537.36 OPR/95.0.4982.87204"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "C2-00",
+      "marketingName": "C2",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 1.8
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "95.0.4982.87204",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "144.0.7559.109",
+      "manufacturer": "Google"
+    }
   }
 ]

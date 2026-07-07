@@ -406,6 +406,96 @@
   },
   {
     "headers": {
+      "user-agent": "Kodi/14.1 (AppleTV; CPU OS 6_1_4 like Mac OS X) HW_AppleTV/2.1 App_Bitness/32 Version/14.1-Git:2015-01-30-38e4046-dirty"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Apple device",
+      "marketingName": "general Apple device",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "tvOS",
+      "marketingName": "tvOS",
+      "version": "6.1.4",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Apple TV App",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "Apple",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Kodi/14.0 (AppleTV; CPU OS 6_1_4 like Mac OS X) HW_AppleTV/2.1 App_Bitness/32 Version/14.0-Git:2014-12-23-ad747d9-dirty"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Apple device",
+      "marketingName": "general Apple device",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "tvOS",
+      "marketingName": "tvOS",
+      "version": "6.1.4",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Apple TV App",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "Apple",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "com.apple.mobilenotes.SharingExtension/1314 CFNetwork/889.9 Darwin/17.2.0"
     },
     "device": {
@@ -1103,8 +1193,8 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
+      "name": "tvOS",
+      "marketingName": "tvOS",
       "version": "11.1.0",
       "manufacturer": "Apple",
       "bits": null
@@ -1119,9 +1209,9 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
+      "name": null,
       "version": null,
-      "manufacturer": "Apple"
+      "manufacturer": "unknown"
     }
   },
   {

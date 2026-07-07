@@ -898,5 +898,50 @@
       "version": "140.0.7339.2232",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm; Android 11; H21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.141 YaBrowser/22.3.6.66.01 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "H21",
+      "marketingName": "H21",
+      "manufacturer": "Kenshi",
+      "brand": "Kenshi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2000,
+        "height": 1200,
+        "touch": true,
+        "size": 10.36
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "22.3.6.66.01",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "98.0.4758.141",
+      "manufacturer": "Google"
+    }
   }
 ]

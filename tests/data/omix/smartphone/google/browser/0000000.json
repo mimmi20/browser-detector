@@ -88,5 +88,50 @@
       "version": "123.0.0.0",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; X4 Build/RD2A.211001.002) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.91 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "X4",
+      "marketingName": "X4",
+      "manufacturer": "OMIX",
+      "brand": "OMIX",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1612,
+        "height": 720,
+        "touch": true,
+        "size": 6.56
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "149.0.7827.91",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "149.0.7827.91",
+      "manufacturer": "Google"
+    }
   }
 ]

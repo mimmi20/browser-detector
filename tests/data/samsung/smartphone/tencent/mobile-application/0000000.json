@@ -134,5 +134,50 @@
       "version": "131.0.0.0",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 16; SM-A5760 Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/146.0.7680.178 Mobile Safari/537.36 XWEB/1460217 MMWEBSDK/20260502 MMWEBID/6975 REV/83997a05f4e4d0a3109307f040f3ace3af51e162 MicroMessenger/8.0.74.3120(0x28004A3A) WeChat/arm64 Weixin NetType/2G Language/zh_CN ABI/arm64"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A5760",
+      "marketingName": "Galaxy A57 5G (China)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "WeChat App",
+      "modus": null,
+      "version": "8.0.74.3120",
+      "manufacturer": "Tencent",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "146.0.7680.178",
+      "manufacturer": "Google"
+    }
   }
 ]

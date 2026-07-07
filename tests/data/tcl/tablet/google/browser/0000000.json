@@ -6,7 +6,7 @@
     "device": {
       "architecture": null,
       "deviceName": "9013A",
-      "marketingName": "1T 7",
+      "marketingName": "1T 7\" Wi-Fi",
       "manufacturer": "TCL",
       "brand": "Alcatel",
       "dualOrientation": true,
@@ -51,7 +51,7 @@
     "device": {
       "architecture": null,
       "deviceName": "9013T",
-      "marketingName": "1T 7",
+      "marketingName": "1T 7\" Wi-Fi",
       "manufacturer": "TCL",
       "brand": "Alcatel",
       "dualOrientation": true,
@@ -102,7 +102,7 @@
     "device": {
       "architecture": null,
       "deviceName": "9009F",
-      "marketingName": "1T 7",
+      "marketingName": "1T 7\" Wi-Fi",
       "manufacturer": "TCL",
       "brand": "Alcatel",
       "dualOrientation": true,
@@ -182,6 +182,51 @@
     "engine": {
       "name": "Blink",
       "version": "105.0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; 8091 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "8091",
+      "marketingName": "1T 10\" Wi-Fi",
+      "manufacturer": "TCL",
+      "brand": "Alcatel",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome WebView",
+      "modus": null,
+      "version": "149.0.7827.91",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "149.0.7827.91",
       "manufacturer": "Google"
     }
   }

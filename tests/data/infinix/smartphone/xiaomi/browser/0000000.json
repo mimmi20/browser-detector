@@ -223,5 +223,50 @@
       "version": "123.0.6312.118",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; Note 12 Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36 XiaoMi/MiuiBrowser/14.56.0-gn"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Note 12",
+      "marketingName": "Note 12",
+      "manufacturer": "Infinix",
+      "brand": "Infinix",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Mi Browser",
+      "modus": null,
+      "version": "14.56.0",
+      "manufacturer": "Xiaomi",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "135.0.7049.79",
+      "manufacturer": "Google"
+    }
   }
 ]

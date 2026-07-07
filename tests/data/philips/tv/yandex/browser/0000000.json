@@ -43,5 +43,50 @@
       "version": "105.0.5195.136",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; Philips Google TV TB3 Build/STT2.230831.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 YaBrowser/25.10.1.638 (lite) TV Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Philips TV",
+      "marketingName": "general Philips TV",
+      "manufacturer": "Philips",
+      "brand": "Philips",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android TV",
+      "marketingName": "Android TV",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser Lite",
+      "modus": null,
+      "version": "25.10.1.638",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "149.0.7827.91",
+      "manufacturer": "Google"
+    }
   }
 ]
