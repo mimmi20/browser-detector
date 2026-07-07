@@ -4155,6 +4155,8 @@ enum Company: string implements CompanyInterface
 
     case heji = 'HEJI';
 
+    case smartBarry = 'SmartBarry';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -6230,6 +6232,7 @@ enum Company: string implements CompanyInterface
             'atid' => self::atid,
             'barton' => self::barton,
             'heji' => self::heji,
+            'smartbarry', 'smart-barry' => self::smartBarry,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -7867,6 +7870,7 @@ enum Company: string implements CompanyInterface
             self::generalMotors => 'general-motors',
             self::mxqPro => 'mxq-pro',
             self::novusTablet => 'novus-tablet',
+            self::smartBarry => 'smart-barry',
             default => $this->name,
         };
     }

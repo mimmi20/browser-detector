@@ -12454,6 +12454,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'HEJI',
                 'key' => 'heji',
             ],
+            [
+                'type' => 'SmartBarry',
+                'name' => 'SmartBarry',
+                'brandname' => 'SmartBarry',
+                'key' => 'smart-barry',
+            ],
         ];
     }
 

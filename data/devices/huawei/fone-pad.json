@@ -1980,7 +1980,23 @@
       "touch": true,
       "size": 10.1
     },
-    "type": "tablet",
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "huawei dby2-al00": {
+    "deviceName": "DBY2-AL00",
+    "marketingName": "MatePad 11.5\" Air LTE (2021)",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2800,
+      "height": 1840,
+      "touch": true,
+      "size": 11.5
+    },
+    "type": "fone-pad",
     "platform": "android"
   }
 }
