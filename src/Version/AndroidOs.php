@@ -35,9 +35,9 @@ final readonly class AndroidOs implements VersionFactoryInterface
         'linux; googletv',
         'android ouya',
         'android os',
-        '(?<!o)andr[0o]id[;_ ]',
-        '(?<!o)andr[0o]id\/',
-        '(?<!o)andr[0o]id',
+        '(?<!o|gm-)andr[0o]id[;_ ]',
+        '(?<!o|gm-)andr[0o]id\/',
+        '(?<!o|gm-)andr[0o]id',
         'adr ',
         '\(os: ',
         'platform:server_android,osversion:',
@@ -87,6 +87,7 @@ final readonly class AndroidOs implements VersionFactoryInterface
             '/Android API (?:Level\: )?(?P<version>\d+)/',
             '/(?P<version>\d+)\/tclwebkit\d+[\.\d]*/',
             '/build \d+\/android (?P<version>\d+)/i',
+            '/; O:(?P<version>\d+);/i',
         ];
 
         $filtered = array_filter(

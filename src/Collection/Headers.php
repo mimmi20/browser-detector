@@ -459,6 +459,7 @@ final readonly class Headers
                         case 'keys-so':
                         case 'meta-external-agent':
                         case 'huawei-mobile-services':
+                        case 'duckduck bot':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 
@@ -574,7 +575,7 @@ final readonly class Headers
 
         $clientVersions = $this->getClientVersions($clientCodename);
         $clientVersion  = match ($clientCodename) {
-            'miui browser', 'huawei-browser', 'hola', 'tusk-browser', 'ojr-browser', 'surfy-browser', 'smartview-browser', 'vibe-mate', 'vd-browser', 'arvin-browser', 'sp-browser' => $clientVersions['user-agent'] ?? array_last(
+            'miui browser', 'huawei-browser', 'hola', 'tusk-browser', 'ojr-browser', 'surfy-browser', 'smartview-browser', 'vibe-mate', 'vd-browser', 'arvin-browser', 'sp-browser', 'duckduck bot' => $clientVersions['user-agent'] ?? array_last(
                 $clientVersions,
             ),
             'vivaldi', 'samsungbrowser' => array_key_exists(

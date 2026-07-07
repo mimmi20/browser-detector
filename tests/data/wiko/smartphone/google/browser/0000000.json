@@ -3651,5 +3651,50 @@
       "version": "130.0.0.0",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; ZPD1221 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.136 Mobile Safari/537.36 netdisk;13.20.2;ZPD1221;android-android;14;JSbridge4.4.0;jointBridge;1.1.0;"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Ridge",
+      "marketingName": "Ridge",
+      "manufacturer": "Wiko",
+      "brand": "Wiko",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome WebView",
+      "modus": null,
+      "version": "113.0.5672.136",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "113.0.5672.136",
+      "manufacturer": "Google"
+    }
   }
 ]

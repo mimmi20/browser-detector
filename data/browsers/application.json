@@ -1888,5 +1888,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "project": {
+    "name": "Project",
+    "manufacturer": "microsoft",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Project"
+      ]
+    },
+    "engine": "unknown"
   }
 }

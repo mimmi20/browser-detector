@@ -6186,7 +6186,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "Viasat Browser"
+        "Chrome"
       ]
     },
     "engine": null
@@ -6974,6 +6974,18 @@
     "version": {
       "factory": null,
       "search": null
+    },
+    "engine": null
+  },
+  "nfs-browser": {
+    "name": "NFS Browser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NFSBrowser"
+      ]
     },
     "engine": null
   }

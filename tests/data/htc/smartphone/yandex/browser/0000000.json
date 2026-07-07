@@ -133,5 +133,50 @@
       "version": "120.0.6099.90",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; Wildfire E4 Plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.105 YaBrowser/26.4.3.105.00 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Wildfire",
+      "marketingName": "Wildfire",
+      "manufacturer": "HTC",
+      "brand": "HTC",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "26.4.3.105.00",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "146.0.7680.105",
+      "manufacturer": "Google"
+    }
   }
 ]

@@ -72,7 +72,7 @@ final readonly class UseragentClientCode implements ClientCodeInterface
 
         $regexes = [
             '/pr\((?P<client>ucbrowser)(?:\/[\d.]+)?\);/i',
-            '/mozilla\/[\d.]+ \(mobile; [^;]+(?:;android)?; rv:[^)]+\) gecko\/[\d.]+ (?P<client>firefox)\/[\d.]+ kaios\/[\d.]+/i',
+            '/^mozilla\/[\d.]+ \(mobile; [^;]+(?:;android)?; rv:[^)]+\) gecko\/[\d.]+ (?P<client>firefox)\/[\d.]+ kaios\/[\d.]+$/i',
             '/(?P<client>instagram) [\d.]+ android \([\d.]+\/[\d.]+; \d+dpi; \d+x\d+; [a-z\/]+; [^);\/]+;/i',
             '/(?P<client>virgin radio)\/[\d.]+ \/ \(linux; android [\d.]+\) exoplayerlib\/[\d.]+ \/ samsung \(/i',
             '/(?P<client>tivimate)\/[\d.]+ \([^);\/]+;/i',

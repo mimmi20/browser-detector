@@ -4065,6 +4065,96 @@ enum Company: string implements CompanyInterface
 
     case quicheIndustries = 'Quiche Industries';
 
+    case essentielB = 'Essentiel B';
+
+    case bomix = 'Bomix';
+
+    case idea = 'Idea';
+
+    case generalMotors = 'General Motors';
+
+    case rokid = 'Rokid';
+
+    case aloys = 'Aloys';
+
+    case formuler = 'Formuler';
+
+    case bulsatcom = 'Bulsatcom';
+
+    case yutmart = 'Yutmart';
+
+    case sunsbell = 'Sunsbell';
+
+    case yuntab = 'Yuntab';
+
+    case noblex = 'Noblex';
+
+    case mxqPro = 'MXQ Pro';
+
+    case twinovo = 'Twinovo';
+
+    case edal = 'Edal';
+
+    case ivoomi = 'iVooMi';
+
+    case mpie = 'MPIE';
+
+    case ninetology = 'Ninetology';
+
+    case voyo = 'Voyo';
+
+    case advent = 'Advent';
+
+    case base = 'Base';
+
+    case guophone = 'Guophone';
+
+    case kingzone = 'Kingzone';
+
+    case newman = 'Newman';
+
+    case ramos = 'Ramos';
+
+    case alfawise = 'Alfawise';
+
+    case comag = 'Comag';
+
+    case gooweel = 'Gooweel';
+
+    case komu = 'Komu';
+
+    case lifeware = 'Lifeware';
+
+    case nextway = 'Nextway';
+
+    case novusTablet = 'Novus Tablet';
+
+    case proscan = 'ProScan';
+
+    case roverpad = 'RoverPad';
+
+    case venz = 'Venz';
+
+    case winmax = 'Winmax';
+
+    case xgimi = 'XGIMI';
+
+    case zidoo = 'Zidoo';
+
+    case superbox = 'SuperBOX';
+
+    case aceline = 'Aceline';
+
+    case amedia = 'Amedia';
+
+    case atfly = 'ATFLY';
+
+    case atid = 'ATID';
+
+    case barton = 'BarTon';
+
+    case heji = 'HEJI';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -4694,7 +4784,7 @@ enum Company: string implements CompanyInterface
             'globalmediaentertainment', 'global media & entertainment', 'global-media-entertainment' => self::globalMediaEntertainment,
             'kajabi' => self::kajabi,
             'iheartmedia', 'iheartmedia management services, inc.', 'iheart-media' => self::iHeartMedia,
-            'citrix' => self::citrix,
+            'citrix', 'citrix systems, inc.' => self::citrix,
             'vaporware' => self::vaporware,
             'netscape' => self::netscape,
             'oregan', 'oregan networks ltd' => self::oregan,
@@ -6095,6 +6185,51 @@ enum Company: string implements CompanyInterface
             'zalo', 'zalo group' => self::zalo,
             'cellock', 'cellock ltd' => self::cellock,
             'quicheindustries', 'quiche industries', 'quiche-industries' => self::quicheIndustries,
+            'essentielb', 'essentiel-b', 'essentiel b' => self::essentielB,
+            'bomix' => self::bomix,
+            'idea' => self::idea,
+            'generalmotors', 'general motors', 'general-motors' => self::generalMotors,
+            'rokid' => self::rokid,
+            'aloys', 'aloys inc.' => self::aloys,
+            'formuler' => self::formuler,
+            'bulsatcom' => self::bulsatcom,
+            'yutmart' => self::yutmart,
+            'sunsbell' => self::sunsbell,
+            'yuntab', 'shenzhen wave multimedia co., ltd.' => self::yuntab,
+            'noblex' => self::noblex,
+            'mxqpro', 'mxq-pro', 'mxq pro' => self::mxqPro,
+            'twinovo' => self::twinovo,
+            'edal' => self::edal,
+            'ivoomi' => self::ivoomi,
+            'mpie', 'shenzhen hengyuan dingye science and technology development co. ltd' => self::mpie,
+            'ninetology' => self::ninetology,
+            'voyo' => self::voyo,
+            'advent' => self::advent,
+            'base' => self::base,
+            'guophone' => self::guophone,
+            'kingzone', 'shenzhen kingzone communication co.,ltd' => self::kingzone,
+            'newman' => self::newman,
+            'ramos' => self::ramos,
+            'alfawise' => self::alfawise,
+            'comag' => self::comag,
+            'gooweel' => self::gooweel,
+            'komu' => self::komu,
+            'lifeware' => self::lifeware,
+            'nextway' => self::nextway,
+            'novustablet', 'novus-tablet', 'novus tablet' => self::novusTablet,
+            'proscan' => self::proscan,
+            'roverpad' => self::roverpad,
+            'venz' => self::venz,
+            'winmax' => self::winmax,
+            'xgimi', 'chengdu xgimi technology co.,ltd.' => self::xgimi,
+            'zidoo' => self::zidoo,
+            'superbox' => self::superbox,
+            'aceline' => self::aceline,
+            'amedia', 'shenzhen amedia technology co., ltd.' => self::amedia,
+            'atfly' => self::atfly,
+            'atid' => self::atid,
+            'barton' => self::barton,
+            'heji' => self::heji,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -6934,6 +7069,13 @@ enum Company: string implements CompanyInterface
             self::handelsblattMedia => 'Handelsblatt Media Group GmbH & Co. KG',
             self::zalo => 'Zalo Group',
             self::cellock => 'Cellock Ltd',
+            self::citrix => 'Citrix Systems, Inc.',
+            self::aloys => 'Aloys Inc.',
+            self::yuntab => 'Shenzhen Wave Multimedia Co., Ltd.',
+            self::mpie => 'Shenzhen Hengyuan Dingye Science and Technology Development Co. Ltd',
+            self::kingzone => 'Shenzhen Kingzone Communication Co.,Ltd',
+            self::xgimi => 'CHENGDU XGIMI TECHNOLOGY CO.,LTD.',
+            self::amedia => 'Shenzhen Amedia Technology Co., Ltd.',
             self::unknown => null,
             default => $this->value,
         };
@@ -7721,6 +7863,10 @@ enum Company: string implements CompanyInterface
             self::michaelSotnikov => 'michael-sotnikov',
             self::handelsblattMedia => 'handelsblatt-media',
             self::quicheIndustries => 'quiche-industries',
+            self::essentielB => 'essentiel-b',
+            self::generalMotors => 'general-motors',
+            self::mxqPro => 'mxq-pro',
+            self::novusTablet => 'novus-tablet',
             default => $this->name,
         };
     }

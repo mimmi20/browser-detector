@@ -25,6 +25,7 @@ use BrowserDetector\Version\RimOsFactory;
 use BrowserDetector\Version\SmartisanOsFactory;
 use BrowserDetector\Version\UbuntuFactory;
 use BrowserDetector\Version\VersionBuilderFactory;
+use BrowserDetector\Version\WebosFactory;
 use BrowserDetector\Version\WindowsMobileOsFactory;
 use BrowserDetector\Version\WindowsPhoneOsFactory;
 use Override;
@@ -421,6 +422,8 @@ enum Os: string implements OsInterface
 
     case kolibriOS = 'KolibriOS';
 
+    case thinOS = 'ThinOS';
+
     /**
      * @throws void
      *
@@ -623,6 +626,7 @@ enum Os: string implements OsInterface
             'plan9', 'plan 9', 'plan-9' => self::plan9,
             'deepin' => self::deepin,
             'kolibrios', 'kolibri-os' => self::kolibriOS,
+            'thinos', 'thin-os' => self::thinOS,
             default => self::unknown,
         };
     }
@@ -743,6 +747,7 @@ enum Os: string implements OsInterface
             self::minix => Company::andrewStuartTanenbaum,
             self::plan9 => Company::plan9Foundation,
             self::deepin => Company::deepinTechnology,
+            self::thinOS => Company::dell,
             default => Company::unknown,
         };
     }
@@ -775,11 +780,11 @@ enum Os: string implements OsInterface
             self::openbsd => ['factory' => VersionBuilderFactory::class, 'search' => ['OpenBSD']],
             self::riscos => ['factory' => VersionBuilderFactory::class, 'search' => ['RISC OS-NC', 'RISC OS', 'RISC']],
             self::unix => ['factory' => VersionBuilderFactory::class, 'search' => ['Unix OS', 'Unix']],
-            self::lgwebos => ['factory' => VersionBuilderFactory::class, 'search' => ['Web0S', 'WEBOS']],
+            self::lgwebos, self::webos => ['factory' => WebosFactory::class, 'search' => null],
             self::wyderos => ['factory' => VersionBuilderFactory::class, 'search' => ['WyderOS']],
             self::yi => ['factory' => VersionBuilderFactory::class, 'search' => ['Yi']],
             self::harmonyos => ['factory' => VersionBuilderFactory::class, 'search' => ['HarmonyOS']],
-            self::harmonyosNext => ['factory' => VersionBuilderFactory::class, 'search' => ['(?:HarmonyOS|hmos.+OpenHarmony)[-/ ]']],
+            self::harmonyosNext => ['factory' => VersionBuilderFactory::class, 'search' => ['(?:HarmonyOS|hmos.+OpenHarmony)[-\/ ]']],
             self::pardus => ['factory' => VersionBuilderFactory::class, 'search' => ['Pardus']],
             self::risingos => ['factory' => VersionBuilderFactory::class, 'search' => ['RisingOS']],
             self::blackpantheros => ['factory' => VersionBuilderFactory::class, 'search' => ['blackPanther OS']],
@@ -800,7 +805,6 @@ enum Os: string implements OsInterface
             self::freebsd => ['factory' => VersionBuilderFactory::class, 'search' => ['FreeBSD', 'freebsd']],
             self::openvms => ['factory' => VersionBuilderFactory::class, 'search' => ['OpenVMS V', 'OpenVMS']],
             self::tru64unix => ['factory' => VersionBuilderFactory::class, 'search' => ['Tru64 UNIX', 'Digital Unix']],
-            self::webos => ['factory' => VersionBuilderFactory::class, 'search' => ['WebOS', 'webOS', 'hpwOS']],
             self::kaios => ['factory' => VersionBuilderFactory::class, 'search' => ['kaios']],
             self::kubuntu => ['factory' => VersionBuilderFactory::class, 'search' => ['Kubuntu', 'kubuntu']],
             self::ubuntu, self::ubuntuTouch => ['factory' => UbuntuFactory::class, 'search' => null],
@@ -840,7 +844,7 @@ enum Os: string implements OsInterface
             self::linspire => ['factory' => VersionBuilderFactory::class, 'search' => ['Linspire']],
             self::aosp, self::androidtv, self::androidGo => ['factory' => VersionBuilderFactory::class, 'search' => ['Andr[o0]id']],
             self::hpux => ['factory' => VersionBuilderFactory::class, 'search' => ['HP-UX']],
-            self::whaleOS => ['factory' => VersionBuilderFactory::class, 'search' => ['WH\/', 'WhaleTV']],
+            self::whaleOS => ['factory' => VersionBuilderFactory::class, 'search' => ['WH\/', 'WhaleTV', 'WH']],
             self::series60 => ['factory' => VersionBuilderFactory::class, 'search' => ['Series ?60', 'S60 ?V']],
             self::operaTv => ['factory' => VersionBuilderFactory::class, 'search' => ['TV Store']],
             self::qtopia => ['factory' => VersionBuilderFactory::class, 'search' => ['Qtopia']],
@@ -897,6 +901,7 @@ enum Os: string implements OsInterface
             self::plan9 => ['factory' => VersionBuilderFactory::class, 'search' => ['Plan 9']],
             self::fireos => ['factory' => VersionBuilderFactory::class, 'search' => ['Fire OS']],
             self::deepin => ['factory' => VersionBuilderFactory::class, 'search' => ['Deepin']],
+            self::thinOS => ['factory' => VersionBuilderFactory::class, 'search' => ['Warthog', 'WTOS']],
             default => ['factory' => null, 'search' => null],
         };
     }
@@ -1020,6 +1025,7 @@ enum Os: string implements OsInterface
             self::nuttX => 'nuttx',
             self::plan9 => 'plan-9',
             self::kolibriOS => 'kolibri-os',
+            self::thinOS => 'thin-os',
             default => $this->name,
         };
     }

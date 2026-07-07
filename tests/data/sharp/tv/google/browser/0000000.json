@@ -23,8 +23,8 @@
       "bits": null
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
+      "name": "Android TV",
+      "marketingName": "Android TV",
       "version": null,
       "manufacturer": "Google",
       "bits": null
@@ -86,6 +86,51 @@
     "engine": {
       "name": "Blink",
       "version": "55.0.2883.91",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; AQUOS-TVJ19 Build/QTG3.210505.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Aquos TVJ19",
+      "marketingName": "Aquos TVJ19",
+      "manufacturer": "Sharp",
+      "brand": "Sharp",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome WebView",
+      "modus": null,
+      "version": "149.0.7827.91",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "149.0.7827.91",
       "manufacturer": "Google"
     }
   }

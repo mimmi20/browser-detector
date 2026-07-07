@@ -43,5 +43,50 @@
       "version": null,
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Warthog/9.0 Safari/537"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "PC",
+      "marketingName": "PC",
+      "manufacturer": "Dell",
+      "brand": "Dell",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "ThinOS",
+      "marketingName": "ThinOS",
+      "version": "9.0.0",
+      "manufacturer": "Dell",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "66.0.3359.181",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "66.0.3359.181",
+      "manufacturer": "Google"
+    }
   }
 ]

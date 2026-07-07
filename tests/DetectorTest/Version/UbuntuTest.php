@@ -70,6 +70,10 @@ final class UbuntuTest extends TestCase
                 'R/3.6.0 (ubuntu-16.04) R (3.6.0 x86_64-pc-linux-gnu x86_64 linux-gnu)',
                 '16.04.0',
             ],
+            [
+                'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.3) Gecko/20061201 Firefox/2.0.0.1 (Ubuntu-feisty)',
+                '7.04.0',
+            ],
         ];
     }
 }

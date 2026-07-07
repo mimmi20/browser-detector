@@ -203,7 +203,18 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "PHP",
+        "PHP"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "php-soap": {
+    "name": "PHP-SOAP",
+    "manufacturer": "php-group",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
         "PHP\\-SOAP"
       ]
     },
@@ -1749,6 +1760,18 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "REST::Client"
+      ]
+    },
+    "engine": null
+  },
+  "kl-http-client-curl": {
+    "name": "KlHttpClientCurl",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "KlHttpClientCurl"
       ]
     },
     "engine": null

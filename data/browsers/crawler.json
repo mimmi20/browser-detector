@@ -6600,5 +6600,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "sleep-bot": {
+    "name": "SleepBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SleepBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }
