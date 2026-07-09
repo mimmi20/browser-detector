@@ -12460,6 +12460,24 @@ final class CompanyTest extends TestCase
                 'brandname' => 'SmartBarry',
                 'key' => 'smart-barry',
             ],
+            [
+                'type' => 'Linsay',
+                'name' => 'Linsay',
+                'brandname' => 'Linsay',
+                'key' => 'linsay',
+            ],
+            [
+                'type' => 'Vekta',
+                'name' => 'Vekta',
+                'brandname' => 'Vekta',
+                'key' => 'vekta',
+            ],
+            [
+                'type' => 'Nikola',
+                'name' => 'Nikola',
+                'brandname' => 'Nikola',
+                'key' => 'nikola',
+            ],
         ];
     }
 

@@ -612,6 +612,7 @@ final class DeviceTest extends TestCase
             ['CPH2793', 'oneplus=oneplus cph2793'],
             ['CPH2795', 'oneplus=oneplus cph2795'],
             ['PLR110', 'oneplus=oneplus plr110'],
+            ['PLQ110', 'oneplus=oneplus plq110'],
             // Oppo
             ['CPH2065', 'oppo=oppo cph2065'],
             ['CPH2211', 'oppo=oppo cph2211'],
@@ -867,6 +868,8 @@ final class DeviceTest extends TestCase
             ['PLS120', 'oppo=oppo pls120'],
             ['CPH2759', 'oppo=oppo cph2759'],
             ['CPH2751', 'oppo=oppo cph2751'],
+            ['PLP110', 'oppo=oppo plp110'],
+            ['PLP120', 'oppo=oppo plp120'],
             // Xiaomi/Poco
             ['Redmi Note 9 Pro', 'xiaomi=xiaomi redmi note 9 pro'],
             ['M2103K19G', 'xiaomi=xiaomi m2103k19g'],
@@ -5575,6 +5578,7 @@ final class DeviceTest extends TestCase
             ['Realme RMX5555', 'realme=realme rmx5555'],
             ['RMP2402', 'realme=realme rmp2402'],
             ['RMX3953', 'realme=realme rmx3953'],
+            ['RMX3948', 'realme=realme rmx3948'],
             // Motorola
             ['moto g200 5G', 'motorola=motorola moto g200 5g'],
             ['motorola razr 5G', 'motorola=motorola razr 5g'],
@@ -5655,6 +5659,7 @@ final class DeviceTest extends TestCase
             ['moto g52', 'motorola=motorola moto g52'],
             ['moto g(52)', 'motorola=motorola moto g52'],
             ['moto g(52', 'motorola=motorola moto g52'],
+            ['moto g52-22-4-11', 'motorola=motorola moto g52'],
             ['moto e(6) plus', 'motorola=motorola moto e6 plus'],
             ['moto e6s', 'motorola=motorola moto e6s'],
             ['moto e13', 'motorola=motorola moto e13'],
@@ -9184,6 +9189,7 @@ final class DeviceTest extends TestCase
             ['ajib i10', 'ajib=ajib i10'],
             // myphone
             ['myPhone N23', 'myphone=myphone n23'],
+            ['myPhone N23 lite', 'myphone=myphone n23 lite'],
             // vgo-tel
             ['NEW 16', 'vgo-tel=vgo-tel new 16'],
             ['NEW 24', 'vgo-tel=vgo-tel new 24'],
@@ -9658,6 +9664,7 @@ final class DeviceTest extends TestCase
             ['A161', 'inoi=inoi a161'],
             ['INOI_6i_Lite', 'inoi=inoi 6i lite'],
             ['A171_Plus', 'inoi=inoi a171_plus'],
+            ['inoiPad 64GB Wi-Fi +4G', 'inoi=inoi inoipad wi-fi+4g'],
             // jumper
             ['EZpad M11', 'jumper=jumper ezpad m11'],
             ['EZpad M10S', 'jumper=jumper ezpad m10s'],
@@ -10416,6 +10423,7 @@ final class DeviceTest extends TestCase
             ['H43QSY24F', 'razz=razz h43qsy24f'],
             ['K55USY23', 'razz=razz k55usy23'],
             ['C50USY24F', 'razz=razz c50usy24f'],
+            ['CE32FSA26F', 'razz=razz ce32fsa26f'],
             // ktc
             ['800P11B', 'ktc=ktc 800p11b'],
             ['55UE-BYVB', 'ktc=ktc 55ue-byvb'],
@@ -10655,6 +10663,12 @@ final class DeviceTest extends TestCase
             ['HEJIGOE', 'heji=heji goe'],
             // smart-barry
             ['HT88', 'smart-barry=smart-barry ht88'],
+            // linsay
+            ['F10XIPV', 'linsay=linsay f10xipv'],
+            // vekta
+            ['LD-32SR4358BS', 'vekta=vekta ld-32sr4358bs'],
+            // nikola
+            ['N5901', 'nikola=nikola n5901'],
             // other
             ['Model"', null],
             [': "', null],

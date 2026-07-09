@@ -567,6 +567,7 @@ final class Device implements DeviceInterface
             'cph2793' => 'oneplus=oneplus cph2793',
             'cph2795' => 'oneplus=oneplus cph2795',
             'plr110' => 'oneplus=oneplus plr110',
+            'plq110' => 'oneplus=oneplus plq110',
             // Oppo
             'cph2065' => 'oppo=oppo cph2065',
             'cph2211' => 'oppo=oppo cph2211',
@@ -821,6 +822,8 @@ final class Device implements DeviceInterface
             'pls120' => 'oppo=oppo pls120',
             'cph2759' => 'oppo=oppo cph2759',
             'cph2751' => 'oppo=oppo cph2751',
+            'plp110' => 'oppo=oppo plp110',
+            'plp120' => 'oppo=oppo plp120',
             // Xiaomi/Poco
             'redmi note 9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro', 'redmi_note_8_pro' => 'xiaomi=xiaomi redmi note 8 pro',
@@ -4192,6 +4195,7 @@ final class Device implements DeviceInterface
             'rmx5555', 'realme rmx5555' => 'realme=realme rmx5555',
             'rmp2402' => 'realme=realme rmp2402',
             'rmx3953' => 'realme=realme rmx3953',
+            'rmx3948' => 'realme=realme rmx3948',
             // Motorola
             'moto g200 5g' => 'motorola=motorola moto g200 5g',
             'motorola razr 5g' => 'motorola=motorola razr 5g',
@@ -4267,7 +4271,7 @@ final class Device implements DeviceInterface
             'moto g41' => 'motorola=motorola moto g41',
             'moto g72' => 'motorola=motorola moto g72',
             'moto e(7i) power' => 'motorola=motorola moto e7i power',
-            'moto g52', 'moto g(52)', 'moto g(52' => 'motorola=motorola moto g52',
+            'moto g52', 'moto g(52)', 'moto g(52', 'moto g52-22-4-11' => 'motorola=motorola moto g52',
             'moto e(6) plus' => 'motorola=motorola moto e6 plus',
             'moto e6s' => 'motorola=motorola moto e6s',
             'moto e13' => 'motorola=motorola moto e13',
@@ -7539,6 +7543,7 @@ final class Device implements DeviceInterface
             'ajib i10' => 'ajib=ajib i10',
             // myphone
             'myphone n23' => 'myphone=myphone n23',
+            'myphone n23 lite' => 'myphone=myphone n23 lite',
             // vgo-tel
             'new 16' => 'vgo-tel=vgo-tel new 16',
             'new 24' => 'vgo-tel=vgo-tel new 24',
@@ -8011,6 +8016,7 @@ final class Device implements DeviceInterface
             'a161' => 'inoi=inoi a161',
             'inoi_6i_lite' => 'inoi=inoi 6i lite',
             'a171_plus' => 'inoi=inoi a171_plus',
+            'inoipad 64gb wi-fi +4g' => 'inoi=inoi inoipad wi-fi+4g',
             // jumper
             'ezpad m11' => 'jumper=jumper ezpad m11',
             'ezpad m10s' => 'jumper=jumper ezpad m10s',
@@ -8758,6 +8764,7 @@ final class Device implements DeviceInterface
             'h43qsy24f' => 'razz=razz h43qsy24f',
             'k55usy23' => 'razz=razz k55usy23',
             'c50usy24f' => 'razz=razz c50usy24f',
+            'ce32fsa26f' => 'razz=razz ce32fsa26f',
             // ktc
             '800p11b' => 'ktc=ktc 800p11b',
             '55ue-byvb' => 'ktc=ktc 55ue-byvb',
@@ -8990,6 +8997,12 @@ final class Device implements DeviceInterface
             'heji goe', 'hejigoe' => 'heji=heji goe',
             // smart-barry
             'ht88' => 'smart-barry=smart-barry ht88',
+            // linsay
+            'f10xipv' => 'linsay=linsay f10xipv',
+            // vekta
+            'ld-32sr4358bs' => 'vekta=vekta ld-32sr4358bs',
+            // nikola
+            'n5901' => 'nikola=nikola n5901',
             // other
             default => null,
         };

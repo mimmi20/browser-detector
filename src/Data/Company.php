@@ -4157,6 +4157,12 @@ enum Company: string implements CompanyInterface
 
     case smartBarry = 'SmartBarry';
 
+    case linsay = 'Linsay';
+
+    case vekta = 'Vekta';
+
+    case nikola = 'Nikola';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -6233,6 +6239,9 @@ enum Company: string implements CompanyInterface
             'barton' => self::barton,
             'heji' => self::heji,
             'smartbarry', 'smart-barry' => self::smartBarry,
+            'linsay' => self::linsay,
+            'vekta' => self::vekta,
+            'nikola' => self::nikola,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
