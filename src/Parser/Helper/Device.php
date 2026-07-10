@@ -251,6 +251,7 @@ final class Device implements DeviceInterface
             'zb602kl' => 'asus=asus zb602kl',
             'asus chromebook flip c101pa' => 'asus=asus chromebook flip c101pa',
             'zb500kl', 'asus zenfone go zb500kl' => 'asus=asus zb500kl',
+            'asus_zenpad_12p' => 'asus=asus zenpad 12p',
             // Google
             'nexus 7' => 'google=google nexus 7',
             'pixel 3', 'aosp on blueline' => 'google=google pixel 3',
@@ -266,6 +267,7 @@ final class Device implements DeviceInterface
             'pixel 7a' => 'google=google pixel 7a',
             'pixel 7 pro' => 'google=google pixel 7 pro',
             'pixel 8' => 'google=google pixel 8',
+            'pixel 8x' => 'google=google pixel 8x',
             'kukui' => 'google=google kukui',
             'nexus 5', 'aosp on hammerhead' => 'google=google nexus 5',
             'pixel 4a', 'aosp on sunfish' => 'google=google pixel 4a',
@@ -1558,6 +1560,8 @@ final class Device implements DeviceInterface
             '2505drp06i' => 'xiaomi=xiaomi 2505drp06i',
             '2602dpt53g' => 'xiaomi=xiaomi 2602dpt53g',
             '2602dpt53i' => 'xiaomi=xiaomi 2602dpt53i',
+            'poco m8 pro 5g' => 'xiaomi=xiaomi poco m8 pro 5g',
+            'poco m8 5g' => 'xiaomi=xiaomi poco m8 5g',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -1690,6 +1694,7 @@ final class Device implements DeviceInterface
             'z2468n' => 'zte=zte z2468n',
             'z2459' => 'zte=zte z2459',
             'zte blade a7s' => 'zte=zte blade a7s',
+            'p7 pro 5g' => 'zte=zte p7 pro 5g',
             // Samsung
             'sm-a505fn', 'samsung sm-a505fn' => 'samsung=samsung sm-a505fn',
             'sm-a515f', 'samsung sm-a515f', 'sm-a515f/a515fxxu8hwi1' => 'samsung=samsung sm-a515f',
@@ -3533,7 +3538,7 @@ final class Device implements DeviceInterface
             'hey3-n09' => 'huawei=huawei hey3-n09',
             'hey3-w00' => 'huawei=huawei hey3-w00',
             'rod-w19' => 'huawei=huawei rod-w19',
-            'nla-lx2p' => 'huawei=huawei nla-lx2p',
+            'nla-lx2p', 'huawei nla-lx2p' => 'huawei=huawei nla-lx2p',
             'ela-lx3' => 'huawei=huawei ela-lx3',
             'ela-lx2' => 'huawei=huawei ela-lx2',
             'cle-an00' => 'huawei=huawei cle-an00',
@@ -3808,6 +3813,7 @@ final class Device implements DeviceInterface
             'ags6-w00', 'huawei ags6-w00' => 'huawei=huawei ags6-w00',
             'ags6-w09', 'huawei ags6-w09' => 'huawei=huawei ags6-w09',
             'ags6-l09', 'huawei ags6-l09' => 'huawei=huawei ags6-l09',
+            'nla-an00', 'huawei nla-an00' => 'huawei=huawei nla-an00',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -4240,7 +4246,7 @@ final class Device implements DeviceInterface
             'moto g (5)' => 'motorola=motorola moto g5',
             'moto g04s' => 'motorola=motorola moto g04s',
             'motorola edge 40' => 'motorola=motorola edge 40',
-            'motorola edge 40 neo' => 'motorola=motorola edge 40 neo',
+            'motorola edge 40 neo', 'motorola edge 40 neo-45-3-2-3' => 'motorola=motorola edge 40 neo',
             'moto g24' => 'motorola=motorola moto g24',
             'moto g35 5g' => 'motorola=motorola moto g35 5g',
             'moto g23' => 'motorola=motorola moto g23',
@@ -4371,6 +4377,7 @@ final class Device implements DeviceInterface
             'xt2527-3' => 'motorola=motorola xt2527-3',
             'xt2527-7' => 'motorola=motorola xt2527-7',
             'moto g stylus 5g - 2023' => 'motorola=motorola moto g stylus 5g (2023)',
+            'moto g stylus 5g - 2024' => 'motorola=motorola moto g stylus 5g (2024)',
             'motorola edge 60 fusion' => 'motorola=motorola edge 60 fusion',
             'motorola razr ultra 2025' => 'motorola=motorola razr ultra 2025',
             'moto g56 5g' => 'motorola=motorola moto g56 5g',
@@ -4383,7 +4390,7 @@ final class Device implements DeviceInterface
             'xt2163-4' => 'motorola=motorola xt2163-4',
             'xt2163-1' => 'motorola=motorola xt2163-1',
             'xt2163-2' => 'motorola=motorola xt2163-2',
-            'moto g64 5g' => 'motorola=motorola moto g64 5g',
+            'moto g64 5g', 'moto g64 5g-20-5-11' => 'motorola=motorola moto g64 5g',
             'motorola razr 50 ultra' => 'motorola=motorola moto razr 50 ultra',
             'motorola edge 50' => 'motorola=motorola edge 50',
             'motorola razr 60 ultra' => 'motorola=motorola razr 60 ultra',
@@ -4415,7 +4422,7 @@ final class Device implements DeviceInterface
             'xt2535-14' => 'motorola=motorola xt2535-14',
             'moto g53 5g' => 'motorola=motorola moto g53 5g',
             'xt2335-2' => 'motorola=motorola xt2335-2',
-            'moto g05', 'motog05' => 'motorola=motorola moto g05',
+            'moto g05', 'motog05', 'moto g05-153', 'moto g05-137-2-1' => 'motorola=motorola moto g05',
             'xt2523-2' => 'motorola=motorola xt2523-2',
             'xt2523-3' => 'motorola=motorola xt2523-3',
             'xt2523-11' => 'motorola=motorola xt2523-11',
@@ -4427,11 +4434,15 @@ final class Device implements DeviceInterface
             'motorola one hyper' => 'motorola=motorola one hyper',
             'xt2027-1' => 'motorola=motorola xt2027-1',
             'moto e5 supra' => 'motorola=motorola moto e5 supra',
-            'moto g45 5g' => 'motorola=motorola moto g45 5g',
+            'moto g45 5g', 'moto g45 5g-14-9-3-1-2', 'moto g45 5g-14-9-3-1-1' => 'motorola=motorola moto g45 5g',
             'mb860' => 'motorola=motorola mb860',
             'moto g 5g (2022)', 'moto g 5g (2022' => 'motorola=motorola moto g 5g 2022',
             'moto g77' => 'motorola=motorola moto g77',
             'motorola razr fold' => 'motorola=motorola razr fold',
+            'moto g96 5g', 'moto g96 5g-53', 'moto g96 5g-21-7-5-1-5' => 'motorola=motorola moto g96 5g',
+            'moto g64y 5g' => 'motorola=motorola moto g64y 5g',
+            'moto g17' => 'motorola=motorola moto g17',
+            'moto g06 power', 'moto g06 power-158-1' => 'motorola=motorola moto g06 power',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
@@ -4601,6 +4612,7 @@ final class Device implements DeviceInterface
             'xq-at72' => 'sony=sony xq-at72',
             'xperia sp' => 'sony=sony xperia sp',
             'bravia 4k vh22' => 'sony=sony bravia 4k vh22',
+            'so-53d' => 'sony=sony so-53d',
             // Vivo
             'v2109' => 'vivo=vivo v2109',
             'vivo 1716' => 'vivo=vivo 1716',
@@ -5154,10 +5166,11 @@ final class Device implements DeviceInterface
             'wp210 pro' => 'oukitel=oukitel wp210 pro',
             'oukitel g3' => 'oukitel=oukitel g3',
             'c11' => 'oukitel=oukitel c11',
-            'wp60' => 'oukitel=oukitel wp60',
+            'wp60', 'oukitel wp60' => 'oukitel=oukitel wp60',
             'rt3 plus' => 'oukitel=oukitel rt3 plus',
             'wp9' => 'oukitel=oukitel wp9',
             'c61 pro' => 'oukitel=oukitel c61 pro',
+            'oukitel rt7 5g' => 'oukitel=oukitel rt7 5g',
             // Ulefone
             'note 6p' => 'ulefone=ulefone note 6p',
             'armor 11t 5g' => 'ulefone=ulefone armor 11t 5g',
@@ -6463,7 +6476,7 @@ final class Device implements DeviceInterface
             'meizu m8c' => 'meizu=meizu m8c',
             'meizu m8c pro' => 'meizu=meizu m8c pro',
             'meizu 17 pro' => 'meizu=meizu 17 pro',
-            'mz-meizu note 16 pro' => 'meizu=meizu note 16 pro',
+            'mz-meizu note 16 pro', 'meizu note 16 pro' => 'meizu=meizu note 16 pro',
             'mz-meizu 21 note' => 'meizu=meizu 21 note',
             'meizu mx6', 'mz-mx6', 'mx6' => 'meizu=meizu mx6',
             'meizu m5c', 'mz-m5c', 'm5c' => 'meizu=meizu m5c',
@@ -6472,6 +6485,7 @@ final class Device implements DeviceInterface
             'm6 note' => 'meizu=meizu m6 note',
             'meizu note21 pro' => 'meizu=meizu note 21 pro',
             '15 plus' => 'meizu=meizu 15 plus',
+            'mz-meizu note 16', 'meizu note 16' => 'meizu=meizu note 16',
             // peaq
             'peaq pet 100' => 'peaq=peaq pet 100',
             'peaq pet 100 lte' => 'peaq=peaq pet 100 lte',
@@ -7234,6 +7248,7 @@ final class Device implements DeviceInterface
             'lava lxx510' => 'lava=lava lxx510',
             'lava lmx04' => 'lava=lava lmx04',
             'lzx413' => 'lava=lava lzx413',
+            'lzx417' => 'lava=lava lzx417',
             // yestel
             't5_eea', 't5-eea' => 'yestel=yestel t5_eea',
             't13_eea' => 'yestel=yestel t13_eea',
@@ -7563,6 +7578,7 @@ final class Device implements DeviceInterface
             'new 15' => 'vgo-tel=vgo-tel new 15',
             'new 12' => 'vgo-tel=vgo-tel new 12',
             'new 22' => 'vgo-tel=vgo-tel new 22',
+            'new 16 pro' => 'vgo-tel=vgo-tel new 16 pro',
             // thomson
             'teo8m' => 'thomson=thomson teo8m',
             'teo10m' => 'thomson=thomson teo10m',
@@ -7684,6 +7700,8 @@ final class Device implements DeviceInterface
             'pad lite e48' => 'kenshi=kenshi pad lite e48',
             'pad pro e112' => 'kenshi=kenshi pad pro e112',
             'pad pro e90' => 'kenshi=kenshi pad pro e90',
+            'armor c1s' => 'kenshi=kenshi armor c1s',
+            'armor i1w' => 'kenshi=kenshi armor i1w',
             // wish-tel
             't801' => 'wish-tel=wish-tel t801',
             't803' => 'wish-tel=wish-tel t803',
@@ -7970,6 +7988,7 @@ final class Device implements DeviceInterface
             'vx19' => 'mobicel=mobicel vx19',
             'vx20' => 'mobicel=mobicel vx20',
             'epic pro_2' => 'mobicel=mobicel epic pro 2',
+            'mobicel_f42' => 'mobicel=mobicel f42',
             // allview
             'x10_soul' => 'allview=allview x10 soul',
             'x20_soul' => 'allview=allview x20 soul',
@@ -8240,6 +8259,7 @@ final class Device implements DeviceInterface
             'philips google tv ta1' => 'philips=philips google tv ta1',
             'philips uhd android tv' => 'philips=philips smart tv uhd',
             'xenium s706' => 'philips=philips xenium s706',
+            'philips s6210t' => 'philips=philips s6210t',
             // homatics
             'box r 4k plus' => 'homatics=homatics box r 4k plus',
             'box r lite 4k' => 'homatics=homatics box r lite 4k',
@@ -8562,6 +8582,7 @@ final class Device implements DeviceInterface
             'dt20' => 'urovo=urovo dt20',
             // byd
             'dilink5.0 for byd auto' => 'byd=byd carpad',
+            'dilink5.1' => 'byd=byd dilink 5.1',
             // alps
             'tb8163p3_bsp' => 'alps=alps tb8163p3_bsp',
             // dialn
