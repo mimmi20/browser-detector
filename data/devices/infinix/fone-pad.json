@@ -30,5 +30,37 @@
     },
     "type": "fone-pad",
     "platform": "android"
+  },
+  "infinix x1201": {
+    "deviceName": "X1201",
+    "marketingName": "XPad 20 Pro",
+    "manufacturer": "infinix",
+    "brand": "infinix",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2000,
+      "height": 1200,
+      "touch": true,
+      "size": 12
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "infinix x1102b": {
+    "deviceName": "X1102B",
+    "marketingName": "XPad 30E",
+    "manufacturer": "infinix",
+    "brand": "infinix",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
   }
 }
