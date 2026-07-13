@@ -12478,6 +12478,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Nikola',
                 'key' => 'nikola',
             ],
+            [
+                'type' => 'Limón',
+                'name' => 'Limón',
+                'brandname' => 'Limón',
+                'key' => 'limon',
+            ],
+            [
+                'type' => 'Vodacom',
+                'name' => 'Vodacom Group Limited',
+                'brandname' => 'Vodacom',
+                'key' => 'vodacom',
+            ],
         ];
     }
 

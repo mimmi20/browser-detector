@@ -4,8 +4,8 @@
     "marketingName": "Smart Tab N8",
     "manufacturer": "vodafone",
     "brand": "vodafone",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 800,
@@ -20,8 +20,8 @@
     "marketingName": "Tab Mini 7",
     "manufacturer": "vodafone",
     "brand": "vodafone",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1024,
       "height": 600,
@@ -36,8 +36,8 @@
     "marketingName": "Tab Prime 7",
     "manufacturer": "vodafone",
     "brand": "vodafone",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1200,
@@ -52,8 +52,8 @@
     "marketingName": "Tab Speed 6",
     "manufacturer": "vodafone",
     "brand": "vodafone",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 800,
@@ -64,17 +64,33 @@
     "platform": "android"
   },
   "vodafone vodacom power tab 10": {
-    "deviceName": "Vodacom Power Tab 10",
-    "marketingName": "Vodacom Power Tab 10",
-    "manufacturer": "vodafone",
-    "brand": "vodafone",
-    "dualOrientation": null,
-    "simCount": null,
+    "deviceName": "Power Tab 10",
+    "marketingName": "Power Tab 10",
+    "manufacturer": "vodacom",
+    "brand": "vodacom",
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1200,
       "height": 800,
       "touch": true,
       "size": null
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "vodafone vodacom smart tab 8": {
+    "deviceName": "Smart Tab 8",
+    "marketingName": "Smart Tab 8",
+    "manufacturer": "vodacom",
+    "brand": "vodacom",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1200,
+      "height": 800,
+      "touch": true,
+      "size": 8
     },
     "type": "fone-pad",
     "platform": "android"

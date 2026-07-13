@@ -4163,6 +4163,10 @@ enum Company: string implements CompanyInterface
 
     case nikola = 'Nikola';
 
+    case limon = 'Limón';
+
+    case vodacom = 'Vodacom';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -6242,6 +6246,8 @@ enum Company: string implements CompanyInterface
             'linsay' => self::linsay,
             'vekta' => self::vekta,
             'nikola' => self::nikola,
+            'limon', 'limón' => self::limon,
+            'vodacom', 'vodacom group limited' => self::vodacom,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -7088,6 +7094,7 @@ enum Company: string implements CompanyInterface
             self::kingzone => 'Shenzhen Kingzone Communication Co.,Ltd',
             self::xgimi => 'CHENGDU XGIMI TECHNOLOGY CO.,LTD.',
             self::amedia => 'Shenzhen Amedia Technology Co., Ltd.',
+            self::vodacom => 'Vodacom Group Limited',
             self::unknown => null,
             default => $this->value,
         };

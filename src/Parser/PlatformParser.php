@@ -215,7 +215,7 @@ final readonly class PlatformParser implements PlatformParserInterface
             '/(?<!devicename:)nokia/i' => Os::symbianOs,
             '/brew/i' => Os::brew,
             '/Java ME|J2ME|Profile\/MIDP|CLDC|Java; MIDP|MMP\/\d\.\d/i' => Os::javaMe,
-            '/mtk[; 0-9]|nucleus/i' => Os::nucleus,
+            '/mtk[; 0-9]|nucleus|\(mtk\)/i' => Os::nucleus,
             '/mre|maui runtime/i' => Os::mre,
             '/threadx/i' => Os::threadx,
             '/\bprofile\b|gt\-c3312r|kkt20|lemon b556|spark284|obigo|jasmine\/1\.0|netfront|profile\/midp|j2me\/|java|micromaxx650|dolfin\/|yuanda50|wap[- ]?browser/i' => Os::javaos,
