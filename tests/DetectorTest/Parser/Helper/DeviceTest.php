@@ -905,6 +905,7 @@ final class DeviceTest extends TestCase
             ['CPH2731', 'oppo=oppo cph2731'],
             ['CPH2799', 'oppo=oppo cph2799'],
             ['CPH2789', 'oppo=oppo cph2789'],
+            ['Reno4', 'oppo=oppo reno 4'],
             // Xiaomi/Poco
             ['Redmi Note 9 Pro', 'xiaomi=xiaomi redmi note 9 pro'],
             ['M2103K19G', 'xiaomi=xiaomi m2103k19g'],
@@ -1661,6 +1662,14 @@ final class DeviceTest extends TestCase
             ['Redmi 15 5G', 'xiaomi=xiaomi redmi 15 5g'],
             ['Redmi 13x', 'xiaomi=xiaomi redmi 13x'],
             ['Redmi 13', 'xiaomi=xiaomi redmi 13'],
+            ['25097RP43C', 'xiaomi=xiaomi 25097rp43c'],
+            ['25091RP04G', 'xiaomi=xiaomi 25091rp04g'],
+            ['25082RNC1C', 'xiaomi=xiaomi 25082rnc1c'],
+            ['25080RABDI', 'xiaomi=xiaomi 25080rabdi'],
+            ['25079RPDCG', 'xiaomi=xiaomi 25079rpdcg'],
+            ['25079RPDCC', 'xiaomi=xiaomi 25079rpdcc'],
+            ['2506BPN68R', 'xiaomi=xiaomi 2506bpn68r'],
+            ['2405CRPFDI', 'xiaomi=xiaomi 2405crpfdi'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],

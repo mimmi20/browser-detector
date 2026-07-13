@@ -851,6 +851,7 @@ final class Device implements DeviceInterface
             'cph2731' => 'oppo=oppo cph2731',
             'cph2799' => 'oppo=oppo cph2799',
             'cph2789' => 'oppo=oppo cph2789',
+            'reno4' => 'oppo=oppo reno 4',
             // Xiaomi/Poco
             'redmi note 9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro', 'redmi_note_8_pro' => 'xiaomi=xiaomi redmi note 8 pro',
@@ -1590,6 +1591,14 @@ final class Device implements DeviceInterface
             'redmi 15 5g' => 'xiaomi=xiaomi redmi 15 5g',
             'redmi 13x' => 'xiaomi=xiaomi redmi 13x',
             'redmi 13' => 'xiaomi=xiaomi redmi 13',
+            '25097rp43c' => 'xiaomi=xiaomi 25097rp43c',
+            '25091rp04g' => 'xiaomi=xiaomi 25091rp04g',
+            '25082rnc1c' => 'xiaomi=xiaomi 25082rnc1c',
+            '25080rabdi' => 'xiaomi=xiaomi 25080rabdi',
+            '25079rpdcg' => 'xiaomi=xiaomi 25079rpdcg',
+            '25079rpdcc' => 'xiaomi=xiaomi 25079rpdcc',
+            '2506bpn68r' => 'xiaomi=xiaomi 2506bpn68r',
+            '2405crpfdi' => 'xiaomi=xiaomi 2405crpfdi',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
