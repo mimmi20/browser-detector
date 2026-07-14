@@ -1614,6 +1614,14 @@ final class Device implements DeviceInterface
             '26020rnb4i' => 'xiaomi=xiaomi 26020rnb4i',
             '26020rnb4a' => 'xiaomi=xiaomi 26020rnb4a',
             '26020rnb4l' => 'xiaomi=xiaomi 26020rnb4l',
+            'a402xm' => 'xiaomi=xiaomi a402xm',
+            '26048rp6ac' => 'xiaomi=xiaomi 26048rp6ac',
+            '2602eptc0g' => 'xiaomi=xiaomi 2602eptc0g',
+            '2602brt18c' => 'xiaomi=xiaomi 2602brt18c',
+            '2602brna4i' => 'xiaomi=xiaomi 2602brna4i',
+            '26020rn1ac' => 'xiaomi=xiaomi 26020rn1ac',
+            '26020pc1ai' => 'xiaomi=xiaomi 26020pc1ai',
+            '25128rn17l' => 'xiaomi=xiaomi 25128rn17l',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -3902,6 +3910,7 @@ final class Device implements DeviceInterface
             'fig-al10', 'huawei fig-al10' => 'huawei=huawei fig-al10',
             'ali-nx3p', 'huawei ali-nx3p' => 'huawei=huawei ali-nx3p',
             'abr-nx3', 'huawei abr-nx3' => 'huawei=huawei abr-nx3',
+            'aak-an00', 'huawei aak-an00' => 'huawei=huawei aak-an00',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -6385,6 +6394,9 @@ final class Device implements DeviceInterface
             'sh-02j' => 'sharp=sharp sh-02j',
             'aquos-tvj19' => 'sharp=sharp aquos tvj19',
             'a303sh' => 'sharp=sharp a303sh',
+            'a505sh' => 'sharp=sharp a505sh',
+            'a501sh' => 'sharp=sharp a501sh',
+            'a405sh' => 'sharp=sharp a405sh',
             // kyocera
             'a301kc' => 'kyocera=kyocera a301kc',
             'kyv41' => 'kyocera=kyocera kyv41',

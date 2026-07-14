@@ -1686,6 +1686,14 @@ final class DeviceTest extends TestCase
             ['26020RNB4I', 'xiaomi=xiaomi 26020rnb4i'],
             ['26020RNB4A', 'xiaomi=xiaomi 26020rnb4a'],
             ['26020RNB4L', 'xiaomi=xiaomi 26020rnb4l'],
+            ['A402XM', 'xiaomi=xiaomi a402xm'],
+            ['26048RP6AC', 'xiaomi=xiaomi 26048rp6ac'],
+            ['2602EPTC0G', 'xiaomi=xiaomi 2602eptc0g'],
+            ['2602BRT18C', 'xiaomi=xiaomi 2602brt18c'],
+            ['2602BRNA4I', 'xiaomi=xiaomi 2602brna4i'],
+            ['26020RN1AC', 'xiaomi=xiaomi 26020rn1ac'],
+            ['26020PC1AI', 'xiaomi=xiaomi 26020pc1ai'],
+            ['25128RN17L', 'xiaomi=xiaomi 25128rn17l'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -5322,6 +5330,8 @@ final class DeviceTest extends TestCase
             ['HUAWEI ALI-NX3P', 'huawei=huawei ali-nx3p'],
             ['ABR-NX3', 'huawei=huawei abr-nx3'],
             ['HUAWEI ABR-NX3', 'huawei=huawei abr-nx3'],
+            ['AAK-AN00', 'huawei=huawei aak-an00'],
+            ['HUAWEI AAK-AN00', 'huawei=huawei aak-an00'],
             // Lenovo
             ['Lenovo TB-X304F', 'lenovo=lenovo tb-x304f'],
             ['X1030X', 'lenovo=lenovo x1030x'],
@@ -7916,6 +7926,9 @@ final class DeviceTest extends TestCase
             ['SH-02J', 'sharp=sharp sh-02j'],
             ['AQUOS-TVJ19', 'sharp=sharp aquos tvj19'],
             ['A303SH', 'sharp=sharp a303sh'],
+            ['A505SH', 'sharp=sharp a505sh'],
+            ['A501SH', 'sharp=sharp a501sh'],
+            ['A405SH', 'sharp=sharp a405sh'],
             // kyocera
             ['A301KC', 'kyocera=kyocera a301kc'],
             ['KYV41', 'kyocera=kyocera kyv41'],

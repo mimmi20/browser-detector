@@ -6988,5 +6988,17 @@
       ]
     },
     "engine": null
+  },
+  "jio-sphere": {
+    "name": "JioSphere",
+    "manufacturer": "jio-platforms",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "JioSphere"
+      ]
+    },
+    "engine": "unknown"
   }
 }
