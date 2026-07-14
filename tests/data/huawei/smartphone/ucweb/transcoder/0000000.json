@@ -1757,6 +1757,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 16; zh-CN; BKQ-AN00 Build/HONORBKQ-ANXX) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/18.9.0.1516 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "BKQ-AN00",
+      "marketingName": "Magic 8 5G",
+      "manufacturer": "Huawei",
+      "brand": "Honor",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2760,
+        "height": 1256,
+        "touch": true,
+        "size": 6.58
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "18.9.0.1516",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "123.0.6312.80",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 16; pt-BR; JDY-LX3P Build/HONORJDY-L43P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.9.1395 Mobile Safari/537.36"
     },
     "device": {
@@ -1797,6 +1842,141 @@
     "engine": {
       "name": "Blink",
       "version": "123.0.6312.80",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 16; en-US; VKJ-NX9 Build/HONORVKJ-N39) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.9.1395 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "VKJ-NX9",
+      "marketingName": "600",
+      "manufacturer": "Huawei",
+      "brand": "Honor",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2728,
+        "height": 1264,
+        "touch": true,
+        "size": 6.57
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "15.1.9.1395",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "123.0.6312.80",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 16; en-US; LNA-NX1 Build/HONORLNA-N32) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.9.1395 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "LNA-NX1",
+      "marketingName": "600 Lite",
+      "manufacturer": "Huawei",
+      "brand": "Honor",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2600,
+        "height": 1200,
+        "touch": true,
+        "size": 6.6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "15.1.9.1395",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "123.0.6312.80",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 16; en-US; LNA-LX2 Build/HONORLNA-L32) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 UCBrowser/12.3.0.1290 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "LNA-LX2",
+      "marketingName": "P60",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2700,
+        "height": 1220,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "12.3.0.1290",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "149.0.7827.91",
       "manufacturer": "Google"
     }
   },

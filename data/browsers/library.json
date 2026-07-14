@@ -1775,5 +1775,17 @@
       ]
     },
     "engine": null
+  },
+  "embarcadero-uri-client": {
+    "name": "Embarcadero URI Client",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Embarcadero URI Client"
+      ]
+    },
+    "engine": null
   }
 }

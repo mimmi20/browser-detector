@@ -1775,8 +1775,40 @@
     "type": "phablet",
     "platform": "android"
   },
+  "xiaomi redmi note 14 pro": {
+    "deviceName": "Redmi Note 14 Pro 4G",
+    "marketingName": "Redmi Note 14 Pro 4G",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
   "xiaomi 2502fra65g": {
     "deviceName": "2502FRA65G",
+    "marketingName": "Redmi Note 14S",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi redmi note 14s": {
+    "deviceName": "Redmi Note 14S",
     "marketingName": "Redmi Note 14S",
     "manufacturer": "xiaomi",
     "brand": "xiaomi",
@@ -1825,6 +1857,22 @@
   },
   "xiaomi 24117rn76e": {
     "deviceName": "24117RN76E",
+    "marketingName": "Redmi Note 14 4G",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi redmi note 14": {
+    "deviceName": "Redmi Note 14 4G",
     "marketingName": "Redmi Note 14 4G",
     "manufacturer": "xiaomi",
     "brand": "xiaomi",
@@ -3073,7 +3121,7 @@
   },
   "xiaomi 2510era8bg": {
     "deviceName": "2510ERA8BG",
-    "marketingName": "Redmi Note 15 Pro+ (Global)",
+    "marketingName": "Redmi Note 15 Pro+ 5G (Global)",
     "manufacturer": "xiaomi",
     "brand": "xiaomi",
     "dualOrientation": true,
@@ -3089,7 +3137,39 @@
   },
   "xiaomi 25098ra98g": {
     "deviceName": "25098RA98G",
-    "marketingName": "Redmi Note 15 5G",
+    "marketingName": "Redmi Note 15 5G (International)",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2392,
+      "height": 1080,
+      "touch": true,
+      "size": 6.77
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 25098ra98i": {
+    "deviceName": "25098RA98I",
+    "marketingName": "Redmi Note 15 5G (India)",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2392,
+      "height": 1080,
+      "touch": true,
+      "size": 6.77
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 25098ra98c": {
+    "deviceName": "25098RA98C",
+    "marketingName": "Redmi Note 15 5G (China)",
     "manufacturer": "xiaomi",
     "brand": "xiaomi",
     "dualOrientation": true,

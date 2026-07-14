@@ -856,6 +856,141 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 16; zh-Hans-GB; BKQ-AN00 Build/HONORBKQ-ANXX) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.86 Quark/10.12.0.1095 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "BKQ-AN00",
+      "marketingName": "Magic 8 5G",
+      "manufacturer": "Huawei",
+      "brand": "Honor",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2760,
+        "height": 1256,
+        "touch": true,
+        "size": 6.58
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Quark",
+      "modus": null,
+      "version": "10.12.0.1095",
+      "manufacturer": "Quark",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "144.0.7559.86",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 16; zh-Hans-CN; VKJ-AN90 Build/HONORVKJ-AN90) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.86 Quark/10.11.1.1086 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "VKJ-AN90",
+      "marketingName": "600",
+      "manufacturer": "Huawei",
+      "brand": "Honor",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2728,
+        "height": 1264,
+        "touch": true,
+        "size": 6.57
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Quark",
+      "modus": null,
+      "version": "10.11.1.1086",
+      "manufacturer": "Quark",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "144.0.7559.86",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 16; zh-Hans-CN; VKJ-AN00 Build/HONORVKJ-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 Quark/10.12.2.1097 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "VKJ-AN00",
+      "marketingName": "600",
+      "manufacturer": "Huawei",
+      "brand": "Honor",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2728,
+        "height": 1264,
+        "touch": true,
+        "size": 6.57
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Quark",
+      "modus": null,
+      "version": "10.12.2.1097",
+      "manufacturer": "Quark",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "100.0.4896.58",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 16; zh-Hans-CN; BKQ-AN90 Build/HONORBKQ-ANXX) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.86 Quark/10.12.0.1095 Mobile Safari/537.36"
     },
     "device": {
@@ -881,6 +1016,51 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Quark",
+      "modus": null,
+      "version": "10.12.0.1095",
+      "manufacturer": "Quark",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "144.0.7559.86",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 15; zh-Hans-CN; NLA-AN00 Build/HONORNLA-AN00X) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.86 Quark/10.12.0.1095 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "NLA-AN00",
+      "marketingName": "Honor Play 60A 5G",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.75
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
       "manufacturer": "Google",
       "bits": null
     },

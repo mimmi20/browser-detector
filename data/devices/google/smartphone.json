@@ -543,6 +543,22 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "google pixel 8x": {
+    "deviceName": "Pixel 8x",
+    "marketingName": "Pixel 8x",
+    "manufacturer": "google",
+    "brand": "google",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "google pixel 8 pro": {
     "deviceName": "Pixel 8 Pro",
     "marketingName": "Pixel 8 Pro",
@@ -1883,6 +1899,54 @@
       "height": 1080,
       "touch": true,
       "size": 6.3
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "google pixel 11": {
+    "deviceName": "Pixel 11",
+    "marketingName": "Pixel 11",
+    "manufacturer": "google",
+    "brand": "google",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2424,
+      "height": 1080,
+      "touch": true,
+      "size": 6.3
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "google pixel 11 pro fold": {
+    "deviceName": "Pixel 11 Pro Fold",
+    "marketingName": "Pixel 11 Pro Fold",
+    "manufacturer": "google",
+    "brand": "google",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2160,
+      "height": 2076,
+      "touch": true,
+      "size": 8
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "google pixel 9 fold": {
+    "deviceName": "Pixel 9 Fold",
+    "marketingName": "Pixel 9 Fold",
+    "manufacturer": "google",
+    "brand": "google",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": 7.6
     },
     "type": "smartphone",
     "platform": "android"

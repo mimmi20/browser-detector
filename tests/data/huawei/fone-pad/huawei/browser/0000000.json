@@ -1261,6 +1261,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; HarmonyOS; DBY2-AL00; HMSCore 6.16.2.302) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 HuaweiBrowser/17.0.5.301 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "DBY2-AL00",
+      "marketingName": "MatePad 11.5\" Air LTE (2021)",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2800,
+        "height": 1840,
+        "touch": true,
+        "size": 11.5
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "HarmonyOS",
+      "marketingName": "HarmonyOS",
+      "version": null,
+      "manufacturer": "Huawei",
+      "bits": null
+    },
+    "client": {
+      "name": "Huawei Browser",
+      "modus": null,
+      "version": "17.0.5.301",
+      "manufacturer": "Huawei",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.5735.196",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; HarmonyOS; AGS3K-AL20; HMSCore 6.16.2.302) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 HuaweiBrowser/17.0.5.301 Safari/537.36"
     },
     "device": {

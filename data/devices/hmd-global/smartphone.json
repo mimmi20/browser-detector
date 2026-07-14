@@ -158,5 +158,53 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "hmd-global aura": {
+    "deviceName": "Aura",
+    "marketingName": "Aura",
+    "manufacturer": "hmd-global",
+    "brand": "hmd-global",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1612,
+      "height": 720,
+      "touch": true,
+      "size": 6.56
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "hmd-global crest max": {
+    "deviceName": "Crest Max",
+    "marketingName": "Crest Max",
+    "manufacturer": "hmd-global",
+    "brand": "hmd-global",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "hmd-global key": {
+    "deviceName": "Key",
+    "marketingName": "Key",
+    "manufacturer": "hmd-global",
+    "brand": "hmd-global",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1280,
+      "height": 576,
+      "touch": true,
+      "size": 6.52
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }

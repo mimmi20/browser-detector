@@ -12454,6 +12454,42 @@ final class CompanyTest extends TestCase
                 'brandname' => 'HEJI',
                 'key' => 'heji',
             ],
+            [
+                'type' => 'SmartBarry',
+                'name' => 'SmartBarry',
+                'brandname' => 'SmartBarry',
+                'key' => 'smart-barry',
+            ],
+            [
+                'type' => 'Linsay',
+                'name' => 'Linsay',
+                'brandname' => 'Linsay',
+                'key' => 'linsay',
+            ],
+            [
+                'type' => 'Vekta',
+                'name' => 'Vekta',
+                'brandname' => 'Vekta',
+                'key' => 'vekta',
+            ],
+            [
+                'type' => 'Nikola',
+                'name' => 'Nikola',
+                'brandname' => 'Nikola',
+                'key' => 'nikola',
+            ],
+            [
+                'type' => 'Limón',
+                'name' => 'Limón',
+                'brandname' => 'Limón',
+                'key' => 'limon',
+            ],
+            [
+                'type' => 'Vodacom',
+                'name' => 'Vodacom Group Limited',
+                'brandname' => 'Vodacom',
+                'key' => 'vodacom',
+            ],
         ];
     }
 
