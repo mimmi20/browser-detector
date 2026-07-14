@@ -6,7 +6,7 @@
     "device": {
       "architecture": null,
       "deviceName": "25057RN09G",
-      "marketingName": "Redmi 15",
+      "marketingName": "Redmi 15 5G",
       "manufacturer": "Xiaomi",
       "brand": "Xiaomi",
       "dualOrientation": true,
@@ -41,6 +41,51 @@
     "engine": {
       "name": "Blink",
       "version": "149.0.7827.91",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 16; en-in; 2511FPC34I Build/BP2A.250605.031.A3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.215 Mobile Safari/537.36 PHX/21.7"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "2511FPC34I",
+      "marketingName": "X8 Pro 5G (India)",
+      "manufacturer": "Xiaomi",
+      "brand": "Poco",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2756,
+        "height": 1268,
+        "touch": true,
+        "size": 6.59
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Phoenix Browser",
+      "modus": null,
+      "version": "21.7.0",
+      "manufacturer": "CloudView Technology",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "148.0.7778.215",
       "manufacturer": "Google"
     }
   },
@@ -176,6 +221,51 @@
     "engine": {
       "name": "Blink",
       "version": "149.0.7827.93",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 15; en-us; 26020RNB4A Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.86 Mobile Safari/537.36 PHX/21.7"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "26020RNB4A",
+      "marketingName": "Redmi A7",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.9
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Phoenix Browser",
+      "modus": null,
+      "version": "21.7.0",
+      "manufacturer": "CloudView Technology",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "130.0.6723.86",
       "manufacturer": "Google"
     }
   },

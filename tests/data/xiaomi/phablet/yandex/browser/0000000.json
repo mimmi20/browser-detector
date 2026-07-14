@@ -1636,7 +1636,7 @@
     "device": {
       "architecture": null,
       "deviceName": "2510ERA8BG",
-      "marketingName": "Redmi Note 15 Pro+ (Global)",
+      "marketingName": "Redmi Note 15 Pro+ 5G (Global)",
       "manufacturer": "Xiaomi",
       "brand": "Xiaomi",
       "dualOrientation": true,
@@ -1861,7 +1861,7 @@
     "device": {
       "architecture": null,
       "deviceName": "25098RA98G",
-      "marketingName": "Redmi Note 15 5G",
+      "marketingName": "Redmi Note 15 5G (International)",
       "manufacturer": "Xiaomi",
       "brand": "Xiaomi",
       "dualOrientation": true,
@@ -1906,7 +1906,7 @@
     "device": {
       "architecture": null,
       "deviceName": "25098RA98G",
-      "marketingName": "Redmi Note 15 5G",
+      "marketingName": "Redmi Note 15 5G (International)",
       "manufacturer": "Xiaomi",
       "brand": "Xiaomi",
       "dualOrientation": true,
@@ -1941,6 +1941,96 @@
     "engine": {
       "name": "Blink",
       "version": "148.0.7778.144",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 16; 25098RA98C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.70 YaSearchBrowser/26.44.1 BroPP/1.0 YaSearchApp/26.44.1 webOmni Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "25098RA98C",
+      "marketingName": "Redmi Note 15 5G (China)",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2392,
+        "height": 1080,
+        "touch": true,
+        "size": 6.77
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "26.44.1",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "146.0.7680.70",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 16; 25098RA98C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.49 YaBrowser/26.4.7.49.00 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "25098RA98C",
+      "marketingName": "Redmi Note 15 5G (China)",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2392,
+        "height": 1080,
+        "touch": true,
+        "size": 6.77
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "26.4.7.49.00",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "146.0.7680.49",
       "manufacturer": "Google"
     }
   },

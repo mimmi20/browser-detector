@@ -46,6 +46,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 16; 25118PC98G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.59 YaSearchBrowser/26.61.1 BroPP/1.0 YaSearchApp/26.61.1 webOmni Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "25118PC98G",
+      "marketingName": "Poco M8 5G (International)",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2392,
+        "height": 1080,
+        "touch": true,
+        "size": 6.77
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "26.61.1",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "148.0.7778.59",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 16; 25113PN0EG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 YaApp_Android/20.113.1 YaSearchBrowser/20.113.1 BroPP/1.0 SA/3 Mobile Safari/537.36"
     },
     "device": {
@@ -411,7 +456,7 @@
     "device": {
       "architecture": null,
       "deviceName": "25057RN09G",
-      "marketingName": "Redmi 15",
+      "marketingName": "Redmi 15 5G",
       "manufacturer": "Xiaomi",
       "brand": "Xiaomi",
       "dualOrientation": true,
@@ -456,7 +501,7 @@
     "device": {
       "architecture": null,
       "deviceName": "25057RN09G",
-      "marketingName": "Redmi 15",
+      "marketingName": "Redmi 15 5G",
       "manufacturer": "Xiaomi",
       "brand": "Xiaomi",
       "dualOrientation": true,
@@ -501,7 +546,7 @@
     "device": {
       "architecture": null,
       "deviceName": "25057RN09E",
-      "marketingName": "Redmi 15",
+      "marketingName": "Redmi 15 5G",
       "manufacturer": "Xiaomi",
       "brand": "Xiaomi",
       "dualOrientation": true,
@@ -546,7 +591,7 @@
     "device": {
       "architecture": null,
       "deviceName": "25057RN09E",
-      "marketingName": "Redmi 15",
+      "marketingName": "Redmi 15 5G",
       "manufacturer": "Xiaomi",
       "brand": "Xiaomi",
       "dualOrientation": true,
@@ -626,6 +671,51 @@
     "engine": {
       "name": "Blink",
       "version": "146.0.7680.61",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 15; 25082RNC1C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.128 YaBrowser/26.4.5.128.00 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "25082RNC1C",
+      "marketingName": "Redmi 15R 5G",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.9
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "26.4.5.128.00",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "146.0.7680.128",
       "manufacturer": "Google"
     }
   },
@@ -726,7 +816,7 @@
     "device": {
       "architecture": null,
       "deviceName": "25057RN09I",
-      "marketingName": "Redmi 15",
+      "marketingName": "Redmi 15 5G",
       "manufacturer": "Xiaomi",
       "brand": "Xiaomi",
       "dualOrientation": true,
