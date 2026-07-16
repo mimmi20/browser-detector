@@ -287,8 +287,40 @@
     "type": "phablet",
     "platform": "android"
   },
+  "huawei honor v30": {
+    "deviceName": "Honor V30",
+    "marketingName": "Honor V30",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.57
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
   "huawei oxf-an10": {
     "deviceName": "OXF-AN10",
+    "marketingName": "Honor V30 Pro",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.57
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "huawei honor v30 pro": {
+    "deviceName": "Honor V30 Pro",
     "marketingName": "Honor V30 Pro",
     "manufacturer": "huawei",
     "brand": "huawei",

@@ -10374,6 +10374,62 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                 ],
             ],
+            [
+                [
+                    'sec-ch-ua' => '"HeadlessChrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"',
+                    'sec-ch-ua-mobile' => '?1',
+                    'sec-ch-ua-platform' => '"iOS"',
+                    'user-agent' => 'Scrapy/2.15.2 (+https://scrapy.org)',
+                ],
+                [
+                    'headers' => [
+                        'sec-ch-ua-platform' => '"iOS"',
+                        'sec-ch-ua' => '"HeadlessChrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"',
+                        'sec-ch-ua-mobile' => '?1',
+                        'user-agent' => 'Scrapy/2.15.2 (+https://scrapy.org)',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => null,
+                        'marketingName' => null,
+                        'manufacturer' => 'unknown',
+                        'brand' => 'unknown',
+                        'dualOrientation' => null,
+                        'simCount' => 0,
+                        'display' => [
+                            'width' => null,
+                            'height' => null,
+                            'touch' => false,
+                            'size' => null,
+                        ],
+                        'type' => 'unknown',
+                        'ismobile' => true,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => null,
+                        'marketingName' => null,
+                        'version' => null,
+                        'manufacturer' => 'unknown',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Scrapy',
+                        'modus' => null,
+                        'version' => '2.15.2',
+                        'manufacturer' => 'unknown',
+                        'type' => 'crawler',
+                        'isbot' => true,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '147.0.0',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
         ];
     }
 }

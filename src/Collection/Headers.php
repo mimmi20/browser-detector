@@ -486,6 +486,7 @@ final readonly class Headers
                         case 'abeval-bot':
                         case 'petalbot':
                         case 'crawl-bot':
+                        case 'scrapy':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 
