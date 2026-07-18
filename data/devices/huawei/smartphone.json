@@ -15791,22 +15791,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "huawei cdy-nx9a": {
-    "deviceName": "CDY-NX9A",
-    "marketingName": "P40 Lite 5G",
-    "manufacturer": "huawei",
-    "brand": "huawei",
-    "dualOrientation": true,
-    "simCount": 2,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.5
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "huawei ppa-lx3": {
     "deviceName": "PPA-LX3",
     "marketingName": "Y7a",
@@ -16278,6 +16262,22 @@
     "brand": "huawei",
     "dualOrientation": true,
     "simCount": 1,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.3
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei sne-l21": {
+    "deviceName": "SNE-L21",
+    "marketingName": "Mate 20 Lite",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2340,
       "height": 1080,
@@ -18543,22 +18543,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "huawei cdy-an95": {
-    "deviceName": "CDY-AN95",
-    "marketingName": "Honor 30S",
-    "manufacturer": "huawei",
-    "brand": "huawei",
-    "dualOrientation": true,
-    "simCount": 2,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.5
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "huawei foa-lx9": {
     "deviceName": "FOA-LX9",
     "marketingName": "Nova 11",
@@ -18673,6 +18657,22 @@
   },
   "huawei pot-lx1rua": {
     "deviceName": "POT-LX1RUA",
+    "marketingName": "P smart (2019)",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.21
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei pot-l21t": {
+    "deviceName": "POT-L21T",
     "marketingName": "P smart (2019)",
     "manufacturer": "huawei",
     "brand": "huawei",
@@ -22319,22 +22319,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "huawei cdy-tn20": {
-    "deviceName": "CDY-TN20",
-    "marketingName": "Nova 7 SE 5G",
-    "manufacturer": "huawei",
-    "brand": "huawei",
-    "dualOrientation": true,
-    "simCount": 2,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.5
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "huawei cdl-an50": {
     "deviceName": "CDL-AN50",
     "marketingName": "Nova 7 SE 5G",
@@ -22799,6 +22783,22 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "huawei nla-nx1": {
+    "deviceName": "NLA-NX1",
+    "marketingName": "Honor Play 60A 5G",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.75
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "huawei log-an10": {
     "deviceName": "LOG-AN10",
     "marketingName": "Honor Play 10T",
@@ -23035,6 +23035,70 @@
       "height": 1224,
       "touch": true,
       "size": 6.78
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei ser-an00": {
+    "deviceName": "SER-AN00",
+    "marketingName": "Power 2",
+    "manufacturer": "huawei",
+    "brand": "honor",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2640,
+      "height": 1200,
+      "touch": true,
+      "size": 6.79
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei pnm-an20": {
+    "deviceName": "PNM-AN20",
+    "marketingName": "Magic V6",
+    "manufacturer": "huawei",
+    "brand": "honor",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2352,
+      "height": 2172,
+      "touch": true,
+      "size": 7.95
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei pnm-an10": {
+    "deviceName": "PNM-AN10",
+    "marketingName": "Magic V6",
+    "manufacturer": "huawei",
+    "brand": "honor",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2352,
+      "height": 2172,
+      "touch": true,
+      "size": 7.95
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei pnm-n49": {
+    "deviceName": "PNM-N49",
+    "marketingName": "Magic V6",
+    "manufacturer": "huawei",
+    "brand": "honor",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2352,
+      "height": 2172,
+      "touch": true,
+      "size": 7.95
     },
     "type": "smartphone",
     "platform": "android"
