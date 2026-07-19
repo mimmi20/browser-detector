@@ -4167,6 +4167,10 @@ enum Company: string implements CompanyInterface
 
     case vodacom = 'Vodacom';
 
+    case texman = 'Texman Technology';
+
+    case nioMobile = 'NIO';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -6248,6 +6252,8 @@ enum Company: string implements CompanyInterface
             'nikola' => self::nikola,
             'limon', 'limón' => self::limon,
             'vodacom', 'vodacom group limited' => self::vodacom,
+            'texman', 'dongguan zhengman electronic technology co., ltd.', 'texman technology' => self::texman,
+            'niomobile', 'nio mobile technology co., ltd.', 'nio' => self::nioMobile,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -7095,6 +7101,8 @@ enum Company: string implements CompanyInterface
             self::xgimi => 'CHENGDU XGIMI TECHNOLOGY CO.,LTD.',
             self::amedia => 'Shenzhen Amedia Technology Co., Ltd.',
             self::vodacom => 'Vodacom Group Limited',
+            self::texman => 'Dongguan Zhengman Electronic Technology Co., Ltd.',
+            self::nioMobile => 'NIO Mobile Technology Co., Ltd.',
             self::unknown => null,
             default => $this->value,
         };
@@ -7887,6 +7895,7 @@ enum Company: string implements CompanyInterface
             self::mxqPro => 'mxq-pro',
             self::novusTablet => 'novus-tablet',
             self::smartBarry => 'smart-barry',
+            self::nioMobile => 'nio',
             default => $this->name,
         };
     }

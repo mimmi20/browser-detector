@@ -12490,6 +12490,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Vodacom',
                 'key' => 'vodacom',
             ],
+            [
+                'type' => 'Texman Technology',
+                'name' => 'Dongguan Zhengman Electronic Technology Co., Ltd.',
+                'brandname' => 'Texman Technology',
+                'key' => 'texman',
+            ],
+            [
+                'type' => 'NIO',
+                'name' => 'NIO Mobile Technology Co., Ltd.',
+                'brandname' => 'NIO',
+                'key' => 'nio',
+            ],
         ];
     }
 
