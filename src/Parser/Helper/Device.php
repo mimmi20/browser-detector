@@ -6632,7 +6632,6 @@ final class Device implements DeviceInterface
             'a405sh' => 'sharp=sharp a405sh',
             'sharp pi' => 'sharp=sharp pi',
             'sharp aquos r8s' => 'sharp=sharp aquos r8s',
-            'sh‑52d' => 'sharp=sharp sh‑52d',
             'sharp 2k eu android tv' => 'sharp=sharp 2k eu android tv',
             // kyocera
             'a301kc' => 'kyocera=kyocera a301kc',

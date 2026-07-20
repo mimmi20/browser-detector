@@ -8300,7 +8300,6 @@ final class DeviceTest extends TestCase
             ['A405SH', 'sharp=sharp a405sh'],
             ['Sharp Pi', 'sharp=sharp pi'],
             ['Sharp Aquos R8s', 'sharp=sharp aquos r8s'],
-            ['SH‑52D', 'sharp=sharp sh‑52d'],
             ['SHARP 2K EU Android TV', 'sharp=sharp 2k eu android tv'],
             // kyocera
             ['A301KC', 'kyocera=kyocera a301kc'],
