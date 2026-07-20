@@ -4421,21 +4421,21 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; Infinix Zero 50) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.6422.134 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 16; Infinix X6895 Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
-      "deviceName": "Zero 50",
-      "marketingName": "Zero 50",
+      "deviceName": "X6895",
+      "marketingName": "Hot 70 4G",
       "manufacturer": "Infinix",
       "brand": "Infinix",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
-        "width": 2400,
-        "height": 1080,
+        "width": 1576,
+        "height": 720,
         "touch": true,
-        "size": 6.82
+        "size": 6.78
       },
       "type": "smartphone",
       "ismobile": true,
@@ -4445,14 +4445,14 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "10.0.0",
+      "version": "16.0.0",
       "manufacturer": "Google",
       "bits": null
     },
     "client": {
-      "name": "Chrome",
+      "name": "Chrome WebView",
       "modus": null,
-      "version": "146.0.6422.134",
+      "version": "149.0.7827.91",
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
@@ -4460,7 +4460,52 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "146.0.6422.134",
+      "version": "149.0.7827.91",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 16; Infinix X6840 Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "X6840",
+      "marketingName": "Smart 20",
+      "manufacturer": "Infinix",
+      "brand": "Infinix",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1576,
+        "height": 720,
+        "touch": true,
+        "size": 6.78
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome WebView",
+      "modus": null,
+      "version": "149.0.7827.91",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "149.0.7827.91",
       "manufacturer": "Google"
     }
   }

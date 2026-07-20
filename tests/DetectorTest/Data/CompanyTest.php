@@ -5993,12 +5993,6 @@ final class CompanyTest extends TestCase
                 'key' => 'ai-search',
             ],
             [
-                'type' => 'vuhuv',
-                'name' => 'vuhuv',
-                'brandname' => 'vuhuv',
-                'key' => 'vuhuv',
-            ],
-            [
                 'type' => 'Domains Project',
                 'name' => 'domainsproject.org',
                 'brandname' => 'Domains Project',
@@ -12501,6 +12495,18 @@ final class CompanyTest extends TestCase
                 'name' => 'NIO Mobile Technology Co., Ltd.',
                 'brandname' => 'NIO',
                 'key' => 'nio',
+            ],
+            [
+                'type' => 'iMuz',
+                'name' => 'iMuz',
+                'brandname' => 'iMuz',
+                'key' => 'imuz',
+            ],
+            [
+                'type' => 'Vuhuv',
+                'name' => 'Vuhuv Telekomunikasyon A.S.',
+                'brandname' => 'Vuhuv',
+                'key' => 'vuhuv',
             ],
         ];
     }

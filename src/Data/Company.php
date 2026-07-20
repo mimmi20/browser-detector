@@ -1999,7 +1999,7 @@ enum Company: string implements CompanyInterface
 
     case aiSearch = 'Ai Search';
 
-    case vuhuv = 'vuhuv';
+    case vuhuv = 'Vuhuv';
 
     case domainsProject = 'Domains Project';
 
@@ -4171,6 +4171,8 @@ enum Company: string implements CompanyInterface
 
     case nioMobile = 'NIO';
 
+    case imuz = 'iMuz';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5168,7 +5170,7 @@ enum Company: string implements CompanyInterface
             'blueskysocial', 'bluesky social, pbc', 'bluesky social', 'bluesky-social' => self::blueskySocial,
             'justusliebiguniversity', 'justus liebig university giessen', 'justus liebig university', 'jlu' => self::justusLiebigUniversity,
             'aisearch', 'ai search inc.', 'ai search', 'ai-search' => self::aiSearch,
-            'vuhuv' => self::vuhuv,
+            'vuhuv', 'vuhuv telekomunikasyon a.s.' => self::vuhuv,
             'domainsproject', 'domainsproject.org', 'domains project', 'domains-project' => self::domainsProject,
             'comcast' => self::comcast,
             'degordian', 'degordian d.o.o.' => self::degordian,
@@ -6254,6 +6256,7 @@ enum Company: string implements CompanyInterface
             'vodacom', 'vodacom group limited' => self::vodacom,
             'texman', 'dongguan zhengman electronic technology co., ltd.', 'texman technology' => self::texman,
             'niomobile', 'nio mobile technology co., ltd.', 'nio' => self::nioMobile,
+            'imuz' => self::imuz,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -7103,6 +7106,7 @@ enum Company: string implements CompanyInterface
             self::vodacom => 'Vodacom Group Limited',
             self::texman => 'Dongguan Zhengman Electronic Technology Co., Ltd.',
             self::nioMobile => 'NIO Mobile Technology Co., Ltd.',
+            self::vuhuv => 'Vuhuv Telekomunikasyon A.S.',
             self::unknown => null,
             default => $this->value,
         };

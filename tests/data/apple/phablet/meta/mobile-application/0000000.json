@@ -3778,5 +3778,50 @@
       "version": null,
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Instagram 436.0.0.24.53 (iPhone18,2; iOS 26_5_1; en_US; en; scale=3.00; 1320x2868; 1005037813) AppleWebKit/420+"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone 18,2",
+      "marketingName": "iPhone 17 Pro Max",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2868,
+        "height": 1320,
+        "touch": true,
+        "size": 6.9
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "26.5.1",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "436.0.0.24.53",
+      "manufacturer": "Meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "420.0.0",
+      "manufacturer": "Apple"
+    }
   }
 ]

@@ -5745,5 +5745,17 @@
       ]
     },
     "engine": null
+  },
+  "vuhuv-app": {
+    "name": "Vuhuv",
+    "manufacturer": "vuhuv",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Vuhuv"
+      ]
+    },
+    "engine": null
   }
 }
