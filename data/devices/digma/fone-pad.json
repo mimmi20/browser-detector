@@ -1294,5 +1294,37 @@
     },
     "type": "fone-pad",
     "platform": "android"
+  },
+  "digma ts8291pl": {
+    "deviceName": "TS8291PL",
+    "marketingName": "Optima 8306C 4G",
+    "manufacturer": "digma",
+    "brand": "digma",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "digma ts1296pl": {
+    "deviceName": "TS1296PL",
+    "marketingName": "Optima 1416D 4G",
+    "manufacturer": "digma",
+    "brand": "digma",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
   }
 }

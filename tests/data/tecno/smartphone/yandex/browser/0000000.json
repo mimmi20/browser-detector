@@ -1531,6 +1531,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 16; TECNO CN5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.295 YaBrowser/26.6.0.295.00 (beta) Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CN5",
+      "marketingName": "Camon 50 4G",
+      "manufacturer": "Tecno",
+      "brand": "Tecno",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2644,
+        "height": 1208,
+        "touch": true,
+        "size": 6.78
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "26.6.0.295.00",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "148.0.7778.295",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 15; TECNO KM7k) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.53 YaBrowser/25.12.7.53.00 Mobile Safari/537.36"
     },
     "device": {

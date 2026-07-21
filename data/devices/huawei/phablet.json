@@ -287,8 +287,40 @@
     "type": "phablet",
     "platform": "android"
   },
+  "huawei honor v30": {
+    "deviceName": "Honor V30",
+    "marketingName": "Honor V30",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.57
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
   "huawei oxf-an10": {
     "deviceName": "OXF-AN10",
+    "marketingName": "Honor V30 Pro",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.57
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "huawei honor v30 pro": {
+    "deviceName": "Honor V30 Pro",
     "marketingName": "Honor V30 Pro",
     "manufacturer": "huawei",
     "brand": "huawei",
@@ -514,6 +546,70 @@
   "huawei cdy-tn00": {
     "deviceName": "CDY-TN00",
     "marketingName": "Nova 7 SE",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "huawei cdy-tn20": {
+    "deviceName": "CDY-TN20",
+    "marketingName": "Nova 7 SE 5G",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "huawei cdy-tn90": {
+    "deviceName": "CDY-TN90",
+    "marketingName": "Nova 7 SE 5G",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "huawei cdy-nx9a": {
+    "deviceName": "CDY-NX9A",
+    "marketingName": "P40 Lite 5G",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "huawei cdy-an95": {
+    "deviceName": "CDY-AN95",
+    "marketingName": "Honor 30S",
     "manufacturer": "huawei",
     "brand": "huawei",
     "dualOrientation": true,

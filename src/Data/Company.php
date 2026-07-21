@@ -1999,7 +1999,7 @@ enum Company: string implements CompanyInterface
 
     case aiSearch = 'Ai Search';
 
-    case vuhuv = 'vuhuv';
+    case vuhuv = 'Vuhuv';
 
     case domainsProject = 'Domains Project';
 
@@ -4167,6 +4167,12 @@ enum Company: string implements CompanyInterface
 
     case vodacom = 'Vodacom';
 
+    case texman = 'Texman Technology';
+
+    case nioMobile = 'NIO';
+
+    case imuz = 'iMuz';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -5164,7 +5170,7 @@ enum Company: string implements CompanyInterface
             'blueskysocial', 'bluesky social, pbc', 'bluesky social', 'bluesky-social' => self::blueskySocial,
             'justusliebiguniversity', 'justus liebig university giessen', 'justus liebig university', 'jlu' => self::justusLiebigUniversity,
             'aisearch', 'ai search inc.', 'ai search', 'ai-search' => self::aiSearch,
-            'vuhuv' => self::vuhuv,
+            'vuhuv', 'vuhuv telekomunikasyon a.s.' => self::vuhuv,
             'domainsproject', 'domainsproject.org', 'domains project', 'domains-project' => self::domainsProject,
             'comcast' => self::comcast,
             'degordian', 'degordian d.o.o.' => self::degordian,
@@ -6248,6 +6254,9 @@ enum Company: string implements CompanyInterface
             'nikola' => self::nikola,
             'limon', 'limón' => self::limon,
             'vodacom', 'vodacom group limited' => self::vodacom,
+            'texman', 'dongguan zhengman electronic technology co., ltd.', 'texman technology' => self::texman,
+            'niomobile', 'nio mobile technology co., ltd.', 'nio' => self::nioMobile,
+            'imuz' => self::imuz,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -7095,6 +7104,9 @@ enum Company: string implements CompanyInterface
             self::xgimi => 'CHENGDU XGIMI TECHNOLOGY CO.,LTD.',
             self::amedia => 'Shenzhen Amedia Technology Co., Ltd.',
             self::vodacom => 'Vodacom Group Limited',
+            self::texman => 'Dongguan Zhengman Electronic Technology Co., Ltd.',
+            self::nioMobile => 'NIO Mobile Technology Co., Ltd.',
+            self::vuhuv => 'Vuhuv Telekomunikasyon A.S.',
             self::unknown => null,
             default => $this->value,
         };
@@ -7887,6 +7899,7 @@ enum Company: string implements CompanyInterface
             self::mxqPro => 'mxq-pro',
             self::novusTablet => 'novus-tablet',
             self::smartBarry => 'smart-barry',
+            self::nioMobile => 'nio',
             default => $this->name,
         };
     }

@@ -91,6 +91,51 @@
   },
   {
     "headers": {
+      "user-agent": "Opera/9.80 (Linux sh4; U; HbbTV/1.1.1 (; INTEK; Vantage Full HD Model;;;) hdplusSmartTV/1.0 (NETRANGEMMH;) Bee/3.2 CE-HTML/1.0; FXM-U2FsdGVkX19WaYSyGq70V2qt2C4bR92ULIOEtQrDKma1eRx3WQlWfuTO6eCHMYQm-END; en) Presto/2.10.250 Version/11.60"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "NETRANGEMMH",
+      "marketingName": "NETRANGEMMH",
+      "manufacturer": "Netrange",
+      "brand": "Netrange",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android TV",
+      "marketingName": "Android TV",
+      "version": null,
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "11.60.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.10.250",
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36 OPR/22.0.1481.0 OMI/4.2.12.31.Vespa2.0 MB100/0.0.20.0 (OEM, Si2158LG32, wired) HbbTV/1.2.1 (; CUS:OEM; MB100; 0.0.20.0; 1.0;) CE-HTML/1.0 NETRANGEMMH ipl"
     },
     "device": {

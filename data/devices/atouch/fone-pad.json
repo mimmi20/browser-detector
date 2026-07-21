@@ -14,5 +14,37 @@
     },
     "type": "fone-pad",
     "platform": "android"
+  },
+  "atouch s-tab9": {
+    "deviceName": "S-Tab9",
+    "marketingName": "S-Tab9",
+    "manufacturer": "atouch",
+    "brand": "atouch",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.95
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "atouch se max": {
+    "deviceName": "SE Max",
+    "marketingName": "SE Max",
+    "manufacturer": "atouch",
+    "brand": "atouch",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
   }
 }

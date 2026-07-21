@@ -23,10 +23,10 @@
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": "Android TV",
+      "marketingName": "Android TV",
       "version": null,
-      "manufacturer": "Linux Foundation",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -68,10 +68,10 @@
       "bits": null
     },
     "os": {
-      "name": "Opera TV",
-      "marketingName": "Opera TV",
+      "name": "Android TV",
+      "marketingName": "Android TV",
       "version": null,
-      "manufacturer": "Opera",
+      "manufacturer": "Google",
       "bits": null
     },
     "client": {
@@ -87,96 +87,6 @@
       "name": "Presto",
       "version": "2.12.407",
       "manufacturer": "Opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.140 Safari/537.36 OPR/46.0.2207.0 OMI/4.21.4.112.Catcher4.69 Model/Hisense-MT9602 VIDAA/5.0(QILIVE;SmartTV;VS0332FC1;MTK9602/V0000.01.00Q.M0926;HD)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Smart TV",
-      "marketingName": "Smart TV",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "VIDAA OS",
-      "marketingName": "VIDAA OS",
-      "version": "5.0.0",
-      "manufacturer": "VIDAA",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera Devices",
-      "modus": null,
-      "version": "4.21.4.112",
-      "manufacturer": "Opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "84.0.4147.140",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.128 Safari/537.36 OPR/46.0.2207.0 OMI/4.23.2.96.LIMA2.91 Model/Vestel-MB181 VSTVB MB100 TiVoOS/1.0.0 (Vestel MB181 FINLUX) SmartTvA/3.0.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Smart TV",
-      "marketingName": "Smart TV",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "TiVo OS",
-      "marketingName": "TiVo OS",
-      "version": "1.0.0",
-      "manufacturer": "TiVo",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera Devices",
-      "modus": null,
-      "version": "4.23.2.96",
-      "manufacturer": "Opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "108.0.5359.128",
-      "manufacturer": "Google"
     }
   }
 ]

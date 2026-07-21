@@ -1123,5 +1123,50 @@
       "version": "149.0.7827.91",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "[FBAN/FB4A;FBAV/569.0.0.42.72;FBBV/1013019648;FBDM/{density=2.75,width=1080,height=2186};FBLC/nl_NL;FBRV/1016785594;FBCR/Telenet;FBMF/Xiaomi;FBBD/Xiaomi;FBPN/com.facebook.katana;FBDV/21081111RG;FBSV/14;FBOP/1;FBCA/arm64-v8a:;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "21081111RG",
+      "marketingName": "11T",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "569.0.0.42.72",
+      "manufacturer": "Meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
   }
 ]

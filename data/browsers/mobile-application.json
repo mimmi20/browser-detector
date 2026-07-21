@@ -948,16 +948,6 @@
     },
     "engine": "unknown"
   },
-  "jio-sphere": {
-    "name": "JioSphere",
-    "manufacturer": "jio-platforms",
-    "type": "mobile-application",
-    "version": {
-      "factory": null,
-      "search": null
-    },
-    "engine": "unknown"
-  },
   "ocean-hero-app": {
     "name": "OceanHero App",
     "manufacturer": "ocean-hero",
@@ -5752,6 +5742,18 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Kobo.+\\/"
+      ]
+    },
+    "engine": null
+  },
+  "vuhuv-app": {
+    "name": "Vuhuv",
+    "manufacturer": "vuhuv",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Vuhuv"
       ]
     },
     "engine": null
