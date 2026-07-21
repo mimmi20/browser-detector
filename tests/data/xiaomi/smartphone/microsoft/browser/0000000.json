@@ -3912,6 +3912,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; MZB0A5HIN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36 EdgA/91.0.864.48"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MZB0A5HIN",
+      "marketingName": "Redmi 9i Sport",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.58
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Edge Mobile for Android",
+      "modus": null,
+      "version": "91.0.864.48",
+      "manufacturer": "Microsoft",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "91.0.4472.101",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "sec-ch-ua-model": "\"2407FPN8EG\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"14.0.0\"",
@@ -4500,21 +4545,21 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9.0; M1908C3II) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.6834.83 Mobile Safari/537.36 EdgA/132.0.2957.115"
+      "user-agent": "Mozilla/5.0 (Linux; Android 9.0; Mi CC9 Meitu Edition) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.49 Mobile Safari/537.36 EdgA/138.0.3351.55"
     },
     "device": {
       "architecture": null,
-      "deviceName": "M1908C3II",
-      "marketingName": "Redmi 8",
+      "deviceName": "Mi CC9 Meitu Edition",
+      "marketingName": "Mi CC9 Meitu Edition",
       "manufacturer": "Xiaomi",
       "brand": "Xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
-        "width": 1520,
-        "height": 720,
+        "width": 2340,
+        "height": 1080,
         "touch": true,
-        "size": 6.22
+        "size": 6.39
       },
       "type": "smartphone",
       "ismobile": true,
@@ -4531,7 +4576,7 @@
     "client": {
       "name": "Edge Mobile for Android",
       "modus": null,
-      "version": "132.0.2957.115",
+      "version": "138.0.3351.55",
       "manufacturer": "Microsoft",
       "type": "browser",
       "isbot": false,
@@ -4539,53 +4584,8 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "132.0.6834.83",
+      "version": "138.0.7204.49",
       "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 14; Xiaomi Redmi 12C) AppleWebKit/537.36 (KHTML, like Gecko) Edge/120.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Redmi 12C",
-      "marketingName": "Redmi 12C",
-      "manufacturer": "Xiaomi",
-      "brand": "Xiaomi",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 1650,
-        "height": 720,
-        "touch": true,
-        "size": 6.71
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "14.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Edge",
-      "modus": null,
-      "version": "120.0.0.0",
-      "manufacturer": "Microsoft",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Edge",
-      "version": "120.0.0.0",
-      "manufacturer": "Microsoft"
     }
   }
 ]

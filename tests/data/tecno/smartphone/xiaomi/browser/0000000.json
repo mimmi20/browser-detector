@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 16; TECNO CAMON 40 Pro Build/BP2A.250605.031.A3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36 XiaoMi/MiuiBrowser/14.56.0-gn"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Camon 40 Pro 4G",
+      "marketingName": "Camon 40 Pro 4G",
+      "manufacturer": "Tecno",
+      "brand": "Tecno",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2436,
+        "height": 1080,
+        "touch": true,
+        "size": 6.78
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Mi Browser",
+      "modus": null,
+      "version": "14.56.0",
+      "manufacturer": "Xiaomi",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "135.0.7049.79",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 15; TECNO SPARK Slim Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36 XiaoMi/MiuiBrowser/14.58.0-gn"
     },
     "device": {
@@ -888,6 +933,96 @@
       "name": "Mi Browser",
       "modus": null,
       "version": "14.56.0",
+      "manufacturer": "Xiaomi",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "135.0.7049.79",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; TECNO SPARK Go 1 Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36 XiaoMi/MiuiBrowser/14.56.0-gn"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Spark Go 1",
+      "marketingName": "Spark Go 1",
+      "manufacturer": "Tecno",
+      "brand": "Tecno",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Mi Browser",
+      "modus": null,
+      "version": "14.56.0",
+      "manufacturer": "Xiaomi",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "135.0.7049.79",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; TECNO SPARK 30 5G Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36 XiaoMi/MiuiBrowser/14.58.0-gn"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Spark 30 5G",
+      "marketingName": "Spark 30 5G",
+      "manufacturer": "Tecno",
+      "brand": "Tecno",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Mi Browser",
+      "modus": null,
+      "version": "14.58.0",
       "manufacturer": "Xiaomi",
       "type": "browser",
       "isbot": false,

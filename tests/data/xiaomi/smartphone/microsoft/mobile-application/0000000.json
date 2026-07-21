@@ -961,6 +961,51 @@
     },
     "device": {
       "architecture": null,
+      "deviceName": "25128RN17A",
+      "marketingName": "Redmi A7 Pro 4G",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.9
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Bing Search",
+      "modus": null,
+      "version": "1.11.1",
+      "manufacturer": "Microsoft",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "140.0.7339.207",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 16; Xiaomi 2510DRA23E; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36 Sapphire/1.11.1"
+    },
+    "device": {
+      "architecture": null,
       "deviceName": "Mi 2",
       "marketingName": "Mi 2",
       "manufacturer": "Xiaomi",
@@ -996,7 +1041,7 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "140.0.7339.207",
+      "version": "149.0.7827.91",
       "manufacturer": "Google"
     }
   },

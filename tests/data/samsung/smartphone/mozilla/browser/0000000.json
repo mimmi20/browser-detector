@@ -817,6 +817,51 @@
     },
     "device": {
       "architecture": null,
+      "deviceName": "Galaxy A73 5G",
+      "marketingName": "Galaxy A73 5G",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "120.0.0",
+      "manufacturer": "Mozilla",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "537.36.0",
+      "manufacturer": "Mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; Galaxy Z Fold5) AppleWebKit/537.36 (KHTML, like Gecko) Firefox/120.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
       "deviceName": "GT-I7500",
       "marketingName": "Galaxy",
       "manufacturer": "Samsung",
