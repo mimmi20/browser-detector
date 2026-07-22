@@ -633,6 +633,8 @@ final class DeviceTest extends TestCase
             ['PLY110', 'oneplus=oneplus ply110'],
             ['CPH2707', 'oneplus=oneplus cph2707'],
             ['OnePlus 11', 'oneplus=oneplus 11'],
+            ['CPH2749', 'oneplus=oneplus cph2749'],
+            ['CPH2723', 'oneplus=oneplus cph2723'],
             // Oppo
             ['CPH2065', 'oppo=oppo cph2065'],
             ['CPH2211', 'oppo=oppo cph2211'],
@@ -918,6 +920,7 @@ final class DeviceTest extends TestCase
             ['Oppo A96', 'oppo=oppo a96'],
             ['PHJ110_A1x', 'oppo=oppo phj110_a1x'],
             ['PHJ110H2', 'oppo=oppo phj110h2'],
+            ['CPH2765', 'oppo=oppo cph2765'],
             // Xiaomi/Poco
             ['Redmi Note 9 Pro', 'xiaomi=xiaomi redmi note 9 pro'],
             ['M2103K19G', 'xiaomi=xiaomi m2103k19g'],
@@ -5667,6 +5670,10 @@ final class DeviceTest extends TestCase
             ['HUAWEI VKI-AN00', 'huawei=huawei vki-an00'],
             ['LGN-LX2', 'huawei=huawei lgn-lx2'],
             ['HUAWEI LGN-LX2', 'huawei=huawei lgn-lx2'],
+            ['HEY3-W10', 'huawei=huawei hey3-w10'],
+            ['HUAWEI HEY3-W10', 'huawei=huawei hey3-w10'],
+            ['BKQ-AN20', 'huawei=huawei bkq-an20'],
+            ['HUAWEI BKQ-AN20', 'huawei=huawei bkq-an20'],
             // Lenovo
             ['Lenovo TB-X304F', 'lenovo=lenovo tb-x304f'],
             ['X1030X', 'lenovo=lenovo x1030x'],
@@ -6400,6 +6407,7 @@ final class DeviceTest extends TestCase
             ['XT2575-1', 'motorola=motorola xt2575-1'],
             ['XT2571-1', 'motorola=motorola xt2571-1'],
             ['XT2537-4', 'motorola=motorola xt2537-4'],
+            ['XT2553-2', 'motorola=motorola xt2553-2'],
             // Sony
             ['XQ-CC54', 'sony=sony xq-cc54'],
             ['XQ-BQ52', 'sony=sony xq-bq52'],
@@ -7044,6 +7052,10 @@ final class DeviceTest extends TestCase
             ['vivo V2575', 'vivo=vivo v2575'],
             ['V2531A', 'vivo=vivo v2531a'],
             ['vivo V2531A', 'vivo=vivo v2531a'],
+            ['I2512', 'vivo=vivo i2512'],
+            ['vivo I2512', 'vivo=vivo i2512'],
+            ['I2510', 'vivo=vivo i2510'],
+            ['vivo I2510', 'vivo=vivo i2510'],
             // Fairphone
             ['FP4', 'fairphone=fairphone fp4'],
             ['FP3', 'fairphone=fairphone fp3'],
@@ -7167,6 +7179,7 @@ final class DeviceTest extends TestCase
             ['C61 Pro', 'oukitel=oukitel c61 pro'],
             ['Oukitel RT7 5G', 'oukitel=oukitel rt7 5g'],
             ['OUKITEL G5', 'oukitel=oukitel g5'],
+            ['WP55 S', 'oukitel=oukitel wp55 s'],
             // Ulefone
             ['Note 6P', 'ulefone=ulefone note 6p'],
             ['Armor 11T 5G', 'ulefone=ulefone armor 11t 5g'],
@@ -7861,6 +7874,11 @@ final class DeviceTest extends TestCase
             ['Active 5', 'blackview=blackview active 5'],
             ['MEGA 12', 'blackview=blackview mega 12'],
             ['MEGA 2 WIFI', 'blackview=blackview mega 2 wifi'],
+            ['FORT 2', 'blackview=blackview fort 2'],
+            ['XPLORE 2 Projector', 'blackview=blackview xplore 2 projector'],
+            ['XPLORE 2', 'blackview=blackview xplore 2'],
+            ['XPLORE 1 Walkie Talkie', 'blackview=blackview xplore 1 walkie talkie'],
+            ['XPLORE 1 Pro', 'blackview=blackview xplore 1 pro'],
             // medion
             ['B5532', 'medion=medion b5532'],
             ['LIFETAB_P733X', 'medion=medion lifetab p733x'],
@@ -8099,6 +8117,10 @@ final class DeviceTest extends TestCase
             ['Infinix X6725', 'infinix=infinix x6725'],
             ['Infinix X1302', 'infinix=infinix x1302'],
             ['Infinix X1102', 'infinix=infinix x1102'],
+            ['Infinix X6887', 'infinix=infinix x6887'],
+            ['Infinix X6879', 'infinix=infinix x6879'],
+            ['Infinix X6877', 'infinix=infinix x6877'],
+            ['Infinix X6840B', 'infinix=infinix x6840b'],
             // cyrus
             ['CS24', 'cyrus=cyrus cs24'],
             // facetel
@@ -9576,6 +9598,7 @@ final class DeviceTest extends TestCase
             ['Pad 10', 'oscal=oscal pad 10'],
             ['TIGER 12', 'oscal=oscal tiger 12'],
             ['TANK 1', 'oscal=oscal tank 1'],
+            ['FLAT 3C', 'oscal=oscal flat 3c'],
             // vocal
             ['VOCAL V0Core', 'vocal=vocal v0core'],
             ['Vocal V2 Lite', 'vocal=vocal v2 lite'],

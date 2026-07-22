@@ -583,6 +583,8 @@ final class Device implements DeviceInterface
             'oneplus3' => 'oneplus=oneplus 3',
             'cph2707' => 'oneplus=oneplus cph2707',
             'oneplus 11' => 'oneplus=oneplus 11',
+            'cph2749' => 'oneplus=oneplus cph2749',
+            'cph2723' => 'oneplus=oneplus cph2723',
             // Oppo
             'cph2065' => 'oppo=oppo cph2065',
             'cph2211' => 'oppo=oppo cph2211',
@@ -863,6 +865,7 @@ final class Device implements DeviceInterface
             'oppo a96' => 'oppo=oppo a96',
             'phj110_a1x' => 'oppo=oppo phj110_a1x',
             'phj110h2' => 'oppo=oppo phj110h2',
+            'cph2765' => 'oppo=oppo cph2765',
             // Xiaomi/Poco
             'redmi note 9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro', 'redmi_note_8_pro' => 'xiaomi=xiaomi redmi note 8 pro',
@@ -4106,6 +4109,8 @@ final class Device implements DeviceInterface
             'vkp-nx9', 'huawei vkp-nx9' => 'huawei=huawei vkp-nx9',
             'vki-an00', 'huawei vki-an00' => 'huawei=huawei vki-an00',
             'lgn-lx2', 'huawei lgn-lx2' => 'huawei=huawei lgn-lx2',
+            'hey3-w10', 'huawei hey3-w10' => 'huawei=huawei hey3-w10',
+            'bkq-an20', 'huawei bkq-an20' => 'huawei=huawei bkq-an20',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -4775,6 +4780,7 @@ final class Device implements DeviceInterface
             'xt2575-1' => 'motorola=motorola xt2575-1',
             'xt2571-1' => 'motorola=motorola xt2571-1',
             'xt2537-4' => 'motorola=motorola xt2537-4',
+            'xt2553-2' => 'motorola=motorola xt2553-2',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
@@ -5406,6 +5412,8 @@ final class Device implements DeviceInterface
             'v2515', 'vivo v2515' => 'vivo=vivo v2515',
             'v2575', 'vivo v2575' => 'vivo=vivo v2575',
             'v2531a', 'vivo v2531a' => 'vivo=vivo v2531a',
+            'i2512', 'vivo i2512' => 'vivo=vivo i2512',
+            'i2510', 'vivo i2510' => 'vivo=vivo i2510',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
@@ -5522,6 +5530,7 @@ final class Device implements DeviceInterface
             'c61 pro' => 'oukitel=oukitel c61 pro',
             'oukitel rt7 5g' => 'oukitel=oukitel rt7 5g',
             'oukitel g5' => 'oukitel=oukitel g5',
+            'wp55 s' => 'oukitel=oukitel wp55 s',
             // Ulefone
             'note 6p' => 'ulefone=ulefone note 6p',
             'armor 11t 5g' => 'ulefone=ulefone armor 11t 5g',
@@ -6184,6 +6193,11 @@ final class Device implements DeviceInterface
             'active 5' => 'blackview=blackview active 5',
             'mega 12' => 'blackview=blackview mega 12',
             'mega 2 wifi' => 'blackview=blackview mega 2 wifi',
+            'fort 2' => 'blackview=blackview fort 2',
+            'xplore 2 projector' => 'blackview=blackview xplore 2 projector',
+            'xplore 2' => 'blackview=blackview xplore 2',
+            'xplore 1 walkie talkie' => 'blackview=blackview xplore 1 walkie talkie',
+            'xplore 1 pro' => 'blackview=blackview xplore 1 pro',
             // medion
             'b5532' => 'medion=medion b5532',
             'lifetab_p733x' => 'medion=medion lifetab p733x',
@@ -6407,6 +6421,10 @@ final class Device implements DeviceInterface
             'infinix x6725' => 'infinix=infinix x6725',
             'infinix x1302' => 'infinix=infinix x1302',
             'infinix x1102' => 'infinix=infinix x1102',
+            'infinix x6887' => 'infinix=infinix x6887',
+            'infinix x6879' => 'infinix=infinix x6879',
+            'infinix x6877' => 'infinix=infinix x6877',
+            'infinix x6840b' => 'infinix=infinix x6840b',
             // cyrus
             'cs24' => 'cyrus=cyrus cs24',
             // facetel
@@ -7717,6 +7735,7 @@ final class Device implements DeviceInterface
             'pad 10' => 'oscal=oscal pad 10',
             'tiger 12' => 'oscal=oscal tiger 12',
             'tank 1' => 'oscal=oscal tank 1',
+            'flat 3c' => 'oscal=oscal flat 3c',
             // vocal
             'vocal v0core' => 'vocal=vocal v0core',
             'vocal v2 lite' => 'vocal=vocal v2 lite',
