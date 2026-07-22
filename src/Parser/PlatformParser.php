@@ -197,7 +197,7 @@ final readonly class PlatformParser implements PlatformParserInterface
             '/fritz!os/i' => Os::fritzOS,
             '/haiku|openbeos/i' => Os::haiku,
             '/beos/i' => Os::beos,
-            '/vidaa[\/;]/i' => Os::vidaaOS,
+            '/vidaa[\/;_]/i' => Os::vidaaOS,
             '/tivoos\//i' => Os::tivoOS,
             '/webian/i' => Os::webian,
             '/risc os/i' => Os::riscos,
