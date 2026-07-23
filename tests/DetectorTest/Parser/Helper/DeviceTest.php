@@ -921,6 +921,8 @@ final class DeviceTest extends TestCase
             ['PHJ110_A1x', 'oppo=oppo phj110_a1x'],
             ['PHJ110H2', 'oppo=oppo phj110h2'],
             ['CPH2765', 'oppo=oppo cph2765'],
+            ['OPPO A37t', 'oppo=oppo a37t'],
+            ['F17', 'oppo=oppo f17'],
             // Xiaomi/Poco
             ['Redmi Note 9 Pro', 'xiaomi=xiaomi redmi note 9 pro'],
             ['M2103K19G', 'xiaomi=xiaomi m2103k19g'],
@@ -5674,6 +5676,8 @@ final class DeviceTest extends TestCase
             ['HUAWEI HEY3-W10', 'huawei=huawei hey3-w10'],
             ['BKQ-AN20', 'huawei=huawei bkq-an20'],
             ['HUAWEI BKQ-AN20', 'huawei=huawei bkq-an20'],
+            ['ROD2-W09', 'huawei=huawei rod2-w09'],
+            ['HUAWEI ROD2-W09', 'huawei=huawei rod2-w09'],
             // Lenovo
             ['Lenovo TB-X304F', 'lenovo=lenovo tb-x304f'],
             ['X1030X', 'lenovo=lenovo x1030x'],
@@ -7056,6 +7060,7 @@ final class DeviceTest extends TestCase
             ['vivo I2512', 'vivo=vivo i2512'],
             ['I2510', 'vivo=vivo i2510'],
             ['vivo I2510', 'vivo=vivo i2510'],
+            ['vivo X20', 'vivo=vivo x20'],
             // Fairphone
             ['FP4', 'fairphone=fairphone fp4'],
             ['FP3', 'fairphone=fairphone fp3'],
@@ -7662,7 +7667,7 @@ final class DeviceTest extends TestCase
             ['P20S_ROW', 'teclast=teclast p20s_row'],
             ['P20HD_EEA', 'teclast=teclast p20hd_eea'],
             ['M40(N9H3)', 'teclast=teclast n9h3'],
-            ['M50-ROW', 'teclast=teclast m50-row'],
+            ['M50-ROW', 'teclast=teclast m50_row'],
             ['T50Pro_W_ROW', 'teclast=teclast t50 pro'],
             ['P40HD_T_EEA', 'teclast=teclast p40hd_t_eea'],
             ['P40HD_T_ROW', 'teclast=teclast p40hd_t_row'],
@@ -7727,6 +7732,7 @@ final class DeviceTest extends TestCase
             ['P30Air_ROW', 'teclast=teclast p30air_row'],
             ['ArtPadPro_ROW', 'teclast=teclast artpadpro_row'],
             ['M50-EEA', 'teclast=teclast m50_eea'],
+            ['M50_EEA', 'teclast=teclast m50_eea'],
             // alldocube
             ['iPlay_40', 'alldocube=alldocube iplay 40'],
             ['iPlay60_mini_Pro', 'alldocube=alldocube iplay 60 mini pro'],
@@ -7879,6 +7885,8 @@ final class DeviceTest extends TestCase
             ['XPLORE 2', 'blackview=blackview xplore 2'],
             ['XPLORE 1 Walkie Talkie', 'blackview=blackview xplore 1 walkie talkie'],
             ['XPLORE 1 Pro', 'blackview=blackview xplore 1 pro'],
+            ['A55', 'blackview=blackview a55'],
+            ['BL9000', 'blackview=blackview bl9000'],
             // medion
             ['B5532', 'medion=medion b5532'],
             ['LIFETAB_P733X', 'medion=medion lifetab p733x'],
@@ -10900,6 +10908,7 @@ final class DeviceTest extends TestCase
             // acepad
             ['A130-2024', 'acepad=acepad a130-2024'],
             ['A145-2024', 'acepad=acepad a145-2024'],
+            ['A130', 'acepad=acepad a130'],
             // korax
             ['KORAX-Eurobox', 'korax=korax eurobox'],
             ['KORAX-Eurobox Pro', 'korax=korax eurobox pro'],

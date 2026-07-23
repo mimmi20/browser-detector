@@ -866,6 +866,8 @@ final class Device implements DeviceInterface
             'phj110_a1x' => 'oppo=oppo phj110_a1x',
             'phj110h2' => 'oppo=oppo phj110h2',
             'cph2765' => 'oppo=oppo cph2765',
+            'oppo a37t' => 'oppo=oppo a37t',
+            'f17' => 'oppo=oppo f17',
             // Xiaomi/Poco
             'redmi note 9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro', 'redmi_note_8_pro' => 'xiaomi=xiaomi redmi note 8 pro',
@@ -4111,6 +4113,7 @@ final class Device implements DeviceInterface
             'lgn-lx2', 'huawei lgn-lx2' => 'huawei=huawei lgn-lx2',
             'hey3-w10', 'huawei hey3-w10' => 'huawei=huawei hey3-w10',
             'bkq-an20', 'huawei bkq-an20' => 'huawei=huawei bkq-an20',
+            'rod2-w09', 'huawei rod2-w09' => 'huawei=huawei rod2-w09',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -5414,6 +5417,7 @@ final class Device implements DeviceInterface
             'v2531a', 'vivo v2531a' => 'vivo=vivo v2531a',
             'i2512', 'vivo i2512' => 'vivo=vivo i2512',
             'i2510', 'vivo i2510' => 'vivo=vivo i2510',
+            'vivo x20' => 'vivo=vivo x20',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
@@ -5988,7 +5992,6 @@ final class Device implements DeviceInterface
             'p20s_row' => 'teclast=teclast p20s_row',
             'p20hd_eea' => 'teclast=teclast p20hd_eea',
             'm40(n9h3)' => 'teclast=teclast n9h3',
-            'm50-row' => 'teclast=teclast m50-row',
             't50pro_w_row' => 'teclast=teclast t50 pro',
             'p40hd_t_eea' => 'teclast=teclast p40hd_t_eea',
             'p40hd_t_row' => 'teclast=teclast p40hd_t_row',
@@ -6014,7 +6017,7 @@ final class Device implements DeviceInterface
             't70_row' => 'teclast=teclast t70_row',
             'p20_eea' => 'teclast=teclast p20_eea',
             'm50mini' => 'teclast=teclast m50mini',
-            'm50_row' => 'teclast=teclast m50_row',
+            'm50_row', 'm50-row' => 'teclast=teclast m50_row',
             'm50s' => 'teclast=teclast m50s',
             't40hd' => 'teclast=teclast t40hd',
             't45hd' => 'teclast=teclast t45hd',
@@ -6051,7 +6054,7 @@ final class Device implements DeviceInterface
             't50_eea' => 'teclast=teclast t50_eea',
             'p30air_row' => 'teclast=teclast p30air_row',
             'artpadpro_row' => 'teclast=teclast artpadpro_row',
-            'm50-eea' => 'teclast=teclast m50_eea',
+            'm50-eea', 'm50_eea' => 'teclast=teclast m50_eea',
             // alldocube
             'iplay_40' => 'alldocube=alldocube iplay 40',
             'iplay60_mini_pro' => 'alldocube=alldocube iplay 60 mini pro',
@@ -6198,6 +6201,8 @@ final class Device implements DeviceInterface
             'xplore 2' => 'blackview=blackview xplore 2',
             'xplore 1 walkie talkie' => 'blackview=blackview xplore 1 walkie talkie',
             'xplore 1 pro' => 'blackview=blackview xplore 1 pro',
+            'a55' => 'blackview=blackview a55',
+            'bl9000' => 'blackview=blackview bl9000',
             // medion
             'b5532' => 'medion=medion b5532',
             'lifetab_p733x' => 'medion=medion lifetab p733x',
@@ -8940,6 +8945,7 @@ final class Device implements DeviceInterface
             // acepad
             'a130-2024' => 'acepad=acepad a130-2024',
             'a145-2024' => 'acepad=acepad a145-2024',
+            'a130' => 'acepad=acepad a130',
             // korax
             'korax-eurobox' => 'korax=korax eurobox',
             'korax-eurobox pro' => 'korax=korax eurobox pro',

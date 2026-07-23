@@ -12508,6 +12508,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Vuhuv',
                 'key' => 'vuhuv',
             ],
+            [
+                'type' => 'Bravis',
+                'name' => 'Bravis',
+                'brandname' => 'Bravis',
+                'key' => 'bravis',
+            ],
         ];
     }
 
