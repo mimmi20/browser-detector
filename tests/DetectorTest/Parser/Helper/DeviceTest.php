@@ -121,7 +121,7 @@ final class DeviceTest extends TestCase
             ['LG-D295', 'lg=lg d295'],
             ['LG Spirit 4G LTE', 'lg=lg spirit 4g lte'],
             // Acer
-            ['A100', 'acer=acer a100'],
+            //['A100', 'acer=acer a100'],
             ['B1-860A', 'acer=acer b1-860a'],
             ['A1-734', 'acer=acer a1-734'],
             ['A3-A40', 'acer=acer a3-a40'],
@@ -11595,6 +11595,8 @@ final class DeviceTest extends TestCase
             // imuz
             ['IM-H092L', 'imuz=imuz im-h092l'],
             ['IM-H092W', 'imuz=imuz im-h092w'],
+            // bravis
+            ['BRAVIS X500', 'bravis=bravis x500'],
             // generic
             ['SMART_TV', 'unknown=general tv device'],
             ['SMART TV', 'unknown=general tv device'],

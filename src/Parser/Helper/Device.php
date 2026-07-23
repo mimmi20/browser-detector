@@ -99,7 +99,8 @@ final class Device implements DeviceInterface
             'lg-d295' => 'lg=lg d295',
             'lg spirit 4g lte' => 'lg=lg spirit 4g lte',
             // Acer
-            'a100' => 'acer=acer a100',
+            // has a conflict woth blackview A100
+            //'a100' => 'acer=acer a100',
             'a1-734' => 'acer=acer a1-734',
             'a3-a40' => 'acer=acer a3-a40',
             'b1-7a0' => 'acer=acer b1-7a0',
@@ -9621,6 +9622,8 @@ final class Device implements DeviceInterface
             // imuz
             'im-h092l' => 'imuz=imuz im-h092l',
             'im-h092w' => 'imuz=imuz im-h092w',
+            // bravis
+            'bravis x500' => 'bravis=bravis x500',
             // generic
             'smart_tv', 'smart tv', 'smart tv pro', 'smarttv' => 'unknown=general tv device',
             // other

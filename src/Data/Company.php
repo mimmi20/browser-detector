@@ -4175,6 +4175,8 @@ enum Company: string implements CompanyInterface
 
     case bravis = 'Bravis';
 
+    case atlassian = 'Atlassian';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -6260,6 +6262,7 @@ enum Company: string implements CompanyInterface
             'niomobile', 'nio mobile technology co., ltd.', 'nio' => self::nioMobile,
             'imuz' => self::imuz,
             'bravis' => self::bravis,
+            'atlassian', 'atlassian pty ltd' => self::atlassian,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -7110,6 +7113,7 @@ enum Company: string implements CompanyInterface
             self::texman => 'Dongguan Zhengman Electronic Technology Co., Ltd.',
             self::nioMobile => 'NIO Mobile Technology Co., Ltd.',
             self::vuhuv => 'Vuhuv Telekomunikasyon A.S.',
+            self::atlassian => 'Atlassian Pty Ltd',
             self::unknown => null,
             default => $this->value,
         };

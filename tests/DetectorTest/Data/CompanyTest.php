@@ -12514,6 +12514,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Bravis',
                 'key' => 'bravis',
             ],
+            [
+                'type' => 'Atlassian',
+                'name' => 'Atlassian Pty Ltd',
+                'brandname' => 'Atlassian',
+                'key' => 'atlassian',
+            ],
         ];
     }
 
