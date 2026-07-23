@@ -424,6 +424,8 @@ enum Os: string implements OsInterface
 
     case thinOS = 'ThinOS';
 
+    case fydeOS = 'FydeOS';
+
     /**
      * @throws void
      *
@@ -627,6 +629,7 @@ enum Os: string implements OsInterface
             'deepin' => self::deepin,
             'kolibrios', 'kolibri-os' => self::kolibriOS,
             'thinos', 'thin-os' => self::thinOS,
+            'fydeos', 'fyde-os' => self::fydeOS,
             default => self::unknown,
         };
     }
@@ -748,6 +751,7 @@ enum Os: string implements OsInterface
             self::plan9 => Company::plan9Foundation,
             self::deepin => Company::deepinTechnology,
             self::thinOS => Company::dell,
+            self::fydeOS => Company::fyde,
             default => Company::unknown,
         };
     }
@@ -902,6 +906,7 @@ enum Os: string implements OsInterface
             self::fireos => ['factory' => VersionBuilderFactory::class, 'search' => ['Fire OS']],
             self::deepin => ['factory' => VersionBuilderFactory::class, 'search' => ['Deepin']],
             self::thinOS => ['factory' => VersionBuilderFactory::class, 'search' => ['Warthog', 'WTOS']],
+            self::fydeOS => ['factory' => VersionBuilderFactory::class, 'search' => ['FydeOS']],
             default => ['factory' => null, 'search' => null],
         };
     }
@@ -1026,6 +1031,7 @@ enum Os: string implements OsInterface
             self::plan9 => 'plan-9',
             self::kolibriOS => 'kolibri-os',
             self::thinOS => 'thin-os',
+            self::fydeOS => 'fyde-os',
             default => $this->name,
         };
     }

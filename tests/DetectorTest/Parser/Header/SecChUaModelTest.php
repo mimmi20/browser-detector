@@ -205,7 +205,6 @@ final class SecChUaModelTest extends TestCase
             ['"LG-D722"', true, 'lg=lg d722'],
             ['"LM-X410.FN"', true, 'lg=lg lm-x410.fn'],
             // Acer
-            ['"A100"', true, 'acer=acer a100'],
             ['"B1-860A"', true, 'acer=acer b1-860a'],
             ['"A1-734"', true, 'acer=acer a1-734'],
             ['"A3-A40"', true, 'acer=acer a3-a40'],

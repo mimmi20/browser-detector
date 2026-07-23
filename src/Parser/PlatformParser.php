@@ -135,6 +135,7 @@ final readonly class PlatformParser implements PlatformParserInterface
             '/(tru64|digital) unix/i' => Os::tru64unix,
             '/osf1/i' => Os::osf1,
             '/unix/i' => Os::unix,
+            '/fydeos/i' => Os::fydeOS,
             '/kukui|(?<!i)cros(?!s)|build\/r\d+-\d+[.\d]+|(?<!for)chromebook/i' => Os::chromeos,
             '/fire os|(?:andr[o0]id (\d([\d.])*);? |amazon;|smarttv_)aft|aeo[acbhkt]|[ (]kf[adfgjkmorstq]|.+firetvstick2018|cordova-amazon-fireos/i' => Os::fireos,
             '/(?<!bq )kepler[\\/ ]/i' => Os::vegaOS,

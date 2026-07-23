@@ -12520,6 +12520,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Atlassian',
                 'key' => 'atlassian',
             ],
+            [
+                'type' => 'Fyde',
+                'name' => 'Fyde Innovations Ltd',
+                'brandname' => 'Fyde',
+                'key' => 'fyde',
+            ],
         ];
     }
 

@@ -1662,6 +1662,14 @@ final class OsTest extends TestCase
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Warthog', 'WTOS']],
                 'key' => 'thin-os',
             ],
+            [
+                'type' => 'FydeOS',
+                'name' => 'FydeOS',
+                'marketingName' => 'FydeOS',
+                'manufacturer' => Company::fyde,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['FydeOS']],
+                'key' => 'fyde-os',
+            ],
         ];
     }
 }
