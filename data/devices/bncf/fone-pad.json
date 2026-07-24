@@ -14,5 +14,21 @@
     },
     "type": "fone-pad",
     "platform": "android"
+  },
+  "bncf bpad t1": {
+    "deviceName": "BPad T1",
+    "marketingName": "BPad T1",
+    "manufacturer": "bncf",
+    "brand": "bncf",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 8.4
+    },
+    "type": "fone-pad",
+    "platform": "android"
   }
 }

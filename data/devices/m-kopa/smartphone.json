@@ -2,7 +2,7 @@
   "m-kopa x20": {
     "deviceName": "X20",
     "marketingName": "X20",
-    "manufacturer": "m-kopa",
+    "manufacturer": "hmd-global",
     "brand": "m-kopa",
     "dualOrientation": true,
     "simCount": 1,
@@ -18,7 +18,23 @@
   "m-kopa x2": {
     "deviceName": "X2",
     "marketingName": "X2",
-    "manufacturer": "m-kopa",
+    "manufacturer": "hmd-global",
+    "brand": "m-kopa",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1612,
+      "height": 720,
+      "touch": true,
+      "size": 6.56
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "m-kopa s34": {
+    "deviceName": "S34",
+    "marketingName": "S34",
+    "manufacturer": "hmd-global",
     "brand": "m-kopa",
     "dualOrientation": true,
     "simCount": 1,

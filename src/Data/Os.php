@@ -846,7 +846,7 @@ enum Os: string implements OsInterface
             self::openSuse => ['factory' => VersionBuilderFactory::class, 'search' => ['openSUSE']],
             self::backtracklinux => ['factory' => VersionBuilderFactory::class, 'search' => ['BackTrack Linux']],
             self::linspire => ['factory' => VersionBuilderFactory::class, 'search' => ['Linspire']],
-            self::aosp, self::androidtv, self::androidGo => ['factory' => VersionBuilderFactory::class, 'search' => ['Andr[o0]id']],
+            self::aosp, self::androidtv, self::androidGo => ['factory' => VersionBuilderFactory::class, 'search' => ['(?<!o|gm-|yaapp_)Andr[o0]id']],
             self::hpux => ['factory' => VersionBuilderFactory::class, 'search' => ['HP-UX']],
             self::whaleOS => ['factory' => VersionBuilderFactory::class, 'search' => ['WH\/', 'WhaleTV', 'WH']],
             self::series60 => ['factory' => VersionBuilderFactory::class, 'search' => ['Series ?60', 'S60 ?V']],
