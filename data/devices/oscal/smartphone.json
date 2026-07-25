@@ -286,5 +286,37 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "oscal pilot 5": {
+    "deviceName": "Pilot 5",
+    "marketingName": "Pilot 5",
+    "manufacturer": "oscal",
+    "brand": "oscal",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1604,
+      "height": 720,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "oscal pilot 6": {
+    "deviceName": "Pilot 6",
+    "marketingName": "Pilot 6",
+    "manufacturer": "oscal",
+    "brand": "oscal",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2460,
+      "height": 1080,
+      "touch": true,
+      "size": 6.78
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }

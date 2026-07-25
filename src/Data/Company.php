@@ -4179,6 +4179,20 @@ enum Company: string implements CompanyInterface
 
     case fyde = 'Fyde';
 
+    case jinga = 'Jinga';
+
+    case openIntel = 'OpenINTEL';
+
+    case bgh = 'BGH';
+
+    case hoobart = 'Hoobart';
+
+    case datafreak = 'DATAFREAK';
+
+    case wayfinity = 'Wayfinity';
+
+    case accessibleWeb = 'Accessible Web';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -6266,6 +6280,13 @@ enum Company: string implements CompanyInterface
             'bravis' => self::bravis,
             'atlassian', 'atlassian pty ltd' => self::atlassian,
             'fyde', 'fyde innovations ltd' => self::fyde,
+            'jinga' => self::jinga,
+            'openintel', 'open-intel' => self::openIntel,
+            'bgh' => self::bgh,
+            'hoobart' => self::hoobart,
+            'datafreak', 'datafreak ltd' => self::datafreak,
+            'wayfinity', 'wayfinity ltd' => self::wayfinity,
+            'accessibleweb', 'accessible web, inc.', 'accessible-web', 'accessible web' => self::accessibleWeb,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -7118,6 +7139,9 @@ enum Company: string implements CompanyInterface
             self::vuhuv => 'Vuhuv Telekomunikasyon A.S.',
             self::atlassian => 'Atlassian Pty Ltd',
             self::fyde => 'Fyde Innovations Ltd',
+            self::datafreak => 'DATAFREAK LTD',
+            self::wayfinity => 'Wayfinity Ltd',
+            self::accessibleWeb => 'Accessible Web, Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -7911,6 +7935,8 @@ enum Company: string implements CompanyInterface
             self::novusTablet => 'novus-tablet',
             self::smartBarry => 'smart-barry',
             self::nioMobile => 'nio',
+            self::openIntel => 'open-intel',
+            self::accessibleWeb => 'accessible-web',
             default => $this->name,
         };
     }

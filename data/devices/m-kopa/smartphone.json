@@ -46,5 +46,37 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "m-kopa x3": {
+    "deviceName": "X3",
+    "marketingName": "X3",
+    "manufacturer": "hmd-global",
+    "brand": "m-kopa",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "m-kopa x30": {
+    "deviceName": "X30",
+    "marketingName": "X30",
+    "manufacturer": "hmd-global",
+    "brand": "m-kopa",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.72
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }

@@ -12526,6 +12526,48 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Fyde',
                 'key' => 'fyde',
             ],
+            [
+                'type' => 'Jinga',
+                'name' => 'Jinga',
+                'brandname' => 'Jinga',
+                'key' => 'jinga',
+            ],
+            [
+                'type' => 'OpenINTEL',
+                'name' => 'OpenINTEL',
+                'brandname' => 'OpenINTEL',
+                'key' => 'open-intel',
+            ],
+            [
+                'type' => 'BGH',
+                'name' => 'BGH',
+                'brandname' => 'BGH',
+                'key' => 'bgh',
+            ],
+            [
+                'type' => 'Hoobart',
+                'name' => 'Hoobart',
+                'brandname' => 'Hoobart',
+                'key' => 'hoobart',
+            ],
+            [
+                'type' => 'DATAFREAK',
+                'name' => 'DATAFREAK LTD',
+                'brandname' => 'DATAFREAK',
+                'key' => 'datafreak',
+            ],
+            [
+                'type' => 'Wayfinity',
+                'name' => 'Wayfinity Ltd',
+                'brandname' => 'Wayfinity',
+                'key' => 'wayfinity',
+            ],
+            [
+                'type' => 'Accessible Web',
+                'name' => 'Accessible Web, Inc.',
+                'brandname' => 'Accessible Web',
+                'key' => 'accessible-web',
+            ],
         ];
     }
 

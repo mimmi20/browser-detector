@@ -693,6 +693,16 @@
     },
     "engine": "unknown"
   },
+  "eff do not track policy checker": {
+    "name": "EFF Do Not Track Policy Checker",
+    "manufacturer": "electronic-frontier-foundation",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
   "webprosbot": {
     "name": "WebProsBot",
     "manufacturer": "webpros",
@@ -6609,6 +6619,162 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SleepBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "oi-crawler": {
+    "name": "OI-Crawler",
+    "manufacturer": "open-intel",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "OI-Crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "stack-scope-bot": {
+    "name": "StackScopeBot",
+    "manufacturer": "datafreak",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "StackScopeBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "affiliate-spy-bot": {
+    "name": "AffiliateSpyBot",
+    "manufacturer": "wayfinity",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AffiliateSpyBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "accessible-web-bot": {
+    "name": "AccessibleWebBot",
+    "manufacturer": "accessible-web",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AccessibleWebBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "artel-lead-radar": {
+    "name": "ArtelLeadRadar",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ArtelLeadRadar"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "finder-go": {
+    "name": "FinderGo",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "FinderGo"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "kenya-domain-scorer": {
+    "name": "KenyaDomainScorer",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "KenyaDomainScorer"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "phish-bucket-rust": {
+    "name": "PhishBucketRust",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PhishBucketRust"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "goose-extractor": {
+    "name": "goose-extractor",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Goose"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "postit-lead-discovery": {
+    "name": "PostitLeadDiscovery",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PostitLeadDiscovery"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "letrix-labs": {
+    "name": "LetrixLabs",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "LetrixLabs"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "udv-ai-research": {
+    "name": "UdV-AI-Research",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "UdV-AI-Research"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "trust-bot": {
+    "name": "TrustBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TrustBot"
       ]
     },
     "engine": "unknown"

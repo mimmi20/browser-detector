@@ -154,6 +154,7 @@ final readonly class PlatformParser implements PlatformParserInterface
             '/andr0id|android[ _]?tv|g[o0][o0]gle[ _]tv|smarttv 4k|smart[ _]?tv|bravia 4k vh22/i' => Os::androidtv,
             '/sm-r[0-9]{3}/i' => Os::wearos,
             '/Android (\d+[.\d]*);.+release\.go$/i' => Os::androidGo,
+            '/Lineage_(\d+[.\d]*)|(?:Android (\d([\d.])*);? )?(?:lineage_\w+|Switch(?: Lite| OLED)?\))/i' => Os::lineageos,
             '/(?<![o_])andr[0o]id|silk|juc ?\(linux;|adr |gingerbread|ucweb\/2\.0 \(linux;|vre;|beyondpod|htc_sensation_z710e|puffin\/[\d\.]+a[tp]|okhttp|fban\/fb4a.*fbsv\/|ddg[_-]android|omdroid|podkicker\/|podkicker pro\/|\d+\/tclwebkit(?:\d+[.\d]*)/i' => Os::android,
             '/watchos|apple watch|watch os/i' => Os::watchos,
             '/appletv/i' => Os::tvos,
