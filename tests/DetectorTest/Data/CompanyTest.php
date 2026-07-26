@@ -12568,6 +12568,30 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Accessible Web',
                 'key' => 'accessible-web',
             ],
+            [
+                'type' => 'Callsky',
+                'name' => 'Callsky',
+                'brandname' => 'Callsky',
+                'key' => 'callsky',
+            ],
+            [
+                'type' => 'Ckypad',
+                'name' => 'Ckypad',
+                'brandname' => 'Ckypad',
+                'key' => 'ckypad',
+            ],
+            [
+                'type' => 'UNIWA',
+                'name' => 'UNIWA',
+                'brandname' => 'UNIWA',
+                'key' => 'uniwa',
+            ],
+            [
+                'type' => 'Unitel',
+                'name' => 'Unitel',
+                'brandname' => 'Unitel',
+                'key' => 'unitel',
+            ],
         ];
     }
 

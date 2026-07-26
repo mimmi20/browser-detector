@@ -4193,6 +4193,14 @@ enum Company: string implements CompanyInterface
 
     case accessibleWeb = 'Accessible Web';
 
+    case callsky = 'Callsky';
+
+    case ckypad = 'Ckypad';
+
+    case uniwa = 'UNIWA';
+
+    case unitel = 'Unitel';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -6287,6 +6295,10 @@ enum Company: string implements CompanyInterface
             'datafreak', 'datafreak ltd' => self::datafreak,
             'wayfinity', 'wayfinity ltd' => self::wayfinity,
             'accessibleweb', 'accessible web, inc.', 'accessible-web', 'accessible web' => self::accessibleWeb,
+            'callsky' => self::callsky,
+            'ckypad' => self::ckypad,
+            'uniwa' => self::uniwa,
+            'unitel' => self::unitel,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
