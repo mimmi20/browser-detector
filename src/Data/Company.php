@@ -4203,6 +4203,8 @@ enum Company: string implements CompanyInterface
 
     case presearch = 'Presearch';
 
+    case mtc = 'MTC';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -6302,6 +6304,7 @@ enum Company: string implements CompanyInterface
             'uniwa' => self::uniwa,
             'unitel' => self::unitel,
             'presearch', 'presearch.com inc.' => self::presearch,
+            'mtc' => self::mtc,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(

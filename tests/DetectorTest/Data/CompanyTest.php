@@ -12598,6 +12598,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Presearch',
                 'key' => 'presearch',
             ],
+            [
+                'type' => 'MTC',
+                'name' => 'MTC',
+                'brandname' => 'MTC',
+                'key' => 'mtc',
+            ],
         ];
     }
 

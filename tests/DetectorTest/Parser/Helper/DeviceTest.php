@@ -121,7 +121,6 @@ final class DeviceTest extends TestCase
             ['LG-D295', 'lg=lg d295'],
             ['LG Spirit 4G LTE', 'lg=lg spirit 4g lte'],
             // Acer
-            //['A100', 'acer=acer a100'],
             ['B1-860A', 'acer=acer b1-860a'],
             ['A1-734', 'acer=acer a1-734'],
             ['A3-A40', 'acer=acer a3-a40'],
@@ -229,6 +228,7 @@ final class DeviceTest extends TestCase
             ['AFTCA002', 'amazon=amazon aftca002'],
             ['AFTCL001', 'amazon=amazon aftcl001'],
             ['KFRASWI', 'amazon=amazon kfraswi'],
+            ['AFTHY7ABBA', 'amazon=amazon afthy7abba'],
             // Asus
             ['P024', 'asus=asus p024'],
             ['ASUS_X00DD', 'asus=asus x00dd'],
@@ -1412,6 +1412,7 @@ final class DeviceTest extends TestCase
             ['23116PN5BC', 'xiaomi=xiaomi 23116pn5bc'],
             ['23113RKC6G', 'xiaomi=xiaomi 23113rkc6g'],
             ['2506BPN68G', 'xiaomi=xiaomi 2506bpn68g'],
+            ['Xiaomi 2506BPN68G', 'xiaomi=xiaomi 2506bpn68g'],
             ['23049PCD8I', 'xiaomi=xiaomi 23049pcd8i'],
             ['220733SL', 'xiaomi=xiaomi 220733sl'],
             ['220743FI', 'xiaomi=xiaomi 220743fi'],
@@ -1822,6 +1823,9 @@ final class DeviceTest extends TestCase
             ['Redmi Pad 2 Pro', 'xiaomi=xiaomi redmi pad 2 pro'],
             ['Xiaomi Pad 8 Pro', 'xiaomi=xiaomi pad 8 pro'],
             ['25080RABDT', 'xiaomi=xiaomi 25080rabdt'],
+            ['REDMI Note 15', 'xiaomi=xiaomi redmi note 15'],
+            ['Redmi Pad 2 Pro 5G', 'xiaomi=xiaomi redmi pad 2 pro 5g'],
+            ['Xiaomi Pad 8', 'xiaomi=xiaomi pad 8'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -6644,6 +6648,8 @@ final class DeviceTest extends TestCase
             ['motorola edge 60s', 'motorola=motorola edge 60s'],
             ['motorola razr 50s', 'motorola=motorola razr 50s'],
             ['motorola razr 60', 'motorola=motorola razr 60'],
+            ['motorola razr 2025', 'motorola=motorola razr 2025'],
+            ['motorola razr 2026', 'motorola=motorola razr 2026'],
             // Sony
             ['XQ-CC54', 'sony=sony xq-cc54'],
             ['XQ-BQ52', 'sony=sony xq-bq52'],

@@ -100,7 +100,7 @@ final class Device implements DeviceInterface
             'lg spirit 4g lte' => 'lg=lg spirit 4g lte',
             // Acer
             // has a conflict woth blackview A100
-            //'a100' => 'acer=acer a100',
+            // 'a100' => 'acer=acer a100',
             'a1-734' => 'acer=acer a1-734',
             'a3-a40' => 'acer=acer a3-a40',
             'b1-7a0' => 'acer=acer b1-7a0',
@@ -202,6 +202,7 @@ final class Device implements DeviceInterface
             'aftca002' => 'amazon=amazon aftca002',
             'aftcl001' => 'amazon=amazon aftcl001',
             'kfraswi' => 'amazon=amazon kfraswi',
+            'afthy7abba' => 'amazon=amazon afthy7abba',
             // Asus
             'p024' => 'asus=asus p024',
             'asus_x00dd' => 'asus=asus x00dd',
@@ -1334,7 +1335,7 @@ final class Device implements DeviceInterface
             '23116pn5bg' => 'xiaomi=xiaomi 23116pn5bg',
             '23116pn5bc' => 'xiaomi=xiaomi 23116pn5bc',
             '23113rkc6g' => 'xiaomi=xiaomi 23113rkc6g',
-            '2506bpn68g' => 'xiaomi=xiaomi 2506bpn68g',
+            '2506bpn68g', 'xiaomi 2506bpn68g' => 'xiaomi=xiaomi 2506bpn68g',
             '23049pcd8i' => 'xiaomi=xiaomi 23049pcd8i',
             '220733sl' => 'xiaomi=xiaomi 220733sl',
             '220743fi' => 'xiaomi=xiaomi 220743fi',
@@ -1728,6 +1729,9 @@ final class Device implements DeviceInterface
             'redmi pad 2 pro' => 'xiaomi=xiaomi redmi pad 2 pro',
             'xiaomi pad 8 pro' => 'xiaomi=xiaomi pad 8 pro',
             '25080rabdt' => 'xiaomi=xiaomi 25080rabdt',
+            'redmi note 15' => 'xiaomi=xiaomi redmi note 15',
+            'redmi pad 2 pro 5g' => 'xiaomi=xiaomi redmi pad 2 pro 5g',
+            'xiaomi pad 8' => 'xiaomi=xiaomi pad 8',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -4921,6 +4925,8 @@ final class Device implements DeviceInterface
             'motorola edge 60s' => 'motorola=motorola edge 60s',
             'motorola razr 50s' => 'motorola=motorola razr 50s',
             'motorola razr 60' => 'motorola=motorola razr 60',
+            'motorola razr 2025' => 'motorola=motorola razr 2025',
+            'motorola razr 2026' => 'motorola=motorola razr 2026',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
