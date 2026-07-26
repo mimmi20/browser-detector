@@ -4312,7 +4312,7 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-A576Z', 'samsung=samsung sm-a576z'],
             ['SM-A5760', 'samsung=samsung sm-a5760'],
             ['SAMSUNG SM-A5760', 'samsung=samsung sm-a5760'],
-            ['Samsung Galaxy Z Fold7', 'samsung=samsung Galaxy Z Fold 7'],
+            ['Samsung Galaxy Z Fold7', 'samsung=samsung galaxy z fold 7'],
             ['SM-T517', 'samsung=samsung sm-t517'],
             ['SAMSUNG SM-T517', 'samsung=samsung sm-t517'],
             ['SAMSUNG Family Hub 6.0', 'samsung=samsung familyhub 6.0'],

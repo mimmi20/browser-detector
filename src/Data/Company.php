@@ -4201,6 +4201,8 @@ enum Company: string implements CompanyInterface
 
     case unitel = 'Unitel';
 
+    case presearch = 'Presearch';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -6299,6 +6301,7 @@ enum Company: string implements CompanyInterface
             'ckypad' => self::ckypad,
             'uniwa' => self::uniwa,
             'unitel' => self::unitel,
+            'presearch', 'presearch.com inc.' => self::presearch,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -7154,6 +7157,7 @@ enum Company: string implements CompanyInterface
             self::datafreak => 'DATAFREAK LTD',
             self::wayfinity => 'Wayfinity Ltd',
             self::accessibleWeb => 'Accessible Web, Inc.',
+            self::presearch => 'Presearch.com Inc.',
             self::unknown => null,
             default => $this->value,
         };

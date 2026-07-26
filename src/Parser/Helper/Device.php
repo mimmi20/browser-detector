@@ -3180,7 +3180,7 @@ final class Device implements DeviceInterface
             'sm-a576w', 'samsung sm-a576w' => 'samsung=samsung sm-a576w',
             'sm-a576z', 'samsung sm-a576z' => 'samsung=samsung sm-a576z',
             'sm-a5760', 'samsung sm-a5760' => 'samsung=samsung sm-a5760',
-            'samsung galaxy z fold7' => 'samsung=samsung Galaxy Z Fold 7',
+            'samsung galaxy z fold7' => 'samsung=samsung galaxy z fold 7',
             'sm-t517', 'samsung sm-t517' => 'samsung=samsung sm-t517',
             'samsung family hub 6.0' => 'samsung=samsung familyhub 6.0',
             'samsung family hub 5.0' => 'samsung=samsung familyhub 5.0',

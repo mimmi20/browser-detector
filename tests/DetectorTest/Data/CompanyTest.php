@@ -12592,6 +12592,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Unitel',
                 'key' => 'unitel',
             ],
+            [
+                'type' => 'Presearch',
+                'name' => 'Presearch.com Inc.',
+                'brandname' => 'Presearch',
+                'key' => 'presearch',
+            ],
         ];
     }
 
