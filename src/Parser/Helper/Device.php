@@ -417,13 +417,13 @@ final class Device implements DeviceInterface
             'cph2415' => 'oneplus=oneplus cph2415',
             'in2015' => 'oneplus=oneplus in2015',
             'cph2409' => 'oneplus=oneplus cph2409',
-            'oneplus a6003' => 'oneplus=oneplus a6003',
+            'oneplus a6003', 'a6003' => 'oneplus=oneplus a6003',
             'oneplus a3003', 'a3003' => 'oneplus=oneplus a3003',
             'oneplus a5010', 'a5010' => 'oneplus=oneplus a5010',
             'cph2551' => 'oneplus=oneplus cph2551',
             'cph2581', 'oneplus cph2581' => 'oneplus=oneplus cph2581',
             'iv2201' => 'oneplus=oneplus iv2201',
-            'oneplus a6000' => 'oneplus=oneplus a6000',
+            'oneplus a6000', 'a6000' => 'oneplus=oneplus a6000',
             'in2025' => 'oneplus=oneplus in2025',
             'hd1910' => 'oneplus=oneplus hd1910',
             'hd1911' => 'oneplus=oneplus hd1911',
@@ -524,8 +524,6 @@ final class Device implements DeviceInterface
             'oneplus n200' => 'oneplus=oneplus n200',
             'cph2769', 'oneplus cph2769' => 'oneplus=oneplus cph2769',
             'cph2767' => 'oneplus=oneplus cph2767',
-            'a6000' => 'oneplus=oneplus a6000',
-            'a6003' => 'oneplus=oneplus a6003',
             'ne2210' => 'oneplus=oneplus ne2210',
             'eb2101' => 'oneplus=oneplus eb2101',
             'dn2101' => 'oneplus=oneplus dn2101',
@@ -4340,6 +4338,7 @@ final class Device implements DeviceInterface
             'tb352fu' => 'lenovo=lenovo tb352fu',
             'tb376fc' => 'lenovo=lenovo tb376fc',
             'tb335fc' => 'lenovo=lenovo tb335fc',
+            'tb372fc' => 'lenovo=lenovo tb372fc',
             // Nokia
             'nokia g50' => 'nokia=nokia g50',
             'nokia g20' => 'nokia=nokia g20',
@@ -4442,6 +4441,7 @@ final class Device implements DeviceInterface
             'hmd aura' => 'hmd-global=hmd-global aura',
             'hmd crest max' => 'hmd-global=hmd-global crest max',
             'hmd key' => 'hmd-global=hmd-global key',
+            'hmd aura2' => 'hmd-global=hmd-global aura 2',
             // Microsoft
             'surface duo' => 'microsoft=microsoft surface duo',
             'xbox' => 'microsoft=microsoft xbox',
@@ -4785,7 +4785,7 @@ final class Device implements DeviceInterface
             'motorola edge plus (2022)', 'motorola edge plus (2022' => 'motorola=motorola edge plus (2022)',
             'xt2201-6' => 'motorola=motorola xt2201-6',
             'xt2241-1' => 'motorola=motorola xt2241-1',
-            'moto e22s' => 'motorola=motorola moto e22s',
+            'moto e22s', 'motorola moto e22s' => 'motorola=motorola moto e22s',
             'xt2451-4' => 'motorola=motorola xt2451-4',
             'xt2451-3' => 'motorola=motorola xt2451-3',
             'xt2505-4' => 'motorola=motorola xt2505-4',
@@ -4905,8 +4905,7 @@ final class Device implements DeviceInterface
             'moto g 5g - 2024', 'moto g 5g - 2024-20-12' => 'motorola=motorola moto g 5g 2024',
             'moto g power 5g - 2024' => 'motorola=motorola moto g power 5g 2024',
             'moto g power 5g - 2023' => 'motorola=motorola moto g power 5g 2023',
-            'motorola moto e22s' => 'motorola=motorola moto e22s',
-            'moto g 5g - 2023' => 'motorola=motorola moto g 5g 2023',
+            'moto g 5g - 2023', 'motorola moto g 5G - 2023' => 'motorola=motorola moto g 5g 2023',
             'xt2313' => 'motorola=motorola xt2313',
             'moto g power - 2025' => 'motorola=motorola moto g power 2025',
             'xt2515-1' => 'motorola=motorola xt2515-1',
@@ -6771,6 +6770,8 @@ final class Device implements DeviceInterface
             'hlte245e' => 'hisense=hisense hlte245e',
             'hisense enigma' => 'hisense=hisense enigma',
             'hlte272e' => 'hisense=hisense hlte272e',
+            'hisense u71 pro' => 'hisense=hisense u71 pro',
+            'hlte120e' => 'hisense=hisense hlte120e',
             // insys
             'hn2-m16q' => 'insys=insys hn2-m16q',
             // aiwa
@@ -6803,6 +6804,7 @@ final class Device implements DeviceInterface
             'xanon x21' => 'walton=walton xanon x21',
             'walton gsmart5.0 2ktv' => 'walton=walton gsmart 5.0 2k tv',
             'orbit y70c' => 'walton=walton orbit y70c',
+            'nexg_n10' => 'walton=walton nexg n10',
             // kempler-strauss
             'zkempler plus' => 'kempler-strauss=kempler-strauss zkempler plus',
             'zkempler_pro' => 'kempler-strauss=kempler-strauss zkempler pro',
@@ -7183,6 +7185,7 @@ final class Device implements DeviceInterface
             'via m30' => 'casper=casper via m30',
             'via f30' => 'casper=casper via f30',
             'pad h10 pen' => 'casper=casper pad h10 pen',
+            'via m45' => 'casper=casper via m45',
             // hannspree
             'hsg1416' => 'hannspree=hannspree hsg1416',
             'hsg1351' => 'hannspree=hannspree hsg1351',
@@ -7528,6 +7531,7 @@ final class Device implements DeviceInterface
             's34' => 'm-kopa=m-kopa s34',
             'm-kopa x3' => 'm-kopa=m-kopa x3',
             'm-kopa x30' => 'm-kopa=m-kopa x30',
+            'm-kopa m10' => 'm-kopa=m-kopa m10',
             // meanit
             'meanit_x20' => 'meanit=meanit x20',
             'meanit x10' => 'meanit=meanit x10',
@@ -7677,6 +7681,7 @@ final class Device implements DeviceInterface
             'vodafone tv 3' => 'vodafone=vodafone tv 3',
             'vodacom smart tab 8' => 'vodafone=vodafone vodacom smart tab 8',
             'vodafone tv 4' => 'vodafone=vodafone tv 4',
+            'smart tab 10 4g' => 'vodafone=vodafone vodacom smart tab 10 4g',
             // feonal
             'k118_eea' => 'feonal=feonal k118_eea',
             'd118_eea' => 'feonal=feonal d118_eea',
@@ -7995,6 +8000,7 @@ final class Device implements DeviceInterface
             'vocal v1' => 'vocal=vocal v1',
             'vocal v01' => 'vocal=vocal v01',
             'vocal v0' => 'vocal=vocal v0',
+            'vocal v2' => 'vocal=vocal v2',
             // lava
             'lava lxx503' => 'lava=lava lxx503',
             'lava lzx404' => 'lava=lava lzx404',
@@ -8225,6 +8231,8 @@ final class Device implements DeviceInterface
             'neon ultra 2 o' => 'safaricom=safaricom neon ultra 2 o',
             'neon ultra 2' => 'safaricom=safaricom neon ultra 2',
             'neon smarta 2 k' => 'safaricom=safaricom neon smarta 2 k',
+            'neon smarta 2 t' => 'safaricom=safaricom neon smarta 2 t',
+            'neon smarta 2' => 'safaricom=safaricom neon smarta 2',
             // free-yond
             '2305003m' => 'free-yond=free-yond 2305003m',
             '2306004m' => 'free-yond=free-yond 2306004m',
@@ -8760,6 +8768,7 @@ final class Device implements DeviceInterface
             'villaon v651w' => 'villaon=villaon v651w',
             'villaon v501l' => 'villaon=villaon v501l',
             'villaon v654l' => 'villaon=villaon v654l',
+            'villaon v652l' => 'villaon=villaon v652l',
             // zebra
             'tc27' => 'zebra=zebra tc27',
             'tc22' => 'zebra=zebra tc22',
@@ -8788,6 +8797,7 @@ final class Device implements DeviceInterface
             'tb105l' => 'condor=condor tb105l',
             'tb717g' => 'condor=condor tb717g',
             'nova 80a' => 'condor=condor nova 80a',
+            'nova 70s' => 'condor=condor nova 70s',
             // f-plus/f+
             'r570e' => 'f-plus=f-plus r570e',
             // need to be detected with regex

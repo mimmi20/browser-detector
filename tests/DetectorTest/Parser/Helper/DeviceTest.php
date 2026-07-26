@@ -5976,6 +5976,7 @@ final class DeviceTest extends TestCase
             ['TB352FU', 'lenovo=lenovo tb352fu'],
             ['TB376FC', 'lenovo=lenovo tb376fc'],
             ['TB335FC', 'lenovo=lenovo tb335fc'],
+            ['TB372FC', 'lenovo=lenovo tb372fc'],
             // Nokia
             ['Nokia G50', 'nokia=nokia g50'],
             ['Nokia G20', 'nokia=nokia g20'],
@@ -6078,6 +6079,7 @@ final class DeviceTest extends TestCase
             ['HMD Aura', 'hmd-global=hmd-global aura'],
             ['HMD CREST MAX', 'hmd-global=hmd-global crest max'],
             ['HMD KEY', 'hmd-global=hmd-global key'],
+            ['HMD AURA2', 'hmd-global=hmd-global aura 2'],
             // Microsoft
             ['Surface Duo', 'microsoft=microsoft surface duo'],
             ['Xbox', 'microsoft=microsoft xbox'],
@@ -6628,6 +6630,7 @@ final class DeviceTest extends TestCase
             ['moto g power 5G - 2023', 'motorola=motorola moto g power 5g 2023'],
             ['Motorola Moto E22s', 'motorola=motorola moto e22s'],
             ['moto g 5G - 2023', 'motorola=motorola moto g 5g 2023'],
+            ['motorola moto g 5G - 2023', 'motorola=motorola moto g 5g 2023'],
             ['XT2313', 'motorola=motorola xt2313'],
             ['moto g power - 2025', 'motorola=motorola moto g power 2025'],
             ['XT2515-1', 'motorola=motorola xt2515-1'],
@@ -8565,6 +8568,8 @@ final class DeviceTest extends TestCase
             ['HLTE245E', 'hisense=hisense hlte245e'],
             ['Hisense Enigma', 'hisense=hisense enigma'],
             ['HLTE272E', 'hisense=hisense hlte272e'],
+            ['Hisense U71 Pro', 'hisense=hisense u71 pro'],
+            ['HLTE120E', 'hisense=hisense hlte120e'],
             // insys
             ['HN2-M16Q', 'insys=insys hn2-m16q'],
             // aiwa
@@ -8597,6 +8602,7 @@ final class DeviceTest extends TestCase
             ['XANON X21', 'walton=walton xanon x21'],
             ['WALTON GSMART5.0 2KTV', 'walton=walton gsmart 5.0 2k tv'],
             ['ORBIT Y70c', 'walton=walton orbit y70c'],
+            ['NEXG_N10', 'walton=walton nexg n10'],
             // kempler-strauss
             ['ZKEMPLER PLUS', 'kempler-strauss=kempler-strauss zkempler plus'],
             ['ZKEMPLER_PRO', 'kempler-strauss=kempler-strauss zkempler pro'],
@@ -8992,6 +8998,7 @@ final class DeviceTest extends TestCase
             ['VIA M30', 'casper=casper via m30'],
             ['VIA F30', 'casper=casper via f30'],
             ['Pad H10 PEN', 'casper=casper pad h10 pen'],
+            ['VIA M45', 'casper=casper via m45'],
             // hannspree
             ['HSG1416', 'hannspree=hannspree hsg1416'],
             ['HSG1351', 'hannspree=hannspree hsg1351'],
@@ -9429,6 +9436,7 @@ final class DeviceTest extends TestCase
             ['S34', 'm-kopa=m-kopa s34'],
             ['M-KOPA X3', 'm-kopa=m-kopa x3'],
             ['M-KOPA X30', 'm-kopa=m-kopa x30'],
+            ['M-KOPA M10', 'm-kopa=m-kopa m10'],
             // meanit
             ['meanIT_X20', 'meanit=meanit x20'],
             ['meanIT X10', 'meanit=meanit x10'],
@@ -9578,6 +9586,7 @@ final class DeviceTest extends TestCase
             ['Vodafone TV 3', 'vodafone=vodafone tv 3'],
             ['Vodacom Smart Tab 8', 'vodafone=vodafone vodacom smart tab 8'],
             ['Vodafone TV 4', 'vodafone=vodafone tv 4'],
+            ['Smart Tab 10 4G', 'vodafone=vodafone vodacom smart tab 10 4g'],
             // feonal
             ['K118_EEA', 'feonal=feonal k118_eea'],
             ['D118_EEA', 'feonal=feonal d118_eea'],
@@ -9904,6 +9913,7 @@ final class DeviceTest extends TestCase
             ['VOCAL V1', 'vocal=vocal v1'],
             ['VOCAL V01', 'vocal=vocal v01'],
             ['VOCAL V0', 'vocal=vocal v0'],
+            ['VOCAL V2', 'vocal=vocal v2'],
             // lava
             ['LAVA LXX503', 'lava=lava lxx503'],
             ['LAVA LZX404', 'lava=lava lzx404'],
@@ -10221,6 +10231,8 @@ final class DeviceTest extends TestCase
             ['Neon Ultra 2 O', 'safaricom=safaricom neon ultra 2 o'],
             ['Neon Ultra 2', 'safaricom=safaricom neon ultra 2'],
             ['Neon Smarta 2 K', 'safaricom=safaricom neon smarta 2 k'],
+            ['Neon Smarta 2 T', 'safaricom=safaricom neon smarta 2 t'],
+            ['Neon Smarta 2', 'safaricom=safaricom neon smarta 2'],
             // free-yond
             ['2305003M', 'free-yond=free-yond 2305003m'],
             ['2306004M', 'free-yond=free-yond 2306004m'],
@@ -10762,6 +10774,7 @@ final class DeviceTest extends TestCase
             ['VILLAON V651W', 'villaon=villaon v651w'],
             ['VILLAON V501L', 'villaon=villaon v501l'],
             ['VILLAON V654L', 'villaon=villaon v654l'],
+            ['VILLAON V652L', 'villaon=villaon v652l'],
             // zebra
             ['TC27', 'zebra=zebra tc27'],
             ['TC22', 'zebra=zebra tc22'],
@@ -10790,6 +10803,7 @@ final class DeviceTest extends TestCase
             ['TB105L', 'condor=condor tb105l'],
             ['TB717G', 'condor=condor tb717g'],
             ['NOVA 80A', 'condor=condor nova 80a'],
+            ['NOVA 70S', 'condor=condor nova 70s'],
             // f-plus/f+
             ['R570E', 'f-plus=f-plus r570e'],
             // ['SH65 2GB/32GB 4800mAh GMS', 'f-plus=f-plus sh65'],
