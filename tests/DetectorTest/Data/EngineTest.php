@@ -11,7 +11,7 @@
 
 declare(strict_types = 1);
 
-namespace Data;
+namespace BrowserDetectorTest\Data;
 
 use BrowserDetector\Data\Company;
 use BrowserDetector\Data\Engine;
