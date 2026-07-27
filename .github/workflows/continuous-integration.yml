@@ -38,8 +38,8 @@ jobs:
       composer-options: "--optimize-autoloader --prefer-dist --prefer-stable -v"
       skip-validate-composer: false
       skip-phplint: false
-      skip-check-composer: false
-      skip-ec-checker: true
+      skip-check-composer: true
+      skip-ec-checker: false
       dependency-analyser-options: ""
 
   install:
