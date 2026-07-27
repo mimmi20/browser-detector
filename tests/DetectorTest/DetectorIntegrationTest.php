@@ -3206,7 +3206,7 @@ final class DetectorIntegrationTest extends TestCase
                     'device' => [
                         'architecture' => null,
                         'deviceName' => 'ZC554KL',
-                        'marketingName' => 'ZenFone 4 Max (ZC554KL)',
+                        'marketingName' => 'ZenFone 4 Max',
                         'manufacturer' => 'Asus',
                         'brand' => 'Asus',
                         'dualOrientation' => true,
@@ -3438,7 +3438,7 @@ final class DetectorIntegrationTest extends TestCase
                     'device' => [
                         'architecture' => null,
                         'deviceName' => 'ZC554KL',
-                        'marketingName' => 'ZenFone 4 Max (ZC554KL)',
+                        'marketingName' => 'ZenFone 4 Max',
                         'manufacturer' => 'Asus',
                         'brand' => 'Asus',
                         'dualOrientation' => true,

@@ -4929,7 +4929,7 @@ final class Device implements DeviceInterface
             'moto g 5g - 2024', 'moto g 5g - 2024-20-12' => 'motorola=motorola moto g 5g 2024',
             'moto g power 5g - 2024' => 'motorola=motorola moto g power 5g 2024',
             'moto g power 5g - 2023' => 'motorola=motorola moto g power 5g 2023',
-            'moto g 5g - 2023', 'motorola moto g 5G - 2023' => 'motorola=motorola moto g 5g 2023',
+            'moto g 5g - 2023', 'motorola moto g 5g - 2023' => 'motorola=motorola moto g 5g 2023',
             'xt2313' => 'motorola=motorola xt2313',
             'moto g power - 2025' => 'motorola=motorola moto g power 2025',
             'xt2515-1' => 'motorola=motorola xt2515-1',
