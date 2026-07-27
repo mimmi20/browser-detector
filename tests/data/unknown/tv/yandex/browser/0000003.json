@@ -2995,7 +2995,7 @@
     "os": {
       "name": "Android TV",
       "marketingName": "Android TV",
-      "version": "22.36.1",
+      "version": "9.0.0",
       "manufacturer": "Google",
       "bits": null
     },
@@ -3085,7 +3085,7 @@
     "os": {
       "name": "Android TV",
       "marketingName": "Android TV",
-      "version": "21.111.1",
+      "version": "9.0.0",
       "manufacturer": "Google",
       "bits": null
     },
@@ -3130,7 +3130,7 @@
     "os": {
       "name": "Android TV",
       "marketingName": "Android TV",
-      "version": "21.32.1",
+      "version": "9.0.0",
       "manufacturer": "Google",
       "bits": null
     },
@@ -3175,7 +3175,7 @@
     "os": {
       "name": "Android TV",
       "marketingName": "Android TV",
-      "version": "23.96.0",
+      "version": "9.0.0",
       "manufacturer": "Google",
       "bits": null
     },
@@ -3220,7 +3220,7 @@
     "os": {
       "name": "Android TV",
       "marketingName": "Android TV",
-      "version": "23.96.1",
+      "version": "9.0.0",
       "manufacturer": "Google",
       "bits": null
     },
@@ -3490,7 +3490,7 @@
     "os": {
       "name": "Android TV",
       "marketingName": "Android TV",
-      "version": "22.36.1",
+      "version": "12.0.0",
       "manufacturer": "Google",
       "bits": null
     },
@@ -3580,7 +3580,7 @@
     "os": {
       "name": "Android TV",
       "marketingName": "Android TV",
-      "version": "21.111.1",
+      "version": "11.0.0",
       "manufacturer": "Google",
       "bits": null
     },
@@ -3715,7 +3715,7 @@
     "os": {
       "name": "Android TV",
       "marketingName": "Android TV",
-      "version": "23.94.1",
+      "version": "11.0.0",
       "manufacturer": "Google",
       "bits": null
     },
@@ -3731,6 +3731,141 @@
     "engine": {
       "name": "Blink",
       "version": "116.0.5845.554",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 9; VIDAA_TV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.68 YaSearchBrowser/26.45.1 BroPP/1.0 YaSearchApp/26.45.1 webOmni Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "VIDAA OS",
+      "marketingName": "VIDAA OS",
+      "version": null,
+      "manufacturer": "VIDAA",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "26.45.1",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "146.0.7680.68",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; VIDAA_TV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.123 YaBrowser/25.12.2.123.00 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "VIDAA OS",
+      "marketingName": "VIDAA OS",
+      "version": null,
+      "manufacturer": "VIDAA",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "25.12.2.123.00",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "142.0.7444.123",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 11; VIDAA_TV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.53 YaBrowser/25.12.7.53.00 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "VIDAA OS",
+      "marketingName": "VIDAA OS",
+      "version": null,
+      "manufacturer": "VIDAA",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "25.12.7.53.00",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "142.0.7444.53",
       "manufacturer": "Google"
     }
   },
@@ -4361,141 +4496,6 @@
     "engine": {
       "name": "Blink",
       "version": "113.0.5672.163",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; U55G8000Q Build/PPR2.180905.006.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.12.0.453 (lite) TV Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Yandex Browser Lite",
-      "modus": null,
-      "version": "24.12.0.453",
-      "manufacturer": "Yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "83.0.4103.120",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; U55EY1500B Build/PPR2.180905.006.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.1.2.86 (lite) TV Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Yandex Browser Lite",
-      "modus": null,
-      "version": "24.1.2.86",
-      "manufacturer": "Yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "83.0.4103.120",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; U55EY1500B Build/PPR2.180905.006.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.12.0.453 (lite) TV Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": false,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Yandex Browser Lite",
-      "modus": null,
-      "version": "24.12.0.453",
-      "manufacturer": "Yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "83.0.4103.120",
       "manufacturer": "Google"
     }
   }

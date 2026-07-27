@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 16; 2512BPNDAG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.51 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "2512BPNDAG",
+      "marketingName": "17 Ultra (International)",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2608,
+        "height": 1200,
+        "touch": true,
+        "size": 6.9
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "26.47.1",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "146.0.7680.51",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 16; 2512BPNDAC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Mobile Safari/537.36"
     },
     "device": {
@@ -141,7 +186,7 @@
     "device": {
       "architecture": null,
       "deviceName": "25128PNA1G",
-      "marketingName": "17 Ultra",
+      "marketingName": "17 Ultra Leica Edition",
       "manufacturer": "Xiaomi",
       "brand": "Xiaomi",
       "dualOrientation": true,
@@ -186,7 +231,7 @@
     "device": {
       "architecture": null,
       "deviceName": "25128PNA1C",
-      "marketingName": "17 Ultra (China)",
+      "marketingName": "17 Ultra Leica Edition",
       "manufacturer": "Xiaomi",
       "brand": "Xiaomi",
       "dualOrientation": true,
@@ -231,9 +276,9 @@
     "device": {
       "architecture": null,
       "deviceName": "25128PC17L",
-      "marketingName": "Poco C81 Pro",
+      "marketingName": "C81 Pro",
       "manufacturer": "Xiaomi",
-      "brand": "Xiaomi",
+      "brand": "Poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -276,9 +321,9 @@
     "device": {
       "architecture": null,
       "deviceName": "25128PC17G",
-      "marketingName": "Poco C81 Pro",
+      "marketingName": "C81 Pro",
       "manufacturer": "Xiaomi",
-      "brand": "Xiaomi",
+      "brand": "Poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -411,9 +456,9 @@
     "device": {
       "architecture": null,
       "deviceName": "25118PC98G",
-      "marketingName": "Poco M8 5G (International)",
+      "marketingName": "M8 5G (International)",
       "manufacturer": "Xiaomi",
-      "brand": "Xiaomi",
+      "brand": "Poco",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1841,6 +1886,51 @@
     "engine": {
       "name": "Blink",
       "version": "149.0.7827.91",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; 220333QNY) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.112 YaBrowser/26.6.2.112.00 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "220333QNY",
+      "marketingName": "Redmi 10C",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1650,
+        "height": 720,
+        "touch": true,
+        "size": 6.71
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "26.6.2.112.00",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "148.0.7778.112",
       "manufacturer": "Google"
     }
   }
