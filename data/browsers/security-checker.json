@@ -461,5 +461,77 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "shodan-pull": {
+    "name": "Shodan-Pull",
+    "manufacturer": "unknown",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Shodan-Pull"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "checker-proxy": {
+    "name": "CheckerProxy",
+    "manufacturer": "unknown",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "CheckerProxy"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "cse-scanner": {
+    "name": "CSE-Scanner",
+    "manufacturer": "unknown",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "CSE-Scanner"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "domain-probe": {
+    "name": "DomainProbe",
+    "manufacturer": "unknown",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DomainProbe"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "goosee-audit": {
+    "name": "Goosee-Audit",
+    "manufacturer": "unknown",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Goosee-Audit"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "netscope-domain-scanner": {
+    "name": "NetScope-DomainScanner",
+    "manufacturer": "unknown",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NetScope-DomainScanner"
+      ]
+    },
+    "engine": "unknown"
   }
 }

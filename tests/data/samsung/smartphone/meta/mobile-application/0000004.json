@@ -734,7 +734,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-S937B",
-      "marketingName": "Galaxy S25 Edge",
+      "marketingName": "Galaxy S25 Edge (International)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -959,7 +959,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-A165F",
-      "marketingName": "Galaxy A16",
+      "marketingName": "Galaxy A16 (International)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -994,6 +994,51 @@
     "engine": {
       "name": "Blink",
       "version": "148.0.7778.102",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-A105F Build/Lineage_17.1-arm64_by_Eureka_Team; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.101 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/399.0.0.24.93;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A105F",
+      "marketingName": "Galaxy A10",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1520,
+        "height": 720,
+        "touch": true,
+        "size": 6.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Lineage OS",
+      "marketingName": "Lineage OS",
+      "version": "17.0.0",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "399.0.0.24.93",
+      "manufacturer": "Meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "87.0.4280.101",
       "manufacturer": "Google"
     }
   },
@@ -1139,7 +1184,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-E075F",
-      "marketingName": "Galaxy F07 4G",
+      "marketingName": "Galaxy F07 4G (International)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -1949,7 +1994,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-E075F",
-      "marketingName": "Galaxy F07 4G",
+      "marketingName": "Galaxy F07 4G (International)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -2309,7 +2354,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-A256B",
-      "marketingName": "Galaxy A25 5G",
+      "marketingName": "Galaxy A25 5G (International)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,

@@ -990,5 +990,53 @@
     },
     "type": "phablet",
     "platform": "android"
+  },
+  "infinix x6879": {
+    "deviceName": "X6879",
+    "marketingName": "Note 60 5G",
+    "manufacturer": "infinix",
+    "brand": "infinix",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.78
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "infinix x6877": {
+    "deviceName": "X6877",
+    "marketingName": "Note 60 Ultra",
+    "manufacturer": "infinix",
+    "brand": "infinix",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2644,
+      "height": 1208,
+      "touch": true,
+      "size": 6.78
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "infinix x6857": {
+    "deviceName": "X6857",
+    "marketingName": "Note 50X 5G",
+    "manufacturer": "infinix",
+    "brand": "infinix",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
   }
 }

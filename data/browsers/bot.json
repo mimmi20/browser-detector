@@ -1972,18 +1972,6 @@
     },
     "engine": "unknown"
   },
-  "goose-extractor": {
-    "name": "goose-extractor",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Goose"
-      ]
-    },
-    "engine": "unknown"
-  },
   "gosquared-thumbnailer": {
     "name": "gosquared-thumbnailer",
     "manufacturer": "go-squared",
@@ -6835,18 +6823,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "TorusBot"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "websuse-bot": {
-    "name": "websusebot",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "websusebot"
       ]
     },
     "engine": "unknown"

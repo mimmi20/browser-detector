@@ -268,5 +268,50 @@
       "version": "91.0.4472.114",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; BQ 32FS02B Build/UP1A.231105.003.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.136 YaBrowser/25.10.1.638 (lite) Safari/537.36 TV"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "32FS02B",
+      "marketingName": "32FS02B",
+      "manufacturer": "BQ",
+      "brand": "BQ",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1366,
+        "height": 768,
+        "touch": false,
+        "size": 32
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser Lite",
+      "modus": null,
+      "version": "25.10.1.638",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "113.0.5672.136",
+      "manufacturer": "Google"
+    }
   }
 ]

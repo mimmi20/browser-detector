@@ -3070,7 +3070,7 @@
     "device": {
       "architecture": null,
       "deviceName": "XQ-FE54",
-      "marketingName": "Xperia 10 VII",
+      "marketingName": "Xperia 10 VII 5G",
       "manufacturer": "Sony",
       "brand": "Sony",
       "dualOrientation": true,
@@ -3160,7 +3160,7 @@
     "device": {
       "architecture": null,
       "deviceName": "XQ-FE54",
-      "marketingName": "Xperia 10 VII",
+      "marketingName": "Xperia 10 VII 5G",
       "manufacturer": "Sony",
       "brand": "Sony",
       "dualOrientation": true,
@@ -3205,7 +3205,7 @@
     "device": {
       "architecture": null,
       "deviceName": "XQ-FE44",
-      "marketingName": "Xperia 10 VII",
+      "marketingName": "Xperia 10 VII 5G",
       "manufacturer": "Sony",
       "brand": "Sony",
       "dualOrientation": true,
@@ -3295,7 +3295,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SO-52F",
-      "marketingName": "Xperia 10 VII",
+      "marketingName": "Xperia 10 VII 5G",
       "manufacturer": "Sony",
       "brand": "Sony",
       "dualOrientation": true,
@@ -3340,7 +3340,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SO-52F",
-      "marketingName": "Xperia 10 VII",
+      "marketingName": "Xperia 10 VII 5G",
       "manufacturer": "Sony",
       "brand": "Sony",
       "dualOrientation": true,
@@ -3600,6 +3600,96 @@
     "engine": {
       "name": "Blink",
       "version": "149.0.7827.91",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; Xperia X Build/TQ3A.230901.001) AppleWebKit/537.36 (KHTML, like Gecko) Gfjn/4.0 Chrome/120.0.6099.230 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Xperia X",
+      "marketingName": "Xperia X",
+      "manufacturer": "Sony",
+      "brand": "Sony",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "120.0.6099.230",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "120.0.6099.230",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; SO-51G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SO-51G",
+      "marketingName": "Xperia 1 VIII 5G",
+      "manufacturer": "Sony",
+      "brand": "Sony",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "149.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "149.0.0.0",
       "manufacturer": "Google"
     }
   }

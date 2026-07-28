@@ -11,7 +11,7 @@
 
 declare(strict_types = 1);
 
-namespace Data;
+namespace BrowserDetectorTest\Data;
 
 use BrowserDetector\Data\Company;
 use BrowserDetector\Data\Os;
@@ -147,7 +147,7 @@ final class OsTest extends TestCase
                 'name' => 'Android Opensource Project',
                 'marketingName' => 'AOSP',
                 'manufacturer' => Company::unknown,
-                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Andr[o0]id']],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['(?<!o|gm-|yaapp_)Andr[o0]id']],
                 'key' => 'aosp',
             ],
             [
@@ -955,7 +955,7 @@ final class OsTest extends TestCase
                 'name' => 'Android TV',
                 'marketingName' => 'Android TV',
                 'manufacturer' => Company::google,
-                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Andr[o0]id']],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['(?<!o|gm-|yaapp_)Andr[o0]id']],
                 'key' => 'android-tv',
             ],
             [
@@ -1611,7 +1611,7 @@ final class OsTest extends TestCase
                 'name' => 'Android Go',
                 'marketingName' => 'Android Go',
                 'manufacturer' => Company::google,
-                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Andr[o0]id']],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['(?<!o|gm-|yaapp_)Andr[o0]id']],
                 'key' => 'android-go',
             ],
             [
@@ -1661,6 +1661,14 @@ final class OsTest extends TestCase
                 'manufacturer' => Company::dell,
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Warthog', 'WTOS']],
                 'key' => 'thin-os',
+            ],
+            [
+                'type' => 'FydeOS',
+                'name' => 'FydeOS',
+                'marketingName' => 'FydeOS',
+                'manufacturer' => Company::fyde,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['FydeOS']],
+                'key' => 'fyde-os',
             ],
         ];
     }

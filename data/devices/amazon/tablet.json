@@ -497,7 +497,23 @@
   },
   "amazon kfrapwi": {
     "deviceName": "KFRAPWI",
-    "marketingName": "Fire HD 8\" (2022)",
+    "marketingName": "Fire HD 8\" (2024)",
+    "manufacturer": "amazon",
+    "brand": "amazon",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8
+    },
+    "type": "tablet",
+    "platform": "fire-os"
+  },
+  "amazon kfraswi": {
+    "deviceName": "KFRASWI",
+    "marketingName": "Fire HD 8\" (2024)",
     "manufacturer": "amazon",
     "brand": "amazon",
     "dualOrientation": true,

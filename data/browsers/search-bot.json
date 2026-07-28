@@ -941,6 +941,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "Google-Adwords-Instant-Mobile",
         "Google-Adwords-Instant"
       ]
     },
@@ -1919,6 +1920,16 @@
       "search": [
         "YandexAccessibilityBot"
       ]
+    },
+    "engine": "unknown"
+  },
+  "pre-search-bot": {
+    "name": "Presearch Bot",
+    "manufacturer": "presearch",
+    "type": "search-bot",
+    "version": {
+      "factory": null,
+      "search": null
     },
     "engine": "unknown"
   }

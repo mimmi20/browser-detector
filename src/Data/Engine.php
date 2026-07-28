@@ -173,7 +173,7 @@ enum Engine: string implements EngineInterface
     public function getVersion(): array
     {
         return match ($this) {
-            self::blink => ['factory' => VersionBuilderFactory::class, 'search' => ['Chrome', 'Cronet', 'Chromium_', 'Chromium']],
+            self::blink => ['factory' => VersionBuilderFactory::class, 'search' => ['Chrome', 'Chr0me', 'Cronet', 'Chromium_', 'Chromium']],
             self::clecko, self::treco => ['factory' => VersionBuilderFactory::class, 'search' => ['rv:']],
             self::edge => ['factory' => VersionBuilderFactory::class, 'search' => ['Edge']],
             self::webkit => ['factory' => VersionBuilderFactory::class, 'search' => ['AppleWebKit \\/', 'AppleWebKit', 'WebKit', 'CFNetwork', 'Browser\\/AppleWebKit']],

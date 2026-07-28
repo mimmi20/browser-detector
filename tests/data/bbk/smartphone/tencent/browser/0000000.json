@@ -906,7 +906,7 @@
     "device": {
       "architecture": null,
       "deviceName": "V2436A",
-      "marketingName": "X Fold5",
+      "marketingName": "X Fold 5",
       "manufacturer": "BBK",
       "brand": "vivo",
       "dualOrientation": true,
@@ -954,6 +954,51 @@
       "marketingName": "Neo 8",
       "manufacturer": "BBK",
       "brand": "Realme",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2772,
+        "height": 1272,
+        "touch": true,
+        "size": 6.78
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "QQ Browser",
+      "modus": null,
+      "version": "20.3.0",
+      "manufacturer": "Tencent",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "121.0.6167.71",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 16; zh-cn; PMK110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.71 MQQBrowser/20.3 Mobile Safari/537.36 COVC/048801"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "PMK110",
+      "marketingName": "Reno 16 Pro 5G",
+      "manufacturer": "BBK",
+      "brand": "OPPO",
       "dualOrientation": true,
       "simCount": 2,
       "display": {

@@ -460,6 +460,7 @@ final readonly class Headers
                         case 'meta-external-agent':
                         case 'huawei-mobile-services':
                         case 'duckduck bot':
+                        case 'petalbot':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 
@@ -487,6 +488,7 @@ final readonly class Headers
                         case 'petalbot':
                         case 'crawl-bot':
                         case 'scrapy':
+                        case 'seekportbot':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 

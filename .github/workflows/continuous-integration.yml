@@ -39,7 +39,7 @@ jobs:
       skip-validate-composer: false
       skip-phplint: false
       skip-check-composer: true
-      skip-ec-checker: true
+      skip-ec-checker: false
       dependency-analyser-options: ""
 
   install:

@@ -1835,7 +1835,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google",
+      "name": "Google App",
       "modus": null,
       "version": null,
       "manufacturer": "Google",
@@ -2060,7 +2060,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google",
+      "name": "Google App",
       "modus": null,
       "version": null,
       "manufacturer": "Google",
@@ -2195,7 +2195,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google",
+      "name": "Google App",
       "modus": null,
       "version": null,
       "manufacturer": "Google",
@@ -2240,7 +2240,7 @@
       "bits": null
     },
     "client": {
-      "name": "Google",
+      "name": "Google App",
       "modus": null,
       "version": null,
       "manufacturer": "Google",
@@ -2252,6 +2252,51 @@
       "name": "WebKit",
       "version": null,
       "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; CRT-LX1 Build/HONORCRT-L31; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.159 Mobile Safari/537.36 OcIdWebView ({\\\"os\\\":\\\"Android\\\",\\\"osVersion\\\":\\\"34\\\",\\\"app\\\":\\\"com.google.android.gms\\\",\\\"appVersion\\\":\\\"262532001\\\",\\\"style\\\":3,\\\"callingAppId\\\":\\\"com.google.android.googlequicksearchbox\\\",\\\"isDarkTheme\\\":false})"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CRT-LX1",
+      "marketingName": "X8a",
+      "manufacturer": "Huawei",
+      "brand": "Honor",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2388,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "149.0.7827.159",
+      "manufacturer": "Google"
     }
   }
 ]

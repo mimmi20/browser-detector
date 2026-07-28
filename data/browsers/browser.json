@@ -186,6 +186,18 @@
     },
     "engine": null
   },
+  "aloha-browser-lite": {
+    "name": "Aloha Browser Lite",
+    "manufacturer": "aloha-mobile",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AlohaLite"
+      ]
+    },
+    "engine": null
+  },
   "altibrowser": {
     "name": "AltiBrowser",
     "manufacturer": "unknown",

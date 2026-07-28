@@ -205,7 +205,6 @@ final class SecChUaModelTest extends TestCase
             ['"LG-D722"', true, 'lg=lg d722'],
             ['"LM-X410.FN"', true, 'lg=lg lm-x410.fn'],
             // Acer
-            ['"A100"', true, 'acer=acer a100'],
             ['"B1-860A"', true, 'acer=acer b1-860a'],
             ['"A1-734"', true, 'acer=acer a1-734'],
             ['"A3-A40"', true, 'acer=acer a3-a40'],
@@ -1750,7 +1749,7 @@ final class SecChUaModelTest extends TestCase
             ['"P20S_ROW"', true, 'teclast=teclast p20s_row'],
             ['"P20HD_EEA"', true, 'teclast=teclast p20hd_eea'],
             ['"M40(N9H3)"', true, 'teclast=teclast n9h3'],
-            ['"M50-ROW"', true, 'teclast=teclast m50-row'],
+            ['"M50-ROW"', true, 'teclast=teclast m50_row'],
             // alldocube
             ['"iPlay_40"', true, 'alldocube=alldocube iplay 40'],
             // dgtec

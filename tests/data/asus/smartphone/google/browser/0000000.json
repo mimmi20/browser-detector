@@ -6,7 +6,7 @@
     "device": {
       "architecture": null,
       "deviceName": "I01WD",
-      "marketingName": "ZenFone 6 (ZS630KL)",
+      "marketingName": "ZenFone 6",
       "manufacturer": "Asus",
       "brand": "Asus",
       "dualOrientation": true,
@@ -51,7 +51,7 @@
     "device": {
       "architecture": null,
       "deviceName": "I001DC",
-      "marketingName": "ROG Phone 2 ZS660KL",
+      "marketingName": "ROG Phone 2",
       "manufacturer": "Asus",
       "brand": "Asus",
       "dualOrientation": true,
@@ -141,7 +141,7 @@
     "device": {
       "architecture": null,
       "deviceName": "I001DA",
-      "marketingName": "ROG Phone 2 ZS660KL",
+      "marketingName": "ROG Phone 2",
       "manufacturer": "Asus",
       "brand": "Asus",
       "dualOrientation": true,
@@ -186,7 +186,7 @@
     "device": {
       "architecture": null,
       "deviceName": "ZS620KL",
-      "marketingName": "ZenFone 5Z (ZS620KL)",
+      "marketingName": "ZenFone 5Z",
       "manufacturer": "Asus",
       "brand": "Asus",
       "dualOrientation": true,
@@ -226,12 +226,102 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; ZS630KL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.143 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "ZS630KL",
+      "marketingName": "ZenFone 6",
+      "manufacturer": "Asus",
+      "brand": "Asus",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "75.0.3770.143",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "75.0.3770.143",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; ZB601KL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.89 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "ZB601KL",
+      "marketingName": "ZenFone Max Pro M1",
+      "manufacturer": "Asus",
+      "brand": "Asus",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2160,
+        "height": 1080,
+        "touch": true,
+        "size": 5.99
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "76.0.3809.89",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "76.0.3809.89",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; ASUS_I001D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.119 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
       "deviceName": "I001D",
-      "marketingName": "ROG Phone 2 ZS660KL",
+      "marketingName": "ROG Phone 2",
       "manufacturer": "Asus",
       "brand": "Asus",
       "dualOrientation": true,
@@ -271,12 +361,57 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; ZS660KL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "ZS660KL",
+      "marketingName": "ROG Phone 2",
+      "manufacturer": "Asus",
+      "brand": "Asus",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.59
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "80.0.3987.87",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "80.0.3987.87",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; ASUS_I001DB) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
       "deviceName": "I001DB",
-      "marketingName": "ROG Phone 2 ZS660KL",
+      "marketingName": "ROG Phone 2",
       "manufacturer": "Asus",
       "brand": "Asus",
       "dualOrientation": true,
@@ -321,7 +456,7 @@
     "device": {
       "architecture": null,
       "deviceName": "I001DE",
-      "marketingName": "ROG Phone 2 ZS660KL",
+      "marketingName": "ROG Phone 2",
       "manufacturer": "Asus",
       "brand": "Asus",
       "dualOrientation": true,
@@ -366,7 +501,7 @@
     "device": {
       "architecture": null,
       "deviceName": "X01BD",
-      "marketingName": "ZenFone Max (M2) ZB633KL",
+      "marketingName": "ZenFone Max (M2)",
       "manufacturer": "Asus",
       "brand": "Asus",
       "dualOrientation": true,
@@ -411,7 +546,7 @@
     "device": {
       "architecture": null,
       "deviceName": "Z01RD",
-      "marketingName": "ZenFone 5Z (ZS620KL)",
+      "marketingName": "ZenFone 5Z",
       "manufacturer": "Asus",
       "brand": "Asus",
       "dualOrientation": true,
@@ -456,7 +591,7 @@
     "device": {
       "architecture": null,
       "deviceName": "I001DC",
-      "marketingName": "ROG Phone 2 ZS660KL",
+      "marketingName": "ROG Phone 2",
       "manufacturer": "Asus",
       "brand": "Asus",
       "dualOrientation": true,
@@ -726,7 +861,7 @@
     "device": {
       "architecture": null,
       "deviceName": "X00QD",
-      "marketingName": "ZenFone 5 (ZE620KL)",
+      "marketingName": "ZenFone 5",
       "manufacturer": "Asus",
       "brand": "Asus",
       "dualOrientation": true,
@@ -941,6 +1076,51 @@
     "engine": {
       "name": "Blink",
       "version": "86.0.4240.75",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; ASUS_X00T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.110 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "X00T",
+      "marketingName": "ZenFone Max Pro M1",
+      "manufacturer": "Asus",
+      "brand": "Asus",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2160,
+        "height": 1080,
+        "touch": true,
+        "size": 5.99
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "86.0.4240.110",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "86.0.4240.110",
       "manufacturer": "Google"
     }
   },
@@ -1221,7 +1401,7 @@
     "device": {
       "architecture": null,
       "deviceName": "ZenFone 5Z",
-      "marketingName": "ZenFone 5Z (ZS620KL)",
+      "marketingName": "ZenFone 5Z",
       "manufacturer": "Asus",
       "brand": "Asus",
       "dualOrientation": true,
@@ -1486,12 +1666,57 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Asus ROG Phone 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.70 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "ROG Phone 5",
+      "marketingName": "ROG Phone 5",
+      "manufacturer": "Asus",
+      "brand": "Asus",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 6.78
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "97.0.4692.70",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "97.0.4692.70",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 12; ZenFone 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
       "deviceName": "ZenFone 5",
-      "marketingName": "ZenFone 5 (ZE620KL)",
+      "marketingName": "ZenFone 5",
       "manufacturer": "Asus",
       "brand": "Asus",
       "dualOrientation": true,
@@ -1993,7 +2218,7 @@
     "device": {
       "architecture": null,
       "deviceName": "I01WD",
-      "marketingName": "ZenFone 6 (ZS630KL)",
+      "marketingName": "ZenFone 6",
       "manufacturer": "Asus",
       "brand": "Asus",
       "dualOrientation": true,
@@ -3131,6 +3356,51 @@
     "engine": {
       "name": "Blink",
       "version": "146.0.7680.177",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; Asus ROG Phone 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "ROG Phone 8",
+      "marketingName": "ROG Phone 8",
+      "manufacturer": "Asus",
+      "brand": "Asus",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.78
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "120.0.0.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "120.0.0.0",
       "manufacturer": "Google"
     }
   }

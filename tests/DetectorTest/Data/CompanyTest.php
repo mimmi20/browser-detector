@@ -12508,6 +12508,108 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Vuhuv',
                 'key' => 'vuhuv',
             ],
+            [
+                'type' => 'Bravis',
+                'name' => 'Bravis',
+                'brandname' => 'Bravis',
+                'key' => 'bravis',
+            ],
+            [
+                'type' => 'Atlassian',
+                'name' => 'Atlassian Pty Ltd',
+                'brandname' => 'Atlassian',
+                'key' => 'atlassian',
+            ],
+            [
+                'type' => 'Fyde',
+                'name' => 'Fyde Innovations Ltd',
+                'brandname' => 'Fyde',
+                'key' => 'fyde',
+            ],
+            [
+                'type' => 'Jinga',
+                'name' => 'Jinga',
+                'brandname' => 'Jinga',
+                'key' => 'jinga',
+            ],
+            [
+                'type' => 'OpenINTEL',
+                'name' => 'OpenINTEL',
+                'brandname' => 'OpenINTEL',
+                'key' => 'open-intel',
+            ],
+            [
+                'type' => 'BGH',
+                'name' => 'BGH',
+                'brandname' => 'BGH',
+                'key' => 'bgh',
+            ],
+            [
+                'type' => 'Hoobart',
+                'name' => 'Hoobart',
+                'brandname' => 'Hoobart',
+                'key' => 'hoobart',
+            ],
+            [
+                'type' => 'DATAFREAK',
+                'name' => 'DATAFREAK LTD',
+                'brandname' => 'DATAFREAK',
+                'key' => 'datafreak',
+            ],
+            [
+                'type' => 'Wayfinity',
+                'name' => 'Wayfinity Ltd',
+                'brandname' => 'Wayfinity',
+                'key' => 'wayfinity',
+            ],
+            [
+                'type' => 'Accessible Web',
+                'name' => 'Accessible Web, Inc.',
+                'brandname' => 'Accessible Web',
+                'key' => 'accessible-web',
+            ],
+            [
+                'type' => 'Callsky',
+                'name' => 'Callsky',
+                'brandname' => 'Callsky',
+                'key' => 'callsky',
+            ],
+            [
+                'type' => 'Ckypad',
+                'name' => 'Ckypad',
+                'brandname' => 'Ckypad',
+                'key' => 'ckypad',
+            ],
+            [
+                'type' => 'UNIWA',
+                'name' => 'UNIWA',
+                'brandname' => 'UNIWA',
+                'key' => 'uniwa',
+            ],
+            [
+                'type' => 'Unitel',
+                'name' => 'Unitel',
+                'brandname' => 'Unitel',
+                'key' => 'unitel',
+            ],
+            [
+                'type' => 'Presearch',
+                'name' => 'Presearch.com Inc.',
+                'brandname' => 'Presearch',
+                'key' => 'presearch',
+            ],
+            [
+                'type' => 'MTC',
+                'name' => 'MTC',
+                'brandname' => 'MTC',
+                'key' => 'mtc',
+            ],
+            [
+                'type' => 'Starlight',
+                'name' => 'Starlight',
+                'brandname' => 'Starlight',
+                'key' => 'starlight',
+            ],
         ];
     }
 

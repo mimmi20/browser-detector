@@ -4173,6 +4173,40 @@ enum Company: string implements CompanyInterface
 
     case imuz = 'iMuz';
 
+    case bravis = 'Bravis';
+
+    case atlassian = 'Atlassian';
+
+    case fyde = 'Fyde';
+
+    case jinga = 'Jinga';
+
+    case openIntel = 'OpenINTEL';
+
+    case bgh = 'BGH';
+
+    case hoobart = 'Hoobart';
+
+    case datafreak = 'DATAFREAK';
+
+    case wayfinity = 'Wayfinity';
+
+    case accessibleWeb = 'Accessible Web';
+
+    case callsky = 'Callsky';
+
+    case ckypad = 'Ckypad';
+
+    case uniwa = 'UNIWA';
+
+    case unitel = 'Unitel';
+
+    case presearch = 'Presearch';
+
+    case mtc = 'MTC';
+
+    case starlight = 'Starlight';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -6257,6 +6291,23 @@ enum Company: string implements CompanyInterface
             'texman', 'dongguan zhengman electronic technology co., ltd.', 'texman technology' => self::texman,
             'niomobile', 'nio mobile technology co., ltd.', 'nio' => self::nioMobile,
             'imuz' => self::imuz,
+            'bravis' => self::bravis,
+            'atlassian', 'atlassian pty ltd' => self::atlassian,
+            'fyde', 'fyde innovations ltd' => self::fyde,
+            'jinga' => self::jinga,
+            'openintel', 'open-intel' => self::openIntel,
+            'bgh' => self::bgh,
+            'hoobart' => self::hoobart,
+            'datafreak', 'datafreak ltd' => self::datafreak,
+            'wayfinity', 'wayfinity ltd' => self::wayfinity,
+            'accessibleweb', 'accessible web, inc.', 'accessible-web', 'accessible web' => self::accessibleWeb,
+            'callsky' => self::callsky,
+            'ckypad' => self::ckypad,
+            'uniwa' => self::uniwa,
+            'unitel' => self::unitel,
+            'presearch', 'presearch.com inc.' => self::presearch,
+            'mtc' => self::mtc,
+            'starlight' => self::starlight,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -7107,6 +7158,12 @@ enum Company: string implements CompanyInterface
             self::texman => 'Dongguan Zhengman Electronic Technology Co., Ltd.',
             self::nioMobile => 'NIO Mobile Technology Co., Ltd.',
             self::vuhuv => 'Vuhuv Telekomunikasyon A.S.',
+            self::atlassian => 'Atlassian Pty Ltd',
+            self::fyde => 'Fyde Innovations Ltd',
+            self::datafreak => 'DATAFREAK LTD',
+            self::wayfinity => 'Wayfinity Ltd',
+            self::accessibleWeb => 'Accessible Web, Inc.',
+            self::presearch => 'Presearch.com Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -7900,6 +7957,8 @@ enum Company: string implements CompanyInterface
             self::novusTablet => 'novus-tablet',
             self::smartBarry => 'smart-barry',
             self::nioMobile => 'nio',
+            self::openIntel => 'open-intel',
+            self::accessibleWeb => 'accessible-web',
             default => $this->name,
         };
     }

@@ -11,7 +11,7 @@
 
 declare(strict_types = 1);
 
-namespace Parser\Header;
+namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Data\Os;
 use BrowserDetector\Parser\Header\UseragentClientCode;
@@ -375,48 +375,6 @@ final class Useragent3Test extends TestCase
                 'platformVersion' => null,
                 'hasEngineInfo' => true,
                 'engineUa' => 'News Republic/12.1.5 (Linux; Android 26) Mobile Safari',
-                'engineCode' => \BrowserDetector\Data\Engine::webkit,
-                'hasEngineVersion' => true,
-                'engineVersion' => '534.31.0',
-            ],
-            [
-                'ua' => 'APP : Mozilla/5.0 (Linux; Android 23 ; LENOVO ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36;mm-app-v2.0',
-                'normalizedUa' => 'APP : Mozilla/5.0 (Linux; Android 23 ; LENOVO ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36;mm-app-v2.0',
-                'hasDeviceInfo' => true,
-                'deviceUa' => 'APP : Mozilla/5.0 (Linux; Android 23 ; LENOVO ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36;mm-app-v2.0',
-                'deviceCode' => 'A369i',
-                'hasClientInfo' => true,
-                'clientUa' => 'APP : Mozilla/5.0 (Linux; Android 23 ; LENOVO ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36;mm-app-v2.0',
-                'clientCode' => null,
-                'hasClientVersion' => true,
-                'clientVersion' => null,
-                'hasPlatformInfo' => true,
-                'platformCode' => Os::android,
-                'hasPlatformVersion' => true,
-                'platformVersion' => null,
-                'hasEngineInfo' => true,
-                'engineUa' => 'APP : Mozilla/5.0 (Linux; Android 23 ; LENOVO ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36;mm-app-v2.0',
-                'engineCode' => \BrowserDetector\Data\Engine::webkit,
-                'hasEngineVersion' => true,
-                'engineVersion' => '534.31.0',
-            ],
-            [
-                'ua' => 'Mozilla/5.0 (Linux; Android 30.0.0 IOS; SM-A900F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.143 Mobile Safari/537.36',
-                'normalizedUa' => 'Mozilla/5.0 (Linux; Android 30.0.0 IOS; SM-A900F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.143 Mobile Safari/537.36',
-                'hasDeviceInfo' => true,
-                'deviceUa' => 'Mozilla/5.0 (Linux; Android 30.0.0 IOS; SM-A900F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.143 Mobile Safari/537.36',
-                'deviceCode' => 'A369i',
-                'hasClientInfo' => true,
-                'clientUa' => 'Mozilla/5.0 (Linux; Android 30.0.0 IOS; SM-A900F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.143 Mobile Safari/537.36',
-                'clientCode' => null,
-                'hasClientVersion' => true,
-                'clientVersion' => null,
-                'hasPlatformInfo' => true,
-                'platformCode' => Os::android,
-                'hasPlatformVersion' => true,
-                'platformVersion' => null,
-                'hasEngineInfo' => true,
-                'engineUa' => 'Mozilla/5.0 (Linux; Android 30.0.0 IOS; SM-A900F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.143 Mobile Safari/537.36',
                 'engineCode' => \BrowserDetector\Data\Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31.0',

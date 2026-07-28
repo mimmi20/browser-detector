@@ -196,7 +196,7 @@
     "/iph(?:one)?11[c,_]6/i": "apple iphone 11,6",
     "/iph(?:one)?11[c,_]4/i": "apple iphone 11,4",
     "/iph(?:one)?11[c,_]2/i": "apple iphone 11,2",
-    "/iph(?:one)?10[c,_]6|iphone ?x/i": "apple iphone 10,6",
+    "/iph(?:one)?10[c,_]6|iphone ?x(?!1)/i": "apple iphone 10,6",
     "/iph(?:one)?10[c,_]5/i": "apple iphone 10,5",
     "/iph(?:one)?10[c,_]4/i": "apple iphone 10,4",
     "/iph(?:one)?10[c,_]3/i": "apple iphone 10,3",

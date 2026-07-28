@@ -4,8 +4,8 @@
     "marketingName": "Basco L3",
     "manufacturer": "jinga",
     "brand": "jinga",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
@@ -20,8 +20,8 @@
     "marketingName": "Basco Neo",
     "manufacturer": "jinga",
     "brand": "jinga",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 854,
       "height": 480,
@@ -36,8 +36,8 @@
     "marketingName": "IGO L2",
     "manufacturer": "jinga",
     "brand": "jinga",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 854,
       "height": 480,
@@ -52,8 +52,8 @@
     "marketingName": "IGO M1",
     "manufacturer": "jinga",
     "brand": "jinga",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 800,
       "height": 480,
@@ -68,11 +68,27 @@
     "marketingName": "Iron",
     "manufacturer": "jinga",
     "brand": "jinga",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "jinga start s": {
+    "deviceName": "Start S",
+    "marketingName": "Start S",
+    "manufacturer": "jinga",
+    "brand": "jinga",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 854,
+      "height": 480,
       "touch": true,
       "size": 5
     },

@@ -11,7 +11,7 @@
 
 declare(strict_types = 1);
 
-namespace Data;
+namespace BrowserDetectorTest\Data;
 
 use BrowserDetector\Data\Company;
 use BrowserDetector\Data\Engine;
@@ -107,7 +107,7 @@ final class EngineTest extends TestCase
                 'type' => 'Blink',
                 'name' => 'Blink',
                 'manufacturer' => Company::google,
-                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Chrome', 'Cronet', 'Chromium_', 'Chromium']],
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Chrome', 'Chr0me', 'Cronet', 'Chromium_', 'Chromium']],
                 'key' => 'blink',
             ],
             [

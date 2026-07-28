@@ -65,11 +65,11 @@
   },
   "vivo 1721": {
     "deviceName": "1721",
-    "marketingName": "1721",
+    "marketingName": "X20",
     "manufacturer": "bbk",
     "brand": "vivo",
     "dualOrientation": true,
-    "simCount": 1,
+    "simCount": 2,
     "display": {
       "width": 2160,
       "height": 1080,
@@ -741,7 +741,7 @@
     "manufacturer": "bbk",
     "brand": "vivo",
     "dualOrientation": true,
-    "simCount": 1,
+    "simCount": 2,
     "display": {
       "width": 2160,
       "height": 1080,
@@ -6561,7 +6561,7 @@
   },
   "vivo v2436a": {
     "deviceName": "V2436A",
-    "marketingName": "X Fold5",
+    "marketingName": "X Fold 5",
     "manufacturer": "bbk",
     "brand": "vivo",
     "dualOrientation": true,
@@ -6577,7 +6577,7 @@
   },
   "vivo v2429": {
     "deviceName": "V2429",
-    "marketingName": "X Fold5",
+    "marketingName": "X Fold 5",
     "manufacturer": "bbk",
     "brand": "vivo",
     "dualOrientation": true,
@@ -9915,6 +9915,70 @@
       "height": 720,
       "touch": true,
       "size": 6.75
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "vivo i2512": {
+    "deviceName": "I2512",
+    "marketingName": "iQOO Z11",
+    "manufacturer": "bbk",
+    "brand": "vivo",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2800,
+      "height": 1260,
+      "touch": true,
+      "size": 6.83
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "vivo i2510": {
+    "deviceName": "I2510",
+    "marketingName": "iQOO Z11 Lite 5G",
+    "manufacturer": "bbk",
+    "brand": "vivo",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.74
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "vivo x20": {
+    "deviceName": "X20",
+    "marketingName": "X20",
+    "manufacturer": "bbk",
+    "brand": "vivo",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2160,
+      "height": 1080,
+      "touch": true,
+      "size": 6.01
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "vivo y70": {
+    "deviceName": "Y70",
+    "marketingName": "Y70",
+    "manufacturer": "bbk",
+    "brand": "vivo",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.44
     },
     "type": "smartphone",
     "platform": "android"
