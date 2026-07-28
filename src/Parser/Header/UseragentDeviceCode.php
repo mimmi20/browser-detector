@@ -169,9 +169,10 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
 
                 preg_match($regex, $normalizedValue, $matches);
 
-                return $this->deviceCodeHelper->getDeviceCode(
-                    mb_trim(mb_strtolower($matches['devicecode'] ?? '')),
-                );
+                return ($matches['devicecode'] ?? '')
+                    |> mb_strtolower(...)
+                    |> mb_trim(...)
+                    |> $this->deviceCodeHelper->getDeviceCode(...);
             },
             $filtered,
         );
