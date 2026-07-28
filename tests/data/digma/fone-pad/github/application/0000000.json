@@ -5,19 +5,19 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "general Digma device",
-      "marketingName": "general Digma device",
+      "deviceName": "TS1292PL",
+      "marketingName": "Optima 1304C 4G",
       "manufacturer": "Digma",
       "brand": "Digma",
-      "dualOrientation": null,
-      "simCount": 0,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
       },
-      "type": "mobile-device",
+      "type": "fone-pad",
       "ismobile": true,
       "istv": false,
       "bits": null

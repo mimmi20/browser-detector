@@ -1756,6 +1756,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 12; GEM-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.302 YaBrowser/26.6.0.302.01 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GEM-W09",
+      "marketingName": "MatePad Pro Max",
+      "manufacturer": "Huawei",
+      "brand": "Honor",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 3000,
+        "height": 2000,
+        "touch": true,
+        "size": 13.2
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "26.6.0.302.01",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "148.0.7778.302",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 12; DBR-W00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.71 YaSearchBrowser/26.44.1/apad BroPP/1.0 YaSearchApp/26.44.1/apad webOmni Safari/537.36"
     },
     "device": {

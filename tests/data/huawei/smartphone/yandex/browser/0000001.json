@@ -2701,6 +2701,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 12; GRL-AL20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.47 YaBrowser/26.3.7.47.01 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GRL-AL20",
+      "marketingName": "Mate XTs Ultimate",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 3184,
+        "height": 2232,
+        "touch": true,
+        "size": 10.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "26.3.7.47.01",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "144.0.7559.47",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 12; BRE-AL80) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.75 YaBrowser/26.3.6.75.00 Mobile Safari/537.36"
     },
     "device": {

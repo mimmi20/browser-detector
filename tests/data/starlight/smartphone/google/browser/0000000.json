@@ -1,23 +1,23 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; ASUS ZB633KL Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.111 Mobile Safari/537.36 AlohaBrowser/2.12.0.2"
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; Star_Mix_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.101 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
-      "deviceName": "general Asus device",
-      "marketingName": "general Asus device",
-      "manufacturer": "Asus",
-      "brand": "Asus",
-      "dualOrientation": null,
-      "simCount": 0,
+      "deviceName": "Star Mix 2",
+      "marketingName": "Star Mix 2",
+      "manufacturer": "Starlight",
+      "brand": "Starlight",
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": null,
         "height": null,
-        "touch": false,
+        "touch": true,
         "size": null
       },
-      "type": "mobile-device",
+      "type": "smartphone",
       "ismobile": true,
       "istv": false,
       "bits": null
@@ -30,17 +30,17 @@
       "bits": null
     },
     "client": {
-      "name": "Aloha Browser",
+      "name": "Chrome",
       "modus": null,
-      "version": "2.12.0.2",
-      "manufacturer": "Aloha",
+      "version": "85.0.4183.101",
+      "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "76.0.3809.111",
+      "version": "85.0.4183.101",
       "manufacturer": "Google"
     }
   }
