@@ -259,7 +259,9 @@ final class CompanyLoaderTest extends TestCase
 
         $this->expectException(NotFoundException::class);
         $this->expectExceptionCode(0);
-        $this->expectExceptionMessageIsOrContains('the company with key "' . $companyKey . '" was not found');
+        $this->expectExceptionMessageIsOrContains(
+            'the company with key "' . $companyKey . '" was not found',
+        );
 
         $object->load($companyKey);
     }
