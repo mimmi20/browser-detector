@@ -504,7 +504,7 @@
     "/nt-1710/i": "navcity",
     "/iconbit|nt-[0-9]{4}[csptm]|toucan stick 3d mk2/i": "iconbit",
     "/(?<![ot])ok[0-9]{3}/i": "sunup",
-    "/(?<!GR)ACE/": "samsung",
+    "/(?<![LR])ACE/": "samsung",
     "/px-[0-9]{4}/i": "intego",
     "/(?<!n)ip[0-9]{3,4}/i": "dex",
     "/sencor|element[ _]?(?:7|8|9\\.7|10|p)/i": "sencor",
