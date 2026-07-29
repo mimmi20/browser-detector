@@ -1435,6 +1435,18 @@
     },
     "engine": "unknown"
   },
+  "mistral-ai-index": {
+    "name": "MistralAI Index",
+    "manufacturer": "mistral-ai",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MistralAI-Index"
+      ]
+    },
+    "engine": "unknown"
+  },
   "perplexity-user": {
     "name": "Perplexity User",
     "manufacturer": "perplexity",
@@ -6775,6 +6787,160 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "TrustBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "nlcrawler": {
+    "name": "NLCrawler",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "nlcrawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "roi-hunter": {
+    "name": "ROI Hunter",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ROI Hunter"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "rainmeter": {
+    "name": "Rainmeter",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Rainmeter"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "sensika-bot": {
+    "name": "Sensika Bot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SensikaBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "shop-alike": {
+    "name": "ShopAlike",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ShopAlike"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yahoo slingstone": {
+    "name": "Yahoo! Slingstone",
+    "manufacturer": "yahoo",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "green-web-checker": {
+    "name": "GreenWebChecker",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GreenWebChecker"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "dnes-akce-bot": {
+    "name": "DnesAkceBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DnesAkceBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "goguides-discovery-bot": {
+    "name": "GoGuidesDiscoveryBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GoGuidesDiscoveryBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "kimi-user": {
+    "name": "Kimi-User",
+    "manufacturer": "moonshot-ai",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Kimi-User"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "kimi-search-bot": {
+    "name": "Kimi-SearchBot",
+    "manufacturer": "moonshot-ai",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Kimi-SearchBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "kimi-bot": {
+    "name": "KimiBot",
+    "manufacturer": "moonshot-ai",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "KimiBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "google-gemini-notebook": {
+    "name": "Google-GeminiNotebook",
+    "manufacturer": "google",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Google-GeminiNotebook"
       ]
     },
     "engine": "unknown"

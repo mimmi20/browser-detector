@@ -2034,6 +2034,7 @@ final class DeviceTest extends TestCase
             ['Z3353CA', 'zte=zte z3353ca'],
             ['ZTE 8040N', 'zte=zte 8040n'],
             ['ZTE 7531N', 'zte=zte 7531n'],
+            ['Z2462N', 'zte=zte z2462n'],
             // Samsung
             ['SM-A415F', 'samsung=samsung sm-a415f'],
             ['SM-A505FN', 'samsung=samsung sm-a505fn'],
@@ -6114,6 +6115,7 @@ final class DeviceTest extends TestCase
             ['Nokia 1.3', 'nokia=nokia 1.3'],
             ['Nokia C20', 'nokia=nokia c20'],
             ['Nokia Streaming Box 8010', 'nokia=nokia streaming box 8010'],
+            ['Nokia 225 4G', 'nokia=nokia 225 4g'],
             // hmd-global
             ['HMD Fusion', 'hmd-global=hmd-global fusion'],
             ['HMD ARC', 'hmd-global=hmd-global arc'],
@@ -7372,6 +7374,8 @@ final class DeviceTest extends TestCase
             ['vivo I2510', 'vivo=vivo i2510'],
             ['vivo X20', 'vivo=vivo x20'],
             ['vivo Y70', 'vivo=vivo y70'],
+            ['V2158A', 'vivo=vivo v2158a'],
+            ['vivo V2158A', 'vivo=vivo v2158a'],
             // Fairphone
             ['FP4', 'fairphone=fairphone fp4'],
             ['FP3', 'fairphone=fairphone fp3'],
@@ -7496,6 +7500,7 @@ final class DeviceTest extends TestCase
             ['Oukitel RT7 5G', 'oukitel=oukitel rt7 5g'],
             ['OUKITEL G5', 'oukitel=oukitel g5'],
             ['WP55 S', 'oukitel=oukitel wp55 s'],
+            ['C62 Pro', 'oukitel=oukitel c62 pro'],
             // Ulefone
             ['Note 6P', 'ulefone=ulefone note 6p'],
             ['Armor 11T 5G', 'ulefone=ulefone armor 11t 5g'],

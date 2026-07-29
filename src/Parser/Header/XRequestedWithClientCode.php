@@ -448,6 +448,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.azka.browser.anti.blokir', 'com.azka.browser' => 'azka-browser',
             'com.micromaxinfo.browser' => 'mmx-browser',
             'com.wdesibrowser_13255326' => 'desi-browser-4g',
+            'com.zte.nubrowser' => 'zte-browser',
             default => null,
         };
     }

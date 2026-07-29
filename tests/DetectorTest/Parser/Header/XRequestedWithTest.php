@@ -633,6 +633,7 @@ final class XRequestedWithTest extends TestCase
             ['com.azka.browser', true, 'azka-browser', true, null, false, Os::unknown],
             ['com.micromaxinfo.browser', true, 'mmx-browser', true, null, false, Os::unknown],
             ['com.wDesiBrowser_13255326', true, 'desi-browser-4g', true, null, false, Os::unknown],
+            ['com.zte.nubrowser', true, 'zte-browser', true, null, false, Os::unknown],
         ];
     }
 }

@@ -154,6 +154,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/hulu\/[\d.]+ \(fire os [\d.]+ \([^)]+\);[^;]+; (?P<devicecode>[^);\/]+); build/i',
             '/(?P<devicecode>[^();\/]+)\(android\/[\d.]+\) aliapp\(aliexpress\/[\d.]+\)/i',
             '/gm-android\/[\d.]+ \([\d.]+; m:(?P<devicecode>[^();\/]+); o:[\d.]+; d:/i',
+            '/mozilla\/[\d.]+ \(cloud phone [\d.]+; (?P<devicecode>[^();\/]+);/i',
             // should be the last entry in the list
             '/^(?P<devicecode>.+)$/i',
         ];

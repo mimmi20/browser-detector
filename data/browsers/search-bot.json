@@ -677,6 +677,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
+        "Sogou inst spider",
         "Sogou\\-Spider"
       ]
     },
@@ -1930,6 +1931,66 @@
     "version": {
       "factory": null,
       "search": null
+    },
+    "engine": "unknown"
+  },
+  "yandex-antivirus": {
+    "name": "YandexAntivirus",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexAntivirus"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandex-direct": {
+    "name": "YandexDirect",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexDirect"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "findise-bot": {
+    "name": "FindiseBot",
+    "manufacturer": "unknown",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "FindiseBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "pri-eco-bot": {
+    "name": "PriEcoBot",
+    "manufacturer": "unknown",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PriEcoBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "orlight-bot": {
+    "name": "OrlightBot",
+    "manufacturer": "unknown",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "OrlightBot"
+      ]
     },
     "engine": "unknown"
   }

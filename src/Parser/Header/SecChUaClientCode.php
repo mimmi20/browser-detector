@@ -89,6 +89,7 @@ final class SecChUaClientCode implements ClientCodeInterface
             'ace' => 'ace-browser',
             'ray' => 'ray-browser',
             'privatebrowsing' => 'private-browsing',
+            'puffin' => 'puffin-cloud-browser',
             default => $code,
         };
     }

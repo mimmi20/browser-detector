@@ -1902,6 +1902,7 @@ final class Device implements DeviceInterface
             'z3353ca' => 'zte=zte z3353ca',
             'zte 8040n' => 'zte=zte 8040n',
             'zte 7531n' => 'zte=zte 7531n',
+            'z2462n' => 'zte=zte z2462n',
             // Samsung
             'sm-a505fn', 'samsung sm-a505fn' => 'samsung=samsung sm-a505fn',
             'sm-a515f', 'samsung sm-a515f', 'sm-a515f/a515fxxu8hwi1' => 'samsung=samsung sm-a515f',
@@ -4451,6 +4452,7 @@ final class Device implements DeviceInterface
             'nokia 1.3' => 'nokia=nokia 1.3',
             'nokia c20' => 'nokia=nokia c20',
             'nokia streaming box 8010' => 'nokia=nokia streaming box 8010',
+            'nokia 225 4g' => 'nokia=nokia 225 4g',
             // hmd-global
             'hmd fusion' => 'hmd-global=hmd-global fusion',
             'hmd arc' => 'hmd-global=hmd-global arc',
@@ -5597,6 +5599,7 @@ final class Device implements DeviceInterface
             'i2510', 'vivo i2510' => 'vivo=vivo i2510',
             'vivo x20' => 'vivo=vivo x20',
             'vivo y70' => 'vivo=vivo y70',
+            'v2158a', 'vivo v2158a' => 'vivo=vivo v2158a',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
@@ -5714,6 +5717,7 @@ final class Device implements DeviceInterface
             'oukitel rt7 5g' => 'oukitel=oukitel rt7 5g',
             'oukitel g5' => 'oukitel=oukitel g5',
             'wp55 s' => 'oukitel=oukitel wp55 s',
+            'c62 pro' => 'oukitel=oukitel c62 pro',
             // Ulefone
             'note 6p' => 'ulefone=ulefone note 6p',
             'armor 11t 5g' => 'ulefone=ulefone armor 11t 5g',

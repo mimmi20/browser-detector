@@ -36,14 +36,15 @@
     },
     "engine": "unknown"
   },
-  "facebookexternalhit": {
+  "facebook-crawler": {
     "name": "Facebook Crawler",
     "manufacturer": "meta",
     "type": "social-media-agent",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "facebookexternalhit"
+        "facebookexternalhit",
+        "facebookplatform"
       ]
     },
     "engine": "unknown"

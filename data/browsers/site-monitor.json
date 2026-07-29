@@ -719,5 +719,29 @@
       ]
     },
     "engine": null
+  },
+  "server-density": {
+    "name": "Server Density",
+    "manufacturer": "unknown",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Server Density"
+      ]
+    },
+    "engine": null
+  },
+  "sixy-ch": {
+    "name": "Sixy.ch",
+    "manufacturer": "unknown",
+    "type": "site-monitor",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Sixy\\.ch"
+      ]
+    },
+    "engine": null
   }
 }
