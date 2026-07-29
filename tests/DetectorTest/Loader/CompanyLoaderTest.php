@@ -73,7 +73,7 @@ final class CompanyLoaderTest extends TestCase
         $object = new CompanyLoader($initData);
 
         $this->expectException(NotFoundException::class);
-        $this->expectExceptionMessage('the company with key "Dune HD" was not found');
+        $this->expectExceptionMessageIsOrContains('the company with key "Dune HD" was not found');
 
         $object->load($companyKey);
     }
@@ -119,7 +119,7 @@ final class CompanyLoaderTest extends TestCase
         $object = new CompanyLoader($initData);
 
         $this->expectException(NotFoundException::class);
-        $this->expectExceptionMessage('the company with key "Dune HD" was not found');
+        $this->expectExceptionMessageIsOrContains('the company with key "Dune HD" was not found');
 
         $object->load($companyKey);
     }
@@ -259,7 +259,7 @@ final class CompanyLoaderTest extends TestCase
 
         $this->expectException(NotFoundException::class);
         $this->expectExceptionCode(0);
-        $this->expectExceptionMessage('the company with key "' . $companyKey . '" was not found');
+        $this->expectExceptionMessageIsOrContains('the company with key "' . $companyKey . '" was not found');
 
         $object->load($companyKey);
     }

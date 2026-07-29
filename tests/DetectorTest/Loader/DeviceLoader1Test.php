@@ -112,7 +112,7 @@ final class DeviceLoader1Test extends TestCase
         $object = new DeviceLoader(logger: $logger, initData: $initData, companyLoader: $companyLoader);
 
         $this->expectException(NotFoundException::class);
-        $this->expectExceptionMessage('the device with key "test-key" was not found');
+        $this->expectExceptionMessageIsOrContains('the device with key "test-key" was not found');
         $this->expectExceptionCode(0);
 
         $object->load('test-key');
@@ -189,7 +189,7 @@ final class DeviceLoader1Test extends TestCase
         $object = new DeviceLoader(logger: $logger, initData: $initData, companyLoader: $companyLoader);
 
         $this->expectException(NotFoundException::class);
-        $this->expectExceptionMessage('the device with key "test-key" was not found');
+        $this->expectExceptionMessageIsOrContains('the device with key "test-key" was not found');
         $this->expectExceptionCode(0);
 
         $object->load('test-key');
@@ -245,7 +245,7 @@ final class DeviceLoader1Test extends TestCase
         $object = new DeviceLoader(logger: $logger, initData: $initData, companyLoader: $companyLoader);
 
         $this->expectException(NotFoundException::class);
-        $this->expectExceptionMessage('the device with key "test-key" was not found');
+        $this->expectExceptionMessageIsOrContains('the device with key "test-key" was not found');
         $this->expectExceptionCode(0);
 
         $object->load('test-key');
@@ -786,7 +786,7 @@ final class DeviceLoader1Test extends TestCase
 
         $this->expectException(NotFoundException::class);
         $this->expectExceptionCode(0);
-        $this->expectExceptionMessage('the device with key "' . $key . '" was not found');
+        $this->expectExceptionMessageIsOrContains('the device with key "' . $key . '" was not found');
 
         $object->load($key);
     }
