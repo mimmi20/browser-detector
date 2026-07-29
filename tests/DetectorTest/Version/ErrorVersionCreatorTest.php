@@ -59,7 +59,7 @@ final class ErrorVersionCreatorTest extends TestCase
 
         $this->expectException(UnexpectedValueException::class);
         $this->expectExceptionCode(0);
-        $this->expectExceptionMessage('32::["xyz"]');
+        $this->expectExceptionMessageIsOrContains('32::["xyz"]');
 
         $result->getVersion(VersionInterface::GET_ZERO_IF_EMPTY);
     }

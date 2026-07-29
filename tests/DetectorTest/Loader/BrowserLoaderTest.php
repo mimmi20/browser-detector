@@ -125,7 +125,7 @@ final class BrowserLoaderTest extends TestCase
         );
 
         $this->expectException(NotFoundException::class);
-        $this->expectExceptionMessage('the browser with key "test-key" was not found');
+        $this->expectExceptionMessageIsOrContains('the browser with key "test-key" was not found');
         $this->expectExceptionCode(0);
 
         $object->load('test-key', 'test-ua');
@@ -197,7 +197,7 @@ final class BrowserLoaderTest extends TestCase
         );
 
         $this->expectException(NotFoundException::class);
-        $this->expectExceptionMessage('the browser with key "test-key" was not found');
+        $this->expectExceptionMessageIsOrContains('the browser with key "test-key" was not found');
         $this->expectExceptionCode(0);
 
         $object->load('test-key', 'test-ua');
@@ -289,7 +289,7 @@ final class BrowserLoaderTest extends TestCase
         );
 
         $this->expectException(NotFoundException::class);
-        $this->expectExceptionMessage('the browser with key "test-key" was not found');
+        $this->expectExceptionMessageIsOrContains('the browser with key "test-key" was not found');
         $this->expectExceptionCode(0);
 
         $object->load('test-key', 'test-ua');
@@ -490,7 +490,7 @@ final class BrowserLoaderTest extends TestCase
 
         $this->expectException(NotFoundException::class);
         $this->expectExceptionCode(0);
-        $this->expectExceptionMessage('the browser with key "' . $key . '" was not found');
+        $this->expectExceptionMessageIsOrContains('the browser with key "' . $key . '" was not found');
 
         $object->load($key, 'test/1.0');
     }

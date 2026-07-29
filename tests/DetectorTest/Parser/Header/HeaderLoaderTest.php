@@ -102,7 +102,9 @@ final class HeaderLoaderTest extends TestCase
         );
 
         $this->expectException(NotFoundException::class);
-        $this->expectExceptionMessage(sprintf('the header with name "%s" was not found', $key));
+        $this->expectExceptionMessageIsOrContains(
+            sprintf('the header with name "%s" was not found', $key),
+        );
 
         $subject->load($key, '');
     }

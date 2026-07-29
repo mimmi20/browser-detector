@@ -28,7 +28,7 @@ final class TestUnexpectedErrorTest extends TestCase
 
         $this->expectException(UnexpectedValueException::class);
         $this->expectExceptionCode(0);
-        $this->expectExceptionMessage('error');
+        $this->expectExceptionMessageIsOrContains('error');
 
         $object->detectVersion(
             'Mozilla/5.0 (Android; Mobile; rv:10.0.5) Gecko/10.0.5 Firefox/10.0.5 Fennec/10.0.5',

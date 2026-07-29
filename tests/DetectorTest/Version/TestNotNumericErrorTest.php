@@ -28,7 +28,7 @@ final class TestNotNumericErrorTest extends TestCase
 
         $this->expectException(NotNumericException::class);
         $this->expectExceptionCode(0);
-        $this->expectExceptionMessage('error');
+        $this->expectExceptionMessageIsOrContains('error');
 
         $object->detectVersion(
             'Mozilla/5.0 (Android; Mobile; rv:10.0.5) Gecko/10.0.5 Firefox/10.0.5 Fennec/10.0.5',
