@@ -352,6 +352,8 @@ enum Os: string implements OsInterface
 
     case puffinOs = 'Puffin OS';
 
+    case puffinOs24 = 'Puffin OS 2.4';
+
     case viziOs = 'ViziOS';
 
     case ultrix = 'ULTRIX';
@@ -593,6 +595,7 @@ enum Os: string implements OsInterface
             'yunos', 'yun os' => self::yunOs,
             'leafos', 'leaf-os' => self::leafOs,
             'puffinos', 'puffin os', 'puffin-os' => self::puffinOs,
+            'puffinos24', 'puffin os 2.4', 'puffin-os 2.4' => self::puffinOs24,
             'vizios', 'vizi-os' => self::viziOs,
             'ultrix' => self::ultrix,
             'osf1', 'osf/1' => self::osf1,
@@ -726,7 +729,7 @@ enum Os: string implements OsInterface
             self::ventanaLinux => Company::ventana,
             self::yunOs => Company::alibaba,
             self::leafOs => Company::nComputing,
-            self::puffinOs => Company::cloudMosa,
+            self::puffinOs, self::puffinOs24 => Company::cloudMosa,
             self::viziOs => Company::vizio,
             self::ultrix => Company::dec,
             self::osf1 => Company::osf,
@@ -829,6 +832,7 @@ enum Os: string implements OsInterface
             self::yunOs => ['factory' => VersionBuilderFactory::class, 'search' => ['YunOs', 'AliyunOS', 'Android']],
             self::leafOs => ['factory' => VersionBuilderFactory::class, 'search' => ['LeafOS']],
             self::puffinOs => ['factory' => VersionBuilderFactory::class, 'search' => ['Cloud Phone']],
+            self::puffinOs24 => ['factory' => null, 'search' => null, 'value' => 2.4],
             self::viziOs => ['factory' => VersionBuilderFactory::class, 'search' => ['ViziOS']],
             self::ultrix => ['factory' => VersionBuilderFactory::class, 'search' => ['ULTRIX']],
             self::threadx => ['factory' => VersionBuilderFactory::class, 'search' => ['ThreadX_OS', 'Threadx']],
@@ -1004,6 +1008,7 @@ enum Os: string implements OsInterface
             self::yunOs => 'yun os',
             self::leafOs => 'leaf-os',
             self::puffinOs => 'puffin-os',
+            self::puffinOs24 => 'puffin-os 2.4',
             self::viziOs => 'vizi-os',
             self::palmOs => 'palmos',
             self::remixOs => 'remix os',
