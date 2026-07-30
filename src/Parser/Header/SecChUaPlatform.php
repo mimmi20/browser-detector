@@ -64,7 +64,7 @@ final class SecChUaPlatform implements PlatformCodeInterface
             'windows', 'win32' => Os::windows,
             'harmonyos' => Os::harmonyos,
             'linux', 'linux x86_64' => Os::linux,
-            'cloud phone 2.4' => Os::puffinOs24,
+            'cloud phone 2.4' => Os::puffinOs,
             default => Os::unknown,
         };
     }

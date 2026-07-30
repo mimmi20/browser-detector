@@ -1670,14 +1670,6 @@ final class OsTest extends TestCase
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['FydeOS']],
                 'key' => 'fyde-os',
             ],
-            [
-                'type' => 'Puffin OS 2.4',
-                'name' => 'Puffin OS 2.4',
-                'marketingName' => 'Puffin OS 2.4',
-                'manufacturer' => Company::cloudMosa,
-                'version' => ['factory' => null, 'search' => null, 'value' => 2.4],
-                'key' => 'puffin-os 2.4',
-            ],
         ];
     }
 }
