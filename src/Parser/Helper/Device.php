@@ -5892,7 +5892,7 @@ final class Device implements DeviceInterface
             'v max s' => 'doogee=doogee v max s',
             's cyber pro' => 'doogee=doogee s cyber pro',
             's punk pro' => 'doogee=doogee s punk pro',
-            's100' => 'doogee=doogee s100',
+            's100', 'doogee s100' => 'doogee=doogee s100',
             'fire 6 max' => 'doogee=doogee fire 6 max',
             'n55 pro' => 'doogee=doogee n55 pro',
             'fire 6' => 'doogee=doogee fire 6',
@@ -6671,6 +6671,7 @@ final class Device implements DeviceInterface
             'infinix x6891' => 'infinix=infinix x6891',
             'infinix x6895b' => 'infinix=infinix x6895b',
             'infinix x6857' => 'infinix=infinix x6857',
+            'infinix zero 110' => 'infinix=infinix zero 110',
             // cyrus
             'cs24' => 'cyrus=cyrus cs24',
             // facetel
@@ -8528,6 +8529,7 @@ final class Device implements DeviceInterface
             'hoco_hi12' => 'hoco=hoco hi12',
             'hoco_hi10' => 'hoco=hoco hi10',
             'hoco dq09' => 'hoco=hoco dq09',
+            'hoco dq10' => 'hoco=hoco dq10',
             // gtx
             'jaculus v2' => 'gtx=gtx jaculus v2',
             'gtx_jaculus_01' => 'gtx=gtx jaculus 01',

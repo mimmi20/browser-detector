@@ -10650,6 +10650,62 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                 ],
             ],
+            [
+                [
+                    "sec-ch-ua" => "\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"",
+      "sec-ch-ua-mobile" => "?0",
+      "sec-ch-ua-platform" => "\"macOS\"",
+      "user-agent" => "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; MistralAI-User/1.0; +https://docs.mistral.ai/robots)"
+                ],
+                [
+                    'headers' => [
+                        "sec-ch-ua-platform" => "\"macOS\"",
+                        "sec-ch-ua" => "\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"",
+      "sec-ch-ua-mobile" => "?0",
+      "user-agent" => "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; MistralAI-User/1.0; +https://docs.mistral.ai/robots)"
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => null,
+                        'marketingName' => null,
+                        'manufacturer' => 'unknown',
+                        'brand' => 'unknown',
+                        'dualOrientation' => null,
+                        'simCount' => 0,
+                        'display' => [
+                            'width' => null,
+                            'height' => null,
+                            'touch' => false,
+                            'size' => null,
+                        ],
+                        'type' => 'unknown',
+                        'ismobile' => false,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Mac OS X',
+                        'marketingName' => 'Mac OS X',
+                        'version' => null,
+                        'manufacturer' => 'Apple',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'MistralAI User',
+                        'modus' => null,
+                        'version' => '1.0.0',
+                        'manufacturer' => 'Mistral AI',
+                        'type' => 'crawler',
+                        'isbot' => true,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '120.0.0',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
         ];
     }
 }

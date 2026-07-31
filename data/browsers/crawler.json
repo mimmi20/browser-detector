@@ -6944,5 +6944,29 @@
       ]
     },
     "engine": "unknown"
+  },
+  "social-push-bot": {
+    "name": "SocialPushBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SocialPushBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "piperic-bot": {
+    "name": "PipericBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PipericBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

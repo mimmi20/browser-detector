@@ -1740,6 +1740,7 @@ final class DeviceTest extends TestCase
             ['24116PCC1I', 'xiaomi=xiaomi 24116pcc1i'],
             ['25057PC09I', 'xiaomi=xiaomi 25057pc09i'],
             ['2505DRP06I', 'xiaomi=xiaomi 2505drp06i'],
+            ['2505DRP06I', 'xiaomi=xiaomi 2505drp06i'],
             ['2602DPT53G', 'xiaomi=xiaomi 2602dpt53g'],
             ['2602DPT53I', 'xiaomi=xiaomi 2602dpt53i'],
             ['POCO M8 Pro 5G', 'xiaomi=xiaomi poco m8 pro 5g'],
@@ -7684,6 +7685,7 @@ final class DeviceTest extends TestCase
             ['S cyber Pro', 'doogee=doogee s cyber pro'],
             ['S Punk Pro', 'doogee=doogee s punk pro'],
             ['S100', 'doogee=doogee s100'],
+            ['DOOGEE S100', 'doogee=doogee s100'],
             ['Fire 6 Max', 'doogee=doogee fire 6 max'],
             ['N55 Pro', 'doogee=doogee n55 pro'],
             ['Fire 6', 'doogee=doogee fire 6'],
@@ -8509,6 +8511,7 @@ final class DeviceTest extends TestCase
             ['Infinix X6891', 'infinix=infinix x6891'],
             ['Infinix X6895B', 'infinix=infinix x6895b'],
             ['Infinix X6857', 'infinix=infinix x6857'],
+            ['Infinix Zero 110', 'infinix=infinix zero 110'],
             // cyrus
             ['CS24', 'cyrus=cyrus cs24'],
             // facetel
@@ -10571,6 +10574,7 @@ final class DeviceTest extends TestCase
             ['hoco_HI12', 'hoco=hoco hi12'],
             ['hoco_HI10', 'hoco=hoco hi10'],
             ['HOCO DQ09', 'hoco=hoco dq09'],
+            ['HOCO DQ10', 'hoco=hoco dq10'],
             // gtx
             ['Jaculus V2', 'gtx=gtx jaculus v2'],
             ['GTX_JACULUS_01', 'gtx=gtx jaculus 01'],
