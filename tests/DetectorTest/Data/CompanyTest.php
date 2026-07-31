@@ -12610,6 +12610,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Starlight',
                 'key' => 'starlight',
             ],
+            [
+                'type' => 'Everon',
+                'name' => 'Everon',
+                'brandname' => 'Everon',
+                'key' => 'everon',
+            ],
         ];
     }
 

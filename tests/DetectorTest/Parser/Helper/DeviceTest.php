@@ -1007,6 +1007,7 @@ final class DeviceTest extends TestCase
             ['2201117SY', 'xiaomi=xiaomi 2201117sy'],
             ['21061119DG', 'xiaomi=xiaomi 21061119dg'],
             ['21061119AG', 'xiaomi=xiaomi 21061119ag'],
+            ['Xiaomi 21061119AG', 'xiaomi=xiaomi 21061119ag'],
             ['M2003J15SC', 'xiaomi=xiaomi m2003j15sc'],
             ['Xiaomi M2003J15SC', 'xiaomi=xiaomi m2003j15sc'],
             ['2210132G', 'xiaomi=xiaomi 2210132g'],
@@ -1868,6 +1869,8 @@ final class DeviceTest extends TestCase
             ['Xiaomi Pad 8', 'xiaomi=xiaomi pad 8'],
             ['220733SFH', 'xiaomi=xiaomi 220733sfh'],
             ['REDMI Note 15 Pro', 'xiaomi=xiaomi redmi note 15 pro'],
+            ['220333QPG', 'xiaomi=xiaomi 220333qpg'],
+            ['Xiaomi 220333QPG', 'xiaomi=xiaomi 220333qpg'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -6902,6 +6905,9 @@ final class DeviceTest extends TestCase
             ['KD-55X75K', 'sony=sony kd-55x75k'],
             ['Xperia X', 'sony=sony xperia x'],
             ['Xperia 5 V', 'sony=sony xperia 5 v'],
+            ['BRAVIA BF1', 'sony=sony bravia bf1'],
+            ['BRAVIA 8K VH2', 'sony=sony bravia 8k vh2'],
+            ['BRAVIA 4K AE1', 'sony=sony bravia 4k ae1'],
             // Vivo
             ['V2109', 'vivo=vivo v2109'],
             ['vivo 1716', 'vivo=vivo 1716'],
@@ -7376,6 +7382,7 @@ final class DeviceTest extends TestCase
             ['vivo Y70', 'vivo=vivo y70'],
             ['V2158A', 'vivo=vivo v2158a'],
             ['vivo V2158A', 'vivo=vivo v2158a'],
+            ['vivo 1819', 'vivo=vivo 1819'],
             // Fairphone
             ['FP4', 'fairphone=fairphone fp4'],
             ['FP3', 'fairphone=fairphone fp3'],
@@ -7892,6 +7899,7 @@ final class DeviceTest extends TestCase
             ['SNP-AN00', 'wiko=wiko snp-an00'],
             ['LGN-AN00', 'wiko=wiko lgn-an00'],
             ['BAL-AN20', 'wiko=wiko bal-an20'],
+            ['WIKO W-V770', 'wiko=wiko w-v770'],
             // razer
             ['Phone 2', 'razer=razer phone 2'],
             ['Razer Edge 5G', 'razer=razer edge 5g'],
@@ -8233,6 +8241,7 @@ final class DeviceTest extends TestCase
             ['BV8100', 'blackview=blackview bv8100'],
             ['Tab 10 Pro', 'blackview=blackview tab 10 pro'],
             ['BV7200', 'blackview=blackview bv7200'],
+            ['Blackview BV7200', 'blackview=blackview bv7200'],
             ['BV5300', 'blackview=blackview bv5300'],
             ['BV5300 Pro', 'blackview=blackview bv5300 pro'],
             ['ZENO 10', 'blackview=blackview zeno 10'],
@@ -9490,6 +9499,7 @@ final class DeviceTest extends TestCase
             ['TECNO KM8n', 'tecno=tecno km8n'],
             ['TECNO KM4n', 'tecno=tecno km4n'],
             ['TECNO LJ8k', 'tecno=tecno lj8k'],
+            ['TECNO BF7s', 'tecno=tecno bf7s'],
             // foxxd
             ['FOXXD C65', 'foxxd=foxxd c65'],
             // ceibal
@@ -10920,6 +10930,7 @@ final class DeviceTest extends TestCase
             ['Energizer Hardcase H570S', 'energizer=energizer hardcase h570s'],
             ['Energizer Hard Case G5', 'energizer=energizer hardcase g5'],
             ['Energizer Energy S550', 'energizer=energizer energy s550'],
+            ['Energizer Energy E520 LTE', 'energizer=energizer energy e520 lte'],
             // maxcom
             ['MS457', 'maxcom=maxcom ms457'],
             ['MS651', 'maxcom=maxcom ms651'],
@@ -11283,6 +11294,7 @@ final class DeviceTest extends TestCase
             ['Bt 32FS02B', 'blackton=blackton bt_32fs02b'],
             ['Bt 32FS01B', 'blackton=blackton bt_32fs01b'],
             ['Bt 24FS32B', 'blackton=blackton bt_24fs32b'],
+            ['Bt_32FS38B', 'blackton=blackton bt_32fs38b'],
             // china-telecom
             ['TYH641M', 'china-telecom=china-telecom tyh641m'],
             ['TYH631M', 'china-telecom=china-telecom tyh631m'],
@@ -11596,6 +11608,7 @@ final class DeviceTest extends TestCase
             // yasin
             ['YASIN 4K Android TV', 'yasin=yasin 4k smart tv'],
             ['YASIN 2K Android TV', 'yasin=yasin 2k smart tv'],
+            ['YASIN 4K G Smart TV FF', 'yasin=yasin 4k g smart tv ff'],
             // suaat
             ['S3_U_EEA', 'suaat=suaat s3_u_eea'],
             // g-tab
@@ -12059,6 +12072,10 @@ final class DeviceTest extends TestCase
             ['Unitel SMART 4G II SP136', 'unitel=unitel sp136'],
             // starlight
             ['Star_Mix_2', 'starlight=starlight star mix 2'],
+            // everon
+            ['EVERON H618', 'everon=everon h618'],
+            // zidoo
+            ['Z20 PRO', 'zidoo=zidoo z20 pro'],
             // generic
             ['SMART_TV', 'unknown=general tv device'],
             ['SMART TV', 'unknown=general tv device'],

@@ -944,7 +944,7 @@ final class Device implements DeviceInterface
             '2107113sg' => 'xiaomi=xiaomi 2107113sg',
             '2201117sy' => 'xiaomi=xiaomi 2201117sy',
             '21061119dg' => 'xiaomi=xiaomi 21061119dg',
-            '21061119ag' => 'xiaomi=xiaomi 21061119ag',
+            '21061119ag', 'xiaomi 21061119ag' => 'xiaomi=xiaomi 21061119ag',
             'm2003j15sc', 'xiaomi m2003j15sc' => 'xiaomi=xiaomi m2003j15sc',
             '2210132g' => 'xiaomi=xiaomi 2210132g',
             '22081212ug' => 'xiaomi=xiaomi 22081212ug',
@@ -1750,6 +1750,7 @@ final class Device implements DeviceInterface
             'xiaomi pad 8' => 'xiaomi=xiaomi pad 8',
             '220733sfh' => 'xiaomi=xiaomi 220733sfh',
             'redmi note 15 pro' => 'xiaomi=xiaomi redmi note 15 pro',
+            '220333qpg', 'xiaomi 220333qpg' => 'xiaomi=xiaomi 220333qpg',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -5142,6 +5143,9 @@ final class Device implements DeviceInterface
             'kd-55x75k' => 'sony=sony kd-55x75k',
             'xperia x' => 'sony=sony xperia x',
             'xperia 5 v' => 'sony=sony xperia 5 v',
+            'bravia bf1' => 'sony=sony bravia bf1',
+            'bravia 8k vh2' => 'sony=sony bravia 8k vh2',
+            'bravia 4k ae1' => 'sony=sony bravia 4k ae1',
             // Vivo
             'v2109' => 'vivo=vivo v2109',
             'vivo 1716' => 'vivo=vivo 1716',
@@ -5600,6 +5604,7 @@ final class Device implements DeviceInterface
             'vivo x20' => 'vivo=vivo x20',
             'vivo y70' => 'vivo=vivo y70',
             'v2158a', 'vivo v2158a' => 'vivo=vivo v2158a',
+            'vivo 1819' => 'vivo=vivo 1819',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
@@ -6097,6 +6102,7 @@ final class Device implements DeviceInterface
             'snp-an00' => 'wiko=wiko snp-an00',
             'lgn-an00' => 'wiko=wiko lgn-an00',
             'bal-an20' => 'wiko=wiko bal-an20',
+            'wiko w-v770' => 'wiko=wiko w-v770',
             // razer
             'phone 2' => 'razer=razer phone 2',
             'razer edge 5g' => 'razer=razer edge 5g',
@@ -6413,7 +6419,7 @@ final class Device implements DeviceInterface
             'tab 11' => 'blackview=blackview tab 11',
             'bv8100' => 'blackview=blackview bv8100',
             'tab 10 pro' => 'blackview=blackview tab 10 pro',
-            'bv7200' => 'blackview=blackview bv7200',
+            'bv7200', 'blackview bv7200' => 'blackview=blackview bv7200',
             'bv5300' => 'blackview=blackview bv5300',
             'bv5300 pro' => 'blackview=blackview bv5300 pro',
             'zeno 10' => 'blackview=blackview zeno 10',
@@ -7550,6 +7556,7 @@ final class Device implements DeviceInterface
             'tecno km8n' => 'tecno=tecno km8n',
             'tecno km4n' => 'tecno=tecno km4n',
             'tecno lj8k' => 'tecno=tecno lj8k',
+            'tecno bf7s' => 'tecno=tecno bf7s',
             // foxxd
             'foxxd c65' => 'foxxd=foxxd c65',
             // ceibal
@@ -8878,6 +8885,7 @@ final class Device implements DeviceInterface
             'energizer hardcase h570s' => 'energizer=energizer hardcase h570s',
             'energizer hard case g5' => 'energizer=energizer hardcase g5',
             'energizer energy s550' => 'energizer=energizer energy s550',
+            'energizer energy e520 lte' => 'energizer=energizer energy e520 lte',
             // maxcom
             'ms457' => 'maxcom=maxcom ms457',
             'ms651' => 'maxcom=maxcom ms651',
@@ -9235,6 +9243,7 @@ final class Device implements DeviceInterface
             'bt 32fs02b' => 'blackton=blackton bt_32fs02b',
             'bt 32fs01b' => 'blackton=blackton bt_32fs01b',
             'bt 24fs32b' => 'blackton=blackton bt_24fs32b',
+            'bt_32fs38b' => 'blackton=blackton bt_32fs38b',
             // china-telecom
             'tyh641m' => 'china-telecom=china-telecom tyh641m',
             'tyh631m' => 'china-telecom=china-telecom tyh631m',
@@ -9546,6 +9555,7 @@ final class Device implements DeviceInterface
             // yasin
             'yasin 4k android tv' => 'yasin=yasin 4k smart tv',
             'yasin 2k android tv' => 'yasin=yasin 2k smart tv',
+            'yasin 4k g smart tv ff' => 'yasin=yasin 4k g smart tv ff',
             // suaat
             's3_u_eea' => 'suaat=suaat s3_u_eea',
             // g-tab
@@ -9999,6 +10009,10 @@ final class Device implements DeviceInterface
             'unitel smart 4g ii sp136' => 'unitel=unitel sp136',
             // starlight
             'star_mix_2' => 'starlight=starlight star mix 2',
+            // everon
+            'everon h618' => 'everon=everon h618',
+            // zidoo
+            'z20 pro' => 'zidoo=zidoo z20 pro',
             // generic
             'smart_tv', 'smart tv', 'smart tv pro', 'smarttv', '4k smart tv', '2k smart tv', '2k pa smart tv' => 'unknown=general tv device',
             // other

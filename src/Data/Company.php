@@ -4207,6 +4207,8 @@ enum Company: string implements CompanyInterface
 
     case starlight = 'Starlight';
 
+    case everon = 'Everon';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -6308,6 +6310,7 @@ enum Company: string implements CompanyInterface
             'presearch', 'presearch.com inc.' => self::presearch,
             'mtc' => self::mtc,
             'starlight' => self::starlight,
+            'everon' => self::everon,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
