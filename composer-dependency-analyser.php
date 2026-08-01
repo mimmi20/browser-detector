@@ -31,12 +31,12 @@ $config
     ->ignoreErrorsOnPackage('infection/infection', [ErrorType::UNUSED_DEPENDENCY])
     ->ignoreErrorsOnPackage('phpstan/phpstan', [ErrorType::UNUSED_DEPENDENCY])
     ->ignoreErrorsOnPackage('rector/rector', [ErrorType::UNUSED_DEPENDENCY])
-    ->ignoreErrorsOnPackage('rector/type-perfect', [ErrorType::UNUSED_DEPENDENCY])
     ->ignoreErrorsOnPackage('shipmonk/composer-dependency-analyser', [ErrorType::UNUSED_DEPENDENCY])
     ->ignoreErrorsOnPackage('symplify/phpstan-rules', [ErrorType::UNUSED_DEPENDENCY])
     ->ignoreErrorsOnPackage('tomasvotruba/cognitive-complexity', [ErrorType::UNUSED_DEPENDENCY])
     ->ignoreErrorsOnPackage('tomasvotruba/type-coverage', [ErrorType::UNUSED_DEPENDENCY])
     ->ignoreErrorsOnPackage('tomasvotruba/unused-public', [ErrorType::UNUSED_DEPENDENCY])
+    ->ignoreErrorsOnPackage('phpstan/phpstan-phpunit', [ErrorType::UNUSED_DEPENDENCY])
     ->ignoreErrorsOnPackage(
         'jbelien/phpstan-sarif-formatter',
         [ErrorType::UNUSED_DEPENDENCY],
