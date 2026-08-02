@@ -129,7 +129,7 @@ final class Useragent1Test extends TestCase
 
         $deviceCodeHelper = $this->createMock(DeviceInterface::class);
         $deviceCodeHelper
-            ->expects(self::exactly(3))
+            ->expects(self::exactly(2))
             ->method('getDeviceCode')
             ->willReturnMap(
                 [
@@ -569,7 +569,7 @@ final class Useragent1Test extends TestCase
 
         $deviceCodeHelper = $this->createMock(DeviceInterface::class);
         $deviceCodeHelper
-            ->expects(self::exactly(3))
+            ->expects(self::exactly(2))
             ->method('getDeviceCode')
             ->willReturnMap(
                 [

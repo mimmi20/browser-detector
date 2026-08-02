@@ -99,6 +99,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi|androidhttpclient|worksmobile|googletagmanager)\/[\d.]+ \(linux; (?:(?:andr[o0]id|tizen);(?: harmonyos;)?) (?P<devicecode>[^;\/]+)(?:;? +(?:build|hmscore))[^)]+\)/i',
             '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi|androidhttpclient|worksmobile|googletagmanager)\/[\d.]+ \(linux; (?:(?:andr[o0]id|tizen);(?: harmonyos;)?) (?P<devicecode>[^);\/]+)[^)]*\)/i',
             '/dalvik\/[\d.]+ \(linux; andr[o0]id [\d.]+(?:[^;]+)?; (?P<devicecode>[^);\/]+)(?:[);\/]?[^);\/]* +(?:build|hmscore|miui)[^)]+)\)/i',
+            '/dalvik\/[\d.]+ \(linux; andr[o0]id [\d.]+(?:[^;]+)?; (?P<devicecode>[^);\/]+)(?:[);\/]?[^);\/]+)?\)/i',
             '/dalvik\/[\d.]+ \(linux; andr[o0]id [\d.]+\/viber [\d.]+ ; (?P<devicecode>[^);\/]+)[su]p1a/i',
             '/\(speedmode; proxy; android [\d.]+;(?P<devicecode>[^);\/]+)\)/i',
             '/ucweb\/[\d.]+ \((?:java; )?(?:midp-2\.0|linux); (?:adr [\d.]+;) (?P<devicecode>[^);\/]+)(?:[^)]+)?\)/i',

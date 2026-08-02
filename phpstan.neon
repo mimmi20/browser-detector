@@ -117,10 +117,10 @@ parameters:
     - '~will always evaluate to true~'
     - '~\$searches of method~'
     - '~\$rules of method~'
-    -
-      identifier: property.uninitialized
-      paths:
-        - tests/*/*Test.php
+    #-
+    #  identifier: property.uninitialized
+    #  paths:
+    #    - tests/*/*Test.php
     -
       identifier: missingType.return
       paths:
