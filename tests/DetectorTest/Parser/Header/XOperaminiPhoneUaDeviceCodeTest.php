@@ -14,7 +14,6 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Parser\Header\XOperaminiPhoneUaDeviceCode;
-use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 use UaNormalizer\Normalizer\Exception\Exception;
@@ -26,7 +25,6 @@ final class XOperaminiPhoneUaDeviceCodeTest extends TestCase
 {
     /**
      * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testGetDeviceCodeWithNormalizerException(): void
@@ -53,7 +51,6 @@ final class XOperaminiPhoneUaDeviceCodeTest extends TestCase
 
     /**
      * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testGetDeviceCode(): void
@@ -79,7 +76,6 @@ final class XOperaminiPhoneUaDeviceCodeTest extends TestCase
 
     /**
      * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testGetDeviceCode2(): void

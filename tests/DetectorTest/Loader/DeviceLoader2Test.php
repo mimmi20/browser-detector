@@ -19,7 +19,6 @@ use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetector\Loader\InitData\Device as DataDevice;
 use Laminas\Hydrator\Strategy\StrategyInterface;
 use Override;
-use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\MockObject\Exception;
 use PHPUnit\Framework\TestCase;
@@ -46,7 +45,6 @@ final class DeviceLoader2Test extends TestCase
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws ReflectionException
-     * @throws NoPreviousThrowableException
      * @throws Exception
      */
     public function testLoadWithoutError3(): void
@@ -167,7 +165,6 @@ final class DeviceLoader2Test extends TestCase
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws ReflectionException
-     * @throws NoPreviousThrowableException
      * @throws Exception
      */
     public function testLoadWithoutError4(): void

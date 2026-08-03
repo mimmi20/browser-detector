@@ -23,7 +23,6 @@ use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionInterface;
 use JsonException;
 use Override;
-use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\CoversTrait;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -46,7 +45,6 @@ final class UseragentPlatformVersionTest extends TestCase
 {
     /**
      * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testWithNormalizerException(): void
@@ -88,7 +86,6 @@ final class UseragentPlatformVersionTest extends TestCase
 
     /**
      * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testWithNormalizer1(): void
@@ -130,7 +127,6 @@ final class UseragentPlatformVersionTest extends TestCase
 
     /**
      * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testWithNormalizer2(): void
@@ -172,7 +168,6 @@ final class UseragentPlatformVersionTest extends TestCase
 
     /**
      * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testWithNormalizer4(): void
@@ -214,7 +209,6 @@ final class UseragentPlatformVersionTest extends TestCase
 
     /**
      * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     #[DataProvider('providerUa1')]
@@ -277,7 +271,6 @@ final class UseragentPlatformVersionTest extends TestCase
 
     /**
      * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     #[DataProvider('providerUa2')]
@@ -334,7 +327,6 @@ final class UseragentPlatformVersionTest extends TestCase
 
     /**
      * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     #[DataProvider('providerUa3')]
@@ -405,7 +397,6 @@ final class UseragentPlatformVersionTest extends TestCase
 
     /**
      * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     #[DataProvider('providerUa4')]
@@ -460,7 +451,6 @@ final class UseragentPlatformVersionTest extends TestCase
 
     /**
      * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testWithUasWithoutPlatformVersion3(): void
@@ -514,7 +504,6 @@ final class UseragentPlatformVersionTest extends TestCase
 
     /**
      * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testWithUasWithoutPlatformVersion4(): void
@@ -563,7 +552,6 @@ final class UseragentPlatformVersionTest extends TestCase
 
     /**
      * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testWithUasWithoutPlatformVersion5(): void

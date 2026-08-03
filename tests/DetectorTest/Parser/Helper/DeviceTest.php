@@ -1916,6 +1916,9 @@ final class DeviceTest extends TestCase
             ['Xiaomi Pad 6', 'xiaomi=xiaomi pad 6'],
             ['Xiaomi Pad 7', 'xiaomi=xiaomi pad 7'],
             ['Xiaomi Pad 7 Pro', 'xiaomi=xiaomi pad 7 pro'],
+            ['POCO M3', 'xiaomi=xiaomi poco m3'],
+            ['POCO M3 Pro', 'xiaomi=xiaomi poco m3 pro'],
+            ['REDMI Note 15 Pro+ 5G', 'xiaomi=xiaomi redmi note 15 pro+ 5g'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -6076,6 +6079,7 @@ final class DeviceTest extends TestCase
             ['TB376FC', 'lenovo=lenovo tb376fc'],
             ['TB335FC', 'lenovo=lenovo tb335fc'],
             ['TB372FC', 'lenovo=lenovo tb372fc'],
+            ['Ideapad K1', 'lenovo=lenovo ideapad k1'],
             // Nokia
             ['Nokia G50', 'nokia=nokia g50'],
             ['Nokia G20', 'nokia=nokia g20'],
@@ -7556,6 +7560,7 @@ final class DeviceTest extends TestCase
             ['vivo 1606', 'vivo=vivo 1606'],
             ['vivo 1603', 'vivo=vivo 1603'],
             ['vivo 1601', 'vivo=vivo 1601'],
+            ['vivo 1906_20', 'vivo=vivo 1906_20'],
             // Fairphone
             ['FP4', 'fairphone=fairphone fp4'],
             ['FP3', 'fairphone=fairphone fp3'],
@@ -9271,6 +9276,7 @@ final class DeviceTest extends TestCase
             ['MEIZU Note 16', 'meizu=meizu note 16'],
             ['MEIZU 22', 'meizu=meizu 22'],
             ['MEIZU 17', 'meizu=meizu 17'],
+            ['meizu M10', 'meizu=meizu m10'],
             // peaq
             ['PEAQ PET 100', 'peaq=peaq pet 100'],
             ['PEAQ PET 100 LTE', 'peaq=peaq pet 100 lte'],
@@ -10283,6 +10289,7 @@ final class DeviceTest extends TestCase
             ['C110L', 'blu=blu c110l'],
             ['BOLD N1', 'blu=blu bold n1'],
             ['R1 HD', 'blu=blu r1 hd'],
+            ['BOLD K5', 'blu=blu bold k5'],
             // apple
             ['iPhone18,3', 'apple=apple iphone 18,3'],
             ['iPh18,3', 'apple=apple iphone 18,3'],

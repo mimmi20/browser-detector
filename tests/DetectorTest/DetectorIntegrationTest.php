@@ -25,7 +25,6 @@ use BrowserDetector\Parser\BrowserParser;
 use BrowserDetector\Parser\DeviceParser;
 use BrowserDetector\Parser\EngineParser;
 use BrowserDetector\Parser\PlatformParser;
-use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Constraint\IsType;
@@ -63,7 +62,6 @@ final class DetectorIntegrationTest extends TestCase
      * @throws ExpectationFailedException
      * @throws RuntimeException
      * @throws \Laminas\Hydrator\Exception\InvalidArgumentException
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     #[DataProvider('providerUa')]

@@ -15,7 +15,6 @@ namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Data\Os;
 use BrowserDetector\Parser\Header\XUcbrowserDeviceUaPlatformCode;
-use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 use UaNormalizer\Normalizer\Exception\Exception;
@@ -27,7 +26,6 @@ final class XUcbrowserDeviceUaPlatformCodeTest extends TestCase
 {
     /**
      * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testGetPlatformCodeWithNormalizerException(): void
@@ -58,7 +56,6 @@ final class XUcbrowserDeviceUaPlatformCodeTest extends TestCase
 
     /**
      * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testGetPlatformCode(): void
@@ -91,7 +88,6 @@ final class XUcbrowserDeviceUaPlatformCodeTest extends TestCase
 
     /**
      * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testGetPlatformCode2(): void

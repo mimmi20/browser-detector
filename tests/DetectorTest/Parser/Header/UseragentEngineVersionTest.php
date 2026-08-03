@@ -20,7 +20,6 @@ use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionInterface;
-use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\CoversTrait;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -38,7 +37,6 @@ final class UseragentEngineVersionTest extends TestCase
 {
     /**
      * @throws Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      * @throws UnexpectedValueException
      */
@@ -92,7 +90,6 @@ final class UseragentEngineVersionTest extends TestCase
 
     /**
      * @throws Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testWithParsing(): void
@@ -136,7 +133,6 @@ final class UseragentEngineVersionTest extends TestCase
 
     /**
      * @throws Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testWithParsing2(): void
@@ -183,7 +179,6 @@ final class UseragentEngineVersionTest extends TestCase
 
     /**
      * @throws Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testWithParsing3(): void
@@ -252,7 +247,6 @@ final class UseragentEngineVersionTest extends TestCase
 
     /**
      * @throws Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testWithParsing4(): void
@@ -321,7 +315,6 @@ final class UseragentEngineVersionTest extends TestCase
 
     /**
      * @throws Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testWithParsing5(): void
@@ -390,7 +383,6 @@ final class UseragentEngineVersionTest extends TestCase
 
     /**
      * @throws Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testWithParsing6(): void
@@ -462,7 +454,6 @@ final class UseragentEngineVersionTest extends TestCase
 
     /**
      * @throws Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testWithParsing7(): void
@@ -532,7 +523,6 @@ final class UseragentEngineVersionTest extends TestCase
 
     /**
      * @throws Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testWithUas(): void
@@ -574,7 +564,6 @@ final class UseragentEngineVersionTest extends TestCase
 
     /**
      * @throws Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testWithUas2(): void
@@ -616,7 +605,6 @@ final class UseragentEngineVersionTest extends TestCase
 
     /**
      * @throws Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testWithUas3(): void

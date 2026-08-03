@@ -23,7 +23,6 @@ use BrowserDetector\Parser\Header\XOperaminiPhoneUaEngineCode;
 use BrowserDetector\Parser\Header\XOperaminiPhoneUaPlatformCode;
 use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\NullVersion;
-use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\CoversTrait;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -52,7 +51,6 @@ final class XOperaminiPhoneUaTest extends TestCase
      * @throws ExpectationFailedException
      * @throws Exception
      * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      * @throws UnexpectedValueException
      *

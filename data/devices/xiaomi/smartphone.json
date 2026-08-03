@@ -11486,5 +11486,37 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "xiaomi poco m3": {
+    "deviceName": "M3",
+    "marketingName": "M3",
+    "manufacturer": "xiaomi",
+    "brand": "poco",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.53
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "xiaomi poco m3 pro": {
+    "deviceName": "M3 Pro 4G",
+    "marketingName": "M3 Pro 4G",
+    "manufacturer": "xiaomi",
+    "brand": "poco",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }

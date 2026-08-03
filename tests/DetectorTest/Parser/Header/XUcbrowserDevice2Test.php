@@ -15,7 +15,6 @@ namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Parser\Header\XUcbrowserDevice;
 use BrowserDetector\Parser\Helper\DeviceInterface;
-use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 use UaNormalizer\Normalizer\Exception\Exception;
@@ -27,7 +26,6 @@ final class XUcbrowserDevice2Test extends TestCase
 {
     /**
      * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testGetDeviceCodeWithNormalizerException(): void
@@ -63,7 +61,6 @@ final class XUcbrowserDevice2Test extends TestCase
 
     /**
      * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testGetDeviceCode(): void
@@ -98,7 +95,6 @@ final class XUcbrowserDevice2Test extends TestCase
 
     /**
      * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testGetDeviceCode2(): void

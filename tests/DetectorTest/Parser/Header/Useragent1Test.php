@@ -24,7 +24,6 @@ use BrowserDetector\Parser\Header\UseragentPlatformCode;
 use BrowserDetector\Parser\Header\UseragentPlatformVersion;
 use BrowserDetector\Parser\Helper\DeviceInterface;
 use BrowserDetector\Version\ForcedNullVersion;
-use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Constraint\StringStartsWith;
@@ -60,7 +59,6 @@ final class Useragent1Test extends TestCase
     /**
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      * @throws UnexpectedValueException
      *
@@ -498,7 +496,6 @@ final class Useragent1Test extends TestCase
     /**
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      * @throws UnexpectedValueException
      *

@@ -1768,6 +1768,9 @@ final class Device implements DeviceInterface
             'xiaomi pad 6' => 'xiaomi=xiaomi pad 6',
             'xiaomi pad 7' => 'xiaomi=xiaomi pad 7',
             'xiaomi pad 7 pro' => 'xiaomi=xiaomi pad 7 pro',
+            'poco m3' => 'xiaomi=xiaomi poco m3',
+            'poco m3 pro' => 'xiaomi=xiaomi poco m3 pro',
+            'redmi note 15 pro+ 5g' => 'xiaomi=xiaomi redmi note 15 pro+ 5g',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -4383,6 +4386,7 @@ final class Device implements DeviceInterface
             'tb376fc' => 'lenovo=lenovo tb376fc',
             'tb335fc' => 'lenovo=lenovo tb335fc',
             'tb372fc' => 'lenovo=lenovo tb372fc',
+            'ideapad k1' => 'lenovo=lenovo ideapad k1',
             // Nokia
             'nokia g50' => 'nokia=nokia g50',
             'nokia g20' => 'nokia=nokia g20',
@@ -5719,6 +5723,7 @@ final class Device implements DeviceInterface
             'vivo 1606' => 'vivo=vivo 1606',
             'vivo 1603' => 'vivo=vivo 1603',
             'vivo 1601' => 'vivo=vivo 1601',
+            'vivo 1906_20' => 'vivo=vivo 1906_20',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
@@ -7354,6 +7359,7 @@ final class Device implements DeviceInterface
             'meizu note 16' => 'meizu=meizu note 16',
             'meizu 22' => 'meizu=meizu 22',
             'meizu 17' => 'meizu=meizu 17',
+            'meizu m10' => 'meizu=meizu m10',
             // peaq
             'peaq pet 100' => 'peaq=peaq pet 100',
             'peaq pet 100 lte' => 'peaq=peaq pet 100 lte',
@@ -8256,6 +8262,7 @@ final class Device implements DeviceInterface
             'c110l' => 'blu=blu c110l',
             'bold n1' => 'blu=blu bold n1',
             'r1 hd' => 'blu=blu r1 hd',
+            'bold k5' => 'blu=blu bold k5',
             // apple
             'iphone18,5', 'iph18,5' => 'apple=apple iphone 18,5',
             'iphone18,4', 'iph18,4' => 'apple=apple iphone 18,4',

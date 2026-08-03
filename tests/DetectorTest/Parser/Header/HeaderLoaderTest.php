@@ -14,7 +14,6 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Parser\Header\HeaderLoader;
-use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
@@ -40,7 +39,6 @@ final class HeaderLoaderTest extends TestCase
     /**
      * @throws NotFoundException
      * @throws Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testLoadFail(): void
@@ -114,7 +112,6 @@ final class HeaderLoaderTest extends TestCase
      *
      * @throws Exception
      * @throws NotFoundException
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     #[DataProvider('providerHeader')]
@@ -187,7 +184,6 @@ final class HeaderLoaderTest extends TestCase
      *
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     #[DataProvider('providerHeader')]

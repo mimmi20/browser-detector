@@ -21,7 +21,6 @@ use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionBuilder;
 use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionInterface;
-use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
@@ -97,7 +96,6 @@ final class MicrosoftInternetExplorerTest extends TestCase
     /**
      * @throws NotNumericException
      * @throws Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFail(): void
@@ -142,7 +140,6 @@ final class MicrosoftInternetExplorerTest extends TestCase
 
     /**
      * @throws Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFail2(): void
@@ -176,7 +173,6 @@ final class MicrosoftInternetExplorerTest extends TestCase
 
     /**
      * @throws Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFail3(): void
@@ -210,7 +206,6 @@ final class MicrosoftInternetExplorerTest extends TestCase
 
     /**
      * @throws Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFail4(): void

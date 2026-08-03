@@ -15,7 +15,6 @@ namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Parser\Header\UseragentDeviceCode;
 use BrowserDetector\Parser\Helper\DeviceInterface;
-use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
@@ -30,7 +29,6 @@ final class UseragentDeviceCodeTest extends TestCase
 {
     /**
      * @throws Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     #[DataProvider('providerUa1')]
@@ -84,7 +82,6 @@ final class UseragentDeviceCodeTest extends TestCase
 
     /**
      * @throws Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testWithUas2(): void
@@ -122,7 +119,6 @@ final class UseragentDeviceCodeTest extends TestCase
 
     /**
      * @throws Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testWithUas3(): void
@@ -160,7 +156,6 @@ final class UseragentDeviceCodeTest extends TestCase
 
     /**
      * @throws Exception
-     * @throws NoPreviousThrowableException
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testWithUas4(): void

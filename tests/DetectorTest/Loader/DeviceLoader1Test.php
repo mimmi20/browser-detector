@@ -20,7 +20,6 @@ use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetector\Loader\InitData\Device as DataDevice;
 use Laminas\Hydrator\Strategy\StrategyInterface;
 use Override;
-use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\MockObject\Exception;
 use PHPUnit\Framework\TestCase;
@@ -45,7 +44,6 @@ final class DeviceLoader1Test extends TestCase
      * @throws NotFoundException
      * @throws UnexpectedValueException
      * @throws RuntimeException
-     * @throws NoPreviousThrowableException
      * @throws Exception
      */
     public function testLoadNotInCache(): void
@@ -122,7 +120,6 @@ final class DeviceLoader1Test extends TestCase
      * @throws NotFoundException
      * @throws UnexpectedValueException
      * @throws RuntimeException
-     * @throws NoPreviousThrowableException
      * @throws Exception
      */
     public function testLoadNullInCache(): void
@@ -199,7 +196,6 @@ final class DeviceLoader1Test extends TestCase
      * @throws NotFoundException
      * @throws UnexpectedValueException
      * @throws RuntimeException
-     * @throws NoPreviousThrowableException
      * @throws Exception
      */
     public function testLoadNullInCache2(): void
@@ -257,7 +253,6 @@ final class DeviceLoader1Test extends TestCase
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws ReflectionException
-     * @throws NoPreviousThrowableException
      * @throws Exception
      */
     public function testLoadWithoutError1(): void
@@ -378,7 +373,6 @@ final class DeviceLoader1Test extends TestCase
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws ReflectionException
-     * @throws NoPreviousThrowableException
      * @throws Exception
      */
     public function testLoadWithError1(): void
@@ -498,7 +492,6 @@ final class DeviceLoader1Test extends TestCase
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws ReflectionException
-     * @throws NoPreviousThrowableException
      * @throws Exception
      */
     public function testLoadWithError2(): void
@@ -618,7 +611,6 @@ final class DeviceLoader1Test extends TestCase
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws ReflectionException
-     * @throws NoPreviousThrowableException
      * @throws Exception
      */
     public function testLoadWithError3(): void
@@ -738,7 +730,6 @@ final class DeviceLoader1Test extends TestCase
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws ReflectionException
-     * @throws NoPreviousThrowableException
      * @throws Exception
      */
     public function testLoadWithInitException(): void
@@ -797,7 +788,6 @@ final class DeviceLoader1Test extends TestCase
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws ReflectionException
-     * @throws NoPreviousThrowableException
      * @throws Exception
      */
     public function testLoadWithoutError2(): void
