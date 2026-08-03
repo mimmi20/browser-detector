@@ -716,7 +716,6 @@ final class DeviceLoader1Test extends TestCase
      * @throws NotFoundException
      * @throws UnexpectedValueException
      * @throws RuntimeException
-     * @throws ReflectionException
      */
     public function testLoadWithInitException(): void
     {

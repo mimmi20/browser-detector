@@ -416,7 +416,6 @@ final class BrowserLoaderTest extends TestCase
      * @throws NotFoundException
      * @throws UnexpectedValueException
      * @throws RuntimeException
-     * @throws ReflectionException
      */
     public function testLoadWithInitException(): void
     {

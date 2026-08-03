@@ -36,10 +36,7 @@ use function sprintf;
 #[CoversClass(HeaderLoader::class)]
 final class HeaderLoaderTest extends TestCase
 {
-    /**
-     * @throws NotFoundException
-     * @throws Exception
-     */
+    /** @throws NotFoundException */
     public function testLoadFail(): void
     {
         $deviceParser = $this->createMock(DeviceParserInterface::class);

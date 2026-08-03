@@ -197,7 +197,6 @@ final class CompanyLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws RuntimeException
-     * @throws ReflectionException
      */
     public function testLoadAvailable2(): void
     {
@@ -238,7 +237,6 @@ final class CompanyLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws RuntimeException
-     * @throws ReflectionException
      */
     public function testLoadWithInitException(): void
     {
