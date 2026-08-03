@@ -42,7 +42,6 @@ final class BrowserLoaderTest extends TestCase
      * @throws NotFoundException
      * @throws UnexpectedValueException
      * @throws RuntimeException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testLoadNotInCache(): void
     {
@@ -133,7 +132,6 @@ final class BrowserLoaderTest extends TestCase
      * @throws NotFoundException
      * @throws UnexpectedValueException
      * @throws RuntimeException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testLoadNotInCache2(): void
     {
@@ -204,7 +202,6 @@ final class BrowserLoaderTest extends TestCase
      * @throws NotFoundException
      * @throws UnexpectedValueException
      * @throws RuntimeException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testLoadNullInCache(): void
     {
@@ -298,7 +295,6 @@ final class BrowserLoaderTest extends TestCase
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws ReflectionException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testLoadVersionAndEngineWithException(): void
     {
@@ -421,7 +417,6 @@ final class BrowserLoaderTest extends TestCase
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws ReflectionException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testLoadWithInitException(): void
     {

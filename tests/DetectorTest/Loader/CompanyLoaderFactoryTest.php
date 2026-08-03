@@ -29,7 +29,6 @@ final class CompanyLoaderFactoryTest extends TestCase
      * @throws ExpectationFailedException
      * @throws Exception
      * @throws RuntimeException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testInvoke(): void
     {

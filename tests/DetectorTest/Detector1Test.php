@@ -38,7 +38,6 @@ final class Detector1Test extends TestCase
      * @throws Exception
      * @throws InvalidArgumentException
      * @throws UnexpectedValueException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
@@ -215,7 +214,6 @@ final class Detector1Test extends TestCase
      * @throws Exception
      * @throws InvalidArgumentException
      * @throws UnexpectedValueException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
@@ -445,7 +443,6 @@ final class Detector1Test extends TestCase
      * @throws Exception
      * @throws InvalidArgumentException
      * @throws UnexpectedValueException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
@@ -678,7 +675,6 @@ final class Detector1Test extends TestCase
      * @throws Exception
      * @throws InvalidArgumentException
      * @throws UnexpectedValueException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */

@@ -61,7 +61,6 @@ final class Useragent4Test extends TestCase
      * @throws ExpectationFailedException
      * @throws NotNumericException
      * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      * @throws UnexpectedValueException
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength

@@ -79,10 +79,7 @@ final class ChromeOsTest extends TestCase
         ];
     }
 
-    /**
-     * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws Exception */
     public function testDetectVersionFail(): void
     {
         $exception = new NotNumericException('set failed');
@@ -105,10 +102,7 @@ final class ChromeOsTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
-    /**
-     * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws Exception */
     public function testDetectVersionFailSecond(): void
     {
         $exception = new NotNumericException('set failed');

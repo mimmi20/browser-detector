@@ -28,7 +28,6 @@ final class DeviceParserFactoryTest extends TestCase
     /**
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testInvoke(): void
     {

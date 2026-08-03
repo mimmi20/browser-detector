@@ -52,7 +52,6 @@ final class DeviceStockUaTest extends TestCase
     /**
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      * @throws UnexpectedValueException
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength

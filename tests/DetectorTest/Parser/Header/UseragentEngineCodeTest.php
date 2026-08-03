@@ -25,10 +25,7 @@ use UaParser\EngineParserInterface;
 #[CoversClass(UseragentEngineCode::class)]
 final class UseragentEngineCodeTest extends TestCase
 {
-    /**
-     * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws Exception */
     #[DataProvider('providerUa1')]
     public function testWithoutParsing(string $value, Engine $expected): void
     {
@@ -65,10 +62,7 @@ final class UseragentEngineCodeTest extends TestCase
         ];
     }
 
-    /**
-     * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws Exception */
     #[DataProvider('providerUa2')]
     public function testWithParsing(string $value, Engine $expected): void
     {
@@ -107,10 +101,7 @@ final class UseragentEngineCodeTest extends TestCase
         ];
     }
 
-    /**
-     * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws Exception */
     public function testWithUasWithoutDeviceCode2(): void
     {
         $value = 'WhatsApp/2.2587.9 A';
@@ -136,10 +127,7 @@ final class UseragentEngineCodeTest extends TestCase
         );
     }
 
-    /**
-     * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws Exception */
     public function testWithUasWithoutDeviceCode3(): void
     {
         $value = 'WhatsApp/2.2587.9 A';

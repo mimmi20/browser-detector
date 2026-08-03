@@ -20,7 +20,6 @@ use BrowserDetector\Loader\InitData\Device as DataDevice;
 use Laminas\Hydrator\Strategy\StrategyInterface;
 use Override;
 use PHPUnit\Framework\Attributes\CoversClass;
-use PHPUnit\Framework\MockObject\Exception;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use ReflectionException;
@@ -40,12 +39,10 @@ use UnexpectedValueException;
 final class DeviceLoader2Test extends TestCase
 {
     /**
-     * @throws Exception
      * @throws NotFoundException
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws ReflectionException
-     * @throws Exception
      */
     public function testLoadWithoutError3(): void
     {
@@ -160,12 +157,10 @@ final class DeviceLoader2Test extends TestCase
     }
 
     /**
-     * @throws Exception
      * @throws NotFoundException
      * @throws UnexpectedValueException
      * @throws RuntimeException
      * @throws ReflectionException
-     * @throws Exception
      */
     public function testLoadWithoutError4(): void
     {

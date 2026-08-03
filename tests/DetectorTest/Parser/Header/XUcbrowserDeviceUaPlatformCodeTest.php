@@ -24,10 +24,7 @@ use UaParser\PlatformParserInterface;
 #[CoversClass(XUcbrowserDeviceUaPlatformCode::class)]
 final class XUcbrowserDeviceUaPlatformCodeTest extends TestCase
 {
-    /**
-     * @throws \PHPUnit\Framework\Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws \PHPUnit\Framework\Exception */
     public function testGetPlatformCodeWithNormalizerException(): void
     {
         $value     = 'test-value';
@@ -54,10 +51,7 @@ final class XUcbrowserDeviceUaPlatformCodeTest extends TestCase
         self::assertSame(Os::unknown, $object->getPlatformCode($value, $derivate));
     }
 
-    /**
-     * @throws \PHPUnit\Framework\Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws \PHPUnit\Framework\Exception */
     public function testGetPlatformCode(): void
     {
         $value    = 'test-value';
@@ -86,10 +80,7 @@ final class XUcbrowserDeviceUaPlatformCodeTest extends TestCase
         );
     }
 
-    /**
-     * @throws \PHPUnit\Framework\Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws \PHPUnit\Framework\Exception */
     public function testGetPlatformCode2(): void
     {
         $value    = 'test-value';

@@ -232,7 +232,6 @@ final class AndroidOsTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFail(): void
     {
@@ -262,7 +261,6 @@ final class AndroidOsTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFailSecond(): void
     {
@@ -289,7 +287,6 @@ final class AndroidOsTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFailThird(): void
     {
@@ -316,7 +313,6 @@ final class AndroidOsTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFailForth(): void
     {
@@ -343,7 +339,6 @@ final class AndroidOsTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFailFifth(): void
     {
@@ -370,7 +365,6 @@ final class AndroidOsTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFailSixth(): void
     {
@@ -397,7 +391,6 @@ final class AndroidOsTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFailSeventh(): void
     {
@@ -424,7 +417,6 @@ final class AndroidOsTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFail8(): void
     {
@@ -451,7 +443,6 @@ final class AndroidOsTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFail9(): void
     {
@@ -478,7 +469,6 @@ final class AndroidOsTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFail10(): void
     {

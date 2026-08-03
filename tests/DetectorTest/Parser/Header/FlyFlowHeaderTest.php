@@ -37,7 +37,6 @@ final class FlyFlowHeaderTest extends TestCase
     /**
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */

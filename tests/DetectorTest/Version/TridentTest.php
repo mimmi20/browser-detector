@@ -70,7 +70,6 @@ final class TridentTest extends TestCase
     /**
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFail(): void
     {

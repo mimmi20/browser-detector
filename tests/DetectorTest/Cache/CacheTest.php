@@ -31,7 +31,6 @@ final class CacheTest extends TestCase
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testVersion(): void
     {
@@ -80,7 +79,6 @@ final class CacheTest extends TestCase
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testHasNotItem(): void
     {
@@ -124,7 +122,6 @@ final class CacheTest extends TestCase
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testHasNotItem2(): void
     {
@@ -170,7 +167,6 @@ final class CacheTest extends TestCase
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testHasNotItem3(): void
     {

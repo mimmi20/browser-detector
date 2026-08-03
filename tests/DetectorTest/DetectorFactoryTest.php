@@ -34,7 +34,6 @@ final class DetectorFactoryTest extends TestCase
      * @throws Exception
      * @throws RuntimeException
      * @throws InvalidArgumentException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testInvoke(): void
     {

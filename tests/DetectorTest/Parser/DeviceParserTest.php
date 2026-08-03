@@ -566,7 +566,6 @@ final class DeviceParserTest extends TestCase
     /**
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     #[DataProvider('providerUa')]
     public function testParse(string $ua, string $expected): void

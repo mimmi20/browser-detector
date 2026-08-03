@@ -209,7 +209,6 @@ final class MacosTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws \PHPUnit\Framework\Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFail(): void
     {
@@ -245,7 +244,6 @@ final class MacosTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws \PHPUnit\Framework\Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFail2(): void
     {
@@ -281,7 +279,6 @@ final class MacosTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws \PHPUnit\Framework\Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFail3(): void
     {
@@ -315,7 +312,6 @@ final class MacosTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws \PHPUnit\Framework\Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFail4(): void
     {
@@ -357,7 +353,6 @@ final class MacosTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws \PHPUnit\Framework\Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFail5(): void
     {
@@ -399,7 +394,6 @@ final class MacosTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws \PHPUnit\Framework\Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFail6(): void
     {
@@ -437,7 +431,6 @@ final class MacosTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws \PHPUnit\Framework\Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFail7(): void
     {
@@ -470,7 +463,6 @@ final class MacosTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws \PHPUnit\Framework\Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFail8(): void
     {

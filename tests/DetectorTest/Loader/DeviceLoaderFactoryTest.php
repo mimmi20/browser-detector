@@ -33,7 +33,6 @@ final class DeviceLoaderFactoryTest extends TestCase
      * @throws Exception
      * @throws InvalidArgumentException
      * @throws NotFoundException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testInvoke(): void
     {

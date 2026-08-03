@@ -23,10 +23,7 @@ use UaParser\DeviceParserInterface;
 #[CoversClass(XUcbrowserDeviceUaDeviceCode::class)]
 final class XUcbrowserDeviceUaDeviceCodeTest extends TestCase
 {
-    /**
-     * @throws \PHPUnit\Framework\Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws \PHPUnit\Framework\Exception */
     public function testGetDeviceCodeWithNormalizerException(): void
     {
         $value     = 'test-value';
@@ -52,10 +49,7 @@ final class XUcbrowserDeviceUaDeviceCodeTest extends TestCase
         self::assertNull($object->getDeviceCode($value));
     }
 
-    /**
-     * @throws \PHPUnit\Framework\Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws \PHPUnit\Framework\Exception */
     public function testGetDeviceCode(): void
     {
         $value = 'test-value';
@@ -80,10 +74,7 @@ final class XUcbrowserDeviceUaDeviceCodeTest extends TestCase
         self::assertNull($object->getDeviceCode($value));
     }
 
-    /**
-     * @throws \PHPUnit\Framework\Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws \PHPUnit\Framework\Exception */
     public function testGetDeviceCode2(): void
     {
         $value = 'test-value';

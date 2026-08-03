@@ -285,7 +285,6 @@ final class IosTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws \PHPUnit\Framework\Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFail(): void
     {
@@ -318,7 +317,6 @@ final class IosTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws \PHPUnit\Framework\Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFail4(): void
     {
@@ -354,7 +352,6 @@ final class IosTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws \PHPUnit\Framework\Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFail5(): void
     {
@@ -388,7 +385,6 @@ final class IosTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws \PHPUnit\Framework\Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFail6(): void
     {
@@ -422,7 +418,6 @@ final class IosTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws \PHPUnit\Framework\Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFail7(): void
     {
@@ -458,7 +453,6 @@ final class IosTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws \PHPUnit\Framework\Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFail8(): void
     {
@@ -491,7 +485,6 @@ final class IosTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws \PHPUnit\Framework\Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFail9(): void
     {
@@ -533,7 +526,6 @@ final class IosTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws \PHPUnit\Framework\Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFail10(): void
     {
@@ -566,7 +558,6 @@ final class IosTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws \PHPUnit\Framework\Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFail11(): void
     {
@@ -612,7 +603,6 @@ final class IosTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws \PHPUnit\Framework\Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFail12(): void
     {

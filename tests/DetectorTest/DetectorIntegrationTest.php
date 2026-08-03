@@ -62,7 +62,6 @@ final class DetectorIntegrationTest extends TestCase
      * @throws ExpectationFailedException
      * @throws RuntimeException
      * @throws \Laminas\Hydrator\Exception\InvalidArgumentException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     #[DataProvider('providerUa')]
     public function testData(array $headers, array $expected): void

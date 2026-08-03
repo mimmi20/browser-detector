@@ -39,7 +39,6 @@ final class HeaderLoaderTest extends TestCase
     /**
      * @throws NotFoundException
      * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testLoadFail(): void
     {
@@ -112,7 +111,6 @@ final class HeaderLoaderTest extends TestCase
      *
      * @throws Exception
      * @throws NotFoundException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     #[DataProvider('providerHeader')]
     public function testLoadOk(string $key): void
@@ -184,7 +182,6 @@ final class HeaderLoaderTest extends TestCase
      *
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     #[DataProvider('providerHeader')]
     public function testHas(string $key): void

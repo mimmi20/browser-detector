@@ -37,7 +37,6 @@ final class UseragentClientVersionTest extends TestCase
 {
     /**
      * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
      * @throws UnexpectedValueException
      */
     #[DataProvider('providerUa1')]
@@ -85,10 +84,7 @@ final class UseragentClientVersionTest extends TestCase
         ];
     }
 
-    /**
-     * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws Exception */
     public function testWithParsing(): void
     {
         $value = 'WhatsApp/2.2587.9 W';
@@ -169,10 +165,7 @@ final class UseragentClientVersionTest extends TestCase
         );
     }
 
-    /**
-     * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws Exception */
     public function testWithParsing2(): void
     {
         $value = 'WhatsApp/2.2587.9 W';
@@ -210,10 +203,7 @@ final class UseragentClientVersionTest extends TestCase
         );
     }
 
-    /**
-     * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws Exception */
     public function testWithParsing3(): void
     {
         $value = 'WhatsApp/2.2587.9 W';
@@ -287,10 +277,7 @@ final class UseragentClientVersionTest extends TestCase
         );
     }
 
-    /**
-     * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws Exception */
     public function testWithParsing4(): void
     {
         $value = 'WhatsApp/2.2587.9 W';
@@ -371,10 +358,7 @@ final class UseragentClientVersionTest extends TestCase
         );
     }
 
-    /**
-     * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws Exception */
     public function testWithParsing5(): void
     {
         $value = 'WhatsApp/2.2587.9 W';
@@ -455,10 +439,7 @@ final class UseragentClientVersionTest extends TestCase
         );
     }
 
-    /**
-     * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws Exception */
     public function testWithParsing6(): void
     {
         $value = 'WhatsApp/2.2587.9 W';
@@ -541,10 +522,7 @@ final class UseragentClientVersionTest extends TestCase
         );
     }
 
-    /**
-     * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws Exception */
     public function testWithParsing7(): void
     {
         $value = 'WhatsApp/2.2587.9 W';
@@ -581,10 +559,7 @@ final class UseragentClientVersionTest extends TestCase
         );
     }
 
-    /**
-     * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws Exception */
     public function testWithParsing8(): void
     {
         $value = 'WhatsApp/2.2587.9 W';
@@ -621,10 +596,7 @@ final class UseragentClientVersionTest extends TestCase
         );
     }
 
-    /**
-     * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws Exception */
     public function testWithUas(): void
     {
         $value = 'WhatsApp/2.2587.9 A';
@@ -659,10 +631,7 @@ final class UseragentClientVersionTest extends TestCase
         );
     }
 
-    /**
-     * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws Exception */
     public function testWithUas2(): void
     {
         $value = 'WhatsApp/2.2587.9 A';
@@ -697,10 +666,7 @@ final class UseragentClientVersionTest extends TestCase
         );
     }
 
-    /**
-     * @throws Exception
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws Exception */
     public function testWithUas3(): void
     {
         $value = 'WhatsApp/2.2587.9 A';
