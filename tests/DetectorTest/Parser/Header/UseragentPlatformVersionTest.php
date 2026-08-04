@@ -23,7 +23,6 @@ use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionInterface;
 use JsonException;
 use Override;
-use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\CoversTrait;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -44,11 +43,7 @@ use const JSON_THROW_ON_ERROR;
 #[CoversTrait(SetVersionTrait::class)]
 final class UseragentPlatformVersionTest extends TestCase
 {
-    /**
-     * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws \PHPUnit\Framework\Exception */
     public function testWithNormalizerException(): void
     {
         $value = 'abc';
@@ -86,11 +81,7 @@ final class UseragentPlatformVersionTest extends TestCase
         );
     }
 
-    /**
-     * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws \PHPUnit\Framework\Exception */
     public function testWithNormalizer1(): void
     {
         $value = 'abc';
@@ -128,11 +119,7 @@ final class UseragentPlatformVersionTest extends TestCase
         );
     }
 
-    /**
-     * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws \PHPUnit\Framework\Exception */
     public function testWithNormalizer2(): void
     {
         $value = 'abc';
@@ -170,11 +157,7 @@ final class UseragentPlatformVersionTest extends TestCase
         );
     }
 
-    /**
-     * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws \PHPUnit\Framework\Exception */
     public function testWithNormalizer4(): void
     {
         $value = 'abc';
@@ -212,11 +195,7 @@ final class UseragentPlatformVersionTest extends TestCase
         );
     }
 
-    /**
-     * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws \PHPUnit\Framework\Exception */
     #[DataProvider('providerUa1')]
     public function testWithUasWithoutPlatformVersion(string $value): void
     {
@@ -275,11 +254,7 @@ final class UseragentPlatformVersionTest extends TestCase
         ];
     }
 
-    /**
-     * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws \PHPUnit\Framework\Exception */
     #[DataProvider('providerUa2')]
     public function testWithUasWithPlatformVersion(string $value, string | null $expectedVersion): void
     {
@@ -332,11 +307,7 @@ final class UseragentPlatformVersionTest extends TestCase
         ];
     }
 
-    /**
-     * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws \PHPUnit\Framework\Exception */
     #[DataProvider('providerUa3')]
     public function testWithUasWithPlatformVersion2(string $value, string $expectedVersion): void
     {
@@ -403,11 +374,7 @@ final class UseragentPlatformVersionTest extends TestCase
         ];
     }
 
-    /**
-     * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws \PHPUnit\Framework\Exception */
     #[DataProvider('providerUa4')]
     public function testWithUasWithoutPlatformVersion2(string $value, \UaData\OsInterface $os): void
     {
@@ -458,11 +425,7 @@ final class UseragentPlatformVersionTest extends TestCase
         ];
     }
 
-    /**
-     * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws \PHPUnit\Framework\Exception */
     public function testWithUasWithoutPlatformVersion3(): void
     {
         $value = 'Gospel_Library 2.6.1.7 / Android 4.3 279372.1 / HTC HTC One max';
@@ -512,11 +475,7 @@ final class UseragentPlatformVersionTest extends TestCase
         );
     }
 
-    /**
-     * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws \PHPUnit\Framework\Exception */
     public function testWithUasWithoutPlatformVersion4(): void
     {
         $value = 'Gospel_Library 2.6.1.7 / Android 4.3 279372.1 / HTC HTC One max';
@@ -561,11 +520,7 @@ final class UseragentPlatformVersionTest extends TestCase
         );
     }
 
-    /**
-     * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws \PHPUnit\Framework\Exception */
     public function testWithUasWithoutPlatformVersion5(): void
     {
         $value = 'Gospel_Library 2.6.1.7 / Android 4.3 279372.1 / HTC HTC One max';

@@ -23,7 +23,6 @@ use UaLoader\DeviceLoaderInterface;
 use UaLoader\Exception\NotFoundException;
 use UaResult\Company\Company;
 use UaResult\Device\Device;
-use UaResult\Device\DeviceInterface;
 use UaResult\Device\Display;
 use UnexpectedValueException;
 
@@ -64,7 +63,7 @@ final readonly class DeviceLoader implements DeviceLoaderInterface
     }
 
     /** @throws void */
-    private function fromArray(InitData\Device $data): DeviceInterface
+    private function fromArray(InitData\Device $data): Device
     {
         $manufacturer     = new Company(type: 'unknown', name: null, brandname: null);
         $manufacturerName = $data->getManufacturer();

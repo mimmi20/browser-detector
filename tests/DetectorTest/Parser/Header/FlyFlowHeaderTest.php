@@ -17,7 +17,6 @@ use BrowserDetector\Data\Engine;
 use BrowserDetector\Data\Os;
 use BrowserDetector\Parser\Header\BaiduFlyflow;
 use BrowserDetector\Version\NullVersion;
-use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
@@ -38,8 +37,6 @@ final class FlyFlowHeaderTest extends TestCase
     /**
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */

@@ -25,7 +25,6 @@ use BrowserDetector\Parser\Helper\DeviceInterface;
 use BrowserDetector\Version\Exception\NotNumericException;
 use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\VersionBuilder;
-use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
@@ -62,8 +61,6 @@ final class Useragent2Test extends TestCase
      * @throws ExpectationFailedException
      * @throws NotNumericException
      * @throws Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      * @throws UnexpectedValueException
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
@@ -361,8 +358,6 @@ final class Useragent2Test extends TestCase
      * @throws ExpectationFailedException
      * @throws NotNumericException
      * @throws Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      * @throws UnexpectedValueException
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength

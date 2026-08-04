@@ -461,6 +461,8 @@ final readonly class Headers
                         case 'huawei-mobile-services':
                         case 'duckduck bot':
                         case 'petalbot':
+                        case 'instagram app':
+                        case 'mistral-ai-user':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 
@@ -478,7 +480,7 @@ final readonly class Headers
                 if (is_string($lastClientCodename)) {
                     switch ($lastClientCodename) {
                         case 'amazon bot':
-                        case 'facebookexternalhit':
+                        case 'facebook-crawler':
                         case 'headline bot':
                         case 'hanalei-bot':
                         case 'statistik-hessen':

@@ -817,5 +817,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "silver-reader": {
+    "name": "SilverReader",
+    "manufacturer": "unknown",
+    "type": "feed-reader",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SilverReader"
+      ]
+    },
+    "engine": "unknown"
   }
 }

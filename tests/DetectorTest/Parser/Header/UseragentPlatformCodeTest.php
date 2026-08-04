@@ -15,7 +15,6 @@ namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Data\Os;
 use BrowserDetector\Parser\Header\UseragentPlatformCode;
-use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
@@ -26,11 +25,7 @@ use UaParser\PlatformParserInterface;
 #[CoversClass(UseragentPlatformCode::class)]
 final class UseragentPlatformCodeTest extends TestCase
 {
-    /**
-     * @throws Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws Exception */
     #[DataProvider('providerUa1')]
     public function testWithUas(string $value, Os $expected): void
     {
@@ -71,11 +66,7 @@ final class UseragentPlatformCodeTest extends TestCase
         ];
     }
 
-    /**
-     * @throws Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws Exception */
     public function testWithUas2(): void
     {
         $value = 'WhatsApp/2.2587.9 A';
@@ -101,11 +92,7 @@ final class UseragentPlatformCodeTest extends TestCase
         );
     }
 
-    /**
-     * @throws Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws Exception */
     public function testWithUas3(): void
     {
         $value = 'WhatsApp/2.2587.9 A';
@@ -131,11 +118,7 @@ final class UseragentPlatformCodeTest extends TestCase
         );
     }
 
-    /**
-     * @throws Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws Exception */
     public function testWithUas4(): void
     {
         $value = 'A/8.1.0/ANS/L51/msm8909/unknown/QCX3/l3584062258010650401/-/+490760838/-/ANS/110712/110713/-/2.5/1/W';

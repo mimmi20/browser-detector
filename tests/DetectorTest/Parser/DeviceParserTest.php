@@ -29,7 +29,6 @@ use BrowserDetector\Parser\Device\TvParser;
 use BrowserDetector\Parser\Device\TvParserInterface;
 use BrowserDetector\Parser\DeviceParser;
 use BrowserDetector\Parser\Helper\RulefileParser;
-use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
@@ -567,8 +566,6 @@ final class DeviceParserTest extends TestCase
     /**
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     #[DataProvider('providerUa')]
     public function testParse(string $ua, string $expected): void

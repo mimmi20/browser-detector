@@ -20,7 +20,6 @@ use BrowserDetector\Version\VersionBuilder;
 use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
-use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
@@ -233,8 +232,6 @@ final class AndroidOsTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFail(): void
     {
@@ -264,8 +261,6 @@ final class AndroidOsTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFailSecond(): void
     {
@@ -292,8 +287,6 @@ final class AndroidOsTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFailThird(): void
     {
@@ -320,8 +313,6 @@ final class AndroidOsTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFailForth(): void
     {
@@ -348,8 +339,6 @@ final class AndroidOsTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFailFifth(): void
     {
@@ -376,8 +365,6 @@ final class AndroidOsTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFailSixth(): void
     {
@@ -404,8 +391,6 @@ final class AndroidOsTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFailSeventh(): void
     {
@@ -432,8 +417,6 @@ final class AndroidOsTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFail8(): void
     {
@@ -460,8 +443,6 @@ final class AndroidOsTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFail9(): void
     {
@@ -488,8 +469,6 @@ final class AndroidOsTest extends TestCase
     /**
      * @throws UnexpectedValueException
      * @throws Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFail10(): void
     {

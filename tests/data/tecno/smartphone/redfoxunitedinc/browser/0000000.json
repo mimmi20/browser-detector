@@ -15,7 +15,7 @@
         "width": 1612,
         "height": 720,
         "touch": true,
-        "size": 6.6
+        "size": 6.56
       },
       "type": "smartphone",
       "ismobile": true,
@@ -86,6 +86,96 @@
     "engine": {
       "name": "Blink",
       "version": "57.0.2987.108",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; en; TECNO KL4s Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.91 HiBrowser/v3.00.03.02;lang=es;nation=BO;locale=es_BO UWS/ Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "KL4s",
+      "marketingName": "Spark Go 1 4G",
+      "manufacturer": "Tecno",
+      "brand": "Tecno",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Hi Browser",
+      "modus": null,
+      "version": "3.00.03.02",
+      "manufacturer": "RedFoxUnitedInc",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "149.0.7827.91",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; en; TECNO BF7s Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.91 HiBrowser/v2.25.11.1;lang=es;nation=GT;locale=es_GT UWS/ Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "BF7s",
+      "marketingName": "Spark Go (2023)",
+      "manufacturer": "Tecno",
+      "brand": "Tecno",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1612,
+        "height": 720,
+        "touch": true,
+        "size": 6.56
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Hi Browser",
+      "modus": null,
+      "version": "2.25.11.1",
+      "manufacturer": "RedFoxUnitedInc",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "149.0.7827.91",
       "manufacturer": "Google"
     }
   }

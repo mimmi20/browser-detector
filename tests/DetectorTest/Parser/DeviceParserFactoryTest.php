@@ -15,7 +15,6 @@ namespace BrowserDetectorTest\Parser;
 
 use BrowserDetector\Parser\DeviceParser;
 use BrowserDetector\Parser\DeviceParserFactory;
-use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
@@ -29,8 +28,6 @@ final class DeviceParserFactoryTest extends TestCase
     /**
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testInvoke(): void
     {

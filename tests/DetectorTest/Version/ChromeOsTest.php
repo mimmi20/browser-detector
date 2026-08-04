@@ -20,7 +20,6 @@ use BrowserDetector\Version\VersionBuilder;
 use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
-use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
@@ -80,11 +79,7 @@ final class ChromeOsTest extends TestCase
         ];
     }
 
-    /**
-     * @throws Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws Exception */
     public function testDetectVersionFail(): void
     {
         $exception = new NotNumericException('set failed');
@@ -107,11 +102,7 @@ final class ChromeOsTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
-    /**
-     * @throws Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws Exception */
     public function testDetectVersionFailSecond(): void
     {
         $exception = new NotNumericException('set failed');

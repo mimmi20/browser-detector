@@ -1141,17 +1141,62 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "V2",
-      "marketingName": "V2",
+      "deviceName": "V2205",
+      "marketingName": "Y35 4G",
       "manufacturer": "BBK",
       "brand": "vivo",
       "dualOrientation": true,
-      "simCount": 1,
+      "simCount": 2,
       "display": {
-        "width": 480,
-        "height": 320,
+        "width": 2408,
+        "height": 1080,
         "touch": true,
-        "size": 3.2
+        "size": 6.58
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Bing Search",
+      "modus": null,
+      "version": "1.11.1",
+      "manufacturer": "Microsoft",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "149.0.7827.91",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; vivo V2153; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36 Sapphire/1.11.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "V2153",
+      "marketingName": "T1 4G",
+      "manufacturer": "BBK",
+      "brand": "vivo",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.44
       },
       "type": "smartphone",
       "ismobile": true,

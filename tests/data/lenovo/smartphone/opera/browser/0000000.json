@@ -631,51 +631,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 16; moto g - 2026 Build/W1WNS36.18-114-1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.91 Mobile Safari/537.36 OPX/3.3"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Moto G (2026)",
-      "marketingName": "Moto G (2026)",
-      "manufacturer": "Lenovo",
-      "brand": "Motorola",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 1604,
-        "height": 720,
-        "touch": true,
-        "size": 6.7
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "16.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Opera GX",
-      "modus": null,
-      "version": "3.3.0",
-      "manufacturer": "Opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "149.0.7827.91",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 13; XT1921) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.9 Mobile Safari/537.36 OPR/106.0.4971.0"
     },
     "device": {
@@ -716,6 +671,60 @@
     "engine": {
       "name": "Blink",
       "version": "119.0.6045.9",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"moto g06\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"15\"",
+      "sec-ch-ua": "\"Chromium\";v=\"146\", \"Opera\";v=\"129\", \" Not A;Brand\";v=\"99\", \"OperaMobile\";v=\"97\"",
+      "sec-ch-ua-full-version": "\"97.3.5038.88255\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-wow64": "?0",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 OPR/97.0.0.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Moto G06",
+      "marketingName": "Moto G06",
+      "manufacturer": "Lenovo",
+      "brand": "Motorola",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1640,
+        "height": 720,
+        "touch": true,
+        "size": 6.88
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "97.3.5038.88255",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "146.0.0",
       "manufacturer": "Google"
     }
   }

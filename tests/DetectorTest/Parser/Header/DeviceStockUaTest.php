@@ -24,7 +24,6 @@ use BrowserDetector\Parser\Header\DeviceStockUaPlatformCode;
 use BrowserDetector\Parser\Header\DeviceStockUaPlatformVersion;
 use BrowserDetector\Parser\Header\SetVersionTrait;
 use BrowserDetector\Version\ForcedNullVersion;
-use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\CoversTrait;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -53,8 +52,6 @@ final class DeviceStockUaTest extends TestCase
     /**
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      * @throws UnexpectedValueException
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength

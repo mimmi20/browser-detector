@@ -25,7 +25,6 @@ use BrowserDetector\Parser\BrowserParser;
 use BrowserDetector\Parser\DeviceParser;
 use BrowserDetector\Parser\EngineParser;
 use BrowserDetector\Parser\PlatformParser;
-use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Constraint\IsType;
@@ -63,8 +62,6 @@ final class DetectorIntegrationTest extends TestCase
      * @throws ExpectationFailedException
      * @throws RuntimeException
      * @throws \Laminas\Hydrator\Exception\InvalidArgumentException
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     #[DataProvider('providerUa')]
     public function testData(array $headers, array $expected): void
@@ -2758,7 +2755,7 @@ final class DetectorIntegrationTest extends TestCase
                     'device' => [
                         'architecture' => null,
                         'deviceName' => 'V2314A',
-                        'marketingName' => 'iQOO Z8',
+                        'marketingName' => 'Y100t',
                         'manufacturer' => 'BBK',
                         'brand' => 'vivo',
                         'dualOrientation' => true,
@@ -10538,6 +10535,170 @@ final class DetectorIntegrationTest extends TestCase
                     'engine' => [
                         'name' => 'Blink',
                         'version' => '149.0.0',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
+            [
+                [
+                    'sec-ch-ua' => '"Chromium";v="120", "Google Chrome";v="120", "Not-A.Brand";v="99"',
+                    'sec-ch-ua-mobile' => '?0',
+                    'sec-ch-ua-platform' => '"Chrome OS"',
+                    'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 26_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 365.0.0.24.109 (iPhone15,4; iOS 26.1; pt_BR; pt-BR; scale=3.00; 1179x2556; 770637863)',
+                ],
+                [
+                    'headers' => [
+                        'sec-ch-ua-platform' => '"Chrome OS"',
+                        'sec-ch-ua' => '"Chromium";v="120", "Google Chrome";v="120", "Not-A.Brand";v="99"',
+                        'sec-ch-ua-mobile' => '?0',
+                        'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 26_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 365.0.0.24.109 (iPhone15,4; iOS 26.1; pt_BR; pt-BR; scale=3.00; 1179x2556; 770637863)',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'iPhone 15,4',
+                        'marketingName' => 'iPhone 15',
+                        'manufacturer' => 'Apple',
+                        'brand' => 'Apple',
+                        'dualOrientation' => true,
+                        'simCount' => 1,
+                        'display' => [
+                            'width' => 2556,
+                            'height' => 1179,
+                            'touch' => true,
+                            'size' => 6.1,
+                        ],
+                        'type' => 'phablet',
+                        'ismobile' => false,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'ChromeOS',
+                        'marketingName' => 'ChromeOS',
+                        'version' => null,
+                        'manufacturer' => 'Google',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Instagram App',
+                        'modus' => null,
+                        'version' => '365.0.0.24.109',
+                        'manufacturer' => 'Meta',
+                        'type' => 'mobile-application',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '120.0.0',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
+            [
+                [
+                    'user-agent' => 'Mozilla/5.0 (Cloud Phone 2.4; Nokia 225 4G; UNISOC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.6834.210 Mobile Safari/537.36 Puffin/132.0.8.80800FP',
+                    'sec-ch-ua' => '"Not/A)Brand";v="99.0.0.0", "Google Chrome";v="132.0.6834.210", "Chromium";v="132.0.6834.210", "Puffin";v="132.0.8.80800"',
+                ],
+                [
+                    'headers' => [
+                        'sec-ch-ua' => '"Not/A)Brand";v="99.0.0.0", "Google Chrome";v="132.0.6834.210", "Chromium";v="132.0.6834.210", "Puffin";v="132.0.8.80800"',
+                        'user-agent' => 'Mozilla/5.0 (Cloud Phone 2.4; Nokia 225 4G; UNISOC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.6834.210 Mobile Safari/537.36 Puffin/132.0.8.80800FP',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => '225 4G',
+                        'marketingName' => '225 4G',
+                        'manufacturer' => 'HMD Global',
+                        'brand' => 'Nokia',
+                        'dualOrientation' => false,
+                        'simCount' => 2,
+                        'display' => [
+                            'width' => 320,
+                            'height' => 240,
+                            'touch' => false,
+                            'size' => 2.4,
+                        ],
+                        'type' => 'feature-phone',
+                        'ismobile' => true,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Puffin OS',
+                        'marketingName' => 'Puffin OS',
+                        'version' => '2.4.0',
+                        'manufacturer' => 'CloudMosa',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Puffin Cloud Browser',
+                        'modus' => null,
+                        'version' => '132.0.8.80800',
+                        'manufacturer' => 'CloudMosa',
+                        'type' => 'browser',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '132.0.6834.210',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
+            [
+                [
+                    'sec-ch-ua' => '"Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"',
+                    'sec-ch-ua-mobile' => '?0',
+                    'sec-ch-ua-platform' => '"macOS"',
+                    'user-agent' => 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; MistralAI-User/1.0; +https://docs.mistral.ai/robots)',
+                ],
+                [
+                    'headers' => [
+                        'sec-ch-ua-platform' => '"macOS"',
+                        'sec-ch-ua' => '"Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"',
+                        'sec-ch-ua-mobile' => '?0',
+                        'user-agent' => 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; MistralAI-User/1.0; +https://docs.mistral.ai/robots)',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => null,
+                        'marketingName' => null,
+                        'manufacturer' => 'unknown',
+                        'brand' => 'unknown',
+                        'dualOrientation' => null,
+                        'simCount' => 0,
+                        'display' => [
+                            'width' => null,
+                            'height' => null,
+                            'touch' => false,
+                            'size' => null,
+                        ],
+                        'type' => 'unknown',
+                        'ismobile' => false,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Mac OS X',
+                        'marketingName' => 'Mac OS X',
+                        'version' => null,
+                        'manufacturer' => 'Apple',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'MistralAI User',
+                        'modus' => null,
+                        'version' => '1.0.0',
+                        'manufacturer' => 'Mistral AI',
+                        'type' => 'crawler',
+                        'isbot' => true,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '120.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],

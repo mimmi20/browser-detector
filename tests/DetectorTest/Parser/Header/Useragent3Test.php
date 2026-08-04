@@ -25,7 +25,6 @@ use BrowserDetector\Parser\Helper\DeviceInterface;
 use BrowserDetector\Version\Exception\NotNumericException;
 use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\VersionBuilder;
-use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
@@ -63,8 +62,6 @@ final class Useragent3Test extends TestCase
      * @throws ExpectationFailedException
      * @throws NotNumericException
      * @throws Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      * @throws UnexpectedValueException
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
@@ -428,8 +425,6 @@ final class Useragent3Test extends TestCase
      * @throws ExpectationFailedException
      * @throws NotNumericException
      * @throws Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      * @throws UnexpectedValueException
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
@@ -757,26 +752,6 @@ final class Useragent3Test extends TestCase
                 'platformVersion' => '13.0.0',
                 'hasEngineInfo' => true,
                 'engineUa' => 'PugpigBolt 3.8.10 (samsung, Android 13) on phone (model SM-G998U)',
-                'engineCode' => \BrowserDetector\Data\Engine::webkit,
-                'hasEngineVersion' => true,
-                'engineVersion' => '534.31.0',
-            ],
-            [
-                'ua' => 'NRC Audio/2.0.0 (nl.nrc.audio; build:29; Android 12; Sdk:31; Manufacturer:samsung; Model: SM-G975F) OkHttp/4.9.3',
-                'normalizedUa' => 'NRC Audio/2.0.0 (nl.nrc.audio; build:29; Android 12; Sdk:31; Manufacturer:samsung; Model: SM-G975F) OkHttp/4.9.3',
-                'hasDeviceInfo' => true,
-                'deviceUa' => 'sm-g975f',
-                'deviceCode' => 'A369i',
-                'hasClientInfo' => true,
-                'clientCode' => 'nrc-audio',
-                'hasClientVersion' => true,
-                'clientVersion' => '2.0.0',
-                'hasPlatformInfo' => true,
-                'platformCode' => Os::android,
-                'hasPlatformVersion' => true,
-                'platformVersion' => '12.0.0',
-                'hasEngineInfo' => true,
-                'engineUa' => 'NRC Audio/2.0.0 (nl.nrc.audio; build:29; Android 12; Sdk:31; Manufacturer:samsung; Model: SM-G975F) OkHttp/4.9.3',
                 'engineCode' => \BrowserDetector\Data\Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31.0',

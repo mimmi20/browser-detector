@@ -14,7 +14,6 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Cache;
 
 use BrowserDetector\Cache\Cache;
-use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
@@ -32,8 +31,6 @@ final class CacheTest extends TestCase
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testVersion(): void
     {
@@ -82,8 +79,6 @@ final class CacheTest extends TestCase
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testHasNotItem(): void
     {
@@ -127,8 +122,6 @@ final class CacheTest extends TestCase
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testHasNotItem2(): void
     {
@@ -174,8 +167,6 @@ final class CacheTest extends TestCase
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testHasNotItem3(): void
     {

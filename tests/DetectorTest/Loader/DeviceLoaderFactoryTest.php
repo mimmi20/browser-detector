@@ -16,7 +16,6 @@ namespace BrowserDetectorTest\Loader;
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\DeviceLoaderFactory;
 use Laminas\Hydrator\Exception\InvalidArgumentException;
-use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
@@ -34,8 +33,6 @@ final class DeviceLoaderFactoryTest extends TestCase
      * @throws Exception
      * @throws InvalidArgumentException
      * @throws NotFoundException
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testInvoke(): void
     {

@@ -15,7 +15,6 @@ namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Data\Engine;
 use BrowserDetector\Parser\Header\XOperaminiPhoneUaEngineCode;
-use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 use UaNormalizer\Normalizer\Exception\Exception;
@@ -25,11 +24,7 @@ use UaParser\EngineParserInterface;
 #[CoversClass(XOperaminiPhoneUaEngineCode::class)]
 final class XOperaminiPhoneUaEngineCodeTest extends TestCase
 {
-    /**
-     * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws \PHPUnit\Framework\Exception */
     public function testGetDeviceCodeWithNormalizerException(): void
     {
         $value     = 'test-value';
@@ -52,11 +47,7 @@ final class XOperaminiPhoneUaEngineCodeTest extends TestCase
         self::assertSame(Engine::unknown, $object->getEngineCode($value));
     }
 
-    /**
-     * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws \PHPUnit\Framework\Exception */
     public function testGetDeviceCode(): void
     {
         $value = 'test-value';
@@ -78,11 +69,7 @@ final class XOperaminiPhoneUaEngineCodeTest extends TestCase
         self::assertSame(Engine::unknown, $object->getEngineCode($value));
     }
 
-    /**
-     * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws \PHPUnit\Framework\Exception */
     public function testGetDeviceCode2(): void
     {
         $value = 'test-value';

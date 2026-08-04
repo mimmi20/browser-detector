@@ -197,8 +197,6 @@ final class CompanyLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws RuntimeException
-     * @throws ReflectionException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testLoadAvailable2(): void
     {
@@ -239,8 +237,6 @@ final class CompanyLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws RuntimeException
-     * @throws ReflectionException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testLoadWithInitException(): void
     {

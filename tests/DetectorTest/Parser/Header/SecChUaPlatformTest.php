@@ -175,6 +175,7 @@ final class SecChUaPlatformTest extends TestCase
             ['"MacIntel"', true, Os::macosx, false, null],
             ['"Fuchsia"', true, Os::fuchsia, false, null],
             ['""', false, Os::unknown, false, null],
+            ['Cloud Phone 2.4', true, Os::puffinOs, false, null],
         ];
     }
 

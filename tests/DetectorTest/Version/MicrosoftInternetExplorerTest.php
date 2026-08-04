@@ -21,7 +21,6 @@ use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionBuilder;
 use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionInterface;
-use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
@@ -97,8 +96,6 @@ final class MicrosoftInternetExplorerTest extends TestCase
     /**
      * @throws NotNumericException
      * @throws Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      */
     public function testDetectVersionFail(): void
     {
@@ -140,11 +137,7 @@ final class MicrosoftInternetExplorerTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
-    /**
-     * @throws Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws Exception */
     public function testDetectVersionFail2(): void
     {
         $useragent = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Siemens A/S; .NET CLR 1.0.3705; .NET CLR 1.1.4322)';
@@ -174,11 +167,7 @@ final class MicrosoftInternetExplorerTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
-    /**
-     * @throws Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws Exception */
     public function testDetectVersionFail3(): void
     {
         $useragent = 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; SearchToolbar 1.2; GTB7.0)';
@@ -208,11 +197,7 @@ final class MicrosoftInternetExplorerTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
-    /**
-     * @throws Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
-     */
+    /** @throws Exception */
     public function testDetectVersionFail4(): void
     {
         $useragent = 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; SearchToolbar 1.2; GTB7.0)';

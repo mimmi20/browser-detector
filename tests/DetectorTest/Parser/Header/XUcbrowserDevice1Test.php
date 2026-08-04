@@ -18,7 +18,6 @@ use BrowserDetector\Data\Os;
 use BrowserDetector\Parser\Header\XUcbrowserDevice;
 use BrowserDetector\Parser\Helper\DeviceInterface;
 use BrowserDetector\Version\NullVersion;
-use PHPUnit\Event\NoPreviousThrowableException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
@@ -42,8 +41,6 @@ final class XUcbrowserDevice1Test extends TestCase
      * @throws ExpectationFailedException
      * @throws Exception
      * @throws \PHPUnit\Framework\Exception
-     * @throws NoPreviousThrowableException
-     * @throws \PHPUnit\Framework\MockObject\Exception
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */

@@ -427,6 +427,18 @@
     },
     "engine": "unknown"
   },
+  "tlsprobe": {
+    "name": "TLSProbe",
+    "manufacturer": "unknown",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TLSProbe"
+      ]
+    },
+    "engine": "unknown"
+  },
   "l9tcpid": {
     "name": "l9tcpid",
     "manufacturer": "unknown",
@@ -530,6 +542,30 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NetScope-DomainScanner"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "info-guard-disclosure-research": {
+    "name": "InfoGuardDisclosureResearch",
+    "manufacturer": "unknown",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "InfoGuardDisclosureResearch"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "crawlora-research": {
+    "name": "crawlora-research",
+    "manufacturer": "unknown",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "crawlora-research"
       ]
     },
     "engine": "unknown"
