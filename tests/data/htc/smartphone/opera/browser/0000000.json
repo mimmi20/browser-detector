@@ -185,17 +185,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Wildfire",
-      "marketingName": "Wildfire",
+      "deviceName": "Wildfire E",
+      "marketingName": "Wildfire E",
       "manufacturer": "HTC",
       "brand": "HTC",
       "dualOrientation": true,
-      "simCount": 1,
+      "simCount": 2,
       "display": {
-        "width": 320,
-        "height": 240,
+        "width": 1440,
+        "height": 720,
         "touch": true,
-        "size": 3.2
+        "size": 5.45
       },
       "type": "smartphone",
       "ismobile": true,
@@ -311,6 +311,51 @@
     "engine": {
       "name": "Blink",
       "version": "100.0.4896.127",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; HTC Wildfire E plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.6420.3 Mobile Safari/537.36 OPR/111.0.5168.10"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Wildfire E Plus",
+      "marketingName": "Wildfire E Plus",
+      "manufacturer": "HTC",
+      "brand": "HTC",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.52
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "111.0.5168.10",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "125.0.6420.3",
       "manufacturer": "Google"
     }
   }

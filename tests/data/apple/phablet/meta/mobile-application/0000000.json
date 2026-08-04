@@ -3823,5 +3823,53 @@
       "version": "420.0.0",
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Chrome OS\"",
+      "sec-ch-ua": "\"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\", \"Not-A.Brand\";v=\"99\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 365.0.0.24.109 (iPhone15,4; iOS 26.1; pt_BR; pt-BR; scale=3.00; 1179x2556; 770637863)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone 15,4",
+      "marketingName": "iPhone 15",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2556,
+        "height": 1179,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "phablet",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "ChromeOS",
+      "marketingName": "ChromeOS",
+      "version": null,
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "365.0.0.24.109",
+      "manufacturer": "Meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "120.0.0",
+      "manufacturer": "Google"
+    }
   }
 ]
