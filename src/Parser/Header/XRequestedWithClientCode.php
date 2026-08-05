@@ -449,6 +449,8 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.micromaxinfo.browser' => 'mmx-browser',
             'com.wdesibrowser_13255326' => 'desi-browser-4g',
             'com.zte.nubrowser' => 'zte-browser',
+            'de.psversicherungsmakler.finanzapp' => 'ps-finanzapp',
+            'com.google.android.webview' => 'chrome webview',
             default => null,
         };
     }

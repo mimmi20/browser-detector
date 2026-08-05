@@ -160,6 +160,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/(?P<devicecode>[^();\/]+)\(android\/[\d.]+\) aliapp\(aliexpress\/[\d.]+\)/i',
             '/gm-android\/[\d.]+ \([\d.]+; m:(?P<devicecode>[^();\/]+); o:[\d.]+; d:/i',
             '/mozilla\/[\d.]+ \(cloud phone [\d.]+; (?P<devicecode>[^();\/]+);/i',
+            '/latina\/[\d.]+ \(android [\d.]+; (?P<devicecode>[^();\/]+)\)/i',
             '/device model: (?P<devicecode>[^);\/]+) firmware version:/i',
             // should be the last entry in the list
             '/^(?P<devicecode>.+)$/i',

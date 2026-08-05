@@ -4209,6 +4209,12 @@ enum Company: string implements CompanyInterface
 
     case everon = 'Everon';
 
+    case lark = 'Lark';
+
+    case pSdieVersicherungsmakler = 'P&S - Die Versicherungsmakler';
+
+    case simfer = 'Simfer';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -6311,6 +6317,9 @@ enum Company: string implements CompanyInterface
             'mtc' => self::mtc,
             'starlight' => self::starlight,
             'everon' => self::everon,
+            'lark' => self::lark,
+            'psdieversicherungsmakler', 'p&s - die versicherungsmakler gmbh', 'p&s - die versicherungsmakler', 'ps-die-versicherungsmakler' => self::pSdieVersicherungsmakler,
+            'simfer' => self::simfer,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -7167,6 +7176,7 @@ enum Company: string implements CompanyInterface
             self::wayfinity => 'Wayfinity Ltd',
             self::accessibleWeb => 'Accessible Web, Inc.',
             self::presearch => 'Presearch.com Inc.',
+            self::pSdieVersicherungsmakler => 'P&S - Die Versicherungsmakler GmbH',
             self::unknown => null,
             default => $this->value,
         };
@@ -7962,6 +7972,7 @@ enum Company: string implements CompanyInterface
             self::nioMobile => 'nio',
             self::openIntel => 'open-intel',
             self::accessibleWeb => 'accessible-web',
+            self::pSdieVersicherungsmakler => 'ps-die-versicherungsmakler',
             default => $this->name,
         };
     }

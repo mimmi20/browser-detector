@@ -46,5 +46,21 @@
     },
     "type": "fone-pad",
     "platform": "android"
+  },
+  "t-mobile ttablet2": {
+    "deviceName": "T Tablet 2",
+    "marketingName": "T Tablet 2",
+    "manufacturer": "tcl",
+    "brand": "t-mobile",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
   }
 }

@@ -12616,6 +12616,24 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Everon',
                 'key' => 'everon',
             ],
+            [
+                'type' => 'Lark',
+                'name' => 'Lark',
+                'brandname' => 'Lark',
+                'key' => 'lark',
+            ],
+            [
+                'type' => 'P&S - Die Versicherungsmakler',
+                'name' => 'P&S - Die Versicherungsmakler GmbH',
+                'brandname' => 'P&S - Die Versicherungsmakler',
+                'key' => 'ps-die-versicherungsmakler',
+            ],
+            [
+                'type' => 'Simfer',
+                'name' => 'Simfer',
+                'brandname' => 'Simfer',
+                'key' => 'simfer',
+            ],
         ];
     }
 
