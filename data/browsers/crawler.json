@@ -1979,16 +1979,6 @@
     },
     "engine": "unknown"
   },
-  "urlsumabot": {
-    "name": "URLSuMaBot",
-    "manufacturer": "degordian",
-    "type": "crawler",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "unknown"
-  },
   "chatglm-spider": {
     "name": "ChatGLM-Spider",
     "manufacturer": "zhipu-huazhang",
@@ -5377,18 +5367,6 @@
     "version": {
       "factory": null,
       "search": null
-    },
-    "engine": "unknown"
-  },
-  "urlsuma-bot": {
-    "name": "URLSuMaBot",
-    "manufacturer": "unknown",
-    "type": "crawler",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "URLSuMa"
-      ]
     },
     "engine": "unknown"
   },

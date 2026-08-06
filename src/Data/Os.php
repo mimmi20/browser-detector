@@ -426,6 +426,8 @@ enum Os: string implements OsInterface
 
     case fydeOS = 'FydeOS';
 
+    case hyperOS = 'HyperOS';
+
     /**
      * @throws void
      *
@@ -630,6 +632,7 @@ enum Os: string implements OsInterface
             'kolibrios', 'kolibri-os' => self::kolibriOS,
             'thinos', 'thin-os' => self::thinOS,
             'fydeos', 'fyde-os' => self::fydeOS,
+            'hyperos', 'hyper-os' => self::hyperOS,
             default => self::unknown,
         };
     }
@@ -688,7 +691,7 @@ enum Os: string implements OsInterface
             self::cellos, self::orbisos, self::newsos => Company::sony,
             self::fireos, self::vegaOS => Company::amazon,
             self::firefoxos => Company::mozilla,
-            self::miuios => Company::xiaomi,
+            self::miuios, self::hyperOS => Company::xiaomi,
             self::lgwebos => Company::lg,
             self::windows, self::windows2003, self::windows31, self::windows311, self::windows95, self::windows98, self::windowsce, self::windowsiot, self::windowsme, self::windowsmobileos, self::windowsnt, self::windows10, self::windows11, self::windowsnt31, self::windowsnt35, self::windowsnt351, self::windowsnt40, self::windowsnt41, self::windowsnt410, self::windowsnt50, self::windowsnt501, self::windowsnt51, self::windowsnt52, self::windowsnt53, self::windowsnt60, self::windowsnt61, self::windowsnt62, self::windowsnt63, self::windowsnt64, self::windowsphone, self::windowsphone10, self::windowsphone65, self::windowsphone75, self::windowsphone80, self::windowsphone81, self::windowsrt62, self::windowsrt63, self::azurelinux, self::kinos => Company::microsoft,
             self::yi => Company::baidu,
@@ -907,6 +910,7 @@ enum Os: string implements OsInterface
             self::deepin => ['factory' => VersionBuilderFactory::class, 'search' => ['Deepin']],
             self::thinOS => ['factory' => VersionBuilderFactory::class, 'search' => ['Warthog', 'WTOS']],
             self::fydeOS => ['factory' => VersionBuilderFactory::class, 'search' => ['FydeOS']],
+            self::hyperOS => ['factory' => VersionBuilderFactory::class, 'search' => ['HyperOS']],
             default => ['factory' => null, 'search' => null],
         };
     }
@@ -1032,6 +1036,7 @@ enum Os: string implements OsInterface
             self::kolibriOS => 'kolibri-os',
             self::thinOS => 'thin-os',
             self::fydeOS => 'fyde-os',
+            self::hyperOS => 'hyper-os',
             default => $this->name,
         };
     }

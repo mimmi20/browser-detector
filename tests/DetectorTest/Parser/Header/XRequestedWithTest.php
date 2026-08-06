@@ -635,6 +635,7 @@ final class XRequestedWithTest extends TestCase
             ['com.wDesiBrowser_13255326', true, 'desi-browser-4g', true, null, false, Os::unknown],
             ['com.zte.nubrowser', true, 'zte-browser', true, null, false, Os::unknown],
             ['de.psversicherungsmakler.finanzapp', true, 'ps-finanzapp', true, null, false, Os::unknown],
+            ['de.psversicherungsmakler.finanzapp.demo', true, 'ps-finanzapp', true, null, false, Os::unknown],
             ['com.google.android.webview', true, 'chrome webview', true, null, false, Os::unknown],
         ];
     }

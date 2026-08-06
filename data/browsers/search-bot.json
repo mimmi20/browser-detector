@@ -1993,5 +1993,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "urlsuma-bot": {
+    "name": "URLSuMaBot",
+    "manufacturer": "unknown",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "URLSuMa"
+      ]
+    },
+    "engine": "unknown"
   }
 }

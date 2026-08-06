@@ -5085,8 +5085,10 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "factory": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Lite Browser"
+      ]
     },
     "engine": null
   },
@@ -7023,5 +7025,15 @@
       "search": null
     },
     "engine": null
+  },
+  "startpage-private-search-engine": {
+    "name": "Startpage",
+    "manufacturer": "surfboard",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
   }
 }
