@@ -1675,7 +1675,7 @@ final class OsTest extends TestCase
                 'name' => 'HyperOS',
                 'marketingName' => 'HyperOS',
                 'manufacturer' => Company::xiaomi,
-                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['HyperOS']],
+                'version' => ['factory' => null, 'search' => null],
                 'key' => 'hyper-os',
             ],
         ];

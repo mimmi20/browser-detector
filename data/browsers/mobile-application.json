@@ -5753,8 +5753,10 @@
     "manufacturer": "ps-die-versicherungsmakler",
     "type": "mobile-application",
     "version": {
-      "factory": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PSFinanzAppDemo"
+      ]
     },
     "engine": null
   },

@@ -8358,6 +8358,7 @@ final class Device implements DeviceInterface
             'onvo_43ov4000af', '43ov4000af' => 'onvo=onvo 43ov4000af',
             'onvo_24ov6000h', '24ov6000h' => 'onvo=onvo 24ov6000h',
             'onvo_24ovf6000h', '24ovf6000h' => 'onvo=onvo 24ovf6000h',
+            'onvo_ov32300', 'ov32300' => 'onvo=onvo ov32300',
             // digma
             'zenith ta3d1p01' => 'digma=digma ta3d1p01',
             'zenith ta3e1p01' => 'digma=digma ta3e1p01',
@@ -10178,6 +10179,11 @@ final class Device implements DeviceInterface
             'lephone t7a' => 'lephone=lephone t7a',
             // telstra
             't450h' => 'telstra=telstra t450h',
+            // simfer
+            '50sfsw6m' => 'simfer=simfer 50sfsw6m',
+            '55sfsw6m' => 'simfer=simfer 55sfsw6m',
+            // sun-king
+            'ez 1' => 'sun-king=sun-king ez 1',
             // generic
             'smart_tv', 'smart tv', 'smart tv pro', 'smarttv', '4k smart tv', '2k smart tv', '2k pa smart tv' => 'unknown=general tv device',
             // other

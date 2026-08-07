@@ -12634,6 +12634,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Simfer',
                 'key' => 'simfer',
             ],
+            [
+                'type' => 'Sun King',
+                'name' => 'Sun King',
+                'brandname' => 'Sun King',
+                'key' => 'sun-king',
+            ],
+            [
+                'type' => 'webatla',
+                'name' => 'webatla',
+                'brandname' => 'webatla',
+                'key' => 'webatla',
+            ],
         ];
     }
 

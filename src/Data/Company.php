@@ -4215,6 +4215,10 @@ enum Company: string implements CompanyInterface
 
     case simfer = 'Simfer';
 
+    case sunKing = 'Sun King';
+
+    case webatla = 'webatla';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -6320,6 +6324,8 @@ enum Company: string implements CompanyInterface
             'lark' => self::lark,
             'psdieversicherungsmakler', 'p&s - die versicherungsmakler gmbh', 'p&s - die versicherungsmakler', 'ps-die-versicherungsmakler' => self::pSdieVersicherungsmakler,
             'simfer' => self::simfer,
+            'sunking', 'sun king', 'sun-king' => self::sunKing,
+            'webatla' => self::webatla,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -7973,6 +7979,7 @@ enum Company: string implements CompanyInterface
             self::openIntel => 'open-intel',
             self::accessibleWeb => 'accessible-web',
             self::pSdieVersicherungsmakler => 'ps-die-versicherungsmakler',
+            self::sunKing => 'sun-king',
             default => $this->name,
         };
     }

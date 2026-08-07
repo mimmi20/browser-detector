@@ -910,7 +910,6 @@ enum Os: string implements OsInterface
             self::deepin => ['factory' => VersionBuilderFactory::class, 'search' => ['Deepin']],
             self::thinOS => ['factory' => VersionBuilderFactory::class, 'search' => ['Warthog', 'WTOS']],
             self::fydeOS => ['factory' => VersionBuilderFactory::class, 'search' => ['FydeOS']],
-            self::hyperOS => ['factory' => VersionBuilderFactory::class, 'search' => ['HyperOS']],
             default => ['factory' => null, 'search' => null],
         };
     }

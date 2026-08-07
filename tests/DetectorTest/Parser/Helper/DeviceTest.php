@@ -10467,6 +10467,8 @@ final class DeviceTest extends TestCase
             ['24OV6000H', 'onvo=onvo 24ov6000h'],
             ['ONVO_24OVF6000H', 'onvo=onvo 24ovf6000h'],
             ['24OVF6000H', 'onvo=onvo 24ovf6000h'],
+            ['ONVO_OV32300', 'onvo=onvo ov32300'],
+            ['OV32300', 'onvo=onvo ov32300'],
             // digma
             ['Zenith TA3D1P01', 'digma=digma ta3d1p01'],
             ['Zenith TA3E1P01', 'digma=digma ta3e1p01'],
@@ -12314,6 +12316,11 @@ final class DeviceTest extends TestCase
             ['lephone T7A', 'lephone=lephone t7a'],
             // telstra
             ['T450H', 'telstra=telstra t450h'],
+            // simfer
+            ['50SFSW6M', 'simfer=simfer 50sfsw6m'],
+            ['55SFSW6M', 'simfer=simfer 55sfsw6m'],
+            // sun-king
+            ['EZ 1', 'sun-king=sun-king ez 1'],
             // generic
             ['SMART_TV', 'unknown=general tv device'],
             ['SMART TV', 'unknown=general tv device'],

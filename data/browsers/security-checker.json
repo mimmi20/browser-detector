@@ -569,5 +569,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "tlm-audit-scanner": {
+    "name": "TLM-Audit-Scanner",
+    "manufacturer": "unknown",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TLM-Audit-Scanner"
+      ]
+    },
+    "engine": "unknown"
   }
 }
