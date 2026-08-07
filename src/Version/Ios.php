@@ -34,7 +34,7 @@ final readonly class Ios implements VersionFactoryInterface
         'watchOS',
         'tvOS',
         'IphoneOSX',
-        'CPU OS 18_7.+Version',
+        'CPU OS 18_7.+(?<!app_)Version',
         'CPU OS_?',
         'CPU iOS',
         'CPU iPad ?OS',

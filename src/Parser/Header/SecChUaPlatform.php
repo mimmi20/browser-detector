@@ -16,17 +16,28 @@ namespace BrowserDetector\Parser\Header;
 use BrowserDetector\Data\Os;
 use Override;
 use UaData\OsInterface;
+use UaParser\DeviceCodeInterface;
 use UaParser\PlatformCodeInterface;
 
 use function in_array;
 use function mb_strtolower;
 use function mb_trim;
 
-final class SecChUaPlatform implements PlatformCodeInterface
+final class SecChUaPlatform implements DeviceCodeInterface, PlatformCodeInterface
 {
     /** @throws void */
     #[Override]
     public function hasPlatformCode(string $value): bool
+    {
+        $value = mb_trim($value, '"\\\'');
+        $code  = mb_strtolower($value);
+
+        return !in_array($code, ['', 'unknown'], true);
+    }
+
+    /** @throws void */
+    #[Override]
+    public function hasDeviceCode(string $value): bool
     {
         $value = mb_trim($value, '"\\\'');
         $code  = mb_strtolower($value);
@@ -50,6 +61,26 @@ final class SecChUaPlatform implements PlatformCodeInterface
         $code  = mb_strtolower($value);
 
         return $this->getCode($code);
+    }
+
+    /**
+     * @return non-empty-string|null
+     *
+     * @throws void
+     */
+    #[Override]
+    public function getDeviceCode(string $value): string | null
+    {
+        $value  = mb_trim($value, '"\\\'');
+        $code   = mb_strtolower($value);
+        $osCode = $this->getCode($code);
+
+        return match ($osCode) {
+            Os::macosx => 'apple=macintosh',
+            Os::windows => 'unknown=windows desktop',
+            Os::linux, Os::chromeos => 'unknown=linux desktop',
+            default => null,
+        };
     }
 
     /** @throws void */
