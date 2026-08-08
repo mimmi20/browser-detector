@@ -4219,6 +4219,8 @@ enum Company: string implements CompanyInterface
 
     case webatla = 'webatla';
 
+    case polar = 'Polar';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -6326,6 +6328,7 @@ enum Company: string implements CompanyInterface
             'simfer' => self::simfer,
             'sunking', 'sun king', 'sun-king' => self::sunKing,
             'webatla' => self::webatla,
+            'polar' => self::polar,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(

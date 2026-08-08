@@ -12646,6 +12646,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'webatla',
                 'key' => 'webatla',
             ],
+            [
+                'type' => 'Polar',
+                'name' => 'Polar',
+                'brandname' => 'Polar',
+                'key' => 'polar',
+            ],
         ];
     }
 

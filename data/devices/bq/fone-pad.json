@@ -206,5 +206,37 @@
     },
     "type": "fone-pad",
     "platform": "android"
+  },
+  "bq bq-8077l": {
+    "deviceName": "BQ-8077L",
+    "marketingName": "Exion Plus",
+    "manufacturer": "bq",
+    "brand": "bq",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "bq bq-1020l": {
+    "deviceName": "BQ-1020L",
+    "marketingName": "Nexion",
+    "manufacturer": "bq",
+    "brand": "bq",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
   }
 }
