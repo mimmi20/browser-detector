@@ -4446,6 +4446,9 @@ final class Device implements DeviceInterface
             'tb335fc' => 'lenovo=lenovo tb335fc',
             'tb372fc' => 'lenovo=lenovo tb372fc',
             'ideapad k1' => 'lenovo=lenovo ideapad k1',
+            'a6020a46' => 'lenovo=lenovo a6020a46',
+            'a6020a40' => 'lenovo=lenovo a6020a40',
+            'a6020', 'lineage_a6020' => 'lenovo=lenovo a6020',
             // Nokia
             'nokia g50' => 'nokia=nokia g50',
             'nokia g20' => 'nokia=nokia g20',
@@ -5861,6 +5864,9 @@ final class Device implements DeviceInterface
             'v2559a', 'vivo v2559a' => 'vivo=vivo v2559a',
             'v2558', 'vivo v2558' => 'vivo=vivo v2558',
             'v2555', 'vivo v2555' => 'vivo=vivo v2555',
+            'v2546', 'vivo v2546' => 'vivo=vivo v2546',
+            'v2512', 'vivo v2512' => 'vivo=vivo v2512',
+            'v2504', 'vivo v2504' => 'vivo=vivo v2504',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
@@ -8610,6 +8616,7 @@ final class Device implements DeviceInterface
             'aeop520' => 'benco=benco aeop520',
             'ae9310' => 'benco=benco ae9310',
             'ae9120' => 'benco=benco ae9120',
+            'aeop517' => 'benco=benco aeop517',
             // n-one
             'npad x' => 'n-one=n-one npad x',
             'npad x1' => 'n-one=n-one npad x1',
@@ -8869,6 +8876,7 @@ final class Device implements DeviceInterface
             'armor c1s' => 'kenshi=kenshi armor c1s',
             'armor i1w' => 'kenshi=kenshi armor i1w',
             'armor h2s' => 'kenshi=kenshi armor h2s',
+            'armor_h1w' => 'kenshi=kenshi armor h1w',
             // wish-tel
             't801' => 'wish-tel=wish-tel t801',
             't803' => 'wish-tel=wish-tel t803',
@@ -10160,6 +10168,7 @@ final class Device implements DeviceInterface
             'aftkmst12' => 'toshiba=toshiba aftkmst12',
             'aftha002' => 'toshiba=toshiba aftha002',
             'aftbamr311' => 'toshiba=toshiba aftbamr311',
+            'aftha003' => 'toshiba=toshiba aftha003',
             // smartisan
             'dt2002c' => 'smartisan=smartisan dt2002c',
             'dt1902a' => 'smartisan=smartisan dt1902a',

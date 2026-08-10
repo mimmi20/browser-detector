@@ -2005,5 +2005,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "century-bot": {
+    "name": "Centurybot",
+    "manufacturer": "unknown",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Centurybot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

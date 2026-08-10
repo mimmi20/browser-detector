@@ -5784,5 +5784,17 @@
       ]
     },
     "engine": null
+  },
+  "grok-app": {
+    "name": "Grok",
+    "manufacturer": "space-x",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GrokApp"
+      ]
+    },
+    "engine": null
   }
 }

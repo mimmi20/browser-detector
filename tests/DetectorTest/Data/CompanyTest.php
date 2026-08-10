@@ -12652,6 +12652,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Polar',
                 'key' => 'polar',
             ],
+            [
+                'type' => 'SpaceX',
+                'name' => 'Space Exploration Technologies Corp.',
+                'brandname' => 'SpaceX',
+                'key' => 'space-x',
+            ],
         ];
     }
 

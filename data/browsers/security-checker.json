@@ -581,5 +581,66 @@
       ]
     },
     "engine": "unknown"
+  },
+  "freepbx-scanner": {
+    "name": "FreePBX-Scanner",
+    "manufacturer": "unknown",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "FreePBX-Scanner"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "cms-lookup": {
+    "name": "CMSLookup",
+    "manufacturer": "unknown",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "CMSLookup"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "security-scanner": {
+    "name": "SecurityScanner",
+    "manufacturer": "unknown",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SecurityScanner"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "proxy-checker": {
+    "name": "ProxyChecker",
+    "manufacturer": "unknown",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Proxy Checker v",
+        "ProxyChecker"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "root-evidence": {
+    "name": "RootEvidence",
+    "manufacturer": "unknown",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RootEvidence"
+      ]
+    },
+    "engine": "unknown"
   }
 }

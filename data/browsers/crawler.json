@@ -6958,5 +6958,29 @@
       ]
     },
     "engine": "unknown"
+  },
+  "product-lookout-bot": {
+    "name": "ProductLookoutBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ProductLookoutBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "shopify-checker": {
+    "name": "ShopifyChecker",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ShopifyChecker"
+      ]
+    },
+    "engine": "unknown"
   }
 }

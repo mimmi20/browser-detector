@@ -6183,6 +6183,10 @@ final class DeviceTest extends TestCase
             ['TB335FC', 'lenovo=lenovo tb335fc'],
             ['TB372FC', 'lenovo=lenovo tb372fc'],
             ['Ideapad K1', 'lenovo=lenovo ideapad k1'],
+            ['A6020A46', 'lenovo=lenovo a6020a46'],
+            ['A6020A40', 'lenovo=lenovo a6020a40'],
+            ['A6020', 'lenovo=lenovo a6020'],
+            ['lineage_A6020', 'lenovo=lenovo a6020'],
             // Nokia
             ['Nokia G50', 'nokia=nokia g50'],
             ['Nokia G20', 'nokia=nokia g20'],
@@ -7820,6 +7824,12 @@ final class DeviceTest extends TestCase
             ['vivo V2558', 'vivo=vivo v2558'],
             ['V2555', 'vivo=vivo v2555'],
             ['vivo V2555', 'vivo=vivo v2555'],
+            ['V2546', 'vivo=vivo v2546'],
+            ['vivo V2546', 'vivo=vivo v2546'],
+            ['V2512', 'vivo=vivo v2512'],
+            ['vivo V2512', 'vivo=vivo v2512'],
+            ['V2504', 'vivo=vivo v2504'],
+            ['vivo V2504', 'vivo=vivo v2504'],
             // Fairphone
             ['FP4', 'fairphone=fairphone fp4'],
             ['FP3', 'fairphone=fairphone fp3'],
@@ -10837,6 +10847,7 @@ final class DeviceTest extends TestCase
             ['AEOP520', 'benco=benco aeop520'],
             ['AE9310', 'benco=benco ae9310'],
             ['AE9120', 'benco=benco ae9120'],
+            ['AEOP517', 'benco=benco aeop517'],
             // n-one
             ['Npad X', 'n-one=n-one npad x'],
             ['Npad X1', 'n-one=n-one npad x1'],
@@ -11100,6 +11111,7 @@ final class DeviceTest extends TestCase
             ['Armor C1s', 'kenshi=kenshi armor c1s'],
             ['Armor I1w', 'kenshi=kenshi armor i1w'],
             ['Armor H2s', 'kenshi=kenshi armor h2s'],
+            ['Armor_H1w', 'kenshi=kenshi armor h1w'],
             // wish-tel
             ['T801', 'wish-tel=wish-tel t801'],
             ['T803', 'wish-tel=wish-tel t803'],
@@ -12407,6 +12419,7 @@ final class DeviceTest extends TestCase
             ['AFTKMST12', 'toshiba=toshiba aftkmst12'],
             ['AFTHA002', 'toshiba=toshiba aftha002'],
             ['AFTBAMR311', 'toshiba=toshiba aftbamr311'],
+            ['AFTHA003', 'toshiba=toshiba aftha003'],
             // smartisan
             ['OC106', 'smartisan=smartisan oc106'],
             ['DE106', 'smartisan=smartisan de106'],

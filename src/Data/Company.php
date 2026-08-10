@@ -4221,6 +4221,8 @@ enum Company: string implements CompanyInterface
 
     case polar = 'Polar';
 
+    case spaceX = 'SpaceX';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -6329,6 +6331,7 @@ enum Company: string implements CompanyInterface
             'sunking', 'sun king', 'sun-king' => self::sunKing,
             'webatla' => self::webatla,
             'polar' => self::polar,
+            'spacex', 'space exploration technologies corp.', 'space-x' => self::spaceX,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -7186,6 +7189,7 @@ enum Company: string implements CompanyInterface
             self::accessibleWeb => 'Accessible Web, Inc.',
             self::presearch => 'Presearch.com Inc.',
             self::pSdieVersicherungsmakler => 'P&S - Die Versicherungsmakler GmbH',
+            self::spaceX => 'Space Exploration Technologies Corp.',
             self::unknown => null,
             default => $this->value,
         };
@@ -7983,6 +7987,7 @@ enum Company: string implements CompanyInterface
             self::accessibleWeb => 'accessible-web',
             self::pSdieVersicherungsmakler => 'ps-die-versicherungsmakler',
             self::sunKing => 'sun-king',
+            self::spaceX => 'space-x',
             default => $this->name,
         };
     }
