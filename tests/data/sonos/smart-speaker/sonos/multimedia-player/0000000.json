@@ -406,6 +406,51 @@
   },
   {
     "headers": {
+      "user-agent": "Linux UPnP/1.0 Sonos/82.3-60160 (ZPS55)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "ZPS55",
+      "marketingName": "ZPS55",
+      "manufacturer": "Sonos",
+      "brand": "Sonos",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "smart-speaker",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "Linux Foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Sonos",
+      "modus": null,
+      "version": "82.3.60160",
+      "manufacturer": "Sonos",
+      "type": "multimedia-player",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Sonos/71.0-37271 (Play:3)"
     },
     "device": {

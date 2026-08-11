@@ -548,5 +548,61 @@
       "version": "138.0.0",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"SM-T830\"",
+      "x-requested-with": "com.duckduckgo.mobile.android",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"10.0.0\"",
+      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"DuckDuckGo\";v=\"150\"",
+      "sec-ch-ua-full-version": "\"150.0.7871.124\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Desktop\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-wow64": "?0",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-T830",
+      "marketingName": "Galaxy Tab S4 10.5\" Wi-Fi",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 10.5
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "DuckDuckGo Privacy Browser",
+      "modus": null,
+      "version": "150.0.7871.124",
+      "manufacturer": "Duck Duck Go",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "150.0.0",
+      "manufacturer": "Google"
+    }
   }
 ]

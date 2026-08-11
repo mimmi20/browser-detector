@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 15; en-au; T450H Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.48 Mobile Safari/537.36 PHX/21.7"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "T450H",
+      "marketingName": "T-Inspire 2",
+      "manufacturer": "TCL",
+      "brand": "Telstra",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1280,
+        "height": 576,
+        "touch": true,
+        "size": 6.52
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Phoenix Browser",
+      "modus": null,
+      "version": "21.7.0",
+      "manufacturer": "CloudView Technology",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "149.0.7827.48",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 14; es-ar; T610P Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.60 Mobile Safari/537.36 PHX/21.7"
     },
     "device": {

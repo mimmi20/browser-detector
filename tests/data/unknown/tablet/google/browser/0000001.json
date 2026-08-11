@@ -811,51 +811,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; V1919A Build/PKQ1.181030.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/76.0.3809.89"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Tablet",
-      "marketingName": "general Tablet",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": true,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome WebView",
-      "modus": null,
-      "version": "76.0.3809.89",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "76.0.3809.89",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; TR99 MINI+) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.96 Safari/537.36"
     },
     "device": {
@@ -4496,6 +4451,51 @@
     "engine": {
       "name": "Blink",
       "version": "87.0.4280.66",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; FydeOS Android) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.111 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "FydeOS",
+      "marketingName": "FydeOS",
+      "version": null,
+      "manufacturer": "Fyde",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "81.0.4044.111",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "81.0.4044.111",
       "manufacturer": "Google"
     }
   }

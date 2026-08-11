@@ -133,5 +133,50 @@
       "version": "122.0.6261.64",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64; Quest Pro) AppleWebKit/537.36 (KHTML, like Gecko) OculusBrowser/32.1.0.37.133.575621010 Chrome/122.0.6261.64 VR Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Quest Pro",
+      "marketingName": "Quest Pro",
+      "manufacturer": "Meta",
+      "brand": "Meta",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "wearable",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Horizon",
+      "marketingName": "Horizon",
+      "version": null,
+      "manufacturer": "Meta",
+      "bits": null
+    },
+    "client": {
+      "name": "OculusBrowser",
+      "modus": null,
+      "version": "32.1.0.37.133",
+      "manufacturer": "Meta",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "122.0.6261.64",
+      "manufacturer": "Google"
+    }
   }
 ]

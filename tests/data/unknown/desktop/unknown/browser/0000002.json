@@ -324,6 +324,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/61.0.3163.128 Safari/534.24 Lite Browser/4.7"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "HyperOS",
+      "marketingName": "HyperOS",
+      "version": null,
+      "manufacturer": "Xiaomi",
+      "bits": null
+    },
+    "client": {
+      "name": "GO Browser",
+      "modus": null,
+      "version": "4.7.0",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "61.0.3163.128",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "sec-ch-ua-platform": "\"Windows\"",
       "sec-ch-ua": "\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"YaBrowser\";v=\"24.1\", \"Yowser\";v=\"2.5\"",
       "sec-ch-ua-mobile": "?0",

@@ -46,6 +46,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 16; V2538) AppleWebKit/537.36 (KHTML, like Gecko) JioSphere/6.0.3 Chrome/136.0.7103.125 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "V2538",
+      "marketingName": "V70",
+      "manufacturer": "BBK",
+      "brand": "vivo",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2750,
+        "height": 1260,
+        "touch": true,
+        "size": 6.59
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "JioSphere",
+      "modus": null,
+      "version": "6.0.3",
+      "manufacturer": "Jio Platforms",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "136.0.7103.125",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 16; RMX5108) AppleWebKit/537.36 (KHTML, like Gecko) JioSphere/7.0.0 Chrome/146.0.7680.65 Mobile Safari/537.36"
     },
     "device": {

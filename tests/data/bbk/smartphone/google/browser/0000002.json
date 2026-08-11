@@ -1,6 +1,141 @@
 [
   {
     "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 10; ONEPLUS A6010 Build/QKQ1.190716.003)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A6010",
+      "marketingName": "6T",
+      "manufacturer": "BBK",
+      "brand": "OnePlus",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.41
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Browser",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; V1934A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.105 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "V1934A",
+      "marketingName": "Y5s",
+      "manufacturer": "BBK",
+      "brand": "vivo",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.53
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "89.0.4389.105",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "89.0.4389.105",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; HD1905) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.105 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "HD1905",
+      "marketingName": "7T",
+      "manufacturer": "BBK",
+      "brand": "OnePlus",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.55
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "89.0.4389.105",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "89.0.4389.105",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; CPH2095) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.66 Mobile Safari/537.36 comdirect/1.0 (appVersion:21.4.2;deviceType:mobile)"
     },
     "device": {
@@ -1216,6 +1351,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; V2029) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Mobile Safari/537.36 comdirect/1.0 (appVersion:21.9.1;deviceType:mobile)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "V2029",
+      "marketingName": "Y20",
+      "manufacturer": "BBK",
+      "brand": "vivo",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.51
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "93.0.4577.82",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "93.0.4577.82",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 11; RMX3261) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.185 Mobile Safari/537.36 comdirect/1.0 (appVersion:21.9.1;deviceType:mobile)"
     },
     "device": {
@@ -1616,6 +1796,51 @@
     "engine": {
       "name": "Blink",
       "version": "90.0.4430.210",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; V2002A Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.96 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "V2002A",
+      "marketingName": "Y70s",
+      "manufacturer": "BBK",
+      "brand": "vivo",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.53
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome WebView",
+      "modus": null,
+      "version": "78.0.3904.96",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "78.0.3904.96",
       "manufacturer": "Google"
     }
   },
@@ -4246,231 +4471,6 @@
         "height": 1080,
         "touch": true,
         "size": 6.4
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome WebView",
-      "modus": null,
-      "version": "77.0.3865.120",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "77.0.3865.120",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; PEGT10 Build/RKQ1.201217.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "PEGT10",
-      "marketingName": "Reno5 K 5G",
-      "manufacturer": "BBK",
-      "brand": "OPPO",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.4
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome WebView",
-      "modus": null,
-      "version": "77.0.3865.120",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "77.0.3865.120",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; PEHM00 Build/RKQ1.201112.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "PEHM00",
-      "marketingName": "A93 5G",
-      "manufacturer": "BBK",
-      "brand": "OPPO",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome WebView",
-      "modus": null,
-      "version": "77.0.3865.120",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "77.0.3865.120",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; PEHT00 Build/RKQ1.201112.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "PEHT00",
-      "marketingName": "A93 5G",
-      "manufacturer": "BBK",
-      "brand": "OPPO",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome WebView",
-      "modus": null,
-      "version": "77.0.3865.120",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "77.0.3865.120",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; PEMM00 Build/RKQ1.200903.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "PEMM00",
-      "marketingName": "A55 5G",
-      "manufacturer": "BBK",
-      "brand": "OPPO",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome WebView",
-      "modus": null,
-      "version": "77.0.3865.120",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "77.0.3865.120",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; PEMT00 Build/RKQ1.200903.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "PEMT00",
-      "marketingName": "A55 5G",
-      "manufacturer": "BBK",
-      "brand": "OPPO",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.5
       },
       "type": "smartphone",
       "ismobile": true,

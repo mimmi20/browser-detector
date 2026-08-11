@@ -91,6 +91,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9.0; Honor 9x Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36 OPR/77.0.4054.90"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Honor 9x Pro",
+      "marketingName": "Honor 9x Pro",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.59
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "77.0.4054.90",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "91.0.4472.101",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "sec-ch-ua-model": "\"FCP-N49\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"15\"",
