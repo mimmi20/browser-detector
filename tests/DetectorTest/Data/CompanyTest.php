@@ -12616,6 +12616,48 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Everon',
                 'key' => 'everon',
             ],
+            [
+                'type' => 'Lark',
+                'name' => 'Lark',
+                'brandname' => 'Lark',
+                'key' => 'lark',
+            ],
+            [
+                'type' => 'P&S - Die Versicherungsmakler',
+                'name' => 'P&S - Die Versicherungsmakler GmbH',
+                'brandname' => 'P&S - Die Versicherungsmakler',
+                'key' => 'ps-die-versicherungsmakler',
+            ],
+            [
+                'type' => 'Simfer',
+                'name' => 'Simfer',
+                'brandname' => 'Simfer',
+                'key' => 'simfer',
+            ],
+            [
+                'type' => 'Sun King',
+                'name' => 'Sun King',
+                'brandname' => 'Sun King',
+                'key' => 'sun-king',
+            ],
+            [
+                'type' => 'webatla',
+                'name' => 'webatla',
+                'brandname' => 'webatla',
+                'key' => 'webatla',
+            ],
+            [
+                'type' => 'Polar',
+                'name' => 'Polar',
+                'brandname' => 'Polar',
+                'key' => 'polar',
+            ],
+            [
+                'type' => 'SpaceX',
+                'name' => 'Space Exploration Technologies Corp.',
+                'brandname' => 'SpaceX',
+                'key' => 'space-x',
+            ],
         ];
     }
 

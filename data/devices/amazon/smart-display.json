@@ -110,5 +110,21 @@
     },
     "type": "smart-display",
     "platform": "fire-os"
+  },
+  "amazon aeoat": {
+    "deviceName": "AEOAT",
+    "marketingName": "Echo Show 8 (2nd Gen)",
+    "manufacturer": "amazon",
+    "brand": "amazon",
+    "dualOrientation": false,
+    "simCount": 0,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8
+    },
+    "type": "smart-display",
+    "platform": "fire-os"
   }
 }

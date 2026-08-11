@@ -1670,6 +1670,14 @@ final class OsTest extends TestCase
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['FydeOS']],
                 'key' => 'fyde-os',
             ],
+            [
+                'type' => 'HyperOS',
+                'name' => 'HyperOS',
+                'marketingName' => 'HyperOS',
+                'manufacturer' => Company::xiaomi,
+                'version' => ['factory' => null, 'search' => null],
+                'key' => 'hyper-os',
+            ],
         ];
     }
 }

@@ -1979,16 +1979,6 @@
     },
     "engine": "unknown"
   },
-  "urlsumabot": {
-    "name": "URLSuMaBot",
-    "manufacturer": "degordian",
-    "type": "crawler",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "unknown"
-  },
   "chatglm-spider": {
     "name": "ChatGLM-Spider",
     "manufacturer": "zhipu-huazhang",
@@ -2191,7 +2181,7 @@
     "engine": "unknown"
   },
   "geedo-product-search": {
-    "name": "GeedoProductSearch",
+    "name": "GeedoShopProductFinder",
     "manufacturer": "geedo",
     "type": "crawler",
     "version": {
@@ -5380,18 +5370,6 @@
     },
     "engine": "unknown"
   },
-  "urlsuma-bot": {
-    "name": "URLSuMaBot",
-    "manufacturer": "unknown",
-    "type": "crawler",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "URLSuMa"
-      ]
-    },
-    "engine": "unknown"
-  },
   "bubble-scan": {
     "name": "BubbleScan",
     "manufacturer": "unknown",
@@ -6969,14 +6947,38 @@
     },
     "engine": "unknown"
   },
-  "nalezen-cz-bot": {
-    "name": "NalezenCzBot",
+  "webatla-bot": {
+    "name": "WebatlaBot",
+    "manufacturer": "webatla",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WebatlaBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "product-lookout-bot": {
+    "name": "ProductLookoutBot",
     "manufacturer": "unknown",
     "type": "crawler",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "NalezenCzBot"
+        "ProductLookoutBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "shopify-checker": {
+    "name": "ShopifyChecker",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ShopifyChecker"
       ]
     },
     "engine": "unknown"

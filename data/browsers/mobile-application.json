@@ -1148,16 +1148,6 @@
     },
     "engine": "unknown"
   },
-  "startpage-private-search-engine": {
-    "name": "Startpage",
-    "manufacturer": "surfboard",
-    "type": "mobile-application",
-    "version": {
-      "factory": null,
-      "search": null
-    },
-    "engine": "unknown"
-  },
   "advanced-download-manager": {
     "name": "Advanced Download Manager",
     "manufacturer": "admtorrent",
@@ -5754,6 +5744,55 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Vuhuv"
+      ]
+    },
+    "engine": null
+  },
+  "ps-finanzapp": {
+    "name": "FinanzApp",
+    "manufacturer": "ps-die-versicherungsmakler",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PSFinanzAppDemo"
+      ]
+    },
+    "engine": null
+  },
+  "yuanbao": {
+    "name": "YuanBao",
+    "manufacturer": "tencent",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YuanBao\\/[0-9.]+ app_version\\/",
+        "YuanBao"
+      ]
+    },
+    "engine": null
+  },
+  "latina": {
+    "name": "Latina",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Latina"
+      ]
+    },
+    "engine": null
+  },
+  "grok-app": {
+    "name": "Grok",
+    "manufacturer": "space-x",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GrokApp"
       ]
     },
     "engine": null

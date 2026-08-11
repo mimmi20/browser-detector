@@ -161,9 +161,9 @@
   },
   "huawei hlk-al10": {
     "deviceName": "HLK-AL10",
-    "marketingName": "Honor 9X",
+    "marketingName": "9X Pro",
     "manufacturer": "huawei",
-    "brand": "huawei",
+    "brand": "honor",
     "dualOrientation": true,
     "simCount": 1,
     "display": {
@@ -177,9 +177,9 @@
   },
   "huawei hlk-tl00": {
     "deviceName": "HLK-TL00",
-    "marketingName": "Honor 9X",
+    "marketingName": "9X Pro",
     "manufacturer": "huawei",
-    "brand": "huawei",
+    "brand": "honor",
     "dualOrientation": true,
     "simCount": 1,
     "display": {
@@ -1022,5 +1022,37 @@
     },
     "type": "phablet",
     "platform": "android"
+  },
+  "huawei mate x9": {
+    "deviceName": "Mate X9",
+    "marketingName": "Mate X9",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "huawei honor 9x pro": {
+    "deviceName": "Honor 9x Pro",
+    "marketingName": "Honor 9x Pro",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.59
+    },
+    "type": "phablet",
+    "platform": null
   }
 }

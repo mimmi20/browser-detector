@@ -1266,7 +1266,7 @@
     "device": {
       "architecture": null,
       "deviceName": "Mac 13,1",
-      "marketingName": "Mac Studio 27\" (2022)",
+      "marketingName": "Mac Studio (2022)",
       "manufacturer": "Apple",
       "brand": "Apple",
       "dualOrientation": false,
@@ -1310,6 +1310,96 @@
     },
     "device": {
       "architecture": null,
+      "deviceName": "Mac 13,2",
+      "marketingName": "Mac Studio (2022)",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "14.0.0",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Word",
+      "modus": null,
+      "version": "16.78.1008",
+      "manufacturer": "Microsoft",
+      "type": "application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Microsoft Office Word/16.78.1008 (Mac OS/14.0; Desktop; en-US; NonAppStore; Apple/Mac14,14)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Mac 14,14",
+      "marketingName": "Mac Studio (2023)",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "14.0.0",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Word",
+      "modus": null,
+      "version": "16.78.1008",
+      "manufacturer": "Microsoft",
+      "type": "application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Microsoft Office Word/16.68.1211 (Mac OS/14.0; Desktop; en-US; AppStore; Apple/Mac14,7)"
+    },
+    "device": {
+      "architecture": null,
       "deviceName": "Macintosh",
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
@@ -1337,7 +1427,7 @@
     "client": {
       "name": "Word",
       "modus": null,
-      "version": "16.78.1008",
+      "version": "16.68.1211",
       "manufacturer": "Microsoft",
       "type": "application",
       "isbot": false,

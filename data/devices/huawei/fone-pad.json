@@ -2062,5 +2062,37 @@
     },
     "type": "fone-pad",
     "platform": null
+  },
+  "huawei jms-l09": {
+    "deviceName": "JMS-L09",
+    "marketingName": "Pad X7 8.7\" LTE",
+    "manufacturer": "huawei",
+    "brand": "honor",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1340,
+      "height": 800,
+      "touch": true,
+      "size": 8.7
+    },
+    "type": "fone-pad",
+    "platform": null
+  },
+  "huawei honor tab 5 8.0": {
+    "deviceName": "Honor Tab 5 8.0",
+    "marketingName": "Honor Tab 5 8.0 (2019)",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 8
+    },
+    "type": "fone-pad",
+    "platform": "android"
   }
 }

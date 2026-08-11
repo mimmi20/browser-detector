@@ -4231,6 +4231,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; AEOTA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.5249.190 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "AEOTA",
+      "marketingName": "Kindle Fire",
+      "manufacturer": "Amazon",
+      "brand": "Amazon",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Fire OS",
+      "marketingName": "Fire OS",
+      "version": "7.0.0",
+      "manufacturer": "Amazon",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "106.0.5249.190",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "106.0.5249.190",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 11; KFQUWI) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
     },
     "device": {
@@ -4326,7 +4371,7 @@
     "device": {
       "architecture": null,
       "deviceName": "KFRAPWI",
-      "marketingName": "Fire HD 8\" (2024)",
+      "marketingName": "Fire HD 8\" (2022)",
       "manufacturer": "Amazon",
       "brand": "Amazon",
       "dualOrientation": true,
@@ -4371,7 +4416,7 @@
     "device": {
       "architecture": null,
       "deviceName": "KFRAPWI",
-      "marketingName": "Fire HD 8\" (2024)",
+      "marketingName": "Fire HD 8\" (2022)",
       "manufacturer": "Amazon",
       "brand": "Amazon",
       "dualOrientation": true,
@@ -4451,51 +4496,6 @@
     "engine": {
       "name": "Blink",
       "version": "130.0.6723.170",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; KFQUWI Build/RS8335.2972N; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.209 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "KFQUWI",
-      "marketingName": "Fire 7\" (2022)",
-      "manufacturer": "Amazon",
-      "brand": "Amazon",
-      "dualOrientation": true,
-      "simCount": 0,
-      "display": {
-        "width": 1024,
-        "height": 600,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Fire OS",
-      "marketingName": "Fire OS",
-      "version": "8.0.0",
-      "manufacturer": "Amazon",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome WebView",
-      "modus": null,
-      "version": "132.0.6834.209",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "132.0.6834.209",
       "manufacturer": "Google"
     }
   }

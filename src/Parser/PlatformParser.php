@@ -151,6 +151,7 @@ final readonly class PlatformParser implements PlatformParserInterface
             '/cyanogenmod/i' => Os::cyanogenmod,
             '/mocordroid/i' => Os::mocordroid,
             '/vidaa[\/;_\-]/i' => Os::vidaaOS,
+            '/[\d\s]+lite browser\/(\d+\.\d+)$/i' => Os::hyperOS,
             '/andr0id|android[ _]?tv|g[o0][o0]gle[ _]tv|smarttv 4k|smart[ _]?tv|bravia 4k vh22/i' => Os::androidtv,
             '/sm-r[0-9]{3}/i' => Os::wearos,
             '/Android (\d+[.\d]*);.+release\.go$/i' => Os::androidGo,

@@ -1041,9 +1041,9 @@
     "device": {
       "architecture": null,
       "deviceName": "NLA-LX3",
-      "marketingName": "Honor X5c Plus",
+      "marketingName": "X5c Plus",
       "manufacturer": "Huawei",
-      "brand": "Huawei",
+      "brand": "Honor",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
@@ -1076,6 +1076,51 @@
     "engine": {
       "name": "Blink",
       "version": "149.0.7827.83",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; NLA-LX1 Build/HONORNLA-L31; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.107 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/546.0.0.42.66;IABMV/1;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "NLA-LX1",
+      "marketingName": "X5c Plus",
+      "manufacturer": "Huawei",
+      "brand": "Honor",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.74
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "546.0.0.42.66",
+      "manufacturer": "Meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "144.0.7559.107",
       "manufacturer": "Google"
     }
   }

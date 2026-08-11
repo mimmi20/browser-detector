@@ -491,6 +491,7 @@ final readonly class Headers
                         case 'crawl-bot':
                         case 'scrapy':
                         case 'seekportbot':
+                        case 'product-lookout-bot':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 
@@ -746,7 +747,7 @@ final readonly class Headers
                         $lastPlatformCode instanceof \UaData\OsInterface
                         && in_array(
                             $lastPlatformCode,
-                            [\BrowserDetector\Data\Os::fireos, \BrowserDetector\Data\Os::harmonyos, \BrowserDetector\Data\Os::picoOS, \BrowserDetector\Data\Os::chromeos],
+                            [\BrowserDetector\Data\Os::fireos, \BrowserDetector\Data\Os::harmonyos, \BrowserDetector\Data\Os::picoOS, \BrowserDetector\Data\Os::chromeos, \BrowserDetector\Data\Os::hyperOS],
                             true,
                         )
                     ) {
