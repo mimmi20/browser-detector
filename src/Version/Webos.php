@@ -44,6 +44,13 @@ final readonly class Webos implements VersionFactoryInterface
             return $this->versionBuilder->set($matches['version']);
         }
 
+        if (
+            preg_match('/web0s; linux\/smarttv.+webos(?<version>\d+[.\d]+)/i', $useragent, $matches)
+            && array_key_exists('version', $matches)
+        ) {
+            return $this->versionBuilder->set($matches['version']);
+        }
+
         $versions = [
             26 => '/web0s; linux\/smarttv.+chr[o0]me\/132/i',
             25 => '/web0s; linux\/smarttv.+chr[o0]me\/120/i',

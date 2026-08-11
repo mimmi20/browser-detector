@@ -96,6 +96,10 @@ final class WebosTest extends TestCase
             ],
             [
                 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 Safari/537.36 HbbTV/1.2.1 ( DRM; LGE; 43LJ614V-ZA; WEBOS3.5 04.70.50; W3_M2R;)',
+                '3.5.0',
+            ],
+            [
+                'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 Safari/537.36 HbbTV/1.2.1 ( DRM; LGE; 43LJ614V-ZA; WE3.5 04.70.50; W3_M2R;)',
                 '3.0.0',
             ],
             [
