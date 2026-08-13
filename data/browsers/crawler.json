@@ -6982,5 +6982,90 @@
       ]
     },
     "engine": "unknown"
+  },
+  "vsm-crawler": {
+    "name": "VSMCrawler",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "VSMCrawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ex-crawler": {
+    "name": "Ex-Crawler",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Ex-Crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "isara-search": {
+    "name": "Isara-Search",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Isara-",
+        "Isara"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "gsa-crawler": {
+    "name": "gsa-crawler",
+    "manufacturer": "google",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "gsa-crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "websuse-crawler": {
+    "name": "Websuse Crawler",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Websuse\\.de"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "broker-db-crawler": {
+    "name": "broker-db-crawler",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "broker-db-crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "audisto-crawler": {
+    "name": "Audisto Crawler",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Audisto Crawler"
+      ]
+    },
+    "engine": "unknown"
   }
 }

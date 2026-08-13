@@ -912,6 +912,7 @@ final class Device implements DeviceInterface
             'cph2452' => 'oppo=oppo cph2452',
             'cph2354' => 'oppo=oppo cph2354',
             'opg06' => 'oppo=oppo opg06',
+            'pclm10' => 'oppo=oppo pclm10',
             // Xiaomi/Poco
             'redmi note 9 pro', 'xiaomi redmi note 9 pro', 'redmi note9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro', 'redmi_note_8_pro', 'xiaomi redmi note 8 pro', 'redmi note8 pro' => 'xiaomi=xiaomi redmi note 8 pro',

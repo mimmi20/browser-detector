@@ -395,6 +395,7 @@ final readonly class Headers
                         case 'sogou web spider':
                         case 'qqbrowser':
                         case 'googlebot':
+                        case 'audisto-crawler':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 

@@ -967,6 +967,7 @@ final class DeviceTest extends TestCase
             ['CPH2452', 'oppo=oppo cph2452'],
             ['CPH2354', 'oppo=oppo cph2354'],
             ['OPG06', 'oppo=oppo opg06'],
+            ['PCLM10', 'oppo=oppo pclm10'],
             // Xiaomi/Poco
             ['Redmi Note 9 Pro', 'xiaomi=xiaomi redmi note 9 pro'],
             ['Xiaomi Redmi Note 9 Pro', 'xiaomi=xiaomi redmi note 9 pro'],
