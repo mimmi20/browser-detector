@@ -4255,6 +4255,10 @@ enum Company: string implements CompanyInterface
 
     case bahnhof = 'Bahnhof';
 
+    case vandenBorre = 'Vanden Borre';
+
+    case tokaiCommunications = 'TOKAI Communications';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -6380,6 +6384,8 @@ enum Company: string implements CompanyInterface
             'libertyglobal', 'liberty-global', 'liberty global' => self::libertyGlobal,
             'tdc' => self::tdc,
             'bahnhof', 'bahnhof ab' => self::bahnhof,
+            'vandenborre', 'vanden-borre', 'vanden borre' => self::vandenBorre,
+            'tokaicommunications', 'tokai communications corporation', 'tokai-communications', 'tokai communications' => self::tokaiCommunications,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -7247,6 +7253,7 @@ enum Company: string implements CompanyInterface
             self::fortum => 'Fortum Consumer Solutions AS',
             self::tele2 => 'Tele2 AB',
             self::bahnhof => 'Bahnhof AB',
+            self::tokaiCommunications => 'TOKAI Communications Corporation',
             self::unknown => null,
             default => $this->value,
         };
@@ -8054,6 +8061,8 @@ enum Company: string implements CompanyInterface
             self::nextGenTel => 'next-gen-tel',
             self::monacoTelecom => 'monaco-telecom',
             self::libertyGlobal => 'liberty-global',
+            self::vandenBorre => 'vanden-borre',
+            self::tokaiCommunications => 'tokai-communications',
             default => $this->name,
         };
     }

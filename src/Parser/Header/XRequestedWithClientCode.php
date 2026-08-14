@@ -469,6 +469,8 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.fsecure.ms.tdcerhverv' => 'tdc-erhverv-guard',
             'com.fsecure.ms.bahnhof' => 'bahnhof-safe',
             'com.linkedin.android' => 'linkedin-app',
+            'com.fsecure.ms.vandenborre' => 'vanden-borre-my-security',
+            'com.fsecure.ms.tokaisa' => 'tokai-safe',
             default => null,
         };
     }

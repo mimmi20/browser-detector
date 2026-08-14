@@ -12754,6 +12754,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Bahnhof',
                 'key' => 'bahnhof',
             ],
+            [
+                'type' => 'Vanden Borre',
+                'name' => 'Vanden Borre',
+                'brandname' => 'Vanden Borre',
+                'key' => 'vanden-borre',
+            ],
+            [
+                'type' => 'TOKAI Communications',
+                'name' => 'TOKAI Communications Corporation',
+                'brandname' => 'TOKAI Communications',
+                'key' => 'tokai-communications',
+            ],
         ];
     }
 

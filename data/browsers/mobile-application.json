@@ -5990,5 +5990,49 @@
       "search": null
     },
     "engine": null
+  },
+  "vanden-borre-my-security": {
+    "name": "Vanden Borre My Security",
+    "manufacturer": "vanden-borre",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "tokai-safe": {
+    "name": "TOKAI SAFE",
+    "manufacturer": "tokai-communications",
+    "type": "mobile-application",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "yahoo-search": {
+    "name": "Yahoo Search",
+    "manufacturer": "yahoo",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YahooSearch"
+      ]
+    },
+    "engine": null
+  },
+  "google-news": {
+    "name": "Google News",
+    "manufacturer": "google",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GNews Android"
+      ]
+    },
+    "engine": null
   }
 }

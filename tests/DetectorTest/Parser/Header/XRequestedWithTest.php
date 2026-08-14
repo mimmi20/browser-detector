@@ -656,6 +656,8 @@ final class XRequestedWithTest extends TestCase
             ['com.fsecure.ms.tdcerhverv', true, 'tdc-erhverv-guard', true, null, false, Os::unknown],
             ['com.fsecure.ms.bahnhof', true, 'bahnhof-safe', true, null, false, Os::unknown],
             ['com.linkedin.android', true, 'linkedin-app', true, null, false, Os::unknown],
+            ['com.fsecure.ms.vandenborre', true, 'vanden-borre-my-security', true, null, false, Os::unknown],
+            ['com.fsecure.ms.tokaisa', true, 'tokai-safe', true, null, false, Os::unknown],
         ];
     }
 }
