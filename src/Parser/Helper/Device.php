@@ -3417,6 +3417,7 @@ final class Device implements DeviceInterface
             'sc-52f' => 'samsung=samsung sc-52f',
             'sm-a556d', 'samsung sm-a556d' => 'samsung=samsung sm-a556d',
             'sc-53e' => 'samsung=samsung sc-53e',
+            'sm-f976b', 'samsung sm-f976b' => 'samsung=samsung sm-f976b',
             // Huawei
             'vog-l29' => 'huawei=huawei vog-l29',
             'nen-lx1' => 'huawei=huawei nen-lx1',

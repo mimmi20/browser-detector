@@ -12658,6 +12658,102 @@ final class CompanyTest extends TestCase
                 'brandname' => 'SpaceX',
                 'key' => 'space-x',
             ],
+            [
+                'type' => 'Talent Connect',
+                'name' => 'Talent Connect Co. Ltd.',
+                'brandname' => 'Talent Connect',
+                'key' => 'talent-connect',
+            ],
+            [
+                'type' => 'Cyfrowy Polsat',
+                'name' => 'Cyfrowy Polsat S.A.',
+                'brandname' => 'Cyfrowy Polsat',
+                'key' => 'cyfrowy-polsat',
+            ],
+            [
+                'type' => 'Polkomtel',
+                'name' => 'Polkomtel Sp. z o.o.',
+                'brandname' => 'Polkomtel',
+                'key' => 'polkomtel',
+            ],
+            [
+                'type' => 'Multimedia Polska',
+                'name' => 'Multimedia Polska Sp. z o.o.',
+                'brandname' => 'Multimedia Polska',
+                'key' => 'multimedia-polska',
+            ],
+            [
+                'type' => 'YouSee',
+                'name' => 'YouSee',
+                'brandname' => 'YouSee',
+                'key' => 'yousee',
+            ],
+            [
+                'type' => 'Odido Nederland',
+                'name' => 'Odido Nederland',
+                'brandname' => 'Odido Nederland',
+                'key' => 'odido-nederland',
+            ],
+            [
+                'type' => 'TelecomItalia',
+                'name' => 'TelecomItalia',
+                'brandname' => 'TelecomItalia',
+                'key' => 'telecom-italia',
+            ],
+            [
+                'type' => 'Norlys',
+                'name' => 'Norlys',
+                'brandname' => 'Norlys',
+                'key' => 'norlys',
+            ],
+            [
+                'type' => 'A1 Telekom Austria',
+                'name' => 'A1 Telekom Austria AG',
+                'brandname' => 'A1 Telekom Austria',
+                'key' => 'a1-telekom-austria',
+            ],
+            [
+                'type' => 'NextGenTel',
+                'name' => 'NextGenTel AS',
+                'brandname' => 'NextGenTel',
+                'key' => 'next-gen-tel',
+            ],
+            [
+                'type' => 'Fortum',
+                'name' => 'Fortum Consumer Solutions AS',
+                'brandname' => 'Fortum',
+                'key' => 'fortum',
+            ],
+            [
+                'type' => 'Monaco Telecom',
+                'name' => 'Monaco Telecom',
+                'brandname' => 'Monaco Telecom',
+                'key' => 'monaco-telecom',
+            ],
+            [
+                'type' => 'Tele2',
+                'name' => 'Tele2 AB',
+                'brandname' => 'Tele2',
+                'key' => 'tele2',
+            ],
+            [
+                'type' => 'Liberty Global',
+                'name' => 'Liberty Global',
+                'brandname' => 'Liberty Global',
+                'key' => 'liberty-global',
+            ],
+            [
+                'type' => 'TDC',
+                'name' => 'TDC',
+                'brandname' => 'TDC',
+                'key' => 'tdc',
+            ],
+            [
+                'type' => 'Bahnhof',
+                'name' => 'Bahnhof AB',
+                'brandname' => 'Bahnhof',
+                'key' => 'bahnhof',
+            ],
         ];
     }
 

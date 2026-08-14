@@ -4751,6 +4751,8 @@ final class DeviceTest extends TestCase
             ['SM-A556D', 'samsung=samsung sm-a556d'],
             ['SAMSUNG SM-A556D', 'samsung=samsung sm-a556d'],
             ['SC-53E', 'samsung=samsung sc-53e'],
+            ['SM-F976B', 'samsung=samsung sm-f976b'],
+            ['SAMSUNG SM-F976B', 'samsung=samsung sm-f976b'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['LGE-AN20', 'huawei=huawei lge-an20'],
