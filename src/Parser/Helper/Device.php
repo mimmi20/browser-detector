@@ -1780,6 +1780,7 @@ final class Device implements DeviceInterface
             'redmi note 15 pro+ 5g' => 'xiaomi=xiaomi redmi note 15 pro+ 5g',
             'm025ec', 'xiaomi m025ec' => 'xiaomi=xiaomi m025ec',
             'redmi k30 5g speed' => 'xiaomi=xiaomi redmi k30 5g speed',
+            'redmi note 15 5g' => 'xiaomi=xiaomi redmi note 15 5g',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',

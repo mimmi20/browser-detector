@@ -1929,6 +1929,7 @@ final class DeviceTest extends TestCase
             ['M025EC', 'xiaomi=xiaomi m025ec'],
             ['Xiaomi M025EC', 'xiaomi=xiaomi m025ec'],
             ['Redmi K30 5G Speed', 'xiaomi=xiaomi redmi k30 5g speed'],
+            ['REDMI Note 15 5G', 'xiaomi=xiaomi redmi note 15 5g'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
