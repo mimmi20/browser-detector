@@ -12766,6 +12766,24 @@ final class CompanyTest extends TestCase
                 'brandname' => 'TOKAI Communications',
                 'key' => 'tokai-communications',
             ],
+            [
+                'type' => 'Econ',
+                'name' => 'Econ',
+                'brandname' => 'Econ',
+                'key' => 'econ',
+            ],
+            [
+                'type' => 'Claro',
+                'name' => 'Claro',
+                'brandname' => 'Claro',
+                'key' => 'claro',
+            ],
+            [
+                'type' => 'LasGario Studio',
+                'name' => 'LasGario Studio',
+                'brandname' => 'LasGario Studio',
+                'key' => 'lasgario-studio',
+            ],
         ];
     }
 

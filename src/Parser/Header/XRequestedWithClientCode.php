@@ -471,6 +471,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.linkedin.android' => 'linkedin-app',
             'com.fsecure.ms.vandenborre' => 'vanden-borre-my-security',
             'com.fsecure.ms.tokaisa' => 'tokai-safe',
+            'com.securex.browser' => 'secure-x',
             default => null,
         };
     }

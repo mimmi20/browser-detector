@@ -658,6 +658,7 @@ final class XRequestedWithTest extends TestCase
             ['com.linkedin.android', true, 'linkedin-app', true, null, false, Os::unknown],
             ['com.fsecure.ms.vandenborre', true, 'vanden-borre-my-security', true, null, false, Os::unknown],
             ['com.fsecure.ms.tokaisa', true, 'tokai-safe', true, null, false, Os::unknown],
+            ['com.securex.browser', true, 'secure-x', true, null, false, Os::unknown],
         ];
     }
 }
