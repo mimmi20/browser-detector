@@ -970,6 +970,7 @@ final class DeviceTest extends TestCase
             ['PCLM10', 'oppo=oppo pclm10'],
             ['PLL110', 'oppo=oppo pll110'],
             ['Oppo Find X6 Pro', 'oppo=oppo find x6 pro'],
+            ['PELM00', 'oppo=oppo pelm00'],
             // Xiaomi/Poco
             ['Redmi Note 9 Pro', 'xiaomi=xiaomi redmi note 9 pro'],
             ['Xiaomi Redmi Note 9 Pro', 'xiaomi=xiaomi redmi note 9 pro'],
@@ -6059,6 +6060,11 @@ final class DeviceTest extends TestCase
             ['HUAWEI PRA-LX2', 'huawei=huawei pra-lx2'],
             ['PRA-LX1', 'huawei=huawei pra-lx1'],
             ['HUAWEI PRA-LX1', 'huawei=huawei pra-lx1'],
+            ['nova 5z', 'huawei=huawei nova 5z'],
+            ['SPN-TL00', 'huawei=huawei spn-tl00'],
+            ['HUAWEI SPN-TL00', 'huawei=huawei spn-tl00'],
+            ['SPN-AL00', 'huawei=huawei spn-al00'],
+            ['HUAWEI SPN-AL00', 'huawei=huawei spn-al00'],
             // Lenovo
             ['Lenovo TB-X304F', 'lenovo=lenovo tb-x304f'],
             ['X1030X', 'lenovo=lenovo x1030x'],
@@ -6535,6 +6541,7 @@ final class DeviceTest extends TestCase
             ['Realme RMX5121', 'realme=realme rmx5121'],
             ['RMX5253', 'realme=realme rmx5253'],
             ['Realme RMX5253', 'realme=realme rmx5253'],
+            ['Realme V3', 'realme=realme v3'],
             // Motorola
             ['moto g200 5G', 'motorola=motorola moto g200 5g'],
             ['motorola razr 5G', 'motorola=motorola razr 5g'],
@@ -7663,10 +7670,12 @@ final class DeviceTest extends TestCase
             ['vivo 1908_19', 'vivo=vivo 1908_19'],
             ['vivo 1908', 'vivo=vivo 1908'],
             ['vivo 1907', 'vivo=vivo 1907'],
+            ['vivo 1907_19', 'vivo=vivo 1907_19'],
             ['vivo 1906', 'vivo=vivo 1906'],
             ['vivo 1904', 'vivo=vivo 1904'],
             ['vivo 1902', 'vivo=vivo 1902'],
             ['vivo 1901', 'vivo=vivo 1901'],
+            ['vivo 1901_19', 'vivo=vivo 1901_19'],
             ['vivo 1851', 'vivo=vivo 1851'],
             ['vivo 1850', 'vivo=vivo 1850'],
             ['vivo 1823', 'vivo=vivo 1823'],
@@ -9608,6 +9617,7 @@ final class DeviceTest extends TestCase
             ['PET 101-H232E-13', 'peaq=peaq pet 101-h232e-13'],
             ['PET 1008-F464E', 'peaq=peaq pet 1008-f464e'],
             ['PGS1000', 'peaq=peaq pgs1000'],
+            ['PGS4000', 'peaq=peaq pgs4000'],
             // casper
             ['VIA G5', 'casper=casper via g5'],
             ['VIA M40', 'casper=casper via m40'],
@@ -11774,6 +11784,7 @@ final class DeviceTest extends TestCase
             ['V102', 'symphony=symphony v102'],
             ['innova 40', 'symphony=symphony innova 40'],
             ['Symphony R100', 'symphony=symphony r100'],
+            ['ATOM 5', 'symphony=symphony atom 5'],
             // pegatron
             ['chagall', 'pegatron=pegatron chagall'],
             // pendo
@@ -11921,6 +11932,7 @@ final class DeviceTest extends TestCase
             ['GO700FR', 'go-tv=go-tv go700fr'],
             // sk-broadband
             ['BID-AT200', 'sk-broadband=sk-broadband bid-at200'],
+            ['BIP-UW200', 'sk-broadband=sk-broadband bip-uw200'],
             // blaupunkt
             ['A-STREAM', 'blaupunkt=blaupunkt a-stream'],
             ['BLAUPUNKT 4K Android TV', 'blaupunkt=blaupunkt 4k android tv'],
@@ -12337,6 +12349,7 @@ final class DeviceTest extends TestCase
             ['K55USY23', 'razz=razz k55usy23'],
             ['C50USY24F', 'razz=razz c50usy24f'],
             ['CE32FSA26F', 'razz=razz ce32fsa26f'],
+            ['HC55USY26F', 'razz=razz hc55usy26f'],
             // ktc
             ['800P11B', 'ktc=ktc 800p11b'],
             ['55UE-BYVB', 'ktc=ktc 55ue-byvb'],
@@ -12652,6 +12665,14 @@ final class DeviceTest extends TestCase
             ['EX-32HS024B', 'econ=econ ex-32hs024b'],
             // claro
             ['Claro TV Box 4k', 'claro=claro tv box 4k'],
+            // kiano
+            ['KIANO Elegance TV 43', 'kiano=kiano elegance tv 43'],
+            // meberry
+            ['K107-EEA', 'meberry=meberry k107-eea'],
+            // sansui
+            ['Apollo Premium2K TV', 'sansui=sansui apollo premium2k tv'],
+            // h96
+            ['H96_Max_M9', 'h96=h96 max m9'],
             // generic
             ['SMART_TV', 'unknown=general tv device'],
             ['SMART TV', 'unknown=general tv device'],

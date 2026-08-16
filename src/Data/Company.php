@@ -4265,6 +4265,10 @@ enum Company: string implements CompanyInterface
 
     case lasGarioStudio = 'LasGario Studio';
 
+    case meberry = 'Meberry';
+
+    case h96 = 'H96';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -6395,6 +6399,8 @@ enum Company: string implements CompanyInterface
             'econ' => self::econ,
             'claro' => self::claro,
             'lasgariostudio', 'lasgario-studio', 'lasgario studio' => self::lasGarioStudio,
+            'meberry' => self::meberry,
+            'h96', 'shenzhen haochuangyi technology' => self::h96,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -7263,6 +7269,7 @@ enum Company: string implements CompanyInterface
             self::tele2 => 'Tele2 AB',
             self::bahnhof => 'Bahnhof AB',
             self::tokaiCommunications => 'TOKAI Communications Corporation',
+            self::h96 => 'Shenzhen Haochuangyi Technology',
             self::unknown => null,
             default => $this->value,
         };

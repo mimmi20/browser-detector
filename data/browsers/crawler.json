@@ -7067,5 +7067,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "gwf-carbon-txt-crawler": {
+    "name": "gwf-carbon-txt-crawler",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "gwf-carbon-txt-crawler"
+      ]
+    },
+    "engine": "unknown"
   }
 }

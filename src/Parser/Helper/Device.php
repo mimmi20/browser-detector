@@ -915,6 +915,7 @@ final class Device implements DeviceInterface
             'pclm10' => 'oppo=oppo pclm10',
             'pll110' => 'oppo=oppo pll110',
             'oppo find x6 pro' => 'oppo=oppo find x6 pro',
+            'pelm00' => 'oppo=oppo pelm00',
             // Xiaomi/Poco
             'redmi note 9 pro', 'xiaomi redmi note 9 pro', 'redmi note9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro', 'redmi_note_8_pro', 'xiaomi redmi note 8 pro', 'redmi note8 pro' => 'xiaomi=xiaomi redmi note 8 pro',
@@ -4326,6 +4327,9 @@ final class Device implements DeviceInterface
             'pra-lx3', 'huawei pra-lx3' => 'huawei=huawei pra-lx3',
             'pra-lx2', 'huawei pra-lx2' => 'huawei=huawei pra-lx2',
             'pra-lx1', 'huawei pra-lx1' => 'huawei=huawei pra-lx1',
+            'nova 5z' => 'huawei=huawei nova 5z',
+            'spn-tl00', 'huawei spn-tl00' => 'huawei=huawei spn-tl00',
+            'spn-al00', 'huawei spn-al00' => 'huawei=huawei spn-al00',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -4761,6 +4765,7 @@ final class Device implements DeviceInterface
             'rmx5120', 'realme rmx5120' => 'realme=realme rmx5120',
             'rmx5121', 'realme rmx5121' => 'realme=realme rmx5121',
             'rmx5253', 'realme rmx5253' => 'realme=realme rmx5253',
+            'realme v3' => 'realme=realme v3',
             // Motorola
             'moto g200 5g' => 'motorola=motorola moto g200 5g',
             'motorola razr 5g' => 'motorola=motorola razr 5g',
@@ -5766,10 +5771,12 @@ final class Device implements DeviceInterface
             'vivo 1908_19' => 'vivo=vivo 1908_19',
             'vivo 1908' => 'vivo=vivo 1908',
             'vivo 1907' => 'vivo=vivo 1907',
+            'vivo 1907_19' => 'vivo=vivo 1907_19',
             'vivo 1906' => 'vivo=vivo 1906',
             'vivo 1904' => 'vivo=vivo 1904',
             'vivo 1902' => 'vivo=vivo 1902',
             'vivo 1901' => 'vivo=vivo 1901',
+            'vivo 1901_19' => 'vivo=vivo 1901_19',
             'vivo 1851' => 'vivo=vivo 1851',
             'vivo 1850' => 'vivo=vivo 1850',
             'vivo 1823' => 'vivo=vivo 1823',
@@ -7550,6 +7557,7 @@ final class Device implements DeviceInterface
             'pet 101-h232e-13' => 'peaq=peaq pet 101-h232e-13',
             'pet 1008-f464e' => 'peaq=peaq pet 1008-f464e',
             'pgs1000' => 'peaq=peaq pgs1000',
+            'pgs4000' => 'peaq=peaq pgs4000',
             // casper
             'via g5' => 'casper=casper via g5',
             'via m40' => 'casper=casper via m40',
@@ -9519,6 +9527,7 @@ final class Device implements DeviceInterface
             'v102' => 'symphony=symphony v102',
             'innova 40' => 'symphony=symphony innova 40',
             'symphony r100' => 'symphony=symphony r100',
+            'atom 5' => 'symphony=symphony atom 5',
             // pegatron
             'chagall' => 'pegatron=pegatron chagall',
             // pendo
@@ -9662,6 +9671,7 @@ final class Device implements DeviceInterface
             'go700fr' => 'go-tv=go-tv go700fr',
             // sk-broadband
             'bid-at200' => 'sk-broadband=sk-broadband bid-at200',
+            'bip-uw200' => 'sk-broadband=sk-broadband bip-uw200',
             // blaupunkt
             'a-stream' => 'blaupunkt=blaupunkt a-stream',
             'blaupunkt 4k android tv' => 'blaupunkt=blaupunkt 4k android tv',
@@ -10074,6 +10084,7 @@ final class Device implements DeviceInterface
             'k55usy23' => 'razz=razz k55usy23',
             'c50usy24f' => 'razz=razz c50usy24f',
             'ce32fsa26f' => 'razz=razz ce32fsa26f',
+            'hc55usy26f' => 'razz=razz hc55usy26f',
             // ktc
             '800p11b' => 'ktc=ktc 800p11b',
             '55ue-byvb' => 'ktc=ktc 55ue-byvb',
@@ -10382,6 +10393,14 @@ final class Device implements DeviceInterface
             'ex-32hs024b' => 'econ=econ ex-32hs024b',
             // claro
             'claro tv box 4k' => 'claro=claro tv box 4k',
+            // kiano
+            'kiano elegance tv 43' => 'kiano=kiano elegance tv 43',
+            // meberry
+            'k107-eea' => 'meberry=meberry k107-eea',
+            // sansui
+            'apollo premium2k tv' => 'sansui=sansui apollo premium2k tv',
+            // h96
+            'h96_max_m9' => 'h96=h96 max m9',
             // generic
             'smart_tv', 'smart tv', 'smart tv pro', 'smarttv', '4k smart tv', '2k smart tv', '2k pa smart tv', 'tv box', 'tvbox' => 'unknown=general tv device',
             // other

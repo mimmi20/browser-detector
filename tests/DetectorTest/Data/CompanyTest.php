@@ -12784,6 +12784,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'LasGario Studio',
                 'key' => 'lasgario-studio',
             ],
+            [
+                'type' => 'Meberry',
+                'name' => 'Meberry',
+                'brandname' => 'Meberry',
+                'key' => 'meberry',
+            ],
+            [
+                'type' => 'H96',
+                'name' => 'Shenzhen Haochuangyi Technology',
+                'brandname' => 'H96',
+                'key' => 'h96',
+            ],
         ];
     }
 
