@@ -7079,5 +7079,71 @@
       ]
     },
     "engine": "unknown"
+  },
+  "jungle-key-thumbnail": {
+    "name": "JungleKeyThumbnail",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "JungleKeyThumbnail"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "bd-fetch": {
+    "name": "BDFetch",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "dialogsearchcom-bot": {
+    "name": "DialogSearch.com Bot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DialogSearch\\.com Bot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "vorboss web crawler": {
+    "name": "Vorboss Web Crawler",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "kiodia-spider": {
+    "name": "Kiodia Spider",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Kiodia Spider"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "panscient": {
+    "name": "Panscient",
+    "manufacturer": "panscient",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
   }
 }

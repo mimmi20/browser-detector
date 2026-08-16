@@ -12796,6 +12796,36 @@ final class CompanyTest extends TestCase
                 'brandname' => 'H96',
                 'key' => 'h96',
             ],
+            [
+                'type' => 'Snyk',
+                'name' => 'Snyk Limited',
+                'brandname' => 'Snyk',
+                'key' => 'snyk',
+            ],
+            [
+                'type' => 'Panscient',
+                'name' => 'Panscient, Inc.',
+                'brandname' => 'Panscient',
+                'key' => 'panscient',
+            ],
+            [
+                'type' => 'Olto',
+                'name' => 'Olto',
+                'brandname' => 'Olto',
+                'key' => 'olto',
+            ],
+            [
+                'type' => 'Skyline',
+                'name' => 'Skyline',
+                'brandname' => 'Skyline',
+                'key' => 'skyline',
+            ],
+            [
+                'type' => 'Maunfeld',
+                'name' => 'Maunfeld',
+                'brandname' => 'Maunfeld',
+                'key' => 'maunfeld',
+            ],
         ];
     }
 
