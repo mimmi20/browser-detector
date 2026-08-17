@@ -665,6 +665,10 @@ final class DeviceTest extends TestCase
             ['OnePlus8Pro', 'oneplus=oneplus 8 pro'],
             ['OPD2504', 'oneplus=oneplus opd2504'],
             ['OPD2505', 'oneplus=oneplus opd2505'],
+            ['OPD2514', 'oneplus=oneplus opd2514'],
+            ['OPD2413', 'oneplus=oneplus opd2413'],
+            ['OPD2305', 'oneplus=oneplus opd2305'],
+            ['OPD2407', 'oneplus=oneplus opd2407'],
             // Oppo
             ['CPH2065', 'oppo=oppo cph2065'],
             ['CPH2211', 'oppo=oppo cph2211'],
@@ -978,6 +982,9 @@ final class DeviceTest extends TestCase
             ['OPD2506', 'oppo=oppo opd2506'],
             ['OPD2503', 'oppo=oppo opd2503'],
             ['OPD2502', 'oppo=oppo opd2502'],
+            ['OPD2101', 'oppo=oppo opd2101'],
+            ['OPD2420', 'oppo=oppo opd2420'],
+            ['OPD2417', 'oppo=oppo opd2417'],
             // Xiaomi/Poco
             ['Redmi Note 9 Pro', 'xiaomi=xiaomi redmi note 9 pro'],
             ['Xiaomi Redmi Note 9 Pro', 'xiaomi=xiaomi redmi note 9 pro'],
@@ -2122,6 +2129,8 @@ final class DeviceTest extends TestCase
             ['Z2473', 'zte=zte z2473'],
             ['ZTE Blade A35 Lite', 'zte=zte blade a35 lite'],
             ['W205DS', 'zte=zte w205ds'],
+            ['W202DS', 'zte=zte w202ds'],
+            ['W201DS', 'zte=zte w201ds'],
             // Samsung
             ['SM-A415F', 'samsung=samsung sm-a415f'],
             ['SM-A505FN', 'samsung=samsung sm-a505fn'],
@@ -10143,6 +10152,7 @@ final class DeviceTest extends TestCase
             ['CP07', 'coolpad=coolpad cp07'],
             ['Coolpad 3320A', 'coolpad=coolpad 3320a'],
             ['Coolpad 3622A', 'coolpad=coolpad 3622a'],
+            ['CPDM1Y', 'coolpad=coolpad cpdm1y'],
             // tcl
             ['T766H_EEA', 'tcl=tcl t766h_eea'],
             ['T506K', 'tcl=tcl t506k'],
@@ -11901,6 +11911,7 @@ final class DeviceTest extends TestCase
             ['TYH631M', 'china-telecom=china-telecom tyh631m'],
             ['TYH651M-02', 'china-telecom=china-telecom tyh651m-02'],
             ['TYH201H', 'china-telecom=china-telecom tyh201h'],
+            ['TYH123U', 'china-telecom=china-telecom tyh123u'],
             // rephone
             ['2000_000170_00', 'rephone=rephone 2000_000170_00'],
             // magenta

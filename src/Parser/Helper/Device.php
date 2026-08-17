@@ -615,6 +615,10 @@ final class Device implements DeviceInterface
             'oneplus8pro' => 'oneplus=oneplus 8 pro',
             'opd2504' => 'oneplus=oneplus opd2504',
             'opd2505' => 'oneplus=oneplus opd2505',
+            'opd2514' => 'oneplus=oneplus opd2514',
+            'opd2413' => 'oneplus=oneplus opd2413',
+            'opd2305' => 'oneplus=oneplus opd2305',
+            'opd2407' => 'oneplus=oneplus opd2407',
             // Oppo
             'cph2065' => 'oppo=oppo cph2065',
             'cph2211' => 'oppo=oppo cph2211',
@@ -923,6 +927,9 @@ final class Device implements DeviceInterface
             'opd2506' => 'oppo=oppo opd2506',
             'opd2503' => 'oppo=oppo opd2503',
             'opd2502' => 'oppo=oppo opd2502',
+            'opd2101' => 'oppo=oppo opd2101',
+            'opd2420' => 'oppo=oppo opd2420',
+            'opd2417' => 'oppo=oppo opd2417',
             // Xiaomi/Poco
             'redmi note 9 pro', 'xiaomi redmi note 9 pro', 'redmi note9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro', 'redmi_note_8_pro', 'xiaomi redmi note 8 pro', 'redmi note8 pro' => 'xiaomi=xiaomi redmi note 8 pro',
@@ -1957,6 +1964,8 @@ final class Device implements DeviceInterface
             'z2473' => 'zte=zte z2473',
             'zte blade a35 lite' => 'zte=zte blade a35 lite',
             'w205ds' => 'zte=zte w205ds',
+            'w202ds' => 'zte=zte w202ds',
+            'w201ds' => 'zte=zte w201ds',
             // Samsung
             'sm-a505fn', 'samsung sm-a505fn' => 'samsung=samsung sm-a505fn',
             'sm-a515f', 'samsung sm-a515f', 'sm-a515f/a515fxxu8hwi1' => 'samsung=samsung sm-a515f',
@@ -7982,6 +7991,7 @@ final class Device implements DeviceInterface
             'cp07' => 'coolpad=coolpad cp07',
             'coolpad 3320a' => 'coolpad=coolpad 3320a',
             'coolpad 3622a' => 'coolpad=coolpad 3622a',
+            'cpdm1y' => 'coolpad=coolpad cpdm1y',
             // tcl
             't766h_eea' => 'tcl=tcl t766h_eea',
             't506k' => 'tcl=tcl t506k',
@@ -9632,6 +9642,7 @@ final class Device implements DeviceInterface
             'tyh631m' => 'china-telecom=china-telecom tyh631m',
             'tyh651m-02' => 'china-telecom=china-telecom tyh651m-02',
             'tyh201h' => 'china-telecom=china-telecom tyh201h',
+            'tyh123u' => 'china-telecom=china-telecom tyh123u',
             // rephone
             '2000_000170_00' => 'rephone=rephone 2000_000170_00',
             // magenta
