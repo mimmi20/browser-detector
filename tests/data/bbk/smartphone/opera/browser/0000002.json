@@ -181,6 +181,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 16; V2551A Build/BP2A.250605.031.A3_V000L1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.91 Mobile Safari/537.36 OPX/3.3"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "V2551A",
+      "marketingName": "iQOO Z11 (China)",
+      "manufacturer": "BBK",
+      "brand": "vivo",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2800,
+        "height": 1260,
+        "touch": true,
+        "size": 6.83
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera GX",
+      "modus": null,
+      "version": "3.3.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "149.0.7827.91",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 16; V2546A Build/BP2A.250605.031.A3_V000L1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.91 Mobile Safari/537.36 OPX/3.3"
     },
     "device": {
@@ -1616,6 +1661,51 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.6099.234",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Realme V3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.120 Mobile Safari/537.36 OPR/113.0.5230.55"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "V3",
+      "marketingName": "V3 5G",
+      "manufacturer": "BBK",
+      "brand": "Realme",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "113.0.5230.55",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "127.0.6533.120",
       "manufacturer": "Google"
     }
   },

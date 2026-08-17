@@ -3871,5 +3871,50 @@
       "version": "120.0.0",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_5_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/23F84 Safari/604.1 [FBAN/FBIOS;FBAV/572.0.0.44.72;FBBV/1027143932;FBDV/iPhone17,4;FBMD/iPhone;FBSN/iOS;FBSV/26.5.2;FBSS/3;FBID/phone;FBLC/nl_NL;FBOP/5;FBRV/1033213748;IABMV/1]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone 17,4",
+      "marketingName": "iPhone 16 Plus",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2796,
+        "height": 1290,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "26.5.2",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "572.0.0.44.72",
+      "manufacturer": "Meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "Apple"
+    }
   }
 ]

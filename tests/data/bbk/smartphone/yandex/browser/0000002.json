@@ -1,6 +1,96 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 16; V2550) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.2244 YaApp_Android/26.40.1 YaSearchBrowser/26.40.1 BroPP/1.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "V2550",
+      "marketingName": "V70 FE",
+      "manufacturer": "BBK",
+      "brand": "vivo",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2800,
+        "height": 1260,
+        "touch": true,
+        "size": 6.83
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "26.40.1",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "146.0.7680.2244",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 16; V2547DA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "V2547DA",
+      "marketingName": "X300 Ultra",
+      "manufacturer": "BBK",
+      "brand": "vivo",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 3168,
+        "height": 1440,
+        "touch": true,
+        "size": 6.82
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "26.6.0.304.00",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "148.0.7778.304",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 16; V2547DA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.51 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36"
     },
     "device": {
@@ -4406,96 +4496,6 @@
     "engine": {
       "name": "Blink",
       "version": "140.0.7339.2232",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 15; V2443A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "V2443A",
-      "marketingName": "Y50 (China)",
-      "manufacturer": "BBK",
-      "brand": "vivo",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.74
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "15.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Yandex Browser",
-      "modus": null,
-      "version": "26.6.0.304.00",
-      "manufacturer": "Yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "148.0.7778.304",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 15; V2443A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.144 YaApp_Android/26.60.1 YaSearchBrowser/26.60.1 BroPP/1.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "V2443A",
-      "marketingName": "Y50 (China)",
-      "manufacturer": "BBK",
-      "brand": "vivo",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.74
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "15.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Yandex Search Browser",
-      "modus": null,
-      "version": "26.60.1",
-      "manufacturer": "Yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "148.0.7778.144",
       "manufacturer": "Google"
     }
   }

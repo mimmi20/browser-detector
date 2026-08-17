@@ -1753,5 +1753,50 @@
       "version": "148.0.7778.120",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "[FBAN/FB4A;FBAV/572.0.0.38.71;FBBV/1027405186;FBDM/{density=2.25,width=2244,height=1008};FBLC/de_DE;FBRV/1032054666;FBCR/winSIM;FBMF/Google;FBBD/google;FBPN/com.facebook.katana;FBDV/Pixel 8 Pro;FBSV/17;FBOP/1;FBCA/arm64-v8a:;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Pixel 8 Pro",
+      "marketingName": "Pixel 8 Pro",
+      "manufacturer": "Google",
+      "brand": "Google",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2992,
+        "height": 1344,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "17.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "572.0.0.38.71",
+      "manufacturer": "Meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
   }
 ]

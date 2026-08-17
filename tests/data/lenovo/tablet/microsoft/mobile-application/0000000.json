@@ -133,5 +133,61 @@
       "version": "143.0.7499.115",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"TB330FU\"",
+      "x-requested-with": "com.microsoft.bing",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"15.0.0\"",
+      "sec-ch-ua": "\"Chromium\";v=\"124\", \"Microsoft Edge\";v=\"124\", \"Not-A.Brand\";v=\"99\"",
+      "sec-ch-ua-full-version": "\"124.0.2478.64\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Desktop\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-wow64": "?0",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TB330FU",
+      "marketingName": "Tab M11 Wi-Fi",
+      "manufacturer": "Lenovo",
+      "brand": "Lenovo",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 11
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Bing Search",
+      "modus": null,
+      "version": null,
+      "manufacturer": "Microsoft",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "124.0.0",
+      "manufacturer": "Google"
+    }
   }
 ]

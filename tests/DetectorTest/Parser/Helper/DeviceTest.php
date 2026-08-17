@@ -4784,6 +4784,9 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-F976B', 'samsung=samsung sm-f976b'],
             ['Galaxy Z Fold5', 'samsung=samsung galaxy z fold 5'],
             ['Galaxy S24 Ultra', 'samsung=samsung galaxy s24 ultra'],
+            ['SCG33', 'samsung=samsung scg33'],
+            ['SM-A253J', 'samsung=samsung sm-a253j'],
+            ['SAMSUNG SM-A253J', 'samsung=samsung sm-a253j'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['LGE-AN20', 'huawei=huawei lge-an20'],
@@ -6084,6 +6087,12 @@ final class DeviceTest extends TestCase
             ['HUAWEI SPN-AL00', 'huawei=huawei spn-al00'],
             ['Hera-BD00', 'huawei=huawei hera-bd00'],
             ['HUAWEI Hera-BD00', 'huawei=huawei hera-bd00'],
+            ['VYG-AL30', 'huawei=huawei vyg-al30'],
+            ['HUAWEI VYG-AL30', 'huawei=huawei vyg-al30'],
+            ['VYG-AL00', 'huawei=huawei vyg-al00'],
+            ['HUAWEI VYG-AL00', 'huawei=huawei vyg-al00'],
+            ['AVA-PA00', 'huawei=huawei ava-pa00'],
+            ['HUAWEI AVA-PA00', 'huawei=huawei ava-pa00'],
             // Lenovo
             ['Lenovo TB-X304F', 'lenovo=lenovo tb-x304f'],
             ['X1030X', 'lenovo=lenovo x1030x'],
@@ -6567,6 +6576,14 @@ final class DeviceTest extends TestCase
             ['Realme RMX5112', 'realme=realme rmx5112'],
             ['RMX5105', 'realme=realme rmx5105'],
             ['Realme RMX5105', 'realme=realme rmx5105'],
+            ['RMX5107', 'realme=realme rmx5107'],
+            ['Realme RMX5107', 'realme=realme rmx5107'],
+            ['RMX5171', 'realme=realme rmx5171'],
+            ['Realme RMX5171', 'realme=realme rmx5171'],
+            ['RMX5353', 'realme=realme rmx5353'],
+            ['Realme RMX5353', 'realme=realme rmx5353'],
+            ['RMX5366', 'realme=realme rmx5366'],
+            ['Realme RMX5366', 'realme=realme rmx5366'],
             // Motorola
             ['moto g200 5G', 'motorola=motorola moto g200 5g'],
             ['motorola razr 5G', 'motorola=motorola razr 5g'],
@@ -7908,6 +7925,18 @@ final class DeviceTest extends TestCase
             ['vivo V2442A', 'vivo=vivo v2442a'],
             ['PA2535', 'vivo=vivo pa2535'],
             ['vivo PA2535', 'vivo=vivo pa2535'],
+            ['V2564A', 'vivo=vivo v2564a'],
+            ['vivo V2564A', 'vivo=vivo v2564a'],
+            ['V2535', 'vivo=vivo v2535'],
+            ['vivo V2535', 'vivo=vivo v2535'],
+            ['V2526', 'vivo=vivo v2526'],
+            ['vivo V2526', 'vivo=vivo v2526'],
+            ['V2190A', 'vivo=vivo v2190a'],
+            ['vivo V2190A', 'vivo=vivo v2190a'],
+            ['V2180GA', 'vivo=vivo v2180ga'],
+            ['vivo V2180GA', 'vivo=vivo v2180ga'],
+            ['V2168A', 'vivo=vivo v2168a'],
+            ['vivo V2168A', 'vivo=vivo v2168a'],
             // Fairphone
             ['FP4', 'fairphone=fairphone fp4'],
             ['FP3', 'fairphone=fairphone fp3'],
@@ -8431,6 +8460,8 @@ final class DeviceTest extends TestCase
             ['LGN-AN00', 'wiko=wiko lgn-an00'],
             ['BAL-AN20', 'wiko=wiko bal-an20'],
             ['WIKO W-V770', 'wiko=wiko w-v770'],
+            ['LFT-AN00', 'wiko=wiko lft-an00'],
+            ['JEY-AN00', 'wiko=wiko jey-an00'],
             // razer
             ['Phone 2', 'razer=razer phone 2'],
             ['Razer Edge 5G', 'razer=razer edge 5g'],
@@ -8650,6 +8681,7 @@ final class DeviceTest extends TestCase
             ['M50_EEA', 'teclast=teclast m50_eea'],
             ['P30T_ROW', 'teclast=teclast p30t_row'],
             ['T50Mini_A_ROW', 'teclast=teclast t50mini_a_row'],
+            ['ArtPad Pro', 'teclast=teclast artpad pro'],
             // alldocube
             ['iPlay_40', 'alldocube=alldocube iplay 40'],
             ['iPlay60_mini_Pro', 'alldocube=alldocube iplay 60 mini pro'],
@@ -8679,6 +8711,7 @@ final class DeviceTest extends TestCase
             ['T1201', 'alldocube=alldocube t1201'],
             ['T811', 'alldocube=alldocube t811'],
             ['iPlay80miniUltra', 'alldocube=alldocube iplay 80 mini ultra'],
+            ['iPlay 70 mini Ultra', 'alldocube=alldocube iplay 70 mini ultra'],
             // dgtec
             ['DG101HSTB', 'dgtec=dgtec dg101hstb'],
             // coopers
@@ -10153,6 +10186,7 @@ final class DeviceTest extends TestCase
             ['Coolpad 3320A', 'coolpad=coolpad 3320a'],
             ['Coolpad 3622A', 'coolpad=coolpad 3622a'],
             ['CPDM1Y', 'coolpad=coolpad cpdm1y'],
+            ['CP-PBDN01', 'coolpad=coolpad cp-pbdn01'],
             // tcl
             ['T766H_EEA', 'tcl=tcl t766h_eea'],
             ['T506K', 'tcl=tcl t506k'],
@@ -11912,6 +11946,7 @@ final class DeviceTest extends TestCase
             ['TYH651M-02', 'china-telecom=china-telecom tyh651m-02'],
             ['TYH201H', 'china-telecom=china-telecom tyh201h'],
             ['TYH123U', 'china-telecom=china-telecom tyh123u'],
+            ['TYH622M', 'china-telecom=china-telecom tyh622m'],
             // rephone
             ['2000_000170_00', 'rephone=rephone 2000_000170_00'],
             // magenta
@@ -12173,6 +12208,7 @@ final class DeviceTest extends TestCase
             // byd
             ['DiLink5.0 For BYD AUTO', 'byd=byd carpad'],
             ['DiLink5.1', 'byd=byd dilink 5.1'],
+            ['DiLink3.0 For BYD AUTO', 'byd=byd dilink 3.0'],
             // alps
             ['tb8163p3_bsp', 'alps=alps tb8163p3_bsp'],
             // dialn
@@ -12642,6 +12678,8 @@ final class DeviceTest extends TestCase
             // gionee
             ['GIONEE MAX', 'gionee=gionee max'],
             ['GD032313', 'gionee=gionee gd032313'],
+            ['20190418Q', 'gionee=gionee 20190418q'],
+            ['20190619G', 'gionee=gionee 20190619g'],
             // heji
             ['HEJI GOE', 'heji=heji goe'],
             ['HEJIGOE', 'heji=heji goe'],

@@ -1,51 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm; Android 11; C28) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.885 YaSearchBrowser/25.101.1/apad BroPP/1.0 YaSearchApp/25.101.1/apad webOmni SA/3 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Mobile Phone",
-      "marketingName": "general Mobile Phone",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Yandex Search Browser",
-      "modus": null,
-      "version": "25.101.1",
-      "manufacturer": "Yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "140.0.7339.885",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm; Android 11; C28) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.97 YaBrowser/25.8.1.97.00 SA/3 Mobile Safari/537.36"
     },
     "device": {
@@ -4488,6 +4443,51 @@
       "name": "Yandex Search Browser",
       "modus": null,
       "version": "26.47.1",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "146.0.7680.49",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm; Android 10; X200) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.49 YaBrowser/26.4.7.49.00 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile Phone",
+      "marketingName": "general Mobile Phone",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "26.4.7.49.00",
       "manufacturer": "Yandex",
       "type": "browser",
       "isbot": false,
