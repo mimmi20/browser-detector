@@ -6584,6 +6584,12 @@ final class DeviceTest extends TestCase
             ['Realme RMX5353', 'realme=realme rmx5353'],
             ['RMX5366', 'realme=realme rmx5366'],
             ['Realme RMX5366', 'realme=realme rmx5366'],
+            ['RMX5264', 'realme=realme rmx5264'],
+            ['Realme RMX5264', 'realme=realme rmx5264'],
+            ['RMX5261', 'realme=realme rmx5261'],
+            ['Realme RMX5261', 'realme=realme rmx5261'],
+            ['RMX5256', 'realme=realme rmx5256'],
+            ['Realme RMX5256', 'realme=realme rmx5256'],
             // Motorola
             ['moto g200 5G', 'motorola=motorola moto g200 5g'],
             ['motorola razr 5G', 'motorola=motorola razr 5g'],

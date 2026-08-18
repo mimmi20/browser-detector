@@ -4796,6 +4796,9 @@ final class Device implements DeviceInterface
             'rmx5171', 'realme rmx5171' => 'realme=realme rmx5171',
             'rmx5353', 'realme rmx5353' => 'realme=realme rmx5353',
             'rmx5366', 'realme rmx5366' => 'realme=realme rmx5366',
+            'rmx5264', 'realme rmx5264' => 'realme=realme rmx5264',
+            'rmx5261', 'realme rmx5261' => 'realme=realme rmx5261',
+            'rmx5256', 'realme rmx5256' => 'realme=realme rmx5256',
             // Motorola
             'moto g200 5g' => 'motorola=motorola moto g200 5g',
             'motorola razr 5g' => 'motorola=motorola razr 5g',
