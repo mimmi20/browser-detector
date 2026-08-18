@@ -642,5 +642,15 @@
       ]
     },
     "engine": "unknown"
+  },
+  "security-headers": {
+    "name": "SecurityHeaders",
+    "manufacturer": "snyk",
+    "type": "security-checker",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
   }
 }

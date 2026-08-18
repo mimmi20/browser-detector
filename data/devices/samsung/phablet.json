@@ -3279,6 +3279,22 @@
     "type": "phablet",
     "platform": "android"
   },
+  "samsung galaxy z fold 5": {
+    "deviceName": "Galaxy Z Fold 5",
+    "marketingName": "Galaxy Z Fold 5",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2176,
+      "height": 1812,
+      "touch": true,
+      "size": 7.6
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
   "samsung scg22": {
     "deviceName": "SCG22",
     "marketingName": "Galaxy Z Fold 5",
@@ -4619,6 +4635,22 @@
       "height": 1584,
       "touch": true,
       "size": 10
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-f976b": {
+    "deviceName": "SM-F976B",
+    "marketingName": "Galaxy Z Fold 8 Ultra (International)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2504,
+      "height": 2256,
+      "touch": true,
+      "size": 8
     },
     "type": "phablet",
     "platform": "android"

@@ -395,6 +395,7 @@ final readonly class Headers
                         case 'sogou web spider':
                         case 'qqbrowser':
                         case 'googlebot':
+                        case 'audisto-crawler':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 
@@ -463,6 +464,7 @@ final readonly class Headers
                         case 'petalbot':
                         case 'instagram app':
                         case 'mistral-ai-user':
+                        case 'meta-webindexer':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 

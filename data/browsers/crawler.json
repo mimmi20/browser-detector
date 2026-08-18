@@ -6982,5 +6982,168 @@
       ]
     },
     "engine": "unknown"
+  },
+  "vsm-crawler": {
+    "name": "VSMCrawler",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "VSMCrawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ex-crawler": {
+    "name": "Ex-Crawler",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Ex-Crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "isara-search": {
+    "name": "Isara-Search",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Isara-",
+        "Isara"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "gsa-crawler": {
+    "name": "gsa-crawler",
+    "manufacturer": "google",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "gsa-crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "websuse-crawler": {
+    "name": "Websuse Crawler",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Websuse\\.de"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "broker-db-crawler": {
+    "name": "broker-db-crawler",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "broker-db-crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "audisto-crawler": {
+    "name": "Audisto Crawler",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Audisto Crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "gwf-carbon-txt-crawler": {
+    "name": "gwf-carbon-txt-crawler",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "gwf-carbon-txt-crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "jungle-key-thumbnail": {
+    "name": "JungleKeyThumbnail",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "JungleKeyThumbnail"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "bd-fetch": {
+    "name": "BDFetch",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "dialogsearchcom-bot": {
+    "name": "DialogSearch.com Bot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DialogSearch\\.com Bot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "vorboss web crawler": {
+    "name": "Vorboss Web Crawler",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "kiodia-spider": {
+    "name": "Kiodia Spider",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Kiodia Spider"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "panscient": {
+    "name": "Panscient",
+    "manufacturer": "panscient",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
   }
 }

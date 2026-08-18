@@ -3473,7 +3473,7 @@
     "device": {
       "architecture": null,
       "deviceName": "NLA-LX3",
-      "marketingName": "X5c Plus",
+      "marketingName": "X5c",
       "manufacturer": "Huawei",
       "brand": "Honor",
       "dualOrientation": true,
@@ -3558,6 +3558,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9.0; nova 5z) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.97 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Nova 5z",
+      "marketingName": "Nova 5z",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.26
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "138.0.7204.97",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "138.0.7204.97",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 16; VKP-NX9 Build/HONORVKP-N39; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36"
     },
     "device": {
@@ -3603,7 +3648,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 16; VKP-NX9 Build/HONORVKP-N39; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.93 YaSearchApp/25.50-lite Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 16; VKP-NX9 Build/HONORVKP-N39) AppleWebKit/537.36 (KHTML, like Gecko) Aduawtg/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
@@ -3634,7 +3679,7 @@
     "client": {
       "name": "Chrome",
       "modus": null,
-      "version": "149.0.7827.93",
+      "version": "149.0.7827.91",
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
@@ -3642,7 +3687,7 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "149.0.7827.93",
+      "version": "149.0.7827.91",
       "manufacturer": "Google"
     }
   },
@@ -4008,7 +4053,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 16; LNA-NX1 Build/HONORLNA-N32; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.93 YaSearchApp/25.50-lite Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 16; LNA-NX1 Build/HONORLNA-N32;) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.91 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
@@ -4039,7 +4084,7 @@
     "client": {
       "name": "Chrome",
       "modus": null,
-      "version": "149.0.7827.93",
+      "version": "149.0.7827.91",
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
@@ -4047,7 +4092,7 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "149.0.7827.93",
+      "version": "149.0.7827.91",
       "manufacturer": "Google"
     }
   },
@@ -4098,7 +4143,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 16; LNA-LX2 Build/HONORLNA-L32; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/150.0.7871.46 YaSearchApp/25.50-lite Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 16; LNA-LX2 Build/HONORLNA-L32) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.93 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
@@ -4129,7 +4174,7 @@
     "client": {
       "name": "Chrome",
       "modus": null,
-      "version": "150.0.7871.46",
+      "version": "149.0.7827.93",
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
@@ -4137,7 +4182,7 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "150.0.7871.46",
+      "version": "149.0.7827.93",
       "manufacturer": "Google"
     }
   },
@@ -4543,51 +4588,6 @@
     "engine": {
       "name": "Blink",
       "version": "124.0.6367.82",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 16; BKQ-AN00 Build/HONORBKQ-ANXX) AppleWebKit/537.36 (KHTML, like Gecko) Sssofmlcg/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "BKQ-AN00",
-      "marketingName": "Magic 8 5G",
-      "manufacturer": "Huawei",
-      "brand": "Honor",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2760,
-        "height": 1256,
-        "touch": true,
-        "size": 6.58
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "16.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "149.0.7827.91",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "149.0.7827.91",
       "manufacturer": "Google"
     }
   }

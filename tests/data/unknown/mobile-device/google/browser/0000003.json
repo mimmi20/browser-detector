@@ -1,51 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "{version:6.2041.0-arm64-v8a,platform:server_android,osversion:12}"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; gC6O4uzmfr; U; de) AppleWebKit/537.36 (KHTML, like Gecko) Mobile AvastSecureBrowser/6.6.0 Build/3850 Safari/537.36"
     },
     "device": {
@@ -296,51 +251,6 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "Android Browser",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "Google",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 11; PCLM10 Build/RKQ1.200928.002)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
       "manufacturer": "Google",
       "bits": null
     },
@@ -4460,10 +4370,7 @@
   },
   {
     "headers": {
-      "sec-ch-ua-platform": "\"Linux\"",
-      "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
-      "sec-ch-ua-mobile": "?0",
-      "user-agent": "Audisto Crawler (mobile; essential; +https://audisto.com/bot)"
+      "user-agent": "Mozilla/5.0 (Windows CE) AppleWebKit/531.1 (KHTML, like Gecko) Chrome/51.0.832.0 Safari/531.1"
     },
     "device": {
       "architecture": null,
@@ -4480,21 +4387,21 @@
         "size": null
       },
       "type": "mobile-device",
-      "ismobile": false,
+      "ismobile": true,
       "istv": false,
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
       "version": null,
-      "manufacturer": "Linux Foundation",
+      "manufacturer": "Microsoft",
       "bits": null
     },
     "client": {
-      "name": "Chromium",
+      "name": "Chrome",
       "modus": null,
-      "version": "141.0.0",
+      "version": "51.0.832.0",
       "manufacturer": "Google",
       "type": "browser",
       "isbot": false,
@@ -4502,7 +4409,97 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "141.0.0",
+      "version": "51.0.832.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows CE) AppleWebKit/531.0 (KHTML, like Gecko) Chrome/37.0.833.0 Safari/531.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "37.0.833.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "37.0.833.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows CE) AppleWebKit/531.0 (KHTML, like Gecko) Chrome/49.0.849.0 Safari/531.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "49.0.849.0",
+      "manufacturer": "Google",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "49.0.849.0",
       "manufacturer": "Google"
     }
   }

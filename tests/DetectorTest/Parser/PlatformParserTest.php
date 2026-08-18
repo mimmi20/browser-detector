@@ -50,4 +50,18 @@ final class PlatformParserTest extends TestCase
 
         self::assertSame(Os::fuchsia, $parserResult);
     }
+
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
+    public function testParse3(): void
+    {
+        $useragent = 'Nokia 2660 Flip;Dorado WAP-Browser/1.0.0';
+
+        $parser       = new PlatformParser();
+        $parserResult = $parser->parse($useragent);
+
+        self::assertSame(Os::series30, $parserResult);
+    }
 }

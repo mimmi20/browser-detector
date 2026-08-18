@@ -1168,5 +1168,50 @@
       "version": null,
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "com.google.GoogleMobile/432.8 iPad/26.5 hw/iPad14_10"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad 14,10",
+      "marketingName": "iPad Air M2 13\" Wi-Fi",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2732,
+        "height": 2048,
+        "touch": true,
+        "size": 13
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "26.5.0",
+      "manufacturer": "Apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Google Mobile App",
+      "modus": null,
+      "version": "432.8.0",
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "Apple"
+    }
   }
 ]

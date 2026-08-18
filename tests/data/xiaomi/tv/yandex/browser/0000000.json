@@ -50,15 +50,15 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "TV",
-      "marketingName": "TV",
+      "deviceName": "MiTV MTSU0",
+      "marketingName": "MiTV MTSU0",
       "manufacturer": "Xiaomi",
       "brand": "Xiaomi",
       "dualOrientation": false,
       "simCount": 0,
       "display": {
-        "width": null,
-        "height": null,
+        "width": 3840,
+        "height": 2160,
         "touch": false,
         "size": null
       },
@@ -131,6 +131,51 @@
     "engine": {
       "name": "Blink",
       "version": "132.0.6834.163",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; MiTV-AXTU0 Build/UKG3.250518.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.217 YaBrowser/25.10.1.638 (lite) TV Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TV",
+      "marketingName": "TV",
+      "manufacturer": "Xiaomi",
+      "brand": "Xiaomi",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser Lite",
+      "modus": null,
+      "version": "25.10.1.638",
+      "manufacturer": "Yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "148.0.7778.217",
       "manufacturer": "Google"
     }
   }

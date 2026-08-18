@@ -1,7 +1,7 @@
 [
   {
     "headers": {
-      "user-agent": "omgilibot/0.3 +http://www.omgili.com/Crawler.html"
+      "user-agent": "WebbCrawler 1.0 ( http://badcheese.com/crawler.html )"
     },
     "device": {
       "architecture": null,
@@ -32,7 +32,7 @@
     "client": {
       "name": "Crawler",
       "modus": null,
-      "version": null,
+      "version": "1.0.0",
       "manufacturer": "Linkfluence",
       "type": "crawler",
       "isbot": true,
@@ -91,52 +91,7 @@
   },
   {
     "headers": {
-      "user-agent": "Isara-Search/Isara-1.0 (A non-profit web crawler operated by a charity organization.; www.isara.org; webmaster@isara.org)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "client": {
-      "name": "Crawler",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Linkfluence",
-      "type": "crawler",
-      "isbot": true,
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "Opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; Ex-Crawler/0.1.5a; powered by ex-crawler; +http://www.ex-crawler.de/) Java/1.6.0_20,gzip(gfe),gzip(gfe)"
+      "user-agent": "SmartAndSimpleWebCrawler/1.3 (https://crawler.dev.java.net),gzip(gfe),gzip(gfe)"
     },
     "device": {
       "architecture": null,
@@ -167,7 +122,7 @@
     "client": {
       "name": "Crawler",
       "modus": null,
-      "version": "0.1.5-alpha",
+      "version": "1.3.0",
       "manufacturer": "Linkfluence",
       "type": "crawler",
       "isbot": true,
@@ -181,7 +136,7 @@
   },
   {
     "headers": {
-      "user-agent": "gsa-crawler (Enterprise; GEXTEST-00393; gsasymbiosys@gmail.com,xeonbox4@gmail.com)"
+      "user-agent": "Mozilla/5.0 (compatible; eCrawler +http://www.regios.org)"
     },
     "device": {
       "architecture": null,
@@ -222,98 +177,6 @@
       "name": "WebKit",
       "version": null,
       "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Websuse.de/1.0 (Web Crawler; +http://Websuse.de/bot.html)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Suse Linux",
-      "marketingName": "Suse Linux",
-      "version": null,
-      "manufacturer": "Suse",
-      "bits": null
-    },
-    "client": {
-      "name": "Crawler",
-      "modus": null,
-      "version": null,
-      "manufacturer": "Linkfluence",
-      "type": "crawler",
-      "isbot": true,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "sec-ch-ua-platform": "\"Windows\"",
-      "sec-ch-ua-mobile": "?0",
-      "user-agent": "broker-db-crawler/0.1 (broker enrichment; +https://github.com/prosperity-life/broker-db)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows",
-      "version": null,
-      "manufacturer": "Microsoft",
-      "bits": null
-    },
-    "client": {
-      "name": "Crawler",
-      "modus": null,
-      "version": "0.1.0",
-      "manufacturer": "Linkfluence",
-      "type": "crawler",
-      "isbot": true,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
     }
   }
 ]

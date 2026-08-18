@@ -4459,7 +4459,8 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "YaBrowser"
+        "YaBrowser",
+        "YaSearchApp"
       ]
     },
     "engine": null
@@ -7029,6 +7030,16 @@
   "startpage-private-search-engine": {
     "name": "Startpage",
     "manufacturer": "surfboard",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "secure-x": {
+    "name": "SecureX",
+    "manufacturer": "lasgario-studio",
     "type": "browser",
     "version": {
       "factory": null,

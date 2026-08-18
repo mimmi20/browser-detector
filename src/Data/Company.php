@@ -4223,6 +4223,62 @@ enum Company: string implements CompanyInterface
 
     case spaceX = 'SpaceX';
 
+    case talentConnect = 'Talent Connect';
+
+    case cyfrowyPolsat = 'Cyfrowy Polsat';
+
+    case polkomtel = 'Polkomtel';
+
+    case multimediaPolska = 'Multimedia Polska';
+
+    case yousee = 'YouSee';
+
+    case odidoNederland = 'Odido Nederland';
+
+    case telecomItalia = 'TelecomItalia';
+
+    case norlys = 'Norlys';
+
+    case a1TelekomAustria = 'A1 Telekom Austria';
+
+    case nextGenTel = 'NextGenTel';
+
+    case fortum = 'Fortum';
+
+    case monacoTelecom = 'Monaco Telecom';
+
+    case tele2 = 'Tele2';
+
+    case libertyGlobal = 'Liberty Global';
+
+    case tdc = 'TDC';
+
+    case bahnhof = 'Bahnhof';
+
+    case vandenBorre = 'Vanden Borre';
+
+    case tokaiCommunications = 'TOKAI Communications';
+
+    case econ = 'Econ';
+
+    case claro = 'Claro';
+
+    case lasGarioStudio = 'LasGario Studio';
+
+    case meberry = 'Meberry';
+
+    case h96 = 'H96';
+
+    case snyk = 'Snyk';
+
+    case panscient = 'Panscient';
+
+    case olto = 'Olto';
+
+    case skyline = 'Skyline';
+
+    case maunfeld = 'Maunfeld';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -6332,6 +6388,34 @@ enum Company: string implements CompanyInterface
             'webatla' => self::webatla,
             'polar' => self::polar,
             'spacex', 'space exploration technologies corp.', 'space-x' => self::spaceX,
+            'talentconnect', 'talent connect co. ltd.', 'talent-connect', 'talent connect' => self::talentConnect,
+            'cyfrowypolsat', 'cyfrowy polsat s.a.', 'cyfrowy-polsat', 'cyfrowy polsat' => self::cyfrowyPolsat,
+            'polkomtel', 'polkomtel sp. z o.o.' => self::polkomtel,
+            'multimediapolska', 'multimedia polska sp. z o.o.', 'multimedia-polska', 'multimedia polska' => self::multimediaPolska,
+            'yousee' => self::yousee,
+            'odidonederland', 'odido nederland', 'odido-nederland' => self::odidoNederland,
+            'telecomitalia', 'telecom-italia' => self::telecomItalia,
+            'norlys' => self::norlys,
+            'a1telekomaustria', 'a1 telekom austria ag', 'a1 telekom austria', 'a1-telekom-austria' => self::a1TelekomAustria,
+            'nextgentel', 'nextgentel as', 'next-gen-tel' => self::nextGenTel,
+            'fortum', 'fortum consumer solutions as' => self::fortum,
+            'monacotelecom', 'monaco telecom', 'monaco-telecom' => self::monacoTelecom,
+            'tele2', 'tele2 ab' => self::tele2,
+            'libertyglobal', 'liberty-global', 'liberty global' => self::libertyGlobal,
+            'tdc' => self::tdc,
+            'bahnhof', 'bahnhof ab' => self::bahnhof,
+            'vandenborre', 'vanden-borre', 'vanden borre' => self::vandenBorre,
+            'tokaicommunications', 'tokai communications corporation', 'tokai-communications', 'tokai communications' => self::tokaiCommunications,
+            'econ' => self::econ,
+            'claro' => self::claro,
+            'lasgariostudio', 'lasgario-studio', 'lasgario studio' => self::lasGarioStudio,
+            'meberry' => self::meberry,
+            'h96', 'shenzhen haochuangyi technology' => self::h96,
+            'snyk', 'snyk limited' => self::snyk,
+            'panscient', 'panscient, inc.' => self::panscient,
+            'olto' => self::olto,
+            'skyline' => self::skyline,
+            'maunfeld' => self::maunfeld,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -7190,6 +7274,19 @@ enum Company: string implements CompanyInterface
             self::presearch => 'Presearch.com Inc.',
             self::pSdieVersicherungsmakler => 'P&S - Die Versicherungsmakler GmbH',
             self::spaceX => 'Space Exploration Technologies Corp.',
+            self::talentConnect => 'Talent Connect Co. Ltd.',
+            self::cyfrowyPolsat => 'Cyfrowy Polsat S.A.',
+            self::polkomtel => 'Polkomtel Sp. z o.o.',
+            self::multimediaPolska => 'Multimedia Polska Sp. z o.o.',
+            self::a1TelekomAustria => 'A1 Telekom Austria AG',
+            self::nextGenTel => 'NextGenTel AS',
+            self::fortum => 'Fortum Consumer Solutions AS',
+            self::tele2 => 'Tele2 AB',
+            self::bahnhof => 'Bahnhof AB',
+            self::tokaiCommunications => 'TOKAI Communications Corporation',
+            self::h96 => 'Shenzhen Haochuangyi Technology',
+            self::snyk => 'Snyk Limited',
+            self::panscient => 'Panscient, Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -7988,6 +8085,18 @@ enum Company: string implements CompanyInterface
             self::pSdieVersicherungsmakler => 'ps-die-versicherungsmakler',
             self::sunKing => 'sun-king',
             self::spaceX => 'space-x',
+            self::talentConnect => 'talent-connect',
+            self::cyfrowyPolsat => 'cyfrowy-polsat',
+            self::multimediaPolska => 'multimedia-polska',
+            self::odidoNederland => 'odido-nederland',
+            self::telecomItalia => 'telecom-italia',
+            self::a1TelekomAustria => 'a1-telekom-austria',
+            self::nextGenTel => 'next-gen-tel',
+            self::monacoTelecom => 'monaco-telecom',
+            self::libertyGlobal => 'liberty-global',
+            self::vandenBorre => 'vanden-borre',
+            self::tokaiCommunications => 'tokai-communications',
+            self::lasGarioStudio => 'lasgario-studio',
             default => $this->name,
         };
     }
