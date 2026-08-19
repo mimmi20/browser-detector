@@ -4788,6 +4788,8 @@ final class DeviceTest extends TestCase
             ['SCG33', 'samsung=samsung scg33'],
             ['SM-A253J', 'samsung=samsung sm-a253j'],
             ['SAMSUNG SM-A253J', 'samsung=samsung sm-a253j'],
+            ['SM-F971B', 'samsung=samsung sm-f971b'],
+            ['SAMSUNG SM-F971B', 'samsung=samsung sm-f971b'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['LGE-AN20', 'huawei=huawei lge-an20'],
@@ -8533,6 +8535,7 @@ final class DeviceTest extends TestCase
             ['5030I', 'alcatel=alcatel 5030i'],
             ['8091', 'alcatel=alcatel 8091'],
             ['Alcatel_5002C', 'alcatel=alcatel 5002c'],
+            ['5002E', 'alcatel=alcatel 5002e'],
             // HTC
             ['HTC Desire 19+', 'htc=htc desire 19 plus'],
             ['HTC U11', 'htc=htc u11'],

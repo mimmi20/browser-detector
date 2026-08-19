@@ -305,7 +305,7 @@ final class XRequestedWithTest extends TestCase
             ['alohabrowser', true, 'aloha-browser', true, null, false, Os::unknown],
             ['org.telegram.messenger', true, 'telegram-app', true, null, false, Os::unknown],
             ['xbrowser', true, 'x-browser', true, null, false, Os::unknown],
-            ['com.xbrowser.play', true, 'x-browser', true, null, false, Os::unknown],
+            ['com.xbrowser.play', true, 'x-browser-mini', true, null, false, Os::unknown],
             ['com.mycompany.app.soulbrowser', true, 'soul-browser', true, null, false, Os::unknown],
             ['com.sec.android.app.sbrowser.lite', true, 'samsung-browser-lite', true, null, false, Os::unknown],
             ['jp.ddo.pigsty.HabitBrowser', true, 'habit-browser', true, null, false, Os::unknown],
@@ -659,6 +659,7 @@ final class XRequestedWithTest extends TestCase
             ['com.fsecure.ms.vandenborre', true, 'vanden-borre-my-security', true, null, false, Os::unknown],
             ['com.fsecure.ms.tokaisa', true, 'tokai-safe', true, null, false, Os::unknown],
             ['com.securex.browser', true, 'secure-x', true, null, false, Os::unknown],
+            ['com.uc.browser.en', true, 'ucbrowser mini', true, null, false, Os::unknown],
         ];
     }
 }

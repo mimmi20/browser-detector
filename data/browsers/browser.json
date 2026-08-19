@@ -4363,8 +4363,10 @@
     "manufacturer": "haiku",
     "type": "browser",
     "version": {
-      "class": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WebPositive"
+      ]
     },
     "engine": "webkit"
   },
@@ -4725,6 +4727,16 @@
   },
   "x-browser": {
     "name": "XBrowser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "x-browser-mini": {
+    "name": "XBrowser Mini",
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
@@ -7044,6 +7056,18 @@
     "version": {
       "factory": null,
       "search": null
+    },
+    "engine": "unknown"
+  },
+  "chatgpt-atlas": {
+    "name": "ChatGPT Atlas",
+    "manufacturer": "openai",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ChatGPT Atlas"
+      ]
     },
     "engine": "unknown"
   }

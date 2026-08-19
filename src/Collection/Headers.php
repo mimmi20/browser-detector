@@ -465,6 +465,7 @@ final readonly class Headers
                         case 'instagram app':
                         case 'mistral-ai-user':
                         case 'meta-webindexer':
+                        case 'cohere-ai':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 

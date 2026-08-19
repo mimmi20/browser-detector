@@ -6034,5 +6034,29 @@
       ]
     },
     "engine": null
+  },
+  "boohee": {
+    "name": "boohee",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "boohee"
+      ]
+    },
+    "engine": null
+  },
+  "jokerbet": {
+    "name": "JOKERBET",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "JOKERBET"
+      ]
+    },
+    "engine": null
   }
 }

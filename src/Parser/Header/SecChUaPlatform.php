@@ -88,7 +88,7 @@ final class SecChUaPlatform implements DeviceCodeInterface, PlatformCodeInterfac
     {
         return match ($code) {
             'android' => Os::android,
-            'chromeos', 'chrome os', 'chromium os' => Os::chromeos,
+            'chromeos', 'chrome os', 'chromium os', 'chromiumos' => Os::chromeos,
             'lindows' => Os::lindows,
             'fuchsia' => Os::fuchsia,
             'macos', 'mac os x', 'macintel' => Os::macosx,
@@ -96,6 +96,9 @@ final class SecChUaPlatform implements DeviceCodeInterface, PlatformCodeInterfac
             'harmonyos' => Os::harmonyos,
             'linux', 'linux x86_64' => Os::linux,
             'cloud phone 2.4' => Os::puffinOs,
+            'openbsd' => Os::openbsd,
+            'freebsd' => Os::freebsd,
+            'ios' => Os::ios,
             default => Os::unknown,
         };
     }

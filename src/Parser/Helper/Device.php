@@ -3450,6 +3450,7 @@ final class Device implements DeviceInterface
             'galaxy s24 ultra' => 'samsung=samsung galaxy s24 ultra',
             'scg33' => 'samsung=samsung scg33',
             'sm-a253j', 'samsung sm-a253j' => 'samsung=samsung sm-a253j',
+            'sm-f971b', 'samsung sm-f971b' => 'samsung=samsung sm-f971b',
             // Huawei
             'vog-l29' => 'huawei=huawei vog-l29',
             'nen-lx1' => 'huawei=huawei nen-lx1',
@@ -6499,6 +6500,7 @@ final class Device implements DeviceInterface
             '5030i' => 'alcatel=alcatel 5030i',
             '8091' => 'alcatel=alcatel 8091',
             'alcatel_5002c' => 'alcatel=alcatel 5002c',
+            '5002e' => 'alcatel=alcatel 5002e',
             // HTC
             'htc desire 19+' => 'htc=htc desire 19 plus',
             'htc u11' => 'htc=htc u11',

@@ -176,6 +176,10 @@ final class SecChUaPlatformTest extends TestCase
             ['"Fuchsia"', true, Os::fuchsia, false, null],
             ['""', false, Os::unknown, false, null],
             ['Cloud Phone 2.4', true, Os::puffinOs, false, null],
+            ['OpenBSD', true, Os::openbsd, false, null],
+            ['FreeBSD', true, Os::freebsd, false, null],
+            ['Ios', true, Os::ios, false, null],
+            ['ChromiumOS', true, Os::chromeos, false, null],
         ];
     }
 
