@@ -104,8 +104,9 @@ final readonly class UseragentPlatformVersion implements PlatformVersionInterfac
                 $normalizedValue,
                 $matches,
             )
+            && array_key_exists('version', $matches)
         ) {
-            return $this->setVersion(str_replace('_', '.', $matches['version'] ?? ''));
+            return $this->setVersion($matches['version'] ?? '');
         }
 
         $regexes = [
