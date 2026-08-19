@@ -930,6 +930,7 @@ final class Device implements DeviceInterface
             'opd2101' => 'oppo=oppo opd2101',
             'opd2420' => 'oppo=oppo opd2420',
             'opd2417' => 'oppo=oppo opd2417',
+            'reno 10x zoom' => 'oppo=oppo reno 10x zoom',
             // Xiaomi/Poco
             'redmi note 9 pro', 'xiaomi redmi note 9 pro', 'redmi note9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro', 'redmi_note_8_pro', 'xiaomi redmi note 8 pro', 'redmi note8 pro' => 'xiaomi=xiaomi redmi note 8 pro',
@@ -4799,6 +4800,8 @@ final class Device implements DeviceInterface
             'rmx5264', 'realme rmx5264' => 'realme=realme rmx5264',
             'rmx5261', 'realme rmx5261' => 'realme=realme rmx5261',
             'rmx5256', 'realme rmx5256' => 'realme=realme rmx5256',
+            'rmx5268', 'realme rmx5268' => 'realme=realme rmx5268',
+            'rmx5258', 'realme rmx5258' => 'realme=realme rmx5258',
             // Motorola
             'moto g200 5g' => 'motorola=motorola moto g200 5g',
             'motorola razr 5g' => 'motorola=motorola razr 5g',
@@ -5939,6 +5942,16 @@ final class Device implements DeviceInterface
             'v2190a', 'vivo v2190a' => 'vivo=vivo v2190a',
             'v2180ga', 'vivo v2180ga' => 'vivo=vivo v2180ga',
             'v2168a', 'vivo v2168a' => 'vivo=vivo v2168a',
+            'iqoo neo 855+' => 'vivo=vivo iqoo neo 855+',
+            'v1936al', 'vivo v1936al' => 'vivo=vivo v1936al',
+            'iqoo neo' => 'vivo=vivo iqoo neo',
+            'iqoo pro 5g' => 'vivo=vivo iqoo pro 5g',
+            'v1922a', 'vivo v1922a' => 'vivo=vivo v1922a',
+            'iqoo pro' => 'vivo=vivo iqoo pro',
+            'v1936a', 'vivo v1936a' => 'vivo=vivo v1936a',
+            'v1936t', 'vivo v1936t' => 'vivo=vivo v1936t',
+            'iqoo neo 855' => 'vivo=vivo iqoo neo 855',
+            'vivo v9' => 'vivo=vivo v9',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
