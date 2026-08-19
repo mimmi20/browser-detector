@@ -110,6 +110,15 @@ final readonly class UseragentPlatformCode implements PlatformCodeInterface
             };
         }
 
+        if (
+            preg_match(
+                '/^mqqbrowser\/[\d.]+ \(linux; [\d.]+; [^)]+\)$/i',
+                $normalizedValue,
+            )
+        ) {
+            return Os::android;
+        }
+
         $regexes = [
             '/^mozilla\/[\d.]+ \((?:andr[o0]id|tizen) [\d.]+; (?P<platform>harmonyos); [^);\/]+[^)]*\)/i',
             '/^mozilla\/[\d.]+ \((?P<platform>andr[o0]id|tizen) [\d.]+;(?: arm(?:_64)?;| mobile;)? [^);\/]+[^)]*\)/i',

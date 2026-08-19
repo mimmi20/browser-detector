@@ -163,6 +163,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/latina\/[\d.]+ \(android [\d.]+; (?P<devicecode>[^();\/]+)\)/i',
             '/device model: (?P<devicecode>[^);\/]+) firmware version:/i',
             '/\(lge[;,] (?P<devicecode>[^;,]+)[;,]/i',
+            '/^mqqbrowser\/[\d.]+ \(linux; [\d.]+; (?P<code>[^)]+)\)$/i',
             // should be the last entry in the list
             '/^(?P<devicecode>.+)$/i',
         ];

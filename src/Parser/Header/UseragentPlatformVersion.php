@@ -96,6 +96,18 @@ final readonly class UseragentPlatformVersion implements PlatformVersionInterfac
             return new ForcedNullVersion();
         }
 
+        $matches = [];
+
+        if (
+            preg_match(
+                '/^mqqbrowser\/[\d.]+ \(linux; (?P<version>[\d.]+); [^)]+\)$/i',
+                $normalizedValue,
+                $matches,
+            )
+        ) {
+            return $this->setVersion(str_replace('_', '.', $matches['version'] ?? ''));
+        }
+
         $regexes = [
             '/ov\((?:(wds|android) )?(?P<version>[\d_.]+)\);/i',
             '/instagram [\d.]+ android \([\d.]+\/(?P<version>[\d.]+); \d+dpi; \d+x\d+; [a-z\/]+; [^);\/]+;/i',
