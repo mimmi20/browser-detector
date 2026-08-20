@@ -652,6 +652,7 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Brave Chrome",
+        "Brave Browser",
         "Brave"
       ]
     },
@@ -7067,6 +7068,30 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ChatGPT Atlas"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "lexi-browser": {
+    "name": "Lexi Browser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "LexiBrowser"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "fulldive-browser": {
+    "name": "Fulldive Browser",
+    "manufacturer": "fulldive",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "FulldiveBrowser"
       ]
     },
     "engine": "unknown"

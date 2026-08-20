@@ -29,6 +29,7 @@ use UnexpectedValueException;
 
 use function array_filter;
 use function array_first;
+use function array_key_exists;
 use function array_map;
 use function preg_match;
 use function str_replace;

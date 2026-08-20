@@ -1678,6 +1678,14 @@ final class OsTest extends TestCase
                 'version' => ['factory' => null, 'search' => null],
                 'key' => 'hyper-os',
             ],
+            [
+                'type' => 'MyOS',
+                'name' => 'MyOS',
+                'marketingName' => 'MyOS',
+                'manufacturer' => Company::zte,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['MyOS']],
+                'key' => 'my-os',
+            ],
         ];
     }
 }

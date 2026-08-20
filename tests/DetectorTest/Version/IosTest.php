@@ -279,6 +279,10 @@ final class IosTest extends TestCase
                 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148;super/4.22.1/iOS/26.2',
                 '26.2.0',
             ],
+            [
+                'com.apple.WebKit.Networking/8616.2.9.10.11 CFNetwork/1485 Darwin/27.0.0',
+                '27.0.0',
+            ],
         ];
     }
 

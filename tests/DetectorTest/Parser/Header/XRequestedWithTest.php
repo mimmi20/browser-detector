@@ -660,6 +660,8 @@ final class XRequestedWithTest extends TestCase
             ['com.fsecure.ms.tokaisa', true, 'tokai-safe', true, null, false, Os::unknown],
             ['com.securex.browser', true, 'secure-x', true, null, false, Os::unknown],
             ['com.uc.browser.en', true, 'ucbrowser mini', true, null, false, Os::unknown],
+            ['com.lexi.browser', true, 'lexi-browser', true, null, false, Os::unknown],
+            ['com.fulldive.mobile', true, 'fulldive-browser', true, null, false, Os::unknown],
         ];
     }
 }

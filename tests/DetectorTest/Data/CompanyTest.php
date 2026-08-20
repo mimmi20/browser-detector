@@ -12826,6 +12826,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Maunfeld',
                 'key' => 'maunfeld',
             ],
+            [
+                'type' => 'Fulldive',
+                'name' => 'Fulldive Co.',
+                'brandname' => 'Fulldive',
+                'key' => 'fulldive',
+            ],
         ];
     }
 

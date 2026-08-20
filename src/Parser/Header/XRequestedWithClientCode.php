@@ -474,6 +474,8 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.fsecure.ms.tokaisa' => 'tokai-safe',
             'com.securex.browser' => 'secure-x',
             'com.uc.browser.en' => 'ucbrowser mini',
+            'com.lexi.browser' => 'lexi-browser',
+            'com.fulldive.mobile' => 'fulldive-browser',
             default => null,
         };
     }
