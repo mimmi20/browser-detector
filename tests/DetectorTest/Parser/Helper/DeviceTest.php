@@ -12806,6 +12806,8 @@ final class DeviceTest extends TestCase
             ['MLT55USX02', 'maunfeld=maunfeld mlt55usx02'],
             // k-touch
             ['KT20201199', 'k-touch=k-touch kt20201199'],
+            // azumi
+            ['NOBU_A55_PRO', 'azumi=azumi nobu a55 pro'],
             // generic
             ['SMART_TV', 'unknown=general tv device'],
             ['SMART TV', 'unknown=general tv device'],

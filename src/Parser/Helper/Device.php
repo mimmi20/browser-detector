@@ -10501,6 +10501,8 @@ final class Device implements DeviceInterface
             'mlt55usx02' => 'maunfeld=maunfeld mlt55usx02',
             // k-touch
             'kt20201199' => 'k-touch=k-touch kt20201199',
+            // azumi
+            'nobu_a55_pro' => 'azumi=azumi nobu a55 pro',
             // generic
             'smart_tv', 'smart tv', 'smart tv pro', 'smarttv', '4k smart tv', '2k smart tv', '2k pa smart tv', 'tv box', 'tvbox' => 'unknown=general tv device',
             // other

@@ -107,11 +107,12 @@ final readonly class UseragentPlatformVersion implements PlatformVersionInterfac
             )
             && array_key_exists('version', $matches)
         ) {
-            return $this->setVersion($matches['version'] ?? '');
+            return $this->setVersion($matches['version']);
         }
 
         $regexes = [
             '/ov\((?:(wds|android) )?(?P<version>[\d_.]+)\);/i',
+            '/android.*myos(?P<version>\d+\.\d+)/i',
             '/instagram [\d.]+ android \([\d.]+\/(?P<version>[\d.]+); \d+dpi; \d+x\d+; [a-z\/]+; [^);\/]+;/i',
             '/icq_android\/[\d.]+ \(android; \d+; (?P<version>[\d.]+)/i',
             '/gg-android\/[\d.]+ \(os;android;\d+\) \([^);\/]+;[^);\/]+;[^);\/]+;(?P<version>[\d.]+)/i',
