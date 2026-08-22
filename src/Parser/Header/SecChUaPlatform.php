@@ -99,6 +99,7 @@ final class SecChUaPlatform implements DeviceCodeInterface, PlatformCodeInterfac
             'openbsd' => Os::openbsd,
             'freebsd' => Os::freebsd,
             'ios' => Os::ios,
+            'ubuntu' => Os::ubuntu,
             default => Os::unknown,
         };
     }

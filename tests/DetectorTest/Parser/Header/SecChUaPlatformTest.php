@@ -180,6 +180,7 @@ final class SecChUaPlatformTest extends TestCase
             ['FreeBSD', true, Os::freebsd, false, null],
             ['Ios', true, Os::ios, false, null],
             ['ChromiumOS', true, Os::chromeos, false, null],
+            ['Ubuntu', true, Os::ubuntu, false, null],
         ];
     }
 
