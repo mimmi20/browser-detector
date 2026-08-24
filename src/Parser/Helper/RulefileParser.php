@@ -82,7 +82,7 @@ final readonly class RulefileParser implements RulefileParserInterface
         }
 
         if (!is_string($mode)) {
-            $mode = $fallback;
+            return $fallback;
         }
 
         return $mode;
@@ -132,12 +132,10 @@ final readonly class RulefileParser implements RulefileParserInterface
             mode: ARRAY_FILTER_USE_KEY,
         );
 
-        $mode = false;
-
         if ($filtered !== []) {
-            $mode = array_first($filtered);
+            return array_first($filtered);
         }
 
-        return $mode;
+        return false;
     }
 }

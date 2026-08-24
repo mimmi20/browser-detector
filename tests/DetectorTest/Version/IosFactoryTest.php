@@ -24,16 +24,16 @@ use PHPUnit\Framework\TestCase;
 use function assert;
 use function sprintf;
 
-#[CoversClass(IosFactory::class)]
+#[CoversClass(className: IosFactory::class)]
 final class IosFactoryTest extends TestCase
 {
-    private IosFactory $object;
+    private IosFactory $iosFactory;
 
     /** @throws void */
     #[Override]
     protected function setUp(): void
     {
-        $this->object = new IosFactory();
+        $this->iosFactory = new IosFactory();
     }
 
     /**
@@ -42,7 +42,7 @@ final class IosFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $object = $this->object;
+        $object = $this->iosFactory;
         assert(
             $object instanceof IosFactory,
             sprintf(
@@ -51,7 +51,7 @@ final class IosFactoryTest extends TestCase
                 $object::class,
             ),
         );
-        $result = $object();
-        self::assertInstanceOf(Ios::class, $result);
+        $ios = $object();
+        self::assertInstanceOf(Ios::class, $ios);
     }
 }

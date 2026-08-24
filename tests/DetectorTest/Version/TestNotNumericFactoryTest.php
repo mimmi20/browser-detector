@@ -24,16 +24,16 @@ use PHPUnit\Framework\TestCase;
 use function assert;
 use function sprintf;
 
-#[CoversClass(TestNotNumericFactory::class)]
+#[CoversClass(className: TestNotNumericFactory::class)]
 final class TestNotNumericFactoryTest extends TestCase
 {
-    private TestNotNumericFactory $object;
+    private TestNotNumericFactory $testNotNumericFactory;
 
     /** @throws void */
     #[Override]
     protected function setUp(): void
     {
-        $this->object = new TestNotNumericFactory();
+        $this->testNotNumericFactory = new TestNotNumericFactory();
     }
 
     /**
@@ -42,7 +42,7 @@ final class TestNotNumericFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $object = $this->object;
+        $object = $this->testNotNumericFactory;
         assert(
             $object instanceof TestNotNumericFactory,
             sprintf(
@@ -51,7 +51,7 @@ final class TestNotNumericFactoryTest extends TestCase
                 $object::class,
             ),
         );
-        $result = $object();
-        self::assertInstanceOf(TestNotNumericError::class, $result);
+        $testNotNumericError = $object();
+        self::assertInstanceOf(TestNotNumericError::class, $testNotNumericError);
     }
 }

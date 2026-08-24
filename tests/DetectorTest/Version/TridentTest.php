@@ -29,7 +29,7 @@ use UnexpectedValueException;
 
 use function assert;
 
-#[CoversClass(Trident::class)]
+#[CoversClass(className: Trident::class)]
 final class TridentTest extends TestCase
 {
     /**
@@ -37,12 +37,12 @@ final class TridentTest extends TestCase
      * @throws UnexpectedValueException
      * @throws Exception
      */
-    #[DataProvider('providerVersion')]
+    #[DataProvider(methodName: 'providerVersion')]
     public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
-        $object = new Trident(new VersionBuilder());
+        $trident = new Trident(new VersionBuilder());
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $trident->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertSame($expectedVersion, $detectedVersion->getVersion());
@@ -73,19 +73,19 @@ final class TridentTest extends TestCase
      */
     public function testDetectVersionFail(): void
     {
-        $exception = new NotNumericException('set failed');
+        $notNumericException = new NotNumericException('set failed');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('7.0')
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
 
         assert($versionBuilder instanceof VersionFactoryInterface);
-        $object = new Trident($versionBuilder);
+        $trident = new Trident($versionBuilder);
 
-        $detectedVersion = $object->detectVersion(
+        $detectedVersion = $trident->detectVersion(
             'Mozilla/5.0 (compatible;FW 2.0. 6868.p;FW 2.0. 7049.p; Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
         );
 

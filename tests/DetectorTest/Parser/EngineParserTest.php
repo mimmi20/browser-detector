@@ -21,7 +21,7 @@ use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 
-#[CoversClass(EngineParser::class)]
+#[CoversClass(className: EngineParser::class)]
 final class EngineParserTest extends TestCase
 {
     /**
@@ -33,17 +33,15 @@ final class EngineParserTest extends TestCase
         $useragent = 'test-agent';
         $mode      = 'test-mode';
 
-        $fileParser = $this->getMockBuilder(RulefileParserInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $fileParser = $this->createMock(RulefileParserInterface::class);
         $fileParser
             ->expects(self::once())
             ->method('parseFile')
             ->willReturn($mode);
 
-        $parser       = new EngineParser($fileParser);
-        $parserResult = $parser->parse($useragent);
+        $engineParser = new EngineParser($fileParser);
+        $engine       = $engineParser->parse($useragent);
 
-        self::assertSame(Engine::unknown, $parserResult);
+        self::assertSame(Engine::unknown, $engine);
     }
 }

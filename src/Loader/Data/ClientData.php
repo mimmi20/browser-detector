@@ -20,7 +20,7 @@ use UaResult\Browser\BrowserInterface;
 final readonly class ClientData implements ClientDataInterface
 {
     /** @throws void */
-    public function __construct(private BrowserInterface $client, private string | null $engine)
+    public function __construct(private BrowserInterface $browser, private string | null $engine)
     {
     }
 
@@ -28,7 +28,7 @@ final readonly class ClientData implements ClientDataInterface
     #[Override]
     public function getClient(): BrowserInterface
     {
-        return $this->client;
+        return $this->browser;
     }
 
     /** @throws void */

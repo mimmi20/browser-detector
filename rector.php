@@ -21,34 +21,50 @@ use Rector\DeadCode\Rector\StaticCall\RemoveParentCallWithoutParentRector;
 use Rector\DeadCode\Rector\StmtsAwareInterface\RemoveDeadInstanceOfAssertRector;
 use Rector\Php80\Rector\Class_\ClassPropertyAssignToConstructorPromotionRector;
 use Rector\Php84\Rector\MethodCall\NewMethodCallWithoutParenthesesRector;
-use Rector\PHPUnit\Set\PHPUnitSetList;
-use Rector\Set\ValueObject\LevelSetList;
-use Rector\Set\ValueObject\SetList;
+use Rector\PHPUnit\CodeQuality\Rector\Class_\PreferPHPUnitThisCallRector;
+use Rector\PHPUnit\CodeQuality\Rector\Class_\YieldDataProviderRector;
+use Rector\PHPUnit\CodeQuality\Rector\FuncCall\AssertFuncCallToPHPUnitAssertRector;
+use Rector\ValueObject\PhpVersion;
 
-return static function (RectorConfig $rectorConfig): void {
-    $rectorConfig->paths([
+return RectorConfig::configure()
+    ->withPaths([
         __DIR__ . '/src',
         __DIR__ . '/tests',
-    ]);
-
-    $rectorConfig->sets([
-        SetList::DEAD_CODE,
-        LevelSetList::UP_TO_PHP_85,
-        PHPUnitSetList::PHPUNIT_120,
-    ]);
-
-    $rectorConfig->skip(
-        [
-            RemoveDeadInstanceOfRector::class,
-            RemoveAlwaysTrueIfConditionRector::class,
-            RemoveParentCallWithoutParentRector::class,
-            NewMethodCallWithoutParenthesesRector::class,
-            RemoveDeadInstanceOfAssertRector::class,
-            RemoveDefaultValueFromAssignedPropertyRector::class,
-        ],
-    );
-
-    $rectorConfig->skip([
+    ])
+    ->withPhpVersion(PhpVersion::PHP_85)
+    ->withPreparedSets(
+        deadCode: true,
+        codeQuality: true,
+        typeDeclarations: true,
+        typeDeclarationDocblocks: true,
+        naming: true,
+        namedArgs: true,
+        instanceOf: true,
+        if: true,
+        earlyReturn: true,
+        phpunitCodeQuality: true,
+        phpunitNarrowAsserts: true,
+        phpunitMockToStub: true,
+    )
+    ->withPhpSets(php85: true)
+    ->withAttributesSets(phpunit: true)
+    ->withComposerBased(phpunit: true)
+    ->withSkip([
+        RemoveDeadInstanceOfRector::class,
+        RemoveAlwaysTrueIfConditionRector::class,
+        RemoveParentCallWithoutParentRector::class,
+        NewMethodCallWithoutParenthesesRector::class,
+        RemoveDeadInstanceOfAssertRector::class,
+        RemoveDefaultValueFromAssignedPropertyRector::class,
+        PreferPHPUnitThisCallRector::class,
+        AssertFuncCallToPHPUnitAssertRector::class,
+        YieldDataProviderRector::class,
+        \Rector\Naming\Rector\Class_\RenamePropertyToMatchTypeRector::class,
+        \Rector\Naming\Rector\ClassMethod\RenameParamToMatchTypeRector::class,
+        \Rector\CodeQuality\Rector\If_\ExplicitBoolCompareRector::class,
+        \Rector\PHPUnit\CodeQuality\Rector\ClassMethod\NoSetupWithParentCallOverrideRector::class,
+    ])
+    ->withSkip([
         RemoveUnusedPromotedPropertyRector::class => [
             __DIR__ . '/src/Detector.php',
         ],
@@ -60,5 +76,5 @@ return static function (RectorConfig $rectorConfig): void {
         RecastingRemovalRector::class => [
             __DIR__ . '/src/Loader/InitData/Device.php',
         ],
-    ]);
-};
+    ])
+    ->withoutParallel();

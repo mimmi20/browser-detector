@@ -49,13 +49,13 @@ use function mb_strtolower;
 use function sprintf;
 
 /** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */
-#[CoversClass(UseragentClientCode::class)]
-#[CoversClass(UseragentClientVersion::class)]
-#[CoversClass(UseragentDeviceCode::class)]
-#[CoversClass(UseragentEngineCode::class)]
-#[CoversClass(UseragentEngineVersion::class)]
-#[CoversClass(UseragentPlatformCode::class)]
-#[CoversClass(UseragentPlatformVersion::class)]
+#[CoversClass(className: UseragentClientCode::class)]
+#[CoversClass(className: UseragentClientVersion::class)]
+#[CoversClass(className: UseragentDeviceCode::class)]
+#[CoversClass(className: UseragentEngineCode::class)]
+#[CoversClass(className: UseragentEngineVersion::class)]
+#[CoversClass(className: UseragentPlatformCode::class)]
+#[CoversClass(className: UseragentPlatformVersion::class)]
 final class Useragent3Test extends TestCase
 {
     /**
@@ -66,7 +66,7 @@ final class Useragent3Test extends TestCase
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
-    #[DataProvider('providerUa5')]
+    #[DataProvider(methodName: 'providerUa5')]
     public function testDataWithoutFindingADevice(
         string $ua,
         string $normalizedUa,
@@ -79,12 +79,12 @@ final class Useragent3Test extends TestCase
         bool $hasClientVersion,
         string | null $clientVersion,
         bool $hasPlatformInfo,
-        Os $platformCode,
+        Os $os,
         bool $hasPlatformVersion,
         string | null $platformVersion,
         bool $hasEngineInfo,
         string $engineUa,
-        \BrowserDetector\Data\Engine $engineCode,
+        \BrowserDetector\Data\Engine $engine,
         bool $hasEngineVersion,
         string | null $engineVersion,
     ): void {
@@ -112,7 +112,7 @@ final class Useragent3Test extends TestCase
             ->expects(self::atLeastOnce())
             ->method('parse')
             ->with($engineUa)
-            ->willReturn($engineCode);
+            ->willReturn($engine);
 
         $browserLoader = $this->createMock(BrowserLoaderInterface::class);
         $browserLoader
@@ -134,7 +134,7 @@ final class Useragent3Test extends TestCase
         $engineLoader
             ->expects(self::atLeastOnce())
             ->method('loadFromEngine')
-            ->with($engineCode)
+            ->with($engine)
             ->willReturn(
                 new Engine(
                     name: null,
@@ -148,175 +148,175 @@ final class Useragent3Test extends TestCase
             ->expects(self::once())
             ->method('getDeviceCode')
             ->with(mb_strtolower($ua))
-            ->willReturn(null);
+            ->willReturn(value: null);
 
         $normalizerFactory = new NormalizerFactory();
-        $normalizer        = $normalizerFactory->build();
+        $normalizerChain   = $normalizerFactory->build();
 
-        $header = new FullHeader(
+        $fullHeader = new FullHeader(
             value: $ua,
             deviceCode: new UseragentDeviceCode(
                 deviceParser: $deviceParser,
-                normalizer: $normalizer,
-                deviceCodeHelper: $deviceCodeHelper,
+                normalizer: $normalizerChain,
+                device: $deviceCodeHelper,
             ),
             clientCode: new UseragentClientCode(
                 browserParser: $browserParser,
-                normalizer: $normalizer,
+                normalizer: $normalizerChain,
             ),
             clientVersion: new UseragentClientVersion(
                 browserParser: $browserParser,
                 browserLoader: $browserLoader,
-                normalizer: $normalizer,
+                normalizer: $normalizerChain,
             ),
             platformCode: new UseragentPlatformCode(
                 platformParser: $platformParser,
-                normalizer: $normalizer,
+                normalizer: $normalizerChain,
             ),
             platformVersion: new UseragentPlatformVersion(
                 platformParser: $platformParser,
                 platformLoader: $platformLoader,
-                normalizer: $normalizer,
+                normalizer: $normalizerChain,
             ),
             engineCode: new UseragentEngineCode(
                 engineParser: $engineParser,
-                normalizer: $normalizer,
+                normalizer: $normalizerChain,
             ),
             engineVersion: new UseragentEngineVersion(
                 engineParser: $engineParser,
                 engineLoader: $engineLoader,
-                normalizer: $normalizer,
+                normalizer: $normalizerChain,
             ),
         );
 
-        self::assertSame($ua, $header->getValue(), sprintf('value mismatch for ua "%s"', $ua));
+        self::assertSame($ua, $fullHeader->getValue(), sprintf('value mismatch for ua "%s"', $ua));
         self::assertSame(
             $normalizedUa,
-            $header->getNormalizedValue(),
+            $fullHeader->getNormalizedValue(),
             sprintf('value mismatch for ua "%s"', $ua),
         );
         self::assertFalse(
-            $header->hasDeviceArchitecture(),
+            $fullHeader->hasDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             Architecture::unknown,
-            $header->getDeviceArchitecture(),
+            $fullHeader->getDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertFalse(
-            $header->hasDeviceBitness(),
+            $fullHeader->hasDeviceBitness(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             Bits::unknown,
-            $header->getDeviceBitness(),
+            $fullHeader->getDeviceBitness(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertFalse(
-            $header->hasDeviceIsMobile(),
+            $fullHeader->hasDeviceIsMobile(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertNull(
-            $header->getDeviceIsMobile(),
+            $fullHeader->getDeviceIsMobile(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             $hasDeviceInfo,
-            $header->hasDeviceCode(),
+            $fullHeader->hasDeviceCode(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             $deviceCode,
-            $header->getDeviceCode(),
+            $fullHeader->getDeviceCode(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             $hasClientInfo,
-            $header->hasClientCode(),
+            $fullHeader->hasClientCode(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             $clientCode,
-            $header->getClientCode(),
+            $fullHeader->getClientCode(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             $hasClientVersion,
-            $header->hasClientVersion(),
+            $fullHeader->hasClientVersion(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
 
         if ($clientVersion === null) {
             self::assertInstanceOf(
                 ForcedNullVersion::class,
-                $header->getClientVersion(),
+                $fullHeader->getClientVersion(),
                 sprintf('browser info mismatch for ua "%s"', $ua),
             );
         } else {
             self::assertSame(
                 $clientVersion,
-                $header->getClientVersion()->getVersion(),
+                $fullHeader->getClientVersion()->getVersion(),
                 sprintf('browser info mismatch for ua "%s"', $ua),
             );
         }
 
         self::assertSame(
             $hasPlatformInfo,
-            $header->hasPlatformCode(),
+            $fullHeader->hasPlatformCode(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
-            $platformCode,
-            $header->getPlatformCode(),
+            $os,
+            $fullHeader->getPlatformCode(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             $hasPlatformVersion,
-            $header->hasPlatformVersion(),
+            $fullHeader->hasPlatformVersion(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
 
         if ($platformVersion === null) {
             self::assertInstanceOf(
                 ForcedNullVersion::class,
-                $header->getPlatformVersionWithOs(Os::unknown),
+                $fullHeader->getPlatformVersionWithOs(Os::unknown),
                 sprintf('platform info mismatch for ua "%s"', $ua),
             );
         } else {
             self::assertSame(
                 $platformVersion,
-                $header->getPlatformVersionWithOs(Os::unknown)->getVersion(),
+                $fullHeader->getPlatformVersionWithOs(Os::unknown)->getVersion(),
                 sprintf('platform info mismatch for ua "%s"', $ua),
             );
         }
 
         self::assertSame(
             $hasEngineInfo,
-            $header->hasEngineCode(),
+            $fullHeader->hasEngineCode(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
-            $engineCode,
-            $header->getEngineCode(),
+            $engine,
+            $fullHeader->getEngineCode(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             $hasEngineVersion,
-            $header->hasEngineVersion(),
+            $fullHeader->hasEngineVersion(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
 
         if ($engineVersion === null) {
             self::assertInstanceOf(
                 ForcedNullVersion::class,
-                $header->getEngineVersionWithEngine(\BrowserDetector\Data\Engine::unknown),
+                $fullHeader->getEngineVersionWithEngine(\BrowserDetector\Data\Engine::unknown),
                 sprintf('engine info mismatch for ua "%s"', $ua),
             );
         } else {
             self::assertSame(
                 $engineVersion,
-                $header->getEngineVersionWithEngine(
+                $fullHeader->getEngineVersionWithEngine(
                     \BrowserDetector\Data\Engine::unknown,
                 )->getVersion(),
                 sprintf('engine info mismatch for ua "%s"', $ua),
@@ -346,12 +346,12 @@ final class Useragent3Test extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => null,
                 'hasPlatformInfo' => true,
-                'platformCode' => Os::android,
+                'os' => Os::android,
                 'hasPlatformVersion' => true,
                 'platformVersion' => null,
                 'hasEngineInfo' => true,
                 'engineUa' => 'Android 17 - samsung meliuslte',
-                'engineCode' => \BrowserDetector\Data\Engine::webkit,
+                'engine' => \BrowserDetector\Data\Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31.0',
             ],
@@ -367,12 +367,12 @@ final class Useragent3Test extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => null,
                 'hasPlatformInfo' => true,
-                'platformCode' => Os::android,
+                'os' => Os::android,
                 'hasPlatformVersion' => true,
                 'platformVersion' => null,
                 'hasEngineInfo' => true,
                 'engineUa' => 'News Republic/12.1.5 (Linux; Android 26) Mobile Safari',
-                'engineCode' => \BrowserDetector\Data\Engine::webkit,
+                'engine' => \BrowserDetector\Data\Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31.0',
             ],
@@ -388,12 +388,12 @@ final class Useragent3Test extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => null,
                 'hasPlatformInfo' => true,
-                'platformCode' => Os::android,
+                'os' => Os::android,
                 'hasPlatformVersion' => true,
                 'platformVersion' => null,
                 'hasEngineInfo' => true,
                 'engineUa' => 'SM-T970 (compatible; Tablet2.0) HandelsbladProduction, com.twipemobile.nrc 5.1.4 (511) / Android 33',
-                'engineCode' => \BrowserDetector\Data\Engine::webkit,
+                'engine' => \BrowserDetector\Data\Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31.0',
             ],
@@ -409,12 +409,12 @@ final class Useragent3Test extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => null,
                 'hasPlatformInfo' => true,
-                'platformCode' => Os::android,
+                'os' => Os::android,
                 'hasPlatformVersion' => true,
                 'platformVersion' => null,
                 'hasEngineInfo' => true,
                 'engineUa' => 'WNYC App/3.0.3 Android/24 device/Verizon-SM-G930V',
-                'engineCode' => \BrowserDetector\Data\Engine::webkit,
+                'engine' => \BrowserDetector\Data\Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31.0',
             ],
@@ -429,7 +429,7 @@ final class Useragent3Test extends TestCase
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
-    #[DataProvider('providerUa6')]
+    #[DataProvider(methodName: 'providerUa6')]
     public function testDataWithFindingADevice(
         string $ua,
         string $normalizedUa,
@@ -441,12 +441,12 @@ final class Useragent3Test extends TestCase
         bool $hasClientVersion,
         string | null $clientVersion,
         bool $hasPlatformInfo,
-        Os $platformCode,
+        Os $os,
         bool $hasPlatformVersion,
         string | null $platformVersion,
         bool $hasEngineInfo,
         string $engineUa,
-        \BrowserDetector\Data\Engine $engineCode,
+        \BrowserDetector\Data\Engine $engine,
         bool $hasEngineVersion,
         string | null $engineVersion,
     ): void {
@@ -470,7 +470,7 @@ final class Useragent3Test extends TestCase
             ->expects(self::atLeastOnce())
             ->method('parse')
             ->with($engineUa)
-            ->willReturn($engineCode);
+            ->willReturn($engine);
 
         $browserLoader = $this->createMock(BrowserLoaderInterface::class);
         $browserLoader
@@ -492,7 +492,7 @@ final class Useragent3Test extends TestCase
         $engineLoader
             ->expects(self::atLeastOnce())
             ->method('loadFromEngine')
-            ->with($engineCode)
+            ->with($engine)
             ->willReturn(
                 new Engine(
                     name: null,
@@ -513,172 +513,172 @@ final class Useragent3Test extends TestCase
             );
 
         $normalizerFactory = new NormalizerFactory();
-        $normalizer        = $normalizerFactory->build();
+        $normalizerChain   = $normalizerFactory->build();
 
-        $header = new FullHeader(
+        $fullHeader = new FullHeader(
             value: $ua,
             deviceCode: new UseragentDeviceCode(
                 deviceParser: $deviceParser,
-                normalizer: $normalizer,
-                deviceCodeHelper: $deviceCodeHelper,
+                normalizer: $normalizerChain,
+                device: $deviceCodeHelper,
             ),
             clientCode: new UseragentClientCode(
                 browserParser: $browserParser,
-                normalizer: $normalizer,
+                normalizer: $normalizerChain,
             ),
             clientVersion: new UseragentClientVersion(
                 browserParser: $browserParser,
                 browserLoader: $browserLoader,
-                normalizer: $normalizer,
+                normalizer: $normalizerChain,
             ),
             platformCode: new UseragentPlatformCode(
                 platformParser: $platformParser,
-                normalizer: $normalizer,
+                normalizer: $normalizerChain,
             ),
             platformVersion: new UseragentPlatformVersion(
                 platformParser: $platformParser,
                 platformLoader: $platformLoader,
-                normalizer: $normalizer,
+                normalizer: $normalizerChain,
             ),
             engineCode: new UseragentEngineCode(
                 engineParser: $engineParser,
-                normalizer: $normalizer,
+                normalizer: $normalizerChain,
             ),
             engineVersion: new UseragentEngineVersion(
                 engineParser: $engineParser,
                 engineLoader: $engineLoader,
-                normalizer: $normalizer,
+                normalizer: $normalizerChain,
             ),
         );
 
-        self::assertSame($ua, $header->getValue(), sprintf('value mismatch for ua "%s"', $ua));
+        self::assertSame($ua, $fullHeader->getValue(), sprintf('value mismatch for ua "%s"', $ua));
         self::assertSame(
             $normalizedUa,
-            $header->getNormalizedValue(),
+            $fullHeader->getNormalizedValue(),
             sprintf('value mismatch for ua "%s"', $ua),
         );
         self::assertFalse(
-            $header->hasDeviceArchitecture(),
+            $fullHeader->hasDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             Architecture::unknown,
-            $header->getDeviceArchitecture(),
+            $fullHeader->getDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertFalse(
-            $header->hasDeviceBitness(),
+            $fullHeader->hasDeviceBitness(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             Bits::unknown,
-            $header->getDeviceBitness(),
+            $fullHeader->getDeviceBitness(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertFalse(
-            $header->hasDeviceIsMobile(),
+            $fullHeader->hasDeviceIsMobile(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertNull(
-            $header->getDeviceIsMobile(),
+            $fullHeader->getDeviceIsMobile(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             $hasDeviceInfo,
-            $header->hasDeviceCode(),
+            $fullHeader->hasDeviceCode(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             $deviceCode,
-            $header->getDeviceCode(),
+            $fullHeader->getDeviceCode(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             $hasClientInfo,
-            $header->hasClientCode(),
+            $fullHeader->hasClientCode(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             $clientCode,
-            $header->getClientCode(),
+            $fullHeader->getClientCode(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             $hasClientVersion,
-            $header->hasClientVersion(),
+            $fullHeader->hasClientVersion(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
 
         if ($clientVersion === null) {
             self::assertInstanceOf(
                 ForcedNullVersion::class,
-                $header->getClientVersion(),
+                $fullHeader->getClientVersion(),
                 sprintf('browser info mismatch for ua "%s"', $ua),
             );
         } else {
             self::assertSame(
                 $clientVersion,
-                $header->getClientVersion()->getVersion(),
+                $fullHeader->getClientVersion()->getVersion(),
                 sprintf('browser info mismatch for ua "%s"', $ua),
             );
         }
 
         self::assertSame(
             $hasPlatformInfo,
-            $header->hasPlatformCode(),
+            $fullHeader->hasPlatformCode(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
-            $platformCode,
-            $header->getPlatformCode(),
+            $os,
+            $fullHeader->getPlatformCode(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             $hasPlatformVersion,
-            $header->hasPlatformVersion(),
+            $fullHeader->hasPlatformVersion(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
 
         if ($platformVersion === null) {
             self::assertInstanceOf(
                 ForcedNullVersion::class,
-                $header->getPlatformVersionWithOs(Os::unknown),
+                $fullHeader->getPlatformVersionWithOs(Os::unknown),
                 sprintf('platform info mismatch for ua "%s"', $ua),
             );
         } else {
             self::assertSame(
                 $platformVersion,
-                $header->getPlatformVersionWithOs(Os::unknown)->getVersion(),
+                $fullHeader->getPlatformVersionWithOs(Os::unknown)->getVersion(),
                 sprintf('platform info mismatch for ua "%s"', $ua),
             );
         }
 
         self::assertSame(
             $hasEngineInfo,
-            $header->hasEngineCode(),
+            $fullHeader->hasEngineCode(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
-            $engineCode,
-            $header->getEngineCode(),
+            $engine,
+            $fullHeader->getEngineCode(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             $hasEngineVersion,
-            $header->hasEngineVersion(),
+            $fullHeader->hasEngineVersion(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
 
         if ($engineVersion === null) {
             self::assertInstanceOf(
                 ForcedNullVersion::class,
-                $header->getEngineVersionWithEngine(\BrowserDetector\Data\Engine::unknown),
+                $fullHeader->getEngineVersionWithEngine(\BrowserDetector\Data\Engine::unknown),
                 sprintf('engine info mismatch for ua "%s"', $ua),
             );
         } else {
             self::assertSame(
                 $engineVersion,
-                $header->getEngineVersionWithEngine(
+                $fullHeader->getEngineVersionWithEngine(
                     \BrowserDetector\Data\Engine::unknown,
                 )->getVersion(),
                 sprintf('engine info mismatch for ua "%s"', $ua),
@@ -707,12 +707,12 @@ final class Useragent3Test extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '45.2.0.22026',
                 'hasPlatformInfo' => true,
-                'platformCode' => Os::android,
+                'os' => Os::android,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '14.0.0',
                 'hasEngineInfo' => true,
                 'engineUa' => 'Virgin Radio/45.2.0.22026 / (Linux; Android 14) ExoPlayerLib/2.17.1 / samsung (SM-G996B)',
-                'engineCode' => \BrowserDetector\Data\Engine::webkit,
+                'engine' => \BrowserDetector\Data\Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31.0',
             ],
@@ -727,12 +727,12 @@ final class Useragent3Test extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '4.7.0',
                 'hasPlatformInfo' => true,
-                'platformCode' => Os::android,
+                'os' => Os::android,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '12.0.0',
                 'hasEngineInfo' => true,
                 'engineUa' => 'TiviMate/4.7.0 (Onn. 4K Streaming Box; Android 12)',
-                'engineCode' => \BrowserDetector\Data\Engine::webkit,
+                'engine' => \BrowserDetector\Data\Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31.0',
             ],
@@ -747,12 +747,12 @@ final class Useragent3Test extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '3.8.10',
                 'hasPlatformInfo' => true,
-                'platformCode' => Os::android,
+                'os' => Os::android,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '13.0.0',
                 'hasEngineInfo' => true,
                 'engineUa' => 'PugpigBolt 3.8.10 (samsung, Android 13) on phone (model SM-G998U)',
-                'engineCode' => \BrowserDetector\Data\Engine::webkit,
+                'engine' => \BrowserDetector\Data\Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31.0',
             ],
@@ -767,12 +767,12 @@ final class Useragent3Test extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '2.0.0',
                 'hasPlatformInfo' => true,
-                'platformCode' => Os::android,
+                'os' => Os::android,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '12.0.0',
                 'hasEngineInfo' => true,
                 'engineUa' => 'Classic FM/2.0.0 Android 12/SM-G975F',
-                'engineCode' => \BrowserDetector\Data\Engine::webkit,
+                'engine' => \BrowserDetector\Data\Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31.0',
             ],

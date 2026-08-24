@@ -35,8 +35,8 @@ use UaResult\Device\Device;
 use UaResult\Device\Display;
 use UnexpectedValueException;
 
-#[CoversClass(DeviceLoader::class)]
-#[CoversClass(DeviceData::class)]
+#[CoversClass(className: DeviceLoader::class)]
+#[CoversClass(className: DeviceData::class)]
 final class DeviceLoader1Test extends TestCase
 {
     /**
@@ -69,7 +69,7 @@ final class DeviceLoader1Test extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = new DeviceData(
+        $device = new DeviceData(
             strategy: new class () implements StrategyInterface {
                 /**
                  * @throws void
@@ -105,13 +105,17 @@ final class DeviceLoader1Test extends TestCase
             ->expects(self::never())
             ->method('load');
 
-        $object = new DeviceLoader(logger: $logger, initData: $initData, companyLoader: $companyLoader);
+        $deviceLoader = new DeviceLoader(
+            logger: $logger,
+            initData: $device,
+            companyLoader: $companyLoader,
+        );
 
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessageIsOrContains('the device with key "test-key" was not found');
         $this->expectExceptionCode(0);
 
-        $object->load('test-key');
+        $deviceLoader->load('test-key');
     }
 
     /**
@@ -144,7 +148,7 @@ final class DeviceLoader1Test extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = new DeviceData(
+        $device = new DeviceData(
             strategy: new class () implements StrategyInterface {
                 /**
                  * @throws void
@@ -180,13 +184,17 @@ final class DeviceLoader1Test extends TestCase
             ->expects(self::never())
             ->method('load');
 
-        $object = new DeviceLoader(logger: $logger, initData: $initData, companyLoader: $companyLoader);
+        $deviceLoader = new DeviceLoader(
+            logger: $logger,
+            initData: $device,
+            companyLoader: $companyLoader,
+        );
 
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessageIsOrContains('the device with key "test-key" was not found');
         $this->expectExceptionCode(0);
 
-        $object->load('test-key');
+        $deviceLoader->load('test-key');
     }
 
     /**
@@ -227,20 +235,24 @@ final class DeviceLoader1Test extends TestCase
             ->expects(self::once())
             ->method('getItem')
             ->with('test-key')
-            ->willReturn(null);
+            ->willReturn(value: null);
 
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
         $companyLoader
             ->expects(self::never())
             ->method('load');
 
-        $object = new DeviceLoader(logger: $logger, initData: $initData, companyLoader: $companyLoader);
+        $deviceLoader = new DeviceLoader(
+            logger: $logger,
+            initData: $initData,
+            companyLoader: $companyLoader,
+        );
 
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessageIsOrContains('the device with key "test-key" was not found');
         $this->expectExceptionCode(0);
 
-        $object->load('test-key');
+        $deviceLoader->load('test-key');
     }
 
     /**
@@ -336,9 +348,13 @@ final class DeviceLoader1Test extends TestCase
             ->with('xyz')
             ->willReturn($company);
 
-        $object = new DeviceLoader(logger: $logger, initData: $initData, companyLoader: $companyLoader);
+        $deviceLoader = new DeviceLoader(
+            logger: $logger,
+            initData: $initData,
+            companyLoader: $companyLoader,
+        );
 
-        $result = $object->load('test-key');
+        $deviceData = $deviceLoader->load('test-key');
 
         $prop = new ReflectionProperty($initData, 'initialized');
 
@@ -351,14 +367,14 @@ final class DeviceLoader1Test extends TestCase
             manufacturer: $company,
             brand: $company,
             type: Type::Unknown,
-            display: new Display(720, 1440, false, 7),
+            display: new Display(720, 1440, touch: false, size: 7),
             dualOrientation: false,
             simCount: 0,
             bits: Bits::unknown,
         );
 
-        self::assertSame($expected->toArray(), $result->getDevice()->toArray());
-        self::assertSame('test-platform', $result->getOs());
+        self::assertSame($expected->toArray(), $deviceData->getDevice()->toArray());
+        self::assertSame('test-platform', $deviceData->getOs());
     }
 
     /**
@@ -369,13 +385,13 @@ final class DeviceLoader1Test extends TestCase
      */
     public function testLoadWithError1(): void
     {
-        $exception = new NotFoundException('x was not found');
+        $notFoundException = new NotFoundException('x was not found');
 
         $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::once())
             ->method('info')
-            ->with($exception, []);
+            ->with($notFoundException, []);
         $logger
             ->expects(self::never())
             ->method('notice');
@@ -445,8 +461,8 @@ final class DeviceLoader1Test extends TestCase
             platform: 'test-platform',
         );
 
-        $prop = new ReflectionProperty($initData, 'items');
-        $prop->setValue($initData, ['test-key' => $platformData]);
+        $reflectionProperty = new ReflectionProperty($initData, 'items');
+        $reflectionProperty->setValue($initData, ['test-key' => $platformData]);
 
         $company = new Company(type: 'unknown', name: null, brandname: null);
 
@@ -455,11 +471,15 @@ final class DeviceLoader1Test extends TestCase
             ->expects(self::once())
             ->method('load')
             ->with('xyz')
-            ->willThrowException($exception);
+            ->willThrowException($notFoundException);
 
-        $object = new DeviceLoader(logger: $logger, initData: $initData, companyLoader: $companyLoader);
+        $deviceLoader = new DeviceLoader(
+            logger: $logger,
+            initData: $initData,
+            companyLoader: $companyLoader,
+        );
 
-        $result = $object->load('test-key');
+        $deviceData = $deviceLoader->load('test-key');
 
         $expected = new Device(
             architecture: Architecture::unknown,
@@ -468,14 +488,14 @@ final class DeviceLoader1Test extends TestCase
             manufacturer: $company,
             brand: $company,
             type: Type::Unknown,
-            display: new Display(720, 1440, false, 7),
+            display: new Display(720, 1440, touch: false, size: 7),
             dualOrientation: false,
             simCount: 0,
             bits: Bits::unknown,
         );
 
-        self::assertSame($expected->toArray(), $result->getDevice()->toArray());
-        self::assertSame('test-platform', $result->getOs());
+        self::assertSame($expected->toArray(), $deviceData->getDevice()->toArray());
+        self::assertSame('test-platform', $deviceData->getOs());
     }
 
     /**
@@ -486,13 +506,13 @@ final class DeviceLoader1Test extends TestCase
      */
     public function testLoadWithError2(): void
     {
-        $exception = new NotFoundException('x was not found');
+        $notFoundException = new NotFoundException('x was not found');
 
         $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::once())
             ->method('info')
-            ->with($exception, []);
+            ->with($notFoundException, []);
         $logger
             ->expects(self::never())
             ->method('notice');
@@ -562,8 +582,8 @@ final class DeviceLoader1Test extends TestCase
             platform: 'test-platform',
         );
 
-        $prop = new ReflectionProperty($initData, 'items');
-        $prop->setValue($initData, ['test-key' => $platformData]);
+        $reflectionProperty = new ReflectionProperty($initData, 'items');
+        $reflectionProperty->setValue($initData, ['test-key' => $platformData]);
 
         $company = new Company(type: 'unknown', name: null, brandname: null);
 
@@ -572,11 +592,15 @@ final class DeviceLoader1Test extends TestCase
             ->expects(self::once())
             ->method('load')
             ->with('xyz')
-            ->willThrowException($exception);
+            ->willThrowException($notFoundException);
 
-        $object = new DeviceLoader(logger: $logger, initData: $initData, companyLoader: $companyLoader);
+        $deviceLoader = new DeviceLoader(
+            logger: $logger,
+            initData: $initData,
+            companyLoader: $companyLoader,
+        );
 
-        $result = $object->load('test-key');
+        $deviceData = $deviceLoader->load('test-key');
 
         $expected = new Device(
             architecture: Architecture::unknown,
@@ -585,14 +609,14 @@ final class DeviceLoader1Test extends TestCase
             manufacturer: $company,
             brand: $company,
             type: Type::Unknown,
-            display: new Display(720, 1440, false, 7),
+            display: new Display(720, 1440, touch: false, size: 7),
             dualOrientation: false,
             simCount: 0,
             bits: Bits::unknown,
         );
 
-        self::assertSame($expected->toArray(), $result->getDevice()->toArray());
-        self::assertSame('test-platform', $result->getOs());
+        self::assertSame($expected->toArray(), $deviceData->getDevice()->toArray());
+        self::assertSame('test-platform', $deviceData->getOs());
     }
 
     /**
@@ -603,13 +627,13 @@ final class DeviceLoader1Test extends TestCase
      */
     public function testLoadWithError3(): void
     {
-        $exception = new NotFoundException('x was not found');
+        $notFoundException = new NotFoundException('x was not found');
 
         $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::exactly(2))
             ->method('info')
-            ->with($exception, []);
+            ->with($notFoundException, []);
         $logger
             ->expects(self::never())
             ->method('notice');
@@ -679,8 +703,8 @@ final class DeviceLoader1Test extends TestCase
             platform: 'test-platform',
         );
 
-        $prop = new ReflectionProperty($initData, 'items');
-        $prop->setValue($initData, ['test-key' => $platformData]);
+        $reflectionProperty = new ReflectionProperty($initData, 'items');
+        $reflectionProperty->setValue($initData, ['test-key' => $platformData]);
 
         $company = new Company(type: 'unknown', name: null, brandname: null);
 
@@ -689,11 +713,15 @@ final class DeviceLoader1Test extends TestCase
             ->expects(self::exactly(2))
             ->method('load')
             ->with('xyz')
-            ->willThrowException($exception);
+            ->willThrowException($notFoundException);
 
-        $object = new DeviceLoader(logger: $logger, initData: $initData, companyLoader: $companyLoader);
+        $deviceLoader = new DeviceLoader(
+            logger: $logger,
+            initData: $initData,
+            companyLoader: $companyLoader,
+        );
 
-        $result = $object->load('test-key');
+        $deviceData = $deviceLoader->load('test-key');
 
         $expected = new Device(
             architecture: Architecture::unknown,
@@ -702,14 +730,14 @@ final class DeviceLoader1Test extends TestCase
             manufacturer: $company,
             brand: $company,
             type: Type::Unknown,
-            display: new Display(720, 1440, false, 7),
+            display: new Display(720, 1440, touch: false, size: 7),
             dualOrientation: false,
             simCount: 0,
             bits: Bits::unknown,
         );
 
-        self::assertSame($expected->toArray(), $result->getDevice()->toArray());
-        self::assertSame('test-platform', $result->getOs());
+        self::assertSame($expected->toArray(), $deviceData->getDevice()->toArray());
+        self::assertSame('test-platform', $deviceData->getOs());
     }
 
     /**
@@ -758,13 +786,17 @@ final class DeviceLoader1Test extends TestCase
             ->expects(self::never())
             ->method('load');
 
-        $object = new DeviceLoader(logger: $logger, initData: $initData, companyLoader: $companyLoader);
+        $deviceLoader = new DeviceLoader(
+            logger: $logger,
+            initData: $initData,
+            companyLoader: $companyLoader,
+        );
 
         $this->expectException(NotFoundException::class);
         $this->expectExceptionCode(0);
         $this->expectExceptionMessageIsOrContains('the device with key "' . $key . '" was not found');
 
-        $object->load($key);
+        $deviceLoader->load($key);
     }
 
     /**
@@ -860,9 +892,13 @@ final class DeviceLoader1Test extends TestCase
             ->with('xyz')
             ->willReturn($company);
 
-        $object = new DeviceLoader(logger: $logger, initData: $initData, companyLoader: $companyLoader);
+        $deviceLoader = new DeviceLoader(
+            logger: $logger,
+            initData: $initData,
+            companyLoader: $companyLoader,
+        );
 
-        $result = $object->load('test-key');
+        $deviceData = $deviceLoader->load('test-key');
 
         $prop = new ReflectionProperty($initData, 'initialized');
 
@@ -875,13 +911,13 @@ final class DeviceLoader1Test extends TestCase
             manufacturer: $company,
             brand: $company,
             type: Type::Smartphone,
-            display: new Display(720, 1440, true, 7),
+            display: new Display(720, 1440, touch: true, size: 7),
             dualOrientation: false,
             simCount: 1,
             bits: Bits::unknown,
         );
 
-        self::assertSame($expected->toArray(), $result->getDevice()->toArray());
-        self::assertSame('test-platform', $result->getOs());
+        self::assertSame($expected->toArray(), $deviceData->getDevice()->toArray());
+        self::assertSame('test-platform', $deviceData->getOs());
     }
 }

@@ -26,7 +26,7 @@ use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UnexpectedValueException;
 
-#[CoversClass(FirefoxOs::class)]
+#[CoversClass(className: FirefoxOs::class)]
 final class FirefoxOsTest extends TestCase
 {
     /**
@@ -34,12 +34,12 @@ final class FirefoxOsTest extends TestCase
      * @throws UnexpectedValueException
      * @throws Exception
      */
-    #[DataProvider('providerVersion')]
+    #[DataProvider(methodName: 'providerVersion')]
     public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
-        $object = new FirefoxOs(new VersionBuilder());
+        $firefoxOs = new FirefoxOs(new VersionBuilder());
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $firefoxOs->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertSame($expectedVersion, $detectedVersion->getVersion());
@@ -110,8 +110,8 @@ final class FirefoxOsTest extends TestCase
      */
     public function testDetectVersionFail(): void
     {
-        $useragent = 'Mozilla/5.0 (Mobile; ALCATELOneTouch6015X SVN:01004P MMS:1.1; rv:34.0) Gecko/34.0 Firefox/34.0';
-        $exception = new NotNumericException('set failed');
+        $useragent           = 'Mozilla/5.0 (Mobile; ALCATELOneTouch6015X SVN:01004P MMS:1.1; rv:34.0) Gecko/34.0 Firefox/34.0';
+        $notNumericException = new NotNumericException('set failed');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
@@ -121,11 +121,11 @@ final class FirefoxOsTest extends TestCase
             ->expects(self::once())
             ->method('set')
             ->with('2.1')
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
 
-        $object = new FirefoxOs($versionBuilder);
+        $firefoxOs = new FirefoxOs($versionBuilder);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $firefoxOs->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);

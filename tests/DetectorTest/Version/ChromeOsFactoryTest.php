@@ -24,16 +24,16 @@ use PHPUnit\Framework\TestCase;
 use function assert;
 use function sprintf;
 
-#[CoversClass(ChromeOsFactory::class)]
+#[CoversClass(className: ChromeOsFactory::class)]
 final class ChromeOsFactoryTest extends TestCase
 {
-    private ChromeOsFactory $object;
+    private ChromeOsFactory $chromeOsFactory;
 
     /** @throws void */
     #[Override]
     protected function setUp(): void
     {
-        $this->object = new ChromeOsFactory();
+        $this->chromeOsFactory = new ChromeOsFactory();
     }
 
     /**
@@ -42,7 +42,7 @@ final class ChromeOsFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $object = $this->object;
+        $object = $this->chromeOsFactory;
         assert(
             $object instanceof ChromeOsFactory,
             sprintf(
@@ -51,7 +51,7 @@ final class ChromeOsFactoryTest extends TestCase
                 $object::class,
             ),
         );
-        $result = $object();
-        self::assertInstanceOf(ChromeOs::class, $result);
+        $chromeOs = $object();
+        self::assertInstanceOf(ChromeOs::class, $chromeOs);
     }
 }

@@ -20,7 +20,7 @@ use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\Normalizer\NormalizerInterface;
 use UaParser\DeviceParserInterface;
 
-#[CoversClass(XOperaminiPhoneUaDeviceCode::class)]
+#[CoversClass(className: XOperaminiPhoneUaDeviceCode::class)]
 final class XOperaminiPhoneUaDeviceCodeTest extends TestCase
 {
     /** @throws \PHPUnit\Framework\Exception */
@@ -41,9 +41,12 @@ final class XOperaminiPhoneUaDeviceCodeTest extends TestCase
             ->with($value)
             ->willThrowException($exception);
 
-        $object = new XOperaminiPhoneUaDeviceCode(deviceParser: $deviceParser, normalizer: $normalizer);
+        $xOperaminiPhoneUaDeviceCode = new XOperaminiPhoneUaDeviceCode(
+            deviceParser: $deviceParser,
+            normalizer: $normalizer,
+        );
 
-        self::assertNull($object->getDeviceCode($value));
+        self::assertNull($xOperaminiPhoneUaDeviceCode->getDeviceCode($value));
     }
 
     /** @throws \PHPUnit\Framework\Exception */
@@ -61,11 +64,14 @@ final class XOperaminiPhoneUaDeviceCodeTest extends TestCase
             ->expects(self::once())
             ->method('normalize')
             ->with($value)
-            ->willReturn(null);
+            ->willReturn(value: null);
 
-        $object = new XOperaminiPhoneUaDeviceCode(deviceParser: $deviceParser, normalizer: $normalizer);
+        $xOperaminiPhoneUaDeviceCode = new XOperaminiPhoneUaDeviceCode(
+            deviceParser: $deviceParser,
+            normalizer: $normalizer,
+        );
 
-        self::assertNull($object->getDeviceCode($value));
+        self::assertNull($xOperaminiPhoneUaDeviceCode->getDeviceCode($value));
     }
 
     /** @throws \PHPUnit\Framework\Exception */
@@ -85,8 +91,11 @@ final class XOperaminiPhoneUaDeviceCodeTest extends TestCase
             ->with($value)
             ->willReturn('');
 
-        $object = new XOperaminiPhoneUaDeviceCode(deviceParser: $deviceParser, normalizer: $normalizer);
+        $xOperaminiPhoneUaDeviceCode = new XOperaminiPhoneUaDeviceCode(
+            deviceParser: $deviceParser,
+            normalizer: $normalizer,
+        );
 
-        self::assertNull($object->getDeviceCode($value));
+        self::assertNull($xOperaminiPhoneUaDeviceCode->getDeviceCode($value));
     }
 }

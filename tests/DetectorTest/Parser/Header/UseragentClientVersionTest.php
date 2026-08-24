@@ -31,15 +31,15 @@ use UaParser\BrowserParserInterface;
 use UaResult\Browser\BrowserInterface;
 use UnexpectedValueException;
 
-#[CoversClass(UseragentClientVersion::class)]
-#[CoversTrait(SetVersionTrait::class)]
+#[CoversClass(className: UseragentClientVersion::class)]
+#[CoversTrait(traitName: SetVersionTrait::class)]
 final class UseragentClientVersionTest extends TestCase
 {
     /**
      * @throws Exception
      * @throws UnexpectedValueException
      */
-    #[DataProvider('providerUa1')]
+    #[DataProvider(methodName: 'providerUa1')]
     public function testWithoutParsing(string $value, string $expected): void
     {
         $browserParser = $this->createMock(BrowserParserInterface::class);
@@ -59,16 +59,16 @@ final class UseragentClientVersionTest extends TestCase
             ->with($value)
             ->willReturn($value);
 
-        $header = new UseragentClientVersion(
+        $useragentClientVersion = new UseragentClientVersion(
             browserParser: $browserParser,
             browserLoader: $browserLoader,
             normalizer: $normalizer,
         );
 
-        self::assertTrue($header->hasClientVersion($value));
+        self::assertTrue($useragentClientVersion->hasClientVersion($value));
         self::assertSame(
             $expected,
-            $header->getClientVersion($value, 'unknown')->getVersion(),
+            $useragentClientVersion->getClientVersion($value, 'unknown')->getVersion(),
         );
     }
 
@@ -152,16 +152,16 @@ final class UseragentClientVersionTest extends TestCase
             ->with($value)
             ->willReturn($value);
 
-        $header = new UseragentClientVersion(
+        $useragentClientVersion = new UseragentClientVersion(
             browserParser: $browserParser,
             browserLoader: $browserLoader,
             normalizer: $normalizer,
         );
 
-        self::assertTrue($header->hasClientVersion($value));
+        self::assertTrue($useragentClientVersion->hasClientVersion($value));
         self::assertInstanceOf(
             NullVersion::class,
-            $header->getClientVersion($value, 'unknown'),
+            $useragentClientVersion->getClientVersion($value, 'unknown'),
         );
     }
 
@@ -190,16 +190,16 @@ final class UseragentClientVersionTest extends TestCase
             ->with($value)
             ->willReturn($value);
 
-        $header = new UseragentClientVersion(
+        $useragentClientVersion = new UseragentClientVersion(
             browserParser: $browserParser,
             browserLoader: $browserLoader,
             normalizer: $normalizer,
         );
 
-        self::assertTrue($header->hasClientVersion($value));
+        self::assertTrue($useragentClientVersion->hasClientVersion($value));
         self::assertInstanceOf(
             NullVersion::class,
-            $header->getClientVersion($value, 'unknown'),
+            $useragentClientVersion->getClientVersion($value, 'unknown'),
         );
     }
 
@@ -264,16 +264,16 @@ final class UseragentClientVersionTest extends TestCase
             ->with($value)
             ->willReturn($value);
 
-        $header = new UseragentClientVersion(
+        $useragentClientVersion = new UseragentClientVersion(
             browserParser: $browserParser,
             browserLoader: $browserLoader,
             normalizer: $normalizer,
         );
 
-        self::assertTrue($header->hasClientVersion($value));
+        self::assertTrue($useragentClientVersion->hasClientVersion($value));
         self::assertInstanceOf(
             NullVersion::class,
-            $header->getClientVersion($value, 'unknown'),
+            $useragentClientVersion->getClientVersion($value, 'unknown'),
         );
     }
 
@@ -345,16 +345,16 @@ final class UseragentClientVersionTest extends TestCase
             ->with($value)
             ->willReturn($value);
 
-        $header = new UseragentClientVersion(
+        $useragentClientVersion = new UseragentClientVersion(
             browserParser: $browserParser,
             browserLoader: $browserLoader,
             normalizer: $normalizer,
         );
 
-        self::assertTrue($header->hasClientVersion($value));
+        self::assertTrue($useragentClientVersion->hasClientVersion($value));
         self::assertInstanceOf(
             NullVersion::class,
-            $header->getClientVersion($value, 'unknown'),
+            $useragentClientVersion->getClientVersion($value, 'unknown'),
         );
     }
 
@@ -426,16 +426,16 @@ final class UseragentClientVersionTest extends TestCase
             ->with($value)
             ->willReturn($value);
 
-        $header = new UseragentClientVersion(
+        $useragentClientVersion = new UseragentClientVersion(
             browserParser: $browserParser,
             browserLoader: $browserLoader,
             normalizer: $normalizer,
         );
 
-        self::assertTrue($header->hasClientVersion($value));
+        self::assertTrue($useragentClientVersion->hasClientVersion($value));
         self::assertInstanceOf(
             NullVersion::class,
-            $header->getClientVersion($value, 'unknown'),
+            $useragentClientVersion->getClientVersion($value, 'unknown'),
         );
     }
 
@@ -509,16 +509,16 @@ final class UseragentClientVersionTest extends TestCase
             ->with($value)
             ->willReturn($value);
 
-        $header = new UseragentClientVersion(
+        $useragentClientVersion = new UseragentClientVersion(
             browserParser: $browserParser,
             browserLoader: $browserLoader,
             normalizer: $normalizer,
         );
 
-        self::assertTrue($header->hasClientVersion($value));
+        self::assertTrue($useragentClientVersion->hasClientVersion($value));
         self::assertInstanceOf(
             NullVersion::class,
-            $header->getClientVersion($value),
+            $useragentClientVersion->getClientVersion($value),
         );
     }
 
@@ -546,16 +546,16 @@ final class UseragentClientVersionTest extends TestCase
             ->with($value)
             ->willReturn($value);
 
-        $header = new UseragentClientVersion(
+        $useragentClientVersion = new UseragentClientVersion(
             browserParser: $browserParser,
             browserLoader: $browserLoader,
             normalizer: $normalizer,
         );
 
-        self::assertTrue($header->hasClientVersion($value));
+        self::assertTrue($useragentClientVersion->hasClientVersion($value));
         self::assertInstanceOf(
             ForcedNullVersion::class,
-            $header->getClientVersion($value),
+            $useragentClientVersion->getClientVersion($value),
         );
     }
 
@@ -583,16 +583,16 @@ final class UseragentClientVersionTest extends TestCase
             ->with($value)
             ->willReturn($value);
 
-        $header = new UseragentClientVersion(
+        $useragentClientVersion = new UseragentClientVersion(
             browserParser: $browserParser,
             browserLoader: $browserLoader,
             normalizer: $normalizer,
         );
 
-        self::assertTrue($header->hasClientVersion($value));
+        self::assertTrue($useragentClientVersion->hasClientVersion($value));
         self::assertInstanceOf(
             NullVersion::class,
-            $header->getClientVersion($value),
+            $useragentClientVersion->getClientVersion($value),
         );
     }
 
@@ -618,16 +618,16 @@ final class UseragentClientVersionTest extends TestCase
             ->with($value)
             ->willThrowException(new \UaNormalizer\Normalizer\Exception\Exception('b'));
 
-        $header = new UseragentClientVersion(
+        $useragentClientVersion = new UseragentClientVersion(
             browserParser: $browserParser,
             browserLoader: $browserLoader,
             normalizer: $normalizer,
         );
 
-        self::assertTrue($header->hasClientVersion($value));
+        self::assertTrue($useragentClientVersion->hasClientVersion($value));
         self::assertInstanceOf(
             ForcedNullVersion::class,
-            $header->getClientVersion($value, 'unknown'),
+            $useragentClientVersion->getClientVersion($value, 'unknown'),
         );
     }
 
@@ -653,16 +653,16 @@ final class UseragentClientVersionTest extends TestCase
             ->with($value)
             ->willReturn('');
 
-        $header = new UseragentClientVersion(
+        $useragentClientVersion = new UseragentClientVersion(
             browserParser: $browserParser,
             browserLoader: $browserLoader,
             normalizer: $normalizer,
         );
 
-        self::assertTrue($header->hasClientVersion($value));
+        self::assertTrue($useragentClientVersion->hasClientVersion($value));
         self::assertInstanceOf(
             ForcedNullVersion::class,
-            $header->getClientVersion($value, 'unknown'),
+            $useragentClientVersion->getClientVersion($value, 'unknown'),
         );
     }
 
@@ -688,16 +688,16 @@ final class UseragentClientVersionTest extends TestCase
             ->with($value)
             ->willThrowException(new \UaNormalizer\Normalizer\Exception\Exception('x'));
 
-        $header = new UseragentClientVersion(
+        $useragentClientVersion = new UseragentClientVersion(
             browserParser: $browserParser,
             browserLoader: $browserLoader,
             normalizer: $normalizer,
         );
 
-        self::assertTrue($header->hasClientVersion($value));
+        self::assertTrue($useragentClientVersion->hasClientVersion($value));
         self::assertInstanceOf(
             ForcedNullVersion::class,
-            $header->getClientVersion($value, 'unknown'),
+            $useragentClientVersion->getClientVersion($value, 'unknown'),
         );
     }
 }

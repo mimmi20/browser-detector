@@ -28,7 +28,7 @@ use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UnexpectedValueException;
 
-#[CoversClass(MicrosoftInternetExplorer::class)]
+#[CoversClass(className: MicrosoftInternetExplorer::class)]
 final class MicrosoftInternetExplorerTest extends TestCase
 {
     /**
@@ -36,15 +36,15 @@ final class MicrosoftInternetExplorerTest extends TestCase
      * @throws ExpectationFailedException
      * @throws Exception
      */
-    #[DataProvider('providerVersion')]
+    #[DataProvider(methodName: 'providerVersion')]
     public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
-        $object = new MicrosoftInternetExplorer(
+        $microsoftInternetExplorer = new MicrosoftInternetExplorer(
             new VersionBuilder(),
             new Trident(new VersionBuilder()),
         );
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $microsoftInternetExplorer->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertSame($expectedVersion, $detectedVersion->getVersion());
@@ -101,25 +101,28 @@ final class MicrosoftInternetExplorerTest extends TestCase
     {
         $useragent = 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; SearchToolbar 1.2; GTB7.0)';
 
-        $exception = new NotNumericException('set failed');
+        $notNumericException = new NotNumericException('set failed');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
-        $matcher        = self::exactly(6);
+        $invokedCount   = self::exactly(6);
         $versionBuilder
-            ->expects($matcher)
+            ->expects($invokedCount)
             ->method('set')
-            ->willReturnCallback(static function (string $version) use ($matcher, $exception): void {
-                $invocation = $matcher->numberOfInvocations();
+            ->willReturnCallback(
+                static function (string $version) use ($invokedCount, $notNumericException): void {
+                    $invocation = $invokedCount->numberOfInvocations();
 
-                match ($invocation) {
-                    1, 2 => self::assertSame('11.0', $version, (string) $invocation),
-                    3 => self::assertSame('10.0', $version, (string) $invocation),
-                    4 => self::assertSame('9.0', $version, (string) $invocation),
-                    default => self::assertSame('8.0', $version, (string) $invocation),
-                };
+                    match ($invocation) {
+                        1,
+                2 => self::assertSame('11.0', $version, (string) $invocation),
+                3 => self::assertSame('10.0', $version, (string) $invocation),
+                4 => self::assertSame('9.0', $version, (string) $invocation),
+                default => self::assertSame('8.0', $version, (string) $invocation),
+                    };
 
-                throw $exception;
-            });
+                    throw $notNumericException;
+                },
+            );
 
         $trident = $this->createMock(VersionBuilderInterface::class);
         $trident
@@ -128,9 +131,9 @@ final class MicrosoftInternetExplorerTest extends TestCase
             ->with($useragent)
             ->willReturn(new Version('8', '0'));
 
-        $object = new MicrosoftInternetExplorer($versionBuilder, $trident);
+        $microsoftInternetExplorer = new MicrosoftInternetExplorer($versionBuilder, $trident);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $microsoftInternetExplorer->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
@@ -142,14 +145,14 @@ final class MicrosoftInternetExplorerTest extends TestCase
     {
         $useragent = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Siemens A/S; .NET CLR 1.0.3705; .NET CLR 1.1.4322)';
 
-        $exception = new NotNumericException('set failed');
+        $notNumericException = new NotNumericException('set failed');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('6.0')
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
 
         $trident = $this->createMock(VersionBuilderInterface::class);
         $trident
@@ -158,9 +161,9 @@ final class MicrosoftInternetExplorerTest extends TestCase
             ->with($useragent)
             ->willReturn(new NullVersion());
 
-        $object = new MicrosoftInternetExplorer($versionBuilder, $trident);
+        $microsoftInternetExplorer = new MicrosoftInternetExplorer($versionBuilder, $trident);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $microsoftInternetExplorer->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
@@ -172,7 +175,7 @@ final class MicrosoftInternetExplorerTest extends TestCase
     {
         $useragent = 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; SearchToolbar 1.2; GTB7.0)';
 
-        $exception = new NotNumericException('set failed');
+        $notNumericException = new NotNumericException('set failed');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
@@ -186,11 +189,11 @@ final class MicrosoftInternetExplorerTest extends TestCase
             ->expects(self::once())
             ->method('detectVersion')
             ->with($useragent)
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
 
-        $object = new MicrosoftInternetExplorer($versionBuilder, $trident);
+        $microsoftInternetExplorer = new MicrosoftInternetExplorer($versionBuilder, $trident);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $microsoftInternetExplorer->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
@@ -202,7 +205,7 @@ final class MicrosoftInternetExplorerTest extends TestCase
     {
         $useragent = 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; SearchToolbar 1.2; GTB7.0)';
 
-        $exception = new UnexpectedValueException('set failed');
+        $unexpectedValueException = new UnexpectedValueException('set failed');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
@@ -216,11 +219,11 @@ final class MicrosoftInternetExplorerTest extends TestCase
             ->expects(self::once())
             ->method('detectVersion')
             ->with($useragent)
-            ->willThrowException($exception);
+            ->willThrowException($unexpectedValueException);
 
-        $object = new MicrosoftInternetExplorer($versionBuilder, $trident);
+        $microsoftInternetExplorer = new MicrosoftInternetExplorer($versionBuilder, $trident);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $microsoftInternetExplorer->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);

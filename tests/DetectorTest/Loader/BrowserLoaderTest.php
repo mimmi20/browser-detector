@@ -34,8 +34,8 @@ use UaLoader\Exception\NotFoundException;
 use UaResult\Bits\Bits;
 use UnexpectedValueException;
 
-#[CoversClass(BrowserLoader::class)]
-#[CoversClass(ClientData::class)]
+#[CoversClass(className: BrowserLoader::class)]
+#[CoversClass(className: ClientData::class)]
 final class BrowserLoaderTest extends TestCase
 {
     /**
@@ -68,7 +68,7 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = new ClientData(
+        $client = new ClientData(
             strategy: new class () implements StrategyInterface {
                 /**
                  * @throws void
@@ -114,9 +114,9 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new BrowserLoader(
+        $browserLoader = new BrowserLoader(
             logger: $logger,
-            initData: $initData,
+            initData: $client,
             companyLoader: $companyLoader,
             versionBuilder: $versionBuilder,
         );
@@ -125,7 +125,7 @@ final class BrowserLoaderTest extends TestCase
         $this->expectExceptionMessageIsOrContains('the browser with key "test-key" was not found');
         $this->expectExceptionCode(0);
 
-        $object->load('test-key', 'test-ua');
+        $browserLoader->load('test-key', 'test-ua');
     }
 
     /**
@@ -166,7 +166,7 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::once())
             ->method('getItem')
             ->with('test-key')
-            ->willReturn(null);
+            ->willReturn(value: null);
 
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
         $companyLoader
@@ -184,7 +184,7 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new BrowserLoader(
+        $browserLoader = new BrowserLoader(
             logger: $logger,
             initData: $initData,
             companyLoader: $companyLoader,
@@ -195,7 +195,7 @@ final class BrowserLoaderTest extends TestCase
         $this->expectExceptionMessageIsOrContains('the browser with key "test-key" was not found');
         $this->expectExceptionCode(0);
 
-        $object->load('test-key', 'test-ua');
+        $browserLoader->load('test-key', 'test-ua');
     }
 
     /**
@@ -228,7 +228,7 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = new ClientData(
+        $client = new ClientData(
             strategy: new class () implements StrategyInterface {
                 /**
                  * @throws void
@@ -274,9 +274,9 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new BrowserLoader(
+        $browserLoader = new BrowserLoader(
             logger: $logger,
-            initData: $initData,
+            initData: $client,
             companyLoader: $companyLoader,
             versionBuilder: $versionBuilder,
         );
@@ -285,7 +285,7 @@ final class BrowserLoaderTest extends TestCase
         $this->expectExceptionMessageIsOrContains('the browser with key "test-key" was not found');
         $this->expectExceptionCode(0);
 
-        $object->load('test-key', 'test-ua');
+        $browserLoader->load('test-key', 'test-ua');
     }
 
     /**
@@ -298,13 +298,13 @@ final class BrowserLoaderTest extends TestCase
      */
     public function testLoadVersionAndEngineWithException(): void
     {
-        $exception = new NotFoundException('test');
+        $notFoundException = new NotFoundException('test');
 
         $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::once())
             ->method('info')
-            ->with($exception, []);
+            ->with($notFoundException, []);
         $logger
             ->expects(self::never())
             ->method('notice');
@@ -370,7 +370,7 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::once())
             ->method('load')
             ->with('unknown')
-            ->willThrowException($exception);
+            ->willThrowException($notFoundException);
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
@@ -383,20 +383,20 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new BrowserLoader(
+        $browserLoader = new BrowserLoader(
             logger: $logger,
             initData: $initData,
             companyLoader: $companyLoader,
             versionBuilder: $versionBuilder,
         );
 
-        $result = $object->load('test-key', 'test/1.0');
+        $clientData = $browserLoader->load('test-key', 'test/1.0');
 
         $prop = new ReflectionProperty($initData, 'initialized');
 
         self::assertTrue($prop->getValue($initData));
 
-        self::assertSame('unknown', $result->getEngine());
+        self::assertSame('unknown', $clientData->getEngine());
 
         $expected = [
             'name' => 'test-browser',
@@ -407,7 +407,7 @@ final class BrowserLoaderTest extends TestCase
             'type' => 'unknown',
         ];
 
-        self::assertSame($expected, $result->getClient()->toArray());
+        self::assertSame($expected, $clientData->getClient()->toArray());
     }
 
     /**
@@ -469,7 +469,7 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new BrowserLoader(
+        $browserLoader = new BrowserLoader(
             logger: $logger,
             initData: $initData,
             companyLoader: $companyLoader,
@@ -480,6 +480,6 @@ final class BrowserLoaderTest extends TestCase
         $this->expectExceptionCode(0);
         $this->expectExceptionMessageIsOrContains('the browser with key "' . $key . '" was not found');
 
-        $object->load($key, 'test/1.0');
+        $browserLoader->load($key, 'test/1.0');
     }
 }

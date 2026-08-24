@@ -31,15 +31,15 @@ use UaParser\EngineParserInterface;
 use UaResult\Engine\EngineInterface;
 use UnexpectedValueException;
 
-#[CoversClass(UseragentEngineVersion::class)]
-#[CoversTrait(SetVersionTrait::class)]
+#[CoversClass(className: UseragentEngineVersion::class)]
+#[CoversTrait(traitName: SetVersionTrait::class)]
 final class UseragentEngineVersionTest extends TestCase
 {
     /**
      * @throws Exception
      * @throws UnexpectedValueException
      */
-    #[DataProvider('providerUa1')]
+    #[DataProvider(methodName: 'providerUa1')]
     public function testWithoutParsing(string $value, string $expected): void
     {
         $engineParser = $this->createMock(EngineParserInterface::class);
@@ -62,16 +62,16 @@ final class UseragentEngineVersionTest extends TestCase
             ->with($value)
             ->willReturn($value);
 
-        $header = new UseragentEngineVersion(
+        $useragentEngineVersion = new UseragentEngineVersion(
             engineParser: $engineParser,
             engineLoader: $engineLoader,
             normalizer: $normalizer,
         );
 
-        self::assertTrue($header->hasEngineVersion($value));
+        self::assertTrue($useragentEngineVersion->hasEngineVersion($value));
         self::assertSame(
             $expected,
-            $header->getEngineVersionWithEngine($value, Engine::unknown)->getVersion(),
+            $useragentEngineVersion->getEngineVersionWithEngine($value, Engine::unknown)->getVersion(),
         );
     }
 
@@ -114,16 +114,16 @@ final class UseragentEngineVersionTest extends TestCase
             ->with($value)
             ->willReturn($value);
 
-        $header = new UseragentEngineVersion(
+        $useragentEngineVersion = new UseragentEngineVersion(
             engineParser: $engineParser,
             engineLoader: $engineLoader,
             normalizer: $normalizer,
         );
 
-        self::assertTrue($header->hasEngineVersion($value));
+        self::assertTrue($useragentEngineVersion->hasEngineVersion($value));
         self::assertInstanceOf(
             ForcedNullVersion::class,
-            $header->getEngineVersionWithEngine($value, Engine::unknown),
+            $useragentEngineVersion->getEngineVersionWithEngine($value, Engine::unknown),
         );
     }
 
@@ -157,16 +157,16 @@ final class UseragentEngineVersionTest extends TestCase
             ->with($value)
             ->willReturn($value);
 
-        $header = new UseragentEngineVersion(
+        $useragentEngineVersion = new UseragentEngineVersion(
             engineParser: $engineParser,
             engineLoader: $engineLoader,
             normalizer: $normalizer,
         );
 
-        self::assertTrue($header->hasEngineVersion($value));
+        self::assertTrue($useragentEngineVersion->hasEngineVersion($value));
         self::assertInstanceOf(
             NullVersion::class,
-            $header->getEngineVersionWithEngine($value, Engine::unknown),
+            $useragentEngineVersion->getEngineVersionWithEngine($value, Engine::unknown),
         );
     }
 
@@ -222,16 +222,16 @@ final class UseragentEngineVersionTest extends TestCase
             ->with($value)
             ->willReturn($value);
 
-        $header = new UseragentEngineVersion(
+        $useragentEngineVersion = new UseragentEngineVersion(
             engineParser: $engineParser,
             engineLoader: $engineLoader,
             normalizer: $normalizer,
         );
 
-        self::assertTrue($header->hasEngineVersion($value));
+        self::assertTrue($useragentEngineVersion->hasEngineVersion($value));
         self::assertInstanceOf(
             NullVersion::class,
-            $header->getEngineVersionWithEngine($value, $engine),
+            $useragentEngineVersion->getEngineVersionWithEngine($value, $engine),
         );
     }
 
@@ -245,7 +245,7 @@ final class UseragentEngineVersionTest extends TestCase
         $version
             ->expects(self::once())
             ->method('getVersion')
-            ->willReturn(null);
+            ->willReturn(value: null);
 
         $loadedEngine = $this->createMock(EngineInterface::class);
         $loadedEngine
@@ -287,16 +287,16 @@ final class UseragentEngineVersionTest extends TestCase
             ->with($value)
             ->willReturn($value);
 
-        $header = new UseragentEngineVersion(
+        $useragentEngineVersion = new UseragentEngineVersion(
             engineParser: $engineParser,
             engineLoader: $engineLoader,
             normalizer: $normalizer,
         );
 
-        self::assertTrue($header->hasEngineVersion($value));
+        self::assertTrue($useragentEngineVersion->hasEngineVersion($value));
         self::assertInstanceOf(
             NullVersion::class,
-            $header->getEngineVersionWithEngine($value, $engine),
+            $useragentEngineVersion->getEngineVersionWithEngine($value, $engine),
         );
     }
 
@@ -352,16 +352,16 @@ final class UseragentEngineVersionTest extends TestCase
             ->with($value)
             ->willReturn($value);
 
-        $header = new UseragentEngineVersion(
+        $useragentEngineVersion = new UseragentEngineVersion(
             engineParser: $engineParser,
             engineLoader: $engineLoader,
             normalizer: $normalizer,
         );
 
-        self::assertTrue($header->hasEngineVersion($value));
+        self::assertTrue($useragentEngineVersion->hasEngineVersion($value));
         self::assertInstanceOf(
             NullVersion::class,
-            $header->getEngineVersionWithEngine($value, $engine),
+            $useragentEngineVersion->getEngineVersionWithEngine($value, $engine),
         );
     }
 
@@ -418,15 +418,15 @@ final class UseragentEngineVersionTest extends TestCase
             ->with($value)
             ->willReturn($value);
 
-        $header = new UseragentEngineVersion(
+        $useragentEngineVersion = new UseragentEngineVersion(
             engineParser: $engineParser,
             engineLoader: $engineLoader,
             normalizer: $normalizer,
         );
 
-        self::assertTrue($header->hasEngineVersion($value));
+        self::assertTrue($useragentEngineVersion->hasEngineVersion($value));
 
-        $resultVersion = $header->getEngineVersionWithEngine($value, $engine);
+        $resultVersion = $useragentEngineVersion->getEngineVersionWithEngine($value, $engine);
 
         self::assertInstanceOf(Version::class, $resultVersion);
 
@@ -486,15 +486,15 @@ final class UseragentEngineVersionTest extends TestCase
             ->with($value)
             ->willReturn($value);
 
-        $header = new UseragentEngineVersion(
+        $useragentEngineVersion = new UseragentEngineVersion(
             engineParser: $engineParser,
             engineLoader: $engineLoader,
             normalizer: $normalizer,
         );
 
-        self::assertTrue($header->hasEngineVersion($value));
+        self::assertTrue($useragentEngineVersion->hasEngineVersion($value));
 
-        $resultVersion = $header->getEngineVersionWithEngine($value, $engine);
+        $resultVersion = $useragentEngineVersion->getEngineVersionWithEngine($value, $engine);
 
         self::assertInstanceOf(NullVersion::class, $resultVersion);
     }
@@ -524,16 +524,16 @@ final class UseragentEngineVersionTest extends TestCase
             ->with($value)
             ->willThrowException(new \UaNormalizer\Normalizer\Exception\Exception('a'));
 
-        $header = new UseragentEngineVersion(
+        $useragentEngineVersion = new UseragentEngineVersion(
             engineParser: $engineParser,
             engineLoader: $engineLoader,
             normalizer: $normalizer,
         );
 
-        self::assertTrue($header->hasEngineVersion($value));
+        self::assertTrue($useragentEngineVersion->hasEngineVersion($value));
         self::assertInstanceOf(
             ForcedNullVersion::class,
-            $header->getEngineVersionWithEngine($value, Engine::unknown),
+            $useragentEngineVersion->getEngineVersionWithEngine($value, Engine::unknown),
         );
     }
 
@@ -562,16 +562,16 @@ final class UseragentEngineVersionTest extends TestCase
             ->with($value)
             ->willReturn('');
 
-        $header = new UseragentEngineVersion(
+        $useragentEngineVersion = new UseragentEngineVersion(
             engineParser: $engineParser,
             engineLoader: $engineLoader,
             normalizer: $normalizer,
         );
 
-        self::assertTrue($header->hasEngineVersion($value));
+        self::assertTrue($useragentEngineVersion->hasEngineVersion($value));
         self::assertInstanceOf(
             ForcedNullVersion::class,
-            $header->getEngineVersionWithEngine($value, Engine::unknown),
+            $useragentEngineVersion->getEngineVersionWithEngine($value, Engine::unknown),
         );
     }
 
@@ -600,16 +600,16 @@ final class UseragentEngineVersionTest extends TestCase
             ->with($value)
             ->willThrowException(new \UaNormalizer\Normalizer\Exception\Exception('x'));
 
-        $header = new UseragentEngineVersion(
+        $useragentEngineVersion = new UseragentEngineVersion(
             engineParser: $engineParser,
             engineLoader: $engineLoader,
             normalizer: $normalizer,
         );
 
-        self::assertTrue($header->hasEngineVersion($value));
+        self::assertTrue($useragentEngineVersion->hasEngineVersion($value));
         self::assertInstanceOf(
             ForcedNullVersion::class,
-            $header->getEngineVersionWithEngine($value, Engine::unknown),
+            $useragentEngineVersion->getEngineVersionWithEngine($value, Engine::unknown),
         );
     }
 }

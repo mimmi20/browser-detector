@@ -67,14 +67,14 @@ final readonly class Headers
 
     /** @throws void */
     public function __construct(
-        GenericRequestInterface $request,
+        GenericRequestInterface $genericRequest,
         private LoggerInterface $logger,
         private DeviceLoaderFactoryInterface $deviceLoaderFactory,
         private PlatformLoaderInterface $platformLoader,
         private BrowserLoaderInterface $browserLoader,
         private EngineLoaderInterface $engineLoader,
     ) {
-        $this->headers = $request->getHeaders();
+        $this->headers = $genericRequest->getHeaders();
     }
 
     /** @throws void */
@@ -174,7 +174,7 @@ final readonly class Headers
     public function getEngineData(
         \UaData\EngineInterface $engine,
         string | null $engineCodenameFromClient,
-        BrowserInterface $client,
+        BrowserInterface $browser,
         string | null $platformName,
     ): EngineInterface {
         $engineHeader   = null;
@@ -219,14 +219,14 @@ final readonly class Headers
 
                     switch ($lastEngine) {
                         case \BrowserDetector\Data\Engine::gecko:
-                            if ($client->getName() === 'Firefox') {
+                            if ($browser->getName() === 'Firefox') {
                                 $detectedEngine = $lastEngine;
                                 $engineHeader   = array_last($headersWithEngineName);
                             }
 
                             break;
                         case \BrowserDetector\Data\Engine::webkit:
-                            if ($client->getName() === 'Chrome for iOS') {
+                            if ($browser->getName() === 'Chrome for iOS') {
                                 $detectedEngine = $lastEngine;
                                 $engineHeader   = array_last($headersWithEngineName);
                             }
@@ -241,7 +241,7 @@ final readonly class Headers
                     $detectedEngine = $firstEngine;
 
                     if (
-                        $detectedEngine === null
+                        !$detectedEngine instanceof \UaData\EngineInterface
                         || $detectedEngine === \BrowserDetector\Data\Engine::unknown
                     ) {
                         $detectedEngine = \BrowserDetector\Data\Engine::fromName(
@@ -264,25 +264,25 @@ final readonly class Headers
 
                     break;
                 case \BrowserDetector\Data\Engine::webkit:
-                    $engineVersion = match ($client->getName()) {
+                    $engineVersion = match ($browser->getName()) {
                         'Chrome for iOS' => $engineVersions['user-agent'],
                         default => array_first($engineVersions),
                     };
 
-                    if ($client->getName() === 'Firefox') {
+                    if ($browser->getName() === 'Firefox') {
                         $detectedEngine = \BrowserDetector\Data\Engine::gecko;
                         $engineVersion  = $engineVersions['user-agent'];
                     }
 
                     try {
-                        $clientVersion = $client->getVersion()->getVersion(
+                        $clientVersion = $browser->getVersion()->getVersion(
                             VersionInterface::IGNORE_MICRO,
                         );
                     } catch (UnexpectedValueException) {
                         $clientVersion = 0.0;
                     }
 
-                    if (!$isIos && $client->getName() === 'Opera' && (float) $clientVersion < 15.0) {
+                    if (!$isIos && $browser->getName() === 'Opera' && (float) $clientVersion < 15.0) {
                         $detectedEngine = \BrowserDetector\Data\Engine::presto;
                         $engineVersion  = $engineVersions['user-agent'];
                     }
@@ -347,7 +347,7 @@ final readonly class Headers
 
         if (!is_string($firstClientCodename)) {
             return new ClientData(
-                client: new Browser(
+                browser: new Browser(
                     name: null,
                     manufacturer: new Company(type: 'unknown', name: null, brandname: null),
                     version: new NullVersion(),
@@ -579,7 +579,7 @@ final readonly class Headers
 
         $headersWithClientCode = array_filter(
             $clientCodes,
-            static fn (string | null $clientCode) => $clientCodename === $clientCode,
+            static fn (string | null $clientCode): bool => $clientCodename === $clientCode,
         );
 
         $clientVersions = $this->getClientVersions($clientCodename);
@@ -625,7 +625,7 @@ final readonly class Headers
                 $client = $clientData->getClient();
 
                 return new ClientData(
-                    client: $client->withVersion($clientVersion),
+                    browser: $client->withVersion($clientVersion),
                     engine: $clientData->getEngine(),
                 );
             }
@@ -636,7 +636,7 @@ final readonly class Headers
         }
 
         return new ClientData(
-            client: new Browser(
+            browser: new Browser(
                 name: null,
                 manufacturer: new Company(type: 'unknown', name: null, brandname: null),
                 version: new NullVersion(),
@@ -668,19 +668,17 @@ final readonly class Headers
             $platformCodes = [\BrowserDetector\Data\Os::unknown];
         }
 
-        $firstPlatformCode      = array_first($platformCodes);
-        $platformCodeFromDevice = \BrowserDetector\Data\Os::fromName(
-            (string) $platformCodenameFromDevice,
-        );
+        $firstPlatformCode = array_first($platformCodes);
+        $os                = \BrowserDetector\Data\Os::fromName((string) $platformCodenameFromDevice);
 
         if (
             (
                 $firstPlatformCode instanceof \UaData\OsInterface
                 && $firstPlatformCode === \BrowserDetector\Data\Os::unknown
             )
-            || $firstPlatformCode === null
+            || !$firstPlatformCode instanceof \UaData\OsInterface
         ) {
-            $firstPlatformCode = $platformCodeFromDevice;
+            $firstPlatformCode = $os;
         }
 
         if ($firstPlatformCode instanceof \UaData\OsInterface) {
@@ -735,7 +733,7 @@ final readonly class Headers
                         && in_array(
                             $lastPlatformCode,
                             [\BrowserDetector\Data\Os::windows10, \BrowserDetector\Data\Os::windowsnt62, \BrowserDetector\Data\Os::windowsnt61, \BrowserDetector\Data\Os::windowsnt, \BrowserDetector\Data\Os::ios, \BrowserDetector\Data\Os::android, \BrowserDetector\Data\Os::macosx],
-                            true,
+                            strict: true,
                         )
                     ) {
                         $platform       = $lastPlatformCode;
@@ -751,13 +749,13 @@ final readonly class Headers
                         && in_array(
                             $lastPlatformCode,
                             [\BrowserDetector\Data\Os::fireos, \BrowserDetector\Data\Os::harmonyos, \BrowserDetector\Data\Os::picoOS, \BrowserDetector\Data\Os::chromeos, \BrowserDetector\Data\Os::hyperOS],
-                            true,
+                            strict: true,
                         )
                     ) {
                         $platform       = $lastPlatformCode;
                         $platformHeader = array_last($headersWithPlatformCode);
-                    } elseif ($platformCodeFromDevice === \BrowserDetector\Data\Os::fireos) {
-                        $platform       = $platformCodeFromDevice;
+                    } elseif ($os === \BrowserDetector\Data\Os::fireos) {
+                        $platform       = $os;
                         $platformHeader = null;
                     } else {
                         $platformHeader = array_first($headersWithPlatformCode);
@@ -925,7 +923,7 @@ final readonly class Headers
     }
 
     /** @throws VersionContainsDerivateException */
-    private function getPlatformVersion(\UaData\OsInterface $platform): VersionInterface
+    private function getPlatformVersion(\UaData\OsInterface $os): VersionInterface
     {
         $headersWithPlatformVersion = array_filter(
             $this->headers,
@@ -935,7 +933,7 @@ final readonly class Headers
         $platformHeaderVersion = array_first($headersWithPlatformVersion);
 
         if ($platformHeaderVersion instanceof HeaderInterface) {
-            return $platformHeaderVersion->getPlatformVersionWithOs($platform);
+            return $platformHeaderVersion->getPlatformVersionWithOs($os);
         }
 
         return new NullVersion();
@@ -949,9 +947,9 @@ final readonly class Headers
                 VersionInterface::IGNORE_MINOR_IF_EMPTY,
             );
 
-            $lineageOsVersion = new LineageOs(new VersionBuilder());
+            $lineageOs = new LineageOs(new VersionBuilder());
 
-            return $lineageOsVersion->getVersion($androidVersion ?? '');
+            return $lineageOs->getVersion($androidVersion ?? '');
         } catch (VersionContainsDerivateException | UnexpectedValueException | NotNumericException) {
             // do nothing
         }
@@ -967,9 +965,9 @@ final readonly class Headers
                 VersionInterface::IGNORE_MINOR_IF_EMPTY,
             );
 
-            $fireOsVersion = new FireOs(new VersionBuilder());
+            $fireOs = new FireOs(new VersionBuilder());
 
-            return $fireOsVersion->getVersion($androidVersion ?? '');
+            return $fireOs->getVersion($androidVersion ?? '');
         } catch (VersionContainsDerivateException | UnexpectedValueException | NotNumericException) {
             // do nothing
         }
@@ -998,11 +996,11 @@ final readonly class Headers
 
     /** @throws void */
     private function getVersionForGeneric(
-        \UaData\OsInterface &$platform,
+        \UaData\OsInterface &$os,
         HeaderInterface | null $platformHeader,
     ): VersionInterface {
         try {
-            return $this->getPlatformVersion($platform);
+            return $this->getPlatformVersion($os);
         } catch (VersionContainsDerivateException $e) {
             $derivate = $e->getDerivate();
 
@@ -1011,7 +1009,7 @@ final readonly class Headers
                     $derivateOs = $platformHeader->getPlatformCode($derivate);
 
                     if ($derivateOs !== \BrowserDetector\Data\Os::unknown) {
-                        $platform = $derivateOs;
+                        $os = $derivateOs;
                     }
                 } catch (\UaRequest\Exception\NotFoundException) {
                     // do nothing

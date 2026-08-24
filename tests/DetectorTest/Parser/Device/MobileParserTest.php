@@ -21,7 +21,7 @@ use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UaLoader\DeviceLoaderInterface;
 
-#[CoversClass(MobileParser::class)]
+#[CoversClass(className: MobileParser::class)]
 final class MobileParserTest extends TestCase
 {
     /**
@@ -34,23 +34,19 @@ final class MobileParserTest extends TestCase
         $expectedMode = 'test-mode';
         $genericMode  = 'genericMode';
 
-        $mockLoader = $this->getMockBuilder(DeviceLoaderInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $mockLoader = $this->createMock(DeviceLoaderInterface::class);
         $mockLoader
             ->expects(self::never())
             ->method('load');
 
-        $fileParser = $this->getMockBuilder(RulefileParserInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $fileParser = $this->createMock(RulefileParserInterface::class);
         $fileParser
             ->expects(self::exactly(2))
             ->method('parseFile')
             ->willReturn($genericMode, $expectedMode);
 
-        $object = new MobileParser($fileParser);
+        $mobileParser = new MobileParser($fileParser);
 
-        self::assertSame($genericMode . '=' . $expectedMode, $object->parse($useragent));
+        self::assertSame($genericMode . '=' . $expectedMode, $mobileParser->parse($useragent));
     }
 }

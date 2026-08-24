@@ -29,7 +29,7 @@ final readonly class XUcbrowserDevice implements DeviceCodeInterface
     public function __construct(
         private DeviceParserInterface $deviceParser,
         private NormalizerInterface $normalizer,
-        private DeviceInterface $deviceCodeHelper,
+        private DeviceInterface $device,
     ) {
         // nothing to do
     }
@@ -38,14 +38,14 @@ final readonly class XUcbrowserDevice implements DeviceCodeInterface
     #[Override]
     public function hasDeviceCode(string $value): bool
     {
-        return !in_array(mb_strtolower($value), ['j2me', 'opera', 'jblend'], true);
+        return !in_array(mb_strtolower($value), ['j2me', 'opera', 'jblend'], strict: true);
     }
 
     /** @throws void */
     #[Override]
     public function getDeviceCode(string $value): string | null
     {
-        if (in_array(mb_strtolower($value), ['j2me', 'opera', 'jblend'], true)) {
+        if (in_array(mb_strtolower($value), ['j2me', 'opera', 'jblend'], strict: true)) {
             return null;
         }
 
@@ -59,7 +59,7 @@ final readonly class XUcbrowserDevice implements DeviceCodeInterface
             return null;
         }
 
-        $code = $this->deviceCodeHelper->getDeviceCode(mb_strtolower($normalizedValue));
+        $code = $this->device->getDeviceCode(mb_strtolower($normalizedValue));
 
         if ($code !== null) {
             return $code;

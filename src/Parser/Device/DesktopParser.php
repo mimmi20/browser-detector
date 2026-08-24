@@ -25,7 +25,7 @@ final readonly class DesktopParser implements DesktopParserInterface
     private const string SPECIFIC_FILE = __DIR__ . '/../../../data/factories/devices/desktop/%s.json';
 
     /** @throws void */
-    public function __construct(private RulefileParserInterface $fileParser)
+    public function __construct(private RulefileParserInterface $rulefileParser)
     {
         // nothing to do
     }
@@ -40,9 +40,9 @@ final readonly class DesktopParser implements DesktopParserInterface
     #[Override]
     public function parse(string $useragent): string
     {
-        $company = $this->fileParser->parseFile(self::GENERIC_FILE, $useragent, 'unknown');
+        $company = $this->rulefileParser->parseFile(self::GENERIC_FILE, $useragent, 'unknown');
 
-        $key = $this->fileParser->parseFile(
+        $key = $this->rulefileParser->parseFile(
             sprintf(self::SPECIFIC_FILE, $company),
             $useragent,
             'unknown',

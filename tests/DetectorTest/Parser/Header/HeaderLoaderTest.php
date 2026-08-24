@@ -33,7 +33,7 @@ use UaRequest\Header\HeaderInterface;
 
 use function sprintf;
 
-#[CoversClass(HeaderLoader::class)]
+#[CoversClass(className: HeaderLoader::class)]
 final class HeaderLoaderTest extends TestCase
 {
     /** @throws NotFoundException */
@@ -84,7 +84,7 @@ final class HeaderLoaderTest extends TestCase
 
         $key = Constants::HEADER_TEST;
 
-        $subject = new HeaderLoader(
+        $headerLoader = new HeaderLoader(
             deviceParser: $deviceParser,
             platformParser: $platformParser,
             browserParser: $browserParser,
@@ -100,7 +100,7 @@ final class HeaderLoaderTest extends TestCase
             sprintf('the header with name "%s" was not found', $key),
         );
 
-        $subject->load($key, '');
+        $headerLoader->load($key, '');
     }
 
     /**
@@ -109,7 +109,7 @@ final class HeaderLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      */
-    #[DataProvider('providerHeader')]
+    #[DataProvider(methodName: 'providerHeader')]
     public function testLoadOk(string $key): void
     {
         $value = 'header-value';
@@ -157,7 +157,7 @@ final class HeaderLoaderTest extends TestCase
 
         $normalizerFactory = new NormalizerFactory();
 
-        $subject = new HeaderLoader(
+        $headerLoader = new HeaderLoader(
             deviceParser: $deviceParser,
             platformParser: $platformParser,
             browserParser: $browserParser,
@@ -168,7 +168,7 @@ final class HeaderLoaderTest extends TestCase
             engineLoader: $engineLoader,
         );
 
-        $header = $subject->load($key, $value);
+        $header = $headerLoader->load($key, $value);
 
         self::assertInstanceOf(HeaderInterface::class, $header);
         self::assertSame($value, $header->getValue());
@@ -180,7 +180,7 @@ final class HeaderLoaderTest extends TestCase
      * @throws ExpectationFailedException
      * @throws Exception
      */
-    #[DataProvider('providerHeader')]
+    #[DataProvider(methodName: 'providerHeader')]
     public function testHas(string $key): void
     {
         $deviceParser = $this->createMock(DeviceParserInterface::class);
@@ -226,7 +226,7 @@ final class HeaderLoaderTest extends TestCase
 
         $normalizerFactory = new NormalizerFactory();
 
-        $subject = new HeaderLoader(
+        $headerLoader = new HeaderLoader(
             deviceParser: $deviceParser,
             platformParser: $platformParser,
             browserParser: $browserParser,
@@ -237,7 +237,7 @@ final class HeaderLoaderTest extends TestCase
             engineLoader: $engineLoader,
         );
 
-        self::assertTrue($subject->has($key));
+        self::assertTrue($headerLoader->has($key));
     }
 
     /**

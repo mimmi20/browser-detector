@@ -22,12 +22,12 @@ use PHPUnit\Framework\TestCase;
 use UaNormalizer\Normalizer\NormalizerInterface;
 use UaParser\PlatformParserInterface;
 
-#[CoversClass(UseragentPlatformCode::class)]
+#[CoversClass(className: UseragentPlatformCode::class)]
 final class UseragentPlatformCodeTest extends TestCase
 {
     /** @throws Exception */
-    #[DataProvider('providerUa1')]
-    public function testWithUas(string $value, Os $expected): void
+    #[DataProvider(methodName: 'providerUa1')]
+    public function testWithUas(string $value, Os $os): void
     {
         $platformParser = $this->createMock(PlatformParserInterface::class);
         $platformParser
@@ -41,12 +41,15 @@ final class UseragentPlatformCodeTest extends TestCase
             ->with($value)
             ->willReturn($value);
 
-        $header = new UseragentPlatformCode(platformParser: $platformParser, normalizer: $normalizer);
+        $useragentPlatformCode = new UseragentPlatformCode(
+            platformParser: $platformParser,
+            normalizer: $normalizer,
+        );
 
-        self::assertTrue($header->hasPlatformCode($value));
+        self::assertTrue($useragentPlatformCode->hasPlatformCode($value));
         self::assertSame(
-            $expected,
-            $header->getPlatformCode($value),
+            $os,
+            $useragentPlatformCode->getPlatformCode($value),
         );
     }
 
@@ -83,12 +86,15 @@ final class UseragentPlatformCodeTest extends TestCase
             ->with($value)
             ->willReturn('');
 
-        $header = new UseragentPlatformCode(platformParser: $platformParser, normalizer: $normalizer);
+        $useragentPlatformCode = new UseragentPlatformCode(
+            platformParser: $platformParser,
+            normalizer: $normalizer,
+        );
 
-        self::assertTrue($header->hasPlatformCode($value));
+        self::assertTrue($useragentPlatformCode->hasPlatformCode($value));
         self::assertSame(
             Os::unknown,
-            $header->getPlatformCode($value),
+            $useragentPlatformCode->getPlatformCode($value),
         );
     }
 
@@ -109,12 +115,15 @@ final class UseragentPlatformCodeTest extends TestCase
             ->with($value)
             ->willThrowException(new \UaNormalizer\Normalizer\Exception\Exception('x'));
 
-        $header = new UseragentPlatformCode(platformParser: $platformParser, normalizer: $normalizer);
+        $useragentPlatformCode = new UseragentPlatformCode(
+            platformParser: $platformParser,
+            normalizer: $normalizer,
+        );
 
-        self::assertTrue($header->hasPlatformCode($value));
+        self::assertTrue($useragentPlatformCode->hasPlatformCode($value));
         self::assertSame(
             Os::unknown,
-            $header->getPlatformCode($value),
+            $useragentPlatformCode->getPlatformCode($value),
         );
     }
 
@@ -135,12 +144,15 @@ final class UseragentPlatformCodeTest extends TestCase
             ->with($value)
             ->willReturn($value);
 
-        $header = new UseragentPlatformCode(platformParser: $platformParser, normalizer: $normalizer);
+        $useragentPlatformCode = new UseragentPlatformCode(
+            platformParser: $platformParser,
+            normalizer: $normalizer,
+        );
 
-        self::assertTrue($header->hasPlatformCode($value));
+        self::assertTrue($useragentPlatformCode->hasPlatformCode($value));
         self::assertSame(
             Os::android,
-            $header->getPlatformCode($value),
+            $useragentPlatformCode->getPlatformCode($value),
         );
     }
 }

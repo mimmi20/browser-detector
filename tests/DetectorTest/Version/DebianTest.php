@@ -29,7 +29,7 @@ use UnexpectedValueException;
 
 use function assert;
 
-#[CoversClass(Debian::class)]
+#[CoversClass(className: Debian::class)]
 final class DebianTest extends TestCase
 {
     /**
@@ -37,12 +37,12 @@ final class DebianTest extends TestCase
      * @throws UnexpectedValueException
      * @throws Exception
      */
-    #[DataProvider('providerVersion')]
+    #[DataProvider(methodName: 'providerVersion')]
     public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
-        $object = new Debian(new VersionBuilder());
+        $debian = new Debian(new VersionBuilder());
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $debian->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertSame($expectedVersion, $detectedVersion->getVersion());
@@ -85,20 +85,20 @@ final class DebianTest extends TestCase
      */
     public function testDetectVersionFail(): void
     {
-        $useragent = 'Mozilla/5.0 (X11; U; Linux i686; de-de@euro) AppleWebKit/531.2+ (KHTML, like Gecko) Version/5.0 Safari/531.2+ Debian/squeeze (2.30.6-1) Epiphany/2.30.6';
-        $exception = new NotNumericException('set failed');
+        $useragent           = 'Mozilla/5.0 (X11; U; Linux i686; de-de@euro) AppleWebKit/531.2+ (KHTML, like Gecko) Version/5.0 Safari/531.2+ Debian/squeeze (2.30.6-1) Epiphany/2.30.6';
+        $notNumericException = new NotNumericException('set failed');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('6.0')
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
 
         assert($versionBuilder instanceof VersionFactoryInterface);
-        $object = new Debian($versionBuilder);
+        $debian = new Debian($versionBuilder);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $debian->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
@@ -111,23 +111,23 @@ final class DebianTest extends TestCase
      */
     public function testDetectVersionFailSecond(): void
     {
-        $useragent = 'Mozilla/5.0 (Macintosh; ARM Mac OS X) AppleWebKit/538.15 (KHTML, like Gecko) Safari/538.15 Version/6.0 Debian/8.0 (1:3.8.2.0-0) Epiphany/3.8.2';
-        $exception = new NotNumericException('set failed');
+        $useragent           = 'Mozilla/5.0 (Macintosh; ARM Mac OS X) AppleWebKit/538.15 (KHTML, like Gecko) Safari/538.15 Version/6.0 Debian/8.0 (1:3.8.2.0-0) Epiphany/3.8.2';
+        $notNumericException = new NotNumericException('set failed');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
             ->expects(self::once())
             ->method('detectVersion')
             ->with($useragent, Debian::SEARCHES)
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
         $versionBuilder
             ->expects(self::never())
             ->method('set');
 
         assert($versionBuilder instanceof VersionFactoryInterface);
-        $object = new Debian($versionBuilder);
+        $debian = new Debian($versionBuilder);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $debian->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);

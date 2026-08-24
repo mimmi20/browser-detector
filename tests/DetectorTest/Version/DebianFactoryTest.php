@@ -24,16 +24,16 @@ use PHPUnit\Framework\TestCase;
 use function assert;
 use function sprintf;
 
-#[CoversClass(DebianFactory::class)]
+#[CoversClass(className: DebianFactory::class)]
 final class DebianFactoryTest extends TestCase
 {
-    private DebianFactory $object;
+    private DebianFactory $debianFactory;
 
     /** @throws void */
     #[Override]
     protected function setUp(): void
     {
-        $this->object = new DebianFactory();
+        $this->debianFactory = new DebianFactory();
     }
 
     /**
@@ -42,7 +42,7 @@ final class DebianFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $object = $this->object;
+        $object = $this->debianFactory;
         assert(
             $object instanceof DebianFactory,
             sprintf(
@@ -51,7 +51,7 @@ final class DebianFactoryTest extends TestCase
                 $object::class,
             ),
         );
-        $result = $object();
-        self::assertInstanceOf(Debian::class, $result);
+        $debian = $object();
+        self::assertInstanceOf(Debian::class, $debian);
     }
 }

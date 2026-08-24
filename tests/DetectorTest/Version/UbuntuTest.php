@@ -24,7 +24,7 @@ use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UnexpectedValueException;
 
-#[CoversClass(Ubuntu::class)]
+#[CoversClass(className: Ubuntu::class)]
 final class UbuntuTest extends TestCase
 {
     /**
@@ -33,12 +33,12 @@ final class UbuntuTest extends TestCase
      * @throws Exception
      * @throws NotNumericException
      */
-    #[DataProvider('providerVersion')]
+    #[DataProvider(methodName: 'providerVersion')]
     public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
-        $object = new Ubuntu(new VersionBuilder());
+        $ubuntu = new Ubuntu(new VersionBuilder());
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $ubuntu->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertSame($expectedVersion, $detectedVersion->getVersion());

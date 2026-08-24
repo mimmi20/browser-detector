@@ -44,7 +44,7 @@ use UnexpectedValueException;
 use function assert;
 use function sprintf;
 
-#[CoversClass(Detector::class)]
+#[CoversClass(className: Detector::class)]
 final class Detector2Test extends TestCase
 {
     /**
@@ -70,36 +70,36 @@ final class Detector2Test extends TestCase
         $header
             ->expects(self::once())
             ->method('hasDeviceArchitecture')
-            ->willReturn(false);
+            ->willReturn(value: false);
         $header
             ->expects(self::never())
             ->method('getDeviceArchitecture');
         $header
             ->expects(self::once())
             ->method('hasDeviceBitness')
-            ->willReturn(false);
+            ->willReturn(value: false);
         $header
             ->expects(self::never())
             ->method('getDeviceBitness');
         $header
             ->expects(self::once())
             ->method('hasDeviceIsMobile')
-            ->willReturn(true);
+            ->willReturn(value: true);
         $header
             ->expects(self::once())
             ->method('getDeviceIsMobile')
-            ->willReturn(true);
+            ->willReturn(value: true);
         $header
             ->expects(self::once())
             ->method('hasDeviceCode')
-            ->willReturn(false);
+            ->willReturn(value: false);
         $header
             ->expects(self::never())
             ->method('getDeviceCode');
         $header
             ->expects(self::once())
             ->method('hasClientCode')
-            ->willReturn(false);
+            ->willReturn(value: false);
         $header
             ->expects(self::never())
             ->method('getClientCode');
@@ -112,28 +112,28 @@ final class Detector2Test extends TestCase
         $header
             ->expects(self::once())
             ->method('hasPlatformCode')
-            ->willReturn(false);
+            ->willReturn(value: false);
         $header
             ->expects(self::never())
             ->method('getPlatformCode');
         $header
             ->expects(self::once())
             ->method('hasPlatformVersion')
-            ->willReturn(false);
+            ->willReturn(value: false);
         $header
             ->expects(self::never())
             ->method('getPlatformVersionWithOs');
         $header
             ->expects(self::once())
             ->method('hasEngineCode')
-            ->willReturn(false);
+            ->willReturn(value: false);
         $header
             ->expects(self::never())
             ->method('getEngineCode');
         $header
             ->expects(self::once())
             ->method('hasEngineVersion')
-            ->willReturn(false);
+            ->willReturn(value: false);
         $header
             ->expects(self::never())
             ->method('getEngineVersionWithEngine');
@@ -212,7 +212,7 @@ final class Detector2Test extends TestCase
             ->expects(self::once())
             ->method('hasItem')
             ->with($hash)
-            ->willReturn(false);
+            ->willReturn(value: false);
         $cache
             ->expects(self::never())
             ->method('getItem');
@@ -302,28 +302,28 @@ final class Detector2Test extends TestCase
         $header
             ->expects(self::once())
             ->method('hasDeviceArchitecture')
-            ->willReturn(false);
+            ->willReturn(value: false);
         $header
             ->expects(self::never())
             ->method('getDeviceArchitecture');
         $header
             ->expects(self::once())
             ->method('hasDeviceBitness')
-            ->willReturn(false);
+            ->willReturn(value: false);
         $header
             ->expects(self::never())
             ->method('getDeviceBitness');
         $header
             ->expects(self::once())
             ->method('hasDeviceIsMobile')
-            ->willReturn(false);
+            ->willReturn(value: false);
         $header
             ->expects(self::never())
             ->method('getDeviceIsMobile');
         $header
             ->expects(self::once())
             ->method('hasDeviceCode')
-            ->willReturn(true);
+            ->willReturn(value: true);
         $header
             ->expects(self::once())
             ->method('getDeviceCode')
@@ -331,7 +331,7 @@ final class Detector2Test extends TestCase
         $header
             ->expects(self::once())
             ->method('hasClientCode')
-            ->willReturn(false);
+            ->willReturn(value: false);
         $header
             ->expects(self::never())
             ->method('getClientCode');
@@ -344,28 +344,28 @@ final class Detector2Test extends TestCase
         $header
             ->expects(self::once())
             ->method('hasPlatformCode')
-            ->willReturn(false);
+            ->willReturn(value: false);
         $header
             ->expects(self::never())
             ->method('getPlatformCode');
         $header
             ->expects(self::once())
             ->method('hasPlatformVersion')
-            ->willReturn(false);
+            ->willReturn(value: false);
         $header
             ->expects(self::never())
             ->method('getPlatformVersionWithOs');
         $header
             ->expects(self::once())
             ->method('hasEngineCode')
-            ->willReturn(false);
+            ->willReturn(value: false);
         $header
             ->expects(self::never())
             ->method('getEngineCode');
         $header
             ->expects(self::once())
             ->method('hasEngineVersion')
-            ->willReturn(false);
+            ->willReturn(value: false);
         $header
             ->expects(self::never())
             ->method('getEngineVersionWithEngine');
@@ -444,7 +444,7 @@ final class Detector2Test extends TestCase
             ->expects(self::once())
             ->method('hasItem')
             ->with($hash)
-            ->willReturn(false);
+            ->willReturn(value: false);
         $cache
             ->expects(self::never())
             ->method('getItem');
@@ -564,7 +564,7 @@ final class Detector2Test extends TestCase
         $key                 = 'lg lm-g710';
         $deviceCodeForLoader = $company . '=' . $key;
 
-        $exception = new NotFoundException('device not found');
+        $notFoundException = new NotFoundException('device not found');
 
         $header = $this->createMock(HeaderInterface::class);
         $header
@@ -577,28 +577,28 @@ final class Detector2Test extends TestCase
         $header
             ->expects(self::once())
             ->method('hasDeviceArchitecture')
-            ->willReturn(false);
+            ->willReturn(value: false);
         $header
             ->expects(self::never())
             ->method('getDeviceArchitecture');
         $header
             ->expects(self::once())
             ->method('hasDeviceBitness')
-            ->willReturn(false);
+            ->willReturn(value: false);
         $header
             ->expects(self::never())
             ->method('getDeviceBitness');
         $header
             ->expects(self::once())
             ->method('hasDeviceIsMobile')
-            ->willReturn(false);
+            ->willReturn(value: false);
         $header
             ->expects(self::never())
             ->method('getDeviceIsMobile');
         $header
             ->expects(self::once())
             ->method('hasDeviceCode')
-            ->willReturn(true);
+            ->willReturn(value: true);
         $header
             ->expects(self::once())
             ->method('getDeviceCode')
@@ -606,7 +606,7 @@ final class Detector2Test extends TestCase
         $header
             ->expects(self::once())
             ->method('hasClientCode')
-            ->willReturn(false);
+            ->willReturn(value: false);
         $header
             ->expects(self::never())
             ->method('getClientCode');
@@ -619,28 +619,28 @@ final class Detector2Test extends TestCase
         $header
             ->expects(self::once())
             ->method('hasPlatformCode')
-            ->willReturn(false);
+            ->willReturn(value: false);
         $header
             ->expects(self::never())
             ->method('getPlatformCode');
         $header
             ->expects(self::once())
             ->method('hasPlatformVersion')
-            ->willReturn(false);
+            ->willReturn(value: false);
         $header
             ->expects(self::never())
             ->method('getPlatformVersionWithOs');
         $header
             ->expects(self::once())
             ->method('hasEngineCode')
-            ->willReturn(false);
+            ->willReturn(value: false);
         $header
             ->expects(self::never())
             ->method('getEngineCode');
         $header
             ->expects(self::once())
             ->method('hasEngineVersion')
-            ->willReturn(false);
+            ->willReturn(value: false);
         $header
             ->expects(self::never())
             ->method('getEngineVersionWithEngine');
@@ -696,7 +696,7 @@ final class Detector2Test extends TestCase
             ->expects(self::once())
             ->method('info')
             ->willReturnCallback(
-                static function (string | Stringable $message, array $context = []) use ($exception, $company, $key): void {
+                static function (string | Stringable $message, array $context = []) use ($notFoundException, $company, $key): void {
                     assert($message instanceof UnexpectedValueException);
                     self::assertInstanceOf(UnexpectedValueException::class, $message);
                     self::assertSame(
@@ -704,7 +704,7 @@ final class Detector2Test extends TestCase
                         $message->getMessage(),
                     );
                     self::assertSame(0, $message->getCode());
-                    self::assertSame($exception, $message->getPrevious());
+                    self::assertSame($notFoundException, $message->getPrevious());
                     self::assertSame([], $context);
                 },
             );
@@ -732,7 +732,7 @@ final class Detector2Test extends TestCase
             ->expects(self::once())
             ->method('hasItem')
             ->with($hash)
-            ->willReturn(false);
+            ->willReturn(value: false);
         $cache
             ->expects(self::never())
             ->method('getItem');
@@ -763,7 +763,7 @@ final class Detector2Test extends TestCase
             ->expects(self::once())
             ->method('load')
             ->with($key)
-            ->willThrowException($exception);
+            ->willThrowException($notFoundException);
 
         $deviceLoaderFactory = $this->createMock(DeviceLoaderFactoryInterface::class);
         $deviceLoaderFactory

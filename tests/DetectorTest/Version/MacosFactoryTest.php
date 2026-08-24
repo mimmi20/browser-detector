@@ -24,16 +24,16 @@ use PHPUnit\Framework\TestCase;
 use function assert;
 use function sprintf;
 
-#[CoversClass(MacosFactory::class)]
+#[CoversClass(className: MacosFactory::class)]
 final class MacosFactoryTest extends TestCase
 {
-    private MacosFactory $object;
+    private MacosFactory $macosFactory;
 
     /** @throws void */
     #[Override]
     protected function setUp(): void
     {
-        $this->object = new MacosFactory();
+        $this->macosFactory = new MacosFactory();
     }
 
     /**
@@ -42,7 +42,7 @@ final class MacosFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $object = $this->object;
+        $object = $this->macosFactory;
         assert(
             $object instanceof MacosFactory,
             sprintf(
@@ -51,7 +51,7 @@ final class MacosFactoryTest extends TestCase
                 $object::class,
             ),
         );
-        $result = $object();
-        self::assertInstanceOf(Macos::class, $result);
+        $macos = $object();
+        self::assertInstanceOf(Macos::class, $macos);
     }
 }

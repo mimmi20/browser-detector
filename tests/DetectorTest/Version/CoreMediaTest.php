@@ -29,7 +29,7 @@ use UnexpectedValueException;
 
 use function assert;
 
-#[CoversClass(CoreMedia::class)]
+#[CoversClass(className: CoreMedia::class)]
 final class CoreMediaTest extends TestCase
 {
     /**
@@ -37,12 +37,12 @@ final class CoreMediaTest extends TestCase
      * @throws UnexpectedValueException
      * @throws Exception
      */
-    #[DataProvider('providerVersion')]
+    #[DataProvider(methodName: 'providerVersion')]
     public function testDetectVersion(string $useragent, string | null $expectedVersion): void
     {
-        $object = new CoreMedia(new VersionBuilder());
+        $coreMedia = new CoreMedia(new VersionBuilder());
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $coreMedia->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertSame($expectedVersion, $detectedVersion->getVersion());
@@ -77,19 +77,19 @@ final class CoreMediaTest extends TestCase
      */
     public function testDetectVersionFail(): void
     {
-        $exception = new NotNumericException('set failed');
+        $notNumericException = new NotNumericException('set failed');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('1.0.2')
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
 
         assert($versionBuilder instanceof VersionFactoryInterface);
-        $object = new CoreMedia($versionBuilder);
+        $coreMedia = new CoreMedia($versionBuilder);
 
-        $detectedVersion = $object->detectVersion(
+        $detectedVersion = $coreMedia->detectVersion(
             'AppleCoreMedia/1.0.2.12D508 (iPad; U; CPU OS 8_2 like Mac OS X; sv_se)',
         );
 

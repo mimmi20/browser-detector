@@ -78,7 +78,11 @@ final class Company implements DataInterface
             foreach ($fileData as $key => $data) {
                 $stringKey = (string) $key;
 
-                if (array_key_exists($stringKey, $this->items) || !$data instanceof DataCompany) {
+                if (array_key_exists($stringKey, $this->items)) {
+                    continue;
+                }
+
+                if (!$data instanceof DataCompany) {
                     continue;
                 }
 

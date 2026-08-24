@@ -58,8 +58,8 @@ use const PHP_EOL;
 #[CoversNothing]
 final class DetectorTest extends TestCase
 {
-    private static DetectorFactory $factory;
-    private Detector $object;
+    private static DetectorFactory $detectorFactory;
+    private Detector $detector;
 
     /** @throws void */
     #[Override]
@@ -246,7 +246,7 @@ final class DetectorTest extends TestCase
         };
 
         assert($logger instanceof LoggerInterface);
-        self::$factory = new DetectorFactory($cache, $logger);
+        self::$detectorFactory = new DetectorFactory($cache, $logger);
     }
 
     /**
@@ -260,7 +260,7 @@ final class DetectorTest extends TestCase
     #[Override]
     protected function setUp(): void
     {
-        $this->object = (self::$factory)();
+        $this->detector = (self::$detectorFactory)();
     }
 
     /**
@@ -273,10 +273,10 @@ final class DetectorTest extends TestCase
      * @throws UnexpectedValueException
      * @throws \PHPUnit\Framework\Exception
      */
-    #[DataProvider('providerGetBrowser')]
+    #[DataProvider(methodName: 'providerGetBrowser')]
     public function testGetBrowser(array $headers, array $expectedResult): void
     {
-        $result = $this->object->getBrowser($headers);
+        $result = $this->detector->getBrowser($headers);
         assert(is_array($result));
 
         try {
@@ -302,9 +302,9 @@ final class DetectorTest extends TestCase
             sprintf(
                 "detection header result mismatch for headers %s\ntest headers:%s\nexpected result: %s\nactual result: %s",
                 $encodedHeaders,
-                var_export($headers, true),
-                var_export($expectedResult['headers'], true),
-                var_export($result['headers'], true),
+                var_export($headers, return: true),
+                var_export($expectedResult['headers'], return: true),
+                var_export($result['headers'], return: true),
             ),
         );
 
@@ -314,9 +314,9 @@ final class DetectorTest extends TestCase
             sprintf(
                 "detection result mismatch for headers %s\ntest headers:%s\nexpected result: %s\nactual result: %s",
                 $encodedHeaders,
-                var_export($headers, true),
-                var_export($expectedResult, true),
-                var_export($result, true),
+                var_export($headers, return: true),
+                var_export($expectedResult, return: true),
+                var_export($result, return: true),
             ),
         );
     }
@@ -357,7 +357,11 @@ final class DetectorTest extends TestCase
             assert(is_iterable($tests));
 
             foreach ($tests as $i => $expectedResult) {
-                if (!is_array($expectedResult) || !is_scalar($i)) {
+                if (!is_array($expectedResult)) {
+                    continue;
+                }
+
+                if (!is_scalar($i)) {
                     continue;
                 }
 

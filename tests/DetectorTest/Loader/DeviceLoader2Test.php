@@ -34,8 +34,8 @@ use UaResult\Device\Device;
 use UaResult\Device\Display;
 use UnexpectedValueException;
 
-#[CoversClass(DeviceLoader::class)]
-#[CoversClass(DeviceData::class)]
+#[CoversClass(className: DeviceLoader::class)]
+#[CoversClass(className: DeviceData::class)]
 final class DeviceLoader2Test extends TestCase
 {
     /**
@@ -131,9 +131,13 @@ final class DeviceLoader2Test extends TestCase
             ->with('xyz')
             ->willReturn($company);
 
-        $object = new DeviceLoader(logger: $logger, initData: $initData, companyLoader: $companyLoader);
+        $deviceLoader = new DeviceLoader(
+            logger: $logger,
+            initData: $initData,
+            companyLoader: $companyLoader,
+        );
 
-        $result = $object->load('test-key');
+        $deviceData = $deviceLoader->load('test-key');
 
         $prop = new ReflectionProperty($initData, 'initialized');
 
@@ -146,14 +150,14 @@ final class DeviceLoader2Test extends TestCase
             manufacturer: $company,
             brand: $company,
             type: Type::Smartphone,
-            display: new Display(720, 1440, true, 7),
+            display: new Display(720, 1440, touch: true, size: 7),
             dualOrientation: false,
             simCount: 2,
             bits: Bits::unknown,
         );
 
-        self::assertSame($expected->toArray(), $result->getDevice()->toArray());
-        self::assertSame('test-platform', $result->getOs());
+        self::assertSame($expected->toArray(), $deviceData->getDevice()->toArray());
+        self::assertSame('test-platform', $deviceData->getOs());
     }
 
     /**
@@ -249,9 +253,13 @@ final class DeviceLoader2Test extends TestCase
             ->with('xyz')
             ->willReturn($company);
 
-        $object = new DeviceLoader(logger: $logger, initData: $initData, companyLoader: $companyLoader);
+        $deviceLoader = new DeviceLoader(
+            logger: $logger,
+            initData: $initData,
+            companyLoader: $companyLoader,
+        );
 
-        $result = $object->load('test-key');
+        $deviceData = $deviceLoader->load('test-key');
 
         $prop = new ReflectionProperty($initData, 'initialized');
 
@@ -264,13 +272,13 @@ final class DeviceLoader2Test extends TestCase
             manufacturer: $company,
             brand: $company,
             type: Type::Smartphone,
-            display: new Display(720, 1440, true, 7),
+            display: new Display(720, 1440, touch: true, size: 7),
             dualOrientation: false,
             simCount: 1,
             bits: Bits::unknown,
         );
 
-        self::assertSame($expected->toArray(), $result->getDevice()->toArray());
-        self::assertSame('test-platform', $result->getOs());
+        self::assertSame($expected->toArray(), $deviceData->getDevice()->toArray());
+        self::assertSame('test-platform', $deviceData->getOs());
     }
 }

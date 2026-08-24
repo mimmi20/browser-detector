@@ -20,7 +20,7 @@ use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 
-#[CoversClass(PlatformParser::class)]
+#[CoversClass(className: PlatformParser::class)]
 final class PlatformParserTest extends TestCase
 {
     /**
@@ -31,10 +31,10 @@ final class PlatformParserTest extends TestCase
     {
         $useragent = 'test-agent';
 
-        $parser       = new PlatformParser();
-        $parserResult = $parser->parse($useragent);
+        $platformParser = new PlatformParser();
+        $os             = $platformParser->parse($useragent);
 
-        self::assertSame(Os::unknown, $parserResult);
+        self::assertSame(Os::unknown, $os);
     }
 
     /**
@@ -45,10 +45,10 @@ final class PlatformParserTest extends TestCase
     {
         $useragent = 'Mozilla/5.0 (Fuchsia) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 CrKey/1.56.500000';
 
-        $parser       = new PlatformParser();
-        $parserResult = $parser->parse($useragent);
+        $platformParser = new PlatformParser();
+        $os             = $platformParser->parse($useragent);
 
-        self::assertSame(Os::fuchsia, $parserResult);
+        self::assertSame(Os::fuchsia, $os);
     }
 
     /**
@@ -59,9 +59,9 @@ final class PlatformParserTest extends TestCase
     {
         $useragent = 'Nokia 2660 Flip;Dorado WAP-Browser/1.0.0';
 
-        $parser       = new PlatformParser();
-        $parserResult = $parser->parse($useragent);
+        $platformParser = new PlatformParser();
+        $os             = $platformParser->parse($useragent);
 
-        self::assertSame(Os::series30, $parserResult);
+        self::assertSame(Os::series30, $os);
     }
 }

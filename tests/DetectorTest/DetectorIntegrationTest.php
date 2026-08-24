@@ -39,17 +39,17 @@ use RuntimeException;
 use UnexpectedValueException;
 
 /** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */
-#[CoversClass(Detector::class)]
-#[CoversClass(Headers::class)]
-#[CoversClass(PlatformParser::class)]
-#[CoversClass(BrowserParser::class)]
-#[CoversClass(DeviceParser::class)]
-#[CoversClass(EngineParser::class)]
-#[CoversClass(DeviceLoaderFactory::class)]
-#[CoversClass(DeviceLoader::class)]
-#[CoversClass(EngineLoader::class)]
-#[CoversClass(BrowserLoader::class)]
-#[CoversClass(PlatformLoader::class)]
+#[CoversClass(className: Detector::class)]
+#[CoversClass(className: Headers::class)]
+#[CoversClass(className: PlatformParser::class)]
+#[CoversClass(className: BrowserParser::class)]
+#[CoversClass(className: DeviceParser::class)]
+#[CoversClass(className: EngineParser::class)]
+#[CoversClass(className: DeviceLoaderFactory::class)]
+#[CoversClass(className: DeviceLoader::class)]
+#[CoversClass(className: EngineLoader::class)]
+#[CoversClass(className: BrowserLoader::class)]
+#[CoversClass(className: PlatformLoader::class)]
 final class DetectorIntegrationTest extends TestCase
 {
     /**
@@ -63,7 +63,7 @@ final class DetectorIntegrationTest extends TestCase
      * @throws RuntimeException
      * @throws \Laminas\Hydrator\Exception\InvalidArgumentException
      */
-    #[DataProvider('providerUa')]
+    #[DataProvider(methodName: 'providerUa')]
     public function testData(array $headers, array $expected): void
     {
         $logger = $this->createMock(LoggerInterface::class);
@@ -115,10 +115,10 @@ final class DetectorIntegrationTest extends TestCase
             ->expects(self::once())
             ->method('has')
             ->with(new IsType(NativeType::String))
-            ->willReturn(false);
+            ->willReturn(value: false);
 
-        $factory  = new DetectorFactory($cache, $logger);
-        $detector = $factory();
+        $detectorFactory = new DetectorFactory($cache, $logger);
+        $detector        = $detectorFactory();
 
         $result = $detector->getBrowser($headers);
 

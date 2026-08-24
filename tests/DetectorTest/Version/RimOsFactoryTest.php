@@ -24,16 +24,16 @@ use PHPUnit\Framework\TestCase;
 use function assert;
 use function sprintf;
 
-#[CoversClass(RimOsFactory::class)]
+#[CoversClass(className: RimOsFactory::class)]
 final class RimOsFactoryTest extends TestCase
 {
-    private RimOsFactory $object;
+    private RimOsFactory $rimOsFactory;
 
     /** @throws void */
     #[Override]
     protected function setUp(): void
     {
-        $this->object = new RimOsFactory();
+        $this->rimOsFactory = new RimOsFactory();
     }
 
     /**
@@ -42,7 +42,7 @@ final class RimOsFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $object = $this->object;
+        $object = $this->rimOsFactory;
         assert(
             $object instanceof RimOsFactory,
             sprintf(
@@ -51,7 +51,7 @@ final class RimOsFactoryTest extends TestCase
                 $object::class,
             ),
         );
-        $result = $object();
-        self::assertInstanceOf(RimOs::class, $result);
+        $rimOs = $object();
+        self::assertInstanceOf(RimOs::class, $rimOs);
     }
 }

@@ -24,7 +24,7 @@ use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UnexpectedValueException;
 
-#[CoversClass(FireOs::class)]
+#[CoversClass(className: FireOs::class)]
 final class FireOsTest extends TestCase
 {
     /**
@@ -33,12 +33,12 @@ final class FireOsTest extends TestCase
      * @throws Exception
      * @throws NotNumericException
      */
-    #[DataProvider('providerVersion')]
+    #[DataProvider(methodName: 'providerVersion')]
     public function testGetVersion(string $androidVersion, string | null $expectedVersion): void
     {
-        $object = new FireOs(new VersionBuilder());
+        $fireOs = new FireOs(new VersionBuilder());
 
-        $detectedVersion = $object->getVersion($androidVersion);
+        $detectedVersion = $fireOs->getVersion($androidVersion);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertSame($expectedVersion, $detectedVersion->getVersion());

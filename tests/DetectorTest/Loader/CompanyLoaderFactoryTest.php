@@ -22,7 +22,7 @@ use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use RuntimeException;
 
-#[CoversClass(CompanyLoaderFactory::class)]
+#[CoversClass(className: CompanyLoaderFactory::class)]
 final class CompanyLoaderFactoryTest extends TestCase
 {
     /**
@@ -38,14 +38,14 @@ final class CompanyLoaderFactoryTest extends TestCase
         $strategy->expects(self::never())
             ->method('hydrate');
 
-        $factory = new CompanyLoaderFactory();
-        $object  = $factory($strategy);
+        $companyLoaderFactory = new CompanyLoaderFactory();
+        $companyLoader        = $companyLoaderFactory($strategy);
 
-        self::assertInstanceOf(CompanyLoaderInterface::class, $object);
+        self::assertInstanceOf(CompanyLoaderInterface::class, $companyLoader);
 
-        $objectTwo = $factory($strategy);
+        $objectTwo = $companyLoaderFactory($strategy);
 
         self::assertInstanceOf(CompanyLoaderInterface::class, $objectTwo);
-        self::assertSame($objectTwo, $object);
+        self::assertSame($objectTwo, $companyLoader);
     }
 }

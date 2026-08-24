@@ -32,7 +32,7 @@ final class SecChUaPlatform implements DeviceCodeInterface, PlatformCodeInterfac
         $value = mb_trim($value, '"\\\'');
         $code  = mb_strtolower($value);
 
-        return !in_array($code, ['', 'unknown'], true);
+        return !in_array($code, ['', 'unknown'], strict: true);
     }
 
     /** @throws void */
@@ -42,7 +42,7 @@ final class SecChUaPlatform implements DeviceCodeInterface, PlatformCodeInterfac
         $value = mb_trim($value, '"\\\'');
         $code  = mb_strtolower($value);
 
-        return !in_array($code, ['', 'unknown'], true);
+        return !in_array($code, ['', 'unknown'], strict: true);
     }
 
     /** @throws void */

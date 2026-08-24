@@ -39,12 +39,12 @@ use UnexpectedValueException;
 
 use function sprintf;
 
-#[CoversClass(XOperaminiPhoneUaClientCode::class)]
-#[CoversClass(XOperaminiPhoneUaClientVersion::class)]
-#[CoversClass(XOperaminiPhoneUaDeviceCode::class)]
-#[CoversClass(XOperaminiPhoneUaEngineCode::class)]
-#[CoversClass(XOperaminiPhoneUaPlatformCode::class)]
-#[CoversTrait(SetVersionTrait::class)]
+#[CoversClass(className: XOperaminiPhoneUaClientCode::class)]
+#[CoversClass(className: XOperaminiPhoneUaClientVersion::class)]
+#[CoversClass(className: XOperaminiPhoneUaDeviceCode::class)]
+#[CoversClass(className: XOperaminiPhoneUaEngineCode::class)]
+#[CoversClass(className: XOperaminiPhoneUaPlatformCode::class)]
+#[CoversTrait(traitName: SetVersionTrait::class)]
 final class XOperaminiPhoneUaTest extends TestCase
 {
     /**
@@ -55,7 +55,7 @@ final class XOperaminiPhoneUaTest extends TestCase
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
-    #[DataProvider('providerUa')]
+    #[DataProvider(methodName: 'providerUa')]
     public function testData(
         string $ua,
         bool $hasDeviceInfo,
@@ -64,9 +64,9 @@ final class XOperaminiPhoneUaTest extends TestCase
         bool $hasClientVersion,
         string | null $clientVersion,
         bool $hasPlatformInfo,
-        Os $platformCode,
+        Os $os,
         bool $hasEngineInfo,
-        Engine $engineCode,
+        Engine $engine,
     ): void {
         $deviceIsNull = false;
         $engineIsNull = false;
@@ -75,14 +75,14 @@ final class XOperaminiPhoneUaTest extends TestCase
             $deviceIsNull = true;
         }
 
-        if ($engineCode === Engine::unknown) {
+        if ($engine === Engine::unknown) {
             $engineIsNull = true;
         }
 
         $normalizerFactory = new NormalizerFactory();
-        $normalizer        = $normalizerFactory->build();
+        $normalizerChain   = $normalizerFactory->build();
 
-        $normalitedUa = $normalizer->normalize($ua);
+        $normalitedUa = $normalizerChain->normalize($ua);
 
         $deviceParser = $this->createMock(DeviceParserInterface::class);
         $deviceParser
@@ -96,131 +96,135 @@ final class XOperaminiPhoneUaTest extends TestCase
             ->expects(self::once())
             ->method('parse')
             ->with($normalitedUa)
-            ->willReturn($engineCode);
+            ->willReturn($engine);
 
-        $header = new XOperaminiPhoneUa(
+        $xOperaminiPhoneUa = new XOperaminiPhoneUa(
             value: $ua,
             deviceCode: new XOperaminiPhoneUaDeviceCode(
                 deviceParser: $deviceParser,
-                normalizer: $normalizer,
+                normalizer: $normalizerChain,
             ),
             clientCode: new XOperaminiPhoneUaClientCode(),
             clientVersion: new XOperaminiPhoneUaClientVersion(),
             platformCode: new XOperaminiPhoneUaPlatformCode(),
             engineCode: new XOperaminiPhoneUaEngineCode(
                 engineParser: $engineParser,
-                normalizer: $normalizer,
+                normalizer: $normalizerChain,
             ),
         );
 
-        self::assertSame($ua, $header->getValue(), sprintf('value mismatch for ua "%s"', $ua));
         self::assertSame(
             $ua,
-            $header->getNormalizedValue(),
+            $xOperaminiPhoneUa->getValue(),
+            sprintf('value mismatch for ua "%s"', $ua),
+        );
+        self::assertSame(
+            $ua,
+            $xOperaminiPhoneUa->getNormalizedValue(),
             sprintf('value mismatch for ua "%s"', $ua),
         );
         self::assertFalse(
-            $header->hasDeviceArchitecture(),
+            $xOperaminiPhoneUa->hasDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             Architecture::unknown,
-            $header->getDeviceArchitecture(),
+            $xOperaminiPhoneUa->getDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertFalse(
-            $header->hasDeviceBitness(),
+            $xOperaminiPhoneUa->hasDeviceBitness(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             Bits::unknown,
-            $header->getDeviceBitness(),
+            $xOperaminiPhoneUa->getDeviceBitness(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertFalse(
-            $header->hasDeviceIsMobile(),
+            $xOperaminiPhoneUa->hasDeviceIsMobile(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertNull(
-            $header->getDeviceIsMobile(),
+            $xOperaminiPhoneUa->getDeviceIsMobile(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             $hasDeviceInfo,
-            $header->hasDeviceCode(),
+            $xOperaminiPhoneUa->hasDeviceCode(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
-            !$deviceIsNull ? $deviceCode : null,
-            $header->getDeviceCode(),
+            $deviceIsNull ? null : $deviceCode,
+            $xOperaminiPhoneUa->getDeviceCode(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             $hasClientInfo,
-            $header->hasClientCode(),
+            $xOperaminiPhoneUa->hasClientCode(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             'opera mini',
-            $header->getClientCode(),
+            $xOperaminiPhoneUa->getClientCode(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             $hasClientVersion,
-            $header->hasClientVersion(),
+            $xOperaminiPhoneUa->hasClientVersion(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
 
         if ($clientVersion === null) {
             self::assertInstanceOf(
                 ForcedNullVersion::class,
-                $header->getClientVersion(),
+                $xOperaminiPhoneUa->getClientVersion(),
                 sprintf('browser info mismatch for ua "%s"', $ua),
             );
         } else {
             self::assertSame(
                 $clientVersion,
-                $header->getClientVersion()->getVersion(),
+                $xOperaminiPhoneUa->getClientVersion()->getVersion(),
                 sprintf('browser info mismatch for ua "%s"', $ua),
             );
         }
 
         self::assertSame(
             $hasPlatformInfo,
-            $header->hasPlatformCode(),
+            $xOperaminiPhoneUa->hasPlatformCode(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
-            $platformCode,
-            $header->getPlatformCode(),
+            $os,
+            $xOperaminiPhoneUa->getPlatformCode(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
         self::assertFalse(
-            $header->hasPlatformVersion(),
+            $xOperaminiPhoneUa->hasPlatformVersion(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
         self::assertInstanceOf(
             NullVersion::class,
-            $header->getPlatformVersionWithOs(Os::unknown),
+            $xOperaminiPhoneUa->getPlatformVersionWithOs(Os::unknown),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             $hasEngineInfo,
-            $header->hasEngineCode(),
+            $xOperaminiPhoneUa->hasEngineCode(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
-            !$engineIsNull ? $engineCode : Engine::unknown,
-            $header->getEngineCode(),
+            $engineIsNull ? Engine::unknown : $engine,
+            $xOperaminiPhoneUa->getEngineCode(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
         self::assertFalse(
-            $header->hasEngineVersion(),
+            $xOperaminiPhoneUa->hasEngineVersion(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
         self::assertInstanceOf(
             NullVersion::class,
-            $header->getEngineVersionWithEngine(Engine::unknown),
+            $xOperaminiPhoneUa->getEngineVersionWithEngine(Engine::unknown),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
     }

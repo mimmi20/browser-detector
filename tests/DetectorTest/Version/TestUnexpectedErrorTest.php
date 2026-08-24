@@ -18,19 +18,19 @@ use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 use UnexpectedValueException;
 
-#[CoversClass(TestUnexpectedError::class)]
+#[CoversClass(className: TestUnexpectedError::class)]
 final class TestUnexpectedErrorTest extends TestCase
 {
     /** @throws UnexpectedValueException */
     public function testDetectVersion(): void
     {
-        $object = new TestUnexpectedError();
+        $testUnexpectedError = new TestUnexpectedError();
 
         $this->expectException(UnexpectedValueException::class);
         $this->expectExceptionCode(0);
         $this->expectExceptionMessageIsOrContains('error');
 
-        $object->detectVersion(
+        $testUnexpectedError->detectVersion(
             'Mozilla/5.0 (Android; Mobile; rv:10.0.5) Gecko/10.0.5 Firefox/10.0.5 Fennec/10.0.5',
         );
     }

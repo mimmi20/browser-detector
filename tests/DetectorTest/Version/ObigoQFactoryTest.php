@@ -24,16 +24,16 @@ use PHPUnit\Framework\TestCase;
 use function assert;
 use function sprintf;
 
-#[CoversClass(ObigoQFactory::class)]
+#[CoversClass(className: ObigoQFactory::class)]
 final class ObigoQFactoryTest extends TestCase
 {
-    private ObigoQFactory $object;
+    private ObigoQFactory $obigoQFactory;
 
     /** @throws void */
     #[Override]
     protected function setUp(): void
     {
-        $this->object = new ObigoQFactory();
+        $this->obigoQFactory = new ObigoQFactory();
     }
 
     /**
@@ -42,7 +42,7 @@ final class ObigoQFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $object = $this->object;
+        $object = $this->obigoQFactory;
         assert(
             $object instanceof ObigoQFactory,
             sprintf(
@@ -51,7 +51,7 @@ final class ObigoQFactoryTest extends TestCase
                 $object::class,
             ),
         );
-        $result = $object();
-        self::assertInstanceOf(ObigoQ::class, $result);
+        $obigoQ = $object();
+        self::assertInstanceOf(ObigoQ::class, $obigoQ);
     }
 }

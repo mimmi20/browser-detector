@@ -39,14 +39,14 @@ use UnexpectedValueException;
 use function preg_match;
 use function sprintf;
 
-#[CoversClass(DeviceStockUaClientCode::class)]
-#[CoversClass(DeviceStockUaClientVersion::class)]
-#[CoversClass(DeviceStockUaPlatformCode::class)]
-#[CoversClass(DeviceStockUaPlatformVersion::class)]
-#[CoversClass(DeviceStockUaEngineCode::class)]
-#[CoversClass(DeviceStockUaEngineVersion::class)]
-#[CoversClass(DeviceStockUaDeviceCode::class)]
-#[CoversTrait(SetVersionTrait::class)]
+#[CoversClass(className: DeviceStockUaClientCode::class)]
+#[CoversClass(className: DeviceStockUaClientVersion::class)]
+#[CoversClass(className: DeviceStockUaPlatformCode::class)]
+#[CoversClass(className: DeviceStockUaPlatformVersion::class)]
+#[CoversClass(className: DeviceStockUaEngineCode::class)]
+#[CoversClass(className: DeviceStockUaEngineVersion::class)]
+#[CoversClass(className: DeviceStockUaDeviceCode::class)]
+#[CoversTrait(traitName: SetVersionTrait::class)]
 final class DeviceStockUaTest extends TestCase
 {
     /**
@@ -56,7 +56,7 @@ final class DeviceStockUaTest extends TestCase
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
-    #[DataProvider('providerUa')]
+    #[DataProvider(methodName: 'providerUa')]
     public function testData(
         string $ua,
         bool $hasDeviceInfo,
@@ -66,11 +66,11 @@ final class DeviceStockUaTest extends TestCase
         bool $hasClientVersion,
         string | null $clientVersion,
         bool $hasPlatformInfo,
-        Os $platformCode,
+        Os $os,
         bool $hasPlatformVersion,
         string | null $platformVersion,
         bool $hasEngineInfo,
-        Engine $engineCode,
+        Engine $engine,
         bool $hasEngineVersion,
         string | null $engineVersion,
     ): void {
@@ -97,7 +97,7 @@ final class DeviceStockUaTest extends TestCase
             ->with($ua)
             ->willReturn($deviceCode);
 
-        $header = new FullHeader(
+        $fullHeader = new FullHeader(
             value: $ua,
             deviceCode: new DeviceStockUaDeviceCode(
                 deviceParser: $deviceParser,
@@ -110,134 +110,134 @@ final class DeviceStockUaTest extends TestCase
             engineVersion: new DeviceStockUaEngineVersion(),
         );
 
-        self::assertSame($ua, $header->getValue(), sprintf('value mismatch for ua "%s"', $ua));
+        self::assertSame($ua, $fullHeader->getValue(), sprintf('value mismatch for ua "%s"', $ua));
         self::assertSame(
             $ua,
-            $header->getNormalizedValue(),
+            $fullHeader->getNormalizedValue(),
             sprintf('value mismatch for ua "%s"', $ua),
         );
         self::assertFalse(
-            $header->hasDeviceArchitecture(),
+            $fullHeader->hasDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             Architecture::unknown,
-            $header->getDeviceArchitecture(),
+            $fullHeader->getDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertFalse(
-            $header->hasDeviceBitness(),
+            $fullHeader->hasDeviceBitness(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             Bits::unknown,
-            $header->getDeviceBitness(),
+            $fullHeader->getDeviceBitness(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertFalse(
-            $header->hasDeviceIsMobile(),
+            $fullHeader->hasDeviceIsMobile(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertNull(
-            $header->getDeviceIsMobile(),
+            $fullHeader->getDeviceIsMobile(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             $hasDeviceInfo,
-            $header->hasDeviceCode(),
+            $fullHeader->hasDeviceCode(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
-            !$isNull ? $deviceCode : null,
-            $header->getDeviceCode(),
+            $isNull ? null : $deviceCode,
+            $fullHeader->getDeviceCode(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             $hasClientInfo,
-            $header->hasClientCode(),
+            $fullHeader->hasClientCode(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             $clientCode,
-            $header->getClientCode(),
+            $fullHeader->getClientCode(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             $hasClientVersion,
-            $header->hasClientVersion(),
+            $fullHeader->hasClientVersion(),
             sprintf('browser version info mismatch for ua "%s"', $ua),
         );
 
         if ($clientVersion === null) {
             self::assertInstanceOf(
                 ForcedNullVersion::class,
-                $header->getClientVersion(),
+                $fullHeader->getClientVersion(),
                 sprintf('browser version info mismatch for ua "%s"', $ua),
             );
         } else {
             self::assertSame(
                 $clientVersion,
-                $header->getClientVersion()->getVersion(),
+                $fullHeader->getClientVersion()->getVersion(),
                 sprintf('browser version info mismatch for ua "%s"', $ua),
             );
         }
 
         self::assertSame(
             $hasPlatformInfo,
-            $header->hasPlatformCode(),
+            $fullHeader->hasPlatformCode(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
-            $platformCode,
-            $header->getPlatformCode(),
+            $os,
+            $fullHeader->getPlatformCode(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             $hasPlatformVersion,
-            $header->hasPlatformVersion(),
+            $fullHeader->hasPlatformVersion(),
             sprintf('platform version info mismatch for ua "%s"', $ua),
         );
 
         if ($platformVersion === null) {
             self::assertInstanceOf(
                 ForcedNullVersion::class,
-                $header->getPlatformVersionWithOs(Os::unknown),
+                $fullHeader->getPlatformVersionWithOs(Os::unknown),
                 sprintf('platform version info mismatch for ua "%s"', $ua),
             );
         } else {
             self::assertSame(
                 $platformVersion,
-                $header->getPlatformVersionWithOs(Os::unknown)->getVersion(),
+                $fullHeader->getPlatformVersionWithOs(Os::unknown)->getVersion(),
                 sprintf('platform version info mismatch for ua "%s"', $ua),
             );
         }
 
         self::assertSame(
             $hasEngineInfo,
-            $header->hasEngineCode(),
+            $fullHeader->hasEngineCode(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
-            $engineCode,
-            $header->getEngineCode(),
+            $engine,
+            $fullHeader->getEngineCode(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             $hasEngineVersion,
-            $header->hasEngineVersion(),
+            $fullHeader->hasEngineVersion(),
             sprintf('engine version info mismatch for ua "%s"', $ua),
         );
 
         if ($engineVersion === null) {
             self::assertInstanceOf(
                 ForcedNullVersion::class,
-                $header->getEngineVersionWithEngine(Engine::unknown),
+                $fullHeader->getEngineVersionWithEngine(Engine::unknown),
                 sprintf('engine version info mismatch for ua "%s"', $ua),
             );
         } else {
             self::assertSame(
                 $engineVersion,
-                $header->getEngineVersionWithEngine(Engine::unknown)->getVersion(),
+                $fullHeader->getEngineVersionWithEngine(Engine::unknown)->getVersion(),
                 sprintf('engine version info mismatch for ua "%s"', $ua),
             );
         }
@@ -260,11 +260,11 @@ final class DeviceStockUaTest extends TestCase
                 'hasClientVersion' => false,
                 'clientVersion' => null,
                 'hasPlatformInfo' => true,
-                'platformCode' => Os::bada,
+                'os' => Os::bada,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '2.0.0',
                 'hasEngineInfo' => true,
-                'engineCode' => Engine::webkit,
+                'engine' => Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.20.0',
             ],
@@ -277,11 +277,11 @@ final class DeviceStockUaTest extends TestCase
                 'hasClientVersion' => false,
                 'clientVersion' => null,
                 'hasPlatformInfo' => false,
-                'platformCode' => Os::unknown,
+                'os' => Os::unknown,
                 'hasPlatformVersion' => false,
                 'platformVersion' => null,
                 'hasEngineInfo' => false,
-                'engineCode' => Engine::unknown,
+                'engine' => Engine::unknown,
                 'hasEngineVersion' => false,
                 'engineVersion' => null,
             ],
@@ -294,11 +294,11 @@ final class DeviceStockUaTest extends TestCase
                 'hasClientVersion' => false,
                 'clientVersion' => null,
                 'hasPlatformInfo' => true,
-                'platformCode' => Os::android,
+                'os' => Os::android,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '4.2.5',
                 'hasEngineInfo' => true,
-                'engineCode' => Engine::webkit,
+                'engine' => Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.30.0',
             ],
@@ -311,11 +311,11 @@ final class DeviceStockUaTest extends TestCase
                 'hasClientVersion' => false,
                 'clientVersion' => null,
                 'hasPlatformInfo' => false,
-                'platformCode' => Os::unknown,
+                'os' => Os::unknown,
                 'hasPlatformVersion' => false,
                 'platformVersion' => null,
                 'hasEngineInfo' => true,
-                'engineCode' => Engine::gecko,
+                'engine' => Engine::gecko,
                 'hasEngineVersion' => true,
                 'engineVersion' => '20100401.0.0',
             ],
@@ -328,11 +328,11 @@ final class DeviceStockUaTest extends TestCase
                 'hasClientVersion' => false,
                 'clientVersion' => null,
                 'hasPlatformInfo' => false,
-                'platformCode' => Os::unknown,
+                'os' => Os::unknown,
                 'hasPlatformVersion' => false,
                 'platformVersion' => null,
                 'hasEngineInfo' => true,
-                'engineCode' => Engine::gecko,
+                'engine' => Engine::gecko,
                 'hasEngineVersion' => true,
                 'engineVersion' => '20100401.0.0',
             ],
@@ -345,11 +345,11 @@ final class DeviceStockUaTest extends TestCase
                 'hasClientVersion' => false,
                 'clientVersion' => null,
                 'hasPlatformInfo' => true,
-                'platformCode' => Os::bada,
+                'os' => Os::bada,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '2.0.0',
                 'hasEngineInfo' => false,
-                'engineCode' => Engine::unknown,
+                'engine' => Engine::unknown,
                 'hasEngineVersion' => false,
                 'engineVersion' => null,
             ],
@@ -362,11 +362,11 @@ final class DeviceStockUaTest extends TestCase
                 'hasClientVersion' => false,
                 'clientVersion' => null,
                 'hasPlatformInfo' => true,
-                'platformCode' => Os::rimOs,
+                'os' => Os::rimOs,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '5.0.0.235',
                 'hasEngineInfo' => false,
-                'engineCode' => Engine::unknown,
+                'engine' => Engine::unknown,
                 'hasEngineVersion' => false,
                 'engineVersion' => null,
             ],
@@ -379,11 +379,11 @@ final class DeviceStockUaTest extends TestCase
                 'hasClientVersion' => false,
                 'clientVersion' => null,
                 'hasPlatformInfo' => true,
-                'platformCode' => Os::rimOs,
+                'os' => Os::rimOs,
                 'hasPlatformVersion' => false,
                 'platformVersion' => null,
                 'hasEngineInfo' => false,
-                'engineCode' => Engine::unknown,
+                'engine' => Engine::unknown,
                 'hasEngineVersion' => false,
                 'engineVersion' => null,
             ],
@@ -396,11 +396,11 @@ final class DeviceStockUaTest extends TestCase
                 'hasClientVersion' => false,
                 'clientVersion' => null,
                 'hasPlatformInfo' => true,
-                'platformCode' => Os::rimOs,
+                'os' => Os::rimOs,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '5.0.0.973',
                 'hasEngineInfo' => false,
-                'engineCode' => Engine::unknown,
+                'engine' => Engine::unknown,
                 'hasEngineVersion' => false,
                 'engineVersion' => null,
             ],
@@ -413,11 +413,11 @@ final class DeviceStockUaTest extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '4.2.99',
                 'hasPlatformInfo' => true,
-                'platformCode' => Os::brew,
+                'os' => Os::brew,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '3.1.5',
                 'hasEngineInfo' => false,
-                'engineCode' => Engine::unknown,
+                'engine' => Engine::unknown,
                 'hasEngineVersion' => false,
                 'engineVersion' => null,
             ],
@@ -430,11 +430,11 @@ final class DeviceStockUaTest extends TestCase
                 'hasClientVersion' => false,
                 'clientVersion' => null,
                 'hasPlatformInfo' => true,
-                'platformCode' => Os::brew,
+                'os' => Os::brew,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '3.1.5.189',
                 'hasEngineInfo' => false,
-                'engineCode' => Engine::unknown,
+                'engine' => Engine::unknown,
                 'hasEngineVersion' => false,
                 'engineVersion' => null,
             ],
@@ -447,11 +447,11 @@ final class DeviceStockUaTest extends TestCase
                 'hasClientVersion' => false,
                 'clientVersion' => null,
                 'hasPlatformInfo' => true,
-                'platformCode' => Os::brew,
+                'os' => Os::brew,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '1.0.2',
                 'hasEngineInfo' => false,
-                'engineCode' => Engine::unknown,
+                'engine' => Engine::unknown,
                 'hasEngineVersion' => false,
                 'engineVersion' => null,
             ],
@@ -464,11 +464,11 @@ final class DeviceStockUaTest extends TestCase
                 'hasClientVersion' => false,
                 'clientVersion' => null,
                 'hasPlatformInfo' => true,
-                'platformCode' => Os::brew,
+                'os' => Os::brew,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '3.1.5',
                 'hasEngineInfo' => false,
-                'engineCode' => Engine::unknown,
+                'engine' => Engine::unknown,
                 'hasEngineVersion' => false,
                 'engineVersion' => null,
             ],
@@ -481,11 +481,11 @@ final class DeviceStockUaTest extends TestCase
                 'hasClientVersion' => false,
                 'clientVersion' => null,
                 'hasPlatformInfo' => true,
-                'platformCode' => Os::ios,
+                'os' => Os::ios,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '4.3.3',
                 'hasEngineInfo' => true,
-                'engineCode' => Engine::webkit,
+                'engine' => Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '533.17.9',
             ],
@@ -498,11 +498,11 @@ final class DeviceStockUaTest extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '4.4.31223',
                 'hasPlatformInfo' => true,
-                'platformCode' => Os::mre,
+                'os' => Os::mre,
                 'hasPlatformVersion' => false,
                 'platformVersion' => null,
                 'hasEngineInfo' => false,
-                'engineCode' => Engine::unknown,
+                'engine' => Engine::unknown,
                 'hasEngineVersion' => false,
                 'engineVersion' => null,
             ],
@@ -515,11 +515,11 @@ final class DeviceStockUaTest extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '4.4.31223',
                 'hasPlatformInfo' => false,
-                'platformCode' => Os::unknown,
+                'os' => Os::unknown,
                 'hasPlatformVersion' => false,
                 'platformVersion' => null,
                 'hasEngineInfo' => false,
-                'engineCode' => Engine::unknown,
+                'engine' => Engine::unknown,
                 'hasEngineVersion' => false,
                 'engineVersion' => null,
             ],
@@ -532,11 +532,11 @@ final class DeviceStockUaTest extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '4.4.31762',
                 'hasPlatformInfo' => false,
-                'platformCode' => Os::unknown,
+                'os' => Os::unknown,
                 'hasPlatformVersion' => false,
                 'platformVersion' => null,
                 'hasEngineInfo' => false,
-                'engineCode' => Engine::unknown,
+                'engine' => Engine::unknown,
                 'hasEngineVersion' => false,
                 'engineVersion' => null,
             ],
@@ -549,11 +549,11 @@ final class DeviceStockUaTest extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '4.4.31989',
                 'hasPlatformInfo' => false,
-                'platformCode' => Os::unknown,
+                'os' => Os::unknown,
                 'hasPlatformVersion' => false,
                 'platformVersion' => null,
                 'hasEngineInfo' => false,
-                'engineCode' => Engine::unknown,
+                'engine' => Engine::unknown,
                 'hasEngineVersion' => false,
                 'engineVersion' => null,
             ],
@@ -566,11 +566,11 @@ final class DeviceStockUaTest extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '6.1.27412',
                 'hasPlatformInfo' => true,
-                'platformCode' => Os::mre,
+                'os' => Os::mre,
                 'hasPlatformVersion' => false,
                 'platformVersion' => null,
                 'hasEngineInfo' => false,
-                'engineCode' => Engine::unknown,
+                'engine' => Engine::unknown,
                 'hasEngineVersion' => false,
                 'engineVersion' => null,
             ],
@@ -583,11 +583,11 @@ final class DeviceStockUaTest extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '4.2.1198',
                 'hasPlatformInfo' => true,
-                'platformCode' => Os::nucleus,
+                'os' => Os::nucleus,
                 'hasPlatformVersion' => false,
                 'platformVersion' => null,
                 'hasEngineInfo' => false,
-                'engineCode' => Engine::unknown,
+                'engine' => Engine::unknown,
                 'hasEngineVersion' => false,
                 'engineVersion' => null,
             ],
@@ -600,11 +600,11 @@ final class DeviceStockUaTest extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '5.1.3119',
                 'hasPlatformInfo' => true,
-                'platformCode' => Os::nucleus,
+                'os' => Os::nucleus,
                 'hasPlatformVersion' => false,
                 'platformVersion' => null,
                 'hasEngineInfo' => false,
-                'engineCode' => Engine::unknown,
+                'engine' => Engine::unknown,
                 'hasEngineVersion' => false,
                 'engineVersion' => null,
             ],
@@ -617,11 +617,11 @@ final class DeviceStockUaTest extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '7.0.32977',
                 'hasPlatformInfo' => true,
-                'platformCode' => Os::nucleus,
+                'os' => Os::nucleus,
                 'hasPlatformVersion' => false,
                 'platformVersion' => null,
                 'hasEngineInfo' => false,
-                'engineCode' => Engine::unknown,
+                'engine' => Engine::unknown,
                 'hasEngineVersion' => false,
                 'engineVersion' => null,
             ],
@@ -634,11 +634,11 @@ final class DeviceStockUaTest extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '4.4.29625',
                 'hasPlatformInfo' => false,
-                'platformCode' => Os::unknown,
+                'os' => Os::unknown,
                 'hasPlatformVersion' => false,
                 'platformVersion' => null,
                 'hasEngineInfo' => false,
-                'engineCode' => Engine::unknown,
+                'engine' => Engine::unknown,
                 'hasEngineVersion' => false,
                 'engineVersion' => null,
             ],
@@ -651,11 +651,11 @@ final class DeviceStockUaTest extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '4.4.31227',
                 'hasPlatformInfo' => false,
-                'platformCode' => Os::unknown,
+                'os' => Os::unknown,
                 'hasPlatformVersion' => false,
                 'platformVersion' => null,
                 'hasEngineInfo' => false,
-                'engineCode' => Engine::unknown,
+                'engine' => Engine::unknown,
                 'hasEngineVersion' => false,
                 'engineVersion' => null,
             ],
@@ -668,11 +668,11 @@ final class DeviceStockUaTest extends TestCase
                 'hasClientVersion' => false,
                 'clientVersion' => null,
                 'hasPlatformInfo' => false,
-                'platformCode' => Os::unknown,
+                'os' => Os::unknown,
                 'hasPlatformVersion' => false,
                 'platformVersion' => null,
                 'hasEngineInfo' => false,
-                'engineCode' => Engine::unknown,
+                'engine' => Engine::unknown,
                 'hasEngineVersion' => false,
                 'engineVersion' => null,
             ],
@@ -685,11 +685,11 @@ final class DeviceStockUaTest extends TestCase
                 'hasClientVersion' => false,
                 'clientVersion' => null,
                 'hasPlatformInfo' => false,
-                'platformCode' => Os::unknown,
+                'os' => Os::unknown,
                 'hasPlatformVersion' => false,
                 'platformVersion' => null,
                 'hasEngineInfo' => false,
-                'engineCode' => Engine::unknown,
+                'engine' => Engine::unknown,
                 'hasEngineVersion' => false,
                 'engineVersion' => null,
             ],
@@ -702,11 +702,11 @@ final class DeviceStockUaTest extends TestCase
                 'hasClientVersion' => false,
                 'clientVersion' => null,
                 'hasPlatformInfo' => false,
-                'platformCode' => Os::unknown,
+                'os' => Os::unknown,
                 'hasPlatformVersion' => false,
                 'platformVersion' => null,
                 'hasEngineInfo' => false,
-                'engineCode' => Engine::unknown,
+                'engine' => Engine::unknown,
                 'hasEngineVersion' => false,
                 'engineVersion' => null,
             ],
@@ -719,11 +719,11 @@ final class DeviceStockUaTest extends TestCase
                 'hasClientVersion' => false,
                 'clientVersion' => null,
                 'hasPlatformInfo' => true,
-                'platformCode' => Os::windowsphone,
+                'os' => Os::windowsphone,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '6.5.0',
                 'hasEngineInfo' => false,
-                'engineCode' => Engine::unknown,
+                'engine' => Engine::unknown,
                 'hasEngineVersion' => false,
                 'engineVersion' => null,
             ],
@@ -736,11 +736,11 @@ final class DeviceStockUaTest extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '9.0.0',
                 'hasPlatformInfo' => true,
-                'platformCode' => Os::windowsphone,
+                'os' => Os::windowsphone,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '7.5.0',
                 'hasEngineInfo' => true,
-                'engineCode' => Engine::trident,
+                'engine' => Engine::trident,
                 'hasEngineVersion' => true,
                 'engineVersion' => '5.0.0',
             ],
@@ -753,11 +753,11 @@ final class DeviceStockUaTest extends TestCase
                 'hasClientVersion' => true,
                 'clientVersion' => '9.0.0',
                 'hasPlatformInfo' => true,
-                'platformCode' => Os::windowsphone,
+                'os' => Os::windowsphone,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '7.5.0',
                 'hasEngineInfo' => true,
-                'engineCode' => Engine::trident,
+                'engine' => Engine::trident,
                 'hasEngineVersion' => true,
                 'engineVersion' => '5.0.0',
             ],
@@ -770,11 +770,11 @@ final class DeviceStockUaTest extends TestCase
                 'hasClientVersion' => false,
                 'clientVersion' => null,
                 'hasPlatformInfo' => true,
-                'platformCode' => Os::ios,
+                'os' => Os::ios,
                 'hasPlatformVersion' => true,
                 'platformVersion' => '4.3.3',
                 'hasEngineInfo' => true,
-                'engineCode' => Engine::webkit,
+                'engine' => Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '533.17.9',
             ],

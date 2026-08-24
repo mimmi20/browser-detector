@@ -142,6 +142,8 @@ parameters:
       identifier: catch.neverThrown
       paths:
         - tests\DetectorTest\Parser\Header\SecChUaPlatformVersionTest.php
+    -
+      identifier: argument.named
 
 services:
   errorFormatter.sarif:

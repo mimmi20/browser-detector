@@ -24,16 +24,16 @@ use PHPUnit\Framework\TestCase;
 use function assert;
 use function sprintf;
 
-#[CoversClass(PuffinFactory::class)]
+#[CoversClass(className: PuffinFactory::class)]
 final class PuffinFactoryTest extends TestCase
 {
-    private PuffinFactory $object;
+    private PuffinFactory $puffinFactory;
 
     /** @throws void */
     #[Override]
     protected function setUp(): void
     {
-        $this->object = new PuffinFactory();
+        $this->puffinFactory = new PuffinFactory();
     }
 
     /**
@@ -42,7 +42,7 @@ final class PuffinFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $object = $this->object;
+        $object = $this->puffinFactory;
         assert(
             $object instanceof PuffinFactory,
             sprintf(
@@ -51,7 +51,7 @@ final class PuffinFactoryTest extends TestCase
                 $object::class,
             ),
         );
-        $result = $object();
-        self::assertInstanceOf(Puffin::class, $result);
+        $puffin = $object();
+        self::assertInstanceOf(Puffin::class, $puffin);
     }
 }

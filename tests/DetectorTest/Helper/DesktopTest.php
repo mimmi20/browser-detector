@@ -22,24 +22,24 @@ use PHPUnit\Framework\TestCase;
 
 use function sprintf;
 
-#[CoversClass(Desktop::class)]
+#[CoversClass(className: Desktop::class)]
 final class DesktopTest extends TestCase
 {
-    private Desktop $object;
+    private Desktop $desktop;
 
     /** @throws void */
     #[Override]
     protected function setUp(): void
     {
-        $this->object = new Desktop();
+        $this->desktop = new Desktop();
     }
 
     /** @throws ExpectationFailedException */
-    #[DataProvider('providerIsDesktop')]
+    #[DataProvider(methodName: 'providerIsDesktop')]
     public function testIsDesktop(string $agent): void
     {
         self::assertTrue(
-            $this->object->isDesktopDevice($agent),
+            $this->desktop->isDesktopDevice($agent),
             sprintf('isMobile detected to FALSE instead of expected TRUE for UA "%s"', $agent),
         );
     }
@@ -148,11 +148,11 @@ final class DesktopTest extends TestCase
     }
 
     /** @throws ExpectationFailedException */
-    #[DataProvider('providerIsNoDesktop')]
+    #[DataProvider(methodName: 'providerIsNoDesktop')]
     public function testIsNoDesktop(string $agent): void
     {
         self::assertFalse(
-            $this->object->isDesktopDevice($agent),
+            $this->desktop->isDesktopDevice($agent),
             sprintf('isMobile detected to TRUE instead of expected FALSE for UA "%s"', $agent),
         );
     }

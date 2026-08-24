@@ -25,7 +25,7 @@ final readonly class DarwinParser implements DarwinParserInterface
     private const string SPECIFIC_FILE = __DIR__ . '/../../../data/factories/devices/%s/apple.json';
 
     /** @throws void */
-    public function __construct(private RulefileParserInterface $fileParser)
+    public function __construct(private RulefileParserInterface $rulefileParser)
     {
         // nothing to do
     }
@@ -40,9 +40,9 @@ final readonly class DarwinParser implements DarwinParserInterface
     #[Override]
     public function parse(string $useragent): string
     {
-        $mode = $this->fileParser->parseFile(self::GENERIC_FILE, $useragent, 'unknown');
+        $mode = $this->rulefileParser->parseFile(self::GENERIC_FILE, $useragent, 'unknown');
 
-        $key = $this->fileParser->parseFile(
+        $key = $this->rulefileParser->parseFile(
             sprintf(self::SPECIFIC_FILE, $mode),
             $useragent,
             'unknown',

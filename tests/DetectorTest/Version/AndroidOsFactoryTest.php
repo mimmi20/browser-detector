@@ -24,16 +24,16 @@ use PHPUnit\Framework\TestCase;
 use function assert;
 use function sprintf;
 
-#[CoversClass(AndroidOsFactory::class)]
+#[CoversClass(className: AndroidOsFactory::class)]
 final class AndroidOsFactoryTest extends TestCase
 {
-    private AndroidOsFactory $object;
+    private AndroidOsFactory $androidOsFactory;
 
     /** @throws void */
     #[Override]
     protected function setUp(): void
     {
-        $this->object = new AndroidOsFactory();
+        $this->androidOsFactory = new AndroidOsFactory();
     }
 
     /**
@@ -42,7 +42,7 @@ final class AndroidOsFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $object = $this->object;
+        $object = $this->androidOsFactory;
         assert(
             $object instanceof AndroidOsFactory,
             sprintf(
@@ -51,7 +51,7 @@ final class AndroidOsFactoryTest extends TestCase
                 $object::class,
             ),
         );
-        $result = $object();
-        self::assertInstanceOf(AndroidOs::class, $result);
+        $androidOs = $object();
+        self::assertInstanceOf(AndroidOs::class, $androidOs);
     }
 }

@@ -24,16 +24,16 @@ use PHPUnit\Framework\TestCase;
 use function assert;
 use function sprintf;
 
-#[CoversClass(UbuntuFactory::class)]
+#[CoversClass(className: UbuntuFactory::class)]
 final class UbuntuFactoryTest extends TestCase
 {
-    private UbuntuFactory $object;
+    private UbuntuFactory $ubuntuFactory;
 
     /** @throws void */
     #[Override]
     protected function setUp(): void
     {
-        $this->object = new UbuntuFactory();
+        $this->ubuntuFactory = new UbuntuFactory();
     }
 
     /**
@@ -42,7 +42,7 @@ final class UbuntuFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $object = $this->object;
+        $object = $this->ubuntuFactory;
         assert(
             $object instanceof UbuntuFactory,
             sprintf(
@@ -51,7 +51,7 @@ final class UbuntuFactoryTest extends TestCase
                 $object::class,
             ),
         );
-        $result = $object();
-        self::assertInstanceOf(Ubuntu::class, $result);
+        $ubuntu = $object();
+        self::assertInstanceOf(Ubuntu::class, $ubuntu);
     }
 }

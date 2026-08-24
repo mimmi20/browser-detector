@@ -24,16 +24,16 @@ use PHPUnit\Framework\TestCase;
 use function assert;
 use function sprintf;
 
-#[CoversClass(RaspbianFactory::class)]
+#[CoversClass(className: RaspbianFactory::class)]
 final class RaspbianFactoryTest extends TestCase
 {
-    private RaspbianFactory $object;
+    private RaspbianFactory $raspbianFactory;
 
     /** @throws void */
     #[Override]
     protected function setUp(): void
     {
-        $this->object = new RaspbianFactory();
+        $this->raspbianFactory = new RaspbianFactory();
     }
 
     /**
@@ -42,7 +42,7 @@ final class RaspbianFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $object = $this->object;
+        $object = $this->raspbianFactory;
         assert(
             $object instanceof RaspbianFactory,
             sprintf(
@@ -51,7 +51,7 @@ final class RaspbianFactoryTest extends TestCase
                 $object::class,
             ),
         );
-        $result = $object();
-        self::assertInstanceOf(Raspbian::class, $result);
+        $raspbian = $object();
+        self::assertInstanceOf(Raspbian::class, $raspbian);
     }
 }

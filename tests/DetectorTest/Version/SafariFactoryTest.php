@@ -24,16 +24,16 @@ use PHPUnit\Framework\TestCase;
 use function assert;
 use function sprintf;
 
-#[CoversClass(SafariFactory::class)]
+#[CoversClass(className: SafariFactory::class)]
 final class SafariFactoryTest extends TestCase
 {
-    private SafariFactory $object;
+    private SafariFactory $safariFactory;
 
     /** @throws void */
     #[Override]
     protected function setUp(): void
     {
-        $this->object = new SafariFactory();
+        $this->safariFactory = new SafariFactory();
     }
 
     /**
@@ -42,7 +42,7 @@ final class SafariFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $object = $this->object;
+        $object = $this->safariFactory;
         assert(
             $object instanceof SafariFactory,
             sprintf(
@@ -51,7 +51,7 @@ final class SafariFactoryTest extends TestCase
                 $object::class,
             ),
         );
-        $result = $object();
-        self::assertInstanceOf(Safari::class, $result);
+        $safari = $object();
+        self::assertInstanceOf(Safari::class, $safari);
     }
 }

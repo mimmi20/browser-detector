@@ -24,16 +24,16 @@ use PHPUnit\Framework\TestCase;
 use function assert;
 use function sprintf;
 
-#[CoversClass(ErrorVersionCreatorFactory::class)]
+#[CoversClass(className: ErrorVersionCreatorFactory::class)]
 final class ErrorVersionCreatorFactoryTest extends TestCase
 {
-    private ErrorVersionCreatorFactory $object;
+    private ErrorVersionCreatorFactory $errorVersionCreatorFactory;
 
     /** @throws void */
     #[Override]
     protected function setUp(): void
     {
-        $this->object = new ErrorVersionCreatorFactory();
+        $this->errorVersionCreatorFactory = new ErrorVersionCreatorFactory();
     }
 
     /**
@@ -42,7 +42,7 @@ final class ErrorVersionCreatorFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $object = $this->object;
+        $object = $this->errorVersionCreatorFactory;
         assert(
             $object instanceof ErrorVersionCreatorFactory,
             sprintf(
@@ -51,7 +51,7 @@ final class ErrorVersionCreatorFactoryTest extends TestCase
                 $object::class,
             ),
         );
-        $result = $object();
-        self::assertInstanceOf(ErrorVersionCreator::class, $result);
+        $errorVersionCreator = $object();
+        self::assertInstanceOf(ErrorVersionCreator::class, $errorVersionCreator);
     }
 }

@@ -24,7 +24,7 @@ use Psr\SimpleCache\InvalidArgumentException;
 use function assert;
 use function serialize;
 
-#[CoversClass(Cache::class)]
+#[CoversClass(className: Cache::class)]
 final class CacheTest extends TestCase
 {
     /**
@@ -42,12 +42,12 @@ final class CacheTest extends TestCase
             ->expects(self::once())
             ->method('set')
             ->with($cacheId, ['content' => serialize($version)])
-            ->willReturn(true);
+            ->willReturn(value: true);
         $adapter
             ->expects(self::once())
             ->method('has')
             ->with($cacheId)
-            ->willReturn(true);
+            ->willReturn(value: true);
         $adapter
             ->expects(self::once())
             ->method('get')
@@ -87,11 +87,11 @@ final class CacheTest extends TestCase
             ->expects(self::once())
             ->method('has')
             ->with('version')
-            ->willReturn(false);
+            ->willReturn(value: false);
         $adapter
             ->expects(self::once())
             ->method('set')
-            ->willReturn(false);
+            ->willReturn(value: false);
         $adapter
             ->expects(self::never())
             ->method('get');
@@ -130,16 +130,16 @@ final class CacheTest extends TestCase
             ->expects(self::once())
             ->method('has')
             ->with('version')
-            ->willReturn(true);
+            ->willReturn(value: true);
         $adapter
             ->expects(self::once())
             ->method('set')
-            ->willReturn(false);
+            ->willReturn(value: false);
         $adapter
             ->expects(self::once())
             ->method('get')
             ->with('version')
-            ->willReturn(null);
+            ->willReturn(value: null);
         $adapter
             ->expects(self::never())
             ->method('delete');
@@ -175,7 +175,7 @@ final class CacheTest extends TestCase
             ->expects(self::once())
             ->method('has')
             ->with('version')
-            ->willReturn(false);
+            ->willReturn(value: false);
         $adapter
             ->expects(self::never())
             ->method('set');

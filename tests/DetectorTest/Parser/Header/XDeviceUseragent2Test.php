@@ -20,7 +20,7 @@ use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\Normalizer\NormalizerInterface;
 use UaParser\DeviceParserInterface;
 
-#[CoversClass(XDeviceUseragent::class)]
+#[CoversClass(className: XDeviceUseragent::class)]
 final class XDeviceUseragent2Test extends TestCase
 {
     /** @throws \PHPUnit\Framework\Exception */
@@ -41,9 +41,9 @@ final class XDeviceUseragent2Test extends TestCase
             ->with($value)
             ->willThrowException($exception);
 
-        $object = new XDeviceUseragent(deviceParser: $deviceParser, normalizer: $normalizer);
+        $xDeviceUseragent = new XDeviceUseragent(deviceParser: $deviceParser, normalizer: $normalizer);
 
-        self::assertNull($object->getDeviceCode($value));
+        self::assertNull($xDeviceUseragent->getDeviceCode($value));
     }
 
     /** @throws \PHPUnit\Framework\Exception */
@@ -61,11 +61,11 @@ final class XDeviceUseragent2Test extends TestCase
             ->expects(self::once())
             ->method('normalize')
             ->with($value)
-            ->willReturn(null);
+            ->willReturn(value: null);
 
-        $object = new XDeviceUseragent(deviceParser: $deviceParser, normalizer: $normalizer);
+        $xDeviceUseragent = new XDeviceUseragent(deviceParser: $deviceParser, normalizer: $normalizer);
 
-        self::assertNull($object->getDeviceCode($value));
+        self::assertNull($xDeviceUseragent->getDeviceCode($value));
     }
 
     /** @throws \PHPUnit\Framework\Exception */
@@ -85,8 +85,8 @@ final class XDeviceUseragent2Test extends TestCase
             ->with($value)
             ->willReturn('');
 
-        $object = new XDeviceUseragent(deviceParser: $deviceParser, normalizer: $normalizer);
+        $xDeviceUseragent = new XDeviceUseragent(deviceParser: $deviceParser, normalizer: $normalizer);
 
-        self::assertNull($object->getDeviceCode($value));
+        self::assertNull($xDeviceUseragent->getDeviceCode($value));
     }
 }

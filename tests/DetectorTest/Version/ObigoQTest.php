@@ -29,7 +29,7 @@ use UnexpectedValueException;
 
 use function assert;
 
-#[CoversClass(ObigoQ::class)]
+#[CoversClass(className: ObigoQ::class)]
 final class ObigoQTest extends TestCase
 {
     /**
@@ -37,12 +37,12 @@ final class ObigoQTest extends TestCase
      * @throws UnexpectedValueException
      * @throws Exception
      */
-    #[DataProvider('providerVersion')]
+    #[DataProvider(methodName: 'providerVersion')]
     public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
-        $object = new ObigoQ(new VersionBuilder());
+        $obigoQ = new ObigoQ(new VersionBuilder());
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $obigoQ->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertSame($expectedVersion, $detectedVersion->getVersion());
@@ -89,19 +89,19 @@ final class ObigoQTest extends TestCase
      */
     public function testDetectVersionFail(): void
     {
-        $exception = new NotNumericException('set failed');
+        $notNumericException = new NotNumericException('set failed');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('5')
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
 
         assert($versionBuilder instanceof VersionFactoryInterface);
-        $object = new ObigoQ($versionBuilder);
+        $obigoQ = new ObigoQ($versionBuilder);
 
-        $detectedVersion = $object->detectVersion(
+        $detectedVersion = $obigoQ->detectVersion(
             'ALCATEL_TRIBE_3075A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q05A',
         );
 
@@ -116,19 +116,19 @@ final class ObigoQTest extends TestCase
      */
     public function testDetectVersionFailSecond(): void
     {
-        $exception = new NotNumericException('set failed');
+        $notNumericException = new NotNumericException('set failed');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('7.1')
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
 
         assert($versionBuilder instanceof VersionFactoryInterface);
-        $object = new ObigoQ($versionBuilder);
+        $obigoQ = new ObigoQ($versionBuilder);
 
-        $detectedVersion = $object->detectVersion(
+        $detectedVersion = $obigoQ->detectVersion(
             'LG-GT505/v10a Browser/Teleca-Q7.1 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1',
         );
 

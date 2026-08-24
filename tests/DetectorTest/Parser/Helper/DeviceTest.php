@@ -23,11 +23,11 @@ use function mb_strtolower;
 use function sprintf;
 
 /** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */
-#[CoversClass(Device::class)]
+#[CoversClass(className: Device::class)]
 final class DeviceTest extends TestCase
 {
     /** @throws ExpectationFailedException */
-    #[DataProvider('providerUa')]
+    #[DataProvider(methodName: 'providerUa')]
     public function testData(string $value, string | null $model): void
     {
         $code = mb_strtolower($value);
@@ -7964,6 +7964,46 @@ final class DeviceTest extends TestCase
             ['vivo V1936T', 'vivo=vivo v1936t'],
             ['iQOO Neo 855', 'vivo=vivo iqoo neo 855'],
             ['vivo V9', 'vivo=vivo v9'],
+            ['V2020CA', 'vivo=vivo v2020ca'],
+            ['vivo V2020CA', 'vivo=vivo v2020ca'],
+            ['V2020A', 'vivo=vivo v2020a'],
+            ['vivo V2020A', 'vivo=vivo v2020a'],
+            ['V2026', 'vivo=vivo v2026'],
+            ['vivo V2026', 'vivo=vivo v2026'],
+            ['V2033', 'vivo=vivo v2033'],
+            ['vivo V2033', 'vivo=vivo v2033'],
+            ['V2042', 'vivo=vivo v2042'],
+            ['vivo V2042', 'vivo=vivo v2042'],
+            ['V2022', 'vivo=vivo v2022'],
+            ['vivo V2022', 'vivo=vivo v2022'],
+            ['V2032', 'vivo=vivo v2032'],
+            ['vivo V2032', 'vivo=vivo v2032'],
+            ['V2043', 'vivo=vivo v2043'],
+            ['vivo V2043', 'vivo=vivo v2043'],
+            ['V2043_21', 'vivo=vivo v2043_21'],
+            ['vivo V2043_21', 'vivo=vivo v2043_21'],
+            ['V2048', 'vivo=vivo v2048'],
+            ['vivo V2048', 'vivo=vivo v2048'],
+            ['V2040', 'vivo=vivo v2040'],
+            ['vivo V2040', 'vivo=vivo v2040'],
+            ['V2054A', 'vivo=vivo v2054a'],
+            ['vivo V2054A', 'vivo=vivo v2054a'],
+            ['V2068A', 'vivo=vivo v2068a'],
+            ['vivo V2068A', 'vivo=vivo v2068a'],
+            ['V2031EA', 'vivo=vivo v2031ea'],
+            ['vivo V2031EA', 'vivo=vivo v2031ea'],
+            ['V2034A', 'vivo=vivo v2034a'],
+            ['vivo V2034A', 'vivo=vivo v2034a'],
+            ['V2036A', 'vivo=vivo v2036a'],
+            ['vivo V2036A', 'vivo=vivo v2036a'],
+            ['V2533', 'vivo=vivo v2533'],
+            ['vivo V2533', 'vivo=vivo v2533'],
+            ['V2582', 'vivo=vivo v2582'],
+            ['vivo V2582', 'vivo=vivo v2582'],
+            ['V2551', 'vivo=vivo v2551'],
+            ['vivo V2551', 'vivo=vivo v2551'],
+            ['V2164KA', 'vivo=vivo v2164ka'],
+            ['vivo V2164KA', 'vivo=vivo v2164ka'],
             // Fairphone
             ['FP4', 'fairphone=fairphone fp4'],
             ['FP3', 'fairphone=fairphone fp3'],

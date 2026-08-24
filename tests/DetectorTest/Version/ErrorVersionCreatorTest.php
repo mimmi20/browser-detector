@@ -22,16 +22,16 @@ use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\TestCase;
 use UnexpectedValueException;
 
-#[CoversClass(ErrorVersionCreator::class)]
+#[CoversClass(className: ErrorVersionCreator::class)]
 final class ErrorVersionCreatorTest extends TestCase
 {
-    private ErrorVersionCreator $object;
+    private ErrorVersionCreator $errorVersionCreator;
 
     /** @throws void */
     #[Override]
     protected function setUp(): void
     {
-        $this->object = new ErrorVersionCreator();
+        $this->errorVersionCreator = new ErrorVersionCreator();
     }
 
     /**
@@ -42,33 +42,33 @@ final class ErrorVersionCreatorTest extends TestCase
     {
         $searches = ['xyz'];
 
-        $result = $this->object->detectVersion('', $searches);
+        $version = $this->errorVersionCreator->detectVersion('', $searches);
 
-        self::assertInstanceOf(VersionInterface::class, $result);
+        self::assertInstanceOf(VersionInterface::class, $version);
 
-        self::assertSame([], $result->toArray());
-        self::assertNull($result->getMajor());
-        self::assertNull($result->getMinor());
-        self::assertNull($result->getMicro());
-        self::assertNull($result->getPatch());
-        self::assertNull($result->getMicropatch());
-        self::assertNull($result->getBuild());
-        self::assertNull($result->getStability());
-        self::assertFalse($result->isAlpha());
-        self::assertFalse($result->isBeta());
+        self::assertSame([], $version->toArray());
+        self::assertNull($version->getMajor());
+        self::assertNull($version->getMinor());
+        self::assertNull($version->getMicro());
+        self::assertNull($version->getPatch());
+        self::assertNull($version->getMicropatch());
+        self::assertNull($version->getBuild());
+        self::assertNull($version->getStability());
+        self::assertFalse($version->isAlpha());
+        self::assertFalse($version->isBeta());
 
         $this->expectException(UnexpectedValueException::class);
         $this->expectExceptionCode(0);
         $this->expectExceptionMessageIsOrContains('32::["xyz"]');
 
-        $result->getVersion(VersionInterface::GET_ZERO_IF_EMPTY);
+        $version->getVersion(VersionInterface::GET_ZERO_IF_EMPTY);
     }
 
     /** @throws Exception */
     public function testSetter(): void
     {
-        $this->object->setRegex('');
-        self::assertInstanceOf(NullVersion::class, $this->object->set(''));
+        $this->errorVersionCreator->setRegex('');
+        self::assertInstanceOf(NullVersion::class, $this->errorVersionCreator->set(''));
         self::assertInstanceOf(NullVersion::class, ErrorVersionCreator::fromArray([]));
     }
 }

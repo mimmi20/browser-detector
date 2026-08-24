@@ -29,6 +29,7 @@ use UnexpectedValueException;
 use function array_filter;
 use function array_first;
 use function array_map;
+use function in_array;
 use function mb_strtolower;
 use function preg_match;
 
@@ -93,7 +94,7 @@ final readonly class UseragentEngineVersion implements EngineVersionInterface
 
         $detectedVersion = array_first($results);
 
-        if ($detectedVersion !== null && $detectedVersion !== false && $detectedVersion !== '') {
+        if (!in_array($detectedVersion, [null, false, ''], strict: true)) {
             return $this->setVersion($detectedVersion);
         }
 

@@ -1,10 +1,51 @@
 [
   {
     "headers": {
-      "x-requested-with": "de.inseven.dogtorance",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\", \"Android WebView\";v=\"144\"",
-      "sec-ch-ua-mobile": "?1",
+      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; SM-F731B Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.146 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-F731B",
+      "marketingName": "Galaxy Z Flip 5 (International)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2640,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Dogtorance",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "Dogtorance",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "143.0.7499.146",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 15; SM-F711B Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.60 Mobile Safari/537.36"
     },
     "device": {
@@ -44,17 +85,58 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "144.0.0",
+      "version": "144.0.7559.60",
       "manufacturer": "Google"
     }
   },
   {
     "headers": {
-      "x-requested-with": "de.inseven.dogtorance",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua": "\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Android WebView\";v=\"146\"",
-      "sec-ch-ua-mobile": "?1",
-      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.1 Mozilla/5.0 (Linux; Android 16; SM-F741B Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/146.0.7680.119 Mobile Safari/537.36"
+      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 13; SM-N980F Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.132 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-N980F",
+      "marketingName": "Galaxy Note 20 4G",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Dogtorance",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "Dogtorance",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "144.0.7559.132",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; SM-F741B Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/145.0.7632.79 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
@@ -85,7 +167,7 @@
     "client": {
       "name": "Dogtorance",
       "modus": null,
-      "version": "1.1.0",
+      "version": "1.0.0",
       "manufacturer": "Dogtorance",
       "type": "mobile-application",
       "isbot": false,
@@ -93,17 +175,13 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "146.0.0",
+      "version": "145.0.7632.79",
       "manufacturer": "Google"
     }
   },
   {
     "headers": {
-      "x-requested-with": "de.inseven.dogtorance",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Android WebView\";v=\"145\", \"Chromium\";v=\"145\"",
-      "sec-ch-ua-mobile": "?1",
-      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.1 Mozilla/5.0 (Linux; Android 16; SM-F721B Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/145.0.7632.159 Mobile Safari/537.36"
+      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; SM-F721B Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/145.0.7632.79 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
@@ -134,7 +212,7 @@
     "client": {
       "name": "Dogtorance",
       "modus": null,
-      "version": "1.1.0",
+      "version": "1.0.0",
       "manufacturer": "Dogtorance",
       "type": "mobile-application",
       "isbot": false,
@@ -142,7 +220,97 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "145.0.0",
+      "version": "145.0.7632.79",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 16; SM-F956B Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.178 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-F956B",
+      "marketingName": "Galaxy Z Fold 6",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2160,
+        "height": 1856,
+        "touch": true,
+        "size": 7.6
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Dogtorance",
+      "modus": null,
+      "version": "1.2.0",
+      "manufacturer": "Dogtorance",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "148.0.7778.178",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 13; SM-N986B Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-N986B",
+      "marketingName": "Galaxy Note 20 Ultra 5G (International)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 3088,
+        "height": 1440,
+        "touch": true,
+        "size": 6.9
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Dogtorance",
+      "modus": null,
+      "version": "1.2.0",
+      "manufacturer": "Dogtorance",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "149.0.7827.91",
       "manufacturer": "Google"
     }
   }

@@ -18,19 +18,19 @@ use BrowserDetector\Version\TestNotNumericError;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 
-#[CoversClass(TestNotNumericError::class)]
+#[CoversClass(className: TestNotNumericError::class)]
 final class TestNotNumericErrorTest extends TestCase
 {
     /** @throws NotNumericException */
     public function testDetectVersion(): void
     {
-        $object = new TestNotNumericError();
+        $testNotNumericError = new TestNotNumericError();
 
         $this->expectException(NotNumericException::class);
         $this->expectExceptionCode(0);
         $this->expectExceptionMessageIsOrContains('error');
 
-        $object->detectVersion(
+        $testNotNumericError->detectVersion(
             'Mozilla/5.0 (Android; Mobile; rv:10.0.5) Gecko/10.0.5 Firefox/10.0.5 Fennec/10.0.5',
         );
     }

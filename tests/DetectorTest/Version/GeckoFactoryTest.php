@@ -24,16 +24,16 @@ use PHPUnit\Framework\TestCase;
 use function assert;
 use function sprintf;
 
-#[CoversClass(GeckoFactory::class)]
+#[CoversClass(className: GeckoFactory::class)]
 final class GeckoFactoryTest extends TestCase
 {
-    private GeckoFactory $object;
+    private GeckoFactory $geckoFactory;
 
     /** @throws void */
     #[Override]
     protected function setUp(): void
     {
-        $this->object = new GeckoFactory();
+        $this->geckoFactory = new GeckoFactory();
     }
 
     /**
@@ -42,7 +42,7 @@ final class GeckoFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $object = $this->object;
+        $object = $this->geckoFactory;
         assert(
             $object instanceof GeckoFactory,
             sprintf(
@@ -51,7 +51,7 @@ final class GeckoFactoryTest extends TestCase
                 $object::class,
             ),
         );
-        $result = $object();
-        self::assertInstanceOf(Gecko::class, $result);
+        $gecko = $object();
+        self::assertInstanceOf(Gecko::class, $gecko);
     }
 }

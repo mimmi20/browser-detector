@@ -21,7 +21,7 @@ use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\Normalizer\NormalizerInterface;
 use UaParser\PlatformParserInterface;
 
-#[CoversClass(XUcbrowserDeviceUaPlatformCode::class)]
+#[CoversClass(className: XUcbrowserDeviceUaPlatformCode::class)]
 final class XUcbrowserDeviceUaPlatformCodeTest extends TestCase
 {
     /** @throws \PHPUnit\Framework\Exception */
@@ -43,12 +43,15 @@ final class XUcbrowserDeviceUaPlatformCodeTest extends TestCase
             ->with($value)
             ->willThrowException($exception);
 
-        $object = new XUcbrowserDeviceUaPlatformCode(
+        $xUcbrowserDeviceUaPlatformCode = new XUcbrowserDeviceUaPlatformCode(
             platformParser: $platformParser,
             normalizer: $normalizer,
         );
 
-        self::assertSame(Os::unknown, $object->getPlatformCode($value, $derivate));
+        self::assertSame(
+            Os::unknown,
+            $xUcbrowserDeviceUaPlatformCode->getPlatformCode($value, $derivate),
+        );
     }
 
     /** @throws \PHPUnit\Framework\Exception */
@@ -67,16 +70,16 @@ final class XUcbrowserDeviceUaPlatformCodeTest extends TestCase
             ->expects(self::once())
             ->method('normalize')
             ->with($value)
-            ->willReturn(null);
+            ->willReturn(value: null);
 
-        $object = new XUcbrowserDeviceUaPlatformCode(
+        $xUcbrowserDeviceUaPlatformCode = new XUcbrowserDeviceUaPlatformCode(
             platformParser: $platformParser,
             normalizer: $normalizer,
         );
 
         self::assertSame(
             Os::unknown,
-            $object->getPlatformCode($value, $derivate),
+            $xUcbrowserDeviceUaPlatformCode->getPlatformCode($value, $derivate),
         );
     }
 
@@ -98,14 +101,14 @@ final class XUcbrowserDeviceUaPlatformCodeTest extends TestCase
             ->with($value)
             ->willReturn('');
 
-        $object = new XUcbrowserDeviceUaPlatformCode(
+        $xUcbrowserDeviceUaPlatformCode = new XUcbrowserDeviceUaPlatformCode(
             platformParser: $platformParser,
             normalizer: $normalizer,
         );
 
         self::assertSame(
             Os::unknown,
-            $object->getPlatformCode($value, $derivate),
+            $xUcbrowserDeviceUaPlatformCode->getPlatformCode($value, $derivate),
         );
     }
 }

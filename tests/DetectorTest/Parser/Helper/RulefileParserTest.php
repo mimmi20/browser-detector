@@ -27,7 +27,7 @@ use Throwable;
 use function assert;
 use function sprintf;
 
-#[CoversClass(RulefileParser::class)]
+#[CoversClass(className: RulefileParser::class)]
 final class RulefileParserTest extends TestCase
 {
     private const string DATA_PATH = 'root';
@@ -40,15 +40,13 @@ final class RulefileParserTest extends TestCase
     {
         $structure = ['bot.json' => 'test-content'];
 
-        vfsStream::setup(self::DATA_PATH, null, $structure);
+        vfsStream::setup(self::DATA_PATH, structure: $structure);
 
         $fallback = 'test-fallback';
 
         $useragent = 'test-useragent';
 
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -93,9 +91,9 @@ final class RulefileParserTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $object = new RulefileParser($logger);
+        $rulefileParser = new RulefileParser($logger);
 
-        $result = $object->parseFile(
+        $result = $rulefileParser->parseFile(
             vfsStream::url(self::DATA_PATH . '/bot2.json'),
             $useragent,
             $fallback,
@@ -112,15 +110,13 @@ final class RulefileParserTest extends TestCase
     {
         $structure = ['bot.json' => 'test-content'];
 
-        vfsStream::setup(self::DATA_PATH, null, $structure);
+        vfsStream::setup(self::DATA_PATH, structure: $structure);
 
         $fallback = 'test-fallback';
 
         $useragent = 'test-useragent';
 
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -162,9 +158,9 @@ final class RulefileParserTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $object = new RulefileParser($logger);
+        $rulefileParser = new RulefileParser($logger);
 
-        $result = $object->parseFile(
+        $result = $rulefileParser->parseFile(
             vfsStream::url(self::DATA_PATH . '/bot.json'),
             $useragent,
             $fallback,
@@ -181,16 +177,14 @@ final class RulefileParserTest extends TestCase
     {
         $structure = ['bot.json' => 'test-content'];
 
-        vfsStream::setup(self::DATA_PATH, null, $structure);
+        vfsStream::setup(self::DATA_PATH, structure: $structure);
 
         $path = vfsStream::url(self::DATA_PATH . '/bot.json');
 
         $fallback  = 'test-fallback';
         $useragent = 'test-useragent';
 
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -232,9 +226,9 @@ final class RulefileParserTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $object = new RulefileParser($logger);
+        $rulefileParser = new RulefileParser($logger);
 
-        $result = $object->parseFile($path, $useragent, $fallback);
+        $result = $rulefileParser->parseFile($path, $useragent, $fallback);
 
         self::assertSame($fallback, $result);
     }
@@ -247,14 +241,12 @@ final class RulefileParserTest extends TestCase
     {
         $structure = ['bot.json' => '{"generic": "test-generic", "rules": {"/test-useragent/": "test-mode", "/test/": "test-mode-2"}}'];
 
-        vfsStream::setup(self::DATA_PATH, null, $structure);
+        vfsStream::setup(self::DATA_PATH, structure: $structure);
 
         $fallback  = 'test-fallback';
         $useragent = 'test-useragent';
 
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -280,9 +272,9 @@ final class RulefileParserTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $object = new RulefileParser($logger);
+        $rulefileParser = new RulefileParser($logger);
 
-        $result = $object->parseFile(
+        $result = $rulefileParser->parseFile(
             vfsStream::url(self::DATA_PATH . '/bot.json'),
             $useragent,
             $fallback,
@@ -299,14 +291,12 @@ final class RulefileParserTest extends TestCase
     {
         $structure = ['bot2.json' => '{"generic": "test-generic", "rules": {"1": "test-mode-3", "/test-useragent/": "test-mode", "/test/": "test-mode-2"}}'];
 
-        vfsStream::setup(self::DATA_PATH, null, $structure);
+        vfsStream::setup(self::DATA_PATH, structure: $structure);
 
         $fallback  = 'test-fallback';
         $useragent = 'test-useragent';
 
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -348,9 +338,9 @@ final class RulefileParserTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $object = new RulefileParser($logger);
+        $rulefileParser = new RulefileParser($logger);
 
-        $result = $object->parseFile(
+        $result = $rulefileParser->parseFile(
             vfsStream::url(self::DATA_PATH . '/bot2.json'),
             $useragent,
             $fallback,
@@ -367,14 +357,12 @@ final class RulefileParserTest extends TestCase
     {
         $structure = ['bot2.json' => '{"generic": "test-generic", "rules": {"/(?<!test-?)useragent/": "test-mode-3", "/test-useragent/": "test-mode", "/test/": "test-mode-2"}}'];
 
-        vfsStream::setup(self::DATA_PATH, null, $structure);
+        vfsStream::setup(self::DATA_PATH, structure: $structure);
 
         $fallback  = 'test-fallback';
         $useragent = 'test-useragent';
 
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -416,9 +404,9 @@ final class RulefileParserTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $object = new RulefileParser($logger);
+        $rulefileParser = new RulefileParser($logger);
 
-        $result = $object->parseFile(
+        $result = $rulefileParser->parseFile(
             vfsStream::url(self::DATA_PATH . '/bot2.json'),
             $useragent,
             $fallback,
@@ -435,14 +423,12 @@ final class RulefileParserTest extends TestCase
     {
         $structure = ['bot2.json' => '{"generic": "test-generic", "rules": {"/(?<!test-?)useragent/": "test-mode-3"}}'];
 
-        vfsStream::setup(self::DATA_PATH, null, $structure);
+        vfsStream::setup(self::DATA_PATH, structure: $structure);
 
         $fallback  = 'test-fallback';
         $useragent = 'test-useragent';
 
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -484,9 +470,9 @@ final class RulefileParserTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $object = new RulefileParser($logger);
+        $rulefileParser = new RulefileParser($logger);
 
-        $result = $object->parseFile(
+        $result = $rulefileParser->parseFile(
             vfsStream::url(self::DATA_PATH . '/bot2.json'),
             $useragent,
             $fallback,
@@ -503,14 +489,12 @@ final class RulefileParserTest extends TestCase
     {
         $structure = ['bot2.json' => '{"rules": {"/(?<!test-?)useragent/": "test-mode-3"}}'];
 
-        vfsStream::setup(self::DATA_PATH, null, $structure);
+        vfsStream::setup(self::DATA_PATH, structure: $structure);
 
         $fallback  = 'test-fallback';
         $useragent = 'test-useragent';
 
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -552,9 +536,9 @@ final class RulefileParserTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $object = new RulefileParser($logger);
+        $rulefileParser = new RulefileParser($logger);
 
-        $result = $object->parseFile(
+        $result = $rulefileParser->parseFile(
             vfsStream::url(self::DATA_PATH . '/bot2.json'),
             $useragent,
             $fallback,

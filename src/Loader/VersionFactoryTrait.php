@@ -34,7 +34,7 @@ trait VersionFactoryTrait
     /** @throws void */
     private function getVersion(stdClass | string | null $version, string $useragent): VersionInterface
     {
-        $versionClass = new NullVersion();
+        $nullVersion = new NullVersion();
 
         if (is_string($version)) {
             try {
@@ -57,7 +57,7 @@ trait VersionFactoryTrait
         $factoryName = $version->factory ?? null;
 
         if (!is_string($factoryName)) {
-            return $versionClass;
+            return $nullVersion;
         }
 
         $factory = new $factoryName();
@@ -81,6 +81,6 @@ trait VersionFactoryTrait
             $this->logger->error($e);
         }
 
-        return $versionClass;
+        return $nullVersion;
     }
 }

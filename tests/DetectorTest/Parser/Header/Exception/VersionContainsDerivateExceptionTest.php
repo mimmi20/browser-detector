@@ -19,7 +19,7 @@ use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 
-#[CoversClass(VersionContainsDerivateException::class)]
+#[CoversClass(className: VersionContainsDerivateException::class)]
 final class VersionContainsDerivateExceptionTest extends TestCase
 {
     /**
@@ -28,14 +28,14 @@ final class VersionContainsDerivateExceptionTest extends TestCase
      */
     public function testSetGet(): void
     {
-        $ex = new VersionContainsDerivateException('x', 0);
+        $versionContainsDerivateException = new VersionContainsDerivateException('x', 0);
 
-        self::assertSame('', $ex->getDerivate());
+        self::assertSame('', $versionContainsDerivateException->getDerivate());
 
         $derivate = 'abc';
 
-        $ex->setDerivate($derivate);
+        $versionContainsDerivateException->setDerivate($derivate);
 
-        self::assertSame($derivate, $ex->getDerivate());
+        self::assertSame($derivate, $versionContainsDerivateException->getDerivate());
     }
 }

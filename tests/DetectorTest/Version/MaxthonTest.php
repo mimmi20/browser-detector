@@ -29,7 +29,7 @@ use UnexpectedValueException;
 
 use function assert;
 
-#[CoversClass(Maxthon::class)]
+#[CoversClass(className: Maxthon::class)]
 final class MaxthonTest extends TestCase
 {
     /**
@@ -37,12 +37,12 @@ final class MaxthonTest extends TestCase
      * @throws UnexpectedValueException
      * @throws Exception
      */
-    #[DataProvider('providerVersion')]
+    #[DataProvider(methodName: 'providerVersion')]
     public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
-        $object = new Maxthon(new VersionBuilder());
+        $maxthon = new Maxthon(new VersionBuilder());
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $maxthon->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertSame($expectedVersion, $detectedVersion->getVersion());
@@ -77,20 +77,20 @@ final class MaxthonTest extends TestCase
      */
     public function testDetectVersionFail(): void
     {
-        $useragent = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; MyIE2; .NET CLR 2.0.50727)';
-        $exception = new NotNumericException('set failed');
+        $useragent           = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; MyIE2; .NET CLR 2.0.50727)';
+        $notNumericException = new NotNumericException('set failed');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('2.0')
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
 
         assert($versionBuilder instanceof VersionFactoryInterface);
-        $object = new Maxthon($versionBuilder);
+        $maxthon = new Maxthon($versionBuilder);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $maxthon->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
@@ -103,15 +103,15 @@ final class MaxthonTest extends TestCase
      */
     public function testDetectVersionFailSecond(): void
     {
-        $useragent = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; MyIE 2.0 Beta 4; User-agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; http://bsalsa.com) )';
-        $exception = new NotNumericException('set failed');
+        $useragent           = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; MyIE 2.0 Beta 4; User-agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; http://bsalsa.com) )';
+        $notNumericException = new NotNumericException('set failed');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
             ->expects(self::once())
             ->method('detectVersion')
             ->with($useragent, Maxthon::SEARCH_OLD)
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
         $versionBuilder
             ->expects(self::never())
             ->method('set');
@@ -121,9 +121,9 @@ final class MaxthonTest extends TestCase
             ->with(Maxthon::REGEX);
 
         assert($versionBuilder instanceof VersionFactoryInterface);
-        $object = new Maxthon($versionBuilder);
+        $maxthon = new Maxthon($versionBuilder);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $maxthon->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
@@ -136,23 +136,23 @@ final class MaxthonTest extends TestCase
      */
     public function testDetectVersionFailThird(): void
     {
-        $useragent = 'Mozilla/5.0 (Linux; Android 4.4.2; LIFETAB_S1033X Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36 MxBrowser/4.4.2.1000';
-        $exception = new NotNumericException('set failed');
+        $useragent           = 'Mozilla/5.0 (Linux; Android 4.4.2; LIFETAB_S1033X Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36 MxBrowser/4.4.2.1000';
+        $notNumericException = new NotNumericException('set failed');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
             ->expects(self::once())
             ->method('detectVersion')
             ->with($useragent, Maxthon::SEARCHES)
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
         $versionBuilder
             ->expects(self::never())
             ->method('set');
 
         assert($versionBuilder instanceof VersionFactoryInterface);
-        $object = new Maxthon($versionBuilder);
+        $maxthon = new Maxthon($versionBuilder);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $maxthon->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);

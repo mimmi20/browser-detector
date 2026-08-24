@@ -21,7 +21,7 @@ use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UaLoader\DeviceLoaderInterface;
 
-#[CoversClass(DarwinParser::class)]
+#[CoversClass(className: DarwinParser::class)]
 final class DarwinParserTest extends TestCase
 {
     /**
@@ -33,23 +33,19 @@ final class DarwinParserTest extends TestCase
         $useragent    = 'test-useragent';
         $expectedMode = 'test-mode';
 
-        $mockLoader = $this->getMockBuilder(DeviceLoaderInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $mockLoader = $this->createMock(DeviceLoaderInterface::class);
         $mockLoader
             ->expects(self::never())
             ->method('load');
 
-        $fileParser = $this->getMockBuilder(RulefileParserInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $fileParser = $this->createMock(RulefileParserInterface::class);
         $fileParser
             ->expects(self::exactly(2))
             ->method('parseFile')
             ->willReturn('genericMode', $expectedMode);
 
-        $object = new DarwinParser($fileParser);
+        $darwinParser = new DarwinParser($fileParser);
 
-        self::assertSame('apple=' . $expectedMode, $object->parse($useragent));
+        self::assertSame('apple=' . $expectedMode, $darwinParser->parse($useragent));
     }
 }

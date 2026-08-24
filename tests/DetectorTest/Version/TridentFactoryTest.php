@@ -24,16 +24,16 @@ use PHPUnit\Framework\TestCase;
 use function assert;
 use function sprintf;
 
-#[CoversClass(TridentFactory::class)]
+#[CoversClass(className: TridentFactory::class)]
 final class TridentFactoryTest extends TestCase
 {
-    private TridentFactory $object;
+    private TridentFactory $tridentFactory;
 
     /** @throws void */
     #[Override]
     protected function setUp(): void
     {
-        $this->object = new TridentFactory();
+        $this->tridentFactory = new TridentFactory();
     }
 
     /**
@@ -42,7 +42,7 @@ final class TridentFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $object = $this->object;
+        $object = $this->tridentFactory;
         assert(
             $object instanceof TridentFactory,
             sprintf(
@@ -51,7 +51,7 @@ final class TridentFactoryTest extends TestCase
                 $object::class,
             ),
         );
-        $result = $object();
-        self::assertInstanceOf(Trident::class, $result);
+        $trident = $object();
+        self::assertInstanceOf(Trident::class, $trident);
     }
 }

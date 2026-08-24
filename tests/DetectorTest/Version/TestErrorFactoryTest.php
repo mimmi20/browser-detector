@@ -24,16 +24,16 @@ use PHPUnit\Framework\TestCase;
 use function assert;
 use function sprintf;
 
-#[CoversClass(TestUnexpectedFactory::class)]
+#[CoversClass(className: TestUnexpectedFactory::class)]
 final class TestErrorFactoryTest extends TestCase
 {
-    private TestUnexpectedFactory $object;
+    private TestUnexpectedFactory $testUnexpectedFactory;
 
     /** @throws void */
     #[Override]
     protected function setUp(): void
     {
-        $this->object = new TestUnexpectedFactory();
+        $this->testUnexpectedFactory = new TestUnexpectedFactory();
     }
 
     /**
@@ -42,7 +42,7 @@ final class TestErrorFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $object = $this->object;
+        $object = $this->testUnexpectedFactory;
         assert(
             $object instanceof TestUnexpectedFactory,
             sprintf(
@@ -51,7 +51,7 @@ final class TestErrorFactoryTest extends TestCase
                 $object::class,
             ),
         );
-        $result = $object();
-        self::assertInstanceOf(TestUnexpectedError::class, $result);
+        $testUnexpectedError = $object();
+        self::assertInstanceOf(TestUnexpectedError::class, $testUnexpectedError);
     }
 }

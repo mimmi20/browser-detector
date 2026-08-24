@@ -24,7 +24,7 @@ final class SafariFactory implements SafariFactoryInterface
     {
         return new Safari(
             versionBuilder: new VersionBuilder(),
-            safariHelper: new SafariHelper(),
+            safari: new SafariHelper(),
         );
     }
 }

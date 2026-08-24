@@ -20,7 +20,7 @@ use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 
-#[CoversClass(BrowserParser::class)]
+#[CoversClass(className: BrowserParser::class)]
 final class BrowserParserTest extends TestCase
 {
     /**
@@ -33,16 +33,14 @@ final class BrowserParserTest extends TestCase
         $mode      = 'test-mode';
         $key       = 'test-key';
 
-        $fileParser = $this->getMockBuilder(RulefileParserInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $fileParser = $this->createMock(RulefileParserInterface::class);
         $fileParser
             ->expects(self::exactly(2))
             ->method('parseFile')
             ->willReturn($mode, $key);
 
-        $parser       = new BrowserParser($fileParser);
-        $parserResult = $parser->parse($useragent);
+        $browserParser = new BrowserParser($fileParser);
+        $parserResult  = $browserParser->parse($useragent);
 
         self::assertSame($key, $parserResult);
     }

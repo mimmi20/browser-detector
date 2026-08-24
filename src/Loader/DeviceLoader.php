@@ -63,10 +63,10 @@ final readonly class DeviceLoader implements DeviceLoaderInterface
     }
 
     /** @throws void */
-    private function fromArray(InitData\Device $data): Device
+    private function fromArray(InitData\Device $device): Device
     {
         $manufacturer     = new Company(type: 'unknown', name: null, brandname: null);
-        $manufacturerName = $data->getManufacturer();
+        $manufacturerName = $device->getManufacturer();
 
         if ($manufacturerName !== null) {
             try {
@@ -85,7 +85,7 @@ final readonly class DeviceLoader implements DeviceLoaderInterface
         }
 
         $brand     = new Company(type: 'unknown', name: null, brandname: null);
-        $brandName = $data->getBrand();
+        $brandName = $device->getBrand();
 
         if ($brandName !== null) {
             try {
@@ -103,8 +103,8 @@ final readonly class DeviceLoader implements DeviceLoaderInterface
             }
         }
 
-        $deviceType = $data->getType() ?? Type::Unknown;
-        $simCount   = $data->getSimCount();
+        $deviceType = $device->getType() ?? Type::Unknown;
+        $simCount   = $device->getSimCount();
 
         if (!$deviceType->isPhone()) {
             $simCount = 0;
@@ -112,13 +112,13 @@ final readonly class DeviceLoader implements DeviceLoaderInterface
             $simCount = 1;
         }
 
-        $displayData          = $data->getDisplay();
+        $displayData          = $device->getDisplay();
         $displayData['touch'] = $deviceType->hasTouch();
 
         return new Device(
-            architecture: $data->getArchitecture(),
-            deviceName: $data->getDeviceName(),
-            marketingName: $data->getMarketingName(),
+            architecture: $device->getArchitecture(),
+            deviceName: $device->getDeviceName(),
+            marketingName: $device->getMarketingName(),
             manufacturer: $manufacturer,
             brand: $brand,
             type: $deviceType,
@@ -128,9 +128,9 @@ final readonly class DeviceLoader implements DeviceLoaderInterface
                 touch: $displayData['touch'],
                 size: $displayData['size'],
             ),
-            dualOrientation: $data->getDualOrientation(),
+            dualOrientation: $device->getDualOrientation(),
             simCount: $simCount,
-            bits: $data->getBits(),
+            bits: $device->getBits(),
         );
     }
 }

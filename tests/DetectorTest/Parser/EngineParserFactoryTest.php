@@ -22,7 +22,7 @@ use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use UaParser\EngineParserInterface;
 
-#[CoversClass(EngineParserFactory::class)]
+#[CoversClass(className: EngineParserFactory::class)]
 final class EngineParserFactoryTest extends TestCase
 {
     /**
@@ -54,11 +54,11 @@ final class EngineParserFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $factory = new EngineParserFactory($logger);
+        $engineParserFactory = new EngineParserFactory($logger);
 
-        $parser = $factory();
+        $engineParser = $engineParserFactory();
 
-        self::assertInstanceOf(EngineParserInterface::class, $parser);
-        self::assertInstanceOf(EngineParser::class, $parser);
+        self::assertInstanceOf(EngineParserInterface::class, $engineParser);
+        self::assertInstanceOf(EngineParser::class, $engineParser);
     }
 }

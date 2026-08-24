@@ -35,7 +35,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
     public function __construct(
         private DeviceParserInterface $deviceParser,
         private NormalizerInterface $normalizer,
-        private DeviceInterface $deviceCodeHelper,
+        private DeviceInterface $device,
     ) {
         // nothing to do
     }
@@ -94,10 +94,10 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/^mozilla\/[\d.]+ \((?:andr[o0]id|tizen) [\d.]+(?:[^;]+)?;(?: arm(?:_64)?;| harmonyos;| mobile;)? (?P<devicecode>[^);\/]+)[^)]*\)/i',
             '/^mozilla\/[\d.]+ \((?:smart-tv; )?(?:linux|andr[o0]id);(?: arm(?:_64)?;| x86;)? (?:andr[o0]id|tizen)? ?[\d.]+(?:[^;]+)?;(?: arm(?:_64)?;| harmonyos;| mobile;)? (?P<devicecode>[^;\/]+)(?:(?:\/[^ ]+)? +(?:build|hmscore))[^)]+\)/i',
             '/^mozilla\/[\d.]+ \((?:smart-tv; )?(?:linux|andr[o0]id);(?: arm(?:_64)?;| x86;)? (?:andr[o0]id|tizen)? ?[\d.]+(?:[^;]+)?;(?: arm(?:_64)?;| harmonyos;| mobile;)? (?P<devicecode>[^);\/]+)[^)]*\)/i',
-            '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi|androidhttpclient|worksmobile|googletagmanager)\/[\d.]+ \(linux; (?:(?:andr[o0]id|tizen) [\d.]+(?:[^;]+)?;(?: harmonyos;)?) (?P<devicecode>[^;\/]+)(?:;? +(?:build|hmscore))[^)]+\)/i',
-            '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi|androidhttpclient|worksmobile|googletagmanager)\/[\d.]+ \(linux; (?:(?:andr[o0]id|tizen) [\d.]+(?:[^;]+)?;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)[^)]*\)/i',
-            '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi|androidhttpclient|worksmobile|googletagmanager)\/[\d.]+ \(linux; (?:(?:andr[o0]id|tizen);(?: harmonyos;)?) (?P<devicecode>[^;\/]+)(?:;? +(?:build|hmscore))[^)]+\)/i',
-            '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi|androidhttpclient|worksmobile|googletagmanager)\/[\d.]+ \(linux; (?:(?:andr[o0]id|tizen);(?: harmonyos;)?) (?P<devicecode>[^);\/]+)[^)]*\)/i',
+            '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi|androidhttpclient|worksmobile|googletagmanager)\/[\d.]+ ?\(linux; (?:(?:andr[o0]id|tizen) [\d.]+(?:[^;]+)?;(?: harmonyos;)?) (?P<devicecode>[^;\/]+)(?:;? +(?:build|hmscore))[^)]+\)/i',
+            '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi|androidhttpclient|worksmobile|googletagmanager)\/[\d.]+ ?\(linux; (?:(?:andr[o0]id|tizen) [\d.]+(?:[^;]+)?;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)[^)]*\)/i',
+            '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi|androidhttpclient|worksmobile|googletagmanager)\/[\d.]+ ?\(linux; (?:(?:andr[o0]id|tizen);(?: harmonyos;)?) (?P<devicecode>[^;\/]+)(?:;? +(?:build|hmscore))[^)]+\)/i',
+            '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi|androidhttpclient|worksmobile|googletagmanager)\/[\d.]+ ?\(linux; (?:(?:andr[o0]id|tizen);(?: harmonyos;)?) (?P<devicecode>[^);\/]+)[^)]*\)/i',
             '/dalvik\/[\d.]+ \(linux; andr[o0]id [\d.]+(?:[^;]+)?; (?P<devicecode>[^);\/]+)(?:[);\/]?[^);\/]* +(?:build|hmscore|miui)[^)]+)\)/i',
             '/dalvik\/[\d.]+ \(linux; andr[o0]id [\d.]+(?:[^;]+)?; (?P<devicecode>[^);\/]+)(?:[);\/]?[^);\/]+)?\)/i',
             '/dalvik\/[\d.]+ \(linux; andr[o0]id [\d.]+\/viber [\d.]+ ; (?P<devicecode>[^);\/]+)[su]p1a/i',
@@ -182,7 +182,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
                 return ($matches['devicecode'] ?? '')
                     |> mb_strtolower(...)
                     |> mb_trim(...)
-                    |> $this->deviceCodeHelper->getDeviceCode(...);
+                    |> $this->device->getDeviceCode(...);
             },
             $filtered,
         );
@@ -207,7 +207,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
                 $matches,
             )
         ) {
-            $code = $this->deviceCodeHelper->getDeviceCode(mb_strtolower($matches['devicecode']));
+            $code = $this->device->getDeviceCode(mb_strtolower($matches['devicecode']));
 
             if ($code !== null) {
                 return $code;

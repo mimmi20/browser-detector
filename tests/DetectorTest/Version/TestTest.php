@@ -23,7 +23,7 @@ use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UnexpectedValueException;
 
-#[CoversClass(Test::class)]
+#[CoversClass(className: Test::class)]
 final class TestTest extends TestCase
 {
     /**
@@ -32,12 +32,12 @@ final class TestTest extends TestCase
      * @throws NotNumericException
      * @throws Exception
      */
-    #[DataProvider('providerVersion')]
+    #[DataProvider(methodName: 'providerVersion')]
     public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
-        $object = new Test();
+        $test = new Test();
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $test->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertSame($expectedVersion, $detectedVersion->getVersion());

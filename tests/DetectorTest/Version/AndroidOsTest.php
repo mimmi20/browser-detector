@@ -29,7 +29,7 @@ use UnexpectedValueException;
 
 use function assert;
 
-#[CoversClass(AndroidOs::class)]
+#[CoversClass(className: AndroidOs::class)]
 final class AndroidOsTest extends TestCase
 {
     /**
@@ -37,12 +37,12 @@ final class AndroidOsTest extends TestCase
      * @throws UnexpectedValueException
      * @throws Exception
      */
-    #[DataProvider('providerVersion')]
+    #[DataProvider(methodName: 'providerVersion')]
     public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
-        $object = new AndroidOs(new VersionBuilder());
+        $androidOs = new AndroidOs(new VersionBuilder());
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $androidOs->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertSame($expectedVersion, $detectedVersion->getVersion());
@@ -235,23 +235,23 @@ final class AndroidOsTest extends TestCase
      */
     public function testDetectVersionFail(): void
     {
-        $useragent = 'Dalvik/1.4.0 (Linux; U; Android 2.3.6; GT-I9100G Build/GINGERBREAD)';
-        $exception = new NotNumericException('set failed');
+        $useragent           = 'Dalvik/1.4.0 (Linux; U; Android 2.3.6; GT-I9100G Build/GINGERBREAD)';
+        $notNumericException = new NotNumericException('set failed');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
             ->expects(self::once())
             ->method('detectVersion')
             ->with($useragent, AndroidOs::SEARCHES)
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
         $versionBuilder
             ->expects(self::never())
             ->method('set');
 
         assert($versionBuilder instanceof VersionFactoryInterface);
-        $object = new AndroidOs($versionBuilder);
+        $androidOs = new AndroidOs($versionBuilder);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $androidOs->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
@@ -264,20 +264,20 @@ final class AndroidOsTest extends TestCase
      */
     public function testDetectVersionFailSecond(): void
     {
-        $useragent = 'Mozilla/5.0 (Linux; 4.4.4; Nexus 7 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.107 Safari/537.36 Obigo/W20A.42';
-        $exception = new NotNumericException('set failed');
+        $useragent           = 'Mozilla/5.0 (Linux; 4.4.4; Nexus 7 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.107 Safari/537.36 Obigo/W20A.42';
+        $notNumericException = new NotNumericException('set failed');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('4.4.4')
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
 
         assert($versionBuilder instanceof VersionFactoryInterface);
-        $object = new AndroidOs($versionBuilder);
+        $androidOs = new AndroidOs($versionBuilder);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $androidOs->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
@@ -290,20 +290,20 @@ final class AndroidOsTest extends TestCase
      */
     public function testDetectVersionFailThird(): void
     {
-        $useragent = 'Mozilla/5.0 (Linux; U; de-de; GT-I9100 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Safari/533.1';
-        $exception = new NotNumericException('set failed');
+        $useragent           = 'Mozilla/5.0 (Linux; U; de-de; GT-I9100 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Safari/533.1';
+        $notNumericException = new NotNumericException('set failed');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('2.3.0')
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
 
         assert($versionBuilder instanceof VersionFactoryInterface);
-        $object = new AndroidOs($versionBuilder);
+        $androidOs = new AndroidOs($versionBuilder);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $androidOs->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
@@ -316,20 +316,20 @@ final class AndroidOsTest extends TestCase
      */
     public function testDetectVersionFailForth(): void
     {
-        $useragent = 'Mozilla/5.0 (Linux; U; Android Eclair; md-us Build/pandigitalopc1/sourceidDL00000009) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17';
-        $exception = new NotNumericException('set failed');
+        $useragent           = 'Mozilla/5.0 (Linux; U; Android Eclair; md-us Build/pandigitalopc1/sourceidDL00000009) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17';
+        $notNumericException = new NotNumericException('set failed');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('2.1.0')
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
 
         assert($versionBuilder instanceof VersionFactoryInterface);
-        $object = new AndroidOs($versionBuilder);
+        $androidOs = new AndroidOs($versionBuilder);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $androidOs->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
@@ -342,20 +342,20 @@ final class AndroidOsTest extends TestCase
      */
     public function testDetectVersionFailFifth(): void
     {
-        $useragent = 'Instagram 5.0.2 Android (15/4.0.4; 240dpi; 480x800; AIRIS; TM450; AIRIS_TM450; qcom; es_ES)';
-        $exception = new NotNumericException('set failed');
+        $useragent           = 'Instagram 5.0.2 Android (15/4.0.4; 240dpi; 480x800; AIRIS; TM450; AIRIS_TM450; qcom; es_ES)';
+        $notNumericException = new NotNumericException('set failed');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('4.0.4')
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
 
         assert($versionBuilder instanceof VersionFactoryInterface);
-        $object = new AndroidOs($versionBuilder);
+        $androidOs = new AndroidOs($versionBuilder);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $androidOs->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
@@ -368,20 +368,20 @@ final class AndroidOsTest extends TestCase
      */
     public function testDetectVersionFailSixth(): void
     {
-        $useragent = 'Mozilla/5.0 (Linux; U; Android 2.1-update1; de-de; Milestone Build/SHOLS_U2_02.36.0) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17';
-        $exception = new NotNumericException('set failed');
+        $useragent           = 'Mozilla/5.0 (Linux; U; Android 2.1-update1; de-de; Milestone Build/SHOLS_U2_02.36.0) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17';
+        $notNumericException = new NotNumericException('set failed');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('2.1.1')
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
 
         assert($versionBuilder instanceof VersionFactoryInterface);
-        $object = new AndroidOs($versionBuilder);
+        $androidOs = new AndroidOs($versionBuilder);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $androidOs->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
@@ -394,20 +394,20 @@ final class AndroidOsTest extends TestCase
      */
     public function testDetectVersionFailSeventh(): void
     {
-        $useragent = 'Mozilla/5.0 (Android M; Mobile; rv:41.0) Gecko/41.0 Firefox/41.0';
-        $exception = new NotNumericException('set failed');
+        $useragent           = 'Mozilla/5.0 (Android M; Mobile; rv:41.0) Gecko/41.0 Firefox/41.0';
+        $notNumericException = new NotNumericException('set failed');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('6.0')
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
 
         assert($versionBuilder instanceof VersionFactoryInterface);
-        $object = new AndroidOs($versionBuilder);
+        $androidOs = new AndroidOs($versionBuilder);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $androidOs->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
@@ -420,20 +420,20 @@ final class AndroidOsTest extends TestCase
      */
     public function testDetectVersionFail8(): void
     {
-        $useragent = 'Mozilla/5.0 (Linux; Android 9; Redmi 8 Build/PKQ1.190319.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.166 Mobile Safari/537.36 Instagram 296.0.0.35.109 Android (28/9; 320dpi; 720x1369; Xiaomi; Redmi 8; olive; qcom; de_DE; 505599009)';
-        $exception = new NotNumericException('set failed');
+        $useragent           = 'Mozilla/5.0 (Linux; Android 9; Redmi 8 Build/PKQ1.190319.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.166 Mobile Safari/537.36 Instagram 296.0.0.35.109 Android (28/9; 320dpi; 720x1369; Xiaomi; Redmi 8; olive; qcom; de_DE; 505599009)';
+        $notNumericException = new NotNumericException('set failed');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('9')
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
 
         assert($versionBuilder instanceof VersionFactoryInterface);
-        $object = new AndroidOs($versionBuilder);
+        $androidOs = new AndroidOs($versionBuilder);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $androidOs->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
@@ -446,20 +446,20 @@ final class AndroidOsTest extends TestCase
      */
     public function testDetectVersionFail9(): void
     {
-        $useragent = 'ddg_android/5.92.1 (com.duckduckgo.mobile.android; Android API 30)';
-        $exception = new NotNumericException('set failed');
+        $useragent           = 'ddg_android/5.92.1 (com.duckduckgo.mobile.android; Android API 30)';
+        $notNumericException = new NotNumericException('set failed');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('11')
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
 
         assert($versionBuilder instanceof VersionFactoryInterface);
-        $object = new AndroidOs($versionBuilder);
+        $androidOs = new AndroidOs($versionBuilder);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $androidOs->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
@@ -472,20 +472,20 @@ final class AndroidOsTest extends TestCase
      */
     public function testDetectVersionFail10(): void
     {
-        $useragent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24#2.0#TCL/TCL-AP-MS68-S1/22/tclwebkit1.0.2/1920*1080(512512136,null;210494962,c756f2d1114b47c79c86725a20185784)';
-        $exception = new NotNumericException('set failed');
+        $useragent           = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24#2.0#TCL/TCL-AP-MS68-S1/22/tclwebkit1.0.2/1920*1080(512512136,null;210494962,c756f2d1114b47c79c86725a20185784)';
+        $notNumericException = new NotNumericException('set failed');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('5.1')
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
 
         assert($versionBuilder instanceof VersionFactoryInterface);
-        $object = new AndroidOs($versionBuilder);
+        $androidOs = new AndroidOs($versionBuilder);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $androidOs->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);

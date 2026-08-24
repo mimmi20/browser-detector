@@ -34,7 +34,7 @@ use function in_array;
 use function mb_strtolower;
 use function sprintf;
 
-#[CoversClass(XUcbrowserDevice::class)]
+#[CoversClass(className: XUcbrowserDevice::class)]
 final class XUcbrowserDevice1Test extends TestCase
 {
     /**
@@ -44,13 +44,13 @@ final class XUcbrowserDevice1Test extends TestCase
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
-    #[DataProvider('providerUa')]
+    #[DataProvider(methodName: 'providerUa')]
     public function testData(string $ua, bool $hasDeviceInfo, string $deviceCode): void
     {
         $searchCode = true;
         $isNull     = false;
 
-        if (in_array(mb_strtolower($ua), ['j2me', 'opera', 'jblend'], true)) {
+        if (in_array(mb_strtolower($ua), ['j2me', 'opera', 'jblend'], strict: true)) {
             $searchCode = false;
         }
 
@@ -59,96 +59,103 @@ final class XUcbrowserDevice1Test extends TestCase
         }
 
         $normalizerFactory = new NormalizerFactory();
-        $normalizer        = $normalizerFactory->build();
+        $normalizerChain   = $normalizerFactory->build();
 
-        $normalitedUa = $normalizer->normalize($ua);
+        $normalitedUa = $normalizerChain->normalize($ua);
 
         $deviceParser = $this->createMock(DeviceParserInterface::class);
         $deviceParser
-            ->expects(!$searchCode ? self::never() : self::once())
+            ->expects($searchCode ? self::once() : self::never())
             ->method('parse')
             ->with($normalitedUa)
             ->willReturn($deviceCode);
 
         $deviceCodeHelper = $this->createMock(DeviceInterface::class);
         $deviceCodeHelper
-            ->expects(!$searchCode ? self::never() : self::once())
+            ->expects($searchCode ? self::once() : self::never())
             ->method('getDeviceCode')
             ->with(mb_strtolower($normalitedUa))
-            ->willReturn(null);
+            ->willReturn(value: null);
 
-        $header = new DeviceCodeOnlyHeader(
+        $deviceCodeOnlyHeader = new DeviceCodeOnlyHeader(
             value: $ua,
             deviceCode: new XUcbrowserDevice(
                 deviceParser: $deviceParser,
-                normalizer: $normalizer,
-                deviceCodeHelper: $deviceCodeHelper,
+                normalizer: $normalizerChain,
+                device: $deviceCodeHelper,
             ),
         );
 
-        self::assertSame($ua, $header->getValue(), sprintf('value mismatch for ua "%s"', $ua));
         self::assertSame(
             $ua,
-            $header->getNormalizedValue(),
+            $deviceCodeOnlyHeader->getValue(),
+            sprintf('value mismatch for ua "%s"', $ua),
+        );
+        self::assertSame(
+            $ua,
+            $deviceCodeOnlyHeader->getNormalizedValue(),
             sprintf('value mismatch for ua "%s"', $ua),
         );
         self::assertFalse(
-            $header->hasDeviceArchitecture(),
+            $deviceCodeOnlyHeader->hasDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             Architecture::unknown,
-            $header->getDeviceArchitecture(),
+            $deviceCodeOnlyHeader->getDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertFalse(
-            $header->hasDeviceBitness(),
+            $deviceCodeOnlyHeader->hasDeviceBitness(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             Bits::unknown,
-            $header->getDeviceBitness(),
+            $deviceCodeOnlyHeader->getDeviceBitness(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertFalse(
-            $header->hasDeviceIsMobile(),
+            $deviceCodeOnlyHeader->hasDeviceIsMobile(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertNull(
-            $header->getDeviceIsMobile(),
+            $deviceCodeOnlyHeader->getDeviceIsMobile(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             $hasDeviceInfo,
-            $header->hasDeviceCode(),
+            $deviceCodeOnlyHeader->hasDeviceCode(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
-            !$isNull ? $deviceCode : null,
-            $header->getDeviceCode(),
+            $isNull ? null : $deviceCode,
+            $deviceCodeOnlyHeader->getDeviceCode(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
-        self::assertFalse($header->hasClientCode(), sprintf('browser info mismatch for ua "%s"', $ua));
+        self::assertFalse(
+            $deviceCodeOnlyHeader->hasClientCode(),
+            sprintf('browser info mismatch for ua "%s"', $ua),
+        );
         self::assertNull(
-            $header->getClientCode(),
+            $deviceCodeOnlyHeader->getClientCode(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
         self::assertFalse(
-            $header->hasClientVersion(),
+            $deviceCodeOnlyHeader->hasClientVersion(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
         self::assertInstanceOf(
             NullVersion::class,
-            $header->getClientVersion(),
+            $deviceCodeOnlyHeader->getClientVersion(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
         self::assertFalse(
-            $header->hasPlatformCode(),
+            $deviceCodeOnlyHeader->hasPlatformCode(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
 
         try {
-            $header->getPlatformCode();
+            $deviceCodeOnlyHeader->getPlatformCode();
 
             self::fail('Exception expected');
         } catch (NotFoundException) {
@@ -156,18 +163,21 @@ final class XUcbrowserDevice1Test extends TestCase
         }
 
         self::assertFalse(
-            $header->hasPlatformVersion(),
+            $deviceCodeOnlyHeader->hasPlatformVersion(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
         self::assertInstanceOf(
             NullVersion::class,
-            $header->getPlatformVersionWithOs(Os::unknown),
+            $deviceCodeOnlyHeader->getPlatformVersionWithOs(Os::unknown),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
-        self::assertFalse($header->hasEngineCode(), sprintf('engine info mismatch for ua "%s"', $ua));
+        self::assertFalse(
+            $deviceCodeOnlyHeader->hasEngineCode(),
+            sprintf('engine info mismatch for ua "%s"', $ua),
+        );
 
         try {
-            $header->getEngineCode();
+            $deviceCodeOnlyHeader->getEngineCode();
 
             self::fail('Exception expected');
         } catch (NotFoundException) {
@@ -175,12 +185,12 @@ final class XUcbrowserDevice1Test extends TestCase
         }
 
         self::assertFalse(
-            $header->hasEngineVersion(),
+            $deviceCodeOnlyHeader->hasEngineVersion(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
         self::assertInstanceOf(
             NullVersion::class,
-            $header->getEngineVersionWithEngine(Engine::unknown),
+            $deviceCodeOnlyHeader->getEngineVersionWithEngine(Engine::unknown),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
     }

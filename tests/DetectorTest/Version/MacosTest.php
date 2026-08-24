@@ -29,7 +29,7 @@ use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UnexpectedValueException;
 
-#[CoversClass(Macos::class)]
+#[CoversClass(className: Macos::class)]
 final class MacosTest extends TestCase
 {
     /**
@@ -38,12 +38,12 @@ final class MacosTest extends TestCase
      * @throws UnexpectedValueException
      * @throws \PHPUnit\Framework\Exception
      */
-    #[DataProvider('providerVersion')]
+    #[DataProvider(methodName: 'providerVersion')]
     public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
-        $object = new Macos(new VersionBuilder(), new MacosBuild());
+        $macos = new Macos(new VersionBuilder(), new MacosBuild());
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $macos->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertSame($expectedVersion, $detectedVersion->getVersion());
@@ -216,9 +216,9 @@ final class MacosTest extends TestCase
      */
     public function testDetectVersionFail(): void
     {
-        $useragent = 'Downcast/2.9.11 (Mac OS X Version 10.11.3 (Build 15D13b))';
-        $exception = new NotNumericException('not numeric');
-        $version   = '10.11.3-beta+2';
+        $useragent           = 'Downcast/2.9.11 (Mac OS X Version 10.11.3 (Build 15D13b))';
+        $notNumericException = new NotNumericException('not numeric');
+        $version             = '10.11.3-beta+2';
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
@@ -228,7 +228,7 @@ final class MacosTest extends TestCase
             ->expects(self::once())
             ->method('set')
             ->with($version)
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
 
         $macosBuild = $this->createMock(MacosBuildInterface::class);
         $macosBuild
@@ -237,9 +237,9 @@ final class MacosTest extends TestCase
             ->with('15D13b')
             ->willReturn($version);
 
-        $object = new Macos($versionBuilder, $macosBuild);
+        $macos = new Macos($versionBuilder, $macosBuild);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $macos->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
@@ -251,9 +251,9 @@ final class MacosTest extends TestCase
      */
     public function testDetectVersionFail2(): void
     {
-        $useragent = 'Apple Mac OS X v10.6.8 CoreMedia v1.0.4.10K540';
-        $exception = new NotNumericException('not numeric');
-        $version   = '10.11.3-beta+2';
+        $useragent           = 'Apple Mac OS X v10.6.8 CoreMedia v1.0.4.10K540';
+        $notNumericException = new NotNumericException('not numeric');
+        $version             = '10.11.3-beta+2';
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
@@ -263,7 +263,7 @@ final class MacosTest extends TestCase
             ->expects(self::once())
             ->method('set')
             ->with($version)
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
 
         $macosBuild = $this->createMock(MacosBuildInterface::class);
         $macosBuild
@@ -272,9 +272,9 @@ final class MacosTest extends TestCase
             ->with('10K540')
             ->willReturn($version);
 
-        $object = new Macos($versionBuilder, $macosBuild);
+        $macos = new Macos($versionBuilder, $macosBuild);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $macos->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
@@ -286,9 +286,9 @@ final class MacosTest extends TestCase
      */
     public function testDetectVersionFail3(): void
     {
-        $useragent = 'Mail/3445.1.3 CFNetwork/887 Darwin/17.0.0 (x86_64)';
-        $exception = new NotNumericException('not numeric');
-        $version   = '10.13.0';
+        $useragent           = 'Mail/3445.1.3 CFNetwork/887 Darwin/17.0.0 (x86_64)';
+        $notNumericException = new NotNumericException('not numeric');
+        $version             = '10.13.0';
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
@@ -298,16 +298,16 @@ final class MacosTest extends TestCase
             ->expects(self::once())
             ->method('set')
             ->with($version)
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
 
         $macosBuild = $this->createMock(MacosBuildInterface::class);
         $macosBuild
             ->expects(self::never())
             ->method('getVersion');
 
-        $object = new Macos($versionBuilder, $macosBuild);
+        $macos = new Macos($versionBuilder, $macosBuild);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $macos->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
@@ -319,8 +319,8 @@ final class MacosTest extends TestCase
      */
     public function testDetectVersionFail4(): void
     {
-        $useragent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10102) AppleWebKit/640.3.18 (KHTML like Gecko) Version/10.0.2 Safari/640.3.18';
-        $exception = new NotNumericException('not numeric');
+        $useragent           = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10102) AppleWebKit/640.3.18 (KHTML like Gecko) Version/10.0.2 Safari/640.3.18';
+        $notNumericException = new NotNumericException('not numeric');
 
         $version = $this->createMock(VersionInterface::class);
         $version
@@ -339,16 +339,16 @@ final class MacosTest extends TestCase
             ->expects(self::once())
             ->method('set')
             ->with('10.10.2')
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
 
         $macosBuild = $this->createMock(MacosBuildInterface::class);
         $macosBuild
             ->expects(self::never())
             ->method('getVersion');
 
-        $object = new Macos($versionBuilder, $macosBuild);
+        $macos = new Macos($versionBuilder, $macosBuild);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $macos->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
@@ -360,8 +360,8 @@ final class MacosTest extends TestCase
      */
     public function testDetectVersionFail5(): void
     {
-        $useragent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 1084) AppleWebKit/536.29.13 (KHTML like Gecko) Version/6.0.4 Safari/536.29.13';
-        $exception = new NotNumericException('not numeric');
+        $useragent           = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 1084) AppleWebKit/536.29.13 (KHTML like Gecko) Version/6.0.4 Safari/536.29.13';
+        $notNumericException = new NotNumericException('not numeric');
 
         $version = $this->createMock(VersionInterface::class);
         $version
@@ -380,16 +380,16 @@ final class MacosTest extends TestCase
             ->expects(self::once())
             ->method('set')
             ->with('10.8.4')
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
 
         $macosBuild = $this->createMock(MacosBuildInterface::class);
         $macosBuild
             ->expects(self::never())
             ->method('getVersion');
 
-        $object = new Macos($versionBuilder, $macosBuild);
+        $macos = new Macos($versionBuilder, $macosBuild);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $macos->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
@@ -401,8 +401,8 @@ final class MacosTest extends TestCase
      */
     public function testDetectVersionFail6(): void
     {
-        $useragent = 'QuickTime/7.6 (qtver=7.6;cpu=IA32;os=Mac 10,5,7)';
-        $exception = new NotNumericException('not numeric');
+        $useragent           = 'QuickTime/7.6 (qtver=7.6;cpu=IA32;os=Mac 10,5,7)';
+        $notNumericException = new NotNumericException('not numeric');
 
         $version = $this->createMock(VersionInterface::class);
         $version
@@ -414,7 +414,7 @@ final class MacosTest extends TestCase
             ->expects(self::once())
             ->method('detectVersion')
             ->with('QuickTime/7.6 (qtver=7.6;cpu=IA32;os=Mac 10.5.7)', Macos::SEARCHES)
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
         $versionBuilder
             ->expects(self::never())
             ->method('set');
@@ -424,9 +424,9 @@ final class MacosTest extends TestCase
             ->expects(self::never())
             ->method('getVersion');
 
-        $object = new Macos($versionBuilder, $macosBuild);
+        $macos = new Macos($versionBuilder, $macosBuild);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $macos->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
@@ -438,8 +438,8 @@ final class MacosTest extends TestCase
      */
     public function testDetectVersionFail7(): void
     {
-        $useragent = 'Downcast/2.9.11 (Mac OS X Version 10.11.3 (Build 15D13b))';
-        $exception = new NotFoundException('not numeric');
+        $useragent         = 'Downcast/2.9.11 (Mac OS X Version 10.11.3 (Build 15D13b))';
+        $notFoundException = new NotFoundException('not numeric');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
@@ -454,11 +454,11 @@ final class MacosTest extends TestCase
             ->expects(self::once())
             ->method('getVersion')
             ->with('15D13b')
-            ->willThrowException($exception);
+            ->willThrowException($notFoundException);
 
-        $object = new Macos($versionBuilder, $macosBuild);
+        $macos = new Macos($versionBuilder, $macosBuild);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $macos->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
@@ -470,8 +470,8 @@ final class MacosTest extends TestCase
      */
     public function testDetectVersionFail8(): void
     {
-        $useragent = 'Apple Mac OS X v10.6.8 CoreMedia v1.0.4.10K540';
-        $exception = new NotFoundException('not numeric');
+        $useragent         = 'Apple Mac OS X v10.6.8 CoreMedia v1.0.4.10K540';
+        $notFoundException = new NotFoundException('not numeric');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
@@ -488,11 +488,11 @@ final class MacosTest extends TestCase
             ->expects(self::once())
             ->method('getVersion')
             ->with('10K540')
-            ->willThrowException($exception);
+            ->willThrowException($notFoundException);
 
-        $object = new Macos($versionBuilder, $macosBuild);
+        $macos = new Macos($versionBuilder, $macosBuild);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $macos->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);

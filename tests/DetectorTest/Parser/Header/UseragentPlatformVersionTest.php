@@ -39,8 +39,8 @@ use function json_encode;
 
 use const JSON_THROW_ON_ERROR;
 
-#[CoversClass(UseragentPlatformVersion::class)]
-#[CoversTrait(SetVersionTrait::class)]
+#[CoversClass(className: UseragentPlatformVersion::class)]
+#[CoversTrait(traitName: SetVersionTrait::class)]
 final class UseragentPlatformVersionTest extends TestCase
 {
     /** @throws \PHPUnit\Framework\Exception */
@@ -68,16 +68,16 @@ final class UseragentPlatformVersionTest extends TestCase
             ->with($value)
             ->willThrowException(new Exception('x'));
 
-        $header = new UseragentPlatformVersion(
+        $useragentPlatformVersion = new UseragentPlatformVersion(
             platformParser: $platformParser,
             platformLoader: $platformLoader,
             normalizer: $normalizer,
         );
 
-        self::assertTrue($header->hasPlatformVersion($value));
+        self::assertTrue($useragentPlatformVersion->hasPlatformVersion($value));
         self::assertInstanceOf(
             ForcedNullVersion::class,
-            $header->getPlatformVersionWithOs($value, Os::unknown),
+            $useragentPlatformVersion->getPlatformVersionWithOs($value, Os::unknown),
         );
     }
 
@@ -106,16 +106,16 @@ final class UseragentPlatformVersionTest extends TestCase
             ->with($value)
             ->willReturn('');
 
-        $header = new UseragentPlatformVersion(
+        $useragentPlatformVersion = new UseragentPlatformVersion(
             platformParser: $platformParser,
             platformLoader: $platformLoader,
             normalizer: $normalizer,
         );
 
-        self::assertTrue($header->hasPlatformVersion($value));
+        self::assertTrue($useragentPlatformVersion->hasPlatformVersion($value));
         self::assertInstanceOf(
             ForcedNullVersion::class,
-            $header->getPlatformVersionWithOs($value, Os::unknown),
+            $useragentPlatformVersion->getPlatformVersionWithOs($value, Os::unknown),
         );
     }
 
@@ -142,18 +142,18 @@ final class UseragentPlatformVersionTest extends TestCase
             ->expects(self::once())
             ->method('normalize')
             ->with($value)
-            ->willReturn(null);
+            ->willReturn(value: null);
 
-        $header = new UseragentPlatformVersion(
+        $useragentPlatformVersion = new UseragentPlatformVersion(
             platformParser: $platformParser,
             platformLoader: $platformLoader,
             normalizer: $normalizer,
         );
 
-        self::assertTrue($header->hasPlatformVersion($value));
+        self::assertTrue($useragentPlatformVersion->hasPlatformVersion($value));
         self::assertInstanceOf(
             ForcedNullVersion::class,
-            $header->getPlatformVersionWithOs($value, Os::unknown),
+            $useragentPlatformVersion->getPlatformVersionWithOs($value, Os::unknown),
         );
     }
 
@@ -180,23 +180,23 @@ final class UseragentPlatformVersionTest extends TestCase
             ->expects(self::once())
             ->method('normalize')
             ->with($value)
-            ->willReturn(null);
+            ->willReturn(value: null);
 
-        $header = new UseragentPlatformVersion(
+        $useragentPlatformVersion = new UseragentPlatformVersion(
             platformParser: $platformParser,
             platformLoader: $platformLoader,
             normalizer: $normalizer,
         );
 
-        self::assertTrue($header->hasPlatformVersion($value));
+        self::assertTrue($useragentPlatformVersion->hasPlatformVersion($value));
         self::assertInstanceOf(
             ForcedNullVersion::class,
-            $header->getPlatformVersionWithOs($value, Os::android),
+            $useragentPlatformVersion->getPlatformVersionWithOs($value, Os::android),
         );
     }
 
     /** @throws \PHPUnit\Framework\Exception */
-    #[DataProvider('providerUa1')]
+    #[DataProvider(methodName: 'providerUa1')]
     public function testWithUasWithoutPlatformVersion(string $value): void
     {
         $platformParser = $this->createMock(PlatformParserInterface::class);
@@ -219,16 +219,16 @@ final class UseragentPlatformVersionTest extends TestCase
             ->with($value)
             ->willReturn($value);
 
-        $header = new UseragentPlatformVersion(
+        $useragentPlatformVersion = new UseragentPlatformVersion(
             platformParser: $platformParser,
             platformLoader: $platformLoader,
             normalizer: $normalizer,
         );
 
-        self::assertTrue($header->hasPlatformVersion($value));
+        self::assertTrue($useragentPlatformVersion->hasPlatformVersion($value));
         self::assertInstanceOf(
             ForcedNullVersion::class,
-            $header->getPlatformVersionWithOs($value, Os::unknown),
+            $useragentPlatformVersion->getPlatformVersionWithOs($value, Os::unknown),
         );
     }
 
@@ -255,7 +255,7 @@ final class UseragentPlatformVersionTest extends TestCase
     }
 
     /** @throws \PHPUnit\Framework\Exception */
-    #[DataProvider('providerUa2')]
+    #[DataProvider(methodName: 'providerUa2')]
     public function testWithUasWithPlatformVersion(string $value, string | null $expectedVersion): void
     {
         $platformParser = $this->createMock(PlatformParserInterface::class);
@@ -278,15 +278,15 @@ final class UseragentPlatformVersionTest extends TestCase
             ->with($value)
             ->willReturn($value);
 
-        $header = new UseragentPlatformVersion(
+        $useragentPlatformVersion = new UseragentPlatformVersion(
             platformParser: $platformParser,
             platformLoader: $platformLoader,
             normalizer: $normalizer,
         );
 
-        self::assertTrue($header->hasPlatformVersion($value));
+        self::assertTrue($useragentPlatformVersion->hasPlatformVersion($value));
 
-        $version = $header->getPlatformVersionWithOs($value, Os::unknown);
+        $version = $useragentPlatformVersion->getPlatformVersionWithOs($value, Os::unknown);
         self::assertInstanceOf(Version::class, $version);
         self::assertSame($expectedVersion, $version->getVersion());
     }
@@ -308,7 +308,7 @@ final class UseragentPlatformVersionTest extends TestCase
     }
 
     /** @throws \PHPUnit\Framework\Exception */
-    #[DataProvider('providerUa3')]
+    #[DataProvider(methodName: 'providerUa3')]
     public function testWithUasWithPlatformVersion2(string $value, string $expectedVersion): void
     {
         $code = Os::android;
@@ -349,15 +349,15 @@ final class UseragentPlatformVersionTest extends TestCase
             ->with($value)
             ->willReturn($value);
 
-        $header = new UseragentPlatformVersion(
+        $useragentPlatformVersion = new UseragentPlatformVersion(
             platformParser: $platformParser,
             platformLoader: $platformLoader,
             normalizer: $normalizer,
         );
 
-        self::assertTrue($header->hasPlatformVersion($value));
+        self::assertTrue($useragentPlatformVersion->hasPlatformVersion($value));
 
-        $version = $header->getPlatformVersionWithOs($value, Os::unknown);
+        $version = $useragentPlatformVersion->getPlatformVersionWithOs($value, Os::unknown);
         self::assertInstanceOf(Version::class, $version);
         self::assertSame($expectedVersion, $version->getVersion());
     }
@@ -375,7 +375,7 @@ final class UseragentPlatformVersionTest extends TestCase
     }
 
     /** @throws \PHPUnit\Framework\Exception */
-    #[DataProvider('providerUa4')]
+    #[DataProvider(methodName: 'providerUa4')]
     public function testWithUasWithoutPlatformVersion2(string $value, \UaData\OsInterface $os): void
     {
         $platformParser = $this->createMock(PlatformParserInterface::class);
@@ -400,16 +400,16 @@ final class UseragentPlatformVersionTest extends TestCase
             ->with($value)
             ->willReturn($value);
 
-        $header = new UseragentPlatformVersion(
+        $useragentPlatformVersion = new UseragentPlatformVersion(
             platformParser: $platformParser,
             platformLoader: $platformLoader,
             normalizer: $normalizer,
         );
 
-        self::assertTrue($header->hasPlatformVersion($value));
+        self::assertTrue($useragentPlatformVersion->hasPlatformVersion($value));
         self::assertInstanceOf(
             ForcedNullVersion::class,
-            $header->getPlatformVersionWithOs($value, Os::unknown),
+            $useragentPlatformVersion->getPlatformVersionWithOs($value, Os::unknown),
         );
     }
 
@@ -462,16 +462,16 @@ final class UseragentPlatformVersionTest extends TestCase
             ->with($value)
             ->willReturn($value);
 
-        $header = new UseragentPlatformVersion(
+        $useragentPlatformVersion = new UseragentPlatformVersion(
             platformParser: $platformParser,
             platformLoader: $platformLoader,
             normalizer: $normalizer,
         );
 
-        self::assertTrue($header->hasPlatformVersion($value));
+        self::assertTrue($useragentPlatformVersion->hasPlatformVersion($value));
         self::assertInstanceOf(
             NullVersion::class,
-            $header->getPlatformVersionWithOs($value, Os::unknown),
+            $useragentPlatformVersion->getPlatformVersionWithOs($value, Os::unknown),
         );
     }
 
@@ -481,7 +481,7 @@ final class UseragentPlatformVersionTest extends TestCase
         $value = 'Gospel_Library 2.6.1.7 / Android 4.3 279372.1 / HTC HTC One max';
         $os    = Os::android;
 
-        $exception = new NotFoundException('not found');
+        $notFoundException = new NotFoundException('not found');
 
         $platformParser = $this->createMock(PlatformParserInterface::class);
         $platformParser
@@ -498,7 +498,7 @@ final class UseragentPlatformVersionTest extends TestCase
             ->expects(self::once())
             ->method('loadFromOs')
             ->with($os, $value)
-            ->willThrowException($exception);
+            ->willThrowException($notFoundException);
 
         $normalizer = $this->createMock(NormalizerInterface::class);
         $normalizer
@@ -507,16 +507,16 @@ final class UseragentPlatformVersionTest extends TestCase
             ->with($value)
             ->willReturn($value);
 
-        $header = new UseragentPlatformVersion(
+        $useragentPlatformVersion = new UseragentPlatformVersion(
             platformParser: $platformParser,
             platformLoader: $platformLoader,
             normalizer: $normalizer,
         );
 
-        self::assertTrue($header->hasPlatformVersion($value));
+        self::assertTrue($useragentPlatformVersion->hasPlatformVersion($value));
         self::assertInstanceOf(
             NullVersion::class,
-            $header->getPlatformVersionWithOs($value, Os::unknown),
+            $useragentPlatformVersion->getPlatformVersionWithOs($value, Os::unknown),
         );
     }
 
@@ -655,16 +655,16 @@ final class UseragentPlatformVersionTest extends TestCase
             ->with($value)
             ->willReturn($value);
 
-        $header = new UseragentPlatformVersion(
+        $useragentPlatformVersion = new UseragentPlatformVersion(
             platformParser: $platformParser,
             platformLoader: $platformLoader,
             normalizer: $normalizer,
         );
 
-        self::assertTrue($header->hasPlatformVersion($value));
+        self::assertTrue($useragentPlatformVersion->hasPlatformVersion($value));
         self::assertInstanceOf(
             NullVersion::class,
-            $header->getPlatformVersionWithOs($value, Os::unknown),
+            $useragentPlatformVersion->getPlatformVersionWithOs($value, Os::unknown),
         );
     }
 }

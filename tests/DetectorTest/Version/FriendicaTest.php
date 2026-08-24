@@ -29,7 +29,7 @@ use UnexpectedValueException;
 
 use function assert;
 
-#[CoversClass(Friendica::class)]
+#[CoversClass(className: Friendica::class)]
 final class FriendicaTest extends TestCase
 {
     /**
@@ -37,12 +37,12 @@ final class FriendicaTest extends TestCase
      * @throws UnexpectedValueException
      * @throws Exception
      */
-    #[DataProvider('providerVersion')]
+    #[DataProvider(methodName: 'providerVersion')]
     public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
-        $object = new Friendica(new VersionBuilder());
+        $friendica = new Friendica(new VersionBuilder());
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $friendica->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertSame($expectedVersion, $detectedVersion->getVersion());
@@ -77,19 +77,19 @@ final class FriendicaTest extends TestCase
      */
     public function testDetectVersionFail(): void
     {
-        $exception = new NotNumericException('set failed');
+        $notNumericException = new NotNumericException('set failed');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('3.3-1173')
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
 
         assert($versionBuilder instanceof VersionFactoryInterface);
-        $object = new Friendica($versionBuilder);
+        $friendica = new Friendica($versionBuilder);
 
-        $detectedVersion = $object->detectVersion(
+        $detectedVersion = $friendica->detectVersion(
             'Friendica \'Ginger\' 3.3-1173; http://social.romber.com.mx',
         );
 

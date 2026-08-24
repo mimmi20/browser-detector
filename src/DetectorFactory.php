@@ -44,7 +44,7 @@ final class DetectorFactory
     private Detector | null $detector = null;
 
     /** @throws void */
-    public function __construct(private readonly PsrCacheInterface $cache, private readonly LoggerInterface $logger)
+    public function __construct(private readonly PsrCacheInterface $psrCache, private readonly LoggerInterface $logger)
     {
         // nothing to do
     }
@@ -55,7 +55,7 @@ final class DetectorFactory
      */
     public function __invoke(): Detector
     {
-        if ($this->detector === null) {
+        if (!$this->detector instanceof Detector) {
             $companyLoaderFactory = new CompanyLoaderFactory();
 
             $serializableStrategy = new SerializableStrategy(
@@ -127,7 +127,7 @@ final class DetectorFactory
 
             $this->detector = new Detector(
                 logger: $this->logger,
-                cache: new Cache(cache: $this->cache),
+                cache: new Cache(cache: $this->psrCache),
                 requestBuilder: $requestBuilder,
                 deviceLoaderFactory: $deviceLoaderFactory,
                 platformLoader: $platformLoader,

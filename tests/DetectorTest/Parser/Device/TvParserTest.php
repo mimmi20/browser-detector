@@ -20,7 +20,7 @@ use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 
-#[CoversClass(TvParser::class)]
+#[CoversClass(className: TvParser::class)]
 final class TvParserTest extends TestCase
 {
     /**
@@ -33,16 +33,14 @@ final class TvParserTest extends TestCase
         $expectedMode = 'test-mode';
         $genericMode  = 'genericMode';
 
-        $fileParser = $this->getMockBuilder(RulefileParserInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $fileParser = $this->createMock(RulefileParserInterface::class);
         $fileParser
             ->expects(self::exactly(2))
             ->method('parseFile')
             ->willReturn($genericMode, $expectedMode);
 
-        $object = new TvParser($fileParser);
+        $tvParser = new TvParser($fileParser);
 
-        self::assertSame($genericMode . '=' . $expectedMode, $object->parse($useragent));
+        self::assertSame($genericMode . '=' . $expectedMode, $tvParser->parse($useragent));
     }
 }

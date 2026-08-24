@@ -22,11 +22,11 @@ use UaNormalizer\Normalizer\NormalizerInterface;
 use UaParser\BrowserParserInterface;
 use UnexpectedValueException;
 
-#[CoversClass(UseragentClientCode::class)]
+#[CoversClass(className: UseragentClientCode::class)]
 final class UseragentClientCodeTest extends TestCase
 {
     /** @throws Exception */
-    #[DataProvider('providerUa1')]
+    #[DataProvider(methodName: 'providerUa1')]
     public function testWithWithoutParsing(string $value, string $expected): void
     {
         $browserParser = $this->createMock(BrowserParserInterface::class);
@@ -41,12 +41,15 @@ final class UseragentClientCodeTest extends TestCase
             ->with($value)
             ->willReturn($value);
 
-        $header = new UseragentClientCode(browserParser: $browserParser, normalizer: $normalizer);
+        $useragentClientCode = new UseragentClientCode(
+            browserParser: $browserParser,
+            normalizer: $normalizer,
+        );
 
-        self::assertTrue($header->hasClientCode($value));
+        self::assertTrue($useragentClientCode->hasClientCode($value));
         self::assertSame(
             $expected,
-            $header->getClientCode($value),
+            $useragentClientCode->getClientCode($value),
         );
     }
 
@@ -71,7 +74,7 @@ final class UseragentClientCodeTest extends TestCase
     }
 
     /** @throws Exception */
-    #[DataProvider('providerUa2')]
+    #[DataProvider(methodName: 'providerUa2')]
     public function testWithWithParsing(string $value, string $expected): void
     {
         $browserParser = $this->createMock(BrowserParserInterface::class);
@@ -88,12 +91,15 @@ final class UseragentClientCodeTest extends TestCase
             ->with($value)
             ->willReturn($value);
 
-        $header = new UseragentClientCode(browserParser: $browserParser, normalizer: $normalizer);
+        $useragentClientCode = new UseragentClientCode(
+            browserParser: $browserParser,
+            normalizer: $normalizer,
+        );
 
-        self::assertTrue($header->hasClientCode($value));
+        self::assertTrue($useragentClientCode->hasClientCode($value));
         self::assertSame(
             $expected,
-            $header->getClientCode($value),
+            $useragentClientCode->getClientCode($value),
         );
     }
 
@@ -126,11 +132,14 @@ final class UseragentClientCodeTest extends TestCase
             ->with($value)
             ->willReturn('');
 
-        $header = new UseragentClientCode(browserParser: $browserParser, normalizer: $normalizer);
+        $useragentClientCode = new UseragentClientCode(
+            browserParser: $browserParser,
+            normalizer: $normalizer,
+        );
 
-        self::assertTrue($header->hasClientCode($value));
+        self::assertTrue($useragentClientCode->hasClientCode($value));
         self::assertNull(
-            $header->getClientCode($value),
+            $useragentClientCode->getClientCode($value),
         );
     }
 
@@ -151,11 +160,14 @@ final class UseragentClientCodeTest extends TestCase
             ->with($value)
             ->willThrowException(new \UaNormalizer\Normalizer\Exception\Exception('x'));
 
-        $header = new UseragentClientCode(browserParser: $browserParser, normalizer: $normalizer);
+        $useragentClientCode = new UseragentClientCode(
+            browserParser: $browserParser,
+            normalizer: $normalizer,
+        );
 
-        self::assertTrue($header->hasClientCode($value));
+        self::assertTrue($useragentClientCode->hasClientCode($value));
         self::assertNull(
-            $header->getClientCode($value),
+            $useragentClientCode->getClientCode($value),
         );
     }
 
@@ -178,11 +190,14 @@ final class UseragentClientCodeTest extends TestCase
             ->with($value)
             ->willReturn($value);
 
-        $header = new UseragentClientCode(browserParser: $browserParser, normalizer: $normalizer);
+        $useragentClientCode = new UseragentClientCode(
+            browserParser: $browserParser,
+            normalizer: $normalizer,
+        );
 
-        self::assertTrue($header->hasClientCode($value));
+        self::assertTrue($useragentClientCode->hasClientCode($value));
         self::assertNull(
-            $header->getClientCode($value),
+            $useragentClientCode->getClientCode($value),
         );
     }
 
@@ -205,11 +220,14 @@ final class UseragentClientCodeTest extends TestCase
             ->with($value)
             ->willReturn($value);
 
-        $header = new UseragentClientCode(browserParser: $browserParser, normalizer: $normalizer);
+        $useragentClientCode = new UseragentClientCode(
+            browserParser: $browserParser,
+            normalizer: $normalizer,
+        );
 
-        self::assertTrue($header->hasClientCode($value));
+        self::assertTrue($useragentClientCode->hasClientCode($value));
         self::assertNull(
-            $header->getClientCode($value),
+            $useragentClientCode->getClientCode($value),
         );
     }
 
@@ -233,12 +251,15 @@ final class UseragentClientCodeTest extends TestCase
             ->with($value)
             ->willReturn($value);
 
-        $header = new UseragentClientCode(browserParser: $browserParser, normalizer: $normalizer);
+        $useragentClientCode = new UseragentClientCode(
+            browserParser: $browserParser,
+            normalizer: $normalizer,
+        );
 
-        self::assertTrue($header->hasClientCode($value));
+        self::assertTrue($useragentClientCode->hasClientCode($value));
         self::assertSame(
             $code,
-            $header->getClientCode($value),
+            $useragentClientCode->getClientCode($value),
         );
     }
 }
