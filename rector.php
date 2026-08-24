@@ -11,6 +11,7 @@
 
 declare(strict_types = 1);
 
+use Rector\CodeQuality\Rector\If_\ExplicitBoolCompareRector;
 use Rector\Config\RectorConfig;
 use Rector\DeadCode\Rector\Cast\RecastingRemovalRector;
 use Rector\DeadCode\Rector\ClassMethod\RemoveUnusedPromotedPropertyRector;
@@ -19,10 +20,13 @@ use Rector\DeadCode\Rector\If_\RemoveDeadInstanceOfRector;
 use Rector\DeadCode\Rector\Property\RemoveDefaultValueFromAssignedPropertyRector;
 use Rector\DeadCode\Rector\StaticCall\RemoveParentCallWithoutParentRector;
 use Rector\DeadCode\Rector\StmtsAwareInterface\RemoveDeadInstanceOfAssertRector;
+use Rector\Naming\Rector\Class_\RenamePropertyToMatchTypeRector;
+use Rector\Naming\Rector\ClassMethod\RenameParamToMatchTypeRector;
 use Rector\Php80\Rector\Class_\ClassPropertyAssignToConstructorPromotionRector;
 use Rector\Php84\Rector\MethodCall\NewMethodCallWithoutParenthesesRector;
 use Rector\PHPUnit\CodeQuality\Rector\Class_\PreferPHPUnitThisCallRector;
 use Rector\PHPUnit\CodeQuality\Rector\Class_\YieldDataProviderRector;
+use Rector\PHPUnit\CodeQuality\Rector\ClassMethod\NoSetupWithParentCallOverrideRector;
 use Rector\PHPUnit\CodeQuality\Rector\FuncCall\AssertFuncCallToPHPUnitAssertRector;
 use Rector\ValueObject\PhpVersion;
 
@@ -59,10 +63,10 @@ return RectorConfig::configure()
         PreferPHPUnitThisCallRector::class,
         AssertFuncCallToPHPUnitAssertRector::class,
         YieldDataProviderRector::class,
-        \Rector\Naming\Rector\Class_\RenamePropertyToMatchTypeRector::class,
-        \Rector\Naming\Rector\ClassMethod\RenameParamToMatchTypeRector::class,
-        \Rector\CodeQuality\Rector\If_\ExplicitBoolCompareRector::class,
-        \Rector\PHPUnit\CodeQuality\Rector\ClassMethod\NoSetupWithParentCallOverrideRector::class,
+        RenamePropertyToMatchTypeRector::class,
+        RenameParamToMatchTypeRector::class,
+        ExplicitBoolCompareRector::class,
+        NoSetupWithParentCallOverrideRector::class,
     ])
     ->withSkip([
         RemoveUnusedPromotedPropertyRector::class => [
