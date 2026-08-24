@@ -12832,6 +12832,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Fulldive',
                 'key' => 'fulldive',
             ],
+            [
+                'type' => 'Alentum Software',
+                'name' => 'Alentum Software Ltd.',
+                'brandname' => 'Alentum Software',
+                'key' => 'alentum-software',
+            ],
+            [
+                'type' => 'Steve Webb',
+                'name' => 'Steve Webb',
+                'brandname' => 'Steve Webb',
+                'key' => 'steve-webb',
+            ],
         ];
     }
 

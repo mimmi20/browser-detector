@@ -6984,8 +6984,8 @@
     "engine": "unknown"
   },
   "vsm-crawler": {
-    "name": "VSMCrawler",
-    "manufacturer": "unknown",
+    "name": "Visual Site Mapper Crawler",
+    "manufacturer": "alentum-software",
     "type": "crawler",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -7139,6 +7139,16 @@
   "panscient": {
     "name": "Panscient",
     "manufacturer": "panscient",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "webb-crawler": {
+    "name": "WebbCrawler",
+    "manufacturer": "steve-webb",
     "type": "crawler",
     "version": {
       "factory": null,
