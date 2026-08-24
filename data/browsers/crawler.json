@@ -7155,5 +7155,41 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "prospector-br": {
+    "name": "ProspectorBR",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ProspectorBR"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "my-cellar": {
+    "name": "MyCellar",
+    "manufacturer": "jorge-del-prado",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MyCellar"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "kaupr": {
+    "name": "Kaupr",
+    "manufacturer": "kaupr",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Kaupr"
+      ]
+    },
+    "engine": "unknown"
   }
 }

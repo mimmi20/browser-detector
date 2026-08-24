@@ -419,6 +419,9 @@ final class Device implements DeviceInterface
             'pixel 11 pro fold' => 'google=google pixel 11 pro fold',
             'pixel 9 fold' => 'google=google pixel 9 fold',
             'adt-3' => 'google=google adt-3',
+            'pixel 11 pro' => 'google=google pixel 11 pro',
+            'gm45k' => 'google=google gm45k',
+            'g7swn' => 'google=google g7swn',
             // OnePlus
             'ac2003' => 'oneplus=oneplus ac2003',
             'in2023' => 'oneplus=oneplus in2023',
@@ -3451,6 +3454,11 @@ final class Device implements DeviceInterface
             'scg33' => 'samsung=samsung scg33',
             'sm-a253j', 'samsung sm-a253j' => 'samsung=samsung sm-a253j',
             'sm-f971b', 'samsung sm-f971b' => 'samsung=samsung sm-f971b',
+            'sm-f776b', 'samsung sm-f776b' => 'samsung=samsung sm-f776b',
+            'sm-f776u', 'samsung sm-f776u' => 'samsung=samsung sm-f776u',
+            'sm-f776u1', 'samsung sm-f776u1' => 'samsung=samsung sm-f776u1',
+            'sm-f971u', 'samsung sm-f971u' => 'samsung=samsung sm-f971u',
+            'sm-f971u1', 'samsung sm-f971u1' => 'samsung=samsung sm-f971u1',
             // Huawei
             'vog-l29' => 'huawei=huawei vog-l29',
             'nen-lx1' => 'huawei=huawei nen-lx1',
@@ -8946,6 +8954,7 @@ final class Device implements DeviceInterface
             'dvk82 mercury' => 'stylo=stylo dvk82 mercury',
             'dvk87 orion 8 tab' => 'stylo=stylo orion 8 tab',
             'stylo marvel' => 'stylo=stylo marvel',
+            'brave' => 'stylo=stylo brave',
             // atozee
             'cp10' => 'atozee=atozee cp10',
             'yq10sk' => 'atozee=atozee yq10sk',
@@ -10123,6 +10132,8 @@ final class Device implements DeviceInterface
             'bdf-kt107' => 'bdf=bdf kt107',
             // qihoo
             '1713-a01' => 'qihoo=qihoo 1713-a01',
+            '1809-a01' => 'qihoo=qihoo 1809-a01',
+            '1605-a01' => 'qihoo=qihoo 1605-a01',
             // changhong
             'ai pont' => 'changhong=changhong ai pont',
             // xoro
@@ -10424,6 +10435,7 @@ final class Device implements DeviceInterface
             'gd032313' => 'gionee=gionee gd032313',
             '20190418q' => 'gionee=gionee 20190418q',
             '20190619g' => 'gionee=gionee 20190619g',
+            'gionee m7' => 'gionee=gionee m7',
             // heji
             'heji goe', 'hejigoe' => 'heji=heji goe',
             // smart-barry

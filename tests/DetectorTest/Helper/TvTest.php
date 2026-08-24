@@ -158,6 +158,7 @@ final class TvTest extends TestCase
             ['Mozilla/5.0 (compatible; Google-Apps-Script; beanserver; +https://script.google.com; id: UAEmdDd8MFTwutX_GL17ysBVXBOXQptFZNA)'],
             ['Mozilla/4.0 (compatible; Win32; WinHttp.WinHttpRequest.5)'],
             ['Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Safari PrcmNovel_iOS/1.11.8'],
+            ['FortiGate (FortiOS 7.0) Chrome/ Safari/'],
         ];
     }
 }

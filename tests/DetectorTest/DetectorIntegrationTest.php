@@ -10997,6 +10997,112 @@ final class DetectorIntegrationTest extends TestCase
                     ],
                 ],
             ],
+            [
+                [
+                    'sec-ch-ua' => '"Not?A_Brand";v="24", "Chromium";v="152"',
+                    'sec-ch-ua-mobile' => '?0',
+                    'sec-ch-ua-platform' => '"Windows"',
+                    'user-agent' => 'meta-externalagent/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler)',
+                ],
+                [
+                    'headers' => [
+                        'sec-ch-ua-platform' => '"Windows"',
+                        'sec-ch-ua' => '"Not?A_Brand";v="24", "Chromium";v="152"',
+                        'sec-ch-ua-mobile' => '?0',
+                        'user-agent' => 'meta-externalagent/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler)',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => null,
+                        'marketingName' => null,
+                        'manufacturer' => 'unknown',
+                        'brand' => 'unknown',
+                        'dualOrientation' => null,
+                        'simCount' => 0,
+                        'display' => [
+                            'width' => null,
+                            'height' => null,
+                            'touch' => false,
+                            'size' => null,
+                        ],
+                        'type' => 'unknown',
+                        'ismobile' => false,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Windows',
+                        'marketingName' => 'Windows',
+                        'version' => null,
+                        'manufacturer' => 'Microsoft',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Meta ExternalAgent',
+                        'modus' => null,
+                        'version' => '1.1.0',
+                        'manufacturer' => 'Meta',
+                        'type' => 'crawler',
+                        'isbot' => true,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '152.0.0',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
+            [
+                [
+                    'user-agent' => 'FortiGate (FortiOS 7.0) Chrome/ Safari/',
+                ],
+                [
+                    'headers' => [
+                        'user-agent' => 'FortiGate (FortiOS 7.0) Chrome/ Safari/',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'FortiGate',
+                        'marketingName' => 'FortiGate',
+                        'manufacturer' => 'Fortinet',
+                        'brand' => 'Fortinet',
+                        'dualOrientation' => false,
+                        'simCount' => 0,
+                        'display' => [
+                            'width' => null,
+                            'height' => null,
+                            'touch' => true,
+                            'size' => null,
+                        ],
+                        'type' => 'peripheral',
+                        'ismobile' => false,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'FortiOS',
+                        'marketingName' => 'FortiOS',
+                        'version' => '7.0.0',
+                        'manufacturer' => 'Fortinet',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Chrome',
+                        'modus' => null,
+                        'version' => null,
+                        'manufacturer' => 'Google',
+                        'type' => 'browser',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'WebKit',
+                        'version' => null,
+                        'manufacturer' => 'Apple',
+                    ],
+                ],
+            ],
         ];
     }
 }

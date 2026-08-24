@@ -237,6 +237,7 @@ final readonly class PlatformParser implements PlatformParserInterface
             '/wyderos/i' => Os::wyderos,
             '/inferno/i' => Os::infernoOs,
             '/contiki/i' => Os::contiki,
+            '/fortios/i' => Os::fortiOS,
             '/nuttx/i' => Os::nuttX,
             '/darwin[;\/\.\- ]/i' => Os::macintosh,
             '/tvOS[;\/\.\- ]/' => Os::tvos,

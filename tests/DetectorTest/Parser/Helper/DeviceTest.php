@@ -457,6 +457,9 @@ final class DeviceTest extends TestCase
             ['Pixel 11 Pro Fold', 'google=google pixel 11 pro fold'],
             ['Pixel 9 Fold', 'google=google pixel 9 fold'],
             ['ADT-3', 'google=google adt-3'],
+            ['Pixel 11 Pro', 'google=google pixel 11 pro'],
+            ['GM45K', 'google=google gm45k'],
+            ['G7SWN', 'google=google g7swn'],
             // OnePlus
             ['AC2003', 'oneplus=oneplus ac2003'],
             ['IN2023', 'oneplus=oneplus in2023'],
@@ -4790,6 +4793,12 @@ final class DeviceTest extends TestCase
             ['SAMSUNG SM-A253J', 'samsung=samsung sm-a253j'],
             ['SM-F971B', 'samsung=samsung sm-f971b'],
             ['SAMSUNG SM-F971B', 'samsung=samsung sm-f971b'],
+            ['SM-F776B', 'samsung=samsung sm-f776b'],
+            ['SAMSUNG SM-F776B', 'samsung=samsung sm-f776b'],
+            ['SM-F776U', 'samsung=samsung sm-f776u'],
+            ['SAMSUNG SM-F776U', 'samsung=samsung sm-f776u'],
+            ['SM-F776U1', 'samsung=samsung sm-f776u1'],
+            ['SAMSUNG SM-F776U1', 'samsung=samsung sm-f776u1'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['LGE-AN20', 'huawei=huawei lge-an20'],
@@ -11250,6 +11259,7 @@ final class DeviceTest extends TestCase
             ['DVK82 Mercury', 'stylo=stylo dvk82 mercury'],
             ['DVK87 Orion 8 Tab', 'stylo=stylo orion 8 tab'],
             ['STYLO MARVEL', 'stylo=stylo marvel'],
+            ['BRAVE', 'stylo=stylo brave'],
             // atozee
             ['CP10', 'atozee=atozee cp10'],
             ['YQ10SK', 'atozee=atozee yq10sk'],
@@ -12440,6 +12450,8 @@ final class DeviceTest extends TestCase
             ['BDF-KT107', 'bdf=bdf kt107'],
             // qihoo
             ['1713-A01', 'qihoo=qihoo 1713-a01'],
+            ['1809-A01', 'qihoo=qihoo 1809-a01'],
+            ['1605-A01', 'qihoo=qihoo 1605-a01'],
             // changhong
             ['AI PONT', 'changhong=changhong ai pont'],
             // xoro
@@ -12748,6 +12760,7 @@ final class DeviceTest extends TestCase
             ['GD032313', 'gionee=gionee gd032313'],
             ['20190418Q', 'gionee=gionee 20190418q'],
             ['20190619G', 'gionee=gionee 20190619g'],
+            ['GIONEE M7', 'gionee=gionee m7'],
             // heji
             ['HEJI GOE', 'heji=heji goe'],
             ['HEJIGOE', 'heji=heji goe'],

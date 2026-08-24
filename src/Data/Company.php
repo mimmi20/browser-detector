@@ -4285,6 +4285,12 @@ enum Company: string implements CompanyInterface
 
     case steveWebb = 'Steve Webb';
 
+    case kaupr = 'Kaupr';
+
+    case jorgeDelPrado = 'Jorge del Prado';
+
+    case fortinet = 'Fortinet';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -6425,6 +6431,9 @@ enum Company: string implements CompanyInterface
             'fulldive', 'fulldive co.' => self::fulldive,
             'alentumsoftware', 'alentum software ltd.', 'alentum-software', 'alentum software' => self::alentumSoftware,
             'stevewebb', 'steve-webb', 'steve webb' => self::steveWebb,
+            'kaupr', 'kaupr ltd.' => self::kaupr,
+            'jorgedelprado', 'jorge-del-prado', 'jorge del prado' => self::jorgeDelPrado,
+            'fortinet', 'fortinet, inc.' => self::fortinet,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -7298,6 +7307,8 @@ enum Company: string implements CompanyInterface
             self::panscient => 'Panscient, Inc.',
             self::fulldive => 'Fulldive Co.',
             self::alentumSoftware => 'Alentum Software Ltd.',
+            self::kaupr => 'Kaupr Ltd.',
+            self::fortinet => 'Fortinet, Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -8110,6 +8121,7 @@ enum Company: string implements CompanyInterface
             self::lasGarioStudio => 'lasgario-studio',
             self::alentumSoftware => 'alentum-software',
             self::steveWebb => 'steve-webb',
+            self::jorgeDelPrado => 'jorge-del-prado',
             default => $this->name,
         };
     }

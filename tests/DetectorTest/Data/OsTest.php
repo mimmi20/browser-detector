@@ -1690,6 +1690,14 @@ final class OsTest extends TestCase
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['MyOS']],
                 'key' => 'my-os',
             ],
+            [
+                'type' => 'FortiOS',
+                'name' => 'FortiOS',
+                'marketingName' => 'FortiOS',
+                'company' => Company::fortinet,
+                'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['FortiOS']],
+                'key' => 'forti-os',
+            ],
         ];
     }
 }

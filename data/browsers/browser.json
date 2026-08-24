@@ -652,11 +652,12 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Brave Chrome",
+        "Brave Browser Nightly",
         "Brave Browser",
         "Brave"
       ]
     },
-    "engine": null
+    "engine": "webkit"
   },
   "browse": {
     "name": "Browse",

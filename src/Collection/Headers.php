@@ -396,6 +396,7 @@ final readonly class Headers
                         case 'qqbrowser':
                         case 'googlebot':
                         case 'audisto-crawler':
+                        case 'meta-external-agent':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 

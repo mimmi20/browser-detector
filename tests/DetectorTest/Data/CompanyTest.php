@@ -12844,6 +12844,24 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Steve Webb',
                 'key' => 'steve-webb',
             ],
+            [
+                'type' => 'Kaupr',
+                'name' => 'Kaupr Ltd.',
+                'brandname' => 'Kaupr',
+                'key' => 'kaupr',
+            ],
+            [
+                'type' => 'Jorge del Prado',
+                'name' => 'Jorge del Prado',
+                'brandname' => 'Jorge del Prado',
+                'key' => 'jorge-del-prado',
+            ],
+            [
+                'type' => 'Fortinet',
+                'name' => 'Fortinet, Inc.',
+                'brandname' => 'Fortinet',
+                'key' => 'fortinet',
+            ],
         ];
     }
 
