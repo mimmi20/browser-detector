@@ -22,7 +22,7 @@ use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use UaParser\DeviceParserInterface;
 
-#[CoversClass(DeviceParserFactory::class)]
+#[CoversClass(className: DeviceParserFactory::class)]
 final class DeviceParserFactoryTest extends TestCase
 {
     /**
@@ -54,11 +54,11 @@ final class DeviceParserFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $factory = new DeviceParserFactory($logger);
+        $deviceParserFactory = new DeviceParserFactory($logger);
 
-        $parser = $factory();
+        $deviceParser = $deviceParserFactory();
 
-        self::assertInstanceOf(DeviceParserInterface::class, $parser);
-        self::assertInstanceOf(DeviceParser::class, $parser);
+        self::assertInstanceOf(DeviceParserInterface::class, $deviceParser);
+        self::assertInstanceOf(DeviceParser::class, $deviceParser);
     }
 }

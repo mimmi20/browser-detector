@@ -40,7 +40,7 @@ final readonly class WindowsMobileOs implements VersionFactoryInterface
     public function detectVersion(string $useragent): VersionInterface
     {
         if (
-            str_contains(mb_strtolower($useragent), 'windows nt 5.1') !== false
+            str_contains(mb_strtolower($useragent), 'windows nt 5.1')
             && !preg_match('/windows mobile|windows phone/i', $useragent)
         ) {
             try {

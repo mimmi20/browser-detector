@@ -428,6 +428,10 @@ enum Os: string implements OsInterface
 
     case hyperOS = 'HyperOS';
 
+    case myOS = 'MyOS';
+
+    case fortiOS = 'FortiOS';
+
     /**
      * @throws void
      *
@@ -633,6 +637,8 @@ enum Os: string implements OsInterface
             'thinos', 'thin-os' => self::thinOS,
             'fydeos', 'fyde-os' => self::fydeOS,
             'hyperos', 'hyper-os' => self::hyperOS,
+            'myos', 'my-os' => self::myOS,
+            'fortios', 'forti-os' => self::fortiOS,
             default => self::unknown,
         };
     }
@@ -755,6 +761,8 @@ enum Os: string implements OsInterface
             self::deepin => Company::deepinTechnology,
             self::thinOS => Company::dell,
             self::fydeOS => Company::fyde,
+            self::myOS => Company::zte,
+            self::fortiOS => Company::fortinet,
             default => Company::unknown,
         };
     }
@@ -910,6 +918,8 @@ enum Os: string implements OsInterface
             self::deepin => ['factory' => VersionBuilderFactory::class, 'search' => ['Deepin']],
             self::thinOS => ['factory' => VersionBuilderFactory::class, 'search' => ['Warthog', 'WTOS']],
             self::fydeOS => ['factory' => VersionBuilderFactory::class, 'search' => ['FydeOS']],
+            self::myOS => ['factory' => VersionBuilderFactory::class, 'search' => ['MyOS']],
+            self::fortiOS => ['factory' => VersionBuilderFactory::class, 'search' => ['FortiOS']],
             default => ['factory' => null, 'search' => null],
         };
     }
@@ -1036,6 +1046,8 @@ enum Os: string implements OsInterface
             self::thinOS => 'thin-os',
             self::fydeOS => 'fyde-os',
             self::hyperOS => 'hyper-os',
+            self::myOS => 'my-os',
+            self::fortiOS => 'forti-os',
             default => $this->name,
         };
     }

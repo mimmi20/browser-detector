@@ -33,7 +33,7 @@ final readonly class MicrosoftInternetExplorer implements VersionFactoryInterfac
     /** @throws void */
     public function __construct(
         private VersionBuilderInterface $versionBuilder,
-        private VersionFactoryInterface $trident,
+        private VersionFactoryInterface $versionFactory,
     ) {
         // nothing to do
     }
@@ -47,7 +47,7 @@ final readonly class MicrosoftInternetExplorer implements VersionFactoryInterfac
     public function detectVersion(string $useragent): VersionInterface
     {
         try {
-            $version = $this->trident->detectVersion($useragent);
+            $version = $this->versionFactory->detectVersion($useragent);
         } catch (NotNumericException | UnexpectedValueException) {
             $version = null;
         }

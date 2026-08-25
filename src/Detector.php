@@ -78,8 +78,8 @@ final readonly class Detector implements DetectorInterface
     #[Override]
     public function getBrowser(array | GenericRequestInterface | MessageInterface | string $headers): array
     {
-        $request = $this->requestBuilder->buildRequest($headers);
-        $cacheId = $request->getHash();
+        $genericRequest = $this->requestBuilder->buildRequest($headers);
+        $cacheId        = $genericRequest->getHash();
 
         if ($this->cache->hasItem($cacheId)) {
             $item = $this->cache->getItem($cacheId);
@@ -88,7 +88,7 @@ final readonly class Detector implements DetectorInterface
             return $item;
         }
 
-        $item = $this->parse($request);
+        $item = $this->parse($genericRequest);
 
         $this->cache->setItem($cacheId, $item);
 
@@ -102,12 +102,12 @@ final readonly class Detector implements DetectorInterface
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
-    private function parse(GenericRequestInterface $request): array
+    private function parse(GenericRequestInterface $genericRequest): array
     {
         $engineCodename = Engine::unknown;
 
-        $headerCollection = new Headers(
-            request: $request,
+        $headers = new Headers(
+            genericRequest: $genericRequest,
             logger: $this->logger,
             deviceLoaderFactory: $this->deviceLoaderFactory,
             platformLoader: $this->platformLoader,
@@ -116,23 +116,23 @@ final readonly class Detector implements DetectorInterface
         );
 
         /* detect device */
-        $deviceFormFactor = $headerCollection->getDeviceFormFactor();
-        $deviceData       = $headerCollection->getDeviceData();
+        $deviceFormFactor = $headers->getDeviceFormFactor();
+        $deviceData       = $headers->getDeviceData();
         $device           = $deviceData->getDevice();
 
         /* detect platform */
-        $platform = $headerCollection->getPlatformData(
+        $os = $headers->getPlatformData(
             platformCodenameFromDevice: $deviceData->getOs(),
         );
 
-        $platformName          = $platform->getName();
-        $platformMarketingName = $platform->getMarketingName();
+        $platformName          = $os->getName();
+        $platformMarketingName = $os->getMarketingName();
 
         if (mb_strtolower($platformName ?? '') === 'ios') {
             $engineCodename = Engine::webkit;
 
             try {
-                $version             = $platform->getVersion();
+                $version             = $os->getVersion();
                 $iosVersion          = $version->getVersion(VersionInterface::IGNORE_MINOR);
                 $deviceMarketingName = $device->getMarketingName();
 
@@ -149,45 +149,50 @@ final readonly class Detector implements DetectorInterface
             }
         }
 
-        if (in_array($device->getMarketingName(), ['Windows Desktop', 'general Mobile Phone'], true)) {
-            if (in_array(mb_strtolower($platformName ?? ''), ['macos', 'mac os x'], true)) {
-                $company = 'apple';
-                $key     = 'macintosh';
+        if (
+            in_array(
+                $device->getMarketingName(),
+                ['Windows Desktop', 'general Mobile Phone'],
+                strict: true,
+            )
+            && in_array(mb_strtolower($platformName ?? ''), ['macos', 'mac os x'], strict: true)
+        ) {
+            $company = 'apple';
+            $key     = 'macintosh';
 
-                try {
-                    $deviceLoader = ($this->deviceLoaderFactory)($company);
+            try {
+                $deviceLoader = ($this->deviceLoaderFactory)($company);
 
-                    $device = $deviceLoader->load($key)->getDevice();
-                } catch (NotFoundException $e) {
-                    $this->logger->info(
-                        new UnexpectedValueException(
-                            sprintf('Device "%s" of Manufacturer "%s" was not found', $key, $company),
-                            0,
-                            $e,
-                        ),
-                    );
-                }
+                $device = $deviceLoader->load($key)->getDevice();
+            } catch (NotFoundException $e) {
+                $this->logger->info(
+                    new UnexpectedValueException(
+                        sprintf('Device "%s" of Manufacturer "%s" was not found', $key, $company),
+                        0,
+                        $e,
+                    ),
+                );
             }
         }
 
         /* detect client */
-        $clientData = $headerCollection->getClientData();
-        $client     = $clientData->getClient();
+        $clientData = $headers->getClientData();
+        $browser    = $clientData->getClient();
 
         /* detect engine */
-        $engine = $headerCollection->getEngineData(
+        $engine = $headers->getEngineData(
             engine: $engineCodename,
             engineCodenameFromClient: $clientData->getEngine(),
-            client: $client,
+            browser: $browser,
             platformName: $platformName,
         );
 
-        $architecture = $headerCollection->getDeviceArchitecture();
-        $deviceBits   = $headerCollection->getDeviceBitness();
+        $architecture = $headers->getDeviceArchitecture();
+        $deviceBits   = $headers->getDeviceBitness();
         $deviceType   = $device->getType();
 
         if ($deviceFormFactor === FormFactor::unknown || $deviceFormFactor === FormFactor::mobile) {
-            $isMobile = $headerCollection->getDeviceIsMobile() ?? $deviceType->isMobile();
+            $isMobile = $headers->getDeviceIsMobile() ?? $deviceType->isMobile();
         } elseif ($deviceFormFactor === FormFactor::desktop) {
             if (!$deviceType->isMobile()) {
                 $deviceType = Type::Desktop;
@@ -208,7 +213,7 @@ final readonly class Detector implements DetectorInterface
         return [
             'headers' => array_map(
                 callback: static fn (HeaderInterface $header): string => $header->getValue(),
-                array: $request->getHeaders(),
+                array: $genericRequest->getHeaders(),
             ),
             'device' => [
                 'architecture' => $architecture === Architecture::unknown ? null : $architecture->value,
@@ -227,18 +232,18 @@ final readonly class Detector implements DetectorInterface
             'os' => [
                 'name' => $platformName,
                 'marketingName' => $platformMarketingName,
-                'version' => $platform->getVersion()->getVersion(),
-                'manufacturer' => $platform->getManufacturer()->getKey(),
+                'version' => $os->getVersion()->getVersion(),
+                'manufacturer' => $os->getManufacturer()->getKey(),
                 'bits' => $deviceBits === Bits::unknown ? null : $deviceBits->value,
             ],
             'client' => [
-                'name' => $client->getName(),
+                'name' => $browser->getName(),
                 'modus' => null,
-                'version' => $client->getVersion()->getVersion(),
-                'manufacturer' => $client->getManufacturer()->getKey(),
-                'type' => $client->getType()->getType(),
-                'isbot' => $client->getType()->isBot(),
-                'bits' => $headerCollection->getDeviceIsWow64() ? 32 : ($deviceBits === Bits::unknown ? null : $deviceBits->value),
+                'version' => $browser->getVersion()->getVersion(),
+                'manufacturer' => $browser->getManufacturer()->getKey(),
+                'type' => $browser->getType()->getType(),
+                'isbot' => $browser->getType()->isBot(),
+                'bits' => $headers->getDeviceIsWow64() ? 32 : ($deviceBits === Bits::unknown ? null : $deviceBits->value),
             ],
             'engine' => [
                 'name' => $engine->getName(),

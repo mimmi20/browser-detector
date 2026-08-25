@@ -24,7 +24,7 @@ final readonly class EngineParser implements EngineParserInterface
     private const string GENERIC_FILE = __DIR__ . '/../../data/factories/engines.json';
 
     /** @throws void */
-    public function __construct(private RulefileParserInterface $fileParser)
+    public function __construct(private RulefileParserInterface $rulefileParser)
     {
         // nothing to do
     }
@@ -37,7 +37,7 @@ final readonly class EngineParser implements EngineParserInterface
     #[Override]
     public function parse(string $useragent): EngineInterface
     {
-        $code = $this->fileParser->parseFile(self::GENERIC_FILE, $useragent, 'unknown');
+        $code = $this->rulefileParser->parseFile(self::GENERIC_FILE, $useragent, 'unknown');
 
         return Engine::fromName($code);
     }

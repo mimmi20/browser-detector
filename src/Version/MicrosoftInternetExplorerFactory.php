@@ -23,7 +23,7 @@ final class MicrosoftInternetExplorerFactory implements MicrosoftInternetExplore
     {
         return new MicrosoftInternetExplorer(
             versionBuilder: new VersionBuilder(),
-            trident: new Trident(versionBuilder: new VersionBuilder()),
+            versionFactory: new Trident(versionBuilder: new VersionBuilder()),
         );
     }
 }

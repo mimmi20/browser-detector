@@ -41,11 +41,11 @@ final readonly class DeviceParserFactory implements DeviceParserFactoryInterface
     #[Override]
     public function __invoke(): DeviceParserInterface
     {
-        $fileParser    = new RulefileParser(logger: $this->logger);
-        $darwinParser  = new DarwinParser(fileParser: $fileParser);
-        $mobileParser  = new MobileParser(fileParser: $fileParser);
-        $tvParser      = new TvParser(fileParser: $fileParser);
-        $desktopParser = new DesktopParser(fileParser: $fileParser);
+        $rulefileParser = new RulefileParser(logger: $this->logger);
+        $darwinParser   = new DarwinParser(rulefileParser: $rulefileParser);
+        $mobileParser   = new MobileParser(rulefileParser: $rulefileParser);
+        $tvParser       = new TvParser(rulefileParser: $rulefileParser);
+        $desktopParser  = new DesktopParser(rulefileParser: $rulefileParser);
 
         return new DeviceParser(
             darwinParser: $darwinParser,
@@ -53,8 +53,8 @@ final readonly class DeviceParserFactory implements DeviceParserFactoryInterface
             tvParser: $tvParser,
             desktopParser: $desktopParser,
             mobileDevice: new MobileDevice(),
-            tvDevice: new Tv(),
-            desktopDevice: new Desktop(),
+            tv: new Tv(),
+            desktop: new Desktop(),
         );
     }
 }

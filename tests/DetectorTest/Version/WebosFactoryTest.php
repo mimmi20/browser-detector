@@ -24,16 +24,16 @@ use PHPUnit\Framework\TestCase;
 use function assert;
 use function sprintf;
 
-#[CoversClass(WebosFactory::class)]
+#[CoversClass(className: WebosFactory::class)]
 final class WebosFactoryTest extends TestCase
 {
-    private WebosFactory $object;
+    private WebosFactory $webosFactory;
 
     /** @throws void */
     #[Override]
     protected function setUp(): void
     {
-        $this->object = new WebosFactory();
+        $this->webosFactory = new WebosFactory();
     }
 
     /**
@@ -42,7 +42,7 @@ final class WebosFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $object = $this->object;
+        $object = $this->webosFactory;
         assert(
             $object instanceof WebosFactory,
             sprintf(
@@ -51,7 +51,7 @@ final class WebosFactoryTest extends TestCase
                 $object::class,
             ),
         );
-        $result = $object();
-        self::assertInstanceOf(Webos::class, $result);
+        $webos = $object();
+        self::assertInstanceOf(Webos::class, $webos);
     }
 }

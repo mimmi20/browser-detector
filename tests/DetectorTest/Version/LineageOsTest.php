@@ -24,7 +24,7 @@ use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UnexpectedValueException;
 
-#[CoversClass(LineageOs::class)]
+#[CoversClass(className: LineageOs::class)]
 final class LineageOsTest extends TestCase
 {
     /**
@@ -33,12 +33,12 @@ final class LineageOsTest extends TestCase
      * @throws Exception
      * @throws NotNumericException
      */
-    #[DataProvider('providerVersion')]
+    #[DataProvider(methodName: 'providerVersion')]
     public function testGetVersion(string $androidVersion, string | null $expectedVersion): void
     {
-        $object = new LineageOs(new VersionBuilder());
+        $lineageOs = new LineageOs(new VersionBuilder());
 
-        $detectedVersion = $object->getVersion($androidVersion);
+        $detectedVersion = $lineageOs->getVersion($androidVersion);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertSame($expectedVersion, $detectedVersion->getVersion());

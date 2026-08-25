@@ -24,16 +24,16 @@ use PHPUnit\Framework\TestCase;
 use function assert;
 use function sprintf;
 
-#[CoversClass(FirefoxOsFactory::class)]
+#[CoversClass(className: FirefoxOsFactory::class)]
 final class FirefoxOsFactoryTest extends TestCase
 {
-    private FirefoxOsFactory $object;
+    private FirefoxOsFactory $firefoxOsFactory;
 
     /** @throws void */
     #[Override]
     protected function setUp(): void
     {
-        $this->object = new FirefoxOsFactory();
+        $this->firefoxOsFactory = new FirefoxOsFactory();
     }
 
     /**
@@ -42,7 +42,7 @@ final class FirefoxOsFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $object = $this->object;
+        $object = $this->firefoxOsFactory;
         assert(
             $object instanceof FirefoxOsFactory,
             sprintf(
@@ -51,7 +51,7 @@ final class FirefoxOsFactoryTest extends TestCase
                 $object::class,
             ),
         );
-        $result = $object();
-        self::assertInstanceOf(FirefoxOs::class, $result);
+        $firefoxOs = $object();
+        self::assertInstanceOf(FirefoxOs::class, $firefoxOs);
     }
 }

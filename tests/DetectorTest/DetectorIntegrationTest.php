@@ -39,17 +39,17 @@ use RuntimeException;
 use UnexpectedValueException;
 
 /** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */
-#[CoversClass(Detector::class)]
-#[CoversClass(Headers::class)]
-#[CoversClass(PlatformParser::class)]
-#[CoversClass(BrowserParser::class)]
-#[CoversClass(DeviceParser::class)]
-#[CoversClass(EngineParser::class)]
-#[CoversClass(DeviceLoaderFactory::class)]
-#[CoversClass(DeviceLoader::class)]
-#[CoversClass(EngineLoader::class)]
-#[CoversClass(BrowserLoader::class)]
-#[CoversClass(PlatformLoader::class)]
+#[CoversClass(className: Detector::class)]
+#[CoversClass(className: Headers::class)]
+#[CoversClass(className: PlatformParser::class)]
+#[CoversClass(className: BrowserParser::class)]
+#[CoversClass(className: DeviceParser::class)]
+#[CoversClass(className: EngineParser::class)]
+#[CoversClass(className: DeviceLoaderFactory::class)]
+#[CoversClass(className: DeviceLoader::class)]
+#[CoversClass(className: EngineLoader::class)]
+#[CoversClass(className: BrowserLoader::class)]
+#[CoversClass(className: PlatformLoader::class)]
 final class DetectorIntegrationTest extends TestCase
 {
     /**
@@ -63,7 +63,7 @@ final class DetectorIntegrationTest extends TestCase
      * @throws RuntimeException
      * @throws \Laminas\Hydrator\Exception\InvalidArgumentException
      */
-    #[DataProvider('providerUa')]
+    #[DataProvider(methodName: 'providerUa')]
     public function testData(array $headers, array $expected): void
     {
         $logger = $this->createMock(LoggerInterface::class);
@@ -115,10 +115,10 @@ final class DetectorIntegrationTest extends TestCase
             ->expects(self::once())
             ->method('has')
             ->with(new IsType(NativeType::String))
-            ->willReturn(false);
+            ->willReturn(value: false);
 
-        $factory  = new DetectorFactory($cache, $logger);
-        $detector = $factory();
+        $detectorFactory = new DetectorFactory($cache, $logger);
+        $detector        = $detectorFactory();
 
         $result = $detector->getBrowser($headers);
 
@@ -10405,10 +10405,10 @@ final class DetectorIntegrationTest extends TestCase
                         'bits' => null,
                     ],
                     'os' => [
-                        'name' => null,
-                        'marketingName' => null,
+                        'name' => 'iOS',
+                        'marketingName' => 'iOS',
                         'version' => null,
-                        'manufacturer' => 'unknown',
+                        'manufacturer' => 'Apple',
                         'bits' => null,
                     ],
                     'client' => [
@@ -10421,9 +10421,9 @@ final class DetectorIntegrationTest extends TestCase
                         'bits' => null,
                     ],
                     'engine' => [
-                        'name' => 'Blink',
+                        'name' => 'WebKit',
                         'version' => '147.0.0',
-                        'manufacturer' => 'Google',
+                        'manufacturer' => 'Apple',
                     ],
                 ],
             ],
@@ -10939,6 +10939,208 @@ final class DetectorIntegrationTest extends TestCase
                     'engine' => [
                         'name' => 'Blink',
                         'version' => '151.0.0',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
+            [
+                [
+                    'sec-ch-ua' => '"Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"',
+                    'sec-ch-ua-mobile' => '?0',
+                    'user-agent' => 'cohere-ai',
+                ],
+                [
+                    'headers' => [
+                        'sec-ch-ua' => '"Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"',
+                        'sec-ch-ua-mobile' => '?0',
+                        'user-agent' => 'cohere-ai',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => null,
+                        'marketingName' => null,
+                        'manufacturer' => 'unknown',
+                        'brand' => 'unknown',
+                        'dualOrientation' => null,
+                        'simCount' => 0,
+                        'display' => [
+                            'width' => null,
+                            'height' => null,
+                            'touch' => false,
+                            'size' => null,
+                        ],
+                        'type' => 'unknown',
+                        'ismobile' => false,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => null,
+                        'marketingName' => null,
+                        'version' => null,
+                        'manufacturer' => 'unknown',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Cohere AI',
+                        'modus' => null,
+                        'version' => null,
+                        'manufacturer' => 'Cohere',
+                        'type' => 'crawler',
+                        'isbot' => true,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '120.0.0',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
+            [
+                [
+                    'sec-ch-ua' => '"Not?A_Brand";v="24", "Chromium";v="152"',
+                    'sec-ch-ua-mobile' => '?0',
+                    'sec-ch-ua-platform' => '"Windows"',
+                    'user-agent' => 'meta-externalagent/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler)',
+                ],
+                [
+                    'headers' => [
+                        'sec-ch-ua-platform' => '"Windows"',
+                        'sec-ch-ua' => '"Not?A_Brand";v="24", "Chromium";v="152"',
+                        'sec-ch-ua-mobile' => '?0',
+                        'user-agent' => 'meta-externalagent/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler)',
+                    ],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => null,
+                        'marketingName' => null,
+                        'manufacturer' => 'unknown',
+                        'brand' => 'unknown',
+                        'dualOrientation' => null,
+                        'simCount' => 0,
+                        'display' => [
+                            'width' => null,
+                            'height' => null,
+                            'touch' => false,
+                            'size' => null,
+                        ],
+                        'type' => 'unknown',
+                        'ismobile' => false,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Windows',
+                        'marketingName' => 'Windows',
+                        'version' => null,
+                        'manufacturer' => 'Microsoft',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Meta ExternalAgent',
+                        'modus' => null,
+                        'version' => '1.1.0',
+                        'manufacturer' => 'Meta',
+                        'type' => 'crawler',
+                        'isbot' => true,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '152.0.0',
+                        'manufacturer' => 'Google',
+                    ],
+                ],
+            ],
+            [
+                ['user-agent' => 'FortiGate (FortiOS 7.0) Chrome/ Safari/'],
+                [
+                    'headers' => ['user-agent' => 'FortiGate (FortiOS 7.0) Chrome/ Safari/'],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'FortiGate',
+                        'marketingName' => 'FortiGate',
+                        'manufacturer' => 'Fortinet',
+                        'brand' => 'Fortinet',
+                        'dualOrientation' => false,
+                        'simCount' => 0,
+                        'display' => [
+                            'width' => null,
+                            'height' => null,
+                            'touch' => true,
+                            'size' => null,
+                        ],
+                        'type' => 'peripheral',
+                        'ismobile' => false,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'FortiOS',
+                        'marketingName' => 'FortiOS',
+                        'version' => '7.0.0',
+                        'manufacturer' => 'Fortinet',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'Chrome',
+                        'modus' => null,
+                        'version' => null,
+                        'manufacturer' => 'Google',
+                        'type' => 'browser',
+                        'isbot' => false,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'WebKit',
+                        'version' => null,
+                        'manufacturer' => 'Apple',
+                    ],
+                ],
+            ],
+            [
+                ['user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36; ClaudeBot/1.0; +claudebot@anthropic.com)'],
+                [
+                    'headers' => ['user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36; ClaudeBot/1.0; +claudebot@anthropic.com)'],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'Macintosh',
+                        'marketingName' => 'Macintosh',
+                        'manufacturer' => 'Apple',
+                        'brand' => 'Apple',
+                        'dualOrientation' => false,
+                        'simCount' => 0,
+                        'display' => [
+                            'width' => null,
+                            'height' => null,
+                            'touch' => false,
+                            'size' => null,
+                        ],
+                        'type' => 'desktop',
+                        'ismobile' => false,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'macOS',
+                        'marketingName' => 'macOS',
+                        'version' => '10.15.7',
+                        'manufacturer' => 'Apple',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'ClaudeBot',
+                        'modus' => null,
+                        'version' => '1.0.0',
+                        'manufacturer' => 'Anthropic',
+                        'type' => 'crawler',
+                        'isbot' => true,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '131.0.0.0',
                         'manufacturer' => 'Google',
                     ],
                 ],

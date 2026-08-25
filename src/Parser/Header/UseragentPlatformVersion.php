@@ -29,6 +29,7 @@ use UnexpectedValueException;
 
 use function array_filter;
 use function array_first;
+use function array_key_exists;
 use function array_map;
 use function preg_match;
 use function str_replace;
@@ -96,8 +97,22 @@ final readonly class UseragentPlatformVersion implements PlatformVersionInterfac
             return new ForcedNullVersion();
         }
 
+        $matches = [];
+
+        if (
+            preg_match(
+                '/^mqqbrowser\/[\d.]+ \(linux; (?P<version>[\d.]+); [^)]+\)$/i',
+                $normalizedValue,
+                $matches,
+            )
+            && array_key_exists('version', $matches)
+        ) {
+            return $this->setVersion($matches['version']);
+        }
+
         $regexes = [
             '/ov\((?:(wds|android) )?(?P<version>[\d_.]+)\);/i',
+            '/android.*myos(?P<version>\d+\.\d+)/i',
             '/instagram [\d.]+ android \([\d.]+\/(?P<version>[\d.]+); \d+dpi; \d+x\d+; [a-z\/]+; [^);\/]+;/i',
             '/icq_android\/[\d.]+ \(android; \d+; (?P<version>[\d.]+)/i',
             '/gg-android\/[\d.]+ \(os;android;\d+\) \([^);\/]+;[^);\/]+;[^);\/]+;(?P<version>[\d.]+)/i',

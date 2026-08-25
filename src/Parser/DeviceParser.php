@@ -34,8 +34,8 @@ final readonly class DeviceParser implements DeviceParserInterface
         private TvParserInterface $tvParser,
         private DesktopParserInterface $desktopParser,
         private MobileDeviceInterface $mobileDevice,
-        private TvInterface $tvDevice,
-        private DesktopInterface $desktopDevice,
+        private TvInterface $tv,
+        private DesktopInterface $desktop,
     ) {
         // nothing to do
     }
@@ -70,11 +70,11 @@ final readonly class DeviceParser implements DeviceParserInterface
             return $this->mobileParser->parse($useragent);
         }
 
-        if ($this->tvDevice->isTvDevice($useragent)) {
+        if ($this->tv->isTvDevice($useragent)) {
             return $this->tvParser->parse($useragent);
         }
 
-        if ($this->desktopDevice->isDesktopDevice($useragent)) {
+        if ($this->desktop->isDesktopDevice($useragent)) {
             return $this->desktopParser->parse($useragent);
         }
 

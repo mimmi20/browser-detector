@@ -22,24 +22,24 @@ use PHPUnit\Framework\TestCase;
 
 use function sprintf;
 
-#[CoversClass(Tv::class)]
+#[CoversClass(className: Tv::class)]
 final class TvTest extends TestCase
 {
-    private Tv $object;
+    private Tv $tv;
 
     /** @throws void */
     #[Override]
     protected function setUp(): void
     {
-        $this->object = new Tv();
+        $this->tv = new Tv();
     }
 
     /** @throws ExpectationFailedException */
-    #[DataProvider('providerIsTv')]
+    #[DataProvider(methodName: 'providerIsTv')]
     public function testIsTv(string $agent): void
     {
         self::assertTrue(
-            $this->object->isTvDevice($agent),
+            $this->tv->isTvDevice($agent),
             sprintf('isMobile detected to FALSE instead of expected TRUE for UA "%s"', $agent),
         );
     }
@@ -108,11 +108,11 @@ final class TvTest extends TestCase
     }
 
     /** @throws ExpectationFailedException */
-    #[DataProvider('providerIsNotTv')]
+    #[DataProvider(methodName: 'providerIsNotTv')]
     public function testIsNotTv(string $agent): void
     {
         self::assertFalse(
-            $this->object->isTvDevice($agent),
+            $this->tv->isTvDevice($agent),
             sprintf('isMobile detected to TRUE instead of expected FALSE for UA "%s"', $agent),
         );
     }
@@ -158,6 +158,7 @@ final class TvTest extends TestCase
             ['Mozilla/5.0 (compatible; Google-Apps-Script; beanserver; +https://script.google.com; id: UAEmdDd8MFTwutX_GL17ysBVXBOXQptFZNA)'],
             ['Mozilla/4.0 (compatible; Win32; WinHttp.WinHttpRequest.5)'],
             ['Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Safari PrcmNovel_iOS/1.11.8'],
+            ['FortiGate (FortiOS 7.0) Chrome/ Safari/'],
         ];
     }
 }

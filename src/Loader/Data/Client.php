@@ -77,7 +77,11 @@ final class Client implements DataInterface
             foreach ($fileData as $key => $data) {
                 $stringKey = (string) $key;
 
-                if (array_key_exists($stringKey, $this->items) || !$data instanceof DataClient) {
+                if (array_key_exists($stringKey, $this->items)) {
+                    continue;
+                }
+
+                if (!$data instanceof DataClient) {
                     continue;
                 }
 

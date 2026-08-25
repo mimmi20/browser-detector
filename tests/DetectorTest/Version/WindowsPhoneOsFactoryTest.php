@@ -24,16 +24,16 @@ use PHPUnit\Framework\TestCase;
 use function assert;
 use function sprintf;
 
-#[CoversClass(WindowsPhoneOsFactory::class)]
+#[CoversClass(className: WindowsPhoneOsFactory::class)]
 final class WindowsPhoneOsFactoryTest extends TestCase
 {
-    private WindowsPhoneOsFactory $object;
+    private WindowsPhoneOsFactory $windowsPhoneOsFactory;
 
     /** @throws void */
     #[Override]
     protected function setUp(): void
     {
-        $this->object = new WindowsPhoneOsFactory();
+        $this->windowsPhoneOsFactory = new WindowsPhoneOsFactory();
     }
 
     /**
@@ -42,7 +42,7 @@ final class WindowsPhoneOsFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $object = $this->object;
+        $object = $this->windowsPhoneOsFactory;
         assert(
             $object instanceof WindowsPhoneOsFactory,
             sprintf(
@@ -51,7 +51,7 @@ final class WindowsPhoneOsFactoryTest extends TestCase
                 $object::class,
             ),
         );
-        $result = $object();
-        self::assertInstanceOf(WindowsPhoneOs::class, $result);
+        $windowsPhoneOs = $object();
+        self::assertInstanceOf(WindowsPhoneOs::class, $windowsPhoneOs);
     }
 }

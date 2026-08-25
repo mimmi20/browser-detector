@@ -24,6 +24,7 @@ use UaParser\EngineParserInterface;
 use function array_filter;
 use function array_first;
 use function array_map;
+use function in_array;
 use function mb_strtolower;
 use function preg_match;
 
@@ -83,7 +84,7 @@ final readonly class UseragentEngineCode implements EngineCodeInterface
 
         $code = array_first($results);
 
-        if ($code !== null && $code !== false && $code !== '') {
+        if (!in_array($code, [null, false, ''], strict: true)) {
             return Engine::fromName($code);
         }
 

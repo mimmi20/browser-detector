@@ -20,16 +20,16 @@ use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 
-#[CoversClass(ForcedNullVersion::class)]
+#[CoversClass(className: ForcedNullVersion::class)]
 final class ForcedNullVersionTest extends TestCase
 {
-    private ForcedNullVersion $object;
+    private ForcedNullVersion $forcedNullVersion;
 
     /** @throws void */
     #[Override]
     protected function setUp(): void
     {
-        $this->object = new ForcedNullVersion();
+        $this->forcedNullVersion = new ForcedNullVersion();
     }
 
     /**
@@ -38,7 +38,7 @@ final class ForcedNullVersionTest extends TestCase
      */
     public function testGetPatch(): void
     {
-        self::assertNull($this->object->getPatch());
+        self::assertNull($this->forcedNullVersion->getPatch());
     }
 
     /**
@@ -47,7 +47,7 @@ final class ForcedNullVersionTest extends TestCase
      */
     public function testGetBuild(): void
     {
-        self::assertNull($this->object->getBuild());
+        self::assertNull($this->forcedNullVersion->getBuild());
     }
 
     /**
@@ -56,7 +56,7 @@ final class ForcedNullVersionTest extends TestCase
      */
     public function testGetStability(): void
     {
-        self::assertNull($this->object->getStability());
+        self::assertNull($this->forcedNullVersion->getStability());
     }
 
     /**
@@ -75,7 +75,7 @@ final class ForcedNullVersionTest extends TestCase
                 'stability' => null,
                 'build' => null,
             ],
-            $this->object->toArray(),
+            $this->forcedNullVersion->toArray(),
         );
     }
 
@@ -85,7 +85,7 @@ final class ForcedNullVersionTest extends TestCase
      */
     public function testGetMajor(): void
     {
-        self::assertNull($this->object->getMajor());
+        self::assertNull($this->forcedNullVersion->getMajor());
     }
 
     /**
@@ -94,7 +94,7 @@ final class ForcedNullVersionTest extends TestCase
      */
     public function testGetMicropatch(): void
     {
-        self::assertNull($this->object->getMicropatch());
+        self::assertNull($this->forcedNullVersion->getMicropatch());
     }
 
     /**
@@ -103,7 +103,7 @@ final class ForcedNullVersionTest extends TestCase
      */
     public function testIsBeta(): void
     {
-        self::assertNull($this->object->isBeta());
+        self::assertNull($this->forcedNullVersion->isBeta());
     }
 
     /**
@@ -112,7 +112,7 @@ final class ForcedNullVersionTest extends TestCase
      */
     public function testGetMicro(): void
     {
-        self::assertNull($this->object->getMicro());
+        self::assertNull($this->forcedNullVersion->getMicro());
     }
 
     /**
@@ -121,7 +121,7 @@ final class ForcedNullVersionTest extends TestCase
      */
     public function testIsAlpha(): void
     {
-        self::assertNull($this->object->isAlpha());
+        self::assertNull($this->forcedNullVersion->isAlpha());
     }
 
     /**
@@ -130,7 +130,7 @@ final class ForcedNullVersionTest extends TestCase
      */
     public function testGetVersion(): void
     {
-        self::assertNull($this->object->getVersion());
+        self::assertNull($this->forcedNullVersion->getVersion());
     }
 
     /**
@@ -139,6 +139,6 @@ final class ForcedNullVersionTest extends TestCase
      */
     public function testGetMinor(): void
     {
-        self::assertNull($this->object->getMinor());
+        self::assertNull($this->forcedNullVersion->getMinor());
     }
 }

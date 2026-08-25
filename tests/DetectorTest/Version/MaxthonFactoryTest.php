@@ -24,16 +24,16 @@ use PHPUnit\Framework\TestCase;
 use function assert;
 use function sprintf;
 
-#[CoversClass(MaxthonFactory::class)]
+#[CoversClass(className: MaxthonFactory::class)]
 final class MaxthonFactoryTest extends TestCase
 {
-    private MaxthonFactory $object;
+    private MaxthonFactory $maxthonFactory;
 
     /** @throws void */
     #[Override]
     protected function setUp(): void
     {
-        $this->object = new MaxthonFactory();
+        $this->maxthonFactory = new MaxthonFactory();
     }
 
     /**
@@ -42,7 +42,7 @@ final class MaxthonFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $object = $this->object;
+        $object = $this->maxthonFactory;
         assert(
             $object instanceof MaxthonFactory,
             sprintf(
@@ -51,7 +51,7 @@ final class MaxthonFactoryTest extends TestCase
                 $object::class,
             ),
         );
-        $result = $object();
-        self::assertInstanceOf(Maxthon::class, $result);
+        $maxthon = $object();
+        self::assertInstanceOf(Maxthon::class, $maxthon);
     }
 }

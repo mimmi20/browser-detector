@@ -24,11 +24,11 @@ use UaParser\DeviceParserInterface;
 
 use function mb_strtolower;
 
-#[CoversClass(UseragentDeviceCode::class)]
+#[CoversClass(className: UseragentDeviceCode::class)]
 final class UseragentDeviceCodeTest extends TestCase
 {
     /** @throws Exception */
-    #[DataProvider('providerUa1')]
+    #[DataProvider(methodName: 'providerUa1')]
     public function testWithUasWithoutDeviceCode(string $value, string $expected): void
     {
         $deviceParser = $this->createMock(DeviceParserInterface::class);
@@ -48,16 +48,16 @@ final class UseragentDeviceCodeTest extends TestCase
             ->with($value)
             ->willReturn($value);
 
-        $header = new UseragentDeviceCode(
+        $useragentDeviceCode = new UseragentDeviceCode(
             deviceParser: $deviceParser,
             normalizer: $normalizer,
-            deviceCodeHelper: $deviceCodeHelper,
+            device: $deviceCodeHelper,
         );
 
-        self::assertTrue($header->hasDeviceCode($value));
+        self::assertTrue($useragentDeviceCode->hasDeviceCode($value));
         self::assertSame(
             $expected,
-            $header->getDeviceCode($value),
+            $useragentDeviceCode->getDeviceCode($value),
         );
     }
 
@@ -99,15 +99,15 @@ final class UseragentDeviceCodeTest extends TestCase
             ->with($value)
             ->willReturn('');
 
-        $header = new UseragentDeviceCode(
+        $useragentDeviceCode = new UseragentDeviceCode(
             deviceParser: $deviceParser,
             normalizer: $normalizer,
-            deviceCodeHelper: $deviceCodeHelper,
+            device: $deviceCodeHelper,
         );
 
-        self::assertTrue($header->hasDeviceCode($value));
+        self::assertTrue($useragentDeviceCode->hasDeviceCode($value));
         self::assertNull(
-            $header->getDeviceCode($value),
+            $useragentDeviceCode->getDeviceCode($value),
         );
     }
 
@@ -133,15 +133,15 @@ final class UseragentDeviceCodeTest extends TestCase
             ->with($value)
             ->willThrowException(new \UaNormalizer\Normalizer\Exception\Exception('x'));
 
-        $header = new UseragentDeviceCode(
+        $useragentDeviceCode = new UseragentDeviceCode(
             deviceParser: $deviceParser,
             normalizer: $normalizer,
-            deviceCodeHelper: $deviceCodeHelper,
+            device: $deviceCodeHelper,
         );
 
-        self::assertTrue($header->hasDeviceCode($value));
+        self::assertTrue($useragentDeviceCode->hasDeviceCode($value));
         self::assertNull(
-            $header->getDeviceCode($value),
+            $useragentDeviceCode->getDeviceCode($value),
         );
     }
 
@@ -162,7 +162,7 @@ final class UseragentDeviceCodeTest extends TestCase
             ->expects(self::once())
             ->method('getDeviceCode')
             ->with(mb_strtolower($value))
-            ->willReturn(null);
+            ->willReturn(value: null);
 
         $normalizer = $this->createMock(NormalizerInterface::class);
         $normalizer
@@ -171,15 +171,15 @@ final class UseragentDeviceCodeTest extends TestCase
             ->with($value)
             ->willReturn($value);
 
-        $header = new UseragentDeviceCode(
+        $useragentDeviceCode = new UseragentDeviceCode(
             deviceParser: $deviceParser,
             normalizer: $normalizer,
-            deviceCodeHelper: $deviceCodeHelper,
+            device: $deviceCodeHelper,
         );
 
-        self::assertTrue($header->hasDeviceCode($value));
+        self::assertTrue($useragentDeviceCode->hasDeviceCode($value));
         self::assertNull(
-            $header->getDeviceCode($value),
+            $useragentDeviceCode->getDeviceCode($value),
         );
     }
 }

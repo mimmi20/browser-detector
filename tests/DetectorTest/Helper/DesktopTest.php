@@ -22,24 +22,24 @@ use PHPUnit\Framework\TestCase;
 
 use function sprintf;
 
-#[CoversClass(Desktop::class)]
+#[CoversClass(className: Desktop::class)]
 final class DesktopTest extends TestCase
 {
-    private Desktop $object;
+    private Desktop $desktop;
 
     /** @throws void */
     #[Override]
     protected function setUp(): void
     {
-        $this->object = new Desktop();
+        $this->desktop = new Desktop();
     }
 
     /** @throws ExpectationFailedException */
-    #[DataProvider('providerIsDesktop')]
+    #[DataProvider(methodName: 'providerIsDesktop')]
     public function testIsDesktop(string $agent): void
     {
         self::assertTrue(
-            $this->object->isDesktopDevice($agent),
+            $this->desktop->isDesktopDevice($agent),
             sprintf('isMobile detected to FALSE instead of expected TRUE for UA "%s"', $agent),
         );
     }
@@ -144,15 +144,16 @@ final class DesktopTest extends TestCase
             ['WinHttp516864'],
             ['Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Safari PrcmNovel_iOS/1.11.8'],
             ['CitrixReceiver/18.12.0.65534 (X11; Linux x86_64) Warthog/9.0.8024 (Release) X1Class CWACapable'],
+            ['FortiGate (FortiOS 7.0) Chrome/ Safari/'],
         ];
     }
 
     /** @throws ExpectationFailedException */
-    #[DataProvider('providerIsNoDesktop')]
+    #[DataProvider(methodName: 'providerIsNoDesktop')]
     public function testIsNoDesktop(string $agent): void
     {
         self::assertFalse(
-            $this->object->isDesktopDevice($agent),
+            $this->desktop->isDesktopDevice($agent),
             sprintf('isMobile detected to TRUE instead of expected FALSE for UA "%s"', $agent),
         );
     }

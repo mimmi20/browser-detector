@@ -23,7 +23,7 @@ use UnexpectedValueException;
 use function sprintf;
 
 /** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */
-#[CoversClass(Company::class)]
+#[CoversClass(className: Company::class)]
 final class CompanyTest extends TestCase
 {
     /**
@@ -32,7 +32,7 @@ final class CompanyTest extends TestCase
      * @throws UnexpectedValueException
      * @throws ExpectationFailedException
      */
-    #[DataProvider('provider')]
+    #[DataProvider(methodName: 'provider')]
     public function testType(string $type, string | null $name, string | null $brandname, string $key): void
     {
         $result = Company::tryFrom($type);
@@ -53,11 +53,11 @@ final class CompanyTest extends TestCase
             self::assertSame($key, $result2->getKey());
         }
 
-        $result4 = Company::fromName($result->value);
+        $company = Company::fromName($result->value);
 
-        self::assertSame($name, $result4->getName());
-        self::assertSame($brandname, $result4->getBrandname());
-        self::assertSame($key, $result4->getKey());
+        self::assertSame($name, $company->getName());
+        self::assertSame($brandname, $company->getBrandname());
+        self::assertSame($key, $company->getKey());
 
         $result5 = Company::fromName($result->name);
 
@@ -12826,6 +12826,42 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Maunfeld',
                 'key' => 'maunfeld',
             ],
+            [
+                'type' => 'Fulldive',
+                'name' => 'Fulldive Co.',
+                'brandname' => 'Fulldive',
+                'key' => 'fulldive',
+            ],
+            [
+                'type' => 'Alentum Software',
+                'name' => 'Alentum Software Ltd.',
+                'brandname' => 'Alentum Software',
+                'key' => 'alentum-software',
+            ],
+            [
+                'type' => 'Steve Webb',
+                'name' => 'Steve Webb',
+                'brandname' => 'Steve Webb',
+                'key' => 'steve-webb',
+            ],
+            [
+                'type' => 'Kaupr',
+                'name' => 'Kaupr Ltd.',
+                'brandname' => 'Kaupr',
+                'key' => 'kaupr',
+            ],
+            [
+                'type' => 'Jorge del Prado',
+                'name' => 'Jorge del Prado',
+                'brandname' => 'Jorge del Prado',
+                'key' => 'jorge-del-prado',
+            ],
+            [
+                'type' => 'Fortinet',
+                'name' => 'Fortinet, Inc.',
+                'brandname' => 'Fortinet',
+                'key' => 'fortinet',
+            ],
         ];
     }
 
@@ -12835,18 +12871,18 @@ final class CompanyTest extends TestCase
      * @throws UnexpectedValueException
      * @throws ExpectationFailedException
      */
-    #[DataProvider('providerFallback')]
+    #[DataProvider(methodName: 'providerFallback')]
     public function testFallbackType(
         string $fallback,
         string | null $name,
         string | null $brandname,
         string $key,
     ): void {
-        $result = Company::fromName($fallback);
+        $company = Company::fromName($fallback);
 
-        self::assertSame($name, $result->getName());
-        self::assertSame($brandname, $result->getBrandname());
-        self::assertSame($key, $result->getKey());
+        self::assertSame($name, $company->getName());
+        self::assertSame($brandname, $company->getBrandname());
+        self::assertSame($key, $company->getKey());
     }
 
     /**

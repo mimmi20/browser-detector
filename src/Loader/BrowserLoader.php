@@ -63,16 +63,16 @@ final class BrowserLoader implements BrowserLoaderInterface
         }
 
         return new ClientData(
-            client: $this->fromArray($browserData, $useragent),
+            browser: $this->fromArray($browserData, $useragent),
             engine: $browserData->getEngine(),
         );
     }
 
     /** @throws void */
-    private function fromArray(DataClient $data, string $useragent = ''): Browser
+    private function fromArray(DataClient $dataClient, string $useragent = ''): Browser
     {
         $manufacturer     = new Company(type: 'unknown', name: null, brandname: null);
-        $manufacturerName = $data->getManufacturer();
+        $manufacturerName = $dataClient->getManufacturer();
 
         if ($manufacturerName !== null) {
             try {
@@ -91,10 +91,10 @@ final class BrowserLoader implements BrowserLoaderInterface
         }
 
         return new Browser(
-            name: $data->getName(),
+            name: $dataClient->getName(),
             manufacturer: $manufacturer,
-            version: $this->getVersion($data->getVersion(), $useragent),
-            type: Type::fromName($data->getType()),
+            version: $this->getVersion($dataClient->getVersion(), $useragent),
+            type: Type::fromName($dataClient->getType()),
             bits: Bits::unknown,
         );
     }

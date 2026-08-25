@@ -25,7 +25,7 @@ use UaLoader\DeviceLoaderInterface;
 use UaLoader\Exception\NotFoundException;
 use UaResult\Company\Company;
 
-#[CoversClass(DeviceLoaderFactory::class)]
+#[CoversClass(className: DeviceLoaderFactory::class)]
 final class DeviceLoaderFactoryTest extends TestCase
 {
     /**
@@ -70,13 +70,13 @@ final class DeviceLoaderFactoryTest extends TestCase
             ->with('Apple')
             ->willReturn($comp);
 
-        $factory = new DeviceLoaderFactory($logger, $companyLoader);
-        $object  = $factory($company);
+        $deviceLoaderFactory = new DeviceLoaderFactory($logger, $companyLoader);
+        $deviceLoader        = $deviceLoaderFactory($company);
 
-        self::assertInstanceOf(DeviceLoaderInterface::class, $object);
+        self::assertInstanceOf(DeviceLoaderInterface::class, $deviceLoader);
 
-        $device = $object->load('apple iphone');
+        $deviceData = $deviceLoader->load('apple iphone');
 
-        self::assertSame('iPhone', $device->getDevice()->getDeviceName());
+        self::assertSame('iPhone', $deviceData->getDevice()->getDeviceName());
     }
 }

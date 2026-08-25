@@ -22,7 +22,7 @@ use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use UaParser\BrowserParserInterface;
 
-#[CoversClass(BrowserParserFactory::class)]
+#[CoversClass(className: BrowserParserFactory::class)]
 final class BrowserParserFactoryTest extends TestCase
 {
     /**
@@ -54,11 +54,11 @@ final class BrowserParserFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $factory = new BrowserParserFactory($logger);
+        $browserParserFactory = new BrowserParserFactory($logger);
 
-        $parser = $factory();
+        $browserParser = $browserParserFactory();
 
-        self::assertInstanceOf(BrowserParserInterface::class, $parser);
-        self::assertInstanceOf(BrowserParser::class, $parser);
+        self::assertInstanceOf(BrowserParserInterface::class, $browserParser);
+        self::assertInstanceOf(BrowserParser::class, $browserParser);
     }
 }

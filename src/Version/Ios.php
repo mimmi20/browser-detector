@@ -59,6 +59,7 @@ final readonly class Ios implements VersionFactoryInterface
     ];
 
     private const array DARWIN_MAP = [
+        '/darwin\/27/i' => '27.0',
         '/darwin\/26/i' => '27.0',
         '/darwin\/25\.6/i' => '26.6',
         '/darwin\/25\.5/i' => '26.5',
@@ -437,13 +438,15 @@ final readonly class Ios implements VersionFactoryInterface
 
         $detectedBuildVersion = array_first($results);
 
-        if ($detectedBuildVersion !== null && $detectedBuildVersion !== '') {
-            if (array_key_exists($detectedBuildVersion, self::BUILD_MAP)) {
-                try {
-                    return $this->versionBuilder->set(self::BUILD_MAP[$detectedBuildVersion]);
-                } catch (NotNumericException) {
-                    return new NullVersion();
-                }
+        if (
+            $detectedBuildVersion !== null
+            && $detectedBuildVersion !== ''
+            && array_key_exists($detectedBuildVersion, self::BUILD_MAP)
+        ) {
+            try {
+                return $this->versionBuilder->set(self::BUILD_MAP[$detectedBuildVersion]);
+            } catch (NotNumericException) {
+                return new NullVersion();
             }
         }
 
@@ -471,21 +474,20 @@ final readonly class Ios implements VersionFactoryInterface
 
         $versionNumber = $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR);
 
-        if ($versionNumber !== null) {
-            if (
-                preg_match('/(?P<major>\d{1,2})(?P<minor>\d)(?P<micro>\d)/', $versionNumber, $versions)
-            ) {
-                $version = $versions['major'] . '.' . $versions['minor'];
+        if (
+            $versionNumber !== null
+            && preg_match('/(?P<major>\d{1,2})(?P<minor>\d)(?P<micro>\d)/', $versionNumber, $versions)
+        ) {
+            $version = $versions['major'] . '.' . $versions['minor'];
 
-                if (array_key_exists('micro', $versions)) {
-                    $version .= '.' . $versions['micro'];
-                }
+            if (array_key_exists('micro', $versions)) {
+                $version .= '.' . $versions['micro'];
+            }
 
-                try {
-                    return $this->versionBuilder->set($version);
-                } catch (NotNumericException) {
-                    return new NullVersion();
-                }
+            try {
+                return $this->versionBuilder->set($version);
+            } catch (NotNumericException) {
+                return new NullVersion();
             }
         }
 

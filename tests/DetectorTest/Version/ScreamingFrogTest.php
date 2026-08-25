@@ -29,7 +29,7 @@ use UnexpectedValueException;
 
 use function assert;
 
-#[CoversClass(ScreamingFrog::class)]
+#[CoversClass(className: ScreamingFrog::class)]
 final class ScreamingFrogTest extends TestCase
 {
     /**
@@ -37,12 +37,12 @@ final class ScreamingFrogTest extends TestCase
      * @throws UnexpectedValueException
      * @throws Exception
      */
-    #[DataProvider('providerVersion')]
+    #[DataProvider(methodName: 'providerVersion')]
     public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
-        $object = new ScreamingFrog(new VersionBuilder());
+        $screamingFrog = new ScreamingFrog(new VersionBuilder());
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $screamingFrog->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertSame($expectedVersion, $detectedVersion->getVersion());
@@ -69,19 +69,19 @@ final class ScreamingFrogTest extends TestCase
      */
     public function testDetectVersionFail(): void
     {
-        $exception = new NotNumericException('set failed');
+        $notNumericException = new NotNumericException('set failed');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
             ->expects(self::once())
             ->method('detectVersion')
             ->with('Screaming Frog SEO Spider/2.22', ['Screaming Frog SEO Spider'])
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
 
         assert($versionBuilder instanceof VersionFactoryInterface);
-        $object = new ScreamingFrog($versionBuilder);
+        $screamingFrog = new ScreamingFrog($versionBuilder);
 
-        $detectedVersion = $object->detectVersion('Screaming Frog SEO Spider/2,22');
+        $detectedVersion = $screamingFrog->detectVersion('Screaming Frog SEO Spider/2,22');
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);

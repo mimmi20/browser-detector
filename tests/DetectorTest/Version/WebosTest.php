@@ -24,7 +24,7 @@ use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UnexpectedValueException;
 
-#[CoversClass(Webos::class)]
+#[CoversClass(className: Webos::class)]
 final class WebosTest extends TestCase
 {
     /**
@@ -33,12 +33,12 @@ final class WebosTest extends TestCase
      * @throws Exception
      * @throws NotNumericException
      */
-    #[DataProvider('providerVersion')]
+    #[DataProvider(methodName: 'providerVersion')]
     public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
-        $object = new Webos(new VersionBuilder());
+        $webos = new Webos(new VersionBuilder());
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $webos->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertSame($expectedVersion, $detectedVersion->getVersion());

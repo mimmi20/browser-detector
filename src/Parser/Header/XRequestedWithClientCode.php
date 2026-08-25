@@ -259,7 +259,8 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'snapu2b.com' => 'snapu2b',
             'threads.thor' => 'thor-browser',
             'webexplorer.amazing.biro' => 'internet-browser',
-            'xbrowser', 'com.xbrowser.play' => 'x-browser',
+            'xbrowser' => 'x-browser',
+            'com.xbrowser.play' => 'x-browser-mini',
             'com.baidu.browser.apps' => 'baidu browser',
             'com.hihonor.baidu.browser' => 'honor-browser',
             'com.baidu.searchbox.lite' => 'baidu box app lite',
@@ -472,6 +473,9 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.fsecure.ms.vandenborre' => 'vanden-borre-my-security',
             'com.fsecure.ms.tokaisa' => 'tokai-safe',
             'com.securex.browser' => 'secure-x',
+            'com.uc.browser.en' => 'ucbrowser mini',
+            'com.lexi.browser' => 'lexi-browser',
+            'com.fulldive.mobile' => 'fulldive-browser',
             default => null,
         };
     }

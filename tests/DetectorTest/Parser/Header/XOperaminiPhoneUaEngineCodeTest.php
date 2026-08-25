@@ -21,7 +21,7 @@ use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\Normalizer\NormalizerInterface;
 use UaParser\EngineParserInterface;
 
-#[CoversClass(XOperaminiPhoneUaEngineCode::class)]
+#[CoversClass(className: XOperaminiPhoneUaEngineCode::class)]
 final class XOperaminiPhoneUaEngineCodeTest extends TestCase
 {
     /** @throws \PHPUnit\Framework\Exception */
@@ -42,9 +42,12 @@ final class XOperaminiPhoneUaEngineCodeTest extends TestCase
             ->with($value)
             ->willThrowException($exception);
 
-        $object = new XOperaminiPhoneUaEngineCode(engineParser: $engineParser, normalizer: $normalizer);
+        $xOperaminiPhoneUaEngineCode = new XOperaminiPhoneUaEngineCode(
+            engineParser: $engineParser,
+            normalizer: $normalizer,
+        );
 
-        self::assertSame(Engine::unknown, $object->getEngineCode($value));
+        self::assertSame(Engine::unknown, $xOperaminiPhoneUaEngineCode->getEngineCode($value));
     }
 
     /** @throws \PHPUnit\Framework\Exception */
@@ -62,11 +65,14 @@ final class XOperaminiPhoneUaEngineCodeTest extends TestCase
             ->expects(self::once())
             ->method('normalize')
             ->with($value)
-            ->willReturn(null);
+            ->willReturn(value: null);
 
-        $object = new XOperaminiPhoneUaEngineCode(engineParser: $engineParser, normalizer: $normalizer);
+        $xOperaminiPhoneUaEngineCode = new XOperaminiPhoneUaEngineCode(
+            engineParser: $engineParser,
+            normalizer: $normalizer,
+        );
 
-        self::assertSame(Engine::unknown, $object->getEngineCode($value));
+        self::assertSame(Engine::unknown, $xOperaminiPhoneUaEngineCode->getEngineCode($value));
     }
 
     /** @throws \PHPUnit\Framework\Exception */
@@ -86,8 +92,11 @@ final class XOperaminiPhoneUaEngineCodeTest extends TestCase
             ->with($value)
             ->willReturn('');
 
-        $object = new XOperaminiPhoneUaEngineCode(engineParser: $engineParser, normalizer: $normalizer);
+        $xOperaminiPhoneUaEngineCode = new XOperaminiPhoneUaEngineCode(
+            engineParser: $engineParser,
+            normalizer: $normalizer,
+        );
 
-        self::assertSame(Engine::unknown, $object->getEngineCode($value));
+        self::assertSame(Engine::unknown, $xOperaminiPhoneUaEngineCode->getEngineCode($value));
     }
 }

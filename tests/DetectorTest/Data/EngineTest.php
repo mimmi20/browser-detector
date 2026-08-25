@@ -26,7 +26,7 @@ use PHPUnit\Framework\TestCase;
 
 use function sprintf;
 
-#[CoversClass(Engine::class)]
+#[CoversClass(className: Engine::class)]
 final class EngineTest extends TestCase
 {
     /**
@@ -36,14 +36,9 @@ final class EngineTest extends TestCase
      *
      * @throws ExpectationFailedException
      */
-    #[DataProvider('provider')]
-    public function testType(
-        string $type,
-        string | null $name,
-        Company $manufacturer,
-        array $version,
-        string $key,
-    ): void {
+    #[DataProvider(methodName: 'provider')]
+    public function testType(string $type, string | null $name, Company $company, array $version, string $key): void
+    {
         $result = Engine::tryFrom($type);
 
         if ($result === null) {
@@ -51,7 +46,7 @@ final class EngineTest extends TestCase
         }
 
         self::assertSame($name, $result->getName());
-        self::assertSame($manufacturer, $result->getManufacturer());
+        self::assertSame($company, $result->getManufacturer());
         self::assertSame($version, $result->getVersion());
         self::assertSame($key, $result->getKey());
 
@@ -59,28 +54,28 @@ final class EngineTest extends TestCase
             $result2 = Engine::fromName($name);
 
             self::assertSame($name, $result2->getName());
-            self::assertSame($manufacturer, $result2->getManufacturer());
+            self::assertSame($company, $result2->getManufacturer());
             self::assertSame($version, $result2->getVersion());
             self::assertSame($key, $result2->getKey());
         }
 
-        $result4 = Engine::fromName($result->value);
+        $engine = Engine::fromName($result->value);
 
-        self::assertSame($name, $result4->getName());
-        self::assertSame($manufacturer, $result4->getManufacturer());
-        self::assertSame($version, $result4->getVersion());
-        self::assertSame($key, $result4->getKey());
+        self::assertSame($name, $engine->getName());
+        self::assertSame($company, $engine->getManufacturer());
+        self::assertSame($version, $engine->getVersion());
+        self::assertSame($key, $engine->getKey());
 
         $result5 = Engine::fromName($result->name);
 
         self::assertSame($name, $result5->getName());
-        self::assertSame($manufacturer, $result5->getManufacturer());
+        self::assertSame($company, $result5->getManufacturer());
         self::assertSame($version, $result5->getVersion());
         self::assertSame($key, $result5->getKey());
     }
 
     /**
-     * @return array<int, array{type: string, name: string|null, manufacturer: Company, version: array{factory: string|null, search: list<string>|null}, key: string}>
+     * @return array<int, array{type: string, name: string|null, company: Company, version: array{factory: string|null, search: list<string>|null}, key: string}>
      *
      * @throws void
      *
@@ -92,210 +87,210 @@ final class EngineTest extends TestCase
             [
                 'type' => 'unknown',
                 'name' => null,
-                'manufacturer' => Company::unknown,
+                'company' => Company::unknown,
                 'version' => ['factory' => null, 'search' => null],
                 'key' => 'unknown',
             ],
             [
                 'type' => 'black-berry',
                 'name' => 'black-berry',
-                'manufacturer' => Company::rim,
+                'company' => Company::rim,
                 'version' => ['factory' => null, 'search' => null],
                 'key' => 'blackberry',
             ],
             [
                 'type' => 'Blink',
                 'name' => 'Blink',
-                'manufacturer' => Company::google,
+                'company' => Company::google,
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Chrome', 'Chr0me', 'Cronet', 'Chromium_', 'Chromium']],
                 'key' => 'blink',
             ],
             [
                 'type' => 'Clecko',
                 'name' => 'Clecko',
-                'manufacturer' => Company::unknown,
+                'company' => Company::unknown,
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['rv:']],
                 'key' => 'clecko',
             ],
             [
                 'type' => 'Edge',
                 'name' => 'Edge',
-                'manufacturer' => Company::microsoft,
+                'company' => Company::microsoft,
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Edge']],
                 'key' => 'edge',
             ],
             [
                 'type' => 'Gecko',
                 'name' => 'Gecko',
-                'manufacturer' => Company::mozilla,
+                'company' => Company::mozilla,
                 'version' => ['factory' => GeckoFactory::class, 'search' => null],
                 'key' => 'gecko',
             ],
             [
                 'type' => 'WebKit',
                 'name' => 'WebKit',
-                'manufacturer' => Company::apple,
+                'company' => Company::apple,
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['AppleWebKit \\/', 'AppleWebKit', 'WebKit', 'CFNetwork', 'Browser\\/AppleWebKit']],
                 'key' => 'webkit',
             ],
             [
                 'type' => 'Trident',
                 'name' => 'Trident',
-                'manufacturer' => Company::microsoft,
+                'company' => Company::microsoft,
                 'version' => ['factory' => TridentFactory::class, 'search' => null],
                 'key' => 'trident',
             ],
             [
                 'type' => 'KHTML',
                 'name' => 'KHTML',
-                'manufacturer' => Company::unknown,
+                'company' => Company::unknown,
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['KHTML']],
                 'key' => 'khtml',
             ],
             [
                 'type' => 'NetFront',
                 'name' => 'NetFront',
-                'manufacturer' => Company::access,
+                'company' => Company::access,
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['NetFront']],
                 'key' => 'netfront',
             ],
             [
                 'type' => 'Presto',
                 'name' => 'Presto',
-                'manufacturer' => Company::opera,
+                'company' => Company::opera,
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Presto']],
                 'key' => 'presto',
             ],
             [
                 'type' => 'Servo',
                 'name' => 'Servo',
-                'manufacturer' => Company::mozilla,
+                'company' => Company::mozilla,
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Servo']],
                 'key' => 'servo',
             ],
             [
                 'type' => 'T5',
                 'name' => 'T5',
-                'manufacturer' => Company::baidu,
+                'company' => Company::baidu,
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['T5']],
                 'key' => 't5',
             ],
             [
                 'type' => 'T7',
                 'name' => 'T7',
-                'manufacturer' => Company::baidu,
+                'company' => Company::baidu,
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['T7']],
                 'key' => 't7',
             ],
             [
                 'type' => 'Tasman',
                 'name' => 'Tasman',
-                'manufacturer' => Company::apple,
+                'company' => Company::apple,
                 'version' => ['factory' => null, 'search' => null],
                 'key' => 'tasman',
             ],
             [
                 'type' => 'U2',
                 'name' => 'U2',
-                'manufacturer' => Company::ucweb,
+                'company' => Company::ucweb,
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['U2']],
                 'key' => 'u2',
             ],
             [
                 'type' => 'U3',
                 'name' => 'U3',
-                'manufacturer' => Company::ucweb,
+                'company' => Company::ucweb,
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['U3']],
                 'key' => 'u3',
             ],
             [
                 'type' => 'U4',
                 'name' => 'U4',
-                'manufacturer' => Company::ucweb,
+                'company' => Company::ucweb,
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['U4']],
                 'key' => 'u4',
             ],
             [
                 'type' => 'Elektra',
                 'name' => 'Elektra',
-                'manufacturer' => Company::unknown,
+                'company' => Company::unknown,
                 'version' => ['factory' => null, 'search' => null],
                 'key' => 'elektra',
             ],
             [
                 'type' => 'Goanna',
                 'name' => 'Goanna',
-                'manufacturer' => Company::moonchild,
+                'company' => Company::moonchild,
                 'version' => ['factory' => GoannaFactory::class, 'search' => null],
                 'key' => 'goanna',
             ],
             [
                 'type' => 'Teleca',
                 'name' => 'Teleca',
-                'manufacturer' => Company::obigo,
+                'company' => Company::obigo,
                 'version' => ['factory' => null, 'search' => null],
                 'key' => 'teleca',
             ],
             [
                 'type' => 'Treco',
                 'name' => 'Treco',
-                'manufacturer' => Company::arsslensoft,
+                'company' => Company::arsslensoft,
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['rv:']],
                 'key' => 'treco',
             ],
             [
                 'type' => 'Text',
                 'name' => 'Text',
-                'manufacturer' => Company::unknown,
+                'company' => Company::unknown,
                 'version' => ['factory' => null, 'search' => null],
                 'key' => 'text',
             ],
             [
                 'type' => 'iCab',
                 'name' => 'iCab',
-                'manufacturer' => Company::unknown,
+                'company' => Company::unknown,
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['iCab']],
                 'key' => 'icab',
             ],
             [
                 'type' => 'ArkWeb',
                 'name' => 'ArkWeb',
-                'manufacturer' => Company::huawei,
+                'company' => Company::huawei,
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['ArkWeb']],
                 'key' => 'arkweb',
             ],
             [
                 'type' => 'NetSurf',
                 'name' => 'NetSurf',
-                'manufacturer' => Company::unknown,
+                'company' => Company::unknown,
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['NetSurf']],
                 'key' => 'netsurf',
             ],
             [
                 'type' => 'EkiohFlow',
                 'name' => 'EkiohFlow',
-                'manufacturer' => Company::ekioh,
+                'company' => Company::ekioh,
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['EkiohFlow']],
                 'key' => 'ekiohflow',
             ],
             [
                 'type' => 'Maple',
                 'name' => 'Maple',
-                'manufacturer' => Company::samsung,
+                'company' => Company::samsung,
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Maple']],
                 'key' => 'maple',
             ],
             [
                 'type' => 'Dillo',
                 'name' => 'Dillo',
-                'manufacturer' => Company::theDilloProject,
+                'company' => Company::theDilloProject,
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Dillo']],
                 'key' => 'dillo',
             ],
             [
                 'type' => 'Arachne',
                 'name' => 'Arachne',
-                'manufacturer' => Company::unknown,
+                'company' => Company::unknown,
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['Arachne\\/5\\.']],
                 'key' => 'arachne',
             ],

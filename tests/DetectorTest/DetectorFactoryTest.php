@@ -26,7 +26,7 @@ use RuntimeException;
 
 use function assert;
 
-#[CoversClass(DetectorFactory::class)]
+#[CoversClass(className: DetectorFactory::class)]
 final class DetectorFactoryTest extends TestCase
 {
     /**
@@ -88,14 +88,14 @@ final class DetectorFactoryTest extends TestCase
 
         assert($logger instanceof LoggerInterface);
         assert($cache instanceof CacheInterface);
-        $factory = new DetectorFactory($cache, $logger);
-        $object  = $factory();
+        $detectorFactory = new DetectorFactory($cache, $logger);
+        $detector        = $detectorFactory();
 
-        self::assertInstanceOf(Detector::class, $object);
+        self::assertInstanceOf(Detector::class, $detector);
 
-        $objectTwo = $factory();
+        $objectTwo = $detectorFactory();
 
         self::assertInstanceOf(Detector::class, $objectTwo);
-        self::assertSame($objectTwo, $object);
+        self::assertSame($objectTwo, $detector);
     }
 }

@@ -30,108 +30,116 @@ use UaResult\Device\Architecture;
 
 use function sprintf;
 
-#[CoversClass(XPuffinUaDeviceCode::class)]
-#[CoversClass(XPuffinUaPlatformCode::class)]
+#[CoversClass(className: XPuffinUaDeviceCode::class)]
+#[CoversClass(className: XPuffinUaPlatformCode::class)]
 final class XPuffinUaTest extends TestCase
 {
     /**
      * @throws ExpectationFailedException
      * @throws Exception
      * @throws NotFoundException
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
-    #[DataProvider('providerUa')]
+    #[DataProvider(methodName: 'providerUa')]
     public function testData(
         string $ua,
         bool $hasDeviceInfo,
         string | null $deviceInfo,
         bool $hasPlatformInfo,
-        Os $platformCode,
+        Os $os,
     ): void {
-        $header = new XPuffinUa(
+        $xPuffinUa = new XPuffinUa(
             value: $ua,
             deviceCode: new XPuffinUaDeviceCode(),
             platformCode: new XPuffinUaPlatformCode(),
         );
 
-        self::assertSame($ua, $header->getValue(), sprintf('value mismatch for ua "%s"', $ua));
+        self::assertSame($ua, $xPuffinUa->getValue(), sprintf('value mismatch for ua "%s"', $ua));
         self::assertSame(
             $ua,
-            $header->getNormalizedValue(),
+            $xPuffinUa->getNormalizedValue(),
             sprintf('value mismatch for ua "%s"', $ua),
         );
         self::assertFalse(
-            $header->hasDeviceArchitecture(),
+            $xPuffinUa->hasDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             Architecture::unknown,
-            $header->getDeviceArchitecture(),
+            $xPuffinUa->getDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertFalse(
-            $header->hasDeviceBitness(),
+            $xPuffinUa->hasDeviceBitness(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             Bits::unknown,
-            $header->getDeviceBitness(),
+            $xPuffinUa->getDeviceBitness(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertFalse(
-            $header->hasDeviceIsMobile(),
+            $xPuffinUa->hasDeviceIsMobile(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertNull(
-            $header->getDeviceIsMobile(),
+            $xPuffinUa->getDeviceIsMobile(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             $hasDeviceInfo,
-            $header->hasDeviceCode(),
+            $xPuffinUa->hasDeviceCode(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             $deviceInfo,
-            $header->getDeviceCode(),
+            $xPuffinUa->getDeviceCode(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
-        self::assertFalse($header->hasClientCode(), sprintf('browser info mismatch for ua "%s"', $ua));
+        self::assertFalse(
+            $xPuffinUa->hasClientCode(),
+            sprintf('browser info mismatch for ua "%s"', $ua),
+        );
         self::assertNull(
-            $header->getClientCode(),
+            $xPuffinUa->getClientCode(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
         self::assertFalse(
-            $header->hasClientVersion(),
+            $xPuffinUa->hasClientVersion(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
         self::assertInstanceOf(
             NullVersion::class,
-            $header->getClientVersion(),
+            $xPuffinUa->getClientVersion(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             $hasPlatformInfo,
-            $header->hasPlatformCode(),
+            $xPuffinUa->hasPlatformCode(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
-            $platformCode,
-            $header->getPlatformCode(),
+            $os,
+            $xPuffinUa->getPlatformCode(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
         self::assertFalse(
-            $header->hasPlatformVersion(),
+            $xPuffinUa->hasPlatformVersion(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
         self::assertInstanceOf(
             NullVersion::class,
-            $header->getPlatformVersionWithOs(Os::unknown),
+            $xPuffinUa->getPlatformVersionWithOs(Os::unknown),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
-        self::assertFalse($header->hasEngineCode(), sprintf('engine info mismatch for ua "%s"', $ua));
+        self::assertFalse(
+            $xPuffinUa->hasEngineCode(),
+            sprintf('engine info mismatch for ua "%s"', $ua),
+        );
 
         try {
-            $header->getEngineCode();
+            $xPuffinUa->getEngineCode();
 
             self::fail('Exception expected');
         } catch (NotFoundException) {
@@ -139,12 +147,12 @@ final class XPuffinUaTest extends TestCase
         }
 
         self::assertFalse(
-            $header->hasEngineVersion(),
+            $xPuffinUa->hasEngineVersion(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
         self::assertInstanceOf(
             NullVersion::class,
-            $header->getEngineVersionWithEngine(Engine::unknown),
+            $xPuffinUa->getEngineVersionWithEngine(Engine::unknown),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
     }

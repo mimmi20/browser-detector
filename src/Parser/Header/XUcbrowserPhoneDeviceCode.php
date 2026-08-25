@@ -25,7 +25,7 @@ final class XUcbrowserPhoneDeviceCode implements DeviceCodeInterface
     #[Override]
     public function hasDeviceCode(string $value): bool
     {
-        return !in_array(mb_strtolower($value), ['maui browser', 'sunmicro'], true);
+        return !in_array(mb_strtolower($value), ['maui browser', 'sunmicro'], strict: true);
     }
 
     /** @throws void */

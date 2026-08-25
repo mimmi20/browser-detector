@@ -20,26 +20,26 @@ use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 
-#[CoversClass(Browser::class)]
+#[CoversClass(className: Browser::class)]
 final class BrowserTest extends TestCase
 {
-    private Browser $object;
+    private Browser $browser;
 
     /** @throws void */
     #[Override]
     protected function setUp(): void
     {
-        $this->object = new Browser();
+        $this->browser = new Browser();
     }
 
     /** @throws ExpectationFailedException */
-    #[DataProvider('providerGetBits')]
+    #[DataProvider(methodName: 'providerGetBits')]
     public function testGetBits(string $useragent, int | null $expected): void
     {
-        $result = $this->object->getBits($useragent);
+        $result = $this->browser->getBits($useragent);
         self::assertSame($expected, $result);
 
-        $secondResult = $this->object->getBits($useragent);
+        $secondResult = $this->browser->getBits($useragent);
         self::assertSame($expected, $secondResult);
         self::assertSame($result, $secondResult);
     }

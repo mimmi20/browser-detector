@@ -24,16 +24,16 @@ use PHPUnit\Framework\TestCase;
 use function assert;
 use function sprintf;
 
-#[CoversClass(CoreMediaFactory::class)]
+#[CoversClass(className: CoreMediaFactory::class)]
 final class CoreMediaFactoryTest extends TestCase
 {
-    private CoreMediaFactory $object;
+    private CoreMediaFactory $coreMediaFactory;
 
     /** @throws void */
     #[Override]
     protected function setUp(): void
     {
-        $this->object = new CoreMediaFactory();
+        $this->coreMediaFactory = new CoreMediaFactory();
     }
 
     /**
@@ -42,7 +42,7 @@ final class CoreMediaFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $object = $this->object;
+        $object = $this->coreMediaFactory;
         assert(
             $object instanceof CoreMediaFactory,
             sprintf(
@@ -51,7 +51,7 @@ final class CoreMediaFactoryTest extends TestCase
                 $object::class,
             ),
         );
-        $result = $object();
-        self::assertInstanceOf(CoreMedia::class, $result);
+        $coreMedia = $object();
+        self::assertInstanceOf(CoreMedia::class, $coreMedia);
     }
 }

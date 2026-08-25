@@ -16,7 +16,7 @@ namespace BrowserDetector\Version;
 use BrowserDetector\Version\Exception\NotNumericException;
 use Override;
 
-use function mb_strpos;
+use function str_contains;
 
 final readonly class Maxthon implements VersionFactoryInterface
 {
@@ -43,7 +43,7 @@ final readonly class Maxthon implements VersionFactoryInterface
     #[Override]
     public function detectVersion(string $useragent): VersionInterface
     {
-        if (mb_strpos($useragent, 'MyIE2') !== false) {
+        if (str_contains($useragent, 'MyIE2')) {
             try {
                 return $this->versionBuilder->set('2.0');
             } catch (NotNumericException) {
@@ -53,7 +53,7 @@ final readonly class Maxthon implements VersionFactoryInterface
             return new NullVersion();
         }
 
-        if (mb_strpos($useragent, 'MyIE') !== false) {
+        if (str_contains($useragent, 'MyIE')) {
             $this->versionBuilder->setRegex(self::REGEX);
 
             try {

@@ -23,11 +23,11 @@ use function mb_strtolower;
 use function sprintf;
 
 /** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */
-#[CoversClass(Device::class)]
+#[CoversClass(className: Device::class)]
 final class DeviceTest extends TestCase
 {
     /** @throws ExpectationFailedException */
-    #[DataProvider('providerUa')]
+    #[DataProvider(methodName: 'providerUa')]
     public function testData(string $value, string | null $model): void
     {
         $code = mb_strtolower($value);
@@ -457,6 +457,9 @@ final class DeviceTest extends TestCase
             ['Pixel 11 Pro Fold', 'google=google pixel 11 pro fold'],
             ['Pixel 9 Fold', 'google=google pixel 9 fold'],
             ['ADT-3', 'google=google adt-3'],
+            ['Pixel 11 Pro', 'google=google pixel 11 pro'],
+            ['GM45K', 'google=google gm45k'],
+            ['G7SWN', 'google=google g7swn'],
             // OnePlus
             ['AC2003', 'oneplus=oneplus ac2003'],
             ['IN2023', 'oneplus=oneplus in2023'],
@@ -985,6 +988,7 @@ final class DeviceTest extends TestCase
             ['OPD2101', 'oppo=oppo opd2101'],
             ['OPD2420', 'oppo=oppo opd2420'],
             ['OPD2417', 'oppo=oppo opd2417'],
+            ['Reno 10x Zoom', 'oppo=oppo reno 10x zoom'],
             // Xiaomi/Poco
             ['Redmi Note 9 Pro', 'xiaomi=xiaomi redmi note 9 pro'],
             ['Xiaomi Redmi Note 9 Pro', 'xiaomi=xiaomi redmi note 9 pro'],
@@ -4787,6 +4791,14 @@ final class DeviceTest extends TestCase
             ['SCG33', 'samsung=samsung scg33'],
             ['SM-A253J', 'samsung=samsung sm-a253j'],
             ['SAMSUNG SM-A253J', 'samsung=samsung sm-a253j'],
+            ['SM-F971B', 'samsung=samsung sm-f971b'],
+            ['SAMSUNG SM-F971B', 'samsung=samsung sm-f971b'],
+            ['SM-F776B', 'samsung=samsung sm-f776b'],
+            ['SAMSUNG SM-F776B', 'samsung=samsung sm-f776b'],
+            ['SM-F776U', 'samsung=samsung sm-f776u'],
+            ['SAMSUNG SM-F776U', 'samsung=samsung sm-f776u'],
+            ['SM-F776U1', 'samsung=samsung sm-f776u1'],
+            ['SAMSUNG SM-F776U1', 'samsung=samsung sm-f776u1'],
             // Huawei
             ['LGE-NX9', 'huawei=huawei lge-nx9'],
             ['LGE-AN20', 'huawei=huawei lge-an20'],
@@ -6584,6 +6596,16 @@ final class DeviceTest extends TestCase
             ['Realme RMX5353', 'realme=realme rmx5353'],
             ['RMX5366', 'realme=realme rmx5366'],
             ['Realme RMX5366', 'realme=realme rmx5366'],
+            ['RMX5264', 'realme=realme rmx5264'],
+            ['Realme RMX5264', 'realme=realme rmx5264'],
+            ['RMX5261', 'realme=realme rmx5261'],
+            ['Realme RMX5261', 'realme=realme rmx5261'],
+            ['RMX5256', 'realme=realme rmx5256'],
+            ['Realme RMX5256', 'realme=realme rmx5256'],
+            ['RMX5268', 'realme=realme rmx5268'],
+            ['Realme RMX5268', 'realme=realme rmx5268'],
+            ['RMX5258', 'realme=realme rmx5258'],
+            ['Realme RMX5258', 'realme=realme rmx5258'],
             // Motorola
             ['moto g200 5G', 'motorola=motorola moto g200 5g'],
             ['motorola razr 5G', 'motorola=motorola razr 5g'],
@@ -7937,6 +7959,60 @@ final class DeviceTest extends TestCase
             ['vivo V2180GA', 'vivo=vivo v2180ga'],
             ['V2168A', 'vivo=vivo v2168a'],
             ['vivo V2168A', 'vivo=vivo v2168a'],
+            ['iQOO Neo 855+', 'vivo=vivo iqoo neo 855+'],
+            ['V1936AL', 'vivo=vivo v1936al'],
+            ['vivo V1936AL', 'vivo=vivo v1936al'],
+            ['iQOO Neo', 'vivo=vivo iqoo neo'],
+            ['iQOO Pro 5G', 'vivo=vivo iqoo pro 5g'],
+            ['V1922A', 'vivo=vivo v1922a'],
+            ['vivo V1922A', 'vivo=vivo v1922a'],
+            ['iQOO Pro', 'vivo=vivo iqoo pro'],
+            ['V1936A', 'vivo=vivo v1936a'],
+            ['vivo V1936A', 'vivo=vivo v1936a'],
+            ['V1936T', 'vivo=vivo v1936t'],
+            ['vivo V1936T', 'vivo=vivo v1936t'],
+            ['iQOO Neo 855', 'vivo=vivo iqoo neo 855'],
+            ['vivo V9', 'vivo=vivo v9'],
+            ['V2020CA', 'vivo=vivo v2020ca'],
+            ['vivo V2020CA', 'vivo=vivo v2020ca'],
+            ['V2020A', 'vivo=vivo v2020a'],
+            ['vivo V2020A', 'vivo=vivo v2020a'],
+            ['V2026', 'vivo=vivo v2026'],
+            ['vivo V2026', 'vivo=vivo v2026'],
+            ['V2033', 'vivo=vivo v2033'],
+            ['vivo V2033', 'vivo=vivo v2033'],
+            ['V2042', 'vivo=vivo v2042'],
+            ['vivo V2042', 'vivo=vivo v2042'],
+            ['V2022', 'vivo=vivo v2022'],
+            ['vivo V2022', 'vivo=vivo v2022'],
+            ['V2032', 'vivo=vivo v2032'],
+            ['vivo V2032', 'vivo=vivo v2032'],
+            ['V2043', 'vivo=vivo v2043'],
+            ['vivo V2043', 'vivo=vivo v2043'],
+            ['V2043_21', 'vivo=vivo v2043_21'],
+            ['vivo V2043_21', 'vivo=vivo v2043_21'],
+            ['V2048', 'vivo=vivo v2048'],
+            ['vivo V2048', 'vivo=vivo v2048'],
+            ['V2040', 'vivo=vivo v2040'],
+            ['vivo V2040', 'vivo=vivo v2040'],
+            ['V2054A', 'vivo=vivo v2054a'],
+            ['vivo V2054A', 'vivo=vivo v2054a'],
+            ['V2068A', 'vivo=vivo v2068a'],
+            ['vivo V2068A', 'vivo=vivo v2068a'],
+            ['V2031EA', 'vivo=vivo v2031ea'],
+            ['vivo V2031EA', 'vivo=vivo v2031ea'],
+            ['V2034A', 'vivo=vivo v2034a'],
+            ['vivo V2034A', 'vivo=vivo v2034a'],
+            ['V2036A', 'vivo=vivo v2036a'],
+            ['vivo V2036A', 'vivo=vivo v2036a'],
+            ['V2533', 'vivo=vivo v2533'],
+            ['vivo V2533', 'vivo=vivo v2533'],
+            ['V2582', 'vivo=vivo v2582'],
+            ['vivo V2582', 'vivo=vivo v2582'],
+            ['V2551', 'vivo=vivo v2551'],
+            ['vivo V2551', 'vivo=vivo v2551'],
+            ['V2164KA', 'vivo=vivo v2164ka'],
+            ['vivo V2164KA', 'vivo=vivo v2164ka'],
             // Fairphone
             ['FP4', 'fairphone=fairphone fp4'],
             ['FP3', 'fairphone=fairphone fp3'],
@@ -8508,6 +8584,7 @@ final class DeviceTest extends TestCase
             ['5030I', 'alcatel=alcatel 5030i'],
             ['8091', 'alcatel=alcatel 8091'],
             ['Alcatel_5002C', 'alcatel=alcatel 5002c'],
+            ['5002E', 'alcatel=alcatel 5002e'],
             // HTC
             ['HTC Desire 19+', 'htc=htc desire 19 plus'],
             ['HTC U11', 'htc=htc u11'],
@@ -11182,6 +11259,7 @@ final class DeviceTest extends TestCase
             ['DVK82 Mercury', 'stylo=stylo dvk82 mercury'],
             ['DVK87 Orion 8 Tab', 'stylo=stylo orion 8 tab'],
             ['STYLO MARVEL', 'stylo=stylo marvel'],
+            ['BRAVE', 'stylo=stylo brave'],
             // atozee
             ['CP10', 'atozee=atozee cp10'],
             ['YQ10SK', 'atozee=atozee yq10sk'],
@@ -12372,6 +12450,8 @@ final class DeviceTest extends TestCase
             ['BDF-KT107', 'bdf=bdf kt107'],
             // qihoo
             ['1713-A01', 'qihoo=qihoo 1713-a01'],
+            ['1809-A01', 'qihoo=qihoo 1809-a01'],
+            ['1605-A01', 'qihoo=qihoo 1605-a01'],
             // changhong
             ['AI PONT', 'changhong=changhong ai pont'],
             // xoro
@@ -12680,6 +12760,7 @@ final class DeviceTest extends TestCase
             ['GD032313', 'gionee=gionee gd032313'],
             ['20190418Q', 'gionee=gionee 20190418q'],
             ['20190619G', 'gionee=gionee 20190619g'],
+            ['GIONEE M7', 'gionee=gionee m7'],
             // heji
             ['HEJI GOE', 'heji=heji goe'],
             ['HEJIGOE', 'heji=heji goe'],
@@ -12778,6 +12859,8 @@ final class DeviceTest extends TestCase
             ['MLT55USX02', 'maunfeld=maunfeld mlt55usx02'],
             // k-touch
             ['KT20201199', 'k-touch=k-touch kt20201199'],
+            // azumi
+            ['NOBU_A55_PRO', 'azumi=azumi nobu a55 pro'],
             // generic
             ['SMART_TV', 'unknown=general tv device'],
             ['SMART TV', 'unknown=general tv device'],

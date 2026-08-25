@@ -24,7 +24,7 @@ use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UnexpectedValueException;
 
-#[CoversClass(SmartisanOs::class)]
+#[CoversClass(className: SmartisanOs::class)]
 final class SmartisanOsTest extends TestCase
 {
     /**
@@ -33,12 +33,12 @@ final class SmartisanOsTest extends TestCase
      * @throws Exception
      * @throws NotNumericException
      */
-    #[DataProvider('providerVersion')]
+    #[DataProvider(methodName: 'providerVersion')]
     public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
-        $object = new SmartisanOs(new VersionBuilder());
+        $smartisanOs = new SmartisanOs(new VersionBuilder());
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $smartisanOs->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertSame($expectedVersion, $detectedVersion->getVersion());

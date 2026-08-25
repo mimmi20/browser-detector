@@ -24,16 +24,16 @@ use PHPUnit\Framework\TestCase;
 use function assert;
 use function sprintf;
 
-#[CoversClass(ScreamingFrogFactory::class)]
+#[CoversClass(className: ScreamingFrogFactory::class)]
 final class ScreamingFrogFactoryTest extends TestCase
 {
-    private ScreamingFrogFactory $object;
+    private ScreamingFrogFactory $screamingFrogFactory;
 
     /** @throws void */
     #[Override]
     protected function setUp(): void
     {
-        $this->object = new ScreamingFrogFactory();
+        $this->screamingFrogFactory = new ScreamingFrogFactory();
     }
 
     /**
@@ -42,7 +42,7 @@ final class ScreamingFrogFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $object = $this->object;
+        $object = $this->screamingFrogFactory;
         assert(
             $object instanceof ScreamingFrogFactory,
             sprintf(
@@ -51,7 +51,7 @@ final class ScreamingFrogFactoryTest extends TestCase
                 $object::class,
             ),
         );
-        $result = $object();
-        self::assertInstanceOf(ScreamingFrog::class, $result);
+        $screamingFrog = $object();
+        self::assertInstanceOf(ScreamingFrog::class, $screamingFrog);
     }
 }

@@ -33,9 +33,9 @@ use UnexpectedValueException;
 
 use function sprintf;
 
-#[CoversClass(XRequestedWithClientCode::class)]
-#[CoversClass(XRequestedWithClientVersion::class)]
-#[CoversClass(XRequestedWithPlatformCode::class)]
+#[CoversClass(className: XRequestedWithClientCode::class)]
+#[CoversClass(className: XRequestedWithClientVersion::class)]
+#[CoversClass(className: XRequestedWithPlatformCode::class)]
 final class XRequestedWithTest extends TestCase
 {
     /**
@@ -45,7 +45,7 @@ final class XRequestedWithTest extends TestCase
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
-    #[DataProvider('providerUa')]
+    #[DataProvider(methodName: 'providerUa')]
     public function testData(
         string $ua,
         bool $hasClientInfo,
@@ -53,105 +53,111 @@ final class XRequestedWithTest extends TestCase
         bool $hasClientVersion,
         string | null $clientVersion,
         bool $hasPlatformCode,
-        Os $platformCode,
+        Os $os,
     ): void {
-        $header = new XRequestedWith(
+        $xRequestedWith = new XRequestedWith(
             value: $ua,
             clientCode: new XRequestedWithClientCode(),
             clientVersion: new XRequestedWithClientVersion(),
             platformCode: new XRequestedWithPlatformCode(),
         );
 
-        self::assertSame($ua, $header->getValue(), sprintf('value mismatch for ua "%s"', $ua));
+        self::assertSame($ua, $xRequestedWith->getValue(), sprintf('value mismatch for ua "%s"', $ua));
         self::assertSame(
             $ua,
-            $header->getNormalizedValue(),
+            $xRequestedWith->getNormalizedValue(),
             sprintf('value mismatch for ua "%s"', $ua),
         );
         self::assertFalse(
-            $header->hasDeviceArchitecture(),
+            $xRequestedWith->hasDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             Architecture::unknown,
-            $header->getDeviceArchitecture(),
+            $xRequestedWith->getDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertFalse(
-            $header->hasDeviceBitness(),
+            $xRequestedWith->hasDeviceBitness(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             Bits::unknown,
-            $header->getDeviceBitness(),
+            $xRequestedWith->getDeviceBitness(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertFalse(
-            $header->hasDeviceIsMobile(),
+            $xRequestedWith->hasDeviceIsMobile(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertNull(
-            $header->getDeviceIsMobile(),
+            $xRequestedWith->getDeviceIsMobile(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
-        self::assertFalse($header->hasDeviceCode(), sprintf('device info mismatch for ua "%s"', $ua));
+        self::assertFalse(
+            $xRequestedWith->hasDeviceCode(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
         self::assertNull(
-            $header->getDeviceCode(),
+            $xRequestedWith->getDeviceCode(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             $hasClientInfo,
-            $header->hasClientCode(),
+            $xRequestedWith->hasClientCode(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             $clientCode,
-            $header->getClientCode(),
+            $xRequestedWith->getClientCode(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             $hasClientVersion,
-            $header->hasClientVersion(),
+            $xRequestedWith->hasClientVersion(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
 
         if ($clientVersion === null) {
             self::assertInstanceOf(
                 ForcedNullVersion::class,
-                $header->getClientVersion(),
+                $xRequestedWith->getClientVersion(),
                 sprintf('browser info mismatch for ua "%s"', $ua),
             );
         } else {
             self::assertSame(
                 $clientVersion,
-                $header->getClientVersion()->getVersion(),
+                $xRequestedWith->getClientVersion()->getVersion(),
                 sprintf('browser info mismatch for ua "%s"', $ua),
             );
         }
 
         self::assertSame(
             $hasPlatformCode,
-            $header->hasPlatformCode(),
+            $xRequestedWith->hasPlatformCode(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
-            $platformCode,
-            $header->getPlatformCode(),
+            $os,
+            $xRequestedWith->getPlatformCode(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
         self::assertFalse(
-            $header->hasPlatformVersion(),
+            $xRequestedWith->hasPlatformVersion(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
         self::assertInstanceOf(
             NullVersion::class,
-            $header->getPlatformVersionWithOs(Os::unknown),
+            $xRequestedWith->getPlatformVersionWithOs(Os::unknown),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
-        self::assertFalse($header->hasEngineCode(), sprintf('engine info mismatch for ua "%s"', $ua));
+        self::assertFalse(
+            $xRequestedWith->hasEngineCode(),
+            sprintf('engine info mismatch for ua "%s"', $ua),
+        );
 
         try {
-            $header->getEngineCode();
+            $xRequestedWith->getEngineCode();
 
             self::fail('Exception expected');
         } catch (NotFoundException) {
@@ -159,12 +165,12 @@ final class XRequestedWithTest extends TestCase
         }
 
         self::assertFalse(
-            $header->hasEngineVersion(),
+            $xRequestedWith->hasEngineVersion(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
         self::assertInstanceOf(
             NullVersion::class,
-            $header->getEngineVersionWithEngine(Engine::unknown),
+            $xRequestedWith->getEngineVersionWithEngine(Engine::unknown),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
     }
@@ -305,7 +311,7 @@ final class XRequestedWithTest extends TestCase
             ['alohabrowser', true, 'aloha-browser', true, null, false, Os::unknown],
             ['org.telegram.messenger', true, 'telegram-app', true, null, false, Os::unknown],
             ['xbrowser', true, 'x-browser', true, null, false, Os::unknown],
-            ['com.xbrowser.play', true, 'x-browser', true, null, false, Os::unknown],
+            ['com.xbrowser.play', true, 'x-browser-mini', true, null, false, Os::unknown],
             ['com.mycompany.app.soulbrowser', true, 'soul-browser', true, null, false, Os::unknown],
             ['com.sec.android.app.sbrowser.lite', true, 'samsung-browser-lite', true, null, false, Os::unknown],
             ['jp.ddo.pigsty.HabitBrowser', true, 'habit-browser', true, null, false, Os::unknown],
@@ -659,6 +665,9 @@ final class XRequestedWithTest extends TestCase
             ['com.fsecure.ms.vandenborre', true, 'vanden-borre-my-security', true, null, false, Os::unknown],
             ['com.fsecure.ms.tokaisa', true, 'tokai-safe', true, null, false, Os::unknown],
             ['com.securex.browser', true, 'secure-x', true, null, false, Os::unknown],
+            ['com.uc.browser.en', true, 'ucbrowser mini', true, null, false, Os::unknown],
+            ['com.lexi.browser', true, 'lexi-browser', true, null, false, Os::unknown],
+            ['com.fulldive.mobile', true, 'fulldive-browser', true, null, false, Os::unknown],
         ];
     }
 }

@@ -24,16 +24,16 @@ use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UnexpectedValueException;
 
-#[CoversClass(Safari::class)]
+#[CoversClass(className: Safari::class)]
 final class SafariTest extends TestCase
 {
-    private Safari $object;
+    private Safari $safari;
 
     /** @throws void */
     #[Override]
     protected function setUp(): void
     {
-        $this->object = new Safari();
+        $this->safari = new Safari();
     }
 
     /**
@@ -42,11 +42,11 @@ final class SafariTest extends TestCase
      * @throws NotNumericException
      * @throws Exception
      */
-    #[DataProvider('providerVersion')]
+    #[DataProvider(methodName: 'providerVersion')]
     public function testMapSafariVersion(string $version, string | null $expectedVersion): void
     {
         $versionObj = (new VersionBuilder())->set($version);
-        self::assertSame($expectedVersion, $this->object->mapSafariVersion($versionObj));
+        self::assertSame($expectedVersion, $this->safari->mapSafariVersion($versionObj));
     }
 
     /**

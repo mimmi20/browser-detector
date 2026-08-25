@@ -24,16 +24,16 @@ use PHPUnit\Framework\TestCase;
 use function assert;
 use function sprintf;
 
-#[CoversClass(SmartisanOsFactory::class)]
+#[CoversClass(className: SmartisanOsFactory::class)]
 final class SmartisanOsFactoryTest extends TestCase
 {
-    private SmartisanOsFactory $object;
+    private SmartisanOsFactory $smartisanOsFactory;
 
     /** @throws void */
     #[Override]
     protected function setUp(): void
     {
-        $this->object = new SmartisanOsFactory();
+        $this->smartisanOsFactory = new SmartisanOsFactory();
     }
 
     /**
@@ -42,7 +42,7 @@ final class SmartisanOsFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $object = $this->object;
+        $object = $this->smartisanOsFactory;
         assert(
             $object instanceof SmartisanOsFactory,
             sprintf(
@@ -51,7 +51,7 @@ final class SmartisanOsFactoryTest extends TestCase
                 $object::class,
             ),
         );
-        $result = $object();
-        self::assertInstanceOf(SmartisanOs::class, $result);
+        $smartisanOs = $object();
+        self::assertInstanceOf(SmartisanOs::class, $smartisanOs);
     }
 }

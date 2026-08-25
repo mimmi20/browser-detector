@@ -22,12 +22,12 @@ use PHPUnit\Framework\TestCase;
 use UaNormalizer\Normalizer\NormalizerInterface;
 use UaParser\EngineParserInterface;
 
-#[CoversClass(UseragentEngineCode::class)]
+#[CoversClass(className: UseragentEngineCode::class)]
 final class UseragentEngineCodeTest extends TestCase
 {
     /** @throws Exception */
-    #[DataProvider('providerUa1')]
-    public function testWithoutParsing(string $value, Engine $expected): void
+    #[DataProvider(methodName: 'providerUa1')]
+    public function testWithoutParsing(string $value, Engine $engine): void
     {
         $engineParser = $this->createMock(EngineParserInterface::class);
         $engineParser
@@ -41,12 +41,15 @@ final class UseragentEngineCodeTest extends TestCase
             ->with($value)
             ->willReturn($value);
 
-        $header = new UseragentEngineCode(engineParser: $engineParser, normalizer: $normalizer);
+        $useragentEngineCode = new UseragentEngineCode(
+            engineParser: $engineParser,
+            normalizer: $normalizer,
+        );
 
-        self::assertTrue($header->hasEngineCode($value));
+        self::assertTrue($useragentEngineCode->hasEngineCode($value));
         self::assertSame(
-            $expected,
-            $header->getEngineCode($value),
+            $engine,
+            $useragentEngineCode->getEngineCode($value),
         );
     }
 
@@ -63,15 +66,15 @@ final class UseragentEngineCodeTest extends TestCase
     }
 
     /** @throws Exception */
-    #[DataProvider('providerUa2')]
-    public function testWithParsing(string $value, Engine $expected): void
+    #[DataProvider(methodName: 'providerUa2')]
+    public function testWithParsing(string $value, Engine $engine): void
     {
         $engineParser = $this->createMock(EngineParserInterface::class);
         $engineParser
             ->expects(self::once())
             ->method('parse')
             ->with($value)
-            ->willReturn($expected);
+            ->willReturn($engine);
 
         $normalizer = $this->createMock(NormalizerInterface::class);
         $normalizer
@@ -80,12 +83,15 @@ final class UseragentEngineCodeTest extends TestCase
             ->with($value)
             ->willReturn($value);
 
-        $header = new UseragentEngineCode(engineParser: $engineParser, normalizer: $normalizer);
+        $useragentEngineCode = new UseragentEngineCode(
+            engineParser: $engineParser,
+            normalizer: $normalizer,
+        );
 
-        self::assertTrue($header->hasEngineCode($value));
+        self::assertTrue($useragentEngineCode->hasEngineCode($value));
         self::assertSame(
-            $expected,
-            $header->getEngineCode($value),
+            $engine,
+            $useragentEngineCode->getEngineCode($value),
         );
     }
 
@@ -118,12 +124,15 @@ final class UseragentEngineCodeTest extends TestCase
             ->with($value)
             ->willReturn('');
 
-        $header = new UseragentEngineCode(engineParser: $engineParser, normalizer: $normalizer);
+        $useragentEngineCode = new UseragentEngineCode(
+            engineParser: $engineParser,
+            normalizer: $normalizer,
+        );
 
-        self::assertTrue($header->hasEngineCode($value));
+        self::assertTrue($useragentEngineCode->hasEngineCode($value));
         self::assertSame(
             Engine::unknown,
-            $header->getEngineCode($value),
+            $useragentEngineCode->getEngineCode($value),
         );
     }
 
@@ -144,12 +153,15 @@ final class UseragentEngineCodeTest extends TestCase
             ->with($value)
             ->willThrowException(new \UaNormalizer\Normalizer\Exception\Exception('x'));
 
-        $header = new UseragentEngineCode(engineParser: $engineParser, normalizer: $normalizer);
+        $useragentEngineCode = new UseragentEngineCode(
+            engineParser: $engineParser,
+            normalizer: $normalizer,
+        );
 
-        self::assertTrue($header->hasEngineCode($value));
+        self::assertTrue($useragentEngineCode->hasEngineCode($value));
         self::assertSame(
             Engine::unknown,
-            $header->getEngineCode($value),
+            $useragentEngineCode->getEngineCode($value),
         );
     }
 }

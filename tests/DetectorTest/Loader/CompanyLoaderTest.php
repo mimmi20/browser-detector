@@ -28,8 +28,8 @@ use ReflectionProperty;
 use RuntimeException;
 use UaLoader\Exception\NotFoundException;
 
-#[CoversClass(CompanyLoader::class)]
-#[CoversClass(CompanyData::class)]
+#[CoversClass(className: CompanyLoader::class)]
+#[CoversClass(className: CompanyData::class)]
 final class CompanyLoaderTest extends TestCase
 {
     /**
@@ -40,7 +40,7 @@ final class CompanyLoaderTest extends TestCase
     {
         $companyKey = 'Dune HD';
 
-        $initData = new CompanyData(
+        $company = new CompanyData(
             strategy: new class () implements StrategyInterface {
                 /**
                  * @throws void
@@ -70,12 +70,12 @@ final class CompanyLoaderTest extends TestCase
             },
         );
 
-        $object = new CompanyLoader($initData);
+        $companyLoader = new CompanyLoader($company);
 
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessageIsOrContains('the company with key "Dune HD" was not found');
 
-        $object->load($companyKey);
+        $companyLoader->load($companyKey);
     }
 
     /**
@@ -86,7 +86,7 @@ final class CompanyLoaderTest extends TestCase
     {
         $companyKey = 'Dune HD';
 
-        $initData = new CompanyData(
+        $company = new CompanyData(
             strategy: new class () implements StrategyInterface {
                 /**
                  * @throws void
@@ -116,12 +116,12 @@ final class CompanyLoaderTest extends TestCase
             },
         );
 
-        $object = new CompanyLoader($initData);
+        $companyLoader = new CompanyLoader($company);
 
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessageIsOrContains('the company with key "Dune HD" was not found');
 
-        $object->load($companyKey);
+        $companyLoader->load($companyKey);
     }
 
     /**
@@ -172,9 +172,9 @@ final class CompanyLoaderTest extends TestCase
         $prop = new ReflectionProperty($initData, 'items');
         $prop->setValue($initData, [$companyKey => $companyData]);
 
-        $object = new CompanyLoader($initData);
+        $companyLoader = new CompanyLoader($initData);
 
-        $result = $object->load($companyKey);
+        $result = $companyLoader->load($companyKey);
 
         $prop = new ReflectionProperty($initData, 'initialized');
 
@@ -204,7 +204,7 @@ final class CompanyLoaderTest extends TestCase
         $companyName = 'A6 Corp';
         $brand       = 'A6 Corp';
 
-        $companyData = new DataCompany(name: $companyName, brandname: $brand);
+        $company = new DataCompany(name: $companyName, brandname: $brand);
 
         $initData = $this->createMock(DataInterface::class);
         $initData
@@ -214,11 +214,11 @@ final class CompanyLoaderTest extends TestCase
             ->expects(self::once())
             ->method('getItem')
             ->with($companyKey)
-            ->willReturn($companyData);
+            ->willReturn($company);
 
-        $object = new CompanyLoader($initData);
+        $companyLoader = new CompanyLoader($initData);
 
-        $result = $object->load($companyKey);
+        $result = $companyLoader->load($companyKey);
 
         self::assertSame(
             $companyName,
@@ -251,7 +251,7 @@ final class CompanyLoaderTest extends TestCase
             ->expects(self::never())
             ->method('getItem');
 
-        $object = new CompanyLoader($initData);
+        $companyLoader = new CompanyLoader($initData);
 
         $this->expectException(NotFoundException::class);
         $this->expectExceptionCode(0);
@@ -259,6 +259,6 @@ final class CompanyLoaderTest extends TestCase
             'the company with key "' . $companyKey . '" was not found',
         );
 
-        $object->load($companyKey);
+        $companyLoader->load($companyKey);
     }
 }

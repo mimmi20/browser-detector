@@ -16,6 +16,7 @@ namespace BrowserDetector\Version;
 use BrowserDetector\Version\Exception\NotNumericException;
 use Override;
 
+use function in_array;
 use function preg_match;
 
 final readonly class Gecko implements VersionFactoryInterface
@@ -60,7 +61,7 @@ final readonly class Gecko implements VersionFactoryInterface
             return new NullVersion();
         }
 
-        if (!empty($rvversion)) {
+        if (!in_array($rvversion, [null, '', '0'], strict: true)) {
             try {
                 return $this->versionBuilder->set($rvversion);
             } catch (NotNumericException) {

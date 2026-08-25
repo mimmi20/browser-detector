@@ -20,7 +20,7 @@ use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\Normalizer\NormalizerInterface;
 use UaParser\DeviceParserInterface;
 
-#[CoversClass(XUcbrowserDeviceUaDeviceCode::class)]
+#[CoversClass(className: XUcbrowserDeviceUaDeviceCode::class)]
 final class XUcbrowserDeviceUaDeviceCodeTest extends TestCase
 {
     /** @throws \PHPUnit\Framework\Exception */
@@ -41,12 +41,12 @@ final class XUcbrowserDeviceUaDeviceCodeTest extends TestCase
             ->with($value)
             ->willThrowException($exception);
 
-        $object = new XUcbrowserDeviceUaDeviceCode(
+        $xUcbrowserDeviceUaDeviceCode = new XUcbrowserDeviceUaDeviceCode(
             deviceParser: $deviceParser,
             normalizer: $normalizer,
         );
 
-        self::assertNull($object->getDeviceCode($value));
+        self::assertNull($xUcbrowserDeviceUaDeviceCode->getDeviceCode($value));
     }
 
     /** @throws \PHPUnit\Framework\Exception */
@@ -64,14 +64,14 @@ final class XUcbrowserDeviceUaDeviceCodeTest extends TestCase
             ->expects(self::once())
             ->method('normalize')
             ->with($value)
-            ->willReturn(null);
+            ->willReturn(value: null);
 
-        $object = new XUcbrowserDeviceUaDeviceCode(
+        $xUcbrowserDeviceUaDeviceCode = new XUcbrowserDeviceUaDeviceCode(
             deviceParser: $deviceParser,
             normalizer: $normalizer,
         );
 
-        self::assertNull($object->getDeviceCode($value));
+        self::assertNull($xUcbrowserDeviceUaDeviceCode->getDeviceCode($value));
     }
 
     /** @throws \PHPUnit\Framework\Exception */
@@ -91,11 +91,11 @@ final class XUcbrowserDeviceUaDeviceCodeTest extends TestCase
             ->with($value)
             ->willReturn('');
 
-        $object = new XUcbrowserDeviceUaDeviceCode(
+        $xUcbrowserDeviceUaDeviceCode = new XUcbrowserDeviceUaDeviceCode(
             deviceParser: $deviceParser,
             normalizer: $normalizer,
         );
 
-        self::assertNull($object->getDeviceCode($value));
+        self::assertNull($xUcbrowserDeviceUaDeviceCode->getDeviceCode($value));
     }
 }

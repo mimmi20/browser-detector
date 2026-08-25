@@ -24,16 +24,16 @@ use PHPUnit\Framework\TestCase;
 use function assert;
 use function sprintf;
 
-#[CoversClass(RemixOsFactory::class)]
+#[CoversClass(className: RemixOsFactory::class)]
 final class RemixOsFactoryTest extends TestCase
 {
-    private RemixOsFactory $object;
+    private RemixOsFactory $remixOsFactory;
 
     /** @throws void */
     #[Override]
     protected function setUp(): void
     {
-        $this->object = new RemixOsFactory();
+        $this->remixOsFactory = new RemixOsFactory();
     }
 
     /**
@@ -42,7 +42,7 @@ final class RemixOsFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $object = $this->object;
+        $object = $this->remixOsFactory;
         assert(
             $object instanceof RemixOsFactory,
             sprintf(
@@ -51,7 +51,7 @@ final class RemixOsFactoryTest extends TestCase
                 $object::class,
             ),
         );
-        $result = $object();
-        self::assertInstanceOf(RemixOs::class, $result);
+        $remixOs = $object();
+        self::assertInstanceOf(RemixOs::class, $remixOs);
     }
 }

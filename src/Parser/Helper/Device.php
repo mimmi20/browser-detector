@@ -419,6 +419,9 @@ final class Device implements DeviceInterface
             'pixel 11 pro fold' => 'google=google pixel 11 pro fold',
             'pixel 9 fold' => 'google=google pixel 9 fold',
             'adt-3' => 'google=google adt-3',
+            'pixel 11 pro' => 'google=google pixel 11 pro',
+            'gm45k' => 'google=google gm45k',
+            'g7swn' => 'google=google g7swn',
             // OnePlus
             'ac2003' => 'oneplus=oneplus ac2003',
             'in2023' => 'oneplus=oneplus in2023',
@@ -930,6 +933,7 @@ final class Device implements DeviceInterface
             'opd2101' => 'oppo=oppo opd2101',
             'opd2420' => 'oppo=oppo opd2420',
             'opd2417' => 'oppo=oppo opd2417',
+            'reno 10x zoom' => 'oppo=oppo reno 10x zoom',
             // Xiaomi/Poco
             'redmi note 9 pro', 'xiaomi redmi note 9 pro', 'redmi note9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro', 'redmi_note_8_pro', 'xiaomi redmi note 8 pro', 'redmi note8 pro' => 'xiaomi=xiaomi redmi note 8 pro',
@@ -3449,6 +3453,12 @@ final class Device implements DeviceInterface
             'galaxy s24 ultra' => 'samsung=samsung galaxy s24 ultra',
             'scg33' => 'samsung=samsung scg33',
             'sm-a253j', 'samsung sm-a253j' => 'samsung=samsung sm-a253j',
+            'sm-f971b', 'samsung sm-f971b' => 'samsung=samsung sm-f971b',
+            'sm-f776b', 'samsung sm-f776b' => 'samsung=samsung sm-f776b',
+            'sm-f776u', 'samsung sm-f776u' => 'samsung=samsung sm-f776u',
+            'sm-f776u1', 'samsung sm-f776u1' => 'samsung=samsung sm-f776u1',
+            'sm-f971u', 'samsung sm-f971u' => 'samsung=samsung sm-f971u',
+            'sm-f971u1', 'samsung sm-f971u1' => 'samsung=samsung sm-f971u1',
             // Huawei
             'vog-l29' => 'huawei=huawei vog-l29',
             'nen-lx1' => 'huawei=huawei nen-lx1',
@@ -4796,6 +4806,11 @@ final class Device implements DeviceInterface
             'rmx5171', 'realme rmx5171' => 'realme=realme rmx5171',
             'rmx5353', 'realme rmx5353' => 'realme=realme rmx5353',
             'rmx5366', 'realme rmx5366' => 'realme=realme rmx5366',
+            'rmx5264', 'realme rmx5264' => 'realme=realme rmx5264',
+            'rmx5261', 'realme rmx5261' => 'realme=realme rmx5261',
+            'rmx5256', 'realme rmx5256' => 'realme=realme rmx5256',
+            'rmx5268', 'realme rmx5268' => 'realme=realme rmx5268',
+            'rmx5258', 'realme rmx5258' => 'realme=realme rmx5258',
             // Motorola
             'moto g200 5g' => 'motorola=motorola moto g200 5g',
             'motorola razr 5g' => 'motorola=motorola razr 5g',
@@ -5936,6 +5951,36 @@ final class Device implements DeviceInterface
             'v2190a', 'vivo v2190a' => 'vivo=vivo v2190a',
             'v2180ga', 'vivo v2180ga' => 'vivo=vivo v2180ga',
             'v2168a', 'vivo v2168a' => 'vivo=vivo v2168a',
+            'iqoo neo 855+' => 'vivo=vivo iqoo neo 855+',
+            'v1936al', 'vivo v1936al' => 'vivo=vivo v1936al',
+            'iqoo neo' => 'vivo=vivo iqoo neo',
+            'iqoo pro 5g' => 'vivo=vivo iqoo pro 5g',
+            'v1922a', 'vivo v1922a' => 'vivo=vivo v1922a',
+            'iqoo pro' => 'vivo=vivo iqoo pro',
+            'v1936a', 'vivo v1936a' => 'vivo=vivo v1936a',
+            'v1936t', 'vivo v1936t' => 'vivo=vivo v1936t',
+            'iqoo neo 855' => 'vivo=vivo iqoo neo 855',
+            'vivo v9' => 'vivo=vivo v9',
+            'v2020ca', 'vivo v2020ca' => 'vivo=vivo v2020ca',
+            'v2020a', 'vivo v2020a' => 'vivo=vivo v2020a',
+            'v2026', 'vivo v2026' => 'vivo=vivo v2026',
+            'v2033', 'vivo v2033' => 'vivo=vivo v2033',
+            'v2042', 'vivo v2042' => 'vivo=vivo v2042',
+            'v2022', 'vivo v2022' => 'vivo=vivo v2022',
+            'v2032', 'vivo v2032' => 'vivo=vivo v2032',
+            'v2043', 'vivo v2043' => 'vivo=vivo v2043',
+            'v2043_21', 'vivo v2043_21' => 'vivo=vivo v2043_21',
+            'v2048', 'vivo v2048' => 'vivo=vivo v2048',
+            'v2040', 'vivo v2040' => 'vivo=vivo v2040',
+            'v2054a', 'vivo v2054a' => 'vivo=vivo v2054a',
+            'v2068a', 'vivo v2068a' => 'vivo=vivo v2068a',
+            'v2031ea', 'vivo v2031ea' => 'vivo=vivo v2031ea',
+            'v2034a', 'vivo v2034a' => 'vivo=vivo v2034a',
+            'v2036a', 'vivo v2036a' => 'vivo=vivo v2036a',
+            'v2533', 'vivo v2533' => 'vivo=vivo v2533',
+            'v2582', 'vivo v2582' => 'vivo=vivo v2582',
+            'v2551', 'vivo v2551' => 'vivo=vivo v2551',
+            'v2164ka', 'vivo v2164ka' => 'vivo=vivo v2164ka',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
@@ -6483,6 +6528,7 @@ final class Device implements DeviceInterface
             '5030i' => 'alcatel=alcatel 5030i',
             '8091' => 'alcatel=alcatel 8091',
             'alcatel_5002c' => 'alcatel=alcatel 5002c',
+            '5002e' => 'alcatel=alcatel 5002e',
             // HTC
             'htc desire 19+' => 'htc=htc desire 19 plus',
             'htc u11' => 'htc=htc u11',
@@ -8908,6 +8954,7 @@ final class Device implements DeviceInterface
             'dvk82 mercury' => 'stylo=stylo dvk82 mercury',
             'dvk87 orion 8 tab' => 'stylo=stylo orion 8 tab',
             'stylo marvel' => 'stylo=stylo marvel',
+            'brave' => 'stylo=stylo brave',
             // atozee
             'cp10' => 'atozee=atozee cp10',
             'yq10sk' => 'atozee=atozee yq10sk',
@@ -10085,6 +10132,8 @@ final class Device implements DeviceInterface
             'bdf-kt107' => 'bdf=bdf kt107',
             // qihoo
             '1713-a01' => 'qihoo=qihoo 1713-a01',
+            '1809-a01' => 'qihoo=qihoo 1809-a01',
+            '1605-a01' => 'qihoo=qihoo 1605-a01',
             // changhong
             'ai pont' => 'changhong=changhong ai pont',
             // xoro
@@ -10386,6 +10435,7 @@ final class Device implements DeviceInterface
             'gd032313' => 'gionee=gionee gd032313',
             '20190418q' => 'gionee=gionee 20190418q',
             '20190619g' => 'gionee=gionee 20190619g',
+            'gionee m7' => 'gionee=gionee m7',
             // heji
             'heji goe', 'hejigoe' => 'heji=heji goe',
             // smart-barry
@@ -10483,6 +10533,8 @@ final class Device implements DeviceInterface
             'mlt55usx02' => 'maunfeld=maunfeld mlt55usx02',
             // k-touch
             'kt20201199' => 'k-touch=k-touch kt20201199',
+            // azumi
+            'nobu_a55_pro' => 'azumi=azumi nobu a55 pro',
             // generic
             'smart_tv', 'smart tv', 'smart tv pro', 'smarttv', '4k smart tv', '2k smart tv', '2k pa smart tv', 'tv box', 'tvbox' => 'unknown=general tv device',
             // other

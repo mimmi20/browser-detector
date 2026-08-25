@@ -78,10 +78,10 @@ final class SecChUaPlatformVersion implements PlatformVersionInterface
         if ($derivatePosition !== false) {
             $derivate = mb_trim(mb_substr($value, $derivatePosition + 1));
 
-            $exception = new VersionContainsDerivateException();
-            $exception->setDerivate($derivate);
+            $versionContainsDerivateException = new VersionContainsDerivateException();
+            $versionContainsDerivateException->setDerivate($derivate);
 
-            throw $exception;
+            throw $versionContainsDerivateException;
         }
 
         return $this->setVersion($value);

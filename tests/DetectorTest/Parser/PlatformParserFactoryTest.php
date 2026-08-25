@@ -21,7 +21,7 @@ use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UaParser\PlatformParserInterface;
 
-#[CoversClass(PlatformParserFactory::class)]
+#[CoversClass(className: PlatformParserFactory::class)]
 final class PlatformParserFactoryTest extends TestCase
 {
     /**
@@ -30,11 +30,11 @@ final class PlatformParserFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $factory = new PlatformParserFactory();
+        $platformParserFactory = new PlatformParserFactory();
 
-        $parser = $factory();
+        $platformParser = $platformParserFactory();
 
-        self::assertInstanceOf(PlatformParserInterface::class, $parser);
-        self::assertInstanceOf(PlatformParser::class, $parser);
+        self::assertInstanceOf(PlatformParserInterface::class, $platformParser);
+        self::assertInstanceOf(PlatformParser::class, $platformParser);
     }
 }

@@ -24,16 +24,16 @@ use PHPUnit\Framework\TestCase;
 use function assert;
 use function sprintf;
 
-#[CoversClass(GoannaFactory::class)]
+#[CoversClass(className: GoannaFactory::class)]
 final class GoannaFactoryTest extends TestCase
 {
-    private GoannaFactory $object;
+    private GoannaFactory $goannaFactory;
 
     /** @throws void */
     #[Override]
     protected function setUp(): void
     {
-        $this->object = new GoannaFactory();
+        $this->goannaFactory = new GoannaFactory();
     }
 
     /**
@@ -42,7 +42,7 @@ final class GoannaFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $object = $this->object;
+        $object = $this->goannaFactory;
         assert(
             $object instanceof GoannaFactory,
             sprintf(
@@ -51,7 +51,7 @@ final class GoannaFactoryTest extends TestCase
                 $object::class,
             ),
         );
-        $result = $object();
-        self::assertInstanceOf(Goanna::class, $result);
+        $goanna = $object();
+        self::assertInstanceOf(Goanna::class, $goanna);
     }
 }

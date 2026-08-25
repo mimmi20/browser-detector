@@ -24,16 +24,16 @@ use PHPUnit\Framework\TestCase;
 use function assert;
 use function sprintf;
 
-#[CoversClass(MicrosoftInternetExplorerFactory::class)]
+#[CoversClass(className: MicrosoftInternetExplorerFactory::class)]
 final class MicrosoftInternetExplorerFactoryTest extends TestCase
 {
-    private MicrosoftInternetExplorerFactory $object;
+    private MicrosoftInternetExplorerFactory $microsoftInternetExplorerFactory;
 
     /** @throws void */
     #[Override]
     protected function setUp(): void
     {
-        $this->object = new MicrosoftInternetExplorerFactory();
+        $this->microsoftInternetExplorerFactory = new MicrosoftInternetExplorerFactory();
     }
 
     /**
@@ -42,7 +42,7 @@ final class MicrosoftInternetExplorerFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $object = $this->object;
+        $object = $this->microsoftInternetExplorerFactory;
         assert(
             $object instanceof MicrosoftInternetExplorerFactory,
             sprintf(
@@ -51,7 +51,7 @@ final class MicrosoftInternetExplorerFactoryTest extends TestCase
                 $object::class,
             ),
         );
-        $result = $object();
-        self::assertInstanceOf(MicrosoftInternetExplorer::class, $result);
+        $microsoftInternetExplorer = $object();
+        self::assertInstanceOf(MicrosoftInternetExplorer::class, $microsoftInternetExplorer);
     }
 }

@@ -1787,5 +1787,17 @@
       ]
     },
     "engine": null
+  },
+  "nscurl": {
+    "name": "nscurl",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "nscurl"
+      ]
+    },
+    "engine": null
   }
 }

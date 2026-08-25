@@ -24,7 +24,7 @@ use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UnexpectedValueException;
 
-#[CoversClass(RemixOs::class)]
+#[CoversClass(className: RemixOs::class)]
 final class RemixOsTest extends TestCase
 {
     /**
@@ -33,12 +33,12 @@ final class RemixOsTest extends TestCase
      * @throws Exception
      * @throws NotNumericException
      */
-    #[DataProvider('providerVersion')]
+    #[DataProvider(methodName: 'providerVersion')]
     public function testGetVersion(string $useragent, string | null $expectedVersion): void
     {
-        $object = new RemixOs(new VersionBuilder());
+        $remixOs = new RemixOs(new VersionBuilder());
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $remixOs->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertSame($expectedVersion, $detectedVersion->getVersion());

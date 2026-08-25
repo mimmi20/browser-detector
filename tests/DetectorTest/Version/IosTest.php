@@ -29,7 +29,7 @@ use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UnexpectedValueException;
 
-#[CoversClass(Ios::class)]
+#[CoversClass(className: Ios::class)]
 final class IosTest extends TestCase
 {
     /**
@@ -38,12 +38,12 @@ final class IosTest extends TestCase
      * @throws UnexpectedValueException
      * @throws \PHPUnit\Framework\Exception
      */
-    #[DataProvider('providerVersion')]
+    #[DataProvider(methodName: 'providerVersion')]
     public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
-        $object = new Ios(new VersionBuilder(), new IosBuild());
+        $ios = new Ios(new VersionBuilder(), new IosBuild());
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $ios->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertSame($expectedVersion, $detectedVersion->getVersion());
@@ -279,6 +279,10 @@ final class IosTest extends TestCase
                 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148;super/4.22.1/iOS/26.2',
                 '26.2.0',
             ],
+            [
+                'com.apple.WebKit.Networking/8616.2.9.10.11 CFNetwork/1485 Darwin/27.0.0',
+                '27.0.0',
+            ],
         ];
     }
 
@@ -288,8 +292,8 @@ final class IosTest extends TestCase
      */
     public function testDetectVersionFail(): void
     {
-        $useragent = 'iOS/6.1.3 (10B329) dataaccessd/1.0';
-        $exception = new NotFoundException('not found');
+        $useragent         = 'iOS/6.1.3 (10B329) dataaccessd/1.0';
+        $notFoundException = new NotFoundException('not found');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
@@ -304,11 +308,11 @@ final class IosTest extends TestCase
             ->expects(self::once())
             ->method('getVersion')
             ->with('10B329')
-            ->willThrowException($exception);
+            ->willThrowException($notFoundException);
 
-        $object = new Ios($versionBuilder, $iosBuild);
+        $ios = new Ios($versionBuilder, $iosBuild);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $ios->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
@@ -320,9 +324,9 @@ final class IosTest extends TestCase
      */
     public function testDetectVersionFail4(): void
     {
-        $useragent = 'AppleCoreMedia/1.0.0.12D5480a (iPad; U; CPU OS 8_2 like Mac OS X; sv_se)';
-        $exception = new NotNumericException('not numeric');
-        $version   = '6.1.3';
+        $useragent           = 'AppleCoreMedia/1.0.0.12D5480a (iPad; U; CPU OS 8_2 like Mac OS X; sv_se)';
+        $notNumericException = new NotNumericException('not numeric');
+        $version             = '6.1.3';
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
@@ -332,7 +336,7 @@ final class IosTest extends TestCase
             ->expects(self::once())
             ->method('set')
             ->with($version)
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
 
         $iosBuild = $this->createMock(IosBuildInterface::class);
         $iosBuild
@@ -341,9 +345,9 @@ final class IosTest extends TestCase
             ->with('12D5480a')
             ->willReturn($version);
 
-        $object = new Ios($versionBuilder, $iosBuild);
+        $ios = new Ios($versionBuilder, $iosBuild);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $ios->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
@@ -355,9 +359,9 @@ final class IosTest extends TestCase
      */
     public function testDetectVersionFail5(): void
     {
-        $useragent = 'TestApp/1.0 CFNetwork/808.2.16 Darwin/16.3.0';
-        $exception = new NotNumericException('not numeric');
-        $version   = '10.2';
+        $useragent           = 'TestApp/1.0 CFNetwork/808.2.16 Darwin/16.3.0';
+        $notNumericException = new NotNumericException('not numeric');
+        $version             = '10.2';
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
@@ -367,16 +371,16 @@ final class IosTest extends TestCase
             ->expects(self::once())
             ->method('set')
             ->with($version)
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
 
         $iosBuild = $this->createMock(IosBuildInterface::class);
         $iosBuild
             ->expects(self::never())
             ->method('getVersion');
 
-        $object = new Ios($versionBuilder, $iosBuild);
+        $ios = new Ios($versionBuilder, $iosBuild);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $ios->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
@@ -388,9 +392,9 @@ final class IosTest extends TestCase
      */
     public function testDetectVersionFail6(): void
     {
-        $useragent = 'Apple-iPhone3C1/902.206';
-        $exception = new NotNumericException('not numeric');
-        $version   = '5.1.1';
+        $useragent           = 'Apple-iPhone3C1/902.206';
+        $notNumericException = new NotNumericException('not numeric');
+        $version             = '5.1.1';
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
@@ -400,16 +404,16 @@ final class IosTest extends TestCase
             ->expects(self::once())
             ->method('set')
             ->with($version)
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
 
         $iosBuild = $this->createMock(IosBuildInterface::class);
         $iosBuild
             ->expects(self::never())
             ->method('getVersion');
 
-        $object = new Ios($versionBuilder, $iosBuild);
+        $ios = new Ios($versionBuilder, $iosBuild);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $ios->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
@@ -421,9 +425,9 @@ final class IosTest extends TestCase
      */
     public function testDetectVersionFail7(): void
     {
-        $useragent = 'iOS/6.1.3 (10B329) dataaccessd/1.0';
-        $exception = new NotNumericException('not numeric');
-        $version   = '5.1.1';
+        $useragent           = 'iOS/6.1.3 (10B329) dataaccessd/1.0';
+        $notNumericException = new NotNumericException('not numeric');
+        $version             = '5.1.1';
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
@@ -433,7 +437,7 @@ final class IosTest extends TestCase
             ->expects(self::once())
             ->method('set')
             ->with($version)
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
 
         $iosBuild = $this->createMock(IosBuildInterface::class);
         $iosBuild
@@ -442,9 +446,9 @@ final class IosTest extends TestCase
             ->with('10B329')
             ->willReturn($version);
 
-        $object = new Ios($versionBuilder, $iosBuild);
+        $ios = new Ios($versionBuilder, $iosBuild);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $ios->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
@@ -456,15 +460,15 @@ final class IosTest extends TestCase
      */
     public function testDetectVersionFail8(): void
     {
-        $useragent = 'Mozilla/5.0 (iPad; CPU OS 8_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) CriOS/42.0.2311.47 Mobile Safari/600.1.4';
-        $exception = new NotNumericException('not numeric');
+        $useragent           = 'Mozilla/5.0 (iPad; CPU OS 8_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) CriOS/42.0.2311.47 Mobile Safari/600.1.4';
+        $notNumericException = new NotNumericException('not numeric');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
             ->expects(self::once())
             ->method('detectVersion')
             ->with($useragent, Ios::SEARCHES)
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
         $versionBuilder
             ->expects(self::never())
             ->method('set');
@@ -474,9 +478,9 @@ final class IosTest extends TestCase
             ->expects(self::never())
             ->method('getVersion');
 
-        $object = new Ios($versionBuilder, $iosBuild);
+        $ios = new Ios($versionBuilder, $iosBuild);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $ios->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
@@ -488,8 +492,8 @@ final class IosTest extends TestCase
      */
     public function testDetectVersionFail9(): void
     {
-        $useragent = 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_10 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile Safari/600.1.4';
-        $exception = new NotNumericException('not numeric');
+        $useragent           = 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_10 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile Safari/600.1.4';
+        $notNumericException = new NotNumericException('not numeric');
 
         $version = $this->createMock(VersionInterface::class);
         $version
@@ -508,16 +512,16 @@ final class IosTest extends TestCase
             ->expects(self::once())
             ->method('set')
             ->with('8.0.0')
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
 
         $iosBuild = $this->createMock(IosBuildInterface::class);
         $iosBuild
             ->expects(self::never())
             ->method('getVersion');
 
-        $object = new Ios($versionBuilder, $iosBuild);
+        $ios = new Ios($versionBuilder, $iosBuild);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $ios->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
@@ -529,8 +533,8 @@ final class IosTest extends TestCase
      */
     public function testDetectVersionFail10(): void
     {
-        $useragent = 'AppleCoreMedia/1.0.0.12D5480a (iPad; U; CPU OS 8_2 like Mac OS X; sv_se)';
-        $exception = new NotFoundException('not numeric');
+        $useragent         = 'AppleCoreMedia/1.0.0.12D5480a (iPad; U; CPU OS 8_2 like Mac OS X; sv_se)';
+        $notFoundException = new NotFoundException('not numeric');
 
         $versionBuilder = $this->createMock(VersionBuilderInterface::class);
         $versionBuilder
@@ -545,11 +549,11 @@ final class IosTest extends TestCase
             ->expects(self::once())
             ->method('getVersion')
             ->with('12D5480a')
-            ->willThrowException($exception);
+            ->willThrowException($notFoundException);
 
-        $object = new Ios($versionBuilder, $iosBuild);
+        $ios = new Ios($versionBuilder, $iosBuild);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $ios->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
@@ -561,8 +565,8 @@ final class IosTest extends TestCase
      */
     public function testDetectVersionFail11(): void
     {
-        $useragent = 'Mozilla/5.0 (iPod; U; CPU iPhone OS 433 like Mac OS X; zh-CN) AppleWebKit/533.17.9 (KHTML like Gecko) Version/5.0.2 Mobile/8J2 Safari/6533.18.5';
-        $exception = new NotNumericException('not numeric');
+        $useragent           = 'Mozilla/5.0 (iPod; U; CPU iPhone OS 433 like Mac OS X; zh-CN) AppleWebKit/533.17.9 (KHTML like Gecko) Version/5.0.2 Mobile/8J2 Safari/6533.18.5';
+        $notNumericException = new NotNumericException('not numeric');
 
         $version = $this->createMock(VersionInterface::class);
         $version
@@ -585,16 +589,16 @@ final class IosTest extends TestCase
             ->expects(self::once())
             ->method('set')
             ->with('4.3.3')
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
 
         $iosBuild = $this->createMock(IosBuildInterface::class);
         $iosBuild
             ->expects(self::never())
             ->method('getVersion');
 
-        $object = new Ios($versionBuilder, $iosBuild);
+        $ios = new Ios($versionBuilder, $iosBuild);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $ios->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
@@ -606,8 +610,8 @@ final class IosTest extends TestCase
      */
     public function testDetectVersionFail12(): void
     {
-        $useragent = 'Mozilla/5.0 (iPhone; CPU iPhone OS 19_0 like Mac OS X) WebKit/8612 (KHTML, like Gecko) Mobile/23A344 [FBAN/FBIOS;FBDV/iPhone18,4;FBMD/iPhone;FBSN/iOS;FBSV/19.0;FBSS/3;FBID/phone;FBLC/ru_RU;FBOP/5]';
-        $exception = new NotNumericException('not numeric');
+        $useragent           = 'Mozilla/5.0 (iPhone; CPU iPhone OS 19_0 like Mac OS X) WebKit/8612 (KHTML, like Gecko) Mobile/23A344 [FBAN/FBIOS;FBDV/iPhone18,4;FBMD/iPhone;FBSN/iOS;FBSV/19.0;FBSS/3;FBID/phone;FBLC/ru_RU;FBOP/5]';
+        $notNumericException = new NotNumericException('not numeric');
 
         $version = $this->createMock(VersionInterface::class);
         $version
@@ -630,16 +634,16 @@ final class IosTest extends TestCase
             ->expects(self::once())
             ->method('set')
             ->with('26.0.0')
-            ->willThrowException($exception);
+            ->willThrowException($notNumericException);
 
         $iosBuild = $this->createMock(IosBuildInterface::class);
         $iosBuild
             ->expects(self::never())
             ->method('getVersion');
 
-        $object = new Ios($versionBuilder, $iosBuild);
+        $ios = new Ios($versionBuilder, $iosBuild);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $ios->detectVersion($useragent);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);

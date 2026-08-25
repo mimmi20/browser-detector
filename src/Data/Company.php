@@ -4279,6 +4279,18 @@ enum Company: string implements CompanyInterface
 
     case maunfeld = 'Maunfeld';
 
+    case fulldive = 'Fulldive';
+
+    case alentumSoftware = 'Alentum Software';
+
+    case steveWebb = 'Steve Webb';
+
+    case kaupr = 'Kaupr';
+
+    case jorgeDelPrado = 'Jorge del Prado';
+
+    case fortinet = 'Fortinet';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -6416,6 +6428,12 @@ enum Company: string implements CompanyInterface
             'olto' => self::olto,
             'skyline' => self::skyline,
             'maunfeld' => self::maunfeld,
+            'fulldive', 'fulldive co.' => self::fulldive,
+            'alentumsoftware', 'alentum software ltd.', 'alentum-software', 'alentum software' => self::alentumSoftware,
+            'stevewebb', 'steve-webb', 'steve webb' => self::steveWebb,
+            'kaupr', 'kaupr ltd.' => self::kaupr,
+            'jorgedelprado', 'jorge-del-prado', 'jorge del prado' => self::jorgeDelPrado,
+            'fortinet', 'fortinet, inc.' => self::fortinet,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -7287,6 +7305,10 @@ enum Company: string implements CompanyInterface
             self::h96 => 'Shenzhen Haochuangyi Technology',
             self::snyk => 'Snyk Limited',
             self::panscient => 'Panscient, Inc.',
+            self::fulldive => 'Fulldive Co.',
+            self::alentumSoftware => 'Alentum Software Ltd.',
+            self::kaupr => 'Kaupr Ltd.',
+            self::fortinet => 'Fortinet, Inc.',
             self::unknown => null,
             default => $this->value,
         };
@@ -8097,6 +8119,9 @@ enum Company: string implements CompanyInterface
             self::vandenBorre => 'vanden-borre',
             self::tokaiCommunications => 'tokai-communications',
             self::lasGarioStudio => 'lasgario-studio',
+            self::alentumSoftware => 'alentum-software',
+            self::steveWebb => 'steve-webb',
+            self::jorgeDelPrado => 'jorge-del-prado',
             default => $this->name,
         };
     }

@@ -26,10 +26,8 @@ use function preg_match;
 final readonly class Safari implements VersionFactoryInterface
 {
     /** @throws void */
-    public function __construct(
-        private VersionBuilderInterface $versionBuilder,
-        private SafariInterface $safariHelper,
-    ) {
+    public function __construct(private VersionBuilderInterface $versionBuilder, private SafariInterface $safari)
+    {
         // nothing to do
     }
 
@@ -72,7 +70,7 @@ final readonly class Safari implements VersionFactoryInterface
                 return new NullVersion();
             }
 
-            $mappedVersion = $this->safariHelper->mapSafariVersion($version);
+            $mappedVersion = $this->safari->mapSafariVersion($version);
 
             if ($mappedVersion === null) {
                 return new NullVersion();

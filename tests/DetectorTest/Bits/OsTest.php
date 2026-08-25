@@ -21,29 +21,29 @@ use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 
-#[CoversClass(Os::class)]
+#[CoversClass(className: Os::class)]
 final class OsTest extends TestCase
 {
-    private Os $object;
+    private Os $os;
 
     /** @throws void */
     #[Override]
     protected function setUp(): void
     {
-        $this->object = new Os();
+        $this->os = new Os();
     }
 
     /**
      * @throws ExpectationFailedException
      * @throws Exception
      */
-    #[DataProvider('providerGetBits')]
+    #[DataProvider(methodName: 'providerGetBits')]
     public function testGetBits(string $useragent, int | null $expected): void
     {
-        $result = $this->object->getBits($useragent);
+        $result = $this->os->getBits($useragent);
         self::assertSame($expected, $result);
 
-        $secondResult = $this->object->getBits($useragent);
+        $secondResult = $this->os->getBits($useragent);
         self::assertSame($expected, $secondResult);
         self::assertSame($result, $secondResult);
     }

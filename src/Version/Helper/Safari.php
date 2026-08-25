@@ -190,7 +190,7 @@ final class Safari implements SafariInterface
             in_array(
                 $detectedVersion->getVersion(VersionInterface::IGNORE_MICRO),
                 self::REGULAR_VERSIONS,
-                true,
+                strict: true,
             )
         ) {
             return $detectedVersion->getVersion();

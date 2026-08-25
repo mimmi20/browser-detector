@@ -6984,8 +6984,8 @@
     "engine": "unknown"
   },
   "vsm-crawler": {
-    "name": "VSMCrawler",
-    "manufacturer": "unknown",
+    "name": "Visual Site Mapper Crawler",
+    "manufacturer": "alentum-software",
     "type": "crawler",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -7143,6 +7143,52 @@
     "version": {
       "factory": null,
       "search": null
+    },
+    "engine": "unknown"
+  },
+  "webb-crawler": {
+    "name": "WebbCrawler",
+    "manufacturer": "steve-webb",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "prospector-br": {
+    "name": "ProspectorBR",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ProspectorBR"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "my-cellar": {
+    "name": "MyCellar",
+    "manufacturer": "jorge-del-prado",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "MyCellar"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "kaupr": {
+    "name": "Kaupr",
+    "manufacturer": "kaupr",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Kaupr"
+      ]
     },
     "engine": "unknown"
   }

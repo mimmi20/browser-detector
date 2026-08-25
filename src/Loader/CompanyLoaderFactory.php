@@ -24,15 +24,15 @@ use RuntimeException;
 
 final class CompanyLoaderFactory implements CompanyLoaderFactoryInterface
 {
-    private CompanyLoader | null $loader = null;
+    private CompanyLoader | null $companyLoader = null;
 
     /** @throws RuntimeException */
     #[Override]
     public function __invoke(StrategyInterface $strategy): CompanyLoaderInterface
     {
-        if ($this->loader === null) {
+        if (!$this->companyLoader instanceof CompanyLoader) {
             try {
-                $this->loader = new CompanyLoader(
+                $this->companyLoader = new CompanyLoader(
                     initData: new Data\Company(
                         strategy: new StrategyChain(
                             [
@@ -50,6 +50,6 @@ final class CompanyLoaderFactory implements CompanyLoaderFactoryInterface
             }
         }
 
-        return $this->loader;
+        return $this->companyLoader;
     }
 }

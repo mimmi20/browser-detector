@@ -31,7 +31,7 @@ use UaResult\Device\Architecture;
 
 use function sprintf;
 
-#[CoversClass(XDeviceUseragent::class)]
+#[CoversClass(className: XDeviceUseragent::class)]
 final class XDeviceUseragent1Test extends TestCase
 {
     /**
@@ -41,7 +41,7 @@ final class XDeviceUseragent1Test extends TestCase
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
-    #[DataProvider('providerUa')]
+    #[DataProvider(methodName: 'providerUa')]
     public function testData(string $ua, bool $hasDeviceInfo, string $deviceCode): void
     {
         $isNull = false;
@@ -51,9 +51,9 @@ final class XDeviceUseragent1Test extends TestCase
         }
 
         $normalizerFactory = new NormalizerFactory();
-        $normalizer        = $normalizerFactory->build();
+        $normalizerChain   = $normalizerFactory->build();
 
-        $normalitedUa = $normalizer->normalize($ua);
+        $normalitedUa = $normalizerChain->normalize($ua);
 
         $deviceParser = $this->createMock(DeviceParserInterface::class);
         $deviceParser
@@ -62,77 +62,84 @@ final class XDeviceUseragent1Test extends TestCase
             ->with($normalitedUa)
             ->willReturn($deviceCode);
 
-        $header = new DeviceCodeOnlyHeader(
+        $deviceCodeOnlyHeader = new DeviceCodeOnlyHeader(
             value: $ua,
             deviceCode: new XDeviceUseragent(
                 deviceParser: $deviceParser,
-                normalizer: $normalizer,
+                normalizer: $normalizerChain,
             ),
         );
 
-        self::assertSame($ua, $header->getValue(), sprintf('value mismatch for ua "%s"', $ua));
         self::assertSame(
             $ua,
-            $header->getNormalizedValue(),
+            $deviceCodeOnlyHeader->getValue(),
+            sprintf('value mismatch for ua "%s"', $ua),
+        );
+        self::assertSame(
+            $ua,
+            $deviceCodeOnlyHeader->getNormalizedValue(),
             sprintf('value mismatch for ua "%s"', $ua),
         );
         self::assertFalse(
-            $header->hasDeviceArchitecture(),
+            $deviceCodeOnlyHeader->hasDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             Architecture::unknown,
-            $header->getDeviceArchitecture(),
+            $deviceCodeOnlyHeader->getDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertFalse(
-            $header->hasDeviceBitness(),
+            $deviceCodeOnlyHeader->hasDeviceBitness(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             Bits::unknown,
-            $header->getDeviceBitness(),
+            $deviceCodeOnlyHeader->getDeviceBitness(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertFalse(
-            $header->hasDeviceIsMobile(),
+            $deviceCodeOnlyHeader->hasDeviceIsMobile(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertNull(
-            $header->getDeviceIsMobile(),
+            $deviceCodeOnlyHeader->getDeviceIsMobile(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
             $hasDeviceInfo,
-            $header->hasDeviceCode(),
+            $deviceCodeOnlyHeader->hasDeviceCode(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
-            !$isNull ? $deviceCode : null,
-            $header->getDeviceCode(),
+            $isNull ? null : $deviceCode,
+            $deviceCodeOnlyHeader->getDeviceCode(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
-        self::assertFalse($header->hasClientCode(), sprintf('browser info mismatch for ua "%s"', $ua));
+        self::assertFalse(
+            $deviceCodeOnlyHeader->hasClientCode(),
+            sprintf('browser info mismatch for ua "%s"', $ua),
+        );
         self::assertNull(
-            $header->getClientCode(),
+            $deviceCodeOnlyHeader->getClientCode(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
         self::assertFalse(
-            $header->hasClientVersion(),
+            $deviceCodeOnlyHeader->hasClientVersion(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
         self::assertInstanceOf(
             NullVersion::class,
-            $header->getClientVersion(),
+            $deviceCodeOnlyHeader->getClientVersion(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
         self::assertFalse(
-            $header->hasPlatformCode(),
+            $deviceCodeOnlyHeader->hasPlatformCode(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
 
         try {
-            $header->getPlatformCode();
+            $deviceCodeOnlyHeader->getPlatformCode();
 
             self::fail('Exception expected');
         } catch (NotFoundException) {
@@ -140,18 +147,21 @@ final class XDeviceUseragent1Test extends TestCase
         }
 
         self::assertFalse(
-            $header->hasPlatformVersion(),
+            $deviceCodeOnlyHeader->hasPlatformVersion(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
         self::assertInstanceOf(
             NullVersion::class,
-            $header->getPlatformVersionWithOs(Os::unknown),
+            $deviceCodeOnlyHeader->getPlatformVersionWithOs(Os::unknown),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
-        self::assertFalse($header->hasEngineCode(), sprintf('engine info mismatch for ua "%s"', $ua));
+        self::assertFalse(
+            $deviceCodeOnlyHeader->hasEngineCode(),
+            sprintf('engine info mismatch for ua "%s"', $ua),
+        );
 
         try {
-            $header->getEngineCode();
+            $deviceCodeOnlyHeader->getEngineCode();
 
             self::fail('Exception expected');
         } catch (NotFoundException) {
@@ -159,12 +169,12 @@ final class XDeviceUseragent1Test extends TestCase
         }
 
         self::assertFalse(
-            $header->hasEngineVersion(),
+            $deviceCodeOnlyHeader->hasEngineVersion(),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
         self::assertInstanceOf(
             NullVersion::class,
-            $header->getEngineVersionWithEngine(Engine::unknown),
+            $deviceCodeOnlyHeader->getEngineVersionWithEngine(Engine::unknown),
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
     }

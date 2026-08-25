@@ -652,10 +652,12 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Brave Chrome",
+        "Brave Browser Nightly",
+        "Brave Browser",
         "Brave"
       ]
     },
-    "engine": null
+    "engine": "webkit"
   },
   "browse": {
     "name": "Browse",
@@ -4363,8 +4365,10 @@
     "manufacturer": "haiku",
     "type": "browser",
     "version": {
-      "class": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WebPositive"
+      ]
     },
     "engine": "webkit"
   },
@@ -4725,6 +4729,16 @@
   },
   "x-browser": {
     "name": "XBrowser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "x-browser-mini": {
+    "name": "XBrowser Mini",
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
@@ -7044,6 +7058,42 @@
     "version": {
       "factory": null,
       "search": null
+    },
+    "engine": "unknown"
+  },
+  "chatgpt-atlas": {
+    "name": "ChatGPT Atlas",
+    "manufacturer": "openai",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ChatGPT Atlas"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "lexi-browser": {
+    "name": "Lexi Browser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "LexiBrowser"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "fulldive-browser": {
+    "name": "Fulldive Browser",
+    "manufacturer": "fulldive",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "FulldiveBrowser"
+      ]
     },
     "engine": "unknown"
   }

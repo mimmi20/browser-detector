@@ -24,7 +24,7 @@ use function preg_match;
 final readonly class XUcbrowserUaDeviceCode implements DeviceCodeInterface
 {
     /** @throws void */
-    public function __construct(private DeviceParserInterface $deviceParser, private DeviceInterface $deviceCodeHelper)
+    public function __construct(private DeviceParserInterface $deviceParser, private DeviceInterface $device)
     {
         // nothing to do
     }
@@ -56,7 +56,7 @@ final readonly class XUcbrowserUaDeviceCode implements DeviceCodeInterface
             return null;
         }
 
-        $code = $this->deviceCodeHelper->getDeviceCode(mb_strtolower($matches['device']));
+        $code = $this->device->getDeviceCode(mb_strtolower($matches['device']));
 
         if ($code !== null) {
             return $code;

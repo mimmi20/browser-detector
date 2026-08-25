@@ -22,24 +22,24 @@ use PHPUnit\Framework\TestCase;
 
 use function sprintf;
 
-#[CoversClass(MobileDevice::class)]
+#[CoversClass(className: MobileDevice::class)]
 final class MobileDeviceTest extends TestCase
 {
-    private MobileDevice $object;
+    private MobileDevice $mobileDevice;
 
     /** @throws void */
     #[Override]
     protected function setUp(): void
     {
-        $this->object = new MobileDevice();
+        $this->mobileDevice = new MobileDevice();
     }
 
     /** @throws ExpectationFailedException */
-    #[DataProvider('providerIsMobile')]
+    #[DataProvider(methodName: 'providerIsMobile')]
     public function testIsMobile(string $agent): void
     {
         self::assertTrue(
-            $this->object->isMobile($agent),
+            $this->mobileDevice->isMobile($agent),
             sprintf('isMobile detected to FALSE instead of expected TRUE for UA "%s"', $agent),
         );
     }
@@ -209,11 +209,11 @@ final class MobileDeviceTest extends TestCase
     }
 
     /** @throws ExpectationFailedException */
-    #[DataProvider('providerIsNotMobile')]
+    #[DataProvider(methodName: 'providerIsNotMobile')]
     public function testIsNotMobile(string $agent): void
     {
         self::assertFalse(
-            $this->object->isMobile($agent),
+            $this->mobileDevice->isMobile($agent),
             sprintf('isMobile detected to TRUE instead of expected FALSE for UA "%s"', $agent),
         );
     }
@@ -313,6 +313,7 @@ final class MobileDeviceTest extends TestCase
             ['Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Safari PrcmNovel_iOS/1.11.8'],
             ['Mozilla/5.0 (Linux; Android 14; MiTV-AXTU0 Build/UKG3.250518.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.217 YaBrowser/25.10.1.638 (lite) TV Safari/537.36'],
             ['Mozilla/5.0 (Linux; arm_64; Android 14; VIDAA_TV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.123 YaBrowser/25.12.2.123.00 Mobile Safari/537.36'],
+            ['FortiGate (FortiOS 7.0) Chrome/ Safari/'],
         ];
     }
 }

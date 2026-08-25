@@ -24,16 +24,16 @@ use PHPUnit\Framework\TestCase;
 use function assert;
 use function sprintf;
 
-#[CoversClass(FriendicaFactory::class)]
+#[CoversClass(className: FriendicaFactory::class)]
 final class FriendicaFactoryTest extends TestCase
 {
-    private FriendicaFactory $object;
+    private FriendicaFactory $friendicaFactory;
 
     /** @throws void */
     #[Override]
     protected function setUp(): void
     {
-        $this->object = new FriendicaFactory();
+        $this->friendicaFactory = new FriendicaFactory();
     }
 
     /**
@@ -42,7 +42,7 @@ final class FriendicaFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $object = $this->object;
+        $object = $this->friendicaFactory;
         assert(
             $object instanceof FriendicaFactory,
             sprintf(
@@ -51,7 +51,7 @@ final class FriendicaFactoryTest extends TestCase
                 $object::class,
             ),
         );
-        $result = $object();
-        self::assertInstanceOf(Friendica::class, $result);
+        $friendica = $object();
+        self::assertInstanceOf(Friendica::class, $friendica);
     }
 }

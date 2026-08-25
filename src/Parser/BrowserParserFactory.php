@@ -35,7 +35,7 @@ final readonly class BrowserParserFactory implements BrowserParserFactoryInterfa
     public function __invoke(): BrowserParserInterface
     {
         return new BrowserParser(
-            fileParser: new RulefileParser(logger: $this->logger),
+            rulefileParser: new RulefileParser(logger: $this->logger),
         );
     }
 }

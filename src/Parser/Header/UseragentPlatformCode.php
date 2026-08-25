@@ -110,8 +110,13 @@ final readonly class UseragentPlatformCode implements PlatformCodeInterface
             };
         }
 
+        if (preg_match('/^mqqbrowser\/[\d.]+ \(linux; [\d.]+; [^)]+\)$/i', $normalizedValue)) {
+            return Os::android;
+        }
+
         $regexes = [
             '/^mozilla\/[\d.]+ \((?:andr[o0]id|tizen) [\d.]+; (?P<platform>harmonyos); [^);\/]+[^)]*\)/i',
+            '/android.*(?P<platform>myos)\d+\.\d+/i',
             '/^mozilla\/[\d.]+ \((?P<platform>andr[o0]id|tizen) [\d.]+;(?: arm(?:_64)?;| mobile;)? [^);\/]+[^)]*\)/i',
             '/instagram [\d.]+ (?P<platform>android) \([\d.]+\/[\d.]+; \d+dpi; \d+x\d+; [a-z\/]+; [^);\/]+;/i',
             '/icq_android\/[\d.]+ \((?P<platform>android); \d+; [\d.]+/i',
@@ -152,7 +157,7 @@ final readonly class UseragentPlatformCode implements PlatformCodeInterface
 
                 // @todo: need to find a solution to find android forks like mocordroid
                 return match ($code) {
-                    'android', 'tizen', 'openharmony', 'kaios', 'ios', 'harmonyos' => $code,
+                    'android', 'tizen', 'openharmony', 'kaios', 'ios', 'harmonyos', 'myos' => $code,
                     'andr0id', 'a' => 'android',
                     default => '',
                 };

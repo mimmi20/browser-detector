@@ -23,7 +23,7 @@ use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use UnexpectedValueException;
 
-#[CoversClass(FilterIterator::class)]
+#[CoversClass(className: FilterIterator::class)]
 final class FilterIteratorTest extends TestCase
 {
     private const string DATA_PATH = 'root';
@@ -37,7 +37,7 @@ final class FilterIteratorTest extends TestCase
     {
         $structure = ['bot.json' => 'test-content'];
 
-        vfsStream::setup(self::DATA_PATH, null, $structure);
+        vfsStream::setup(self::DATA_PATH, structure: $structure);
 
         $iterator = new RecursiveIteratorIterator(
             new RecursiveDirectoryIterator(vfsStream::url(self::DATA_PATH)),
@@ -56,7 +56,7 @@ final class FilterIteratorTest extends TestCase
     {
         $structure = ['bot.json5' => 'test-content'];
 
-        vfsStream::setup(self::DATA_PATH, null, $structure);
+        vfsStream::setup(self::DATA_PATH, structure: $structure);
 
         $iterator = new RecursiveIteratorIterator(
             new RecursiveDirectoryIterator(vfsStream::url(self::DATA_PATH)),
@@ -75,7 +75,7 @@ final class FilterIteratorTest extends TestCase
     {
         $structure = ['abc' => ['bot.json' => 'test-content']];
 
-        vfsStream::setup(self::DATA_PATH, null, $structure);
+        vfsStream::setup(self::DATA_PATH, structure: $structure);
 
         $iterator = new RecursiveIteratorIterator(
             new RecursiveDirectoryIterator(vfsStream::url(self::DATA_PATH)),
@@ -94,7 +94,7 @@ final class FilterIteratorTest extends TestCase
     {
         $structure = ['abc' => ['bot.json5' => 'test-content']];
 
-        vfsStream::setup(self::DATA_PATH, null, $structure);
+        vfsStream::setup(self::DATA_PATH, structure: $structure);
 
         $iterator = new RecursiveIteratorIterator(
             new RecursiveDirectoryIterator(vfsStream::url(self::DATA_PATH)),
