@@ -75,7 +75,7 @@ final class EngineTest extends TestCase
     }
 
     /**
-     * @return array<int, array{type: string, name: string|null, manufacturer: Company, version: array{factory: string|null, search: list<string>|null}, key: string}>
+     * @return array<int, array{type: string, name: string|null, company: Company, version: array{factory: string|null, search: list<string>|null}, key: string}>
      *
      * @throws void
      *
