@@ -180,5 +180,50 @@
       "version": "123.0.6312.118",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "com.google.android.youtube/21.31.525(Linux; U; Android 12; es_US; T431A Build/SP1A.210812.016) gzip"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "T431A",
+      "marketingName": "403",
+      "manufacturer": "TCL",
+      "brand": "TCL",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 960,
+        "height": 480,
+        "touch": true,
+        "size": 6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": "Youtube App",
+      "modus": null,
+      "version": "21.31.525",
+      "manufacturer": "Google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
   }
 ]
