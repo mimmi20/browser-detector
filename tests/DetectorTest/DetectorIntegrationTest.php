@@ -11054,13 +11054,9 @@ final class DetectorIntegrationTest extends TestCase
                 ],
             ],
             [
+                ['user-agent' => 'FortiGate (FortiOS 7.0) Chrome/ Safari/'],
                 [
-                    'user-agent' => 'FortiGate (FortiOS 7.0) Chrome/ Safari/',
-                ],
-                [
-                    'headers' => [
-                        'user-agent' => 'FortiGate (FortiOS 7.0) Chrome/ Safari/',
-                    ],
+                    'headers' => ['user-agent' => 'FortiGate (FortiOS 7.0) Chrome/ Safari/'],
                     'device' => [
                         'architecture' => null,
                         'deviceName' => 'FortiGate',
@@ -11100,6 +11096,52 @@ final class DetectorIntegrationTest extends TestCase
                         'name' => 'WebKit',
                         'version' => null,
                         'manufacturer' => 'Apple',
+                    ],
+                ],
+            ],
+            [
+                ['user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36; ClaudeBot/1.0; +claudebot@anthropic.com)'],
+                [
+                    'headers' => ['user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36; ClaudeBot/1.0; +claudebot@anthropic.com)'],
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'Macintosh',
+                        'marketingName' => 'Macintosh',
+                        'manufacturer' => 'Apple',
+                        'brand' => 'Apple',
+                        'dualOrientation' => false,
+                        'simCount' => 0,
+                        'display' => [
+                            'width' => null,
+                            'height' => null,
+                            'touch' => false,
+                            'size' => null,
+                        ],
+                        'type' => 'desktop',
+                        'ismobile' => false,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'macOS',
+                        'marketingName' => 'macOS',
+                        'version' => '10.15.7',
+                        'manufacturer' => 'Apple',
+                        'bits' => null,
+                    ],
+                    'client' => [
+                        'name' => 'ClaudeBot',
+                        'modus' => null,
+                        'version' => '1.0.0',
+                        'manufacturer' => 'Anthropic',
+                        'type' => 'crawler',
+                        'isbot' => true,
+                        'bits' => null,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '131.0.0.0',
+                        'manufacturer' => 'Google',
                     ],
                 ],
             ],

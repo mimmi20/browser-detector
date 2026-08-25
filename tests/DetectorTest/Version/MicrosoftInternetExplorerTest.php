@@ -114,10 +114,10 @@ final class MicrosoftInternetExplorerTest extends TestCase
 
                     match ($invocation) {
                         1,
-                2 => self::assertSame('11.0', $version, (string) $invocation),
-                3 => self::assertSame('10.0', $version, (string) $invocation),
-                4 => self::assertSame('9.0', $version, (string) $invocation),
-                default => self::assertSame('8.0', $version, (string) $invocation),
+                        2 => self::assertSame('11.0', $version, (string) $invocation),
+                        3 => self::assertSame('10.0', $version, (string) $invocation),
+                        4 => self::assertSame('9.0', $version, (string) $invocation),
+                        default => self::assertSame('8.0', $version, (string) $invocation),
                     };
 
                     throw $notNumericException;

@@ -35,6 +35,8 @@ final class XOperaminiPhoneTest extends TestCase
     /**
      * @throws ExpectationFailedException
      * @throws Exception
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
     #[DataProvider(methodName: 'providerUa')]
     public function testData(string $ua, bool $hasDeviceInfo, string | null $deviceCode): void

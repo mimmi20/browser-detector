@@ -37,6 +37,8 @@ final class XUcbrowserPhoneTest extends TestCase
     /**
      * @throws ExpectationFailedException
      * @throws Exception
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
     #[DataProvider(methodName: 'providerUa')]
     public function testData(

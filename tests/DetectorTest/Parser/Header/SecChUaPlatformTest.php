@@ -38,6 +38,8 @@ final class SecChUaPlatformTest extends TestCase
      * @throws ExpectationFailedException
      * @throws Exception
      * @throws NotFoundException
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
     #[DataProvider(methodName: 'providerUa')]
     public function testData(

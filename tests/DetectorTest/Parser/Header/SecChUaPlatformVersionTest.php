@@ -42,6 +42,8 @@ final class SecChUaPlatformVersionTest extends TestCase
      * @throws ExpectationFailedException
      * @throws Exception
      * @throws UnexpectedValueException
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
     #[DataProvider(methodName: 'providerUa')]
     public function testData(string $ua, string | null $code, bool $hasVersion, string | null $version): void
