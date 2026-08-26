@@ -12862,6 +12862,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Fortinet',
                 'key' => 'fortinet',
             ],
+            [
+                'type' => 'Dish TV',
+                'name' => 'Dish TV Technologies Ltd.',
+                'brandname' => 'Dish TV',
+                'key' => 'dish-tv',
+            ],
         ];
     }
 

@@ -5303,6 +5303,8 @@ final class Device implements DeviceInterface
             'bravia bf1' => 'sony=sony bravia bf1',
             'bravia 8k vh2' => 'sony=sony bravia 8k vh2',
             'bravia 4k ae1' => 'sony=sony bravia 4k ae1',
+            'sog14' => 'sony=sony sog14',
+            'xq-es14' => 'sony=sony xq-es14',
             // Vivo
             'v2109' => 'vivo=vivo v2109',
             'vivo 1716' => 'vivo=vivo 1716',
@@ -7075,6 +7077,7 @@ final class Device implements DeviceInterface
             'infinix x6857' => 'infinix=infinix x6857',
             'infinix zero 110' => 'infinix=infinix zero 110',
             'note 60' => 'infinix=infinix note 60',
+            'smart_9' => 'infinix=infinix smart 9',
             // cyrus
             'cs24' => 'cyrus=cyrus cs24',
             // facetel
@@ -8297,6 +8300,7 @@ final class Device implements DeviceInterface
             'celero5g+' => 'boost-mobile=boost-mobile celero 5g plus',
             'celero3 5g' => 'boost-mobile=boost-mobile celero3 5g',
             'celero3 5g+' => 'boost-mobile=boost-mobile celero3 5g plus',
+            'sn339d-smt' => 'boost-mobile=boost-mobile sn339d-smt',
             // adreamer
             'leopad_10' => 'adreamer=adreamer leopad 10',
             'leopad_10s' => 'adreamer=adreamer leopad 10s',
@@ -8743,6 +8747,7 @@ final class Device implements DeviceInterface
             'u626aa' => 'at-t=at-t u626aa',
             'u328aa' => 'at-t=at-t u328aa',
             'qs5509a' => 'at-t=at-t qs5509a',
+            'sn509a' => 'at-t=at-t sn509a',
             // benco
             'ae9260' => 'benco=benco ae9260',
             'ae9240' => 'benco=benco ae9240',
@@ -10543,6 +10548,8 @@ final class Device implements DeviceInterface
             'kt20201199' => 'k-touch=k-touch kt20201199',
             // azumi
             'nobu_a55_pro' => 'azumi=azumi nobu a55 pro',
+            // dish-tv
+            'sv11hd' => 'dish-tv=dish-tv sv11hd',
             // generic
             'smart_tv', 'smart tv', 'smart tv pro', 'smarttv', '4k smart tv', '2k smart tv', '2k pa smart tv', 'tv box', 'tvbox' => 'unknown=general tv device',
             // other

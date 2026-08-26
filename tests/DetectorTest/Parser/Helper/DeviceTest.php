@@ -7179,6 +7179,8 @@ final class DeviceTest extends TestCase
             ['BRAVIA BF1', 'sony=sony bravia bf1'],
             ['BRAVIA 8K VH2', 'sony=sony bravia 8k vh2'],
             ['BRAVIA 4K AE1', 'sony=sony bravia 4k ae1'],
+            ['SOG14', 'sony=sony sog14'],
+            ['XQ-ES14', 'sony=sony xq-es14'],
             // Vivo
             ['V2109', 'vivo=vivo v2109'],
             ['vivo 1716', 'vivo=vivo 1716'],
@@ -9174,6 +9176,7 @@ final class DeviceTest extends TestCase
             ['Infinix X6857', 'infinix=infinix x6857'],
             ['Infinix Zero 110', 'infinix=infinix zero 110'],
             ['NOTE 60', 'infinix=infinix note 60'],
+            ['Smart_9', 'infinix=infinix smart 9'],
             // cyrus
             ['CS24', 'cyrus=cyrus cs24'],
             // facetel
@@ -10507,6 +10510,7 @@ final class DeviceTest extends TestCase
             ['Celero5G+', 'boost-mobile=boost-mobile celero 5g plus'],
             ['Celero3 5G', 'boost-mobile=boost-mobile celero3 5g'],
             ['Celero3 5G+', 'boost-mobile=boost-mobile celero3 5g plus'],
+            ['SN339D-SMT', 'boost-mobile=boost-mobile sn339d-smt'],
             // adreamer
             ['LeoPad_10', 'adreamer=adreamer leopad 10'],
             ['LeoPad_10S', 'adreamer=adreamer leopad 10s'],
@@ -11045,6 +11049,7 @@ final class DeviceTest extends TestCase
             ['U626AA', 'at-t=at-t u626aa'],
             ['U328AA', 'at-t=at-t u328aa'],
             ['QS5509A', 'at-t=at-t qs5509a'],
+            ['SN509A', 'at-t=at-t sn509a'],
             // benco
             ['AE9260', 'benco=benco ae9260'],
             ['AE9240', 'benco=benco ae9240'],
@@ -12869,6 +12874,8 @@ final class DeviceTest extends TestCase
             ['KT20201199', 'k-touch=k-touch kt20201199'],
             // azumi
             ['NOBU_A55_PRO', 'azumi=azumi nobu a55 pro'],
+            // dish-tv
+            ['SV11HD', 'dish-tv=dish-tv sv11hd'],
             // generic
             ['SMART_TV', 'unknown=general tv device'],
             ['SMART TV', 'unknown=general tv device'],
