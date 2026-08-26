@@ -6529,6 +6529,9 @@ final class Device implements DeviceInterface
             '8091' => 'alcatel=alcatel 8091',
             'alcatel_5002c' => 'alcatel=alcatel 5002c',
             '5002e' => 'alcatel=alcatel 5002e',
+            't452b' => 'alcatel=alcatel t452b',
+            't452a' => 'alcatel=alcatel t452a',
+            't452m' => 'alcatel=alcatel t452m',
             // HTC
             'htc desire 19+' => 'htc=htc desire 19 plus',
             'htc u11' => 'htc=htc u11',
@@ -8148,6 +8151,11 @@ final class Device implements DeviceInterface
             't433e' => 'tcl=tcl t433e',
             'aftma475b1' => 'tcl=tcl aftma475b1',
             't517f' => 'tcl=tcl t517f',
+            't430ws' => 'tcl=tcl t430ws',
+            't434d' => 'tcl=tcl t434d',
+            't442m' => 'tcl=tcl t442m',
+            't442a' => 'tcl=tcl t442a',
+            't442j' => 'tcl=tcl t442j',
             // general-mobile
             'gm 8' => 'general-mobile=general-mobile gm 8',
             'g314' => 'general-mobile=general-mobile g314',

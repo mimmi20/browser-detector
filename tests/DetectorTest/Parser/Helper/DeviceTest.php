@@ -8585,6 +8585,9 @@ final class DeviceTest extends TestCase
             ['8091', 'alcatel=alcatel 8091'],
             ['Alcatel_5002C', 'alcatel=alcatel 5002c'],
             ['5002E', 'alcatel=alcatel 5002e'],
+            ['T452B', 'alcatel=alcatel t452b'],
+            ['T452A', 'alcatel=alcatel t452a'],
+            ['T452M', 'alcatel=alcatel t452m'],
             // HTC
             ['HTC Desire 19+', 'htc=htc desire 19 plus'],
             ['HTC U11', 'htc=htc u11'],
@@ -10354,6 +10357,11 @@ final class DeviceTest extends TestCase
             ['T433E', 'tcl=tcl t433e'],
             ['AFTMA475B1', 'tcl=tcl aftma475b1'],
             ['T517F', 'tcl=tcl t517f'],
+            ['T430WS', 'tcl=tcl t430ws'],
+            ['T434D', 'tcl=tcl t434d'],
+            ['T442M', 'tcl=tcl t442m'],
+            ['T442A', 'tcl=tcl t442a'],
+            ['T442J', 'tcl=tcl t442j'],
             // general-mobile
             ['GM 8', 'general-mobile=general-mobile gm 8'],
             ['G314', 'general-mobile=general-mobile g314'],
