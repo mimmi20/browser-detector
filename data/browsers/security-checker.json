@@ -652,5 +652,30 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "domain-drift": {
+    "name": "DomainDrift",
+    "manufacturer": "drm3-labs",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "DomainDrift"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "wp2shell-check": {
+    "name": "wp2shell-check",
+    "manufacturer": "unknown",
+    "type": "security-checker",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "wp2shell-checker",
+        "wp2shell-check"
+      ]
+    },
+    "engine": "unknown"
   }
 }

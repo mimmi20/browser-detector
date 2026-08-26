@@ -1959,6 +1959,7 @@ final class DeviceTest extends TestCase
             ['Redmi Pad 2 4G', 'xiaomi=xiaomi redmi pad 2 4g'],
             ['MiTV-MTSU0', 'xiaomi=xiaomi mitv mtsu0'],
             ['MiTV-AXFU0', 'xiaomi=xiaomi mitv axfu0'],
+            ['Redmi Pad Pro', 'xiaomi=xiaomi redmi pad pro'],
             // ZTE
             ['ZTE A2121E', 'zte=zte a2121e'],
             ['ZTE Blade 10 Vita', 'zte=zte blade 10 vita'],
@@ -6606,6 +6607,8 @@ final class DeviceTest extends TestCase
             ['Realme RMX5268', 'realme=realme rmx5268'],
             ['RMX5258', 'realme=realme rmx5258'],
             ['Realme RMX5258', 'realme=realme rmx5258'],
+            ['RMX5057', 'realme=realme rmx5057'],
+            ['Realme RMX5057', 'realme=realme rmx5057'],
             // Motorola
             ['moto g200 5G', 'motorola=motorola moto g200 5g'],
             ['motorola razr 5G', 'motorola=motorola razr 5g'],
@@ -8015,6 +8018,8 @@ final class DeviceTest extends TestCase
             ['vivo V2551', 'vivo=vivo v2551'],
             ['V2164KA', 'vivo=vivo v2164ka'],
             ['vivo V2164KA', 'vivo=vivo v2164ka'],
+            ['V2615', 'vivo=vivo v2615'],
+            ['vivo V2615', 'vivo=vivo v2615'],
             // Fairphone
             ['FP4', 'fairphone=fairphone fp4'],
             ['FP3', 'fairphone=fairphone fp3'],
@@ -9334,6 +9339,7 @@ final class DeviceTest extends TestCase
             ['Hisense U71 Pro', 'hisense=hisense u71 pro'],
             ['HLTE120E', 'hisense=hisense hlte120e'],
             ['AFTHU71990', 'hisense=hisense afthu71990'],
+            ['AFTCIBFBD1', 'hisense=hisense aftcibfbd1'],
             // insys
             ['HN2-M16Q', 'insys=insys hn2-m16q'],
             // aiwa

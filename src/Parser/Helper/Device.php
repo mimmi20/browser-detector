@@ -1808,6 +1808,7 @@ final class Device implements DeviceInterface
             'redmi pad 2 4g' => 'xiaomi=xiaomi redmi pad 2 4g',
             'mitv-mtsu0' => 'xiaomi=xiaomi mitv mtsu0',
             'mitv-axfu0' => 'xiaomi=xiaomi mitv axfu0',
+            'redmi pad pro' => 'xiaomi=xiaomi redmi pad pro',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -4811,6 +4812,7 @@ final class Device implements DeviceInterface
             'rmx5256', 'realme rmx5256' => 'realme=realme rmx5256',
             'rmx5268', 'realme rmx5268' => 'realme=realme rmx5268',
             'rmx5258', 'realme rmx5258' => 'realme=realme rmx5258',
+            'rmx5057', 'realme rmx5057' => 'realme=realme rmx5057',
             // Motorola
             'moto g200 5g' => 'motorola=motorola moto g200 5g',
             'motorola razr 5g' => 'motorola=motorola razr 5g',
@@ -5983,6 +5985,7 @@ final class Device implements DeviceInterface
             'v2582', 'vivo v2582' => 'vivo=vivo v2582',
             'v2551', 'vivo v2551' => 'vivo=vivo v2551',
             'v2164ka', 'vivo v2164ka' => 'vivo=vivo v2164ka',
+            'v2615', 'vivo v2615' => 'vivo=vivo v2615',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
@@ -7235,6 +7238,7 @@ final class Device implements DeviceInterface
             'hisense u71 pro' => 'hisense=hisense u71 pro',
             'hlte120e' => 'hisense=hisense hlte120e',
             'afthu71990' => 'hisense=hisense afthu71990',
+            'aftcibfbd1' => 'hisense=hisense aftcibfbd1',
             // insys
             'hn2-m16q' => 'insys=insys hn2-m16q',
             // aiwa

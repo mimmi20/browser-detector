@@ -7096,5 +7096,29 @@
       ]
     },
     "engine": "unknown"
+  },
+  "skye": {
+    "name": "Skye",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Skye"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "tweak-style": {
+    "name": "TweakStyle",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TweakStyle"
+      ]
+    },
+    "engine": "unknown"
   }
 }

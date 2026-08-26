@@ -12868,6 +12868,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Dish TV',
                 'key' => 'dish-tv',
             ],
+            [
+                'type' => 'DRM3 Labs',
+                'name' => 'DRM3 Labs Corp.',
+                'brandname' => 'DRM3 Labs',
+                'key' => 'drm3-labs',
+            ],
         ];
     }
 
