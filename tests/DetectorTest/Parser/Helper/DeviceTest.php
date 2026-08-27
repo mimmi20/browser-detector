@@ -8020,6 +8020,14 @@ final class DeviceTest extends TestCase
             ['vivo V2164KA', 'vivo=vivo v2164ka'],
             ['V2615', 'vivo=vivo v2615'],
             ['vivo V2615', 'vivo=vivo v2615'],
+            ['V2059-EG', 'vivo=vivo v2059-eg'],
+            ['vivo V2059-EG', 'vivo=vivo v2059-eg'],
+            ['V2336A', 'vivo=vivo v2336a'],
+            ['vivo V2336A', 'vivo=vivo v2336a'],
+            ['V2164PA', 'vivo=vivo v2164pa'],
+            ['vivo V2164PA', 'vivo=vivo v2164pa'],
+            ['V2164PA', 'vivo=vivo v2164pa'],
+            ['vivo V2164PA', 'vivo=vivo v2164pa'],
             // Fairphone
             ['FP4', 'fairphone=fairphone fp4'],
             ['FP3', 'fairphone=fairphone fp3'],
@@ -9499,6 +9507,7 @@ final class DeviceTest extends TestCase
             ['AQUOS-TVE23A', 'sharp=sharp aquos tve23a'],
             ['AQUOS-TVE21A', 'sharp=sharp aquos tve21a'],
             ['Sharp Aquos sense7 plus', 'sharp=sharp aquos sense 7 plus'],
+            ['SHG14', 'sharp=sharp shg14'],
             // kyocera
             ['A301KC', 'kyocera=kyocera a301kc'],
             ['KYV41', 'kyocera=kyocera kyv41'],

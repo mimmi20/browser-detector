@@ -5986,6 +5986,10 @@ final class Device implements DeviceInterface
             'v2551', 'vivo v2551' => 'vivo=vivo v2551',
             'v2164ka', 'vivo v2164ka' => 'vivo=vivo v2164ka',
             'v2615', 'vivo v2615' => 'vivo=vivo v2615',
+            'v2059-eg', 'vivo v2059-eg' => 'vivo=vivo v2059-eg',
+            'v2336a', 'vivo v2336a' => 'vivo=vivo v2336a',
+            'v2164pa', 'vivo v2164pa' => 'vivo=vivo v2164pa',
+            'v2164pa', 'vivo v2164pa' => 'vivo=vivo v2164pa',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
@@ -7398,6 +7402,7 @@ final class Device implements DeviceInterface
             'aquos-tve23a' => 'sharp=sharp aquos tve23a',
             'aquos-tve21a' => 'sharp=sharp aquos tve21a',
             'sharp aquos sense7 plus' => 'sharp=sharp aquos sense 7 plus',
+            'shg14' => 'sharp=sharp shg14',
             // kyocera
             'a301kc' => 'kyocera=kyocera a301kc',
             'kyv41' => 'kyocera=kyocera kyv41',
