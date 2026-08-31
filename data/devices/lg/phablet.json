@@ -14,5 +14,21 @@
     },
     "type": "phablet",
     "platform": "android"
+  },
+  "lg a001lg": {
+    "deviceName": "A001LG",
+    "marketingName": "V60 ThinQ 5G",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2460,
+      "height": 1080,
+      "touch": true,
+      "size": 6.8
+    },
+    "type": "phablet",
+    "platform": "android"
   }
 }
