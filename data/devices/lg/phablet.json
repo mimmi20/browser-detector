@@ -30,5 +30,21 @@
     },
     "type": "phablet",
     "platform": "android"
+  },
+  "lg lm-v600v": {
+    "deviceName": "LM-V600V",
+    "marketingName": "V60 ThinQ 5G (USA, Verizon)",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2460,
+      "height": 1080,
+      "touch": true,
+      "size": 6.8
+    },
+    "type": "phablet",
+    "platform": "android"
   }
 }
