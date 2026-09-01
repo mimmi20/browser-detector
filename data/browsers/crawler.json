@@ -7191,5 +7191,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "rank-pulse-bot": {
+    "name": "RankPulseBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RankPulseBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }
