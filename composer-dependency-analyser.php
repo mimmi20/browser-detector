@@ -41,7 +41,6 @@ $config
         'jbelien/phpstan-sarif-formatter',
         [ErrorType::UNUSED_DEPENDENCY],
     )
-    ->ignoreErrorsOnExtensionAndPath('normalizer', 'src/Parser/Header/HeaderLoader.php', [ErrorType::UNKNOWN_CLASS])
 
     // Adjust analysis
     // dev packages are often used only in CI, so this is not enabled by default
