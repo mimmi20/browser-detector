@@ -37,7 +37,7 @@ updates:
 
     ignore:
       - dependency-name: "phpstan/phpstan"
-        versions: [ ">=2.2.7, <=2.2.8" ]
+        versions: [ ">=2.2.7" ]
 
     # Disable rebasing for all pull requests
     rebase-strategy: "disabled"
