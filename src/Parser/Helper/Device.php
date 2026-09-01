@@ -3576,6 +3576,12 @@ final class Device implements DeviceInterface
             'sm-a516a', 'samsung sm-a516a' => 'samsung=samsung sm-a516a',
             'sm-a025t', 'samsung sm-a025t' => 'samsung=samsung sm-a025t',
             'sm-a025r4', 'samsung sm-a025r4' => 'samsung=samsung sm-a025r4',
+            'sc-05l' => 'samsung=samsung sc-05l',
+            'sc-04l' => 'samsung=samsung sc-04l',
+            'scv42' => 'samsung=samsung scv42',
+            'sm-g973c', 'samsung sm-g973c' => 'samsung=samsung sm-g973c',
+            'sc-03l' => 'samsung=samsung sc-03l',
+            'scv41' => 'samsung=samsung scv41',
             // Huawei
             'vog-l29' => 'huawei=huawei vog-l29',
             'nen-lx1' => 'huawei=huawei nen-lx1',
