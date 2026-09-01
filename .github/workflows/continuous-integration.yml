@@ -82,6 +82,81 @@ jobs:
       use-code-scanning: false
       phpcs-options: "-d memory_limit=512M"
 
+  analytics2:
+    name: "Project Analysis - Test"
+
+    needs: "install"
+
+    runs-on: "${{ matrix.operating-system }}"
+
+    continue-on-error: false
+
+    strategy:
+      fail-fast: false
+
+      matrix:
+        operating-system:
+          - "ubuntu-latest"
+
+        php-version:
+          - "8.5"
+
+        dependencies:
+          - "lowest"
+
+        phpstan:
+          - "2.2.5"
+          - "2.2.6"
+          - "2.2.7"
+          - "2.2.8"
+
+        rector:
+          - "2.6.1"
+          - "2.6.2"
+          - "2.6.3"
+
+    steps:
+      - name: "Checkout"
+        uses: "actions/checkout@v7"
+        with:
+          # Disabling shallow clone is recommended for improving relevancy of reporting
+          fetch-depth: 0
+          lfs: false
+          persist-credentials: false
+
+      - name: "Install PHP"
+        uses: "shivammathur/setup-php@2.37.2"
+        with:
+          php-version: "${{ matrix.php-version }}"
+          extensions: "none, phar, json, opcache, ctype, curl, dom, iconv, intl, mbstring, simplexml, tokenizer, xml, xmlwriter"
+          ini-values: "opcache.enable=1, opcache.fast_shutdown=0, zend.assertions=1, assert.exception=On, intl.default_locale=de, intl.use_exceptions=1, zend.exception_ignore_args=0"
+          coverage: "none"
+          tools: "composer:v2"
+        env:
+          fail-fast: true
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          phpts: "nts"
+          debug: true
+
+      - name: "Require phpstan/phpstan ${{ matrix.phpstan }}"
+        run: "composer require --no-update --no-interaction --prefer-dist --prefer-stable phpstan/phpstan:^${{ matrix.phpstan }}"
+
+      - name: "Require rector/rector ${{ matrix.rector }}"
+        run: "composer require --no-update --no-interaction --prefer-dist --prefer-stable rector/rector:^${{ matrix.rector }}"
+
+      - name: "Update dependencies with composer"
+        uses: "ramsey/composer-install@4.0.0"
+        with:
+          dependency-versions: "${{ matrix.dependencies }}"
+          composer-options: "--optimize-autoloader --prefer-dist --prefer-stable -v"
+
+      - name: "Run phpstan/phpstan"
+        continue-on-error: ${{ inputs.use-code-scanning == true }}
+        run: "vendor/bin/phpstan analyse -c phpstan.neon --memory-limit=2048M --no-progress --error-format=table"
+
+      - name: "Run checks with rector/rector"
+        run: "vendor/bin/rector process --ansi --dry-run --debug"
+
   tests:
     name: "UnitTests"
 
