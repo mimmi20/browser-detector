@@ -4141,51 +4141,6 @@
   },
   {
     "headers": {
-      "user-agent": "Vodafone/1.0/GX40/SHG001 Browser/UP.Browser/7.0.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 Ext-V-Profile/VSCL-2.0.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": 0,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Java ME",
-      "marketingName": "Java ME",
-      "version": null,
-      "manufacturer": "Sun",
-      "bits": null
-    },
-    "client": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "7.0.2.1",
-      "manufacturer": "Myriad",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "V750/1.0 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.6.1.d.2 (GUI) MMP/1.0"
     },
     "device": {
@@ -4457,6 +4412,51 @@
   {
     "headers": {
       "user-agent": "UP.Browser/3.1.04-SC02 UP.Link/4.3.4.4d"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "3.1.04",
+      "manufacturer": "Myriad",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UP.Browser/3.1.04-NZ01 UP.Link/4.2.1.1"
     },
     "device": {
       "architecture": null,
