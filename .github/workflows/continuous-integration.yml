@@ -83,7 +83,7 @@ jobs:
       phpcs-options: "-d memory_limit=512M"
 
   analytics2:
-    name: "Project Analysis - Test"
+    name: "Project Analysis with PHPStan ${{ matrix.phpstan }} and Rector ${{ matrix.rector }}"
 
     needs: "install"
 
@@ -151,7 +151,6 @@ jobs:
           composer-options: "--optimize-autoloader --prefer-dist --prefer-stable -v"
 
       - name: "Run phpstan/phpstan"
-        continue-on-error: ${{ inputs.use-code-scanning == true }}
         run: "vendor/bin/phpstan analyse -c phpstan.neon --memory-limit=2048M --no-progress --error-format=table"
 
       - name: "Run checks with rector/rector"
