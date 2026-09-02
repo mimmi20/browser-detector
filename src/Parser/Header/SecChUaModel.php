@@ -14,8 +14,6 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser\Header;
 
 use BrowserDetector\Parser\Helper\Device;
-use BrowserDetector\Parser\Helper\DeviceInterface;
-use BrowserDetector\Parser\Helper\MappingfileParser;
 use Override;
 use UaParser\DeviceCodeInterface;
 
@@ -62,7 +60,56 @@ final class SecChUaModel implements DeviceCodeInterface
             's61' => 'doogee=doogee s61',
             's200' => 'doogee=doogee s200',
             'p50' => 'cubot=cubot p50',
-            default => $this->device->getDeviceCode($code),
+            default => $this->getCode($code),
         };
+    }
+
+    /**
+     * @param string $code
+     * @return string|null
+     * @throws void
+     */
+    private function getCode(string $code): string | null
+    {
+        $devicecode = $this->device->getDeviceCode($code);
+
+        if ($devicecode !== null) {
+            $this->saveToMappingJson($code, $devicecode);
+        }
+
+        return $devicecode;
+    }
+
+    /**
+     * @throws void
+     */
+    private function saveToMappingJson(string $devicecode, string $code): void
+    {
+        if ($code === 'A369i') {
+            return;
+        }
+        [$company] = explode('=', $code, 2);
+
+        $file = sprintf('data/device-mapping/%s.json', $company);
+
+        $devicesFromMappingFile = [];
+
+        if (file_exists($file)) {
+            try {
+                $devicesFromMappingFile = json_decode((string)file_get_contents($file), true, 512, JSON_THROW_ON_ERROR);
+            } catch (\JsonException) {
+                // do nothing
+            }
+        }
+
+        if (!array_key_exists($devicecode, $devicesFromMappingFile)) {
+            $devicesFromMappingFile[$devicecode] = $code;
+
+            try {
+                file_put_contents($file, json_encode($devicesFromMappingFile, JSON_THROW_ON_ERROR | JSON_PRETTY_PRINT) . PHP_EOL);
+            } catch (\JsonException) {
+                // do nothing
+            }
+        }
     }
 }
