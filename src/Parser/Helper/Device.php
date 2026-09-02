@@ -10744,6 +10744,8 @@ final class Device implements DeviceInterface
             'nobu_a55_pro' => 'azumi=azumi nobu a55 pro',
             // dish-tv
             'sv11hd' => 'dish-tv=dish-tv sv11hd',
+            // freeski
+            'c109' => 'freeski=freeski c109',
             // generic
             'smart_tv', 'smart tv', 'smart tv pro', 'smarttv', '4k smart tv', '2k smart tv', '2k pa smart tv', 'tv box', 'tvbox' => 'unknown=general tv device',
             // other

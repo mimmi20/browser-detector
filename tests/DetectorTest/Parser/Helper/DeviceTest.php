@@ -13187,6 +13187,8 @@ final class DeviceTest extends TestCase
             ['NOBU_A55_PRO', 'azumi=azumi nobu a55 pro'],
             // dish-tv
             ['SV11HD', 'dish-tv=dish-tv sv11hd'],
+            // freeski
+            ['C109', 'freeski=freeski c109'],
             // generic
             ['SMART_TV', 'unknown=general tv device'],
             ['SMART TV', 'unknown=general tv device'],

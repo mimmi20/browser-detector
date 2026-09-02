@@ -12874,6 +12874,18 @@ final class CompanyTest extends TestCase
                 'brandname' => 'DRM3 Labs',
                 'key' => 'drm3-labs',
             ],
+            [
+                'type' => 'Freeski',
+                'name' => 'Freeski',
+                'brandname' => 'Freeski',
+                'key' => 'freeski',
+            ],
+            [
+                'type' => 'Wrtn',
+                'name' => 'Wrtn Technologies Co., Ltd.',
+                'brandname' => 'Wrtn',
+                'key' => 'wrtn',
+            ],
         ];
     }
 
