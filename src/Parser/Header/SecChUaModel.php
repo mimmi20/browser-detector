@@ -14,6 +14,8 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser\Header;
 
 use BrowserDetector\Parser\Helper\Device;
+use BrowserDetector\Parser\Helper\DeviceInterface;
+use BrowserDetector\Parser\Helper\MappingfileParser;
 use Override;
 use UaParser\DeviceCodeInterface;
 
@@ -24,6 +26,11 @@ use function mb_trim;
 /** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */
 final class SecChUaModel implements DeviceCodeInterface
 {
+    public function __construct(private DeviceInterface $device)
+    {
+        // nothing to do
+    }
+
     /** @throws void */
     #[Override]
     public function hasDeviceCode(string $value): bool
@@ -55,7 +62,7 @@ final class SecChUaModel implements DeviceCodeInterface
             's61' => 'doogee=doogee s61',
             's200' => 'doogee=doogee s200',
             'p50' => 'cubot=cubot p50',
-            default => (new Device())->getDeviceCode($code),
+            default => $this->device->getDeviceCode($code),
         };
     }
 }

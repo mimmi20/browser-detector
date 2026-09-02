@@ -14,6 +14,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Parser\Header\HeaderLoader;
+use BrowserDetector\Parser\Helper\MappingfileParser;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
@@ -81,6 +82,7 @@ final class HeaderLoaderTest extends TestCase
             ->method('loadFromEngine');
 
         $normalizerFactory = new NormalizerFactory();
+        $mappingFileParser = new MappingfileParser();
 
         $key = Constants::HEADER_TEST;
 
@@ -93,6 +95,7 @@ final class HeaderLoaderTest extends TestCase
             browserLoader: $browserLoader,
             platformLoader: $platformLoader,
             engineLoader: $engineLoader,
+            mappingFileParser: $mappingFileParser,
         );
 
         $this->expectException(NotFoundException::class);
@@ -156,6 +159,7 @@ final class HeaderLoaderTest extends TestCase
             ->method('loadFromEngine');
 
         $normalizerFactory = new NormalizerFactory();
+        $mappingFileParser = new MappingfileParser();
 
         $headerLoader = new HeaderLoader(
             deviceParser: $deviceParser,
@@ -166,6 +170,7 @@ final class HeaderLoaderTest extends TestCase
             browserLoader: $browserLoader,
             platformLoader: $platformLoader,
             engineLoader: $engineLoader,
+            mappingFileParser: $mappingFileParser,
         );
 
         $header = $headerLoader->load($key, $value);
@@ -225,6 +230,7 @@ final class HeaderLoaderTest extends TestCase
             ->method('loadFromEngine');
 
         $normalizerFactory = new NormalizerFactory();
+        $mappingFileParser = new MappingfileParser();
 
         $headerLoader = new HeaderLoader(
             deviceParser: $deviceParser,
@@ -235,6 +241,7 @@ final class HeaderLoaderTest extends TestCase
             browserLoader: $browserLoader,
             platformLoader: $platformLoader,
             engineLoader: $engineLoader,
+            mappingFileParser: $mappingFileParser,
         );
 
         self::assertTrue($headerLoader->has($key));

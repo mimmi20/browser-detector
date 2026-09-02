@@ -14,6 +14,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Parser\Helper;
 
 use BrowserDetector\Parser\Helper\Device;
+use BrowserDetector\Parser\Helper\MappingfileParser;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
@@ -24,6 +25,37 @@ use function sprintf;
 
 /** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */
 #[CoversClass(className: Device::class)]
+#[CoversClass(className: Device\Lg::class)]
+#[CoversClass(className: Device\Acer::class)]
+#[CoversClass(className: Device\AllCall::class)]
+#[CoversClass(className: Device\Amazon::class)]
+#[CoversClass(className: Device\Asus::class)]
+#[CoversClass(className: Device\Google::class)]
+#[CoversClass(className: Device\OnePlus::class)]
+#[CoversClass(className: Device\Oppo::class)]
+#[CoversClass(className: Device\Xiaomi::class)]
+#[CoversClass(className: Device\Zte::class)]
+#[CoversClass(className: Device\Samsung::class)]
+#[CoversClass(className: Device\Huawei::class)]
+#[CoversClass(className: Device\Lenovo::class)]
+#[CoversClass(className: Device\Nokia::class)]
+#[CoversClass(className: Device\Hmd::class)]
+#[CoversClass(className: Device\Microsoft::class)]
+#[CoversClass(className: Device\Realme::class)]
+#[CoversClass(className: Device\Motorola::class)]
+#[CoversClass(className: Device\Sony::class)]
+#[CoversClass(className: Device\Vivo::class)]
+#[CoversClass(className: Device\Fairphone::class)]
+#[CoversClass(className: Device\Oukitel::class)]
+#[CoversClass(className: Device\Ulefone::class)]
+#[CoversClass(className: Device\Doogee::class)]
+#[CoversClass(className: Device\ShiftPhones::class)]
+#[CoversClass(className: Device\Cubot::class)]
+#[CoversClass(className: Device\Gigaset::class)]
+#[CoversClass(className: Device\Wiko::class)]
+#[CoversClass(className: Device\Alcatel::class)]
+#[CoversClass(className: Device\Htc::class)]
+#[CoversClass(className: Device\Teclast::class)]
 final class DeviceTest extends TestCase
 {
     /** @throws ExpectationFailedException */
@@ -32,9 +64,14 @@ final class DeviceTest extends TestCase
     {
         $code = mb_strtolower($value);
 
+        $mappingFileParser = new MappingfileParser();
+        $mappingFileParser->init();
+
+        $device = new Device($mappingFileParser);
+
         self::assertSame(
             $model,
-            (new Device())->getDeviceCode($code),
+            $device->getDeviceCode($code),
             sprintf('device info mismatch for ua "%s"', $value),
         );
     }

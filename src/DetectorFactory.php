@@ -25,6 +25,7 @@ use BrowserDetector\Parser\BrowserParserFactory;
 use BrowserDetector\Parser\DeviceParserFactory;
 use BrowserDetector\Parser\EngineParserFactory;
 use BrowserDetector\Parser\Header\HeaderLoader;
+use BrowserDetector\Parser\Helper\MappingfileParser;
 use BrowserDetector\Parser\PlatformParserFactory;
 use BrowserDetector\Version\VersionBuilder;
 use Laminas\Hydrator\ArraySerializableHydrator;
@@ -111,6 +112,7 @@ final class DetectorFactory
             $browserParser        = $browserParserFactory();
 
             $normalizerFactory = new NormalizerFactory();
+            $mappingFileParser = new MappingfileParser();
 
             $headerLoader = new HeaderLoader(
                 deviceParser: $deviceParser,
@@ -121,6 +123,7 @@ final class DetectorFactory
                 browserLoader: $browserLoader,
                 platformLoader: $platformLoader,
                 engineLoader: $engineLoader,
+                mappingFileParser: $mappingFileParser,
             );
 
             $requestBuilder = new RequestBuilder(headerLoader: $headerLoader);

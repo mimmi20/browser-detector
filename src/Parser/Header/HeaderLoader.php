@@ -14,6 +14,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser\Header;
 
 use BrowserDetector\Parser\Helper\Device;
+use BrowserDetector\Parser\Helper\MappingfileParser;
 use Override;
 use UaLoader\BrowserLoaderInterface;
 use UaLoader\EngineLoaderInterface;
@@ -60,6 +61,7 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
         private BrowserLoaderInterface $browserLoader,
         private PlatformLoaderInterface $platformLoader,
         private EngineLoaderInterface $engineLoader,
+        private MappingfileParser $mappingFileParser,
     ) {
         // nothing to do
     }
@@ -89,7 +91,7 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
 
         $normalizerChain = $this->normalizerFactory->build();
 
-        $device = new Device();
+        $device = new Device($this->mappingFileParser);
 
         return match ($header) {
             Headers::HEADER_BAIDU_FLYFLOW => new DeviceCodeOnlyHeader(
@@ -123,7 +125,7 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
             Headers::HEADER_SEC_CH_UA_MOBILE => new SecChUaMobile(value: $value),
             Headers::HEADER_SEC_CH_UA_MODEL => new DeviceCodeOnlyHeader(
                 value: $value,
-                deviceCode: new SecChUaModel(),
+                deviceCode: new SecChUaModel(device: $device),
             ),
             Headers::HEADER_SEC_CH_UA_PLATFORM => new SecChUaPlatformHeader(
                 value: $value,

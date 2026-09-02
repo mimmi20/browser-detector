@@ -58,7 +58,8 @@ final readonly class XUcbrowserUaDeviceCode implements DeviceCodeInterface
 
         $code = $this->device->getDeviceCode(mb_strtolower($matches['device']));
 
-        if ($code !== null) {
+        if (is_string($code)) {
+            $this->saveToMappingJson(mb_trim(mb_strtolower($matches['device'])), $code);
             return $code;
         }
 
@@ -69,5 +70,38 @@ final readonly class XUcbrowserUaDeviceCode implements DeviceCodeInterface
         }
 
         return $code;
+    }
+
+    /**
+     * @throws void
+     */
+    private function saveToMappingJson(string $devicecode, string $code): void
+    {
+        if ($code === 'A369i') {
+            return;
+        }
+        [$company] = explode('=', $code, 2);
+
+        $file = sprintf('data/device-mapping/%s.json', $company);
+
+        $devicesFromMappingFile = [];
+
+        if (file_exists($file)) {
+            try {
+                $devicesFromMappingFile = json_decode((string)file_get_contents($file), true, 512, JSON_THROW_ON_ERROR);
+            } catch (\JsonException) {
+                // do nothing
+            }
+        }
+
+        if (!array_key_exists($devicecode, $devicesFromMappingFile)) {
+            $devicesFromMappingFile[$devicecode] = $code;
+
+            try {
+                file_put_contents($file, json_encode($devicesFromMappingFile, JSON_THROW_ON_ERROR | JSON_PRETTY_PRINT) . PHP_EOL);
+            } catch (\JsonException) {
+                // do nothing
+            }
+        }
     }
 }

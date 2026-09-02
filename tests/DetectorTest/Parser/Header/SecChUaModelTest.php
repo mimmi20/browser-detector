@@ -16,6 +16,8 @@ namespace BrowserDetectorTest\Parser\Header;
 use BrowserDetector\Data\Engine;
 use BrowserDetector\Data\Os;
 use BrowserDetector\Parser\Header\SecChUaModel;
+use BrowserDetector\Parser\Helper\Device;
+use BrowserDetector\Parser\Helper\MappingfileParser;
 use BrowserDetector\Version\NullVersion;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -42,9 +44,12 @@ final class SecChUaModelTest extends TestCase
     #[DataProvider(methodName: 'providerUa')]
     public function testData(string $ua, bool $hasModel, string | null $model): void
     {
+        $mappingFileParser = new MappingfileParser();
+        $mappingFileParser->init();
+
         $deviceCodeOnlyHeader = new DeviceCodeOnlyHeader(
             value: $ua,
-            deviceCode: new SecChUaModel(),
+            deviceCode: new SecChUaModel(new Device($mappingFileParser)),
         );
 
         self::assertSame(

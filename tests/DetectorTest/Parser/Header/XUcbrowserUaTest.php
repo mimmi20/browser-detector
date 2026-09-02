@@ -24,6 +24,7 @@ use BrowserDetector\Parser\Header\XUcbrowserUaEngineVersion;
 use BrowserDetector\Parser\Header\XUcbrowserUaPlatformCode;
 use BrowserDetector\Parser\Header\XUcbrowserUaPlatformVersion;
 use BrowserDetector\Parser\Helper\Device;
+use BrowserDetector\Parser\Helper\MappingfileParser;
 use BrowserDetector\Version\ForcedNullVersion;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\CoversTrait;
@@ -101,11 +102,14 @@ final class XUcbrowserUaTest extends TestCase
             ->with($searchCode)
             ->willReturn($deviceCode);
 
+        $mappingFileParser = new MappingfileParser();
+        $mappingFileParser->init();
+
         $fullHeader = new FullHeader(
             value: $ua,
             deviceCode: new XUcbrowserUaDeviceCode(
                 deviceParser: $deviceParser,
-                device: new Device(),
+                device: new Device($mappingFileParser),
             ),
             clientCode: new XUcbrowserUaClientCode(),
             clientVersion: new XUcbrowserUaClientVersion(),
@@ -1207,11 +1211,14 @@ final class XUcbrowserUaTest extends TestCase
             ->expects(self::never())
             ->method('parse');
 
+        $mappingFileParser = new MappingfileParser();
+        $mappingFileParser->init();
+
         $fullHeader = new FullHeader(
             value: $ua,
             deviceCode: new XUcbrowserUaDeviceCode(
                 deviceParser: $deviceParser,
-                device: new Device(),
+                device: new Device($mappingFileParser),
             ),
             clientCode: new XUcbrowserUaClientCode(),
             clientVersion: new XUcbrowserUaClientVersion(),
