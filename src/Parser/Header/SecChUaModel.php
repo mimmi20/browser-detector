@@ -24,7 +24,11 @@ use function mb_trim;
 /** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */
 final class SecChUaModel implements DeviceCodeInterface
 {
-    public function __construct(private DeviceInterface $device)
+    /**
+     * @param Device $device
+     * @throws void
+     */
+    public function __construct(private Device $device)
     {
         // nothing to do
     }
