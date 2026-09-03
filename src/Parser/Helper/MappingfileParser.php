@@ -14,39 +14,29 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser\Helper;
 
 use BrowserDetector\Iterator\FilterIterator;
-use BrowserDetector\Loader\InitData\Client as DataClient;
-use Exception;
 use JsonException;
 use Override;
-use Psr\Log\LoggerInterface;
-use Laminas\Hydrator\Strategy\StrategyInterface;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use RuntimeException;
 use SplFileInfo;
 
-use function array_filter;
-use function array_first;
 use function array_key_exists;
 use function assert;
 use function file_get_contents;
 use function is_array;
-use function is_int;
 use function is_string;
 use function json_decode;
-use function preg_last_error;
-use function preg_last_error_msg;
-use function preg_match;
 use function sprintf;
+use function str_replace;
 
-use const ARRAY_FILTER_USE_KEY;
 use const JSON_THROW_ON_ERROR;
 
-final class MappingfileParser
+final class MappingfileParser implements MappingfileParserInterface
 {
     private const string DATA_PATH = __DIR__ . '/../../../data/device-mapping';
 
-    /** @var array<string, string> */
+    /** @var array<string, non-empty-string> */
     private array $devices    = [];
     private bool $initialized = false;
 
@@ -57,6 +47,7 @@ final class MappingfileParser
     }
 
     /** @throws RuntimeException */
+    #[Override]
     public function init(): void
     {
         if ($this->initialized) {
@@ -82,7 +73,12 @@ final class MappingfileParser
             }
 
             try {
-                $fileData = json_decode($content, true, 512, JSON_THROW_ON_ERROR);
+                $fileData = json_decode(
+                    $content,
+                    associative: true,
+                    depth: 512,
+                    flags: JSON_THROW_ON_ERROR,
+                );
             } catch (JsonException $e) {
                 throw new RuntimeException(sprintf('could not decode file "%s"', $file), 0, $e);
             }
@@ -96,6 +92,14 @@ final class MappingfileParser
                     continue;
                 }
 
+                if (!is_string($data)) {
+                    continue;
+                }
+
+                if ($data === '') {
+                    continue;
+                }
+
                 $this->devices[$stringKey] = $data;
             }
         }
@@ -103,7 +107,12 @@ final class MappingfileParser
         $this->initialized = true;
     }
 
-    /** @throws void */
+    /**
+     * @return non-empty-string|null
+     *
+     * @throws void
+     */
+    #[Override]
     public function getItem(string $code): string | null
     {
         return $this->devices[$code] ?? null;

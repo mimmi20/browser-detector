@@ -14,14 +14,30 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser\Header;
 
 use BrowserDetector\Parser\Helper\DeviceInterface;
+use JsonException;
 use Override;
 use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\Normalizer\NormalizerInterface;
 use UaParser\DeviceCodeInterface;
 use UaParser\DeviceParserInterface;
 
+use function array_key_exists;
+use function explode;
+use function file_exists;
+use function file_get_contents;
+use function file_put_contents;
 use function in_array;
+use function is_array;
+use function is_string;
+use function json_decode;
+use function json_encode;
 use function mb_strtolower;
+use function mb_trim;
+use function sprintf;
+
+use const JSON_PRETTY_PRINT;
+use const JSON_THROW_ON_ERROR;
+use const PHP_EOL;
 
 final readonly class XUcbrowserDevice implements DeviceCodeInterface
 {
@@ -63,6 +79,7 @@ final readonly class XUcbrowserDevice implements DeviceCodeInterface
 
         if (is_string($code)) {
             $this->saveToMappingJson(mb_trim(mb_strtolower($normalizedValue)), $code);
+
             return $code;
         }
 
@@ -75,15 +92,18 @@ final readonly class XUcbrowserDevice implements DeviceCodeInterface
         return $code;
     }
 
-    /**
-     * @throws void
-     */
+    /** @throws void */
     private function saveToMappingJson(string $devicecode, string $code): void
     {
-        if ($code === 'A369i') {
+        if ($code === 'A369i' || $code === 'test-device-code') {
             return;
         }
+
         [$company] = explode('=', $code, 2);
+
+        if ($company === '') {
+            return;
+        }
 
         $file = sprintf('data/device-mapping/%s.json', $company);
 
@@ -91,20 +111,34 @@ final readonly class XUcbrowserDevice implements DeviceCodeInterface
 
         if (file_exists($file)) {
             try {
-                $devicesFromMappingFile = json_decode((string)file_get_contents($file), true, 512, JSON_THROW_ON_ERROR);
-            } catch (\JsonException) {
+                $devicesFromMappingFile = json_decode(
+                    (string) file_get_contents($file),
+                    associative: true,
+                    flags: JSON_THROW_ON_ERROR,
+                );
+            } catch (JsonException) {
                 // do nothing
             }
         }
 
-        if (!array_key_exists($devicecode, $devicesFromMappingFile)) {
-            $devicesFromMappingFile[$devicecode] = $code;
+        if (
+            !is_array($devicesFromMappingFile) || array_key_exists($devicecode, $devicesFromMappingFile)
+        ) {
+            return;
+        }
 
-            try {
-                file_put_contents($file, json_encode($devicesFromMappingFile, JSON_THROW_ON_ERROR | JSON_PRETTY_PRINT) . PHP_EOL);
-            } catch (\JsonException) {
-                // do nothing
-            }
+        $devicesFromMappingFile[$devicecode] = $code;
+
+        try {
+            file_put_contents(
+                $file,
+                json_encode(
+                    $devicesFromMappingFile,
+                    JSON_THROW_ON_ERROR | JSON_PRETTY_PRINT,
+                ) . PHP_EOL,
+            );
+        } catch (JsonException) {
+            // do nothing
         }
     }
 }

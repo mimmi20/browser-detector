@@ -24,7 +24,7 @@ use BrowserDetector\Parser\Header\XUcbrowserUaEngineVersion;
 use BrowserDetector\Parser\Header\XUcbrowserUaPlatformCode;
 use BrowserDetector\Parser\Header\XUcbrowserUaPlatformVersion;
 use BrowserDetector\Parser\Helper\Device;
-use BrowserDetector\Parser\Helper\MappingfileParser;
+use BrowserDetector\Parser\Helper\MappingfileParserInterface;
 use BrowserDetector\Version\ForcedNullVersion;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\CoversTrait;
@@ -97,13 +97,19 @@ final class XUcbrowserUaTest extends TestCase
 
         $deviceParser = $this->createMock(DeviceParserInterface::class);
         $deviceParser
-            ->expects($searchCode === null ? self::never() : self::once())
+            ->expects($searchCode === 'NOKIA RM-914_eu_turkey_355' ? self::once() : self::never())
             ->method('parse')
             ->with($searchCode)
             ->willReturn($deviceCode);
 
-        $mappingFileParser = new MappingfileParser();
-        $mappingFileParser->init();
+        $mappingFileParser = $this->createMock(MappingfileParserInterface::class);
+        $mappingFileParser
+            ->expects($searchCode === null ? self::never() : self::once())
+            ->method('init');
+        $mappingFileParser
+            ->expects($searchCode === null ? self::never() : self::once())
+            ->method('getItem')
+            ->willReturn($deviceCode === '' ? null : $deviceCode);
 
         $fullHeader = new FullHeader(
             value: $ua,
@@ -1209,10 +1215,18 @@ final class XUcbrowserUaTest extends TestCase
         $deviceParser = $this->createMock(DeviceParserInterface::class);
         $deviceParser
             ->expects(self::never())
-            ->method('parse');
+            ->method('parse')
+            ->with($searchCode)
+            ->willReturn($deviceCode);
 
-        $mappingFileParser = new MappingfileParser();
-        $mappingFileParser->init();
+        $mappingFileParser = $this->createMock(MappingfileParserInterface::class);
+        $mappingFileParser
+            ->expects($searchCode === null ? self::never() : self::once())
+            ->method('init');
+        $mappingFileParser
+            ->expects($searchCode === null ? self::never() : self::once())
+            ->method('getItem')
+            ->willReturn($deviceCode === '' ? null : $deviceCode);
 
         $fullHeader = new FullHeader(
             value: $ua,

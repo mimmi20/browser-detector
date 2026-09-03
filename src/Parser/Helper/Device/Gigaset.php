@@ -29,8 +29,6 @@ final class Gigaset implements DeviceInterface
     #[Override]
     public function getDeviceCode(string $code): string | null
     {
-        $specialDevices = [];
-
         return match ($code) {
             'e940-2795-00' => 'gigaset=gigaset e940-2795-00',
             'e940-2796-00' => 'gigaset=gigaset e940-2796-00',

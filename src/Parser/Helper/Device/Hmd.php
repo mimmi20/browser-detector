@@ -29,8 +29,6 @@ final class Hmd implements DeviceInterface
     #[Override]
     public function getDeviceCode(string $code): string | null
     {
-        $specialDevices = [];
-
         return match ($code) {
             'hmd fusion' => 'hmd-global=hmd-global fusion',
             'hmd arc' => 'hmd-global=hmd-global arc',

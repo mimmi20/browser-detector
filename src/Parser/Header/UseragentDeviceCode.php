@@ -14,6 +14,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser\Header;
 
 use BrowserDetector\Parser\Helper\DeviceInterface;
+use JsonException;
 use Override;
 use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\Normalizer\NormalizerInterface;
@@ -23,11 +24,24 @@ use UaParser\DeviceParserInterface;
 use function array_filter;
 use function array_first;
 use function array_key_exists;
+use function array_key_first;
 use function array_map;
+use function explode;
+use function file_exists;
+use function file_get_contents;
+use function file_put_contents;
+use function is_array;
 use function is_string;
+use function json_decode;
+use function json_encode;
 use function mb_strtolower;
 use function mb_trim;
 use function preg_match;
+use function sprintf;
+
+use const JSON_PRETTY_PRINT;
+use const JSON_THROW_ON_ERROR;
+use const PHP_EOL;
 
 final readonly class UseragentDeviceCode implements DeviceCodeInterface
 {
@@ -174,7 +188,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
         );
 
         $finds = array_map(
-            function (string $regex) use ($normalizedValue): string | null {
+            static function (string $regex) use ($normalizedValue): string {
                 $matches = [];
 
                 preg_match($regex, $normalizedValue, $matches);
@@ -187,9 +201,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
         );
 
         $results = array_map(
-            function (string $code) use ($normalizedValue): string | null {
-                return $this->device->getDeviceCode($code);
-            },
+            $this->device->getDeviceCode(...),
             $finds,
         );
 
@@ -198,12 +210,8 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             is_string(...),
         );
 
-        $code = array_first(
-            $results2
-        );
-        $xcode = array_key_first(
-            $results2
-        );
+        $code  = array_first($results2);
+        $xcode = array_key_first($results2);
 
         if (is_string($code)) {
             if ($xcode !== null && array_key_exists($xcode, $finds) && $finds[$xcode] !== null) {
@@ -226,6 +234,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
 
             if (is_string($code)) {
                 $this->saveToMappingJson(mb_trim(mb_strtolower($matches['devicecode'])), $code);
+
                 return $code;
             }
 
@@ -233,6 +242,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
 
             if ($code !== '') {
                 $this->saveToMappingJson(mb_trim(mb_strtolower($matches['devicecode'])), $code);
+
                 return $code;
             }
         }
@@ -243,21 +253,25 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             if ($xcode !== null && array_key_exists($xcode, $finds) && $finds[$xcode] !== null) {
                 $this->saveToMappingJson($finds[$xcode], $code);
             }
+
             return null;
         }
 
         return $code;
     }
 
-    /**
-     * @throws void
-     */
+    /** @throws void */
     private function saveToMappingJson(string $devicecode, string $code): void
     {
-        if ($code === 'A369i') {
+        if ($code === 'A369i' || $code === 'test-device-code') {
             return;
         }
+
         [$company] = explode('=', $code, 2);
+
+        if ($company === '') {
+            return;
+        }
 
         $file = sprintf('data/device-mapping/%s.json', $company);
 
@@ -265,20 +279,34 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
 
         if (file_exists($file)) {
             try {
-                $devicesFromMappingFile = json_decode((string)file_get_contents($file), true, 512, JSON_THROW_ON_ERROR);
-            } catch (\JsonException) {
+                $devicesFromMappingFile = json_decode(
+                    (string) file_get_contents($file),
+                    associative: true,
+                    flags: JSON_THROW_ON_ERROR,
+                );
+            } catch (JsonException) {
                 // do nothing
             }
         }
 
-        if (!array_key_exists($devicecode, $devicesFromMappingFile)) {
-            $devicesFromMappingFile[$devicecode] = $code;
+        if (
+            !is_array($devicesFromMappingFile) || array_key_exists($devicecode, $devicesFromMappingFile)
+        ) {
+            return;
+        }
 
-            try {
-                file_put_contents($file, json_encode($devicesFromMappingFile, JSON_THROW_ON_ERROR | JSON_PRETTY_PRINT) . PHP_EOL);
-            } catch (\JsonException) {
-                // do nothing
-            }
+        $devicesFromMappingFile[$devicecode] = $code;
+
+        try {
+            file_put_contents(
+                $file,
+                json_encode(
+                    $devicesFromMappingFile,
+                    JSON_THROW_ON_ERROR | JSON_PRETTY_PRINT,
+                ) . PHP_EOL,
+            );
+        } catch (JsonException) {
+            // do nothing
         }
     }
 }

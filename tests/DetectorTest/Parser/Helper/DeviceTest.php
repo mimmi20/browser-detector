@@ -14,11 +14,12 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Parser\Helper;
 
 use BrowserDetector\Parser\Helper\Device;
-use BrowserDetector\Parser\Helper\MappingfileParser;
+use BrowserDetector\Parser\Helper\MappingfileParserInterface;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use RuntimeException;
 
 use function mb_strtolower;
 use function sprintf;
@@ -58,14 +59,22 @@ use function sprintf;
 #[CoversClass(className: Device\Teclast::class)]
 final class DeviceTest extends TestCase
 {
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws RuntimeException
+     */
     #[DataProvider(methodName: 'providerUa')]
     public function testData(string $value, string | null $model): void
     {
         $code = mb_strtolower($value);
 
-        $mappingFileParser = new MappingfileParser();
-        $mappingFileParser->init();
+        $mappingFileParser = $this->createMock(MappingfileParserInterface::class);
+        $mappingFileParser
+            ->expects(self::once())
+            ->method('init');
+        $mappingFileParser
+            ->expects(self::once())
+            ->method('getItem');
 
         $device = new Device($mappingFileParser);
 

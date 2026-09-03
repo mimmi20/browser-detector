@@ -14,7 +14,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Parser\Header\HeaderLoader;
-use BrowserDetector\Parser\Helper\MappingfileParser;
+use BrowserDetector\Parser\Helper\MappingfileParserInterface;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
@@ -82,7 +82,13 @@ final class HeaderLoaderTest extends TestCase
             ->method('loadFromEngine');
 
         $normalizerFactory = new NormalizerFactory();
-        $mappingFileParser = new MappingfileParser();
+        $mappingFileParser = $this->createMock(MappingfileParserInterface::class);
+        $mappingFileParser
+            ->expects(self::never())
+            ->method('init');
+        $mappingFileParser
+            ->expects(self::never())
+            ->method('getItem');
 
         $key = Constants::HEADER_TEST;
 
@@ -159,7 +165,13 @@ final class HeaderLoaderTest extends TestCase
             ->method('loadFromEngine');
 
         $normalizerFactory = new NormalizerFactory();
-        $mappingFileParser = new MappingfileParser();
+        $mappingFileParser = $this->createMock(MappingfileParserInterface::class);
+        $mappingFileParser
+            ->expects(self::never())
+            ->method('init');
+        $mappingFileParser
+            ->expects(self::never())
+            ->method('getItem');
 
         $headerLoader = new HeaderLoader(
             deviceParser: $deviceParser,
@@ -230,7 +242,13 @@ final class HeaderLoaderTest extends TestCase
             ->method('loadFromEngine');
 
         $normalizerFactory = new NormalizerFactory();
-        $mappingFileParser = new MappingfileParser();
+        $mappingFileParser = $this->createMock(MappingfileParserInterface::class);
+        $mappingFileParser
+            ->expects(self::never())
+            ->method('init');
+        $mappingFileParser
+            ->expects(self::never())
+            ->method('getItem');
 
         $headerLoader = new HeaderLoader(
             deviceParser: $deviceParser,

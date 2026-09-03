@@ -29,8 +29,6 @@ final class Huawei implements DeviceInterface
     #[Override]
     public function getDeviceCode(string $code): string | null
     {
-        $specialDevices = [];
-
         return match ($code) {
             'vog-l29' => 'huawei=huawei vog-l29',
             'nen-lx1' => 'huawei=huawei nen-lx1',

@@ -14,23 +14,21 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser\Helper;
 
 use Override;
+use RuntimeException;
 
 /** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */
 final readonly class Device implements DeviceInterface
 {
-    /**
-     * @throws void
-     */
-    public function __construct(private MappingfileParser $mappingFileParser)
+    /** @throws void */
+    public function __construct(private MappingfileParserInterface $mappingFileParser)
     {
         // nothing to do
     }
 
-
     /**
      * @return non-empty-string|null
      *
-     * @throws void
+     * @throws RuntimeException
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
@@ -45,9 +43,7 @@ final readonly class Device implements DeviceInterface
             return $devicecode;
         }
 
-        /**
-         * @var array<DeviceInterface> $specialDevices
-         */
+        /** @var array<DeviceInterface> $specialDevices */
         $specialDevices = [
             new Device\Lg(),
             new Device\Acer(),

@@ -29,8 +29,6 @@ final class Teclast implements DeviceInterface
     #[Override]
     public function getDeviceCode(string $code): string | null
     {
-        $specialDevices = [];
-
         return match ($code) {
             'p30s_eea' => 'teclast=teclast p30s_eea',
             'p25t_eea', 'p25_t_eea' => 'teclast=teclast p25t_eea',
