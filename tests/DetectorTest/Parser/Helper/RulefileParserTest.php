@@ -376,7 +376,7 @@ final class RulefileParserTest extends TestCase
             ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(/* DIRECTORY_SEPARATOR === '\\' ? self::never() : self::once()/* */ self::never())
+            ->expects(DIRECTORY_SEPARATOR === '\\' ? self::never() : self::once())
             ->method('error')
             ->willReturnCallback(
                 static function (string | Stringable $message, array $context = []): void {
