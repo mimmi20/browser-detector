@@ -15,9 +15,9 @@ namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Data\Engine;
 use BrowserDetector\Data\Os;
+use BrowserDetector\Loader\MappingfileLoaderInterface;
 use BrowserDetector\Parser\Header\SecChUaModel;
 use BrowserDetector\Parser\Helper\Device;
-use BrowserDetector\Parser\Helper\MappingfileParserInterface;
 use BrowserDetector\Version\NullVersion;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -46,7 +46,7 @@ final class SecChUaModelTest extends TestCase
     #[DataProvider(methodName: 'providerUa')]
     public function testData(string $ua, bool $hasModel, string | null $model): void
     {
-        $mappingFileParser = $this->createMock(MappingfileParserInterface::class);
+        $mappingFileParser = $this->createMock(MappingfileLoaderInterface::class);
         $mappingFileParser
             ->expects(self::once())
             ->method('init');
@@ -2109,7 +2109,7 @@ final class SecChUaModelTest extends TestCase
     #[DataProvider(methodName: 'providerUaInternal')]
     public function testDataInternal(string $ua, bool $hasModel, string | null $model): void
     {
-        $mappingFileParser = $this->createMock(MappingfileParserInterface::class);
+        $mappingFileParser = $this->createMock(MappingfileLoaderInterface::class);
         $mappingFileParser
             ->expects(self::never())
             ->method('init');

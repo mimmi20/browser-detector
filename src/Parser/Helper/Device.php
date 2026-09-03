@@ -13,6 +13,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Helper;
 
+use BrowserDetector\Loader\MappingfileLoaderInterface;
 use Override;
 use RuntimeException;
 
@@ -20,7 +21,7 @@ use RuntimeException;
 final readonly class Device implements DeviceInterface
 {
     /** @throws void */
-    public function __construct(private MappingfileParserInterface $mappingFileParser)
+    public function __construct(private MappingfileLoaderInterface $mappingFileParser)
     {
         // nothing to do
     }

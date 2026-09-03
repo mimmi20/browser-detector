@@ -11,11 +11,11 @@
 
 declare(strict_types = 1);
 
-namespace BrowserDetector\Parser\Helper;
+namespace BrowserDetector\Loader;
 
 use RuntimeException;
 
-interface MappingfileParserInterface
+interface MappingfileLoaderInterface
 {
     /** @throws RuntimeException */
     public function init(): void;

@@ -13,8 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Parser\Helper;
 
+use BrowserDetector\Loader\MappingfileLoaderInterface;
 use BrowserDetector\Parser\Helper\Device;
-use BrowserDetector\Parser\Helper\MappingfileParserInterface;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
@@ -68,13 +68,15 @@ final class DeviceTest extends TestCase
     {
         $code = mb_strtolower($value);
 
-        $mappingFileParser = $this->createMock(MappingfileParserInterface::class);
+        $mappingFileParser = $this->createMock(MappingfileLoaderInterface::class);
         $mappingFileParser
             ->expects(self::once())
             ->method('init');
         $mappingFileParser
             ->expects(self::once())
-            ->method('getItem');
+            ->method('getItem')
+            ->with($code)
+            ->willReturn($model);
 
         $device = new Device($mappingFileParser);
 

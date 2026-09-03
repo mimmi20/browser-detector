@@ -20,12 +20,12 @@ use BrowserDetector\Loader\Data;
 use BrowserDetector\Loader\DeviceLoaderFactory;
 use BrowserDetector\Loader\EngineLoader;
 use BrowserDetector\Loader\InitData\Client as DataClient;
+use BrowserDetector\Loader\MappingfileLoader;
 use BrowserDetector\Loader\PlatformLoader;
 use BrowserDetector\Parser\BrowserParserFactory;
 use BrowserDetector\Parser\DeviceParserFactory;
 use BrowserDetector\Parser\EngineParserFactory;
 use BrowserDetector\Parser\Header\HeaderLoader;
-use BrowserDetector\Parser\Helper\MappingfileParser;
 use BrowserDetector\Parser\PlatformParserFactory;
 use BrowserDetector\Version\VersionBuilder;
 use Laminas\Hydrator\ArraySerializableHydrator;
@@ -112,7 +112,7 @@ final class DetectorFactory
             $browserParser        = $browserParserFactory();
 
             $normalizerFactory = new NormalizerFactory();
-            $mappingFileParser = new MappingfileParser();
+            $mappingfileLoader = new MappingfileLoader();
 
             $headerLoader = new HeaderLoader(
                 deviceParser: $deviceParser,
@@ -123,7 +123,7 @@ final class DetectorFactory
                 browserLoader: $browserLoader,
                 platformLoader: $platformLoader,
                 engineLoader: $engineLoader,
-                mappingFileParser: $mappingFileParser,
+                mappingFileParser: $mappingfileLoader,
             );
 
             $requestBuilder = new RequestBuilder(headerLoader: $headerLoader);

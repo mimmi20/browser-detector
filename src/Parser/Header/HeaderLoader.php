@@ -13,8 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
+use BrowserDetector\Loader\MappingfileLoaderInterface;
 use BrowserDetector\Parser\Helper\Device;
-use BrowserDetector\Parser\Helper\MappingfileParserInterface;
 use Override;
 use UaLoader\BrowserLoaderInterface;
 use UaLoader\EngineLoaderInterface;
@@ -61,7 +61,7 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
         private BrowserLoaderInterface $browserLoader,
         private PlatformLoaderInterface $platformLoader,
         private EngineLoaderInterface $engineLoader,
-        private MappingfileParserInterface $mappingFileParser,
+        private MappingfileLoaderInterface $mappingFileParser,
     ) {
         // nothing to do
     }

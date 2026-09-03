@@ -11,7 +11,7 @@
 
 declare(strict_types = 1);
 
-namespace BrowserDetector\Parser\Helper;
+namespace BrowserDetector\Loader;
 
 use BrowserDetector\Iterator\FilterIterator;
 use JsonException;
@@ -32,9 +32,9 @@ use function str_replace;
 
 use const JSON_THROW_ON_ERROR;
 
-final class MappingfileParser implements MappingfileParserInterface
+final class MappingfileLoader implements MappingfileLoaderInterface
 {
-    private const string DATA_PATH = __DIR__ . '/../../../data/device-mapping';
+    private const string DATA_PATH = __DIR__ . '/../../data/device-mapping';
 
     /** @var array<string, non-empty-string> */
     private array $devices    = [];

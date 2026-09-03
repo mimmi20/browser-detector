@@ -15,6 +15,7 @@ namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Data\Engine;
 use BrowserDetector\Data\Os;
+use BrowserDetector\Loader\MappingfileLoaderInterface;
 use BrowserDetector\Parser\Header\SetVersionTrait;
 use BrowserDetector\Parser\Header\XUcbrowserUaClientCode;
 use BrowserDetector\Parser\Header\XUcbrowserUaClientVersion;
@@ -24,7 +25,6 @@ use BrowserDetector\Parser\Header\XUcbrowserUaEngineVersion;
 use BrowserDetector\Parser\Header\XUcbrowserUaPlatformCode;
 use BrowserDetector\Parser\Header\XUcbrowserUaPlatformVersion;
 use BrowserDetector\Parser\Helper\Device;
-use BrowserDetector\Parser\Helper\MappingfileParserInterface;
 use BrowserDetector\Version\ForcedNullVersion;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\CoversTrait;
@@ -102,7 +102,7 @@ final class XUcbrowserUaTest extends TestCase
             ->with($searchCode)
             ->willReturn($deviceCode);
 
-        $mappingFileParser = $this->createMock(MappingfileParserInterface::class);
+        $mappingFileParser = $this->createMock(MappingfileLoaderInterface::class);
         $mappingFileParser
             ->expects($searchCode === null ? self::never() : self::once())
             ->method('init');
@@ -1219,7 +1219,7 @@ final class XUcbrowserUaTest extends TestCase
             ->with($searchCode)
             ->willReturn($deviceCode);
 
-        $mappingFileParser = $this->createMock(MappingfileParserInterface::class);
+        $mappingFileParser = $this->createMock(MappingfileLoaderInterface::class);
         $mappingFileParser
             ->expects($searchCode === null ? self::never() : self::once())
             ->method('init');

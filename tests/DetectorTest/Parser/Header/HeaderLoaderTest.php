@@ -13,8 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Parser\Header;
 
+use BrowserDetector\Loader\MappingfileLoaderInterface;
 use BrowserDetector\Parser\Header\HeaderLoader;
-use BrowserDetector\Parser\Helper\MappingfileParserInterface;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
@@ -82,7 +82,7 @@ final class HeaderLoaderTest extends TestCase
             ->method('loadFromEngine');
 
         $normalizerFactory = new NormalizerFactory();
-        $mappingFileParser = $this->createMock(MappingfileParserInterface::class);
+        $mappingFileParser = $this->createMock(MappingfileLoaderInterface::class);
         $mappingFileParser
             ->expects(self::never())
             ->method('init');
@@ -165,7 +165,7 @@ final class HeaderLoaderTest extends TestCase
             ->method('loadFromEngine');
 
         $normalizerFactory = new NormalizerFactory();
-        $mappingFileParser = $this->createMock(MappingfileParserInterface::class);
+        $mappingFileParser = $this->createMock(MappingfileLoaderInterface::class);
         $mappingFileParser
             ->expects(self::never())
             ->method('init');
@@ -242,7 +242,7 @@ final class HeaderLoaderTest extends TestCase
             ->method('loadFromEngine');
 
         $normalizerFactory = new NormalizerFactory();
-        $mappingFileParser = $this->createMock(MappingfileParserInterface::class);
+        $mappingFileParser = $this->createMock(MappingfileLoaderInterface::class);
         $mappingFileParser
             ->expects(self::never())
             ->method('init');
