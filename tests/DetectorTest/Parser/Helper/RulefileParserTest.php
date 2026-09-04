@@ -378,25 +378,8 @@ final class RulefileParserTest extends TestCase
             ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(DIRECTORY_SEPARATOR === '\\' ? self::never() : self::once())
-            ->method('error')
-            ->willReturnCallback(
-                static function (string | Stringable $message, array $context = []): void {
-                    assert($message instanceof Throwable);
-
-                    self::assertSame('', (string) $message);
-                    self::assertInstanceOf(Throwable::class, $message);
-                    self::assertSame([], $context);
-
-                    self::assertSame(
-                        'could not match rule "/(?<!test|test-)useragent/" of file vfs://root/bot2.json with useragent "%s": Internal error [1]',
-                        $message->getMessage(),
-                    );
-
-                    self::assertSame(0, $message->getCode());
-                    self::assertNull($message->getPrevious());
-                },
-            );
+            ->expects(self::never())
+            ->method('error');
         $logger
             ->expects(self::never())
             ->method('critical');
@@ -445,25 +428,8 @@ final class RulefileParserTest extends TestCase
             ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(DIRECTORY_SEPARATOR === '\\' ? self::never() : self::once())
-            ->method('error')
-            ->willReturnCallback(
-                static function (string | Stringable $message, array $context = []): void {
-                    assert($message instanceof Throwable);
-
-                    self::assertSame('', (string) $message);
-                    self::assertInstanceOf(Throwable::class, $message);
-                    self::assertSame([], $context);
-
-                    self::assertSame(
-                        'could not match rule "/(?<!test|test-)useragent/" of file vfs://root/bot2.json with useragent "%s": Internal error [1]',
-                        $message->getMessage(),
-                    );
-
-                    self::assertSame(0, $message->getCode());
-                    self::assertNull($message->getPrevious());
-                },
-            );
+            ->expects(self::never())
+            ->method('error');
         $logger
             ->expects(self::never())
             ->method('critical');
@@ -512,25 +478,8 @@ final class RulefileParserTest extends TestCase
             ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(DIRECTORY_SEPARATOR === '\\' ? self::never() : self::once())
-            ->method('error')
-            ->willReturnCallback(
-                static function (string | Stringable $message, array $context = []): void {
-                    assert($message instanceof Throwable);
-
-                    self::assertSame('', (string) $message);
-                    self::assertInstanceOf(Throwable::class, $message);
-                    self::assertSame([], $context);
-
-                    self::assertSame(
-                        'could not match rule "/(?<!test|test-)useragent/" of file vfs://root/bot2.json with useragent "%s": Internal error [1]',
-                        $message->getMessage(),
-                    );
-
-                    self::assertSame(0, $message->getCode());
-                    self::assertNull($message->getPrevious());
-                },
-            );
+            ->expects(self::never())
+            ->method('error');
         $logger
             ->expects(self::never())
             ->method('critical');
