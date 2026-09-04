@@ -848,7 +848,7 @@ final readonly class Headers
             $deviceCodename = $deviceHeader->getDeviceCode();
         }
 
-        if ($deviceCodename !== null) {
+        if ($deviceCodename !== null && $deviceCodename !== '') {
             [$company, $key] = explode('=', $deviceCodename, 2);
 
             try {
