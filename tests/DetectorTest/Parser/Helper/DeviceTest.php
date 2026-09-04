@@ -16,12 +16,10 @@ namespace BrowserDetectorTest\Parser\Helper;
 use BrowserDetector\Loader\MappingfileLoaderInterface;
 use BrowserDetector\Parser\Helper\Device;
 use PHPUnit\Framework\Attributes\CoversClass;
-use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use RuntimeException;
 
-use function mb_strtolower;
 use function sprintf;
 
 /** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */

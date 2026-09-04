@@ -59,6 +59,7 @@ use function in_array;
 use function is_string;
 use function mb_strtolower;
 use function sprintf;
+use function str_contains;
 
 final readonly class Headers
 {
