@@ -357,7 +357,7 @@ final class RulefileParserTest extends TestCase
      */
     public function testParseNotEmptyFileWithPregMatchError(): void
     {
-        $structure = ['bot2.json' => '{"generic": "test-generic", "rules": {"/(?<!test-?)useragent/": "test-mode-3", "/test-useragent/": "test-mode", "/test/": "test-mode-2"}}'];
+        $structure = ['bot2.json' => '{"generic": "test-generic", "rules": {"/(?<!test|test-)useragent/": "test-mode-3", "/test-useragent/": "test-mode", "/test/": "test-mode-2"}}'];
 
         vfsStream::setup(self::DATA_PATH, structure: $structure);
 
@@ -389,7 +389,7 @@ final class RulefileParserTest extends TestCase
                     self::assertSame([], $context);
 
                     self::assertSame(
-                        'could not match rule "/(?<!test-?)useragent/" of file vfs://root/bot2.json with useragent "%s": Internal error [1]',
+                        'could not match rule "/(?<!test|test-)useragent/" of file vfs://root/bot2.json with useragent "%s": Internal error [1]',
                         $message->getMessage(),
                     );
 
@@ -424,7 +424,7 @@ final class RulefileParserTest extends TestCase
      */
     public function testParseReturningGenericRule(): void
     {
-        $structure = ['bot2.json' => '{"generic": "test-generic", "rules": {"/(?<!test-?)useragent/": "test-mode-3"}}'];
+        $structure = ['bot2.json' => '{"generic": "test-generic", "rules": {"/(?<!test|test-)useragent/": "test-mode-3"}}'];
 
         vfsStream::setup(self::DATA_PATH, structure: $structure);
 
@@ -456,7 +456,7 @@ final class RulefileParserTest extends TestCase
                     self::assertSame([], $context);
 
                     self::assertSame(
-                        'could not match rule "/(?<!test-?)useragent/" of file vfs://root/bot2.json with useragent "%s": Internal error [1]',
+                        'could not match rule "/(?<!test|test-)useragent/" of file vfs://root/bot2.json with useragent "%s": Internal error [1]',
                         $message->getMessage(),
                     );
 
@@ -491,7 +491,7 @@ final class RulefileParserTest extends TestCase
      */
     public function testParseReturningFallback(): void
     {
-        $structure = ['bot2.json' => '{"rules": {"/(?<!test-?)useragent/": "test-mode-3"}}'];
+        $structure = ['bot2.json' => '{"rules": {"/(?<!test|test-)useragent/": "test-mode-3"}}'];
 
         vfsStream::setup(self::DATA_PATH, structure: $structure);
 
@@ -523,7 +523,7 @@ final class RulefileParserTest extends TestCase
                     self::assertSame([], $context);
 
                     self::assertSame(
-                        'could not match rule "/(?<!test-?)useragent/" of file vfs://root/bot2.json with useragent "%s": Internal error [1]',
+                        'could not match rule "/(?<!test|test-)useragent/" of file vfs://root/bot2.json with useragent "%s": Internal error [1]',
                         $message->getMessage(),
                     );
 
