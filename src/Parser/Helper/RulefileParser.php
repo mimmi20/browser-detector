@@ -117,9 +117,10 @@ final readonly class RulefileParser implements RulefileParserInterface
                     $this->logger->error(
                         new Exception(
                             sprintf(
-                                'could not match rule "%s" of file %s: %s [%s]',
+                                'could not match rule "%s" of file %s with useragent "%s": %s [%s]',
                                 $rule,
                                 $file,
+                                $useragent,
                                 $msg,
                                 $error,
                             ),
