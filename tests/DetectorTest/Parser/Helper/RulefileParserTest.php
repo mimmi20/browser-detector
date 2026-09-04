@@ -27,6 +27,8 @@ use Throwable;
 use function assert;
 use function sprintf;
 
+use const DIRECTORY_SEPARATOR;
+
 #[CoversClass(className: RulefileParser::class)]
 final class RulefileParserTest extends TestCase
 {

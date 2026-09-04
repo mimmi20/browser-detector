@@ -13,15 +13,23 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
+use BrowserDetector\Iterator\FilterIterator;
 use BrowserDetector\Parser\Helper\DeviceInterface;
+use CallbackFilterIterator;
 use JsonException;
 use Override;
+use RecursiveDirectoryIterator;
+use RecursiveIteratorIterator;
+use SplFileInfo;
 use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\Normalizer\NormalizerInterface;
 use UaParser\DeviceCodeInterface;
 use UaParser\DeviceParserInterface;
+use UnexpectedValueException;
 
+use function array_filter;
 use function array_key_exists;
+use function assert;
 use function explode;
 use function file_exists;
 use function file_get_contents;
@@ -34,6 +42,8 @@ use function json_encode;
 use function mb_strtolower;
 use function mb_trim;
 use function sprintf;
+use function str_contains;
+use function str_replace;
 
 use const JSON_PRETTY_PRINT;
 use const JSON_THROW_ON_ERROR;
@@ -138,7 +148,65 @@ final readonly class XUcbrowserDevice implements DeviceCodeInterface
                 ) . PHP_EOL,
             );
         } catch (JsonException) {
-            // do nothing
+            return;
+        }
+
+        try {
+            $iterator = new RecursiveIteratorIterator(
+                new RecursiveDirectoryIterator('../../../data/factories'),
+            );
+        } catch (UnexpectedValueException) {
+            return;
+        }
+
+        $files = new FilterIterator($iterator, 'json');
+        $files = new CallbackFilterIterator(
+            $files,
+            static fn (SplFileInfo $current): bool => str_contains(
+                $current->getPathname(),
+                $company,
+            ),
+        );
+
+        foreach ($files as $file) {
+            assert($file instanceof SplFileInfo);
+
+            $pathName = $file->getPathname();
+            $filepath = str_replace('\\', '/', $pathName);
+            assert(is_string($filepath));
+
+            $content = @file_get_contents($filepath);
+
+            assert($content === false || is_string($content));
+
+            if ($content === false) {
+                continue;
+            }
+
+            try {
+                $fileData = json_decode($content, associative: true, flags: JSON_THROW_ON_ERROR);
+            } catch (JsonException) {
+                continue;
+            }
+
+            assert(is_array($fileData));
+
+            $newFileData = array_filter(
+                $fileData,
+                static fn (mixed $v): bool => is_string($v) && $v !== $code,
+            );
+
+            try {
+                file_put_contents(
+                    $filepath,
+                    json_encode(
+                        $newFileData,
+                        JSON_THROW_ON_ERROR | JSON_PRETTY_PRINT,
+                    ) . PHP_EOL,
+                );
+            } catch (JsonException) {
+                // do nothing
+            }
         }
     }
 }
