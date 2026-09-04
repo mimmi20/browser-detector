@@ -289,7 +289,7 @@ final class RulefileParserTest extends TestCase
      * @throws ExpectationFailedException
      * @throws Exception
      */
-    public function testParseNotEmptyFile2(): void
+    public function testParseNotEmptyFileWithIntegerRule(): void
     {
         $structure = ['bot2.json' => '{"generic": "test-generic", "rules": {"1": "test-mode-3", "/test-useragent/": "test-mode", "/test/": "test-mode-2"}}'];
 
@@ -355,7 +355,7 @@ final class RulefileParserTest extends TestCase
      * @throws ExpectationFailedException
      * @throws Exception
      */
-    public function testParseNotEmptyFile3(): void
+    public function testParseNotEmptyFileWithPregMatchError(): void
     {
         $structure = ['bot2.json' => '{"generic": "test-generic", "rules": {"/(?<!test-?)useragent/": "test-mode-3", "/test-useragent/": "test-mode", "/test/": "test-mode-2"}}'];
 
@@ -384,6 +384,7 @@ final class RulefileParserTest extends TestCase
                 static function (string | Stringable $message, array $context = []): void {
                     assert($message instanceof Throwable);
 
+                    self::assertSame('', (string) $message);
                     self::assertInstanceOf(Throwable::class, $message);
                     self::assertSame([], $context);
 
@@ -421,7 +422,7 @@ final class RulefileParserTest extends TestCase
      * @throws ExpectationFailedException
      * @throws Exception
      */
-    public function testParseNotEmptyFile4(): void
+    public function testParseReturningGenericRule(): void
     {
         $structure = ['bot2.json' => '{"generic": "test-generic", "rules": {"/(?<!test-?)useragent/": "test-mode-3"}}'];
 
@@ -444,12 +445,13 @@ final class RulefileParserTest extends TestCase
             ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(/* DIRECTORY_SEPARATOR === '\\' ? self::never() : self::once()/* */ self::never())
+            ->expects(DIRECTORY_SEPARATOR === '\\' ? self::never() : self::once())
             ->method('error')
             ->willReturnCallback(
                 static function (string | Stringable $message, array $context = []): void {
                     assert($message instanceof Throwable);
 
+                    self::assertSame('', (string) $message);
                     self::assertInstanceOf(Throwable::class, $message);
                     self::assertSame([], $context);
 
@@ -487,7 +489,7 @@ final class RulefileParserTest extends TestCase
      * @throws ExpectationFailedException
      * @throws Exception
      */
-    public function testParseNotEmptyFile5(): void
+    public function testParseReturningFallback(): void
     {
         $structure = ['bot2.json' => '{"rules": {"/(?<!test-?)useragent/": "test-mode-3"}}'];
 
@@ -510,12 +512,13 @@ final class RulefileParserTest extends TestCase
             ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(/* DIRECTORY_SEPARATOR === '\\' ? self::never() : self::once()/* */ self::never())
+            ->expects(DIRECTORY_SEPARATOR === '\\' ? self::never() : self::once())
             ->method('error')
             ->willReturnCallback(
                 static function (string | Stringable $message, array $context = []): void {
                     assert($message instanceof Throwable);
 
+                    self::assertSame('', (string) $message);
                     self::assertInstanceOf(Throwable::class, $message);
                     self::assertSame([], $context);
 
