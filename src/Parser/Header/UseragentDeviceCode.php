@@ -263,7 +263,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             } elseif ($xcode !== null) {
                 $this->logger->debug(
                     sprintf(
-                        "matching regex not found for useragent %s,\nbest match: %s [%s]\nfound regexes: %s",
+                        "\nmatching regex not found for useragent %s,\nbest match: %s [%s]\nfound regexes: %s",
                         $normalizedValue,
                         $xcode,
                         get_debug_type($xcode),
@@ -273,7 +273,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             } else {
                 $this->logger->debug(
                     sprintf(
-                        "no regex did match before for useragent %s,\nfound regexes: %s",
+                        "\nno regex did match before for useragent %s,\nfound regexes: %s",
                         $normalizedValue,
                         print_r($finds, true),
                     ),
