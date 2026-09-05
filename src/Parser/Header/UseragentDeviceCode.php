@@ -174,6 +174,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/\(lge[;,] (?P<devicecode>[^;,]+)[;,]/i',
             '/^mqqbrowser\/[\d.]+ \(linux; [\d.]+; (?P<devicecode>[^)]+)\)$/i',
             '/^onebrowser\/[\d.]+ \((?P<devicecode>[^)]+)\)$/i',
+            '/(?P<devicecode>[^();\/]+) opera\/[\d.]+ \(j2me\/midp; opera mini/i',
             // should be the last entry in the list
             '/^(?P<devicecode>.+)$/i',
         ];
