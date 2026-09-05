@@ -263,19 +263,21 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             } elseif ($xcode !== null) {
                 $this->logger->debug(
                     sprintf(
-                        "\nmatching regex not found for useragent %s,\nbest match: %s [%s]\nfound regexes: %s",
+                        "\n<warning>matching regex not found for useragent %s</warning>,\nbest match: %s [%s]\nfound regexes: %s,\nfound results: %s",
                         $normalizedValue,
                         $xcode,
                         get_debug_type($xcode),
                         print_r($finds, true),
+                        print_r($results, true),
                     ),
                 );
             } else {
                 $this->logger->debug(
                     sprintf(
-                        "\nno regex did match before for useragent %s,\nfound regexes: %s",
+                        "\n<error>no regex did match before for useragent %s</error>,\nfound regexes: %s,\nfound results: %s",
                         $normalizedValue,
                         print_r($finds, true),
+                        print_r($results, true),
                     ),
                 );
             }
