@@ -251,17 +251,11 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             }
         }
 
-        $this->logger->debug(sprintf('need to parse useragent %s', $normalizedValue));
-
         $code = $this->deviceParser->parse($normalizedValue);
 
         if ($code === '') {
             return null;
         }
-
-        $this->logger->debug(
-            sprintf('code %s found while parsing useragent %s', $code, $normalizedValue),
-        );
 
         if ($this->autoUpdate && $xcode !== null) {
             if (array_key_exists($xcode, $finds) && $finds[$xcode] !== null) {
