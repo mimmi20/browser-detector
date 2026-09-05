@@ -45,8 +45,11 @@ final class DetectorFactory
     private Detector | null $detector = null;
 
     /** @throws void */
-    public function __construct(private readonly PsrCacheInterface $psrCache, private readonly LoggerInterface $logger)
-    {
+    public function __construct(
+        private readonly PsrCacheInterface $psrCache,
+        private readonly LoggerInterface $logger,
+        private bool $autoUpdate = false,
+    ) {
         // nothing to do
     }
 
@@ -124,6 +127,8 @@ final class DetectorFactory
                 platformLoader: $platformLoader,
                 engineLoader: $engineLoader,
                 mappingFileParser: $mappingfileLoader,
+                logger: $this->logger,
+                autoUpdate: $this->autoUpdate,
             );
 
             $requestBuilder = new RequestBuilder(headerLoader: $headerLoader);

@@ -24,6 +24,7 @@ use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use Psr\Log\LoggerInterface;
 use UaRequest\Exception\NotFoundException;
 use UaRequest\Header\DeviceCodeOnlyHeader;
 use UaResult\Bits\Bits;
@@ -46,6 +47,29 @@ final class SecChUaModelTest extends TestCase
     #[DataProvider(methodName: 'providerUa')]
     public function testData(string $ua, bool $hasModel, string | null $model): void
     {
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
         $mappingFileParser = $this->createMock(MappingfileLoaderInterface::class);
         $mappingFileParser
             ->expects(self::once())
@@ -58,7 +82,11 @@ final class SecChUaModelTest extends TestCase
 
         $deviceCodeOnlyHeader = new DeviceCodeOnlyHeader(
             value: $ua,
-            deviceCode: new SecChUaModel(new Device($mappingFileParser)),
+            deviceCode: new SecChUaModel(
+                device: new Device(mappingFileParser: $mappingFileParser),
+                logger: $logger,
+                autoUpdate: false,
+            ),
         );
 
         self::assertSame(
@@ -2109,6 +2137,29 @@ final class SecChUaModelTest extends TestCase
     #[DataProvider(methodName: 'providerUaInternal')]
     public function testDataInternal(string $ua, bool $hasModel, string | null $model): void
     {
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
         $mappingFileParser = $this->createMock(MappingfileLoaderInterface::class);
         $mappingFileParser
             ->expects(self::never())
@@ -2119,7 +2170,11 @@ final class SecChUaModelTest extends TestCase
 
         $deviceCodeOnlyHeader = new DeviceCodeOnlyHeader(
             value: $ua,
-            deviceCode: new SecChUaModel(new Device($mappingFileParser)),
+            deviceCode: new SecChUaModel(
+                device: new Device(mappingFileParser: $mappingFileParser),
+                logger: $logger,
+                autoUpdate: false,
+            ),
         );
 
         self::assertSame(

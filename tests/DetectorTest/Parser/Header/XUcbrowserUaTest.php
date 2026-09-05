@@ -32,6 +32,7 @@ use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use Psr\Log\LoggerInterface;
 use UaParser\DeviceParserInterface;
 use UaRequest\Header\FullHeader;
 use UaResult\Bits\Bits;
@@ -95,6 +96,29 @@ final class XUcbrowserUaTest extends TestCase
             $isNull = true;
         }
 
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
         $deviceParser = $this->createMock(DeviceParserInterface::class);
         $deviceParser
             ->expects($searchCode === 'NOKIA RM-914_eu_turkey_355' ? self::once() : self::never())
@@ -116,6 +140,8 @@ final class XUcbrowserUaTest extends TestCase
             deviceCode: new XUcbrowserUaDeviceCode(
                 deviceParser: $deviceParser,
                 device: new Device($mappingFileParser),
+                logger: $logger,
+                autoUpdate: false,
             ),
             clientCode: new XUcbrowserUaClientCode(),
             clientVersion: new XUcbrowserUaClientVersion(),
@@ -1212,6 +1238,29 @@ final class XUcbrowserUaTest extends TestCase
             $isNull = true;
         }
 
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
         $deviceParser = $this->createMock(DeviceParserInterface::class);
         $deviceParser
             ->expects(self::never())
@@ -1233,6 +1282,8 @@ final class XUcbrowserUaTest extends TestCase
             deviceCode: new XUcbrowserUaDeviceCode(
                 deviceParser: $deviceParser,
                 device: new Device($mappingFileParser),
+                logger: $logger,
+                autoUpdate: false,
             ),
             clientCode: new XUcbrowserUaClientCode(),
             clientVersion: new XUcbrowserUaClientVersion(),

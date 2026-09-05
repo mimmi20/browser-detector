@@ -30,6 +30,7 @@ use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use Psr\Log\LoggerInterface;
 use UaLoader\BrowserLoaderInterface;
 use UaLoader\EngineLoaderInterface;
 use UaLoader\PlatformLoaderInterface;
@@ -93,6 +94,29 @@ final class Useragent4Test extends TestCase
             version: (new VersionBuilder())->set((string) $platformVersion),
             bits: Bits::unknown,
         );
+
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
 
         $deviceParser = $this->createMock(DeviceParserInterface::class);
         $deviceParser
@@ -163,6 +187,8 @@ final class Useragent4Test extends TestCase
                 deviceParser: $deviceParser,
                 normalizer: $normalizerChain,
                 device: $deviceCodeHelper,
+                logger: $logger,
+                autoUpdate: false,
             ),
             clientCode: new UseragentClientCode(
                 browserParser: $browserParser,

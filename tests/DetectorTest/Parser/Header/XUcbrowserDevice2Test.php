@@ -17,6 +17,7 @@ use BrowserDetector\Parser\Header\XUcbrowserDevice;
 use BrowserDetector\Parser\Helper\DeviceInterface;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
+use Psr\Log\LoggerInterface;
 use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\Normalizer\NormalizerInterface;
 use UaParser\DeviceParserInterface;
@@ -47,10 +48,35 @@ final class XUcbrowserDevice2Test extends TestCase
             ->expects(self::never())
             ->method('getDeviceCode');
 
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
         $xUcbrowserDevice = new XUcbrowserDevice(
             deviceParser: $deviceParser,
             normalizer: $normalizer,
             device: $deviceCodeHelper,
+            logger: $logger,
+            autoUpdate: false,
         );
 
         self::assertNull($xUcbrowserDevice->getDeviceCode($value));
@@ -78,10 +104,35 @@ final class XUcbrowserDevice2Test extends TestCase
             ->expects(self::never())
             ->method('getDeviceCode');
 
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
         $xUcbrowserDevice = new XUcbrowserDevice(
             deviceParser: $deviceParser,
             normalizer: $normalizer,
             device: $deviceCodeHelper,
+            logger: $logger,
+            autoUpdate: false,
         );
 
         self::assertNull($xUcbrowserDevice->getDeviceCode($value));
@@ -109,10 +160,35 @@ final class XUcbrowserDevice2Test extends TestCase
             ->expects(self::never())
             ->method('getDeviceCode');
 
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
         $xUcbrowserDevice = new XUcbrowserDevice(
             deviceParser: $deviceParser,
             normalizer: $normalizer,
             device: $deviceCodeHelper,
+            logger: $logger,
+            autoUpdate: false,
         );
 
         self::assertNull($xUcbrowserDevice->getDeviceCode($value));

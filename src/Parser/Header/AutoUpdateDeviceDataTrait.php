@@ -1,0 +1,178 @@
+<?php
+
+/**
+ * This file is part of the browser-detector package.
+ *
+ * Copyright (c) 2012-2026, Thomas Mueller <mimmi20@live.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+declare(strict_types = 1);
+
+namespace BrowserDetector\Parser\Header;
+
+use BrowserDetector\Iterator\FilterIterator;
+use CallbackFilterIterator;
+use JsonException;
+use RecursiveDirectoryIterator;
+use RecursiveIteratorIterator;
+use SplFileInfo;
+use UnexpectedValueException;
+
+use function array_filter;
+use function array_key_exists;
+use function assert;
+use function explode;
+use function file_exists;
+use function file_get_contents;
+use function file_put_contents;
+use function is_array;
+use function is_string;
+use function json_decode;
+use function json_encode;
+use function sprintf;
+use function str_contains;
+use function str_replace;
+
+use const JSON_PRETTY_PRINT;
+use const JSON_THROW_ON_ERROR;
+use const JSON_UNESCAPED_SLASHES;
+use const JSON_UNESCAPED_UNICODE;
+use const PHP_EOL;
+
+/** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */
+trait AutoUpdateDeviceDataTrait
+{
+    /** @throws void */
+    private function saveToMappingJson(string $devicecode, string $code): void
+    {
+        if ($code === 'A369i' || $code === 'test-device-code') {
+            return;
+        }
+
+        [$company] = explode('=', $code, 2);
+
+        if ($company === '') {
+            return;
+        }
+
+        $file = sprintf('data/device-mapping/%s.json', $company);
+
+        $devicesFromMappingFile = [];
+
+        if (file_exists($file)) {
+            try {
+                $devicesFromMappingFile = json_decode(
+                    (string) file_get_contents($file),
+                    associative: true,
+                    flags: JSON_THROW_ON_ERROR,
+                );
+            } catch (JsonException) {
+                $this->logger->debug(sprintf('Could not read mapping file %s', $file));
+            }
+        }
+
+        if (!is_array($devicesFromMappingFile)) {
+            $this->logger->debug(sprintf('Could not decode mapping file %s', $file));
+
+            return;
+        }
+
+        if (array_key_exists($devicecode, $devicesFromMappingFile)) {
+            $this->deleteFromFactories($company, $code);
+
+            return;
+        }
+
+        $devicesFromMappingFile[$devicecode] = $code;
+
+        try {
+            file_put_contents(
+                $file,
+                json_encode(
+                    $devicesFromMappingFile,
+                    JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT | JSON_THROW_ON_ERROR,
+                ) . PHP_EOL,
+            );
+        } catch (JsonException) {
+            $this->logger->debug(sprintf('Could not encode or rewrite mapping file %s', $file));
+
+            return;
+        }
+
+        $this->deleteFromFactories($company, $code);
+    }
+
+    /** @throws void */
+    private function deleteFromFactories(string $company, string $code): void
+    {
+        try {
+            $iterator = new RecursiveIteratorIterator(
+                new RecursiveDirectoryIterator(__DIR__ . '/../../../data/factories'),
+            );
+        } catch (UnexpectedValueException) {
+            $this->logger->debug('Could not find factories');
+
+            return;
+        }
+
+        $files = new FilterIterator($iterator, 'json');
+        $files = new CallbackFilterIterator(
+            $files,
+            static fn (SplFileInfo $current): bool => str_contains(
+                $current->getPathname(),
+                $company,
+            ),
+        );
+
+        foreach ($files as $file) {
+            assert($file instanceof SplFileInfo);
+
+            $pathName = $file->getPathname();
+            $filepath = str_replace('\\', '/', $pathName);
+            assert(is_string($filepath));
+
+            $content = @file_get_contents($filepath);
+
+            assert($content === false || is_string($content));
+
+            if ($content === false) {
+                $this->logger->debug(sprintf('Could not read factory file %s', $filepath));
+
+                continue;
+            }
+
+            try {
+                $fileData = json_decode($content, associative: true, flags: JSON_THROW_ON_ERROR);
+            } catch (JsonException) {
+                $this->logger->debug(sprintf('Could not decode factory file %s', $filepath));
+
+                continue;
+            }
+
+            assert(is_array($fileData));
+
+            $newFileData = [
+                'rules' => array_filter(
+                    $fileData['rules'] ?? [],
+                    static fn (mixed $v): bool => is_string($v) && $v !== $code,
+                ),
+                'generic' => $fileData['generic'],
+            ];
+
+            try {
+                file_put_contents(
+                    $filepath,
+                    json_encode(
+                        $newFileData,
+                        JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT | JSON_THROW_ON_ERROR,
+                    ) . PHP_EOL,
+                );
+            } catch (JsonException) {
+                $this->logger->debug(sprintf('Could not encode or rewrite factory file %s', $filepath));
+            }
+        }
+    }
+}
