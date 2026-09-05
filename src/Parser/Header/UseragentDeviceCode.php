@@ -111,6 +111,8 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/dalvik\/[\d.]+ \(linux; andr[o0]id [\d.]+(?:[^;]+)?; (?P<devicecode>[^);\/]+)(?:[);\/]?[^);\/]+)?\)/i',
             '/dalvik\/[\d.]+ \(linux; andr[o0]id [\d.]+\/viber [\d.]+ ; (?P<devicecode>[^);\/]+)[su]p1a/i',
             '/\(speedmode; proxy; android [\d.]+;(?P<devicecode>[^);\/]+)\)/i',
+            '/ucweb\/[\d.]+ ?\((?:midp-2\.0|linux); opera mini\/[^;]+; (?P<devicecode>[^);\/]+)(?:(?:\/[^ ]+)? +(?:build|hmscore|release))[^)]+\)/i',
+            '/ucweb\/[\d.]+ ?\((?:midp-2\.0|linux); opera mini\/[^;]+; (?P<devicecode>[^);\/]+)/i',
             '/ucweb\/[\d.]+ \((?:java; )?(?:midp-2\.0|linux); (?:adr [\d.]+;) (?P<devicecode>[^);\/]+)(?:[^)]+)?\)/i',
             '/ucweb\/[\d.]+ \((?:java; )?(?:midp-2\.0|linux); (?P<devicecode>[^);\/]+)(?:[^)]+)?\)/i',
             '/;fbdv\/(?P<devicecode>[^);\/]+);/i',
@@ -138,8 +140,6 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/androidhttpclient \(linux; (?:(?:andr[o0]id|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)(?:;? +(?:build|hmscore|release))[^)]+\)/i',
             '/androidhttpclient \(linux; (?:(?:andr[o0]id|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)(?:;?)[^)]+\)/i',
             '/com\.huawei\.hmos\.browser \([^;]+;openharmony-[\d.]+;(?P<devicecode>[^)]+)\)/i',
-            '/ucweb\/[\d.]+ ?\((?:midp-2\.0|linux); opera mini\/[^;]+; (?P<devicecode>[^);\/]+)(?:(?:\/[^ ]+)? +(?:build|hmscore|release))[^)]+\)/i',
-            '/ucweb\/[\d.]+ ?\((?:midp-2\.0|linux); opera mini\/[^;]+; (?P<devicecode>[^);\/]+)/i',
             '/roku dynamic menu\/[\d.]+ \(roku [\d.]+; (?P<devicecode>[^;]+); build\/[\d.]+\)/i',
             '/roku dynamic menu\/[\d.]+ \(roku [\d.]+; (?P<devicecode>[^;]+)\)/i',
             '/snapchat\/[\d.]+ \((?P<devicecode>[^;]+); andr[o0]id [\d.]+#/i',
@@ -173,6 +173,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/device model: (?P<devicecode>[^);\/]+) firmware version:/i',
             '/\(lge[;,] (?P<devicecode>[^;,]+)[;,]/i',
             '/^mqqbrowser\/[\d.]+ \(linux; [\d.]+; (?P<devicecode>[^)]+)\)$/i',
+            '/^onebrowser\/[\d.]+ \((?P<devicecode>[^)]+)\)$/i',
             // should be the last entry in the list
             '/^(?P<devicecode>.+)$/i',
         ];
@@ -266,6 +267,8 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
                 && $xcode2 !== array_key_last($finds)
                 && array_key_exists($xcode2, $finds)
                 && $finds[$xcode2] !== null
+                && !str_contains($code, 'unknown')
+                && !str_contains($code, 'general ')
             ) {
                 $this->saveToMappingJson($finds[$xcode2], $code);
             } elseif ($xcode !== null) {
