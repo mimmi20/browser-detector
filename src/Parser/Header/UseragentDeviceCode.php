@@ -99,15 +99,15 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
         }
 
         $regexes = [
-            '/^mozilla\/[\d.]+ \((?:andr[o0]id|tizen) [\d.]+(?:[^;]+)?;(?: arm(?:_64)?;| harmonyos;| mobile;)? (?P<devicecode>[^;\/]+)(?:(?:\/[^ ]+)? +(?:build|hmscore))[^)]+\)/i',
+            '/^mozilla\/[\d.]+ \((?:andr[o0]id|tizen) [\d.]+(?:[^;]+)?;(?: arm(?:_64)?;| harmonyos;| mobile;)? (?P<devicecode>[^;\/]+)(?:(?:\/[^ ]+)? +(?:build|hmscore|release))[^)]+\)/i',
             '/^mozilla\/[\d.]+ \((?:andr[o0]id|tizen) [\d.]+(?:[^;]+)?;(?: arm(?:_64)?;| harmonyos;| mobile;)? (?P<devicecode>[^);\/]+)[^)]*\)/i',
-            '/^mozilla\/[\d.]+ \((?:smart-tv; )?(?:linux|andr[o0]id);(?: arm(?:_64)?;| x86;)? (?:andr[o0]id|tizen)? ?[\d.]+(?:[^;]+)?;(?: arm(?:_64)?;| harmonyos;| mobile;)? (?P<devicecode>[^;\/]+)(?:(?:\/[^ ]+)? +(?:build|hmscore))[^)]+\)/i',
+            '/^mozilla\/[\d.]+ \((?:smart-tv; )?(?:linux|andr[o0]id);(?: arm(?:_64)?;| x86;)? (?:andr[o0]id|tizen)? ?[\d.]+(?:[^;]+)?;(?: arm(?:_64)?;| harmonyos;| mobile;)? (?P<devicecode>[^;\/]+)(?:(?:\/[^ ]+)? +(?:build|hmscore|release))[^)]+\)/i',
             '/^mozilla\/[\d.]+ \((?:smart-tv; )?(?:linux|andr[o0]id);(?: arm(?:_64)?;| x86;)? (?:andr[o0]id|tizen)? ?[\d.]+(?:[^;]+)?;(?: arm(?:_64)?;| harmonyos;| mobile;)? (?P<devicecode>[^);\/]+)[^)]*\)/i',
-            '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi|androidhttpclient|worksmobile|googletagmanager)\/[\d.]+ ?\(linux; (?:(?:andr[o0]id|tizen) [\d.]+(?:[^;]+)?;(?: harmonyos;)?) (?P<devicecode>[^;\/]+)(?:;? +(?:build|hmscore))[^)]+\)/i',
+            '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi|androidhttpclient|worksmobile|googletagmanager)\/[\d.]+ ?\(linux; (?:(?:andr[o0]id|tizen) [\d.]+(?:[^;]+)?;(?: harmonyos;)?) (?P<devicecode>[^;\/]+)(?:;? +(?:build|hmscore|release))[^)]+\)/i',
             '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi|androidhttpclient|worksmobile|googletagmanager)\/[\d.]+ ?\(linux; (?:(?:andr[o0]id|tizen) [\d.]+(?:[^;]+)?;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)[^)]*\)/i',
-            '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi|androidhttpclient|worksmobile|googletagmanager)\/[\d.]+ ?\(linux; (?:(?:andr[o0]id|tizen);(?: harmonyos;)?) (?P<devicecode>[^;\/]+)(?:;? +(?:build|hmscore))[^)]+\)/i',
+            '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi|androidhttpclient|worksmobile|googletagmanager)\/[\d.]+ ?\(linux; (?:(?:andr[o0]id|tizen);(?: harmonyos;)?) (?P<devicecode>[^;\/]+)(?:;? +(?:build|hmscore|release))[^)]+\)/i',
             '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi|androidhttpclient|worksmobile|googletagmanager)\/[\d.]+ ?\(linux; (?:(?:andr[o0]id|tizen);(?: harmonyos;)?) (?P<devicecode>[^);\/]+)[^)]*\)/i',
-            '/dalvik\/[\d.]+ \(linux; andr[o0]id [\d.]+(?:[^;]+)?; (?P<devicecode>[^);\/]+)(?:[);\/]?[^);\/]* +(?:build|hmscore|miui)[^)]+)\)/i',
+            '/dalvik\/[\d.]+ \(linux; andr[o0]id [\d.]+(?:[^;]+)?; (?P<devicecode>[^);\/]+)(?:[);\/]?[^);\/]* +(?:build|hmscore|release|miui)[^)]+)\)/i',
             '/dalvik\/[\d.]+ \(linux; andr[o0]id [\d.]+(?:[^;]+)?; (?P<devicecode>[^);\/]+)(?:[);\/]?[^);\/]+)?\)/i',
             '/dalvik\/[\d.]+ \(linux; andr[o0]id [\d.]+\/viber [\d.]+ ; (?P<devicecode>[^);\/]+)[su]p1a/i',
             '/\(speedmode; proxy; android [\d.]+;(?P<devicecode>[^);\/]+)\)/i',
@@ -133,12 +133,12 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/andr[o0]id [\d.]+(?:[^;]+)?; (?P<devicecode>[^);\/]+)\) applewebkit/i',
             '/classic fm\/[\d.]+ andr[o0]id [\d.]+\/(?P<devicecode>[^);\/]+)/i',
             '/mozilla\/[\d.]+ \([\d.]+mb; [\d.]+x[\d.]+; [\d.]+x[\d.]+; [\d.]+x[\d.]+; (?P<devicecode>[^);\/]+); [\d.]+\) applewebkit/i',
-            '/kodi\/[\d\.a-ehlprt\-]+ \(linux; andr[o0]id [\d.]+; (?P<devicecode>[^);\/]+)(?:[);\/]?[^);\/]* +(?:build|hmscore|miui)[^)]+)\)/i',
+            '/kodi\/[\d\.a-ehlprt\-]+ \(linux; andr[o0]id [\d.]+; (?P<devicecode>[^);\/]+)(?:[);\/]?[^);\/]* +(?:build|hmscore|release|miui)[^)]+)\)/i',
             '/kodi\/[\d\.a-ehlprt\-]+ \(linux; andr[o0]id [\d.]+; (?P<devicecode>[^);\/]+)(?:[);\/]?[^);\/]*)\)/i',
-            '/androidhttpclient \(linux; (?:(?:andr[o0]id|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)(?:;? +(?:build|hmscore))[^)]+\)/i',
+            '/androidhttpclient \(linux; (?:(?:andr[o0]id|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)(?:;? +(?:build|hmscore|release))[^)]+\)/i',
             '/androidhttpclient \(linux; (?:(?:andr[o0]id|tizen) [\d.]+;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)(?:;?)[^)]+\)/i',
             '/com\.huawei\.hmos\.browser \([^;]+;openharmony-[\d.]+;(?P<devicecode>[^)]+)\)/i',
-            '/ucweb\/[\d.]+ ?\((?:midp-2\.0|linux); opera mini\/[^;]+; (?P<devicecode>[^);\/]+)(?:(?:\/[^ ]+)? +(?:build|hmscore))[^)]+\)/i',
+            '/ucweb\/[\d.]+ ?\((?:midp-2\.0|linux); opera mini\/[^;]+; (?P<devicecode>[^);\/]+)(?:(?:\/[^ ]+)? +(?:build|hmscore|release))[^)]+\)/i',
             '/ucweb\/[\d.]+ ?\((?:midp-2\.0|linux); opera mini\/[^;]+; (?P<devicecode>[^);\/]+)/i',
             '/roku dynamic menu\/[\d.]+ \(roku [\d.]+; (?P<devicecode>[^;]+); build\/[\d.]+\)/i',
             '/roku dynamic menu\/[\d.]+ \(roku [\d.]+; (?P<devicecode>[^;]+)\)/i',
@@ -147,7 +147,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/samsung-(?P<devicecode>[^);\/]+)(?:.*)?$/i',
             '/softbank\/[\d.]+\/(?P<devicecode>[^\/]+)\//i',
             '/mozilla\/[\d.]+ \(linux; os [\d.]+; (?P<devicecode>[^;\/]+) user\/(?:[^)]+)?\)/i',
-            '/xbmc\/[\d\.a-ehlprt\-]+ \(linux; andr[o0]id [\d.]+; (?P<devicecode>[^);\/]+)(?:[);\/]?[^);\/]* +(?:build|hmscore|miui)[^)]+)\)/i',
+            '/xbmc\/[\d\.a-ehlprt\-]+ \(linux; andr[o0]id [\d.]+; (?P<devicecode>[^);\/]+)(?:[);\/]?[^);\/]* +(?:build|hmscore|release|miui)[^)]+)\)/i',
             '/xbmc\/[\d\.a-ehlprt\-]+ \(linux; andr[o0]id [\d.]+; (?P<devicecode>[^);\/]+)(?:[);\/]?[^);\/]*)\)/i',
             '/mozilla\/[\d.]+ \(jig browser(?: web;|9i?| core)?(?: [\d.]+)?; (?P<devicecode>[^);]+)/i',
             '/^amazon;(?P<devicecode>[^);\/]+);/i',
@@ -205,8 +205,9 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             is_string(...),
         );
 
-        $code  = array_first($results2);
-        $xcode = array_key_first($results2);
+        $code   = array_first($results2);
+        $xcode  = array_key_first($results2);
+        $xcode2 = array_key_first($finds);
 
         if (is_string($code)) {
             if (
@@ -225,7 +226,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
 
         if (
             preg_match(
-                '/dv\((?P<devicecode>[^);\/]+)(?:;? +(?:build|hmscore|miui)?[^)]+)?\);/',
+                '/dv\((?P<devicecode>[^);\/]+)(?:;? +(?:build|hmscore|release|miui)?[^)]+)?\);/',
                 $normalizedValue,
                 $matches,
             )
@@ -260,24 +261,32 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
         if ($this->autoUpdate) {
             if ($xcode !== null && array_key_exists($xcode, $finds) && $finds[$xcode] !== null) {
                 $this->saveToMappingJson($finds[$xcode], $code);
+            } elseif (
+                $xcode2 !== null
+                && array_key_exists($xcode2, $finds)
+                && $finds[$xcode2] !== null
+            ) {
+                $this->saveToMappingJson($finds[$xcode2], $code);
             } elseif ($xcode !== null) {
                 $this->logger->debug(
                     sprintf(
-                        "\n<warning>matching regex not found for useragent %s</warning>,\nbest match: %s [%s]\nfound regexes: %s,\nfound results: %s",
+                        "\n<warning>matching regex not found for useragent %s</warning>,\nbest match: %s [%s]\nfound regexes: %s,\nfound results: %s,\ncode from parsing: %s",
                         $normalizedValue,
                         $xcode,
                         get_debug_type($xcode),
                         print_r($finds, true),
                         print_r($results, true),
+                        $code,
                     ),
                 );
             } else {
                 $this->logger->debug(
                     sprintf(
-                        "\n<error>no regex did match before for useragent %s</error>,\nfound regexes: %s,\nfound results: %s",
+                        "\n<error>no regex did match before for useragent %s</error>,\nfound regexes: %s,\nfound results: %s,\ncode from parsing: %s",
                         $normalizedValue,
                         print_r($finds, true),
                         print_r($results, true),
+                        $code,
                     ),
                 );
             }
