@@ -15,18 +15,23 @@ namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Data\Engine;
 use BrowserDetector\Data\Os;
+use BrowserDetector\Loader\MappingfileLoaderInterface;
 use BrowserDetector\Parser\Header\SecChUaModel;
+use BrowserDetector\Parser\Helper\Device;
 use BrowserDetector\Version\NullVersion;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use Psr\Log\LoggerInterface;
 use UaRequest\Exception\NotFoundException;
 use UaRequest\Header\DeviceCodeOnlyHeader;
 use UaResult\Bits\Bits;
 use UaResult\Device\Architecture;
 
+use function mb_strtolower;
+use function mb_trim;
 use function sprintf;
 
 /** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */
@@ -42,9 +47,46 @@ final class SecChUaModelTest extends TestCase
     #[DataProvider(methodName: 'providerUa')]
     public function testData(string $ua, bool $hasModel, string | null $model): void
     {
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $mappingFileParser = $this->createMock(MappingfileLoaderInterface::class);
+        $mappingFileParser
+            ->expects(self::once())
+            ->method('init');
+        $mappingFileParser
+            ->expects(self::once())
+            ->method('getItem')
+            ->with(mb_strtolower(mb_trim($ua, '"\'')))
+            ->willReturn($model);
+
         $deviceCodeOnlyHeader = new DeviceCodeOnlyHeader(
             value: $ua,
-            deviceCode: new SecChUaModel(),
+            deviceCode: new SecChUaModel(
+                device: new Device(mappingFileParser: $mappingFileParser),
+                logger: $logger,
+                autoUpdate: false,
+            ),
         );
 
         self::assertSame(
@@ -1631,8 +1673,6 @@ final class SecChUaModelTest extends TestCase
             ['"X95"', true, 'doogee=doogee x95'],
             ['"Y8"', true, 'doogee=doogee y8'],
             ['"X95Pro"', true, 'doogee=doogee x95 pro'],
-            ['"S61"', true, 'doogee=doogee s61'],
-            ['"S200"', true, 'doogee=doogee s200'],
             // shiftphones
             ['"SHIFT6mq"', true, 'shift-phones=shift-phones shift6mq'],
             ['"SHIFT6m"', true, 'shift-phones=shift-phones shift6m'],
@@ -1656,7 +1696,6 @@ final class SecChUaModelTest extends TestCase
             ['"KINGKONG MINI2"', true, 'cubot=cubot kingkong mini2'],
             ['"CUBOT MAX"', true, 'cubot=cubot max'],
             ['"MAX 3"', true, 'cubot=cubot max 3'],
-            ['"P50"', true, 'cubot=cubot p50'],
             // Aoyodkg
             ['"AOYODKG_A38"', true, 'aoyodkg=aoyodkg a38'],
             // gigaset
@@ -2007,7 +2046,6 @@ final class SecChUaModelTest extends TestCase
             ['"Maven_T10_pro"', true, 'odys=odys maven t10 pro'],
             // nothing-phone
             ['"A063"', true, 'nothing-phone=nothing-phone a063'],
-            ['"A065"', true, 'nothing-phone=nothing-phone a065'],
             // doro
             ['"DSB-0220"', true, 'doro=doro dsb-0220'],
             ['"DSB-0230"', true, 'doro=doro dsb-0230'],
@@ -2087,6 +2125,181 @@ final class SecChUaModelTest extends TestCase
             ['"Some Unknown Model"', false, null],
             ['"K"', false, null],
             ['"Android"', false, null],
+        ];
+    }
+
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
+     */
+    #[DataProvider(methodName: 'providerUaInternal')]
+    public function testDataInternal(string $ua, bool $hasModel, string | null $model): void
+    {
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $mappingFileParser = $this->createMock(MappingfileLoaderInterface::class);
+        $mappingFileParser
+            ->expects(self::never())
+            ->method('init');
+        $mappingFileParser
+            ->expects(self::never())
+            ->method('getItem');
+
+        $deviceCodeOnlyHeader = new DeviceCodeOnlyHeader(
+            value: $ua,
+            deviceCode: new SecChUaModel(
+                device: new Device(mappingFileParser: $mappingFileParser),
+                logger: $logger,
+                autoUpdate: false,
+            ),
+        );
+
+        self::assertSame(
+            $ua,
+            $deviceCodeOnlyHeader->getValue(),
+            sprintf('value mismatch for ua "%s"', $ua),
+        );
+        self::assertSame(
+            $ua,
+            $deviceCodeOnlyHeader->getNormalizedValue(),
+            sprintf('value mismatch for ua "%s"', $ua),
+        );
+        self::assertFalse(
+            $deviceCodeOnlyHeader->hasDeviceArchitecture(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertSame(
+            Architecture::unknown,
+            $deviceCodeOnlyHeader->getDeviceArchitecture(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertFalse(
+            $deviceCodeOnlyHeader->hasDeviceBitness(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertSame(
+            Bits::unknown,
+            $deviceCodeOnlyHeader->getDeviceBitness(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertFalse(
+            $deviceCodeOnlyHeader->hasDeviceIsMobile(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $deviceCodeOnlyHeader->getDeviceIsMobile(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertSame(
+            $hasModel,
+            $deviceCodeOnlyHeader->hasDeviceCode(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertSame(
+            $model,
+            $deviceCodeOnlyHeader->getDeviceCode(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertFalse(
+            $deviceCodeOnlyHeader->hasClientCode(),
+            sprintf('browser info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $deviceCodeOnlyHeader->getClientCode(),
+            sprintf('browser info mismatch for ua "%s"', $ua),
+        );
+        self::assertFalse(
+            $deviceCodeOnlyHeader->hasClientVersion(),
+            sprintf('browser info mismatch for ua "%s"', $ua),
+        );
+        self::assertInstanceOf(
+            NullVersion::class,
+            $deviceCodeOnlyHeader->getClientVersion(),
+            sprintf('browser info mismatch for ua "%s"', $ua),
+        );
+        self::assertFalse(
+            $deviceCodeOnlyHeader->hasPlatformCode(),
+            sprintf('platform info mismatch for ua "%s"', $ua),
+        );
+
+        try {
+            $deviceCodeOnlyHeader->getPlatformCode();
+
+            self::fail('Exception expected');
+        } catch (NotFoundException) {
+            // do nothing
+        }
+
+        self::assertFalse(
+            $deviceCodeOnlyHeader->hasPlatformVersion(),
+            sprintf('platform info mismatch for ua "%s"', $ua),
+        );
+        self::assertInstanceOf(
+            NullVersion::class,
+            $deviceCodeOnlyHeader->getPlatformVersionWithOs(Os::unknown),
+            sprintf('platform info mismatch for ua "%s"', $ua),
+        );
+        self::assertFalse(
+            $deviceCodeOnlyHeader->hasEngineCode(),
+            sprintf('engine info mismatch for ua "%s"', $ua),
+        );
+
+        try {
+            $deviceCodeOnlyHeader->getEngineCode();
+
+            self::fail('Exception expected');
+        } catch (NotFoundException) {
+            // do nothing
+        }
+
+        self::assertFalse(
+            $deviceCodeOnlyHeader->hasEngineVersion(),
+            sprintf('engine info mismatch for ua "%s"', $ua),
+        );
+        self::assertInstanceOf(
+            NullVersion::class,
+            $deviceCodeOnlyHeader->getEngineVersionWithEngine(Engine::unknown),
+            sprintf('engine info mismatch for ua "%s"', $ua),
+        );
+    }
+
+    /**
+     * @return array<int, array<int, bool|string|null>>
+     *
+     * @throws void
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
+     */
+    public static function providerUaInternal(): array
+    {
+        return [
+            ['"S200"', true, 'doogee=doogee s200'],
+            ['"S61"', true, 'doogee=doogee s61'],
+            ['"P50"', true, 'cubot=cubot p50'],
+            ['"A065"', true, 'nothing-phone=nothing-phone a065'],
         ];
     }
 }

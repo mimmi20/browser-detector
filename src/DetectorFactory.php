@@ -20,6 +20,7 @@ use BrowserDetector\Loader\Data;
 use BrowserDetector\Loader\DeviceLoaderFactory;
 use BrowserDetector\Loader\EngineLoader;
 use BrowserDetector\Loader\InitData\Client as DataClient;
+use BrowserDetector\Loader\MappingfileLoader;
 use BrowserDetector\Loader\PlatformLoader;
 use BrowserDetector\Parser\BrowserParserFactory;
 use BrowserDetector\Parser\DeviceParserFactory;
@@ -44,8 +45,11 @@ final class DetectorFactory
     private Detector | null $detector = null;
 
     /** @throws void */
-    public function __construct(private readonly PsrCacheInterface $psrCache, private readonly LoggerInterface $logger)
-    {
+    public function __construct(
+        private readonly PsrCacheInterface $psrCache,
+        private readonly LoggerInterface $logger,
+        private bool $autoUpdate = false,
+    ) {
         // nothing to do
     }
 
@@ -111,6 +115,7 @@ final class DetectorFactory
             $browserParser        = $browserParserFactory();
 
             $normalizerFactory = new NormalizerFactory();
+            $mappingfileLoader = new MappingfileLoader();
 
             $headerLoader = new HeaderLoader(
                 deviceParser: $deviceParser,
@@ -121,6 +126,9 @@ final class DetectorFactory
                 browserLoader: $browserLoader,
                 platformLoader: $platformLoader,
                 engineLoader: $engineLoader,
+                mappingFileParser: $mappingfileLoader,
+                logger: $this->logger,
+                autoUpdate: $this->autoUpdate,
             );
 
             $requestBuilder = new RequestBuilder(headerLoader: $headerLoader);

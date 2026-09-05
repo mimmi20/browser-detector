@@ -19,6 +19,7 @@ use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\TestCase;
+use Psr\Log\LoggerInterface;
 use UaNormalizer\Normalizer\NormalizerInterface;
 use UaParser\DeviceParserInterface;
 
@@ -31,6 +32,29 @@ final class UseragentDeviceCodeTest extends TestCase
     #[DataProvider(methodName: 'providerUa1')]
     public function testWithUasWithoutDeviceCode(string $value, string $expected): void
     {
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
         $deviceParser = $this->createMock(DeviceParserInterface::class);
         $deviceParser
             ->expects(self::never())
@@ -52,6 +76,8 @@ final class UseragentDeviceCodeTest extends TestCase
             deviceParser: $deviceParser,
             normalizer: $normalizer,
             device: $deviceCodeHelper,
+            logger: $logger,
+            autoUpdate: false,
         );
 
         self::assertTrue($useragentDeviceCode->hasDeviceCode($value));
@@ -82,6 +108,29 @@ final class UseragentDeviceCodeTest extends TestCase
     {
         $value = 'WhatsApp/2.2587.9 A';
 
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
         $deviceParser = $this->createMock(DeviceParserInterface::class);
         $deviceParser
             ->expects(self::never())
@@ -103,6 +152,8 @@ final class UseragentDeviceCodeTest extends TestCase
             deviceParser: $deviceParser,
             normalizer: $normalizer,
             device: $deviceCodeHelper,
+            logger: $logger,
+            autoUpdate: false,
         );
 
         self::assertTrue($useragentDeviceCode->hasDeviceCode($value));
@@ -115,6 +166,29 @@ final class UseragentDeviceCodeTest extends TestCase
     public function testWithUas3(): void
     {
         $value = 'WhatsApp/2.2587.9 A';
+
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
 
         $deviceParser = $this->createMock(DeviceParserInterface::class);
         $deviceParser
@@ -137,6 +211,8 @@ final class UseragentDeviceCodeTest extends TestCase
             deviceParser: $deviceParser,
             normalizer: $normalizer,
             device: $deviceCodeHelper,
+            logger: $logger,
+            autoUpdate: false,
         );
 
         self::assertTrue($useragentDeviceCode->hasDeviceCode($value));
@@ -149,6 +225,29 @@ final class UseragentDeviceCodeTest extends TestCase
     public function testWithUas4(): void
     {
         $value = 'A/8.1.0/ANS/L51/msm8909/unknown/QCX3/l3584062258010650401/-/+490760838/-/ANS/110712/110713/-/2.5/1/W';
+
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
 
         $deviceParser = $this->createMock(DeviceParserInterface::class);
         $deviceParser
@@ -175,6 +274,8 @@ final class UseragentDeviceCodeTest extends TestCase
             deviceParser: $deviceParser,
             normalizer: $normalizer,
             device: $deviceCodeHelper,
+            logger: $logger,
+            autoUpdate: false,
         );
 
         self::assertTrue($useragentDeviceCode->hasDeviceCode($value));

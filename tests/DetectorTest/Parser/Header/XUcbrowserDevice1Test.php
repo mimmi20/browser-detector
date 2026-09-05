@@ -22,6 +22,7 @@ use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use Psr\Log\LoggerInterface;
 use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\NormalizerFactory;
 use UaParser\DeviceParserInterface;
@@ -77,12 +78,37 @@ final class XUcbrowserDevice1Test extends TestCase
             ->with(mb_strtolower($normalitedUa))
             ->willReturn(value: null);
 
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
         $deviceCodeOnlyHeader = new DeviceCodeOnlyHeader(
             value: $ua,
             deviceCode: new XUcbrowserDevice(
                 deviceParser: $deviceParser,
                 normalizer: $normalizerChain,
                 device: $deviceCodeHelper,
+                logger: $logger,
+                autoUpdate: false,
             ),
         );
 

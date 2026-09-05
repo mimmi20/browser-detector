@@ -15,21 +15,28 @@ namespace BrowserDetector\Parser\Header;
 
 use BrowserDetector\Parser\Helper\DeviceInterface;
 use Override;
+use Psr\Log\LoggerInterface;
 use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\Normalizer\NormalizerInterface;
 use UaParser\DeviceCodeInterface;
 use UaParser\DeviceParserInterface;
 
 use function in_array;
+use function is_string;
 use function mb_strtolower;
+use function mb_trim;
 
 final readonly class XUcbrowserDevice implements DeviceCodeInterface
 {
+    use AutoUpdateDeviceDataTrait;
+
     /** @throws void */
     public function __construct(
         private DeviceParserInterface $deviceParser,
         private NormalizerInterface $normalizer,
         private DeviceInterface $device,
+        private LoggerInterface $logger,
+        private bool $autoUpdate = false,
     ) {
         // nothing to do
     }
@@ -61,7 +68,11 @@ final readonly class XUcbrowserDevice implements DeviceCodeInterface
 
         $code = $this->device->getDeviceCode(mb_strtolower($normalizedValue));
 
-        if ($code !== null) {
+        if (is_string($code)) {
+            if ($this->autoUpdate) {
+                $this->saveToMappingJson(mb_trim(mb_strtolower($normalizedValue)), $code);
+            }
+
             return $code;
         }
 
@@ -69,6 +80,10 @@ final readonly class XUcbrowserDevice implements DeviceCodeInterface
 
         if ($code === '') {
             return null;
+        }
+
+        if ($this->autoUpdate) {
+            $this->saveToMappingJson(mb_trim(mb_strtolower($normalizedValue)), $code);
         }
 
         return $code;

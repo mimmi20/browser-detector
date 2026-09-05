@@ -4295,6 +4295,12 @@ enum Company: string implements CompanyInterface
 
     case drm3Labs = 'DRM3 Labs';
 
+    case freeski = 'Freeski';
+
+    case wrtn = 'Wrtn';
+
+    case dany = 'Dany';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -6440,6 +6446,9 @@ enum Company: string implements CompanyInterface
             'fortinet', 'fortinet, inc.' => self::fortinet,
             'dishtv', 'dish tv technologies ltd.', 'dish-tv', 'dish tv' => self::dishTv,
             'drm3labs', 'drm3 labs corp.', 'drm3-labs', 'drm3 labs' => self::drm3Labs,
+            'freeski' => self::freeski,
+            'wrtn', 'wrtn technologies co., ltd.' => self::wrtn,
+            'dany' => self::dany,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -7317,6 +7326,7 @@ enum Company: string implements CompanyInterface
             self::fortinet => 'Fortinet, Inc.',
             self::dishTv => 'Dish TV Technologies Ltd.',
             self::drm3Labs => 'DRM3 Labs Corp.',
+            self::wrtn => 'Wrtn Technologies Co., Ltd.',
             self::unknown => null,
             default => $this->value,
         };

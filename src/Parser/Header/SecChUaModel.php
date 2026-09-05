@@ -15,6 +15,8 @@ namespace BrowserDetector\Parser\Header;
 
 use BrowserDetector\Parser\Helper\Device;
 use Override;
+use Psr\Log\LoggerInterface;
+use RuntimeException;
 use UaParser\DeviceCodeInterface;
 
 use function in_array;
@@ -22,8 +24,19 @@ use function mb_strtolower;
 use function mb_trim;
 
 /** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */
-final class SecChUaModel implements DeviceCodeInterface
+final readonly class SecChUaModel implements DeviceCodeInterface
 {
+    use AutoUpdateDeviceDataTrait;
+
+    /** @throws void */
+    public function __construct(
+        private Device $device,
+        private LoggerInterface $logger,
+        private bool $autoUpdate = false,
+    ) {
+        // nothing to do
+    }
+
     /** @throws void */
     #[Override]
     public function hasDeviceCode(string $value): bool
@@ -41,7 +54,7 @@ final class SecChUaModel implements DeviceCodeInterface
     /**
      * @return non-empty-string|null
      *
-     * @throws void
+     * @throws RuntimeException
      */
     #[Override]
     public function getDeviceCode(string $value): string | null
@@ -55,7 +68,23 @@ final class SecChUaModel implements DeviceCodeInterface
             's61' => 'doogee=doogee s61',
             's200' => 'doogee=doogee s200',
             'p50' => 'cubot=cubot p50',
-            default => (new Device())->getDeviceCode($code),
+            default => $this->getCode($code),
         };
+    }
+
+    /**
+     * @return non-empty-string|null
+     *
+     * @throws RuntimeException
+     */
+    private function getCode(string $code): string | null
+    {
+        $devicecode = $this->device->getDeviceCode($code);
+
+        if ($devicecode !== null && $this->autoUpdate) {
+            $this->saveToMappingJson($code, $devicecode);
+        }
+
+        return $devicecode;
     }
 }

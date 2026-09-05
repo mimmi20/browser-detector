@@ -13,8 +13,10 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
+use BrowserDetector\Loader\MappingfileLoaderInterface;
 use BrowserDetector\Parser\Helper\Device;
 use Override;
+use Psr\Log\LoggerInterface;
 use UaLoader\BrowserLoaderInterface;
 use UaLoader\EngineLoaderInterface;
 use UaLoader\PlatformLoaderInterface;
@@ -60,6 +62,9 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
         private BrowserLoaderInterface $browserLoader,
         private PlatformLoaderInterface $platformLoader,
         private EngineLoaderInterface $engineLoader,
+        private MappingfileLoaderInterface $mappingFileParser,
+        private LoggerInterface $logger,
+        private bool $autoUpdate = false,
     ) {
         // nothing to do
     }
@@ -89,7 +94,7 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
 
         $normalizerChain = $this->normalizerFactory->build();
 
-        $device = new Device();
+        $device = new Device($this->mappingFileParser);
 
         return match ($header) {
             Headers::HEADER_BAIDU_FLYFLOW => new DeviceCodeOnlyHeader(
@@ -123,7 +128,11 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
             Headers::HEADER_SEC_CH_UA_MOBILE => new SecChUaMobile(value: $value),
             Headers::HEADER_SEC_CH_UA_MODEL => new DeviceCodeOnlyHeader(
                 value: $value,
-                deviceCode: new SecChUaModel(),
+                deviceCode: new SecChUaModel(
+                    device: $device,
+                    logger: $this->logger,
+                    autoUpdate: $this->autoUpdate,
+                ),
             ),
             Headers::HEADER_SEC_CH_UA_PLATFORM => new SecChUaPlatformHeader(
                 value: $value,
@@ -152,6 +161,8 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
                     deviceParser: $this->deviceParser,
                     normalizer: $normalizerChain,
                     device: $device,
+                    logger: $this->logger,
+                    autoUpdate: $this->autoUpdate,
                 ),
                 clientCode: new UseragentClientCode(
                     browserParser: $this->browserParser,
@@ -223,6 +234,8 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
                     deviceParser: $this->deviceParser,
                     normalizer: $normalizerChain,
                     device: $device,
+                    logger: $this->logger,
+                    autoUpdate: $this->autoUpdate,
                 ),
             ),
             Headers::HEADER_UCBROWSER_DEVICE_UA => new XUcbrowserDeviceUa(
@@ -246,6 +259,8 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
                 deviceCode: new XUcbrowserUaDeviceCode(
                     deviceParser: $this->deviceParser,
                     device: $device,
+                    logger: $this->logger,
+                    autoUpdate: $this->autoUpdate,
                 ),
                 clientCode: new XUcbrowserUaClientCode(),
                 clientVersion: new XUcbrowserUaClientVersion(),
