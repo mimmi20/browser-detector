@@ -12886,6 +12886,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Wrtn',
                 'key' => 'wrtn',
             ],
+            [
+                'type' => 'Dany',
+                'name' => 'Dany',
+                'brandname' => 'Dany',
+                'key' => 'dany',
+            ],
         ];
     }
 

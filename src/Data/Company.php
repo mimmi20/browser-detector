@@ -4299,6 +4299,8 @@ enum Company: string implements CompanyInterface
 
     case wrtn = 'Wrtn';
 
+    case dany = 'Dany';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -6446,6 +6448,7 @@ enum Company: string implements CompanyInterface
             'drm3labs', 'drm3 labs corp.', 'drm3-labs', 'drm3 labs' => self::drm3Labs,
             'freeski' => self::freeski,
             'wrtn', 'wrtn technologies co., ltd.' => self::wrtn,
+            'dany' => self::dany,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
