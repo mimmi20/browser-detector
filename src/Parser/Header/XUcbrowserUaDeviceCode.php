@@ -45,6 +45,8 @@ use function str_replace;
 
 use const JSON_PRETTY_PRINT;
 use const JSON_THROW_ON_ERROR;
+use const JSON_UNESCAPED_SLASHES;
+use const JSON_UNESCAPED_UNICODE;
 use const PHP_EOL;
 
 final readonly class XUcbrowserUaDeviceCode implements DeviceCodeInterface
@@ -124,11 +126,13 @@ final readonly class XUcbrowserUaDeviceCode implements DeviceCodeInterface
                     flags: JSON_THROW_ON_ERROR,
                 );
             } catch (JsonException) {
-                // do nothing
+                echo "\n\t", 'Could not read mapping file ', $file;
             }
         }
 
         if (!is_array($devicesFromMappingFile)) {
+            echo "\n\t", 'Could not decode mapping file ', $file;
+
             return;
         }
 
@@ -145,10 +149,12 @@ final readonly class XUcbrowserUaDeviceCode implements DeviceCodeInterface
                 $file,
                 json_encode(
                     $devicesFromMappingFile,
-                    JSON_THROW_ON_ERROR | JSON_PRETTY_PRINT,
+                    JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT | JSON_THROW_ON_ERROR,
                 ) . PHP_EOL,
             );
         } catch (JsonException) {
+            echo "\n\t", 'Could not encode or rewrite mapping file ', $file;
+
             return;
         }
 
@@ -160,10 +166,11 @@ final readonly class XUcbrowserUaDeviceCode implements DeviceCodeInterface
     {
         try {
             $iterator = new RecursiveIteratorIterator(
-                new RecursiveDirectoryIterator('../../../data/factories'),
+                new RecursiveDirectoryIterator(__DIR__ . '/../../../data/factories'),
             );
         } catch (UnexpectedValueException) {
             echo "\n\t", 'Could not find factories';
+
             return;
         }
 
@@ -188,14 +195,16 @@ final readonly class XUcbrowserUaDeviceCode implements DeviceCodeInterface
             assert($content === false || is_string($content));
 
             if ($content === false) {
-                echo "\n\t", 'Could not read file ', $filepath;
+                echo "\n\t", 'Could not read factory file ', $filepath;
+
                 continue;
             }
 
             try {
                 $fileData = json_decode($content, associative: true, flags: JSON_THROW_ON_ERROR);
             } catch (JsonException) {
-                echo "\n\t", 'Could not decode file ', $filepath;
+                echo "\n\t", 'Could not decode factory file ', $filepath;
+
                 continue;
             }
 
@@ -214,11 +223,11 @@ final readonly class XUcbrowserUaDeviceCode implements DeviceCodeInterface
                     $filepath,
                     json_encode(
                         $newFileData,
-                        JSON_THROW_ON_ERROR | JSON_PRETTY_PRINT,
+                        JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT | JSON_THROW_ON_ERROR,
                     ) . PHP_EOL,
                 );
             } catch (JsonException) {
-                // do nothing
+                echo "\n\t", 'Could not encode or rewrite factory file ', $filepath;
             }
         }
     }
