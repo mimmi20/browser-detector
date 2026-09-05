@@ -26,6 +26,7 @@ use function array_first;
 use function array_key_exists;
 use function array_key_first;
 use function array_map;
+use function get_debug_type;
 use function is_string;
 use function mb_strtolower;
 use function mb_trim;
@@ -268,9 +269,10 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             } else {
                 $this->logger->debug(
                     sprintf(
-                        "no regex did match before for useragent %s,\nbest match: %s\nfound regexes: %s",
+                        "no regex did match before for useragent %s,\nbest match: %s [%s]\nfound regexes: %s",
                         $normalizedValue,
                         $xcode,
+                        get_debug_type($xcode),
                         print_r($finds, true),
                     ),
                 );
