@@ -258,14 +258,20 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             }
         }
 
+        echo "\n\t", 'need to parse useragent ', $normalizedValue;
+
         $code = $this->deviceParser->parse($normalizedValue);
 
         if ($code === '') {
             return null;
         }
 
+        echo "\n\t", 'code ', $code, ' found while parsing useragent ', $normalizedValue;
+
         if ($xcode !== null && array_key_exists($xcode, $finds) && $finds[$xcode] !== null) {
             $this->saveToMappingJson($finds[$xcode], $code);
+        } else {
+            echo "\n\t", 'no regex did match before for useragent ', $normalizedValue;
         }
 
         return $code;
