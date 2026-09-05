@@ -263,13 +263,13 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             sprintf('code %s found while parsing useragent %s', $code, $normalizedValue),
         );
 
-        if ($this->autoUpdate) {
-            if ($xcode !== null && array_key_exists($xcode, $finds) && $finds[$xcode] !== null) {
+        if ($this->autoUpdate && $xcode !== null) {
+            if (array_key_exists($xcode, $finds) && $finds[$xcode] !== null) {
                 $this->saveToMappingJson($finds[$xcode], $code);
             } else {
                 $this->logger->debug(
                     sprintf(
-                        "no regex did match before for useragent %s,\nbest match: %s [%s]\nfound regexes: %s",
+                        "matching regex not found for useragent %s,\nbest match: %s [%s]\nfound regexes: %s",
                         $normalizedValue,
                         $xcode,
                         get_debug_type($xcode),
