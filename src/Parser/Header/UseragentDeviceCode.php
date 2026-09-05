@@ -333,6 +333,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
                 new RecursiveDirectoryIterator('../../../data/factories'),
             );
         } catch (UnexpectedValueException) {
+            echo "\n\t", 'Could not find factories';
             return;
         }
 
@@ -357,21 +358,26 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             assert($content === false || is_string($content));
 
             if ($content === false) {
+                echo "\n\t", 'Could not read file ', $filepath;
                 continue;
             }
 
             try {
                 $fileData = json_decode($content, associative: true, flags: JSON_THROW_ON_ERROR);
             } catch (JsonException) {
+                echo "\n\t", 'Could not decode file ', $filepath;
                 continue;
             }
 
             assert(is_array($fileData));
 
-            $newFileData = array_filter(
-                $fileData,
-                static fn (mixed $v): bool => is_string($v) && $v !== $code,
-            );
+            $newFileData = [
+                'rules' => array_filter(
+                    $fileData['rules'] ?? [],
+                    static fn (mixed $v): bool => is_string($v) && $v !== $code,
+                ),
+                'generic' => $fileData['generic'],
+            ];
 
             try {
                 file_put_contents(
