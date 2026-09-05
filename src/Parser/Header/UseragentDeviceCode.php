@@ -30,6 +30,7 @@ use function is_string;
 use function mb_strtolower;
 use function mb_trim;
 use function preg_match;
+use function print_r;
 use function sprintf;
 
 final readonly class UseragentDeviceCode implements DeviceCodeInterface
@@ -266,8 +267,11 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
                 $this->saveToMappingJson($finds[$xcode], $code);
             } else {
                 $this->logger->debug(
-                    sprintf('no regex did match before for useragent %s', $normalizedValue),
-                    ['finds' => $finds],
+                    sprintf(
+                        'no regex did match before for useragent %s, found regexes: %s',
+                        $normalizedValue,
+                        print_r($finds),
+                    ),
                 );
             }
         }
