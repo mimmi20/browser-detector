@@ -298,9 +298,13 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             }
         }
 
-        if (
-            !is_array($devicesFromMappingFile) || array_key_exists($devicecode, $devicesFromMappingFile)
-        ) {
+        if (!is_array($devicesFromMappingFile)) {
+            return;
+        }
+
+        if (array_key_exists($devicecode, $devicesFromMappingFile)) {
+            $this->deleteFromFactories($company, $code);
+
             return;
         }
 
@@ -318,6 +322,12 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             return;
         }
 
+        $this->deleteFromFactories($company, $code);
+    }
+
+    /** @throws void */
+    private function deleteFromFactories(string $company, string $code): void
+    {
         try {
             $iterator = new RecursiveIteratorIterator(
                 new RecursiveDirectoryIterator('../../../data/factories'),
