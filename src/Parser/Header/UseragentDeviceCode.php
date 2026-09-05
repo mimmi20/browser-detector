@@ -263,6 +263,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
                 $this->saveToMappingJson($finds[$xcode], $code);
             } elseif (
                 $xcode2 !== null
+                && $xcode2 !== array_key_last($finds)
                 && array_key_exists($xcode2, $finds)
                 && $finds[$xcode2] !== null
             ) {
