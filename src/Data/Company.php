@@ -4301,6 +4301,8 @@ enum Company: string implements CompanyInterface
 
     case dany = 'Dany';
 
+    case tesco = 'Tesco';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -6449,6 +6451,7 @@ enum Company: string implements CompanyInterface
             'freeski' => self::freeski,
             'wrtn', 'wrtn technologies co., ltd.' => self::wrtn,
             'dany' => self::dany,
+            'tesco', 'tesco plc' => self::tesco,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(
@@ -7327,6 +7330,7 @@ enum Company: string implements CompanyInterface
             self::dishTv => 'Dish TV Technologies Ltd.',
             self::drm3Labs => 'DRM3 Labs Corp.',
             self::wrtn => 'Wrtn Technologies Co., Ltd.',
+            self::tesco => 'Tesco plc',
             self::unknown => null,
             default => $this->value,
         };

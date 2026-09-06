@@ -12892,6 +12892,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Dany',
                 'key' => 'dany',
             ],
+            [
+                'type' => 'Tesco',
+                'name' => 'Tesco plc',
+                'brandname' => 'Tesco',
+                'key' => 'tesco',
+            ],
         ];
     }
 
