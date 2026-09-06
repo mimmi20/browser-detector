@@ -1902,18 +1902,6 @@
     },
     "engine": "unknown"
   },
-  "google keyword suggestion": {
-    "name": "Google Keyword Suggestion",
-    "manufacturer": "google",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Google Keyword Suggestion"
-      ]
-    },
-    "engine": "unknown"
-  },
   "google page speed": {
     "name": "Google Page Speed",
     "manufacturer": "google",
@@ -5705,18 +5693,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Web Downloader"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "web glance": {
-    "name": "Web Glance",
-    "manufacturer": "web-glance",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Webglance"
       ]
     },
     "engine": "unknown"

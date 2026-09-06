@@ -7213,5 +7213,29 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "google keyword suggestion": {
+    "name": "Google Keyword Suggestion",
+    "manufacturer": "google",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Google Keyword Suggestion"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "web glance": {
+    "name": "Web Glance",
+    "manufacturer": "web-glance",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Webglance"
+      ]
+    },
+    "engine": "unknown"
   }
 }
