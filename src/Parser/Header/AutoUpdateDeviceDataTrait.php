@@ -139,15 +139,21 @@ trait AutoUpdateDeviceDataTrait
             assert($content === false || is_string($content));
 
             if ($content === false) {
-                $this->logger->debug(sprintf('Could not read factory file %s', $filepath));
+                $this->logger->debug(
+                    sprintf('<error>Could not read factory file %s</error>', $filepath),
+                );
 
                 continue;
             }
 
+            $this->logger->debug(sprintf('Read factory file %s', $filepath));
+
             try {
                 $fileData = json_decode($content, associative: true, flags: JSON_THROW_ON_ERROR);
             } catch (JsonException) {
-                $this->logger->debug(sprintf('Could not decode factory file %s', $filepath));
+                $this->logger->debug(
+                    sprintf('<error>Could not decode factory file %s</error>', $filepath),
+                );
 
                 continue;
             }
@@ -170,8 +176,11 @@ trait AutoUpdateDeviceDataTrait
                         JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT | JSON_THROW_ON_ERROR,
                     ) . PHP_EOL,
                 );
+                $this->logger->debug(sprintf('Encoded and rewrote factory file %s', $filepath));
             } catch (JsonException) {
-                $this->logger->debug(sprintf('Could not encode or rewrite factory file %s', $filepath));
+                $this->logger->debug(
+                    sprintf('<error>Could not encode or rewrite factory file %s</error>', $filepath),
+                );
             }
         }
     }

@@ -25,6 +25,7 @@ use function array_filter;
 use function array_first;
 use function array_key_exists;
 use function array_key_first;
+use function array_key_last;
 use function array_map;
 use function get_debug_type;
 use function is_string;
@@ -33,6 +34,7 @@ use function mb_trim;
 use function preg_match;
 use function print_r;
 use function sprintf;
+use function str_contains;
 
 final readonly class UseragentDeviceCode implements DeviceCodeInterface
 {
@@ -143,6 +145,8 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/roku dynamic menu\/[\d.]+ \(roku [\d.]+; (?P<devicecode>[^;]+); build\/[\d.]+\)/i',
             '/roku dynamic menu\/[\d.]+ \(roku [\d.]+; (?P<devicecode>[^;]+)\)/i',
             '/snapchat\/[\d.]+ \((?P<devicecode>[^;]+); andr[o0]id [\d.]+#/i',
+            '/samsung-(?P<devicecode>[^();\/]+) opera\/[\d.]+ \(j2me\/midp; opera mini/i',
+            '/(?P<devicecode>[^();\/]+) opera\/[\d.]+ \(j2me\/midp; opera mini/i',
             '/samsung-(?P<devicecode>[^);\/]+)(?:.*)? (?:opera|netfront|build|syncml)/i',
             '/samsung-(?P<devicecode>[^);\/]+)(?:.*)?$/i',
             '/softbank\/[\d.]+\/(?P<devicecode>[^\/]+)\//i',
@@ -174,7 +178,6 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/\(lge[;,] (?P<devicecode>[^;,]+)[;,]/i',
             '/^mqqbrowser\/[\d.]+ \(linux; [\d.]+; (?P<devicecode>[^)]+)\)$/i',
             '/^onebrowser\/[\d.]+ \((?P<devicecode>[^)]+)\)$/i',
-            '/(?P<devicecode>[^();\/]+) opera\/[\d.]+ \(j2me\/midp; opera mini/i',
             // should be the last entry in the list
             '/^(?P<devicecode>.+)$/i',
         ];
