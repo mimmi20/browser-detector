@@ -280,8 +280,8 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
                         $normalizedValue,
                         $xcode,
                         get_debug_type($xcode),
-                        print_r($finds, true),
-                        print_r($results, true),
+                        print_r($finds, return: true),
+                        print_r($results, return: true),
                         $code,
                     ),
                 );
@@ -290,8 +290,8 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
                     sprintf(
                         "\n<error>no regex did match before for useragent %s</error>,\nfound regexes: %s,\nfound results: %s,\ncode from parsing: %s",
                         $normalizedValue,
-                        print_r($finds, true),
-                        print_r($results, true),
+                        print_r($finds, return: true),
+                        print_r($results, return: true),
                         $code,
                     ),
                 );

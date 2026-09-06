@@ -330,7 +330,7 @@ final class DetectorTest extends TestCase
      */
     public static function providerGetBrowser(): array
     {
-        $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator('tests/data/'));
+        $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator('data/tests/'));
         $files    = new FilterIterator($iterator, 'json');
 
         $data = [];

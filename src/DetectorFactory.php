@@ -48,7 +48,7 @@ final class DetectorFactory
     public function __construct(
         private readonly PsrCacheInterface $psrCache,
         private readonly LoggerInterface $logger,
-        private bool $autoUpdate = false,
+        private readonly bool $autoUpdate = false,
     ) {
         // nothing to do
     }

@@ -158,7 +158,11 @@ trait AutoUpdateDeviceDataTrait
                 continue;
             }
 
-            assert(is_array($fileData));
+            assert(
+                is_array($fileData) && (
+                    !array_key_exists('rules', $fileData) || is_array($fileData['rules']) || $fileData['rules'] === null
+                )
+            );
 
             $newFileData = [
                 'rules' => array_filter(
