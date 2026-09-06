@@ -263,7 +263,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             return null;
         }
 
-        if ($this->autoUpdate) {
+        if ($this->autoUpdate && !str_contains($code, 'unknown') && !str_contains($code, 'general ')) {
             if ($xcode !== null && array_key_exists($xcode, $finds) && $finds[$xcode] !== null) {
                 $this->saveToMappingJson($finds[$xcode], $code);
             } elseif (
@@ -271,8 +271,6 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
                 && $xcode2 !== array_key_last($finds)
                 && array_key_exists($xcode2, $finds)
                 && $finds[$xcode2] !== null
-                && !str_contains($code, 'unknown')
-                && !str_contains($code, 'general ')
             ) {
                 $this->saveToMappingJson($finds[$xcode2], $code);
             } elseif ($xcode !== null) {
