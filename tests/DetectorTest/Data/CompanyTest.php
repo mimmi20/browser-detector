@@ -12898,6 +12898,12 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Tesco',
                 'key' => 'tesco',
             ],
+            [
+                'type' => 'Digicel',
+                'name' => 'Digicel',
+                'brandname' => 'Digicel',
+                'key' => 'digicel',
+            ],
         ];
     }
 

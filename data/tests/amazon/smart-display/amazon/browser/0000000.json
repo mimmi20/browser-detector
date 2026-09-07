@@ -226,6 +226,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; AEORH) AppleWebKit/537.36 (KHTML, like Gecko) Silk/130.5.2 like Chrome/130.0.6723.142 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "AEORH",
+      "marketingName": "Echo Show 8",
+      "manufacturer": "Amazon",
+      "brand": "Amazon",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": 8.7
+      },
+      "type": "smart-display",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Fire OS",
+      "marketingName": "Fire OS",
+      "version": "7.0.0",
+      "manufacturer": "Amazon",
+      "bits": null
+    },
+    "client": {
+      "name": "Silk",
+      "modus": null,
+      "version": "130.5.2",
+      "manufacturer": "Amazon",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "130.0.6723.142",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; AEOHP Build/NS6546;) AppleWebKit/537.36 (KHTML, like Gecko) Silk/126.3.601 like Chrome/126.0.6478.242 Safari/537.36"
     },
     "device": {

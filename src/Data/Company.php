@@ -4303,6 +4303,8 @@ enum Company: string implements CompanyInterface
 
     case tesco = 'Tesco';
 
+    case digicel = 'Digicel';
+
     /**
      * @throws UnexpectedValueException
      *
@@ -6452,6 +6454,7 @@ enum Company: string implements CompanyInterface
             'wrtn', 'wrtn technologies co., ltd.' => self::wrtn,
             'dany' => self::dany,
             'tesco', 'tesco plc' => self::tesco,
+            'digicel' => self::digicel,
             // the last one
             'unknown', '' => self::unknown,
             default => throw new UnexpectedValueException(

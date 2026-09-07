@@ -133,5 +133,95 @@
       "version": "100.0.4896.162",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; AFTHA004) AppleWebKit/537.36 (KHTML, like Gecko) Silk/114.3.11 like Chrome/114.0.5735.220 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "AFTHA004",
+      "marketingName": "Fire TV 4K (2022)",
+      "manufacturer": "Toshiba",
+      "brand": "Toshiba",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Fire OS",
+      "marketingName": "Fire OS",
+      "version": "7.0.0",
+      "manufacturer": "Amazon",
+      "bits": null
+    },
+    "client": {
+      "name": "Silk",
+      "modus": null,
+      "version": "114.3.11",
+      "manufacturer": "Amazon",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.5735.220",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; AFT6E0FA) AppleWebKit/537.36 (KHTML, like Gecko) Silk/128.3.2 like Chrome/128.0.6613.146 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "AFT6E0FA",
+      "marketingName": "32WF2F53DB",
+      "manufacturer": "Toshiba",
+      "brand": "Toshiba",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1366,
+        "height": 768,
+        "touch": false,
+        "size": 32
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Fire OS",
+      "marketingName": "Fire OS",
+      "version": "7.0.0",
+      "manufacturer": "Amazon",
+      "bits": null
+    },
+    "client": {
+      "name": "Silk",
+      "modus": null,
+      "version": "128.3.2",
+      "manufacturer": "Amazon",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "128.0.6613.146",
+      "manufacturer": "Google"
+    }
   }
 ]
