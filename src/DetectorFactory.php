@@ -36,7 +36,6 @@ use Laminas\Hydrator\Strategy\StrategyChain;
 use Laminas\Serializer\Adapter\Json;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\CacheInterface as PsrCacheInterface;
-use RuntimeException;
 use UaNormalizer\NormalizerFactory;
 use UaRequest\RequestBuilder;
 
@@ -53,10 +52,7 @@ final class DetectorFactory
         // nothing to do
     }
 
-    /**
-     * @throws RuntimeException
-     * @throws InvalidArgumentException
-     */
+    /** @throws InvalidArgumentException */
     public function __invoke(): Detector
     {
         if (!$this->detector instanceof Detector) {

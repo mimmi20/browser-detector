@@ -15,6 +15,7 @@ namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\CompanyLoaderFactory;
 use BrowserDetector\Loader\CompanyLoaderInterface;
+use Laminas\Hydrator\Exception\InvalidArgumentException;
 use Laminas\Hydrator\Strategy\StrategyInterface;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
@@ -29,6 +30,7 @@ final class CompanyLoaderFactoryTest extends TestCase
      * @throws ExpectationFailedException
      * @throws Exception
      * @throws RuntimeException
+     * @throws InvalidArgumentException
      */
     public function testInvoke(): void
     {

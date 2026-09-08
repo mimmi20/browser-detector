@@ -9228,8 +9228,8 @@ final class DetectorIntegrationTest extends TestCase
                     'headers' => ['user-agent' => 'Mozilla/5.0 (Linux; Andr0id 9; AFTKAUK001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Safari/537.36 OPR/46.0.2207.0 OMI/4.24.1.52.AFTdev.551 HbbTV/1.5.1 (+DRM;Amazon;AFTKAUK001-AMZ-4K55N400D;0029159767172;unknown;com.amazon.m7632;) smarttv_AFTKAUK001-AMZ-4K55N400D_Build_0029159767172_Chromium_116.0.5845.82'],
                     'device' => [
                         'architecture' => null,
-                        'deviceName' => '4K55N400D',
-                        'marketingName' => '4K55N400D',
+                        'deviceName' => 'AFTKAUK001',
+                        'marketingName' => 'Fire TV 4-Series (2023)',
                         'manufacturer' => 'Amazon',
                         'brand' => 'Amazon',
                         'dualOrientation' => false,

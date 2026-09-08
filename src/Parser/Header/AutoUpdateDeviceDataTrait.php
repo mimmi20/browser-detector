@@ -118,6 +118,8 @@ trait AutoUpdateDeviceDataTrait
             return;
         }
 
+        $this->logger->debug('start rewriting factories');
+
         $files = new FilterIterator($iterator, 'json');
         $files = new CallbackFilterIterator(
             $files,
@@ -133,6 +135,8 @@ trait AutoUpdateDeviceDataTrait
             $pathName = $file->getPathname();
             $filepath = str_replace('\\', '/', $pathName);
             assert(is_string($filepath));
+
+            $this->logger->debug(sprintf('start rewriting factory %s', $filepath));
 
             $content = @file_get_contents($filepath);
 
@@ -158,17 +162,19 @@ trait AutoUpdateDeviceDataTrait
                 continue;
             }
 
-            assert(
-                is_array($fileData) && (
-                    !array_key_exists('rules', $fileData) || is_array($fileData['rules']) || $fileData['rules'] === null
-                )
+            assert(is_array($fileData));
+
+            $filteredRules = array_filter(
+                is_array($fileData)
+                && array_key_exists('rules', $fileData)
+                && is_array($fileData['rules'])
+                    ? $fileData['rules']
+                    : [],
+                static fn (mixed $v): bool => is_string($v) && $v !== $code,
             );
 
             $newFileData = [
-                'rules' => array_filter(
-                    $fileData['rules'] ?? [],
-                    static fn (mixed $v): bool => is_string($v) && $v !== $code,
-                ),
+                'rules' => $filteredRules,
                 'generic' => $fileData['generic'],
             ];
 
@@ -186,6 +192,10 @@ trait AutoUpdateDeviceDataTrait
                     sprintf('<error>Could not encode or rewrite factory file %s</error>', $filepath),
                 );
             }
+
+            $this->logger->debug(sprintf('finished rewriting factory %s', $filepath));
         }
+
+        $this->logger->debug('finished rewriting factories');
     }
 }

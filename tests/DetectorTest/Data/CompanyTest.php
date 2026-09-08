@@ -12904,6 +12904,30 @@ final class CompanyTest extends TestCase
                 'brandname' => 'Digicel',
                 'key' => 'digicel',
             ],
+            [
+                'type' => 'Villaon',
+                'name' => 'Villaon',
+                'brandname' => 'Villaon',
+                'key' => 'villaon',
+            ],
+            [
+                'type' => 'Adreamer',
+                'name' => 'Adreamer',
+                'brandname' => 'Adreamer',
+                'key' => 'adreamer',
+            ],
+            [
+                'type' => 'Genspark',
+                'name' => 'Genspark',
+                'brandname' => 'Genspark',
+                'key' => 'genspark',
+            ],
+            [
+                'type' => 'CENTIL',
+                'name' => 'CENTIL-Schweiz',
+                'brandname' => 'CENTIL',
+                'key' => 'centil-schweiz',
+            ],
         ];
     }
 
