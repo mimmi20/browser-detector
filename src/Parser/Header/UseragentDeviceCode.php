@@ -246,7 +246,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
                     $matches['devicecode']
                         |> mb_strtolower(...)
                         |> mb_trim(...)
-                        |> (fn ($x) => $this->saveToMappingJson($x, $code));
+                        |> (fn (string $x) => $this->saveToMappingJson($x, $code));
                 }
 
                 return $code;
@@ -259,7 +259,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
                     $matches['devicecode']
                         |> mb_strtolower(...)
                         |> mb_trim(...)
-                        |> (fn ($x) => $this->saveToMappingJson($x, $code));
+                        |> (fn (string $x) => $this->saveToMappingJson($x, $code));
                 }
 
                 return $code;
