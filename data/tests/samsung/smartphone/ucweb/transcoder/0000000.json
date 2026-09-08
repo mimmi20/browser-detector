@@ -1085,7 +1085,7 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "GT-S5380",
+      "deviceName": "GT-S5380B",
       "marketingName": "Wave Y",
       "manufacturer": "Samsung",
       "brand": "Samsung",
@@ -1130,7 +1130,97 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "GT-S5380",
+      "deviceName": "GT-S5380D",
+      "marketingName": "Wave Y",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.4.0.159",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Java; U; ru; samsung-gt-s5380f) UCBrowser8.3.0.154/69/352/UCWEB Mobile UNTRUSTED/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GT-S5380F",
+      "marketingName": "Wave Y",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.3.0.154",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Java; U; ru; samsung-gt-s5380g) UCBrowser8.4.0.159/70/352/UCWEB Mobile UNTRUSTED/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GT-S5380G",
       "marketingName": "Wave Y",
       "manufacturer": "Samsung",
       "brand": "Samsung",
@@ -1220,7 +1310,7 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "GT-S7230",
+      "deviceName": "GT-S7230B",
       "marketingName": "Wave 723",
       "manufacturer": "Samsung",
       "brand": "Samsung",
@@ -1936,6 +2026,51 @@
   },
   {
     "headers": {
+      "user-agent": "UCWEB/2.0 (Java; U; MIDP-2.0; en-US; SAMSUNG-GT-S5380D) U2/1.0.0 UCBrowser/9.5.0.449 U2/1.0.0 Mobile UNTRUSTED/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GT-S5380D",
+      "marketingName": "Wave Y",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Java ME",
+      "marketingName": "Java ME",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.5.0.449",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "UCWeb"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "UCWEB/2.0 (Java; U; MIDP-2.0; en-US; SAMSUNG-GT-S8530) U2/1.0.0 UCBrowser/9.5.0.449 U2/1.0.0 Mobile UNTRUSTED/1.0"
     },
     "device": {
@@ -2126,7 +2261,7 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "GT-S5380",
+      "deviceName": "GT-S5380D",
       "marketingName": "Wave Y",
       "manufacturer": "Samsung",
       "brand": "Samsung",
@@ -4337,7 +4472,7 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "SM-A145F",
+      "deviceName": "SM-A145FB",
       "marketingName": "Galaxy A14 4G",
       "manufacturer": "Samsung",
       "brand": "Samsung",
@@ -4358,96 +4493,6 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "14.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "15.1.9.1395",
-      "manufacturer": "UCWeb",
-      "type": "transcoder",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "123.0.6312.80",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 11; es-LA; SM-A305G Build/RP1A.200720.012) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 UCBrowser/12.3.0.1290 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A305G",
-      "marketingName": "Galaxy A30",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.4
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "12.3.0.1290",
-      "manufacturer": "UCWeb",
-      "type": "transcoder",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "149.0.7827.91",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 11; en-US; SM-A507FN Build/RP1A.200720.012) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.9.1395 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A507FN",
-      "marketingName": "Galaxy A50s (Global)",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.4
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
       "manufacturer": "Google",
       "bits": null
     },

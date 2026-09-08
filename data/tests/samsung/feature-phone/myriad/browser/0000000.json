@@ -186,7 +186,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SGH-E250I",
-      "marketingName": "SGH-E250I",
+      "marketingName": "SGH-E250",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": false,
@@ -725,7 +725,52 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "E2100",
+      "deviceName": "E2100C",
+      "marketingName": "E2100",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 1.77
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Java ME",
+      "marketingName": "Java ME",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.3",
+      "manufacturer": "Myriad",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-E2100L/1.0 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "E2100L",
       "marketingName": "E2100",
       "manufacturer": "Samsung",
       "brand": "Samsung",
@@ -815,7 +860,7 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "C3050",
+      "deviceName": "C3050C",
       "marketingName": "Stratus",
       "manufacturer": "Samsung",
       "brand": "Samsung",
@@ -888,6 +933,51 @@
       "name": "Openwave Mobile Browser",
       "modus": null,
       "version": "6.2.3.3",
+      "manufacturer": "Myriad",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-GT-C3110C/1.0 Release/9.05.2008 Browser/Openwave6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "C3110C",
+      "marketingName": "C3110",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Java ME",
+      "marketingName": "Java ME",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3",
       "manufacturer": "Myriad",
       "type": "browser",
       "isbot": false,
@@ -2165,7 +2255,7 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "SGH-D900",
+      "deviceName": "SGH-D900I",
       "marketingName": "SGH-D900",
       "manufacturer": "Samsung",
       "brand": "Samsung",
@@ -2391,6 +2481,51 @@
     "device": {
       "architecture": null,
       "deviceName": "SGH-E250",
+      "marketingName": "SGH-E250",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Java ME",
+      "marketingName": "Java ME",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.3",
+      "manufacturer": "Myriad",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E250L/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SGH-E250L",
       "marketingName": "SGH-E250",
       "manufacturer": "Samsung",
       "brand": "Samsung",
@@ -3201,6 +3336,51 @@
     "device": {
       "architecture": null,
       "deviceName": "SGH-J700",
+      "marketingName": "SGH-J700",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Java ME",
+      "marketingName": "Java ME",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.3",
+      "manufacturer": "Myriad",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-J700i/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SGH-J700I",
       "marketingName": "SGH-J700",
       "manufacturer": "Samsung",
       "brand": "Samsung",
@@ -4291,186 +4471,6 @@
         "height": 128,
         "touch": false,
         "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Java ME",
-      "marketingName": "Java ME",
-      "version": null,
-      "manufacturer": "Sun",
-      "bits": null
-    },
-    "client": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.3.3",
-      "manufacturer": "Myriad",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-T209R/T209UVFG1 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SGH-T209R",
-      "marketingName": "SGH-T209R",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Java ME",
-      "marketingName": "Java ME",
-      "version": null,
-      "manufacturer": "Sun",
-      "bits": null
-    },
-    "client": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.3.3",
-      "manufacturer": "Myriad",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-T219/ Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SGH-T219",
-      "marketingName": "SGH-T219",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": 1.63
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Java ME",
-      "marketingName": "Java ME",
-      "version": null,
-      "manufacturer": "Sun",
-      "bits": null
-    },
-    "client": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.3.3",
-      "manufacturer": "Myriad",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-T219S/T219UVGG3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SGH-T219S",
-      "marketingName": "SGH-T219S",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": 1.63
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Java ME",
-      "marketingName": "Java ME",
-      "version": null,
-      "manufacturer": "Sun",
-      "bits": null
-    },
-    "client": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.3.3",
-      "manufacturer": "Myriad",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-T245G/T245UDKG3[TFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX] UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SGH-T245G",
-      "marketingName": "SGH-T245G",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 128,
-        "height": 128,
-        "touch": false,
-        "size": 1.52
       },
       "type": "feature-phone",
       "ismobile": true,

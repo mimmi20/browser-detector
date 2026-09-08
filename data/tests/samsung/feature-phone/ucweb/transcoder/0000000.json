@@ -541,6 +541,51 @@
   },
   {
     "headers": {
+      "user-agent": "UCWEB/2.0 (Java; U; MIDP-2.0; en-US; GT-S5600V) U2/1.0.0 UCBrowser/9.4.1.377 U2/1.0.0 Mobile UNTRUSTED/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GT-S5600V",
+      "marketingName": "Preston",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.8
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Java ME",
+      "marketingName": "Java ME",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.4.1.377",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "UCWeb"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "UCWEB/2.0 (Symbian; U; S60 V5; Pt-BR; SamsungI8910) U2/1.0.0 UCBrowser/8.9.0.277 U2/1.0.0 Mobile"
     },
     "device": {
@@ -905,7 +950,7 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "GT-B2710",
+      "deviceName": "GT-B2710D",
       "marketingName": "Xcover 271",
       "manufacturer": "Samsung",
       "brand": "Samsung",
@@ -995,7 +1040,7 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "GT-B3410",
+      "deviceName": "GT-B3410R",
       "marketingName": "Corby Text",
       "manufacturer": "Samsung",
       "brand": "Samsung",
@@ -1036,6 +1081,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Java; U; Id; samsung-gt-b3410w) UCBrowser8.2.0.132/70/452/UCWEB Mobile UNTRUSTED/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GT-B3410W",
+      "marketingName": "Corby Text",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.2.0.132",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Java; U; Pt-br; samsung-gt-b5310) UCBrowser8.2.1.144/69/352/UCWEB Mobile UNTRUSTED/1.0"
     },
     "device": {
@@ -1068,6 +1158,51 @@
       "name": "UC Browser",
       "modus": null,
       "version": "8.2.1.144",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Java; U; Pt-br; samsung-gt-b5310l) UCBrowser8.3.0.154/69/444/UCWEB Mobile UNTRUSTED/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GT-B5310L",
+      "marketingName": "Corby Pro",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.8
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.3.0.154",
       "manufacturer": "UCWeb",
       "type": "transcoder",
       "isbot": false,
@@ -1563,6 +1698,51 @@
       "name": "UC Browser",
       "modus": null,
       "version": "8.2.1.144",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Java; U; ru; samsung-gt-b7722i) UCBrowser8.3.0.154/69/444/UCWEB Mobile UNTRUSTED/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GT-B7722I",
+      "marketingName": "Star Duos",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.3.0.154",
       "manufacturer": "UCWeb",
       "type": "transcoder",
       "isbot": false,
@@ -2075,7 +2255,7 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "GT-C3510",
+      "deviceName": "GT-C3510T",
       "marketingName": "GT-C3510",
       "manufacturer": "Samsung",
       "brand": "Samsung",
@@ -3016,6 +3196,96 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Java; U; en-us; samsung-gt-s3370b) --XIOZ-->8.4.0.159/69/352/UCWEB Mobile UNTRUSTED/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GT-S3370B",
+      "marketingName": "Corby 3G",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Java; U; Pt-br; samsung-gt-s3370l) UCBrowser8.2.1.144/69/444/UCWEB Mobile UNTRUSTED/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GT-S3370L",
+      "marketingName": "Corby 3G",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.2.1.144",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "UCWEB/2.0 (Java; U; MIDP-2.0; en-US; samsung gt-s3570) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile, SAMSUNG-GT-S3570/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Untrusted/1.0"
     },
     "device": {
@@ -3183,6 +3453,96 @@
       "name": "UC Browser",
       "modus": null,
       "version": "8.2.0.132",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "samsung-gt-s3650c/UCWEB8.0.3.99/69/999 UNTRUSTED/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GT-S3650C",
+      "marketingName": "Corby",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.0.3.99",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Java; U; en-us; samsung-gt-s3650w) UCBrowser8.2.1.144/69/444/UCWEB Mobile UNTRUSTED/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GT-S3650W",
+      "marketingName": "Corby",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.2.1.144",
       "manufacturer": "UCWeb",
       "type": "transcoder",
       "isbot": false,
@@ -3781,6 +4141,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Java; U; es-la; samsung-gt-s5350l) AppleWebKit/530.13 (KHTML, like Gecko) UCBrowser/8.6.0.199/84/352/UCWEB Mobile UNTRUSTED/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GT-S5350L",
+      "marketingName": "Shark",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.6.0.199",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "530.13.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Java; U; ru; samsung-gt-s5510) AppleWebKit/530.13 (KHTML, like Gecko) UCBrowser/8.6.0.199/84/352/UCWEB Mobile UN"
     },
     "device": {
@@ -4006,6 +4411,51 @@
   },
   {
     "headers": {
+      "user-agent": "samsung-gt-s5620b/UC Browser7.6.1.82/69/351 UNTRUSTED/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GT-S5620B",
+      "marketingName": "Monte",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "7.6.1.82",
+      "manufacturer": "UCWeb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Java; U; en-us; samsung-gt-s5628) AppleWebKit/530.13 (KHTML, like Gecko) UCBrowser/8.5.0.185/83/352/UCWEB Mobile UNTRUSTED/1.0"
     },
     "device": {
@@ -4047,456 +4497,6 @@
       "name": "WebKit",
       "version": "530.13.0",
       "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Java; U; Pt-br; samsung-gt-s5750e) AppleWebKit/530.13 (KHTML, like Gecko) UCBrowser/8.5.0.185/83/352/UCWEB Mobile UNTRUSTED/1.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "GT-S5750E",
-      "marketingName": "Wave 575",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 400,
-        "height": 240,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "Sun",
-      "bits": null
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.5.0.185",
-      "manufacturer": "UCWeb",
-      "type": "transcoder",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "530.13.0",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Java; U; Id; samsung-gt-s5753e) UCBrowser8.2.1.144/69/352/UCWEB Mobile UNTRUSTED/1.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "GT-S5753E",
-      "marketingName": "GT-S5753E",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "Sun",
-      "bits": null
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.2.1.144",
-      "manufacturer": "UCWeb",
-      "type": "transcoder",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Java; U; en-us; samsung-gt-s5780) UCBrowser8.3.0.154/69/352/UCWEB Mobile UNTRUSTED/1.0 UNTRUSTED/1.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "GT-S5780",
-      "marketingName": "Wave 578",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 400,
-        "height": 240,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "Sun",
-      "bits": null
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.3.0.154",
-      "manufacturer": "UCWeb",
-      "type": "transcoder",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Java; U; En-in; Samsung-gt-s7070) UCBrowser8.3.0.154/69/444/UCWEB Mobile UNTRUSTED/1.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "GT-S7070",
-      "marketingName": "GT-S7070",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.8
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "Sun",
-      "bits": null
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.3.0.154",
-      "manufacturer": "UCWeb",
-      "type": "transcoder",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Java; U; Pt-br; samsung-gt-s7233e) UCBrowser8.2.1.144/69/444/UCWEB Mobile UNTRUSTED/1.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "GT-S7233E",
-      "marketingName": "GT-S7233E",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 400,
-        "height": 240,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "Sun",
-      "bits": null
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.2.1.144",
-      "manufacturer": "UCWeb",
-      "type": "transcoder",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "UCWEB/2.0 (Java; U; MIDP-2.0; en-US; samsung-gt-s7250) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile UNTRUSTED/1.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "GT-S7250",
-      "marketingName": "Wave M",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Java ME",
-      "marketingName": "Java ME",
-      "version": null,
-      "manufacturer": "Sun",
-      "bits": null
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.9.0.251",
-      "manufacturer": "UCWeb",
-      "type": "transcoder",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "U2",
-      "version": "1.0.0",
-      "manufacturer": "UCWeb"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Java; U; en-in; samsung-gt-s7250d) UCBrowser8.3.0.154/69/444/UCWEB Mobile UNTRUSTED/1.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "GT-S7250",
-      "marketingName": "Wave M",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "Sun",
-      "bits": null
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.3.0.154",
-      "manufacturer": "UCWeb",
-      "type": "transcoder",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Java; U; en-us; samsung-gt-s7350i) AppleWebKit/530.13 (KHTML, like Gecko) UCBrowser/8.6.0.199/69/352/UCWEB Mobile UNTRUSTED/1.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "S7350",
-      "marketingName": "Xplorer",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 400,
-        "height": 240,
-        "touch": false,
-        "size": 2.6
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "Sun",
-      "bits": null
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.6.0.199",
-      "manufacturer": "UCWeb",
-      "type": "transcoder",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "530.13.0",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Java; U; Id; samsung-gt-s8600) UCBrowser8.3.0.154/70/352/UCWEB Mobile UNTRUSTED/1.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "GT-S8600",
-      "marketingName": "Wave 3",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": false,
-        "size": 4
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "Sun",
-      "bits": null
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.3.0.154",
-      "manufacturer": "UCWeb",
-      "type": "transcoder",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Java; U; Pt-br; samsung m2710) UCBrowser8.2.1.144/69/352/UCWEB Mobile"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "M2710",
-      "marketingName": "Beat Twist",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 176,
-        "height": 144,
-        "touch": false,
-        "size": 2
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "Sun",
-      "bits": null
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.2.1.144",
-      "manufacturer": "UCWeb",
-      "type": "transcoder",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
     }
   }
 ]

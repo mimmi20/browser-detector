@@ -140,7 +140,7 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "SGH-C230",
+      "deviceName": "SGH-C230C",
       "marketingName": "SGH-C230",
       "manufacturer": "Samsung",
       "brand": "Samsung",
@@ -455,7 +455,7 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "SGH-E810",
+      "deviceName": "SGH-E810C",
       "marketingName": "SGH-E810",
       "manufacturer": "Samsung",
       "brand": "Samsung",
@@ -3151,51 +3151,6 @@
   },
   {
     "headers": {
-      "user-agent": "11"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "GT-S5230",
-      "marketingName": "star",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 400,
-        "height": 240,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "Sun",
-      "bits": null
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "X-WAP-PROFILE: http://device.sprintpcs.com/Samsung/SPH-A620/"
     },
     "device": {
@@ -4457,6 +4412,51 @@
   {
     "headers": {
       "user-agent": "SEC-SGHX660/EJ3 TSS/2.5 UP.Link/6.3.0.0.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SGH-X660",
+      "marketingName": "SGH-X660",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SEC-SGHX660/1.0 TSS/2.5 UP.Link/6.3.1.12.0"
     },
     "device": {
       "architecture": null,

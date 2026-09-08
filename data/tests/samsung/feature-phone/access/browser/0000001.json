@@ -1,6 +1,141 @@
 [
   {
     "headers": {
+      "user-agent": "SAMSUNG-SGH-F488I/1.0 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SGH-F488I",
+      "marketingName": "SGH-F488",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Java ME",
+      "marketingName": "Java ME",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.5.0",
+      "manufacturer": "Access",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": "3.5.0",
+      "manufacturer": "Access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-F490-Vodafone/F490AEHB1 SHP/VPP/R5 NetFront/3.4 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SGH-F490",
+      "marketingName": "SGH-F490",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 432,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Java ME",
+      "marketingName": "Java ME",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.4.0",
+      "manufacturer": "Access",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": "3.4.0",
+      "manufacturer": "Access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-G600-VODA/G600ACGJ1 NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SGH-G600",
+      "marketingName": "SGH-G600",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Java ME",
+      "marketingName": "Java ME",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.4.0",
+      "manufacturer": "Access",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": "3.4.0",
+      "manufacturer": "Access"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "SAMSUNG-SGH-J750MJGK4/1.0 SHP/VPP/R5 NetFront/3.4 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
     },
     "device": {
@@ -2206,6 +2341,51 @@
   },
   {
     "headers": {
+      "user-agent": "SAMSUNG-GT-C3222/C3222JVJL1 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GT-C3222",
+      "marketingName": "Ch@t 322",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Java ME",
+      "marketingName": "Java ME",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.5.0",
+      "manufacturer": "Access",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": "3.5.0",
+      "manufacturer": "Access"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "SAMSUNG-GT-C3262/C3262DDLHA NetFront/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1"
     },
     "device": {
@@ -2797,6 +2977,51 @@
       "architecture": null,
       "deviceName": "GT-S5222",
       "marketingName": "Star 3 Duos",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Java ME",
+      "marketingName": "Java ME",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "4.2.0",
+      "manufacturer": "Access",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": "4.2.0",
+      "manufacturer": "Access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-GT-C3322i/1.0 NetFront/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 UNTRUSTED/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GT-C3322I",
+      "marketingName": "Metro Duos",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": false,
@@ -3556,6 +3781,51 @@
   },
   {
     "headers": {
+      "user-agent": "SAMSUNG-GT-S5350/S5350ANJB4 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-N"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GT-S5350",
+      "marketingName": "Shark",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Java ME",
+      "marketingName": "Java ME",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.5.0",
+      "manufacturer": "Access",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": "3.5.0",
+      "manufacturer": "Access"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "SAMSUNG-SGH-U800/1.0 SHP/VPP/R5 NetFront/3.4 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
     },
     "device": {
@@ -4226,276 +4496,6 @@
     "engine": {
       "name": "NetFront",
       "version": null,
-      "manufacturer": "Access"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SGH-Z510/1.0 NetFront/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SGH-Z510",
-      "marketingName": "SGH-Z510",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Java ME",
-      "marketingName": "Java ME",
-      "version": null,
-      "manufacturer": "Sun",
-      "bits": null
-    },
-    "client": {
-      "name": "NetFront",
-      "modus": null,
-      "version": "3.2.0",
-      "manufacturer": "Access",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "NetFront",
-      "version": "3.2.0",
-      "manufacturer": "Access"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SGH-Z130/1.0 NF3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Link/6.3.1.13.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SGH-Z130",
-      "marketingName": "SGH-Z130",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 220,
-        "height": 176,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Java ME",
-      "marketingName": "Java ME",
-      "version": null,
-      "manufacturer": "Sun",
-      "bits": null
-    },
-    "client": {
-      "name": "NetFront",
-      "modus": null,
-      "version": "3.2.0",
-      "manufacturer": "Access",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "NetFront",
-      "version": null,
-      "manufacturer": "Access"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SEC-SGHXE770/1.0 NetFront/3.2"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SGH-XE770",
-      "marketingName": "SGH-XE770",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "Sun",
-      "bits": null
-    },
-    "client": {
-      "name": "NetFront",
-      "modus": null,
-      "version": "3.2.0",
-      "manufacturer": "Access",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "NetFront",
-      "version": "3.2.0",
-      "manufacturer": "Access"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SEC-SGHX820/1.0 NetFront/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Link/6.3.0.0.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SGH-X820",
-      "marketingName": "SGH-X820",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 220,
-        "height": 176,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Java ME",
-      "marketingName": "Java ME",
-      "version": null,
-      "manufacturer": "Sun",
-      "bits": null
-    },
-    "client": {
-      "name": "NetFront",
-      "modus": null,
-      "version": "3.2.0",
-      "manufacturer": "Access",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "NetFront",
-      "version": "3.2.0",
-      "manufacturer": "Access"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SEC-SGHX810/1.0 NetFront/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SGH-X810",
-      "marketingName": "SGH-X810",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Java ME",
-      "marketingName": "Java ME",
-      "version": null,
-      "manufacturer": "Sun",
-      "bits": null
-    },
-    "client": {
-      "name": "NetFront",
-      "modus": null,
-      "version": "3.2.0",
-      "manufacturer": "Access",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "NetFront",
-      "version": "3.2.0",
-      "manufacturer": "Access"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SEC-SGHX800/1.0 NetFront/3.2"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SGH-X800",
-      "marketingName": "SGH-X800",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": false,
-      "simCount": 1,
-      "display": {
-        "width": 220,
-        "height": 176,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "Sun",
-      "bits": null
-    },
-    "client": {
-      "name": "NetFront",
-      "modus": null,
-      "version": "3.2.0",
-      "manufacturer": "Access",
-      "type": "browser",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": "NetFront",
-      "version": "3.2.0",
       "manufacturer": "Access"
     }
   }

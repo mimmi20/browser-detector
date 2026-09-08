@@ -541,6 +541,51 @@
   },
   {
     "headers": {
+      "user-agent": "SAMSUNG-GT-i8000T Mozilla (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GT-I8000T",
+      "marketingName": "Omnia II",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "8.12.0",
+      "manufacturer": "Microsoft",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "Microsoft"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Bluevibe 2.4 r3799 Mozilla/4.0 (compatible; MSIE 6.0; SAMSUNG-GT-S3370/S3370AIJE2 Profile/MIDP-2.0 Configuration/CLDC-1.0) UNTRUSTED/1.0"
     },
     "device": {

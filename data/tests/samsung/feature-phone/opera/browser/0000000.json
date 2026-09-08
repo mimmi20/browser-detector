@@ -230,6 +230,51 @@
     },
     "device": {
       "architecture": null,
+      "deviceName": "GT-B7300C",
+      "marketingName": "Omnia Lite",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": false,
+        "size": 3
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "9.5.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-GT-B7300Orange/BVII3 (Windows CE; Opera Mobi; U; en) Opera 9.5"
+    },
+    "device": {
+      "architecture": null,
       "deviceName": "GT-B7300",
       "marketingName": "Omnia Lite",
       "manufacturer": "Samsung",
@@ -401,6 +446,96 @@
     "engine": {
       "name": "Presto",
       "version": "2.2.0",
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-GT-i8000H/1.0 (Windows CE; Opera Mobi; U; en) Opera 9.5"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GT-I8000H",
+      "marketingName": "Omnia II",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "9.5.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-GT-I8000U/1.0 Software/WM6.5 Release/01.24.2009 Profile/MIDP-2.1 Configuration/CLDC-1.1 Opera 9.5 (Windows CE; PPC; Opera Mobi; U; zh-cn)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GT-I8000U",
+      "marketingName": "Omnia II",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "9.5.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
       "manufacturer": "Opera"
     }
   },
@@ -1261,6 +1396,51 @@
   },
   {
     "headers": {
+      "user-agent": "SAMSUNG-GT-i8000T Opera 9.5"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GT-I8000T",
+      "marketingName": "Omnia II",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "Microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "9.5.0",
+      "manufacturer": "Opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "SAMSUNG-GT-B7620/1.0 Browser/Opera/9.5 Profile/MIDP-2.0 Configuration/CLDC-1.1"
     },
     "device": {
@@ -1445,7 +1625,7 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "GT-C3322",
+      "deviceName": "GT-C3322I",
       "marketingName": "Metro Duos",
       "manufacturer": "Samsung",
       "brand": "Samsung",

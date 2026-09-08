@@ -271,6 +271,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5780D/1.0; U; Bada/1.1; th-th) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WQVGA SMM-MMS/1.2.0 NexPlayer/3.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GT-S5780D",
+      "marketingName": "Wave 578",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Bada",
+      "marketingName": "Bada",
+      "version": "1.1.0",
+      "manufacturer": "Samsung",
+      "bits": null
+    },
+    "client": {
+      "name": "NexPlayer",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "NexStreaming",
+      "type": "multimedia-player",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S7233E/1.0; U; Bada/1.0; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WQVGA SMM-MMS/1.2.0 NexPlayer/3.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B"
     },
     "device": {
@@ -393,6 +438,51 @@
       "name": "NexPlayer",
       "modus": null,
       "version": "2.12.0",
+      "manufacturer": "NexStreaming",
+      "type": "multimedia-player",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-GT-S5260P/S5260PXXKF2 SHP/VPP/R5 Dolfin/2.0 NexPlayer/3.0 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GT-S5260P",
+      "marketingName": "Star II",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Java ME",
+      "marketingName": "Java ME",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "NexPlayer",
+      "modus": null,
+      "version": "3.0.0",
       "manufacturer": "NexStreaming",
       "type": "multimedia-player",
       "isbot": false,
@@ -586,6 +676,51 @@
   },
   {
     "headers": {
+      "user-agent": "SAMSUNG-S8300H/1.0 SHP/VPP/R5 NetFront/3.5 NexPlayer/2.9.1 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GT-S8300H",
+      "marketingName": "Ultra Touch",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Java ME",
+      "marketingName": "Java ME",
+      "version": null,
+      "manufacturer": "Sun",
+      "bits": null
+    },
+    "client": {
+      "name": "NexPlayer",
+      "modus": null,
+      "version": "2.9.1",
+      "manufacturer": "NexStreaming",
+      "type": "multimedia-player",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": "3.5.0",
+      "manufacturer": "Access"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "SAMSUNG-GT-I6712/1.0 SHP/VPP/R5 Dolfin/2.0 NexPlayer/3.0 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B"
     },
     "device": {
@@ -636,7 +771,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SGH-F480I",
-      "marketingName": "SGH-F480I",
+      "marketingName": "SGH-F480",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": false,

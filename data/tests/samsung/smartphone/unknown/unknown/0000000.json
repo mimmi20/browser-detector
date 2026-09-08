@@ -91,51 +91,6 @@
   },
   {
     "headers": {
-      "user-agent": "null"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "GT-S7562",
-      "marketingName": "Galaxy S Duos",
-      "manufacturer": "Samsung",
-      "brand": "Samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": null,
-      "manufacturer": "Google",
-      "bits": null
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false,
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "GT-I9300I Build/KTU84P"
     },
     "device": {
@@ -3020,8 +2975,8 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "SM-G900",
-      "marketingName": "Galaxy S5 Duos",
+      "deviceName": "SM-G900R7",
+      "marketingName": "Galaxy S5",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -3065,8 +3020,8 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "SM-G900",
-      "marketingName": "Galaxy S5 Duos",
+      "deviceName": "SM-G900R7",
+      "marketingName": "Galaxy S5",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "dualOrientation": true,
@@ -4471,6 +4426,51 @@
         "height": 1440,
         "touch": true,
         "size": 5.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "Google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SM-J100VPP Build/LMY48B"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-J100VPP",
+      "marketingName": "Galaxy J1 Blue (Verizon)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4.3
       },
       "type": "smartphone",
       "ismobile": true,
