@@ -205,6 +205,8 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             $finds,
         );
 
+        var_dump($finds, $results);
+
         $results2 = array_filter(
             $results,
             is_string(...),
@@ -236,11 +238,17 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
                 $matches,
             )
         ) {
-            $code = $this->device->getDeviceCode(mb_trim(mb_strtolower($matches['devicecode'])));
+            $code = $matches['devicecode']
+                    |> mb_strtolower(...)
+                    |> mb_trim(...)
+                    |> $this->device->getDeviceCode(...);
 
             if (is_string($code)) {
                 if ($this->autoUpdate) {
-                    $this->saveToMappingJson(mb_trim(mb_strtolower($matches['devicecode'])), $code);
+                    $matches['devicecode']
+                        |> mb_strtolower(...)
+                        |> mb_trim(...)
+                        |> (fn ($x) => $this->saveToMappingJson($x, $code));
                 }
 
                 return $code;
@@ -250,7 +258,10 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
 
             if ($code !== '') {
                 if ($this->autoUpdate) {
-                    $this->saveToMappingJson(mb_trim(mb_strtolower($matches['devicecode'])), $code);
+                    $matches['devicecode']
+                        |> mb_strtolower(...)
+                        |> mb_trim(...)
+                        |> (fn ($x) => $this->saveToMappingJson($x, $code));
                 }
 
                 return $code;
