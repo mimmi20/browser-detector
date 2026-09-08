@@ -150,7 +150,7 @@ trait AutoUpdateDeviceDataTrait
                 continue;
             }
 
-            $this->logger->debug(sprintf('Read factory file %s', $filepath));
+            $this->logger->debug(sprintf('Read factory file %s to remove code "%s"', $filepath, $code));
 
             try {
                 $fileData = json_decode($content, associative: true, flags: JSON_THROW_ON_ERROR);
@@ -193,7 +193,7 @@ trait AutoUpdateDeviceDataTrait
                 );
             }
 
-            $this->logger->debug(sprintf('finished rewriting factory %s', $filepath));
+            $this->logger->debug(sprintf('finished rewriting factory %s to remove code "%s"', $filepath, $code));
         }
 
         $this->logger->debug('finished rewriting factories');
