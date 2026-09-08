@@ -123,7 +123,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/instagram [\d.]+ android \([\d.]+\/[\d.]+; \d+dpi; \d+x\d+; [a-z\/]+; (?P<devicecode>[^);\/]+);/i',
             '/icq_android\/[\d.]+ \(android; \d+; [\d.]+; [^;]+; (?P<devicecode>[^);\/]+)/i',
             '/gg-android\/[\d.]+ \(os;android;\d+\) \([^);\/]+;[^);\/]+;(?P<devicecode>[^);\/]+);[\d.]+/i',
-            '/imoandroid\/[\d.]+; \d+; REL; (?P<devicecode>[^);\/]+)/i',
+            '/imoandroid\/[\d.]+; \d+; rel; (?P<devicecode>[^);\/]+)/i',
             '/tivimate\/[\d.]+ \((?P<devicecode>[^);\/]+);/i',
             '/; model: (?P<devicecode>[^);\/]+)\)/i',
             '/(lbc|heart)\/[\d.]+ andr[o0]id [\d.]+\/(?P<devicecode>[^);\/]+)/i',
@@ -204,8 +204,6 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             $this->device->getDeviceCode(...),
             $finds,
         );
-
-        var_dump($finds, $results);
 
         $results2 = array_filter(
             $results,
