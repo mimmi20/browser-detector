@@ -58,7 +58,7 @@ trait AutoUpdateDeviceDataTrait
             return;
         }
 
-        $file = sprintf('data/device-mapping/%s.json', $company);
+        $file = sprintf(__DIR__ . '/../../../data/device-mapping/%s.json', $company);
 
         $devicesFromMappingFile = [];
 
