@@ -193,7 +193,9 @@ trait AutoUpdateDeviceDataTrait
                 );
             }
 
-            $this->logger->debug(sprintf('finished rewriting factory %s to remove code "%s"', $filepath, $code));
+            $this->logger->debug(
+                sprintf('finished rewriting factory %s to remove code "%s"', $filepath, $code),
+            );
         }
 
         $this->logger->debug('finished rewriting factories');
