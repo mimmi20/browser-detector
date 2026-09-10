@@ -13,9 +13,10 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
-use BrowserDetector\Parser\Helper\DeviceInterface;
+use BrowserDetector\Loader\MappingfileLoaderInterface;
 use Override;
 use Psr\Log\LoggerInterface;
+use RuntimeException;
 use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\Normalizer\NormalizerInterface;
 use UaParser\DeviceCodeInterface;
@@ -44,7 +45,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
     public function __construct(
         private DeviceParserInterface $deviceParser,
         private NormalizerInterface $normalizer,
-        private DeviceInterface $device,
+        private MappingfileLoaderInterface $mappingFileParser,
         private LoggerInterface $logger,
         private bool $autoUpdate = false,
     ) {
@@ -115,15 +116,15 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/\(speedmode; proxy; android [\d.]+;(?P<devicecode>[^);\/]+)\)/i',
             '/ucweb\/[\d.]+ ?\((?:midp-2\.0|linux); opera mini\/[^;]+; (?P<devicecode>[^);\/]+)(?:(?:\/[^ ]+)? +(?:build|hmscore|release))[^)]+\)/i',
             '/ucweb\/[\d.]+ ?\((?:midp-2\.0|linux); opera mini\/[^;]+; (?P<devicecode>[^);\/]+)/i',
-            '/ucweb\/[\d.]+ \((?:java; )?(?:midp-2\.0|linux); (?:adr [\d.]+;) (?P<devicecode>[^);\/]+)(?:[^)]+)?\)/i',
-            '/ucweb\/[\d.]+ \((?:java; )?(?:midp-2\.0|linux); (?P<devicecode>[^);\/]+)(?:[^)]+)?\)/i',
+            '/ucweb\/[\d.]+ \((?:java; )?(?:midp-2\.0|linux); (?:adr [\d.]+; )(?P<devicecode>[^);\/]+)(?:[^)]+)?\)/i',
+            '/ucweb\/[\d.]+ \((?:java; )?(?:midp-2\.0|linux); (?:[\d.]+; )?(?P<devicecode>[^);\/]+)(?:[^)]+)?\)/i',
             '/;fbdv\/(?P<devicecode>[^);\/]+);/i',
             '/slack\/[\d.]+ \((?P<devicecode>[^);\/]+)(?:;? (?:andr[o0]id|tizen) [\d.]+)(?:[^)]+)?\)/i',
             '/instagram [\d.]+ android \([\d.]+\/[\d.]+; \d+dpi; \d+x\d+; (?P<devicecode>[a-z\/]+; [^);\/]+);/i',
             '/instagram [\d.]+ android \([\d.]+\/[\d.]+; \d+dpi; \d+x\d+; [a-z\/]+; (?P<devicecode>[^);\/]+);/i',
             '/icq_android\/[\d.]+ \(android; \d+; [\d.]+; [^;]+; (?P<devicecode>[^);\/]+)/i',
             '/gg-android\/[\d.]+ \(os;android;\d+\) \([^);\/]+;[^);\/]+;(?P<devicecode>[^);\/]+);[\d.]+/i',
-            '/imoandroid\/[\d.]+; \d+; rel; (?P<devicecode>[^);\/]+)/i',
+            '/imoandroid\/[\d.]+; (?:\d+; )?rel; (?P<devicecode>[^);\/]+)/i',
             '/tivimate\/[\d.]+ \((?P<devicecode>[^);\/]+);/i',
             '/; model: (?P<devicecode>[^);\/]+)\)/i',
             '/(lbc|heart)\/[\d.]+ andr[o0]id [\d.]+\/(?P<devicecode>[^);\/]+)/i',
@@ -178,6 +179,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/\(lge[;,] (?P<devicecode>[^;,]+)[;,]/i',
             '/^mqqbrowser\/[\d.]+ \(linux; [\d.]+; (?P<devicecode>[^)]+)\)$/i',
             '/^onebrowser\/[\d.]+ \((?P<devicecode>[^)]+)\)$/i',
+            '/dv\((?P<devicecode>[^);\/]+)(?:;? +(?:build|hmscore|release|miui)?[^)]+)?\);/',
             // should be the last entry in the list
             '/^(?P<devicecode>.+)$/i',
         ];
@@ -200,8 +202,14 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             $filtered,
         );
 
+        try {
+            $this->mappingFileParser->init();
+        } catch (RuntimeException) {
+            return null;
+        }
+
         $results = array_map(
-            $this->device->getDeviceCode(...),
+            $this->mappingFileParser->getItem(...),
             $finds,
         );
 
@@ -236,17 +244,14 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
                 $matches,
             )
         ) {
-            $code = $matches['devicecode']
+            $find = $matches['devicecode']
                     |> mb_strtolower(...)
-                    |> mb_trim(...)
-                    |> $this->device->getDeviceCode(...);
+                    |> mb_trim(...);
+            $code = $this->mappingFileParser->getItem($find);
 
             if (is_string($code)) {
                 if ($this->autoUpdate) {
-                    $matches['devicecode']
-                        |> mb_strtolower(...)
-                        |> mb_trim(...)
-                        |> (fn (string $x) => $this->saveToMappingJson($x, $code));
+                    $this->saveToMappingJson($find, $code);
                 }
 
                 return $code;
@@ -256,10 +261,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
 
             if ($code !== '') {
                 if ($this->autoUpdate) {
-                    $matches['devicecode']
-                        |> mb_strtolower(...)
-                        |> mb_trim(...)
-                        |> (fn (string $x) => $this->saveToMappingJson($x, $code));
+                    $this->saveToMappingJson($find, $code);
                 }
 
                 return $code;

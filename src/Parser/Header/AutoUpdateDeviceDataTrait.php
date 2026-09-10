@@ -19,6 +19,7 @@ use JsonException;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use SplFileInfo;
+use Symfony\Component\Yaml\Yaml;
 use UnexpectedValueException;
 
 use function array_filter;
@@ -58,20 +59,12 @@ trait AutoUpdateDeviceDataTrait
             return;
         }
 
-        $file = sprintf(__DIR__ . '/../../../data/device-mapping/%s.json', $company);
+        $file = sprintf(__DIR__ . '/../../../data/device-mapping/%s.yaml', $company);
 
         $devicesFromMappingFile = [];
 
         if (file_exists($file)) {
-            try {
-                $devicesFromMappingFile = json_decode(
-                    (string) file_get_contents($file),
-                    associative: true,
-                    flags: JSON_THROW_ON_ERROR,
-                );
-            } catch (JsonException) {
-                $this->logger->debug(sprintf('Could not read mapping file %s', $file));
-            }
+            $devicesFromMappingFile = Yaml::parseFile($file);
         }
 
         if (!is_array($devicesFromMappingFile)) {
@@ -88,19 +81,14 @@ trait AutoUpdateDeviceDataTrait
 
         $devicesFromMappingFile[$devicecode] = $code;
 
-        try {
-            file_put_contents(
-                $file,
-                json_encode(
-                    $devicesFromMappingFile,
-                    JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT | JSON_THROW_ON_ERROR,
-                ) . PHP_EOL,
-            );
-        } catch (JsonException) {
-            $this->logger->debug(sprintf('Could not encode or rewrite mapping file %s', $file));
-
-            return;
-        }
+        file_put_contents(
+            $file,
+            Yaml::dump(
+                $devicesFromMappingFile,
+                4,
+                2,
+            ),
+        );
 
         $this->deleteFromFactories($company, $code);
     }
@@ -120,7 +108,7 @@ trait AutoUpdateDeviceDataTrait
 
         $this->logger->debug('start rewriting factories');
 
-        $files = new FilterIterator($iterator, 'json');
+        $files = new FilterIterator($iterator, 'yaml');
         $files = new CallbackFilterIterator(
             $files,
             static fn (SplFileInfo $current): bool => str_contains(
@@ -137,30 +125,9 @@ trait AutoUpdateDeviceDataTrait
             assert(is_string($filepath));
 
             $this->logger->debug(sprintf('start rewriting factory %s', $filepath));
-
-            $content = @file_get_contents($filepath);
-
-            assert($content === false || is_string($content));
-
-            if ($content === false) {
-                $this->logger->debug(
-                    sprintf('<error>Could not read factory file %s</error>', $filepath),
-                );
-
-                continue;
-            }
-
             $this->logger->debug(sprintf('Read factory file %s to remove code "%s"', $filepath, $code));
 
-            try {
-                $fileData = json_decode($content, associative: true, flags: JSON_THROW_ON_ERROR);
-            } catch (JsonException) {
-                $this->logger->debug(
-                    sprintf('<error>Could not decode factory file %s</error>', $filepath),
-                );
-
-                continue;
-            }
+            $fileData = Yaml::parseFile($filepath);
 
             assert(is_array($fileData));
 
@@ -181,10 +148,7 @@ trait AutoUpdateDeviceDataTrait
             try {
                 file_put_contents(
                     $filepath,
-                    json_encode(
-                        $newFileData,
-                        JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT | JSON_THROW_ON_ERROR,
-                    ) . PHP_EOL,
+                    Yaml::dump($newFileData, 4, 2),
                 );
                 $this->logger->debug(sprintf('Encoded and rewrote factory file %s', $filepath));
             } catch (JsonException) {

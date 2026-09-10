@@ -21,9 +21,9 @@ use function sprintf;
 
 final readonly class BrowserParser implements BrowserParserInterface
 {
-    private const string GENERIC_FILE = __DIR__ . '/../../data/factories/browsers.json';
+    private const string GENERIC_FILE = __DIR__ . '/../../data/factories/browsers.yaml';
 
-    private const string SPECIFIC_FILE = __DIR__ . '/../../data/factories/browsers/%s.json';
+    private const string SPECIFIC_FILE = __DIR__ . '/../../data/factories/browsers/%s.yaml';
 
     /** @throws void */
     public function __construct(private RulefileParserInterface $rulefileParser)

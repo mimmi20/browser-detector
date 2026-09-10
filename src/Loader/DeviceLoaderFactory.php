@@ -47,22 +47,9 @@ final class DeviceLoaderFactory implements DeviceLoaderFactoryInterface
             return $this->loader[$company];
         }
 
-        $serializableStrategy = new SerializableStrategy(
-            new Json(),
-        );
-
         $this->loader[$company] = new DeviceLoader(
             logger: $this->logger,
             initData: new Data\Device(
-                strategy: new StrategyChain(
-                    [
-                        new CollectionStrategy(
-                            new ArraySerializableHydrator(),
-                            DataDevice::class,
-                        ),
-                        $serializableStrategy,
-                    ],
-                ),
                 company: $company,
             ),
             companyLoader: $this->companyLoader,

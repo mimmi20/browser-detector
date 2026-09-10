@@ -18,6 +18,7 @@ use JsonException;
 use Override;
 use Psr\Log\LoggerInterface;
 
+use Symfony\Component\Yaml\Yaml;
 use function array_filter;
 use function array_first;
 use function array_key_exists;
@@ -32,13 +33,19 @@ use function preg_last_error_msg;
 use function preg_match;
 use function sprintf;
 
+use function str_ends_with;
 use const ARRAY_FILTER_USE_KEY;
 use const JSON_THROW_ON_ERROR;
 
-final readonly class RulefileParser implements RulefileParserInterface
+final class RulefileParser implements RulefileParserInterface
 {
+    /**
+     * @var array<string, array{rules?: array<string, string>, generic?: string}>
+     */
+    private array $factories = [];
+
     /** @throws void */
-    public function __construct(private LoggerInterface $logger)
+    public function __construct(private readonly LoggerInterface $logger)
     {
         // nothing to do
     }
@@ -47,31 +54,53 @@ final readonly class RulefileParser implements RulefileParserInterface
     #[Override]
     public function parseFile(string $file, string $useragent, string $fallback): string
     {
-        $content = @file_get_contents($file);
+        if (array_key_exists($file, $this->factories)) {
+            $factories = $this->factories[$file];
+        } else {
+            $jsonFile = str_replace('yaml', 'json', $file);
 
-        if ($content === false) {
-            $this->logger->error(
-                new Exception(sprintf('could not load file %s', $file)),
-            );
+            if (str_ends_with($file, 'yaml') && file_exists($file)) {
+                $factories = Yaml::parseFile($file);
 
-            return $fallback;
+                if (file_exists($jsonFile)) {
+                    unlink($jsonFile);
+                }
+            } elseif (str_ends_with($file, 'yaml') && !file_exists($file)) {
+                $content = @file_get_contents($jsonFile);
+
+                if ($content === false) {
+                    $this->logger->error(
+                        new Exception(sprintf('could not load file %s', $jsonFile)),
+                    );
+
+                    return $fallback;
+                }
+
+                try {
+                    $factories = json_decode(json: $content, associative: true, flags: JSON_THROW_ON_ERROR);
+                } catch (JsonException $e) {
+                    $this->logger->error(
+                        new Exception(sprintf('could not decode content of file %s', $file), 0, $e),
+                    );
+
+                    return $fallback;
+                }
+
+                file_put_contents($file, Yaml::dump($factories, 4, 2));
+
+                echo $file, " rewritten to yaml", PHP_EOL;
+
+                unlink($jsonFile);
+            } else {
+                return $fallback;
+            }
+
+            $this->factories[$file] = $factories;
         }
 
-        try {
-            $factories = json_decode(json: $content, associative: true, flags: JSON_THROW_ON_ERROR);
-
-            assert(is_array($factories));
-
-            $rules = $factories['rules'] ?? [];
-        } catch (JsonException $e) {
-            $this->logger->error(
-                new Exception(sprintf('could not decode content of file %s', $file), 0, $e),
-            );
-
-            return $fallback;
-        }
-
-        $mode = null;
+        assert(is_array($factories));
+        $rules = $factories['rules'] ?? [];
+        $mode  = null;
 
         if (is_array($rules)) {
             $mode = $this->getModeFromRules($rules, $file, $useragent);

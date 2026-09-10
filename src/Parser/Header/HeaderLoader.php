@@ -14,7 +14,6 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser\Header;
 
 use BrowserDetector\Loader\MappingfileLoaderInterface;
-use BrowserDetector\Parser\Helper\Device;
 use Override;
 use Psr\Log\LoggerInterface;
 use UaLoader\BrowserLoaderInterface;
@@ -94,8 +93,6 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
 
         $normalizerChain = $this->normalizerFactory->build();
 
-        $device = new Device($this->mappingFileParser);
-
         return match ($header) {
             Headers::HEADER_BAIDU_FLYFLOW => new DeviceCodeOnlyHeader(
                 value: $value,
@@ -129,7 +126,7 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
             Headers::HEADER_SEC_CH_UA_MODEL => new DeviceCodeOnlyHeader(
                 value: $value,
                 deviceCode: new SecChUaModel(
-                    device: $device,
+                    mappingFileParser: $this->mappingFileParser,
                     logger: $this->logger,
                     autoUpdate: $this->autoUpdate,
                 ),
@@ -160,7 +157,7 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
                 deviceCode: new UseragentDeviceCode(
                     deviceParser: $this->deviceParser,
                     normalizer: $normalizerChain,
-                    device: $device,
+                    mappingFileParser: $this->mappingFileParser,
                     logger: $this->logger,
                     autoUpdate: $this->autoUpdate,
                 ),
@@ -233,7 +230,7 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
                 deviceCode: new XUcbrowserDevice(
                     deviceParser: $this->deviceParser,
                     normalizer: $normalizerChain,
-                    device: $device,
+                    mappingFileParser: $this->mappingFileParser,
                     logger: $this->logger,
                     autoUpdate: $this->autoUpdate,
                 ),
@@ -258,7 +255,7 @@ final readonly class HeaderLoader implements HeaderLoaderInterface
                 value: $value,
                 deviceCode: new XUcbrowserUaDeviceCode(
                     deviceParser: $this->deviceParser,
-                    device: $device,
+                    mappingFileParser: $this->mappingFileParser,
                     logger: $this->logger,
                     autoUpdate: $this->autoUpdate,
                 ),

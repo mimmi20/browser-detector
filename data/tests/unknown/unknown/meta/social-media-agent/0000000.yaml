@@ -1,0 +1,313 @@
+-
+  headers:
+    user-agent: 'facebookplatform/1.0 (+http://developers.facebook.com)'
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: 'Facebook Crawler'
+    modus: null
+    version: 1.0.0
+    manufacturer: Meta
+    type: social-media-agent
+    isbot: true
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: facebookcatalog/1.0
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: 'Facebook Catalog'
+    modus: null
+    version: 1.0.0
+    manufacturer: Meta
+    type: social-media-agent
+    isbot: true
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    sec-ch-ua-platform: '"Linux"'
+    sec-ch-ua: '"Not/A)Brand";v="8", "Chromium";v="126", "HeadlessChrome";v="126"'
+    sec-ch-ua-mobile: '?0'
+    user-agent: facebookexternalhit/1.1
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: 'Linux Foundation'
+    bits: null
+  client:
+    name: 'Facebook Crawler'
+    modus: null
+    version: 1.1.0
+    manufacturer: Meta
+    type: social-media-agent
+    isbot: true
+    bits: null
+  engine:
+    name: Blink
+    version: 126.0.0
+    manufacturer: Google
+-
+  headers:
+    user-agent: 'meta-externalfetcher/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler)'
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: Meta-ExternalFetcher
+    modus: null
+    version: 1.1.0
+    manufacturer: Meta
+    type: social-media-agent
+    isbot: true
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'meta-externalads/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler)'
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: 'Meta External Ads'
+    modus: null
+    version: 1.1.0
+    manufacturer: Meta
+    type: social-media-agent
+    isbot: true
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: meta-webindexer
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: Meta-WebIndexer
+    modus: null
+    version: null
+    manufacturer: Meta
+    type: social-media-agent
+    isbot: true
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    sec-ch-ua-platform: '"Windows"'
+    sec-ch-ua: '"HeadlessChrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"'
+    sec-ch-ua-mobile: '?0'
+    user-agent: 'facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)'
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: Windows
+    marketingName: Windows
+    version: null
+    manufacturer: Microsoft
+    bits: null
+  client:
+    name: 'Facebook Crawler'
+    modus: null
+    version: 1.1.0
+    manufacturer: Meta
+    type: social-media-agent
+    isbot: true
+    bits: null
+  engine:
+    name: Blink
+    version: 147.0.0
+    manufacturer: Google
+-
+  headers:
+    sec-ch-ua-platform: '"Windows"'
+    sec-ch-ua: '"Not=A?Brand";v="99", "Google Chrome";v="151", "Chromium";v="151"'
+    sec-ch-ua-mobile: '?0'
+    user-agent: 'meta-webindexer/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler)'
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: Windows
+    marketingName: Windows
+    version: null
+    manufacturer: Microsoft
+    bits: null
+  client:
+    name: Meta-WebIndexer
+    modus: null
+    version: 1.1.0
+    manufacturer: Meta
+    type: social-media-agent
+    isbot: true
+    bits: null
+  engine:
+    name: Blink
+    version: 151.0.0
+    manufacturer: Google

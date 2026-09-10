@@ -15,6 +15,7 @@ namespace BrowserDetectorTest\Parser;
 
 use BrowserDetector\Parser\BrowserParser;
 use BrowserDetector\Parser\BrowserParserFactory;
+use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
@@ -31,30 +32,12 @@ final class BrowserParserFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
+        $ruleFileParser = $this->createMock(RulefileParserInterface::class);
+        $ruleFileParser
             ->expects(self::never())
-            ->method('info');
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
+            ->method('parseFile');
 
-        $browserParserFactory = new BrowserParserFactory($logger);
+        $browserParserFactory = new BrowserParserFactory(rulefileParser: $ruleFileParser);
 
         $browserParser = $browserParserFactory();
 

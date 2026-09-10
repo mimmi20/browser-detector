@@ -13,8 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Parser\Header;
 
+use BrowserDetector\Loader\MappingfileLoaderInterface;
 use BrowserDetector\Parser\Header\XUcbrowserDevice;
-use BrowserDetector\Parser\Helper\DeviceInterface;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
@@ -43,10 +43,13 @@ final class XUcbrowserDevice2Test extends TestCase
             ->with($value)
             ->willThrowException($exception);
 
-        $deviceCodeHelper = $this->createMock(DeviceInterface::class);
-        $deviceCodeHelper
+        $mappingFileParser = $this->createMock(MappingfileLoaderInterface::class);
+        $mappingFileParser
             ->expects(self::never())
-            ->method('getDeviceCode');
+            ->method('init');
+        $mappingFileParser
+            ->expects(self::never())
+            ->method('getItem');
 
         $logger = $this->createMock(LoggerInterface::class);
         $logger
@@ -74,7 +77,7 @@ final class XUcbrowserDevice2Test extends TestCase
         $xUcbrowserDevice = new XUcbrowserDevice(
             deviceParser: $deviceParser,
             normalizer: $normalizer,
-            device: $deviceCodeHelper,
+            mappingFileParser: $mappingFileParser,
             logger: $logger,
             autoUpdate: false,
         );
@@ -99,10 +102,13 @@ final class XUcbrowserDevice2Test extends TestCase
             ->with($value)
             ->willReturn(value: null);
 
-        $deviceCodeHelper = $this->createMock(DeviceInterface::class);
-        $deviceCodeHelper
+        $mappingFileParser = $this->createMock(MappingfileLoaderInterface::class);
+        $mappingFileParser
             ->expects(self::never())
-            ->method('getDeviceCode');
+            ->method('init');
+        $mappingFileParser
+            ->expects(self::never())
+            ->method('getItem');
 
         $logger = $this->createMock(LoggerInterface::class);
         $logger
@@ -130,7 +136,7 @@ final class XUcbrowserDevice2Test extends TestCase
         $xUcbrowserDevice = new XUcbrowserDevice(
             deviceParser: $deviceParser,
             normalizer: $normalizer,
-            device: $deviceCodeHelper,
+            mappingFileParser: $mappingFileParser,
             logger: $logger,
             autoUpdate: false,
         );
@@ -155,10 +161,13 @@ final class XUcbrowserDevice2Test extends TestCase
             ->with($value)
             ->willReturn('');
 
-        $deviceCodeHelper = $this->createMock(DeviceInterface::class);
-        $deviceCodeHelper
+        $mappingFileParser = $this->createMock(MappingfileLoaderInterface::class);
+        $mappingFileParser
             ->expects(self::never())
-            ->method('getDeviceCode');
+            ->method('init');
+        $mappingFileParser
+            ->expects(self::never())
+            ->method('getItem');
 
         $logger = $this->createMock(LoggerInterface::class);
         $logger
@@ -186,7 +195,7 @@ final class XUcbrowserDevice2Test extends TestCase
         $xUcbrowserDevice = new XUcbrowserDevice(
             deviceParser: $deviceParser,
             normalizer: $normalizer,
-            device: $deviceCodeHelper,
+            mappingFileParser: $mappingFileParser,
             logger: $logger,
             autoUpdate: false,
         );

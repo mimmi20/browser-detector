@@ -15,8 +15,8 @@ namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Data\Engine;
 use BrowserDetector\Data\Os;
+use BrowserDetector\Loader\MappingfileLoaderInterface;
 use BrowserDetector\Parser\Header\XUcbrowserDevice;
-use BrowserDetector\Parser\Helper\DeviceInterface;
 use BrowserDetector\Version\NullVersion;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -71,10 +71,13 @@ final class XUcbrowserDevice1Test extends TestCase
             ->with($normalitedUa)
             ->willReturn($deviceCode);
 
-        $deviceCodeHelper = $this->createMock(DeviceInterface::class);
-        $deviceCodeHelper
+        $mappingFileParser = $this->createMock(MappingfileLoaderInterface::class);
+        $mappingFileParser
             ->expects($searchCode ? self::once() : self::never())
-            ->method('getDeviceCode')
+            ->method('init');
+        $mappingFileParser
+            ->expects($searchCode ? self::once() : self::never())
+            ->method('getItem')
             ->with(mb_strtolower($normalitedUa))
             ->willReturn(value: null);
 
@@ -106,7 +109,7 @@ final class XUcbrowserDevice1Test extends TestCase
             deviceCode: new XUcbrowserDevice(
                 deviceParser: $deviceParser,
                 normalizer: $normalizerChain,
-                device: $deviceCodeHelper,
+                mappingFileParser: $mappingFileParser,
                 logger: $logger,
                 autoUpdate: false,
             ),

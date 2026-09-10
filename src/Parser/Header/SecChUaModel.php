@@ -13,7 +13,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
-use BrowserDetector\Parser\Helper\Device;
+use BrowserDetector\Loader\MappingfileLoaderInterface;
 use Override;
 use Psr\Log\LoggerInterface;
 use RuntimeException;
@@ -30,7 +30,7 @@ final readonly class SecChUaModel implements DeviceCodeInterface
 
     /** @throws void */
     public function __construct(
-        private Device $device,
+        private MappingfileLoaderInterface $mappingFileParser,
         private LoggerInterface $logger,
         private bool $autoUpdate = false,
     ) {
@@ -54,13 +54,12 @@ final readonly class SecChUaModel implements DeviceCodeInterface
     /**
      * @return non-empty-string|null
      *
-     * @throws RuntimeException
+     * @throws void
      */
     #[Override]
     public function getDeviceCode(string $value): string | null
     {
-        $value = mb_trim($value, '"\\\'');
-        $code  = mb_strtolower($value);
+        $code = mb_trim(mb_strtolower($value), '"\\\'');
 
         return match ($code) {
             // special case
@@ -75,11 +74,17 @@ final readonly class SecChUaModel implements DeviceCodeInterface
     /**
      * @return non-empty-string|null
      *
-     * @throws RuntimeException
+     * @throws void
      */
     private function getCode(string $code): string | null
     {
-        $devicecode = $this->device->getDeviceCode($code);
+        try {
+            $this->mappingFileParser->init();
+        } catch (RuntimeException) {
+            return null;
+        }
+
+        $devicecode = $this->mappingFileParser->getItem($code);
 
         if ($devicecode !== null && $this->autoUpdate) {
             $this->saveToMappingJson($code, $devicecode);

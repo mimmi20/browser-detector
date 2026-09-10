@@ -26,6 +26,7 @@ use BrowserDetector\Parser\BrowserParserFactory;
 use BrowserDetector\Parser\DeviceParserFactory;
 use BrowserDetector\Parser\EngineParserFactory;
 use BrowserDetector\Parser\Header\HeaderLoader;
+use BrowserDetector\Parser\Helper\RulefileParser;
 use BrowserDetector\Parser\PlatformParserFactory;
 use BrowserDetector\Version\VersionBuilder;
 use Laminas\Hydrator\ArraySerializableHydrator;
@@ -78,7 +79,9 @@ final class DetectorFactory
                 companyLoader: $companyLoader,
             );
 
-            $deviceParserFactory = new DeviceParserFactory(logger: $this->logger);
+            $ruleFileParser = new RulefileParser(logger: $this->logger);
+
+            $deviceParserFactory = new DeviceParserFactory(rulefileParser: $ruleFileParser);
             $deviceParser        = $deviceParserFactory();
 
             $engineLoader = new EngineLoader(
@@ -87,27 +90,17 @@ final class DetectorFactory
                 versionBuilder: new VersionBuilder(),
             );
 
-            $engineParserFactory = new EngineParserFactory(logger: $this->logger);
+            $engineParserFactory = new EngineParserFactory(rulefileParser: $ruleFileParser);
             $engineParser        = $engineParserFactory();
 
             $browserLoader = new BrowserLoader(
                 logger: $this->logger,
-                initData: new Data\Client(
-                    strategy: new StrategyChain(
-                        [
-                            new CollectionStrategy(
-                                new ArraySerializableHydrator(),
-                                DataClient::class,
-                            ),
-                            $serializableStrategy,
-                        ],
-                    ),
-                ),
+                initData: new Data\Client(),
                 companyLoader: $companyLoader,
                 versionBuilder: new VersionBuilder(),
             );
 
-            $browserParserFactory = new BrowserParserFactory(logger: $this->logger);
+            $browserParserFactory = new BrowserParserFactory(rulefileParser: $ruleFileParser);
             $browserParser        = $browserParserFactory();
 
             $normalizerFactory = new NormalizerFactory();

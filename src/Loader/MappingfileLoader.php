@@ -21,6 +21,7 @@ use RecursiveIteratorIterator;
 use RuntimeException;
 use SplFileInfo;
 
+use Symfony\Component\Yaml\Yaml;
 use function array_key_exists;
 use function assert;
 use function file_get_contents;
@@ -55,7 +56,7 @@ final class MappingfileLoader implements MappingfileLoaderInterface
         }
 
         $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator(self::DATA_PATH));
-        $files    = new FilterIterator($iterator, 'json');
+        $files    = new FilterIterator($iterator, 'yaml');
 
         foreach ($files as $file) {
             assert($file instanceof SplFileInfo);
@@ -64,24 +65,7 @@ final class MappingfileLoader implements MappingfileLoaderInterface
             $filepath = str_replace('\\', '/', $pathName);
             assert(is_string($filepath));
 
-            $content = @file_get_contents($filepath);
-
-            assert($content === false || is_string($content));
-
-            if ($content === false) {
-                throw new RuntimeException(sprintf('could not read file "%s"', $file));
-            }
-
-            try {
-                $fileData = json_decode(
-                    $content,
-                    associative: true,
-                    depth: 512,
-                    flags: JSON_THROW_ON_ERROR,
-                );
-            } catch (JsonException $e) {
-                throw new RuntimeException(sprintf('could not decode file "%s"', $file), 0, $e);
-            }
+            $fileData = Yaml::parseFile($filepath);
 
             assert(is_array($fileData));
 

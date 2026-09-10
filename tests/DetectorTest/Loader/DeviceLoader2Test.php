@@ -70,33 +70,6 @@ final class DeviceLoader2Test extends TestCase
             ->method('emergency');
 
         $initData = new DeviceData(
-            strategy: new class () implements StrategyInterface {
-                /**
-                 * @throws void
-                 *
-                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-                 */
-                #[Override]
-                public function extract(mixed $value, object | null $object = null): null
-                {
-                    return null;
-                }
-
-                /**
-                 * @param array<mixed>|null $data
-                 *
-                 * @return array<string, mixed>
-                 *
-                 * @throws void
-                 *
-                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-                 */
-                #[Override]
-                public function hydrate(mixed $value, array | null $data): array
-                {
-                    return [];
-                }
-            },
             company: 'test-company',
         );
 
@@ -192,33 +165,6 @@ final class DeviceLoader2Test extends TestCase
             ->method('emergency');
 
         $initData = new DeviceData(
-            strategy: new class () implements StrategyInterface {
-                /**
-                 * @throws void
-                 *
-                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-                 */
-                #[Override]
-                public function extract(mixed $value, object | null $object = null): null
-                {
-                    return null;
-                }
-
-                /**
-                 * @param array<mixed>|null $data
-                 *
-                 * @return array<string, mixed>
-                 *
-                 * @throws void
-                 *
-                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-                 */
-                #[Override]
-                public function hydrate(mixed $value, array | null $data): array
-                {
-                    return [];
-                }
-            },
             company: 'test-company',
         );
 

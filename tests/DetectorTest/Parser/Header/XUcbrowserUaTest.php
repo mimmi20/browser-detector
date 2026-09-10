@@ -24,7 +24,6 @@ use BrowserDetector\Parser\Header\XUcbrowserUaEngineCode;
 use BrowserDetector\Parser\Header\XUcbrowserUaEngineVersion;
 use BrowserDetector\Parser\Header\XUcbrowserUaPlatformCode;
 use BrowserDetector\Parser\Header\XUcbrowserUaPlatformVersion;
-use BrowserDetector\Parser\Helper\Device;
 use BrowserDetector\Version\ForcedNullVersion;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\CoversTrait;
@@ -50,7 +49,6 @@ use function sprintf;
 #[CoversClass(className: XUcbrowserUaEngineVersion::class)]
 #[CoversClass(className: XUcbrowserUaPlatformCode::class)]
 #[CoversClass(className: XUcbrowserUaPlatformVersion::class)]
-#[CoversClass(className: Device::class)]
 #[CoversTrait(traitName: SetVersionTrait::class)]
 final class XUcbrowserUaTest extends TestCase
 {
@@ -139,7 +137,7 @@ final class XUcbrowserUaTest extends TestCase
             value: $ua,
             deviceCode: new XUcbrowserUaDeviceCode(
                 deviceParser: $deviceParser,
-                device: new Device($mappingFileParser),
+                mappingFileParser: $mappingFileParser,
                 logger: $logger,
                 autoUpdate: false,
             ),
@@ -1281,7 +1279,7 @@ final class XUcbrowserUaTest extends TestCase
             value: $ua,
             deviceCode: new XUcbrowserUaDeviceCode(
                 deviceParser: $deviceParser,
-                device: new Device($mappingFileParser),
+                mappingFileParser: $mappingFileParser,
                 logger: $logger,
                 autoUpdate: false,
             ),

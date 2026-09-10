@@ -20,9 +20,9 @@ use function sprintf;
 
 final readonly class TvParser implements TvParserInterface
 {
-    private const string GENERIC_FILE = __DIR__ . '/../../../data/factories/devices/tv.json';
+    private const string GENERIC_FILE = __DIR__ . '/../../../data/factories/devices/tv.yaml';
 
-    private const string SPECIFIC_FILE = __DIR__ . '/../../../data/factories/devices/tv/%s.json';
+    private const string SPECIFIC_FILE = __DIR__ . '/../../../data/factories/devices/tv/%s.yaml';
 
     /** @throws void */
     public function __construct(private RulefileParserInterface $rulefileParser)

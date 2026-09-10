@@ -22,6 +22,11 @@ use RecursiveIteratorIterator;
 use RuntimeException;
 use SplFileInfo;
 
+use Symfony\Component\Yaml\Yaml;
+use UaDeviceType\Type;
+use UaResult\Bits\Bits;
+use UaResult\Device\Architecture;
+use UaResult\Device\Display;
 use function array_key_exists;
 use function assert;
 use function file_get_contents;
@@ -39,7 +44,7 @@ final class Device implements DataInterface
     private bool $initialized = false;
 
     /** @throws void */
-    public function __construct(private readonly StrategyInterface $strategy, private readonly string $company)
+    public function __construct(private readonly string $company)
     {
         // nothing to do
     }
@@ -55,7 +60,7 @@ final class Device implements DataInterface
         $iterator = new RecursiveIteratorIterator(
             new RecursiveDirectoryIterator(self::DATA_PATH . $this->company),
         );
-        $files    = new FilterIterator($iterator, 'json');
+        $files    = new FilterIterator($iterator, 'yaml');
 
         foreach ($files as $file) {
             assert($file instanceof SplFileInfo);
@@ -64,15 +69,7 @@ final class Device implements DataInterface
             $filepath = str_replace('\\', '/', $pathName);
             assert(is_string($filepath));
 
-            $content = @file_get_contents($filepath);
-
-            assert($content === false || is_string($content));
-
-            if ($content === false) {
-                throw new RuntimeException(sprintf('could not read file "%s"', $file));
-            }
-
-            $fileData = $this->strategy->hydrate($content, []);
+            $fileData = Yaml::parseFile($filepath);
 
             assert(is_array($fileData));
 
@@ -83,11 +80,19 @@ final class Device implements DataInterface
                     continue;
                 }
 
-                if (!$data instanceof DataDevice) {
-                    continue;
-                }
-
-                $this->items[$stringKey] = $data;
+                $this->items[$stringKey] = new DataDevice(
+                    architecture: Architecture::from($data['architecture'] ?? ''),
+                    deviceName: $data['deviceName'],
+                    marketingName: $data['marketingName'],
+                    manufacturer: $data['manufacturer'],
+                    brand: $data['brand'],
+                    type: Type::from($data['type'] ?? ''),
+                    display: $data['display'],
+                    dualOrientation: $data['dualOrientation'],
+                    simCount: $data['simCount'],
+                    bits: Bits::from($data['bits'] ?? 0),
+                    platform: $data['platform'],
+                );
             }
         }
 

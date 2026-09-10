@@ -31,17 +31,7 @@ final class CompanyLoaderFactory implements CompanyLoaderFactoryInterface
     {
         if (!$this->companyLoader instanceof CompanyLoader) {
             $this->companyLoader = new CompanyLoader(
-                initData: new Data\Company(
-                    strategy: new StrategyChain(
-                        [
-                            new CollectionStrategy(
-                                new ArraySerializableHydrator(),
-                                DataCompany::class,
-                            ),
-                            $strategy,
-                        ],
-                    ),
-                ),
+                initData: new Data\Company(),
             );
         }
 

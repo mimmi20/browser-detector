@@ -15,6 +15,7 @@ namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Data\Engine;
 use BrowserDetector\Data\Os;
+use BrowserDetector\Loader\MappingfileLoaderInterface;
 use BrowserDetector\Parser\Header\UseragentClientCode;
 use BrowserDetector\Parser\Header\UseragentClientVersion;
 use BrowserDetector\Parser\Header\UseragentDeviceCode;
@@ -22,7 +23,6 @@ use BrowserDetector\Parser\Header\UseragentEngineCode;
 use BrowserDetector\Parser\Header\UseragentEngineVersion;
 use BrowserDetector\Parser\Header\UseragentPlatformCode;
 use BrowserDetector\Parser\Header\UseragentPlatformVersion;
-use BrowserDetector\Parser\Helper\DeviceInterface;
 use BrowserDetector\Version\ForcedNullVersion;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -148,10 +148,13 @@ final class Useragent1Test extends TestCase
             ->expects(self::never())
             ->method('loadFromEngine');
 
-        $deviceCodeHelper = $this->createMock(DeviceInterface::class);
-        $deviceCodeHelper
+        $mappingFileParser = $this->createMock(MappingfileLoaderInterface::class);
+        $mappingFileParser
+            ->expects(self::once())
+            ->method('init');
+        $mappingFileParser
             ->expects(self::exactly(2))
-            ->method('getDeviceCode')
+            ->method('getItem')
             ->willReturnMap(
                 [
                     [new StringStartsWith('pf'), null],
@@ -168,7 +171,7 @@ final class Useragent1Test extends TestCase
             deviceCode: new UseragentDeviceCode(
                 deviceParser: $deviceParser,
                 normalizer: $normalizerChain,
-                device: $deviceCodeHelper,
+                mappingFileParser: $mappingFileParser,
                 logger: $logger,
                 autoUpdate: false,
             ),
@@ -611,10 +614,13 @@ final class Useragent1Test extends TestCase
             ->expects(self::never())
             ->method('loadFromEngine');
 
-        $deviceCodeHelper = $this->createMock(DeviceInterface::class);
-        $deviceCodeHelper
-            ->expects(self::exactly(2))
-            ->method('getDeviceCode')
+        $mappingFileParser = $this->createMock(MappingfileLoaderInterface::class);
+        $mappingFileParser
+            ->expects(self::once())
+            ->method('init');
+        $mappingFileParser
+            ->expects(self::exactly(3))
+            ->method('getItem')
             ->willReturnMap(
                 [
                     [new StringStartsWith('pf'), null],
@@ -631,7 +637,7 @@ final class Useragent1Test extends TestCase
             deviceCode: new UseragentDeviceCode(
                 deviceParser: $deviceParser,
                 normalizer: $normalizerChain,
-                device: $deviceCodeHelper,
+                mappingFileParser: $mappingFileParser,
                 logger: $logger,
                 autoUpdate: false,
             ),

@@ -17,7 +17,6 @@ use BrowserDetector\Data\Engine;
 use BrowserDetector\Data\Os;
 use BrowserDetector\Loader\MappingfileLoaderInterface;
 use BrowserDetector\Parser\Header\SecChUaModel;
-use BrowserDetector\Parser\Helper\Device;
 use BrowserDetector\Version\NullVersion;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -83,7 +82,7 @@ final class SecChUaModelTest extends TestCase
         $deviceCodeOnlyHeader = new DeviceCodeOnlyHeader(
             value: $ua,
             deviceCode: new SecChUaModel(
-                device: new Device(mappingFileParser: $mappingFileParser),
+                mappingFileParser: $mappingFileParser,
                 logger: $logger,
                 autoUpdate: false,
             ),
@@ -2171,7 +2170,7 @@ final class SecChUaModelTest extends TestCase
         $deviceCodeOnlyHeader = new DeviceCodeOnlyHeader(
             value: $ua,
             deviceCode: new SecChUaModel(
-                device: new Device(mappingFileParser: $mappingFileParser),
+                mappingFileParser: $mappingFileParser,
                 logger: $logger,
                 autoUpdate: false,
             ),

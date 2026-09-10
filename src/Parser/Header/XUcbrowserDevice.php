@@ -13,9 +13,10 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
-use BrowserDetector\Parser\Helper\DeviceInterface;
+use BrowserDetector\Loader\MappingfileLoaderInterface;
 use Override;
 use Psr\Log\LoggerInterface;
+use RuntimeException;
 use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\Normalizer\NormalizerInterface;
 use UaParser\DeviceCodeInterface;
@@ -34,7 +35,7 @@ final readonly class XUcbrowserDevice implements DeviceCodeInterface
     public function __construct(
         private DeviceParserInterface $deviceParser,
         private NormalizerInterface $normalizer,
-        private DeviceInterface $device,
+        private MappingfileLoaderInterface $mappingFileParser,
         private LoggerInterface $logger,
         private bool $autoUpdate = false,
     ) {
@@ -66,11 +67,21 @@ final readonly class XUcbrowserDevice implements DeviceCodeInterface
             return null;
         }
 
-        $code = $this->device->getDeviceCode(mb_strtolower($normalizedValue));
+        $find = $normalizedValue
+                |> mb_strtolower(...)
+                |> mb_trim(...);
+
+        try {
+            $this->mappingFileParser->init();
+        } catch (RuntimeException) {
+            return null;
+        }
+
+        $code = $this->mappingFileParser->getItem($find);
 
         if (is_string($code)) {
             if ($this->autoUpdate) {
-                $this->saveToMappingJson(mb_trim(mb_strtolower($normalizedValue)), $code);
+                $this->saveToMappingJson($find, $code);
             }
 
             return $code;
@@ -83,7 +94,7 @@ final readonly class XUcbrowserDevice implements DeviceCodeInterface
         }
 
         if ($this->autoUpdate) {
-            $this->saveToMappingJson(mb_trim(mb_strtolower($normalizedValue)), $code);
+            $this->saveToMappingJson($find, $code);
         }
 
         return $code;
