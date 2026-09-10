@@ -17,8 +17,6 @@ use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\Data\Company as CompanyData;
 use BrowserDetector\Loader\Data\DataInterface;
 use BrowserDetector\Loader\InitData\Company as DataCompany;
-use Laminas\Hydrator\Strategy\StrategyInterface;
-use Override;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;

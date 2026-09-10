@@ -13,13 +13,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader;
 
-use BrowserDetector\Loader\InitData\Device as DataDevice;
-use Laminas\Hydrator\ArraySerializableHydrator;
 use Laminas\Hydrator\Exception\InvalidArgumentException;
-use Laminas\Hydrator\Strategy\CollectionStrategy;
-use Laminas\Hydrator\Strategy\SerializableStrategy;
-use Laminas\Hydrator\Strategy\StrategyChain;
-use Laminas\Serializer\Adapter\Json;
 use Override;
 use Psr\Log\LoggerInterface;
 use UaLoader\DeviceLoaderInterface;

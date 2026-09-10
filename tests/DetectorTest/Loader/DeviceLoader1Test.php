@@ -18,8 +18,6 @@ use BrowserDetector\Loader\Data\DataInterface;
 use BrowserDetector\Loader\Data\Device as DeviceData;
 use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetector\Loader\InitData\Device as DataDevice;
-use Laminas\Hydrator\Strategy\StrategyInterface;
-use Override;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
@@ -69,9 +67,7 @@ final class DeviceLoader1Test extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $device = new DeviceData(
-            company: 'test-company',
-        );
+        $device = new DeviceData(company: 'test-company');
 
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
         $companyLoader
@@ -121,9 +117,7 @@ final class DeviceLoader1Test extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $device = new DeviceData(
-            company: 'test-company',
-        );
+        $device = new DeviceData(company: 'test-company');
 
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
         $companyLoader
@@ -232,9 +226,7 @@ final class DeviceLoader1Test extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = new DeviceData(
-            company: 'test-company',
-        );
+        $initData = new DeviceData(company: 'test-company');
 
         $platformData = new DataDevice(
             architecture: Architecture::unknown,
@@ -330,9 +322,7 @@ final class DeviceLoader1Test extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = new DeviceData(
-            company: 'test-company',
-        );
+        $initData = new DeviceData(company: 'test-company');
 
         $platformData = new DataDevice(
             architecture: Architecture::unknown,
@@ -424,9 +414,7 @@ final class DeviceLoader1Test extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = new DeviceData(
-            company: 'test-company',
-        );
+        $initData = new DeviceData(company: 'test-company');
 
         $platformData = new DataDevice(
             architecture: Architecture::unknown,
@@ -518,9 +506,7 @@ final class DeviceLoader1Test extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = new DeviceData(
-            company: 'test-company',
-        );
+        $initData = new DeviceData(company: 'test-company');
 
         $platformData = new DataDevice(
             architecture: Architecture::unknown,
@@ -668,9 +654,7 @@ final class DeviceLoader1Test extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = new DeviceData(
-            company: 'test-company',
-        );
+        $initData = new DeviceData(company: 'test-company');
 
         $platformData = new DataDevice(
             architecture: Architecture::unknown,

@@ -13,24 +13,13 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader\Data;
 
-use BrowserDetector\Iterator\FilterIterator;
 use BrowserDetector\Loader\InitData\Company as DataCompany;
-use Laminas\Hydrator\Strategy\StrategyInterface;
 use Override;
-use RecursiveDirectoryIterator;
-use RecursiveIteratorIterator;
 use RuntimeException;
-use SplFileInfo;
 use Symfony\Component\Yaml\Yaml;
 use UnexpectedValueException;
 
 use function array_key_exists;
-use function assert;
-use function file_get_contents;
-use function is_array;
-use function is_string;
-use function sprintf;
-use function str_replace;
 
 final class Company implements DataInterface
 {

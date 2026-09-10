@@ -20,7 +20,6 @@ use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\LoggerInterface;
 use UaParser\DeviceParserInterface;
 
 #[CoversClass(className: DeviceParserFactory::class)]

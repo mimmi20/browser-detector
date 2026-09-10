@@ -16,15 +16,12 @@ namespace BrowserDetector\Parser;
 use BrowserDetector\Helper\Desktop;
 use BrowserDetector\Helper\MobileDevice;
 use BrowserDetector\Helper\Tv;
-use BrowserDetector\Iterator\FilterIterator;
 use BrowserDetector\Parser\Device\DarwinParser;
 use BrowserDetector\Parser\Device\DesktopParser;
 use BrowserDetector\Parser\Device\MobileParser;
 use BrowserDetector\Parser\Device\TvParser;
-use BrowserDetector\Parser\Helper\RulefileParser;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use Override;
-use Psr\Log\LoggerInterface;
 use UaParser\DeviceParserInterface;
 
 final readonly class DeviceParserFactory implements DeviceParserFactoryInterface
@@ -43,25 +40,10 @@ final readonly class DeviceParserFactory implements DeviceParserFactoryInterface
     #[Override]
     public function __invoke(): DeviceParserInterface
     {
-        $darwinParser   = new DarwinParser(rulefileParser: $this->rulefileParser);
-        $mobileParser   = new MobileParser(rulefileParser: $this->rulefileParser);
-        $tvParser       = new TvParser(rulefileParser: $this->rulefileParser);
-        $desktopParser  = new DesktopParser(rulefileParser: $this->rulefileParser);
-
-        $iterator = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator(__DIR__ . '/../../data/factories'));
-        $files    = new FilterIterator($iterator, 'json');
-
-        foreach ($files as $file) {
-            assert($file instanceof \SplFileInfo);
-
-            $pathName = $file->getPathname();
-            $filepath = str_replace('\\', '/', $pathName);
-            assert(is_string($filepath));
-
-            $this->rulefileParser->parseFile(str_replace('json', 'yaml', $filepath), '', 'unknown');
-
-            unlink($filepath);
-        }
+        $darwinParser  = new DarwinParser(rulefileParser: $this->rulefileParser);
+        $mobileParser  = new MobileParser(rulefileParser: $this->rulefileParser);
+        $tvParser      = new TvParser(rulefileParser: $this->rulefileParser);
+        $desktopParser = new DesktopParser(rulefileParser: $this->rulefileParser);
 
         return new DeviceParser(
             darwinParser: $darwinParser,

@@ -36,9 +36,17 @@ use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\CacheInterface;
 use Psr\SimpleCache\InvalidArgumentException;
+use RecursiveDirectoryIterator;
+use RecursiveIteratorIterator;
 use RuntimeException;
+use SplFileInfo;
 use Symfony\Component\Yaml\Yaml;
 use UnexpectedValueException;
+
+use function assert;
+use function is_array;
+use function is_string;
+use function str_replace;
 
 /** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */
 #[CoversClass(className: Detector::class)]
@@ -136,12 +144,14 @@ final class DetectorIntegrationTest extends TestCase
      */
     public static function providerUa(): array
     {
-        $iterator = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator('data/integation-tests'));
+        $iterator = new RecursiveIteratorIterator(
+            new RecursiveDirectoryIterator('data/integation-tests'),
+        );
         $files    = new FilterIterator($iterator, 'yaml');
         $data     = [];
 
         foreach ($files as $file) {
-            assert($file instanceof \SplFileInfo);
+            assert($file instanceof SplFileInfo);
 
             $pathName = $file->getPathname();
             $filepath = str_replace('\\', '/', $pathName);

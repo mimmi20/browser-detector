@@ -14,24 +14,18 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Iterator\FilterIterator;
-use JsonException;
 use Override;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use RuntimeException;
 use SplFileInfo;
-
 use Symfony\Component\Yaml\Yaml;
+
 use function array_key_exists;
 use function assert;
-use function file_get_contents;
 use function is_array;
 use function is_string;
-use function json_decode;
-use function sprintf;
 use function str_replace;
-
-use const JSON_THROW_ON_ERROR;
 
 final class MappingfileLoader implements MappingfileLoaderInterface
 {

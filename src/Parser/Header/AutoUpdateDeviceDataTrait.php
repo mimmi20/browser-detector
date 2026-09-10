@@ -27,21 +27,12 @@ use function array_key_exists;
 use function assert;
 use function explode;
 use function file_exists;
-use function file_get_contents;
 use function file_put_contents;
 use function is_array;
 use function is_string;
-use function json_decode;
-use function json_encode;
 use function sprintf;
 use function str_contains;
 use function str_replace;
-
-use const JSON_PRETTY_PRINT;
-use const JSON_THROW_ON_ERROR;
-use const JSON_UNESCAPED_SLASHES;
-use const JSON_UNESCAPED_UNICODE;
-use const PHP_EOL;
 
 /** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */
 trait AutoUpdateDeviceDataTrait

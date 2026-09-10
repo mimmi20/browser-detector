@@ -15,24 +15,20 @@ namespace BrowserDetector\Loader\Data;
 
 use BrowserDetector\Iterator\FilterIterator;
 use BrowserDetector\Loader\InitData\Device as DataDevice;
-use Laminas\Hydrator\Strategy\StrategyInterface;
 use Override;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use RuntimeException;
 use SplFileInfo;
-
 use Symfony\Component\Yaml\Yaml;
 use UaDeviceType\Type;
 use UaResult\Bits\Bits;
 use UaResult\Device\Architecture;
-use UaResult\Device\Display;
+
 use function array_key_exists;
 use function assert;
-use function file_get_contents;
 use function is_array;
 use function is_string;
-use function sprintf;
 use function str_replace;
 
 final class Device implements DataInterface

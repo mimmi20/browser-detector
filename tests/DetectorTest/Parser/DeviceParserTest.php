@@ -30,11 +30,9 @@ use BrowserDetector\Parser\Device\TvParserInterface;
 use BrowserDetector\Parser\DeviceParser;
 use BrowserDetector\Parser\Helper\RulefileParser;
 use PHPUnit\Framework\Attributes\CoversClass;
-use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\LoggerInterface;
 
 #[CoversClass(className: DeviceParser::class)]
 #[CoversClass(className: DesktopParser::class)]

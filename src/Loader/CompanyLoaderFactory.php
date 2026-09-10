@@ -13,11 +13,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader;
 
-use BrowserDetector\Loader\InitData\Company as DataCompany;
-use Laminas\Hydrator\ArraySerializableHydrator;
 use Laminas\Hydrator\Exception\InvalidArgumentException;
-use Laminas\Hydrator\Strategy\CollectionStrategy;
-use Laminas\Hydrator\Strategy\StrategyChain;
 use Laminas\Hydrator\Strategy\StrategyInterface;
 use Override;
 

@@ -13,10 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser;
 
-use BrowserDetector\Parser\Helper\RulefileParser;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use Override;
-use Psr\Log\LoggerInterface;
 use UaParser\BrowserParserInterface;
 
 final readonly class BrowserParserFactory implements BrowserParserFactoryInterface
@@ -35,8 +33,6 @@ final readonly class BrowserParserFactory implements BrowserParserFactoryInterfa
     #[Override]
     public function __invoke(): BrowserParserInterface
     {
-        return new BrowserParser(
-            rulefileParser: $this->rulefileParser,
-        );
+        return new BrowserParser(rulefileParser: $this->rulefileParser);
     }
 }

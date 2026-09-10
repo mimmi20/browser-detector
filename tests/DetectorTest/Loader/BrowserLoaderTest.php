@@ -20,8 +20,6 @@ use BrowserDetector\Loader\Data\DataInterface;
 use BrowserDetector\Loader\InitData\Client as DataClient;
 use BrowserDetector\Version\TestFactory;
 use BrowserDetector\Version\VersionBuilderInterface;
-use Laminas\Hydrator\Strategy\StrategyInterface;
-use Override;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;

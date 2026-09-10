@@ -15,20 +15,17 @@ namespace BrowserDetector\Loader\Data;
 
 use BrowserDetector\Iterator\FilterIterator;
 use BrowserDetector\Loader\InitData\Client as DataClient;
-use Laminas\Hydrator\Strategy\StrategyInterface;
 use Override;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use RuntimeException;
 use SplFileInfo;
-
 use Symfony\Component\Yaml\Yaml;
+
 use function array_key_exists;
 use function assert;
-use function file_get_contents;
 use function is_array;
 use function is_string;
-use function sprintf;
 use function str_replace;
 
 final class Client implements DataInterface
@@ -77,7 +74,7 @@ final class Client implements DataInterface
                 $this->items[$stringKey] = new DataClient(
                     name: $data['name'],
                     manufacturer: $data['manufacturer'],
-                    version: (array_key_exists('version', $data) && is_array($data['version']))
+                    version: array_key_exists('version', $data) && is_array($data['version'])
                         ? (object) $data['version']
                         : null,
                     type: $data['type'],
