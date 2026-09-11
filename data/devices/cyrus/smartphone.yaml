@@ -124,3 +124,31 @@
     size: 4.7
   type: smartphone
   platform: android
+'cyrus cs45xa':
+  deviceName: CS45XA
+  marketingName: CS45XA
+  manufacturer: cyrus
+  brand: cyrus
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 1920
+    height: 1080
+    touch: true
+    size: 5
+  type: smartphone
+  platform: android
+'cyrus cs45xa_eea':
+  deviceName: CS45XA_EEA
+  marketingName: CS45XA
+  manufacturer: cyrus
+  brand: cyrus
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 1920
+    height: 1080
+    touch: true
+    size: 5
+  type: smartphone
+  platform: android

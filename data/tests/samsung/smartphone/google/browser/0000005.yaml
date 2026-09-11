@@ -1,5 +1,43 @@
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 9; SM-A305GN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SM-A305GN
+    marketingName: 'Galaxy A30'
+    manufacturer: Samsung
+    brand: Samsung
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 2340
+      height: 1080
+      touch: true
+      size: 6.4
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: Google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 95.0.4638.74
+    manufacturer: Google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 95.0.4638.74
+    manufacturer: Google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-A326U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36'
   device:
     architecture: null
@@ -3782,42 +3820,4 @@
   engine:
     name: Blink
     version: 100.0.4896.127
-    manufacturer: Google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-M236Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.61 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: SM-M236Q
-    marketingName: 'Galaxy M23 5G'
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: 2408
-      height: 1080
-      touch: true
-      size: 6.6
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: Google
-    bits: null
-  client:
-    name: Chrome
-    modus: null
-    version: 101.0.4951.61
-    manufacturer: Google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 101.0.4951.61
     manufacturer: Google

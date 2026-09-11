@@ -38,6 +38,44 @@
     manufacturer: Apple
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 4.1.2; fr-fr; Xperia Arc S Build/JZO54K; CyanogenMod-10) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: CyanogenMod
+    marketingName: CyanogenMod
+    version: 10.0.0
+    manufacturer: unknown
+    bits: null
+  client:
+    name: 'Android Webkit'
+    modus: null
+    version: 4.0.0
+    manufacturer: Google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 534.30.0
+    manufacturer: Apple
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 4.1.2; de-ch; Xperia Mini Pro Build/JZO54K; CyanogenMod-10) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30'
   device:
     architecture: null
@@ -532,6 +570,44 @@
     manufacturer: Google
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 9.0; SP-9600B Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: Google
+    bits: null
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 30.0.0.0
+    manufacturer: Google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 30.0.0.0
+    manufacturer: Google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Windows CE) AppleWebKit/5341 (KHTML, like Gecko) Chrome/38.0.811.0 Mobile Safari/5341'
   device:
     architecture: null
@@ -609,6 +685,44 @@
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 4.1.2; de-de; Xperia Mini Pro Build/JZO54K; CyanogenMod-10) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: CyanogenMod
+    marketingName: CyanogenMod
+    version: 10.0.0
+    manufacturer: unknown
+    bits: null
+  client:
+    name: 'Android Webkit'
+    modus: null
+    version: 4.0.0
+    manufacturer: Google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 534.30.0
+    manufacturer: Apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 4.1.2; de-de; Xperia Arc S Build/JZO54K; CyanogenMod-10) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -1824,6 +1938,82 @@
     manufacturer: Apple
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 4.3; de-de; Xperia Arc S Build/JSS15Q) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 CyanogenMod/10.2.0/anzu'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: CyanogenMod
+    marketingName: CyanogenMod
+    version: 10.2.0
+    manufacturer: unknown
+    bits: null
+  client:
+    name: 'Android Webkit'
+    modus: null
+    version: 4.0.0
+    manufacturer: Google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 534.30.0
+    manufacturer: Apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 4.3.1; de-de; Xperia Arc S Build/JLS36I) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 CyanogenMod/10.2/anzu'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: CyanogenMod
+    marketingName: CyanogenMod
+    version: 10.2.0
+    manufacturer: unknown
+    bits: null
+  client:
+    name: 'Android Webkit'
+    modus: null
+    version: 4.0.0
+    manufacturer: Google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 534.30.0
+    manufacturer: Apple
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 4.1.2; de-de; Notion Ink ADAM Build/JZO54K; CyanogenMod-10) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30'
   device:
     architecture: null
@@ -2356,6 +2546,44 @@
     manufacturer: Apple
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 4.3.1; de-de; Xperia Arc S Build/JLS36I) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 CyanogenMod/BeanStalk-4.3.1015/anzu'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: CyanogenMod
+    marketingName: CyanogenMod
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: 'Android Webkit'
+    modus: null
+    version: 4.0.0
+    manufacturer: Google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 534.30.0
+    manufacturer: Apple
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 4.0.4; de-de; LiveWithWalkman Build/IMM76L; CyanogenMod-9.1.0) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30'
   device:
     architecture: null
@@ -2492,6 +2720,44 @@
     name: CyanogenMod
     marketingName: CyanogenMod
     version: 10.1.0
+    manufacturer: unknown
+    bits: null
+  client:
+    name: 'Android Webkit'
+    modus: null
+    version: 4.0.0
+    manufacturer: Google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 534.30.0
+    manufacturer: Apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 4.1.2; en-gb; Xperia Arc S Build/JZO54K; CyanogenMod-10) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: CyanogenMod
+    marketingName: CyanogenMod
+    version: 10.0.0
     manufacturer: unknown
     bits: null
   client:
@@ -3230,6 +3496,44 @@
     manufacturer: Apple
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; Xperia Arc S Build/JDQ39E) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 CyanogenMod/10.1/anzu'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: CyanogenMod
+    marketingName: CyanogenMod
+    version: 10.1.0
+    manufacturer: unknown
+    bits: null
+  client:
+    name: 'Android Webkit'
+    modus: null
+    version: 4.0.0
+    manufacturer: Google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 534.30.0
+    manufacturer: Apple
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 4.0.4; de-de; Mini Build/IMM76L; CyanogenMod-9.1.0) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30'
   device:
     architecture: null
@@ -3493,308 +3797,4 @@
   engine:
     name: WebKit
     version: 534.30.0
-    manufacturer: Apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; U; Android 2.3.7; de-de; SN10T2 Build/GINGERBREAD; CyanogenMod-7.2.0) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: CyanogenMod
-    marketingName: CyanogenMod
-    version: 7.2.0
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Android Webkit'
-    modus: null
-    version: 4.0.0
-    manufacturer: Google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 533.1.0
-    manufacturer: Apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; U; Android 4.0.4; de-de; Ray Build/IMM76L; CyanogenMod-9.1.0) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: CyanogenMod
-    marketingName: CyanogenMod
-    version: 9.1.0
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Android Webkit'
-    modus: null
-    version: 4.0.0
-    manufacturer: Google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 534.30.0
-    manufacturer: Apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; U; Android 4.0.4; de-de; MiniPro Build/IMM76L; CyanogenMod-9.1.0) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: CyanogenMod
-    marketingName: CyanogenMod
-    version: 9.1.0
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Android Webkit'
-    modus: null
-    version: 4.0.0
-    manufacturer: Google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 534.30.0
-    manufacturer: Apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; U; Android 2.3.7; ru-ru; HD2 Build/GRI40; CyanogenMod-7.2.0) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: CyanogenMod
-    marketingName: CyanogenMod
-    version: 7.2.0
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Android Webkit'
-    modus: null
-    version: 4.0.0
-    manufacturer: Google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 533.1.0
-    manufacturer: Apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; U; Android v1.02_15.14-EN@20110419; de-at; TAB210 Build/ECLAIR) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: Google
-    bits: null
-  client:
-    name: 'Android Webkit'
-    modus: null
-    version: 4.0.0
-    manufacturer: Google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 530.17.0
-    manufacturer: Apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; U; Android v1.02_14.13_M_EN-2011.01.10; de-de; M-301 Build/ECLAIR) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: Google
-    bits: null
-  client:
-    name: 'Android Webkit'
-    modus: null
-    version: 4.0.0
-    manufacturer: Google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 530.17.0
-    manufacturer: Apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; U; Android v1.02.09-2010.11.22_English; en-us; TR718D Build/ECLAIR) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: Google
-    bits: null
-  client:
-    name: 'Android Webkit'
-    modus: null
-    version: 4.0.0
-    manufacturer: Google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 530.17.0
-    manufacturer: Apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; U; Android WMT2.1.6_105_V4.0; de-de; ACADEV BLACK EDITION 2011 Build/Donut) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: Google
-    bits: null
-  client:
-    name: 'Android Webkit'
-    modus: null
-    version: 3.1.2
-    manufacturer: Google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 528.5.0
     manufacturer: Apple

@@ -1,5 +1,43 @@
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; SM-G980F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.83 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SM-G980F
+    marketingName: 'Galaxy S20 4G'
+    manufacturer: Samsung
+    brand: Samsung
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 3200
+      height: 1440
+      touch: true
+      size: 6.2
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: Google
+    bits: null
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 83.0.4103.83
+    manufacturer: Google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 83.0.4103.83
+    manufacturer: Google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; SM-A705GM) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.143 Mobile Safari/537.36'
   device:
     architecture: null
@@ -3759,42 +3797,4 @@
   engine:
     name: Blink
     version: 80.0.3987.99
-    manufacturer: Google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 10; SCV47) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: SCV47
-    marketingName: 'Galaxy Z Flip'
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: 2636
-      height: 1080
-      touch: true
-      size: 6.7
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: Google
-    bits: null
-  client:
-    name: Chrome
-    modus: null
-    version: 85.0.4183.127
-    manufacturer: Google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 85.0.4183.127
     manufacturer: Google

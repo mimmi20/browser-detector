@@ -1,5 +1,43 @@
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-M236Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.61 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SM-M236Q
+    marketingName: 'Galaxy M23 5G'
+    manufacturer: Samsung
+    brand: Samsung
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 2408
+      height: 1080
+      touch: true
+      size: 6.6
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: Google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 101.0.4951.61
+    manufacturer: Google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 101.0.4951.61
+    manufacturer: Google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-G990W) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.61 Mobile Safari/537.36'
   device:
     architecture: null
@@ -3845,47 +3883,6 @@
     name: Chromium
     modus: null
     version: 104.0.5112.105
-    manufacturer: Google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 104.0.0
-    manufacturer: Google
--
-  headers:
-    sec-ch-ua-platform: '"Android"'
-    sec-ch-ua: '"Chromium";v="104", " Not A;Brand";v="99"'
-    sec-ch-ua-mobile: '?1'
-    user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-S906B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.105 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: SM-S906B
-    marketingName: 'Galaxy S22+ 5G (International)'
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: 2340
-      height: 1080
-      touch: true
-      size: 6.6
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: Google
-    bits: null
-  client:
-    name: Chromium
-    modus: null
-    version: 104.0.0
     manufacturer: Google
     type: browser
     isbot: false

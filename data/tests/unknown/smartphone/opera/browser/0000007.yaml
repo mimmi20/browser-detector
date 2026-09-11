@@ -1,5 +1,119 @@
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; Android Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.159 Mobile Safari/537.36 OPX/3.3'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: Google
+    bits: null
+  client:
+    name: 'Opera GX'
+    modus: null
+    version: 3.3.0
+    manufacturer: Opera
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.159
+    manufacturer: Google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; A550 Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.91 Mobile Safari/537.36 OPX/3.3'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: Google
+    bits: null
+  client:
+    name: 'Opera GX'
+    modus: null
+    version: 3.3.0
+    manufacturer: Opera
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: Google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 13; X210) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.6422.142 Mobile Safari/537.36 OPR/111.0.5168.55'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: Google
+    bits: null
+  client:
+    name: 'Opera Mobile'
+    modus: null
+    version: 111.0.5168.55
+    manufacturer: Opera
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 125.0.6422.142
+    manufacturer: Google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; STARLET Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.116 Mobile Safari/537.36 OPR/44.14.2246.148970'
   device:
     architecture: null
@@ -3683,118 +3797,4 @@
   engine:
     name: Blink
     version: 125.0.6382.3
-    manufacturer: Google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; A93s 5G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.9 Mobile Safari/537.36 OPR/105.0.4970.6'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: Google
-    bits: null
-  client:
-    name: 'Opera Mobile'
-    modus: null
-    version: 105.0.4970.6
-    manufacturer: Opera
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 119.0.6045.9
-    manufacturer: Google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; A93s 5G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.105 Mobile Safari/537.36 OPR/105.0.4970.13'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: Google
-    bits: null
-  client:
-    name: 'Opera Mobile'
-    modus: null
-    version: 105.0.4970.13
-    manufacturer: Opera
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 119.0.6045.105
-    manufacturer: Google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; A93 5G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36 OPR/77.0.4054.90'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: Google
-    bits: null
-  client:
-    name: 'Opera Mobile'
-    modus: null
-    version: 77.0.4054.90
-    manufacturer: Opera
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 91.0.4472.101
     manufacturer: Google

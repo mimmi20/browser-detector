@@ -1,5 +1,81 @@
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux;4.1.1;Quadra 7 UltraSlim AppleWebKit/537.36 (KHTML, like Gecko) Chrome/ 192.168.1.16 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: 'Linux Foundation'
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: null
+    manufacturer: Google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 537.36.0
+    manufacturer: Apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 2.3.4; uk-ua; Nook Tablet Build/GINGERBREAD; CyanogenMod-7.1.0 XDA Team) AppleWebKit/533.1 (KH'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: CyanogenMod
+    marketingName: CyanogenMod
+    version: 7.1.0
+    manufacturer: unknown
+    bits: null
+  client:
+    name: 'Android Webkit'
+    modus: null
+    version: null
+    manufacturer: Google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 533.1.0
+    manufacturer: Apple
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Android; U; -GB) AppleWebKit/533.19.4 (KHTML, like Gecko) AdobeAIR/13.0'
   device:
     architecture: null
@@ -111,6 +187,120 @@
   engine:
     name: WebKit
     version: 533.1.0
+    manufacturer: Apple
+-
+  headers:
+    user-agent: 'TBD1083 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: 'Linux Foundation'
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 11.0.696.34
+    manufacturer: Google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 534.24.0
+    manufacturer: Apple
+-
+  headers:
+    user-agent: 'TBDB863 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: 'Linux Foundation'
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 11.0.696.34
+    manufacturer: Google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 534.24.0
+    manufacturer: Apple
+-
+  headers:
+    user-agent: 'TBDC1093 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: 'Linux Foundation'
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 11.0.696.34
+    manufacturer: Google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 534.24.0
     manufacturer: Apple
 -
   headers:
@@ -532,7 +722,83 @@
     manufacturer: Apple
 -
   headers:
+    user-agent: 'ERO247 Android Application (13, ero247 v2.1) - alps i-Call 701  alps - 00000000-0618-3249-D391-DE291A3086DF'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: Google
+    bits: null
+  client:
+    name: 'Android Webkit'
+    modus: null
+    version: null
+    manufacturer: Google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: null
+    manufacturer: Apple
+-
+  headers:
     user-agent: 'XCON Android Application (13, xcon v2.1) - brcm Opal 800 Opal_800 - 00000000-23D2-8F85-FFFF-FFFFEBDA184B'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: Google
+    bits: null
+  client:
+    name: 'Android Webkit'
+    modus: null
+    version: null
+    manufacturer: Google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: null
+    manufacturer: Apple
+-
+  headers:
+    user-agent: 'ERO247 Android Application (13, ero247 v2.1) - FIH ViewPad7 ViewPad7 - FFFFFFFF-9EAF-9658-693C-2B8E1B12E4B0'
   device:
     architecture: null
     deviceName: 'general Mobile device'
@@ -760,7 +1026,83 @@
     manufacturer: Apple
 -
   headers:
+    user-agent: 'VMVID Android Application (16, vmvid v2.2.2) - unknown FWS610_EU Feixun - 00000000-4269-B01C-FFFF-FFFFD8BD744F'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: Google
+    bits: null
+  client:
+    name: 'Android Webkit'
+    modus: null
+    version: null
+    manufacturer: Google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: null
+    manufacturer: Apple
+-
+  headers:
     user-agent: 'ERO247 Android Application (13, ero247 v2.1) - unknown FWS710EU FWS710EU - 00000000-21CB-2B45-4441-1E681307F4F4'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: Google
+    bits: null
+  client:
+    name: 'Android Webkit'
+    modus: null
+    version: null
+    manufacturer: Google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: null
+    manufacturer: Apple
+-
+  headers:
+    user-agent: 'VMVID Android Application (13, vmvid v2.1) - unknown QW TB-1217 iNet - FFFFFFFF-9DCB-E3EB-DD4A-8E340033C587'
   device:
     architecture: null
     deviceName: 'general Mobile device'
@@ -837,6 +1179,44 @@
 -
   headers:
     user-agent: 'ERO247 Android Application (13, ero247 v2.1) - unknown SP-80 yusu - FFFFFFFF-FB35-F38F-FFFF-FFFFC955A0CC'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: Google
+    bits: null
+  client:
+    name: 'Android Webkit'
+    modus: null
+    version: null
+    manufacturer: Google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: null
+    manufacturer: Apple
+-
+  headers:
+    user-agent: 'ERO247 Android Application (13, ero247 v2.1) - unknown SPX-5 yusu - FFFFFFFF-C042-30C6-607B-59724104EC5D'
   device:
     architecture: null
     deviceName: 'general Mobile device'
@@ -1179,6 +1559,44 @@
 -
   headers:
     user-agent: 'OnlyProcessed HLFS_Param Version=4;proxyType=http;clientid=query2ad-word2vec-android;ignoreNetworkFetchErrors=true'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: Google
+    bits: null
+  client:
+    name: 'Android Webkit'
+    modus: null
+    version: null
+    manufacturer: Google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: null
+    manufacturer: Apple
+-
+  headers:
+    user-agent: S3E/ANDROID/C771/4.34.0
   device:
     architecture: null
     deviceName: 'general Mobile device'
@@ -1787,6 +2205,44 @@
 -
   headers:
     user-agent: 'android-async-http/1.4.1 (http://loopj.com/android-async-http)'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: Google
+    bits: null
+  client:
+    name: 'Android Webkit'
+    modus: null
+    version: null
+    manufacturer: Google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: null
+    manufacturer: Apple
+-
+  headers:
+    user-agent: 'GuardianAnywhere/futureplatforms.com/2.0.2 Android/null'
   device:
     architecture: null
     deviceName: 'general Mobile device'
@@ -3307,462 +3763,6 @@
 -
   headers:
     user-agent: '{version:6.1948.1,platform:server_android,osversion:10}'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Android Webkit'
-    modus: null
-    version: null
-    manufacturer: Google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: null
-    manufacturer: Apple
--
-  headers:
-    user-agent: '{version:6.1944.2,platform:server_android,osversion:10}'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Android Webkit'
-    modus: null
-    version: null
-    manufacturer: Google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: null
-    manufacturer: Apple
--
-  headers:
-    user-agent: '{version:6.1946.2,platform:server_android,osversion:10}'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Android Webkit'
-    modus: null
-    version: null
-    manufacturer: Google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: null
-    manufacturer: Apple
--
-  headers:
-    user-agent: '{version:6.1948.2,platform:server_android,osversion:9}'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Android Webkit'
-    modus: null
-    version: null
-    manufacturer: Google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: null
-    manufacturer: Apple
--
-  headers:
-    user-agent: '{version:6.1949.1,platform:server_android,osversion:10}'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Android Webkit'
-    modus: null
-    version: null
-    manufacturer: Google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: null
-    manufacturer: Apple
--
-  headers:
-    user-agent: '{version:6.1949.0,platform:server_android,osversion:10}'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Android Webkit'
-    modus: null
-    version: null
-    manufacturer: Google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: null
-    manufacturer: Apple
--
-  headers:
-    user-agent: '{version:6.1948.2,platform:server_android,osversion:10}'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Android Webkit'
-    modus: null
-    version: null
-    manufacturer: Google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: null
-    manufacturer: Apple
--
-  headers:
-    user-agent: '{version:6.1950.0,platform:server_android,osversion:9}'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Android Webkit'
-    modus: null
-    version: null
-    manufacturer: Google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: null
-    manufacturer: Apple
--
-  headers:
-    user-agent: '{version:6.1950.0,platform:server_android,osversion:10}'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Android Webkit'
-    modus: null
-    version: null
-    manufacturer: Google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: null
-    manufacturer: Apple
--
-  headers:
-    user-agent: '{version:6.1950.0,platform:server_android,osversion:8.0.0}'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Android Webkit'
-    modus: null
-    version: null
-    manufacturer: Google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: null
-    manufacturer: Apple
--
-  headers:
-    user-agent: '{version:6.1949.1,platform:server_android,osversion:9}'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Android Webkit'
-    modus: null
-    version: null
-    manufacturer: Google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: null
-    manufacturer: Apple
--
-  headers:
-    user-agent: '{version:6.1949.1,platform:server_android,osversion:8.0.0}'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Android Webkit'
-    modus: null
-    version: null
-    manufacturer: Google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: null
-    manufacturer: Apple
--
-  headers:
-    user-agent: '{version:6.2001.1,platform:server_android,osversion:10}'
   device:
     architecture: null
     deviceName: 'general Mobile device'

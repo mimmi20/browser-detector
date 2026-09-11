@@ -494,44 +494,6 @@
     manufacturer: Microsoft
 -
   headers:
-    user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) o2 Xda comet'
-  device:
-    architecture: null
-    deviceName: 'Xda Comet'
-    marketingName: 'Xda Comet'
-    manufacturer: HTC
-    brand: O2
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 320
-      height: 240
-      touch: false
-      size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: Microsoft
-    bits: null
-  client:
-    name: IEMobile
-    modus: null
-    version: 7.6.0
-    manufacturer: Microsoft
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Trident
-    version: null
-    manufacturer: Microsoft
--
-  headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile6.0) Sprint T7380'
   device:
     architecture: null
@@ -1016,44 +978,6 @@
     name: 'Internet Explorer'
     modus: null
     version: 4.01.0
-    manufacturer: Microsoft
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Trident
-    version: null
-    manufacturer: Microsoft
--
-  headers:
-    user-agent: 'Xda_orbit_2/240x320 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)'
-  device:
-    architecture: null
-    deviceName: 'Xda Orbit II'
-    marketingName: 'Xda Orbit II'
-    manufacturer: HTC
-    brand: O2
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 320
-      height: 240
-      touch: false
-      size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: Microsoft
-    bits: null
-  client:
-    name: IEMobile
-    modus: null
-    version: 7.11.0
     manufacturer: Microsoft
     type: browser
     isbot: false
@@ -3078,82 +3002,6 @@
     manufacturer: Microsoft
 -
   headers:
-    user-agent: 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; O2 Xda 2s;PPC;240x320; PPC; 240x320)'
-  device:
-    architecture: null
-    deviceName: 'Xda 2s'
-    marketingName: 'Xda 2s'
-    manufacturer: HTC
-    brand: O2
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 320
-      height: 240
-      touch: false
-      size: 3.5
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: Microsoft
-    bits: null
-  client:
-    name: 'Internet Explorer'
-    modus: null
-    version: 4.01.0
-    manufacturer: Microsoft
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Trident
-    version: null
-    manufacturer: Microsoft
--
-  headers:
-    user-agent: 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Xda neo; 240x320)'
-  device:
-    architecture: null
-    deviceName: 'Xda Neo'
-    marketingName: 'Xda Neo'
-    manufacturer: HTC
-    brand: O2
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 320
-      height: 240
-      touch: false
-      size: 2.8
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: Microsoft
-    bits: null
-  client:
-    name: 'Internet Explorer'
-    modus: null
-    version: 4.01.0
-    manufacturer: Microsoft
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Trident
-    version: null
-    manufacturer: Microsoft
--
-  headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) T-Mobile_Maple'
   device:
     architecture: null
@@ -3410,44 +3258,6 @@
     name: IEMobile
     modus: null
     version: 6.12.0
-    manufacturer: Microsoft
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Trident
-    version: null
-    manufacturer: Microsoft
--
-  headers:
-    user-agent: 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Xda Mini S; 240x320)'
-  device:
-    architecture: null
-    deviceName: 'Xda mini S'
-    marketingName: 'Xda mini S'
-    manufacturer: HTC
-    brand: O2
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 320
-      height: 240
-      touch: false
-      size: 2.8
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: Microsoft
-    bits: null
-  client:
-    name: 'Internet Explorer'
-    modus: null
-    version: 4.01.0
     manufacturer: Microsoft
     type: browser
     isbot: false
@@ -3790,6 +3600,196 @@
     name: 'Internet Explorer'
     modus: null
     version: 4.01.0
+    manufacturer: Microsoft
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Trident
+    version: null
+    manufacturer: Microsoft
+-
+  headers:
+    user-agent: 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; SPV M3000; OpVer 12.27.10.101)'
+  device:
+    architecture: null
+    deviceName: M3000
+    marketingName: M3000
+    manufacturer: HTC
+    brand: 'Orange SPV'
+    dualOrientation: null
+    simCount: 1
+    display:
+      width: 320
+      height: 240
+      touch: false
+      size: null
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: Microsoft
+    bits: null
+  client:
+    name: 'Internet Explorer'
+    modus: null
+    version: 4.01.0
+    manufacturer: Microsoft
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Trident
+    version: null
+    manufacturer: Microsoft
+-
+  headers:
+    user-agent: 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; SPV M2000; OpVer 5.31.1.124)'
+  device:
+    architecture: null
+    deviceName: M2000
+    marketingName: M2000
+    manufacturer: HTC
+    brand: 'Orange SPV'
+    dualOrientation: null
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: false
+      size: 3.5
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: Microsoft
+    bits: null
+  client:
+    name: 'Internet Explorer'
+    modus: null
+    version: 4.01.0
+    manufacturer: Microsoft
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Trident
+    version: null
+    manufacturer: Microsoft
+-
+  headers:
+    user-agent: 'HTC_S710-Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Smartphone; 240x320; Smartphone)'
+  device:
+    architecture: null
+    deviceName: S710
+    marketingName: S710
+    manufacturer: HTC
+    brand: HTC
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 320
+      height: 240
+      touch: false
+      size: 2.4
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: Microsoft
+    bits: null
+  client:
+    name: 'Internet Explorer'
+    modus: null
+    version: 6.0.0
+    manufacturer: Microsoft
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Trident
+    version: null
+    manufacturer: Microsoft
+-
+  headers:
+    user-agent: 'HTC_P3400-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)'
+  device:
+    architecture: null
+    deviceName: P3400
+    marketingName: P3400
+    manufacturer: HTC
+    brand: HTC
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 320
+      height: 240
+      touch: false
+      size: 2.8
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: Microsoft
+    bits: null
+  client:
+    name: 'Internet Explorer'
+    modus: null
+    version: 4.01.0
+    manufacturer: Microsoft
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Trident
+    version: null
+    manufacturer: Microsoft
+-
+  headers:
+    user-agent: 'HTC-ST7377/1.59.502.3 (67150) Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)'
+  device:
+    architecture: null
+    deviceName: ST7377
+    marketingName: 'Tilt 2'
+    manufacturer: HTC
+    brand: HTC
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 800
+      height: 480
+      touch: false
+      size: 3.6
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: Microsoft
+    bits: null
+  client:
+    name: IEMobile
+    modus: null
+    version: 8.12.0
     manufacturer: Microsoft
     type: browser
     isbot: false

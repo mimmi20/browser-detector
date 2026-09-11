@@ -1,5 +1,43 @@
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 9; X102) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.101 Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Tablet'
+    marketingName: 'general Tablet'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: tablet
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: Google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 85.0.4183.101
+    manufacturer: Google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 85.0.4183.101
+    manufacturer: Google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; X102) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.101 Safari/537.36 comdirect/1.0 (appVersion:20.9.0;deviceType:mobile)'
   device:
     architecture: null
@@ -3759,42 +3797,4 @@
   engine:
     name: Blink
     version: 86.0.4240.198
-    manufacturer: Google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 9; OzoneHD Fun) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.101 Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Tablet'
-    marketingName: 'general Tablet'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: tablet
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: Google
-    bits: null
-  client:
-    name: Chrome
-    modus: null
-    version: 85.0.4183.101
-    manufacturer: Google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 85.0.4183.101
     manufacturer: Google
