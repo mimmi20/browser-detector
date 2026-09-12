@@ -11,7 +11,7 @@
 
 declare(strict_types = 1);
 
-namespace Loader;
+namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\MappingfileLoader;
 use PHPUnit\Framework\Attributes\CoversClass;
