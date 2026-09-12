@@ -44,7 +44,7 @@ trait AutoUpdateDeviceDataTrait
             return;
         }
 
-        [$company] = explode('=', $code, 2);
+        [$company, $singleDeviceCode] = explode('=', $code, 2);
 
         if ($company === '') {
             return;
@@ -65,7 +65,7 @@ trait AutoUpdateDeviceDataTrait
         }
 
         if (array_key_exists($devicecode, $devicesFromMappingFile)) {
-            $this->deleteFromFactories($company, $code);
+            $this->deleteFromFactories($company, $code, $singleDeviceCode);
 
             return;
         }
@@ -81,11 +81,11 @@ trait AutoUpdateDeviceDataTrait
             ),
         );
 
-        $this->deleteFromFactories($company, $code);
+        $this->deleteFromFactories($company, $code, $singleDeviceCode);
     }
 
     /** @throws void */
-    private function deleteFromFactories(string $company, string $code): void
+    private function deleteFromFactories(string $company, string $code, string $singleDeviceCode): void
     {
         try {
             $iterator = new RecursiveIteratorIterator(
@@ -128,7 +128,7 @@ trait AutoUpdateDeviceDataTrait
                 && is_array($fileData['rules'])
                     ? $fileData['rules']
                     : [],
-                static fn (mixed $v): bool => is_string($v) && $v !== $code,
+                static fn (mixed $v): bool => is_string($v) && $v !== $singleDeviceCode,
             );
 
             $newFileData = [
