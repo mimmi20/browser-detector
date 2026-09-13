@@ -3,8 +3,8 @@
   marketingName: 'Blade X'
   manufacturer: gfive
   brand: gfive
-  dualOrientation: null
-  simCount: null
+  dualOrientation: true
+  simCount: 1
   display:
     width: 480
     height: 320
@@ -17,8 +17,8 @@
   marketingName: 'President A5'
   manufacturer: gfive
   brand: gfive
-  dualOrientation: null
-  simCount: null
+  dualOrientation: true
+  simCount: 1
   display:
     width: 480
     height: 320
@@ -31,8 +31,8 @@
   marketingName: 'President G10 Fashion'
   manufacturer: gfive
   brand: gfive
-  dualOrientation: null
-  simCount: null
+  dualOrientation: true
+  simCount: 1
   display:
     width: 1920
     height: 1080
@@ -45,12 +45,26 @@
   marketingName: 'President G7'
   manufacturer: gfive
   brand: gfive
-  dualOrientation: null
-  simCount: null
+  dualOrientation: true
+  simCount: 1
   display:
     width: 960
     height: 540
     touch: true
     size: 5
+  type: smartphone
+  platform: android
+'gfive a57':
+  deviceName: A57
+  marketingName: Fanse
+  manufacturer: gfive
+  brand: gfive
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: 320
+    height: 240
+    touch: true
+    size: 2.8
   type: smartphone
   platform: android

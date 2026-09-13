@@ -11,8 +11,6 @@ rules:
   '/hisense[ _;\-][^);\/]+|hs-(?:g|u|eg?|i|l|t|x)[0-9]+[a-z0-9\-]*|e270bsa|m470bs[ae]|e2281|e2371|eg680|f5281|u972|e621t|w2003|hlte[0-9]{3}[emt]|amazing a1|50a6gx|43a6gx|50a6101ex/i': hisense
   '/CCE |SK35[12]|SK402|SK504/': cce
   '/blaupunkt|atlantis[_ ](?:1001a|1010a|a10\.g40[23])|discovery[_ ](?:102c|108c|111c|1000c|1001a?)|endeavour[_ ]?(?:101|700|785|800|101[glm]?|1000|1001|101[03]|1100)|polaris[_ ]80[38]|end_101g-test|4kids|10bpe0h?|8bpe0h/i': blaupunkt
-  /archos|a101it|a7eb|a70bht|a70cht|a70hb|a70s|a80ksc|a35dm|a70h2|a50ti|ac45ne|ac50bhe/i: archos
-  /flipkart|xt811/i: flipkart
   '/trekstor|(?<!;)surftab|breeze 10\.1 quad|xintroni10\.1|(?<!e)[sv]t[0-9]{5}|tsp21/i': trekstor
   '/ct(?:10[0123]0|820|7[12][056])(?:w|fr)?(?: +build|[;\/\)])/i': carrefour
   '/(?<!\-)minix|neo-z64|neo-x[5678]|neo-u[19]|neo-g4/i': minix
@@ -23,9 +21,6 @@ rules:
   '/(?:adr|android) 4\.[12].* mk808(?: +build|[;\/\)])/i': gizga
   '/(?:adr|android) 4\.4.* mk808(?: +build|[;\/\)])|mk808b/i': andoer
   '/(?<!son)yd[0-9]{3}|c9660/i': yota
-  '/mobistel|cynus[ _][^\/;]+/i': mobistel
-  '/studio-st102[24]/i': mmtc
-  /audiovox/i: audiovox
   /netbox-shines/i: netbox
   '/sony(?!ericsson)|sonyericsson(?!gt-|htc|allwinner|pccompanion)|(?<!htc_|cyanogenmod-)xperia(?! mod|_qhd)(?<!z)ps[2-5][;\)]|play ?station(?!network)|sgpt[0-9]{2}|SAMSUNG l[0-9]{2}u|w960|netbox|[ls]39h|h4233|h3113|h3213|h3223|h3311|h3413|h4113|h4213|h4311|h4413|h4493|h8166|h8216|h8266|h8276|h8296|h8314|h8324|h8416|h9436|h9493|ebrd[0-9]{4}|[45789]0[12]so|a[13]0[12]so|l36h|so[gltv][0234][0-9]|smartwatch 3|xq-[a-e][a-z][0-9]{2}|32lea73t2sm|sve1712c1ew|sve171g11m|sve1711g1e/i': sony
   '/(?<!:)(?:nokia|asha);?[ _\/\-]?[0-9]{3,4}|nokia;?[ _#\/\-]?r[hm]-[0-9]{2}|nokia;?[ _#\/\-]?[cegnx](?:[0-9]{1,2})?(?:-(?:[0-9]{1,2}|gage))?|(?<!:)nokia [1-9](?:\.[1-4](?: plus| 5g)?| plus| sirocco)?(?: +build|[;\/\)])|lumia|surface phone|maemo rx|portalmmm\/2\.0 n7|portalmmm\/2\.0 nk|nok[0-9]+|rx-51 n900|rm-(?:1031|104[25]|106[234567]|107[234567]|1089|109[0269]|1109|111[346]|1127|1141|115[24])|ta-[0-9]{4}(?: +build|[;\/\)])|(?:adr|android) 5\.[01].* n1|5130c-2|arm; 909|id336|genm14|e6-00|c7-00|; 603;|; 500;| es70|nokia; qt; meego/i': nokia
@@ -34,52 +29,29 @@ rules:
   '/vi10|vi8 plus|hibook|hipad|hi(?:8|9|10) ?(?:air|pro|plus)|cw-hi8-super|v99x|cw-v[0-9]{1,2}(?:[\-is ]|hd)/i': chuwi
   '/keneksi|norma 2/i': keneksi
   /impression|impad|imsmart/i: impression
-  /ergo/i: ergo
   '/beelink|mini mxiii-ii/i': beelink
   '/ mbx |mxiii-g|dvbt reference board/i': mbx
   '/benq|maui e800/i': benq
-  /karbonn/i: karbonn
-  '/umi(?:digi)?[ _]|(?<!mobile |m)iron[ _]|london(?!test)|hammer_s|z2[ _]pro|(?:adr|android) 9.* s3[ _]pro|plus e|c note|(?<!;)super(?!sonic|box)|s2 lite|(?<!9)(?:a[135][_ ]pro|z2|bison|bison[_ ]pro)(?: +build|[;\/\)])(?!play)|(?<!ph)one[_ ]pro|(?:adr|android) 8\.1.* one[_ ]max|(?<!novo)crystal|xii|rome_x| hammer(?: +build|[;\/\)])|emax mini/i': umi
+  '/umi(?:digi)?[ _]/i': umi
   '/(?<!fbcr\/)cosmote/i': cosmote
   '/(?:sirius|gyga|ego|xara|spirit|vario)[_ ]qsx?|pluri[_ ]m7|zun[_ ]xo?|jax[_ ]s|jax[_ ]mini|onyx[_ ]xs|sirius[_ ]z/i': vonino
-  /droidz/i: torque
   /motin/i: motin
   /droidplayer/i: droid-player
   /engeldroid/i: engel-droid
   /af90/i: asia-fone
   '/(?<![8os])mot(?!orolawebkit|orola\/google|osola|[ehpt]|ion|-lt18i|us)|(?<!md |mocor|[imnos]|slate|swift|pixel|re|htc |cr|treble)droid(?!ace| os) ?(?:build|[a-z0-9]+)|droid-bionic|portalmmm\/2.0 (?:e378i|l6|l7|v3)|xoom [^;\/]*build|(?<!ne|t)(?:xt|mz|me)(?!370t)[0-9]{3,4}[a-z]?(?:\(defy\)|-[0-6][0-9]?|-backflip)?(?: +build|[;\/\)])|(?:adr|android) .* mb[0-9]{3,4}[a-z]?(?:\(defy\)|-[012][0-9]?|-backflip)?(?: +build|[;\/\)])|milestone|razr hd|(?<!desire|galaxy) z |(?<!sm-)t720|mt620|mt680|mt716|mt788|mt810|mt870|mt887|mt917|isw11m|wx435|wx445|(?<!c)mb501|mb525|mb860|dext| atrix[ _]|(?:adr|android) 1\.5.* i1|201m|me525\+|foma m1000|a953|(?<![0-9])a853|is12m|pags0005in/i': motorola
-  '/galaxy s3 ex|n9592|hx-9299a/i': hdc
-  /lingwin/i: lingwin
-  /boway/i: boway
   '/gt-a7100|gt-[abht]95[0-9]{2}|sm-h900a/i': htm
-  '/feiteng| gt-h|h7100|gt-n9300|gt-9500/i': feiteng
-  /byond/i: byond
   '/sprd(?!-galaxy|-gt|-i)|b51\+|sphs on hsdroid/i': sprd
   '/sc-[0-9]{2,4}(?:mid|jb|bt)/i': supersonic
   '/ mito /i': mito
   '/ginzzu|rs61d ultimate|rs81d/i': ginzzu
-  /everpad/i: everest
-  '/ gt-t210(?: +build|[;\/\)])/i': greentel
-  '/ gt-7[23][24][056](?: +build|[;\/\)])/i': genesis
   '/haipai|(?:adr|android) 4\.0.* i9220(?: +build|[;\/\)])|(?<!htc )x710d|i9377|i9389|i9277|n7889/i': haipai
-  /sm-8764/i: across
-  '/ek-[0-9]{4}/i': ekt
-  /sgt-p/i: sing-tech
-  '/tsm-[0-9]/i': vitelcom
   /blackbird/i: black-bird
-  '/(?:adr|android) 4\.1\.9.* i7100/i': m-pai
   '/(?<![agmnv\-])ipro|sense golly|(?<!go )i935[01]|i940[12]|wave 4\.0/i': ipro
-  /sm-qled/i: soundmax
-  /hc7620|sm-led/i: sky-worth
-  /etw101gt_c/i: microtech
-  '/(?<!@)samsung(?!pass)[_is \-;\/)](?!galaxy nexus|lg|lenovo|htc|build|e6653|f5121|k4000|nexus|opera|up\.browser|windows mobile|transform|stratosphere|ssd|service|self|syncml|replenish|network|moment|electronics)|galaxy(?! nexus)|gt - i9505|(?<![npx])gt[\-_](?![89ah]|540|n9880)|ek-g|(?:(?<![ju])sc|sam|(?<![0-9])sch|sec|sgh|shv|shw|sph|continuum|yp)-|(?<![tu])sm ?- ?[0-9a-z]{4}|(?<!ke)sam[0-9]{3}|g710[68]|n8000d|(?<![0-9])n[579]1[01]0|f031|n9106|n900\+|sc[lt]2[0-9]|isw11sc|s7562|s720c|sghi[0-9]{3}|i8910|[ \-]i(?:545|699|550[08]|5800|7100|7110|7500|8190|8750|9000|9100|9150|9190|9200|9220|9250|9300i?|9350|9400|9500|9600)(?: +build|[;\/\)])|[ \-]n(?:7000|7102|7200|9006)(?: +build|[;\/\)])|blaze(?!r)|l9500|s8500|40[34]sc|scg[0-3][0-9]|scv[34][0-9]|gear live|708sc|s400i| (?:r820|t805s)(?: +build|[;\/\)])|familyhub|precedent|beyond0q/i': samsung
-  '/tm-(?:mid|sm)[0-9]{3,4}/i': touchmate
-  '/texet|x-pad|x-medium|x point|navipad|tm-[0-9]{4}|tb-7[17]1a/i': texet
+  '/(?<!@)samsung(?!pass)[_is \-;\/)](?!galaxy nexus|lg|lenovo|htc|build|e6653|f5121|k4000|nexus|opera|up\.browser|windows mobile|transform|stratosphere|ssd|service|self|syncml|replenish|network|moment|electronics)|galaxy(?! nexus)/i': samsung
   '/(?:ever(?:glory|shine|miracle|mellow|classic|trendy|fancy|vivid|slim|glow|magic|smart|star)[^\/;]*)(?: +build|[;\/\)])|e1020hd|e70[25]0hd|e7914hg|e8050h[dg]|e8051hd|e9054hd/i': evertek
   '/inm[0-9]{3,4}|tab1024|tab814s|tab744/i': intenso
-  /atongm/i: atongm
   '/ngm[_ ;] ?[a-z0-9]+|(?:forward|dynamic)[ _]?[^\/;]+(?: +build|[;\/\)])/i': ngm
-  /tolino/i: tolino
   '/crosscall|odyssey_plus|(odyssey|trekker|action|stellar)[\- _][msx][1-5]/i': crosscall
   '/ ngs |odysea 500qhd/i': ngs
   '/odys(?!sey)|xelio_next|(?:element|falcon|goal|ieos|lux|maven|pace|primo|rapid|rise|space|tao|thanos|thor|titan|uno|space[ _]one)_?[gtx]?10|(?:connect|pluto|pyro|rapid|sense)_?[gx]?7|connect8plus|juniort?_?8_?pro|loox|xelio|neo_quad10|ieos_quad|sky ?plus|pedi_plus|adm816|noon(?!tec)|(?<!e)xpress|genesis|tablet-pc-4|kinder-tablet|evolution12|mira(?!g)|score_plus|pro[ _]q8|neo6_lte|fusion2in1|neron|slade_x55|studytab|uno_x8|visio(?!n)|notosplus|notetab_pro/i': odys
@@ -87,18 +59,12 @@ rules:
   '/next(?!cloud)|next[0-9]|datam803hc|nx785qc8g|nxm900mc|nx007hd8g|nx007dw8g|nx008hd8g|nx010hi8g|nxm908hc|nxm726|nx700qc|nx700g|nx010qw16g|nx868qw8g|nx16a[0-9]{4}/i': nextbook
   '/infinix|s[25][ _]pro|p5s_x403/i': infinix
   '/vnt[ _]tab[ _]?8/i': vnt
-  /openbox/i: openbox
-  '/celkon| a400(?: +build|[;\/\)])|(?:adr|android) 2\.3.* a19/i': celkon
   '/blackview|bl8800|(?:adr|android) 11\.?.* bl5000|(?:adr|android) 11\.?.* a100|bv[4-9][0-35-9]00(?:[ _]?pro)?|dm550|crown|alife[ _][ps]1|omega_pro|ultra[ _]plus|p2lite|(?:adr|android) 4\.4.* zeta|(?:(?<!qmobile|apanda|lenovo|micromax|twz|agm|smart|evercoss|elite) a[6-9][05](?:[ _]?pro)?|(?<!e)tab[ _]?(?:[78]|12|70)[ _]?(?:wifi|pro)|(?<!fire_)tab[ _]?[689]| e7s|a80s|a7[ _]?pro| r6| a8|hero[ _]?10|color[ _]8|n6000[ _]se|wave 8c)(?: +build|[;\/\)])/i': blackview
-  /multilaser/i: multilaser
   '/(?<!appcelerator )titanium|machfive|sparkle v|s109|k9 smart (?:grand|4g)|(?:(?:adr|android) 4\.[02].* a1[689]\+?|[ _]a[19]\+|[ _]a7\*|(?:adr|android) 4\.1.* st10)(?: +build|[;\/\)])|jk8000|a40 indian|smarttab[12](?: +build|[;\/\)])/i': karbonn
   '/micromax[ \-\_]?[a-z0-9]+|(?:p70221|a121|(?<!h)a120|a116|a114|a106|a093| a96| a78|(?:adr|android) [24]\..* a52| a50| a47| a28|f666|mt500|q327|p701)(?: +build|[;\/\)])|mid1014|canvas 2 colours/i': micromax
   '/smartpad7503g|smartpad970s2(?:3g)?|m[_\-][mps]p[0-9a-z]+|m-ipro[0-9a-z]+/i': mediacom
   '/bmobile[ _]|(?<![em] )ax-?[0-9]{3}/i': bmobile
   '/smart 4g max 5\.0|smart 4g gen c [45]\.0/i': vivatel
-  '/onda|v919 3g air|v10 4g|v989 air|v891|v812|v972 core4|v975[im]|v116w dualos|t2101l2b1c|obook ?[12]0/i': onda
-  /nx785qc/i: digiin
-  /tracer/i: tracer
   '/amoi|(?<!nec-)n820|a862w/i': amoi
   '/blade 80|blade 97/i': commax
   '/(?<!fbcr\/)jazztel/i': jazztel
@@ -162,7 +128,6 @@ rules:
   '/(?<!evo |[-_])energy[ _-]?[^;\/]+(?: +build|[;\/\)])/i': energy-sistem
   '/a4hy|a5c8|a76h|a8h[89]|c5j6|c6v8|c8j7|d4c[58]|e3c[56]|f2d6|k5e5|k9c6|m1d[45]|m1e[45789]|m5k[78]|m5f8|n9h3|x98 ?air ?(?:ii|3g)|x98 ?(?:pro|air|plus)|x10 plus|(?<!t|poco )x3 ?pro|g17s ?3g|p98 ?4g|p90hd|e8c1|[mpt][1-58][05][ _]?(?:pro|hd|[stx-])(?:_w)?[ _]?(eea|row)/i': teclast
   '/meeg(?!o)/i': meeg
-  '/doogee|dg[0-9]{3,4}(?!tbips)|(?<!armor )x[679][ _]?pro|bl[57]000|(?:adr|android) 6\..* (?:x10|t6 ?pro)(?: +build|[;\/\)])|f3_pro|y100_plus|y6_piano|y6 max| t6 |(?:adr|android) 8\.1.* s70(?: +build|[;\/\)])|s60 lite| y6c|(?:adr|android) 5\.1.*(?<!vivo) x5s?(?: +build|[;\/\)])|mix lite|bl12000 pro|shoot_1|y100x|valencia2|x9 ?mini| x20l| (?:x5[05]|x60l|x9[35]|y8|x[23]0|(?:x9[57]|x5max|n20)[ _]?pro)(?: +build|[;\/\)])|turbo_mini_f1|s40[ _]?pro|s59[ _]?pro|s8[689][ _]?pro|s9[5-7][ _]?pro|n40pro|blade ?10 ?(ultra|pro)|(?:adr|android) 1[4-9].* s200(?: +build|[;\/\)])|(?:adr|android) 12.* s61(?: +build|[;\/\)])/i': doogee
   '/noa[ _]|hummer ?le/i': noa
   '/gtel[ _]|a713_vivo_pro|a727_infinity_pro/i': gtel
   '/(?<!fbcr\/)vivo(?!browser)|(?<!t|primo |armor |poco )x[0-9] ?(?:plus|max|pro)| x21(?: +build|[;\/\)])|(?:adr|android) 7\..* x11(?: +build|[;\/\)])|(?<!ios |[0-9d])v(1[89]|2[0-7])[0-9]{2}|iqoo/i': vivo
@@ -186,8 +151,7 @@ rules:
   '/(?<!I)NTT(?!DoCoMo|\/)/': nttsystem
   '/iq9013_4|iq8123[ck]|iq8000|iq7124|iq3000|iq1818|iq1502a|iq1310|iq1055|iq10[134]0|iqtab 3g|iqm1001|iqs300|iqw608|iqw553|iqe100|iqgw516|iqn700|iqw511t|iql30|iql5[01]|iqr300|iqp50|iqel41|iqm801/i': mls
   '/vivax|fly4|tpc-97150|tpc-9120[ _]?3g|tpc-8150|tpc-8140|tpc-8120[ _]?3g|tpc-715[12]|tpc[ -]712[015]|tpc-7100|tpc-7001|smart fly v500|point x40 pro|fun[ _]s20/i': vivax
-  '/firefly| s30(?: +build|[;\/\)])|gt100|intense[ _]|aurii[ _]xcite/i': firefly
-  '/fly[ _]|flylife|phoenix 2|fs529|fs50[1-9]|fs511|fs551|fs40[1-7]|fs452|fs451|fs454|4fs06|meridian-|life zen|iq[0-9]{3,}i?[ _]?(?:quad|firebird|quattro|turbo|magic|octa)?(?: +build|[;\/\)])|^fly-/i': fly
+  '/fly[ _]|flylife|^fly-/i': fly
   '/hlv-t[a-z0-9]+/i': hi-level
   '/bravis|nb(?:10[56]|751|7[145])/i': bravis
   '/touchlet|x7g|x10\.|xa100|px-?8841|px-?8837|px-?8709|sx7\.(?:mini|quad|slim)|x8quad\.pro|x10quad\.v2/i': touchlet
@@ -200,7 +164,7 @@ rules:
   '/(?<![_r\/])cricket/i': cricket
   '/(?:adr|android) 4\.2.* z512/i': plum
   '/40[gk]hs57|24[gk]hs5[57]/i': doffler
-  '/(?<!sp)acer|(?<!-)liquid(?!smooth)|aspire|(?<!zte blade |[0-9ksv]|panasonic-|nova )a(?:100|101(?:b2?|b2-lz|c)?|110|200|210|211|500|501|510|511|700|701)(?: +build|[;\/\)])|android.*(?:v3[67]0|z1[23456]0|z200|z220|z410|(?<!citi )z5\d{2}| t0[12346789])(?: +build|[;\/\)])|a1-713hd|a1-724|a1-734|a1-81[01]|a1-830|a1-84[01]|a3-a[12345][01]|b1-7[12356789a][01]|b1-7[23]3|b1-8[12356]0|b1-a71|b3-a[12]0|b3-a3[02]|b3-a42|b3-a40|b3-a50|(?:e39|e140|e210|e310|e330|e350|e380|e600|g100w|(?<!sie-)s5[57]|s5[012]0)(?: +build|[;\/\)])|da[0-9]+hq?l(?: +build|[;\/\)])|stream-s110| gt-810(?: +build|[;\/\)])|chromebook 14|predator g9-793|(?:adr|android) (?:4\.4|5\.).* s56(?: +build|[;\/\)])|(?:adr|android) [34]\.?.* a100/i': acer
+  '/(?<![a-z_])acer|(?<!-)liquid(?!smooth)|aspire/i': acer
   /technisat|technipad|aqipad|techniphone|tpad10g-hd/i: technisat
   '/cherry|flare2x|flare_hd_max|fusion bolt|omega hd 4|nova a100|titan tv s320|thunder s220|(?:adr|android) 4\.2.* s710(?: +build|[;\/\)])/i': cherry-mobile
   '/siemens(?! a\/s| business|testmanager| ewm| lms)|sie-/i': siemens
@@ -209,7 +173,7 @@ rules:
   /inhon|papilio/i: inhon
   '/prestigio|(?<!insta|wa|yel)p[as]p[0-9]|pm[pt][0-9]|gv7777|per5274b/i': prestigio
   '/(?<!like )android.*(?<!compatible |a)iphone|ucweb.*adr.*iphone/i': xianghe
-  '/(?<![dhmor])ipad|ipod(?!der)|(?<!like |compatible |[at])iphone|like mac os x|darwin(?!g)|cfnetwork|dataaccessd|iuc ?\(|(?<!sn)ip[dh][0-9]\,[0-9]|watchos|watch[0-9]\,[0-9]|puffin\/[0-9\.]+i[tp]|appletv|ios\.watch|macintosh|networkingextension|\(ios\)|airplay|apple watch/i': apple
+  '/(?<![a-z])ipad|ipod(?!der)|(?<!like |compatible |[at])iphone|like mac os x|(?<!bq )darwin(?!g)|cfnetwork|dataaccessd|iuc ?\(|(?<!sn)ip[dh][0-9]\,[0-9]|watchos|watch[0-9]\,[0-9]|puffin\/[0-9\.]+i[tp]|appletv|ios\.watch|macintosh|networkingextension|\(ios\)|airplay|apple watch/i': apple
   /m\.t\.t\./i: mtt
   '/cnm[ \-](?:touchpad|tp|7dc)[ \-](?:[0-9\.]+)|bush 7dc-8/i': cnm
   '/dslide ?[^;\/]+(?: +build|[;\/\)])/i': danew
@@ -220,7 +184,6 @@ rules:
   /utstar|gtx75|txt8010/i: utstarcom
   '/bluboo|picasso|xfire|maya|s1a|(?:adr|android) 5\.1.* x550(?: +build|[;\/\)])/i': bluboo
   '/amazon|kindle|silk-accelerated|silk\/[0-9\.]+ like chrome|aftkauk001|^echo\//i': amazon
-  '/ (?:b15q?|s52|s42|s[34]1|(?:adr|android) [89].* s61(?: +build|[;\/\)])|s[456]0(?! symbos))(?: +build|[;\/\)])/i': caterpillar
   '/polaroid|mid0714|mid0814|mid1028|mid1328|mid3147|(?<!o)midc|midr477|pmid|prov?[0-9]{3}[b0-9]?|p4526a|p5005a|p5006a|p5526a|pspck21na|pspcl20a0|pspcm20a0|pspcz20a0|pspc505|pspc550|pomdtb005/i': polaroid
   '/coby|nbpc724|mid(?:1024|1125|1126|1045|1048|1060|1065|4331|701[256]a?|702[02467]|703[0234568]|704[278]|7052|706[05]|712[057]|8024|8042|8048|8065|812[578]|9724|974[02])/i': coby
   '/(?<!\/)mid713|mid(?:06[sn]|08[s]?|12|13|14|15|701|702|703|704|705(?:dc)?|706[as]?|707|708|709|711|712|714|717|781|801|802|901|1001|1002|1003|1004(?: 3g)?|1005|1009|1010|7802|9701|9702)|msp5005/i': manta
@@ -243,7 +206,6 @@ rules:
   '/panasonic|panatv[0-9]+|viera\/|p902i(?: +build|[;\/\)])|eluga[ _]|fz-(?:n1|a1b)|dl1|p55 max|dmc-cm1|940p|840pe|103p|p55 novo 4g|(?:adr|android) 4\.[24].* t10(?: +build|[;\/\)])|p-08d/i': panasonic
   /videocon|vt75c/i: videocon
   '/wm[0-9]{4}(?!\/|\-)/i': wondermedia
-  '/gionee|(?<![\/jk])v1[0-9]{2}(?![0-9]a)|(?<!airis )gn(?!2200)[0-9]{3}|(?<!tecno) m[35] |f10[035]| e7t?(?: +build|[;\/\)])| v6l |pioneer|dream_d1|(?:adr|android) 4\.2.* p2(?: +build|[;\/\)])|p5 mini|m5_lite|p7 max|a1 lite|ctrl_v4| s5\.[15]|x817| s6s/i': gionee
   '/nomi[ _-]|(?:a10100|c07000)(?: +build|[;\/\)])/i': nomi
   '/toshiba|folio_and_a|folio100|at1s0|(?<![abceh\-])at[0-9]{2,3}|t-0[0-9][cd]|vm4050|c800 series|(?<!s)910t|h11t|lt170|l5450/i': toshiba
   /kaicloud/i: kaiomy
@@ -258,7 +220,7 @@ rules:
   '/pcd(?![18mt][0-9gi]{1,2})|ph4001/i': pcd
   '/(?:mpqc|mpdc)[0-9]{1,4}|(?<![cs])ph[0-9]{3}|mid(?:7c|74c|82c|84c|801|811|701|711|170|77c|43c|102c|103c|104c|114c)|mp(?:843|717|718|843|888|959|969|100i|1010|7007|7008|11 octa)|mgp7|mpqcg10/i': mpman
   '/shark (?:kle|mbu)-/i': black-shark
-  '/(?<!android )xiaomi(?!\/(?:mint|miui))|redmi|note 4|mipad|poco(?:phone)?|mibox[23]|(?<!a)(?:mi[ _]?[0-9]+|mi[ _][a-z0-9]+|mi-4c|mi-one[ _]?[a-z0-9]+|mix[ _]?[23]s?)[);\/ ]|(?:(?<![0-9t])hm[ _][^\/;]+|2[3-6][01][0-9][0-9a-f][2pr][1acknptxy][0-9a-in]{2}[0aceg-ilortxy]?|2212[0267a][pr][ckn][489c][13-6][cg-ily]|221113[1-9]{1,2}[cigp]{1,3}|22101[23][0-9]{1,2}[cgipsu]{1,3}|2209[15][12r][69a][89acgs]{2,3}|2208[17][2r][18a][1-4][acdgiu]{1,2}|2207[1-4]{2}[127fs][29a-cf-ilmp]{1,3}|220612[12][8s]c|2204121[169][acginpuy]{1,2}|2203[123]{2}[19q][6a-cginly]{1,3}|2202[13][1-3][1l][129][9cgikr]{1,3}|22011[12][1-9][1cgilpstuy]{1,3}|21121[12][0-9]{1,2}[acglsvy]{1,2}|211033mi|210911[1-9]{1,2}[a-dstu][cgily]?|21081111rg|2107113s[gir]|210611[18][09acdgl]{1,3}|21051182[cg]|2014501|2014011|201481[12378]|201302[23]|2013061| f1|leo w|wt88047)(?: build| miui|[;\/\)])|m2[01][01][0-7][cfjk]|m1912g7b[ce]|m1908c|m1904f3bg|m1903c3[eg][ghi]|m1901f7[1ghi]|m180[35][de][15][0x]a|dandelion|mzb[0-9abdeg-mqrv-xz]{4}in|xig01|mde5|dlt-[ah]0/i': xiaomi
+  '/(?<!android )xiaomi(?!\/(?:mint|miui))|redmi|mipad|poco(?:phone)?|mibox[23]/i': xiaomi
   /WeTab/: neofonie
   '/oukitel|u7 ?(?:plus|max|pro)|u15 ?pro|u16 ?max|k[4568]000|k10000|universetap|wp5000| (?:(?:adr|android) 6\..* c4|(?:adr|android) 7\..* c5|(?:c5|c1[25-8]|c21)[ _]pro|c8|c8[ _]4g|c33|u1[38]|u22|wp[125-8](?:[ _]?pro)?|wp[1-3][2368](?:[ _]?pro)?)(?: +build|[;\/\)])|(?:adr|android) 5\.1.* u2[ ;\)]|(?:adr|android) 7\.0.* k3(?: +build|[;\/\)])|k7[_ ](?:pro|power)| rt1(?: +build|[;\/\)])/i': oukitel
   '/ouki|ok[au][0-9]{1,2}/i': ouki
@@ -277,7 +239,7 @@ rules:
   '/cubot|hafury|(?<![pst])s108|(?:adr|android) 4\.4.* s200(?: +build|[;\/\)])|s208|s308|s550|s600(?!1l)|(?<!m)z100|note plus| (?:c7|h1|(?<!pixel 7 pro; |cheetah; )cheetah|x1[25689]|x1[679][ _]s|(?<!oppo )r9)(?: +build|[;\/\)])|(?:adr|android) 9.* max 2(?: +build|[;\/\)])|(?:adr|android) 7\..* mix(?: +build|[;\/\)])|bobby|(?:adr|android) 4\.4.* s(?:168|222|350)(?: +build|[;\/\)])|(?:adr|android) 5\.1.* p12(?: +build|[;\/\)])|gt9[05]|gt72\+|zorro 001|(?:adr|android) 4\.4.* x1[01](?: +build|[;\/\)])|king[_ ]?kong[_ ][379s]|(?:(?<!like )quest|(?<!ulefone_)note[ _](7|20)| gt20| x70| x20[_ ]pro)(?: +build|[;\/\)])|(?<!mi|mi |cine|y6 )max 3(?!d)/i': cubot
   '/polytron(?!-big-band-s)|r2401/i': polytron
   '/rmx5[0-3][0-9]{2}|rmx3[0-9]{3}|rmx2[012][0-9]{2}|rmx1[6789][0-9]{2}|rmp2[0-9]{3}|cph1861|cph1859|(?<!sugar) c2[01](?: +build|[;\/\)])/i': realme
-  '/(?<!p)oppo(?!x)|(?<!d)x90[0-9]{1,2}(?: +build|[;\/\)])|n52[0-9]{2}|(?<![_adegmpstuv0-9\-])r[12678][0-9]{2,3}[klst]?(?: +build|[;\/\)])|u70[0-9]t|f1f|find ?[57]| a57|a51[fw]|a37f|(?<![cm])a33[cfmtw]?|a11w|r7[gt]|r7[ks]?f|r7plus[fm]|r9tm| 1201 | 1107 |n1t|n511[167]|a160[13]|pm[adet][0-9]{3}|pl[tv][0-9]{3}|chp2365|cph2[0-8][0-9]{2}|cph1[6-9][0-9]{2}|(?:adr|android) 4\.2.* n1[ \)]|rmx1805|p[a-hj-m][a-np-wyz][mt1][0-478]0| r9s|r820[057]|(?:adr|android) 8\.1.* a7[ \)]|r1[ls](?: +build|[;\/\)])|(?:adr|android) 4\.[234].* r1[ \)]|a001op|r15_pro|opg02|opd2[1-6][0-9]{2}|opd2102|blp705|x21n2|reno ?[14][12]?/i': oppo
+  '/(?<!p)oppo(?!x)/i': oppo
   '/i-mobile|(?:i-style|(?<![nt_])iq) ?[0-9x]/i': i-mobile
   '/mobiistar|prime[_ ]x[_ ]|zumbo[_ ]s/i': mobiistar
   '/digma[_ ][^;\/]+(?: +build|[;\/\)])|hit ht707[10]mg|citi 1902 3g|citi [a-z0-9]+ 3g c[st]500[67]pg|idjd7|idrq10[ _]3g|idxd8[ _]3g|idnd7|hit 4g ht7074ml|idx5|idx10|idx7|mvm900h(?:wz|c)|mvm908hcz|idxd10 3g|idxd[45]|idxq5|idxd7[_ ]3g|ps604m|pt452e|ns6902ql|ns9797mg|(?:optima|platina|plane)[ _][em]?(?:[0-9\.st]+|prime)(?:[ _][43]g)?|tt7026mw|vox[ _][0-9\.a-z]+[_ ][43]g|tt702m|lt[0-9]{4}[mp][gl]|linx (?:alfa|argo|base|joy)|linx (?:[ac]|ps)[0-9]{3}/i': digma
@@ -304,6 +266,7 @@ rules:
   /braillenote/i: human-ware
   '/kruger&matz/i': kruger-matz
   '/land rover/i': land-rover
+  /multilaser/i: multilaser
   /pandigital/i: pandigital
   /polarline_/i: polar
   /toughgear/i: tough-gear
@@ -325,6 +288,7 @@ rules:
   /energizer/i: energizer
   /clovertek/i: clovertek
   /transpeed/i: transpeed
+  /audiovox/i: audiovox
   /aligator/i: aligator
   /phonemax/i: phonemax
   /ericsson/i: ericsson
@@ -342,6 +306,8 @@ rules:
   /morefine/i: morefine
   /velocity/i: velocity-micro
   '/wiz aero/i': wiz-aero
+  /flipkart/i: flipkart
+  /mobistel/i: mobistel
   /xtreamer/i: xtreamer
   /conquest/i: conquest
   /memobile/i: me-mobile
@@ -350,6 +316,12 @@ rules:
   /dynalink/i: dynalink
   /polestar/i: polestar
   /formuler/i: aloys
+  /lingwin/i: lingwin
+  /openbox/i: openbox
+  /feiteng/i: feiteng
+  /firefly/i: firefly
+  /karbonn/i: karbonn
+  /everpad/i: everest
   /maximus/i: maximus
   /speedup/i: speed-up
   /waltter/i: waltter
@@ -399,6 +371,14 @@ rules:
   /siragon/i: siragon
   /quantum/i: quantum
   /toscido/i: toscido
+  /archos/i: archos
+  /celkon/i: celkon
+  /doogee/i: doogee
+  /gionee/i: gionee
+  /droidz/i: torque
+  /tracer/i: tracer
+  /atongm/i: atongm
+  /tolino/i: tolino
   /cresta/i: cresta
   /woxter/i: woxter
   /s-tell/i: s-tell
@@ -460,6 +440,9 @@ rules:
   /barton/i: barton
   /polar_/i: polar
   '/dorado(?! wap)/i': dorado
+  /boway/i: boway
+  /byond/i: byond
+  /texet/i: texet
   /azumi/i: azumi
   /cowon/i: cowon
   /arris/i: arris
@@ -555,6 +538,8 @@ rules:
   /yasin/i: yasin
   /haixu/i: haixu
   '/advan(?!ce)/i': advan
+  /ergo/i: ergo
+  /onda/i: onda
   /tivo/i: tivo
   /base/i: base
   /iget/i: iget
@@ -623,7 +608,6 @@ rules:
   /ckk/i: ckk
   '/(?<!t)agm/i': agm
   /hmd/i: hmd-global
-  '/(?<![LR])ACE/': samsung
   /ai\+/i: ai-plus
   '/(?<![a-z])ios([;\/\.\- ]|$)/i': apple
   '/ I5/': sop
