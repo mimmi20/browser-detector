@@ -1,0 +1,44 @@
+seolizer:
+  name: SEOlizer
+  manufacturer: andreas-roene
+  type: seo-analytics
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SEOlizer
+  engine: unknown
+seobilitybot:
+  name: SeobilityBot
+  manufacturer: seobility
+  type: seo-analytics
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SeobilityBot
+  engine: unknown
+seranking-seochecker:
+  name: 'SeRanking SEOChecker'
+  manufacturer: seranking
+  type: seo-analytics
+  version:
+    class: null
+    search: null
+  engine: unknown
+senutobot:
+  name: SenutoBot
+  manufacturer: senuto
+  type: seo-analytics
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SenutoBot
+  engine: unknown
+smartseo-checker:
+  name: SmartSeo-Checker
+  manufacturer: unknown
+  type: seo-analytics
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SMARTSEO-checker
+  engine: unknown

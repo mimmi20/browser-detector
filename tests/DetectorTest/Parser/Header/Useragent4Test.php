@@ -14,6 +14,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Data\Os;
+use BrowserDetector\Loader\MappingfileLoaderInterface;
 use BrowserDetector\Parser\Header\UseragentClientCode;
 use BrowserDetector\Parser\Header\UseragentClientVersion;
 use BrowserDetector\Parser\Header\UseragentDeviceCode;
@@ -21,7 +22,6 @@ use BrowserDetector\Parser\Header\UseragentEngineCode;
 use BrowserDetector\Parser\Header\UseragentEngineVersion;
 use BrowserDetector\Parser\Header\UseragentPlatformCode;
 use BrowserDetector\Parser\Header\UseragentPlatformVersion;
-use BrowserDetector\Parser\Helper\DeviceInterface;
 use BrowserDetector\Version\Exception\NotNumericException;
 use BrowserDetector\Version\ForcedNullVersion;
 use BrowserDetector\Version\VersionBuilder;
@@ -30,6 +30,7 @@ use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use Psr\Log\LoggerInterface;
 use UaLoader\BrowserLoaderInterface;
 use UaLoader\EngineLoaderInterface;
 use UaLoader\PlatformLoaderInterface;
@@ -94,6 +95,29 @@ final class Useragent4Test extends TestCase
             bits: Bits::unknown,
         );
 
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
         $deviceParser = $this->createMock(DeviceParserInterface::class);
         $deviceParser
             ->expects(self::never())
@@ -149,10 +173,13 @@ final class Useragent4Test extends TestCase
                 ),
             );
 
-        $deviceCodeHelper = $this->createMock(DeviceInterface::class);
-        $deviceCodeHelper
+        $mappingFileParser = $this->createMock(MappingfileLoaderInterface::class);
+        $mappingFileParser
             ->expects(self::never())
-            ->method('getDeviceCode');
+            ->method('init');
+        $mappingFileParser
+            ->expects(self::never())
+            ->method('getItem');
 
         $normalizerFactory = new NormalizerFactory();
         $normalizerChain   = $normalizerFactory->build();
@@ -162,7 +189,9 @@ final class Useragent4Test extends TestCase
             deviceCode: new UseragentDeviceCode(
                 deviceParser: $deviceParser,
                 normalizer: $normalizerChain,
-                device: $deviceCodeHelper,
+                mappingFileParser: $mappingFileParser,
+                logger: $logger,
+                autoUpdate: false,
             ),
             clientCode: new UseragentClientCode(
                 browserParser: $browserParser,

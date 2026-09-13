@@ -13,23 +13,31 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
-use BrowserDetector\Parser\Helper\DeviceInterface;
+use BrowserDetector\Loader\MappingfileLoaderInterface;
 use Override;
+use Psr\Log\LoggerInterface;
+use RuntimeException;
 use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\Normalizer\NormalizerInterface;
 use UaParser\DeviceCodeInterface;
 use UaParser\DeviceParserInterface;
 
 use function in_array;
+use function is_string;
 use function mb_strtolower;
+use function mb_trim;
 
 final readonly class XUcbrowserDevice implements DeviceCodeInterface
 {
+    use AutoUpdateDeviceDataTrait;
+
     /** @throws void */
     public function __construct(
         private DeviceParserInterface $deviceParser,
         private NormalizerInterface $normalizer,
-        private DeviceInterface $device,
+        private MappingfileLoaderInterface $mappingFileParser,
+        private LoggerInterface $logger,
+        private bool $autoUpdate = false,
     ) {
         // nothing to do
     }
@@ -59,9 +67,23 @@ final readonly class XUcbrowserDevice implements DeviceCodeInterface
             return null;
         }
 
-        $code = $this->device->getDeviceCode(mb_strtolower($normalizedValue));
+        $find = $normalizedValue
+                |> mb_strtolower(...)
+                |> mb_trim(...);
 
-        if ($code !== null) {
+        try {
+            $this->mappingFileParser->init();
+        } catch (RuntimeException) {
+            return null;
+        }
+
+        $code = $this->mappingFileParser->getItem($find);
+
+        if (is_string($code)) {
+            if ($this->autoUpdate) {
+                $this->saveToMappingJson($find, $code);
+            }
+
             return $code;
         }
 
@@ -69,6 +91,10 @@ final readonly class XUcbrowserDevice implements DeviceCodeInterface
 
         if ($code === '') {
             return null;
+        }
+
+        if ($this->autoUpdate) {
+            $this->saveToMappingJson($find, $code);
         }
 
         return $code;

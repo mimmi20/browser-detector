@@ -1698,6 +1698,14 @@ final class OsTest extends TestCase
                 'version' => ['factory' => VersionBuilderFactory::class, 'search' => ['FortiOS']],
                 'key' => 'forti-os',
             ],
+            [
+                'type' => 'Webian',
+                'name' => 'Webian',
+                'marketingName' => 'Webian',
+                'company' => Company::unknown,
+                'version' => ['factory' => null, 'search' => null],
+                'key' => 'webian',
+            ],
         ];
     }
 }

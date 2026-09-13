@@ -90,7 +90,7 @@ parameters:
 
   type_coverage:
     return_type: 99.8
-    param_type: 99.8
+    param_type: 100
     property_type: 100
     constant_type: 100
     # also, how many files has declare strict types
@@ -131,9 +131,6 @@ parameters:
         - tests/DetectorTest/Loader/BrowserLoaderTest.php
         - tests/DetectorTest/Loader/CompanyLoaderTest.php
         - tests/DetectorTest/Loader/DeviceLoader1Test.php
-        #- tests/DetectorTest/Loader/EngineLoaderTest.php
-        #- tests/DetectorTest/Loader/PlatformLoader3Test.php
-        #- tests/DetectorTest/Loader/PlatformLoader4Test.php
     -
       identifier: throws.unusedType
       paths:

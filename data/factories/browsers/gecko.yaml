@@ -1,0 +1,130 @@
+rules:
+  '/aggregator\:spinn3r/i': 'spinn3r rss aggregator'
+  '/fireweb navigator/i': 'fireweb navigator'
+  '/(?<!like )navigator/i': 'netscape navigator'
+  /s~virustotalcloud/i: virus-total-cloud
+  '/(?<!via )wayback save page/i': 'wayback archive bot'
+  '/(?<!_)ruby(?!, )/i': ruby
+  /googleimageproxy|ggpht/i: gmail-image-proxy
+  '/t-online browser|to-browser|(?<![su])tob[ \/]/i': 't-online browser'
+  '/qwant(mobile)?\//i': qwant-mobile
+  /appengine-google/i: 'google app engine'
+  '/webmoney advisor/i': 'webmoney advisor'
+  /sailfishbrowser/i: 'sailfish browser'
+  /flipboardproxy/i: flipboardproxy
+  /novarra-vision/i: novarra-vision
+  /web\/snippet/i: 'google web snippet'
+  /unister-test|unistertesting|unister-https-test/i: unistertesting
+  /tweetmemebot/i: 'tweetmeme bot'
+  /tinybrowser/i: tinybrowser
+  /thunderbird/i: thunderbird
+  /caremedicom/i: caremedicom
+  /rebelmouse/i: rebelmouse
+  /multizilla/i: multizilla
+  /dt-browser/i: dt-browser
+  /gomezagent/i: 'gomez site monitor'
+  /ovibrowser/i: 'nokia proxy browser'
+  '/pale ?moon/i': palemoon
+  /kazehakase/i: kazehakase
+  /icedragon/i: icedragon
+  /seamonkey|iceape/i: seamonkey
+  /jobboerse/i: 'jobboerse bot'
+  /360spider/i: 360spider
+  /iceweasel/i: iceweasel
+  /surveybot/i: surveybot
+  /butterfly/i: 'butterfly robot'
+  '/james bot/i': jamesbot
+  /cometbird/i: cometbird
+  /netscape/i: netscape
+  /basilisk/i: basilisk
+  /waterfox/i: waterfox
+  /slimerjs/i: slimerjs
+  /k-meleon/i: k-meleon
+  /cyberfox/i: cyberfox
+  /epiphany/i: epiphany
+  /myibrow/i: 'my internet browser'
+  /k-ninja/i: k-ninja
+  /lolifox/i: lolifox
+  /omniweb/i: omniweb
+  /mobicip/i: mobicip
+  /fennec/i: fennec
+  '/daumoa|msie or firefox mutant/i': daumoa
+  '/microb|maemo ?browser|tablet browser/i': microb
+  /icecat/i: icecat
+  /galeon/i: galeon
+  /camino/i: camino
+  /minimo/i: minimo
+  /puffin/i: puffin
+  /flock/i: flock
+  '/mozilla\/5\.0 \(windows; rv:.*\) gecko\/.* firefox\/.*/i': 'thumbnail.ws bot'
+  '/archive\.org\.ua crawler|archive\.org_bot/i': 'internet archive'
+  /nbertaupete95\(at\)gmail\.com/i: nbertaupete95
+  '/^pb[0-9]+/i': 'pirate browser'
+  '/openwave|up\.browser| up\//i': 'openwave mobile browser'
+  '/anonymized by abelssoft/i': anti-browser-spy
+  '/outlook[\- ]express/i': outlook-express
+  '/baidu transcoder/i': baidu-transcoder
+  /trendictionbot/i: 'trendiction bot'
+  /bne\.es_bot/i: 'bne.es bot'
+  /umbot|um-(ln|cc|fc|ans)/i: umbot
+  '/sunrisebrowser|sunrise[\/ ]/i': sunrise
+  /privacywall/i: privacywall
+  /img2dataset/i: img2dataset
+  /artisreader/i: artis-browser
+  /tenfourfox/i: tenfourfox
+  /classilla/i: classilla
+  /awesomium/i: awesomium
+  /ips-agent/i: ips-agent
+  /sitekiosk/i: sitekiosk
+  /freespoke/i: freespoke
+  /swiftfox/i: swiftfox
+  /firebird/i: firebird
+  /seolizer/i: seolizer
+  /ghostery/i: 'ghostery privacy browser'
+  /freshbot/i: freshbot
+  /diffbot/i: diffbot
+  /mypal\//i: mypal
+  /bingbot|msnbot|msrbot/i: bingbot
+  /tansodl/i: 'tanso download manager'
+  /youtube/i: 'youtube app'
+  /kapiko/i: kapiko
+  /avant/i: avant
+  /slurp/i: slurp
+  /nutch/i: nutch
+  '/mobile vr.+firefox/i': firefox-reality
+  /firefox|minefield|shiretoko|bonecho|namoroka|granparadiso|lorentz/i: firefox
+  '/xml sitemaps generator/i': 'xml sitemaps generator'
+  /lightningquail/i: lightningquail
+  /unimatrix-zero/i: unimatrix-zero
+  '/acorn phoenix/i': acorn-phoenix
+  /woorankreview/i: woorank-review
+  '/crazy browser/i': 'crazy browser'
+  /researchscan/i: researchscan
+  '/acorn browse/i': acorn-browse
+  '/inet browser/i': inet-browser
+  /webianshell/i: webianshell
+  /nightingale/i: nightingale
+  /netpositive/i: netpositive
+  '/playstation|psp /i': 'playstation browser'
+  /etaospider/i: etao-spider
+  /charlotte/i: charlotte
+  /superswan/i: superswan
+  /aolshield/i: 'aol shield'
+  /webthumb/i: webthumb
+  /vonkeror/i: vonkeror
+  /conkeror/i: conkeror
+  /songbird/i: songbird
+  /aihitbot/i: aihitbot
+  /icedove/i: icedove
+  /phoenix/i: phoenix
+  /chimera/i: chimera
+  /postbox/i: postbox
+  /80legs|80bot/i: 80legs
+  /iceowl/i: iceowl
+  /midori/i: midori
+  /kmlite/i: kmlite
+  /beonex/i: 'beonex communicator'
+  /prism/i: prism
+  /swb/i: 'hp secure web browser'
+  /android/i: 'android webkit'
+generic: firefox

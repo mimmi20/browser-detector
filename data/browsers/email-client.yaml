@@ -1,0 +1,126 @@
+airmail:
+  name: Airmail
+  manufacturer: bloop
+  type: email-client
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Airmail
+  engine: webkit
+cronomail:
+  name: CronoMail
+  manufacturer: unknown
+  type: email-client
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - CronoMail
+  engine: webkit
+hotmailbuzzr:
+  name: HotmailBuzzr
+  manufacturer: unknown
+  type: email-client
+  version:
+    class: null
+    search: null
+  engine: webkit
+inboxcube:
+  name: Inboxcube
+  manufacturer: inboxcube
+  type: email-client
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Inboxcube
+  engine: webkit
+incredimail:
+  name: Incredimail
+  manufacturer: unknown
+  type: email-client
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Incredimail
+      - Incredimail\-
+  engine: webkit
+kmail2:
+  name: KMail2
+  manufacturer: kde
+  type: email-client
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - kmail2
+  engine: webkit
+kontact:
+  name: Kontact
+  manufacturer: kde
+  type: email-client
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - kontact
+  engine: webkit
+mailbar:
+  name: MailBar
+  manufacturer: mailbar
+  type: email-client
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - MailBar
+  engine: unknown
+'outlook social connector':
+  name: 'Outlook Social Connector'
+  manufacturer: microsoft
+  type: email-client
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'outlook social connector'
+      - 'microsoft office outlook'
+      - 'microsoft outlook'
+  engine: unknown
+postbox:
+  name: Postbox
+  manufacturer: postbox
+  type: email-client
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Postbox
+  engine: gecko
+virgilio-mail:
+  name: 'Virgilio Mail'
+  manufacturer: italiaonline
+  type: email-client
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - VirgilioMail
+  engine: webkit
+samsung-email:
+  name: 'Samsung Email'
+  manufacturer: samsung
+  type: email-client
+  version:
+    class: null
+    search: null
+  engine: null
+libero-mail:
+  name: 'Libero Mail'
+  manufacturer: italiaonline
+  type: email-client
+  version:
+    class: null
+    search: null
+  engine: null
+eudora:
+  name: Eudora
+  manufacturer: qualcomm
+  type: email-client
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Eudora
+  engine: gecko

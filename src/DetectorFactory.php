@@ -19,23 +19,20 @@ use BrowserDetector\Loader\CompanyLoaderFactory;
 use BrowserDetector\Loader\Data;
 use BrowserDetector\Loader\DeviceLoaderFactory;
 use BrowserDetector\Loader\EngineLoader;
-use BrowserDetector\Loader\InitData\Client as DataClient;
+use BrowserDetector\Loader\MappingfileLoader;
 use BrowserDetector\Loader\PlatformLoader;
 use BrowserDetector\Parser\BrowserParserFactory;
 use BrowserDetector\Parser\DeviceParserFactory;
 use BrowserDetector\Parser\EngineParserFactory;
 use BrowserDetector\Parser\Header\HeaderLoader;
+use BrowserDetector\Parser\Helper\RulefileParser;
 use BrowserDetector\Parser\PlatformParserFactory;
 use BrowserDetector\Version\VersionBuilder;
-use Laminas\Hydrator\ArraySerializableHydrator;
 use Laminas\Hydrator\Exception\InvalidArgumentException;
-use Laminas\Hydrator\Strategy\CollectionStrategy;
 use Laminas\Hydrator\Strategy\SerializableStrategy;
-use Laminas\Hydrator\Strategy\StrategyChain;
 use Laminas\Serializer\Adapter\Json;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\CacheInterface as PsrCacheInterface;
-use RuntimeException;
 use UaNormalizer\NormalizerFactory;
 use UaRequest\RequestBuilder;
 
@@ -44,15 +41,15 @@ final class DetectorFactory
     private Detector | null $detector = null;
 
     /** @throws void */
-    public function __construct(private readonly PsrCacheInterface $psrCache, private readonly LoggerInterface $logger)
-    {
+    public function __construct(
+        private readonly PsrCacheInterface $psrCache,
+        private readonly LoggerInterface $logger,
+        private readonly bool $autoUpdate = false,
+    ) {
         // nothing to do
     }
 
-    /**
-     * @throws RuntimeException
-     * @throws InvalidArgumentException
-     */
+    /** @throws InvalidArgumentException */
     public function __invoke(): Detector
     {
         if (!$this->detector instanceof Detector) {
@@ -78,7 +75,9 @@ final class DetectorFactory
                 companyLoader: $companyLoader,
             );
 
-            $deviceParserFactory = new DeviceParserFactory(logger: $this->logger);
+            $ruleFileParser = new RulefileParser(logger: $this->logger);
+
+            $deviceParserFactory = new DeviceParserFactory(rulefileParser: $ruleFileParser);
             $deviceParser        = $deviceParserFactory();
 
             $engineLoader = new EngineLoader(
@@ -87,30 +86,21 @@ final class DetectorFactory
                 versionBuilder: new VersionBuilder(),
             );
 
-            $engineParserFactory = new EngineParserFactory(logger: $this->logger);
+            $engineParserFactory = new EngineParserFactory(rulefileParser: $ruleFileParser);
             $engineParser        = $engineParserFactory();
 
             $browserLoader = new BrowserLoader(
                 logger: $this->logger,
-                initData: new Data\Client(
-                    strategy: new StrategyChain(
-                        [
-                            new CollectionStrategy(
-                                new ArraySerializableHydrator(),
-                                DataClient::class,
-                            ),
-                            $serializableStrategy,
-                        ],
-                    ),
-                ),
+                initData: new Data\Client(),
                 companyLoader: $companyLoader,
                 versionBuilder: new VersionBuilder(),
             );
 
-            $browserParserFactory = new BrowserParserFactory(logger: $this->logger);
+            $browserParserFactory = new BrowserParserFactory(rulefileParser: $ruleFileParser);
             $browserParser        = $browserParserFactory();
 
             $normalizerFactory = new NormalizerFactory();
+            $mappingfileLoader = new MappingfileLoader();
 
             $headerLoader = new HeaderLoader(
                 deviceParser: $deviceParser,
@@ -121,6 +111,9 @@ final class DetectorFactory
                 browserLoader: $browserLoader,
                 platformLoader: $platformLoader,
                 engineLoader: $engineLoader,
+                mappingFileParser: $mappingfileLoader,
+                logger: $this->logger,
+                autoUpdate: $this->autoUpdate,
             );
 
             $requestBuilder = new RequestBuilder(headerLoader: $headerLoader);

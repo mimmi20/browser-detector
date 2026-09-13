@@ -14,31 +14,31 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser\Helper;
 
 use Exception;
-use JsonException;
 use Override;
 use Psr\Log\LoggerInterface;
+use Symfony\Component\Yaml\Yaml;
 
 use function array_filter;
 use function array_first;
 use function array_key_exists;
 use function assert;
-use function file_get_contents;
 use function is_array;
 use function is_int;
 use function is_string;
-use function json_decode;
 use function preg_last_error;
 use function preg_last_error_msg;
 use function preg_match;
 use function sprintf;
 
 use const ARRAY_FILTER_USE_KEY;
-use const JSON_THROW_ON_ERROR;
 
-final readonly class RulefileParser implements RulefileParserInterface
+final class RulefileParser implements RulefileParserInterface
 {
+    /** @var array<string, array{rules?: array<string, string>, generic?: string}> */
+    private array $factories = [];
+
     /** @throws void */
-    public function __construct(private LoggerInterface $logger)
+    public function __construct(private readonly LoggerInterface $logger)
     {
         // nothing to do
     }
@@ -47,31 +47,17 @@ final readonly class RulefileParser implements RulefileParserInterface
     #[Override]
     public function parseFile(string $file, string $useragent, string $fallback): string
     {
-        $content = @file_get_contents($file);
+        if (array_key_exists($file, $this->factories)) {
+            $factories = $this->factories[$file];
+        } else {
+            $factories = Yaml::parseFile($file);
 
-        if ($content === false) {
-            $this->logger->error(
-                new Exception(sprintf('could not load file %s', $file)),
-            );
-
-            return $fallback;
+            $this->factories[$file] = $factories;
         }
 
-        try {
-            $factories = json_decode(json: $content, associative: true, flags: JSON_THROW_ON_ERROR);
-
-            assert(is_array($factories));
-
-            $rules = $factories['rules'] ?? [];
-        } catch (JsonException $e) {
-            $this->logger->error(
-                new Exception(sprintf('could not decode content of file %s', $file), 0, $e),
-            );
-
-            return $fallback;
-        }
-
-        $mode = null;
+        assert(is_array($factories));
+        $rules = $factories['rules'] ?? [];
+        $mode  = null;
 
         if (is_array($rules)) {
             $mode = $this->getModeFromRules($rules, $file, $useragent);
@@ -117,9 +103,10 @@ final readonly class RulefileParser implements RulefileParserInterface
                     $this->logger->error(
                         new Exception(
                             sprintf(
-                                'could not match rule "%s" of file %s: %s [%s]',
+                                'could not match rule "%s" of file %s with useragent "%s": %s [%s]',
                                 $rule,
                                 $file,
+                                $useragent,
                                 $msg,
                                 $error,
                             ),

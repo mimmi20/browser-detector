@@ -1,0 +1,460 @@
+'chrome privacy preserving prefetch proxy':
+  name: 'Chrome Privacy Preserving Prefetch Proxy'
+  manufacturer: unknown
+  type: service-agent
+  version:
+    class: null
+    search: null
+  engine: unknown
+skypeuripreview:
+  name: 'Skype URI Preview'
+  manufacturer: microsoft
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SkypeUriPreview
+      - Preview
+  engine: unknown
+'wordpress.com mshots':
+  name: 'WordPress.com mShots'
+  manufacturer: microsoft
+  type: service-agent
+  version:
+    class: null
+    search: null
+  engine: unknown
+discordbot:
+  name: 'Discord Bot'
+  manufacturer: discord
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Discordbot
+  engine: unknown
+wordpress:
+  name: WordPress
+  manufacturer: automattic
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - WordPress\-B\-
+      - WordPress\-Do\-P\-
+      - WordPress
+  engine: unknown
+'snap url preview service':
+  name: 'Snap URL Preview Service'
+  manufacturer: snap
+  type: service-agent
+  version:
+    class: null
+    search: null
+  engine: unknown
+yahoomail-proxy:
+  name: 'Yahoo! Mail Proxy'
+  manufacturer: yahoo
+  type: service-agent
+  version:
+    class: null
+    search: null
+  engine: unknown
+semrush-reputation-management:
+  name: 'SEMrush Reputation Management'
+  manufacturer: semrush
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SerpReputationManagementAgent
+  engine: unknown
+widgetkit-extension:
+  name: WidgetKitExtension
+  manufacturer: apple
+  type: service-agent
+  version:
+    factory: null
+    search: null
+  engine: null
+apache-server:
+  name: Apache
+  manufacturer: apache
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Apache
+  engine: null
+'webmoney advisor':
+  name: 'WebMoney Advisor'
+  manufacturer: deed-baltic
+  type: service-agent
+  version:
+    class: null
+    search: null
+  engine: null
+dv-bot:
+  name: DVbot
+  manufacturer: double-verify
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - DVbot
+  engine: null
+vali-mail:
+  name: Valimail
+  manufacturer: valimail
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Valimail
+  engine: null
+cybaa-agent:
+  name: CybaaAgent
+  manufacturer: cybaa
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - CybaaAgent
+  engine: null
+forward-qr:
+  name: ForwardQR
+  manufacturer: unknown
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ForwardQR
+  engine: null
+google-apps-script:
+  name: 'Google Apps Script'
+  manufacturer: google
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Google-Apps-Script
+  engine: null
+google-firebase:
+  name: Google-Firebase
+  manufacturer: google
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Google-Firebase
+  engine: null
+link-preview:
+  name: LinkPreview
+  manufacturer: unknown
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - LinkPreview
+  engine: null
+admantx-service-fetcher:
+  name: 'ADmantX Service Fetcher'
+  manufacturer: integral-ad-science
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ias-or
+  engine: null
+barracuda-sentinel:
+  name: 'Barracuda Sentinel'
+  manufacturer: barracuda-networks
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Barracuda Sentinel'
+  engine: null
+whats-my-ip-org:
+  name: WhatsMyIP.org
+  manufacturer: unknown
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - WhatsMyIP\.org
+  engine: null
+google-docs:
+  name: 'Google Docs'
+  manufacturer: google
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - GoogleDocs
+  engine: null
+amazon-buy-for-me:
+  name: AmazonBuyForMe
+  manufacturer: amazon
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - AmazonBuyForMe
+  engine: null
+nova-act:
+  name: NovaAct
+  manufacturer: amazon
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - NovaAct
+  engine: null
+data-xu:
+  name: DataXu
+  manufacturer: roku
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - DataXu
+  engine: null
+microsoft-power-automate:
+  name: 'Microsoft Power Automate'
+  manufacturer: microsoft
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - microsoft-flow
+  engine: null
+chatwork-link-preview:
+  name: 'Chatwork LinkPreview'
+  manufacturer: kubell
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Chatwork LinkPreview v'
+      - 'Chatwork LinkPreview'
+  engine: null
+steam-chat-url-lookup:
+  name: 'Steam Chat URL Lookup'
+  manufacturer: valve
+  type: service-agent
+  version:
+    factory: null
+    search: null
+  engine: null
+zotero-translation-server:
+  name: 'Zotero Translation Server'
+  manufacturer: wikimedia
+  type: service-agent
+  version:
+    factory: null
+    search: null
+  engine: null
+sectigo-dcv:
+  name: 'Sectigo DCV'
+  manufacturer: sectigo
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - acme\.sectigo\.com\/v
+      - acme\.sectigo\.com
+  engine: null
+php-my-admin:
+  name: phpMyAdmin
+  manufacturer: unknown
+  type: service-agent
+  version:
+    factory: null
+    search: null
+  engine: null
+gum-gum-verity:
+  name: 'GumGum Verity'
+  manufacturer: gum-gum
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Verity
+  engine: null
+plesk-screenshot-service:
+  name: 'Plesk Screenshot Service'
+  manufacturer: plesk
+  type: service-agent
+  version:
+    factory: null
+    search: null
+  engine: null
+kiwi-tcms-gitops:
+  name: 'Kiwi TCMS GitOps'
+  manufacturer: otb
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - kiwitcms-gitops
+  engine: null
+keycdn-tools:
+  name: 'KeyCDN Tools'
+  manufacturer: proinity
+  type: service-agent
+  version:
+    factory: null
+    search: null
+  engine: null
+prometheus:
+  name: Prometheus
+  manufacturer: linux-foundation
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Prometheus
+  engine: null
+matomo:
+  name: Matomo
+  manufacturer: matomo
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Matomo
+  engine: null
+cloudflare-custom-hostname-verification:
+  name: 'Cloudflare Custom Hostname Verification'
+  manufacturer: cloud-flare
+  type: service-agent
+  version:
+    factory: null
+    search: null
+  engine: null
+cloudflare-health-checks:
+  name: 'Cloudflare Health Checks'
+  manufacturer: cloud-flare
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Cloudflare-Healthchecks
+  engine: null
+ezgif:
+  name: Ezgif
+  manufacturer: sia-open-idea
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Ezgif
+  engine: null
+viber-url-downloader:
+  name: 'Viber Url Downloader'
+  manufacturer: viber-media
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ViberUrlDownloader
+  engine: null
+microsoft-preview:
+  name: 'Microsoft Preview'
+  manufacturer: microsoft
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - MicrosoftPreview
+  engine: null
+'hggh screenshot system with phantomjs':
+  name: 'HggH Screenshot System with PhantomJS'
+  manufacturer: jonas-genannt
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'HggH PhantomJS Screenshoter'
+  engine: unknown
+'seznam screenshot generator':
+  name: 'Seznam Screenshot Generator'
+  manufacturer: seznam
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SeznamScreenshotGenerator
+      - 'Seznam screenshot-generator'
+  engine: unknown
+browsershots:
+  name: Browsershots
+  manufacturer: browsershots
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Browsershots
+  engine: unknown
+vercel-bot:
+  name: 'Vercel Bot'
+  manufacturer: vercel
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Vercelbot
+  engine: unknown
+overcast-podcast-sync:
+  name: 'Overcast Podcast Sync'
+  manufacturer: 'overcast radio'
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Overcast
+  engine: webkit
+grammarly:
+  name: Grammarly
+  manufacturer: unknown
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Grammarly
+  engine: unknown
+lets-encrypt-validation:
+  name: "Let's Encrypt Validation"
+  manufacturer: isrg
+  type: service-agent
+  version:
+    class: null
+    search: null
+  engine: unknown
+amazon-route53-health-check:
+  name: 'Amazon Route53 Health Check'
+  manufacturer: amazon
+  type: service-agent
+  version:
+    class: null
+    search: null
+  engine: unknown
+xen-foro:
+  name: XenForo
+  manufacturer: unknown
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - XenForo
+  engine: unknown
+2gdpr:
+  name: 2GDPR
+  manufacturer: unknown
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 2GDPR
+  engine: unknown

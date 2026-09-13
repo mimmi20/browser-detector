@@ -21,7 +21,7 @@ use UaParser\EngineParserInterface;
 
 final readonly class EngineParser implements EngineParserInterface
 {
-    private const string GENERIC_FILE = __DIR__ . '/../../data/factories/engines.json';
+    private const string GENERIC_FILE = __DIR__ . '/../../data/factories/engines.yaml';
 
     /** @throws void */
     public function __construct(private RulefileParserInterface $rulefileParser)

@@ -15,19 +15,17 @@ namespace BrowserDetector\Loader\Data;
 
 use BrowserDetector\Iterator\FilterIterator;
 use BrowserDetector\Loader\InitData\Client as DataClient;
-use Laminas\Hydrator\Strategy\StrategyInterface;
 use Override;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use RuntimeException;
 use SplFileInfo;
+use Symfony\Component\Yaml\Yaml;
 
 use function array_key_exists;
 use function assert;
-use function file_get_contents;
 use function is_array;
 use function is_string;
-use function sprintf;
 use function str_replace;
 
 final class Client implements DataInterface
@@ -39,7 +37,7 @@ final class Client implements DataInterface
     private bool $initialized = false;
 
     /** @throws void */
-    public function __construct(private readonly StrategyInterface $strategy)
+    public function __construct()
     {
         // nothing to do
     }
@@ -53,7 +51,7 @@ final class Client implements DataInterface
         }
 
         $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator(self::DATA_PATH));
-        $files    = new FilterIterator($iterator, 'json');
+        $files    = new FilterIterator($iterator, 'yaml');
 
         foreach ($files as $file) {
             assert($file instanceof SplFileInfo);
@@ -62,15 +60,7 @@ final class Client implements DataInterface
             $filepath = str_replace('\\', '/', $pathName);
             assert(is_string($filepath));
 
-            $content = @file_get_contents($filepath);
-
-            assert($content === false || is_string($content));
-
-            if ($content === false) {
-                throw new RuntimeException(sprintf('could not read file "%s"', $file));
-            }
-
-            $fileData = $this->strategy->hydrate($content, []);
+            $fileData = Yaml::parseFile($filepath);
 
             assert(is_array($fileData));
 
@@ -81,11 +71,15 @@ final class Client implements DataInterface
                     continue;
                 }
 
-                if (!$data instanceof DataClient) {
-                    continue;
-                }
-
-                $this->items[$stringKey] = $data;
+                $this->items[$stringKey] = new DataClient(
+                    name: $data['name'],
+                    manufacturer: $data['manufacturer'],
+                    version: array_key_exists('version', $data) && is_array($data['version'])
+                        ? (object) $data['version']
+                        : null,
+                    type: $data['type'],
+                    engine: $data['engine'],
+                );
             }
         }
 

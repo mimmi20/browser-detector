@@ -34,16 +34,15 @@ use RecursiveIteratorIterator;
 use RuntimeException;
 use SplFileInfo;
 use Stringable;
+use Symfony\Component\Yaml\Yaml;
 use UaLoader\Exception\NotFoundException;
 use UnexpectedValueException;
 
 use function assert;
-use function file_get_contents;
 use function is_array;
 use function is_iterable;
 use function is_scalar;
 use function is_string;
-use function json_decode;
 use function json_encode;
 use function sprintf;
 use function str_replace;
@@ -253,7 +252,6 @@ final class DetectorTest extends TestCase
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
      *
-     * @throws RuntimeException
      * @throws \Laminas\Hydrator\Exception\InvalidArgumentException
      */
     #[CoversNothing]
@@ -330,8 +328,8 @@ final class DetectorTest extends TestCase
      */
     public static function providerGetBrowser(): array
     {
-        $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator('tests/data/'));
-        $files    = new FilterIterator($iterator, 'json');
+        $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator('data/tests/'));
+        $files    = new FilterIterator($iterator, 'yaml');
 
         $data = [];
 
@@ -342,17 +340,7 @@ final class DetectorTest extends TestCase
             $filepath = str_replace('\\', '/', $pathName);
             assert(is_string($filepath));
 
-            $content = @file_get_contents($filepath);
-
-            if ($content === false) {
-                throw new RuntimeException(sprintf('could not read file "%s"', $filepath));
-            }
-
-            try {
-                $tests = json_decode(json: $content, associative: true, flags: JSON_THROW_ON_ERROR);
-            } catch (JsonException $e) {
-                throw new Exception(sprintf('file "%s" contains invalid json', $filepath), 0, $e);
-            }
+            $tests = Yaml::parseFile($filepath);
 
             assert(is_iterable($tests));
 
