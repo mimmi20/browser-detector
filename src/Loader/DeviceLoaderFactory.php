@@ -13,7 +13,6 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader;
 
-use Laminas\Hydrator\Exception\InvalidArgumentException;
 use Override;
 use Psr\Log\LoggerInterface;
 use UaLoader\DeviceLoaderInterface;
@@ -33,7 +32,7 @@ final class DeviceLoaderFactory implements DeviceLoaderFactoryInterface
         // nothing to do
     }
 
-    /** @throws InvalidArgumentException */
+    /** @throws void */
     #[Override]
     public function __invoke(string $company = ''): DeviceLoaderInterface
     {

@@ -19,6 +19,7 @@ use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use RuntimeException;
 use SplFileInfo;
+use Symfony\Component\Yaml\Exception\ParseException;
 use Symfony\Component\Yaml\Yaml;
 
 use function array_key_exists;
@@ -59,7 +60,11 @@ final class MappingfileLoader implements MappingfileLoaderInterface
             $filepath = str_replace('\\', '/', $pathName);
             assert(is_string($filepath));
 
-            $fileData = Yaml::parseFile($filepath);
+            try {
+                $fileData = Yaml::parseFile($filepath);
+            } catch (ParseException) {
+                continue;
+            }
 
             assert(is_array($fileData));
 

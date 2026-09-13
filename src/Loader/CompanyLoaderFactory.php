@@ -13,7 +13,6 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader;
 
-use Laminas\Hydrator\Exception\InvalidArgumentException;
 use Laminas\Hydrator\Strategy\StrategyInterface;
 use Override;
 
@@ -21,9 +20,9 @@ final class CompanyLoaderFactory implements CompanyLoaderFactoryInterface
 {
     private CompanyLoader | null $companyLoader = null;
 
-    /** @throws InvalidArgumentException */
+    /** @throws void */
     #[Override]
-    public function __invoke(StrategyInterface $strategy): CompanyLoaderInterface
+    public function __invoke(): CompanyLoaderInterface
     {
         if (!$this->companyLoader instanceof CompanyLoader) {
             $this->companyLoader = new CompanyLoader(

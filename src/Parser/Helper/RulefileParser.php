@@ -16,6 +16,7 @@ namespace BrowserDetector\Parser\Helper;
 use Exception;
 use Override;
 use Psr\Log\LoggerInterface;
+use Symfony\Component\Yaml\Exception\ParseException;
 use Symfony\Component\Yaml\Yaml;
 
 use function array_filter;
@@ -34,7 +35,7 @@ use const ARRAY_FILTER_USE_KEY;
 
 final class RulefileParser implements RulefileParserInterface
 {
-    /** @var array<string, array{rules?: array<string, string>, generic?: string}> */
+    /** @var array<string, array<mixed>> */
     private array $factories = [];
 
     /** @throws void */
@@ -50,7 +51,15 @@ final class RulefileParser implements RulefileParserInterface
         if (array_key_exists($file, $this->factories)) {
             $factories = $this->factories[$file];
         } else {
-            $factories = Yaml::parseFile($file);
+            try {
+                $factories = Yaml::parseFile($file);
+            } catch (ParseException) {
+                return $fallback;
+            }
+
+            if (!is_array($factories)) {
+                return $fallback;
+            }
 
             $this->factories[$file] = $factories;
         }

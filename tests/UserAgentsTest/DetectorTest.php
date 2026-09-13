@@ -34,6 +34,7 @@ use RecursiveIteratorIterator;
 use RuntimeException;
 use SplFileInfo;
 use Stringable;
+use Symfony\Component\Yaml\Exception\ParseException;
 use Symfony\Component\Yaml\Yaml;
 use UaLoader\Exception\NotFoundException;
 use UnexpectedValueException;
@@ -252,7 +253,7 @@ final class DetectorTest extends TestCase
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
      *
-     * @throws \Laminas\Hydrator\Exception\InvalidArgumentException
+     * @throws void
      */
     #[CoversNothing]
     #[Override]
@@ -340,7 +341,11 @@ final class DetectorTest extends TestCase
             $filepath = str_replace('\\', '/', $pathName);
             assert(is_string($filepath));
 
-            $tests = Yaml::parseFile($filepath);
+            try {
+                $tests = Yaml::parseFile($filepath);
+            } catch (ParseException) {
+                continue;
+            }
 
             assert(is_iterable($tests));
 

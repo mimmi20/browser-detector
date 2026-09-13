@@ -13,11 +13,9 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader\Data;
 
-use RuntimeException;
-
 interface DataInterface
 {
-    /** @throws RuntimeException */
+    /** @throws void */
     public function init(): void;
 
     /**

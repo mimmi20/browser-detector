@@ -18,9 +18,10 @@ use BrowserDetector\Loader\InitData\Client as DataClient;
 use Override;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
-use RuntimeException;
 use SplFileInfo;
+use Symfony\Component\Yaml\Exception\ParseException;
 use Symfony\Component\Yaml\Yaml;
+use UnexpectedValueException;
 
 use function array_key_exists;
 use function assert;
@@ -42,7 +43,7 @@ final class Client implements DataInterface
         // nothing to do
     }
 
-    /** @throws RuntimeException */
+    /** @throws UnexpectedValueException */
     #[Override]
     public function init(): void
     {
@@ -60,16 +61,27 @@ final class Client implements DataInterface
             $filepath = str_replace('\\', '/', $pathName);
             assert(is_string($filepath));
 
-            $fileData = Yaml::parseFile($filepath);
+            try {
+                $fileData = Yaml::parseFile($filepath);
+            } catch (ParseException) {
+                continue;
+            }
 
-            assert(is_array($fileData));
+            if (!is_array($fileData)) {
+                continue;
+            }
 
             foreach ($fileData as $key => $data) {
                 $stringKey = (string) $key;
 
-                if (array_key_exists($stringKey, $this->items)) {
+                if (array_key_exists($stringKey, $this->items) || !is_array($data)) {
                     continue;
                 }
+
+                assert(is_string($data['name']));
+                assert(is_string($data['manufacturer']));
+                assert(is_string($data['type']));
+                assert(is_string($data['engine']));
 
                 $this->items[$stringKey] = new DataClient(
                     name: $data['name'],

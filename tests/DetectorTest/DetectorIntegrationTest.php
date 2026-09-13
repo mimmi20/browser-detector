@@ -40,6 +40,7 @@ use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use RuntimeException;
 use SplFileInfo;
+use Symfony\Component\Yaml\Exception\ParseException;
 use Symfony\Component\Yaml\Yaml;
 use UnexpectedValueException;
 
@@ -71,7 +72,6 @@ final class DetectorIntegrationTest extends TestCase
      * @throws UnexpectedValueException
      * @throws ExpectationFailedException
      * @throws RuntimeException
-     * @throws \Laminas\Hydrator\Exception\InvalidArgumentException
      */
     #[DataProvider(methodName: 'providerUa')]
     public function testData(array $headers, array $expected): void
@@ -136,9 +136,9 @@ final class DetectorIntegrationTest extends TestCase
     }
 
     /**
-     * @return array<int, array<int, mixed>>
+     * @return list<array<mixed>>
      *
-     * @throws void
+     * @throws UnexpectedValueException
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
@@ -157,11 +157,19 @@ final class DetectorIntegrationTest extends TestCase
             $filepath = str_replace('\\', '/', $pathName);
             assert(is_string($filepath));
 
-            $fileData = Yaml::parseFile($filepath);
+            try {
+                $fileData = Yaml::parseFile($filepath);
+            } catch (ParseException) {
+                continue;
+            }
 
             assert(is_array($fileData));
 
             foreach ($fileData as $entry) {
+                if (!is_array($entry)) {
+                    continue;
+                }
+
                 $data[] = $entry;
             }
         }

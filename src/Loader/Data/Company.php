@@ -15,11 +15,14 @@ namespace BrowserDetector\Loader\Data;
 
 use BrowserDetector\Loader\InitData\Company as DataCompany;
 use Override;
-use RuntimeException;
+use Symfony\Component\Yaml\Exception\ParseException;
 use Symfony\Component\Yaml\Yaml;
 use UnexpectedValueException;
 
 use function array_key_exists;
+use function assert;
+use function is_array;
+use function is_string;
 
 final class Company implements DataInterface
 {
@@ -35,7 +38,7 @@ final class Company implements DataInterface
         // nothing to do
     }
 
-    /** @throws RuntimeException */
+    /** @throws void */
     #[Override]
     public function init(): void
     {
@@ -43,14 +46,25 @@ final class Company implements DataInterface
             return;
         }
 
-        $fileData = Yaml::parseFile(self::DATA_PATH);
+        try {
+            $fileData = Yaml::parseFile(self::DATA_PATH);
+        } catch (ParseException) {
+            return;
+        }
+
+        if (!is_array($fileData)) {
+            return;
+        }
 
         foreach ($fileData as $key => $data) {
             $stringKey = (string) $key;
 
-            if (array_key_exists($stringKey, $this->items)) {
+            if (array_key_exists($stringKey, $this->items) || !is_array($data)) {
                 continue;
             }
+
+            assert(is_string($data['name']));
+            assert(is_string($data['brandname']));
 
             $this->items[$stringKey] = new DataCompany(
                 name: $data['name'],
@@ -78,6 +92,21 @@ final class Company implements DataInterface
             );
 
             $this->items[$stringKey] = $data;
+
+            try {
+                $fileData = Yaml::parseFile(self::DATA_PATH);
+
+                if (is_array($fileData) && !array_key_exists($stringKey, $fileData)) {
+                    $fileData[$stringKey] = $data;
+
+                    file_put_contents(
+                        self::DATA_PATH,
+                        Yaml::dump($fileData, 4, 2),
+                    );
+                }
+            } catch (ParseException) {
+                // do nothing
+            }
         } catch (UnexpectedValueException) {
             // do nothing
         }

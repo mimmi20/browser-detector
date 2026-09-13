@@ -28,7 +28,6 @@ use BrowserDetector\Parser\Header\HeaderLoader;
 use BrowserDetector\Parser\Helper\RulefileParser;
 use BrowserDetector\Parser\PlatformParserFactory;
 use BrowserDetector\Version\VersionBuilder;
-use Laminas\Hydrator\Exception\InvalidArgumentException;
 use Laminas\Hydrator\Strategy\SerializableStrategy;
 use Laminas\Serializer\Adapter\Json;
 use Psr\Log\LoggerInterface;
@@ -49,17 +48,13 @@ final class DetectorFactory
         // nothing to do
     }
 
-    /** @throws InvalidArgumentException */
+    /** @throws void */
     public function __invoke(): Detector
     {
         if (!$this->detector instanceof Detector) {
             $companyLoaderFactory = new CompanyLoaderFactory();
 
-            $serializableStrategy = new SerializableStrategy(
-                new Json(),
-            );
-
-            $companyLoader = $companyLoaderFactory($serializableStrategy);
+            $companyLoader = $companyLoaderFactory();
 
             $platformLoader = new PlatformLoader(
                 logger: $this->logger,

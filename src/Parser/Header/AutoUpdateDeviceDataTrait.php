@@ -15,13 +15,14 @@ namespace BrowserDetector\Parser\Header;
 
 use BrowserDetector\Iterator\FilterIterator;
 use CallbackFilterIterator;
-use JsonException;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use SplFileInfo;
+use Symfony\Component\Yaml\Exception\ParseException;
 use Symfony\Component\Yaml\Yaml;
 use UnexpectedValueException;
 
+use function array_any;
 use function array_filter;
 use function array_key_exists;
 use function assert;
@@ -55,7 +56,11 @@ trait AutoUpdateDeviceDataTrait
         $devicesFromMappingFile = [];
 
         if (file_exists($file)) {
-            $devicesFromMappingFile = Yaml::parseFile($file);
+            try {
+                $devicesFromMappingFile = Yaml::parseFile($file);
+            } catch (ParseException) {
+                return;
+            }
         }
 
         if (!is_array($devicesFromMappingFile)) {
@@ -116,18 +121,40 @@ trait AutoUpdateDeviceDataTrait
             assert(is_string($filepath));
 
             $this->logger->debug(sprintf('start rewriting factory %s', $filepath));
-            $this->logger->debug(sprintf('Read factory file %s to remove code "%s"', $filepath, $code));
 
-            $fileData = Yaml::parseFile($filepath);
+            try {
+                $fileData = Yaml::parseFile($filepath);
+            } catch (ParseException) {
+                $this->logger->error(
+                    sprintf('Could not read factory file %s to remove code "%s"', $filepath, $code),
+                );
+
+                continue;
+            }
 
             assert(is_array($fileData));
 
-            $filteredRules = array_filter(
-                is_array($fileData)
+            $rules = is_array($fileData)
                 && array_key_exists('rules', $fileData)
                 && is_array($fileData['rules'])
                     ? $fileData['rules']
-                    : [],
+                    : [];
+
+            if ($rules === []) {
+                continue;
+            }
+
+            $hasCode = array_any(
+                $rules,
+                static fn (mixed $value): bool => is_string($value) && $value === $singleDeviceCode,
+            );
+
+            if (!$hasCode) {
+                continue;
+            }
+
+            $filteredRules = array_filter(
+                $rules,
                 static fn (mixed $v): bool => is_string($v) && $v !== $singleDeviceCode,
             );
 
@@ -136,17 +163,11 @@ trait AutoUpdateDeviceDataTrait
                 'generic' => $fileData['generic'],
             ];
 
-            try {
-                file_put_contents(
-                    $filepath,
-                    Yaml::dump($newFileData, 4, 2),
-                );
-                $this->logger->debug(sprintf('Encoded and rewrote factory file %s', $filepath));
-            } catch (JsonException) {
-                $this->logger->debug(
-                    sprintf('<error>Could not encode or rewrite factory file %s</error>', $filepath),
-                );
-            }
+            file_put_contents(
+                $filepath,
+                Yaml::dump($newFileData, 4, 2),
+            );
+            $this->logger->debug(sprintf('Encoded and rewrote factory file %s', $filepath));
 
             $this->logger->debug(
                 sprintf('finished rewriting factory %s to remove code "%s"', $filepath, $code),

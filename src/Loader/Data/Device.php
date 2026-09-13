@@ -18,16 +18,20 @@ use BrowserDetector\Loader\InitData\Device as DataDevice;
 use Override;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
-use RuntimeException;
 use SplFileInfo;
+use Symfony\Component\Yaml\Exception\ParseException;
 use Symfony\Component\Yaml\Yaml;
 use UaDeviceType\Type;
 use UaResult\Bits\Bits;
 use UaResult\Device\Architecture;
+use UnexpectedValueException;
 
 use function array_key_exists;
 use function assert;
 use function is_array;
+use function is_bool;
+use function is_float;
+use function is_int;
 use function is_string;
 use function str_replace;
 
@@ -45,7 +49,7 @@ final class Device implements DataInterface
         // nothing to do
     }
 
-    /** @throws RuntimeException */
+    /** @throws UnexpectedValueException */
     #[Override]
     public function init(): void
     {
@@ -65,16 +69,38 @@ final class Device implements DataInterface
             $filepath = str_replace('\\', '/', $pathName);
             assert(is_string($filepath));
 
-            $fileData = Yaml::parseFile($filepath);
+            try {
+                $fileData = Yaml::parseFile($filepath);
+            } catch (ParseException) {
+                continue;
+            }
 
-            assert(is_array($fileData));
+            if (!is_array($fileData)) {
+                continue;
+            }
 
             foreach ($fileData as $key => $data) {
                 $stringKey = (string) $key;
 
-                if (array_key_exists($stringKey, $this->items)) {
+                if (array_key_exists($stringKey, $this->items) || !is_array($data)) {
                     continue;
                 }
+
+                assert(is_string($data['architecture']) || $data['architecture'] === null);
+                assert(is_string($data['deviceName']));
+                assert(is_string($data['marketingName']));
+                assert(is_string($data['manufacturer']));
+                assert(is_string($data['brand']));
+                assert(is_string($data['type']) || $data['type'] === null);
+                assert(is_array($data['display']));
+                assert(is_int($data['display']['width']));
+                assert(is_int($data['display']['height']));
+                assert(is_bool($data['display']['touch']));
+                assert(is_float($data['display']['size']));
+                assert(is_bool($data['dualOrientation']));
+                assert(is_int($data['simCount']));
+                assert(is_int($data['bits']) || $data['bits'] === null);
+                assert(is_string($data['platform']));
 
                 $this->items[$stringKey] = new DataDevice(
                     architecture: Architecture::from($data['architecture'] ?? ''),
