@@ -28,6 +28,7 @@ use UnexpectedValueException;
 
 use function array_key_exists;
 use function assert;
+use function get_debug_type;
 use function is_array;
 use function is_bool;
 use function is_float;
@@ -86,24 +87,45 @@ final class Device implements DataInterface
                     continue;
                 }
 
-                assert(is_string($data['architecture']) || $data['architecture'] === null);
-                assert(is_string($data['deviceName']));
-                assert(is_string($data['marketingName']));
-                assert(is_string($data['manufacturer']));
-                assert(is_string($data['brand']));
-                assert(is_string($data['type']) || $data['type'] === null);
-                assert(is_array($data['display']));
-                assert(is_int($data['display']['width']));
-                assert(is_int($data['display']['height']));
-                assert(is_bool($data['display']['touch']));
-                assert(is_float($data['display']['size']));
-                assert(is_bool($data['dualOrientation']));
-                assert(is_int($data['simCount']));
-                assert(is_int($data['bits']) || $data['bits'] === null);
-                assert(is_string($data['platform']));
+                assert(is_string($data['deviceName']) || $data['deviceName'] === null, get_debug_type($data['deviceName']));
+                assert(is_string($data['marketingName']) || $data['marketingName'] === null, get_debug_type($data['marketingName']));
+                assert(is_string($data['manufacturer']) || $data['manufacturer'] === null, get_debug_type($data['manufacturer']));
+                assert(is_string($data['brand']) || $data['brand'] === null, get_debug_type($data['brand']));
+                assert(is_string($data['type']) || $data['type'] === null, get_debug_type($data['type']));
+                assert(is_array($data['display']), get_debug_type($data['display']));
+                assert(
+                    is_int($data['display']['width']) || $data['display']['width'] === null,
+                    get_debug_type($data['display']['width']),
+                );
+                assert(
+                    is_int($data['display']['height']) || $data['display']['height'] === null,
+                    get_debug_type($data['display']['height']),
+                );
+                assert(is_bool($data['display']['touch']), get_debug_type($data['display']['touch']));
+                assert(
+                    is_float($data['display']['size']) || is_int(
+                        $data['display']['size'],
+                    ) || $data['display']['size'] === null,
+                    get_debug_type($data['display']['size']),
+                );
+                assert(is_bool($data['dualOrientation']) || $data['dualOrientation'] === null, get_debug_type($data['dualOrientation']));
+                assert(is_int($data['simCount']) || $data['simCount'] === null, get_debug_type($data['simCount']));
+                assert(
+                    is_string($data['platform']) || $data['platform'] === null,
+                    get_debug_type($data['platform']),
+                );
+
+                $dataArchitecture = array_key_exists('architecture', $data)
+                    && is_string($data['architecture'])
+                    ? $data['architecture']
+                    : null;
+
+                $dataBits = array_key_exists('bits', $data) && is_int($data['bits'])
+                    ? $data['bits']
+                    : null;
 
                 $this->items[$stringKey] = new DataDevice(
-                    architecture: Architecture::from($data['architecture'] ?? ''),
+                    architecture: Architecture::from($dataArchitecture ?? ''),
                     deviceName: $data['deviceName'],
                     marketingName: $data['marketingName'],
                     manufacturer: $data['manufacturer'],
@@ -112,7 +134,7 @@ final class Device implements DataInterface
                     display: $data['display'],
                     dualOrientation: $data['dualOrientation'],
                     simCount: $data['simCount'],
-                    bits: Bits::from($data['bits'] ?? 0),
+                    bits: Bits::from($dataBits ?? 0),
                     platform: $data['platform'],
                 );
             }

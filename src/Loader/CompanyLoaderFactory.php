@@ -13,7 +13,6 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader;
 
-use Laminas\Hydrator\Strategy\StrategyInterface;
 use Override;
 
 final class CompanyLoaderFactory implements CompanyLoaderFactoryInterface

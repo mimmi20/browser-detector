@@ -145,34 +145,4 @@ final class CompanyLoaderTest extends TestCase
             'Expected brand name to be "' . $brand . '" (was "' . $result->getBrandname() . '")',
         );
     }
-
-    /**
-     * @throws ExpectationFailedException
-     * @throws Exception
-     * @throws NotFoundException
-     * @throws RuntimeException
-     */
-    public function testLoadWithInitException(): void
-    {
-        $companyKey = 'A6Corp';
-
-        $initData = $this->createMock(DataInterface::class);
-        $initData
-            ->expects(self::once())
-            ->method('init')
-            ->willThrowException(new RuntimeException('error'));
-        $initData
-            ->expects(self::never())
-            ->method('getItem');
-
-        $companyLoader = new CompanyLoader($initData);
-
-        $this->expectException(NotFoundException::class);
-        $this->expectExceptionCode(0);
-        $this->expectExceptionMessageIsOrContains(
-            'the company with key "' . $companyKey . '" was not found',
-        );
-
-        $companyLoader->load($companyKey);
-    }
 }

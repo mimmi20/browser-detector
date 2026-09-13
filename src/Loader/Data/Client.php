@@ -78,10 +78,10 @@ final class Client implements DataInterface
                     continue;
                 }
 
-                assert(is_string($data['name']));
-                assert(is_string($data['manufacturer']));
-                assert(is_string($data['type']));
-                assert(is_string($data['engine']));
+                assert(is_string($data['name']) || $data['name'] === null, get_debug_type($data['name']));
+                assert(is_string($data['manufacturer']) || $data['manufacturer'] === null, get_debug_type($data['manufacturer']));
+                assert(is_string($data['type']) || $data['type'] === null, get_debug_type($data['type']));
+                assert(is_string($data['engine']) || $data['engine'] === null, get_debug_type($data['engine']));
 
                 $this->items[$stringKey] = new DataClient(
                     name: $data['name'],

@@ -141,6 +141,12 @@ parameters:
         - tests\DetectorTest\Parser\Header\SecChUaPlatformVersionTest.php
     -
       identifier: argument.named
+    -
+      identifier: classConstant.deprecatedEnum
+    -
+      identifier: method.deprecatedEnum
+    -
+      identifier: staticMethod.deprecatedEnum
 
 services:
   errorFormatter.sarif:

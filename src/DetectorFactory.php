@@ -28,8 +28,6 @@ use BrowserDetector\Parser\Header\HeaderLoader;
 use BrowserDetector\Parser\Helper\RulefileParser;
 use BrowserDetector\Parser\PlatformParserFactory;
 use BrowserDetector\Version\VersionBuilder;
-use Laminas\Hydrator\Strategy\SerializableStrategy;
-use Laminas\Serializer\Adapter\Json;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\CacheInterface as PsrCacheInterface;
 use UaNormalizer\NormalizerFactory;

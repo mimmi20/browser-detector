@@ -65,7 +65,7 @@ final class DeviceLoaderFactoryTest extends TestCase
         $companyLoader
             ->expects(self::atLeastOnce())
             ->method('load')
-            ->with('Apple')
+            ->with('apple')
             ->willReturn($comp);
 
         $deviceLoaderFactory = new DeviceLoaderFactory($logger, $companyLoader);

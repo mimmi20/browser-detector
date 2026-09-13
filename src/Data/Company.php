@@ -20,7 +20,10 @@ use UnexpectedValueException;
 use function mb_strtolower;
 use function sprintf;
 
-/** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */
+/**
+ * @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong
+ * @deprecated will be removed soon
+ */
 enum Company: string implements CompanyInterface
 {
     case unknown = 'unknown';

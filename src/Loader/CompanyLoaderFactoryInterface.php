@@ -13,8 +13,6 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader;
 
-use Laminas\Hydrator\Strategy\StrategyInterface;
-
 interface CompanyLoaderFactoryInterface
 {
     /** @throws void */

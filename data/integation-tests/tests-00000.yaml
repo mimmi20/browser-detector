@@ -26,8 +26,8 @@
       architecture: null
       deviceName: RVL-AL09
       marketingName: 'Honor Note 10'
-      manufacturer: Huawei
-      brand: Huawei
+      manufacturer: huawei
+      brand: huawei
       dualOrientation: true
       simCount: 2
       display:
@@ -43,20 +43,20 @@
       name: HarmonyOS
       marketingName: HarmonyOS
       version: null
-      manufacturer: Huawei
+      manufacturer: huawei
       bits: null
     client:
       name: 'Huawei Browser'
       modus: null
       version: 12.1.3.303
-      manufacturer: Huawei
+      manufacturer: huawei
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 92.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     user-agent: 'Mozilla/5.0 (Linux; Android 12; DBY-W09 Build/HUAWEIDBY-W09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.41 BDOS/1.0 (HarmonyOS 3.0.0) SP-engine/2.79.0 baiduboxapp/13.41.5.10 (Baidu; P1 12) NABar/1.0'
@@ -67,8 +67,8 @@
       architecture: null
       deviceName: DBY-W09
       marketingName: 'MatePad 11 Wi-Fi (2021)'
-      manufacturer: Huawei
-      brand: Huawei
+      manufacturer: huawei
+      brand: huawei
       dualOrientation: true
       simCount: 0
       display:
@@ -84,20 +84,20 @@
       name: HarmonyOS
       marketingName: HarmonyOS
       version: 3.0.0
-      manufacturer: Huawei
+      manufacturer: huawei
       bits: null
     client:
       name: 'Baidu Box App'
       modus: null
       version: 13.41.5.10
-      manufacturer: Baidu
+      manufacturer: baidu
       type: mobile-application
       isbot: false
       bits: null
     engine:
       name: T7
       version: 13.41.0
-      manufacturer: Baidu
+      manufacturer: baidu
 -
   -
     user-agent: 'Mozilla/5.0 (Linux; U; Android 6.0.1; xx; Le X820 Build/MOB31T) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/40.0.2214.89 Quark/1.6.9.911 Mobile Safari/537.36'
@@ -108,8 +108,8 @@
       architecture: null
       deviceName: 'Le X820'
       marketingName: 'Le Max 2'
-      manufacturer: LeEco
-      brand: LeEco
+      manufacturer: leeco
+      brand: leeco
       dualOrientation: true
       simCount: 2
       display:
@@ -125,20 +125,20 @@
       name: Android
       marketingName: Android
       version: 6.0.1
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: Quark
       modus: null
       version: 1.6.9.911
-      manufacturer: Quark
+      manufacturer: quark-team
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 40.0.2214.89
-      manufacturer: Google
+      manufacturer: google
 -
   -
     user-agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.3'
@@ -172,20 +172,20 @@
       name: Windows
       marketingName: 'Windows 11'
       version: 11.0.0
-      manufacturer: Microsoft
+      manufacturer: microsoft
       bits: null
     client:
       name: Chrome
       modus: null
       version: 97.0.4692.99
-      manufacturer: Google
+      manufacturer: google
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 97.0.4692.99
-      manufacturer: Google
+      manufacturer: google
 -
   -
     user-agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.3'
@@ -219,20 +219,20 @@
       name: Windows
       marketingName: 'Windows 10'
       version: 10.0.0
-      manufacturer: Microsoft
+      manufacturer: microsoft
       bits: null
     client:
       name: Chrome
       modus: null
       version: 97.0.4692.99
-      manufacturer: Google
+      manufacturer: google
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 97.0.4692.99
-      manufacturer: Google
+      manufacturer: google
 -
   -
     user-agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.3'
@@ -266,20 +266,20 @@
       name: Windows
       marketingName: 'Windows 7'
       version: 7.0.0
-      manufacturer: Microsoft
+      manufacturer: microsoft
       bits: null
     client:
       name: Chrome
       modus: null
       version: 97.0.4692.99
-      manufacturer: Google
+      manufacturer: google
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 97.0.4692.99
-      manufacturer: Google
+      manufacturer: google
 -
   -
     user-agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.3'
@@ -313,20 +313,20 @@
       name: Windows
       marketingName: 'Windows 8'
       version: 8.0.0
-      manufacturer: Microsoft
+      manufacturer: microsoft
       bits: null
     client:
       name: Chrome
       modus: null
       version: 97.0.4692.99
-      manufacturer: Google
+      manufacturer: google
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 97.0.4692.99
-      manufacturer: Google
+      manufacturer: google
 -
   -
     user-agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.3'
@@ -360,20 +360,20 @@
       name: Windows
       marketingName: 'Windows 8.1'
       version: 8.1.0
-      manufacturer: Microsoft
+      manufacturer: microsoft
       bits: null
     client:
       name: Chrome
       modus: null
       version: 97.0.4692.99
-      manufacturer: Google
+      manufacturer: google
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 97.0.4692.99
-      manufacturer: Google
+      manufacturer: google
 -
   -
     user-agent: 'UCWEB/2.0 (iOS; U; iPd OS 7_0_4; zh-CN; iPd5,1) U2/1.0.0 UCBrowser/9.0.1.284 U2/1.0.0 Mobile'
@@ -384,8 +384,8 @@
       architecture: null
       deviceName: 'iPad 5,1'
       marketingName: 'iPad Mini 4 Wi-Fi'
-      manufacturer: Apple
-      brand: Apple
+      manufacturer: apple
+      brand: apple
       dualOrientation: true
       simCount: 0
       display:
@@ -401,20 +401,20 @@
       name: iOS
       marketingName: iOS
       version: 7.0.4
-      manufacturer: Apple
+      manufacturer: apple
       bits: null
     client:
       name: 'UC Browser'
       modus: null
       version: 9.0.1.284
-      manufacturer: UCWeb
+      manufacturer: ucweb
       type: transcoder
       isbot: false
       bits: null
     engine:
       name: WebKit
       version: null
-      manufacturer: Apple
+      manufacturer: apple
 -
   -
     user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A'
@@ -425,8 +425,8 @@
       architecture: null
       deviceName: Macintosh
       marketingName: Macintosh
-      manufacturer: Apple
-      brand: Apple
+      manufacturer: apple
+      brand: apple
       dualOrientation: false
       simCount: 0
       display:
@@ -442,20 +442,20 @@
       name: 'Mac OS X'
       marketingName: 'Mac OS X'
       version: 10.9.3
-      manufacturer: Apple
+      manufacturer: apple
       bits: null
     client:
       name: Safari
       modus: null
       version: 7.0.3
-      manufacturer: Apple
+      manufacturer: apple
       type: browser
       isbot: false
       bits: null
     engine:
       name: WebKit
       version: 537.75.14
-      manufacturer: Apple
+      manufacturer: apple
 -
   -
     x-crawled-by: RecordedFuture-ASI-Crawl
@@ -524,20 +524,20 @@
       name: Android
       marketingName: Android
       version: 8.1.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'Android Browser'
       modus: null
       version: 2.1.0
-      manufacturer: Google
+      manufacturer: google
       type: browser
       isbot: false
       bits: null
     engine:
       name: WebKit
       version: null
-      manufacturer: Apple
+      manufacturer: apple
 -
   -
     user-agent: 'Mozilla/5.0 (Linux; U; Android 4.2.1; zh-cn; Infinix X801 Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30;'
@@ -548,8 +548,8 @@
       architecture: null
       deviceName: X801
       marketingName: 'Joypad 8S'
-      manufacturer: Infinix
-      brand: Infinix
+      manufacturer: infinix
+      brand: infinix
       dualOrientation: true
       simCount: 1
       display:
@@ -565,20 +565,20 @@
       name: Android
       marketingName: Android
       version: 4.2.1
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'Android Webkit'
       modus: null
       version: 4.0.0
-      manufacturer: Google
+      manufacturer: google
       type: browser
       isbot: false
       bits: null
     engine:
       name: WebKit
       version: 534.30.0
-      manufacturer: Apple
+      manufacturer: apple
 -
   -
     user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 15_1_1 like Mac OS X; zh-CN) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/19B81 UCBrowser/13.7.2.1636 Mobile AliApp(TUnionSDK/0.1.20.4) dv(iPh14,5);pr(UCBrowser/13.7.2.1636);ov(15_1_1);ss(390x844);bt(UC);pm(0);bv(0);nm(0);im(0);nt(1);'
@@ -589,8 +589,8 @@
       architecture: null
       deviceName: 'iPhone 14,5'
       marketingName: 'iPhone 13'
-      manufacturer: Apple
-      brand: Apple
+      manufacturer: apple
+      brand: apple
       dualOrientation: true
       simCount: 1
       display:
@@ -606,20 +606,20 @@
       name: iOS
       marketingName: iOS
       version: 15.1.1
-      manufacturer: Apple
+      manufacturer: apple
       bits: null
     client:
       name: 'UC Browser'
       modus: null
       version: 13.7.2.1636
-      manufacturer: UCWeb
+      manufacturer: ucweb
       type: transcoder
       isbot: false
       bits: null
     engine:
       name: WebKit
       version: 605.1.15
-      manufacturer: Apple
+      manufacturer: apple
 -
   -
     user-agent: 'Mozilla/5.0 (Linux; Android 10; arm_64; M2002J9G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 YaBrowser/20.7.5.84.00 SA/3 Mobile Safari/537.36'
@@ -630,8 +630,8 @@
       architecture: null
       deviceName: M2002J9G
       marketingName: 'Mi 10 Lite 5G'
-      manufacturer: Xiaomi
-      brand: Xiaomi
+      manufacturer: xiaomi
+      brand: xiaomi
       dualOrientation: true
       simCount: 2
       display:
@@ -647,20 +647,20 @@
       name: Android
       marketingName: Android
       version: 10.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'Yandex Browser'
       modus: null
       version: 20.7.5.84.00
-      manufacturer: Yandex
+      manufacturer: yandex
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 83.0.4103.116
-      manufacturer: Google
+      manufacturer: google
 -
   -
     user-agent: 'Mozilla/5.0 (Linux; Android 10; arm_64; M2002J9G Build/JOP40D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 YaBrowser/20.7.5.84.00 SA/3 Mobile Safari/537.36'
@@ -671,8 +671,8 @@
       architecture: null
       deviceName: M2002J9G
       marketingName: 'Mi 10 Lite 5G'
-      manufacturer: Xiaomi
-      brand: Xiaomi
+      manufacturer: xiaomi
+      brand: xiaomi
       dualOrientation: true
       simCount: 2
       display:
@@ -688,20 +688,20 @@
       name: Android
       marketingName: Android
       version: 10.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'Yandex Browser'
       modus: null
       version: 20.7.5.84.00
-      manufacturer: Yandex
+      manufacturer: yandex
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 83.0.4103.116
-      manufacturer: Google
+      manufacturer: google
 -
   -
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; Optima 8430E 4G DA1C8P01) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.6834.2144 YaApp_Android/25.20.1/apad YaSearchBrowser/25.20.1/apad BroPP/1.0 SA/3 Mobile Safari/537.36'
@@ -712,8 +712,8 @@
       architecture: null
       deviceName: DA1C8P01
       marketingName: 'Optima 8430E 4G'
-      manufacturer: Digma
-      brand: Digma
+      manufacturer: digma
+      brand: digma
       dualOrientation: true
       simCount: 2
       display:
@@ -729,20 +729,20 @@
       name: Android
       marketingName: Android
       version: 14.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'Yandex Search Browser'
       modus: null
       version: 25.20.1
-      manufacturer: Yandex
+      manufacturer: yandex
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 132.0.6834.2144
-      manufacturer: Google
+      manufacturer: google
 -
   -
     user-agent: 'Android 17 - samsung meliuslte'
@@ -753,8 +753,8 @@
       architecture: null
       deviceName: 'general Samsung device'
       marketingName: 'general Samsung device'
-      manufacturer: Samsung
-      brand: Samsung
+      manufacturer: samsung
+      brand: samsung
       dualOrientation: null
       simCount: 0
       display:
@@ -770,20 +770,20 @@
       name: Android
       marketingName: Android
       version: null
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'Android Webkit'
       modus: null
       version: null
-      manufacturer: Google
+      manufacturer: google
       type: browser
       isbot: false
       bits: null
     engine:
       name: WebKit
       version: null
-      manufacturer: Apple
+      manufacturer: apple
 -
   -
     user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) WorxWeb/18.11.5(build 18.11.5.4) Mobile/16B92 Safari/605.1<tabid-F3D1C4D0-C475-4EFA-AFC9-9E4FA70B94AD>'
@@ -794,8 +794,8 @@
       architecture: null
       deviceName: iPhone
       marketingName: iPhone
-      manufacturer: Apple
-      brand: Apple
+      manufacturer: apple
+      brand: apple
       dualOrientation: true
       simCount: 1
       display:
@@ -811,20 +811,20 @@
       name: iOS
       marketingName: iOS
       version: 12.1.0
-      manufacturer: Apple
+      manufacturer: apple
       bits: null
     client:
       name: Safari
       modus: null
       version: 5.0.0
-      manufacturer: Apple
+      manufacturer: apple
       type: browser
       isbot: false
       bits: null
     engine:
       name: WebKit
       version: 605.1.15
-      manufacturer: Apple
+      manufacturer: apple
 -
   -
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Redmi 7 Build/SQ3A.220705.004) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.105 Mobile Safari/537.36'
@@ -837,8 +837,8 @@
       architecture: null
       deviceName: 'Redmi 7'
       marketingName: 'Redmi 7'
-      manufacturer: Xiaomi
-      brand: Xiaomi
+      manufacturer: xiaomi
+      brand: xiaomi
       dualOrientation: true
       simCount: 1
       display:
@@ -867,7 +867,7 @@
     engine:
       name: Blink
       version: 107.0.5304.105
-      manufacturer: Google
+      manufacturer: google
 -
   -
     user-agent: 'imoAndroid/2020.03.2011; 10; REL; SM-G973F; samsung; play; phone; arm64-v8a'
@@ -878,8 +878,8 @@
       architecture: null
       deviceName: SM-G973F
       marketingName: 'Galaxy S10 (Global)'
-      manufacturer: Samsung
-      brand: Samsung
+      manufacturer: samsung
+      brand: samsung
       dualOrientation: true
       simCount: 1
       display:
@@ -895,20 +895,20 @@
       name: Android
       marketingName: Android
       version: null
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'Android Webkit'
       modus: null
       version: null
-      manufacturer: Google
+      manufacturer: google
       type: browser
       isbot: false
       bits: null
     engine:
       name: WebKit
       version: null
-      manufacturer: Apple
+      manufacturer: apple
 -
   -
     user-agent: 'com.amazon.sics/3.0.200230.0 (KFSUWI; Android 22; Amazon)'
@@ -919,8 +919,8 @@
       architecture: null
       deviceName: KFSUWI
       marketingName: 'Fire HD 10 (2017)'
-      manufacturer: Amazon
-      brand: Amazon
+      manufacturer: amazon
+      brand: amazon
       dualOrientation: true
       simCount: 0
       display:
@@ -936,20 +936,20 @@
       name: 'Fire OS'
       marketingName: 'Fire OS'
       version: 14.0.0
-      manufacturer: Amazon
+      manufacturer: amazon
       bits: null
     client:
       name: 'Android Webkit'
       modus: null
       version: null
-      manufacturer: Google
+      manufacturer: google
       type: browser
       isbot: false
       bits: null
     engine:
       name: WebKit
       version: null
-      manufacturer: Apple
+      manufacturer: apple
 -
   -
     user-agent: 'Dalvik/1.6.0 (Linux; U; Android 12/Viber 18.8.3.0 ; SM-G981BSP1A.210812.016) Viber/22.6.1.0'
@@ -960,8 +960,8 @@
       architecture: null
       deviceName: SM-G981B
       marketingName: 'Galaxy S20 5G (International)'
-      manufacturer: Samsung
-      brand: Samsung
+      manufacturer: samsung
+      brand: samsung
       dualOrientation: true
       simCount: 1
       display:
@@ -977,20 +977,20 @@
       name: Android
       marketingName: Android
       version: 12.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'Android Browser'
       modus: null
       version: 1.6.0
-      manufacturer: Google
+      manufacturer: google
       type: browser
       isbot: false
       bits: null
     engine:
       name: WebKit
       version: null
-      manufacturer: Apple
+      manufacturer: apple
 -
   -
     user-agent: 'Mozilla/5.0 (Mobile; Jio/F491H/Jio-F491H-001-06-24-271223;Android; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.3.2'
@@ -1018,20 +1018,20 @@
       name: KaiOS
       marketingName: KaiOS
       version: 2.5.3.2
-      manufacturer: KaiOS
+      manufacturer: kaios
       bits: null
     client:
       name: Firefox
       modus: null
       version: 48.0.0
-      manufacturer: Mozilla
+      manufacturer: mozilla-foundation
       type: browser
       isbot: false
       bits: null
     engine:
       name: Gecko
       version: 48.0.0
-      manufacturer: Mozilla
+      manufacturer: mozilla
 -
   -
     sec-ch-prefers-color-scheme: light
@@ -1082,20 +1082,20 @@
       name: Windows
       marketingName: 'Windows 11'
       version: 11.0.0
-      manufacturer: Microsoft
+      manufacturer: microsoft
       bits: 64
     client:
       name: Edge
       modus: null
       version: 138.0.3351.95
-      manufacturer: Microsoft
+      manufacturer: microsoft
       type: browser
       isbot: false
       bits: 64
     engine:
       name: Blink
       version: 138.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     sec-ch-prefers-color-scheme: dark
@@ -1129,8 +1129,8 @@
       architecture: null
       deviceName: 'Moto G54 5G'
       marketingName: 'Moto G54 5G'
-      manufacturer: Motorola
-      brand: Motorola
+      manufacturer: motorola
+      brand: motorola
       dualOrientation: true
       simCount: 2
       display:
@@ -1146,20 +1146,20 @@
       name: Android
       marketingName: Android
       version: 15.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: Chrome
       modus: null
       version: 138.0.0
-      manufacturer: Google
+      manufacturer: google
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 138.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     sec-ch-prefers-color-scheme: dark
@@ -1193,8 +1193,8 @@
       architecture: null
       deviceName: 'Moto G54 5G'
       marketingName: 'Moto G54 5G'
-      manufacturer: Motorola
-      brand: Motorola
+      manufacturer: motorola
+      brand: motorola
       dualOrientation: true
       simCount: 2
       display:
@@ -1210,20 +1210,20 @@
       name: Android
       marketingName: Android
       version: 15.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: Chrome
       modus: null
       version: 138.0.0
-      manufacturer: Google
+      manufacturer: google
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 138.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     sec-ch-prefers-color-scheme: dark
@@ -1257,8 +1257,8 @@
       architecture: null
       deviceName: 'Moto G54 5G'
       marketingName: 'Moto G54 5G'
-      manufacturer: Motorola
-      brand: Motorola
+      manufacturer: motorola
+      brand: motorola
       dualOrientation: true
       simCount: 2
       display:
@@ -1274,20 +1274,20 @@
       name: Android
       marketingName: Android
       version: 15.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: Chrome
       modus: null
       version: 138.0.0
-      manufacturer: Google
+      manufacturer: google
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 138.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     sec-ch-prefers-color-scheme: dark
@@ -1321,8 +1321,8 @@
       architecture: null
       deviceName: 'Moto G54 5G'
       marketingName: 'Moto G54 5G'
-      manufacturer: Motorola
-      brand: Motorola
+      manufacturer: motorola
+      brand: motorola
       dualOrientation: true
       simCount: 2
       display:
@@ -1338,20 +1338,20 @@
       name: Android
       marketingName: Android
       version: 15.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: Chrome
       modus: null
       version: 138.0.0
-      manufacturer: Google
+      manufacturer: google
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 138.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     sec-ch-prefers-color-scheme: dark
@@ -1385,8 +1385,8 @@
       architecture: null
       deviceName: 'Moto G54 5G'
       marketingName: 'Moto G54 5G'
-      manufacturer: Motorola
-      brand: Motorola
+      manufacturer: motorola
+      brand: motorola
       dualOrientation: true
       simCount: 2
       display:
@@ -1402,20 +1402,20 @@
       name: Android
       marketingName: Android
       version: 15.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: Chrome
       modus: null
       version: 138.0.0
-      manufacturer: Google
+      manufacturer: google
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 138.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     sec-ch-prefers-color-scheme: dark
@@ -1449,8 +1449,8 @@
       architecture: null
       deviceName: 'Moto G54 5G'
       marketingName: 'Moto G54 5G'
-      manufacturer: Motorola
-      brand: Motorola
+      manufacturer: motorola
+      brand: motorola
       dualOrientation: true
       simCount: 2
       display:
@@ -1466,20 +1466,20 @@
       name: Android
       marketingName: Android
       version: 15.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: Chrome
       modus: null
       version: 138.0.0
-      manufacturer: Google
+      manufacturer: google
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 138.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     sec-ch-prefers-color-scheme: dark
@@ -1513,8 +1513,8 @@
       architecture: null
       deviceName: 'Moto G54 5G'
       marketingName: 'Moto G54 5G'
-      manufacturer: Motorola
-      brand: Motorola
+      manufacturer: motorola
+      brand: motorola
       dualOrientation: true
       simCount: 2
       display:
@@ -1530,20 +1530,20 @@
       name: Android
       marketingName: Android
       version: 15.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: Chrome
       modus: null
       version: 138.0.0
-      manufacturer: Google
+      manufacturer: google
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 138.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 26_1_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/397.0.836500703 Mobile/15E148 Safari/604.1'
@@ -1554,8 +1554,8 @@
       architecture: null
       deviceName: iPad
       marketingName: iPad
-      manufacturer: Apple
-      brand: Apple
+      manufacturer: apple
+      brand: apple
       dualOrientation: true
       simCount: 0
       display:
@@ -1571,20 +1571,20 @@
       name: iPadOS
       marketingName: iPadOS
       version: 26.1.0
-      manufacturer: Apple
+      manufacturer: apple
       bits: null
     client:
       name: 'Google Search App'
       modus: null
       version: 397.0.836500703
-      manufacturer: Google
+      manufacturer: google
       type: mobile-application
       isbot: false
       bits: null
     engine:
       name: WebKit
       version: 605.1.15
-      manufacturer: Apple
+      manufacturer: apple
 -
   -
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36 AlohaBrowser/7.9.2'
@@ -1620,8 +1620,8 @@
       architecture: null
       deviceName: SM-S711B
       marketingName: 'Galaxy S23 FE'
-      manufacturer: Samsung
-      brand: Samsung
+      manufacturer: samsung
+      brand: samsung
       dualOrientation: true
       simCount: 2
       display:
@@ -1637,20 +1637,20 @@
       name: Android
       marketingName: Android
       version: 16.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'Aloha Browser'
       modus: null
       version: 7.9.2
-      manufacturer: Aloha
+      manufacturer: aloha-mobile
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 141.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     user-agent: 'Mozilla/5.0 (Linux; Android 13; 2107113SG Build/TKQ1.220829.002) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36 OPT/2.9'
@@ -1667,8 +1667,8 @@
       architecture: null
       deviceName: 2107113SG
       marketingName: 'Mi 11T Pro'
-      manufacturer: Xiaomi
-      brand: Xiaomi
+      manufacturer: xiaomi
+      brand: xiaomi
       dualOrientation: true
       simCount: 2
       display:
@@ -1684,20 +1684,20 @@
       name: Android
       marketingName: Android
       version: 13.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'Opera Touch'
       modus: null
       version: 2.9.0
-      manufacturer: Opera
+      manufacturer: opera
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 127.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SAMSUNG SM-A032M Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 SamsungBrowser/7.4 Chrome/111.0.5563.58 Mobile Safari/537.36'
@@ -1710,8 +1710,8 @@
       architecture: null
       deviceName: SM-A032M
       marketingName: 'Galaxy A03 Core'
-      manufacturer: Samsung
-      brand: Samsung
+      manufacturer: samsung
+      brand: samsung
       dualOrientation: true
       simCount: 1
       display:
@@ -1727,20 +1727,20 @@
       name: Android
       marketingName: Android
       version: 12.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'Samsung Browser Lite'
       modus: null
       version: null
-      manufacturer: Samsung
+      manufacturer: samsung
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 111.0.5563.58
-      manufacturer: Google
+      manufacturer: google
 -
   -
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Mobile Safari/537.36'
@@ -1771,8 +1771,8 @@
       architecture: null
       deviceName: 'Moto G85 5G'
       marketingName: 'Moto G85 5G'
-      manufacturer: Motorola
-      brand: Motorola
+      manufacturer: motorola
+      brand: motorola
       dualOrientation: true
       simCount: 1
       display:
@@ -1788,20 +1788,20 @@
       name: Android
       marketingName: Android
       version: 15.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: Chromium
       modus: null
       version: 125.0.6422.165
-      manufacturer: Google
+      manufacturer: google
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 125.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Mobile Safari/537.36 (Ecosia android@142.0.0.0)'
@@ -1835,8 +1835,8 @@
       architecture: null
       deviceName: SM-S911U1
       marketingName: 'Galaxy S23 (USA unlocked)'
-      manufacturer: Samsung
-      brand: Samsung
+      manufacturer: samsung
+      brand: samsung
       dualOrientation: true
       simCount: 1
       display:
@@ -1852,20 +1852,20 @@
       name: Android
       marketingName: Android
       version: 16.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: Ecosia
       modus: null
       version: 142.0.0.0
-      manufacturer: Ecosia
+      manufacturer: ecosia
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 142.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-G991U Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.163 Mobile Safari/537.36 KeplrWalletMobile/2.0.90'
@@ -1878,8 +1878,8 @@
       architecture: null
       deviceName: SM-G991U
       marketingName: 'Galaxy S21 5G (USA)'
-      manufacturer: Samsung
-      brand: Samsung
+      manufacturer: samsung
+      brand: samsung
       dualOrientation: true
       simCount: 1
       display:
@@ -1895,20 +1895,20 @@
       name: Android
       marketingName: Android
       version: 14.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'Keplr Wallet'
       modus: null
       version: 2.0.90
-      manufacturer: 'Team Keplr'
+      manufacturer: team-keplr
       type: mobile-application
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 132.0.6834.163
-      manufacturer: Google
+      manufacturer: google
 -
   -
     user-agent: 'Mozilla/5.0 (Linux; Android 14; itel A669W Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36 lookr/2.1.7;'
@@ -1921,8 +1921,8 @@
       architecture: null
       deviceName: A669W
       marketingName: A06
-      manufacturer: iTel
-      brand: iTel
+      manufacturer: itel
+      brand: itel
       dualOrientation: true
       simCount: 2
       display:
@@ -1938,7 +1938,7 @@
       name: Android
       marketingName: Android
       version: 14.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: Lookr
@@ -1951,7 +1951,7 @@
     engine:
       name: Blink
       version: 138.0.7204.179
-      manufacturer: Google
+      manufacturer: google
 -
   -
     user-agent: 'Mozilla/5.0 (Linux; Android 14; 22101316G Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/141.0.7390.122 Mobile Safari/537.36 Kimi/2.4.3'
@@ -1964,8 +1964,8 @@
       architecture: null
       deviceName: 22101316G
       marketingName: 'Redmi Note 12 Pro 5G'
-      manufacturer: Xiaomi
-      brand: Xiaomi
+      manufacturer: xiaomi
+      brand: xiaomi
       dualOrientation: true
       simCount: 2
       display:
@@ -1981,20 +1981,20 @@
       name: Android
       marketingName: Android
       version: 14.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: Kimi
       modus: null
       version: 2.4.3
-      manufacturer: 'Moonshot AI'
+      manufacturer: moonshot-ai
       type: mobile-application
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 141.0.7390.122
-      manufacturer: Google
+      manufacturer: google
 -
   -
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Mobile Safari/537.36 ABB/133.0.6943.51'
@@ -2025,8 +2025,8 @@
       architecture: null
       deviceName: 2311DRK48G
       marketingName: 'X6 Pro 5G'
-      manufacturer: Xiaomi
-      brand: Poco
+      manufacturer: xiaomi
+      brand: poco
       dualOrientation: true
       simCount: 2
       display:
@@ -2042,20 +2042,20 @@
       name: Android
       marketingName: Android
       version: 15.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'AdBlock Browser'
       modus: null
       version: 133.0.6943.51
-      manufacturer: Eyeo
+      manufacturer: eyeo
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 133.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     sec-ch-prefers-color-scheme: light
@@ -2106,20 +2106,20 @@
       name: Windows
       marketingName: 'Windows 11'
       version: 11.0.0
-      manufacturer: Microsoft
+      manufacturer: microsoft
       bits: 64
     client:
       name: Chromium
       modus: null
       version: 138.0.7204.97
-      manufacturer: Google
+      manufacturer: google
       type: browser
       isbot: false
       bits: 32
     engine:
       name: Blink
       version: 138.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     sec-ch-ua-model: '""'
@@ -2146,8 +2146,8 @@
       architecture: arm
       deviceName: 'Chromecast (2020)'
       marketingName: 'Chromecast (2020)'
-      manufacturer: Google
-      brand: Google
+      manufacturer: google
+      brand: google
       dualOrientation: false
       simCount: 0
       display:
@@ -2163,20 +2163,20 @@
       name: Fuchsia
       marketingName: Fuchsia
       version: 0.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: 64
     client:
       name: 'Google Nest Hub'
       modus: null
       version: 1.56.500000
-      manufacturer: Google
+      manufacturer: google
       type: mobile-application
       isbot: false
       bits: 64
     engine:
       name: Blink
       version: 126.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     x-requested-with: com.opera.mini.native
@@ -2189,8 +2189,8 @@
       architecture: null
       deviceName: SM-G973F
       marketingName: 'Galaxy S10 (Global)'
-      manufacturer: Samsung
-      brand: Samsung
+      manufacturer: samsung
+      brand: samsung
       dualOrientation: true
       simCount: 1
       display:
@@ -2206,20 +2206,20 @@
       name: Android
       marketingName: Android
       version: 12.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'Opera Mini'
       modus: null
       version: 64.0.2254.62635
-      manufacturer: Opera
+      manufacturer: opera
       type: transcoder
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 104.0.5112.97
-      manufacturer: Google
+      manufacturer: google
 -
   -
     x-requested-with: com.baidu.searchbox.lite
@@ -2232,8 +2232,8 @@
       architecture: null
       deviceName: 22101317C
       marketingName: 'Redmi Note 12 5G (China)'
-      manufacturer: Xiaomi
-      brand: Xiaomi
+      manufacturer: xiaomi
+      brand: xiaomi
       dualOrientation: true
       simCount: 2
       display:
@@ -2249,20 +2249,20 @@
       name: Android
       marketingName: Android
       version: 14.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'Baidu Box App Lite'
       modus: null
       version: 6.43.0.11
-      manufacturer: Baidu
+      manufacturer: baidu
       type: mobile-application
       isbot: false
       bits: null
     engine:
       name: T7
       version: 13.75.0
-      manufacturer: Baidu
+      manufacturer: baidu
 -
   -
     x-requested-with: com.baidu.searchbox
@@ -2275,7 +2275,7 @@
       architecture: null
       deviceName: V2314A
       marketingName: Y100t
-      manufacturer: BBK
+      manufacturer: bbk
       brand: vivo
       dualOrientation: true
       simCount: 2
@@ -2292,20 +2292,20 @@
       name: Android
       marketingName: Android
       version: 14.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'Baidu Box App'
       modus: null
       version: 13.58.0.10
-      manufacturer: Baidu
+      manufacturer: baidu
       type: mobile-application
       isbot: false
       bits: null
     engine:
       name: T7
       version: 13.58.0
-      manufacturer: Baidu
+      manufacturer: baidu
 -
   -
     x-requested-with: com.nytimes.crossword
@@ -2318,8 +2318,8 @@
       architecture: null
       deviceName: SM-A136U1
       marketingName: 'Galaxy A13 5G (USA unlocked)'
-      manufacturer: Samsung
-      brand: Samsung
+      manufacturer: samsung
+      brand: samsung
       dualOrientation: true
       simCount: 1
       display:
@@ -2335,20 +2335,20 @@
       name: Android
       marketingName: Android
       version: 13.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'NYTimes - Crossword'
       modus: null
       version: 5.5.0
-      manufacturer: 'The New York Times'
+      manufacturer: new-york-times
       type: mobile-application
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 124.0.6367.123
-      manufacturer: Google
+      manufacturer: google
 -
   -
     x-requested-with: com.transsion.magicshow
@@ -2361,8 +2361,8 @@
       architecture: null
       deviceName: X665E
       marketingName: 'Hot 20i'
-      manufacturer: Infinix
-      brand: Infinix
+      manufacturer: infinix
+      brand: infinix
       dualOrientation: true
       simCount: 2
       display:
@@ -2378,20 +2378,20 @@
       name: Android
       marketingName: Android
       version: 12.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: Visha
       modus: null
       version: 4.1.1.1501
-      manufacturer: 'Visha Group'
+      manufacturer: visha-group
       type: mobile-application
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 118.0.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     x-requested-with: com.saf.seca
@@ -2404,8 +2404,8 @@
       architecture: null
       deviceName: CET-AL00
       marketingName: 'Mate 50'
-      manufacturer: Huawei
-      brand: Huawei
+      manufacturer: huawei
+      brand: huawei
       dualOrientation: true
       simCount: 2
       display:
@@ -2421,20 +2421,20 @@
       name: Android
       marketingName: Android
       version: 12.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: SearchCraft
       modus: null
       version: 2.6.1
-      manufacturer: Searchcraft
+      manufacturer: searchcraft
       type: mobile-application
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 70.0.2526.83
-      manufacturer: Google
+      manufacturer: google
 -
   -
     user-agent: 'com.google.GoogleMobile/101.0 iPad/13.4.1 hw/iPad7_3'
@@ -2445,8 +2445,8 @@
       architecture: null
       deviceName: 'iPad 7,3'
       marketingName: 'iPad Pro 10.5" Wi-Fi'
-      manufacturer: Apple
-      brand: Apple
+      manufacturer: apple
+      brand: apple
       dualOrientation: true
       simCount: 0
       display:
@@ -2462,20 +2462,20 @@
       name: iPadOS
       marketingName: iPadOS
       version: 13.4.1
-      manufacturer: Apple
+      manufacturer: apple
       bits: null
     client:
       name: 'Google Mobile App'
       modus: null
       version: 101.0.0
-      manufacturer: Google
+      manufacturer: google
       type: mobile-application
       isbot: false
       bits: null
     engine:
       name: WebKit
       version: null
-      manufacturer: Apple
+      manufacturer: apple
 -
   -
     sec-ch-ua-model: '"OPD2403"'
@@ -2508,8 +2508,8 @@
       architecture: null
       deviceName: OPD2403
       marketingName: 'Pad 2 12.1" Wi-Fi'
-      manufacturer: BBK
-      brand: OnePlus
+      manufacturer: bbk
+      brand: oneplus
       dualOrientation: true
       simCount: 0
       display:
@@ -2525,20 +2525,20 @@
       name: Android
       marketingName: Android
       version: 15.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'DuckDuckGo Privacy Browser'
       modus: null
       version: 140.0.7339.207
-      manufacturer: 'Duck Duck Go'
+      manufacturer: duck-duck-go
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 140.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     sec-ch-ua-model: '"iPlay_40"'
@@ -2565,8 +2565,8 @@
       architecture: null
       deviceName: 'iPlay 40'
       marketingName: 'iPlay 40'
-      manufacturer: Alldocube
-      brand: Alldocube
+      manufacturer: alldocube
+      brand: alldocube
       dualOrientation: true
       simCount: 2
       display:
@@ -2582,20 +2582,20 @@
       name: Android
       marketingName: Android
       version: 10.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: Opera
       modus: null
       version: 88.0.4412.53
-      manufacturer: Opera
+      manufacturer: opera
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 102.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     sec-ch-ua-platform: '"Android"'
@@ -2612,8 +2612,8 @@
       architecture: null
       deviceName: KFSUWI
       marketingName: 'Fire HD 10 (2017)'
-      manufacturer: Amazon
-      brand: Amazon
+      manufacturer: amazon
+      brand: amazon
       dualOrientation: true
       simCount: 0
       display:
@@ -2629,20 +2629,20 @@
       name: 'Fire OS'
       marketingName: 'Fire OS'
       version: 5.0.0
-      manufacturer: Amazon
+      manufacturer: amazon
       bits: null
     client:
       name: Silk
       modus: null
       version: 96.4.6
-      manufacturer: Amazon
+      manufacturer: amazon
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 96.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     x-requested-with: com.mi.globalbrowser.mini
@@ -2655,8 +2655,8 @@
       architecture: null
       deviceName: ZC554KL
       marketingName: 'ZenFone 4 Max'
-      manufacturer: Asus
-      brand: Asus
+      manufacturer: asus
+      brand: asus
       dualOrientation: true
       simCount: 2
       display:
@@ -2672,20 +2672,20 @@
       name: Android
       marketingName: Android
       version: 8.1.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'Mint Browser'
       modus: null
       version: 3.9.1
-      manufacturer: Xiaomi
+      manufacturer: xiaomi
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 61.0.3163.128
-      manufacturer: Google
+      manufacturer: google
 -
   -
     sec-ch-ua-model: '"IN2023"'
@@ -2718,8 +2718,8 @@
       architecture: null
       deviceName: IN2023
       marketingName: '8 Pro 5G (Europe/Asia)'
-      manufacturer: BBK
-      brand: OnePlus
+      manufacturer: bbk
+      brand: oneplus
       dualOrientation: true
       simCount: 2
       display:
@@ -2735,20 +2735,20 @@
       name: Android
       marketingName: Android
       version: 13.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'DuckDuckGo Privacy Browser'
       modus: null
       version: 141.0.7390.122
-      manufacturer: 'Duck Duck Go'
+      manufacturer: duck-duck-go
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 141.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     x-requested-with: com.instagram.android
@@ -2761,8 +2761,8 @@
       architecture: null
       deviceName: CPH1893
       marketingName: 'R17 Neo'
-      manufacturer: BBK
-      brand: OPPO
+      manufacturer: bbk
+      brand: oppo
       dualOrientation: true
       simCount: 1
       display:
@@ -2778,20 +2778,20 @@
       name: Android
       marketingName: Android
       version: 9.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'Instagram App'
       modus: null
       version: 235.0.0.21.107
-      manufacturer: Meta
+      manufacturer: meta
       type: mobile-application
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 101.0.4951.61
-      manufacturer: Google
+      manufacturer: google
 -
   -
     sec-ch-ua-platform: '"Linux"'
@@ -2808,8 +2808,8 @@
       architecture: null
       deviceName: iPhone
       marketingName: iPhone
-      manufacturer: Apple
-      brand: Apple
+      manufacturer: apple
+      brand: apple
       dualOrientation: true
       simCount: 1
       display:
@@ -2825,20 +2825,20 @@
       name: iOS
       marketingName: iOS
       version: 26.1.0
-      manufacturer: Apple
+      manufacturer: apple
       bits: null
     client:
       name: 'Chrome for iOS'
       modus: null
       version: 142.0.7444.128
-      manufacturer: Google
+      manufacturer: google
       type: browser
       isbot: false
       bits: null
     engine:
       name: WebKit
       version: 605.1.15
-      manufacturer: Apple
+      manufacturer: apple
 -
   -
     x-requested-with: com.microsoft.bing
@@ -2851,8 +2851,8 @@
       architecture: null
       deviceName: ZC554KL
       marketingName: 'ZenFone 4 Max'
-      manufacturer: Asus
-      brand: Asus
+      manufacturer: asus
+      brand: asus
       dualOrientation: true
       simCount: 2
       display:
@@ -2868,20 +2868,20 @@
       name: Android
       marketingName: Android
       version: 8.1.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'Bing Search'
       modus: null
       version: 24.1.410218302
-      manufacturer: Microsoft
+      manufacturer: microsoft
       type: mobile-application
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 61.0.3163.128
-      manufacturer: Google
+      manufacturer: google
 -
   -
     x-requested-with: net.onecook.browser
@@ -2894,7 +2894,7 @@
       architecture: null
       deviceName: '1907'
       marketingName: S1
-      manufacturer: BBK
+      manufacturer: bbk
       brand: vivo
       dualOrientation: true
       simCount: 1
@@ -2911,20 +2911,20 @@
       name: Android
       marketingName: Android
       version: 11.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'Stargon Browser'
       modus: null
       version: 4.6.0
-      manufacturer: Onecook
+      manufacturer: onecook
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 96.0.4664.104
-      manufacturer: Google
+      manufacturer: google
 -
   -
     x-requested-with: com.opera.gx
@@ -2937,7 +2937,7 @@
       architecture: null
       deviceName: '1907'
       marketingName: S1
-      manufacturer: BBK
+      manufacturer: bbk
       brand: vivo
       dualOrientation: true
       simCount: 1
@@ -2954,20 +2954,20 @@
       name: Android
       marketingName: Android
       version: 11.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'Opera GX'
       modus: null
       version: 1.5.0
-      manufacturer: Opera
+      manufacturer: opera
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 96.0.4664.104
-      manufacturer: Google
+      manufacturer: google
 -
   -
     x-requested-with: jp.co.yahoo.android.yjtop
@@ -2980,8 +2980,8 @@
       architecture: null
       deviceName: 'Pixel 4a 5G'
       marketingName: 'Pixel 4a 5G'
-      manufacturer: Google
-      brand: Google
+      manufacturer: google
+      brand: google
       dualOrientation: true
       simCount: 1
       display:
@@ -2997,20 +2997,20 @@
       name: Android
       marketingName: Android
       version: 12.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'Yahoo! Japan App'
       modus: null
       version: 3.114.0
-      manufacturer: 'Yahoo! Japan'
+      manufacturer: yahoo-japan
       type: mobile-application
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 98.0.4758.101
-      manufacturer: Google
+      manufacturer: google
 -
   -
     x-requested-with: com.huawei.search
@@ -3023,8 +3023,8 @@
       architecture: null
       deviceName: 'Pixel 4a 5G'
       marketingName: 'Pixel 4a 5G'
-      manufacturer: Google
-      brand: Google
+      manufacturer: google
+      brand: google
       dualOrientation: true
       simCount: 1
       display:
@@ -3040,20 +3040,20 @@
       name: Android
       marketingName: Android
       version: 12.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'HUAWEI AI Search'
       modus: null
       version: 22.0.4.309
-      manufacturer: Huawei
+      manufacturer: huawei
       type: mobile-application
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 98.0.4758.101
-      manufacturer: Google
+      manufacturer: google
 -
   -
     x-requested-with: pi.browser
@@ -3066,8 +3066,8 @@
       architecture: null
       deviceName: 'Pixel 4a 5G'
       marketingName: 'Pixel 4a 5G'
-      manufacturer: Google
-      brand: Google
+      manufacturer: google
+      brand: google
       dualOrientation: true
       simCount: 1
       display:
@@ -3083,20 +3083,20 @@
       name: Android
       marketingName: Android
       version: 12.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'Pi Browser'
       modus: null
       version: 1.3.0
-      manufacturer: 'Pi Community'
+      manufacturer: 'pi community'
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 98.0.4758.101
-      manufacturer: Google
+      manufacturer: google
 -
   -
     x-requested-with: com.mycompany.app.soulbrowser
@@ -3109,8 +3109,8 @@
       architecture: null
       deviceName: 'Pixel 4a 5G'
       marketingName: 'Pixel 4a 5G'
-      manufacturer: Google
-      brand: Google
+      manufacturer: google
+      brand: google
       dualOrientation: true
       simCount: 1
       display:
@@ -3126,20 +3126,20 @@
       name: Android
       marketingName: Android
       version: 12.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'Soul Browser'
       modus: null
       version: 4.0.0
-      manufacturer: SoulSoft
+      manufacturer: soul-soft
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 98.0.4758.101
-      manufacturer: Google
+      manufacturer: google
 -
   -
     x-requested-with: kik.android
@@ -3152,8 +3152,8 @@
       architecture: null
       deviceName: VOG-L29
       marketingName: 'P30 Pro'
-      manufacturer: Huawei
-      brand: Huawei
+      manufacturer: huawei
+      brand: huawei
       dualOrientation: true
       simCount: 2
       display:
@@ -3169,7 +3169,7 @@
       name: Android
       marketingName: Android
       version: 10.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: Kik
@@ -3182,7 +3182,7 @@
     engine:
       name: Blink
       version: 99.0.4844.73
-      manufacturer: Google
+      manufacturer: google
 -
   -
     x-requested-with: com.huawei.browser
@@ -3195,8 +3195,8 @@
       architecture: null
       deviceName: 'Pixel 4a 5G'
       marketingName: 'Pixel 4a 5G'
-      manufacturer: Google
-      brand: Google
+      manufacturer: google
+      brand: google
       dualOrientation: true
       simCount: 1
       display:
@@ -3212,20 +3212,20 @@
       name: Android
       marketingName: Android
       version: 12.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'Huawei Mobile Services'
       modus: null
       version: 6.4.0.307
-      manufacturer: Huawei
+      manufacturer: huawei
       type: mobile-application
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 98.0.4758.101
-      manufacturer: Google
+      manufacturer: google
 -
   -
     x-requested-with: com.UCMobile.intl
@@ -3238,8 +3238,8 @@
       architecture: null
       deviceName: 'Pixel 4a 5G'
       marketingName: 'Pixel 4a 5G'
-      manufacturer: Google
-      brand: Google
+      manufacturer: google
+      brand: google
       dualOrientation: true
       simCount: 1
       display:
@@ -3255,20 +3255,20 @@
       name: Android
       marketingName: Android
       version: 12.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'UC Browser'
       modus: null
       version: 11.4.8.1012
-      manufacturer: UCWeb
+      manufacturer: ucweb
       type: transcoder
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 98.0.4758.101
-      manufacturer: Google
+      manufacturer: google
 -
   -
     x-requested-with: com.oupeng.browser
@@ -3281,8 +3281,8 @@
       architecture: null
       deviceName: 'Pixel 4a 5G'
       marketingName: 'Pixel 4a 5G'
-      manufacturer: Google
-      brand: Google
+      manufacturer: google
+      brand: google
       dualOrientation: true
       simCount: 1
       display:
@@ -3298,7 +3298,7 @@
       name: Android
       marketingName: Android
       version: 12.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'Oupeng Browser'
@@ -3311,7 +3311,7 @@
     engine:
       name: WebKit
       version: 537.36.0
-      manufacturer: Apple
+      manufacturer: apple
 -
   -
     x-requested-with: com.snapchat.android
@@ -3324,8 +3324,8 @@
       architecture: null
       deviceName: 'Pixel 4a 5G'
       marketingName: 'Pixel 4a 5G'
-      manufacturer: Google
-      brand: Google
+      manufacturer: google
+      brand: google
       dualOrientation: true
       simCount: 1
       display:
@@ -3341,20 +3341,20 @@
       name: Android
       marketingName: Android
       version: 12.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: Snapchat
       modus: null
       version: 11.59.0.35
-      manufacturer: Snap
+      manufacturer: snap
       type: mobile-application
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 96.0.4664.104
-      manufacturer: Google
+      manufacturer: google
 -
   -
     x-requested-with: com.reddit.frontpage
@@ -3367,8 +3367,8 @@
       architecture: null
       deviceName: 'Pixel 4a 5G'
       marketingName: 'Pixel 4a 5G'
-      manufacturer: Google
-      brand: Google
+      manufacturer: google
+      brand: google
       dualOrientation: true
       simCount: 1
       display:
@@ -3384,7 +3384,7 @@
       name: Android
       marketingName: Android
       version: 12.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: Reddit
@@ -3397,7 +3397,7 @@
     engine:
       name: Blink
       version: 96.0.4664.104
-      manufacturer: Google
+      manufacturer: google
 -
   -
     sec-ch-ua-model: '"TB310FU"'
@@ -3424,8 +3424,8 @@
       architecture: null
       deviceName: TB310FU
       marketingName: 'Tab M9 Wi-Fi'
-      manufacturer: Lenovo
-      brand: Lenovo
+      manufacturer: lenovo
+      brand: lenovo
       dualOrientation: true
       simCount: 0
       display:
@@ -3441,20 +3441,20 @@
       name: Android
       marketingName: Android
       version: 13.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: Chromium
       modus: null
       version: 124.0.6327.4
-      manufacturer: Google
+      manufacturer: google
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 124.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     user-agent: 'Classic FM/65.0.0 Android 12/vivo V2111'
@@ -3465,7 +3465,7 @@
       architecture: null
       deviceName: V2111
       marketingName: Y21
-      manufacturer: BBK
+      manufacturer: bbk
       brand: vivo
       dualOrientation: true
       simCount: 2
@@ -3482,13 +3482,13 @@
       name: Android
       marketingName: Android
       version: 12.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'Classic FM'
       modus: null
       version: 65.0.0
-      manufacturer: 'Multimedios Digital'
+      manufacturer: multimedios-digital
       type: multimedia-player
       isbot: false
       bits: null
@@ -3508,8 +3508,8 @@
       architecture: null
       deviceName: SM-G991B
       marketingName: 'Galaxy S21 5G (International)'
-      manufacturer: Samsung
-      brand: Samsung
+      manufacturer: samsung
+      brand: samsung
       dualOrientation: true
       simCount: 1
       display:
@@ -3525,20 +3525,20 @@
       name: Android
       marketingName: Android
       version: 12.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'Tuya Smart Life'
       modus: null
       version: 3.38.1
-      manufacturer: 'Volcano Technology'
+      manufacturer: volcano-technology
       type: mobile-application
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 100.0.4896.127
-      manufacturer: Google
+      manufacturer: google
 -
   -
     sec-ch-ua-model: '"Pixel 4a"'
@@ -3565,8 +3565,8 @@
       architecture: null
       deviceName: 'Pixel 4a'
       marketingName: 'Pixel 4a'
-      manufacturer: Google
-      brand: Google
+      manufacturer: google
+      brand: google
       dualOrientation: true
       simCount: 1
       display:
@@ -3582,20 +3582,20 @@
       name: Android
       marketingName: Android
       version: 12.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: Edge
       modus: null
       version: 101.0.1210.39
-      manufacturer: Microsoft
+      manufacturer: microsoft
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 101.0.1210.39
-      manufacturer: Google
+      manufacturer: google
 -
   -
     sec-ch-ua-platform: '"Linux"'
@@ -3629,20 +3629,20 @@
       name: Linux
       marketingName: Linux
       version: null
-      manufacturer: 'Linux Foundation'
+      manufacturer: linuxFoundation
       bits: null
     client:
       name: DuckAssistBot
       modus: null
       version: 1.2.0
-      manufacturer: 'Duck Duck Go'
+      manufacturer: duck-duck-go
       type: crawler
       isbot: true
       bits: null
     engine:
       name: Blink
       version: 137.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     sec-ch-ua-model: '""'
@@ -3688,20 +3688,20 @@
       name: Android
       marketingName: Android
       version: 13.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: Firefox
       modus: null
       version: 145.0.0
-      manufacturer: Mozilla
+      manufacturer: mozilla-foundation
       type: browser
       isbot: false
       bits: null
     engine:
       name: Gecko
       version: 145.0.0
-      manufacturer: Mozilla
+      manufacturer: mozilla
 -
   -
     sec-ch-ua-model: '""'
@@ -3747,20 +3747,20 @@
       name: Linux
       marketingName: Linux
       version: null
-      manufacturer: 'Linux Foundation'
+      manufacturer: linuxFoundation
       bits: null
     client:
       name: 'Sogou Web Spider'
       modus: null
       version: 4.0.0
-      manufacturer: Sogou
+      manufacturer: sogou
       type: search-bot
       isbot: true
       bits: null
     engine:
       name: Blink
       version: 136.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     sec-ch-ua-platform: '"Linux"'
@@ -3794,7 +3794,7 @@
       name: Linux
       marketingName: Linux
       version: null
-      manufacturer: 'Linux Foundation'
+      manufacturer: linuxFoundation
       bits: null
     client:
       name: 'headline bot'
@@ -3807,7 +3807,7 @@
     engine:
       name: Blink
       version: 131.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     sec-ch-ua-platform: '"Linux"'
@@ -3841,20 +3841,20 @@
       name: Linux
       marketingName: Linux
       version: null
-      manufacturer: 'Linux Foundation'
+      manufacturer: linuxFoundation
       bits: null
     client:
       name: 'Amazon Bot'
       modus: null
       version: 0.1.0
-      manufacturer: Amazon
+      manufacturer: amazon
       type: crawler
       isbot: true
       bits: null
     engine:
       name: Blink
       version: 123.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     sec-ch-ua: '"Not/A)Brand";v="8", "Chromium";v="126", "HeadlessChrome";v="126"'
@@ -3888,20 +3888,20 @@
       name: Linux
       marketingName: Linux
       version: null
-      manufacturer: 'Linux Foundation'
+      manufacturer: linuxFoundation
       bits: null
     client:
       name: 'Facebook Crawler'
       modus: null
       version: 1.1.0
-      manufacturer: Meta
+      manufacturer: meta
       type: social-media-agent
       isbot: true
       bits: null
     engine:
       name: Blink
       version: 126.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     sec-ch-ua-model: '""'
@@ -3945,20 +3945,20 @@
       name: Android
       marketingName: Android
       version: 12.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'Opera Mobile'
       modus: null
       version: 84.0.2254.73823
-      manufacturer: Opera
+      manufacturer: opera
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 127.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     user-agent: 'Mozilla/5.0 (Linux like Android; de_DE) AppleWebKit/534.34 PocketBook/626 (screen 758x1024; FW O626.4.4.979) Mobile'
@@ -3969,8 +3969,8 @@
       architecture: null
       deviceName: '626'
       marketingName: '626'
-      manufacturer: PocketBook
-      brand: PocketBook
+      manufacturer: pocketbook
+      brand: pocketbook
       dualOrientation: true
       simCount: 0
       display:
@@ -3986,20 +3986,20 @@
       name: Android
       marketingName: Android
       version: null
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'PocketBook Browser'
       modus: null
       version: null
-      manufacturer: PocketBook
+      manufacturer: pocketbook
       type: browser
       isbot: false
       bits: null
     engine:
       name: WebKit
       version: 534.34.0
-      manufacturer: Apple
+      manufacturer: apple
 -
   -
     sec-ch-ua-platform: '"Linux"'
@@ -4033,20 +4033,20 @@
       name: Linux
       marketingName: Linux
       version: null
-      manufacturer: 'Linux Foundation'
+      manufacturer: linuxFoundation
       bits: null
     client:
       name: 'HubSpot Crawler'
       modus: null
       version: null
-      manufacturer: HubSpot
+      manufacturer: hubspot-inc
       type: crawler
       isbot: true
       bits: null
     engine:
       name: Blink
       version: 138.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     sec-ch-ua-platform: '"Linux"'
@@ -4080,7 +4080,7 @@
       name: Linux
       marketingName: Linux
       version: null
-      manufacturer: 'Linux Foundation'
+      manufacturer: linuxFoundation
       bits: null
     client:
       name: 'headline bot'
@@ -4093,7 +4093,7 @@
     engine:
       name: Blink
       version: 119.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     sec-ch-prefers-color-scheme: light
@@ -4112,8 +4112,8 @@
       architecture: null
       deviceName: 'Mi 10T Pro'
       marketingName: 'Mi 10T Pro'
-      manufacturer: Xiaomi
-      brand: Xiaomi
+      manufacturer: xiaomi
+      brand: xiaomi
       dualOrientation: true
       simCount: 2
       display:
@@ -4129,20 +4129,20 @@
       name: Android
       marketingName: Android
       version: 12.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'Mi Browser'
       modus: null
       version: 14.48.2
-      manufacturer: Xiaomi
+      manufacturer: xiaomi
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 135.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     sec-ch-prefers-color-scheme: light
@@ -4191,20 +4191,20 @@
       name: Android
       marketingName: Android
       version: null
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'Privacy Browser'
       modus: null
       version: 1.0.0
-      manufacturer: Stoutner
+      manufacturer: stoutner
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 143.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     sec-ch-prefers-color-scheme: dark
@@ -4225,8 +4225,8 @@
       architecture: null
       deviceName: SM-S928B
       marketingName: 'Galaxy S24 Ultra'
-      manufacturer: Samsung
-      brand: Samsung
+      manufacturer: samsung
+      brand: samsung
       dualOrientation: true
       simCount: 2
       display:
@@ -4242,20 +4242,20 @@
       name: Android
       marketingName: Android
       version: 16.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: Dogtorance
       modus: null
       version: 1.0.0
-      manufacturer: Dogtorance
+      manufacturer: dog-torance
       type: mobile-application
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 143.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     x-requested-with: jp.naver.line.android
@@ -4268,8 +4268,8 @@
       architecture: null
       deviceName: SC-42A
       marketingName: 'Galaxy A21 (Japan)'
-      manufacturer: Samsung
-      brand: Samsung
+      manufacturer: samsung
+      brand: samsung
       dualOrientation: true
       simCount: 1
       display:
@@ -4285,20 +4285,20 @@
       name: Android
       marketingName: Android
       version: 11.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: Line
       modus: null
       version: 12.21.1
-      manufacturer: LINE
+      manufacturer: line
       type: mobile-application
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 108.0.5359.128
-      manufacturer: Google
+      manufacturer: google
 -
   -
     user-agent: 'Mozilla/5.0 (Linux; Android 15; NM6rtiPBYo; U; en) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5414.85 Mobile Tenta/7.3.0 Safari/537.36'
@@ -4326,20 +4326,20 @@
       name: Android
       marketingName: Android
       version: 15.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'Tenta Browser'
       modus: null
       version: 7.3.0
-      manufacturer: Tenta
+      manufacturer: tenta
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 109.0.5414.85
-      manufacturer: Google
+      manufacturer: google
 -
   -
     x-requested-with: com.microsoft.amp.apps.bingnews
@@ -4352,8 +4352,8 @@
       architecture: null
       deviceName: SM-P615
       marketingName: 'Galaxy Tab S6 Lite 10.4" LTE'
-      manufacturer: Samsung
-      brand: Samsung
+      manufacturer: samsung
+      brand: samsung
       dualOrientation: true
       simCount: 1
       display:
@@ -4369,20 +4369,20 @@
       name: Android
       marketingName: Android
       version: 11.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: MSN
       modus: null
       version: 23.3.400920606
-      manufacturer: Microsoft
+      manufacturer: microsoft
       type: mobile-application
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 95.0.4638.69
-      manufacturer: Google
+      manufacturer: google
 -
   -
     user-agent: 'Mozilla/5.0 (Linux; Android 16; CPH2747 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.171 Mobile Safari/537.36'
@@ -4393,8 +4393,8 @@
       architecture: null
       deviceName: CPH2747
       marketingName: '15'
-      manufacturer: BBK
-      brand: OnePlus
+      manufacturer: bbk
+      brand: oneplus
       dualOrientation: true
       simCount: 2
       display:
@@ -4410,20 +4410,20 @@
       name: Android
       marketingName: Android
       version: 16.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: 'Chrome WebView'
       modus: null
       version: 142.0.7444.171
-      manufacturer: Google
+      manufacturer: google
       type: browser
       isbot: false
       bits: null
     engine:
       name: Blink
       version: 142.0.7444.171
-      manufacturer: Google
+      manufacturer: google
 -
   -
     user-agent: 'Spice M5885   Browser/Opera  Opera/9.80 (MTK; U; hi-IN) Presto/2.5.28 Version/10.10'
@@ -4434,8 +4434,8 @@
       architecture: null
       deviceName: M5885
       marketingName: M5885
-      manufacturer: Spice
-      brand: Spice
+      manufacturer: spice
+      brand: spice
       dualOrientation: false
       simCount: 1
       display:
@@ -4451,20 +4451,20 @@
       name: 'Nucleus OS'
       marketingName: Nucleus
       version: null
-      manufacturer: 'Accelerated Technology'
+      manufacturer: acceleratedTechnology
       bits: null
     client:
       name: 'Opera Mobile'
       modus: null
       version: 10.10.0
-      manufacturer: Opera
+      manufacturer: opera
       type: browser
       isbot: false
       bits: null
     engine:
       name: Presto
       version: 2.5.28
-      manufacturer: Opera
+      manufacturer: opera
 -
   -
     user-agent: 'Podimo/1.11.3 build 91/Android 28'
@@ -4492,7 +4492,7 @@
       name: Android
       marketingName: Android
       version: 9.0.0
-      manufacturer: Google
+      manufacturer: google
       bits: null
     client:
       name: Podimo
@@ -4505,7 +4505,7 @@
     engine:
       name: WebKit
       version: null
-      manufacturer: Apple
+      manufacturer: apple
 -
   -
     sec-ch-ua-platform: '"macOS"'
@@ -4539,20 +4539,20 @@
       name: 'Mac OS X'
       marketingName: 'Mac OS X'
       version: null
-      manufacturer: Apple
+      manufacturer: apple
       bits: null
     client:
       name: Pageburst
       modus: null
       version: null
-      manufacturer: Elsevier
+      manufacturer: elsevier
       type: crawler
       isbot: true
       bits: null
     engine:
       name: Blink
       version: 140.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     sec-ch-ua-platform: '"macOS"'
@@ -4586,20 +4586,20 @@
       name: 'Mac OS X'
       marketingName: 'Mac OS X'
       version: null
-      manufacturer: Apple
+      manufacturer: apple
       bits: null
     client:
       name: 'Google Bot'
       modus: null
       version: 2.1.0
-      manufacturer: Google
+      manufacturer: google
       type: search-bot
       isbot: true
       bits: null
     engine:
       name: Blink
       version: 101.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     sec-ch-ua-platform: '"Mac OS X"'
@@ -4616,8 +4616,8 @@
       architecture: null
       deviceName: iPhone
       marketingName: iPhone
-      manufacturer: Apple
-      brand: Apple
+      manufacturer: apple
+      brand: apple
       dualOrientation: true
       simCount: 1
       display:
@@ -4633,20 +4633,20 @@
       name: iOS
       marketingName: iOS
       version: 18.1.0
-      manufacturer: Apple
+      manufacturer: apple
       bits: null
     client:
       name: 'Google Search App'
       modus: null
       version: 341.3.692278309
-      manufacturer: Google
+      manufacturer: google
       type: mobile-application
       isbot: false
       bits: null
     engine:
       name: WebKit
       version: 131.0.0
-      manufacturer: Apple
+      manufacturer: apple
 -
   -
     sec-ch-ua-platform: '"macOS"'
@@ -4680,20 +4680,20 @@
       name: 'Mac OS X'
       marketingName: 'Mac OS X'
       version: null
-      manufacturer: Apple
+      manufacturer: apple
       bits: null
     client:
       name: WebPageTest
       modus: null
       version: null
-      manufacturer: 'WPO Foundation'
+      manufacturer: wpo-foundation
       type: site-monitor
       isbot: true
       bits: null
     engine:
       name: Blink
       version: 118.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     sec-ch-ua-platform: '"Linux"'
@@ -4727,7 +4727,7 @@
       name: Linux
       marketingName: Linux
       version: null
-      manufacturer: 'Linux Foundation'
+      manufacturer: linuxFoundation
       bits: null
     client:
       name: HanaleiBot
@@ -4740,7 +4740,7 @@
     engine:
       name: Blink
       version: 123.0.0
-      manufacturer: Google
+      manufacturer: google
 -
   -
     sec-ch-ua-platform: '"Mac OS X"'
@@ -4757,8 +4757,8 @@
       architecture: null
       deviceName: iPhone
       marketingName: iPhone
-      manufacturer: Apple
-      brand: Apple
+      manufacturer: apple
+      brand: apple
       dualOrientation: true
       simCount: 1
       display:
@@ -4774,17 +4774,17 @@
       name: iOS
       marketingName: iOS
       version: 17.6.1
-      manufacturer: Apple
+      manufacturer: apple
       bits: null
     client:
       name: Chrome
       modus: null
       version: 131.0.0
-      manufacturer: Google
+      manufacturer: google
       type: browser
       isbot: false
       bits: null
     engine:
       name: WebKit
       version: 131.0.0
-      manufacturer: Apple
+      manufacturer: apple

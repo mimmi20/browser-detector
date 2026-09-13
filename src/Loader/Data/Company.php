@@ -21,6 +21,7 @@ use UnexpectedValueException;
 
 use function array_key_exists;
 use function assert;
+use function file_put_contents;
 use function is_array;
 use function is_string;
 
@@ -63,8 +64,14 @@ final class Company implements DataInterface
                 continue;
             }
 
-            assert(is_string($data['name']));
-            assert(is_string($data['brandname']));
+            assert(
+                is_string($data['name']) || $data['name'] === null,
+                get_debug_type($data['name']),
+            );
+            assert(
+                is_string($data['brandname']) || $data['brandname'] === null,
+                get_debug_type($data['brandname']),
+            );
 
             $this->items[$stringKey] = new DataCompany(
                 name: $data['name'],
@@ -96,8 +103,14 @@ final class Company implements DataInterface
             try {
                 $fileData = Yaml::parseFile(self::DATA_PATH);
 
-                if (is_array($fileData) && !array_key_exists($stringKey, $fileData)) {
-                    $fileData[$stringKey] = $data;
+                if (
+                    is_array($fileData)
+                    && (!array_key_exists($stringKey, $fileData) || !is_array($fileData[$stringKey]))
+                ) {
+                    $fileData[$stringKey] = [
+                        'name' => $company->getName(),
+                        'brandname' => $company->getBrandname(),
+                    ];
 
                     file_put_contents(
                         self::DATA_PATH,
