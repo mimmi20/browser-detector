@@ -29,6 +29,7 @@ use function assert;
 use function explode;
 use function file_exists;
 use function file_put_contents;
+use function in_array;
 use function is_array;
 use function is_string;
 use function sprintf;
@@ -70,7 +71,8 @@ trait AutoUpdateDeviceDataTrait
         }
 
         if (array_key_exists($devicecode, $devicesFromMappingFile)) {
-            $this->deleteFromFactories($company, $code, $singleDeviceCode);
+            // @todo: uncomment
+            // $this->deleteFromFactories($company, $code, $singleDeviceCode);
 
             return;
         }
@@ -86,12 +88,24 @@ trait AutoUpdateDeviceDataTrait
             ),
         );
 
-        $this->deleteFromFactories($company, $code, $singleDeviceCode);
+        // @todo: uncomment
+        // $this->deleteFromFactories($company, $code, $singleDeviceCode);
     }
 
     /** @throws void */
     private function deleteFromFactories(string $company, string $code, string $singleDeviceCode): void
     {
+        // do not remove generic apple devices
+        if (
+            in_array(
+                $singleDeviceCode,
+                ['apple ipod touch', 'apple ipad', 'apple iphone'],
+                strict: true,
+            )
+        ) {
+            return;
+        }
+
         try {
             $iterator = new RecursiveIteratorIterator(
                 new RecursiveDirectoryIterator(__DIR__ . '/../../../data/factories'),

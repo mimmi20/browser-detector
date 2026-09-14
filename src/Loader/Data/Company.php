@@ -22,6 +22,7 @@ use UnexpectedValueException;
 use function array_key_exists;
 use function assert;
 use function file_put_contents;
+use function get_debug_type;
 use function is_array;
 use function is_string;
 

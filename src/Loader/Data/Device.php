@@ -87,11 +87,26 @@ final class Device implements DataInterface
                     continue;
                 }
 
-                assert(is_string($data['deviceName']) || $data['deviceName'] === null, get_debug_type($data['deviceName']));
-                assert(is_string($data['marketingName']) || $data['marketingName'] === null, get_debug_type($data['marketingName']));
-                assert(is_string($data['manufacturer']) || $data['manufacturer'] === null, get_debug_type($data['manufacturer']));
-                assert(is_string($data['brand']) || $data['brand'] === null, get_debug_type($data['brand']));
-                assert(is_string($data['type']) || $data['type'] === null, get_debug_type($data['type']));
+                assert(
+                    is_string($data['deviceName']) || $data['deviceName'] === null,
+                    get_debug_type($data['deviceName']),
+                );
+                assert(
+                    is_string($data['marketingName']) || $data['marketingName'] === null,
+                    get_debug_type($data['marketingName']),
+                );
+                assert(
+                    is_string($data['manufacturer']) || $data['manufacturer'] === null,
+                    get_debug_type($data['manufacturer']),
+                );
+                assert(
+                    is_string($data['brand']) || $data['brand'] === null,
+                    get_debug_type($data['brand']),
+                );
+                assert(
+                    is_string($data['type']) || $data['type'] === null,
+                    get_debug_type($data['type']),
+                );
                 assert(is_array($data['display']), get_debug_type($data['display']));
                 assert(
                     is_int($data['display']['width']) || $data['display']['width'] === null,
@@ -108,8 +123,14 @@ final class Device implements DataInterface
                     ) || $data['display']['size'] === null,
                     get_debug_type($data['display']['size']),
                 );
-                assert(is_bool($data['dualOrientation']) || $data['dualOrientation'] === null, get_debug_type($data['dualOrientation']));
-                assert(is_int($data['simCount']) || $data['simCount'] === null, get_debug_type($data['simCount']));
+                assert(
+                    is_bool($data['dualOrientation']) || $data['dualOrientation'] === null,
+                    get_debug_type($data['dualOrientation']),
+                );
+                assert(
+                    is_int($data['simCount']) || $data['simCount'] === null,
+                    get_debug_type($data['simCount']),
+                );
                 assert(
                     is_string($data['platform']) || $data['platform'] === null,
                     get_debug_type($data['platform']),

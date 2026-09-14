@@ -25,6 +25,7 @@ use UnexpectedValueException;
 
 use function array_key_exists;
 use function assert;
+use function get_debug_type;
 use function is_array;
 use function is_string;
 use function str_replace;
@@ -78,10 +79,22 @@ final class Client implements DataInterface
                     continue;
                 }
 
-                assert(is_string($data['name']) || $data['name'] === null, get_debug_type($data['name']));
-                assert(is_string($data['manufacturer']) || $data['manufacturer'] === null, get_debug_type($data['manufacturer']));
-                assert(is_string($data['type']) || $data['type'] === null, get_debug_type($data['type']));
-                assert(is_string($data['engine']) || $data['engine'] === null, get_debug_type($data['engine']));
+                assert(
+                    is_string($data['name']) || $data['name'] === null,
+                    get_debug_type($data['name']),
+                );
+                assert(
+                    is_string($data['manufacturer']) || $data['manufacturer'] === null,
+                    get_debug_type($data['manufacturer']),
+                );
+                assert(
+                    is_string($data['type']) || $data['type'] === null,
+                    get_debug_type($data['type']),
+                );
+                assert(
+                    is_string($data['engine']) || $data['engine'] === null,
+                    get_debug_type($data['engine']),
+                );
 
                 $this->items[$stringKey] = new DataClient(
                     name: $data['name'],

@@ -104,6 +104,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
         $regexes = [
             '/^mozilla\/[\d.]+ \((?:andr[o0]id|tizen) [\d.]+(?:[^;]+)?;(?: arm(?:_64)?;| harmonyos;| mobile;)? (?P<devicecode>[^;\/]+)(?:(?:\/[^ ]+)? +(?:build|hmscore|release))[^)]+\)/i',
             '/^mozilla\/[\d.]+ \((?:andr[o0]id|tizen) [\d.]+(?:[^;]+)?;(?: arm(?:_64)?;| harmonyos;| mobile;)? (?P<devicecode>[^);\/]+)[^)]*\)/i',
+            '/(?P<devicecode>pocketbook\/(?:6[23][1-9]|700))/i',
             '/^mozilla\/[\d.]+ \((?:smart-tv; )?(?:linux|andr[o0]id);(?: arm(?:_64)?;| x86;)? (?:andr[o0]id|tizen)? ?[\d.]+(?:[^;]+)?;(?: arm(?:_64)?;| harmonyos;| mobile;)? (?P<devicecode>[^;\/]+)(?:(?:\/[^ ]+)? +(?:build|hmscore|release))[^)]+\)/i',
             '/^mozilla\/[\d.]+ \((?:smart-tv; )?(?:linux|andr[o0]id);(?: arm(?:_64)?;| x86;)? (?:andr[o0]id|tizen)? ?[\d.]+(?:[^;]+)?;(?: arm(?:_64)?;| harmonyos;| mobile;)? (?P<devicecode>[^);\/]+)[^)]*\)/i',
             '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi|androidhttpclient|worksmobile|googletagmanager)\/[\d.]+ ?\(linux; (?:(?:andr[o0]id|tizen) [\d.]+(?:[^;]+)?;(?: harmonyos;)?) (?P<devicecode>[^;\/]+)(?:;? +(?:build|hmscore|release))[^)]+\)/i',
@@ -118,10 +119,12 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/ucweb\/[\d.]+ ?\((?:midp-2\.0|linux); opera mini\/[^;]+; (?P<devicecode>[^);\/]+)/i',
             '/ucweb\/[\d.]+ \((?:java; )?(?:midp-2\.0|linux); (?:adr [\d.]+; )(?P<devicecode>[^);\/]+)(?:[^)]+)?\)/i',
             '/ucweb\/[\d.]+ \((?:java; )?(?:midp-2\.0|linux); (?:[\d.]+; )?(?P<devicecode>[^);\/]+)(?:[^)]+)?\)/i',
+            '/ucweb\/2.0 \(ios; (?:ipa?d os|iph os) [\d._]+; (?P<devicecode>[^);\/]+)(?:[^)]+)?\)/i',
             '/;fbdv\/(?P<devicecode>[^);\/]+);/i',
             '/slack\/[\d.]+ \((?P<devicecode>[^);\/]+)(?:;? (?:andr[o0]id|tizen) [\d.]+)(?:[^)]+)?\)/i',
             '/instagram [\d.]+ android \([\d.]+\/[\d.]+; \d+dpi; \d+x\d+; (?P<devicecode>[a-z\/]+; [^);\/]+);/i',
             '/instagram [\d.]+ android \([\d.]+\/[\d.]+; \d+dpi; \d+x\d+; [a-z\/]+; (?P<devicecode>[^);\/]+);/i',
+            '/instagram [\d.]+ \((?P<devicecode>[^);\/]+); ios/i',
             '/icq_android\/[\d.]+ \(android; \d+; [\d.]+; [^;]+; (?P<devicecode>[^);\/]+)/i',
             '/gg-android\/[\d.]+ \(os;android;\d+\) \([^);\/]+;[^);\/]+;(?P<devicecode>[^);\/]+);[\d.]+/i',
             '/imoandroid\/[\d.]+; (?:\d+; )?rel; (?P<devicecode>[^);\/]+)/i',
@@ -180,6 +183,10 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/^mqqbrowser\/[\d.]+ \(linux; [\d.]+; (?P<devicecode>[^)]+)\)$/i',
             '/^onebrowser\/[\d.]+ \((?P<devicecode>[^)]+)\)$/i',
             '/dv\((?P<devicecode>[^);\/]+)(?:;? +(?:build|hmscore|release|miui)?[^)]+)?\);/',
+            '/hw\/(?P<devicecode>.*)$/i',
+            '/ (?P<devicecode>crkey)\//i',
+            '/iemobile\/[\d.]+(?:; arm; touch)?; (?P<devicecode>[a-z]+; ?[^);\/]+)/i',
+            '/iemobile\/[\d.]+\) (?P<devicecode>[a-z]+; ?[^);\/]+)/i',
             // should be the last entry in the list
             '/^(?P<devicecode>.+)$/i',
         ];
