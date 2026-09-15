@@ -1482,3 +1482,31 @@
     size: 6.8
   type: smartphone
   platform: android
+'blu studio one':
+  deviceName: 'Studio One'
+  marketingName: 'Studio One'
+  manufacturer: blu
+  brand: blu
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 1280
+    height: 720
+    touch: true
+    size: 5
+  type: smartphone
+  platform: android
+'blu vivo one':
+  deviceName: 'Vivo One'
+  marketingName: 'Vivo One'
+  manufacturer: blu
+  brand: blu
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 1440
+    height: 720
+    touch: true
+    size: 5.5
+  type: smartphone
+  platform: android

@@ -180,3 +180,17 @@
     size: 8
   type: tablet
   platform: android
+'bq darwin':
+  deviceName: 'Darwin'
+  marketingName: 'Darwin'
+  manufacturer: bq
+  brand: bq
+  dualOrientation: true
+  simCount: 0
+  display:
+    width: 800
+    height: 600
+    touch: true
+    size: 8.4
+  type: tablet
+  platform: android
