@@ -20,9 +20,9 @@ use function sprintf;
 
 final readonly class DarwinParser implements DarwinParserInterface
 {
-    private const string GENERIC_FILE = __DIR__ . '/../../../data/factories/devices/darwin.json';
+    private const string GENERIC_FILE = __DIR__ . '/../../../data/factories/devices/darwin.yaml';
 
-    private const string SPECIFIC_FILE = __DIR__ . '/../../../data/factories/devices/%s/apple.json';
+    private const string SPECIFIC_FILE = __DIR__ . '/../../../data/factories/devices/%s/apple.yaml';
 
     /** @throws void */
     public function __construct(private RulefileParserInterface $rulefileParser)

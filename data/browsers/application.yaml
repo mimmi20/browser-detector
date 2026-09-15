@@ -1,0 +1,1451 @@
+1passwordthumbs:
+  name: 1PasswordThumbs
+  manufacturer: agile-bits
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 1PasswordThumbs
+  engine: webkit
+access:
+  name: Access
+  manufacturer: microsoft
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Access
+  engine: unknown
+'access web datasheet':
+  name: 'Access Web Datasheet'
+  manufacturer: microsoft
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Access Web Datasheet'
+  engine: unknown
+'adobe air':
+  name: 'Adobe AIR'
+  manufacturer: adobe
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - AdobeAIR
+  engine: webkit
+airsuite-ui:
+  name: airsuite-ui
+  manufacturer: unknown
+  type: application
+  version:
+    class: null
+    search: null
+  engine: webkit
+aldiko:
+  name: Aldiko
+  manufacturer: unknown
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Aldiko
+  engine: null
+'alltop app':
+  name: 'Alltop App'
+  manufacturer: alltop
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Alltop
+  engine: webkit
+appcent:
+  name: Appcent
+  manufacturer: unknown
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Appcent
+  engine: null
+'apple appstore app':
+  name: 'AppStore App'
+  manufacturer: apple
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - AppStore
+  engine: webkit
+atbat:
+  name: AtBat
+  manufacturer: mlb
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - AtBat
+  engine: webkit
+basecamp:
+  name: Basecamp
+  manufacturer: basecamp
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Basecamp3
+  engine: null
+'bb work connect':
+  name: 'BB Work Connect'
+  manufacturer: black-berry
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - BB_Work_Connect
+  engine: webkit
+'billigfluegefinal app':
+  name: 'billigFluegeFinal App'
+  manufacturer: unknown
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - BilligFluegeFinal
+      - billigFluegeFinal
+  engine: webkit
+bingweb:
+  name: 'BingWeb App'
+  manufacturer: microsoft
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - BingWeb
+  engine: blink
+'booking.com app':
+  name: 'Booking.com App'
+  manufacturer: booking-com
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Booking.com Android App '
+  engine: blink
+cfnetwork:
+  name: CFNetwork
+  manufacturer: apple
+  type: application
+  version:
+    class: null
+    search: null
+  engine: webkit
+'citrix chrome app':
+  name: 'Citrix Chrome App'
+  manufacturer: citrix
+  type: application
+  version:
+    class: null
+    search: null
+  engine: blink
+cobalt:
+  name: 'Cobalt Application Container'
+  manufacturer: google
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Cobalt
+  engine: unknown
+'coursera mobile app':
+  name: 'Coursera Mobile App'
+  manufacturer: coursera
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Coursera\-Mobile
+  engine: webkit
+'crowsnest mobile app':
+  name: 'Crowsnest Mobile App'
+  manufacturer: gocro
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Crowsnest
+  engine: webkit
+cyberduck:
+  name: Cyberduck
+  manufacturer: iterate
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Cyberduck
+  engine: unknown
+cybeye:
+  name: CybEye
+  manufacturer: cyb-eye
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - CybEye\.com
+  engine: unknown
+'douban app':
+  name: 'douban App'
+  manufacturer: unknown
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - com\.douban\.group
+  engine: webkit
+dreamweaver:
+  name: Dreamweaver
+  manufacturer: adobe
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Dreamweaver
+  engine: webkit
+'eb iphone/ipad app':
+  name: 'EB iPhone/IPad App'
+  manufacturer: unknown
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - eb\-iphone
+  engine: webkit
+electron:
+  name: Electron
+  manufacturer: microsoft
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Electron
+  engine: null
+'elluminate live':
+  name: 'Elluminate Live'
+  manufacturer: blackboard
+  type: application
+  version:
+    class: null
+    search: null
+  engine: unknown
+excel:
+  name: Excel
+  manufacturer: microsoft
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Excel
+  engine: unknown
+fastbrowser:
+  name: FastBrowser
+  manufacturer: unknown
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - FastBrowser
+  engine: webkit
+filebox:
+  name: FileBox
+  manufacturer: compass
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Filebox
+  engine: null
+'flixster app':
+  name: 'Flixster App'
+  manufacturer: flixster
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - FlixsteriOS
+  engine: webkit
+flycast:
+  name: FlyCast
+  manufacturer: unknown
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - FlyCast
+  engine: null
+frontpage:
+  name: FrontPage
+  manufacturer: microsoft
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - FrontPage
+  engine: unknown
+'ibooks author':
+  name: 'iBooks Author'
+  manufacturer: apple
+  type: application
+  version:
+    class: null
+    search: null
+  engine: webkit
+icatcher:
+  name: icatcher
+  manufacturer: unknown
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - icatcher
+  engine: null
+installatron:
+  name: Installatron
+  manufacturer: installatron
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Version
+      - Installatron
+  engine: webkit
+instapaper:
+  name: Instapaper
+  manufacturer: 'instant paper'
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Instapaper
+  engine: null
+'ios dataaccessd':
+  name: 'iOS dataaccessd'
+  manufacturer: apple
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - dataaccessd
+  engine: webkit
+iweb:
+  name: iWeb
+  manufacturer: apple
+  type: application
+  version:
+    class: null
+    search: null
+  engine: webkit
+'kamelio app':
+  name: 'Kamelio App'
+  manufacturer: kamelio
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Kamelio
+  engine: webkit
+kenshoo:
+  name: Kenshoo
+  manufacturer: kenshoo
+  type: application
+  version:
+    class: null
+    search: null
+  engine: unknown
+kioclient:
+  name: kioclient
+  manufacturer: kde
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - kioclient
+  engine: null
+libreoffice:
+  name: LibreOffice
+  manufacturer: the-document-foundation
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - LibreOffice
+  engine: unknown
+listia:
+  name: Listia
+  manufacturer: listia
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Listia
+  engine: null
+'little-bookmark-box app':
+  name: 'Little-Bookmark-Box App'
+  manufacturer: unknown
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Little Bookmark Box'
+  engine: webkit
+lync:
+  name: Lync
+  manufacturer: microsoft
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Lync
+  engine: unknown
+macappstore:
+  name: 'Mac AppStore App'
+  manufacturer: apple
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - MacAppStore
+  engine: webkit
+matome:
+  name: Matome
+  manufacturer: naver
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - NaverMatome\-Android
+  engine: webkit
+mobicip:
+  name: Mobicip
+  manufacturer: mobicip
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Mobicip
+  engine: null
+'opera news':
+  name: News
+  manufacturer: opera
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - News
+  engine: null
+'newsarticle app':
+  name: 'NewsArticle App'
+  manufacturer: unknown
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - NewsArticle
+  engine: null
+newsfire:
+  name: NewsFire
+  manufacturer: david-watanabe
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - NewsFire
+  engine: webkit
+nightingale:
+  name: Nightingale
+  manufacturer: unknown
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Nightingale
+  engine: null
+'apple notes app':
+  name: 'Notes App'
+  manufacturer: apple
+  type: application
+  version:
+    class: null
+    search: null
+  engine: webkit
+notizen:
+  name: 'Notizen App'
+  manufacturer: unknown
+  type: application
+  version:
+    class: null
+    search: null
+  engine: null
+office:
+  name: Office
+  manufacturer: microsoft
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - MSOffice
+      - Office
+  engine: null
+'office syncproc':
+  name: 'Office SyncProc'
+  manufacturer: microsoft
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Office SyncProc'
+  engine: null
+'office upload center':
+  name: 'Office Upload Center'
+  manufacturer: microsoft
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Office Upload Center'
+  engine: null
+'okta mobile app':
+  name: 'Okta Mobile App'
+  manufacturer: okta
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - OktaMobile
+  engine: unknown
+onenote:
+  name: OneNote
+  manufacturer: microsoft
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - OneNote
+  engine: null
+onesafe:
+  name: oneSafe
+  manufacturer: lunabee
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'onesafe iOS '
+      - 'onesafe iOS'
+  engine: webkit
+openoffice:
+  name: OpenOffice
+  manufacturer: apache
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - OpenOffice
+  engine: unknown
+'pinterest app':
+  name: 'Pinterest App'
+  manufacturer: pinterest
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Pinterest for Android Tablet'
+      - 'Pinterest for iOS'
+      - Pinterest
+  engine: null
+powerpoint:
+  name: PowerPoint
+  manufacturer: microsoft
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - PowerPoint
+  engine: null
+prince:
+  name: Prince
+  manufacturer: yes-logic
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Prince
+  engine: unknown
+'prismatic app':
+  name: 'Prismatic App'
+  manufacturer: prismatic
+  type: application
+  version:
+    class: null
+    search: null
+  engine: webkit
+'rddocuments app':
+  name: 'RDDocuments App'
+  manufacturer: readdle
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - RDDocuments
+  engine: webkit
+readability:
+  name: Readability
+  manufacturer: sfx-entertainment
+  type: application
+  version:
+    class: null
+    search: null
+  engine: unknown
+rebelmouse:
+  name: RebelMouse
+  manufacturer: rebelmouse
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - RebelMouse
+  engine: unknown
+'rocky chatwork mobile':
+  name: 'Rocky ChatWork Mobile'
+  manufacturer: chat-work
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Rocky ChatWork Mobile'
+  engine: webkit
+'apple safari fetcher daemon':
+  name: 'Safari Fetcher Daemon'
+  manufacturer: apple
+  type: application
+  version:
+    class: null
+    search: null
+  engine: webkit
+'salesforce app':
+  name: 'SalesForce App'
+  manufacturer: salesforce
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Salesforce1
+  engine: webkit
+'samsung crossapp':
+  name: 'Samsung CrossApp'
+  manufacturer: samsung
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - CrossApp
+  engine: null
+sandvox:
+  name: Sandvox
+  manufacturer: karelia-software
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Sandvox
+      - Version
+  engine: webkit
+'schoolwires app':
+  name: 'Schoolwires App'
+  manufacturer: schoolwires
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Schoolwires
+  engine: webkit
+'second live commerce client':
+  name: 'Second Life Commerce Client'
+  manufacturer: linden-labs
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'SL Commerce Client v'
+      - 'SL Commerce Client'
+  engine: unknown
+share-app:
+  name: 'Share App'
+  manufacturer: unknown
+  type: application
+  version:
+    class: null
+    search: null
+  engine: webkit
+'shopkeep pocket':
+  name: 'ShopKeep Pocket'
+  manufacturer: shop-keep
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Shopkeep\-Pocket
+  engine: webkit
+siriviewservice:
+  name: SiriViewService
+  manufacturer: apple
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SiriViewService
+  engine: webkit
+sitecon:
+  name: SiteCon
+  manufacturer: ncc-group
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SiteCon
+  engine: webkit
+'smartsync app':
+  name: 'SmartSync App'
+  manufacturer: unknown
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SmartSync
+  engine: webkit
+sogou-search:
+  name: 'SogouSearch App'
+  manufacturer: sogou
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'SogouSearch Android(?:[\d\.]+) version'
+  engine: blink
+'sohunews app':
+  name: 'SohuNews App'
+  manufacturer: sohu
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SohuNews
+  engine: blink
+'soundcloud app':
+  name: 'SoundCloud App'
+  manufacturer: sound-cloud
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SoundCloud\-Android
+      - SoundCloud
+  engine: webkit
+stagefright:
+  name: stagefright
+  manufacturer: unknown
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - stagefright
+  engine: unknown
+substream:
+  name: SubStream
+  manufacturer: unknown
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SubStream
+  engine: null
+'tanso download manager':
+  name: 'Tanso Download Manager'
+  manufacturer: web-expansion
+  type: application
+  version:
+    class: null
+    search: null
+  engine: unknown
+'the bat download manager':
+  name: 'The Bat Download Manager'
+  manufacturer: unknown
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - thebat
+  engine: unknown
+'the diary':
+  name: 'The Diary App'
+  manufacturer: unknown
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'The Diary'
+  engine: null
+tubetv:
+  name: TubeTV
+  manufacturer: chimoosoft
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - TubeTV
+  engine: webkit
+'tumblr app':
+  name: 'Tumblr App'
+  manufacturer: tumblr
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Tumblr
+  engine: webkit
+'twc sportsnet':
+  name: 'TWC SportsNet'
+  manufacturer: time-warner-cable
+  type: application
+  version:
+    class: null
+    search: null
+  engine: webkit
+twinkle:
+  name: twinkle
+  manufacturer: michel-de-boer
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - twinkle
+  engine: webkit
+visio:
+  name: Visio
+  manufacturer: microsoft
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Visio
+  engine: null
+vobsub:
+  name: vobsub
+  manufacturer: unknown
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - vobsub
+  engine: unknown
+'webclip app':
+  name: 'WebClip App'
+  manufacturer: apple
+  type: application
+  version:
+    class: null
+    search: null
+  engine: webkit
+'vs code':
+  name: 'Visual Studio Code'
+  manufacturer: microsoft
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - VSCode
+      - Code
+  engine: null
+'apple webkit service':
+  name: 'Webkit Service'
+  manufacturer: apple
+  type: application
+  version:
+    class: null
+    search: null
+  engine: webkit
+webthumb:
+  name: WebThumb
+  manufacturer: boutell
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - WebThumb
+  engine: unknown
+'wire app':
+  name: 'Wire App'
+  manufacturer: wire-swiss
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Wire
+  engine: blink
+wkhtmltoimage:
+  name: wkhtmltoimage
+  manufacturer: wk-html-to-pdf.org
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - wkhtmltoimage
+  engine: unknown
+wkhtmltopdf:
+  name: wkhtmltopdf
+  manufacturer: wk-html-to-pdf.org
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - wkhtmltopdf
+  engine: unknown
+word:
+  name: Word
+  manufacturer: microsoft
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Word
+  engine: null
+'wordpress app':
+  name: 'WordPress App'
+  manufacturer: automattic
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - wp\-iphone
+      - wp\-android
+  engine: webkit
+worxwebappstore:
+  name: WorxWebAppStore
+  manufacturer: unknown
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - WorxWebAppStore
+  engine: webkit
+'yahoo finance app':
+  name: 'Yahoo Finance App'
+  manufacturer: yahoo
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - YahooMobileFinance
+  engine: webkit
+'yahoo mobile app':
+  name: 'Yahoo Mobile App'
+  manufacturer: yahoo
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - YHOO\_Search\_App
+  engine: webkit
+'yahoo! mobile messenger':
+  name: 'Yahoo! Mobile Messenger'
+  manufacturer: yahoo
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - YahooMobileMessenger
+  engine: webkit
+yandexsearch:
+  name: 'Yandex Search App'
+  manufacturer: yandex
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - YandexSearch
+  engine: null
+'yellowpages mobile app':
+  name: 'YellowPages Mobile App'
+  manufacturer: yp
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - YPmobile
+  engine: null
+'zdownload pro':
+  name: 'zDownload Pro'
+  manufacturer: wonjoo-jang
+  type: application
+  version:
+    class: null
+    search: null
+  engine: null
+zillowmap:
+  name: ZillowMap
+  manufacturer: zillow
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ZillowMap
+  engine: webkit
+zite:
+  name: 'Zite App'
+  manufacturer: flipboard
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Zite
+  engine: null
+teams:
+  name: Teams
+  manufacturer: microsoft
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Teams
+  engine: null
+anti-browser-spy:
+  name: AntiBrowserSpy
+  manufacturer: abelssoft
+  type: application
+  version:
+    class: null
+    search: null
+  engine: null
+skype:
+  name: Skype
+  manufacturer: skype
+  type: application
+  version:
+    class: null
+    search: null
+  engine: null
+adobe-phonegap:
+  name: Phonegap
+  manufacturer: adobe
+  type: application
+  version:
+    class: null
+    search: null
+  engine: null
+adobe-reader:
+  name: Reader
+  manufacturer: adobe
+  type: application
+  version:
+    class: null
+    search: null
+  engine: null
+adobe-acrobat-reader:
+  name: 'Acrobat Reader'
+  manufacturer: adobe
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Acrobat
+      - ReaderServices
+  engine: null
+taobao:
+  name: Taobao
+  manufacturer: alibaba
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - AliApp\(TB
+  engine: null
+gbox-helper:
+  name: 'GBox Helper'
+  manufacturer: unknown
+  type: application
+  version:
+    class: null
+    search: null
+  engine: null
+pdf-expert:
+  name: PDFExpert
+  manufacturer: readdle
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - PDFExpert
+  engine: null
+windows-powershell:
+  name: PowerShell
+  manufacturer: microsoft
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - WindowsPowerShell
+  engine: null
+global-protect:
+  name: GlobalProtect
+  manufacturer: palo-alto
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'PAN GlobalProtect'
+  engine: null
+watch-free-plus:
+  name: WatchFree+
+  manufacturer: vizio
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - WatchFree
+  engine: null
+tutanota:
+  name: tutanota
+  manufacturer: unknown
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - tutanota-desktop
+  engine: null
+git:
+  name: Git
+  manufacturer: unknown
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - git
+  engine: null
+redline-client:
+  name: 'Redline Client'
+  manufacturer: redline
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - REDLINECLIENT.+V
+  engine: null
+microsoft-power-query:
+  name: 'Microsoft Power Query'
+  manufacturer: microsoft
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Microsoft\.Data\.Mashup
+  engine: null
+skype-for-business:
+  name: 'Skype for Business'
+  manufacturer: microsoft
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Skype for Business'
+      - OC\/
+  engine: null
+'microsoft cryptoapi':
+  name: 'Windows CryptoAPI'
+  manufacturer: microsoft
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Microsoft CryptoAPI'
+      - Microsoft\-CryptoAPI
+  engine: unknown
+iptv-pro:
+  name: 'IPTV Pro'
+  manufacturer: unknown
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'IPTV Pro'
+  engine: unknown
+iptv:
+  name: IPTV
+  manufacturer: unknown
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - IPTV
+  engine: unknown
+microsoft-webdav:
+  name: Microsoft-WebDAV
+  manufacturer: microsoft
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Microsoft\-WebDAV\-MiniRedir
+      - Microsoft\-WebDAV
+      - DavClnt
+  engine: unknown
+cpod:
+  name: CPod
+  manufacturer: unknown
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - CPod
+  engine: unknown
+doughnut:
+  name: Doughnut
+  manufacturer: chris-dyer
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Doughnut
+  engine: webkit
+bit-torrent:
+  name: BitTorrent
+  manufacturer: bittorrent
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - BitTorrent
+  engine: webkit
+background-intelligent-transfer-service:
+  name: 'Background Intelligent Transfer Service'
+  manufacturer: microsoft
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - BITS
+  engine: webkit
+q-bit-torrent:
+  name: qBittorrent
+  manufacturer: unknown
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - qBittorrent
+  engine: webkit
+windows-delivery-optimization:
+  name: 'Windows Delivery Optimization'
+  manufacturer: microsoft
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Microsoft-Delivery-Optimization
+  engine: webkit
+wireshark:
+  name: Wireshark
+  manufacturer: wireshark-foundation
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Wireshark
+  engine: null
+visionteacher-for-chromebooks:
+  name: VisionTeacherforChromebooks
+  manufacturer: unknown
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - VisionTeacherforChromebooks
+  engine: null
+windows-push-notification-services:
+  name: 'Windows Push Notification Services'
+  manufacturer: microsoft
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Microsoft-WNS
+  engine: null
+atom:
+  name: Atom
+  manufacturer: github
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Atom
+  engine: null
+codex:
+  name: Codex
+  manufacturer: openai
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Codex
+  engine: null
+windows-antivirus:
+  name: 'Windows Antivirus'
+  manufacturer: microsoft
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Windows Antivirus'
+  engine: null
+microsoft-store:
+  name: 'Microsoft Store'
+  manufacturer: microsoft
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - WindowsStoreSDK
+  engine: null
+adobe-synchronizer:
+  name: 'Adobe Synchronizer'
+  manufacturer: adobe
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Adobe Synchronizer'
+  engine: null
+metatrader-5-terminal:
+  name: 'MetaTrader 5 Terminal'
+  manufacturer: metaquotes
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'MetaTrader 5 Terminal'
+  engine: null
+epic-games-launcher:
+  name: 'Epic Games Launcher'
+  manufacturer: epic-games
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - EpicGamesLauncher
+  engine: null
+chrome-update:
+  name: 'Chrome Update'
+  manufacturer: google
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - GoogleSoftwareUpdate
+  engine: null
+zoho-chat:
+  name: 'Zoho Chat'
+  manufacturer: zoho
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Zoho Chat'
+  engine: null
+'open vulnerability assessment system':
+  name: 'Open Vulnerability Assessment System'
+  manufacturer: open-vas
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - OpenVAS-VT
+  engine: unknown
+rnps-action-cards:
+  name: 'RNPS Action Cards'
+  manufacturer: rnps
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - rnps-action-cards
+  engine: unknown
+github-desktop:
+  name: 'GitHub Desktop'
+  manufacturer: github
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'GitHub Desktop'
+  engine: unknown
+azureus-vuze:
+  name: Vuze
+  manufacturer: azureus-software
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Azureus
+  engine: unknown
+avid-link:
+  name: 'Avid Link'
+  manufacturer: avid-technology
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Avid Link Desktop App'
+  engine: unknown
+onedrive:
+  name: OneDrive
+  manufacturer: microsoft
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - OneDrive
+  engine: unknown
+onedrive-for-business:
+  name: 'OneDrive for Business'
+  manufacturer: microsoft
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'OneDrive for Business'
+  engine: unknown
+publisher:
+  name: Publisher
+  manufacturer: microsoft
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Publisher
+  engine: unknown
+project:
+  name: Project
+  manufacturer: microsoft
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Project
+  engine: unknown
+trello-desktop:
+  name: TrelloDesktop
+  manufacturer: atlassian
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - TrelloDesktop
+  engine: unknown

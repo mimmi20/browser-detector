@@ -20,9 +20,9 @@ use function sprintf;
 
 final readonly class DesktopParser implements DesktopParserInterface
 {
-    private const string GENERIC_FILE = __DIR__ . '/../../../data/factories/devices/desktop.json';
+    private const string GENERIC_FILE = __DIR__ . '/../../../data/factories/devices/desktop.yaml';
 
-    private const string SPECIFIC_FILE = __DIR__ . '/../../../data/factories/devices/desktop/%s.json';
+    private const string SPECIFIC_FILE = __DIR__ . '/../../../data/factories/devices/desktop/%s.yaml';
 
     /** @throws void */
     public function __construct(private RulefileParserInterface $rulefileParser)

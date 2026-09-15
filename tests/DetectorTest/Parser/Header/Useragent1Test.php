@@ -15,6 +15,7 @@ namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Data\Engine;
 use BrowserDetector\Data\Os;
+use BrowserDetector\Loader\MappingfileLoaderInterface;
 use BrowserDetector\Parser\Header\UseragentClientCode;
 use BrowserDetector\Parser\Header\UseragentClientVersion;
 use BrowserDetector\Parser\Header\UseragentDeviceCode;
@@ -22,7 +23,6 @@ use BrowserDetector\Parser\Header\UseragentEngineCode;
 use BrowserDetector\Parser\Header\UseragentEngineVersion;
 use BrowserDetector\Parser\Header\UseragentPlatformCode;
 use BrowserDetector\Parser\Header\UseragentPlatformVersion;
-use BrowserDetector\Parser\Helper\DeviceInterface;
 use BrowserDetector\Version\ForcedNullVersion;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -30,6 +30,7 @@ use PHPUnit\Framework\Constraint\StringStartsWith;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use Psr\Log\LoggerInterface;
 use UaLoader\BrowserLoaderInterface;
 use UaLoader\EngineLoaderInterface;
 use UaLoader\PlatformLoaderInterface;
@@ -83,6 +84,29 @@ final class Useragent1Test extends TestCase
         bool $hasEngineVersion,
         string | null $engineVersion,
     ): void {
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
         $deviceParser = $this->createMock(DeviceParserInterface::class);
         $deviceParser
             ->expects(self::never())
@@ -124,10 +148,13 @@ final class Useragent1Test extends TestCase
             ->expects(self::never())
             ->method('loadFromEngine');
 
-        $deviceCodeHelper = $this->createMock(DeviceInterface::class);
-        $deviceCodeHelper
+        $mappingFileParser = $this->createMock(MappingfileLoaderInterface::class);
+        $mappingFileParser
+            ->expects(self::once())
+            ->method('init');
+        $mappingFileParser
             ->expects(self::exactly(2))
-            ->method('getDeviceCode')
+            ->method('getItem')
             ->willReturnMap(
                 [
                     [new StringStartsWith('pf'), null],
@@ -144,7 +171,9 @@ final class Useragent1Test extends TestCase
             deviceCode: new UseragentDeviceCode(
                 deviceParser: $deviceParser,
                 normalizer: $normalizerChain,
-                device: $deviceCodeHelper,
+                mappingFileParser: $mappingFileParser,
+                logger: $logger,
+                autoUpdate: false,
             ),
             clientCode: new UseragentClientCode(
                 browserParser: $browserParser,
@@ -519,6 +548,29 @@ final class Useragent1Test extends TestCase
         bool $hasEngineVersion,
         string | null $engineVersion,
     ): void {
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
         $deviceParser = $this->createMock(DeviceParserInterface::class);
         $deviceParser
             ->expects(self::once())
@@ -562,10 +614,13 @@ final class Useragent1Test extends TestCase
             ->expects(self::never())
             ->method('loadFromEngine');
 
-        $deviceCodeHelper = $this->createMock(DeviceInterface::class);
-        $deviceCodeHelper
-            ->expects(self::exactly(2))
-            ->method('getDeviceCode')
+        $mappingFileParser = $this->createMock(MappingfileLoaderInterface::class);
+        $mappingFileParser
+            ->expects(self::once())
+            ->method('init');
+        $mappingFileParser
+            ->expects(self::exactly(3))
+            ->method('getItem')
             ->willReturnMap(
                 [
                     [new StringStartsWith('pf'), null],
@@ -582,7 +637,9 @@ final class Useragent1Test extends TestCase
             deviceCode: new UseragentDeviceCode(
                 deviceParser: $deviceParser,
                 normalizer: $normalizerChain,
-                device: $deviceCodeHelper,
+                mappingFileParser: $mappingFileParser,
+                logger: $logger,
+                autoUpdate: false,
             ),
             clientCode: new UseragentClientCode(
                 browserParser: $browserParser,

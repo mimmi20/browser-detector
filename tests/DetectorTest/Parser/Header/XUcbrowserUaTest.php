@@ -15,6 +15,7 @@ namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Data\Engine;
 use BrowserDetector\Data\Os;
+use BrowserDetector\Loader\MappingfileLoaderInterface;
 use BrowserDetector\Parser\Header\SetVersionTrait;
 use BrowserDetector\Parser\Header\XUcbrowserUaClientCode;
 use BrowserDetector\Parser\Header\XUcbrowserUaClientVersion;
@@ -23,7 +24,6 @@ use BrowserDetector\Parser\Header\XUcbrowserUaEngineCode;
 use BrowserDetector\Parser\Header\XUcbrowserUaEngineVersion;
 use BrowserDetector\Parser\Header\XUcbrowserUaPlatformCode;
 use BrowserDetector\Parser\Header\XUcbrowserUaPlatformVersion;
-use BrowserDetector\Parser\Helper\Device;
 use BrowserDetector\Version\ForcedNullVersion;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\CoversTrait;
@@ -31,6 +31,7 @@ use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use Psr\Log\LoggerInterface;
 use UaParser\DeviceParserInterface;
 use UaRequest\Header\FullHeader;
 use UaResult\Bits\Bits;
@@ -48,7 +49,6 @@ use function sprintf;
 #[CoversClass(className: XUcbrowserUaEngineVersion::class)]
 #[CoversClass(className: XUcbrowserUaPlatformCode::class)]
 #[CoversClass(className: XUcbrowserUaPlatformVersion::class)]
-#[CoversClass(className: Device::class)]
 #[CoversTrait(traitName: SetVersionTrait::class)]
 final class XUcbrowserUaTest extends TestCase
 {
@@ -94,18 +94,52 @@ final class XUcbrowserUaTest extends TestCase
             $isNull = true;
         }
 
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
         $deviceParser = $this->createMock(DeviceParserInterface::class);
         $deviceParser
-            ->expects($searchCode === null ? self::never() : self::once())
+            ->expects($searchCode === 'NOKIA RM-914_eu_turkey_355' ? self::once() : self::never())
             ->method('parse')
             ->with($searchCode)
             ->willReturn($deviceCode);
+
+        $mappingFileParser = $this->createMock(MappingfileLoaderInterface::class);
+        $mappingFileParser
+            ->expects($searchCode === null ? self::never() : self::once())
+            ->method('init');
+        $mappingFileParser
+            ->expects($searchCode === null ? self::never() : self::once())
+            ->method('getItem')
+            ->willReturn($deviceCode === '' ? null : $deviceCode);
 
         $fullHeader = new FullHeader(
             value: $ua,
             deviceCode: new XUcbrowserUaDeviceCode(
                 deviceParser: $deviceParser,
-                device: new Device(),
+                mappingFileParser: $mappingFileParser,
+                logger: $logger,
+                autoUpdate: false,
             ),
             clientCode: new XUcbrowserUaClientCode(),
             clientVersion: new XUcbrowserUaClientVersion(),
@@ -1202,16 +1236,52 @@ final class XUcbrowserUaTest extends TestCase
             $isNull = true;
         }
 
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
         $deviceParser = $this->createMock(DeviceParserInterface::class);
         $deviceParser
             ->expects(self::never())
-            ->method('parse');
+            ->method('parse')
+            ->with($searchCode)
+            ->willReturn($deviceCode);
+
+        $mappingFileParser = $this->createMock(MappingfileLoaderInterface::class);
+        $mappingFileParser
+            ->expects($searchCode === null ? self::never() : self::once())
+            ->method('init');
+        $mappingFileParser
+            ->expects($searchCode === null ? self::never() : self::once())
+            ->method('getItem')
+            ->willReturn($deviceCode === '' ? null : $deviceCode);
 
         $fullHeader = new FullHeader(
             value: $ua,
             deviceCode: new XUcbrowserUaDeviceCode(
                 deviceParser: $deviceParser,
-                device: new Device(),
+                mappingFileParser: $mappingFileParser,
+                logger: $logger,
+                autoUpdate: false,
             ),
             clientCode: new XUcbrowserUaClientCode(),
             clientVersion: new XUcbrowserUaClientVersion(),

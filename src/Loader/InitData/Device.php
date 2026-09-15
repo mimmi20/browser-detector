@@ -13,20 +13,9 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader\InitData;
 
-use stdClass;
 use UaDeviceType\Type;
 use UaResult\Bits\Bits;
 use UaResult\Device\Architecture;
-
-use function array_change_key_case;
-use function array_key_exists;
-use function is_array;
-use function is_bool;
-use function is_float;
-use function is_int;
-use function is_string;
-
-use const CASE_LOWER;
 
 /** @phpcs:disable SlevomatCodingStandard.Classes.RequireConstructorPropertyPromotion.RequiredConstructorPropertyPromotion */
 final class Device
@@ -74,27 +63,6 @@ final class Device
         $this->simCount        = $simCount;
         $this->bits            = $bits;
         $this->platform        = $platform;
-    }
-
-    /**
-     * @param stdClass $data
-     * @phpstan-param array{deviceName: string|null, marketingName: string|null, manufacturer: string|null, brand: string|null, type: string|null, display: array{width: int|null, height: int|null, touch: bool|null, size: float|null}, dualOrientation: bool|null, simCount: int|null, platform: string|null} $data
-     *
-     * @throws void
-     */
-    public function __unserialize(array $data): void
-    {
-        $this->exchangeArray($data);
-    }
-
-    /**
-     * @return array{architecture: Architecture, deviceName: string|null, marketingName: string|null, manufacturer: string|null, brand: string|null, type: string|null, display: array{width: int|null, height: int|null, touch: bool|null, size: float|null}, dualOrientation: bool|null, simCount: int|null, bits: Bits, platform: string|null}
-     *
-     * @throws void
-     */
-    public function __serialize(): array
-    {
-        return $this->getArrayCopy();
     }
 
     /** @throws void */
@@ -165,128 +133,5 @@ final class Device
     public function getPlatform(): string | null
     {
         return $this->platform;
-    }
-
-    /**
-     * @return array{architecture: Architecture, deviceName: string|null, marketingName: string|null, manufacturer: string|null, brand: string|null, type: string|null, display: array{width: int|null, height: int|null, touch: bool|null, size: float|null}, dualOrientation: bool|null, simCount: int|null, bits: Bits, platform: string|null}
-     *
-     * @throws void
-     *
-     * @api
-     */
-    public function getArrayCopy(): array
-    {
-        return [
-            'architecture' => $this->architecture,
-            'deviceName' => $this->deviceName,
-            'marketingName' => $this->marketingName,
-            'manufacturer' => $this->manufacturer,
-            'brand' => $this->brand,
-            'type' => $this->type?->getType(),
-            'display' => $this->display,
-            'dualOrientation' => $this->dualOrientation,
-            'simCount' => $this->simCount,
-            'bits' => $this->bits,
-            'platform' => $this->platform,
-        ];
-    }
-
-    /**
-     * @param stdClass $data
-     * @phpstan-param array{deviceName: string|null, marketingName: string|null, manufacturer: string|null, brand: string|null, type: string|null, display: array{width: int|null, height: int|null, touch: bool|null, size: float|null}, dualOrientation: bool|null, simCount: int|null, platform: string|null} $data
-     *
-     * @throws void
-     *
-     * @api
-     */
-    public function exchangeArray(array $data): void
-    {
-        $data = array_change_key_case($data, CASE_LOWER);
-
-        $deviceName = null;
-
-        if (array_key_exists('devicename', $data) && is_string($data['devicename'])) {
-            $deviceName = $data['devicename'];
-        }
-
-        $marketingName = null;
-
-        if (array_key_exists('marketingname', $data) && is_string($data['marketingname'])) {
-            $marketingName = $data['marketingname'];
-        }
-
-        $manufacturer = null;
-
-        if (array_key_exists('manufacturer', $data) && is_string($data['manufacturer'])) {
-            $manufacturer = $data['manufacturer'];
-        }
-
-        $brand = null;
-
-        if (array_key_exists('brand', $data) && is_string($data['brand'])) {
-            $brand = $data['brand'];
-        }
-
-        $type = null;
-
-        if (array_key_exists('type', $data) && is_string($data['type'])) {
-            $type = $data['type'];
-        }
-
-        $dualOrientation = null;
-
-        if (array_key_exists('dualorientation', $data) && is_bool($data['dualorientation'])) {
-            $dualOrientation = $data['dualorientation'];
-        }
-
-        $simCount = null;
-
-        if (array_key_exists('simcount', $data) && is_int($data['simcount'])) {
-            $simCount = $data['simcount'];
-        }
-
-        $platform = null;
-
-        if (array_key_exists('platform', $data) && is_string($data['platform'])) {
-            $platform = $data['platform'];
-        }
-
-        $display = ['width' => null, 'height' => null, 'touch' => null, 'size' => null];
-
-        if (array_key_exists('display', $data) && is_array($data['display'])) {
-            $displayData = array_change_key_case($data['display'], CASE_LOWER);
-
-            if (array_key_exists('width', $displayData) && is_int($displayData['width'])) {
-                $display['width'] = $displayData['width'];
-            }
-
-            if (array_key_exists('height', $displayData) && is_int($displayData['height'])) {
-                $display['height'] = $displayData['height'];
-            }
-
-            if (array_key_exists('touch', $displayData) && is_bool($displayData['touch'])) {
-                $display['touch'] = $displayData['touch'];
-            }
-
-            if (
-                array_key_exists('size', $displayData)
-                && (
-                    is_int($displayData['size'])
-                    || is_float($displayData['size'])
-                )
-            ) {
-                $display['size'] = (float) $displayData['size'];
-            }
-        }
-
-        $this->deviceName      = $deviceName;
-        $this->marketingName   = $marketingName;
-        $this->manufacturer    = $manufacturer;
-        $this->brand           = $brand;
-        $this->type            = Type::fromName($type);
-        $this->display         = $display;
-        $this->dualOrientation = $dualOrientation;
-        $this->simCount        = $simCount;
-        $this->platform        = $platform;
     }
 }

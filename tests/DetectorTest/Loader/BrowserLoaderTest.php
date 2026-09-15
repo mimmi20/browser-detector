@@ -20,8 +20,6 @@ use BrowserDetector\Loader\Data\DataInterface;
 use BrowserDetector\Loader\InitData\Client as DataClient;
 use BrowserDetector\Version\TestFactory;
 use BrowserDetector\Version\VersionBuilderInterface;
-use Laminas\Hydrator\Strategy\StrategyInterface;
-use Override;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
@@ -68,35 +66,7 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $client = new ClientData(
-            strategy: new class () implements StrategyInterface {
-                /**
-                 * @throws void
-                 *
-                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-                 */
-                #[Override]
-                public function extract(mixed $value, object | null $object = null): null
-                {
-                    return null;
-                }
-
-                /**
-                 * @param array<mixed>|null $data
-                 *
-                 * @return array<string, mixed>
-                 *
-                 * @throws void
-                 *
-                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-                 */
-                #[Override]
-                public function hydrate(mixed $value, array | null $data): array
-                {
-                    return [];
-                }
-            },
-        );
+        $client = new ClientData();
 
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
         $companyLoader
@@ -228,35 +198,7 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $client = new ClientData(
-            strategy: new class () implements StrategyInterface {
-                /**
-                 * @throws void
-                 *
-                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-                 */
-                #[Override]
-                public function extract(mixed $value, object | null $object = null): null
-                {
-                    return null;
-                }
-
-                /**
-                 * @param array<mixed>|null $data
-                 *
-                 * @return array<string, mixed>
-                 *
-                 * @throws void
-                 *
-                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-                 */
-                #[Override]
-                public function hydrate(mixed $value, array | null $data): array
-                {
-                    return [];
-                }
-            },
-        );
+        $client = new ClientData();
 
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
         $companyLoader
@@ -324,35 +266,7 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = new ClientData(
-            strategy: new class () implements StrategyInterface {
-                /**
-                 * @throws void
-                 *
-                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-                 */
-                #[Override]
-                public function extract(mixed $value, object | null $object = null): null
-                {
-                    return null;
-                }
-
-                /**
-                 * @param array<mixed>|null $data
-                 *
-                 * @return array<string, mixed>
-                 *
-                 * @throws void
-                 *
-                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-                 */
-                #[Override]
-                public function hydrate(mixed $value, array | null $data): array
-                {
-                    return [];
-                }
-            },
-        );
+        $initData = new ClientData();
 
         $browserData = new DataClient(
             name: 'test-browser',

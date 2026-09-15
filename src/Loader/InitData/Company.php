@@ -13,14 +13,6 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader\InitData;
 
-use stdClass;
-
-use function array_change_key_case;
-use function array_key_exists;
-use function is_string;
-
-use const CASE_LOWER;
-
 /** @phpcs:disable SlevomatCodingStandard.Classes.RequireConstructorPropertyPromotion.RequiredConstructorPropertyPromotion */
 final class Company
 {
@@ -34,27 +26,6 @@ final class Company
         $this->brandname = $brandname;
     }
 
-    /**
-     * @param stdClass $data
-     * @phpstan-param array{name: string|null, brandname: string|null} $data
-     *
-     * @throws void
-     */
-    public function __unserialize(array $data): void
-    {
-        $this->exchangeArray($data);
-    }
-
-    /**
-     * @return array{name: string|null, brandname: string|null}
-     *
-     * @throws void
-     */
-    public function __serialize(): array
-    {
-        return $this->getArrayCopy();
-    }
-
     /** @throws void */
     public function getName(): string | null
     {
@@ -65,47 +36,5 @@ final class Company
     public function getBrandname(): string | null
     {
         return $this->brandname;
-    }
-
-    /**
-     * @return array{name: string|null, brandname: string|null}
-     *
-     * @throws void
-     *
-     * @api
-     */
-    public function getArrayCopy(): array
-    {
-        return [
-            'name' => $this->name,
-            'brandname' => $this->brandname,
-        ];
-    }
-
-    /**
-     * @param array{name: string|null, brandname: string|null} $data
-     *
-     * @throws void
-     *
-     * @api
-     */
-    public function exchangeArray(array $data): void
-    {
-        $data = array_change_key_case($data, CASE_LOWER);
-
-        $name = null;
-
-        if (array_key_exists('name', $data) && is_string($data['name'])) {
-            $name = $data['name'];
-        }
-
-        $brandname = null;
-
-        if (array_key_exists('brandname', $data) && is_string($data['brandname'])) {
-            $brandname = $data['brandname'];
-        }
-
-        $this->name      = $name;
-        $this->brandname = $brandname;
     }
 }

@@ -18,7 +18,6 @@ use BrowserDetector\Version\GoannaFactory;
 use BrowserDetector\Version\TridentFactory;
 use BrowserDetector\Version\VersionBuilderFactory;
 use Override;
-use UaData\CompanyInterface;
 use UaData\EngineInterface;
 
 use function mb_strtolower;
@@ -141,26 +140,26 @@ enum Engine: string implements EngineInterface
 
     /** @throws void */
     #[Override]
-    public function getManufacturer(): CompanyInterface
+    public function getManufacturer(): string | null
     {
         return match ($this) {
-            self::blackberry => Company::rim,
-            self::blink => Company::google,
-            self::edge, self::trident => Company::microsoft,
-            self::gecko, self::servo => Company::mozilla,
-            self::webkit, self::tasman => Company::apple,
-            self::netfront => Company::access,
-            self::presto => Company::opera,
-            self::t5, self::t7 => Company::baidu,
-            self::u2, self::u3, self::u4 => Company::ucweb,
-            self::goanna => Company::moonchild,
-            self::teleca => Company::obigo,
-            self::treco => Company::arsslensoft,
-            self::arkweb => Company::huawei,
-            self::ekiohflow => Company::ekioh,
-            self::maple => Company::samsung,
-            self::dillo => Company::theDilloProject,
-            default => Company::unknown,
+            self::blackberry => 'rim',
+            self::blink => 'google',
+            self::edge, self::trident => 'microsoft',
+            self::gecko, self::servo => 'mozilla',
+            self::webkit, self::tasman => 'apple',
+            self::netfront => 'access',
+            self::presto => 'opera',
+            self::t5, self::t7 => 'baidu',
+            self::u2, self::u3, self::u4 => 'ucweb',
+            self::goanna => 'moonchild',
+            self::teleca => 'obigo',
+            self::treco => 'arsslensoft',
+            self::arkweb => 'huawei',
+            self::ekiohflow => 'ekioh',
+            self::maple => 'samsung',
+            self::dillo => 'theDilloProject',
+            default => null,
         };
     }
 

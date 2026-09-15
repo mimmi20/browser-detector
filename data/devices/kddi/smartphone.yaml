@@ -1,0 +1,28 @@
+'kddi htx21':
+  deviceName: HTX21
+  marketingName: 'Infobar A02'
+  manufacturer: htc
+  brand: kddi
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: 1280
+    height: 720
+    touch: true
+    size: 4.7
+  type: smartphone
+  platform: android
+'kddi is04':
+  deviceName: IS04
+  marketingName: 'Regza IS04'
+  manufacturer: fujitsu
+  brand: kddi
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: 854
+    height: 480
+    touch: true
+    size: null
+  type: smartphone
+  platform: android

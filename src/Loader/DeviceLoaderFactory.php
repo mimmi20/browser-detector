@@ -13,13 +13,6 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader;
 
-use BrowserDetector\Loader\InitData\Device as DataDevice;
-use Laminas\Hydrator\ArraySerializableHydrator;
-use Laminas\Hydrator\Exception\InvalidArgumentException;
-use Laminas\Hydrator\Strategy\CollectionStrategy;
-use Laminas\Hydrator\Strategy\SerializableStrategy;
-use Laminas\Hydrator\Strategy\StrategyChain;
-use Laminas\Serializer\Adapter\Json;
 use Override;
 use Psr\Log\LoggerInterface;
 use UaLoader\DeviceLoaderInterface;
@@ -39,7 +32,7 @@ final class DeviceLoaderFactory implements DeviceLoaderFactoryInterface
         // nothing to do
     }
 
-    /** @throws InvalidArgumentException */
+    /** @throws void */
     #[Override]
     public function __invoke(string $company = ''): DeviceLoaderInterface
     {
@@ -47,22 +40,9 @@ final class DeviceLoaderFactory implements DeviceLoaderFactoryInterface
             return $this->loader[$company];
         }
 
-        $serializableStrategy = new SerializableStrategy(
-            new Json(),
-        );
-
         $this->loader[$company] = new DeviceLoader(
             logger: $this->logger,
             initData: new Data\Device(
-                strategy: new StrategyChain(
-                    [
-                        new CollectionStrategy(
-                            new ArraySerializableHydrator(),
-                            DataDevice::class,
-                        ),
-                        $serializableStrategy,
-                    ],
-                ),
                 company: $company,
             ),
             companyLoader: $this->companyLoader,
