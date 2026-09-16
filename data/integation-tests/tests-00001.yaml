@@ -4637,3 +4637,44 @@
       name: Blink
       version: '61.0.3163.140'
       manufacturer: google
+-
+  -
+    user-agent: '0HuaweiU5705/Huawei/1.0/B100 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3'
+  -
+    headers:
+      user-agent: '0HuaweiU5705/Huawei/1.0/B100 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3'
+    device:
+      architecture: null
+      deviceName: 'U5705'
+      marketingName: 'U5705'
+      manufacturer: huawei
+      brand: huawei
+      dualOrientation: false
+      simCount: 1
+      display:
+        width: 220
+        height: 176
+        touch: false
+        size: 2.0
+      type: feature-phone
+      ismobile: true
+      istv: false
+      bits: null
+    os:
+      name: 'Java ME'
+      marketingName: 'Java ME'
+      version: null
+      manufacturer: sun
+      bits: null
+    client:
+      name: 'Obigo Q'
+      modus: null
+      version: '5.0.0'
+      manufacturer: obigo
+      type: browser
+      isbot: false
+      bits: null
+    engine:
+      name: Teleca
+      version: null
+      manufacturer: obigo

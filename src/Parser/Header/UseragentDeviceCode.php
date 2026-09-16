@@ -166,7 +166,8 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/com\.amazon\.sics\/[\d.]+ \((?P<devicecode>[^;]+); android [\d.]+;/i',
             '/bookshelf-android\/[\d.]+ \(android os\/[\d.]+; (?P<devicecode>[^);\/]+)\)/i',
             '/portalmmm\/[\d.]+ (?P<devicecode>[^);\/]+)(?:.*)?\(/i',
-            '/huawei\/[\d.]+\/(?P<devicecode>[^);\/]+)\//i',
+            '/^0?(?P<devicecode>[^);\/]+)\/huawei\/[\d.]+\//i',
+            '/huawei\/[\d.]+\/0?(?P<devicecode>[^);\/]+)\//i',
             '/samsung (?P<devicecode>[^);\/]+)(?:.*)? syncml_dm client/i',
             '/mozilla\/[\d.]+ \(samsung; (?P<devicecode>[^);\/]+)(?:.*)? tizen\/[\d.]+ like android;/i',
             '/goeuroandroid\/[\d.]+ \((?P<devicecode>[^);\/]+); android [\d.]+; okhttp\/[\d.]+\) webview/i',
@@ -210,6 +211,10 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             },
             $filtered,
         );
+
+//        if ($value === '0HuaweiU5705/Huawei/1.0/B100 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3') {
+//            var_dump($normalizedValue, $filtered, $finds);
+//        }
 
         try {
             $this->mappingFileParser->init();

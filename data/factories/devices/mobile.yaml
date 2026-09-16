@@ -103,7 +103,7 @@ rules:
   '/siemens(?! a\/s| business|testmanager| ewm| lms)|sie-/i': siemens
   '/blackberry|playbook|rim tablet|bb10; ?(?:kbd|touch)|(?:bb[abcdefgh]|st[hv])100-[1-9]|bb q5/i': rim
   '/papyre[ _\-]pad/i': grammata
-  '/(?<![a-z0-9])ipad|ipod(?!der)|(?<!like |compatible |[at])iphone|like mac os x|\bdarwin\b|cfnetwork|dataaccessd|iuc ?\(|\bip[dh][0-9]\,[0-9]|watchos|watch[0-9]\,[0-9]|puffin\/[0-9\.]+i[tp]|appletv|ios\.watch|macintosh|networkingextension|\(ios\)|airplay|apple watch/i': apple
+  '/(?<![a-z0-9])ipad|ipod(?!der)|(?<!like |compatible |sk |[a-z0-9])iphone|like mac os x|\bdarwin\b|cfnetwork|dataaccessd|iuc ?\(|\bip[dh][0-9]\,[0-9]|watchos|watch[0-9]\,[0-9]|puffin\/[0-9\.]+i[tp]|appletv|ios\.watch|macintosh|networkingextension|\(ios\)|airplay|apple watch/i': apple
   /m\.t\.t\./i: mtt
   '/cnm[ \-](?:touchpad|tp|7dc)[ \-](?:[0-9\.]+)|bush 7dc-8/i': cnm
   '/dslide ?[^;\/]+(?: +build|[;\/\)])/i': danew
