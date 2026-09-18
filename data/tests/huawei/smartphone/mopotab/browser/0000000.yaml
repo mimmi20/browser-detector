@@ -5,8 +5,8 @@
     architecture: null
     deviceName: S8600
     marketingName: 'Ascend G330'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -22,20 +22,20 @@
     name: Bada
     marketingName: Bada
     version: 2.0.0
-    manufacturer: Samsung
+    manufacturer: samsung
     bits: null
   client:
     name: Dolfin
     modus: null
     version: 3.0.0
-    manufacturer: MopoTab
+    manufacturer: mopotab
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.20.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     x-requested-with: mobi.mgeek.TunnyBrowser
@@ -44,8 +44,8 @@
     architecture: null
     deviceName: LYA-L29
     marketingName: 'Mate 20 Pro'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -61,20 +61,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Dolfin
     modus: null
     version: null
-    manufacturer: MopoTab
+    manufacturer: mopotab
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 70.0.3538.110
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: mobi.mgeek.TunnyBrowser
@@ -83,8 +83,8 @@
     architecture: null
     deviceName: LLD-L31
     marketingName: 'Honor 9 Lite'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -100,20 +100,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Dolfin
     modus: null
     version: null
-    manufacturer: MopoTab
+    manufacturer: mopotab
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 102.0.5005.98
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: mobi.mgeek.TunnyBrowser
@@ -122,8 +122,8 @@
     architecture: null
     deviceName: VOG-L29
     marketingName: 'P30 Pro'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 2
     display:
@@ -139,20 +139,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Dolfin
     modus: null
     version: null
-    manufacturer: MopoTab
+    manufacturer: mopotab
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 78.0.3904.96
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: mobi.mgeek.TunnyBrowser
@@ -161,8 +161,8 @@
     architecture: null
     deviceName: MAR-LX1A
     marketingName: 'P30 Lite'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -178,20 +178,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Dolfin
     modus: null
     version: null
-    manufacturer: MopoTab
+    manufacturer: mopotab
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 74.0.3729.136
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: com.dolphin.browser.zero
@@ -200,8 +200,8 @@
     architecture: null
     deviceName: STF-L09
     marketingName: 'Honor 9'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -217,17 +217,17 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Dolphin Zero'
     modus: null
     version: null
-    manufacturer: MopoTab
+    manufacturer: mopotab
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 113.0.5672.162
-    manufacturer: Google
+    manufacturer: google

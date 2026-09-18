@@ -6,8 +6,8 @@
     architecture: null
     deviceName: M1908C3JGG
     marketingName: 'Redmi Note 8 (2021)'
-    manufacturer: Xiaomi
-    brand: Xiaomi
+    manufacturer: xiaomi
+    brand: xiaomi
     dualOrientation: true
     simCount: 2
     display:
@@ -23,20 +23,20 @@
     name: Android
     marketingName: Android
     version: 11.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: JioSphere
     modus: null
     version: null
-    manufacturer: 'Jio Platforms'
+    manufacturer: jio-platforms
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 97.0.4692.87
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; 25098RA98I) AppleWebKit/537.36 (KHTML, like Gecko) JioSphere/7.0.0 Chrome/146.0.7680.65 Mobile Safari/537.36'
@@ -44,8 +44,8 @@
     architecture: null
     deviceName: 25098RA98I
     marketingName: 'Redmi Note 15 5G (India)'
-    manufacturer: Xiaomi
-    brand: Xiaomi
+    manufacturer: xiaomi
+    brand: xiaomi
     dualOrientation: true
     simCount: 2
     display:
@@ -61,17 +61,17 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: JioSphere
     modus: null
     version: 7.0.0
-    manufacturer: 'Jio Platforms'
+    manufacturer: jio-platforms
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 146.0.7680.65
-    manufacturer: Google
+    manufacturer: google

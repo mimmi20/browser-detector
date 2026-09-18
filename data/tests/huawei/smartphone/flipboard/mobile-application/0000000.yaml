@@ -5,8 +5,8 @@
     architecture: null
     deviceName: LYA-L29
     marketingName: 'Mate 20 Pro'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -22,17 +22,17 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Flipboard App'
     modus: null
     version: 4.2.38
-    manufacturer: Flipboard
+    manufacturer: flipboard
     type: mobile-application
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 80.0.3987.162
-    manufacturer: Google
+    manufacturer: google

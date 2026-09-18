@@ -22,13 +22,13 @@
     name: 'Symbian OS'
     marketingName: 'Symbian OS'
     version: null
-    manufacturer: 'Symbian Foundation'
+    manufacturer: symbianFoundation
     bits: null
   client:
     name: 'Nokia Browser'
     modus: null
     version: null
-    manufacturer: Nokia
+    manufacturer: nokia
     type: browser
     isbot: false
     bits: null
@@ -66,14 +66,14 @@
     name: MicroB
     modus: null
     version: null
-    manufacturer: Nokia
+    manufacturer: nokia
     type: browser
     isbot: false
     bits: null
   engine:
     name: Gecko
     version: null
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: Microblog-Explorer/0.3
@@ -104,14 +104,14 @@
     name: MicroB
     modus: null
     version: null
-    manufacturer: Nokia
+    manufacturer: nokia
     type: browser
     isbot: false
     bits: null
   engine:
     name: Gecko
     version: null
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: microbot
@@ -142,14 +142,14 @@
     name: MicroB
     modus: null
     version: null
-    manufacturer: Nokia
+    manufacturer: nokia
     type: browser
     isbot: false
     bits: null
   engine:
     name: Gecko
     version: null
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: Microblog-Explorer/0.2
@@ -180,11 +180,11 @@
     name: MicroB
     modus: null
     version: null
-    manufacturer: Nokia
+    manufacturer: nokia
     type: browser
     isbot: false
     bits: null
   engine:
     name: Gecko
     version: null
-    manufacturer: Mozilla
+    manufacturer: mozilla

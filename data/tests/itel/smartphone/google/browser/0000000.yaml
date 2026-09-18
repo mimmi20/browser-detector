@@ -5,8 +5,8 @@
     architecture: null
     deviceName: 'iNote Beyond 3G'
     marketingName: 'iNote Beyond 3G'
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 1
     display:
@@ -28,14 +28,14 @@
     name: 'Android Webkit'
     modus: null
     version: 4.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 533.1.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 2.3.5; fr-fr; iNote mini Build/MocorDroid2.3.5) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: 'iNote Mini'
     marketingName: 'iNote Mini'
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 1
     display:
@@ -66,14 +66,14 @@
     name: 'Android Webkit'
     modus: null
     version: 4.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 533.1.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 2.3.5; fr-fr; itel IT1351 Build/MocorDroid2.3.5) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
@@ -81,8 +81,8 @@
     architecture: null
     deviceName: IT1351
     marketingName: 'iNote Mini'
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 1
     display:
@@ -104,14 +104,14 @@
     name: 'Android Webkit'
     modus: null
     version: 4.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 533.1.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 4.4.2; itel it1403+ Build/MocorDroid) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36'
@@ -119,8 +119,8 @@
     architecture: null
     deviceName: IT1403+
     marketingName: IT1403+
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 1
     display:
@@ -142,14 +142,52 @@
     name: 'Chrome WebView'
     modus: null
     version: 30.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 30.0.0.0
-    manufacturer: Google
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 4.0.3; en-us; itel it1353 Build/MocorDroid2.3.5_Trout) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
+  device:
+    architecture: null
+    deviceName: IT1353
+    marketingName: IT1353
+    manufacturer: itel
+    brand: itel
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 480
+      height: 320
+      touch: true
+      size: 3.5
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: MocorDroid
+    marketingName: MocorDroid
+    version: 2.3.5
+    manufacturer: unknown
+    bits: null
+  client:
+    name: 'Android Webkit'
+    modus: null
+    version: 4.0.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 533.1.0
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; itel L6002P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.162 Mobile Safari/537.36'
@@ -157,8 +195,8 @@
     architecture: null
     deviceName: L6002P
     marketingName: 'S15 Pro'
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 1
     display:
@@ -174,20 +212,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 80.0.3987.162
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 80.0.3987.162
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; itel L6005 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/79.0.3945.116 Mobile Safari/537.36'
@@ -195,8 +233,8 @@
     architecture: null
     deviceName: L6005
     marketingName: 'Vision 1'
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 1
     display:
@@ -212,20 +250,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 79.0.3945.116
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 79.0.3945.116
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; itel W6502) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Mobile Safari/537.36'
@@ -233,8 +271,8 @@
     architecture: null
     deviceName: W6502
     marketingName: S16
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 2
     display:
@@ -250,20 +288,20 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 87.0.4280.101
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 87.0.4280.101
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; itel L6502) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Mobile Safari/537.36'
@@ -271,8 +309,8 @@
     architecture: null
     deviceName: L6502
     marketingName: 'Vision 1 Pro'
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 2
     display:
@@ -288,20 +326,20 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 89.0.4389.90
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 89.0.4389.90
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; itel L6006) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36'
@@ -309,8 +347,8 @@
     architecture: null
     deviceName: L6006
     marketingName: A48
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 2
     display:
@@ -326,20 +364,20 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 83.0.4103.106
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 83.0.4103.106
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; itel L6003P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Mobile Safari/537.36'
@@ -347,8 +385,8 @@
     architecture: null
     deviceName: L6003P
     marketingName: 'A55 LTE'
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 2
     display:
@@ -364,20 +402,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 87.0.4280.101
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 87.0.4280.101
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; itel A16 Plus Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.101 Mobile Safari/537.36'
@@ -385,8 +423,8 @@
     architecture: null
     deviceName: 'A16 Plus'
     marketingName: 'A16 Plus'
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 2
     display:
@@ -402,20 +440,20 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 85.0.4183.101
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 85.0.4183.101
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; itel L6006F Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.125 Mobile Safari/537.36'
@@ -423,8 +461,8 @@
     architecture: null
     deviceName: L6006F
     marketingName: L6006F
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 2
     display:
@@ -440,20 +478,20 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 102.0.5005.125
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 102.0.5005.125
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; itel S663L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36'
@@ -461,8 +499,8 @@
     architecture: null
     deviceName: S663L
     marketingName: S18
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 2
     display:
@@ -478,20 +516,20 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 107.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 107.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; itel S663LN Build/SP1A.210812.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.65 Mobile Safari/537.36'
@@ -499,8 +537,8 @@
     architecture: null
     deviceName: S663LN
     marketingName: 'Vision 5'
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 1
     display:
@@ -516,20 +554,20 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 110.0.5481.65
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 110.0.5481.65
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; itel A662L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Mobile Safari/537.36'
@@ -537,8 +575,8 @@
     architecture: null
     deviceName: A662L
     marketingName: A60
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 2
     display:
@@ -554,20 +592,20 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 111.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 111.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; itel L6006L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36'
@@ -575,8 +613,8 @@
     architecture: null
     deviceName: L6006L
     marketingName: L6006L
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 2
     display:
@@ -592,20 +630,20 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 110.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 110.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; itel S662LCN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36'
@@ -613,8 +651,8 @@
     architecture: null
     deviceName: S662LCN
     marketingName: 'Vision 5 Plus'
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 2
     display:
@@ -630,20 +668,20 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 102.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 102.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; itel L6005) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Mobile Safari/537.36'
@@ -651,8 +689,8 @@
     architecture: null
     deviceName: L6005
     marketingName: 'Vision 1'
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 1
     display:
@@ -668,20 +706,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 93.0.4577.82
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 93.0.4577.82
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; itel S665LN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36'
@@ -689,8 +727,8 @@
     architecture: null
     deviceName: S665LN
     marketingName: S23
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 2
     display:
@@ -706,20 +744,20 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 105.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 105.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; itel A632W) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36'
@@ -727,8 +765,8 @@
     architecture: null
     deviceName: A632W
     marketingName: A04
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 2
     display:
@@ -744,20 +782,20 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 105.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 105.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; itel A507LV Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.180 Mobile Safari/537.36'
@@ -765,8 +803,8 @@
     architecture: null
     deviceName: A507LV
     marketingName: 'V52 LTE'
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 2
     display:
@@ -782,20 +820,20 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 121.0.6167.180
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 121.0.6167.180
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; itel P661N Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.60 Mobile Safari/537.36'
@@ -803,8 +841,8 @@
     architecture: null
     deviceName: P661N
     marketingName: 'P55 5G'
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 2
     display:
@@ -820,20 +858,20 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 114.0.5735.60
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 114.0.5735.60
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; itel A663LC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36'
@@ -841,8 +879,8 @@
     architecture: null
     deviceName: A663LC
     marketingName: A05s
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 2
     display:
@@ -858,20 +896,20 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 123.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 123.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; itel A665L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Mobile Safari/537.36'
@@ -879,8 +917,8 @@
     architecture: null
     deviceName: A665L
     marketingName: A70
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 2
     display:
@@ -896,20 +934,20 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 111.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 111.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; itel A666L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36'
@@ -917,8 +955,8 @@
     architecture: null
     deviceName: A666L
     marketingName: P55
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 2
     display:
@@ -934,20 +972,20 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 123.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 123.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; itel A666LN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36'
@@ -955,8 +993,8 @@
     architecture: null
     deviceName: A666LN
     marketingName: P55
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 2
     display:
@@ -972,20 +1010,20 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 123.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 123.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; itel P663LN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36'
@@ -993,8 +1031,8 @@
     architecture: null
     deviceName: P663LN
     marketingName: P55+
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 2
     display:
@@ -1010,20 +1048,20 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 123.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 123.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; itel S662LC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 Mobile Safari/537.36'
@@ -1031,8 +1069,8 @@
     architecture: null
     deviceName: S662LC
     marketingName: 'Vision 5 Plus'
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 2
     display:
@@ -1048,20 +1086,20 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 99.0.4844.88
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 99.0.4844.88
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; itel P683L Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.159 Mobile Safari/537.36'
@@ -1069,8 +1107,8 @@
     architecture: null
     deviceName: P683L
     marketingName: P40+
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 2
     display:
@@ -1086,20 +1124,20 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 124.0.6367.159
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 124.0.6367.159
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; itel A663L Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.171 Mobile Safari/537.36'
@@ -1107,8 +1145,8 @@
     architecture: null
     deviceName: A663L
     marketingName: A05s
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 2
     display:
@@ -1124,20 +1162,20 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 124.0.6367.171
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 124.0.6367.171
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; itel A511LQ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36'
@@ -1145,8 +1183,8 @@
     architecture: null
     deviceName: A511LQ
     marketingName: A23S
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 2
     display:
@@ -1162,20 +1200,20 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 105.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 105.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; itel Vision 2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36'
@@ -1183,8 +1221,8 @@
     architecture: null
     deviceName: 'Vision 2'
     marketingName: 'Vision 2'
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 2
     display:
@@ -1200,20 +1238,20 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 122.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 122.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; itel S681LN Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.163 Mobile Safari/537.36'
@@ -1221,8 +1259,8 @@
     architecture: null
     deviceName: S681LN
     marketingName: S23+
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 2
     display:
@@ -1238,20 +1276,20 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 132.0.6834.163
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 132.0.6834.163
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; itel A671LC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36'
@@ -1259,8 +1297,8 @@
     architecture: null
     deviceName: A671LC
     marketingName: A80
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 2
     display:
@@ -1276,20 +1314,20 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 138.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 138.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; itel A27) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.6943.143 Mobile Safari/537.36'
@@ -1297,8 +1335,8 @@
     architecture: null
     deviceName: A27
     marketingName: A27
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 2
     display:
@@ -1314,20 +1352,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 133.0.6943.143
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 133.0.6943.143
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; itel P673L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.7632.76 Mobile Safari/537.36'
@@ -1335,8 +1373,8 @@
     architecture: null
     deviceName: P673L
     marketingName: 'Power 70'
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 2
     display:
@@ -1352,20 +1390,20 @@
     name: Android
     marketingName: Android
     version: 15.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 145.0.7632.76
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 145.0.7632.76
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; itel A507LXU Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.132 Mobile Safari/537.36'
@@ -1373,8 +1411,8 @@
     architecture: null
     deviceName: A507LXU
     marketingName: A50
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 2
     display:
@@ -1390,20 +1428,20 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 144.0.7559.132
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 144.0.7559.132
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; itel A507LVU Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
@@ -1411,8 +1449,8 @@
     architecture: null
     deviceName: A507LVU
     marketingName: V53
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 2
     display:
@@ -1428,20 +1466,20 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; Itel S26) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Mobile Safari/537.36'
@@ -1449,8 +1487,8 @@
     architecture: null
     deviceName: S26
     marketingName: S26
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 2
     display:
@@ -1466,17 +1504,17 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 148.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 148.0.0.0
-    manufacturer: Google
+    manufacturer: google

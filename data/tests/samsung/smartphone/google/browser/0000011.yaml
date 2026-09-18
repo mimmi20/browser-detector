@@ -1,387 +1,5 @@
 -
   headers:
-    sec-ch-ua-model: '"SM-S721U1"'
-    sec-ch-ua-platform: '"Android"'
-    sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Google Chrome";v="143", "Chromium";v="143", "Not A(Brand";v="24"'
-    sec-ch-ua-full-version: '"143.0.7499.146"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
-    sec-ch-ua-wow64: '?0'
-    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: SM-S721U1
-    marketingName: 'Galaxy S24 FE (USA)'
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: 2340
-      height: 1080
-      touch: true
-      size: 6.7
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: Google
-    bits: null
-  client:
-    name: Chrome
-    modus: null
-    version: 143.0.0
-    manufacturer: Google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 143.0.0
-    manufacturer: Google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-S906U1 Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.109 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: SM-S906U1
-    marketingName: 'Galaxy S22+ 5G (USA unlocked)'
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: 2340
-      height: 1080
-      touch: true
-      size: 6.6
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: Google
-    bits: null
-  client:
-    name: 'Chrome WebView'
-    modus: null
-    version: 144.0.7559.109
-    manufacturer: Google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 144.0.7559.109
-    manufacturer: Google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 15; SM-G990U Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.59 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: SM-G990U
-    marketingName: 'Galaxy S21 FE 5G (USA)'
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: 2340
-      height: 1080
-      touch: true
-      size: 6.4
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: Google
-    bits: null
-  client:
-    name: 'Chrome WebView'
-    modus: null
-    version: 144.0.7559.59
-    manufacturer: Google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 144.0.7559.59
-    manufacturer: Google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-G889G; Build/RP1A.230401.22) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.136 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: SM-G889G
-    marketingName: 'Galaxy XCover FieldPro'
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: true
-    simCount: 2
-    display:
-      width: 2560
-      height: 1440
-      touch: true
-      size: 5.1
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: Google
-    bits: null
-  client:
-    name: Chrome
-    modus: null
-    version: 114.0.5735.136
-    manufacturer: Google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 114.0.5735.136
-    manufacturer: Google
--
-  headers:
-    sec-ch-ua-model: '"SM-S921B"'
-    sec-ch-ua-platform: '"Android"'
-    sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Not_A Brand";v="99", "Chromium";v="142"'
-    sec-ch-ua-full-version: '"142.0.7444.48"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
-    sec-ch-ua-wow64: '?0'
-    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: SM-S921B
-    marketingName: 'Galaxy S24'
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: true
-    simCount: 2
-    display:
-      width: 2340
-      height: 1080
-      touch: true
-      size: 6.2
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: Google
-    bits: null
-  client:
-    name: Chromium
-    modus: null
-    version: 142.0.7444.48
-    manufacturer: Google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 142.0.0
-    manufacturer: Google
--
-  headers:
-    sec-ch-ua-model: '"SM-S711B"'
-    sec-ch-ua-platform: '"Android"'
-    sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Not_A Brand";v="99", "Chromium";v="142"'
-    sec-ch-ua-full-version: '"142.0.7444.48"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
-    sec-ch-ua-wow64: '?0'
-    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: SM-S711B
-    marketingName: 'Galaxy S23 FE'
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: true
-    simCount: 2
-    display:
-      width: 2340
-      height: 1080
-      touch: true
-      size: 6.4
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: Google
-    bits: null
-  client:
-    name: Chromium
-    modus: null
-    version: 142.0.7444.48
-    manufacturer: Google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 142.0.0
-    manufacturer: Google
--
-  headers:
-    sec-ch-ua-model: '"SM-A175F"'
-    sec-ch-ua-platform: '"Android"'
-    sec-ch-ua-platform-version: '"15.0.0"'
-    sec-ch-ua: '"Not(A:Brand";v="8", "Chromium";v="144", "Google Chrome";v="144"'
-    sec-ch-ua-full-version: '"144.0.7559.76"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
-    sec-ch-ua-wow64: '?0'
-    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: SM-A175F
-    marketingName: 'Galaxy A17 4G'
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: 2340
-      height: 1080
-      touch: true
-      size: 6.7
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: Google
-    bits: null
-  client:
-    name: Chrome
-    modus: null
-    version: 144.0.0
-    manufacturer: Google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 144.0.0
-    manufacturer: Google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-G9209K; Build/BP2A.180421.203) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: SM-G9209K
-    marketingName: 'Galaxy S6'
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: 2560
-      height: 1440
-      touch: true
-      size: 5.1
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: Google
-    bits: null
-  client:
-    name: Chrome
-    modus: null
-    version: 140.0.0.0
-    manufacturer: Google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 140.0.0.0
-    manufacturer: Google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-G150NK; Build/TD4A.220917.16) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: SM-G150NK
-    marketingName: 'Galaxy Folder LTE'
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: 800
-      height: 480
-      touch: true
-      size: 3.8
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: Google
-    bits: null
-  client:
-    name: Chrome
-    modus: null
-    version: 117.0.0.0
-    manufacturer: Google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 117.0.0.0
-    manufacturer: Google
--
-  headers:
     sec-ch-ua-model: '"SM-A556B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
@@ -397,8 +15,8 @@
     architecture: null
     deviceName: SM-A556B
     marketingName: 'Galaxy A55 5G'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -414,20 +32,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chromium
     modus: null
     version: 142.0.7444.48
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 142.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-model: '"SM-S928B"'
@@ -445,8 +63,8 @@
     architecture: null
     deviceName: SM-S928B
     marketingName: 'Galaxy S24 Ultra'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -462,20 +80,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chromium
     modus: null
     version: 142.0.7444.48
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 142.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-G160N; Build/TQ3C.220021.219) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36'
@@ -483,8 +101,8 @@
     architecture: null
     deviceName: SM-G160N
     marketingName: 'Galaxy Folder 2'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -500,20 +118,20 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 141.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 141.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-model: '"SM-A156B"'
@@ -531,8 +149,8 @@
     architecture: null
     deviceName: SM-A156B
     marketingName: 'Galaxy A15 5G'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -548,20 +166,20 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chromium
     modus: null
     version: 142.0.7444.48
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 142.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-G316F; Build/BP2A.240900.236) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36'
@@ -569,8 +187,8 @@
     architecture: null
     deviceName: SM-G316F
     marketingName: 'Galaxy S Duos 3'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -586,20 +204,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 137.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 137.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-platform: '"Android"'
@@ -610,8 +228,8 @@
     architecture: null
     deviceName: SM-G975F
     marketingName: 'Galaxy S10+ (International)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -627,20 +245,20 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Headless Chrome'
     modus: null
     version: 136.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 136.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-model: '"SM-A356E"'
@@ -658,8 +276,8 @@
     architecture: null
     deviceName: SM-A356E
     marketingName: 'Galaxy A35 5G'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -675,20 +293,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 144.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 144.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 16; SM-A175F Build/BP2A.250605.031.A3)'
@@ -696,8 +314,8 @@
     architecture: null
     deviceName: SM-A175F
     marketingName: 'Galaxy A17 4G'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -713,20 +331,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Android Browser'
     modus: null
     version: 2.1.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-S948B Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/145.0.7632.120 Mobile Safari/537.36'
@@ -734,8 +352,8 @@
     architecture: null
     deviceName: SM-S948B
     marketingName: 'Galaxy S26 Ultra (International)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -751,20 +369,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 145.0.7632.120
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 145.0.7632.120
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-S942B Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.7339.207 Mobile Safari/537.36'
@@ -772,8 +390,8 @@
     architecture: null
     deviceName: SM-S942B
     marketingName: 'Galaxy S26 (International)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -789,20 +407,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 140.0.7339.207
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 140.0.7339.207
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-S938U1 Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/145.0.7632.120 Mobile Safari/537.36'
@@ -810,8 +428,8 @@
     architecture: null
     deviceName: SM-S938U1
     marketingName: 'Galaxy S25 Ultra 5G (USA)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -827,20 +445,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 145.0.7632.120
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 145.0.7632.120
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 16; SM-S948B Build/BP4A.251205.006)'
@@ -848,8 +466,8 @@
     architecture: null
     deviceName: SM-S948B
     marketingName: 'Galaxy S26 Ultra (International)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -865,20 +483,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Android Browser'
     modus: null
     version: 2.1.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; SM-G960N Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/145.0.7632.79 Mobile Safari/537.36'
@@ -886,8 +504,8 @@
     architecture: null
     deviceName: SM-G960N
     marketingName: 'Galaxy S9'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -903,20 +521,20 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 145.0.7632.79
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 145.0.7632.79
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-model: '"SM-S942B"'
@@ -934,8 +552,8 @@
     architecture: null
     deviceName: SM-S942B
     marketingName: 'Galaxy S26 (International)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -951,20 +569,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 146.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 146.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-model: '"SM-A266B"'
@@ -982,8 +600,8 @@
     architecture: null
     deviceName: SM-A266B
     marketingName: 'Galaxy A26 5G (International)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -999,20 +617,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chromium
     modus: null
     version: 145.0.7632.45
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 145.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-model: '"SM-G766B"'
@@ -1030,8 +648,8 @@
     architecture: null
     deviceName: SM-G766B
     marketingName: 'Galaxy XCover7 Pro (International)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -1047,20 +665,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 146.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 146.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-S947B Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/146.0.7680.119 Mobile Safari/537.36'
@@ -1068,8 +686,8 @@
     architecture: null
     deviceName: SM-S947B
     marketingName: 'Galaxy S26+ (International)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -1085,20 +703,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 146.0.7680.119
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 146.0.7680.119
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 16; SM-M336B Build/BP2A.250605.031.A3)'
@@ -1106,8 +724,8 @@
     architecture: null
     deviceName: SM-M336B
     marketingName: 'Galaxy M33 5G'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -1123,20 +741,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Android Browser'
     modus: null
     version: 2.1.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 16; SM-S942B Build/BP4A.251205.006)'
@@ -1144,8 +762,8 @@
     architecture: null
     deviceName: SM-S942B
     marketingName: 'Galaxy S26 (International)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -1161,20 +779,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Android Browser'
     modus: null
     version: 2.1.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     sec-ch-ua-model: '"SM-S948B"'
@@ -1192,8 +810,8 @@
     architecture: null
     deviceName: SM-S948B
     marketingName: 'Galaxy S26 Ultra (International)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -1209,20 +827,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 146.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 146.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-S936U1 Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/146.0.7680.120 Mobile Safari/537.36'
@@ -1230,8 +848,8 @@
     architecture: null
     deviceName: SM-S936U1
     marketingName: 'Galaxy S25+ (USA)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -1247,20 +865,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 146.0.7680.120
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 146.0.7680.120
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-S9280 Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/146.0.7680.119 Mobile Safari/537.36'
@@ -1268,8 +886,8 @@
     architecture: null
     deviceName: SM-S9280
     marketingName: 'Galaxy S24 Ultra (China)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -1285,20 +903,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 146.0.7680.119
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 146.0.7680.119
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-platform: '"macOS"'
@@ -1309,8 +927,8 @@
     architecture: null
     deviceName: SM-G930V
     marketingName: 'Galaxy S7 (Verizon)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -1326,20 +944,20 @@
     name: 'Mac OS X'
     marketingName: 'Mac OS X'
     version: null
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: Chrome
     modus: null
     version: 124.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 124.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-platform: '"macOS"'
@@ -1350,8 +968,8 @@
     architecture: null
     deviceName: SM-A528B
     marketingName: 'Galaxy A52s 5G (International)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -1367,20 +985,20 @@
     name: 'Mac OS X'
     marketingName: 'Mac OS X'
     version: null
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: Chrome
     modus: null
     version: 131.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 131.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-model: '"SM-A165F"'
@@ -1398,8 +1016,8 @@
     architecture: null
     deviceName: SM-A165F
     marketingName: 'Galaxy A16 (International)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -1415,20 +1033,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chromium
     modus: null
     version: 145.0.7632.45
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 145.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-platform: '"Android"'
@@ -1439,8 +1057,8 @@
     architecture: null
     deviceName: SM-A166U
     marketingName: 'Galaxy A16 5G (USA)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -1456,20 +1074,20 @@
     name: Android
     marketingName: Android
     version: 15.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 140.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 140.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-model: '"SM-S711U"'
@@ -1487,8 +1105,8 @@
     architecture: null
     deviceName: SM-S711U
     marketingName: 'Galaxy S23 FE (USA)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -1504,20 +1122,20 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 147.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 147.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-A576B Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/147.0.7727.138 Mobile Safari/537.36'
@@ -1525,8 +1143,8 @@
     architecture: null
     deviceName: SM-A576B
     marketingName: 'Galaxy A57 5G (International)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -1542,20 +1160,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 147.0.7727.138
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 147.0.7727.138
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-S938U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36'
@@ -1563,8 +1181,8 @@
     architecture: null
     deviceName: SM-S938U
     marketingName: 'Galaxy S25 Ultra 5G (USA)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -1580,20 +1198,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 146.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 146.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'WorksMobile/4.3.3.0 (Linux; U; Android 15; SM-S928N Build/AP3A.240905.015.A2; NaverWorks) GSaaSMobileApp'
@@ -1601,8 +1219,8 @@
     architecture: null
     deviceName: SM-S928N
     marketingName: 'Galaxy S24 Ultra (Korea)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -1618,20 +1236,20 @@
     name: Android
     marketingName: Android
     version: 15.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Android Webkit'
     modus: null
     version: null
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-A376B Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.178 Mobile Safari/537.36'
@@ -1639,8 +1257,8 @@
     architecture: null
     deviceName: SM-A376B
     marketingName: 'Galaxy A37 5G (International)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -1656,20 +1274,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 148.0.7778.178
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 148.0.7778.178
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-S546VL Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.120 Mobile Safari/537.36'
@@ -1677,8 +1295,8 @@
     architecture: null
     deviceName: SM-S546VL
     marketingName: 'Galaxy A54 5G'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -1694,20 +1312,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 148.0.7778.120
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 148.0.7778.120
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-model: '"SM-A065F"'
@@ -1725,8 +1343,8 @@
     architecture: null
     deviceName: SM-A065F
     marketingName: 'Galaxy A06 (International)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -1742,20 +1360,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 148.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 148.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-model: '"SM-A075F"'
@@ -1773,8 +1391,8 @@
     architecture: null
     deviceName: SM-A075F
     marketingName: 'Galaxy A07 4G'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -1790,20 +1408,20 @@
     name: Android
     marketingName: Android
     version: 15.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 148.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 148.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-model: '"SM-A576B"'
@@ -1821,8 +1439,8 @@
     architecture: null
     deviceName: SM-A576B
     marketingName: 'Galaxy A57 5G (International)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -1838,20 +1456,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 148.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 148.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-model: '"SM-A356B"'
@@ -1869,8 +1487,8 @@
     architecture: null
     deviceName: SM-A356B
     marketingName: 'Galaxy A35 5G (International)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -1886,20 +1504,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chromium
     modus: null
     version: 146.0.7680.153
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 146.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-model: '"SM-M156B"'
@@ -1917,8 +1535,8 @@
     architecture: null
     deviceName: SM-M156B
     marketingName: 'Galaxy M15 5G (International)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -1934,20 +1552,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 148.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 148.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-model: '"SM-S711U1"'
@@ -1965,8 +1583,8 @@
     architecture: null
     deviceName: SM-S711U1
     marketingName: 'Galaxy S23 FE (USA)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -1982,20 +1600,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 147.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 147.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-A325F Build/SP1A.210812.016;) Browlser/1.7.8'
@@ -2003,8 +1621,8 @@
     architecture: null
     deviceName: SM-A325F
     marketingName: 'Galaxy A32 4G'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -2020,20 +1638,20 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Android Webkit'
     modus: null
     version: null
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     sec-ch-ua: '"Android WebView";v="117.0.5938.140", "Not;A=Brand";v="8.0.0.0", "Chromium";v="117.0.5938.140"'
@@ -2043,8 +1661,8 @@
     architecture: null
     deviceName: SM-A705MN
     marketingName: 'Galaxy A70 (LATAM)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -2060,20 +1678,20 @@
     name: Android
     marketingName: Android
     version: 11.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Android Browser'
     modus: null
     version: 2.1.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 117.0.5938.140
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 16; SM-A266B Build/BP2A.250605.031.A3)'
@@ -2081,8 +1699,8 @@
     architecture: null
     deviceName: SM-A266B
     marketingName: 'Galaxy A26 5G (International)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -2098,20 +1716,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Android Browser'
     modus: null
     version: 2.1.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     sec-ch-ua-model: '"SM-A376B"'
@@ -2129,8 +1747,8 @@
     architecture: null
     deviceName: SM-A376B
     marketingName: 'Galaxy A37 5G (International)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -2146,20 +1764,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 149.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-model: '"SM-A145R"'
@@ -2177,8 +1795,8 @@
     architecture: null
     deviceName: SM-A145R
     marketingName: 'Galaxy A14 4G'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -2194,20 +1812,20 @@
     name: Android
     marketingName: Android
     version: 15.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chromium
     modus: null
     version: 147.0.7727.55
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 147.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-S928U1 Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
@@ -2215,8 +1833,8 @@
     architecture: null
     deviceName: SM-S928U1
     marketingName: 'Galaxy S24 Ultra (USA)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -2232,20 +1850,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-model: '"SM-A366B"'
@@ -2263,8 +1881,8 @@
     architecture: null
     deviceName: SM-A366B
     marketingName: 'Galaxy A36 5G (International)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -2280,20 +1898,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chromium
     modus: null
     version: 145.0.7632.45
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 145.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 10; en-us; SM-J810GF Build/JOP24G) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/146.0.7680.177 Mobile Safari/537.36'
@@ -2301,8 +1919,8 @@
     architecture: null
     deviceName: SM-J810GF
     marketingName: 'Galaxy J8'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -2318,20 +1936,20 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 146.0.7680.177
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 146.0.7680.177
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; SM-S506DL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.7258.128 Mobile Safari/537.36'
@@ -2339,8 +1957,8 @@
     architecture: null
     deviceName: SM-S506DL
     marketingName: 'Galaxy A50'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -2356,20 +1974,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 139.0.7258.128
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 139.0.7258.128
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; SM-J737R4 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36'
@@ -2377,8 +1995,8 @@
     architecture: null
     deviceName: SM-J737R4
     marketingName: 'Galaxy J7(US Cellular)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -2394,20 +2012,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 138.0.7204.179
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 138.0.7204.179
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; SM-J415GN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36'
@@ -2415,8 +2033,8 @@
     architecture: null
     deviceName: SM-J415GN
     marketingName: 'Galaxy J4+ (2018)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -2432,20 +2050,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 91.0.4472.101
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 91.0.4472.101
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; SM-J260AZ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.96 Mobile Safari/537.36'
@@ -2453,8 +2071,8 @@
     architecture: null
     deviceName: SM-J260AZ
     marketingName: 'Galaxy J2 Core'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -2470,20 +2088,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 78.0.3904.96
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 78.0.3904.96
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; SM-G611M Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36'
@@ -2491,8 +2109,8 @@
     architecture: null
     deviceName: SM-G611M
     marketingName: 'Galaxy J7 Prime 2'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -2508,20 +2126,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 138.0.7204.179
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 138.0.7204.179
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; SM-G390W) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36'
@@ -2529,8 +2147,8 @@
     architecture: null
     deviceName: SM-G390W
     marketingName: 'Galaxy Xcover 4'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -2546,20 +2164,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 91.0.4472.101
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 91.0.4472.101
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; SM-A530N Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.179 Mobile Safari/537.36'
@@ -2567,8 +2185,8 @@
     architecture: null
     deviceName: SM-A530N
     marketingName: 'Galaxy A8 (2018)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -2584,20 +2202,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 138.0.7204.179
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 138.0.7204.179
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9.0; SM-G975D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.6668.22 Mobile Safari/537.36'
@@ -2605,8 +2223,8 @@
     architecture: null
     deviceName: SM-G975D
     marketingName: 'Galaxy S10+'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -2622,20 +2240,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 129.0.6668.22
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 129.0.6668.22
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9.0; SM-G973D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.7258.31 Mobile Safari/537.36'
@@ -2643,8 +2261,8 @@
     architecture: null
     deviceName: SM-G973D
     marketingName: 'Galaxy S10'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -2660,20 +2278,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 139.0.7258.31
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 139.0.7258.31
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 17; SM-S958B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7700.54 Mobile Safari/537.36'
@@ -2681,8 +2299,8 @@
     architecture: null
     deviceName: SM-S958B
     marketingName: 'Galaxy S27 Ultra (International)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -2698,20 +2316,20 @@
     name: Android
     marketingName: Android
     version: 17.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 150.0.7700.54
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 150.0.7700.54
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-S948Z Build/BP4A.251205.006) AppleWebKit/537.36 (KHTML, like Gecko) Lssbktmq/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
@@ -2719,8 +2337,8 @@
     architecture: null
     deviceName: SM-S948Z
     marketingName: 'Galaxy S26 Ultra'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -2736,20 +2354,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-S948U Build/BP4A.251205.006) AppleWebKit/537.36 (KHTML, like Gecko) Lxer/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
@@ -2757,8 +2375,8 @@
     architecture: null
     deviceName: SM-S948U
     marketingName: 'Galaxy S26 Ultra (USA)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -2774,20 +2392,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-S947W Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
@@ -2795,8 +2413,8 @@
     architecture: null
     deviceName: SM-S947W
     marketingName: 'Galaxy S26+ (Canada)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -2812,20 +2430,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-S947U1 Build/BP4A.251205.006) AppleWebKit/537.36 (KHTML, like Gecko) Xshmo/4.0 Chrome/149.0.7827.93 Mobile Safari/537.36'
@@ -2833,8 +2451,8 @@
     architecture: null
     deviceName: SM-S947U1
     marketingName: 'Galaxy S26+ (USA)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -2850,20 +2468,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 149.0.7827.93
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.93
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-S942W Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.163 Mobile Safari/537.36'
@@ -2871,8 +2489,8 @@
     architecture: null
     deviceName: SM-S942W
     marketingName: 'Galaxy S26 (Canada)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -2888,20 +2506,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 149.0.7827.163
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.163
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-S942U Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
@@ -2909,8 +2527,8 @@
     architecture: null
     deviceName: SM-S942U
     marketingName: 'Galaxy S26 (USA)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -2926,20 +2544,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-S942U1 Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
@@ -2947,8 +2565,8 @@
     architecture: null
     deviceName: SM-S942U1
     marketingName: 'Galaxy S26 (USA)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -2964,20 +2582,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-S936N Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.159 Mobile Safari/537.36'
@@ -2985,8 +2603,8 @@
     architecture: null
     deviceName: SM-S936N
     marketingName: 'Galaxy S25+ (Korea)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -3002,20 +2620,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 149.0.7827.159
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.159
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-S931Z Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
@@ -3023,8 +2641,8 @@
     architecture: null
     deviceName: SM-S931Z
     marketingName: 'Galaxy S25'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -3040,20 +2658,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-S931Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.91 Mobile Safari/537.36'
@@ -3061,8 +2679,8 @@
     architecture: null
     deviceName: SM-S931Q
     marketingName: 'Galaxy S25'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -3078,20 +2696,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-S921E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.159 Mobile Safari/537.36'
@@ -3099,8 +2717,8 @@
     architecture: null
     deviceName: SM-S921E
     marketingName: 'Galaxy S24'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -3116,20 +2734,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 149.0.7827.159
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.159
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-S916U Build/BP4A.251205.006) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.93 Mobile Safari/537.36'
@@ -3137,8 +2755,8 @@
     architecture: null
     deviceName: SM-S916U
     marketingName: 'Galaxy S23+ (USA)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -3154,20 +2772,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 149.0.7827.93
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.93
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-S731W Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
@@ -3175,8 +2793,8 @@
     architecture: null
     deviceName: SM-S731W
     marketingName: 'Galaxy S25 FE (Canada)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -3192,20 +2810,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-S731U1 Build/BP4A.251205.006) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.93 Mobile Safari/537.36'
@@ -3213,8 +2831,8 @@
     architecture: null
     deviceName: SM-S731U1
     marketingName: 'Galaxy S25 FE (USA)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -3230,20 +2848,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 149.0.7827.93
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.93
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-S366V Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.159 Mobile Safari/537.36'
@@ -3251,8 +2869,8 @@
     architecture: null
     deviceName: SM-S366V
     marketingName: 'Galaxy A36 5G (Verizon)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -3268,20 +2886,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 149.0.7827.159
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.159
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-S356V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.120 Mobile Safari/537.36'
@@ -3289,8 +2907,8 @@
     architecture: null
     deviceName: SM-S356V
     marketingName: 'Galaxy A35 5G'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -3306,20 +2924,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 148.0.7778.120
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 148.0.7778.120
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-S266V Build/BP4A.251205.006) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.91 Mobile Safari/537.36'
@@ -3327,8 +2945,8 @@
     architecture: null
     deviceName: SM-S266V
     marketingName: 'Galaxy A26 5G (Verizon)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -3344,20 +2962,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-S176V Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
@@ -3365,8 +2983,8 @@
     architecture: null
     deviceName: SM-S176V
     marketingName: 'Galaxy A17 5G (Verizon)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -3382,20 +3000,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-M366B Build/BP4A.251205.006) AppleWebKit/537.36 (KHTML, like Gecko) Nhrwck/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
@@ -3403,8 +3021,8 @@
     architecture: null
     deviceName: SM-M366B
     marketingName: 'Galaxy M36'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -3420,20 +3038,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-F966W) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.91 Mobile Safari/537.36'
@@ -3441,8 +3059,8 @@
     architecture: null
     deviceName: SM-F966W
     marketingName: 'Galaxy Z Fold 7 (Canada)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -3458,20 +3076,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-F966U Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.159 Mobile Safari/537.36'
@@ -3479,8 +3097,8 @@
     architecture: null
     deviceName: SM-F966U
     marketingName: 'Galaxy Z Fold 7 (USA)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -3496,20 +3114,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 149.0.7827.159
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.159
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-F966U1 Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
@@ -3517,8 +3135,8 @@
     architecture: null
     deviceName: SM-F966U1
     marketingName: 'Galaxy Z Fold 7 (USA)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -3534,20 +3152,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-F766W Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
@@ -3555,8 +3173,8 @@
     architecture: null
     deviceName: SM-F766W
     marketingName: 'Galaxy Z Flip 7 5G (Canada)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -3572,20 +3190,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-F766N Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.93 Mobile Safari/537.36'
@@ -3593,8 +3211,8 @@
     architecture: null
     deviceName: SM-F766N
     marketingName: 'Galaxy Z Flip 7 5G (Korea)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -3610,20 +3228,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 149.0.7827.93
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.93
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-E566B Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
@@ -3631,8 +3249,8 @@
     architecture: null
     deviceName: SM-E566B
     marketingName: 'Galaxy F56 (International)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -3648,20 +3266,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-E075F Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.215 Mobile Safari/537.36'
@@ -3669,8 +3287,8 @@
     architecture: null
     deviceName: SM-E075F
     marketingName: 'Galaxy F07 4G (International)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -3686,20 +3304,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 148.0.7778.215
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 148.0.7778.215
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-A376U Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.217 Mobile Safari/537.36'
@@ -3707,8 +3325,8 @@
     architecture: null
     deviceName: SM-A376U
     marketingName: 'Galaxy A37 5G (USA)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -3724,20 +3342,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 148.0.7778.217
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 148.0.7778.217
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-A366U Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36 AppWebView/1.0'
@@ -3745,8 +3363,8 @@
     architecture: null
     deviceName: SM-A366U
     marketingName: 'Galaxy A36 5G (USA)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -3762,20 +3380,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-A266U1 Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36 MinuteMaid'
@@ -3783,8 +3401,8 @@
     architecture: null
     deviceName: SM-A266U1
     marketingName: 'Galaxy A26 5G (USA)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -3800,20 +3418,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-A256U Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
@@ -3821,8 +3439,8 @@
     architecture: null
     deviceName: SM-A256U
     marketingName: 'Galaxy A25 5G (USA)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -3838,20 +3456,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-A253Z Build/BP2A.250605.031.A3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.91 Mobile Safari/537.36 i-filter/sbm-safety'
@@ -3859,8 +3477,8 @@
     architecture: null
     deviceName: SM-A253Z
     marketingName: 'Galaxy A25 5G (Japan)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -3876,20 +3494,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-A176U Build/BP4A.251205.006) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.159 Mobile Safari/537.36'
@@ -3897,8 +3515,8 @@
     architecture: null
     deviceName: SM-A176U
     marketingName: 'Galaxy A17 5G (USA)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -3914,20 +3532,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 149.0.7827.159
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.159
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-A175N Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36 AdFitSDK/3.17.2'
@@ -3935,8 +3553,8 @@
     architecture: null
     deviceName: SM-A175N
     marketingName: 'Galaxy A17 4G'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -3952,20 +3570,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-A166W) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.97 Mobile Safari/537.36'
@@ -3973,8 +3591,8 @@
     architecture: null
     deviceName: SM-A166W
     marketingName: 'Galaxy A16 5G (Canada)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -3990,20 +3608,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 148.0.7778.97
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 148.0.7778.97
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-A166P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.93 Mobile Safari/537.36'
@@ -4011,8 +3629,8 @@
     architecture: null
     deviceName: SM-A166P
     marketingName: 'Galaxy A16 5G'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 2
     display:
@@ -4028,17 +3646,359 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 149.0.7827.93
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.93
-    manufacturer: Google
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-A166L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.93 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SM-A166L
+    marketingName: 'Galaxy A16 5G'
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2340
+      height: 1080
+      touch: true
+      size: 6.7
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 149.0.7827.93
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.93
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-A075M Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SM-A075M
+    marketingName: 'Galaxy A07 4G'
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 1600
+      height: 720
+      touch: true
+      size: 6.7
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 149.0.7827.91
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-A066M Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SM-A066M
+    marketingName: 'Galaxy A06 5G'
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 1600
+      height: 720
+      touch: true
+      size: 6.7
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 149.0.7827.91
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; SCG38) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.91 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SCG38
+    marketingName: 'Galaxy S26+ (Japan)'
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 3120
+      height: 1440
+      touch: true
+      size: 6.7
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 149.0.7827.91
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; SCG33 Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SCG33
+    marketingName: 'Galaxy A25 5G (Japan)'
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 2340
+      height: 1080
+      touch: true
+      size: 6.5
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 149.0.7827.91
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; SCG32 Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.215 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SCG32
+    marketingName: 'Galaxy S25 Ultra 5G (Japan)'
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 3120
+      height: 1440
+      touch: true
+      size: 6.9
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 148.0.7778.215
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 148.0.7778.215
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; SCG31 Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SCG31
+    marketingName: 'Galaxy S25 (Japan)'
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2340
+      height: 1080
+      touch: true
+      size: 6.2
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 149.0.7827.91
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; SCG30 Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.93 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SCG30
+    marketingName: 'Galaxy S24 FE (Japan)'
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 2340
+      height: 1080
+      touch: true
+      size: 6.7
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 149.0.7827.93
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.93
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; SCG30 Build/BP4A.251205.006) AppleWebKit/537.36 (KHTML, like Gecko) Pqifshsm/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SCG30
+    marketingName: 'Galaxy S24 FE (Japan)'
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 2340
+      height: 1080
+      touch: true
+      size: 6.7
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 149.0.7827.91
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google

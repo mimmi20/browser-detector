@@ -22,20 +22,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'Opera Mini'
     modus: null
     version: 5.1.22783
-    manufacturer: Opera
+    manufacturer: opera
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Presto
     version: null
-    manufacturer: Opera
+    manufacturer: opera
 -
   headers:
     user-agent: 'Opera/9.80 (Windows NT 6.1; Opera  Mini/5.1.21051/19.892) Presto/2.12.388 Version/12.10'
@@ -60,17 +60,17 @@
     name: Windows
     marketingName: 'Windows 7'
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Opera Mini'
     modus: null
     version: 5.1.21051
-    manufacturer: Opera
+    manufacturer: opera
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Presto
     version: 2.12.388
-    manufacturer: Opera
+    manufacturer: opera

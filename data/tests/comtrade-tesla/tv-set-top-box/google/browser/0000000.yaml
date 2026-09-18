@@ -5,8 +5,8 @@
     architecture: null
     deviceName: XT850
     marketingName: XT850
-    manufacturer: 'ComTrade Tesla'
-    brand: 'ComTrade Tesla'
+    manufacturer: comtrade-tesla
+    brand: comtrade-tesla
     dualOrientation: false
     simCount: 0
     display:
@@ -22,17 +22,17 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 148.0.7778.215
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 148.0.7778.215
-    manufacturer: Google
+    manufacturer: google

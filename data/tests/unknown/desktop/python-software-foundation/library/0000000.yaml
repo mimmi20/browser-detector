@@ -22,13 +22,13 @@
     name: Linux
     marketingName: Linux
     version: 3.13.0.24
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'Python Requests'
     modus: null
     version: 2.3.0
-    manufacturer: 'Python Software Foundation'
+    manufacturer: python-software-foundation
     type: library
     isbot: false
     bits: null
@@ -66,7 +66,7 @@
     name: 'Python Requests'
     modus: null
     version: 2.0.0
-    manufacturer: 'Python Software Foundation'
+    manufacturer: python-software-foundation
     type: library
     isbot: false
     bits: null
@@ -98,13 +98,13 @@
     name: Windows
     marketingName: 'Windows 2003'
     version: 2003.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Python Requests'
     modus: null
     version: 2.7.0
-    manufacturer: 'Python Software Foundation'
+    manufacturer: python-software-foundation
     type: library
     isbot: false
     bits: null
@@ -136,13 +136,13 @@
     name: 'Azure Linux'
     marketingName: 'Azure Linux'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Python Requests'
     modus: null
     version: 2.2.1
-    manufacturer: 'Python Software Foundation'
+    manufacturer: python-software-foundation
     type: library
     isbot: false
     bits: null
@@ -174,13 +174,13 @@
     name: Linux
     marketingName: Linux
     version: 4.2.0.41
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Python
     modus: null
     version: 2.7.14
-    manufacturer: 'Python Software Foundation'
+    manufacturer: python-software-foundation
     type: library
     isbot: false
     bits: null
@@ -218,7 +218,7 @@
     name: Python
     modus: null
     version: 3.6.5
-    manufacturer: 'Python Software Foundation'
+    manufacturer: python-software-foundation
     type: library
     isbot: false
     bits: null
@@ -250,13 +250,13 @@
     name: 'Redhat Linux'
     marketingName: 'Redhat Linux'
     version: 4.8.5.44
-    manufacturer: Redhat
+    manufacturer: redhat
     bits: null
   client:
     name: Python
     modus: null
     version: 0.8.73
-    manufacturer: 'Python Software Foundation'
+    manufacturer: python-software-foundation
     type: library
     isbot: false
     bits: null
@@ -288,13 +288,13 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: 18.04.0
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: Python
     modus: null
     version: 3.8.0
-    manufacturer: 'Python Software Foundation'
+    manufacturer: python-software-foundation
     type: library
     isbot: false
     bits: null
@@ -326,13 +326,13 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: 16.04.0
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: Python
     modus: null
     version: 3.10.0
-    manufacturer: 'Python Software Foundation'
+    manufacturer: python-software-foundation
     type: library
     isbot: false
     bits: null
@@ -364,13 +364,13 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: 18.04.0
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: Python
     modus: null
     version: 3.7.6
-    manufacturer: 'Python Software Foundation'
+    manufacturer: python-software-foundation
     type: library
     isbot: false
     bits: null
@@ -402,13 +402,13 @@
     name: Debian
     marketingName: Debian
     version: null
-    manufacturer: 'Software in the Public Interest'
+    manufacturer: softwareInThePublicInterest
     bits: null
   client:
     name: Python
     modus: null
     version: 2.7.14
-    manufacturer: 'Python Software Foundation'
+    manufacturer: python-software-foundation
     type: library
     isbot: false
     bits: null
@@ -440,13 +440,13 @@
     name: Windows
     marketingName: Windows
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Python
     modus: null
     version: 3.12.6
-    manufacturer: 'Python Software Foundation'
+    manufacturer: python-software-foundation
     type: library
     isbot: false
     bits: null

@@ -22,20 +22,20 @@
     name: Windows
     marketingName: 'Windows XP'
     version: 5.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Slurp
     modus: null
     version: null
-    manufacturer: Yahoo
+    manufacturer: yahoo
     type: search-bot
     isbot: true
     bits: null
   engine:
     name: Gecko
     version: 41.0.0
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:36.0) Gecko/20100101 Firefox/36.0 slurp slurp'
@@ -60,20 +60,20 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: Slurp
     modus: null
     version: null
-    manufacturer: Yahoo
+    manufacturer: yahoo
     type: search-bot
     isbot: true
     bits: null
   engine:
     name: Gecko
     version: 36.0.0
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'YahooSeeker/CafeKelsa (compatible; Konqueror/3.2; FreeBSD ;yahoo dash slurp dash h dash webmaster at yahoo dash inc dot com ) (KHTML, like Gecko)'
@@ -98,13 +98,13 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Slurp
     modus: null
     version: null
-    manufacturer: Yahoo
+    manufacturer: yahoo
     type: search-bot
     isbot: true
     bits: null

@@ -5,8 +5,8 @@
     architecture: null
     deviceName: 'iMac 10,1'
     marketingName: 'iMac 21.5" (2009)'
-    manufacturer: Apple
-    brand: Apple
+    manufacturer: apple
+    brand: apple
     dualOrientation: false
     simCount: 0
     display:
@@ -22,20 +22,20 @@
     name: 'Mac OS X'
     marketingName: 'Mac OS X'
     version: 10.6.8
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: Sleipnir
     modus: null
     version: 4.5.1
-    manufacturer: Fenrir
+    manufacturer: fenrir
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 454.12.4
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/602.4.8 (KHTML, like Gecko) Version/10.0.3 Safari/12602.4.8 Sleipnir/4.5.7015'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: Macintosh
     marketingName: Macintosh
-    manufacturer: Apple
-    brand: Apple
+    manufacturer: apple
+    brand: apple
     dualOrientation: false
     simCount: 0
     display:
@@ -60,20 +60,20 @@
     name: macOS
     marketingName: macOS
     version: 10.12.3
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: Sleipnir
     modus: null
     version: 4.5.7015
-    manufacturer: Fenrir
+    manufacturer: fenrir
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 602.4.8
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Sleipnir/4.5.1 CFNetwork/673.3 Darwin/13.4.0 (x86_64) (iMac14%2C1)'
@@ -81,8 +81,8 @@
     architecture: null
     deviceName: 'iMac 14,1'
     marketingName: 'iMac 21.5" (2013)'
-    manufacturer: Apple
-    brand: Apple
+    manufacturer: apple
+    brand: apple
     dualOrientation: false
     simCount: 0
     display:
@@ -98,17 +98,17 @@
     name: 'Mac OS X'
     marketingName: 'Mac OS X'
     version: 10.9.4
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: Sleipnir
     modus: null
     version: 4.5.1
-    manufacturer: Fenrir
+    manufacturer: fenrir
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 673.3.0
-    manufacturer: Apple
+    manufacturer: apple

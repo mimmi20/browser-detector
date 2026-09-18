@@ -22,20 +22,20 @@
     name: Windows
     marketingName: 'Windows 2000'
     version: 5.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Lunascape
     modus: null
     version: 2.1.3
-    manufacturer: Lunascape
+    manufacturer: lunascape
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; N; Windows NT 5.2; ru-RU) AppleWebKit/529 (KHTML, like Gecko, Safari/529.0) Lunascape/4.9.9.94'
@@ -60,17 +60,17 @@
     name: Windows
     marketingName: 'Windows XP'
     version: 5.2.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Lunascape
     modus: null
     version: 4.9.9.94
-    manufacturer: Lunascape
+    manufacturer: lunascape
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 529.0.0
-    manufacturer: Apple
+    manufacturer: apple

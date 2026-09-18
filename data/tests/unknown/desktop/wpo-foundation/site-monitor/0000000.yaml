@@ -22,20 +22,20 @@
     name: Windows
     marketingName: 'Windows 7'
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: WebPageTest
     modus: null
     version: null
-    manufacturer: 'WPO Foundation'
+    manufacturer: wpo-foundation
     type: site-monitor
     isbot: true
     bits: null
   engine:
     name: Trident
     version: 5.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 PTST/276'
@@ -60,20 +60,20 @@
     name: Windows
     marketingName: 'Windows 8.1'
     version: 8.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: WebPageTest
     modus: null
     version: null
-    manufacturer: 'WPO Foundation'
+    manufacturer: wpo-foundation
     type: site-monitor
     isbot: true
     bits: null
   engine:
     name: Blink
     version: 50.0.2661.94
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 PTST/1'
@@ -98,20 +98,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: WebPageTest
     modus: null
     version: null
-    manufacturer: 'WPO Foundation'
+    manufacturer: wpo-foundation
     type: site-monitor
     isbot: true
     bits: null
   engine:
     name: Blink
     version: 58.0.3029.110
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-platform: '"macOS"'
@@ -139,17 +139,17 @@
     name: 'Mac OS X'
     marketingName: 'Mac OS X'
     version: null
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: WebPageTest
     modus: null
     version: null
-    manufacturer: 'WPO Foundation'
+    manufacturer: wpo-foundation
     type: site-monitor
     isbot: true
     bits: null
   engine:
     name: Blink
     version: 118.0.0
-    manufacturer: Google
+    manufacturer: google

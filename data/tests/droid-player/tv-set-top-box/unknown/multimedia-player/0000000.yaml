@@ -5,8 +5,8 @@
     architecture: null
     deviceName: 'general Droid Player device'
     marketingName: 'general Droid Player device'
-    manufacturer: 'Droid Player'
-    brand: 'Droid Player'
+    manufacturer: droid-player
+    brand: droid-player
     dualOrientation: null
     simCount: 0
     display:
@@ -22,7 +22,7 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: MyTuner
@@ -35,4 +35,4 @@
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple

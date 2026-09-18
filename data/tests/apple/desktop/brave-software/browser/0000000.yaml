@@ -5,8 +5,8 @@
     architecture: null
     deviceName: Macintosh
     marketingName: Macintosh
-    manufacturer: Apple
-    brand: Apple
+    manufacturer: apple
+    brand: apple
     dualOrientation: false
     simCount: 0
     display:
@@ -22,20 +22,64 @@
     name: macOS
     marketingName: macOS
     version: 10.15.2
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: Brave
     modus: null
     version: 80.0.3987.87
-    manufacturer: 'Brave Software'
+    manufacturer: brave-software
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 80.0.3987.87
-    manufacturer: Google
+    manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: '""'
+    x-requested-with: XMLHttpRequest
+    sec-ch-ua-platform: '"Android"'
+    sec-ch-ua-platform-version: '"13.0.0"'
+    sec-ch-ua: '"Chromium";v="116", "Not)A;Brand";v="24", "Brave";v="116"'
+    sec-ch-ua-mobile: '?0'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+  device:
+    architecture: null
+    deviceName: Macintosh
+    marketingName: Macintosh
+    manufacturer: apple
+    brand: apple
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: desktop
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Brave
+    modus: null
+    version: 116.0.0
+    manufacturer: brave-software
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 116.0.0
+    manufacturer: google
 -
   headers:
     user-agent: 'Brave Browser Nightly/93.1.31.33 Mac OS X'
@@ -43,8 +87,8 @@
     architecture: null
     deviceName: Macintosh
     marketingName: Macintosh
-    manufacturer: Apple
-    brand: Apple
+    manufacturer: apple
+    brand: apple
     dualOrientation: false
     simCount: 0
     display:
@@ -60,17 +104,17 @@
     name: 'Mac OS X'
     marketingName: 'Mac OS X'
     version: null
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: Brave
     modus: null
     version: 93.1.31.33
-    manufacturer: 'Brave Software'
+    manufacturer: brave-software
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple

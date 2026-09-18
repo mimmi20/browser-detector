@@ -22,20 +22,20 @@
     name: Windows
     marketingName: 'Windows 98'
     version: 98.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Sogou Spider'
     modus: null
     version: 1.0.0
-    manufacturer: Sogou
+    manufacturer: sogou
     type: search-bot
     isbot: true
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Sogou inst spider/4.0(+http://www.sogou.com/docs/help/webmasters.htm'
@@ -66,7 +66,7 @@
     name: 'Sogou Spider'
     modus: null
     version: 4.0.0
-    manufacturer: Sogou
+    manufacturer: sogou
     type: search-bot
     isbot: true
     bits: null
@@ -104,7 +104,7 @@
     name: 'Sogou Pic Spider'
     modus: null
     version: 3.0.0
-    manufacturer: Sogou
+    manufacturer: sogou
     type: search-bot
     isbot: true
     bits: null
@@ -142,7 +142,7 @@
     name: 'Sogou Web Spider'
     modus: null
     version: 4.0.0
-    manufacturer: Sogou
+    manufacturer: sogou
     type: search-bot
     isbot: true
     bits: null
@@ -180,7 +180,7 @@
     name: 'Sogou Orion Spider'
     modus: null
     version: 4.0.0
-    manufacturer: Sogou
+    manufacturer: sogou
     type: search-bot
     isbot: true
     bits: null
@@ -218,7 +218,7 @@
     name: 'Sogou Head Spider'
     modus: null
     version: 3.0.0
-    manufacturer: Sogou
+    manufacturer: sogou
     type: search-bot
     isbot: true
     bits: null
@@ -253,20 +253,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'Sogou Web Spider'
     modus: null
     version: 4.0.0
-    manufacturer: Sogou
+    manufacturer: sogou
     type: search-bot
     isbot: true
     bits: null
   engine:
     name: Blink
     version: 136.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-platform: '"Windows"'
@@ -294,17 +294,17 @@
     name: Windows
     marketingName: Windows
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Sogou Web Spider'
     modus: null
     version: 4.0.0
-    manufacturer: Sogou
+    manufacturer: sogou
     type: search-bot
     isbot: true
     bits: null
   engine:
     name: Blink
     version: 144.0.0
-    manufacturer: Google
+    manufacturer: google

@@ -5,8 +5,8 @@
     architecture: null
     deviceName: '631'
     marketingName: 'Touch HD 2'
-    manufacturer: PocketBook
-    brand: PocketBook
+    manufacturer: pocketbook
+    brand: pocketbook
     dualOrientation: true
     simCount: 0
     display:
@@ -22,17 +22,17 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: QtWebEngine
     modus: null
     version: 5.10.0
-    manufacturer: LogicWare
+    manufacturer: logicware
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 61.0.3163.140
-    manufacturer: Google
+    manufacturer: google

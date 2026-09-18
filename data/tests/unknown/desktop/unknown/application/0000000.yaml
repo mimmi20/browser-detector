@@ -22,7 +22,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Nightingale
@@ -35,7 +35,7 @@
   engine:
     name: Gecko
     version: 1.9.2.28
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: git/2.32.0.windows.2
@@ -60,7 +60,7 @@
     name: Windows
     marketingName: Windows
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Git
@@ -98,7 +98,7 @@
     name: Windows
     marketingName: 'Windows 10'
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: tutanota
@@ -111,4 +111,4 @@
   engine:
     name: Blink
     version: 124.0.6367.207
-    manufacturer: Google
+    manufacturer: google

@@ -22,20 +22,20 @@
     name: Windows
     marketingName: 'Windows XP'
     version: 5.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Nutch
     modus: null
     version: 1.7.0
-    manufacturer: Apache
+    manufacturer: apache
     type: crawler
     isbot: true
     bits: null
   engine:
     name: Gecko
     version: null
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0/Nutch-1.9'
@@ -60,20 +60,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Nutch
     modus: null
     version: 1.9.0
-    manufacturer: Apache
+    manufacturer: apache
     type: crawler
     isbot: true
     bits: null
   engine:
     name: Gecko
     version: 10.0.0
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36/Nutch-1.12'
@@ -98,20 +98,20 @@
     name: Windows
     marketingName: 'Windows 8.1'
     version: 8.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Nutch
     modus: null
     version: 1.12.0
-    manufacturer: Apache
+    manufacturer: apache
     type: crawler
     isbot: true
     bits: null
   engine:
     name: Blink
     version: 52.0.2743.116
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'GrowerIdeas Crawler/GrowerIdeas-nutch-1.6 (Crawls URLs for indexing content for our new search startup which aims to provide simple and smart search across curated content. For more info please contact helloworld@growerideas.com. If you think'
@@ -142,7 +142,7 @@
     name: Nutch
     modus: null
     version: 1.6.0
-    manufacturer: Apache
+    manufacturer: apache
     type: crawler
     isbot: true
     bits: null
@@ -180,14 +180,14 @@
     name: Nutch
     modus: null
     version: 1.0.0
-    manufacturer: Apache
+    manufacturer: apache
     type: crawler
     isbot: true
     bits: null
   engine:
     name: Gecko
     version: 1.9.2.8
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:17.0) Gecko/20100101 Firefox/17.0/Nutch-1.4'
@@ -212,20 +212,20 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: Nutch
     modus: null
     version: 1.4.0
-    manufacturer: Apache
+    manufacturer: apache
     type: crawler
     isbot: true
     bits: null
   engine:
     name: Gecko
     version: 17.0.0
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Kontoro/Nutch-0.9 (The Tiny Engine; http://wouah.homelinux.org; info at wouah dot eu)'
@@ -250,13 +250,13 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Nutch
     modus: null
     version: 0.9.0
-    manufacturer: Apache
+    manufacturer: apache
     type: crawler
     isbot: true
     bits: null
@@ -288,13 +288,13 @@
     name: Windows
     marketingName: 'Windows XP'
     version: 5.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Nutch
     modus: null
     version: 1.1.0
-    manufacturer: Apache
+    manufacturer: apache
     type: crawler
     isbot: true
     bits: null
@@ -326,17 +326,17 @@
     name: Windows
     marketingName: 'Windows XP'
     version: 5.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Nutch
     modus: null
     version: 1.2.0
-    manufacturer: Apache
+    manufacturer: apache
     type: crawler
     isbot: true
     bits: null
   engine:
     name: WebKit
     version: 534.10.0
-    manufacturer: Apple
+    manufacturer: apple

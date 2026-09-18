@@ -1,12 +1,50 @@
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 2.3.9; de-de; CUBOT C7 Build/MocorDroid2.3.5) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
+  device:
+    architecture: null
+    deviceName: C7
+    marketingName: C7
+    manufacturer: cubot
+    brand: cubot
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 480
+      height: 320
+      touch: true
+      size: 3.5
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: MocorDroid
+    marketingName: MocorDroid
+    version: 2.3.5
+    manufacturer: unknown
+    bits: null
+  client:
+    name: 'Android Webkit'
+    modus: null
+    version: 4.0.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 533.1.0
+    manufacturer: apple
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; X19) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: X19
     marketingName: X19
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -22,20 +60,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 76.0.3809.132
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 76.0.3809.132
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 9; MAX 2 Build/P00610)'
@@ -43,8 +81,8 @@
     architecture: null
     deviceName: 'Max 2'
     marketingName: 'Max 2'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 1
     display:
@@ -60,20 +98,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Android Browser'
     modus: null
     version: 2.1.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; MAX 2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36'
@@ -81,8 +119,8 @@
     architecture: null
     deviceName: 'Max 2'
     marketingName: 'Max 2'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 1
     display:
@@ -98,20 +136,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 77.0.3865.116
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 77.0.3865.116
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; R19) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36'
@@ -119,8 +157,8 @@
     architecture: null
     deviceName: R19
     marketingName: R19
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -136,20 +174,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 78.0.3904.108
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 78.0.3904.108
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; QUEST) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.93 Mobile Safari/537.36'
@@ -157,8 +195,8 @@
     architecture: null
     deviceName: Quest
     marketingName: Quest
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -174,20 +212,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 79.0.3945.93
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 79.0.3945.93
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; X20 PRO) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.136 Mobile Safari/537.36'
@@ -195,8 +233,8 @@
     architecture: null
     deviceName: 'X20 Pro'
     marketingName: 'X20 Pro'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -212,20 +250,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 79.0.3945.136
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 79.0.3945.136
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; KINGKONG_MINI) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.116 Mobile Safari/537.36'
@@ -233,8 +271,8 @@
     architecture: null
     deviceName: 'King Kong Mini'
     marketingName: 'King Kong Mini'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -250,20 +288,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 79.0.3945.116
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 79.0.3945.116
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; X19 S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36'
@@ -271,8 +309,8 @@
     architecture: null
     deviceName: 'X19 S'
     marketingName: 'X19 S'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -288,20 +326,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 83.0.4103.106
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 83.0.4103.106
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; X19 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/85.0.4183.101 Mobile Safari/537.36'
@@ -309,8 +347,8 @@
     architecture: null
     deviceName: X19
     marketingName: X19
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -326,20 +364,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 85.0.4183.101
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 85.0.4183.101
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 9; QUEST Build/P00610)'
@@ -347,8 +385,8 @@
     architecture: null
     deviceName: Quest
     marketingName: Quest
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -364,20 +402,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Android Browser'
     modus: null
     version: 2.1.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; QUEST Build/P00610; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.117 Mobile Safari/537.36'
@@ -385,8 +423,8 @@
     architecture: null
     deviceName: Quest
     marketingName: Quest
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -402,20 +440,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 80.0.3987.117
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 80.0.3987.117
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; NOTE 20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Mobile Safari/537.36'
@@ -423,8 +461,8 @@
     architecture: null
     deviceName: 'Note 20'
     marketingName: 'Note 20'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -440,20 +478,20 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 86.0.4240.198
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 86.0.4240.198
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; NOTE 20 PRO) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Mobile Safari/537.36'
@@ -461,8 +499,8 @@
     architecture: null
     deviceName: 'Note 20 Pro'
     marketingName: 'Note 20 Pro'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -478,20 +516,20 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 86.0.4240.198
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 86.0.4240.198
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 9; KINGKONG_MINI Build/PPR1.180610.011)'
@@ -499,8 +537,8 @@
     architecture: null
     deviceName: 'King Kong Mini'
     marketingName: 'King Kong Mini'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -516,20 +554,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Android Browser'
     modus: null
     version: 2.1.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; GT20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 Mobile Safari/537.36'
@@ -537,8 +575,8 @@
     architecture: null
     deviceName: GT20
     marketingName: GT20
-    manufacturer: Cubot
-    brand: Hafury
+    manufacturer: cubot
+    brand: hafury
     dualOrientation: true
     simCount: 1
     display:
@@ -554,20 +592,20 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 88.0.4324.93
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 88.0.4324.93
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; CUBOT J9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.152 Mobile Safari/537.36'
@@ -575,8 +613,8 @@
     architecture: null
     deviceName: J9
     marketingName: J9
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -592,20 +630,20 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 88.0.4324.152
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 88.0.4324.152
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; KINGKONG 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Mobile Safari/537.36'
@@ -613,8 +651,8 @@
     architecture: null
     deviceName: 'King Kong 7'
     marketingName: 'King Kong 7'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -630,20 +668,20 @@
     name: Android
     marketingName: Android
     version: 11.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 88.0.4324.181
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 88.0.4324.181
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; MAX 3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Mobile Safari/537.36'
@@ -651,8 +689,8 @@
     architecture: null
     deviceName: 'Max 3'
     marketingName: 'Max 3'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -668,20 +706,20 @@
     name: Android
     marketingName: Android
     version: 11.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 96.0.4664.104
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 96.0.4664.104
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; X19 S Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.92 Mobile Safari/537.36'
@@ -689,8 +727,8 @@
     architecture: null
     deviceName: 'X19 S'
     marketingName: 'X19 S'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -706,20 +744,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 77.0.3865.92
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 77.0.3865.92
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; MAX 2 Build/P00610; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/99.0.4844.88 Mobile Safari/537.36'
@@ -727,8 +765,8 @@
     architecture: null
     deviceName: 'Max 2'
     marketingName: 'Max 2'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 1
     display:
@@ -744,20 +782,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 99.0.4844.88
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 99.0.4844.88
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; NOTE 9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.58 Mobile Safari/537.36'
@@ -765,8 +803,8 @@
     architecture: null
     deviceName: 'Note 9'
     marketingName: 'Note 9'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -782,20 +820,20 @@
     name: Android
     marketingName: Android
     version: 11.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 100.0.4896.58
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 100.0.4896.58
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; KINGKONG MINI2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Mobile Safari/537.36'
@@ -803,8 +841,8 @@
     architecture: null
     deviceName: 'King Kong Mini 2'
     marketingName: 'King Kong Mini 2'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -820,20 +858,20 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 100.0.4896.127
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 100.0.4896.127
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; KINGKONG MINI 3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36'
@@ -841,8 +879,8 @@
     architecture: null
     deviceName: 'King Kong Mini 3'
     marketingName: 'King Kong Mini 3'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -858,20 +896,20 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 107.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 107.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; POCKET 3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36'
@@ -879,8 +917,8 @@
     architecture: null
     deviceName: 'Pocket 3'
     marketingName: 'Pocket 3'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -896,20 +934,20 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 108.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 108.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; X20 PRO Build/P00610; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/110.0.5481.63 Mobile Safari/537.36'
@@ -917,8 +955,8 @@
     architecture: null
     deviceName: 'X20 Pro'
     marketingName: 'X20 Pro'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -934,20 +972,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 110.0.5481.63
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 110.0.5481.63
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-model: '"NOTE 30"'
@@ -964,8 +1002,8 @@
     architecture: null
     deviceName: 'Note 30'
     marketingName: 'Note 30'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -981,20 +1019,20 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 113.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 113.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; KINGKONG POWER Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.162 Mobile Safari/537.36'
@@ -1002,8 +1040,8 @@
     architecture: null
     deviceName: 'King Kong Power'
     marketingName: 'King Kong Power'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -1019,20 +1057,20 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 113.0.5672.162
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 113.0.5672.162
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; GT20 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.131 Mobile Safari/537.36'
@@ -1040,8 +1078,8 @@
     architecture: null
     deviceName: GT20
     marketingName: GT20
-    manufacturer: Cubot
-    brand: Hafury
+    manufacturer: cubot
+    brand: hafury
     dualOrientation: true
     simCount: 1
     display:
@@ -1057,20 +1095,20 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 114.0.5735.131
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 114.0.5735.131
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; KINGKONG 9 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/120.0.6099.144 Mobile Safari/537.36'
@@ -1078,8 +1116,8 @@
     architecture: null
     deviceName: 'King Kong 9'
     marketingName: 'King Kong 9'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -1095,20 +1133,20 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 120.0.6099.144
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 120.0.6099.144
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; MAX 3 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/120.0.6099.230 Mobile Safari/537.36'
@@ -1116,8 +1154,8 @@
     architecture: null
     deviceName: 'Max 3'
     marketingName: 'Max 3'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -1133,20 +1171,20 @@
     name: Android
     marketingName: Android
     version: 11.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 120.0.6099.230
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 120.0.6099.230
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; P80 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.165 Mobile Safari/537.36'
@@ -1154,8 +1192,8 @@
     architecture: null
     deviceName: P80
     marketingName: P80
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -1171,20 +1209,20 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 121.0.6167.165
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 121.0.6167.165
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; KINGKONG_AX) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36'
@@ -1192,8 +1230,8 @@
     architecture: null
     deviceName: 'King Kong AX'
     marketingName: 'King Kong AX'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -1209,20 +1247,20 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 124.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 124.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; X30P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36'
@@ -1230,8 +1268,8 @@
     architecture: null
     deviceName: X30P
     marketingName: X30P
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -1247,20 +1285,20 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 126.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 126.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; Cubot Hafury V1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36'
@@ -1268,8 +1306,8 @@
     architecture: null
     deviceName: 'Hafury V1'
     marketingName: 'Hafury V1'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -1285,20 +1323,20 @@
     name: Android
     marketingName: Android
     version: 15.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 121.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 121.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; KINGKONG_ES) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Mobile Safari/537.36'
@@ -1306,8 +1344,8 @@
     architecture: null
     deviceName: 'King Kong ES'
     marketingName: 'King Kong ES'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -1323,20 +1361,20 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 128.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 128.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; NOTE 40 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/127.0.6533.103 Mobile Safari/537.36'
@@ -1344,8 +1382,8 @@
     architecture: null
     deviceName: 'Note 40'
     marketingName: 'Note 40'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -1361,20 +1399,20 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 127.0.6533.103
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 127.0.6533.103
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; X70 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/126.0.6478.186 Mobile Safari/537.36'
@@ -1382,8 +1420,8 @@
     architecture: null
     deviceName: X70
     marketingName: X70
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -1399,20 +1437,20 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 126.0.6478.186
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 126.0.6478.186
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-model: '"KINGKONG 9"'
@@ -1428,8 +1466,8 @@
     architecture: null
     deviceName: 'King Kong 9'
     marketingName: 'King Kong 9'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -1445,20 +1483,20 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 124.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 124.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-model: '"NOTE 21"'
@@ -1474,8 +1512,8 @@
     architecture: null
     deviceName: 'Note 21'
     marketingName: 'Note 21'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -1491,20 +1529,20 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 131.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 131.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; KINGKONG STAR 2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36'
@@ -1512,8 +1550,8 @@
     architecture: null
     deviceName: 'King Kong Star 2'
     marketingName: 'King Kong Star 2'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -1529,20 +1567,20 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 131.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 131.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; MEET) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36'
@@ -1550,8 +1588,8 @@
     architecture: null
     deviceName: Meet
     marketingName: Meet
-    manufacturer: Cubot
-    brand: Hafury
+    manufacturer: cubot
+    brand: hafury
     dualOrientation: true
     simCount: 2
     display:
@@ -1567,20 +1605,20 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 131.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 131.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-model: '"MAX 5"'
@@ -1598,8 +1636,8 @@
     architecture: null
     deviceName: 'Max 5'
     marketingName: 'Max 5'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -1615,20 +1653,20 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 138.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 138.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-model: '"NOTE 50"'
@@ -1646,8 +1684,8 @@
     architecture: null
     deviceName: 'Note 50'
     marketingName: 'Note 50'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -1663,20 +1701,20 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 137.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 137.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; KINGKONG MINI 3 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.168 Mobile Safari/537.36'
@@ -1684,8 +1722,8 @@
     architecture: null
     deviceName: 'King Kong Mini 3'
     marketingName: 'King Kong Mini 3'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -1701,20 +1739,20 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 138.0.7204.168
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 138.0.7204.168
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; KINGKONG ACE 3 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.7339.207 Mobile Safari/537.36'
@@ -1722,8 +1760,8 @@
     architecture: null
     deviceName: 'King Kong Ace 3'
     marketingName: 'King Kong Ace 3'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -1739,20 +1777,20 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 140.0.7339.207
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 140.0.7339.207
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-model: '"KINGKONG STAR"'
@@ -1770,8 +1808,8 @@
     architecture: null
     deviceName: 'King Kong Star'
     marketingName: 'King Kong Star'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -1787,20 +1825,20 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 141.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 141.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-model: '"KINGKONG X"'
@@ -1818,8 +1856,8 @@
     architecture: null
     deviceName: 'King Kong X'
     marketingName: 'King Kong X'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -1835,20 +1873,20 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 141.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 141.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; KINGKONG 11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.7390.122 Mobile Safari/537.36'
@@ -1856,8 +1894,8 @@
     architecture: null
     deviceName: 'King Kong 11'
     marketingName: 'King Kong 11'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -1873,20 +1911,20 @@
     name: Android
     marketingName: Android
     version: 15.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 141.0.7390.122
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 141.0.7390.122
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-model: '"P50"'
@@ -1904,8 +1942,8 @@
     architecture: null
     deviceName: P50
     marketingName: P50
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -1921,20 +1959,20 @@
     name: Android
     marketingName: Android
     version: 11.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 142.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 142.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-model: '"P80"'
@@ -1952,8 +1990,8 @@
     architecture: null
     deviceName: P80
     marketingName: P80
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -1969,20 +2007,20 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 144.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 144.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-model: '"P60"'
@@ -2000,8 +2038,8 @@
     architecture: null
     deviceName: P60
     marketingName: P60
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 1
     display:
@@ -2017,20 +2055,20 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 149.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-model: '"KINGKONG ACE 3"'
@@ -2048,8 +2086,8 @@
     architecture: null
     deviceName: 'King Kong Ace 3'
     marketingName: 'King Kong Ace 3'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -2065,20 +2103,20 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 149.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; KINGKONG MINI 4 Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/150.0.7871.3 Mobile Safari/537.36'
@@ -2086,8 +2124,8 @@
     architecture: null
     deviceName: 'KingKong Mini 4'
     marketingName: 'KingKong Mini 4'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 2
     display:
@@ -2103,20 +2141,20 @@
     name: Android
     marketingName: Android
     version: 15.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 150.0.7871.3
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 150.0.7871.3
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; NOTE 23 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
@@ -2124,8 +2162,8 @@
     architecture: null
     deviceName: 'Note 23'
     marketingName: 'Note 23'
-    manufacturer: Cubot
-    brand: Cubot
+    manufacturer: cubot
+    brand: cubot
     dualOrientation: true
     simCount: 1
     display:
@@ -2141,17 +2179,17 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google

@@ -22,20 +22,20 @@
     name: Windows
     marketingName: 'Windows XP'
     version: 5.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Google Partner Monitoring'
     modus: null
     version: null
-    manufacturer: Google
+    manufacturer: google
     type: site-monitor
     isbot: true
     bits: null
   engine:
     name: WebKit
     version: 535.1.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko; Google Page Speed Insights) Chrome/27.0.1453 Safari/537.36'
@@ -60,20 +60,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'Google PageSpeed Insights'
     modus: null
     version: null
-    manufacturer: Google
+    manufacturer: google
     type: site-monitor
     isbot: true
     bits: null
   engine:
     name: WebKit
     version: 537.36.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko; Google Page Speed Insights) Chrome/41.0.2272.118 Safari/537.36'
@@ -98,20 +98,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'Google PageSpeed Insights'
     modus: null
     version: null
-    manufacturer: Google
+    manufacturer: google
     type: site-monitor
     isbot: true
     bits: null
   engine:
     name: Blink
     version: 41.0.2272.118
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36(KHTML, like Gecko) Chrome/61.0.3116.0 Safari/537.36 Chrome-Lighthouse'
@@ -136,17 +136,17 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Lighthouse
     modus: null
     version: null
-    manufacturer: Google
+    manufacturer: google
     type: site-monitor
     isbot: true
     bits: null
   engine:
     name: Blink
     version: 61.0.3116.0
-    manufacturer: Google
+    manufacturer: google

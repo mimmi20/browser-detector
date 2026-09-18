@@ -22,20 +22,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
     version: 5.0.0
-    manufacturer: 'Duck Duck Go'
+    manufacturer: duck-duck-go
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 78.0.3904.96
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-platform: '"Windows"'
@@ -63,17 +63,17 @@
     name: Windows
     marketingName: 'Windows 10'
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
     version: 122.0.0
-    manufacturer: 'Duck Duck Go'
+    manufacturer: duck-duck-go
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 122.0.0
-    manufacturer: Google
+    manufacturer: google

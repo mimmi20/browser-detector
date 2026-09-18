@@ -60,7 +60,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: null
@@ -98,7 +98,7 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -136,7 +136,7 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -174,7 +174,7 @@
     name: iOS
     marketingName: iOS
     version: null
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: null
@@ -187,7 +187,7 @@
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'https://audioboom.com/boos/'
@@ -212,7 +212,7 @@
     name: iOS
     marketingName: iOS
     version: null
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: null
@@ -225,7 +225,7 @@
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'ZDM/4.0; Windows Mobile 8.1'
@@ -250,7 +250,7 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 8.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: null
@@ -288,7 +288,7 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 8.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: null
@@ -478,7 +478,7 @@
     name: Windows
     marketingName: 'Windows 8.1'
     version: 8.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: null
@@ -706,7 +706,7 @@
     name: 'Windows Mobile OS'
     marketingName: 'Windows Mobile OS'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: null
@@ -836,7 +836,7 @@
     manufacturer: unknown
 -
   headers:
-    user-agent: 'http://www.msai.in/uaprof/micromax/X455.xml'
+    user-agent: SEC-SGHC200
   device:
     architecture: null
     deviceName: 'general Mobile device'
@@ -934,7 +934,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: null
@@ -972,7 +972,7 @@
     name: iOS
     marketingName: iOS
     version: null
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: null
@@ -985,7 +985,45 @@
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
+-
+  headers:
+    user-agent: 7Dragons.FreeKindleBooks
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
 -
   headers:
     user-agent: K9/MIDP2.0/CLDC1.1/Screen-240X320
@@ -1010,7 +1048,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: null
@@ -1061,7 +1099,7 @@
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'CaptiveNetworkSupport-306.3.1 wispr'
@@ -1086,7 +1124,7 @@
     name: iOS
     marketingName: iOS
     version: null
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: null
@@ -1099,7 +1137,7 @@
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'KKT27i/MIDP-2.0 Configuration/CLDC-1.1/Screen-240x320'
@@ -1124,83 +1162,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: null
-    modus: null
-    version: null
-    manufacturer: unknown
-    type: unknown
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'http://www.msai.in/uaprof/micromax/X101.xml'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: null
-    modus: null
-    version: null
-    manufacturer: unknown
-    type: unknown
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'http://www.msai.in/uaprof/micromax/X1i_Extra.xml'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
+    manufacturer: sun
     bits: null
   client:
     name: null
@@ -1238,7 +1200,7 @@
     name: iOS
     marketingName: iOS
     version: null
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: null
@@ -1251,7 +1213,7 @@
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'CaptiveNetworkSupport-277.10.5 wispr'
@@ -1276,7 +1238,7 @@
     name: iOS
     marketingName: iOS
     version: null
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: null
@@ -1289,7 +1251,7 @@
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'CaptiveNetworkSupport-277 wispr'
@@ -1314,7 +1276,7 @@
     name: iOS
     marketingName: iOS
     version: null
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: null
@@ -1327,7 +1289,7 @@
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Look.su bot/2.0 (wap2) (http://look.su)'
@@ -1618,7 +1580,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: null
@@ -1656,7 +1618,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: null
@@ -2226,7 +2188,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: null
@@ -2264,7 +2226,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: null
@@ -2416,7 +2378,7 @@
     name: 'Symbian OS'
     marketingName: 'Symbian OS'
     version: null
-    manufacturer: 'Symbian Foundation'
+    manufacturer: symbianFoundation
     bits: null
   client:
     name: null
@@ -2454,7 +2416,7 @@
     name: 'Symbian OS'
     marketingName: 'Symbian OS'
     version: null
-    manufacturer: 'Symbian Foundation'
+    manufacturer: symbianFoundation
     bits: null
   client:
     name: null
@@ -2492,7 +2454,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: null
@@ -2530,7 +2492,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: null
@@ -2606,7 +2568,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: null
@@ -2644,7 +2606,7 @@
     name: 'Symbian OS'
     marketingName: 'Symbian OS'
     version: null
-    manufacturer: 'Symbian Foundation'
+    manufacturer: symbianFoundation
     bits: null
   client:
     name: null
@@ -2682,7 +2644,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: null
@@ -3024,7 +2986,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: null
@@ -3062,7 +3024,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: null
@@ -3100,7 +3062,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: null
@@ -3138,7 +3100,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: null
@@ -3176,7 +3138,463 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'TSM-30/25120201 Browser/1.2.1 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'TSM-30/24120201 Browser/1.2.1 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'TSM-30/24120201 Browser/1.2.1 Profile/MIDP-1.0 Configuration/CLDC-1.0'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'TSM-30/24110201 Browser/1.2.1 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Link/mainline'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'TSM-30/24110201 Browser/1.2.1 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Link/6.3.0.0.0'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'TSM-30/23110201 Browser/1.2.1 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Link/6.3.0.0.0'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'TSM-100v/42190013 Browser/1.2.1 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'TSM-100v/41190013 Browser/1.2.1 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'TSM-100v/41190013 Browser/1.2.1 Profile/MIDP-1.0 Configuration/CLDC-1.0'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'TSM-100/161654C0 Browser/1.2.1 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Link/mainline'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'TSM-100/141654C0 Browser/1.2.1 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Link/mainline'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'TSM-100/141053BB Browser/1.2.1 Profile/MIDP-1.0 Configuration/CLDC-1.0'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
     bits: null
   client:
     name: null
@@ -3345,424 +3763,6 @@
 -
   headers:
     user-agent: SMB3.1(Z105)/Samsung
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: null
-    modus: null
-    version: null
-    manufacturer: unknown
-    type: unknown
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'simpletest460346;1254874915;4acbdf23e6e563.29319365; wVEbc8eHVXIXZXPQQAFi5THTcU='
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: null
-    modus: null
-    version: null
-    manufacturer: unknown
-    type: unknown
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: silk/2.4
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: Google
-    bits: null
-  client:
-    name: null
-    modus: null
-    version: null
-    manufacturer: unknown
-    type: unknown
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'silk/1.0 ( http://www.slider.com/silk.htm)/3.7'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: Google
-    bits: null
-  client:
-    name: null
-    modus: null
-    version: null
-    manufacturer: unknown
-    type: unknown
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: silk/1.0
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: Google
-    bits: null
-  client:
-    name: null
-    modus: null
-    version: null
-    manufacturer: unknown
-    type: unknown
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: samsung
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: null
-    modus: null
-    version: null
-    manufacturer: unknown
-    type: unknown
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'ReqwirelessWeb/3.0 C55'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: null
-    modus: null
-    version: null
-    manufacturer: unknown
-    type: unknown
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'PT-GI100 CLDC/CLDC-1.0 MIDP/MIDP-1.0 UP.Link/1.1'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: null
-    modus: null
-    version: null
-    manufacturer: unknown
-    type: unknown
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'PT-GI100 CLDC/CLDC-1.0 MIDP/MIDP-1.0'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: null
-    modus: null
-    version: null
-    manufacturer: unknown
-    type: unknown
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'PT-GF500/R01 Profile/MIDP-2.0 Configuration/CLDC-1.1'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: null
-    modus: null
-    version: null
-    manufacturer: unknown
-    type: unknown
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'PT-G700 UP.Link/1.1'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: null
-    modus: null
-    version: null
-    manufacturer: unknown
-    type: unknown
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: PT-G700
   device:
     architecture: null
     deviceName: 'general Mobile device'

@@ -5,8 +5,8 @@
     architecture: null
     deviceName: 'NetTV Series'
     marketingName: 'NetTV Series'
-    manufacturer: Philips
-    brand: Philips
+    manufacturer: philips
+    brand: philips
     dualOrientation: false
     simCount: 0
     display:
@@ -22,7 +22,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: InettvBrowser
@@ -35,4 +35,4 @@
   engine:
     name: NetFront
     version: 4.1.0
-    manufacturer: Access
+    manufacturer: access

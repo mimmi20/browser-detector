@@ -5,8 +5,8 @@
     architecture: null
     deviceName: 'Smart 32 X-EOS'
     marketingName: 'Smart 32 X-EOS'
-    manufacturer: Dyon
-    brand: Dyon
+    manufacturer: dyon
+    brand: dyon
     dualOrientation: false
     simCount: 0
     display:
@@ -22,20 +22,20 @@
     name: 'lg webOS'
     marketingName: 'lg webOS'
     version: 5.0.0
-    manufacturer: LG
+    manufacturer: lg
     bits: null
   client:
     name: Chrome
     modus: null
     version: 68.0.3440.106
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 68.0.3440.106
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; DYON 2K Google TV Build/RTK2.230523.018; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/126.0.6478.134 Mobile Safari/537.36'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: '2K Smart TV'
     marketingName: '2K Smart TV'
-    manufacturer: Dyon
-    brand: Dyon
+    manufacturer: dyon
+    brand: dyon
     dualOrientation: false
     simCount: 0
     display:
@@ -60,17 +60,17 @@
     name: 'Android TV'
     marketingName: 'Android TV'
     version: 11.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 126.0.6478.134
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 126.0.6478.134
-    manufacturer: Google
+    manufacturer: google

@@ -11,8 +11,8 @@
     architecture: x86
     deviceName: 'Nexus 5X'
     marketingName: 'Nexus 5X'
-    manufacturer: LG
-    brand: Google
+    manufacturer: lg
+    brand: google
     dualOrientation: true
     simCount: 1
     display:
@@ -28,20 +28,20 @@
     name: Windows
     marketingName: 'Windows 10'
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Google Bot'
     modus: null
     version: 2.1.0
-    manufacturer: Google
+    manufacturer: google
     type: search-bot
     isbot: true
     bits: null
   engine:
     name: Blink
     version: 41.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-platform: '"macOS"'
@@ -52,8 +52,8 @@
     architecture: null
     deviceName: 'Nexus 5X'
     marketingName: 'Nexus 5X'
-    manufacturer: LG
-    brand: Google
+    manufacturer: lg
+    brand: google
     dualOrientation: true
     simCount: 1
     display:
@@ -69,17 +69,17 @@
     name: 'Mac OS X'
     marketingName: 'Mac OS X'
     version: null
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: Google-InspectionTool
     modus: null
     version: 1.0.0
-    manufacturer: Google
+    manufacturer: google
     type: search-bot
     isbot: true
     bits: null
   engine:
     name: Blink
     version: 124.0.0
-    manufacturer: Google
+    manufacturer: google

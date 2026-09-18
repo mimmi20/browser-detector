@@ -5,8 +5,8 @@
     architecture: null
     deviceName: 'E-Tab 4'
     marketingName: 'E-Tab 4'
-    manufacturer: 'General Mobile'
-    brand: 'General Mobile'
+    manufacturer: general-mobile
+    brand: general-mobile
     dualOrientation: true
     simCount: 0
     display:
@@ -22,17 +22,17 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 9.9.1.554
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: U2
     version: 1.0.0
-    manufacturer: UCWeb
+    manufacturer: ucweb

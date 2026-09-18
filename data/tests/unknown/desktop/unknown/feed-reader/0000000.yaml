@@ -22,7 +22,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: FreshRSS
@@ -60,7 +60,7 @@
     name: Windows
     marketingName: Windows
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: FeedDemon
@@ -98,7 +98,7 @@
     name: Windows
     marketingName: 'Windows 8'
     version: 8.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'RSS Bandit'
@@ -136,7 +136,7 @@
     name: Windows
     marketingName: Windows
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: RSSOwl
@@ -174,7 +174,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: RSSOwl
@@ -212,7 +212,7 @@
     name: 'Windows NT'
     marketingName: 'Windows NT'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'RSS Bandit'
@@ -250,7 +250,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: RSSOwl
@@ -288,7 +288,7 @@
     name: Windows
     marketingName: 'Windows XP'
     version: 5.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: SharpReader
@@ -326,7 +326,7 @@
     name: Windows
     marketingName: 'Windows XP'
     version: 5.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: NewsGator
@@ -339,7 +339,7 @@
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Newsboat/2.29.0 (Linux x86_64)'
@@ -364,7 +364,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Newsboat

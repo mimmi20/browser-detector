@@ -1,5 +1,43 @@
 -
   headers:
+    user-agent: 'TuneIn Radio/6.2 (Android 10; DROID4; Java)'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Java Standard Library'
+    modus: null
+    version: null
+    manufacturer: oracle
+    type: library
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
     user-agent: 'SoftBank/1.0/920T/TJ001 Java/Java/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
     architecture: null
@@ -22,13 +60,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Java Standard Library'
     modus: null
     version: 1.0.0
-    manufacturer: Oracle
+    manufacturer: oracle
     type: library
     isbot: false
     bits: null
@@ -60,13 +98,13 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Java Standard Library'
     modus: null
     version: null
-    manufacturer: Oracle
+    manufacturer: oracle
     type: library
     isbot: false
     bits: null
@@ -98,13 +136,13 @@
     name: JavaOS
     marketingName: JavaOS
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Java Standard Library'
     modus: null
     version: null
-    manufacturer: Oracle
+    manufacturer: oracle
     type: library
     isbot: false
     bits: null

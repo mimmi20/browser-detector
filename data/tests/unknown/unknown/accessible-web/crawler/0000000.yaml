@@ -28,14 +28,14 @@
     name: AccessibleWebBot
     modus: null
     version: 1.0.0
-    manufacturer: 'Accessible Web'
+    manufacturer: accessible-web
     type: crawler
     isbot: true
     bits: null
   engine:
     name: Blink
     version: 81.0.4044.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; AccessibleWebBot/1.0; +https://accessibleweb.com/bot/)'
@@ -66,7 +66,7 @@
     name: AccessibleWebBot
     modus: null
     version: 1.0.0
-    manufacturer: 'Accessible Web'
+    manufacturer: accessible-web
     type: crawler
     isbot: true
     bits: null
@@ -104,11 +104,11 @@
     name: AccessibleWebBot
     modus: null
     version: 1.0.0
-    manufacturer: 'Accessible Web'
+    manufacturer: accessible-web
     type: crawler
     isbot: true
     bits: null
   engine:
     name: WebKit
     version: 537.36.0
-    manufacturer: Apple
+    manufacturer: apple

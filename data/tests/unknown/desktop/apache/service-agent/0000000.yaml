@@ -22,13 +22,13 @@
     name: Debian
     marketingName: Debian
     version: null
-    manufacturer: 'Software in the Public Interest'
+    manufacturer: softwareInThePublicInterest
     bits: null
   client:
     name: Apache
     modus: null
     version: 2.4.10
-    manufacturer: Apache
+    manufacturer: apache
     type: service-agent
     isbot: true
     bits: null
@@ -60,13 +60,13 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: Apache
     modus: null
     version: 2.4.34
-    manufacturer: Apache
+    manufacturer: apache
     type: service-agent
     isbot: true
     bits: null
@@ -98,13 +98,13 @@
     name: 'Fedora Linux'
     marketingName: 'Fedora Linux'
     version: null
-    manufacturer: Redhat
+    manufacturer: redhat
     bits: null
   client:
     name: Apache
     modus: null
     version: 2.2.2
-    manufacturer: Apache
+    manufacturer: apache
     type: service-agent
     isbot: true
     bits: null

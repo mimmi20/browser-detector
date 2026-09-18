@@ -5,8 +5,8 @@
     architecture: null
     deviceName: 'iPad 6,7'
     marketingName: 'iPad Pro 12.9" Wi-Fi'
-    manufacturer: Apple
-    brand: Apple
+    manufacturer: apple
+    brand: apple
     dualOrientation: true
     simCount: 0
     display:
@@ -22,17 +22,17 @@
     name: iOS
     marketingName: iOS
     version: 10.2.1
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: 'Weibo App'
     modus: null
     version: 7.3.0
-    manufacturer: 'Sina Weibo'
+    manufacturer: sina-weibo
     type: mobile-application
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 602.4.6
-    manufacturer: Apple
+    manufacturer: apple

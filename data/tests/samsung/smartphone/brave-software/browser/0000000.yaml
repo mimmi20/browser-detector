@@ -5,8 +5,8 @@
     architecture: null
     deviceName: SM-G960U
     marketingName: 'Galaxy S9 (USA)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -22,20 +22,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Brave
     modus: null
     version: 74.0.0
-    manufacturer: 'Brave Software'
+    manufacturer: brave-software
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 74.0.3729.157
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: com.brave.browser
@@ -44,8 +44,8 @@
     architecture: null
     deviceName: SM-A307FN
     marketingName: 'Galaxy A30s (Global)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -61,20 +61,20 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Brave
     modus: null
     version: null
-    manufacturer: 'Brave Software'
+    manufacturer: brave-software
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 92.0.4515.115
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-G991B Build/RP1A.200720.012) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.49 Mobile Safari/537.36 Brave/1.80.122'
@@ -82,8 +82,8 @@
     architecture: null
     deviceName: SM-G991B
     marketingName: 'Galaxy S21 5G (International)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -99,17 +99,17 @@
     name: Android
     marketingName: Android
     version: 11.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Brave
     modus: null
     version: 1.80.122
-    manufacturer: 'Brave Software'
+    manufacturer: brave-software
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 138.0.7204.49
-    manufacturer: Google
+    manufacturer: google

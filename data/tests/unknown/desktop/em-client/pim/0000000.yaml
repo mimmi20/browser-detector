@@ -22,20 +22,20 @@
     name: Windows
     marketingName: 'Windows 10'
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'eM Client'
     modus: null
     version: 7.1.30440.0
-    manufacturer: 'eM Client'
+    manufacturer: em-client
     type: pim
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 55.0.2883.87
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: eMClientforMicrosoftStore/10.3.2619.0
@@ -66,7 +66,7 @@
     name: 'eM Client'
     modus: null
     version: null
-    manufacturer: 'eM Client'
+    manufacturer: em-client
     type: pim
     isbot: false
     bits: null

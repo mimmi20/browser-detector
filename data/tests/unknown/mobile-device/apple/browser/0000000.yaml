@@ -22,20 +22,20 @@
     name: MeeGo
     marketingName: MeeGo
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.34.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (SymbianOS/9.1  U  en-us) AppleWebKit/413 (KHTML, like Gecko) Safari/413'
@@ -60,20 +60,58 @@
     name: 'Symbian OS'
     marketingName: 'Symbian OS'
     version: 9.1.0
-    manufacturer: 'Symbian Foundation'
+    manufacturer: symbianFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: 3.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 413.0.0
-    manufacturer: Apple
+    manufacturer: apple
+-
+  headers:
+    user-agent: '; GT-I9300 Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: Safari
+    modus: null
+    version: 4.0.0
+    manufacturer: apple
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 534.30.0
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/532.3.3 (KHTML, like Gecko) Version/4.0.2 Safari/532.3.3'
@@ -98,20 +136,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.0.2
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 532.3.3
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/533.22.7 (KHTML, like Gecko) Version/5.0 Safari/533.22.7'
@@ -136,20 +174,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 5.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 533.22.7
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/532.18.1 (KHTML, like Gecko) Version/5.1 Safari/532.18.1'
@@ -174,20 +212,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 5.1.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 532.18.1
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/533.46.7 (KHTML, like Gecko) Version/4.1 Safari/533.46.7'
@@ -212,20 +250,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.1.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 533.46.7
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/532.26.7 (KHTML, like Gecko) Version/4.0 Safari/532.26.7'
@@ -250,20 +288,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 532.26.7
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/531.45.2 (KHTML, like Gecko) Version/4.1 Safari/531.45.2'
@@ -288,20 +326,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.1.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 531.45.2
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (SymbianOS/9.1; U; en-us) AppleWebKit/413 (KHTML, like Gecko) Safari/413 es61i'
@@ -326,20 +364,20 @@
     name: 'Symbian OS'
     marketingName: 'Symbian OS'
     version: 9.1.0
-    manufacturer: 'Symbian Foundation'
+    manufacturer: symbianFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: 3.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 413.0.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'tablet Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30'
@@ -370,14 +408,14 @@
     name: Safari
     modus: null
     version: 4.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.30.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/534.13.3 (KHTML, like Gecko) Version/5.0.5 Safari/534.13.3'
@@ -402,20 +440,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 5.0.5
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.13.3
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (SymbianOS/9.1; U; xx) AppleWebKit/413 (KHTML, like Gecko) Safari/413'
@@ -440,20 +478,20 @@
     name: 'Symbian OS'
     marketingName: 'Symbian OS'
     version: 9.1.0
-    manufacturer: 'Symbian Foundation'
+    manufacturer: symbianFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: 3.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 413.0.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (BB10; STL100-2) AppleWebKit/BB10 (KHTML, like Gecko) Version/BB10 Mobile Safari/BB10sdemobile-app'
@@ -484,14 +522,14 @@
     name: Safari
     modus: null
     version: null
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Symbian/3; U; 500; ar-AE) AppleWebKit/534.3 (KHTML, like Gecko) Shazam Mobile Safari/534.3'
@@ -516,20 +554,20 @@
     name: 'Symbian OS'
     marketingName: 'Symbian OS'
     version: null
-    manufacturer: 'Symbian Foundation'
+    manufacturer: symbianFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.3.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Symbian; U; 603; de-DE) AppleWebKit/534.3 (KHTML, like Gecko) Shazam Mobile Safari/534.3'
@@ -554,20 +592,20 @@
     name: 'Symbian OS'
     marketingName: 'Symbian OS'
     version: null
-    manufacturer: 'Symbian Foundation'
+    manufacturer: symbianFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.3.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Symbian; U; 700; de-DE) AppleWebKit/534.3 (KHTML, like Gecko) Qt/4.8.0 Mobile Safari/534.3'
@@ -592,20 +630,20 @@
     name: 'Symbian OS'
     marketingName: 'Symbian OS'
     version: null
-    manufacturer: 'Symbian Foundation'
+    manufacturer: symbianFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.3.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Symbian; U; 701; en-GB) AppleWebKit/534.3 (KHTML, like Gecko) QtTestBrowser/0.1 Mobile Safari/534.3'
@@ -630,20 +668,20 @@
     name: 'Symbian OS'
     marketingName: 'Symbian OS'
     version: null
-    manufacturer: 'Symbian Foundation'
+    manufacturer: symbianFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.3.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Symbian/3; U; C6-01; de-DE) AppleWebKit/534.3 (KHTML, like Gecko) Qt/4.7.4 Mobile Safari/534.3'
@@ -668,20 +706,20 @@
     name: 'Symbian OS'
     marketingName: 'Symbian OS'
     version: null
-    manufacturer: 'Symbian Foundation'
+    manufacturer: symbianFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.3.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Symbian/3; U; E7-00; de-DE) AppleWebKit/534.3 (KHTML, like Gecko) Qt/4.7.4 Mobile Safari/534.3'
@@ -706,20 +744,20 @@
     name: 'Symbian OS'
     marketingName: 'Symbian OS'
     version: null
-    manufacturer: 'Symbian Foundation'
+    manufacturer: symbianFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.3.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Symbian; U; Oro; de-DE) AppleWebKit/534.3 (KHTML, like Gecko) Qt/4.8.0 Mobile Safari/534.3'
@@ -744,20 +782,20 @@
     name: 'Symbian OS'
     marketingName: 'Symbian OS'
     version: null
-    manufacturer: 'Symbian Foundation'
+    manufacturer: symbianFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.3.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Symbian/3; U; X7-00; de-DE) AppleWebKit/534.3 (KHTML, like Gecko) Qt/4.7.4 Mobile Safari/534.3'
@@ -782,20 +820,58 @@
     name: 'Symbian OS'
     marketingName: 'Symbian OS'
     version: null
-    manufacturer: 'Symbian Foundation'
+    manufacturer: symbianFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.3.0
-    manufacturer: Apple
+    manufacturer: apple
+-
+  headers:
+    user-agent: DumontMobileWrapperiPhone
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: iOS
+    marketingName: iOS
+    version: null
+    manufacturer: apple
+    bits: null
+  client:
+    name: 'Mobile Safari UIWebView'
+    modus: null
+    version: null
+    manufacturer: apple
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: null
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (SymbianOS/9.1; U; en-us) AppleWebKit/413 (KHTML, like Gecko) Safari/413 es50'
@@ -820,20 +896,20 @@
     name: 'Symbian OS'
     marketingName: 'Symbian OS'
     version: 9.1.0
-    manufacturer: 'Symbian Foundation'
+    manufacturer: symbianFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: 3.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 413.0.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (mobile; CPU ARM Linux 2.6.21;en-us) AppleWebKit/525.1 (bookeen/cybook) Orizon/1.0 (screen 600x800)'
@@ -858,20 +934,20 @@
     name: Linux
     marketingName: Linux
     version: 2.6.21
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: null
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 525.1.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (SymbianOS/9.1; U; en-us) AppleWebKit/413 (KHTML, like Gecko) Safari/413'
@@ -896,20 +972,20 @@
     name: 'Symbian OS'
     marketingName: 'Symbian OS'
     version: 9.1.0
-    manufacturer: 'Symbian Foundation'
+    manufacturer: symbianFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: 3.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 413.0.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (SymbianOS/9.1; U; en-us) AppleWebKit/413 (KHTML, like Gecko) Safari/413 es61'
@@ -934,20 +1010,20 @@
     name: 'Symbian OS'
     marketingName: 'Symbian OS'
     version: 9.1.0
-    manufacturer: 'Symbian Foundation'
+    manufacturer: symbianFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: 3.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 413.0.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Andorid; CPU Andorid OS 10_3_2  ) AppleWebKit/603.2.4 (KHTML, like Gecko) Mobile/14F89 Tx(HTAO/3.3.3) WindVane/8.1.0 HTAO(channel/701287@htao_Andorid_3.3.3) 640x1136'
@@ -972,20 +1048,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: null
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 603.2.4
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'ultrafone 105+(Linux; U;) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0.3 Mobile Safari/534.30'
@@ -1010,20 +1086,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.0.3
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.30.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Zen 104(Linux; U;) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.2.2 Mobile Safari/534.30'
@@ -1048,20 +1124,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.2.2
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.30.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'ultrafone 105(Linux; U;) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0.3 Mobile Safari/534.30'
@@ -1086,20 +1162,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.0.3
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.30.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (SymbianOS/9.1; U; en-us) AppleWebKit/413 (KHTML, like Gecko) Safari/413 es65'
@@ -1124,20 +1200,58 @@
     name: 'Symbian OS'
     marketingName: 'Symbian OS'
     version: 9.1.0
-    manufacturer: 'Symbian Foundation'
+    manufacturer: symbianFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: 3.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 413.0.0
-    manufacturer: Apple
+    manufacturer: apple
+-
+  headers:
+    user-agent: InquisitoriPhone/1
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'iPhone OS'
+    marketingName: 'iPhone OS'
+    version: 1.0.0
+    manufacturer: apple
+    bits: null
+  client:
+    name: 'Mobile Safari UIWebView'
+    modus: null
+    version: null
+    manufacturer: apple
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: null
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (SymbianOS/9.1; U; en-us) AppleWebKit/413 (KHTML, like Gecko) Safari/413 UP.Link/6.5.0.0.06.5.0.0.06.5.0.0.0'
@@ -1162,20 +1276,20 @@
     name: 'Symbian OS'
     marketingName: 'Symbian OS'
     version: 9.1.0
-    manufacturer: 'Symbian Foundation'
+    manufacturer: symbianFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: 3.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 413.0.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (SymbianOS/9.1; U; en-us) AppleWebKit/413 (KHTML, like Gecko) Safari/413 UP.Link/6.5.0.0.0'
@@ -1200,20 +1314,20 @@
     name: 'Symbian OS'
     marketingName: 'Symbian OS'
     version: 9.1.0
-    manufacturer: 'Symbian Foundation'
+    manufacturer: symbianFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: 3.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 413.0.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (SymbianOS/9.1; U; en-us) AppleWebKit/413 (KHTML, like Gecko) Safari/413 UP.Link/6.3.1.13.0'
@@ -1238,20 +1352,20 @@
     name: 'Symbian OS'
     marketingName: 'Symbian OS'
     version: 9.1.0
-    manufacturer: 'Symbian Foundation'
+    manufacturer: symbianFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: 3.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 413.0.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (SymbianOS/9.1; U; en-us) AppleWebKit/413 (KHTML, like Gecko) Safari/413 es50 UP.Link/6.2.3.23.0'
@@ -1276,20 +1390,20 @@
     name: 'Symbian OS'
     marketingName: 'Symbian OS'
     version: 9.1.0
-    manufacturer: 'Symbian Foundation'
+    manufacturer: symbianFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: 3.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 413.0.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (SymbianOS/9.1; U; en) AppleWebKit/413 (KHTML, like Gecko) Safari/413'
@@ -1314,20 +1428,20 @@
     name: 'Symbian OS'
     marketingName: 'Symbian OS'
     version: 9.1.0
-    manufacturer: 'Symbian Foundation'
+    manufacturer: symbianFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: 3.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 413.0.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (SymbianOS/9.1; U; de) AppleWebKit/413 (KHTML, like Gecko) Safari/413'
@@ -1352,20 +1466,20 @@
     name: 'Symbian OS'
     marketingName: 'Symbian OS'
     version: 9.1.0
-    manufacturer: 'Symbian Foundation'
+    manufacturer: symbianFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: 3.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 413.0.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (PUMA Phone M1/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1; 240x320) AppleWebKit/420+ (KHTML, like Gecko) Safari/420+'
@@ -1390,20 +1504,20 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: Safari
     modus: null
     version: 3.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 420.0.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: ') Final Edition) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
@@ -1434,14 +1548,14 @@
     name: Safari
     modus: null
     version: 4.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 533.1.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (MeeGo; U; de-AT) AppleWebKit/534.3 (KHTML, like Gecko) Qt/4.7.4 Safari/534.3'
@@ -1466,20 +1580,20 @@
     name: MeeGo
     marketingName: MeeGo
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.3.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (MeeGo; U; de-CH) AppleWebKit/534.3 (KHTML, like Gecko) Qt/4.7.4 Safari/534.3'
@@ -1504,20 +1618,20 @@
     name: MeeGo
     marketingName: MeeGo
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.3.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
@@ -1548,14 +1662,90 @@
     name: Safari
     modus: null
     version: 4.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 533.1.0
-    manufacturer: Apple
+    manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Intel Mac OSX 10_6_3; 3.2; de-de; MZ601 Build/HTJ85B) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.6.3
+    manufacturer: apple
+    bits: null
+  client:
+    name: Safari
+    modus: null
+    version: 4.0.0
+    manufacturer: apple
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 534.13.0
+    manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Intel Mac OSX 10_6_3; 3.2; en-us; MZ601 Build/HTJ85B) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.6.3
+    manufacturer: apple
+    bits: null
+  client:
+    name: Safari
+    modus: null
+    version: 4.0.0
+    manufacturer: apple
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 534.13.0
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; Linux; nl-NL) AppleWebKit/533.3 (KHTML, like Gecko) trojita/v0.1-416-gc83c68e Mobile Safari/533.3'
@@ -1580,20 +1770,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 533.3.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (SymbianOS/9.1; U;.en-us)AppleWebKit/413 (KHTML, like Gecko) Safari/413'
@@ -1618,20 +1808,58 @@
     name: 'Symbian OS'
     marketingName: 'Symbian OS'
     version: 9.1.0
-    manufacturer: 'Symbian Foundation'
+    manufacturer: symbianFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: 3.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 413.0.0
-    manufacturer: Apple
+    manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (X11; ; U; Linux armv7l; zh-cn) AppleWebKit/534.26+ (KHTML, like Gecko) Version/5.0 Safari/534.26+ Kindle SkipStone 1.0.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linuxFoundation
+    bits: null
+  client:
+    name: Safari
+    modus: null
+    version: 5.0.0
+    manufacturer: apple
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 534.26.0
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Ubuntu; Mobile) WebKit/537.36'
@@ -1656,20 +1884,20 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: Safari
     modus: null
     version: null
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 537.36.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows CE 7.0) AppleWebKit/537.13.0.1379224625+ (KHTML, like Gecko)'
@@ -1694,20 +1922,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: null
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 537.13.0.1379224625
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Ubuntu; Tablet) WebKit/537.21'
@@ -1732,20 +1960,20 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: Safari
     modus: null
     version: null
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 537.21.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; xx; OpenTV Build/5.1.2) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
@@ -1770,20 +1998,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 533.1.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (MeeGo) AppleWebKit/534.13 (KHTML, like Gecko) Mobile Safari/534.13'
@@ -1808,20 +2036,20 @@
     name: MeeGo
     marketingName: MeeGo
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.13.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Ubuntu; Mobile) WebKit/537.21'
@@ -1846,20 +2074,20 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: Safari
     modus: null
     version: null
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 537.21.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Andorid; CPU Andorid OS 9_3_4  ) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 Tx(CUNTAO/5.3.2) WindVane/8.1.0 750x1334'
@@ -1890,14 +2118,14 @@
     name: Safari
     modus: null
     version: null
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 601.1.46
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Andorid; CPU Andorid OS 10_3_1  ) AppleWebKit/603.1.30 (KHTML, like Gecko) Mobile/14E304 Tx(Tx/6.8.1) WindVane/8.2.0 640x1136'
@@ -1922,20 +2150,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: null
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 603.1.30
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Andorid; CPU Andorid OS 10_3_1  ) AppleWebKit/603.1.30 (KHTML, like Gecko) Mobile/14E304 Tx(ET/7.10.0) WindVane/8.1.0   640x1136'
@@ -1960,20 +2188,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: null
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 603.1.30
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Andorid; CPU Andorid OS 10_1_1  ) AppleWebKit/602.2.14 (KHTML, like Gecko) Mobile/14B150 Tx(Tx/6.8.1) WindVane/8.2.0 1242x2208'
@@ -2004,14 +2232,14 @@
     name: Safari
     modus: null
     version: null
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 602.2.14
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Andorid; CPU Andorid OS 7_0_6  ) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11B651 Safari/9537.53'
@@ -2042,14 +2270,14 @@
     name: Safari
     modus: null
     version: 7.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 537.51.1
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Andorid; CPU Andorid OS 10_3_2  ) AppleWebKit/603.2.4 (KHTML, like Gecko) Mobile/14F89 Tx(Tx/6.8.1) WindVane/8.2.0 1242x2208'
@@ -2080,14 +2308,52 @@
     name: Safari
     modus: null
     version: null
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 603.2.4
-    manufacturer: Apple
+    manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (X11; ; U; Linux armv7l; en-us) AppleWebKit/534.26+ (KHTML, like Gecko) Version/5.0 Safari/534.26+ Kindle SkipStone 1.0.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linuxFoundation
+    bits: null
+  client:
+    name: Safari
+    modus: null
+    version: 5.0.0
+    manufacturer: apple
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 534.26.0
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/535.13.7 (KHTML, like Gecko) Version/4.0 Safari/535.13.7 comdirect/1.0 (appVersion:21.7.0;deviceType:mobile)'
@@ -2112,20 +2378,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 535.13.7
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/533.29.7 (KHTML, like Gecko) Version/4.1 Safari/533.29.7'
@@ -2150,20 +2416,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.1.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 533.29.7
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/533.31.6 (KHTML, like Gecko) Version/4.0 Safari/533.31.6'
@@ -2188,20 +2454,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 533.31.6
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'AppleWebKit/534.46 (KHTML,like Gecko) Version/5.1 Mobile Safari/10600.6.3'
@@ -2232,14 +2498,14 @@
     name: Safari
     modus: null
     version: 5.1.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.46.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (SymbianOS/9.1; U; [en-us]) AppleWebKit/413 (KHTML, like Gecko) Safari/413'
@@ -2264,20 +2530,20 @@
     name: 'Symbian OS'
     marketingName: 'Symbian OS'
     version: 9.1.0
-    manufacturer: 'Symbian Foundation'
+    manufacturer: symbianFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: 3.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 413.0.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/532.47.2 (KHTML, like Gecko) Version/4.1 Safari/532.47.2'
@@ -2302,20 +2568,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.1.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 532.47.2
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/535.9.3 (KHTML, like Gecko) Version/5.0.2 Safari/535.9.3'
@@ -2340,20 +2606,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 5.0.2
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 535.9.3
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/534.15.6 (KHTML, like Gecko) Version/5.0.1 Safari/534.15.6'
@@ -2378,20 +2644,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 5.0.1
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.15.6
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/535.40.1 (KHTML, like Gecko) Version/5.1 Safari/535.40.1'
@@ -2416,20 +2682,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 5.1.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 535.40.1
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/535.19.3 (KHTML, like Gecko) Version/4.0.3 Safari/535.19.3'
@@ -2454,20 +2720,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.0.3
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 535.19.3
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/535.15.5 (KHTML, like Gecko) Version/4.0 Safari/535.15.5'
@@ -2492,20 +2758,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 535.15.5
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/532.44.7 (KHTML, like Gecko) Version/5.0.2 Safari/532.44.7'
@@ -2530,20 +2796,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 5.0.2
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 532.44.7
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/532.40.4 (KHTML, like Gecko) Version/5.1 Safari/532.40.4'
@@ -2568,20 +2834,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 5.1.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 532.40.4
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/531.11.5 (KHTML, like Gecko) Version/5.0.5 Safari/531.11.5'
@@ -2606,20 +2872,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 5.0.5
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 531.11.5
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/532.21.4 (KHTML, like Gecko) Version/5.1 Safari/532.21.4'
@@ -2644,20 +2910,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 5.1.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 532.21.4
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/533.49.4 (KHTML, like Gecko) Version/5.0.4 Safari/533.49.4'
@@ -2682,20 +2948,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 5.0.4
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 533.49.4
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/532.47.7 (KHTML, like Gecko) Version/4.0.5 Safari/532.47.7'
@@ -2720,20 +2986,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.0.5
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 532.47.7
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/534.17.5 (KHTML, like Gecko) Version/5.0.3 Safari/534.17.5'
@@ -2758,20 +3024,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 5.0.3
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.17.5
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/531.21.7 (KHTML, like Gecko) Version/5.0.1 Safari/531.21.7'
@@ -2796,20 +3062,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 5.0.1
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 531.21.7
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/533.41.6 (KHTML, like Gecko) Version/4.1 Safari/533.41.6'
@@ -2834,20 +3100,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.1.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 533.41.6
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/533.14.2 (KHTML, like Gecko) Version/5.0.5 Safari/533.14.2'
@@ -2872,20 +3138,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 5.0.5
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 533.14.2
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/532.7.2 (KHTML, like Gecko) Version/5.0.2 Safari/532.7.2'
@@ -2910,20 +3176,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 5.0.2
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 532.7.2
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/532.47.2 (KHTML, like Gecko) Version/4.0.2 Safari/532.47.2'
@@ -2948,20 +3214,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.0.2
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 532.47.2
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/535.24.2 (KHTML, like Gecko) Version/5.0.5 Safari/535.24.2'
@@ -2986,20 +3252,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 5.0.5
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 535.24.2
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/533.46.1 (KHTML, like Gecko) Version/4.0.1 Safari/533.46.1'
@@ -3024,20 +3290,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.0.1
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 533.46.1
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/531.5.2 (KHTML, like Gecko) Version/5.1 Safari/531.5.2'
@@ -3062,20 +3328,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 5.1.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 531.5.2
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/535.41.6 (KHTML, like Gecko) Version/5.0.1 Safari/535.41.6'
@@ -3100,20 +3366,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 5.0.1
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 535.41.6
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/535.34.3 (KHTML, like Gecko) Version/5.0.1 Safari/535.34.3'
@@ -3138,20 +3404,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 5.0.1
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 535.34.3
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/532.42.5 (KHTML, like Gecko) Version/5.0.1 Safari/532.42.5'
@@ -3176,20 +3442,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 5.0.1
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 532.42.5
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/531.49.6 (KHTML, like Gecko) Version/4.0.5 Safari/531.49.6'
@@ -3214,20 +3480,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.0.5
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 531.49.6
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/532.29.3 (KHTML, like Gecko) Version/5.0.5 Safari/532.29.3'
@@ -3252,20 +3518,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 5.0.5
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 532.29.3
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/534.22.7 (KHTML, like Gecko) Version/5.0 Safari/534.22.7'
@@ -3290,20 +3556,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 5.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.22.7
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/534.3.4 (KHTML, like Gecko) Version/4.0.3 Safari/534.3.4'
@@ -3328,20 +3594,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.0.3
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.3.4
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/534.34.5 (KHTML, like Gecko) Version/4.1 Safari/534.34.5'
@@ -3366,20 +3632,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.1.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.34.5
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/531.34.6 (KHTML, like Gecko) Version/4.0.3 Safari/531.34.6'
@@ -3404,20 +3670,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.0.3
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 531.34.6
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/531.32.5 (KHTML, like Gecko) Version/5.1 Safari/531.32.5'
@@ -3442,20 +3708,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 5.1.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 531.32.5
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/531.5.1 (KHTML, like Gecko) Version/4.0 Safari/531.5.1'
@@ -3480,20 +3746,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 531.5.1
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/531.2.1 (KHTML, like Gecko) Version/5.0.1 Safari/531.2.1'
@@ -3518,283 +3784,17 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safari
     modus: null
     version: 5.0.1
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 531.2.1
-    manufacturer: Apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/534.2.3 (KHTML, like Gecko) Version/5.0.2 Safari/534.2.3'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: Microsoft
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: 5.0.2
-    manufacturer: Apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 534.2.3
-    manufacturer: Apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/531.3.3 (KHTML, like Gecko) Version/4.1 Safari/531.3.3'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: Microsoft
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: 4.1.0
-    manufacturer: Apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 531.3.3
-    manufacturer: Apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/533.4.1 (KHTML, like Gecko) Version/4.0.3 Safari/533.4.1'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: Microsoft
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: 4.0.3
-    manufacturer: Apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 533.4.1
-    manufacturer: Apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/532.19.5 (KHTML, like Gecko) Version/4.0.3 Safari/532.19.5'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: Microsoft
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: 4.0.3
-    manufacturer: Apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 532.19.5
-    manufacturer: Apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/533.14.3 (KHTML, like Gecko) Version/4.0.3 Safari/533.14.3'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: Microsoft
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: 4.0.3
-    manufacturer: Apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 533.14.3
-    manufacturer: Apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/534.1.2 (KHTML, like Gecko) Version/5.1 Safari/534.1.2'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: Microsoft
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: 5.1.0
-    manufacturer: Apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 534.1.2
-    manufacturer: Apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/534.32.4 (KHTML, like Gecko) Version/4.0.3 Safari/534.32.4'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: Microsoft
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: 4.0.3
-    manufacturer: Apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 534.32.4
-    manufacturer: Apple
+    manufacturer: apple

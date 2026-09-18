@@ -5,8 +5,8 @@
     architecture: null
     deviceName: W202DS
     marketingName: W202DS
-    manufacturer: ZTE
-    brand: ZTE
+    manufacturer: zte
+    brand: zte
     dualOrientation: true
     simCount: 1
     display:
@@ -22,20 +22,20 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 101.0.4951.61
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 101.0.4951.61
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; ZTE T0801) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 Mobile Safari/537.36'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: T0801
     marketingName: 'Blade X8'
-    manufacturer: ZTE
-    brand: ZTE
+    manufacturer: zte
+    brand: zte
     dualOrientation: true
     simCount: 1
     display:
@@ -60,17 +60,17 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 99.0.4844.88
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 99.0.4844.88
-    manufacturer: Google
+    manufacturer: google

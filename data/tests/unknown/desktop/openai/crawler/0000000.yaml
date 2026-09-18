@@ -22,17 +22,17 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: OAI-SearchBot
     modus: null
     version: 1.0.0
-    manufacturer: OpenAI
+    manufacturer: openai
     type: crawler
     isbot: true
     bits: null
   engine:
     name: Blink
     version: 134.0.0.0
-    manufacturer: Google
+    manufacturer: google

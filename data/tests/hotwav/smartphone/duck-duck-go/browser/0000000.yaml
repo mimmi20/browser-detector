@@ -6,8 +6,8 @@
     architecture: null
     deviceName: 'Cyber 7'
     marketingName: 'Cyber 7'
-    manufacturer: Hotwav
-    brand: Hotwav
+    manufacturer: hotwav
+    brand: hotwav
     dualOrientation: true
     simCount: 2
     display:
@@ -23,20 +23,20 @@
     name: Android
     marketingName: Android
     version: 11.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
     version: null
-    manufacturer: 'Duck Duck Go'
+    manufacturer: duck-duck-go
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 98.0.4758.101
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-model: '"Note 13 Max"'
@@ -55,8 +55,8 @@
     architecture: null
     deviceName: 'Note 13 Max'
     marketingName: 'Note 13 Max'
-    manufacturer: Hotwav
-    brand: Hotwav
+    manufacturer: hotwav
+    brand: hotwav
     dualOrientation: true
     simCount: 2
     display:
@@ -72,17 +72,17 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
     version: 150.0.7871.181
-    manufacturer: 'Duck Duck Go'
+    manufacturer: duck-duck-go
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 150.0.0
-    manufacturer: Google
+    manufacturer: google

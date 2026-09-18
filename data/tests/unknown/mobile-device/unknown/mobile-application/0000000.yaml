@@ -22,7 +22,7 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Android Download Manager'
@@ -35,7 +35,7 @@
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Swoot/1.76.0 (Linux;Android 10) ExoPlayerLib/2.9.6'
@@ -60,7 +60,7 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Swoot
@@ -73,7 +73,121 @@
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
+-
+  headers:
+    user-agent: 'Pandora/2303.2.1 Android/12 beyond0q (ExoPlayerLib1.5.14.1)'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Pandora
+    modus: null
+    version: 2303.2.1
+    manufacturer: unknown
+    type: mobile-application
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: null
+    manufacturer: apple
+-
+  headers:
+    user-agent: 'Pandora/2212.1 Android/10 crownqltesq (ExoPlayerLib1.5.14.1)'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Pandora
+    modus: null
+    version: 2212.1.0
+    manufacturer: unknown
+    type: mobile-application
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: null
+    manufacturer: apple
+-
+  headers:
+    user-agent: 'APKXDL (Linux; U; Android 12;en_US; beyond0q/SP1A.210812.016) Downloader'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'APK Downloader'
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: mobile-application
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
 -
   headers:
     user-agent: 'Bullhorn/2.13.4.0 (Linux;Android 13) ExoPlayerLib/2.17.1'
@@ -98,7 +212,7 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Bullhorn
@@ -111,7 +225,7 @@
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Bullhorn/2.14.0.0 (Linux;Android 12) ExoPlayerLib/2.17.1'
@@ -136,7 +250,7 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Bullhorn
@@ -149,7 +263,7 @@
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'CastBox/8.2.6-191015245 (Linux;Android 10) ExoPlayerLib/2.10.4'
@@ -174,7 +288,7 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: CastBox
@@ -187,7 +301,7 @@
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'CastBox/8.19.0-200927161 (Linux;Android 10) ExoPlayerLib/2.10.4'
@@ -212,7 +326,7 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: CastBox
@@ -225,7 +339,7 @@
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'CastBox/10.4.2-230314501 (Linux;Android 13) ExoPlayerLib/2.10.4'
@@ -250,7 +364,7 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: CastBox
@@ -263,7 +377,7 @@
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Jam/1.11.1 Android/12 (www.listentojam.com)'
@@ -288,7 +402,7 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Jam
@@ -301,7 +415,7 @@
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Swoot/2.4.0 (Linux;Android 13) ExoPlayerLib/2.9.6'
@@ -326,7 +440,7 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Swoot
@@ -339,7 +453,7 @@
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Turtlecast/0.7.7; (Android 13); +https://www.turtlecast.app'
@@ -364,7 +478,7 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Turtlecast
@@ -377,7 +491,7 @@
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Vodacast/1.2.2 (Linux;Android 12) ExoPlayerLib/2.10.4'
@@ -402,7 +516,7 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Vodacast
@@ -440,7 +554,7 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Wynk Music'
@@ -478,7 +592,7 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Pandora
@@ -491,4 +605,4 @@
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple

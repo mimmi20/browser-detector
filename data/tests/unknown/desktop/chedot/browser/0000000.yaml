@@ -22,20 +22,20 @@
     name: Windows
     marketingName: 'Windows 8'
     version: 8.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Chedot
     modus: null
     version: 43.0.2357.402
-    manufacturer: Chedot
+    manufacturer: chedot
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 537.36.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chedot Chrome/43.0.2345.0 Safari/537.36'
@@ -60,17 +60,17 @@
     name: Windows
     marketingName: 'Windows 7'
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Chedot
     modus: null
     version: null
-    manufacturer: Chedot
+    manufacturer: chedot
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 43.0.2345.0
-    manufacturer: Google
+    manufacturer: google

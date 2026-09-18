@@ -5,8 +5,8 @@
     architecture: null
     deviceName: C7-00
     marketingName: C7
-    manufacturer: Nokia
-    brand: Nokia
+    manufacturer: nokia
+    brand: nokia
     dualOrientation: false
     simCount: 1
     display:
@@ -22,20 +22,20 @@
     name: 'Symbian OS'
     marketingName: 'Symbian OS'
     version: null
-    manufacturer: 'Symbian Foundation'
+    manufacturer: symbianFoundation
     bits: null
   client:
     name: 'MiniBrowser Mobile'
     modus: null
     version: 4.0.0
-    manufacturer: DMKHO
+    manufacturer: dmkho
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.3.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Symbian; U; Nokia808 PureView; xx) AppleWebKit/534.3 (KHTML, like Gecko) MiniBrowserMobile/4.0 Mobile Safari/534.3'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: '808 PureView'
     marketingName: '808 PureView'
-    manufacturer: Nokia
-    brand: Nokia
+    manufacturer: nokia
+    brand: nokia
     dualOrientation: true
     simCount: 1
     display:
@@ -60,17 +60,17 @@
     name: 'Symbian OS'
     marketingName: 'Symbian OS'
     version: null
-    manufacturer: 'Symbian Foundation'
+    manufacturer: symbianFoundation
     bits: null
   client:
     name: 'MiniBrowser Mobile'
     modus: null
     version: 4.0.0
-    manufacturer: DMKHO
+    manufacturer: dmkho
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.3.0
-    manufacturer: Apple
+    manufacturer: apple

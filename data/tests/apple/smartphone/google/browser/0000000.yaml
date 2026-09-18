@@ -5,8 +5,8 @@
     architecture: null
     deviceName: 'iPhone 4,1'
     marketingName: 'iPhone 4S'
-    manufacturer: Apple
-    brand: Apple
+    manufacturer: apple
+    brand: apple
     dualOrientation: true
     simCount: 1
     display:
@@ -22,29 +22,29 @@
     name: iOS
     marketingName: iOS
     version: null
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: 'Google Earth'
     modus: null
     version: 6.2.0001.6400
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
-    user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Mobile/10A403 SogouAndroidBrowser/2.6.1'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; Iphone12 pro max) AppleWebKit/601.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: iPhone
     marketingName: iPhone
-    manufacturer: Apple
-    brand: Apple
+    manufacturer: apple
+    brand: apple
     dualOrientation: true
     simCount: 1
     display:
@@ -59,21 +59,21 @@
   os:
     name: Android
     marketingName: Android
-    version: null
-    manufacturer: Google
+    version: 10.0.0
+    manufacturer: google
     bits: null
   client:
-    name: 'Android Webkit'
+    name: Chrome
     modus: null
-    version: null
-    manufacturer: Google
+    version: 105.0.0.0
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
-    name: WebKit
-    version: 536.26.0
-    manufacturer: Apple
+    name: Blink
+    version: 105.0.0.0
+    manufacturer: google
 -
   headers:
     sec-ch-ua-platform: '"iOS"'
@@ -84,8 +84,8 @@
     architecture: null
     deviceName: iPhone
     marketingName: iPhone
-    manufacturer: Apple
-    brand: Apple
+    manufacturer: apple
+    brand: apple
     dualOrientation: true
     simCount: 1
     display:
@@ -101,20 +101,20 @@
     name: iOS
     marketingName: iOS
     version: 16.0.0
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: 'Headless Chrome'
     modus: null
     version: 127.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 127.0.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     sec-ch-ua-platform: '"Linux"'
@@ -125,8 +125,8 @@
     architecture: null
     deviceName: iPhone
     marketingName: iPhone
-    manufacturer: Apple
-    brand: Apple
+    manufacturer: apple
+    brand: apple
     dualOrientation: true
     simCount: 1
     display:
@@ -142,20 +142,20 @@
     name: iOS
     marketingName: iOS
     version: 18.5.0
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: Chromium
     modus: null
     version: 138.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 138.0.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     sec-ch-ua-model: '""'
@@ -173,8 +173,8 @@
     architecture: x86
     deviceName: iPhone
     marketingName: iPhone
-    manufacturer: Apple
-    brand: Apple
+    manufacturer: apple
+    brand: apple
     dualOrientation: true
     simCount: 1
     display:
@@ -190,20 +190,20 @@
     name: Windows
     marketingName: 'Windows 10'
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: 64
   client:
     name: Chrome
     modus: null
     version: 130.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: 64
   engine:
     name: Blink
     version: 130.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 2_2_1 like Mac OS X) AppleWebKit/532.2 (KHTML, like Gecko) CriOS/20.0.841.0 Mobile/37B505 Safari/532.2'
@@ -211,8 +211,8 @@
     architecture: null
     deviceName: iPhone
     marketingName: iPhone
-    manufacturer: Apple
-    brand: Apple
+    manufacturer: apple
+    brand: apple
     dualOrientation: true
     simCount: 1
     display:
@@ -228,17 +228,17 @@
     name: 'iPhone OS'
     marketingName: 'iPhone OS'
     version: 2.2.1
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: 'Chrome for iOS'
     modus: null
     version: 20.0.841.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 532.2.0
-    manufacturer: Apple
+    manufacturer: apple

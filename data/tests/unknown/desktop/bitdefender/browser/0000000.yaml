@@ -22,20 +22,20 @@
     name: Windows
     marketingName: 'Windows 8'
     version: 8.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safepay
     modus: null
     version: null
-    manufacturer: Bitdefender
+    manufacturer: bitdefender
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 47.0.2526.73
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.172 Safari/537.22 BitdefenderSafepay/17.14.0.0 (OBK; 25.0.1364.172; r1194.2013)'
@@ -60,17 +60,17 @@
     name: Windows
     marketingName: 'Windows XP'
     version: 5.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Safepay
     modus: null
     version: null
-    manufacturer: Bitdefender
+    manufacturer: bitdefender
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 537.22.0
-    manufacturer: Apple
+    manufacturer: apple

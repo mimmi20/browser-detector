@@ -5,8 +5,8 @@
     architecture: null
     deviceName: 'Vibe 5G'
     marketingName: 'Vibe 5G'
-    manufacturer: 'HMD Global'
-    brand: 'HMD Global'
+    manufacturer: hmd-global
+    brand: hmd-global
     dualOrientation: true
     simCount: 2
     display:
@@ -22,20 +22,20 @@
     name: Android
     marketingName: Android
     version: 15.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 14.7.0.1364
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 123.0.6312.80
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 14; en-US; S34 Build/M-KOPA_A14_S34_V17_20260424) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.9.1395 Mobile Safari/537.36'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: S34
     marketingName: S34
-    manufacturer: 'HMD Global'
-    brand: M-KOPA
+    manufacturer: hmd-global
+    brand: m-kopa
     dualOrientation: true
     simCount: 1
     display:
@@ -60,17 +60,17 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 15.1.9.1395
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 123.0.6312.80
-    manufacturer: Google
+    manufacturer: google

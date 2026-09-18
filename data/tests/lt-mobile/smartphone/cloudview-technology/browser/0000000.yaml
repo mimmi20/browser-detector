@@ -5,8 +5,8 @@
     architecture: null
     deviceName: C60
     marketingName: M30S
-    manufacturer: 'LT Mobile'
-    brand: 'LT Mobile'
+    manufacturer: lt-mobile
+    brand: lt-mobile
     dualOrientation: true
     simCount: 1
     display:
@@ -22,20 +22,20 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Phoenix Browser'
     modus: null
     version: 17.4.0
-    manufacturer: 'CloudView Technology'
+    manufacturer: cloudview-technology
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 128.0.6613.146
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 12; ar-ye; LT_6217 Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.179 Mobile Safari/537.36 PHX/18.9'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: LT_6217
     marketingName: M15
-    manufacturer: 'LT Mobile'
-    brand: 'LT Mobile'
+    manufacturer: lt-mobile
+    brand: lt-mobile
     dualOrientation: true
     simCount: 2
     display:
@@ -60,17 +60,17 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Phoenix Browser'
     modus: null
     version: 18.9.0
-    manufacturer: 'CloudView Technology'
+    manufacturer: cloudview-technology
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 138.0.7204.179
-    manufacturer: Google
+    manufacturer: google

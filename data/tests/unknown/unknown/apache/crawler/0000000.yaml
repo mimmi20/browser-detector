@@ -28,7 +28,7 @@
     name: Nutch
     modus: null
     version: 1.7.0
-    manufacturer: Apache
+    manufacturer: apache
     type: crawler
     isbot: true
     bits: null
@@ -66,7 +66,7 @@
     name: Synapse
     modus: null
     version: null
-    manufacturer: Apache
+    manufacturer: apache
     type: crawler
     isbot: true
     bits: null
@@ -104,14 +104,14 @@
     name: Nutch
     modus: null
     version: null
-    manufacturer: Apache
+    manufacturer: apache
     type: crawler
     isbot: true
     bits: null
   engine:
     name: Gecko
     version: null
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36/Nutch-1.12'
@@ -142,14 +142,14 @@
     name: Nutch
     modus: null
     version: 1.12.0
-    manufacturer: Apache
+    manufacturer: apache
     type: crawler
     isbot: true
     bits: null
   engine:
     name: Blink
     version: 55.0.2883.95
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Yandex/1.01.001 (compatible; Win16; I)/Nutch-1.2'
@@ -174,13 +174,13 @@
     name: Windows
     marketingName: 'Windows 3.1'
     version: 3.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Nutch
     modus: null
     version: 1.2.0
-    manufacturer: Apache
+    manufacturer: apache
     type: crawler
     isbot: true
     bits: null

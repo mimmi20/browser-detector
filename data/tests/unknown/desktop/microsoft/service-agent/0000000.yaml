@@ -22,13 +22,13 @@
     name: Windows
     marketingName: 'Windows 7'
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Skype URI Preview'
     modus: null
     version: 0.5.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: service-agent
     isbot: true
     bits: null
@@ -60,20 +60,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'WordPress.com mShots'
     modus: null
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: service-agent
     isbot: true
     bits: null
   engine:
     name: Blink
     version: 67.0.3372.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; MicrosoftPreview/2.0; +https://aka.ms/MicrosoftPreview) Chrome/100.0.4896.127 Safari/537.36'
@@ -104,14 +104,14 @@
     name: 'Microsoft Preview'
     modus: null
     version: 2.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: service-agent
     isbot: true
     bits: null
   engine:
     name: Blink
     version: 100.0.4896.127
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'azure-logic-apps/1.0 (workflow xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx; version xxxxxxxxxxxxxxxxxxxx) microsoft-flow/1.0'
@@ -142,7 +142,7 @@
     name: 'Microsoft Power Automate'
     modus: null
     version: 1.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: service-agent
     isbot: true
     bits: null

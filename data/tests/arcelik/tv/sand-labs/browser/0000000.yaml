@@ -5,8 +5,8 @@
     architecture: null
     deviceName: BK
     marketingName: BK
-    manufacturer: Arcelik
-    brand: Arcelik
+    manufacturer: arcelik
+    brand: arcelik
     dualOrientation: false
     simCount: 0
     display:
@@ -22,20 +22,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'Origyn Web Browser'
     modus: null
     version: null
-    manufacturer: 'Sand Labs'
+    manufacturer: sand-labs
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.1.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; Linux i686; tr) AppleWebKit/534.1 (KHTML, like Gecko) HbbTV/1.1.1 (;Mstar;OWB;Arcelik;J5;)'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: J5
     marketingName: J5
-    manufacturer: Arcelik
-    brand: Arcelik
+    manufacturer: arcelik
+    brand: arcelik
     dualOrientation: false
     simCount: 0
     display:
@@ -60,17 +60,17 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'Origyn Web Browser'
     modus: null
     version: null
-    manufacturer: 'Sand Labs'
+    manufacturer: sand-labs
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.1.0
-    manufacturer: Apple
+    manufacturer: apple

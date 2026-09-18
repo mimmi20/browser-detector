@@ -22,7 +22,7 @@
     name: Windows
     marketingName: 'Windows Vista'
     version: 6.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Trendiction Bot'
@@ -35,7 +35,7 @@
   engine:
     name: Gecko
     version: 1.0.0
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; chromeframe/2.4.8.5746) AppleWebKit/1.0 (KHTML, like Gecko) Bromium Safari/1.0'
@@ -60,7 +60,7 @@
     name: Windows
     marketingName: Windows
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: vSentry
@@ -73,7 +73,7 @@
   engine:
     name: WebKit
     version: 1.0.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:38.4.0) Gecko/20100101 Firefox/38.4.0 -CareMediCom-'
@@ -98,7 +98,7 @@
     name: Windows
     marketingName: 'Windows 8.1'
     version: 8.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: CareMediCom
@@ -111,7 +111,7 @@
   engine:
     name: Gecko
     version: 38.4.0
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US) AppEngine-Google; (+http://code.google.com/appengine; appid: s~virustotalcloud)'
@@ -136,7 +136,7 @@
     name: 'Windows NT'
     marketingName: 'Windows NT'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'VirusTotal Cloud'
@@ -149,7 +149,7 @@
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:12.0) Gecko/20100101 Firefox/12.0 AppEngine-Google; (+http://code.google.com/appengine; appid: s~virustotalcloud)'
@@ -174,7 +174,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'VirusTotal Cloud'
@@ -187,7 +187,7 @@
   engine:
     name: Gecko
     version: 12.0.0
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.4) Larbin/2.6.3 larbin@unspecified.mail'
@@ -212,7 +212,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Larbin
@@ -250,7 +250,7 @@
     name: Windows
     marketingName: 'Windows 10'
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Sitebulb
@@ -263,7 +263,7 @@
   engine:
     name: Blink
     version: 55.0.2883.87
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/61.0.3163.59 Safari/537.36 Prerender (+https://github.com/prerender/prerender)'
@@ -288,7 +288,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Prerender
@@ -301,7 +301,7 @@
   engine:
     name: Blink
     version: 61.0.3163.59
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'broken-link-checker/0.7.8 Node.js/10.19.0 (Linux 5.4; x64)'
@@ -326,7 +326,7 @@
     name: Linux
     marketingName: Linux
     version: 5.4.0
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: broken-link-checker
@@ -364,7 +364,7 @@
     name: Windows
     marketingName: 'Windows 10'
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'VirusTotal Cloud'
@@ -377,7 +377,7 @@
   engine:
     name: Blink
     version: 91.0.4472.114
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 AppEngine-Google; (+http://code.google.com/appengine; appid: s~virustotalcloud)'
@@ -402,7 +402,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'VirusTotal Cloud'
@@ -415,7 +415,7 @@
   engine:
     name: Blink
     version: 112.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:72.0) Gecko/20100101 Firefox/72.0 (compatible; mozilla/5.0 (x11; ubuntu; linux x86_64; rv:72.0) gecko/20100101 firefox/72.0; +https://github.com/rom1504/img2dataset)'
@@ -440,7 +440,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: img2dataset
@@ -453,7 +453,7 @@
   engine:
     name: Gecko
     version: 72.0.0
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:72.0) Gecko/20100101 Firefox/72.0 (compatible; mozilla/5.0 (windows nt 6.3; wow64) applewebkit/537.36 (khtml, like gecko) chrome/57.0.2987.133 safari/537.36; +https://github.com/rom1504/img2dataset)'
@@ -478,7 +478,7 @@
     name: Windows
     marketingName: 'Windows 8.1'
     version: 8.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: img2dataset
@@ -491,7 +491,7 @@
   engine:
     name: Blink
     version: 57.0.2987.133
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:72.0) Gecko/20100101 Firefox/72.0 (compatible; mozilla/5.0 (windows nt 6.1; wow64; rv:54.0) gecko/20100101 firefox/54.0; +https://github.com/rom1504/img2dataset)'
@@ -516,7 +516,7 @@
     name: Windows
     marketingName: 'Windows 7'
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: img2dataset
@@ -529,7 +529,7 @@
   engine:
     name: Gecko
     version: 72.0.0
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:72.0) Gecko/20100101 Firefox/72.0 (compatible; mozilla/5.0 (windows nt 10.0; wow64; trident/7.0; rv:11.0) like gecko; +https://github.com/rom1504/img2dataset)'
@@ -554,7 +554,7 @@
     name: Windows
     marketingName: 'Windows 10'
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: img2dataset
@@ -567,7 +567,7 @@
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/W.X.Y.Z Safari/537.36 Prerender (+https://github.com/prerender/prerender)'
@@ -592,7 +592,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Prerender
@@ -605,7 +605,7 @@
   engine:
     name: WebKit
     version: 537.36.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:72.0) Gecko/20100101 Firefox/72.0 (compatible; mozilla/5.0 (x11; linux x86_64) applewebkit/537.36 (khtml, like gecko) chrome/127.0.0.0 safari/537.36; +https://github.com/rom1504/img2dataset)'
@@ -630,7 +630,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: img2dataset
@@ -643,7 +643,7 @@
   engine:
     name: Blink
     version: 127.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-model: '""'
@@ -678,7 +678,7 @@
     name: Windows
     marketingName: 'Windows 10'
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: 64
   client:
     name: Pumoxbot
@@ -691,4 +691,4 @@
   engine:
     name: Blink
     version: 145.0.0
-    manufacturer: Google
+    manufacturer: google

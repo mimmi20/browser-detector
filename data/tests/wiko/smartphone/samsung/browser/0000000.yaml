@@ -5,8 +5,8 @@
     architecture: null
     deviceName: W-P611-EEA
     marketingName: 'View 3 Pro'
-    manufacturer: Wiko
-    brand: Wiko
+    manufacturer: wiko
+    brand: wiko
     dualOrientation: true
     simCount: 1
     display:
@@ -22,20 +22,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Samsung Browser'
     modus: null
     version: 16.0.0
-    manufacturer: Samsung
+    manufacturer: samsung
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 92.0.4515.166
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; W-V830-EEA) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/20.0 Chrome/106.0.5249.126 Mobile Safari/537.36'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: W-V830-EEA
     marketingName: 'View 4'
-    manufacturer: Wiko
-    brand: Wiko
+    manufacturer: wiko
+    brand: wiko
     dualOrientation: true
     simCount: 2
     display:
@@ -60,17 +60,17 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Samsung Browser'
     modus: null
     version: 20.0.0
-    manufacturer: Samsung
+    manufacturer: samsung
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 106.0.5249.126
-    manufacturer: Google
+    manufacturer: google

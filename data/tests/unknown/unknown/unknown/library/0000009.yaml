@@ -35,7 +35,7 @@
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Python/3.6 aiohttp/3.4.1 comdirect/1.0 (appVersion:20.3.0)'
@@ -187,7 +187,7 @@
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'curl/7.47.0 comdirect/1.0 (appVersion:20.3.0)'
@@ -415,7 +415,7 @@
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Go http package comdirect/1.0 (appVersion:20.3.0)'
@@ -478,7 +478,7 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: OkHttp
@@ -554,7 +554,7 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: OkHttp
@@ -985,7 +985,7 @@
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Python/3.7 aiohttp/3.6.2 comdirect/1.0 (appVersion:20.5.2)'
@@ -1580,7 +1580,7 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: OkHttp
@@ -1821,7 +1821,7 @@
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'lua-resty-http/0.10 (Lua) ngx_lua/10000 comdirect/1.0 (appVersion:20.6.3)'
@@ -3113,7 +3113,7 @@
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'app_process64 (unknown version) curl/7.59.0 comdirect/1.0 (appVersion:20.9.2)'
@@ -3455,7 +3455,7 @@
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Ruby comdirect/1.0 (appVersion:20.10.0)'
@@ -3518,7 +3518,7 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: OkHttp

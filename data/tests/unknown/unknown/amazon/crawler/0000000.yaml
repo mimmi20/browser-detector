@@ -28,7 +28,7 @@
     name: 'Amazon AdBot'
     modus: null
     version: 1.0.0
-    manufacturer: Amazon
+    manufacturer: amazon
     type: crawler
     isbot: true
     bits: null
@@ -63,20 +63,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'Amazon Bot'
     modus: null
     version: 0.1.0
-    manufacturer: Amazon
+    manufacturer: amazon
     type: crawler
     isbot: true
     bits: null
   engine:
     name: Blink
     version: 123.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Amzn-User/0.1) Chrome/119.0.6045.214 Safari/537.36'
@@ -107,14 +107,14 @@
     name: Amzn-User
     modus: null
     version: 0.1.0
-    manufacturer: Amazon
+    manufacturer: amazon
     type: crawler
     isbot: true
     bits: null
   engine:
     name: Blink
     version: 119.0.6045.214
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Amzn-SearchBot/0.1) Chrome/119.0.6045.214 Safari/537.36'
@@ -145,14 +145,14 @@
     name: Amzn-SearchBot
     modus: null
     version: 0.1.0
-    manufacturer: Amazon
+    manufacturer: amazon
     type: crawler
     isbot: true
     bits: null
   engine:
     name: Blink
     version: 119.0.6045.214
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: amazon-kendra-customer-id-<AccountID>
@@ -183,7 +183,7 @@
     name: 'Amazon Kendra'
     modus: null
     version: null
-    manufacturer: Amazon
+    manufacturer: amazon
     type: crawler
     isbot: true
     bits: null
@@ -221,7 +221,7 @@
     name: 'Amazon Bot'
     modus: null
     version: 0.1.0
-    manufacturer: Amazon
+    manufacturer: amazon
     type: crawler
     isbot: true
     bits: null

@@ -22,20 +22,20 @@
     name: Tizen
     marketingName: Tizen
     version: 2.3.0
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'Samsung Browser'
     modus: null
     version: 1.0.0
-    manufacturer: Samsung
+    manufacturer: samsung
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 538.1.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 9; SmartTV Build/RTK2842P)'
@@ -60,17 +60,17 @@
     name: 'Android TV'
     marketingName: 'Android TV'
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'SmartTV WebBrowser'
     modus: null
     version: null
-    manufacturer: Samsung
+    manufacturer: samsung
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple

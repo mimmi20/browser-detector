@@ -5,8 +5,8 @@
     architecture: null
     deviceName: F511
     marketingName: F511
-    manufacturer: Philips
-    brand: Philips
+    manufacturer: philips
+    brand: philips
     dualOrientation: false
     simCount: 1
     display:
@@ -22,7 +22,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: null
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: X503
     marketingName: X503
-    manufacturer: Philips
-    brand: Philips
+    manufacturer: philips
+    brand: philips
     dualOrientation: false
     simCount: 1
     display:
@@ -60,7 +60,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: null
@@ -81,8 +81,8 @@
     architecture: null
     deviceName: F511
     marketingName: F511
-    manufacturer: Philips
-    brand: Philips
+    manufacturer: philips
+    brand: philips
     dualOrientation: false
     simCount: 1
     display:
@@ -98,7 +98,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: null
@@ -119,8 +119,8 @@
     architecture: null
     deviceName: X116
     marketingName: X116
-    manufacturer: Philips
-    brand: Philips
+    manufacturer: philips
+    brand: philips
     dualOrientation: false
     simCount: 2
     display:
@@ -136,7 +136,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: null
@@ -157,8 +157,8 @@
     architecture: null
     deviceName: X503
     marketingName: X503
-    manufacturer: Philips
-    brand: Philips
+    manufacturer: philips
+    brand: philips
     dualOrientation: false
     simCount: 1
     display:
@@ -174,7 +174,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: null
@@ -195,8 +195,8 @@
     architecture: null
     deviceName: X703
     marketingName: X703
-    manufacturer: Philips
-    brand: Philips
+    manufacturer: philips
+    brand: philips
     dualOrientation: false
     simCount: 1
     display:
@@ -212,7 +212,7 @@
     name: JavaOS
     marketingName: JavaOS
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: null
@@ -233,8 +233,8 @@
     architecture: null
     deviceName: X800
     marketingName: X800
-    manufacturer: Philips
-    brand: Philips
+    manufacturer: philips
+    brand: philips
     dualOrientation: false
     simCount: 1
     display:
@@ -250,45 +250,7 @@
     name: JavaOS
     marketingName: JavaOS
     version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: null
-    modus: null
-    version: null
-    manufacturer: unknown
-    type: unknown
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'PhilipsW715/Qualcomm Brew MP 1.0.3/WAP-2.0/MIDP-2.0/CLDC-1.1'
-  device:
-    architecture: null
-    deviceName: W715
-    marketingName: W715
-    manufacturer: Philips
-    brand: Philips
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 320
-      height: 240
-      touch: false
-      size: 2.4
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Brew
-    marketingName: Brew
-    version: null
-    manufacturer: unknown
+    manufacturer: sun
     bits: null
   client:
     name: null

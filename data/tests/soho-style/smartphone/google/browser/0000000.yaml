@@ -11,8 +11,8 @@
     architecture: null
     deviceName: SS5724G
     marketingName: SS5724G
-    manufacturer: 'Soho Style'
-    brand: 'Soho Style'
+    manufacturer: soho-style
+    brand: soho-style
     dualOrientation: true
     simCount: 1
     display:
@@ -28,20 +28,20 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 121.0.6167.178
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 121.0.6167.178
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-model: S1586K
@@ -55,8 +55,8 @@
     architecture: null
     deviceName: S1586K
     marketingName: M8
-    manufacturer: 'Soho Style'
-    brand: 'Soho Style'
+    manufacturer: soho-style
+    brand: soho-style
     dualOrientation: true
     simCount: 2
     display:
@@ -72,17 +72,17 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 111.0.5563.116
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 111.0.5563.116
-    manufacturer: Google
+    manufacturer: google

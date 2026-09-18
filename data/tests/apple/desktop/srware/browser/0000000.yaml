@@ -5,8 +5,8 @@
     architecture: null
     deviceName: Macintosh
     marketingName: Macintosh
-    manufacturer: Apple
-    brand: Apple
+    manufacturer: apple
+    brand: apple
     dualOrientation: false
     simCount: 0
     display:
@@ -22,20 +22,20 @@
     name: 'Mac OS X'
     marketingName: 'Mac OS X'
     version: 10.9.3
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: Iron
     modus: null
     version: 31.0.1700.0
-    manufacturer: SRWare
+    manufacturer: srware
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 31.0.1700.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1200.0 Iron/21.0.1200.0  Safari/537.1'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: Macintosh
     marketingName: Macintosh
-    manufacturer: Apple
-    brand: Apple
+    manufacturer: apple
+    brand: apple
     dualOrientation: false
     simCount: 0
     display:
@@ -60,20 +60,20 @@
     name: 'Mac OS X'
     marketingName: 'Mac OS X'
     version: 10.6.8
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: Iron
     modus: null
     version: 21.0.1200.0
-    manufacturer: SRWare
+    manufacturer: srware
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 537.1.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2650.0 Iron Safari/537.36'
@@ -81,8 +81,8 @@
     architecture: null
     deviceName: Macintosh
     marketingName: Macintosh
-    manufacturer: Apple
-    brand: Apple
+    manufacturer: apple
+    brand: apple
     dualOrientation: false
     simCount: 0
     display:
@@ -98,17 +98,58 @@
     name: macOS
     marketingName: macOS
     version: 10.12.1
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: Iron
     modus: null
     version: 50.0.2650.0
-    manufacturer: SRWare
+    manufacturer: srware
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 50.0.2650.0
-    manufacturer: Google
+    manufacturer: google
+-
+  headers:
+    sec-ch-ua-platform: '"Android"'
+    sec-ch-ua: '"Not_A Brand";v="8", "Chromium";v="120"'
+    sec-ch-ua-mobile: '?1'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Iron Safari/537.36'
+  device:
+    architecture: null
+    deviceName: Macintosh
+    marketingName: Macintosh
+    manufacturer: apple
+    brand: apple
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: desktop
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Iron
+    modus: null
+    version: 120.0.0.0
+    manufacturer: srware
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 120.0.0
+    manufacturer: google

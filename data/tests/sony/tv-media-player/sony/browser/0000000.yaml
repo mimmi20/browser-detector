@@ -5,8 +5,8 @@
     architecture: null
     deviceName: 'BDP10G BX'
     marketingName: 'BDP10G BX'
-    manufacturer: Sony
-    brand: Sony
+    manufacturer: sony
+    brand: sony
     dualOrientation: false
     simCount: 0
     display:
@@ -22,20 +22,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: SonyCEBrowser
     modus: null
     version: 1.0.0
-    manufacturer: Sony
+    manufacturer: sony
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 32.0.1700.19
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Opera/9.80 (Linux armv6l; Opera TV Store/4563; U; SonyCEBrowser/1.0 (BDPlayer; BDP-S1700; BDP2016/M36.D.0020; XAE; ); en) Presto/2.10.250 Version/11.60'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: BDPlayer
     marketingName: BDPlayer
-    manufacturer: Sony
-    brand: Sony
+    manufacturer: sony
+    brand: sony
     dualOrientation: false
     simCount: 0
     display:
@@ -60,17 +60,17 @@
     name: 'Opera TV'
     marketingName: 'Opera TV'
     version: 4563.0.0
-    manufacturer: Opera
+    manufacturer: opera
     bits: null
   client:
     name: SonyCEBrowser
     modus: null
     version: 1.0.0
-    manufacturer: Sony
+    manufacturer: sony
     type: browser
     isbot: false
     bits: null
   engine:
     name: Presto
     version: 2.10.250
-    manufacturer: Opera
+    manufacturer: opera

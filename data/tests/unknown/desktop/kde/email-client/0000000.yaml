@@ -22,20 +22,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: KMail2
     modus: null
     version: 4.14.2
-    manufacturer: KDE
+    manufacturer: kde
     type: email-client
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.34.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.34 (KHTML, like Gecko) kontact/4.14.9 Safari/534.34'
@@ -60,17 +60,17 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Kontact
     modus: null
     version: 4.14.9
-    manufacturer: KDE
+    manufacturer: kde
     type: email-client
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.34.0
-    manufacturer: Apple
+    manufacturer: apple

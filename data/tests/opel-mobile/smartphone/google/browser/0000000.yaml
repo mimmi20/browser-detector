@@ -11,8 +11,8 @@
     architecture: null
     deviceName: 'Rugged 60Q'
     marketingName: 'Rugged 60Q'
-    manufacturer: 'Opel Mobile'
-    brand: 'Opel Mobile'
+    manufacturer: opel-mobile
+    brand: opel-mobile
     dualOrientation: true
     simCount: 2
     display:
@@ -28,17 +28,17 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 121.0.6167.164
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 121.0.6167.164
-    manufacturer: Google
+    manufacturer: google

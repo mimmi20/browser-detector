@@ -22,13 +22,13 @@
     name: 'Redhat Linux'
     marketingName: 'Redhat Linux'
     version: 2.0.0
-    manufacturer: Redhat
+    manufacturer: redhat
     bits: null
   client:
     name: 'Tor Browser'
     modus: null
     version: 5.7.0
-    manufacturer: Tor
+    manufacturer: tor
     type: browser
     isbot: false
     bits: null
@@ -60,13 +60,13 @@
     name: 'Fedora Linux'
     marketingName: 'Fedora Linux'
     version: 4.1.0
-    manufacturer: Redhat
+    manufacturer: redhat
     bits: null
   client:
     name: 'Tor Browser'
     modus: null
     version: 3.7.0
-    manufacturer: Tor
+    manufacturer: tor
     type: browser
     isbot: false
     bits: null
@@ -98,13 +98,13 @@
     name: Linux
     marketingName: Linux
     version: 2.6.0
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'Tor Browser'
     modus: null
     version: 20.15.0
-    manufacturer: Tor
+    manufacturer: tor
     type: browser
     isbot: false
     bits: null
@@ -136,13 +136,13 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: 2.8.0
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Tor Browser'
     modus: null
     version: 19.15.0
-    manufacturer: Tor
+    manufacturer: tor
     type: browser
     isbot: false
     bits: null
@@ -174,13 +174,13 @@
     name: Windows
     marketingName: 'Windows XP'
     version: 5.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Tor Browser'
     modus: null
     version: 2.15.0
-    manufacturer: Tor
+    manufacturer: tor
     type: browser
     isbot: false
     bits: null
@@ -218,7 +218,7 @@
     name: 'Tor Browser'
     modus: null
     version: 17.6.0
-    manufacturer: Tor
+    manufacturer: tor
     type: browser
     isbot: false
     bits: null

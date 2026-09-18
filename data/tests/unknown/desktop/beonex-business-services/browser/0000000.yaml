@@ -22,20 +22,20 @@
     name: Windows
     marketingName: Windows
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Beonex Communicator'
     modus: null
     version: 0.8.1
-    manufacturer: 'Beonex Business Services'
+    manufacturer: beonex-business-services
     type: browser
     isbot: false
     bits: null
   engine:
     name: Gecko
     version: null
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; WinNT; en; rv:1.0.2) Gecko/20030311 Beonex/0.8.2-stable'
@@ -60,17 +60,17 @@
     name: 'Windows NT'
     marketingName: 'Windows NT'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Beonex Communicator'
     modus: null
     version: 0.8.2
-    manufacturer: 'Beonex Business Services'
+    manufacturer: beonex-business-services
     type: browser
     isbot: false
     bits: null
   engine:
     name: Gecko
     version: 1.0.2
-    manufacturer: Mozilla
+    manufacturer: mozilla

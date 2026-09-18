@@ -5,8 +5,8 @@
     architecture: null
     deviceName: webOSTV
     marketingName: webOSTV
-    manufacturer: LG
-    brand: LG
+    manufacturer: lg
+    brand: lg
     dualOrientation: false
     simCount: 0
     display:
@@ -22,20 +22,20 @@
     name: webOS
     marketingName: webOS
     version: 1.0.0
-    manufacturer: HP
+    manufacturer: hp
     bits: null
   client:
     name: 'webOS Browser'
     modus: null
     version: 1.0.0
-    manufacturer: HP
+    manufacturer: hp
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 537.1.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Unknown; Linux armv7l) AppleWebKit/537.1+ Hybridcast/1.0(;00E091;LGwebOSTV;1;0;)0'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: webOSTV
     marketingName: webOSTV
-    manufacturer: LG
-    brand: LG
+    manufacturer: lg
+    brand: lg
     dualOrientation: false
     simCount: 0
     display:
@@ -60,17 +60,17 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'webOS Browser'
     modus: null
     version: null
-    manufacturer: HP
+    manufacturer: hp
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 537.1.0
-    manufacturer: Apple
+    manufacturer: apple

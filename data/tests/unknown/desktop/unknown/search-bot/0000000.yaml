@@ -22,7 +22,7 @@
     name: Windows
     marketingName: 'Windows XP'
     version: 5.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: VoilaBot
@@ -60,7 +60,7 @@
     name: Linux
     marketingName: Linux
     version: 3.2.0.4-alpha
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'YaCy Bot'
@@ -98,7 +98,7 @@
     name: Windows
     marketingName: 'Windows XP'
     version: 5.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'YaCy Bot'
@@ -136,7 +136,7 @@
     name: Windows
     marketingName: 'Windows 95'
     version: 95.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: VoilaBot
@@ -149,7 +149,7 @@
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'yacybot (/global; amd64 Linux 4.4.0-21-generic; java 1.8.0_03-Ubuntu; Europe/de) http://yacy.net/bot.html'
@@ -174,7 +174,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'YaCy Bot'
@@ -212,7 +212,7 @@
     name: 'Gentoo Linux'
     marketingName: 'Gentoo Linux'
     version: null
-    manufacturer: Gentoo
+    manufacturer: gentoo
     bits: null
   client:
     name: 'YaCy Bot'
@@ -288,7 +288,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 9.3.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: 'YaCy Bot'
@@ -326,7 +326,7 @@
     name: SunOS
     marketingName: SunOS
     version: 5.11.0
-    manufacturer: Oracle
+    manufacturer: oracle
     bits: null
   client:
     name: 'YaCy Bot'
@@ -364,7 +364,7 @@
     name: 'Windows NT'
     marketingName: 'Windows NT'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'YaCy Bot'
@@ -402,7 +402,7 @@
     name: HP-UX
     marketingName: HP-UX
     version: null
-    manufacturer: HP
+    manufacturer: hp
     bits: null
   client:
     name: 'YaCy Bot'
@@ -440,7 +440,7 @@
     name: Debian
     marketingName: Debian
     version: null
-    manufacturer: 'Software in the Public Interest'
+    manufacturer: softwareInThePublicInterest
     bits: null
   client:
     name: 'YaCy Bot'
@@ -478,7 +478,7 @@
     name: Macintosh
     marketingName: Macintosh
     version: null
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: 'YaCy Bot'
@@ -516,7 +516,7 @@
     name: Windows
     marketingName: 'Windows 10'
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: URLSuMaBot
@@ -529,4 +529,4 @@
   engine:
     name: Blink
     version: 70.0.3538.77
-    manufacturer: Google
+    manufacturer: google

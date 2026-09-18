@@ -28,7 +28,7 @@
     name: 'Facebook Crawler'
     modus: null
     version: 1.0.0
-    manufacturer: Meta
+    manufacturer: meta
     type: social-media-agent
     isbot: true
     bits: null
@@ -66,7 +66,7 @@
     name: 'Facebook Catalog'
     modus: null
     version: 1.0.0
-    manufacturer: Meta
+    manufacturer: meta
     type: social-media-agent
     isbot: true
     bits: null
@@ -101,20 +101,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'Facebook Crawler'
     modus: null
     version: 1.1.0
-    manufacturer: Meta
+    manufacturer: meta
     type: social-media-agent
     isbot: true
     bits: null
   engine:
     name: Blink
     version: 126.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'meta-externalfetcher/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler)'
@@ -145,7 +145,7 @@
     name: Meta-ExternalFetcher
     modus: null
     version: 1.1.0
-    manufacturer: Meta
+    manufacturer: meta
     type: social-media-agent
     isbot: true
     bits: null
@@ -183,7 +183,7 @@
     name: 'Meta External Ads'
     modus: null
     version: 1.1.0
-    manufacturer: Meta
+    manufacturer: meta
     type: social-media-agent
     isbot: true
     bits: null
@@ -221,7 +221,7 @@
     name: Meta-WebIndexer
     modus: null
     version: null
-    manufacturer: Meta
+    manufacturer: meta
     type: social-media-agent
     isbot: true
     bits: null
@@ -256,20 +256,20 @@
     name: Windows
     marketingName: Windows
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Facebook Crawler'
     modus: null
     version: 1.1.0
-    manufacturer: Meta
+    manufacturer: meta
     type: social-media-agent
     isbot: true
     bits: null
   engine:
     name: Blink
     version: 147.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-platform: '"Windows"'
@@ -297,17 +297,17 @@
     name: Windows
     marketingName: Windows
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Meta-WebIndexer
     modus: null
     version: 1.1.0
-    manufacturer: Meta
+    manufacturer: meta
     type: social-media-agent
     isbot: true
     bits: null
   engine:
     name: Blink
     version: 151.0.0
-    manufacturer: Google
+    manufacturer: google

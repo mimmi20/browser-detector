@@ -22,13 +22,13 @@
     name: Linux
     marketingName: Linux
     version: 2.6.0
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: uMBot
     modus: null
     version: null
-    manufacturer: 'Ubermetrics Technologies'
+    manufacturer: ubermetrics-technologies
     type: crawler
     isbot: true
     bits: null
@@ -60,17 +60,17 @@
     name: Windows
     marketingName: 'Windows 7'
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: uMBot
     modus: null
     version: 1.0.0
-    manufacturer: 'Ubermetrics Technologies'
+    manufacturer: ubermetrics-technologies
     type: crawler
     isbot: true
     bits: null
   engine:
     name: Gecko
     version: 40.0.0
-    manufacturer: Mozilla
+    manufacturer: mozilla

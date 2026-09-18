@@ -5,8 +5,8 @@
     architecture: null
     deviceName: ZPS9
     marketingName: ZPS9
-    manufacturer: Sonos
-    brand: Sonos
+    manufacturer: sonos
+    brand: sonos
     dualOrientation: false
     simCount: 0
     display:
@@ -22,13 +22,13 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Sonos
     modus: null
     version: 47.2.59120
-    manufacturer: Sonos
+    manufacturer: sonos
     type: multimedia-player
     isbot: false
     bits: null
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: ZPS3
     marketingName: ZPS3
-    manufacturer: Sonos
-    brand: Sonos
+    manufacturer: sonos
+    brand: sonos
     dualOrientation: false
     simCount: 0
     display:
@@ -60,13 +60,13 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Sonos
     modus: null
     version: 47.2.59120
-    manufacturer: Sonos
+    manufacturer: sonos
     type: multimedia-player
     isbot: false
     bits: null
@@ -81,8 +81,8 @@
     architecture: null
     deviceName: ZPS13
     marketingName: ZPS13
-    manufacturer: Sonos
-    brand: Sonos
+    manufacturer: sonos
+    brand: sonos
     dualOrientation: false
     simCount: 0
     display:
@@ -98,13 +98,13 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Sonos
     modus: null
     version: 47.2.59120
-    manufacturer: Sonos
+    manufacturer: sonos
     type: multimedia-player
     isbot: false
     bits: null
@@ -119,8 +119,8 @@
     architecture: null
     deviceName: 'Smart Speaker'
     marketingName: 'Smart Speaker'
-    manufacturer: Sonos
-    brand: Sonos
+    manufacturer: sonos
+    brand: sonos
     dualOrientation: false
     simCount: 0
     display:
@@ -142,7 +142,7 @@
     name: Sonos
     modus: null
     version: null
-    manufacturer: Sonos
+    manufacturer: sonos
     type: multimedia-player
     isbot: false
     bits: null
@@ -157,8 +157,8 @@
     architecture: null
     deviceName: ZPS6
     marketingName: ZPS6
-    manufacturer: Sonos
-    brand: Sonos
+    manufacturer: sonos
+    brand: sonos
     dualOrientation: false
     simCount: 0
     display:
@@ -174,13 +174,13 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Sonos
     modus: null
     version: 47.2.59120
-    manufacturer: Sonos
+    manufacturer: sonos
     type: multimedia-player
     isbot: false
     bits: null
@@ -195,8 +195,8 @@
     architecture: null
     deviceName: ZPS1
     marketingName: ZPS1
-    manufacturer: Sonos
-    brand: Sonos
+    manufacturer: sonos
+    brand: sonos
     dualOrientation: false
     simCount: 0
     display:
@@ -212,13 +212,13 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Sonos
     modus: null
     version: 47.2.59120
-    manufacturer: Sonos
+    manufacturer: sonos
     type: multimedia-player
     isbot: false
     bits: null
@@ -233,8 +233,8 @@
     architecture: null
     deviceName: 'Smart Speaker'
     marketingName: 'Smart Speaker'
-    manufacturer: Sonos
-    brand: Sonos
+    manufacturer: sonos
+    brand: sonos
     dualOrientation: false
     simCount: 0
     display:
@@ -250,13 +250,13 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Sonos
     modus: null
     version: 46.3.57250
-    manufacturer: Sonos
+    manufacturer: sonos
     type: multimedia-player
     isbot: false
     bits: null
@@ -271,8 +271,8 @@
     architecture: null
     deviceName: ZP120
     marketingName: ZP120
-    manufacturer: Sonos
-    brand: Sonos
+    manufacturer: sonos
+    brand: sonos
     dualOrientation: false
     simCount: 0
     display:
@@ -288,13 +288,13 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Sonos
     modus: null
     version: 47.2.59120
-    manufacturer: Sonos
+    manufacturer: sonos
     type: multimedia-player
     isbot: false
     bits: null
@@ -309,8 +309,8 @@
     architecture: null
     deviceName: 'Smart Speaker'
     marketingName: 'Smart Speaker'
-    manufacturer: Sonos
-    brand: Sonos
+    manufacturer: sonos
+    brand: sonos
     dualOrientation: false
     simCount: 0
     display:
@@ -326,13 +326,51 @@
     name: 'Mac OS X'
     marketingName: 'Mac OS X'
     version: null
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: Sonos
     modus: null
     version: 54.2.72031
-    manufacturer: Sonos
+    manufacturer: sonos
+    type: multimedia-player
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'Linux UPnP/1.0 Sonos/82.3-60160 (ZPS55)'
+  device:
+    architecture: null
+    deviceName: ZPS55
+    marketingName: ZPS55
+    manufacturer: sonos
+    brand: sonos
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: smart-speaker
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linuxFoundation
+    bits: null
+  client:
+    name: Sonos
+    modus: null
+    version: 82.3.60160
+    manufacturer: sonos
     type: multimedia-player
     isbot: false
     bits: null
@@ -347,8 +385,8 @@
     architecture: null
     deviceName: 'Play:3'
     marketingName: 'Play:3'
-    manufacturer: Sonos
-    brand: Sonos
+    manufacturer: sonos
+    brand: sonos
     dualOrientation: false
     simCount: 0
     display:
@@ -370,7 +408,7 @@
     name: Sonos
     modus: null
     version: 71.0.37271
-    manufacturer: Sonos
+    manufacturer: sonos
     type: multimedia-player
     isbot: false
     bits: null

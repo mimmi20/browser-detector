@@ -5,8 +5,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -22,20 +22,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Internet Explorer'
     modus: null
     version: 4.01.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Motorola VIP12xx)'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -60,55 +60,17 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Internet Explorer'
     modus: null
     version: 6.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; XT2013-2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36 EdgA/120.0.0.0'
-  device:
-    architecture: null
-    deviceName: 'general Motorola device'
-    marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: Google
-    bits: null
-  client:
-    name: 'Edge Mobile for Android'
-    modus: null
-    version: 120.0.0.0
-    manufacturer: Microsoft
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 120.0.0.0
-    manufacturer: Google
+    manufacturer: microsoft

@@ -12,8 +12,8 @@
     architecture: null
     deviceName: '7.2'
     marketingName: '7.2'
-    manufacturer: 'HMD Global'
-    brand: Nokia
+    manufacturer: hmd-global
+    brand: nokia
     dualOrientation: true
     simCount: 1
     display:
@@ -29,20 +29,20 @@
     name: Android
     marketingName: Android
     version: 11.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
     version: 126.0.6478.186
-    manufacturer: 'Duck Duck Go'
+    manufacturer: duck-duck-go
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 126.0.6478.186
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-model: '"Nokia 2.3"'
@@ -61,8 +61,8 @@
     architecture: null
     deviceName: '2.3'
     marketingName: '2.3'
-    manufacturer: 'HMD Global'
-    brand: Nokia
+    manufacturer: hmd-global
+    brand: nokia
     dualOrientation: true
     simCount: 1
     display:
@@ -78,17 +78,17 @@
     name: Android
     marketingName: Android
     version: 11.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
     version: 143.0.7499.146
-    manufacturer: 'Duck Duck Go'
+    manufacturer: duck-duck-go
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 143.0.0
-    manufacturer: Google
+    manufacturer: google

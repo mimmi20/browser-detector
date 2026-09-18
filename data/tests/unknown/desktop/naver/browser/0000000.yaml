@@ -22,20 +22,20 @@
     name: Windows
     marketingName: 'Windows 10'
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Whale Browser'
     modus: null
     version: 0.7.30.7
-    manufacturer: Naver
+    manufacturer: naver
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 52.0.2743.116
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Whale/2.8.105.18 Safari/537.36'
@@ -60,20 +60,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'Whale Browser'
     modus: null
     version: 2.8.105.18
-    manufacturer: Naver
+    manufacturer: naver
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 83.0.4103.106
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; CrOS x86_64 2.22.17) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Whale/3.18.186.3 Safari/537.36'
@@ -98,17 +98,17 @@
     name: ChromeOS
     marketingName: ChromeOS
     version: 2.22.17
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Whale Browser'
     modus: null
     version: 3.18.186.3
-    manufacturer: Naver
+    manufacturer: naver
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 108.0.0.0
-    manufacturer: Google
+    manufacturer: google

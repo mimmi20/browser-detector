@@ -5,8 +5,8 @@
     architecture: null
     deviceName: G700
     marketingName: 'Ascend G700'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 2
     display:
@@ -22,7 +22,7 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: T8300
     marketingName: T8300
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -60,197 +60,7 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
-    bits: null
-  client:
-    name: null
-    modus: null
-    version: null
-    manufacturer: unknown
-    type: unknown
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: LG/U8180/v1.0
-  device:
-    architecture: null
-    deviceName: U8180
-    marketingName: 'Ideos X1'
-    manufacturer: Huawei
-    brand: Huawei
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: 320
-      height: 240
-      touch: true
-      size: 2.8
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: Google
-    bits: null
-  client:
-    name: null
-    modus: null
-    version: null
-    manufacturer: unknown
-    type: unknown
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'LG/U8110/v2.0 UP.Link/1.1'
-  device:
-    architecture: null
-    deviceName: U8110
-    marketingName: RBM3
-    manufacturer: Huawei
-    brand: Huawei
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: 320
-      height: 240
-      touch: true
-      size: 2.8
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: Google
-    bits: null
-  client:
-    name: null
-    modus: null
-    version: null
-    manufacturer: unknown
-    type: unknown
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: LG/U8110/v2.0
-  device:
-    architecture: null
-    deviceName: U8110
-    marketingName: RBM3
-    manufacturer: Huawei
-    brand: Huawei
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: 320
-      height: 240
-      touch: true
-      size: 2.8
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: Google
-    bits: null
-  client:
-    name: null
-    modus: null
-    version: null
-    manufacturer: unknown
-    type: unknown
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'LG/U8110/v1.0 UP.Link/6.3.0.0.0'
-  device:
-    architecture: null
-    deviceName: U8110
-    marketingName: RBM3
-    manufacturer: Huawei
-    brand: Huawei
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: 320
-      height: 240
-      touch: true
-      size: 2.8
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: Google
-    bits: null
-  client:
-    name: null
-    modus: null
-    version: null
-    manufacturer: unknown
-    type: unknown
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: LG/U8110/v1.0
-  device:
-    architecture: null
-    deviceName: U8110
-    marketingName: RBM3
-    manufacturer: Huawei
-    brand: Huawei
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: 320
-      height: 240
-      touch: true
-      size: 2.8
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -272,8 +82,8 @@
     architecture: null
     deviceName: KSA-LX9
     marketingName: 'Honor 8S'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -289,7 +99,7 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -302,7 +112,7 @@
   engine:
     name: Blink
     version: 97.0.4692.98
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: mark.via
@@ -311,8 +121,8 @@
     architecture: null
     deviceName: SPN-AL00
     marketingName: 'Nova 5i Pro'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -328,7 +138,7 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -341,7 +151,7 @@
   engine:
     name: Blink
     version: 88.0.4324.93
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: com.ghostery.android.ghostery
@@ -350,8 +160,8 @@
     architecture: null
     deviceName: JAT-LX3
     marketingName: 'Honor 8A Pro'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -367,7 +177,7 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -380,7 +190,7 @@
   engine:
     name: Blink
     version: 96.0.4664.104
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: com.MaxTube.browser
@@ -389,8 +199,8 @@
     architecture: null
     deviceName: MRD-LX1F
     marketingName: 'Y6 Prime (2019)'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 2
     display:
@@ -406,7 +216,7 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -419,7 +229,7 @@
   engine:
     name: Blink
     version: 89.0.4389.105
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: com.security.xvpn.z35kb.huawei
@@ -428,8 +238,8 @@
     architecture: null
     deviceName: YAL-L21
     marketingName: 'Honor 20'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 2
     display:
@@ -445,7 +255,7 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -458,7 +268,7 @@
   engine:
     name: Blink
     version: 99.0.4844.88
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: id.browser.vivid3
@@ -467,8 +277,8 @@
     architecture: null
     deviceName: MAR-LX1B
     marketingName: 'P30 Lite'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -484,7 +294,7 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -497,7 +307,7 @@
   engine:
     name: Blink
     version: 43.0.2357.65
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: idm.internet.download.manager
@@ -506,8 +316,8 @@
     architecture: null
     deviceName: STK-LX3
     marketingName: 'Y9 Prime (2019)'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -523,7 +333,7 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -536,7 +346,7 @@
   engine:
     name: Blink
     version: 87.0.4280.66
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: app.browserhub.download
@@ -545,8 +355,8 @@
     architecture: null
     deviceName: MRD-LX1
     marketingName: 'Y6 (2019)'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 2
     display:
@@ -562,7 +372,7 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -575,7 +385,7 @@
   engine:
     name: Blink
     version: 88.0.4324.181
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: com.insta.browser
@@ -584,8 +394,8 @@
     architecture: null
     deviceName: STF-L09
     marketingName: 'Honor 9'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -601,7 +411,7 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -614,7 +424,7 @@
   engine:
     name: Blink
     version: 72.0.3626.121
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: com.cavebrowser
@@ -623,8 +433,8 @@
     architecture: null
     deviceName: HRY-LX1T
     marketingName: 'Honor 10I'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -640,7 +450,7 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -653,7 +463,7 @@
   engine:
     name: Blink
     version: 70.0.3538.77
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: on.browser
@@ -662,8 +472,8 @@
     architecture: null
     deviceName: JNY-LX1
     marketingName: 'P40 Lite'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -679,7 +489,7 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -692,7 +502,7 @@
   engine:
     name: Blink
     version: 88.0.4324.93
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: org.hola.prem
@@ -701,8 +511,8 @@
     architecture: null
     deviceName: CLT-L09
     marketingName: 'P20 Pro'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 2
     display:
@@ -718,7 +528,7 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -731,7 +541,7 @@
   engine:
     name: Blink
     version: 96.0.4664.104
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: com.vuhuv
@@ -740,8 +550,8 @@
     architecture: null
     deviceName: STK-L21
     marketingName: 'Y9 Prime (2019)'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -757,7 +567,7 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -770,7 +580,7 @@
   engine:
     name: Blink
     version: 103.0.5060.71
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: com.halo.browser
@@ -779,8 +589,8 @@
     architecture: null
     deviceName: NTH-NX9
     marketingName: '50 5G'
-    manufacturer: Huawei
-    brand: Honor
+    manufacturer: huawei
+    brand: honor
     dualOrientation: true
     simCount: 1
     display:
@@ -796,7 +606,7 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -809,4 +619,4 @@
   engine:
     name: Blink
     version: 120.0.6099.144
-    manufacturer: Google
+    manufacturer: google

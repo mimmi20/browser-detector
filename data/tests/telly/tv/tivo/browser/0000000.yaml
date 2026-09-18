@@ -8,8 +8,8 @@
     architecture: null
     deviceName: TY55-1
     marketingName: TY55-1
-    manufacturer: Telly
-    brand: Telly
+    manufacturer: telly
+    brand: telly
     dualOrientation: false
     simCount: 0
     display:
@@ -25,20 +25,20 @@
     name: Android
     marketingName: Android
     version: 11.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Vewd Core'
     modus: null
     version: 4.24.0
-    manufacturer: TiVo
+    manufacturer: tivo
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 120.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua: '"Not_A Brand";v="8", "Chromium";v="120", "Vewd Core";v="4.24"'
@@ -47,8 +47,8 @@
     architecture: null
     deviceName: TY55-1
     marketingName: TY55-1
-    manufacturer: Telly
-    brand: Telly
+    manufacturer: telly
+    brand: telly
     dualOrientation: false
     simCount: 0
     display:
@@ -64,17 +64,17 @@
     name: 'Android TV'
     marketingName: 'Android TV'
     version: 11.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Vewd Core'
     modus: null
     version: 4.24.0
-    manufacturer: TiVo
+    manufacturer: tivo
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 120.0.0
-    manufacturer: Google
+    manufacturer: google

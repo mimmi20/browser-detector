@@ -22,7 +22,7 @@
     name: Windows
     marketingName: 'Windows 2000'
     version: 5.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Anonymizied
@@ -35,7 +35,7 @@
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.21 (KHTML, like Gecko) profiller Safari/537.21'
@@ -60,7 +60,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: profiller
@@ -73,7 +73,7 @@
   engine:
     name: WebKit
     version: 537.21.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: TrendWinHttp/
@@ -98,7 +98,7 @@
     name: Windows
     marketingName: Windows
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: TrendWinHttp
@@ -174,7 +174,7 @@
     name: Windows
     marketingName: 'Windows XP'
     version: 5.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: BrokenLinkCheck
@@ -212,7 +212,7 @@
     name: Windows
     marketingName: 'Windows XP'
     version: 5.2.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Girafabot
@@ -225,7 +225,7 @@
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 4.0; Girafabot; girafabot at girafa dot com; http://www.girafa.com)'
@@ -250,7 +250,7 @@
     name: 'Windows NT'
     marketingName: 'Windows NT'
     version: 4.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Girafabot
@@ -263,7 +263,7 @@
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Klondike/1.50 (WSP Win32) (Google WAP Proxy/1.0)'
@@ -288,7 +288,7 @@
     name: Windows
     marketingName: 'Windows 95'
     version: 95.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'WSP Bot'
@@ -326,7 +326,7 @@
     name: Windows
     marketingName: 'Windows ME'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: SaveWealth
@@ -339,7 +339,7 @@
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows NT 5.1; pl; rv:1.9.2.3) Gecko/20100401 Lightningquail/3.6.3'
@@ -364,7 +364,7 @@
     name: Windows
     marketingName: 'Windows XP'
     version: 5.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Lightningquail
@@ -377,7 +377,7 @@
   engine:
     name: Gecko
     version: 1.9.2.3
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; Linux i686; en-US; URLfilterDB-crawler/1.0) ufdb/1.0'
@@ -402,7 +402,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'URLfilterDB Crawler'
@@ -440,7 +440,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'generic spider'
@@ -478,7 +478,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: httpclient
@@ -516,7 +516,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Unimatrix-Zero
@@ -529,7 +529,7 @@
   engine:
     name: Gecko
     version: 1.9.0.15
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; TrafficBlazer 6.0)'
@@ -554,7 +554,7 @@
     name: Windows
     marketingName: 'Windows XP'
     version: 5.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Traffic Blazer'
@@ -567,7 +567,7 @@
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 4.0; SaveWealth)'
@@ -592,7 +592,7 @@
     name: 'Windows NT'
     marketingName: 'Windows NT'
     version: 4.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: SaveWealth
@@ -605,7 +605,7 @@
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/3.0 (Win95; I; HTTPClient 1.0)'
@@ -630,7 +630,7 @@
     name: Windows
     marketingName: 'Windows 95'
     version: 95.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: httpclient
@@ -668,7 +668,7 @@
     name: Macintosh
     marketingName: Macintosh
     version: null
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: 'WSP Bot'
@@ -706,7 +706,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: httpclient
@@ -744,7 +744,7 @@
     name: Windows
     marketingName: 'Windows XP'
     version: 5.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Add Catalog'
@@ -820,7 +820,7 @@
     name: Windows
     marketingName: 'Windows XP'
     version: 5.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: SuperBot
@@ -896,7 +896,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Squid
@@ -934,7 +934,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: URLChecker
@@ -972,7 +972,7 @@
     name: Linux
     marketingName: Linux
     version: 5.1.0
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: BlitzBot
@@ -1010,7 +1010,7 @@
     name: Windows
     marketingName: 'Windows 7'
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: BlitzBot
@@ -1048,7 +1048,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: 1.5.0
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: BlitzBot
@@ -1124,7 +1124,7 @@
     name: 'Windows NT'
     marketingName: 'Windows NT'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: SiteLockSpider
@@ -1200,7 +1200,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Freshbot
@@ -1213,7 +1213,7 @@
   engine:
     name: Gecko
     version: 6.0.0
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 ISSCyberRiskCrawler/2.0.2'
@@ -1238,7 +1238,7 @@
     name: Windows
     marketingName: 'Windows 10'
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'ISS Cyber Risk Crawler'
@@ -1251,4 +1251,4 @@
   engine:
     name: Blink
     version: 135.0.0.0
-    manufacturer: Google
+    manufacturer: google

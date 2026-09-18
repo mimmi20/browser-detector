@@ -5,8 +5,8 @@
     architecture: null
     deviceName: '1'
     marketingName: '1'
-    manufacturer: 'HMD Global'
-    brand: Nokia
+    manufacturer: hmd-global
+    brand: nokia
     dualOrientation: true
     simCount: 1
     display:
@@ -22,13 +22,13 @@
     name: 'Symbian OS'
     marketingName: 'Symbian OS'
     version: null
-    manufacturer: 'Symbian Foundation'
+    manufacturer: symbianFoundation
     bits: null
   client:
     name: 'Nokia Browser'
     modus: null
     version: null
-    manufacturer: Nokia
+    manufacturer: nokia
     type: browser
     isbot: false
     bits: null
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: '2'
     marketingName: '2'
-    manufacturer: 'HMD Global'
-    brand: Nokia
+    manufacturer: hmd-global
+    brand: nokia
     dualOrientation: true
     simCount: 1
     display:
@@ -60,13 +60,13 @@
     name: 'Symbian OS'
     marketingName: 'Symbian OS'
     version: null
-    manufacturer: 'Symbian Foundation'
+    manufacturer: symbianFoundation
     bits: null
   client:
     name: 'Nokia Browser'
     modus: null
     version: null
-    manufacturer: Nokia
+    manufacturer: nokia
     type: browser
     isbot: false
     bits: null
@@ -81,8 +81,8 @@
     architecture: null
     deviceName: '3.4'
     marketingName: '3.4'
-    manufacturer: 'HMD Global'
-    brand: Nokia
+    manufacturer: hmd-global
+    brand: nokia
     dualOrientation: true
     simCount: 1
     display:
@@ -98,17 +98,17 @@
     name: 'Symbian OS'
     marketingName: 'Symbian OS'
     version: null
-    manufacturer: 'Symbian Foundation'
+    manufacturer: symbianFoundation
     bits: null
   client:
     name: 'Nokia Browser'
     modus: null
     version: null
-    manufacturer: Nokia
+    manufacturer: nokia
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple

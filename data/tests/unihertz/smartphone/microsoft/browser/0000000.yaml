@@ -5,8 +5,8 @@
     architecture: null
     deviceName: 'Titan Slim'
     marketingName: 'Titan Slim'
-    manufacturer: Unihertz
-    brand: Unihertz
+    manufacturer: unihertz
+    brand: unihertz
     dualOrientation: true
     simCount: 2
     display:
@@ -22,17 +22,17 @@
     name: Android
     marketingName: Android
     version: 11.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Edge WebView'
     modus: null
     version: 1.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 107.0.5304.141
-    manufacturer: Google
+    manufacturer: google

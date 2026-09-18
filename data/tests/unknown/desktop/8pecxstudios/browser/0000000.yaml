@@ -22,7 +22,7 @@
     name: Windows
     marketingName: 'Windows 10'
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Cyberfox
@@ -35,7 +35,7 @@
   engine:
     name: Gecko
     version: 39.0.0
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0 Cyberfox/51.0.3'
@@ -60,7 +60,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Cyberfox
@@ -73,4 +73,4 @@
   engine:
     name: Gecko
     version: 51.0.0
-    manufacturer: Mozilla
+    manufacturer: mozilla

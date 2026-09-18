@@ -6,8 +6,8 @@
     architecture: null
     deviceName: JAT-L29
     marketingName: 'Honor Play 8A (Global)'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -23,17 +23,17 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Fiery Browser'
     modus: null
     version: null
-    manufacturer: 'Video Download Studio'
+    manufacturer: video-download-studio
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 103.0.5060.129
-    manufacturer: Google
+    manufacturer: google

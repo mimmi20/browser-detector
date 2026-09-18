@@ -5,8 +5,8 @@
     architecture: null
     deviceName: AppleTV
     marketingName: 'Apple TV'
-    manufacturer: Apple
-    brand: Apple
+    manufacturer: apple
+    brand: apple
     dualOrientation: false
     simCount: 0
     display:
@@ -22,20 +22,20 @@
     name: iOS
     marketingName: iOS
     version: 9.0.0
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: 'Mobile Safari UIWebView'
     modus: null
     version: null
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 601.1.46
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'H443NM7F8H.CBSSportsApp/1.0 iOS/9.0 model/AppleTV5,3 build/13T393'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: 'AppleTV 5,3'
     marketingName: 'Apple TV (4th Gen)'
-    manufacturer: Apple
-    brand: Apple
+    manufacturer: apple
+    brand: apple
     dualOrientation: false
     simCount: 0
     display:
@@ -60,17 +60,17 @@
     name: tvOS
     marketingName: tvOS
     version: 9.0.0
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: 'Mobile Safari UIWebView'
     modus: null
     version: null
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple

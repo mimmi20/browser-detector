@@ -5,8 +5,8 @@
     architecture: null
     deviceName: S120
     marketingName: 'Liquid Metal'
-    manufacturer: Acer
-    brand: Acer
+    manufacturer: acer
+    brand: acer
     dualOrientation: true
     simCount: 1
     display:
@@ -28,14 +28,14 @@
     name: 'Android Webkit'
     modus: null
     version: 4.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 533.1.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 2.3.7; de-de; Liquid Build/GRK39F; CyanogenMod-7) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: S100
     marketingName: 'Liquid E'
-    manufacturer: Acer
-    brand: Acer
+    manufacturer: acer
+    brand: acer
     dualOrientation: true
     simCount: 1
     display:
@@ -66,14 +66,14 @@
     name: 'Android Webkit'
     modus: null
     version: 4.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 533.1.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; E210) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.91 Safari/537.36'
@@ -81,8 +81,8 @@
     architecture: null
     deviceName: E210
     marketingName: 'beTouch E210'
-    manufacturer: Acer
-    brand: Acer
+    manufacturer: acer
+    brand: acer
     dualOrientation: true
     simCount: 1
     display:
@@ -98,17 +98,17 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 90.0.4430.91
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 90.0.4430.91
-    manufacturer: Google
+    manufacturer: google

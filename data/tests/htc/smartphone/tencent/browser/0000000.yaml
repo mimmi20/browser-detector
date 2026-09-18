@@ -5,8 +5,8 @@
     architecture: null
     deviceName: HTC6990LVW
     marketingName: 'Windows Phone 8X'
-    manufacturer: HTC
-    brand: HTC
+    manufacturer: htc
+    brand: htc
     dualOrientation: true
     simCount: 1
     display:
@@ -22,20 +22,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 8.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'QQ Browser'
     modus: null
     version: 3.7.0
-    manufacturer: Tencent
+    manufacturer: tencent
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 6.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'QQBrowser (Linux; U; zh-cn; HTC Hero Build/FRF91)'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: Hero
     marketingName: Hero
-    manufacturer: HTC
-    brand: HTC
+    manufacturer: htc
+    brand: htc
     dualOrientation: true
     simCount: 1
     display:
@@ -60,13 +60,13 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'QQ Browser'
     modus: null
     version: null
-    manufacturer: Tencent
+    manufacturer: tencent
     type: browser
     isbot: false
     bits: null
@@ -81,8 +81,8 @@
     architecture: null
     deviceName: T9292
     marketingName: HD7
-    manufacturer: HTC
-    brand: HTC
+    manufacturer: htc
+    brand: htc
     dualOrientation: true
     simCount: 1
     display:
@@ -98,13 +98,13 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 7.10.8107
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'QQ Browser'
     modus: null
     version: 2.0.0
-    manufacturer: Tencent
+    manufacturer: tencent
     type: browser
     isbot: false
     bits: null
@@ -119,8 +119,8 @@
     architecture: null
     deviceName: M7
     marketingName: 'One M7'
-    manufacturer: HTC
-    brand: HTC
+    manufacturer: htc
+    brand: htc
     dualOrientation: true
     simCount: 1
     display:
@@ -136,17 +136,17 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 7.5.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'QQ Browser'
     modus: null
     version: 2.7.0
-    manufacturer: Tencent
+    manufacturer: tencent
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 5.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft

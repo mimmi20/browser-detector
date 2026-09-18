@@ -22,20 +22,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 7.6.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 4.01; Windows NT Windows CE)'
@@ -60,20 +60,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Internet Explorer'
     modus: null
     version: 4.01.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; XBLWP7; ZuneWP7)'
@@ -98,20 +98,58 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 7.5.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 9.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 5.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
+-
+  headers:
+    user-agent: 'HD_mini_T5555 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: microsoft
+    bits: null
+  client:
+    name: IEMobile
+    modus: null
+    version: 8.12.0
+    manufacturer: microsoft
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Trident
+    version: null
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)'
@@ -136,20 +174,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 8.12.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) H-21'
@@ -174,20 +212,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 8.12.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)'
@@ -212,20 +250,58 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 8.12.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
+-
+  headers:
+    user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HD2_T8585; Windows Phone 6.5)'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 6.5.0
+    manufacturer: microsoft
+    bits: null
+  client:
+    name: 'Internet Explorer'
+    modus: null
+    version: 6.0.0
+    manufacturer: microsoft
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Trident
+    version: null
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Windows Phone 6.5)'
@@ -250,20 +326,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 6.5.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Internet Explorer'
     modus: null
     version: 6.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Windows Phone 6.5.3.5)'
@@ -288,20 +364,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 6.5.3.5
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Internet Explorer'
     modus: null
     version: 6.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Vodafone/1.0/SEX1i/R2AA Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) UP.Link/6.3.1.20.0 Profile/MIDP-2.0 Configuration/CLDC-1.1'
@@ -326,20 +402,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 7.11.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7) S12HT'
@@ -364,20 +440,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 7.7.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE)'
@@ -402,20 +478,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Internet Explorer'
     modus: null
     version: 6.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/1.1 (compatible; MSPIE 2.0; Windows CE)'
@@ -440,20 +516,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Internet Explorer'
     modus: null
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0)'
@@ -478,20 +554,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 7.5.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 9.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 5.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; 240x320)'
@@ -516,20 +592,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Internet Explorer'
     modus: null
     version: 3.02.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; MSN Companion 2.0; 800x600; Compaq)'
@@ -554,20 +630,58 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Internet Explorer'
     modus: null
     version: 4.01.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
+-
+  headers:
+    user-agent: 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; MDA Compact/1.1 Profile/MIDP-2.0 Configuration/CLDC-1.1)'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: microsoft
+    bits: null
+  client:
+    name: 'Internet Explorer'
+    modus: null
+    version: 4.01.0
+    manufacturer: microsoft
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Trident
+    version: null
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Xda_orbit_2/240x320 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)'
@@ -592,20 +706,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 7.11.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 5.0; Windows CE; Trident/3.1)'
@@ -630,20 +744,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Internet Explorer'
     modus: null
     version: 5.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 3.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 5.0; Windows CE; Trident/3.0)'
@@ -668,20 +782,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Internet Explorer'
     modus: null
     version: 5.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 3.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 8.0; Windows CE; Trident/3.1)'
@@ -706,20 +820,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Internet Explorer'
     modus: null
     version: 8.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 3.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 11.0; Windows CE; Trident/4.1)'
@@ -744,20 +858,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Internet Explorer'
     modus: null
     version: 8.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 4.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/6.0 (compatible; MSIE 7.01; Windows NT Windows CE)'
@@ -782,20 +896,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Internet Explorer'
     modus: null
     version: 7.01.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 7.0; Windows CE; Trident/3.1)'
@@ -820,20 +934,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Internet Explorer'
     modus: null
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 3.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; NOKIA; id300)'
@@ -858,20 +972,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 8.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 6.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; XBLWP7; ZuneWP7)'
@@ -896,20 +1010,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 7.5.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 7.0; Windows CE; Trident/4.1)'
@@ -934,58 +1048,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Internet Explorer'
     modus: null
     version: 8.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 4.1.0
-    manufacturer: Microsoft
--
-  headers:
-    user-agent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch)'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.0.0
-    manufacturer: Microsoft
-    bits: null
-  client:
-    name: IEMobile
-    modus: null
-    version: 10.0.0
-    manufacturer: Microsoft
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Trident
-    version: 6.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (Mobile; Windows Phone 8.1; Android 4.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0'
@@ -1010,20 +1086,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 8.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 11.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0)'
@@ -1048,20 +1124,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 3.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)'
@@ -1086,20 +1162,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Internet Explorer'
     modus: null
     version: 4.01.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 8.0; Windows CE; Trident/4.0)'
@@ -1124,20 +1200,58 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Internet Explorer'
     modus: null
     version: 8.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 4.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Windows NT 10.0; Trident/7.0; Touch; SurfTab duo W1 10.1; rv:11.0) like Gecko'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Windows
+    marketingName: 'Windows 10'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: null
+  client:
+    name: 'Internet Explorer'
+    modus: null
+    version: 11.0.0
+    manufacturer: microsoft
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Trident
+    version: 7.0.0
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)'
@@ -1162,20 +1276,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 7.7.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; SDA/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1)'
@@ -1200,20 +1314,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Internet Explorer'
     modus: null
     version: 4.01.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows Phone 8.1; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; Microsoft; Virtual) like Gecko'
@@ -1238,20 +1352,58 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 8.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 11.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Windows NT 6.3; Trident/7.0; Touch; SurfTab duo W1 10.1; WebView/2.0; rv:11.0) like Gecko'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Windows
+    marketingName: 'Windows 8.1'
+    version: 8.1.0
+    manufacturer: microsoft
+    bits: null
+  client:
+    name: 'Internet Explorer'
+    modus: null
+    version: 11.0.0
+    manufacturer: microsoft
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Trident
+    version: 7.0.0
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'mozilla/4.0 (compatible; msie 4.01; windows ce; msn companion 2.0; 800x600; compaq)'
@@ -1276,20 +1428,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Internet Explorer'
     modus: null
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'mozilla/6.0 (compatible; msie 7.01; windows nt windows ce)'
@@ -1314,20 +1466,58 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Internet Explorer'
     modus: null
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
+-
+  headers:
+    user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320; MDA Vario/1.3 Profile/MIDP-2.0 Configuration/CLDC-1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: microsoft
+    bits: null
+  client:
+    name: IEMobile
+    modus: null
+    version: 6.8.0
+    manufacturer: microsoft
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Trident
+    version: null
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0) AdMob;Octagon'
@@ -1352,20 +1542,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 3.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) i-mate 8150/ 480x640'
@@ -1390,20 +1580,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 7.11.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) i-mate 9502; 480x640'
@@ -1428,20 +1618,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 7.6.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC i-mate JAMA; 240x320)'
@@ -1466,20 +1656,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Internet Explorer'
     modus: null
     version: 4.01.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; i-mate JAMin PPC; 240x320; PPC; 240x320)'
@@ -1504,20 +1694,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Internet Explorer'
     modus: null
     version: 4.01.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC i-mate JAQ3; 240x320; PPC)'
@@ -1542,20 +1732,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Internet Explorer'
     modus: null
     version: 4.01.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC i-mate PDAL; 240x320)'
@@ -1580,20 +1770,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Internet Explorer'
     modus: null
     version: 4.01.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; Juggernaut; Semaphore)'
@@ -1618,20 +1808,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 8.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 6.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; Juggernaut; 0)'
@@ -1656,20 +1846,96 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 8.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 6.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; MAL; N880E; China Telecom)'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 7.5.0
+    manufacturer: microsoft
+    bits: null
+  client:
+    name: IEMobile
+    modus: null
+    version: 9.0.0
+    manufacturer: microsoft
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Trident
+    version: 5.0.0
+    manufacturer: microsoft
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; MAL; N880e WP7.8 V1 Plus)'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 7.5.0
+    manufacturer: microsoft
+    bits: null
+  client:
+    name: IEMobile
+    modus: null
+    version: 9.0.0
+    manufacturer: microsoft
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Trident
+    version: 5.0.0
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Microsoft; CEPC)'
@@ -1694,20 +1960,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 7.5.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 9.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 5.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0) Microsoft;FuturePhone'
@@ -1732,20 +1998,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 3.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; Microsoft; OMNIA7)'
@@ -1770,20 +2036,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 3.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; Microsoft; Virtual)'
@@ -1808,20 +2074,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 3.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0) Microsoft Corporation;XDeviceEmulator'
@@ -1846,20 +2112,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 3.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; Microsoft; 0)'
@@ -1884,20 +2150,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 3.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NA; NA; NA)'
@@ -1922,20 +2188,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 7.5.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 9.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 5.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; NOKIA; id102)'
@@ -1960,20 +2226,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 8.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 6.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; NOKIA; id104)'
@@ -1998,20 +2264,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 8.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 6.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; NOKIA; id201)'
@@ -2036,20 +2302,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 8.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 6.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; NOKIA; id301)'
@@ -2074,20 +2340,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 8.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 6.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; id313-1)'
@@ -2112,20 +2378,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 3.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows Phone 8.1; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; NOKIA; id313-3) like Gecko'
@@ -2150,20 +2416,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 8.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 11.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; OMNIA7)'
@@ -2188,20 +2454,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 7.5.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 9.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 5.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; NOKIA; P4301)'
@@ -2226,20 +2492,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 8.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 6.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; NOKIA; Phi-CMCC)'
@@ -2264,20 +2530,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 8.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 6.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Radar C110e)'
@@ -2302,20 +2568,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 7.5.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 9.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 5.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Nokia; SeaRay)'
@@ -2340,20 +2606,96 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 7.5.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 9.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 5.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Nokia; SGH-i917)'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 7.5.0
+    manufacturer: microsoft
+    bits: null
+  client:
+    name: IEMobile
+    modus: null
+    version: 9.0.0
+    manufacturer: microsoft
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Trident
+    version: 5.0.0
+    manufacturer: microsoft
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Nokia; SGH-i937)'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 7.5.0
+    manufacturer: microsoft
+    bits: null
+  client:
+    name: IEMobile
+    modus: null
+    version: 9.0.0
+    manufacturer: microsoft
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Trident
+    version: 5.0.0
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Nokia; TITAN X310e)'
@@ -2378,20 +2720,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 7.5.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 9.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 5.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; NOKIA; 0)'
@@ -2416,20 +2758,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 8.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 6.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Treo800w/v0100 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE, PPC; 320x320) (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)'
@@ -2454,20 +2796,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 7.11.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone OS 8.0; Trident/6.0; IEMobile/10.0; RoC; MLPportal)'
@@ -2492,20 +2834,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 8.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 6.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SUMSUNG; OMNIA 7)'
@@ -2530,20 +2872,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 7.5.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 9.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 5.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0;  ; LEO70)'
@@ -2568,20 +2910,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 3.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.0)'
@@ -2606,20 +2948,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 6.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 5.5; Windows CE)'
@@ -2644,20 +2986,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Internet Explorer'
     modus: null
     version: 5.5.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; O2 Xda 2s;PPC;240x320; PPC; 240x320)'
@@ -2682,20 +3024,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Internet Explorer'
     modus: null
     version: 4.01.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Xda neo; 240x320)'
@@ -2720,20 +3062,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Internet Explorer'
     modus: null
     version: 4.01.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE)'
@@ -2758,20 +3100,96 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Internet Explorer'
     modus: null
     version: 4.01.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Windows NT 6.2; Trident/7.0; SurfTab twin 11.6 LC1; rv:11.0) like Gecko'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Windows
+    marketingName: 'Windows 8'
+    version: 8.0.0
+    manufacturer: microsoft
+    bits: null
+  client:
+    name: 'Internet Explorer'
+    modus: null
+    version: 11.0.0
+    manufacturer: microsoft
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Trident
+    version: 7.0.0
+    manufacturer: microsoft
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Windows NT 10.0; Trident/7.0; Touch; SurfTab twin 11.6 LC1; rv:11.0) like Gecko'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Windows
+    marketingName: 'Windows 10'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: null
+  client:
+    name: 'Internet Explorer'
+    modus: null
+    version: 11.0.0
+    manufacturer: microsoft
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Trident
+    version: 7.0.0
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM;Touch)'
@@ -2796,20 +3214,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 8.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 6.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 10.0; ARM; Touch; Trident/6.0; Windows Phone 8.0;  IEMobile/10.0)'
@@ -2834,20 +3252,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 8.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 6.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; LG; GW910)'
@@ -2872,20 +3290,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 3.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)'
@@ -2910,20 +3328,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Internet Explorer'
     modus: null
     version: 4.01.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/3.1; XBLWP7; ZuneWP7)'
@@ -2948,20 +3366,58 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 7.5.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 3.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
+-
+  headers:
+    user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; MDA_Basic/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: microsoft
+    bits: null
+  client:
+    name: IEMobile
+    modus: null
+    version: 7.11.0
+    manufacturer: microsoft
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Trident
+    version: null
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)'
@@ -2986,20 +3442,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Internet Explorer'
     modus: null
     version: 4.01.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.2; Trident/5.0; XBLWP7; ZuneWP7)'
@@ -3024,20 +3480,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 7.5.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 9.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 5.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Smartphone; 320x240)'
@@ -3062,20 +3518,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Internet Explorer'
     modus: null
     version: 6.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Smartphone)'
@@ -3100,20 +3556,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Internet Explorer'
     modus: null
     version: 6.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320)'
@@ -3138,20 +3594,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Internet Explorer'
     modus: null
     version: 6.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC)'
@@ -3176,20 +3632,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Internet Explorer'
     modus: null
     version: 6.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile m.n)'
@@ -3214,20 +3670,58 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 6.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
+-
+  headers:
+    user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7) S11HT'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: microsoft
+    bits: null
+  client:
+    name: IEMobile
+    modus: null
+    version: 7.7.0
+    manufacturer: microsoft
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Trident
+    version: null
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7) 320x320; XV6900; Window Mobile 6.0 Professional;'
@@ -3252,20 +3746,20 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 7.7.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)'
@@ -3290,511 +3784,17 @@
     name: 'Windows CE'
     marketingName: 'Windows CE'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: IEMobile
     modus: null
     version: 7.6.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
--
-  headers:
-    user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) UP.Link/6.3.1.17.06.3.1.17.0'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: Microsoft
-    bits: null
-  client:
-    name: IEMobile
-    modus: null
-    version: 7.11.0
-    manufacturer: Microsoft
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Trident
-    version: null
-    manufacturer: Microsoft
--
-  headers:
-    user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) UP.Link/6.3.1.17.0'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: Microsoft
-    bits: null
-  client:
-    name: IEMobile
-    modus: null
-    version: 7.11.0
-    manufacturer: Microsoft
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Trident
-    version: null
-    manufacturer: Microsoft
--
-  headers:
-    user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) S21HT'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: Microsoft
-    bits: null
-  client:
-    name: IEMobile
-    modus: null
-    version: 7.11.0
-    manufacturer: Microsoft
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Trident
-    version: null
-    manufacturer: Microsoft
--
-  headers:
-    user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.9)'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: Microsoft
-    bits: null
-  client:
-    name: IEMobile
-    modus: null
-    version: 6.9.0
-    manufacturer: Microsoft
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Trident
-    version: null
-    manufacturer: Microsoft
--
-  headers:
-    user-agent: 'Mozilla/4.0 (compatible; MSIE 5.5; Windows CE; PPC; 240x320)'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: Microsoft
-    bits: null
-  client:
-    name: 'Internet Explorer'
-    modus: null
-    version: 5.5.0
-    manufacturer: Microsoft
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Trident
-    version: null
-    manufacturer: Microsoft
--
-  headers:
-    user-agent: 'Mozilla/4.0 (compatible; MSIE 5.5; Windows CE Windows NT)'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: Microsoft
-    bits: null
-  client:
-    name: 'Internet Explorer'
-    modus: null
-    version: 5.5.0
-    manufacturer: Microsoft
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Trident
-    version: null
-    manufacturer: Microsoft
--
-  headers:
-    user-agent: 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Xda Mini S; 240x320)'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: Microsoft
-    bits: null
-  client:
-    name: 'Internet Explorer'
-    modus: null
-    version: 4.01.0
-    manufacturer: Microsoft
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Trident
-    version: null
-    manufacturer: Microsoft
--
-  headers:
-    user-agent: 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; SDA/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1)'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: Microsoft
-    bits: null
-  client:
-    name: 'Internet Explorer'
-    modus: null
-    version: 4.01.0
-    manufacturer: Microsoft
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Trident
-    version: null
-    manufacturer: Microsoft
--
-  headers:
-    user-agent: 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220; i930A; 4.21.1088; 000805327106330)'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: Microsoft
-    bits: null
-  client:
-    name: 'Internet Explorer'
-    modus: null
-    version: 4.01.0
-    manufacturer: Microsoft
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Trident
-    version: null
-    manufacturer: Microsoft
--
-  headers:
-    user-agent: 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220) UP.Link/1.1'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: Microsoft
-    bits: null
-  client:
-    name: 'Internet Explorer'
-    modus: null
-    version: 4.01.0
-    manufacturer: Microsoft
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Trident
-    version: null
-    manufacturer: Microsoft
--
-  headers:
-    user-agent: 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; PIEPlus 1.11)'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: Microsoft
-    bits: null
-  client:
-    name: 'Internet Explorer'
-    modus: null
-    version: 4.01.0
-    manufacturer: Microsoft
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Trident
-    version: null
-    manufacturer: Microsoft
--
-  headers:
-    user-agent: 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320) UP.Link/6.3.0.0.0'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: Microsoft
-    bits: null
-  client:
-    name: 'Internet Explorer'
-    modus: null
-    version: 4.01.0
-    manufacturer: Microsoft
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Trident
-    version: null
-    manufacturer: Microsoft
--
-  headers:
-    user-agent: 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320) UP.Link/1.1'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: Microsoft
-    bits: null
-  client:
-    name: 'Internet Explorer'
-    modus: null
-    version: 4.01.0
-    manufacturer: Microsoft
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Trident
-    version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft

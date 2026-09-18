@@ -5,8 +5,8 @@
     architecture: null
     deviceName: TYH631M
     marketingName: 'Maimang 20 5G'
-    manufacturer: 'China Telecom'
-    brand: 'China Telecom'
+    manufacturer: china-telecom
+    brand: china-telecom
     dualOrientation: true
     simCount: 2
     display:
@@ -22,20 +22,20 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Yandex Browser'
     modus: null
     version: 24.4.7.51.00
-    manufacturer: Yandex
+    manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 122.0.6261.51
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; TYH641M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.6834.96 YaBrowser/25.2.6.96.00 SA/3 Mobile Safari/537.36'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: TYH641M
     marketingName: 'Maimang 30 5G'
-    manufacturer: 'China Telecom'
-    brand: 'China Telecom'
+    manufacturer: china-telecom
+    brand: china-telecom
     dualOrientation: true
     simCount: 2
     display:
@@ -60,17 +60,17 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Yandex Browser'
     modus: null
     version: 25.2.6.96.00
-    manufacturer: Yandex
+    manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 132.0.6834.96
-    manufacturer: Google
+    manufacturer: google

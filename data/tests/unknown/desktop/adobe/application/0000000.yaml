@@ -22,20 +22,20 @@
     name: Windows
     marketingName: Windows
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Dreamweaver
     modus: null
     version: 12.0.0.5808
-    manufacturer: Adobe
+    manufacturer: adobe
     type: application
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 533.19.4
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; en-US) AppleWebKit/523+ (KHTML, like Gecko) AdobeAIR/1.5 Community Help Client 1.0'
@@ -60,20 +60,20 @@
     name: Windows
     marketingName: Windows
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Adobe AIR'
     modus: null
     version: 1.5.0
-    manufacturer: Adobe
+    manufacturer: adobe
     type: application
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 523.0.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; Linux i686; ) AppleWebKit/533.19.4 (KHTML, like Gecko) AdobeAIR/3.1'
@@ -98,20 +98,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'Adobe AIR'
     modus: null
     version: 3.1.0
-    manufacturer: Adobe
+    manufacturer: adobe
     type: application
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 533.19.4
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ReaderServices/24.3.20180 Chrome/105.0.0.0 Safari/537.36'
@@ -136,20 +136,20 @@
     name: Windows
     marketingName: 'Windows 10'
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Acrobat Reader'
     modus: null
     version: 24.3.20180
-    manufacturer: Adobe
+    manufacturer: adobe
     type: application
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 105.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Acrobat/24.3.20180.6 NGL Client/1.38.0.10 (WINDOWS_64/10.0.19045.1)'
@@ -174,13 +174,13 @@
     name: Windows
     marketingName: 'Windows 10'
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Acrobat Reader'
     modus: null
     version: 24.3.20180.6
-    manufacturer: Adobe
+    manufacturer: adobe
     type: application
     isbot: false
     bits: null

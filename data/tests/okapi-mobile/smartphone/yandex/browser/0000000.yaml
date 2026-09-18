@@ -5,8 +5,8 @@
     architecture: null
     deviceName: 'Okapi Tab8 Pro'
     marketingName: 'Okapi Tab8 Pro'
-    manufacturer: 'Okapi Mobile'
-    brand: 'Okapi Mobile'
+    manufacturer: okapi-mobile
+    brand: okapi-mobile
     dualOrientation: true
     simCount: 2
     display:
@@ -22,17 +22,17 @@
     name: Android
     marketingName: Android
     version: 11.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Yandex Search Browser'
     modus: null
     version: 24.101.1
-    manufacturer: Yandex
+    manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 128.0.6613.629
-    manufacturer: Google
+    manufacturer: google

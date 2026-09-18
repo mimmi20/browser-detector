@@ -5,8 +5,8 @@
     architecture: null
     deviceName: 'C12 Pro'
     marketingName: 'C12 Pro'
-    manufacturer: 'HMD Global'
-    brand: Nokia
+    manufacturer: hmd-global
+    brand: nokia
     dualOrientation: true
     simCount: 1
     display:
@@ -22,20 +22,20 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 126.0.6478.135
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 126.0.6478.135
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Nokia 8.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.5615.101 Mobile Safari/537.36'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: '8.3 4G'
     marketingName: '8.3 4G'
-    manufacturer: 'HMD Global'
-    brand: Nokia
+    manufacturer: hmd-global
+    brand: nokia
     dualOrientation: true
     simCount: 1
     display:
@@ -60,20 +60,20 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 112.0.5615.101
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 112.0.5615.101
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; Nokia G10 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/128.0.6613.146 Mobile Safari/537.36'
@@ -81,8 +81,8 @@
     architecture: null
     deviceName: G10
     marketingName: G10
-    manufacturer: 'HMD Global'
-    brand: Nokia
+    manufacturer: hmd-global
+    brand: nokia
     dualOrientation: false
     simCount: 1
     display:
@@ -98,20 +98,20 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 128.0.6613.146
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 128.0.6613.146
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; HMD Fusion) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36'
@@ -119,8 +119,8 @@
     architecture: null
     deviceName: Fusion
     marketingName: Fusion
-    manufacturer: 'HMD Global'
-    brand: 'HMD Global'
+    manufacturer: hmd-global
+    brand: hmd-global
     dualOrientation: true
     simCount: 2
     display:
@@ -136,20 +136,20 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 130.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 130.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; HMD Pulse Pro Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.135 Mobile Safari/537.36'
@@ -157,8 +157,8 @@
     architecture: null
     deviceName: 'Pulse Pro'
     marketingName: 'Pulse Pro'
-    manufacturer: 'HMD Global'
-    brand: 'HMD Global'
+    manufacturer: hmd-global
+    brand: hmd-global
     dualOrientation: true
     simCount: 1
     display:
@@ -174,20 +174,20 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 131.0.6778.135
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 131.0.6778.135
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 14; en-us; N159V Build/JOP24G) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/85.0.4183.69 Mobile Safari/537.36'
@@ -195,8 +195,8 @@
     architecture: null
     deviceName: N159V
     marketingName: Vibe
-    manufacturer: 'HMD Global'
-    brand: 'HMD Global'
+    manufacturer: hmd-global
+    brand: hmd-global
     dualOrientation: true
     simCount: 1
     display:
@@ -212,20 +212,20 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 85.0.4183.69
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 85.0.4183.69
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; Nokia X30 5G Build/UKQ1.231003.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/135.0.7049.100 Mobile Safari/537.36'
@@ -233,8 +233,8 @@
     architecture: null
     deviceName: 'X30 5G'
     marketingName: 'X30 5G'
-    manufacturer: 'HMD Global'
-    brand: Nokia
+    manufacturer: hmd-global
+    brand: nokia
     dualOrientation: false
     simCount: 1
     display:
@@ -250,20 +250,20 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 135.0.7049.100
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 135.0.7049.100
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; HMD Fusion Build/AQ3A.240912.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/137.0.7151.115 Mobile Safari/537.36'
@@ -271,8 +271,8 @@
     architecture: null
     deviceName: Fusion
     marketingName: Fusion
-    manufacturer: 'HMD Global'
-    brand: 'HMD Global'
+    manufacturer: hmd-global
+    brand: hmd-global
     dualOrientation: true
     simCount: 2
     display:
@@ -288,20 +288,20 @@
     name: Android
     marketingName: Android
     version: 15.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 137.0.7151.115
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 137.0.7151.115
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; HMD XR21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36'
@@ -309,8 +309,8 @@
     architecture: null
     deviceName: XR21
     marketingName: XR21
-    manufacturer: 'HMD Global'
-    brand: 'HMD Global'
+    manufacturer: hmd-global
+    brand: hmd-global
     dualOrientation: true
     simCount: 2
     display:
@@ -326,20 +326,20 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 137.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 137.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; HMD ARC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36'
@@ -347,8 +347,8 @@
     architecture: null
     deviceName: Arc
     marketingName: Arc
-    manufacturer: 'HMD Global'
-    brand: 'HMD Global'
+    manufacturer: hmd-global
+    brand: hmd-global
     dualOrientation: true
     simCount: 1
     display:
@@ -364,20 +364,20 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 137.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 137.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; HMD Vibe) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36'
@@ -385,8 +385,8 @@
     architecture: null
     deviceName: Vibe
     marketingName: Vibe
-    manufacturer: 'HMD Global'
-    brand: 'HMD Global'
+    manufacturer: hmd-global
+    brand: hmd-global
     dualOrientation: true
     simCount: 1
     display:
@@ -402,20 +402,20 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 138.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 138.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; HMD Skyline Build/AQ3A.240912.001; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/141.0.7390.122 Mobile Safari/537.36'
@@ -423,8 +423,8 @@
     architecture: null
     deviceName: Skyline
     marketingName: Skyline
-    manufacturer: 'HMD Global'
-    brand: 'HMD Global'
+    manufacturer: hmd-global
+    brand: hmd-global
     dualOrientation: true
     simCount: 2
     display:
@@ -440,20 +440,20 @@
     name: Android
     marketingName: Android
     version: 15.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 141.0.7390.122
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 141.0.7390.122
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-model: '"HMD Skyline"'
@@ -471,8 +471,8 @@
     architecture: null
     deviceName: Skyline
     marketingName: Skyline
-    manufacturer: 'HMD Global'
-    brand: 'HMD Global'
+    manufacturer: hmd-global
+    brand: hmd-global
     dualOrientation: true
     simCount: 2
     display:
@@ -488,20 +488,20 @@
     name: Android
     marketingName: Android
     version: 15.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 142.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 142.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; M-KOPA X30) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.215 Mobile Safari/537.36'
@@ -509,8 +509,8 @@
     architecture: null
     deviceName: X30
     marketingName: X30
-    manufacturer: 'HMD Global'
-    brand: M-KOPA
+    manufacturer: hmd-global
+    brand: m-kopa
     dualOrientation: true
     simCount: 2
     display:
@@ -526,20 +526,20 @@
     name: Android
     marketingName: Android
     version: 15.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 148.0.7778.215
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 148.0.7778.215
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; HMD KEY Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.91 Mobile Safari/537.36'
@@ -547,8 +547,8 @@
     architecture: null
     deviceName: Key
     marketingName: Key
-    manufacturer: 'HMD Global'
-    brand: 'HMD Global'
+    manufacturer: hmd-global
+    brand: hmd-global
     dualOrientation: true
     simCount: 1
     display:
@@ -564,20 +564,20 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; HMD CREST MAX Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
@@ -585,8 +585,8 @@
     architecture: null
     deviceName: 'Crest Max'
     marketingName: 'Crest Max'
-    manufacturer: 'HMD Global'
-    brand: 'HMD Global'
+    manufacturer: hmd-global
+    brand: hmd-global
     dualOrientation: true
     simCount: 2
     display:
@@ -602,20 +602,20 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; HMD Aura Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
@@ -623,8 +623,8 @@
     architecture: null
     deviceName: Aura
     marketingName: Aura
-    manufacturer: 'HMD Global'
-    brand: 'HMD Global'
+    manufacturer: hmd-global
+    brand: hmd-global
     dualOrientation: true
     simCount: 2
     display:
@@ -640,20 +640,20 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; M-KOPA X3 Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/150.0.7871.124 Mobile Safari/537.36'
@@ -661,8 +661,8 @@
     architecture: null
     deviceName: X3
     marketingName: X3
-    manufacturer: 'HMD Global'
-    brand: M-KOPA
+    manufacturer: hmd-global
+    brand: m-kopa
     dualOrientation: true
     simCount: 1
     display:
@@ -678,20 +678,20 @@
     name: Android
     marketingName: Android
     version: 15.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 150.0.7871.124
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 150.0.7871.124
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; S34 Build/M-KOPA_S34_V1.0; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/150.0.7871.124 Mobile Safari/537.36'
@@ -699,8 +699,8 @@
     architecture: null
     deviceName: S34
     marketingName: S34
-    manufacturer: 'HMD Global'
-    brand: M-KOPA
+    manufacturer: hmd-global
+    brand: m-kopa
     dualOrientation: true
     simCount: 1
     display:
@@ -716,17 +716,17 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 150.0.7871.124
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 150.0.7871.124
-    manufacturer: Google
+    manufacturer: google

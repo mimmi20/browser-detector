@@ -5,8 +5,8 @@
     architecture: null
     deviceName: SH505i
     marketingName: SH505i
-    manufacturer: Sharp
-    brand: DoCoMo
+    manufacturer: sharp
+    brand: ntt-docomo
     dualOrientation: false
     simCount: 1
     display:
@@ -22,17 +22,17 @@
     name: JavaOS
     marketingName: JavaOS
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: OmniWeb
     modus: null
     version: 4.1.1
-    manufacturer: 'Omni Development'
+    manufacturer: omni-development
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple

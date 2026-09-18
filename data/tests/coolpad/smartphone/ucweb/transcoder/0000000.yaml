@@ -5,8 +5,8 @@
     architecture: null
     deviceName: 'CP8298 I00'
     marketingName: 'Note 3 Lite'
-    manufacturer: Coolpad
-    brand: Coolpad
+    manufacturer: coolpad
+    brand: coolpad
     dualOrientation: true
     simCount: 1
     display:
@@ -22,20 +22,20 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 10.1.2.571
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: U2
     version: 1.0.0
-    manufacturer: UCWeb
+    manufacturer: ucweb
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 9; zh-CN; ORL-C0 Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.9.2.1072 Mobile Safari/537.36'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: ORL-C0
     marketingName: 'Cool 9'
-    manufacturer: Coolpad
-    brand: Coolpad
+    manufacturer: coolpad
+    brand: coolpad
     dualOrientation: true
     simCount: 1
     display:
@@ -60,20 +60,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 12.9.2.1072
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 57.0.2987.108
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 11; zh-CN; CP07 Build/CP07.241206.1S.AL) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 UCBrowser/17.5.4.1385 Mobile Safari/537.36'
@@ -81,8 +81,8 @@
     architecture: null
     deviceName: CP07
     marketingName: 'Cool 20S 5G'
-    manufacturer: Coolpad
-    brand: Coolpad
+    manufacturer: coolpad
+    brand: coolpad
     dualOrientation: true
     simCount: 2
     display:
@@ -98,17 +98,17 @@
     name: Android
     marketingName: Android
     version: 11.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 17.5.4.1385
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 100.0.4896.58
-    manufacturer: Google
+    manufacturer: google

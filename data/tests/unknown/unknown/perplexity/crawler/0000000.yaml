@@ -28,14 +28,14 @@
     name: PerplexityBot
     modus: null
     version: 1.0.0
-    manufacturer: Perplexity
+    manufacturer: perplexity
     type: crawler
     isbot: true
     bits: null
   engine:
     name: WebKit
     version: 537.36.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'like Gecko; compatible; PerplexityBot/1.0; +https://perplexity.ai/perplexitybot)'
@@ -66,7 +66,7 @@
     name: PerplexityBot
     modus: null
     version: 1.0.0
-    manufacturer: Perplexity
+    manufacturer: perplexity
     type: crawler
     isbot: true
     bits: null
@@ -104,14 +104,14 @@
     name: 'Perplexity User'
     modus: null
     version: 1.0.0
-    manufacturer: Perplexity
+    manufacturer: perplexity
     type: crawler
     isbot: true
     bits: null
   engine:
     name: WebKit
     version: 537.36.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; Perplexity-User/1.0; +https://perplexity.ai/perplexity-user)'
@@ -142,7 +142,7 @@
     name: 'Perplexity User'
     modus: null
     version: 1.0.0
-    manufacturer: Perplexity
+    manufacturer: perplexity
     type: crawler
     isbot: true
     bits: null
@@ -176,13 +176,13 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: PerplexityBot
     modus: null
     version: 1.0.0
-    manufacturer: Perplexity
+    manufacturer: perplexity
     type: crawler
     isbot: true
     bits: null

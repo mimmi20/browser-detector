@@ -11,8 +11,8 @@
     architecture: null
     deviceName: MS5539G
     marketingName: MS5539G
-    manufacturer: 'Maze Speed'
-    brand: 'Maze Speed'
+    manufacturer: maze-speed
+    brand: maze-speed
     dualOrientation: true
     simCount: 1
     display:
@@ -28,20 +28,20 @@
     name: Android
     marketingName: Android
     version: 11.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 123.0.6312.80
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 123.0.6312.80
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-model: MS5614G
@@ -55,8 +55,8 @@
     architecture: null
     deviceName: MS5614G
     marketingName: MS5614G
-    manufacturer: 'Maze Speed'
-    brand: 'Maze Speed'
+    manufacturer: maze-speed
+    brand: maze-speed
     dualOrientation: true
     simCount: 1
     display:
@@ -72,20 +72,20 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 111.0.5563.116
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 111.0.5563.116
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; M1582C_MAX Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.71 Mobile Safari/537.36'
@@ -93,8 +93,8 @@
     architecture: null
     deviceName: M1582C_MAX
     marketingName: 'M1582C Max'
-    manufacturer: 'Maze Speed'
-    brand: 'Maze Speed'
+    manufacturer: maze-speed
+    brand: maze-speed
     dualOrientation: true
     simCount: 2
     display:
@@ -110,17 +110,17 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 126.0.6478.71
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 126.0.6478.71
-    manufacturer: Google
+    manufacturer: google

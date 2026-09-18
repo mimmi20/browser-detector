@@ -22,7 +22,7 @@
     name: 'Redhat Linux'
     marketingName: 'Redhat Linux'
     version: null
-    manufacturer: Redhat
+    manufacturer: redhat
     bits: null
   client:
     name: cURL
@@ -60,7 +60,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: SlimerJS
@@ -73,7 +73,7 @@
   engine:
     name: Gecko
     version: 36.0.0
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'GuzzleHttp/6.1.0 curl/7.35.0 PHP/5.5.9-1ubuntu4.14'
@@ -98,7 +98,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -136,7 +136,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -250,7 +250,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: cURL
@@ -288,7 +288,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: SlimerJS
@@ -301,7 +301,7 @@
   engine:
     name: Gecko
     version: 38.0.0
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'docker/1.11.1 go/go1.5.4 git-commit/5604cbe kernel/4.4.0-21-generic os/linux arch/amd64 UpstreamClient(Docker-Client/1.11.1 \(linux\))'
@@ -326,7 +326,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: docker
@@ -364,7 +364,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -402,7 +402,7 @@
     name: 'Suse Linux'
     marketingName: 'Suse Linux'
     version: null
-    manufacturer: Suse
+    manufacturer: suse
     bits: null
   client:
     name: cURL
@@ -440,7 +440,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: cURL
@@ -478,7 +478,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: cURL
@@ -516,7 +516,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: cURL
@@ -554,7 +554,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: cURL
@@ -592,7 +592,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: cURL
@@ -630,7 +630,7 @@
     name: Windows
     marketingName: 'Windows 95'
     version: 95.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: cURL
@@ -668,7 +668,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 6.1.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -706,7 +706,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -744,7 +744,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 8.4.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -782,7 +782,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: ruby
@@ -820,7 +820,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -858,7 +858,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -934,7 +934,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -972,7 +972,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -1010,7 +1010,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -1048,7 +1048,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: cURL
@@ -1086,7 +1086,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 9.0.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -1124,7 +1124,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: cURL
@@ -1162,7 +1162,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: cURL
@@ -1200,7 +1200,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: cURL
@@ -1314,7 +1314,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -1390,7 +1390,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -1466,7 +1466,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 4.6.2
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -1504,7 +1504,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 4.7.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -1542,7 +1542,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 4.1.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -1580,7 +1580,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 4.6.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -1618,7 +1618,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 4.2.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -1656,7 +1656,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 7.2.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -1694,7 +1694,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 8.0.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -1732,7 +1732,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 7.2.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -1770,7 +1770,7 @@
     name: 'Mandriva Linux'
     marketingName: 'Mandriva Linux'
     version: null
-    manufacturer: Mandriva
+    manufacturer: mandriva
     bits: null
   client:
     name: cURL
@@ -1808,7 +1808,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 7.1.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -1846,7 +1846,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 4.3.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -1884,7 +1884,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 6.2.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -1922,7 +1922,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 7.1.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -1960,7 +1960,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 6.3.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -1998,7 +1998,7 @@
     name: Windows
     marketingName: Windows
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: cURL
@@ -2036,7 +2036,7 @@
     name: Windows
     marketingName: Windows
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: cURL
@@ -2074,7 +2074,7 @@
     name: Windows
     marketingName: Windows
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: cURL
@@ -2112,7 +2112,7 @@
     name: Solaris
     marketingName: Solaris
     version: 2.0.0
-    manufacturer: Oracle
+    manufacturer: oracle
     bits: null
   client:
     name: cURL
@@ -2150,7 +2150,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 7.1.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -2188,7 +2188,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 7.0.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -2226,7 +2226,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 6.2.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -2340,7 +2340,7 @@
     name: Solaris
     marketingName: Solaris
     version: 2.8.0
-    manufacturer: Oracle
+    manufacturer: oracle
     bits: null
   client:
     name: cURL
@@ -2378,7 +2378,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 6.3.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -2454,7 +2454,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 4.8.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -2530,7 +2530,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 6.2.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -2568,7 +2568,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 6.1.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -2606,7 +2606,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 6.0.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -2644,7 +2644,7 @@
     name: Solaris
     marketingName: Solaris
     version: 2.8.0
-    manufacturer: Oracle
+    manufacturer: oracle
     bits: null
   client:
     name: cURL
@@ -2682,7 +2682,7 @@
     name: Windows
     marketingName: Windows
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: cURL
@@ -2720,7 +2720,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 4.11.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -2758,7 +2758,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 5.4.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -2796,7 +2796,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 4.7.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -2834,7 +2834,7 @@
     name: AIX
     marketingName: AIX
     version: 5.1.0.0
-    manufacturer: IBM
+    manufacturer: ibm
     bits: null
   client:
     name: cURL
@@ -2872,7 +2872,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 6.0.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -2910,7 +2910,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 5.4.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -2948,7 +2948,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 4.9.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -2986,7 +2986,7 @@
     name: Solaris
     marketingName: Solaris
     version: 2.8.0
-    manufacturer: Oracle
+    manufacturer: oracle
     bits: null
   client:
     name: cURL
@@ -3024,7 +3024,7 @@
     name: Solaris
     marketingName: Solaris
     version: 2.8.0
-    manufacturer: Oracle
+    manufacturer: oracle
     bits: null
   client:
     name: cURL
@@ -3062,7 +3062,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 5.4.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -3100,7 +3100,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 5.3.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -3138,7 +3138,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 4.10.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -3176,7 +3176,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 4.3.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -3214,7 +3214,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 4.9.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -3252,7 +3252,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 4.10.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -3290,7 +3290,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 4.8.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -3328,7 +3328,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 4.3.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -3442,7 +3442,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 7.0.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -3556,7 +3556,7 @@
     name: Windows
     marketingName: Windows
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: cURL
@@ -3594,7 +3594,7 @@
     name: Solaris
     marketingName: Solaris
     version: 2.9.0
-    manufacturer: Oracle
+    manufacturer: oracle
     bits: null
   client:
     name: cURL
@@ -3632,7 +3632,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 7.0.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: cURL
@@ -3670,7 +3670,7 @@
     name: Linux
     marketingName: Linux
     version: 4.4.0
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: node-urllib
@@ -3708,7 +3708,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -3746,7 +3746,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'

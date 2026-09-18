@@ -5,8 +5,8 @@
     architecture: null
     deviceName: Macintosh
     marketingName: Macintosh
-    manufacturer: Apple
-    brand: Apple
+    manufacturer: apple
+    brand: apple
     dualOrientation: false
     simCount: 0
     display:
@@ -22,20 +22,20 @@
     name: 'Mac OS X'
     marketingName: 'Mac OS X'
     version: 10.6.0
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: Postbox
     modus: null
     version: 1.1.3
-    manufacturer: Postbox
+    manufacturer: postbox
     type: email-client
     isbot: false
     bits: null
   engine:
     name: Gecko
     version: 1.9.1.8
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:7.0.1) Gecko/20170814 Postbox/5.0.17'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: Macintosh
     marketingName: Macintosh
-    manufacturer: Apple
-    brand: Apple
+    manufacturer: apple
+    brand: apple
     dualOrientation: false
     simCount: 0
     display:
@@ -60,17 +60,17 @@
     name: macOS
     marketingName: macOS
     version: 10.13.0
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: Postbox
     modus: null
     version: 5.0.17
-    manufacturer: Postbox
+    manufacturer: postbox
     type: email-client
     isbot: false
     bits: null
   engine:
     name: Gecko
     version: 7.0.1
-    manufacturer: Mozilla
+    manufacturer: mozilla

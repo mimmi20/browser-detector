@@ -5,8 +5,8 @@
     architecture: null
     deviceName: 'Model S'
     marketingName: 'Model S'
-    manufacturer: 'Tesla Motors'
-    brand: 'Tesla Motors'
+    manufacturer: tesla-motors
+    brand: tesla-motors
     dualOrientation: null
     simCount: 0
     display:
@@ -22,17 +22,17 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'Model S Browser'
     modus: null
     version: null
-    manufacturer: 'Tesla Motors'
+    manufacturer: tesla-motors
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 533.3.0
-    manufacturer: Apple
+    manufacturer: apple

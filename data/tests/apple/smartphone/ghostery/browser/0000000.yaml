@@ -5,8 +5,8 @@
     architecture: null
     deviceName: 'iPhone 5,2'
     marketingName: 'iPhone 5'
-    manufacturer: Apple
-    brand: Apple
+    manufacturer: apple
+    brand: apple
     dualOrientation: true
     simCount: 1
     display:
@@ -22,20 +22,20 @@
     name: iOS
     marketingName: iOS
     version: null
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: 'Ghostery Privacy Browser'
     modus: null
     version: null
-    manufacturer: Ghostery
+    manufacturer: ghostery
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Mobile/15E148 Safari/605.1.15 Ghostery'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: iPhone
     marketingName: iPhone
-    manufacturer: Apple
-    brand: Apple
+    manufacturer: apple
+    brand: apple
     dualOrientation: true
     simCount: 1
     display:
@@ -60,17 +60,17 @@
     name: iOS
     marketingName: iOS
     version: 13.6.1
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: 'Ghostery Privacy Browser'
     modus: null
     version: null
-    manufacturer: Ghostery
+    manufacturer: ghostery
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 605.1.15
-    manufacturer: Apple
+    manufacturer: apple

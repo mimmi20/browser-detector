@@ -1,5 +1,43 @@
 -
   headers:
+    user-agent: 'Pinterest for Android/9.28.2 (HWPOT-H; 10)'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.28.2
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Pinterest App'
+    modus: null
+    version: null
+    manufacturer: pinterest
+    type: application
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
     user-agent: 'Pinterest for Android/9.0.4 (K83CA; 9)'
   device:
     architecture: null
@@ -22,13 +60,13 @@
     name: Android
     marketingName: Android
     version: 9.0.4
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Pinterest App'
     modus: null
     version: null
-    manufacturer: Pinterest
+    manufacturer: pinterest
     type: application
     isbot: false
     bits: null
@@ -60,13 +98,13 @@
     name: Android
     marketingName: Android
     version: 10.10.1
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Pinterest App'
     modus: null
     version: null
-    manufacturer: Pinterest
+    manufacturer: pinterest
     type: application
     isbot: false
     bits: null
@@ -98,13 +136,13 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Pinterest App'
     modus: null
     version: 11.42.2
-    manufacturer: Pinterest
+    manufacturer: pinterest
     type: application
     isbot: false
     bits: null
@@ -136,13 +174,13 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Pinterest App'
     modus: null
     version: 9.32.1
-    manufacturer: Pinterest
+    manufacturer: pinterest
     type: application
     isbot: false
     bits: null

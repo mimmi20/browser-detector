@@ -16,8 +16,8 @@
     architecture: null
     deviceName: 'SHIFTphone 8'
     marketingName: 'SHIFTphone 8'
-    manufacturer: 'Shift Phones'
-    brand: 'Shift Phones'
+    manufacturer: shift-phones
+    brand: shift-phones
     dualOrientation: true
     simCount: 2
     display:
@@ -33,17 +33,17 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
     version: 148.0.7778.215
-    manufacturer: 'Duck Duck Go'
+    manufacturer: duck-duck-go
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 148.0.0
-    manufacturer: Google
+    manufacturer: google

@@ -5,8 +5,8 @@
     architecture: null
     deviceName: W619
     marketingName: W619
-    manufacturer: K-Touch
-    brand: K-Touch
+    manufacturer: k-touch
+    brand: k-touch
     dualOrientation: true
     simCount: 1
     display:
@@ -28,14 +28,14 @@
     name: 'Baidu Box App'
     modus: null
     version: 042.0.4
-    manufacturer: Baidu
+    manufacturer: baidu
     type: mobile-application
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 533.1.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 1.5.1.11-RT-20120416.222947; Zh-cn; K-Touch W650 Build/AliyunOs-2012) AppleWebKit/530.17 (KHTML, Like Gecko) Version/4.0 Mobile Safari/530.17 T5/1.0 Baiduboxapp/4.5.1 (Baidu; P1 1.5.1.11-RT-20120416.222947)'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: W650
     marketingName: W650
-    manufacturer: K-Touch
-    brand: K-Touch
+    manufacturer: k-touch
+    brand: k-touch
     dualOrientation: true
     simCount: 1
     display:
@@ -60,20 +60,20 @@
     name: 'Yun OS'
     marketingName: 'Yun OS'
     version: 1.5.1.11
-    manufacturer: Alibaba
+    manufacturer: alibaba
     bits: null
   client:
     name: 'Baidu Box App'
     modus: null
     version: 4.5.1
-    manufacturer: Baidu
+    manufacturer: baidu
     type: mobile-application
     isbot: false
     bits: null
   engine:
     name: T5
     version: 1.0.0
-    manufacturer: Baidu
+    manufacturer: baidu
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; KT20201199 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.23 Mobile Safari/537.36 SP-engine/2.15.0 baiduboxapp/11.19.0.11 (Baidu; P1 9)'
@@ -81,8 +81,8 @@
     architecture: null
     deviceName: KT20201199
     marketingName: 'P60 Pro'
-    manufacturer: K-Touch
-    brand: K-Touch
+    manufacturer: k-touch
+    brand: k-touch
     dualOrientation: true
     simCount: 1
     display:
@@ -98,17 +98,17 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Baidu Box App'
     modus: null
     version: 11.19.0.11
-    manufacturer: Baidu
+    manufacturer: baidu
     type: mobile-application
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 74.0.3729.23
-    manufacturer: Google
+    manufacturer: google

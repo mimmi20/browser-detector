@@ -5,8 +5,8 @@
     architecture: null
     deviceName: GT-S7230
     marketingName: 'Wave 723'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -22,20 +22,58 @@
     name: Bada
     marketingName: Bada
     version: 1.0.0
-    manufacturer: Samsung
+    manufacturer: samsung
     bits: null
   client:
     name: 'Opera Mini'
     modus: null
     version: 5.0.21073
-    manufacturer: Opera
+    manufacturer: opera
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Presto
     version: null
-    manufacturer: Opera
+    manufacturer: opera
+-
+  headers:
+    user-agent: 'SAMSUNG Opera/9.80 (J2ME/MIDP; Opera Mini/4.4.30085/34.818; U; en) Presto/2.8.119 Version/11.10'
+  device:
+    architecture: null
+    deviceName: GT-S5363
+    marketingName: 'Galaxy Y'
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 320
+      height: 240
+      touch: true
+      size: 3
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Opera Mini'
+    modus: null
+    version: 4.4.30085
+    manufacturer: opera
+    type: transcoder
+    isbot: false
+    bits: null
+  engine:
+    name: Presto
+    version: 2.8.119
+    manufacturer: opera
 -
   headers:
     x-operamini-phone: 'Samsung # GT-S8500'
@@ -44,8 +82,8 @@
     architecture: null
     deviceName: GT-S8500
     marketingName: 'Wave 2'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -61,20 +99,20 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Opera Mini'
     modus: null
     version: 8.0.35626
-    manufacturer: Opera
+    manufacturer: opera
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Presto
     version: 2.8.119
-    manufacturer: Opera
+    manufacturer: opera
 -
   headers:
     x-operamini-phone-ua: 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5380D/S5380DZHLB1; U; Bada/2.0; zh-cn) AppleWebKit/534.20 (KHTML, like Gecko) Dolfin/3.0 Mobile HVGA SMM-MMS/1.2.0 OPN-B'
@@ -84,8 +122,8 @@
     architecture: null
     deviceName: GT-S5380
     marketingName: 'Wave Y'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -101,20 +139,20 @@
     name: Bada
     marketingName: Bada
     version: 2.0.0
-    manufacturer: Samsung
+    manufacturer: samsung
     bits: null
   client:
     name: 'Opera Mini'
     modus: null
     version: 8.0.35626
-    manufacturer: Opera
+    manufacturer: opera
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.20.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     x-requested-with: com.opera.mini.native
@@ -123,8 +161,8 @@
     architecture: null
     deviceName: SM-A202F
     marketingName: 'Galaxy A20e'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -140,20 +178,20 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Opera Mini'
     modus: null
     version: 58.0.2254.58441
-    manufacturer: Opera
+    manufacturer: opera
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 96.0.4664.104
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: com.opera.mini.native
@@ -162,8 +200,8 @@
     architecture: null
     deviceName: SM-A530F
     marketingName: 'Galaxy A8 (Europe, Global, 2018)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -179,20 +217,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Opera Mini'
     modus: null
     version: 62.5.2254.61243
-    manufacturer: Opera
+    manufacturer: opera
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 101.0.4951.61
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: com.opera.mini.native
@@ -201,8 +239,8 @@
     architecture: null
     deviceName: SM-G780F
     marketingName: 'Galaxy S20 FE 4G'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -218,20 +256,20 @@
     name: Android
     marketingName: Android
     version: 11.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Opera Mini'
     modus: null
     version: 62.5.2254.61243
-    manufacturer: Opera
+    manufacturer: opera
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 101.0.4951.61
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: com.opera.mini.native
@@ -240,8 +278,8 @@
     architecture: null
     deviceName: SM-A525F
     marketingName: 'Galaxy A52 4G'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -257,20 +295,20 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Opera Mini'
     modus: null
     version: 62.5.2254.61243
-    manufacturer: Opera
+    manufacturer: opera
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 100.0.4896.127
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: com.opera.mini.native
@@ -279,8 +317,8 @@
     architecture: null
     deviceName: SM-S908B
     marketingName: 'Galaxy S22 Ultra 5G (International)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -296,20 +334,20 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Opera Mini'
     modus: null
     version: 63.0.2254.62069
-    manufacturer: Opera
+    manufacturer: opera
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 103.0.5060.71
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: com.opera.mini.native
@@ -318,8 +356,8 @@
     architecture: null
     deviceName: SM-A528B
     marketingName: 'Galaxy A52s 5G (International)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -335,20 +373,20 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Opera Mini'
     modus: null
     version: 63.0.2254.62069
-    manufacturer: Opera
+    manufacturer: opera
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 96.0.4664.104
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: com.opera.mini.native
@@ -357,8 +395,8 @@
     architecture: null
     deviceName: SM-G973F
     marketingName: 'Galaxy S10 (Global)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -374,20 +412,20 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Opera Mini'
     modus: null
     version: 64.0.2254.62635
-    manufacturer: Opera
+    manufacturer: opera
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 104.0.5112.97
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: com.opera.mini.native
@@ -396,8 +434,8 @@
     architecture: null
     deviceName: SM-G960F
     marketingName: 'Galaxy S9'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -413,20 +451,20 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Opera Mini'
     modus: null
     version: 63.0.2254.62069
-    manufacturer: Opera
+    manufacturer: opera
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 104.0.5112.69
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: com.opera.mini.native
@@ -438,8 +476,8 @@
     architecture: null
     deviceName: SM-A526B
     marketingName: 'Galaxy A52 5G (International)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -455,20 +493,20 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Opera Mini'
     modus: null
     version: 95.0.0
-    manufacturer: Opera
+    manufacturer: opera
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 140.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua: '"Opera Mini Android";v="96", "Chromium";v="142", "Android WebView";v="142", "Not_A Brand";v="99"'
@@ -477,8 +515,8 @@
     architecture: null
     deviceName: SM-S918B
     marketingName: 'Galaxy S23 Ultra (International)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -494,17 +532,17 @@
     name: Android
     marketingName: Android
     version: 15.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Opera Mini'
     modus: null
     version: 96.0.0
-    manufacturer: Opera
+    manufacturer: opera
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 142.0.0
-    manufacturer: Google
+    manufacturer: google

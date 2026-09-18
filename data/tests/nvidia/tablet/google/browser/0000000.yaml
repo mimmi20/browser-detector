@@ -5,8 +5,8 @@
     architecture: null
     deviceName: 'Shield Tablet'
     marketingName: 'Shield Tablet'
-    manufacturer: Nvidia
-    brand: Nvidia
+    manufacturer: nvidia
+    brand: nvidia
     dualOrientation: null
     simCount: 0
     display:
@@ -22,17 +22,17 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 54.0.2840.68
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 54.0.2840.68
-    manufacturer: Google
+    manufacturer: google

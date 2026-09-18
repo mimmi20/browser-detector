@@ -1,12 +1,50 @@
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 9; Primo R6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.83 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'Primo R6'
+    marketingName: 'Primo R6'
+    manufacturer: walton
+    brand: walton
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 1560
+      height: 720
+      touch: true
+      size: 6.1
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 83.0.4103.83
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 83.0.4103.83
+    manufacturer: google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; Primo_NF4_2GB Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.136 Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'Primo NF'
     marketingName: 'Primo NF'
-    manufacturer: Walton
-    brand: Walton
+    manufacturer: walton
+    brand: walton
     dualOrientation: true
     simCount: 1
     display:
@@ -22,20 +60,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 74.0.3729.136
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 74.0.3729.136
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Primo GH11 Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Mobile Safari/537.36'
@@ -43,8 +81,8 @@
     architecture: null
     deviceName: 'Primo GH11'
     marketingName: 'Primo GH11'
-    manufacturer: Walton
-    brand: Walton
+    manufacturer: walton
+    brand: walton
     dualOrientation: true
     simCount: 2
     display:
@@ -60,20 +98,20 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 96.0.4664.104
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 96.0.4664.104
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; PRIMO F10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.58 Mobile Safari/537.36'
@@ -81,8 +119,8 @@
     architecture: null
     deviceName: 'Primo F1'
     marketingName: 'Primo F1'
-    manufacturer: Walton
-    brand: Walton
+    manufacturer: walton
+    brand: walton
     dualOrientation: true
     simCount: 1
     display:
@@ -98,20 +136,20 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 100.0.4896.58
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 100.0.4896.58
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; ORBIT Y21 Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.66 Mobile Safari/537.36'
@@ -119,8 +157,8 @@
     architecture: null
     deviceName: 'Orbit Y21'
     marketingName: 'Orbit Y21'
-    manufacturer: Walton
-    brand: Walton
+    manufacturer: walton
+    brand: walton
     dualOrientation: true
     simCount: 1
     display:
@@ -136,20 +174,20 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 119.0.6045.66
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 119.0.6045.66
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-model: 'XANON X90'
@@ -163,8 +201,8 @@
     architecture: null
     deviceName: 'Xanon X90'
     marketingName: 'Xanon X90'
-    manufacturer: Walton
-    brand: Walton
+    manufacturer: walton
+    brand: walton
     dualOrientation: true
     simCount: 2
     display:
@@ -180,20 +218,20 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 126.0.6478.122
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 126.0.6478.122
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; NEXG N71 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/120.0.6099.144 Mobile Safari/537.36'
@@ -201,8 +239,8 @@
     architecture: null
     deviceName: 'Nexg N71'
     marketingName: 'Nexg N71'
-    manufacturer: Walton
-    brand: Walton
+    manufacturer: walton
+    brand: walton
     dualOrientation: true
     simCount: 2
     display:
@@ -218,20 +256,20 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 120.0.6099.144
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 120.0.6099.144
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; NEXG N6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36'
@@ -239,8 +277,8 @@
     architecture: null
     deviceName: 'Nexg N6'
     marketingName: 'Nexg N6'
-    manufacturer: Walton
-    brand: Walton
+    manufacturer: walton
+    brand: walton
     dualOrientation: true
     simCount: 2
     display:
@@ -256,20 +294,20 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 124.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 124.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; NEXG N70) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36'
@@ -277,8 +315,8 @@
     architecture: null
     deviceName: 'Nexg N70'
     marketingName: 'Nexg N70'
-    manufacturer: Walton
-    brand: Walton
+    manufacturer: walton
+    brand: walton
     dualOrientation: true
     simCount: 2
     display:
@@ -294,20 +332,20 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 124.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 124.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; NEXG N8 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/126.0.6478.188 Mobile Safari/537.36'
@@ -315,8 +353,8 @@
     architecture: null
     deviceName: 'Nexg N8'
     marketingName: 'Nexg N8'
-    manufacturer: Walton
-    brand: Walton
+    manufacturer: walton
+    brand: walton
     dualOrientation: true
     simCount: 2
     display:
@@ -332,20 +370,20 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 126.0.6478.188
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 126.0.6478.188
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; NEXG N73 Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/126.0.6478.134 Mobile Safari/537.36'
@@ -353,8 +391,8 @@
     architecture: null
     deviceName: 'Nexg N73'
     marketingName: 'Nexg N73'
-    manufacturer: Walton
-    brand: Walton
+    manufacturer: walton
+    brand: walton
     dualOrientation: true
     simCount: 2
     display:
@@ -370,20 +408,20 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 126.0.6478.134
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 126.0.6478.134
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; NEXG N74 Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.6834.163 Mobile Safari/537.36'
@@ -391,8 +429,8 @@
     architecture: null
     deviceName: 'Nexg N74'
     marketingName: 'Nexg N74'
-    manufacturer: Walton
-    brand: Walton
+    manufacturer: walton
+    brand: walton
     dualOrientation: true
     simCount: 2
     display:
@@ -408,20 +446,20 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 132.0.6834.163
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 132.0.6834.163
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; ORBIT Y12 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.123 Mobile Safari/537.36'
@@ -429,8 +467,8 @@
     architecture: null
     deviceName: 'Orbit Y12'
     marketingName: 'Orbit Y12'
-    manufacturer: Walton
-    brand: Walton
+    manufacturer: walton
+    brand: walton
     dualOrientation: true
     simCount: 2
     display:
@@ -446,20 +484,20 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 132.0.6834.123
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 132.0.6834.123
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; NEXG N26 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/135.0.7049.100 Mobile Safari/537.36'
@@ -467,8 +505,8 @@
     architecture: null
     deviceName: 'Nexg N26'
     marketingName: 'Nexg N26'
-    manufacturer: Walton
-    brand: Walton
+    manufacturer: walton
+    brand: walton
     dualOrientation: true
     simCount: 2
     display:
@@ -484,20 +522,20 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 135.0.7049.100
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 135.0.7049.100
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; Primo R10 Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
@@ -505,8 +543,8 @@
     architecture: null
     deviceName: 'Primo R1'
     marketingName: 'Primo R1'
-    manufacturer: Walton
-    brand: Walton
+    manufacturer: walton
+    brand: walton
     dualOrientation: true
     simCount: 1
     display:
@@ -522,17 +560,17 @@
     name: Android
     marketingName: Android
     version: 11.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google

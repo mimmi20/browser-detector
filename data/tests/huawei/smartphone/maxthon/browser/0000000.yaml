@@ -5,8 +5,8 @@
     architecture: null
     deviceName: MHA-L29
     marketingName: 'Mate 9'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 2
     display:
@@ -22,20 +22,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Maxthon
     modus: null
     version: 3241.0.0
-    manufacturer: Maxthon
+    manufacturer: maxthon
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 81.0.4044.111
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; POT-LX1 Build/HUAWEIPOT-L21) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/85.0.4183.81 Mobile Safari/537.36 Maxthon/3241 comdirect/1.0 (appVersion:20.8.1;deviceType:mobile)'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: POT-LX1
     marketingName: 'P Smart (2019)'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 2
     display:
@@ -60,17 +60,17 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Maxthon
     modus: null
     version: 3241.0.0
-    manufacturer: Maxthon
+    manufacturer: maxthon
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 85.0.4183.81
-    manufacturer: Google
+    manufacturer: google

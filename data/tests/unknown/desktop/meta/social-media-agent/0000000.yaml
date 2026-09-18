@@ -22,20 +22,20 @@
     name: Windows
     marketingName: 'Windows 10'
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Meta-WebIndexer
     modus: null
     version: 1.1.0
-    manufacturer: Meta
+    manufacturer: meta
     type: social-media-agent
     isbot: true
     bits: null
   engine:
     name: Blink
     version: 145.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 (compatible; meta-webindexer/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler))'
@@ -60,20 +60,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Meta-WebIndexer
     modus: null
     version: 1.1.0
-    manufacturer: Meta
+    manufacturer: meta
     type: social-media-agent
     isbot: true
     bits: null
   engine:
     name: Blink
     version: 145.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 (compatible; meta-externalads/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler))'
@@ -98,20 +98,20 @@
     name: Windows
     marketingName: 'Windows 10'
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Meta External Ads'
     modus: null
     version: 1.1.0
-    manufacturer: Meta
+    manufacturer: meta
     type: social-media-agent
     isbot: true
     bits: null
   engine:
     name: Blink
     version: 145.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 (compatible; meta-externalads/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler))'
@@ -136,17 +136,17 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'Meta External Ads'
     modus: null
     version: 1.1.0
-    manufacturer: Meta
+    manufacturer: meta
     type: social-media-agent
     isbot: true
     bits: null
   engine:
     name: Blink
     version: 145.0.0.0
-    manufacturer: Google
+    manufacturer: google

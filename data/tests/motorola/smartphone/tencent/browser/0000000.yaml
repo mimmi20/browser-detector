@@ -5,8 +5,8 @@
     architecture: null
     deviceName: XT316
     marketingName: Fire
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: true
     simCount: 1
     display:
@@ -22,13 +22,13 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'QQ Browser'
     modus: null
     version: 14.0.0
-    manufacturer: Tencent
+    manufacturer: tencent
     type: browser
     isbot: false
     bits: null
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: MB200
     marketingName: Cliq/Dext
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: true
     simCount: 1
     display:
@@ -66,11 +66,11 @@
     name: 'QQ Browser'
     modus: null
     version: 26.0.0
-    manufacturer: Tencent
+    manufacturer: tencent
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 533.1.0
-    manufacturer: Apple
+    manufacturer: apple

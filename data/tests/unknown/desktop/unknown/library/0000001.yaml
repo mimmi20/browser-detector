@@ -22,7 +22,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'REST Client for Ruby'
@@ -60,7 +60,7 @@
     name: AIX
     marketingName: AIX
     version: 4.3.3.0
-    manufacturer: IBM
+    manufacturer: ibm
     bits: null
   client:
     name: cURL
@@ -98,7 +98,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -174,7 +174,7 @@
     name: Windows
     marketingName: Windows
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: cURL
@@ -212,7 +212,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -250,7 +250,7 @@
     name: Windows
     marketingName: 'Windows 7'
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: SlimerJS
@@ -263,7 +263,7 @@
   engine:
     name: Gecko
     version: 38.0.0
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'GuzzleHttp/6.3.3 curl/7.47.0 PHP/7.2.8-1+ubuntu16.04.1+deb.sury.org+1'
@@ -288,7 +288,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -896,7 +896,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -934,7 +934,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -972,7 +972,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -1010,7 +1010,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -1048,7 +1048,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -1086,7 +1086,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -1124,7 +1124,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -1162,7 +1162,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -1200,7 +1200,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -1238,7 +1238,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -1276,7 +1276,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -1314,7 +1314,7 @@
     name: Debian
     marketingName: Debian
     version: 9.0.0
-    manufacturer: 'Software in the Public Interest'
+    manufacturer: softwareInThePublicInterest
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -1352,7 +1352,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -1390,7 +1390,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -1428,7 +1428,7 @@
     name: Debian
     marketingName: Debian
     version: 9.0.0
-    manufacturer: 'Software in the Public Interest'
+    manufacturer: softwareInThePublicInterest
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -1466,7 +1466,7 @@
     name: Windows
     marketingName: Windows
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Embarcadero URI Client'
@@ -1504,7 +1504,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -1542,7 +1542,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -1580,7 +1580,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -1618,7 +1618,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -1656,7 +1656,7 @@
     name: Debian
     marketingName: Debian
     version: 10.0.0
-    manufacturer: 'Software in the Public Interest'
+    manufacturer: softwareInThePublicInterest
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -1694,7 +1694,7 @@
     name: Debian
     marketingName: Debian
     version: 10.0.0
-    manufacturer: 'Software in the Public Interest'
+    manufacturer: softwareInThePublicInterest
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -1732,7 +1732,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -1770,7 +1770,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: jsdom
@@ -1783,7 +1783,7 @@
   engine:
     name: WebKit
     version: 537.36.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'GuzzleHttp/6.5.1 curl/7.58.0 PHP/7.2.24-0ubuntu0.18.04.4'
@@ -1808,7 +1808,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -1846,7 +1846,7 @@
     name: Windows
     marketingName: 'Windows 95'
     version: 95.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: jsdom
@@ -1859,7 +1859,7 @@
   engine:
     name: WebKit
     version: 537.36.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'GuzzleHttp/6.5.1 curl/7.58.0 PHP/7.2.24-0ubuntu0.18.04.6'
@@ -1884,7 +1884,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -1922,7 +1922,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -1960,7 +1960,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -1998,7 +1998,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'Guzzle Http Client'
@@ -2036,7 +2036,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Emacs
@@ -2074,7 +2074,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'PHP cURL Class'
@@ -2150,7 +2150,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: cri-o
@@ -2188,7 +2188,7 @@
     name: Windows
     marketingName: 'Windows 10'
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Cygwin Setup'

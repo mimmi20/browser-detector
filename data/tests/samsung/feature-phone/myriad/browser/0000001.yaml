@@ -1,88 +1,12 @@
 -
   headers:
-    user-agent: 'SAMSUNG-SGH-T209R/T209UVFG1 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0'
-  device:
-    architecture: null
-    deviceName: SGH-T209R
-    marketingName: SGH-T209R
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 160
-      height: 128
-      touch: false
-      size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 6.2.3.3
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'SAMSUNG-SGH-T219/ Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0'
-  device:
-    architecture: null
-    deviceName: SGH-T219
-    marketingName: SGH-T219
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 160
-      height: 128
-      touch: false
-      size: 1.63
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 6.2.3.3
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
     user-agent: 'SAMSUNG-SGH-T219S/T219UVGG3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0'
   device:
     architecture: null
     deviceName: SGH-T219S
     marketingName: SGH-T219S
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -98,13 +22,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -119,8 +43,8 @@
     architecture: null
     deviceName: SGH-T245G
     marketingName: SGH-T245G
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -136,13 +60,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -157,8 +81,8 @@
     architecture: null
     deviceName: SGH-T255G
     marketingName: SGH-T255G
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -174,13 +98,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -195,8 +119,8 @@
     architecture: null
     deviceName: SGH-T301G
     marketingName: SGH-T301G
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -212,13 +136,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -233,8 +157,8 @@
     architecture: null
     deviceName: SGH-T319R
     marketingName: SGH-T319R
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -250,13 +174,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -271,8 +195,8 @@
     architecture: null
     deviceName: SGH-T406
     marketingName: SGH-T406
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -288,13 +212,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -309,8 +233,8 @@
     architecture: null
     deviceName: SGH-T408
     marketingName: SGH-T408
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -326,13 +250,13 @@
     name: JavaOS
     marketingName: JavaOS
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 4.1.19
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -347,8 +271,8 @@
     architecture: null
     deviceName: SGH-T409
     marketingName: SGH-T409
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -364,13 +288,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -385,8 +309,8 @@
     architecture: null
     deviceName: SGH-T578
     marketingName: SGH-T578
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -402,13 +326,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -423,8 +347,8 @@
     architecture: null
     deviceName: SGH-X100
     marketingName: SGH-X100
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -440,13 +364,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.1.0.6
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -461,8 +385,8 @@
     architecture: null
     deviceName: SGH-X100A
     marketingName: SGH-X100A
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -478,13 +402,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.1.0.6
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -499,8 +423,8 @@
     architecture: null
     deviceName: SGH-X496
     marketingName: SGH-X496
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -516,13 +440,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -537,8 +461,8 @@
     architecture: null
     deviceName: SGH-X560L
     marketingName: SGH-X560L
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -554,13 +478,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -575,8 +499,8 @@
     architecture: null
     deviceName: SGH-X600
     marketingName: SGH-X600
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -592,13 +516,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.1.0.6
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -613,8 +537,8 @@
     architecture: null
     deviceName: SGH-X628
     marketingName: SGH-X628
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -630,13 +554,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -651,8 +575,8 @@
     architecture: null
     deviceName: SGH-X640C
     marketingName: SGH-X640C
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -668,13 +592,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.2.6
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -689,8 +613,8 @@
     architecture: null
     deviceName: SGH-X648
     marketingName: SGH-X648
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -706,13 +630,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.2.6
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -727,8 +651,8 @@
     architecture: null
     deviceName: SGH-X658
     marketingName: SGH-X658
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -744,13 +668,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -765,8 +689,8 @@
     architecture: null
     deviceName: SGH-T108
     marketingName: SGH-T108
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -782,13 +706,13 @@
     name: JavaOS
     marketingName: JavaOS
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 4.1.19
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -803,8 +727,8 @@
     architecture: null
     deviceName: C3050
     marketingName: Stratus
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -820,13 +744,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -841,8 +765,8 @@
     architecture: null
     deviceName: SGH-E700
     marketingName: SGH-E700
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -858,13 +782,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.1.0.6
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -879,8 +803,8 @@
     architecture: null
     deviceName: SGH-X640
     marketingName: SGH-X640
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -896,51 +820,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.2.6
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'SCH-R210 UP.Browser/6.2.3.8 (GUI) MMP/2.0'
-  device:
-    architecture: null
-    deviceName: SCH-R210
-    marketingName: Spex
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 128
-      height: 128
-      touch: false
-      size: 1.5
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 6.2.3.8
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -955,8 +841,8 @@
     architecture: null
     deviceName: SGH-J700V
     marketingName: SGH-J700
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -972,51 +858,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'sam-r350 UP.Browser/6.2.3.8 (GUI) MMP/2.0'
-  device:
-    architecture: null
-    deviceName: SCH-R350
-    marketingName: SCH-R350
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 6.2.3.8
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1031,8 +879,8 @@
     architecture: null
     deviceName: C3010
     marketingName: C3010
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -1048,51 +896,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'sam-r390 UP.Browser/6.2.3.8 (GUI) MMP/2.0'
-  device:
-    architecture: null
-    deviceName: SCH-R390
-    marketingName: 'Freeform 4'
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 320
-      height: 240
-      touch: false
-      size: 2.4
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 6.2.3.8
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1107,8 +917,8 @@
     architecture: null
     deviceName: GT-E2121B
     marketingName: GT-E2121B
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -1124,13 +934,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1145,8 +955,8 @@
     architecture: null
     deviceName: GT-E2152I
     marketingName: GT-E2152
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -1162,13 +972,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1183,8 +993,8 @@
     architecture: null
     deviceName: GT-E2370
     marketingName: GT-E2370
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -1200,13 +1010,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1221,8 +1031,8 @@
     architecture: null
     deviceName: GT-E2232
     marketingName: 'Hero Duos'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -1238,13 +1048,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1259,8 +1069,8 @@
     architecture: null
     deviceName: GT-E2230L
     marketingName: GT-E2230
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -1276,51 +1086,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'sam375/1.0[TF268435460801909150000000012073505617] UP.Browser/6.2.3.8 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1'
-  device:
-    architecture: null
-    deviceName: sam375
-    marketingName: sam375
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 6.2.3.8
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1335,8 +1107,8 @@
     architecture: null
     deviceName: GT-E2530
     marketingName: GT-E2530
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -1352,13 +1124,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1373,8 +1145,8 @@
     architecture: null
     deviceName: GT-E2120
     marketingName: GT-E2120
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -1390,89 +1162,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'SEC-SGHB100/BOHA3 Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0'
-  device:
-    architecture: null
-    deviceName: SGH-B100
-    marketingName: SGH-B100
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 128
-      height: 128
-      touch: false
-      size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 6.2.3.3
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'sam-r360 UP.Browser/6.2.3.8 (GUI) MMP/2.0'
-  device:
-    architecture: null
-    deviceName: SCH-R360
-    marketingName: 'Freeform 2'
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 320
-      height: 240
-      touch: false
-      size: 2.2
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 6.2.3.8
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1487,8 +1183,8 @@
     architecture: null
     deviceName: SGH-M200
     marketingName: SGH-M200
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -1504,13 +1200,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1525,8 +1221,8 @@
     architecture: null
     deviceName: SGH-D900
     marketingName: SGH-D900
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -1542,13 +1238,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1563,8 +1259,8 @@
     architecture: null
     deviceName: SGH-D500
     marketingName: SGH-D500
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -1580,1267 +1276,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'SPH-A840 UP.Browser/6.2.2.5 (GUI) MMP/2.0'
-  device:
-    architecture: null
-    deviceName: SPH-A840
-    marketingName: SPH-A840
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 160
-      height: 128
-      touch: false
-      size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 6.2.2.5
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'SEC-spha500 UP.Browser/4.1.26l UP.Link/1.1'
-  device:
-    architecture: null
-    deviceName: SPH-A500
-    marketingName: SPH-A500
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 160
-      height: 128
-      touch: false
-      size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Brew
-    marketingName: Brew
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 4.1.26
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'SEC-SGHX430/1.0 UP.Browser/5.0.5.1 (GUI) MMP/1.0'
-  device:
-    architecture: null
-    deviceName: SGH-X430
-    marketingName: SGH-X430
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 160
-      height: 128
-      touch: false
-      size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 5.0.5.1
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'SEC-SGHV200/1.0 UP.Browser/6.1.0.6 (GUI) MMP/1.0'
-  device:
-    architecture: null
-    deviceName: SGH-V200
-    marketingName: SGH-V200
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 160
-      height: 128
-      touch: false
-      size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 6.1.0.6
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'SEC-SGHS300/1.0 UP.Browser/6.1.0.6 (GUI) MMP/1.0'
-  device:
-    architecture: null
-    deviceName: SGH-S300
-    marketingName: SGH-S300
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 128
-      height: 128
-      touch: false
-      size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 6.1.0.6
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'SEC-SGHS100/1.0 UP.Browser/6.1.0.6 (GUI) MMP/1.0 UP.Link/6.3.0.0.0'
-  device:
-    architecture: null
-    deviceName: SGH-S100
-    marketingName: SGH-S100
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 160
-      height: 128
-      touch: false
-      size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 6.1.0.6
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'SEC-SGHQ200/1.0 UP.Browser/4.1.26c4'
-  device:
-    architecture: null
-    deviceName: SGH-Q200
-    marketingName: SGH-Q200
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 128
-      height: 128
-      touch: false
-      size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 4.1.26
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'SEC-SGHP518*MzUzODEwMDAwOTYzMTQ1 UP.Browser/6.2.2.6 (GUI) MMP/1.0'
-  device:
-    architecture: null
-    deviceName: SGH-P518
-    marketingName: SGH-P518
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 160
-      height: 128
-      touch: false
-      size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 6.2.2.6
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'SEC-SGHP510/1.0 UP.Browser/6.2.2.6 (GUI) MMP/1.0 UP.Link/6.3.0.0.0'
-  device:
-    architecture: null
-    deviceName: SGH-P510
-    marketingName: SGH-P510
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 160
-      height: 128
-      touch: false
-      size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 6.2.2.6
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'SEC-SGHP408*MzUyNjE5MDA0MDQ3OTgy UP.Browser/6.2.2.1 (GUI) MMP/1.0 UP.Link/1.1'
-  device:
-    architecture: null
-    deviceName: SGH-P408
-    marketingName: SGH-P408
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 160
-      height: 128
-      touch: false
-      size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 6.2.2.1
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'SEC-SGHM620/1.0 Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0 UP.Link/6.3.1.13.0'
-  device:
-    architecture: null
-    deviceName: SGH-M620
-    marketingName: SGH-M620
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 160
-      height: 128
-      touch: false
-      size: 1.9
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 6.2.3.3
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'SEC-SGHD410-X100/PEARL UP.Browser/6.1.0.6 (GUI) MMP/1.0'
-  device:
-    architecture: null
-    deviceName: SGH-D410
-    marketingName: SGH-D410
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 220
-      height: 176
-      touch: false
-      size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 6.1.0.6
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'SEC-SGHC110/1.0 UP.Browser/6.2.0.1.155 (GUI) MMP/1.0 UP.Link/5.1.1'
-  device:
-    architecture: null
-    deviceName: SGH-C110
-    marketingName: SGH-C110
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 128
-      height: 128
-      touch: false
-      size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 6.2.0.1.155
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'SEC-SGHC108/1.0 UP.Browser/6.2.0.1.155 (GUI) MMP/1.0 UP.Link/1.1'
-  device:
-    architecture: null
-    deviceName: SGH-C108
-    marketingName: SGH-C108
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 128
-      height: 128
-      touch: false
-      size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 6.2.0.1.155
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'SEC-SGHC100G/1.0/C10JHDA1 UP.Browser/5.0.5.1 (GUI)'
-  device:
-    architecture: null
-    deviceName: SGH-C100
-    marketingName: SGH-C100
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 128
-      height: 128
-      touch: false
-      size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 5.0.5.1
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'SEC-SGHC100G/1.0 UP.Browser/5.0.5.1 (GUI)UI) MMP/1.01.0P/1.0P.Browser/6.1.0.6.1.d.1 (GUI) MMP/1.0'
-  device:
-    architecture: null
-    deviceName: SGH-C100
-    marketingName: SGH-C100
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 128
-      height: 128
-      touch: false
-      size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 5.0.5.1
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'SEC-schx659 UP.Browser/4.1.26l UP.Link/5.1.2.9'
-  device:
-    architecture: null
-    deviceName: SCH-X659
-    marketingName: SCH-X659
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 128
-      height: 128
-      touch: false
-      size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 4.1.26
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'SEC-schx609 UP.Browser/4.1.26l UP.Link/6.0'
-  device:
-    architecture: null
-    deviceName: SCH-X609
-    marketingName: SCH-X609
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 160
-      height: 128
-      touch: false
-      size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 4.1.26
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'SEC-schx339 UP.Browser/4.1.26l UP.Link/5.1.2.9'
-  device:
-    architecture: null
-    deviceName: SCH-X339
-    marketingName: SCH-X339
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 96
-      height: 64
-      touch: false
-      size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 4.1.26
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'SEC-schx199 UP.Browser/4.1.26l'
-  device:
-    architecture: null
-    deviceName: SCH-X199
-    marketingName: SCH-X199
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 90
-      height: 40
-      touch: false
-      size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 4.1.26
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'SEC-schn391 UP.Browser/4.1.26l UP.Link/6.0'
-  device:
-    architecture: null
-    deviceName: SCH-N391
-    marketingName: SCH-N391
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 128
-      height: 128
-      touch: false
-      size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: Microsoft
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 4.1.26
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'SEC-scha670 UP.Browser/4.1.27a UP.Link/5.1.2.3'
-  device:
-    architecture: null
-    deviceName: SCH-A670
-    marketingName: SCH-A670
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 160
-      height: 128
-      touch: false
-      size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 4.1.27-alpha
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'SEC-scha650 UP.Browser/4.1.26l UP.Link/5.1.2.3 (Google WAP Proxy/1.0)'
-  device:
-    architecture: null
-    deviceName: SCH-A650
-    marketingName: SCH-A650
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 160
-      height: 120
-      touch: false
-      size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 4.1.26
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'SCH-X859/4.0 UP/5.0.1.2 (GUI) UP.Browser/5.0.1.2 (GUI)-XXXX UP.Link/5.0.HTTP-DIRECT'
-  device:
-    architecture: null
-    deviceName: SCH-X859
-    marketingName: SCH-X859
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 120
-      height: 120
-      touch: false
-      size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 5.0.1.2
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'SCH-X859 UP.Browser/6.2.2.5 (GUI) MMP/2.0'
-  device:
-    architecture: null
-    deviceName: SCH-X859
-    marketingName: SCH-X859
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 120
-      height: 120
-      touch: false
-      size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 6.2.2.5
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'SCH-W569 UP.Browser/6.2.3.8 (GUI) MMP/2.0'
-  device:
-    architecture: null
-    deviceName: SCH-W569
-    marketingName: SCH-W569
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 320
-      height: 240
-      touch: false
-      size: 2.1
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 6.2.3.8
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'SCH-U520 UP.Browser/6.2.3.8 (GUI) MMP/2.0'
-  device:
-    architecture: null
-    deviceName: SCH-U520
-    marketingName: SCH-U520
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 220
-      height: 176
-      touch: false
-      size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 6.2.3.8
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'SCH-R430 UP.Browser/6.2.3.8 (GUI) MMP/2.0 Novarra-Vision/8.0'
-  device:
-    architecture: null
-    deviceName: SCH-R430
-    marketingName: MyShot
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 160
-      height: 128
-      touch: false
-      size: 1.9
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 6.2.3.8
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'SCH-R211 UP.Browser/6.2.3.8 (GUI) MMP/2.0'
-  device:
-    architecture: null
-    deviceName: SCH-R211
-    marketingName: SCH-R211
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 128
-      height: 128
-      touch: false
-      size: 1.5
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 6.2.3.8
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'SCH-N415 UP.Browser/6.2.2.5 (GUI) MMP/2.0'
-  device:
-    architecture: null
-    deviceName: SCH-N415
-    marketingName: SCH-N415
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 128
-      height: 128
-      touch: false
-      size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 6.2.2.5
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'SCH-i819 UP.Browser/6.2.3.4 (GUI) MMP/2.0 UP.Link/6.3.0.0.0'
-  device:
-    architecture: null
-    deviceName: SCH-I819
-    marketingName: SCH-I819
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 320
-      height: 240
-      touch: false
-      size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 6.2.3.4
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'SCH-A990 UP.Browser/6.2.3.2 (GUI) MMP/2.0'
-  device:
-    architecture: null
-    deviceName: SCH-A990
-    marketingName: SCH-A990
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 320
-      height: 240
-      touch: false
-      size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 6.2.3.2
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'SCH-A650 UP.Browser/6.2.2.3.d.2.100 (GUI) MMP/2.0 UP.Link/6.2.3.15.0'
-  device:
-    architecture: null
-    deviceName: SCH-A650
-    marketingName: SCH-A650
-    manufacturer: Samsung
-    brand: Samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 160
-      height: 120
-      touch: false
-      size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 6.2.2.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -2855,8 +1297,8 @@
     architecture: null
     deviceName: SGH-X708
     marketingName: SGH-X708
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -2872,13 +1314,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -2893,8 +1335,8 @@
     architecture: null
     deviceName: SGH-X700
     marketingName: SGH-X700
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -2910,13 +1352,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -2931,8 +1373,8 @@
     architecture: null
     deviceName: SGH-X670
     marketingName: SGH-X670
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -2948,13 +1390,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -2969,8 +1411,8 @@
     architecture: null
     deviceName: SGH-X650
     marketingName: SGH-X650
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -2986,13 +1428,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -3007,8 +1449,8 @@
     architecture: null
     deviceName: SGH-X620C
     marketingName: SGH-X620C
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -3024,13 +1466,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -3045,8 +1487,8 @@
     architecture: null
     deviceName: SGH-X620
     marketingName: SGH-X620
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -3062,13 +1504,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -3083,8 +1525,8 @@
     architecture: null
     deviceName: SGH-X608
     marketingName: SGH-X608
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -3100,13 +1542,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.1.0.6
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -3121,8 +1563,8 @@
     architecture: null
     deviceName: SGH-X600A
     marketingName: SGH-X600A
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -3138,13 +1580,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.1.0.6
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -3159,8 +1601,8 @@
     architecture: null
     deviceName: SGH-X600
     marketingName: SGH-X600
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -3176,13 +1618,13 @@
     name: JavaOS
     marketingName: JavaOS
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 5.0.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -3197,8 +1639,8 @@
     architecture: null
     deviceName: SGH-X497
     marketingName: SGH-X497
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -3214,13 +1656,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -3235,8 +1677,8 @@
     architecture: null
     deviceName: SGH-X495
     marketingName: SGH-X495
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -3252,13 +1694,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -3273,8 +1715,8 @@
     architecture: null
     deviceName: SGH-X468
     marketingName: SGH-X468
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -3290,13 +1732,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.1.0.6
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -3311,8 +1753,8 @@
     architecture: null
     deviceName: SGH-X460C
     marketingName: SGH-X460C
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -3328,13 +1770,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.1.0.6
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -3349,8 +1791,8 @@
     architecture: null
     deviceName: SGH-X460
     marketingName: SGH-X460
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -3366,13 +1808,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.1.0.6
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -3387,8 +1829,8 @@
     architecture: null
     deviceName: SGH-X108
     marketingName: SGH-X108
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -3404,13 +1846,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.1.0.6
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -3425,8 +1867,8 @@
     architecture: null
     deviceName: SGH-T809
     marketingName: SGH-T809
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -3442,13 +1884,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -3463,8 +1905,8 @@
     architecture: null
     deviceName: SGH-T739
     marketingName: Katalyst
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -3480,13 +1922,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -3501,8 +1943,8 @@
     architecture: null
     deviceName: SGH-T619
     marketingName: SGH-T619
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -3518,13 +1960,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -3539,8 +1981,8 @@
     architecture: null
     deviceName: SGH-T509
     marketingName: SGH-T509
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -3556,13 +1998,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -3577,8 +2019,8 @@
     architecture: null
     deviceName: SGH-T429
     marketingName: SGH-T429
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -3594,13 +2036,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -3615,8 +2057,8 @@
     architecture: null
     deviceName: SGH-T319
     marketingName: SGH-T319
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -3632,13 +2074,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -3653,8 +2095,8 @@
     architecture: null
     deviceName: SGH-T309
     marketingName: SGH-T309
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -3670,13 +2112,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -3691,8 +2133,8 @@
     architecture: null
     deviceName: SGH-T209
     marketingName: SGH-T209
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -3708,13 +2150,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -3729,8 +2171,8 @@
     architecture: null
     deviceName: SGH-S508
     marketingName: SGH-S508
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -3746,13 +2188,13 @@
     name: 'Nucleus OS'
     marketingName: Nucleus
     version: 2.0.0
-    manufacturer: 'Accelerated Technology'
+    manufacturer: acceleratedTechnology
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 5.0.5.1
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -3767,8 +2209,8 @@
     architecture: null
     deviceName: SGH-S500
     marketingName: SGH-S500
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 1
     display:
@@ -3784,13 +2226,1571 @@
     name: JavaOS
     marketingName: JavaOS
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 5.0.5.1
-    manufacturer: Myriad
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-N620/1.0 UP/4.1.19k UP.Browser/4.1.19k-XXXX UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: SGH-N620
+    marketingName: SGH-N620
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 128
+      height: 64
+      touch: false
+      size: null
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 4.1.19
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-E830/1.0 UP.Browser/6.2.2.6 (GUI) MMP/1.0'
+  device:
+    architecture: null
+    deviceName: SGH-E830
+    marketingName: SGH-E830
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 220
+      height: 176
+      touch: false
+      size: 2
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.2.6
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-E820/1.0 UP.Browser/6.2.3.3 (GUI) MMP/2.0 Push/PO'
+  device:
+    architecture: null
+    deviceName: SGH-E820
+    marketingName: SGH-E820
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 160
+      height: 128
+      touch: false
+      size: null
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.3
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-E808/1.0*MzU0NTU2MDAwMjI1NDEw UP.Browser/6.2.2.6 (GUI) MMP/1.0 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: SGH-E808
+    marketingName: SGH-E808
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 160
+      height: 128
+      touch: false
+      size: 1.7
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.2.6
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-E800C/1.0 UP.Browser/6.2.2.6 (GUI) MMP/1.0 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: SGH-E800C
+    marketingName: SGH-E800C
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 160
+      height: 128
+      touch: false
+      size: null
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.2.6
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-E800/1.0 UP.Browser/6.2.2.6 (GUI) MMP/1.0 UP.Link/6.3.1.13.0'
+  device:
+    architecture: null
+    deviceName: SGH-E800
+    marketingName: SGH-E800
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 160
+      height: 128
+      touch: false
+      size: null
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.2.6
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-E780/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0'
+  device:
+    architecture: null
+    deviceName: SGH-E780
+    marketingName: SGH-E780
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 220
+      height: 176
+      touch: false
+      size: null
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.3
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-E760/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0'
+  device:
+    architecture: null
+    deviceName: SGH-E760
+    marketingName: SGH-E760
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 220
+      height: 176
+      touch: false
+      size: null
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.3
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-E738/1.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1/*MzU2MTU4MDAwMDAxMDIw UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0'
+  device:
+    architecture: null
+    deviceName: SGH-E738
+    marketingName: SGH-E738
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 220
+      height: 176
+      touch: false
+      size: null
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.3
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-E730/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0'
+  device:
+    architecture: null
+    deviceName: SGH-E730
+    marketingName: SGH-E730
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 220
+      height: 176
+      touch: false
+      size: null
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.3
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-E708/BSI UP.Browser/6.1.0.6 (GUI) MMP/1.0 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: SGH-E708
+    marketingName: SGH-E708
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 160
+      height: 128
+      touch: false
+      size: null
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.1.0.6
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-E700A/BSI UP.Browser/6.1.0.6 (GUI) MMP/1.0 UP.Link/6.3.0.0.0 UP.Link/6.3.0.0.0'
+  device:
+    architecture: null
+    deviceName: SGH-E700A
+    marketingName: SGH-E700A
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 160
+      height: 128
+      touch: false
+      size: null
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.1.0.6
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-E690/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0'
+  device:
+    architecture: null
+    deviceName: SGH-E690
+    marketingName: SGH-E690
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 160
+      height: 128
+      touch: false
+      size: 2
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.3
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-E640/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0'
+  device:
+    architecture: null
+    deviceName: SGH-E640
+    marketingName: SGH-E640
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 220
+      height: 176
+      touch: false
+      size: null
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.3
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-E638/1.0*MzU0ODU5MDA1MzMxOTE0 UP.Browser/6.2.2.6 (GUI) MMP/1.0 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: SGH-E638
+    marketingName: SGH-E638
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 160
+      height: 128
+      touch: false
+      size: 1.6
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.2.6
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-E630C/1.0 UP.Browser/6.2.2.6 (GUI) MMP/1.0 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: SGH-E630C
+    marketingName: SGH-E630C
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 160
+      height: 128
+      touch: false
+      size: null
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.2.6
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-E630/1.0 UP.Browser/6.2.2.6 (GUI) MMP/1.0'
+  device:
+    architecture: null
+    deviceName: SGH-E630
+    marketingName: SGH-E630
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 160
+      height: 128
+      touch: false
+      size: null
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.2.6
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-E500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0'
+  device:
+    architecture: null
+    deviceName: SGH-E500
+    marketingName: LaFleur
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 220
+      height: 176
+      touch: false
+      size: null
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.3
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-E370/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0 UP.Link/6.3.1.13.0'
+  device:
+    architecture: null
+    deviceName: SGH-E370
+    marketingName: SGH-E370
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 160
+      height: 128
+      touch: false
+      size: null
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.3
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-E360/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0 UP.Link/6.3.0.0.0 UP.Link/6.3.0.0.0'
+  device:
+    architecture: null
+    deviceName: SGH-E360
+    marketingName: SGH-E360
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 160
+      height: 128
+      touch: false
+      size: null
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.3
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-E358/1.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1/*MDA0NDAwMDEzNTk5MDYx UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0'
+  device:
+    architecture: null
+    deviceName: SGH-E358
+    marketingName: SGH-E358
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 160
+      height: 128
+      touch: false
+      size: 1.6
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.3
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-E350E/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0'
+  device:
+    architecture: null
+    deviceName: SGH-E350E
+    marketingName: SGH-E350E
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 160
+      height: 128
+      touch: false
+      size: null
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.3
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-E350/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0'
+  device:
+    architecture: null
+    deviceName: SGH-E350
+    marketingName: SGH-E350
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 160
+      height: 128
+      touch: false
+      size: null
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.3
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-E340/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0 UP.Link/6.3.1.13.0'
+  device:
+    architecture: null
+    deviceName: SGH-E340
+    marketingName: SGH-E340
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 160
+      height: 128
+      touch: false
+      size: null
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.3
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-E338/1.0*MzU0NzMwMDAwMDAwMDIw UP.Browser/6.2.2.6 (GUI) MMP/1.0'
+  device:
+    architecture: null
+    deviceName: SGH-E338
+    marketingName: SGH-E338
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 160
+      height: 128
+      touch: false
+      size: null
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.2.6
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-E330N/1.0 UP.Browser/6.2.2.6 (GUI) MMP/1.0'
+  device:
+    architecture: null
+    deviceName: SGH-E330N
+    marketingName: SGH-E330N
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 160
+      height: 128
+      touch: false
+      size: null
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.2.6
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-E330C/1.0 UP.Browser/6.2.2.6 (GUI) MMP/1.0 UP.Link/6.3.1.12.0'
+  device:
+    architecture: null
+    deviceName: SGH-E330C
+    marketingName: SGH-E330C
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 160
+      height: 128
+      touch: false
+      size: null
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.2.6
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-E330/1.0 UP.Browser/6.2.2.6 (GUI) MMP/1.0 UP.Link/6.3.1.13.0'
+  device:
+    architecture: null
+    deviceName: SGH-E330
+    marketingName: SGH-E330
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 160
+      height: 128
+      touch: false
+      size: null
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.2.6
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-E108/T2*MzUyMjkxMDAzMTQzMjY5 UP.Browser/6.1.0.6 (GUI) MMP/1.0'
+  device:
+    architecture: null
+    deviceName: SGH-E108
+    marketingName: SGH-E108
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.1.0.6
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-D908/1.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1/*MzUxODAwMDEwMDAyNzg4 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0'
+  device:
+    architecture: null
+    deviceName: SGH-D908
+    marketingName: SGH-D908
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 320
+      height: 240
+      touch: false
+      size: 2.1
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.3
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-D880/D880XAHC1 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0'
+  device:
+    architecture: null
+    deviceName: SGH-D880
+    marketingName: SGH-D880
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 320
+      height: 240
+      touch: false
+      size: 2.3
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.3
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-D820/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0 UP.Link/6.3.1.13.0'
+  device:
+    architecture: null
+    deviceName: SGH-D820
+    marketingName: SGH-D820
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 320
+      height: 240
+      touch: false
+      size: 2.1
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.3
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-D608/1.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1/*MzU4MjI0MDA2NjM1NzA0 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0'
+  device:
+    architecture: null
+    deviceName: SGH-D608
+    marketingName: SGH-D608
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 320
+      height: 240
+      touch: false
+      size: null
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.3
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-D600E/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0 UP.Link/6.3.1.13.0'
+  device:
+    architecture: null
+    deviceName: SGH-D600E
+    marketingName: SGH-D600E
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 320
+      height: 240
+      touch: false
+      size: 2
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.3
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-D600/1.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1/*MzU3MTEyMDAwMDAwOTI5 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0'
+  device:
+    architecture: null
+    deviceName: SGH-D600
+    marketingName: SGH-D600
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 320
+      height: 240
+      touch: false
+      size: 2
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.3
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-D510/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0'
+  device:
+    architecture: null
+    deviceName: SGH-D510
+    marketingName: SGH-D510
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 220
+      height: 176
+      touch: false
+      size: 1.9
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.3
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-D508/1.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1/*MzU2MDk4MDAyMzMyOTkx UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0'
+  device:
+    architecture: null
+    deviceName: SGH-D508
+    marketingName: SGH-D508
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 220
+      height: 176
+      touch: false
+      size: 1.9
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.3
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-D500E/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0 UP.Link/6.3.1.13.0'
+  device:
+    architecture: null
+    deviceName: SGH-D500E
+    marketingName: SGH-D500E
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 220
+      height: 176
+      touch: false
+      size: 1.9
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.3
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-D500C/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0'
+  device:
+    architecture: null
+    deviceName: SGH-D500C
+    marketingName: SGH-D500C
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 220
+      height: 176
+      touch: false
+      size: 1.9
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.3
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-A257/A257UCIC6 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0 UP.Link/6.3.1.20.06.3.1.20.0 Novarra-Vision/8.0'
+  device:
+    architecture: null
+    deviceName: SGH-A257
+    marketingName: Hype
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 220
+      height: 176
+      touch: false
+      size: 2.4
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.3
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAMSUNG-SGH-A177/A177UCIC3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0 Novarra-Vision/8.0'
+  device:
+    architecture: null
+    deviceName: SGH-A177
+    marketingName: SGH-A177
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 220
+      height: 176
+      touch: false
+      size: 2.2
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.3
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null

@@ -5,8 +5,8 @@
     architecture: null
     deviceName: AX352
     marketingName: AX352
-    manufacturer: Bmobile
-    brand: Bmobile
+    manufacturer: bmobile
+    brand: bmobile
     dualOrientation: true
     simCount: 1
     display:
@@ -28,14 +28,14 @@
     name: 'Android Webkit'
     modus: null
     version: 4.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 533.1.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; BL63_TG07) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: BL63
     marketingName: BL63
-    manufacturer: Bmobile
-    brand: Bmobile
+    manufacturer: bmobile
+    brand: bmobile
     dualOrientation: true
     simCount: 1
     display:
@@ -60,20 +60,20 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 105.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 105.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; BL53_TG06 Build/T00624) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/111.0.5563.116 Mobile Safari/537.36'
@@ -81,8 +81,8 @@
     architecture: null
     deviceName: BL53
     marketingName: BL53
-    manufacturer: Bmobile
-    brand: Bmobile
+    manufacturer: bmobile
+    brand: bmobile
     dualOrientation: true
     simCount: 1
     display:
@@ -98,20 +98,20 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 111.0.5563.116
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 111.0.5563.116
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; BL52Pro Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.6834.122 Mobile Safari/537.36'
@@ -119,8 +119,8 @@
     architecture: null
     deviceName: 'BL52 Pro'
     marketingName: 'BL52 Pro'
-    manufacturer: Bmobile
-    brand: Bmobile
+    manufacturer: bmobile
+    brand: bmobile
     dualOrientation: true
     simCount: 1
     display:
@@ -136,17 +136,17 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 132.0.6834.122
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 132.0.6834.122
-    manufacturer: Google
+    manufacturer: google

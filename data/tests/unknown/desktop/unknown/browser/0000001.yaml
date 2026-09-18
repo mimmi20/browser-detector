@@ -98,7 +98,7 @@
     name: Windows
     marketingName: 'Windows XP'
     version: 5.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Galeon
@@ -111,7 +111,7 @@
   engine:
     name: Gecko
     version: null
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: EVE-minibrowser/3.0
@@ -149,7 +149,7 @@
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'ELinks/0.9.1 (textmode; SunOS 5.9 sun4u; 122x42)'
@@ -174,7 +174,7 @@
     name: SunOS
     marketingName: SunOS
     version: 5.9.0
-    manufacturer: Oracle
+    manufacturer: oracle
     bits: null
   client:
     name: ELinks
@@ -212,7 +212,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 7.1.0-dev
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: ELinks
@@ -250,7 +250,7 @@
     name: Windows
     marketingName: Windows
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: ELinks
@@ -288,7 +288,7 @@
     name: 'Debian with FreeBSD Kernel'
     marketingName: 'Debian with FreeBSD Kernel'
     version: 5.3.17
-    manufacturer: 'Software in the Public Interest'
+    manufacturer: softwareInThePublicInterest
     bits: null
   client:
     name: ELinks
@@ -326,7 +326,7 @@
     name: 'Debian with FreeBSD Kernel'
     marketingName: 'Debian with FreeBSD Kernel'
     version: 5.3.1
-    manufacturer: 'Software in the Public Interest'
+    manufacturer: softwareInThePublicInterest
     bits: null
   client:
     name: ELinks
@@ -364,7 +364,7 @@
     name: 'Gentoo Linux'
     marketingName: 'Gentoo Linux'
     version: null
-    manufacturer: Gentoo
+    manufacturer: gentoo
     bits: null
   client:
     name: ELinks
@@ -630,7 +630,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 4.6.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: ELinks
@@ -757,7 +757,7 @@
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: Amiga-AWeb/3.4APL
@@ -934,7 +934,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: MultiZilla
@@ -947,7 +947,7 @@
   engine:
     name: Gecko
     version: 1.6.0
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; Debian GNU/Linux - only dead fish go with the flow - i686; en-US; rv:1.8a5) Gecko/20041122 MultiZilla/1.7.0.0h'
@@ -972,7 +972,7 @@
     name: Debian
     marketingName: Debian
     version: null
-    manufacturer: 'Software in the Public Interest'
+    manufacturer: softwareInThePublicInterest
     bits: null
   client:
     name: MultiZilla
@@ -985,7 +985,7 @@
   engine:
     name: Gecko
     version: 1.8.0
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; WinNT4.0; en-US; rv:1.5a; MultiZilla v1.5.0.2j) Gecko/20030728 Mozilla Firebird/0.6.1 StumbleUpon/1.99'
@@ -1010,7 +1010,7 @@
     name: 'Windows NT'
     marketingName: 'Windows NT'
     version: 4.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: MultiZilla
@@ -1023,7 +1023,7 @@
   engine:
     name: Gecko
     version: 1.5.0
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/5.0 (OS/2; U; Warp 4.5; en-US; rv:1.7b) Gecko/20040325 MultiZilla/1.6.3.0e'
@@ -1048,7 +1048,7 @@
     name: OS/2
     marketingName: OS/2
     version: 4.5.0
-    manufacturer: IBM
+    manufacturer: ibm
     bits: null
   client:
     name: MultiZilla
@@ -1061,7 +1061,7 @@
   engine:
     name: Gecko
     version: 1.7.0
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/5.0 (OS/2; U; Warp 4.5; en-US; rv:1.3b; MultiZilla v1.3.1 (a)) Gecko/20030215'
@@ -1086,7 +1086,7 @@
     name: OS/2
     marketingName: OS/2
     version: 4.5.0
-    manufacturer: IBM
+    manufacturer: ibm
     bits: null
   client:
     name: MultiZilla
@@ -1099,7 +1099,7 @@
   engine:
     name: Gecko
     version: 1.3.0
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/4.78 [en] (Win98; I) IBrowse/2.3 (AmigaOS 3.1)'
@@ -1162,7 +1162,7 @@
     name: Linux
     marketingName: Linux
     version: 2.2.16.22
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: BrowseX
@@ -1200,7 +1200,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Kazehakase
@@ -1213,7 +1213,7 @@
   engine:
     name: Gecko
     version: 1.8.1.20
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'ELinks/0.11.4rc1 (textmode; FreeBSD 7.1-RELEASE i386; 80x25-2)'
@@ -1238,7 +1238,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 7.1.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: ELinks
@@ -1276,7 +1276,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: kded
@@ -1289,7 +1289,7 @@
   engine:
     name: WebKit
     version: 533.3.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11;) AppleWebKit/534.34 (KHTML, like Gecko) kded/4.10.1 Safari/534.34'
@@ -1314,7 +1314,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: kded
@@ -1327,7 +1327,7 @@
   engine:
     name: WebKit
     version: 534.34.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11;) AppleWebKit/533.3 (KHTML, like Gecko) kded/4.9.3 Safari/533.3'
@@ -1352,7 +1352,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: kded
@@ -1365,7 +1365,7 @@
   engine:
     name: WebKit
     version: 533.3.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; Seznam Minibrowser URL peek; +http://software.seznam.cz/)'
@@ -1403,7 +1403,7 @@
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; Linux i686; en-US) AppleWebKit/533.3 (KHTML, like Gecko) Chrome/12.0.702.0 Safari/533.3 Awesomium/1.6.3'
@@ -1428,7 +1428,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Awesomium
@@ -1441,7 +1441,7 @@
   engine:
     name: WebKit
     version: 533.3.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Amiga-AWeb/3.5.07 beta'
@@ -1504,7 +1504,7 @@
     name: BSD
     marketingName: BSD
     version: null
-    manufacturer: Berkeley
+    manufacturer: berkeley
     bits: null
   client:
     name: Arora
@@ -1517,7 +1517,7 @@
   engine:
     name: WebKit
     version: 527.0.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'xChaos_Arachne/4.1.70;rev.3 (DOS x86;WATTCP/1.05; 640x480'
@@ -1580,7 +1580,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Galeon
@@ -1593,7 +1593,7 @@
   engine:
     name: Gecko
     version: null
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; Linux x86_64; ru-RU; rv:1.9.0.11) Gecko/2009070612 Gentoo Lolifox/3.0.11 (Firefox/3.0.11)'
@@ -1618,7 +1618,7 @@
     name: 'Gentoo Linux'
     marketingName: 'Gentoo Linux'
     version: null
-    manufacturer: Gentoo
+    manufacturer: gentoo
     bits: null
   client:
     name: Lolifox
@@ -1631,7 +1631,7 @@
   engine:
     name: Gecko
     version: 1.9.0.11
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: KeitaiBrowser/0.1
@@ -1694,7 +1694,7 @@
     name: OS/2
     marketingName: OS/2
     version: 4.5.0
-    manufacturer: IBM
+    manufacturer: ibm
     bits: null
   client:
     name: MultiZilla
@@ -1707,7 +1707,7 @@
   engine:
     name: Gecko
     version: 1.8.1.23
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.2.13) Gecko/20101221 Gentoo Conkeror/0.9.3'
@@ -1732,7 +1732,7 @@
     name: 'Gentoo Linux'
     marketingName: 'Gentoo Linux'
     version: null
-    manufacturer: Gentoo
+    manufacturer: gentoo
     bits: null
   client:
     name: Conkeror
@@ -1745,7 +1745,7 @@
   engine:
     name: Gecko
     version: 1.9.2.13
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'IBrowse/8.9 (Ark Linux 4.8; fr_LU;)'
@@ -1884,7 +1884,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 4.3.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: ELinks
@@ -1973,7 +1973,7 @@
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'ELinks/0.11.1 (textmode; FreeBSD 6.1-RELEASE i386; 127x77-2)'
@@ -1998,7 +1998,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 6.1.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: ELinks
@@ -2036,7 +2036,7 @@
     name: Syllable
     marketingName: Syllable
     version: null
-    manufacturer: Syllable
+    manufacturer: syllable
     bits: null
   client:
     name: ABrowse
@@ -2049,7 +2049,7 @@
   engine:
     name: WebKit
     version: 420.0.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (N; Windows NT 6.1; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) QtMiniBrowser/0.1 Safari/538.1'
@@ -2074,7 +2074,7 @@
     name: Windows
     marketingName: 'Windows 7'
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: QtMiniBrowser
@@ -2087,7 +2087,7 @@
   engine:
     name: WebKit
     version: 538.1.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'HtmlRenderer/x.y (Technicolor_DXI807FT; U; Linux i686; xx) QtWebKit/2.2.z'
@@ -2112,7 +2112,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: QtWebkit
@@ -2125,7 +2125,7 @@
   engine:
     name: WebKit
     version: 2.2.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'IBrowse/15.9 (Fedora 1.2; ar_BH;)'
@@ -2150,7 +2150,7 @@
     name: 'Fedora Linux'
     marketingName: 'Fedora Linux'
     version: 1.2.0
-    manufacturer: Redhat
+    manufacturer: redhat
     bits: null
   client:
     name: IBrowse
@@ -2188,7 +2188,7 @@
     name: Linux
     marketingName: Linux
     version: 3.8.0
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: IBrowse
@@ -2226,7 +2226,7 @@
     name: Debian
     marketingName: Debian
     version: 1.3.0
-    manufacturer: 'Software in the Public Interest'
+    manufacturer: softwareInThePublicInterest
     bits: null
   client:
     name: IBrowse
@@ -2302,7 +2302,7 @@
     name: 'Mandriva Linux'
     marketingName: 'Mandriva Linux'
     version: null
-    manufacturer: Mandriva
+    manufacturer: mandriva
     bits: null
   client:
     name: IBrowse
@@ -2341,7 +2341,7 @@
     name: Windows
     marketingName: 'Windows 7'
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'MAUI Browser'
@@ -2354,7 +2354,7 @@
   engine:
     name: Trident
     version: 4.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Amiga-AWeb/3.5.05 beta'
@@ -2455,7 +2455,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 4.10.0-dev
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: ELinks
@@ -2493,7 +2493,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 4.10.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: ELinks
@@ -2531,7 +2531,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Galeon
@@ -2544,7 +2544,7 @@
   engine:
     name: Trident
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 Galeon/1.2.7 (X11; Linux ppc; U;) Gecko/20030130'
@@ -2569,7 +2569,7 @@
     name: Macintosh
     marketingName: Macintosh
     version: null
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: Galeon
@@ -2582,7 +2582,7 @@
   engine:
     name: Gecko
     version: null
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.6) Gecko/20040402 Galeon/1.3.14'
@@ -2607,7 +2607,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Galeon
@@ -2620,7 +2620,7 @@
   engine:
     name: Gecko
     version: 1.6.0
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.6) Gecko/20040426 Galeon/1.3.14'
@@ -2645,7 +2645,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Galeon
@@ -2658,7 +2658,7 @@
   engine:
     name: Gecko
     version: 1.6.0
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.6) Gecko/20040501 Galeon/1.3.14'
@@ -2683,7 +2683,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Galeon
@@ -2696,7 +2696,7 @@
   engine:
     name: Gecko
     version: 1.6.0
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.7) Gecko/20040710 Galeon/1.3.16'
@@ -2721,7 +2721,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Galeon
@@ -2734,7 +2734,7 @@
   engine:
     name: Gecko
     version: 1.7.0
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.7.2) Gecko/20040824 Galeon/1.3.17'
@@ -2759,7 +2759,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Galeon
@@ -2772,7 +2772,7 @@
   engine:
     name: Gecko
     version: 1.7.2
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.7.3) Gecko/20041130 Galeon/1.3.18'
@@ -2797,7 +2797,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Galeon
@@ -2810,7 +2810,7 @@
   engine:
     name: Gecko
     version: 1.7.3
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.7.5) Gecko/20041221 Galeon/1.3.18'
@@ -2835,7 +2835,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Galeon
@@ -2848,7 +2848,7 @@
   engine:
     name: Gecko
     version: 1.7.5
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.7.5) Gecko/20041224 Galeon/1.3.18'
@@ -2873,7 +2873,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Galeon
@@ -2886,7 +2886,7 @@
   engine:
     name: Gecko
     version: 1.7.5
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.7.5) Gecko/20041224 Galeon/1.3.19'
@@ -2911,7 +2911,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Galeon
@@ -2924,7 +2924,7 @@
   engine:
     name: Gecko
     version: 1.7.5
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD i386) Gecko/0 Galeon/1.3.4'
@@ -2949,7 +2949,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Galeon
@@ -2962,7 +2962,7 @@
   engine:
     name: Gecko
     version: null
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD i386) Gecko/0 Galeon/1.3.7'
@@ -2987,7 +2987,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Galeon
@@ -3000,7 +3000,7 @@
   engine:
     name: Gecko
     version: null
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'alpha/06 (compatible; IBrowse; AmigaOS)'
@@ -3367,7 +3367,7 @@
     name: OS/2
     marketingName: OS/2
     version: 4.5.0
-    manufacturer: IBM
+    manufacturer: ibm
     bits: null
   client:
     name: MultiZilla
@@ -3380,7 +3380,7 @@
   engine:
     name: Gecko
     version: 1.7.0
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/5.0 (OS/2; U; Warp 4.5; en-US; rv:1.8a3) Gecko/20040819 MultiZilla/1.6.4.0b'
@@ -3405,7 +3405,7 @@
     name: OS/2
     marketingName: OS/2
     version: 4.5.0
-    manufacturer: IBM
+    manufacturer: ibm
     bits: null
   client:
     name: MultiZilla
@@ -3418,7 +3418,7 @@
   engine:
     name: Gecko
     version: 1.8.0
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/3.0 (compatible; NetPositive/2.2.3; FreeBSD 5.2.1 i686)'
@@ -3443,7 +3443,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 5.2.1
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: NetPositive
@@ -3481,7 +3481,7 @@
     name: Windows
     marketingName: 'Windows XP'
     version: 5.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: '114 Browser'
@@ -3494,7 +3494,7 @@
   engine:
     name: Blink
     version: 31.0.1650.63
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Uzbl (X11; U; Arch Linux; de-DE) Webkit/1.1.10'
@@ -3532,7 +3532,7 @@
   engine:
     name: WebKit
     version: 1.1.10
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/3.0 (compatible; NetPositive/2.1.1; BeOS)'
@@ -3557,7 +3557,7 @@
     name: BeOS
     marketingName: BeOS
     version: null
-    manufacturer: Access
+    manufacturer: access
     bits: null
   client:
     name: NetPositive
@@ -3595,7 +3595,7 @@
     name: OS/2
     marketingName: OS/2
     version: 4.5.0
-    manufacturer: IBM
+    manufacturer: ibm
     bits: null
   client:
     name: MultiZilla
@@ -3608,7 +3608,7 @@
   engine:
     name: Gecko
     version: 1.8.0.7
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/6.0 (Future Star Technologies Corp. Star-Blade OS; U; en-US) iNet Browser 2.5'
@@ -3646,7 +3646,7 @@
   engine:
     name: Gecko
     version: null
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'FlameSky/5.0.0.0 Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.2987.110 Safari/537.36'
@@ -3671,7 +3671,7 @@
     name: Windows
     marketingName: 'Windows 7'
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: FlameSky
@@ -3684,7 +3684,7 @@
   engine:
     name: Blink
     version: 64.0.2987.110
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 5.1; rv:60.9) Gecko/20100101 Goanna/4.1 Firefox/60.9 Mypal/28.3.1'
@@ -3709,7 +3709,7 @@
     name: Windows
     marketingName: 'Windows XP'
     version: 5.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Mypal
@@ -3722,7 +3722,7 @@
   engine:
     name: Goanna
     version: 4.1.0
-    manufacturer: Moonchild
+    manufacturer: moonchild
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.8.1.18) Gecko/20081206 Firefox/2.0.0.18 Kazehakase/0.5.4'
@@ -3747,7 +3747,7 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Kazehakase
@@ -3760,7 +3760,7 @@
   engine:
     name: Gecko
     version: 1.8.1.18
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/5.0 (OS/2; U; OS/2; en-US) AppleWebKit/533.3 (KHTML, like Gecko) Arora/0.11.0 Safari/533.3'
@@ -3785,7 +3785,7 @@
     name: OS/2
     marketingName: OS/2
     version: null
-    manufacturer: IBM
+    manufacturer: ibm
     bits: null
   client:
     name: Arora
@@ -3798,4 +3798,4 @@
   engine:
     name: WebKit
     version: 533.3.0
-    manufacturer: Apple
+    manufacturer: apple

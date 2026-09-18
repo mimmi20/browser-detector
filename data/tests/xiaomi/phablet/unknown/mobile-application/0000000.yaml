@@ -6,8 +6,8 @@
     architecture: null
     deviceName: 'Redmi Note 7'
     marketingName: 'Redmi Note 7'
-    manufacturer: Xiaomi
-    brand: Xiaomi
+    manufacturer: xiaomi
+    brand: xiaomi
     dualOrientation: true
     simCount: 1
     display:
@@ -23,7 +23,7 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: InstaPro
@@ -36,7 +36,7 @@
   engine:
     name: Blink
     version: 97.0.4692.87
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: com.andrewshu.android.reddit
@@ -45,8 +45,8 @@
     architecture: null
     deviceName: 'Redmi Note 8 Pro'
     marketingName: 'Redmi Note 8 Pro'
-    manufacturer: Xiaomi
-    brand: Xiaomi
+    manufacturer: xiaomi
+    brand: xiaomi
     dualOrientation: true
     simCount: 1
     display:
@@ -62,7 +62,7 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Reddit is fun'
@@ -75,7 +75,7 @@
   engine:
     name: Blink
     version: 101.0.4951.61
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'AndroidDownloadManager/11 (Linux; U; Android 11; 2201116SG Build/RKQ1.211001.001)'
@@ -83,8 +83,8 @@
     architecture: null
     deviceName: 2201116SG
     marketingName: 'Redmi Note 11 Pro 5G'
-    manufacturer: Xiaomi
-    brand: Xiaomi
+    manufacturer: xiaomi
+    brand: xiaomi
     dualOrientation: true
     simCount: 2
     display:
@@ -100,7 +100,7 @@
     name: Android
     marketingName: Android
     version: 11.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Android Download Manager'
@@ -113,7 +113,7 @@
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; M2103K19G Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.123 Mobile Safari/537.36 CamScanner/6.64.1.2405070000;webank/h5face;webank/2.0'
@@ -121,8 +121,8 @@
     architecture: null
     deviceName: M2103K19G
     marketingName: 'Redmi Note 10 5G'
-    manufacturer: Xiaomi
-    brand: Xiaomi
+    manufacturer: xiaomi
+    brand: xiaomi
     dualOrientation: true
     simCount: 1
     display:
@@ -138,7 +138,7 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: CamScanner
@@ -151,4 +151,4 @@
   engine:
     name: Blink
     version: 124.0.6367.123
-    manufacturer: Google
+    manufacturer: google

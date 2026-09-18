@@ -5,8 +5,8 @@
     architecture: null
     deviceName: VOG-L29
     marketingName: 'P30 Pro'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 2
     display:
@@ -22,17 +22,17 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Viber
     modus: null
     version: 21.9.1.0
-    manufacturer: 'Viber Media'
+    manufacturer: viber-media
     type: mobile-application
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 84.0.4147.125
-    manufacturer: Google
+    manufacturer: google

@@ -5,8 +5,8 @@
     architecture: null
     deviceName: 32D1200
     marketingName: 32D1200
-    manufacturer: 'ComTrade Tesla'
-    brand: 'ComTrade Tesla'
+    manufacturer: comtrade-tesla
+    brand: comtrade-tesla
     dualOrientation: false
     simCount: 0
     display:
@@ -22,17 +22,17 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: TBrowser
     modus: null
     version: 2.0.0
-    manufacturer: 'Browser Edson Thiago'
+    manufacturer: browser-edson-thiago
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 49.0.2623.75
-    manufacturer: Google
+    manufacturer: google

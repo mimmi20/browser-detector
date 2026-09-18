@@ -5,8 +5,8 @@
     architecture: null
     deviceName: 'Smart TV'
     marketingName: 'Smart TV'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 0
     display:
@@ -22,20 +22,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: 5.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 535.20.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (SMART-TV; Linux; Tizen 2.2) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: 'Smart TV'
     marketingName: 'Smart TV'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: false
     simCount: 0
     display:
@@ -60,17 +60,17 @@
     name: Tizen
     marketingName: Tizen
     version: 2.2.0
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Safari
     modus: null
     version: 4.0.0
-    manufacturer: Apple
+    manufacturer: apple
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 538.1.0
-    manufacturer: Apple
+    manufacturer: apple

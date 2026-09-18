@@ -5,8 +5,8 @@
     architecture: null
     deviceName: AC2001
     marketingName: 'Nord 5G (India)'
-    manufacturer: BBK
-    brand: OnePlus
+    manufacturer: bbk
+    brand: oneplus
     dualOrientation: true
     simCount: 1
     display:
@@ -22,20 +22,20 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: JioSphere
     modus: null
     version: 5.0.0
-    manufacturer: 'Jio Platforms'
+    manufacturer: jio-platforms
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 111.0.5563.58
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; V2538) AppleWebKit/537.36 (KHTML, like Gecko) JioSphere/6.0.3 Chrome/136.0.7103.125 Mobile Safari/537.36'
@@ -43,7 +43,7 @@
     architecture: null
     deviceName: V2538
     marketingName: V70
-    manufacturer: BBK
+    manufacturer: bbk
     brand: vivo
     dualOrientation: true
     simCount: 2
@@ -60,20 +60,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: JioSphere
     modus: null
     version: 6.0.3
-    manufacturer: 'Jio Platforms'
+    manufacturer: jio-platforms
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 136.0.7103.125
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; RMX5108) AppleWebKit/537.36 (KHTML, like Gecko) JioSphere/7.0.0 Chrome/146.0.7680.65 Mobile Safari/537.36'
@@ -81,8 +81,8 @@
     architecture: null
     deviceName: RMX5108
     marketingName: 'P3x 5G'
-    manufacturer: BBK
-    brand: Realme
+    manufacturer: bbk
+    brand: realme
     dualOrientation: true
     simCount: 2
     display:
@@ -98,20 +98,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: JioSphere
     modus: null
     version: 7.0.0
-    manufacturer: 'Jio Platforms'
+    manufacturer: jio-platforms
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 146.0.7680.65
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; CPH2797) AppleWebKit/537.36 (KHTML, like Gecko) JioSphere/7.0.0 Chrome/146.0.7680.65 Mobile Safari/537.36'
@@ -119,8 +119,8 @@
     architecture: null
     deviceName: CPH2797
     marketingName: 'Find X9'
-    manufacturer: BBK
-    brand: OPPO
+    manufacturer: bbk
+    brand: oppo
     dualOrientation: true
     simCount: 2
     display:
@@ -136,17 +136,17 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: JioSphere
     modus: null
     version: 7.0.0
-    manufacturer: 'Jio Platforms'
+    manufacturer: jio-platforms
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 146.0.7680.65
-    manufacturer: Google
+    manufacturer: google

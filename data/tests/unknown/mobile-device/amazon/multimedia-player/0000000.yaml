@@ -1,5 +1,81 @@
 -
   headers:
+    user-agent: Echo/1.0(APNG)
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: Alexa
+    modus: null
+    version: null
+    manufacturer: amazon
+    type: multimedia-player
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: Echo/1.0(MRM)
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: Alexa
+    modus: null
+    version: null
+    manufacturer: amazon
+    type: multimedia-player
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
     user-agent: 'AlexaService/2.2.303087.0 (Linux;Android 9) ExoPlayerLib/2.8.4'
   device:
     architecture: null
@@ -22,13 +98,13 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Alexa
     modus: null
     version: 2.2.303087.0
-    manufacturer: Amazon
+    manufacturer: amazon
     type: multimedia-player
     isbot: false
     bits: null
@@ -60,13 +136,13 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Alexa
     modus: null
     version: 2.2.521848.0
-    manufacturer: Amazon
+    manufacturer: amazon
     type: multimedia-player
     isbot: false
     bits: null
@@ -98,13 +174,13 @@
     name: Android
     marketingName: Android
     version: 33.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'MX Player'
     modus: null
     version: 1.73.3
-    manufacturer: Amazon
+    manufacturer: amazon
     type: multimedia-player
     isbot: false
     bits: null

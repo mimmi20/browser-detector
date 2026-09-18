@@ -22,7 +22,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'WAP Browser'
@@ -60,7 +60,7 @@
     name: JavaOS
     marketingName: JavaOS
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'MAUI Wap Browser'
@@ -98,7 +98,45 @@
     name: JavaOS
     marketingName: JavaOS
     version: null
-    manufacturer: Sun
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'MAUI Wap Browser'
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: wap-browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'ZEN X20/MAUI WAP Browser'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
     bits: null
   client:
     name: 'MAUI Wap Browser'
@@ -136,7 +174,7 @@
     name: MRE
     marketingName: 'MAUI Runtime Environment'
     version: 3.1.00.64
-    manufacturer: MediaTek
+    manufacturer: mediatek
     bits: null
   client:
     name: 'MAUI Wap Browser'
@@ -174,7 +212,7 @@
     name: JavaOS
     marketingName: JavaOS
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'MAUI Wap Browser'
@@ -212,7 +250,7 @@
     name: MRE
     marketingName: 'MAUI Runtime Environment'
     version: null
-    manufacturer: MediaTek
+    manufacturer: mediatek
     bits: null
   client:
     name: 'MAUI Wap Browser'
@@ -250,7 +288,7 @@
     name: MRE
     marketingName: 'MAUI Runtime Environment'
     version: 3.1.00.1536
-    manufacturer: MediaTek
+    manufacturer: mediatek
     bits: null
   client:
     name: 'MAUI Wap Browser'
@@ -288,7 +326,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'MAUI Wap Browser'
@@ -326,7 +364,7 @@
     name: MRE
     marketingName: 'MAUI Runtime Environment'
     version: 3.1.00.800
-    manufacturer: MediaTek
+    manufacturer: mediatek
     bits: null
   client:
     name: 'MAUI Wap Browser'
@@ -364,10 +402,48 @@
     name: MRE
     marketingName: 'MAUI Runtime Environment'
     version: 2.5.00
-    manufacturer: MediaTek
+    manufacturer: mediatek
     bits: null
   client:
     name: 'MAUI Wap Browser'
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: wap-browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'True phone Super Ultra 1 WAP-Browser/1.0.0'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'WAP Browser'
     modus: null
     version: null
     manufacturer: unknown
@@ -402,7 +478,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'MAUI Wap Browser'
@@ -440,7 +516,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'MAUI Wap Browser'
@@ -478,7 +554,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'MAUI Wap Browser'
@@ -516,7 +592,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'WAP Browser'
@@ -554,7 +630,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'WAP Browser'
@@ -592,7 +668,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'WAP Browser'
@@ -630,7 +706,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'WAP Browser'
@@ -668,7 +744,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'WAP Browser'
@@ -706,7 +782,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'WAP Browser'
@@ -744,7 +820,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'WAP Browser'
@@ -782,7 +858,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'WAP Browser'
@@ -820,7 +896,7 @@
     name: JavaOS
     marketingName: JavaOS
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'MAUI Wap Browser'
@@ -858,7 +934,7 @@
     name: JavaOS
     marketingName: JavaOS
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'MAUI Wap Browser'
@@ -896,7 +972,7 @@
     name: JavaOS
     marketingName: JavaOS
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'MAUI Wap Browser'
@@ -934,7 +1010,7 @@
     name: JavaOS
     marketingName: JavaOS
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'MAUI Wap Browser'
@@ -972,7 +1048,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'WAP Browser'
@@ -1010,7 +1086,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'WAP Browser'
@@ -1048,7 +1124,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'WAP Browser'
@@ -1086,7 +1162,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'WAP Browser'
@@ -1124,7 +1200,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'WAP Browser'
@@ -1162,7 +1238,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'WAP Browser'
@@ -1200,7 +1276,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'WAP Browser'
@@ -1238,7 +1314,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'WAP Browser'
@@ -1276,7 +1352,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'WAP Browser'
@@ -1330,6 +1406,44 @@
     manufacturer: unknown
 -
   headers:
+    user-agent: 'EZOS - M5 AlphaCell WAP Browser'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'WAP Browser'
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: wap-browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
     user-agent: 'ESATCOM-ES2100/(2005.9.13)SW3.0/WAP2.0 MIDP/MIDP2.0 CLDC/CLDC1.0'
   device:
     architecture: null
@@ -1352,7 +1466,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'WAP Browser'
@@ -1390,7 +1504,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'WAP Browser'
@@ -1428,7 +1542,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'WAP Browser'
@@ -1466,7 +1580,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'WAP Browser'
@@ -1504,7 +1618,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'WAP Browser'
@@ -1542,7 +1656,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'WAP Browser'
@@ -1580,7 +1694,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'WAP Browser'
@@ -1618,7 +1732,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'WAP Browser'
@@ -1656,7 +1770,7 @@
     name: JavaOS
     marketingName: JavaOS
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'WAP Browser'
@@ -1694,7 +1808,7 @@
     name: JavaOS
     marketingName: JavaOS
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'WAP Browser'
@@ -1732,7 +1846,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'WAP Browser'
@@ -1770,7 +1884,7 @@
     name: JavaOS
     marketingName: JavaOS
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'WAP Browser'
@@ -1808,7 +1922,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'WAP Browser'
@@ -1846,7 +1960,7 @@
     name: JavaOS
     marketingName: JavaOS
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'WAP Browser'
@@ -1884,7 +1998,7 @@
     name: JavaOS
     marketingName: JavaOS
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'MAUI Wap Browser'
@@ -1922,7 +2036,7 @@
     name: JavaOS
     marketingName: JavaOS
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'MAUI Wap Browser'
@@ -1960,7 +2074,7 @@
     name: JavaOS
     marketingName: JavaOS
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'MAUI Wap Browser'
@@ -1998,7 +2112,7 @@
     name: JavaOS
     marketingName: JavaOS
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'MAUI Wap Browser'
@@ -2036,7 +2150,7 @@
     name: JavaOS
     marketingName: JavaOS
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'WAP Browser'
@@ -2074,7 +2188,7 @@
     name: JavaOS
     marketingName: JavaOS
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'MAUI Wap Browser'
@@ -2112,7 +2226,7 @@
     name: JavaOS
     marketingName: JavaOS
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'MAUI Wap Browser'
@@ -2150,7 +2264,7 @@
     name: 'Nucleus OS'
     marketingName: Nucleus
     version: 6225.0.0
-    manufacturer: 'Accelerated Technology'
+    manufacturer: acceleratedTechnology
     bits: null
   client:
     name: 'WAP Browser'
@@ -2188,7 +2302,7 @@
     name: JavaOS
     marketingName: JavaOS
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'WAP Browser'
@@ -2226,7 +2340,7 @@
     name: JavaOS
     marketingName: JavaOS
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'MAUI Wap Browser'
@@ -2264,7 +2378,7 @@
     name: MRE
     marketingName: 'MAUI Runtime Environment'
     version: 3.1.001536
-    manufacturer: MediaTek
+    manufacturer: mediatek
     bits: null
   client:
     name: 'MAUI Wap Browser'
@@ -2302,7 +2416,7 @@
     name: 'Nucleus OS'
     marketingName: Nucleus
     version: 6261.0.0-dev
-    manufacturer: 'Accelerated Technology'
+    manufacturer: acceleratedTechnology
     bits: null
   client:
     name: 'MAUI Wap Browser'
@@ -2340,7 +2454,7 @@
     name: MRE
     marketingName: 'MAUI Runtime Environment'
     version: 3.1.00.64
-    manufacturer: MediaTek
+    manufacturer: mediatek
     bits: null
   client:
     name: 'MAUI Wap Browser'
@@ -2378,7 +2492,7 @@
     name: MRE
     marketingName: 'MAUI Runtime Environment'
     version: 3.1.00.64
-    manufacturer: MediaTek
+    manufacturer: mediatek
     bits: null
   client:
     name: 'MAUI Wap Browser'
@@ -2416,7 +2530,7 @@
     name: MRE
     marketingName: 'MAUI Runtime Environment'
     version: 3.1.0064
-    manufacturer: MediaTek
+    manufacturer: mediatek
     bits: null
   client:
     name: 'MAUI Wap Browser'
@@ -2454,7 +2568,7 @@
     name: MRE
     marketingName: 'MAUI Runtime Environment'
     version: 3.1.00.64
-    manufacturer: MediaTek
+    manufacturer: mediatek
     bits: null
   client:
     name: 'MAUI Wap Browser'
@@ -2492,7 +2606,7 @@
     name: MRE
     marketingName: 'MAUI Runtime Environment'
     version: 3.1.00.64
-    manufacturer: MediaTek
+    manufacturer: mediatek
     bits: null
   client:
     name: 'MAUI Wap Browser'
@@ -2530,7 +2644,7 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'WAP Browser'

@@ -5,8 +5,8 @@
     architecture: null
     deviceName: N9130
     marketingName: Speed
-    manufacturer: ZTE
-    brand: ZTE
+    manufacturer: zte
+    brand: zte
     dualOrientation: true
     simCount: 1
     display:
@@ -22,7 +22,7 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: N9132
     marketingName: Prestige
-    manufacturer: ZTE
-    brand: ZTE
+    manufacturer: zte
+    brand: zte
     dualOrientation: true
     simCount: 1
     display:
@@ -60,7 +60,7 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -81,8 +81,8 @@
     architecture: null
     deviceName: N9515
     marketingName: 'Warp Sync'
-    manufacturer: ZTE
-    brand: ZTE
+    manufacturer: zte
+    brand: zte
     dualOrientation: true
     simCount: 1
     display:
@@ -98,7 +98,7 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -119,8 +119,8 @@
     architecture: null
     deviceName: N9519
     marketingName: 'Warp 7'
-    manufacturer: ZTE
-    brand: ZTE
+    manufacturer: zte
+    brand: zte
     dualOrientation: true
     simCount: 1
     display:
@@ -136,7 +136,7 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -157,8 +157,8 @@
     architecture: null
     deviceName: Z716BL
     marketingName: 'Citrine LTE'
-    manufacturer: ZTE
-    brand: ZTE
+    manufacturer: zte
+    brand: zte
     dualOrientation: true
     simCount: 1
     display:
@@ -174,7 +174,7 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -195,8 +195,8 @@
     architecture: null
     deviceName: Z812
     marketingName: Maven
-    manufacturer: ZTE
-    brand: ZTE
+    manufacturer: zte
+    brand: zte
     dualOrientation: true
     simCount: 1
     display:
@@ -212,7 +212,7 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -233,8 +233,8 @@
     architecture: null
     deviceName: Z818L
     marketingName: Allstar
-    manufacturer: ZTE
-    brand: ZTE
+    manufacturer: zte
+    brand: zte
     dualOrientation: true
     simCount: 1
     display:
@@ -250,7 +250,7 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -271,8 +271,8 @@
     architecture: null
     deviceName: Z820
     marketingName: Obsidian
-    manufacturer: ZTE
-    brand: ZTE
+    manufacturer: zte
+    brand: zte
     dualOrientation: true
     simCount: 1
     display:
@@ -288,7 +288,7 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -309,8 +309,8 @@
     architecture: null
     deviceName: Z828
     marketingName: 'Avid Plus'
-    manufacturer: ZTE
-    brand: ZTE
+    manufacturer: zte
+    brand: zte
     dualOrientation: true
     simCount: 1
     display:
@@ -326,7 +326,7 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -347,8 +347,8 @@
     architecture: null
     deviceName: Z958
     marketingName: 'ZMax 2'
-    manufacturer: ZTE
-    brand: ZTE
+    manufacturer: zte
+    brand: zte
     dualOrientation: true
     simCount: 1
     display:
@@ -364,7 +364,7 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -385,8 +385,8 @@
     architecture: null
     deviceName: Z959
     marketingName: 'Grand X3'
-    manufacturer: ZTE
-    brand: ZTE
+    manufacturer: zte
+    brand: zte
     dualOrientation: true
     simCount: 1
     display:
@@ -402,7 +402,7 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -423,8 +423,8 @@
     architecture: null
     deviceName: Z970
     marketingName: 'ZMax Z970'
-    manufacturer: ZTE
-    brand: ZTE
+    manufacturer: zte
+    brand: zte
     dualOrientation: true
     simCount: 1
     display:
@@ -440,7 +440,7 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -461,8 +461,8 @@
     architecture: null
     deviceName: Z981
     marketingName: 'Blade Z Max Pro'
-    manufacturer: ZTE
-    brand: ZTE
+    manufacturer: zte
+    brand: zte
     dualOrientation: true
     simCount: 1
     display:
@@ -478,45 +478,7 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
-    bits: null
-  client:
-    name: null
-    modus: null
-    version: null
-    manufacturer: unknown
-    type: unknown
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: PhilipsX501/1.0
-  device:
-    architecture: null
-    deviceName: X501
-    marketingName: Groove
-    manufacturer: ZTE
-    brand: ZTE
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: 480
-      height: 320
-      touch: true
-      size: 3.2
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -538,8 +500,8 @@
     architecture: null
     deviceName: NX669J
     marketingName: 'Red Magic 6 5G'
-    manufacturer: ZTE
-    brand: Nubia
+    manufacturer: zte
+    brand: nubia
     dualOrientation: true
     simCount: 2
     display:
@@ -555,7 +517,7 @@
     name: Android
     marketingName: Android
     version: 11.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -568,7 +530,7 @@
   engine:
     name: Blink
     version: 100.0.4896.88
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: com.darkbrowser
@@ -577,8 +539,8 @@
     architecture: null
     deviceName: 'Blade A3 (2020)'
     marketingName: 'Blade A3 (2020)'
-    manufacturer: ZTE
-    brand: ZTE
+    manufacturer: zte
+    brand: zte
     dualOrientation: true
     simCount: 2
     display:
@@ -594,7 +556,7 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -607,4 +569,4 @@
   engine:
     name: Blink
     version: 104.0.5112.97
-    manufacturer: Google
+    manufacturer: google

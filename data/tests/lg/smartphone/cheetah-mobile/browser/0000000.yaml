@@ -5,8 +5,8 @@
     architecture: null
     deviceName: P880
     marketingName: 'Optimus 4X HD'
-    manufacturer: LG
-    brand: LG
+    manufacturer: lg
+    brand: lg
     dualOrientation: true
     simCount: 1
     display:
@@ -28,14 +28,14 @@
     name: 'CM Browser'
     modus: null
     version: null
-    manufacturer: 'Cheetah Mobile'
+    manufacturer: cheetah-mobile
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.30.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; LM-G850 Build/QKQ1.200216.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36 ACHEETAHI/1'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: LM-G850
     marketingName: 'G8X ThinQ'
-    manufacturer: LG
-    brand: LG
+    manufacturer: lg
+    brand: lg
     dualOrientation: true
     simCount: 1
     display:
@@ -60,20 +60,20 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'CM Browser'
     modus: null
     version: null
-    manufacturer: 'Cheetah Mobile'
+    manufacturer: cheetah-mobile
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 44.0.2403.119
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; LM-Q630 Build/RKQ1.210420.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36 ACHEETAHI/1'
@@ -81,8 +81,8 @@
     architecture: null
     deviceName: LM-Q630
     marketingName: Q61
-    manufacturer: LG
-    brand: LG
+    manufacturer: lg
+    brand: lg
     dualOrientation: true
     simCount: 1
     display:
@@ -98,20 +98,20 @@
     name: Android
     marketingName: Android
     version: 11.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'CM Browser'
     modus: null
     version: null
-    manufacturer: 'Cheetah Mobile'
+    manufacturer: cheetah-mobile
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 44.0.2403.119
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; LG-US998 Build/PKQ1.190414.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36 ACHEETAHI/1'
@@ -119,8 +119,8 @@
     architecture: null
     deviceName: US998
     marketingName: 'V30 (US Cellular)'
-    manufacturer: LG
-    brand: LG
+    manufacturer: lg
+    brand: lg
     dualOrientation: true
     simCount: 1
     display:
@@ -136,17 +136,17 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'CM Browser'
     modus: null
     version: null
-    manufacturer: 'Cheetah Mobile'
+    manufacturer: cheetah-mobile
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 44.0.2403.119
-    manufacturer: Google
+    manufacturer: google

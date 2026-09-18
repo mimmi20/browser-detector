@@ -6,8 +6,8 @@
     architecture: null
     deviceName: 'Redmi Note 9S'
     marketingName: 'Redmi Note 9S'
-    manufacturer: Xiaomi
-    brand: Xiaomi
+    manufacturer: xiaomi
+    brand: xiaomi
     dualOrientation: true
     simCount: 2
     display:
@@ -23,7 +23,7 @@
     name: Android
     marketingName: Android
     version: 11.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Cake Browser'
@@ -36,7 +36,7 @@
   engine:
     name: Blink
     version: 96.0.4664.104
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: phx.hot.browser
@@ -45,8 +45,8 @@
     architecture: null
     deviceName: 'Redmi Note 8 Pro'
     marketingName: 'Redmi Note 8 Pro'
-    manufacturer: Xiaomi
-    brand: Xiaomi
+    manufacturer: xiaomi
+    brand: xiaomi
     dualOrientation: true
     simCount: 1
     display:
@@ -62,7 +62,7 @@
     name: Android
     marketingName: Android
     version: 11.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Anka Browser'
@@ -75,4 +75,4 @@
   engine:
     name: Blink
     version: 98.0.4758.101
-    manufacturer: Google
+    manufacturer: google

@@ -22,20 +22,20 @@
     name: Windows
     marketingName: 'Windows XP'
     version: 5.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Sunrise
     modus: null
     version: 0.42.0
-    manufacturer: 'Zetakey Solutions'
+    manufacturer: zetakey-solutions
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; ) AppleWebKit/533.21.1 (KHTML, like Gecko) Zetakey/3.3.1'
@@ -60,20 +60,20 @@
     name: Windows
     marketingName: Windows
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Zetakey Browser'
     modus: null
     version: 3.3.1
-    manufacturer: 'Zetakey Solutions'
+    manufacturer: zetakey-solutions
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 533.21.1
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; ARM) AppleWebKit/533.21.1 (KHTML, like Gecko) Zetakey/3.3.1'
@@ -98,20 +98,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'Zetakey Browser'
     modus: null
     version: 3.3.1
-    manufacturer: 'Zetakey Solutions'
+    manufacturer: zetakey-solutions
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 533.21.1
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/6.0 (X11; U; Linux x86_64; en-US; rv:2.9.0.3) Gecko/2009022510 FreeBSD/ Sunrise/4.0.1/like Safari'
@@ -136,17 +136,17 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Sunrise
     modus: null
     version: 4.0.1
-    manufacturer: 'Zetakey Solutions'
+    manufacturer: zetakey-solutions
     type: browser
     isbot: false
     bits: null
   engine:
     name: Gecko
     version: 2.9.0.3
-    manufacturer: Mozilla
+    manufacturer: mozilla

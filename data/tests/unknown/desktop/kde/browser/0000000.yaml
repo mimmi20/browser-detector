@@ -22,13 +22,13 @@
     name: Debian
     marketingName: Debian
     version: null
-    manufacturer: 'Software in the Public Interest'
+    manufacturer: softwareInThePublicInterest
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 3.5.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -60,13 +60,13 @@
     name: 'Fedora Linux'
     marketingName: 'Fedora Linux'
     version: 10.0.0
-    manufacturer: Redhat
+    manufacturer: redhat
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 4.1.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -98,13 +98,13 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 4.8.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -136,20 +136,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Rekonq
     modus: null
     version: 2.3.2
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 537.21.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; Konqueror/3.5; Linux) KHTML/3.5.5 (like Gecko) (Kubuntu)'
@@ -174,13 +174,13 @@
     name: Kubuntu
     marketingName: Kubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 3.5.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -212,13 +212,13 @@
     name: 'Redhat Linux'
     marketingName: 'Redhat Linux'
     version: 4.3.4.19
-    manufacturer: Redhat
+    manufacturer: redhat
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 4.3.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -250,13 +250,13 @@
     name: Windows
     marketingName: 'Windows XP'
     version: 5.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 3.4.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -288,13 +288,13 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 2.1.2
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -326,13 +326,13 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 4.9.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -364,13 +364,13 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 2.0.1
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -408,7 +408,7 @@
     name: Konqueror
     modus: null
     version: 2.2.2
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -440,13 +440,13 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 2.1.1
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -478,20 +478,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 4.14.19
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.34.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows; Windows i686) KHTML/4.10.2 (like Gecko) Konqueror/4.10'
@@ -516,13 +516,13 @@
     name: Windows
     marketingName: Windows
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 4.10.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -554,13 +554,13 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 4.14.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -592,13 +592,13 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 4.8.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -630,13 +630,13 @@
     name: 'Suse Linux'
     marketingName: 'Suse Linux'
     version: null
-    manufacturer: Suse
+    manufacturer: suse
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 4.3.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -668,13 +668,13 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 3.2.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -706,13 +706,13 @@
     name: SunOS
     marketingName: SunOS
     version: null
-    manufacturer: Oracle
+    manufacturer: oracle
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 3.4.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -744,13 +744,13 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 4.5.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -782,13 +782,13 @@
     name: 'Gentoo Linux'
     marketingName: 'Gentoo Linux'
     version: null
-    manufacturer: Gentoo
+    manufacturer: gentoo
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 3.5.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -826,7 +826,7 @@
     name: Konqueror
     modus: null
     version: 3.5.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -858,20 +858,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 4.11.5
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.34.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11) KHTML/4.10.5 (like Gecko) Konqueror/4.10 SUSE'
@@ -896,13 +896,13 @@
     name: 'Suse Linux'
     marketingName: 'Suse Linux'
     version: null
-    manufacturer: Suse
+    manufacturer: suse
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 4.10.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -940,7 +940,7 @@
     name: Konqueror
     modus: null
     version: 4.5.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -978,7 +978,7 @@
     name: Konqueror
     modus: null
     version: 4.1.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -1016,7 +1016,7 @@
     name: Konqueror
     modus: null
     version: 4.1.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -1054,7 +1054,7 @@
     name: Konqueror
     modus: null
     version: 3.5.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -1086,13 +1086,13 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 4.9.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -1124,20 +1124,20 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 4.14.3
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 537.21.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; BSD Four; en-US) AppleWebKit/533.3 (KHTML, like Gecko) rekonq Safari/533.3'
@@ -1162,20 +1162,20 @@
     name: BSD
     marketingName: BSD
     version: null
-    manufacturer: Berkeley
+    manufacturer: berkeley
     bits: null
   client:
     name: Rekonq
     modus: null
     version: null
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 533.3.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; Konqueror/4.6) KHTML/4.6.0 (like Gecko) SUSE'
@@ -1200,13 +1200,13 @@
     name: 'Suse Linux'
     marketingName: 'Suse Linux'
     version: null
-    manufacturer: Suse
+    manufacturer: suse
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 4.6.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -1238,13 +1238,13 @@
     name: 'Slackware Linux'
     marketingName: 'Slackware Linux'
     version: 13.0.0
-    manufacturer: Slackware
+    manufacturer: slackware
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 4.2.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -1282,7 +1282,7 @@
     name: Konqueror
     modus: null
     version: 3.3.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -1314,13 +1314,13 @@
     name: 'Suse Linux'
     marketingName: 'Suse Linux'
     version: null
-    manufacturer: Suse
+    manufacturer: suse
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 3.5.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -1352,20 +1352,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 4.12.3
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.34.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: '*Konqueror/3.5*OpenBSD*'
@@ -1396,7 +1396,7 @@
     name: Konqueror
     modus: null
     version: 3.5.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -1428,13 +1428,13 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 4.10.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -1466,13 +1466,13 @@
     name: BeOS
     marketingName: BeOS
     version: null
-    manufacturer: Access
+    manufacturer: access
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 3.0.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -1510,7 +1510,7 @@
     name: Konqueror
     modus: null
     version: 3.2.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -1548,7 +1548,7 @@
     name: Konqueror
     modus: null
     version: 1.1.2
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -1586,7 +1586,7 @@
     name: Konqueror
     modus: null
     version: null
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -1624,7 +1624,7 @@
     name: Konqueror
     modus: null
     version: null
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -1656,13 +1656,13 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 3.2.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -1694,13 +1694,13 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 3.4.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -1732,13 +1732,13 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Konqueror
     modus: null
     version: null
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -1770,13 +1770,13 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 4.3.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -1808,13 +1808,13 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 4.2.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -1852,7 +1852,7 @@
     name: Konqueror
     modus: null
     version: 4.2.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -1884,13 +1884,13 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 4.1.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -1922,13 +1922,13 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 4.1.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -1966,7 +1966,7 @@
     name: Konqueror
     modus: null
     version: 3.0.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -1998,13 +1998,13 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 3.0.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -2036,13 +2036,13 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 3.0.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -2074,13 +2074,13 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 3.0.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -2112,13 +2112,13 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 3.5.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -2150,13 +2150,13 @@
     name: 'Debian with FreeBSD Kernel'
     marketingName: 'Debian with FreeBSD Kernel'
     version: null
-    manufacturer: 'Software in the Public Interest'
+    manufacturer: softwareInThePublicInterest
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 3.5.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -2188,13 +2188,13 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 3.5.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -2226,13 +2226,13 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 3.5.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -2264,13 +2264,13 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 6.2.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 3.5.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -2308,7 +2308,7 @@
     name: Konqueror
     modus: null
     version: 3.5.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -2346,7 +2346,7 @@
     name: Konqueror
     modus: null
     version: 3.5.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -2384,7 +2384,7 @@
     name: Konqueror
     modus: null
     version: 3.5.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -2422,7 +2422,7 @@
     name: Konqueror
     modus: null
     version: 3.5.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -2460,7 +2460,7 @@
     name: Konqueror
     modus: null
     version: 3.5.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -2498,7 +2498,7 @@
     name: Konqueror
     modus: null
     version: 3.5.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -2536,7 +2536,7 @@
     name: Konqueror
     modus: null
     version: 3.5.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -2574,7 +2574,7 @@
     name: Konqueror
     modus: null
     version: 3.5.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -2612,7 +2612,7 @@
     name: Konqueror
     modus: null
     version: 3.5.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -2650,7 +2650,7 @@
     name: Konqueror
     modus: null
     version: 3.5.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -2688,7 +2688,7 @@
     name: Konqueror
     modus: null
     version: 3.4.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -2720,13 +2720,13 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 3.4.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -2758,13 +2758,13 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 3.4.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -2802,7 +2802,7 @@
     name: Konqueror
     modus: null
     version: 3.4.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -2840,7 +2840,7 @@
     name: Konqueror
     modus: null
     version: 3.4.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -2878,7 +2878,7 @@
     name: Konqueror
     modus: null
     version: 3.4.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -2916,7 +2916,7 @@
     name: Konqueror
     modus: null
     version: 3.4.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -2954,7 +2954,7 @@
     name: Konqueror
     modus: null
     version: 3.3.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -2986,13 +2986,13 @@
     name: Macintosh
     marketingName: Macintosh
     version: null
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 3.3.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -3024,13 +3024,13 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 5.3.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 3.3.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -3062,13 +3062,13 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 5.3.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 3.3.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -3100,13 +3100,13 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 5.3.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 3.3.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -3144,7 +3144,7 @@
     name: Konqueror
     modus: null
     version: 3.3.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -3182,7 +3182,7 @@
     name: Konqueror
     modus: null
     version: 3.3.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -3220,7 +3220,7 @@
     name: Konqueror
     modus: null
     version: 3.2.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -3252,13 +3252,13 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 3.2.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -3290,13 +3290,13 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 4.10.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 3.2.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -3334,7 +3334,7 @@
     name: Konqueror
     modus: null
     version: 3.2.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -3372,7 +3372,7 @@
     name: Konqueror
     modus: null
     version: 3.2.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -3410,7 +3410,7 @@
     name: Konqueror
     modus: null
     version: 3.2.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -3448,7 +3448,7 @@
     name: Konqueror
     modus: null
     version: 3.2.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -3486,7 +3486,7 @@
     name: Konqueror
     modus: null
     version: 3.2.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -3518,13 +3518,13 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 3.1.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -3556,13 +3556,13 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 3.1.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -3600,7 +3600,7 @@
     name: Konqueror
     modus: null
     version: 3.1.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -3638,7 +3638,7 @@
     name: Konqueror
     modus: null
     version: 3.1.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -3676,7 +3676,7 @@
     name: Konqueror
     modus: null
     version: 3.1.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -3714,7 +3714,7 @@
     name: Konqueror
     modus: null
     version: 3.1.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -3746,13 +3746,13 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 3.1.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null
@@ -3784,13 +3784,13 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Konqueror
     modus: null
     version: 3.1.0
-    manufacturer: KDE
+    manufacturer: kde
     type: browser
     isbot: false
     bits: null

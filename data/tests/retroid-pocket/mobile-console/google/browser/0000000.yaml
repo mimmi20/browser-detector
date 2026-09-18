@@ -5,8 +5,8 @@
     architecture: null
     deviceName: '2 Plus'
     marketingName: '2 Plus'
-    manufacturer: 'Retroid Pocket'
-    brand: 'Retroid Pocket'
+    manufacturer: retroid-pocket
+    brand: retroid-pocket
     dualOrientation: false
     simCount: 0
     display:
@@ -22,20 +22,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 111.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 111.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; Retroid Pocket 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: '5'
     marketingName: '5'
-    manufacturer: 'Retroid Pocket'
-    brand: 'Retroid Pocket'
+    manufacturer: retroid-pocket
+    brand: retroid-pocket
     dualOrientation: false
     simCount: 0
     display:
@@ -60,17 +60,17 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 132.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 132.0.0.0
-    manufacturer: Google
+    manufacturer: google

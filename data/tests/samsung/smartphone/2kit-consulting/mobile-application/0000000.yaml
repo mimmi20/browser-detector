@@ -6,8 +6,8 @@
     architecture: null
     deviceName: SM-A135F
     marketingName: 'Galaxy A13'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -23,20 +23,20 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'TV Cast'
     modus: null
     version: null
-    manufacturer: '2kit consulting'
+    manufacturer: 2kit-consulting
     type: mobile-application
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 103.0.5060.71
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: de.twokit.video.tv.cast.browser.firetv
@@ -45,8 +45,8 @@
     architecture: null
     deviceName: SM-G950W
     marketingName: 'Galaxy S8'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -62,17 +62,17 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'TV Cast'
     modus: null
     version: null
-    manufacturer: '2kit consulting'
+    manufacturer: 2kit-consulting
     type: mobile-application
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 100.0.4896.88
-    manufacturer: Google
+    manufacturer: google

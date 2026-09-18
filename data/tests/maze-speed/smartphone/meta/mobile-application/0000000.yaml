@@ -5,8 +5,8 @@
     architecture: null
     deviceName: M1582C_MAX
     marketingName: 'M1582C Max'
-    manufacturer: 'Maze Speed'
-    brand: 'Maze Speed'
+    manufacturer: maze-speed
+    brand: maze-speed
     dualOrientation: true
     simCount: 2
     display:
@@ -22,17 +22,17 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Facebook Messenger App'
     modus: null
     version: 421.0.0.12.61
-    manufacturer: Meta
+    manufacturer: meta
     type: mobile-application
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 115.0.5790.166
-    manufacturer: Google
+    manufacturer: google

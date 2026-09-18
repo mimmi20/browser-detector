@@ -6,8 +6,8 @@
     architecture: null
     deviceName: 'general Alcatel device'
     marketingName: 'general Alcatel device'
-    manufacturer: TCL
-    brand: Alcatel
+    manufacturer: tcl
+    brand: alcatel
     dualOrientation: null
     simCount: 0
     display:
@@ -23,20 +23,20 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'NoCard VPN'
     modus: null
     version: null
-    manufacturer: 'NoCard Team'
+    manufacturer: nocard-team
     type: mobile-application
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 88.0.4324.181
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: com.nocardteam.nocardvpn.lite
@@ -45,8 +45,8 @@
     architecture: null
     deviceName: 'general Alcatel device'
     marketingName: 'general Alcatel device'
-    manufacturer: TCL
-    brand: Alcatel
+    manufacturer: tcl
+    brand: alcatel
     dualOrientation: null
     simCount: 0
     display:
@@ -62,17 +62,17 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'NoCard VPN Lite'
     modus: null
     version: null
-    manufacturer: 'NoCard Team'
+    manufacturer: nocard-team
     type: mobile-application
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 88.0.4324.181
-    manufacturer: Google
+    manufacturer: google

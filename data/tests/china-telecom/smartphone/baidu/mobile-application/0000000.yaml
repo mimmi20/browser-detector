@@ -5,8 +5,8 @@
     architecture: null
     deviceName: TYH201H
     marketingName: 'Tianyi No. 1'
-    manufacturer: 'China Telecom'
-    brand: 'China Telecom'
+    manufacturer: china-telecom
+    brand: china-telecom
     dualOrientation: true
     simCount: 1
     display:
@@ -22,20 +22,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Baidu Box App'
     modus: null
     version: 13.3.5.10
-    manufacturer: Baidu
+    manufacturer: baidu
     type: mobile-application
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 79.0.3945.116
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; TYH123U Build/TYH123U.240509.0S.ZQ2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.49 SP-engine/2.87.0 baiduboxapp/13.49.5.10 (Baidu; P1 13) NABar/1.0'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: TYH123U
     marketingName: 'Tianyi Zhenqing 20'
-    manufacturer: 'China Telecom'
-    brand: 'China Telecom'
+    manufacturer: china-telecom
+    brand: china-telecom
     dualOrientation: true
     simCount: 1
     display:
@@ -60,17 +60,17 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Baidu Box App'
     modus: null
     version: 13.49.5.10
-    manufacturer: Baidu
+    manufacturer: baidu
     type: mobile-application
     isbot: false
     bits: null
   engine:
     name: T7
     version: 13.49.0
-    manufacturer: Baidu
+    manufacturer: baidu

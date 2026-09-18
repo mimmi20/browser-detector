@@ -6,8 +6,8 @@
     architecture: null
     deviceName: TB128XU
     marketingName: 'Tab M10 Plus (3rd Gen, 2022)'
-    manufacturer: Lenovo
-    brand: Lenovo
+    manufacturer: lenovo
+    brand: lenovo
     dualOrientation: true
     simCount: 1
     display:
@@ -23,17 +23,17 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'AnyDesk Remote Desktop'
     modus: null
     version: null
-    manufacturer: 'AnyDesk Software'
+    manufacturer: anydesk-software
     type: mobile-application
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 114.0.5735.196
-    manufacturer: Google
+    manufacturer: google

@@ -22,20 +22,20 @@
     name: Windows
     marketingName: 'Windows 7'
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Sleipnir
     modus: null
     version: 2.9.18
-    manufacturer: Fenrir
+    manufacturer: fenrir
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 6.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.108 Safari/537.36 Sleipnir/4.4.8'
@@ -60,20 +60,20 @@
     name: Windows
     marketingName: 'Windows 8.1'
     version: 8.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Sleipnir
     modus: null
     version: 4.4.8
-    manufacturer: Fenrir
+    manufacturer: fenrir
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 49.0.2623.108
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17 Sleipnir/3.9.1'
@@ -98,20 +98,20 @@
     name: Windows
     marketingName: 'Windows 7'
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Sleipnir
     modus: null
     version: 3.9.1
-    manufacturer: Fenrir
+    manufacturer: fenrir
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 537.17.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'mozilla/5.0 (windows; u; windows nt 5.1; en-us; rv:1.7) sleipnir/20080608'
@@ -136,13 +136,13 @@
     name: Windows
     marketingName: 'Windows XP'
     version: 5.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Sleipnir
     modus: null
     version: 20080608.0.0
-    manufacturer: Fenrir
+    manufacturer: fenrir
     type: browser
     isbot: false
     bits: null

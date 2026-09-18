@@ -22,20 +22,20 @@
     name: Windows
     marketingName: 'Windows 7'
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Spark
     modus: null
     version: 26.4.0
-    manufacturer: Baidu
+    manufacturer: baidu
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 537.31.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; BIDUBrowser 2.6)'
@@ -60,20 +60,20 @@
     name: Windows
     marketingName: 'Windows XP'
     version: 5.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Spark
     modus: null
     version: 2.6.0
-    manufacturer: Baidu
+    manufacturer: baidu
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 4.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 BIDUBrowser/8.2 Safari/537.36'
@@ -98,20 +98,20 @@
     name: Windows
     marketingName: 'Windows 7'
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Spark
     modus: null
     version: 8.2.0
-    manufacturer: Baidu
+    manufacturer: baidu
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 47.0.2526.106
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 bdbrowser/4.9.2.2'
@@ -136,20 +136,20 @@
     name: Windows
     marketingName: 'Windows 7'
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Baidu Browser'
     modus: null
     version: 4.9.2.2
-    manufacturer: Baidu
+    manufacturer: baidu
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 537.1.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; baidubrowser 1.x)'
@@ -174,20 +174,20 @@
     name: Windows
     marketingName: 'Windows 7'
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Baidu Browser'
     modus: null
     version: 1.0.0
-    manufacturer: Baidu
+    manufacturer: baidu
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 4.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.16 Safari/537.36 bdbrowserhd_i18n/1.6.0.2'
@@ -212,20 +212,20 @@
     name: Windows
     marketingName: 'Windows XP'
     version: 5.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Baidu Browser HD'
     modus: null
     version: 1.6.0.2
-    manufacturer: Baidu
+    manufacturer: baidu
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 31.0.1650.16
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     baidu-flyflow: 'Microsoft Windows NT 8.0.10512.0;4.0.50829.0;NOKIA;RM-822_apac_prc_204;ca23bc5b9a1777612837b43014640b3cce62fc50;2.5.0.12'
@@ -251,17 +251,17 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 8.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Baidu Browser'
     modus: null
     version: 2.5.0.12
-    manufacturer: Baidu
+    manufacturer: baidu
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 6.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft

@@ -35,7 +35,7 @@
   engine:
     name: WebKit
     version: 537.15.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'NetSurf/1.1 (Linux; i686)'
@@ -60,7 +60,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: SurfBrowser
@@ -149,7 +149,7 @@
   engine:
     name: WebKit
     version: 537.15.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Surf/0.4.1 (X11; U; Unix; en-US) AppleWebKit/531.2+ Compatible (Safari)'
@@ -187,7 +187,7 @@
   engine:
     name: WebKit
     version: 531.2.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Surf/0.4.1 (X11; U; Unix; en-US) AppleWebKit/531.2+ Compatible (Safari; MSIE 9.0)'
@@ -225,7 +225,7 @@
   engine:
     name: WebKit
     version: 531.2.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'NetSurf/2.7 (AmigaOS; powerpc)'
@@ -339,7 +339,7 @@
   engine:
     name: WebKit
     version: 537.15.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; Unix; xx) AppleWebKit/537.15 (KHTML, like Gecko) Chrome/24.0.1295.0 Safari/537.15 Surf/1.0'
@@ -377,7 +377,7 @@
   engine:
     name: WebKit
     version: 537.15.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Surf/0.4.1 (X11; U; Unix; xx) AppleWebKit/531.2+ Compatible (Safari)'
@@ -415,7 +415,7 @@
   engine:
     name: WebKit
     version: 531.2.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'ZoneSurf/2.4 (BeOS; U; BeOS 5.0 BePC; en-US; 0.8)'
@@ -440,7 +440,7 @@
     name: BeOS
     marketingName: BeOS
     version: 5.0.0
-    manufacturer: Access
+    manufacturer: access
     bits: null
   client:
     name: SurfBrowser
@@ -453,7 +453,7 @@
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Safari/605.1.15 Surf/2.0'
@@ -478,7 +478,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: SurfBrowser
@@ -491,7 +491,7 @@
   engine:
     name: WebKit
     version: 605.1.15
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0 Safari/605.1.15 Surf/2.0 comdirect/1.0 (appVersion:20.2.1;deviceType:desktop)'
@@ -516,7 +516,7 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: SurfBrowser
@@ -529,7 +529,7 @@
   engine:
     name: WebKit
     version: 605.1.15
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     x-requested-with: com.gl9.cloudBrowser
@@ -558,7 +558,7 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: SurfBrowser
@@ -571,7 +571,7 @@
   engine:
     name: Blink
     version: 127.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'NetSurf/3.7 (Linux; Arch Linux)'

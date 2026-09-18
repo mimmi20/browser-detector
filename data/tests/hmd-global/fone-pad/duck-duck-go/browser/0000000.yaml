@@ -16,8 +16,8 @@
     architecture: null
     deviceName: T21
     marketingName: T21
-    manufacturer: 'HMD Global'
-    brand: 'HMD Global'
+    manufacturer: hmd-global
+    brand: hmd-global
     dualOrientation: true
     simCount: 1
     display:
@@ -33,17 +33,17 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
     version: 144.0.7559.59
-    manufacturer: 'Duck Duck Go'
+    manufacturer: duck-duck-go
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 144.0.0
-    manufacturer: Google
+    manufacturer: google

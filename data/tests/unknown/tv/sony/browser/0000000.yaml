@@ -22,20 +22,20 @@
     name: 'Opera TV'
     marketingName: 'Opera TV'
     version: 4510.0.0
-    manufacturer: Opera
+    manufacturer: opera
     bits: null
   client:
     name: SonyCEBrowser
     modus: null
     version: 1.0.0
-    manufacturer: Sony
+    manufacturer: sony
     type: browser
     isbot: false
     bits: null
   engine:
     name: Presto
     version: 2.10.250
-    manufacturer: Opera
+    manufacturer: opera
 -
   headers:
     user-agent: 'Opera/9.80 (Linux mips; Opera TV Store/4502; U; de) Presto/2.10.250 Version/11.60 Model/Sony-KDL-55HX755 SonyCEBrowser/1.0 (KDL-55HX755; CTV/PKG1.700EUA; DEU)'
@@ -60,20 +60,20 @@
     name: 'Opera TV'
     marketingName: 'Opera TV'
     version: 4502.0.0
-    manufacturer: Opera
+    manufacturer: opera
     bits: null
   client:
     name: SonyCEBrowser
     modus: null
     version: 1.0.0
-    manufacturer: Sony
+    manufacturer: sony
     type: browser
     isbot: false
     bits: null
   engine:
     name: Presto
     version: 2.10.250
-    manufacturer: Opera
+    manufacturer: opera
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.107 Safari/537.36 OPR/19.0.1325.0 OMI/4.1.4.56.ALSAN3.7 SonyCEBrowser/1.0 (BDPlayer; BDP10G_AX; BDP2015/M24.D.0104; XAE;)'
@@ -98,17 +98,17 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: SonyCEBrowser
     modus: null
     version: 1.0.0
-    manufacturer: Sony
+    manufacturer: sony
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 32.0.1700.107
-    manufacturer: Google
+    manufacturer: google

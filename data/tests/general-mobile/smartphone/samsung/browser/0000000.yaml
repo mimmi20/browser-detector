@@ -5,8 +5,8 @@
     architecture: null
     deviceName: G314
     marketingName: 'GM 23 SE'
-    manufacturer: 'General Mobile'
-    brand: 'General Mobile'
+    manufacturer: general-mobile
+    brand: general-mobile
     dualOrientation: true
     simCount: 1
     display:
@@ -22,17 +22,17 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Samsung Browser'
     modus: null
     version: 23.0.0
-    manufacturer: Samsung
+    manufacturer: samsung
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 115.0.0.0
-    manufacturer: Google
+    manufacturer: google

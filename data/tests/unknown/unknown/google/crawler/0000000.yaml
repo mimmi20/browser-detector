@@ -28,14 +28,14 @@
     name: 'Gmail Image Proxy'
     modus: null
     version: null
-    manufacturer: Google
+    manufacturer: google
     type: crawler
     isbot: true
     bits: null
   engine:
     name: Gecko
     version: null
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: gsa-crawler
@@ -66,7 +66,7 @@
     name: gsa-crawler
     modus: null
     version: null
-    manufacturer: Google
+    manufacturer: google
     type: crawler
     isbot: true
     bits: null
@@ -104,14 +104,14 @@
     name: gsa-crawler
     modus: null
     version: null
-    manufacturer: Google
+    manufacturer: google
     type: crawler
     isbot: true
     bits: null
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: Google-Safety
@@ -142,7 +142,7 @@
     name: Google-Safety
     modus: null
     version: null
-    manufacturer: Google
+    manufacturer: google
     type: crawler
     isbot: true
     bits: null
@@ -180,7 +180,7 @@
     name: Google-Extended
     modus: null
     version: null
-    manufacturer: Google
+    manufacturer: google
     type: crawler
     isbot: true
     bits: null
@@ -218,7 +218,7 @@
     name: 'Google Area 120 Privacy Policy Fetcher'
     modus: null
     version: null
-    manufacturer: Google
+    manufacturer: google
     type: crawler
     isbot: true
     bits: null
@@ -256,7 +256,7 @@
     name: Google-ilp
     modus: null
     version: null
-    manufacturer: Google
+    manufacturer: google
     type: crawler
     isbot: true
     bits: null
@@ -294,7 +294,7 @@
     name: Google-CloudVertexBot
     modus: null
     version: null
-    manufacturer: Google
+    manufacturer: google
     type: crawler
     isbot: true
     bits: null
@@ -332,14 +332,14 @@
     name: 'Gemini Deep Research'
     modus: null
     version: null
-    manufacturer: Google
+    manufacturer: google
     type: crawler
     isbot: true
     bits: null
   engine:
     name: Blink
     version: 135.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: Google-NotebookLM
@@ -370,7 +370,7 @@
     name: 'Google NotebookLM'
     modus: null
     version: null
-    manufacturer: Google
+    manufacturer: google
     type: crawler
     isbot: true
     bits: null
@@ -408,7 +408,7 @@
     name: Google-Pinpoint
     modus: null
     version: null
-    manufacturer: Google
+    manufacturer: google
     type: crawler
     isbot: true
     bits: null
@@ -446,14 +446,14 @@
     name: GoogleAgent-Search
     modus: null
     version: null
-    manufacturer: Google
+    manufacturer: google
     type: crawler
     isbot: true
     bits: null
   engine:
     name: Blink
     version: 114.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Bard-AI/1.0; +https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers)'
@@ -484,14 +484,14 @@
     name: Bard-AI
     modus: null
     version: 1.0.0
-    manufacturer: Google
+    manufacturer: google
     type: crawler
     isbot: true
     bits: null
   engine:
     name: WebKit
     version: 537.36.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Gemini-AI/1.0; +https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers)'
@@ -522,14 +522,14 @@
     name: Gemini-AI
     modus: null
     version: 1.0.0
-    manufacturer: Google
+    manufacturer: google
     type: crawler
     isbot: true
     bits: null
   engine:
     name: WebKit
     version: 537.36.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: Google-Cloud-Scheduler
@@ -560,7 +560,7 @@
     name: 'Google Cloud Scheduler'
     modus: null
     version: null
-    manufacturer: Google
+    manufacturer: google
     type: crawler
     isbot: true
     bits: null

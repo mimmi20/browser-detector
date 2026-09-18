@@ -5,8 +5,8 @@
     architecture: null
     deviceName: MAR-LX1A
     marketingName: 'P30 Lite'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -22,20 +22,20 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'WPS Office'
     modus: null
     version: 16.3.2
-    manufacturer: 'WPS SOFTWARE'
+    manufacturer: wps-software
     type: mobile-application
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 102.0.5005.125
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; BVL-N49 Build/HONORBVL-N49; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.146 Mobile Safari/537.36 WpsMoffice/18.24/armeabi-v7a/1553'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: BVL-N49
     marketingName: 'Magic 6 Pro'
-    manufacturer: Huawei
-    brand: Honor
+    manufacturer: huawei
+    brand: honor
     dualOrientation: true
     simCount: 2
     display:
@@ -60,17 +60,17 @@
     name: Android
     marketingName: Android
     version: 15.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'WPS Office'
     modus: null
     version: 18.24.0
-    manufacturer: 'WPS SOFTWARE'
+    manufacturer: wps-software
     type: mobile-application
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 143.0.7499.146
-    manufacturer: Google
+    manufacturer: google

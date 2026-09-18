@@ -22,20 +22,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: LuaKit
     modus: null
     version: 1.8.0
-    manufacturer: 'Mason Larobina'
+    manufacturer: mason-larobina
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 535.22.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (OpenBSD i386) AppleWebKit/538.1+ (KHTML, like Gecko) WebKitGTK+/2.2.3 luakit/0d5f4'
@@ -66,14 +66,14 @@
     name: LuaKit
     modus: null
     version: 2.2.3
-    manufacturer: 'Mason Larobina'
+    manufacturer: mason-larobina
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 538.1.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (FreeBSD amd64) AppleWebKit/538.15+ (KHTML, like Gecko) WebKitGTK+/2.4.8 luakit/0d5f4'
@@ -98,20 +98,20 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: LuaKit
     modus: null
     version: 2.4.8
-    manufacturer: 'Mason Larobina'
+    manufacturer: mason-larobina
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 538.15.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (OpenBSD amd64) AppleWebKit/538.15+ (KHTML, like Gecko) WebKitGTK+/2.4.11 luakit'
@@ -142,11 +142,11 @@
     name: LuaKit
     modus: null
     version: 2.4.11
-    manufacturer: 'Mason Larobina'
+    manufacturer: mason-larobina
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 538.15.0
-    manufacturer: Apple
+    manufacturer: apple

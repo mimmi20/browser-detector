@@ -5,8 +5,8 @@
     architecture: null
     deviceName: 'Pixel 4a 5G'
     marketingName: 'Pixel 4a 5G'
-    manufacturer: Google
-    brand: Google
+    manufacturer: google
+    brand: google
     dualOrientation: true
     simCount: 1
     display:
@@ -22,7 +22,7 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'VirusTotal Cloud'
@@ -35,7 +35,7 @@
   engine:
     name: Blink
     version: 112.0.5615.136
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/W.X.Y.Z Mobile Safari/537.36 Prerender (+https://github.com/prerender/prerender)'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: 'Pixel 5'
     marketingName: 'Pixel 5'
-    manufacturer: Google
-    brand: Google
+    manufacturer: google
+    brand: google
     dualOrientation: true
     simCount: 1
     display:
@@ -60,7 +60,7 @@
     name: Android
     marketingName: Android
     version: 11.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Prerender
@@ -73,4 +73,4 @@
   engine:
     name: WebKit
     version: 537.36.0
-    manufacturer: Apple
+    manufacturer: apple

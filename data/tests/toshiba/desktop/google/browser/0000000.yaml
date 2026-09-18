@@ -5,8 +5,8 @@
     architecture: null
     deviceName: PC
     marketingName: PC
-    manufacturer: Toshiba
-    brand: Toshiba
+    manufacturer: toshiba
+    brand: toshiba
     dualOrientation: false
     simCount: 0
     display:
@@ -22,20 +22,20 @@
     name: Windows
     marketingName: 'Windows 8'
     version: 8.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Chrome Frame'
     modus: null
     version: 32.0.1700.107
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux## U## Android 7.1.1## Toshiba Chromebook 2 (2015 Edition) Build/R65-10323.39.0)'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: 'Chromebook 2 (2015 Edition)'
     marketingName: 'Chromebook 2 (2015 Edition)'
-    manufacturer: Toshiba
-    brand: Toshiba
+    manufacturer: toshiba
+    brand: toshiba
     dualOrientation: false
     simCount: 0
     display:
@@ -60,20 +60,20 @@
     name: ChromeOS
     marketingName: ChromeOS
     version: 10323.39.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Android Browser'
     modus: null
     version: 2.1.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36TAJB5FjR'
@@ -81,8 +81,8 @@
     architecture: null
     deviceName: PC
     marketingName: PC
-    manufacturer: Toshiba
-    brand: Toshiba
+    manufacturer: toshiba
+    brand: toshiba
     dualOrientation: false
     simCount: 0
     display:
@@ -98,17 +98,17 @@
     name: Windows
     marketingName: 'Windows 10'
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Chrome
     modus: null
     version: 125.0.0.0
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 125.0.0.0
-    manufacturer: Google
+    manufacturer: google

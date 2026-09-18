@@ -22,20 +22,20 @@
     name: Windows
     marketingName: 'Windows 7'
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: SlimBrowser
     modus: null
     version: null
-    manufacturer: FlashPeak
+    manufacturer: flashpeak
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 4.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.34 (KHTML, like Gecko) SlimBoat/1.1.44 Chrome/25.0.1364.97 Version/5.1 Safari/534.34'
@@ -60,20 +60,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: SlimBoat
     modus: null
     version: 1.1.44
-    manufacturer: FlashPeak
+    manufacturer: flashpeak
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.34.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/534.34 (KHTML, like Gecko) SlimBoat/1.1.49 Chrome/25.0.1364.97 Version/5.1 Safari/534.34'
@@ -98,20 +98,20 @@
     name: Windows
     marketingName: 'Windows XP'
     version: 5.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: SlimBoat
     modus: null
     version: 1.1.49
-    manufacturer: FlashPeak
+    manufacturer: flashpeak
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.34.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/6.8.0 (compatible; MSIE14.0; Windows NT 9; Trident/4.0; SlimBrowser)'
@@ -136,17 +136,17 @@
     name: 'Windows NT'
     marketingName: 'Windows NT'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: SlimBrowser
     modus: null
     version: null
-    manufacturer: FlashPeak
+    manufacturer: flashpeak
     type: browser
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 4.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft

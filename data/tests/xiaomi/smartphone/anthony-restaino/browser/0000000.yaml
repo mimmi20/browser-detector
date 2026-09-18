@@ -6,8 +6,8 @@
     architecture: null
     deviceName: M2007J3SY
     marketingName: 'Mi 10T 5G (Global)'
-    manufacturer: Xiaomi
-    brand: Xiaomi
+    manufacturer: xiaomi
+    brand: xiaomi
     dualOrientation: true
     simCount: 2
     display:
@@ -23,20 +23,20 @@
     name: Android
     marketingName: Android
     version: 11.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Lightning Browser'
     modus: null
     version: null
-    manufacturer: 'Anthony Restaino'
+    manufacturer: anthony-restaino
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 103.0.5060.71
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: acr.browser.barebones
@@ -45,8 +45,8 @@
     architecture: null
     deviceName: 'Pocophone F1'
     marketingName: 'Pocophone F1'
-    manufacturer: Xiaomi
-    brand: Xiaomi
+    manufacturer: xiaomi
+    brand: xiaomi
     dualOrientation: true
     simCount: 1
     display:
@@ -62,17 +62,17 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Lightning Browser'
     modus: null
     version: null
-    manufacturer: 'Anthony Restaino'
+    manufacturer: anthony-restaino
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 104.0.5112.97
-    manufacturer: Google
+    manufacturer: google

@@ -22,13 +22,13 @@
     name: Linux
     marketingName: Linux
     version: 2.6.7
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Mosaic
     modus: null
     version: 2.7.0-beta+5
-    manufacturer: NCSA
+    manufacturer: ncsa
     type: browser
     isbot: false
     bits: null
@@ -60,13 +60,13 @@
     name: Windows
     marketingName: 'Windows 3.1'
     version: 3.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Mosaic
     modus: null
     version: 2.0.0
-    manufacturer: NCSA
+    manufacturer: ncsa
     type: browser
     isbot: false
     bits: null
@@ -98,13 +98,13 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 5.2.1
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Mosaic
     modus: null
     version: 2.8.0
-    manufacturer: NCSA
+    manufacturer: ncsa
     type: browser
     isbot: false
     bits: null
@@ -136,13 +136,13 @@
     name: SunOS
     marketingName: SunOS
     version: 4.1.4
-    manufacturer: Oracle
+    manufacturer: oracle
     bits: null
   client:
     name: Mosaic
     modus: null
     version: 1.0.0
-    manufacturer: NCSA
+    manufacturer: ncsa
     type: browser
     isbot: false
     bits: null
@@ -174,13 +174,13 @@
     name: SunOS
     marketingName: SunOS
     version: 4.1.3
-    manufacturer: Oracle
+    manufacturer: oracle
     bits: null
   client:
     name: Mosaic
     modus: null
     version: 2.6.0
-    manufacturer: NCSA
+    manufacturer: ncsa
     type: browser
     isbot: false
     bits: null
@@ -218,7 +218,7 @@
     name: Mosaic
     modus: null
     version: 2.6.0-beta+1
-    manufacturer: NCSA
+    manufacturer: ncsa
     type: browser
     isbot: false
     bits: null
@@ -256,7 +256,7 @@
     name: Mosaic
     modus: null
     version: 2.6.0-beta+1
-    manufacturer: NCSA
+    manufacturer: ncsa
     type: browser
     isbot: false
     bits: null
@@ -288,13 +288,13 @@
     name: SunOS
     marketingName: SunOS
     version: 5.6.0
-    manufacturer: Oracle
+    manufacturer: oracle
     bits: null
   client:
     name: Mosaic
     modus: null
     version: 2.6.0
-    manufacturer: NCSA
+    manufacturer: ncsa
     type: browser
     isbot: false
     bits: null
@@ -326,13 +326,13 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 1.2.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Mosaic
     modus: null
     version: 1.0.0
-    manufacturer: NCSA
+    manufacturer: ncsa
     type: browser
     isbot: false
     bits: null
@@ -364,13 +364,13 @@
     name: OpenVMS
     marketingName: OpenVMS
     version: 7.2.0
-    manufacturer: HP
+    manufacturer: hp
     bits: null
   client:
     name: Mosaic
     modus: null
     version: 2.7.6
-    manufacturer: NCSA
+    manufacturer: ncsa
     type: browser
     isbot: false
     bits: null
@@ -408,7 +408,7 @@
     name: Mosaic
     modus: null
     version: 2.6.0
-    manufacturer: NCSA
+    manufacturer: ncsa
     type: browser
     isbot: false
     bits: null
@@ -440,13 +440,13 @@
     name: 'Plan 9'
     marketingName: 'Plan 9'
     version: 4.0.0
-    manufacturer: 'Plan 9 Foundation'
+    manufacturer: plan9Foundation
     bits: null
   client:
     name: Mosaic
     modus: null
     version: 5.0.0
-    manufacturer: NCSA
+    manufacturer: ncsa
     type: browser
     isbot: false
     bits: null

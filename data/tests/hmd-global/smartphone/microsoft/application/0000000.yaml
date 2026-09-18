@@ -5,8 +5,8 @@
     architecture: null
     deviceName: TA-1053
     marketingName: '5'
-    manufacturer: 'HMD Global'
-    brand: Nokia
+    manufacturer: hmd-global
+    brand: nokia
     dualOrientation: true
     simCount: 1
     display:
@@ -22,17 +22,17 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'BingWeb App'
     modus: null
     version: 9.9.27198102
-    manufacturer: Microsoft
+    manufacturer: microsoft
     type: application
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 74.0.3729.157
-    manufacturer: Google
+    manufacturer: google

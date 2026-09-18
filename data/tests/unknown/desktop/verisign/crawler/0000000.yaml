@@ -22,20 +22,20 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: 'IPS Agent'
     modus: null
     version: null
-    manufacturer: VeriSign
+    manufacturer: verisign
     type: crawler
     isbot: true
     bits: null
   engine:
     name: Gecko
     version: 14.0.0
-    manufacturer: Mozilla
+    manufacturer: mozilla
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1.3; ips-agent) Gecko/20090824 Fedora/1.0.7-1.1.fc4  Firefox/3.5.3'
@@ -60,17 +60,17 @@
     name: 'Fedora Linux'
     marketingName: 'Fedora Linux'
     version: 4.0.0
-    manufacturer: Redhat
+    manufacturer: redhat
     bits: null
   client:
     name: 'IPS Agent'
     modus: null
     version: null
-    manufacturer: VeriSign
+    manufacturer: verisign
     type: crawler
     isbot: true
     bits: null
   engine:
     name: Gecko
     version: 1.9.1.3
-    manufacturer: Mozilla
+    manufacturer: mozilla

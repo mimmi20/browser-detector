@@ -22,13 +22,13 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'LG Browser'
     modus: null
     version: 5.0.0
-    manufacturer: LG
+    manufacturer: lg
     type: browser
     isbot: false
     bits: null
@@ -60,20 +60,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'LG Browser'
     modus: null
     version: 4.05.0
-    manufacturer: LG
+    manufacturer: lg
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.26.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'LG Browser/5.0.0 InettvBrowser/2.2 (00E091;LGE3D2012M;01;00)'
@@ -98,13 +98,13 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'LG Browser'
     modus: null
     version: 5.0.0
-    manufacturer: LG
+    manufacturer: lg
     type: browser
     isbot: false
     bits: null

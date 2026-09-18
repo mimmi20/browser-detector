@@ -6,8 +6,8 @@
     architecture: null
     deviceName: '7.1'
     marketingName: '7.1'
-    manufacturer: 'HMD Global'
-    brand: Nokia
+    manufacturer: hmd-global
+    brand: nokia
     dualOrientation: true
     simCount: 1
     display:
@@ -23,20 +23,20 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Opera Mini'
     modus: null
     version: 72.0.2254.67482
-    manufacturer: Opera
+    manufacturer: opera
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 115.0.5790.168
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-operamini-phone-ua: 'OperaMini(Nokia 230FW40.00.11;Opera Mini/4.4.39012;de)'
@@ -47,8 +47,8 @@
     architecture: null
     deviceName: '2'
     marketingName: '2'
-    manufacturer: 'HMD Global'
-    brand: Nokia
+    manufacturer: hmd-global
+    brand: nokia
     dualOrientation: true
     simCount: 1
     display:
@@ -64,17 +64,17 @@
     name: MRE
     marketingName: 'MAUI Runtime Environment'
     version: null
-    manufacturer: MediaTek
+    manufacturer: mediatek
     bits: null
   client:
     name: 'Opera Mini'
     modus: null
     version: 4.4.39012
-    manufacturer: Opera
+    manufacturer: opera
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Presto
     version: 2.12.423
-    manufacturer: Opera
+    manufacturer: opera

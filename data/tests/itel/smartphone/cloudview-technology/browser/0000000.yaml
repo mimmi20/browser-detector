@@ -5,8 +5,8 @@
     architecture: null
     deviceName: S688LN
     marketingName: 'S26 Ultra'
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 2
     display:
@@ -22,20 +22,20 @@
     name: Android
     marketingName: Android
     version: 15.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Phoenix Browser'
     modus: null
     version: 21.7.0
-    manufacturer: 'CloudView Technology'
+    manufacturer: cloudview-technology
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 131.0.6778.260
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 15; en-us; itel A673L Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.260 Mobile Safari/537.36 PHX/20.4'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: A673L
     marketingName: A100
-    manufacturer: iTel
-    brand: iTel
+    manufacturer: itel
+    brand: itel
     dualOrientation: true
     simCount: 2
     display:
@@ -60,17 +60,17 @@
     name: Android
     marketingName: Android
     version: 15.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Phoenix Browser'
     modus: null
     version: 20.4.0
-    manufacturer: 'CloudView Technology'
+    manufacturer: cloudview-technology
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 131.0.6778.260
-    manufacturer: Google
+    manufacturer: google

@@ -1,12 +1,50 @@
 -
   headers:
+    user-agent: 'Mozilla/5.0 (MotorolaWebKit; U; /Windows CE 7.0) AppleWebKit/534.51 (KHTML, like Gecko) Version/2.3.0 Mobile Safari/534.51'
+  device:
+    architecture: null
+    deviceName: 'general Motorola device'
+    marketingName: 'general Motorola device'
+    manufacturer: motorola
+    brand: motorola
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: 7.0.0
+    manufacturer: microsoft
+    bits: null
+  client:
+    name: 'Motorola Webkit'
+    modus: null
+    version: null
+    manufacturer: motorola
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 534.51.0
+    manufacturer: apple
+-
+  headers:
     user-agent: 'MOT-[Hybrid]/0E.30.1ER MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -22,13 +60,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Motorola Internet Browser'
     modus: null
     version: 2.2.1
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -43,8 +81,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -60,13 +98,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Motorola Internet Browser'
     modus: null
     version: 2.2.1
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -81,8 +119,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -98,13 +136,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Motorola Internet Browser'
     modus: null
     version: 2.1.0
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -119,8 +157,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -136,13 +174,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Motorola Internet Browser'
     modus: null
     version: 2.2.1
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -157,8 +195,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -174,13 +212,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Motorola Internet Browser'
     modus: null
     version: 221.0.0
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -195,8 +233,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -212,13 +250,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Motorola Internet Browser'
     modus: null
     version: 2.2.1
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -233,8 +271,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -250,13 +288,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Motorola Internet Browser'
     modus: null
     version: 2.2.0
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -271,8 +309,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -288,13 +326,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Motorola Internet Browser'
     modus: null
     version: 2.2.0
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -309,8 +347,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -326,13 +364,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Motorola Internet Browser'
     modus: null
     version: 221.0.0
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -347,8 +385,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -364,13 +402,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Motorola Internet Browser'
     modus: null
     version: 2.2.0
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -385,8 +423,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -402,13 +440,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Motorola Internet Browser'
     modus: null
     version: 2.2.1
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -423,8 +461,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -440,13 +478,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Motorola Internet Browser'
     modus: null
     version: 2.2.1
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -461,8 +499,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -478,13 +516,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Motorola Internet Browser'
     modus: null
     version: 2.2.1
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -499,8 +537,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -516,13 +554,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Motorola Internet Browser'
     modus: null
     version: 2.2.1
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -537,8 +575,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -554,13 +592,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Motorola Internet Browser'
     modus: null
     version: 2.2.1
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -575,8 +613,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -592,13 +630,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Motorola Internet Browser'
     modus: null
     version: 2.2.1
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -613,8 +651,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -630,13 +668,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Motorola Internet Browser'
     modus: null
     version: 2.2.0
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -651,8 +689,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -674,7 +712,7 @@
     name: 'Motorola Internet Browser'
     modus: null
     version: 1.2.1
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -689,8 +727,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -712,7 +750,7 @@
     name: 'Motorola Internet Browser'
     modus: null
     version: 1.2.1
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -727,8 +765,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -744,13 +782,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Motorola Internet Browser'
     modus: null
     version: 2.2.0
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -765,8 +803,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -782,13 +820,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Motorola Internet Browser'
     modus: null
     version: 2.2.1
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -803,8 +841,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -820,13 +858,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Motorola Internet Browser'
     modus: null
     version: 2.2.0
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -841,8 +879,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -858,13 +896,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Motorola Internet Browser'
     modus: null
     version: 2.2.1
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -879,8 +917,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -896,13 +934,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Motorola Internet Browser'
     modus: null
     version: 2.2.1
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -917,8 +955,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -934,13 +972,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Motorola Internet Browser'
     modus: null
     version: 2.2.1
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -955,8 +993,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -972,13 +1010,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Motorola Internet Browser'
     modus: null
     version: 2.2.0
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -993,8 +1031,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -1010,13 +1048,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Motorola Internet Browser'
     modus: null
     version: 221.0.0
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -1031,8 +1069,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -1048,13 +1086,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Motorola Internet Browser'
     modus: null
     version: 2.2.0
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -1069,8 +1107,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -1086,13 +1124,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Motorola Internet Browser'
     modus: null
     version: 2.2.1
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -1107,8 +1145,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -1124,13 +1162,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Motorola Internet Browser'
     modus: null
     version: 2.2.0
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -1145,8 +1183,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -1168,7 +1206,7 @@
     name: 'Motorola Internet Browser'
     modus: null
     version: 1.2.1
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -1183,8 +1221,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -1206,7 +1244,7 @@
     name: 'Motorola Internet Browser'
     modus: null
     version: 1.2.1
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -1221,8 +1259,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -1244,7 +1282,7 @@
     name: 'Motorola Internet Browser'
     modus: null
     version: 1.2.1
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -1259,8 +1297,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -1282,7 +1320,7 @@
     name: 'Motorola Internet Browser'
     modus: null
     version: 2.0.0
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -1297,8 +1335,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -1314,13 +1352,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Motorola Internet Browser'
     modus: null
     version: 1.2.1
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -1335,8 +1373,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -1352,13 +1390,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Motorola Internet Browser'
     modus: null
     version: 1.2.1
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -1373,8 +1411,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -1396,7 +1434,7 @@
     name: 'Motorola Internet Browser'
     modus: null
     version: 1.2.1
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -1411,8 +1449,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -1434,7 +1472,7 @@
     name: 'Motorola Internet Browser'
     modus: null
     version: 1.2.1
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -1449,8 +1487,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -1472,7 +1510,7 @@
     name: 'Motorola Internet Browser'
     modus: null
     version: 1.2.1
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -1487,8 +1525,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -1510,7 +1548,7 @@
     name: 'Motorola Internet Browser'
     modus: null
     version: 1.2.1
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -1525,8 +1563,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -1548,7 +1586,7 @@
     name: 'Motorola Internet Browser'
     modus: null
     version: 1.2.1
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -1563,8 +1601,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -1586,7 +1624,7 @@
     name: 'Motorola Internet Browser'
     modus: null
     version: 1.2.1
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -1601,8 +1639,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -1624,7 +1662,7 @@
     name: 'Motorola Internet Browser'
     modus: null
     version: 1.2.1
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -1639,8 +1677,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -1662,7 +1700,7 @@
     name: 'Motorola Internet Browser'
     modus: null
     version: 1.2.1
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -1677,8 +1715,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -1700,7 +1738,7 @@
     name: 'Motorola Internet Browser'
     modus: null
     version: 1.2.1
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -1715,8 +1753,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -1738,7 +1776,7 @@
     name: 'Motorola Internet Browser'
     modus: null
     version: 1.2.1
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -1753,8 +1791,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -1776,7 +1814,7 @@
     name: 'Motorola Internet Browser'
     modus: null
     version: 1.2.1
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -1791,8 +1829,8 @@
     architecture: null
     deviceName: 'general Motorola device'
     marketingName: 'general Motorola device'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: null
     simCount: 0
     display:
@@ -1814,7 +1852,7 @@
     name: 'Motorola Internet Browser'
     modus: null
     version: 1.2.1
-    manufacturer: Motorola
+    manufacturer: motorola
     type: browser
     isbot: false
     bits: null
@@ -1822,3 +1860,231 @@
     name: null
     version: null
     manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (MotorolaWebKit; U; /Windows CE 5.0) AppleWebKit/534.51 (KHTML, like Gecko) Version/2.2.8.8 Mobile Safari/534.51'
+  device:
+    architecture: null
+    deviceName: 'general Motorola device'
+    marketingName: 'general Motorola device'
+    manufacturer: motorola
+    brand: motorola
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: 5.0.0
+    manufacturer: microsoft
+    bits: null
+  client:
+    name: 'Motorola Webkit'
+    modus: null
+    version: null
+    manufacturer: motorola
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 534.51.0
+    manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (MotorolaWebKit; U; /Windows CE 5.2) AppleWebKit/534.51 (KHTML, like Gecko) Version/2.2.8.8 Mobile Safari/534.51'
+  device:
+    architecture: null
+    deviceName: 'general Motorola device'
+    marketingName: 'general Motorola device'
+    manufacturer: motorola
+    brand: motorola
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: 5.2.0
+    manufacturer: microsoft
+    bits: null
+  client:
+    name: 'Motorola Webkit'
+    modus: null
+    version: null
+    manufacturer: motorola
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 534.51.0
+    manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (MotorolaWebKit; U; /Windows CE 6.0) AppleWebKit/534.51 (KHTML, like Gecko) Version/2.2.8.8 Mobile Safari/534.51'
+  device:
+    architecture: null
+    deviceName: 'general Motorola device'
+    marketingName: 'general Motorola device'
+    manufacturer: motorola
+    brand: motorola
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: 6.0.0
+    manufacturer: microsoft
+    bits: null
+  client:
+    name: 'Motorola Webkit'
+    modus: null
+    version: null
+    manufacturer: motorola
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 534.51.0
+    manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Windows CE 5.2) AppleWebKit/534.51 (KHTML, like Gecko) MotorolaWebKit/2.1.8.7 Safari/534.51'
+  device:
+    architecture: null
+    deviceName: 'general Motorola device'
+    marketingName: 'general Motorola device'
+    manufacturer: motorola
+    brand: motorola
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: 5.2.0
+    manufacturer: microsoft
+    bits: null
+  client:
+    name: 'Motorola Webkit'
+    modus: null
+    version: null
+    manufacturer: motorola
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 534.51.0
+    manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Windows CE 5.2) AppleWebKit/534.51 (KHTML, like Gecko) MotorolaWebKit/2.2.2.13 Safari/534.51'
+  device:
+    architecture: null
+    deviceName: 'general Motorola device'
+    marketingName: 'general Motorola device'
+    manufacturer: motorola
+    brand: motorola
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: 5.2.0
+    manufacturer: microsoft
+    bits: null
+  client:
+    name: 'Motorola Webkit'
+    modus: null
+    version: null
+    manufacturer: motorola
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 534.51.0
+    manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Windows CE 6.0) AppleWebKit/534.51 (KHTML, like Gecko) MotorolaWebKit/2.2.3.10 Safari/534.51'
+  device:
+    architecture: null
+    deviceName: 'general Motorola device'
+    marketingName: 'general Motorola device'
+    manufacturer: motorola
+    brand: motorola
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: 6.0.0
+    manufacturer: microsoft
+    bits: null
+  client:
+    name: 'Motorola Webkit'
+    modus: null
+    version: null
+    manufacturer: motorola
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 534.51.0
+    manufacturer: apple

@@ -5,8 +5,8 @@
     architecture: null
     deviceName: 'P7 Mini'
     marketingName: 'Ascend P7 Mini'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -22,20 +22,20 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 3.4.3.532
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: U2
     version: 1.0.0
-    manufacturer: UCWeb
+    manufacturer: ucweb
 -
   headers:
     user-agent: 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; HUAWEI G510-0100 Build/HuaweiG510-0100) U2/1.0.0 UCBrowser/10.1.5.583 Mobile'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: G510-0100
     marketingName: 'Ascend G510'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -60,20 +60,20 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 10.1.5.583
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: U2
     version: 1.0.0
-    manufacturer: UCWeb
+    manufacturer: ucweb
 -
   headers:
     user-agent: 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; U8860 Build/HuaweiU8860) U2/1.0.0 UCBrowser/10.1.5.583 Mobile'
@@ -81,8 +81,8 @@
     architecture: null
     deviceName: U8860
     marketingName: Honor
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -98,20 +98,20 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 10.1.5.583
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: U2
     version: 1.0.0
-    manufacturer: UCWeb
+    manufacturer: ucweb
 -
   headers:
     user-agent: 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; www.tigo.com.gt; HUAWEI_Y330-U05) U2/1.0.0 UCBrowser/9.6.0.514 Mobile'
@@ -119,8 +119,8 @@
     architecture: null
     deviceName: Y330-U05
     marketingName: 'Ascend Y330'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -136,20 +136,20 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 9.6.0.514
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: U2
     version: 1.0.0
-    manufacturer: UCWeb
+    manufacturer: ucweb
 -
   headers:
     user-agent: 'UCWEB/2.0(Linux; U; Opera Mini/7.1.32052/30.3697; en-US; HUAWEI Y625-U51 Build/HUAWEIY625-U51) U2/1.0.0 UCBrowser/10.7.0.636 Mobile'
@@ -157,8 +157,8 @@
     architecture: null
     deviceName: Y625-U51
     marketingName: Y625
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 2
     display:
@@ -174,20 +174,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 10.7.0.636
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: U2
     version: 1.0.0
-    manufacturer: UCWeb
+    manufacturer: ucweb
 -
   headers:
     user-agent: 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; HUAWEI U8825-1 Build/HuaweiU8825-1) U2/1.0.0 UCBrowser/10.7.9.856 Mobile'
@@ -195,8 +195,8 @@
     architecture: null
     deviceName: U8825-1
     marketingName: 'Ascend G330'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -212,20 +212,20 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 10.7.9.856
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: U2
     version: 1.0.0
-    manufacturer: UCWeb
+    manufacturer: ucweb
 -
   headers:
     user-agent: 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; HUAWEI_Y330-U01) U2/1.0.0 UCBrowser/9.4.0.460 Mobile'
@@ -233,8 +233,8 @@
     architecture: null
     deviceName: Y330-U01
     marketingName: 'Ascend Y330'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -250,20 +250,20 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 9.4.0.460
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: U2
     version: 1.0.0
-    manufacturer: UCWeb
+    manufacturer: ucweb
 -
   headers:
     user-agent: 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; HUAWEI_Y300-0100) U2/1.0.0 UCBrowser/9.1.0.386 Mobile'
@@ -271,8 +271,8 @@
     architecture: null
     deviceName: Y300
     marketingName: 'Ascend Y300'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -288,20 +288,20 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 9.1.0.386
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: U2
     version: 1.0.0
-    manufacturer: UCWeb
+    manufacturer: ucweb
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HUAWEI; W1-U00) UCBrowser/4.2.1.541 Mobile'
@@ -309,8 +309,8 @@
     architecture: null
     deviceName: W1-U00
     marketingName: 'Ascend W1'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -326,20 +326,20 @@
     name: 'Windows Phone OS'
     marketingName: 'Windows Phone OS'
     version: 8.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 4.2.1.541
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Trident
     version: 6.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 9; en-US; JSN-L21 Build/HONORJSN-L21) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.13.5.1209 Mobile Safari/537.36 comdirect/1.0 (appVersion:19.11.0;deviceType:mobile)'
@@ -347,8 +347,8 @@
     architecture: null
     deviceName: JSN-L21
     marketingName: 'Honor 8X'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 2
     display:
@@ -364,20 +364,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 12.13.5.1209
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 57.0.2987.108
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 9; en-US; VTR-L09 Build/HUAWEIVTR-L09) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.13.5.1209 Mobile Safari/537.36'
@@ -385,8 +385,8 @@
     architecture: null
     deviceName: VTR-L09
     marketingName: P10
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -402,20 +402,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 12.13.5.1209
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 57.0.2987.108
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; HUAWEI_SCL-U31) U2/1.0.0 UCBrowser/9.7.0.520 Mobile'
@@ -423,8 +423,8 @@
     architecture: null
     deviceName: SCL-U31
     marketingName: 'Y6 (2017)'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -440,20 +440,20 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 9.7.0.520
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: U2
     version: 1.0.0
-    manufacturer: UCWeb
+    manufacturer: ucweb
 -
   headers:
     user-agent: 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; HUAWEI Y625-U32 Build/HUAWEIY625-U32) U2/1.0.0 UCBrowser/10.7.5.785 Mobile'
@@ -461,8 +461,8 @@
     architecture: null
     deviceName: Y625-U32
     marketingName: Y625
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 2
     display:
@@ -478,20 +478,20 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 10.7.5.785
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: U2
     version: 1.0.0
-    manufacturer: UCWeb
+    manufacturer: ucweb
 -
   headers:
     user-agent: 'UCWEB/2.0(Linux; U; Opera Mini/7.1.32052/30.3697; en-us; Che1-L04 Build/Che1-L04) U2/1.0.0 UCBrowser/9.9.2.467 Mobile'
@@ -499,8 +499,8 @@
     architecture: null
     deviceName: Che1-L04
     marketingName: 'Honor 4X'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -516,20 +516,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 9.9.2.467
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: U2
     version: 1.0.0
-    manufacturer: UCWeb
+    manufacturer: ucweb
 -
   headers:
     user-agent: 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; HUAWEI Y330-U11 Build/HuaweiY330-U11) U2/1.0.0 UCBrowser/10.7.5.785 Mobile'
@@ -537,8 +537,8 @@
     architecture: null
     deviceName: Y330-U11
     marketingName: 'Ascend Y330'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -554,20 +554,20 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 10.7.5.785
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: U2
     version: 1.0.0
-    manufacturer: UCWeb
+    manufacturer: ucweb
 -
   headers:
     user-agent: 'UCWEB/2.0 (Java; U; MIDP-2.0; Nokia203/20.37) U2/1.0.0 UCMini/10.9.0.946 (SpeedMode; Proxy; Android 9; MHA-L29 ) U2/1.0.0 Mobile'
@@ -575,8 +575,8 @@
     architecture: null
     deviceName: MHA-L29
     marketingName: 'Mate 9'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 2
     display:
@@ -592,20 +592,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser Mini'
     modus: null
     version: 10.9.0.946
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: U2
     version: 1.0.0
-    manufacturer: UCWeb
+    manufacturer: ucweb
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 9; en-US; EML-L09 Build/HUAWEIEML-L09) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/13.0.8.1291 Mobile Safari/537.36'
@@ -613,8 +613,8 @@
     architecture: null
     deviceName: EML-L09
     marketingName: P20
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -630,20 +630,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 13.0.8.1291
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 57.0.2987.108
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 10; zh-CN; JNY-LX2 Build/XXXXX) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.9.7.1077 Mobile Safari/537.36'
@@ -651,8 +651,8 @@
     architecture: null
     deviceName: JNY-LX2
     marketingName: 'P40 Lite'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -668,20 +668,20 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 12.9.7.1077
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 57.0.2987.108
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 9; zh-CN; ART-TL00x Build/XXXXX ART-TL00x) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.9.7.1077 Mobile Safari/537.36'
@@ -689,8 +689,8 @@
     architecture: null
     deviceName: ART-TL00x
     marketingName: 'Enjoy 10'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 2
     display:
@@ -706,20 +706,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 12.9.7.1077
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 57.0.2987.108
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 9; zh-CN; ART-AL00m Build/XXXXX ART-AL00m) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.9.7.1077 Mobile Safari/537.36'
@@ -727,8 +727,8 @@
     architecture: null
     deviceName: ART-AL00m
     marketingName: 'P40 Lite E'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 2
     display:
@@ -744,20 +744,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 12.9.7.1077
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 57.0.2987.108
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 10; zh-CN; ELE-L29 Build/HUAWEIELE-L29) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.1.2.1092 Mobile Safari/537.36'
@@ -765,8 +765,8 @@
     architecture: null
     deviceName: ELE-L29
     marketingName: P30
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -782,20 +782,20 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 13.1.2.1092
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 78.0.3904.108
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 10; en-US; VOG-L29 Build/HUAWEIVOG-L29) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.3.2.1303 Mobile Safari/537.36'
@@ -803,8 +803,8 @@
     architecture: null
     deviceName: VOG-L29
     marketingName: 'P30 Pro'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 2
     display:
@@ -820,20 +820,20 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 13.3.2.1303
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 78.0.3904.108
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 10; en; LYA-L29 Build/HUAWEILYA-L29) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.10.0.1163 UCTurbo/1.10.3.900 Mobile Safari/537.36'
@@ -841,8 +841,8 @@
     architecture: null
     deviceName: LYA-L29
     marketingName: 'Mate 20 Pro'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -858,20 +858,20 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser Turbo'
     modus: null
     version: 1.10.3.900
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 57.0.2987.108
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 10; en-US; EML-L29 Build/HUAWEIEML-L29) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.3.8.1305 Mobile Safari/537.36'
@@ -879,8 +879,8 @@
     architecture: null
     deviceName: EML-L29
     marketingName: P20
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 2
     display:
@@ -896,20 +896,20 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 13.3.8.1305
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 78.0.3904.108
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 10; en-US; PPA-LX2 Build/HUAWEIPPA-LX2) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.4.0.1306 Mobile Safari/537.36'
@@ -917,8 +917,8 @@
     architecture: null
     deviceName: PPA-LX2
     marketingName: 'P smart 4G (2021)'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 2
     display:
@@ -934,20 +934,20 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 13.4.0.1306
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 78.0.3904.108
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 10; en-US; LYA-L29 Build/HUAWEILYA-L29) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.3.8.1305 Mobile Safari/537.36'
@@ -955,8 +955,8 @@
     architecture: null
     deviceName: LYA-L29
     marketingName: 'Mate 20 Pro'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -972,20 +972,20 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 13.3.8.1305
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 78.0.3904.108
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 10; EML-AL00 Build/HUAWEIEML-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.9.6.1076 Mobile Safari/537.36'
@@ -993,8 +993,8 @@
     architecture: null
     deviceName: EML-AL00
     marketingName: P20
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 2
     display:
@@ -1010,20 +1010,20 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 12.9.6.1076
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 57.0.2987.108
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'dv(HMA-AL00);pr(UCBrowser/13.7.0.1132);ov(Android 10);ss(360*683);pi(1080*2049);bt(UM);pm(1);bv(1);nm(0);im(0);sr(0);nt(2);'
@@ -1031,8 +1031,8 @@
     architecture: null
     deviceName: HMA-AL00
     marketingName: 'Mate 20 (China)'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -1048,13 +1048,13 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 13.7.0.1132
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
@@ -1070,8 +1070,8 @@
     architecture: null
     deviceName: ELS-NX9
     marketingName: 'P40 Pro 5G'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -1087,20 +1087,20 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 13.3.8.1305
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 78.0.3904.108
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; CLT-L29 Build/HUAWEICLT-L29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.5005.78 Mobile Safari/537.36 AgentWeb/4.1.9  UCBrowser/11.6.4.950'
@@ -1108,8 +1108,8 @@
     architecture: null
     deviceName: CLT-L29
     marketingName: 'P20 Pro'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 2
     display:
@@ -1125,20 +1125,20 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 11.6.4.950
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 102.0.5005.78
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 12; zh-CN; NCO-AL00 Build/HUAWEINCO-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/15.1.6.1206 Mobile Safari/537.36'
@@ -1146,8 +1146,8 @@
     architecture: null
     deviceName: NCO-AL00
     marketingName: 'Nova 10 4G'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 2
     display:
@@ -1163,20 +1163,20 @@
     name: Android
     marketingName: Android
     version: 12.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 15.1.6.1206
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 78.0.3904.108
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 9; en-US; ANE-LX1 Build/HUAWEIANE-L21) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/13.4.0.1306 (SpeedMode) U4/1.0 UCWEB/2.0 Mobile Safari/534.30'
@@ -1184,8 +1184,8 @@
     architecture: null
     deviceName: ANE-LX1
     marketingName: 'P20 Lite'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -1201,20 +1201,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 13.4.0.1306
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: U4
     version: 1.0.0
-    manufacturer: UCWeb
+    manufacturer: ucweb
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 10; zh-CN; HLK-AL00 Build/HONORHLK-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.7.3.1154 Mobile Safari/537.36 dv(HLK-AL00);pr(UCBrowser/13.7.3.1154);ov(Android 10);ss(360*741);pi(1080*2224);bt(YZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(2);'
@@ -1222,8 +1222,8 @@
     architecture: null
     deviceName: HLK-AL00
     marketingName: 'Honor 9X'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -1239,20 +1239,20 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 13.7.3.1154
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 78.0.3904.108
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 14; zh-CN; LYN-AN00 Build/HONORLYN-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 UCBrowser/17.1.6.1347 Mobile Safari/537.36'
@@ -1260,8 +1260,8 @@
     architecture: null
     deviceName: LYN-AN00
     marketingName: 'X60i 5G'
-    manufacturer: Huawei
-    brand: Honor
+    manufacturer: huawei
+    brand: honor
     dualOrientation: true
     simCount: 2
     display:
@@ -1277,20 +1277,20 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 17.1.6.1347
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 100.0.4896.58
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 15; zh-CN; PTP-AN60 Build/HONORPTP-AN60) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 UCBrowser/17.2.1.1352 Mobile Safari/537.36'
@@ -1298,8 +1298,8 @@
     architecture: null
     deviceName: PTP-AN60
     marketingName: 'Magic 7'
-    manufacturer: Huawei
-    brand: Honor
+    manufacturer: huawei
+    brand: honor
     dualOrientation: true
     simCount: 2
     display:
@@ -1315,20 +1315,20 @@
     name: Android
     marketingName: Android
     version: 15.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 17.2.1.1352
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 100.0.4896.58
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 9; en-US; KSA-LX9 Build/HONORKSA-LX9) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/13.0.8.1291 Mobile Safari/537.36'
@@ -1336,8 +1336,8 @@
     architecture: null
     deviceName: KSA-LX9
     marketingName: 'Honor 8S'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -1353,20 +1353,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 13.0.8.1291
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 57.0.2987.108
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 15; zh-CN; MTN-AN80 Build/HONORMTN-AN80) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/18.1.8.1444 Mobile Safari/537.36'
@@ -1374,8 +1374,8 @@
     architecture: null
     deviceName: MTN-AN80
     marketingName: X70
-    manufacturer: Huawei
-    brand: Honor
+    manufacturer: huawei
+    brand: honor
     dualOrientation: true
     simCount: 2
     display:
@@ -1391,20 +1391,20 @@
     name: Android
     marketingName: Android
     version: 15.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 18.1.8.1444
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 123.0.6312.80
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 15; en-US; NLA-LX2 Build/HONORNLA-L32) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.0.7.1383 Mobile Safari/537.36'
@@ -1412,8 +1412,8 @@
     architecture: null
     deviceName: NLA-LX2
     marketingName: X5c
-    manufacturer: Huawei
-    brand: Honor
+    manufacturer: huawei
+    brand: honor
     dualOrientation: true
     simCount: 2
     display:
@@ -1429,20 +1429,20 @@
     name: Android
     marketingName: Android
     version: 15.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 15.0.7.1383
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 123.0.6312.80
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; JNY-LX1 Build/HUAWEIJNY-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Mobile Safari/537.36 AgentWeb/4.1.3 UCBrowser/11.6.4.950'
@@ -1450,8 +1450,8 @@
     architecture: null
     deviceName: JNY-LX1
     marketingName: 'P40 Lite'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 1
     display:
@@ -1467,20 +1467,20 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 11.6.4.950
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 78.0.3904.108
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-CN; BKQ-AN00 Build/HONORBKQ-ANXX) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/18.9.0.1516 Mobile Safari/537.36'
@@ -1488,8 +1488,8 @@
     architecture: null
     deviceName: BKQ-AN00
     marketingName: 'Magic 8 5G'
-    manufacturer: Huawei
-    brand: Honor
+    manufacturer: huawei
+    brand: honor
     dualOrientation: true
     simCount: 2
     display:
@@ -1505,20 +1505,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 18.9.0.1516
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 123.0.6312.80
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-CN; AAP-AN00 Build/HONORAAP-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 UCBrowser/18.9.0.1516 Mobile Safari/537.36'
@@ -1526,8 +1526,8 @@
     architecture: null
     deviceName: AAP-AN00
     marketingName: Win
-    manufacturer: Huawei
-    brand: Honor
+    manufacturer: huawei
+    brand: honor
     dualOrientation: true
     simCount: 2
     display:
@@ -1543,20 +1543,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 18.9.0.1516
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 100.0.4896.58
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-CN; AAK-AN00 Build/HONORAAK-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/18.8.0.1506 Mobile Safari/537.36'
@@ -1564,8 +1564,8 @@
     architecture: null
     deviceName: AAK-AN00
     marketingName: 'Win RT'
-    manufacturer: Huawei
-    brand: Honor
+    manufacturer: huawei
+    brand: honor
     dualOrientation: true
     simCount: 2
     display:
@@ -1581,20 +1581,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 18.8.0.1506
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 123.0.6312.80
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; pt-BR; JDY-LX3P Build/HONORJDY-L43P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.9.1395 Mobile Safari/537.36'
@@ -1602,8 +1602,8 @@
     architecture: null
     deviceName: JDY-LX3P
     marketingName: X6b
-    manufacturer: Huawei
-    brand: Honor
+    manufacturer: huawei
+    brand: honor
     dualOrientation: true
     simCount: 2
     display:
@@ -1619,20 +1619,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 15.1.9.1395
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 123.0.6312.80
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; es-MX; MTN-NX3 Build/HONORMTN-N23) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.9.1395 Mobile Safari/537.36'
@@ -1640,8 +1640,8 @@
     architecture: null
     deviceName: MTN-NX3
     marketingName: 'Magic 8 Lite'
-    manufacturer: Huawei
-    brand: Honor
+    manufacturer: huawei
+    brand: honor
     dualOrientation: true
     simCount: 2
     display:
@@ -1657,20 +1657,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 15.1.9.1395
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 123.0.6312.80
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; en-US; VKP-NX9 Build/HONORVKP-N39) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.9.1395 Mobile Safari/537.36'
@@ -1678,8 +1678,8 @@
     architecture: null
     deviceName: VKP-NX9
     marketingName: '600 Pro'
-    manufacturer: Huawei
-    brand: Honor
+    manufacturer: huawei
+    brand: honor
     dualOrientation: true
     simCount: 2
     display:
@@ -1695,20 +1695,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 15.1.9.1395
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 123.0.6312.80
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; en-US; VKJ-NX9 Build/HONORVKJ-N39) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.9.1395 Mobile Safari/537.36'
@@ -1716,8 +1716,8 @@
     architecture: null
     deviceName: VKJ-NX9
     marketingName: '600'
-    manufacturer: Huawei
-    brand: Honor
+    manufacturer: huawei
+    brand: honor
     dualOrientation: true
     simCount: 2
     display:
@@ -1733,20 +1733,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 15.1.9.1395
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 123.0.6312.80
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; en-US; NLA-NX1 Build/HONORNLA-N31N) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.9.1395 Mobile Safari/537.36'
@@ -1754,8 +1754,8 @@
     architecture: null
     deviceName: NLA-NX1
     marketingName: 'X6d 5G'
-    manufacturer: Huawei
-    brand: Honor
+    manufacturer: huawei
+    brand: honor
     dualOrientation: true
     simCount: 2
     display:
@@ -1771,20 +1771,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 15.1.9.1395
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 123.0.6312.80
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; en-US; LNA-NX1 Build/HONORLNA-N32) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.9.1395 Mobile Safari/537.36'
@@ -1792,8 +1792,8 @@
     architecture: null
     deviceName: LNA-NX1
     marketingName: '600 Lite'
-    manufacturer: Huawei
-    brand: Honor
+    manufacturer: huawei
+    brand: honor
     dualOrientation: true
     simCount: 2
     display:
@@ -1809,20 +1809,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 15.1.9.1395
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 123.0.6312.80
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; en-US; LNA-LX2 Build/HONORLNA-L32) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 UCBrowser/12.3.0.1290 Mobile Safari/537.36'
@@ -1830,8 +1830,8 @@
     architecture: null
     deviceName: LNA-LX2
     marketingName: X8d
-    manufacturer: Huawei
-    brand: Honor
+    manufacturer: huawei
+    brand: honor
     dualOrientation: true
     simCount: 2
     display:
@@ -1847,20 +1847,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 12.3.0.1290
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; en-US; LGN-NX1 Build/HONORLGN-N31) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.9.1395 Mobile Safari/537.36'
@@ -1868,8 +1868,8 @@
     architecture: null
     deviceName: LGN-NX1
     marketingName: '400 Smart'
-    manufacturer: Huawei
-    brand: Honor
+    manufacturer: huawei
+    brand: honor
     dualOrientation: true
     simCount: 2
     display:
@@ -1885,20 +1885,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 15.1.9.1395
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 123.0.6312.80
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 15; es-MX; NLA-LX3 Build/HONORNLA-L03) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.9.1395 Mobile Safari/537.36'
@@ -1906,8 +1906,8 @@
     architecture: null
     deviceName: NLA-LX3
     marketingName: X5c
-    manufacturer: Huawei
-    brand: Honor
+    manufacturer: huawei
+    brand: honor
     dualOrientation: true
     simCount: 2
     display:
@@ -1923,20 +1923,20 @@
     name: Android
     marketingName: Android
     version: 15.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 15.1.9.1395
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 123.0.6312.80
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 15; en-US; NLA-LX1 Build/HONORNLA-L31) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.7.1393 Mobile Safari/537.36'
@@ -1944,8 +1944,8 @@
     architecture: null
     deviceName: NLA-LX1
     marketingName: X5c
-    manufacturer: Huawei
-    brand: Honor
+    manufacturer: huawei
+    brand: honor
     dualOrientation: true
     simCount: 2
     display:
@@ -1961,20 +1961,20 @@
     name: Android
     marketingName: Android
     version: 15.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 15.1.7.1393
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 123.0.6312.80
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 15; en-US; NAA-LX2P Build/HONORNAA-L32P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 UCBrowser/12.3.0.1290 Mobile Safari/537.36'
@@ -1982,8 +1982,8 @@
     architecture: null
     deviceName: NAA-LX2P
     marketingName: 'Honor X5d Plus'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 2
     display:
@@ -1999,20 +1999,20 @@
     name: Android
     marketingName: Android
     version: 15.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 12.3.0.1290
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 14; es-ES; GFY-LX3 Build/HONORGFY-L43) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.9.1395 Mobile Safari/537.36'
@@ -2020,8 +2020,8 @@
     architecture: null
     deviceName: GFY-LX3
     marketingName: 'Play 9A (2024)'
-    manufacturer: Huawei
-    brand: Honor
+    manufacturer: huawei
+    brand: honor
     dualOrientation: true
     simCount: 2
     display:
@@ -2037,20 +2037,20 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 15.1.9.1395
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 123.0.6312.80
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 9; zh-CN; LLD-AL30 Build/HONORLLD-AL30) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.2.8.1008 Mobile Safari/537.36'
@@ -2058,8 +2058,8 @@
     architecture: null
     deviceName: LLD-AL30
     marketingName: 'Honor 9i (2018)'
-    manufacturer: Huawei
-    brand: Huawei
+    manufacturer: huawei
+    brand: huawei
     dualOrientation: true
     simCount: 2
     display:
@@ -2075,17 +2075,17 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 12.2.8.1008
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 57.0.2987.108
-    manufacturer: Google
+    manufacturer: google

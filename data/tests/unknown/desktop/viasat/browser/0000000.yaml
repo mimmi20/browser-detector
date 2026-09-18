@@ -22,20 +22,20 @@
     name: Windows
     marketingName: 'Windows 7'
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Viasat Browser'
     modus: null
     version: 58.0.3029.12554
-    manufacturer: Viasat
+    manufacturer: viasat
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 58.0.3029.12554
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux x86_64)  AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.2469  Safari/537.36 Sparrow/0.1'
@@ -60,17 +60,17 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'Viasat Browser'
     modus: null
     version: 42.0.2311.2469
-    manufacturer: Viasat
+    manufacturer: viasat
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 42.0.2311.2469
-    manufacturer: Google
+    manufacturer: google

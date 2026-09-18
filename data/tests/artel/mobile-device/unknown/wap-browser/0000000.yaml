@@ -5,8 +5,8 @@
     architecture: null
     deviceName: 'general Artel device'
     marketingName: 'general Artel device'
-    manufacturer: Artel
-    brand: Artel
+    manufacturer: artel
+    brand: artel
     dualOrientation: null
     simCount: 0
     display:
@@ -22,7 +22,45 @@
     name: MRE
     marketingName: 'MAUI Runtime Environment'
     version: 3.1.00900
-    manufacturer: MediaTek
+    manufacturer: mediatek
+    bits: null
+  client:
+    name: 'MAUI Wap Browser'
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: wap-browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAGETEL61D_11C_HW MRE/3.1.00900;MAUI/_AX2941_ARTEL_X4_V05_181205_MP;BDATE/2018/12/05 15:26;LCD/240320;CHIP/MT6261;KEY/Normal;TOUCH/0;CAMERA/1;SENSOR/0;DEV/SAGETEL61D_11C_HW;WAP Browser/MAUI ;GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SPICEI2I/005;GAMELOF'
+  device:
+    architecture: null
+    deviceName: 'general Artel device'
+    marketingName: 'general Artel device'
+    manufacturer: artel
+    brand: artel
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: MRE
+    marketingName: 'MAUI Runtime Environment'
+    version: 3.1.00900
+    manufacturer: mediatek
     bits: null
   client:
     name: 'MAUI Wap Browser'
@@ -43,8 +81,8 @@
     architecture: null
     deviceName: 'general Artel device'
     marketingName: 'general Artel device'
-    manufacturer: Artel
-    brand: Artel
+    manufacturer: artel
+    brand: artel
     dualOrientation: null
     simCount: 0
     display:
@@ -60,7 +98,7 @@
     name: MRE
     marketingName: 'MAUI Runtime Environment'
     version: 3.1.00900
-    manufacturer: MediaTek
+    manufacturer: mediatek
     bits: null
   client:
     name: 'MAUI Wap Browser'
@@ -81,8 +119,8 @@
     architecture: null
     deviceName: 'general Artel device'
     marketingName: 'general Artel device'
-    manufacturer: Artel
-    brand: Artel
+    manufacturer: artel
+    brand: artel
     dualOrientation: null
     simCount: 0
     display:
@@ -98,7 +136,7 @@
     name: MRE
     marketingName: 'MAUI Runtime Environment'
     version: 3.1.00900
-    manufacturer: MediaTek
+    manufacturer: mediatek
     bits: null
   client:
     name: 'MAUI Wap Browser'
@@ -119,8 +157,8 @@
     architecture: null
     deviceName: 'general Artel device'
     marketingName: 'general Artel device'
-    manufacturer: Artel
-    brand: Artel
+    manufacturer: artel
+    brand: artel
     dualOrientation: null
     simCount: 0
     display:
@@ -136,7 +174,7 @@
     name: MRE
     marketingName: 'MAUI Runtime Environment'
     version: 3.1.00.1280
-    manufacturer: MediaTek
+    manufacturer: mediatek
     bits: null
   client:
     name: 'MAUI Wap Browser'

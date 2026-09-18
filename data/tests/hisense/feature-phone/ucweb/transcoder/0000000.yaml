@@ -5,8 +5,8 @@
     architecture: null
     deviceName: HS-T39
     marketingName: HS-T39
-    manufacturer: HiSense
-    brand: HiSense
+    manufacturer: hisense
+    brand: hisense
     dualOrientation: false
     simCount: 1
     display:
@@ -22,20 +22,20 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 8.7.1.234
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: U2
     version: 1.0.0
-    manufacturer: UCWeb
+    manufacturer: ucweb
 -
   headers:
     user-agent: 'Mozilla/5.0 (HS-E316/E464.6.01.03.00;U;REX/3.0;BREW/3.1.5;240*320;CTC/2.0) Ucweb/7.6'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: HS-E316
     marketingName: HS-E316
-    manufacturer: HiSense
-    brand: HiSense
+    manufacturer: hisense
+    brand: hisense
     dualOrientation: false
     simCount: 1
     display:
@@ -66,7 +66,7 @@
     name: 'UC Browser'
     modus: null
     version: 7.6.0
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null

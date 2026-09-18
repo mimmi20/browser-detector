@@ -22,20 +22,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Pageburst
     modus: null
     version: null
-    manufacturer: Elsevier
+    manufacturer: elsevier
     type: crawler
     isbot: true
     bits: null
   engine:
     name: Blink
     version: 95.0.4638.69
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-platform: '"macOS"'
@@ -63,20 +63,20 @@
     name: 'Mac OS X'
     marketingName: 'Mac OS X'
     version: null
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: Pageburst
     modus: null
     version: null
-    manufacturer: Elsevier
+    manufacturer: elsevier
     type: crawler
     isbot: true
     bits: null
   engine:
     name: Blink
     version: 141.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-platform: '"Windows"'
@@ -104,17 +104,17 @@
     name: Windows
     marketingName: Windows
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Pageburst
     modus: null
     version: null
-    manufacturer: Elsevier
+    manufacturer: elsevier
     type: crawler
     isbot: true
     bits: null
   engine:
     name: Blink
     version: 141.0.0
-    manufacturer: Google
+    manufacturer: google

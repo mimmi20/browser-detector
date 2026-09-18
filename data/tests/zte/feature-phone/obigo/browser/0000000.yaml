@@ -5,8 +5,8 @@
     architecture: null
     deviceName: G-X991
     marketingName: Rio
-    manufacturer: ZTE
-    brand: Orange
+    manufacturer: zte
+    brand: orange
     dualOrientation: false
     simCount: 1
     display:
@@ -22,58 +22,20 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Obigo Q'
     modus: null
     version: 3.0.0
-    manufacturer: Obigo
+    manufacturer: obigo
     type: browser
     isbot: false
     bits: null
   engine:
     name: Teleca
     version: null
-    manufacturer: Obigo
--
-  headers:
-    user-agent: 'LG-A310-Orange/V10c Obigo/Q7.3 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1'
-  device:
-    architecture: null
-    deviceName: A310
-    marketingName: A310
-    manufacturer: ZTE
-    brand: Cricket
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 120
-      height: 120
-      touch: false
-      size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Obigo Q'
-    modus: null
-    version: 7.3.0
-    manufacturer: Obigo
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Teleca
-    version: null
-    manufacturer: Obigo
+    manufacturer: obigo
 -
   headers:
     user-agent: 'ZTE-G-X760-vegas-orange/X760_Z15UK_FS_B07A106_ORANGE Obigo/Q03C'
@@ -81,8 +43,8 @@
     architecture: null
     deviceName: X760
     marketingName: X760
-    manufacturer: ZTE
-    brand: 'AT&T'
+    manufacturer: zte
+    brand: at-t
     dualOrientation: false
     simCount: 1
     display:
@@ -98,17 +60,17 @@
     name: JavaOS
     marketingName: JavaOS
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Obigo Q'
     modus: null
     version: 3.0.0
-    manufacturer: Obigo
+    manufacturer: obigo
     type: browser
     isbot: false
     bits: null
   engine:
     name: Teleca
     version: null
-    manufacturer: Obigo
+    manufacturer: obigo

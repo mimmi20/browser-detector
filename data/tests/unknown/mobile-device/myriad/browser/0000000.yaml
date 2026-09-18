@@ -1,5 +1,81 @@
 -
   headers:
+    user-agent: 'vk-vk900/1.1 up.browser/6.2.3.4 (gui) mmp/2.0'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.4
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'sam-r560 UP.Browser/6.2.3.8 (GUI) MMP/2.0'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.8
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
     user-agent: 'r355[TF268435460205582333000000014065648021] UP.Browser/6.2.3.8 (GUI) MMP/2.0'
   device:
     architecture: null
@@ -22,13 +98,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.8
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -66,7 +142,45 @@
     name: 'Openwave Mobile Browser'
     modus: null
     version: 3.01.0
-    manufacturer: Myriad
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHM310/1.0 Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.3
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -98,13 +212,13 @@
     name: 'Symbian OS'
     marketingName: 'Symbian OS'
     version: null
-    manufacturer: 'Symbian Foundation'
+    manufacturer: symbianFoundation
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -136,13 +250,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.9
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -174,13 +288,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.2
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -212,13 +326,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.2
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -250,13 +364,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.9
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -288,13 +402,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.9
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -326,13 +440,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.2
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -364,13 +478,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.9
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -402,13 +516,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.9
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -440,13 +554,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.9
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -478,13 +592,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.9
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -516,13 +630,13 @@
     name: 'Symbian OS'
     marketingName: 'Symbian OS'
     version: null
-    manufacturer: 'Symbian Foundation'
+    manufacturer: symbianFoundation
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 4.1.26
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -554,13 +668,89 @@
     name: 'Symbian OS'
     marketingName: 'Symbian OS'
     version: null
-    manufacturer: 'Symbian Foundation'
+    manufacturer: symbianFoundation
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.2.1
-    manufacturer: Myriad
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SCH-R210 UP.Browser/6.2.3.8 (GUI) MMP/2.0'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.8
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'sam-r350 UP.Browser/6.2.3.8 (GUI) MMP/2.0'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.8
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -592,13 +782,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.8
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -630,13 +820,89 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.2
-    manufacturer: Myriad
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'sam-r390 UP.Browser/6.2.3.8 (GUI) MMP/2.0'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.8
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SM-B311V/1.0 UP.Browser/6.2.3.8 (GUI) MMP/2.0'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.8
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -668,13 +934,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.2.5
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -712,7 +978,7 @@
     name: 'Openwave Mobile Browser'
     modus: null
     version: 5.0.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -750,7 +1016,7 @@
     name: 'Openwave Mobile Browser'
     modus: null
     version: 5.0.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -788,7 +1054,7 @@
     name: 'Openwave Mobile Browser'
     modus: null
     version: 5.0.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -820,13 +1086,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.9
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -858,13 +1124,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.9
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -902,7 +1168,7 @@
     name: 'Openwave Mobile Browser'
     modus: null
     version: 5.0.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -940,7 +1206,7 @@
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.2.4
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -978,7 +1244,7 @@
     name: 'Openwave Mobile Browser'
     modus: null
     version: 5.0.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1016,7 +1282,7 @@
     name: 'Openwave Mobile Browser'
     modus: null
     version: 5.0.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1048,13 +1314,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.0.1.155
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1086,13 +1352,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.0.1.155
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1124,13 +1390,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.2.6
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1168,7 +1434,7 @@
     name: 'Openwave Mobile Browser'
     modus: null
     version: 5.0.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1206,7 +1472,7 @@
     name: 'Openwave Mobile Browser'
     modus: null
     version: 5.0.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1244,7 +1510,7 @@
     name: 'Openwave Mobile Browser'
     modus: null
     version: 5.0.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1282,7 +1548,7 @@
     name: 'Openwave Mobile Browser'
     modus: null
     version: 5.0.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1320,7 +1586,7 @@
     name: 'Openwave Mobile Browser'
     modus: null
     version: 4.1.20-alpha
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1358,7 +1624,7 @@
     name: 'Openwave Mobile Browser'
     modus: null
     version: 4.1.23
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1390,13 +1656,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 7.2.6.1.475
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1434,7 +1700,7 @@
     name: 'Openwave Mobile Browser'
     modus: null
     version: 5.0.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1466,13 +1732,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.1.0.2.135
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1510,7 +1776,7 @@
     name: 'Openwave Mobile Browser'
     modus: null
     version: 5.0.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1548,7 +1814,7 @@
     name: 'Openwave Mobile Browser'
     modus: null
     version: 4.1.27
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1580,13 +1846,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.1.0.7.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1618,13 +1884,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.2.6
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1656,13 +1922,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.1.0.7.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1694,13 +1960,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.1.0.7.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1738,7 +2004,7 @@
     name: 'Openwave Mobile Browser'
     modus: null
     version: 5.0.5.1
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1770,13 +2036,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.1.0.7.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1808,13 +2074,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 5.0.3.5
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1846,13 +2112,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 5.0.3.5
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1884,13 +2150,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 5.0.3.5
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1922,13 +2188,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.2.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1966,7 +2232,7 @@
     name: 'Openwave Mobile Browser'
     modus: null
     version: 5.0.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -1998,13 +2264,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.2.4
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -2036,13 +2302,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.2.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -2074,13 +2340,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.2.1
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -2112,13 +2378,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.9
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -2150,13 +2416,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.9
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -2188,13 +2454,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.9
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -2226,13 +2492,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.9
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -2264,13 +2530,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.9
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -2302,13 +2568,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.9
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -2340,13 +2606,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.9
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -2378,13 +2644,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.9
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -2422,7 +2688,7 @@
     name: 'Openwave Mobile Browser'
     modus: null
     version: 5.0.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -2460,7 +2726,7 @@
     name: 'Openwave Mobile Browser'
     modus: null
     version: 5.0.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -2498,7 +2764,7 @@
     name: 'Openwave Mobile Browser'
     modus: null
     version: 5.0.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -2536,7 +2802,7 @@
     name: 'Openwave Mobile Browser'
     modus: null
     version: 5.0.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -2574,7 +2840,7 @@
     name: 'Openwave Mobile Browser'
     modus: null
     version: 5.0.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -2612,7 +2878,7 @@
     name: 'Openwave Mobile Browser'
     modus: null
     version: 4.1.20-alpha
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -2650,7 +2916,7 @@
     name: 'Openwave Mobile Browser'
     modus: null
     version: 5.0.5.4
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -2688,7 +2954,7 @@
     name: 'Openwave Mobile Browser'
     modus: null
     version: 5.0.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -2726,7 +2992,7 @@
     name: 'Openwave Mobile Browser'
     modus: null
     version: 5.0.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -2758,13 +3024,13 @@
     name: Windows
     marketingName: Windows
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: null
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -2796,13 +3062,89 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.8
-    manufacturer: Myriad
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'sam375/1.0[TF268435460801909150000000012073505617] UP.Browser/6.2.3.8 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.8
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'sam455/1.0[TF268435460712035732000000014348083769] UP.Browser/6.2.3.8 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.8
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -2834,13 +3176,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.8
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -2872,13 +3214,89 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.8
-    manufacturer: Myriad
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHB100/BOHA3 Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.3
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'sam-r360 UP.Browser/6.2.3.8 (GUI) MMP/2.0'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.8
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -2910,13 +3328,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.8
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -2948,13 +3366,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.8
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -2986,13 +3404,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 7.0.2.3.119
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -3024,13 +3442,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.1.0.7.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -3062,13 +3480,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.2.7
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -3100,13 +3518,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.1.0.7.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -3138,13 +3556,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.1.0.7.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -3176,13 +3594,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.1.0.7.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -3220,7 +3638,7 @@
     name: 'Openwave Mobile Browser'
     modus: null
     version: 5.0.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -3252,13 +3670,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.1.0.6.1
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -3296,7 +3714,7 @@
     name: 'Openwave Mobile Browser'
     modus: null
     version: 5.0.3.3
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -3328,13 +3746,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 7.0.2.3.119
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -3366,431 +3784,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 5.0.2.3
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'Vulcan-Color UP.Browser/5.0.2.3 (GUI)'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 5.0.2.3
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'Vodafone/1.0/SamsungC3050/C3050BUIC6 Browser/Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 6.2.3.3
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'V750/1.0 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.6.1.d.2 (GUI) MMP/1.0'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 6.1.0.6.1
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'UTS-7126M/1.0 UP.Browser/6.3.0.7 (GUI) MMP/2.0'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 6.3.0.7
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'UT-GW206/1.0.0 CLDC/CLDC-1.0 MIDP/MIDP-2.0 UP.Browser/6.3.0 (GUI) MMP/2.0'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 6.3.0
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'UPG1/4.0 UP.Browser/6.2.3.3 (GUI) MMP/2.0 Push/PO'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 6.2.3.3
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'UPG1 UP/4.0.10 UP.Browser/4.0.10-XXXX UP.Link/4.1.HTTP-DIRECT'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 4.0.10
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'UP.Browser/7.0.2.3.119 (GUI) MMP/2.0 Push/PO'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 7.0.2.3.119
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'UP.Browser/3.1.04-SC02 UP.Link/4.3.4.4d'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 3.1.04
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'UP.Browser/3.1.04-NZ01 UP.Link/4.2.1.1'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 3.1.04
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'UP.Browser/3.1.04-DS15 UP.Link/5.0.2.9 (Google WAP Proxy/1.0)'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 3.1.04-dev
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null

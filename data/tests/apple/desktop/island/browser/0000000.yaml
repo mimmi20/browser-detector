@@ -15,8 +15,8 @@
     architecture: arm
     deviceName: Macintosh
     marketingName: Macintosh
-    manufacturer: Apple
-    brand: Apple
+    manufacturer: apple
+    brand: apple
     dualOrientation: false
     simCount: 0
     display:
@@ -32,20 +32,20 @@
     name: 'Mac OS X'
     marketingName: 'Mac OS X'
     version: 26.3.0
-    manufacturer: Apple
+    manufacturer: apple
     bits: 64
   client:
     name: 'The Enterprise Browser'
     modus: null
     version: 145.1.85.22
-    manufacturer: Island
+    manufacturer: island
     type: browser
     isbot: false
     bits: 64
   engine:
     name: Blink
     version: 145.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua: '"Island";v="147", "Not.A/Brand";v="8", "Chromium";v="147"'
@@ -54,8 +54,8 @@
     architecture: null
     deviceName: Macintosh
     marketingName: Macintosh
-    manufacturer: Apple
-    brand: Apple
+    manufacturer: apple
+    brand: apple
     dualOrientation: false
     simCount: 0
     display:
@@ -71,17 +71,17 @@
     name: macOS
     marketingName: macOS
     version: 10.15.7
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: 'The Enterprise Browser'
     modus: null
     version: 147.0.0
-    manufacturer: Island
+    manufacturer: island
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 147.0.0
-    manufacturer: Google
+    manufacturer: google

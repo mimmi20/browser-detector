@@ -5,8 +5,8 @@
     architecture: null
     deviceName: TD8208
     marketingName: TD8208
-    manufacturer: Lephone
-    brand: Lephone
+    manufacturer: lephone
+    brand: lephone
     dualOrientation: true
     simCount: 1
     display:
@@ -28,14 +28,14 @@
     name: 'Android Webkit'
     modus: null
     version: null
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 5333.1.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Dalvik/v3.3.127 Compatible (TVM xx; YunOS 3.0; Linux; U; Android 4.4.4 Compatible; lephone T2 Build/KTU84P)'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: T2
     marketingName: T2
-    manufacturer: Lephone
-    brand: Lephone
+    manufacturer: lephone
+    brand: lephone
     dualOrientation: true
     simCount: 1
     display:
@@ -60,17 +60,17 @@
     name: 'Yun OS'
     marketingName: 'Yun OS'
     version: 3.0.0
-    manufacturer: Alibaba
+    manufacturer: alibaba
     bits: null
   client:
     name: 'Android Browser'
     modus: null
     version: null
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple

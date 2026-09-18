@@ -22,7 +22,7 @@
     name: Windows
     marketingName: 'Windows 10'
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: BlueMail
@@ -35,7 +35,7 @@
   engine:
     name: Blink
     version: 76.0.3809.146
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) BlueMail/1.132.9 Chrome/91.0.4472.77 Electron/13.1.2 Safari/537.36'
@@ -60,7 +60,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: BlueMail
@@ -73,7 +73,7 @@
   engine:
     name: Blink
     version: 91.0.4472.77
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Monazilla/1.00 Live5ch/1.52 Windows/10.0.17134'
@@ -98,7 +98,7 @@
     name: Windows
     marketingName: 'Windows 10'
     version: 10.0.17134
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Live5ch

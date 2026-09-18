@@ -23,20 +23,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'Odin Browser'
     modus: null
     version: null
-    manufacturer: HiSense
+    manufacturer: hisense
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 74.0.3729.157
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: com.hisense.odinbrowser
@@ -62,17 +62,17 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'Odin Browser'
     modus: null
     version: null
-    manufacturer: HiSense
+    manufacturer: hisense
     type: browser
     isbot: false
     bits: null
   engine:
     name: Gecko
     version: 78.0.0
-    manufacturer: Mozilla
+    manufacturer: mozilla

@@ -5,8 +5,8 @@
     architecture: null
     deviceName: MB525
     marketingName: Defy
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: true
     simCount: 1
     display:
@@ -22,20 +22,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 9.5.0.360
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: U2
     version: 1.0.0
-    manufacturer: UCWeb
+    manufacturer: ucweb
 -
   headers:
     user-agent: 'UCWEB/2.0 (MIDP-2.0; U; xx; XT875) U2/1.0.0 UCBrowser/10.2.0.535  U2/1.0.0 Mobile'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: XT875
     marketingName: 'Droid Bionic 4G LTE'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: true
     simCount: 1
     display:
@@ -60,20 +60,20 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 10.2.0.535
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: U2
     version: 1.0.0
-    manufacturer: UCWeb
+    manufacturer: ucweb
 -
   headers:
     user-agent: 'UCWEB/2.0 (MIDP-2.0; U; xx; XT897) U2/1.0.0 UCBrowser/9.9.2.467  U2/1.0.0 Mobile'
@@ -81,8 +81,8 @@
     architecture: null
     deviceName: XT897
     marketingName: 'Photon Q'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: true
     simCount: 1
     display:
@@ -98,20 +98,20 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 9.9.2.467
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: U2
     version: 1.0.0
-    manufacturer: UCWeb
+    manufacturer: ucweb
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 9; en-US; moto g(6) play Build/PPPS29.55-35-18-7) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.3.5.1304 Mobile Safari/537.36'
@@ -119,8 +119,8 @@
     architecture: null
     deviceName: 'Moto G6 Plus'
     marketingName: 'Moto G6 Plus'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: true
     simCount: 1
     display:
@@ -136,20 +136,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 13.3.5.1304
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 78.0.3904.108
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 14; en-US; motorola edge 50 pro Build/U2UM34.27-38-1) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.4.0.1306 Mobile Safari/537.36'
@@ -157,8 +157,8 @@
     architecture: null
     deviceName: 'Edge 50 Pro'
     marketingName: 'Edge 50 Pro'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: true
     simCount: 2
     display:
@@ -174,20 +174,20 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 13.4.0.1306
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 78.0.3904.108
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 14; en-US; motorola razr 50 Build/U3UC34.63-88-1) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 UCBrowser/13.7.8.1322 Mobile Safari/537.36'
@@ -195,8 +195,8 @@
     architecture: null
     deviceName: 'Moto Razr 50'
     marketingName: 'Moto Razr 50'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: true
     simCount: 2
     display:
@@ -212,20 +212,20 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 13.7.8.1322
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 100.0.4896.58
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 14; en-US; XT2409-5 Build/U4UI34.8-28-1) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 UCBrowser/13.8.0.1323 Mobile Safari/537.36'
@@ -233,8 +233,8 @@
     architecture: null
     deviceName: XT2409-5
     marketingName: 'Moto S50'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: true
     simCount: 1
     display:
@@ -250,20 +250,20 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 13.8.0.1323
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 100.0.4896.58
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-CN; XT2503-3 Build/W1VC36H.84-19-5) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/18.4.8.1474 Mobile Safari/537.36'
@@ -271,8 +271,8 @@
     architecture: null
     deviceName: XT2503-3
     marketingName: 'Edge 60 Fusion'
-    manufacturer: Motorola
-    brand: Motorola
+    manufacturer: motorola
+    brand: motorola
     dualOrientation: true
     simCount: 2
     display:
@@ -288,17 +288,17 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 18.4.8.1474
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 123.0.6312.80
-    manufacturer: Google
+    manufacturer: google

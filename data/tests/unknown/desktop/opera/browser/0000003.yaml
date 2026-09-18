@@ -22,20 +22,20 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 8.4.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Opera
     modus: null
     version: 12.16.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: Presto
     version: 2.12.388
-    manufacturer: Opera
+    manufacturer: opera
 -
   headers:
     user-agent: 'Opera/9.80 (X11; FreeBSD 8.2-RELEASE amd64; U; xx) Presto/2.10.229 Version/11.61'
@@ -60,20 +60,20 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 8.2.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Opera
     modus: null
     version: 11.61.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: Presto
     version: 2.10.229
-    manufacturer: Opera
+    manufacturer: opera
 -
   headers:
     user-agent: 'Opera/9.80 (X11; OpenBSD i386) Presto/2.12.388 Version/12.16'
@@ -104,14 +104,14 @@
     name: Opera
     modus: null
     version: 12.16.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: Presto
     version: 2.12.388
-    manufacturer: Opera
+    manufacturer: opera
 -
   headers:
     user-agent: 'Opera/6.12 (OpenBSD 3.7; U)  [en]'
@@ -142,7 +142,7 @@
     name: Opera
     modus: null
     version: 6.12.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
@@ -174,20 +174,20 @@
     name: 'Suse Linux'
     marketingName: 'Suse Linux'
     version: null
-    manufacturer: Suse
+    manufacturer: suse
     bits: null
   client:
     name: Opera
     modus: null
     version: 12.16.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: Presto
     version: 2.12.388
-    manufacturer: Opera
+    manufacturer: opera
 -
   headers:
     user-agent: 'Opera/9.80 (X11; Linux x86_64; U; Kubuntu 12.04 LTS; xx) Presto/2.10.229 Version/11.62'
@@ -212,20 +212,20 @@
     name: Kubuntu
     marketingName: Kubuntu
     version: 12.04.0
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: Opera
     modus: null
     version: 11.62.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: Presto
     version: 2.10.229
-    manufacturer: Opera
+    manufacturer: opera
 -
   headers:
     user-agent: 'Opera/9.80 (X11; SunOS sun4u; U; xx) Presto/2.2 Version/10.11'
@@ -250,20 +250,20 @@
     name: SunOS
     marketingName: SunOS
     version: null
-    manufacturer: Oracle
+    manufacturer: oracle
     bits: null
   client:
     name: Opera
     modus: null
     version: 10.11.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: Presto
     version: 2.2.0
-    manufacturer: Opera
+    manufacturer: opera
 -
   headers:
     user-agent: 'Opera/6.12 (Solaris 9; U ) [en]'
@@ -288,13 +288,13 @@
     name: Solaris
     marketingName: Solaris
     version: 9.0.0
-    manufacturer: Oracle
+    manufacturer: oracle
     bits: null
   client:
     name: Opera
     modus: null
     version: 6.12.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
@@ -332,14 +332,14 @@
     name: Opera
     modus: null
     version: 7.10.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: Presto
     version: null
-    manufacturer: Opera
+    manufacturer: opera
 -
   headers:
     user-agent: 'Opera/16.2 (Ubuntu 7.2; fr;)'
@@ -364,20 +364,20 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: 7.2.0
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: Opera
     modus: null
     version: 16.2.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: Presto
     version: null
-    manufacturer: Opera
+    manufacturer: opera
 -
   headers:
     user-agent: 'Opera/18.13 (Unix 3.4; ar_TN;)'
@@ -408,14 +408,14 @@
     name: Opera
     modus: null
     version: 18.13.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: Presto
     version: null
-    manufacturer: Opera
+    manufacturer: opera
 -
   headers:
     user-agent: 'Opera/17.17 (BeOS 4.5; ca_ES;)'
@@ -440,20 +440,20 @@
     name: BeOS
     marketingName: BeOS
     version: 4.5.0
-    manufacturer: Access
+    manufacturer: access
     bits: null
   client:
     name: Opera
     modus: null
     version: 17.17.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: Presto
     version: null
-    manufacturer: Opera
+    manufacturer: opera
 -
   headers:
     user-agent: 'Opera/9.80 (X11; Linux x86_64; U; Slackware; lt) Presto/2.8.131 Version/11.11'
@@ -478,20 +478,20 @@
     name: 'Slackware Linux'
     marketingName: 'Slackware Linux'
     version: null
-    manufacturer: Slackware
+    manufacturer: slackware
     bits: null
   client:
     name: Opera
     modus: null
     version: 11.11.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: Presto
     version: 2.8.131
-    manufacturer: Opera
+    manufacturer: opera
 -
   headers:
     user-agent: 'Mozilla/4.0 (BeOS R4.5;US) Opera 3.60  [en]'
@@ -516,13 +516,13 @@
     name: BeOS
     marketingName: BeOS
     version: null
-    manufacturer: Access
+    manufacturer: access
     bits: null
   client:
     name: Opera
     modus: null
     version: 3.60.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
@@ -560,7 +560,7 @@
     name: Opera
     modus: null
     version: 5.02.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
@@ -598,7 +598,7 @@
     name: Opera
     modus: null
     version: 6.03.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
@@ -630,13 +630,13 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 4.8.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Opera
     modus: null
     version: 6.12.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
@@ -674,7 +674,7 @@
     name: Opera
     modus: null
     version: 6.12.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
@@ -706,20 +706,20 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Opera
     modus: null
     version: 7.50.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: Presto
     version: null
-    manufacturer: Opera
+    manufacturer: opera
 -
   headers:
     user-agent: 'Opera/7.51 (X11; SunOS sun4u; U)  [en]'
@@ -744,20 +744,20 @@
     name: SunOS
     marketingName: SunOS
     version: null
-    manufacturer: Oracle
+    manufacturer: oracle
     bits: null
   client:
     name: Opera
     modus: null
     version: 7.51.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: Presto
     version: null
-    manufacturer: Opera
+    manufacturer: opera
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; FreeBSD i386; U) Opera 7.54  [en]'
@@ -782,20 +782,20 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Opera
     modus: null
     version: 7.54.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: Presto
     version: null
-    manufacturer: Opera
+    manufacturer: opera
 -
   headers:
     user-agent: 'Opera/7.54 (AmigaOS 5.1; U) [en]'
@@ -826,14 +826,14 @@
     name: Opera
     modus: null
     version: 7.54.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: Presto
     version: null
-    manufacturer: Opera
+    manufacturer: opera
 -
   headers:
     user-agent: 'Opera/7.54 (FreeBSD; U)'
@@ -858,20 +858,20 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: null
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Opera
     modus: null
     version: 7.54.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: Presto
     version: null
-    manufacturer: Opera
+    manufacturer: opera
 -
   headers:
     user-agent: 'Opera/7.54 (Unix; U) [en]'
@@ -902,14 +902,14 @@
     name: Opera
     modus: null
     version: 7.54.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: Presto
     version: null
-    manufacturer: Opera
+    manufacturer: opera
 -
   headers:
     user-agent: 'Opera/7.54 (X11; SunOS sun4u; U) [en]'
@@ -934,20 +934,20 @@
     name: SunOS
     marketingName: SunOS
     version: null
-    manufacturer: Oracle
+    manufacturer: oracle
     bits: null
   client:
     name: Opera
     modus: null
     version: 7.54.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: Presto
     version: null
-    manufacturer: Opera
+    manufacturer: opera
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 5.0; UNIX) Opera 6.12 [en]'
@@ -978,7 +978,7 @@
     name: Opera
     modus: null
     version: 6.12.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
@@ -1010,20 +1010,20 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 11.1.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Opera
     modus: null
     version: 12.16.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: Presto
     version: 2.12.388
-    manufacturer: Opera
+    manufacturer: opera
 -
   headers:
     user-agent: 'Lynx Opera/7.330 (UNIX; U) [de]'
@@ -1054,14 +1054,14 @@
     name: Opera
     modus: null
     version: 7.330.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: Presto
     version: null
-    manufacturer: Opera
+    manufacturer: opera
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.93 Safari/537.36 OPT/2.1 comdirect/1.0 (appVersion:19.12.0;deviceType:desktop)'
@@ -1086,20 +1086,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'Opera Touch'
     modus: null
     version: 2.1.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 79.0.3945.93
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Opera/9.80 (X11; FreeBSD 11.0-BETA2 amd64) Presto/2.12.388 Version/12.16'
@@ -1124,20 +1124,20 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 11.0.0-beta+2
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Opera
     modus: null
     version: 12.16.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: Presto
     version: 2.12.388
-    manufacturer: Opera
+    manufacturer: opera
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36 OPR/60.0.3255.50747 OPRGX/60.0.3255.50747'
@@ -1162,20 +1162,20 @@
     name: Windows
     marketingName: 'Windows 7'
     version: 7.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Opera GX'
     modus: null
     version: 60.0.3255.50747
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 73.0.3683.103
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Opera/9.22 (X11; OpenBSD i386; U; en)'
@@ -1206,14 +1206,14 @@
     name: Opera
     modus: null
     version: 9.22.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: Presto
     version: null
-    manufacturer: Opera
+    manufacturer: opera
 -
   headers:
     user-agent: 'Opera/9.01 (X11; FreeBSD 6 i386; U;pl)'
@@ -1238,20 +1238,20 @@
     name: FreeBSD
     marketingName: FreeBSD
     version: 6.0.0
-    manufacturer: FreeBSD
+    manufacturer: freebsd
     bits: null
   client:
     name: Opera
     modus: null
     version: 9.01.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: Presto
     version: null
-    manufacturer: Opera
+    manufacturer: opera
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 5.0; UNIX) Opera 6.11  [fr]'
@@ -1282,7 +1282,7 @@
     name: Opera
     modus: null
     version: 6.11.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
@@ -1321,20 +1321,20 @@
     name: Windows
     marketingName: 'Windows 10'
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: 64
   client:
     name: 'Opera Crypto'
     modus: null
     version: 99.0.4844.16
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: 64
   engine:
     name: Blink
     version: 99.0.4844.16
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-platform: '"Android"'
@@ -1362,20 +1362,20 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Opera
     modus: null
     version: 82.0.4227.58
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 98.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Opera/9.63 (X11; U; nb)'
@@ -1400,20 +1400,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Opera
     modus: null
     version: 9.63.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: Presto
     version: null
-    manufacturer: Opera
+    manufacturer: opera
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 14.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4815.82 Safari/537.36 OPRGX/100.0.4815.82 OPR/100.0.4815.82'
@@ -1438,20 +1438,20 @@
     name: 'Windows NT'
     marketingName: 'Windows NT'
     version: null
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Opera GX'
     modus: null
     version: 100.0.4815.82
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 100.0.4815.82
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Opera/88.0.114.46 Safari/537.36'
@@ -1476,20 +1476,20 @@
     name: Windows
     marketingName: 'Windows 10'
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Opera
     modus: null
     version: 88.0.114.46
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 537.36.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Opera/96.0.2957.124 Safari/537.36'
@@ -1514,20 +1514,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Opera
     modus: null
     version: 96.0.2957.124
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 537.36.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Opera/6.0 (X11; U; de)'
@@ -1552,13 +1552,13 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Opera
     modus: null
     version: 6.0.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
@@ -1593,20 +1593,20 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Opera
     modus: null
     version: 78.0.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 117.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-platform: '"Android"'
@@ -1634,20 +1634,20 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Opera Mobile'
     modus: null
     version: 87.0.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 132.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 6.2; arm64) AppleWebKit/537.36 (KHTML, like Gecko) Opera/76.0.0.0 Safari/537.36'
@@ -1672,20 +1672,20 @@
     name: 'Windows RT'
     marketingName: 'Windows RT'
     version: 8.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Opera
     modus: null
     version: 76.0.0.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 537.36.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Opera/62.0.0.0 Safari/537.36'
@@ -1710,20 +1710,20 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: Opera
     modus: null
     version: 62.0.0.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 537.36.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     sec-ch-ua-platform: '"Windows"'
@@ -1751,20 +1751,20 @@
     name: Windows
     marketingName: 'Windows 10'
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Opera Air'
     modus: null
     version: 124.0.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 140.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-platform: '"macOS"'
@@ -1792,20 +1792,20 @@
     name: 'Mac OS X'
     marketingName: 'Mac OS X'
     version: null
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: Opera
     modus: null
     version: 9.55.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 134.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Opera/20.10 (BeOS 7.7; ar_EG;)'
@@ -1830,20 +1830,20 @@
     name: BeOS
     marketingName: BeOS
     version: 7.7.0
-    manufacturer: Access
+    manufacturer: access
     bits: null
   client:
     name: Opera
     modus: null
     version: 20.10.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: Presto
     version: null
-    manufacturer: Opera
+    manufacturer: opera
 -
   headers:
     sec-ch-ua-platform: '"Linux"'
@@ -1871,17 +1871,17 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'Opera Mobile'
     modus: null
     version: 100.0.0
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.0
-    manufacturer: Google
+    manufacturer: google

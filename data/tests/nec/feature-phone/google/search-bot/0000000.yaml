@@ -5,8 +5,8 @@
     architecture: null
     deviceName: N905i
     marketingName: N905i
-    manufacturer: NEC
-    brand: DoCoMo
+    manufacturer: nec
+    brand: ntt-docomo
     dualOrientation: false
     simCount: 1
     display:
@@ -22,13 +22,13 @@
     name: Maemo
     marketingName: Maemo
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'Google Bot Mobile'
     modus: null
     version: 2.1.0
-    manufacturer: Google
+    manufacturer: google
     type: search-bot
     isbot: true
     bits: null
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: N505i
     marketingName: N505i
-    manufacturer: NEC
-    brand: DoCoMo
+    manufacturer: nec
+    brand: ntt-docomo
     dualOrientation: false
     simCount: 1
     display:
@@ -60,13 +60,13 @@
     name: JavaOS
     marketingName: JavaOS
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Google Bot Mobile'
     modus: null
     version: 2.1.0
-    manufacturer: Google
+    manufacturer: google
     type: search-bot
     isbot: true
     bits: null

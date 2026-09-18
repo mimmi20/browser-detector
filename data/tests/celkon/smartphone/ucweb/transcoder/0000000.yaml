@@ -5,8 +5,8 @@
     architecture: null
     deviceName: A63
     marketingName: A63
-    manufacturer: Celkon
-    brand: Celkon
+    manufacturer: celkon
+    brand: celkon
     dualOrientation: true
     simCount: 1
     display:
@@ -22,17 +22,55 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 9.1.1.420
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: U2
     version: 1.0.0
-    manufacturer: UCWeb
+    manufacturer: ucweb
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 2.3.5; En-US; Celkon A75 Build/MocorDroid2.3.5) AppleWebKit/534.31 (KHTML, Like Gecko) UCBrowser/9.0.1.275 U3/0.8.0 Mobile Safari/534.31'
+  device:
+    architecture: null
+    deviceName: A75
+    marketingName: A75
+    manufacturer: celkon
+    brand: celkon
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 480
+      height: 320
+      touch: true
+      size: 3.5
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: MocorDroid
+    marketingName: MocorDroid
+    version: 2.3.5
+    manufacturer: unknown
+    bits: null
+  client:
+    name: 'UC Browser'
+    modus: null
+    version: 9.0.1.275
+    manufacturer: ucweb
+    type: transcoder
+    isbot: false
+    bits: null
+  engine:
+    name: U3
+    version: 0.8.0
+    manufacturer: ucweb

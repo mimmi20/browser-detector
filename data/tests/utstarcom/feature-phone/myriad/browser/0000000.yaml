@@ -5,8 +5,8 @@
     architecture: null
     deviceName: gz1s
     marketingName: "G'zOne Type-S"
-    manufacturer: UTStarcom
-    brand: UTStarcom
+    manufacturer: utstarcom
+    brand: utstarcom
     dualOrientation: null
     simCount: 1
     display:
@@ -22,13 +22,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.2
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: G26
     marketingName: G26
-    manufacturer: UTStarcom
-    brand: UTStarcom
+    manufacturer: utstarcom
+    brand: utstarcom
     dualOrientation: null
     simCount: 1
     display:
@@ -60,13 +60,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.2.7
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null
@@ -81,8 +81,8 @@
     architecture: null
     deviceName: C711
     marketingName: C711
-    manufacturer: UTStarcom
-    brand: UTStarcom
+    manufacturer: utstarcom
+    brand: utstarcom
     dualOrientation: null
     simCount: 1
     display:
@@ -98,51 +98,13 @@
     name: 'Java ME'
     marketingName: 'Java ME'
     version: null
-    manufacturer: Sun
+    manufacturer: sun
     bits: null
   client:
     name: 'Openwave Mobile Browser'
     modus: null
     version: 6.2.3.2
-    manufacturer: Myriad
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'TXT8010/T05_0 UP.Browser/6.2.3.2 (GUI) MMP/2.0 Novarra-Vision/8.0'
-  device:
-    architecture: null
-    deviceName: TXT8010
-    marketingName: Blitz
-    manufacturer: UTStarcom
-    brand: UTStarcom
-    dualOrientation: null
-    simCount: 1
-    display:
-      width: 220
-      height: 176
-      touch: false
-      size: 2.2
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: Sun
-    bits: null
-  client:
-    name: 'Openwave Mobile Browser'
-    modus: null
-    version: 6.2.3.2
-    manufacturer: Myriad
+    manufacturer: myriad
     type: browser
     isbot: false
     bits: null

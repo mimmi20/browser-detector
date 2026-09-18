@@ -5,8 +5,8 @@
     architecture: null
     deviceName: iPhone
     marketingName: iPhone
-    manufacturer: Apple
-    brand: Apple
+    manufacturer: apple
+    brand: apple
     dualOrientation: true
     simCount: 1
     display:
@@ -22,20 +22,20 @@
     name: 'iPhone OS'
     marketingName: 'iPhone OS'
     version: 3.0.0
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: 'AdsBot Google-Mobile'
     modus: null
     version: null
-    manufacturer: Google
+    manufacturer: google
     type: search-bot
     isbot: true
     bits: null
   engine:
     name: WebKit
     version: null
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; AdsBot-Google-Mobile; +http://www.google.com/mobile/adsbot.html)'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: iPhone
     marketingName: iPhone
-    manufacturer: Apple
-    brand: Apple
+    manufacturer: apple
+    brand: apple
     dualOrientation: true
     simCount: 1
     display:
@@ -60,20 +60,20 @@
     name: iOS
     marketingName: iOS
     version: 9.1.0
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: 'AdsBot Google-Mobile'
     modus: null
     version: null
-    manufacturer: Google
+    manufacturer: google
     type: search-bot
     isbot: true
     bits: null
   engine:
     name: WebKit
     version: 601.1.46
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (iPhone; U; CPU like Mac OS X; en) AppleWebKit/420  (KHTML, like Gecko) Version/3.0 Mobile/1A543a Safari/419.3 (compatible; Googlebot-Mobile/2.1;  http://www.google.com/bot.html)'
@@ -81,8 +81,8 @@
     architecture: null
     deviceName: iPhone
     marketingName: iPhone
-    manufacturer: Apple
-    brand: Apple
+    manufacturer: apple
+    brand: apple
     dualOrientation: true
     simCount: 1
     display:
@@ -98,20 +98,20 @@
     name: 'iPhone OS'
     marketingName: 'iPhone OS'
     version: 3.0.0
-    manufacturer: Apple
+    manufacturer: apple
     bits: null
   client:
     name: 'Google Bot Mobile'
     modus: null
     version: 2.1.0
-    manufacturer: Google
+    manufacturer: google
     type: search-bot
     isbot: true
     bits: null
   engine:
     name: WebKit
     version: 420.0.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     sec-ch-ua-platform: '"Windows"'
@@ -125,8 +125,8 @@
     architecture: x86
     deviceName: iPhone
     marketingName: iPhone
-    manufacturer: Apple
-    brand: Apple
+    manufacturer: apple
+    brand: apple
     dualOrientation: true
     simCount: 1
     display:
@@ -142,17 +142,17 @@
     name: Windows
     marketingName: 'Windows 10'
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'AdsBot Google-Mobile'
     modus: null
     version: null
-    manufacturer: Google
+    manufacturer: google
     type: search-bot
     isbot: true
     bits: null
   engine:
     name: Blink
     version: null
-    manufacturer: Google
+    manufacturer: google

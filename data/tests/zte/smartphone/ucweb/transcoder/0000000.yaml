@@ -5,8 +5,8 @@
     architecture: null
     deviceName: U793
     marketingName: U793
-    manufacturer: ZTE
-    brand: ZTE
+    manufacturer: zte
+    brand: zte
     dualOrientation: true
     simCount: 1
     display:
@@ -28,14 +28,14 @@
     name: 'UC Browser'
     modus: null
     version: null
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 534.31.0
-    manufacturer: Apple
+    manufacturer: apple
 -
   headers:
     user-agent: 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; ATLAS_W) U2/1.0.0 UCBrowser/9.8.0.534 Mobile'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: 'Atlas W'
     marketingName: 'Atlas W'
-    manufacturer: ZTE
-    brand: ZTE
+    manufacturer: zte
+    brand: zte
     dualOrientation: true
     simCount: 1
     display:
@@ -60,20 +60,20 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 9.8.0.534
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: U2
     version: 1.0.0
-    manufacturer: UCWeb
+    manufacturer: ucweb
 -
   headers:
     user-agent: 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; ru; ZTE_Grand_Era) U2/1.0.0 UCBrowser/9.9.0.543 Mobile'
@@ -81,8 +81,8 @@
     architecture: null
     deviceName: U985
     marketingName: 'Grand Era'
-    manufacturer: ZTE
-    brand: ZTE
+    manufacturer: zte
+    brand: zte
     dualOrientation: true
     simCount: 1
     display:
@@ -98,20 +98,20 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 9.9.0.543
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: U2
     version: 1.0.0
-    manufacturer: UCWeb
+    manufacturer: ucweb
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 11; en-US; ZTE A7030RU Build/RP1A.201005.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.4.0.1306 Mobile Safari/537.36'
@@ -119,8 +119,8 @@
     architecture: null
     deviceName: A7030
     marketingName: 'Blade A71 2021 LTE (LATAM)'
-    manufacturer: ZTE
-    brand: ZTE
+    manufacturer: zte
+    brand: zte
     dualOrientation: true
     simCount: 1
     display:
@@ -136,20 +136,20 @@
     name: Android
     marketingName: Android
     version: 11.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 13.4.0.1306
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 78.0.3904.108
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 9; ZTE A7000 Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.8.8.1068 Mobile Safari/537.36'
@@ -157,8 +157,8 @@
     architecture: null
     deviceName: A7000
     marketingName: 'Blade A7 (2019)'
-    manufacturer: ZTE
-    brand: ZTE
+    manufacturer: zte
+    brand: zte
     dualOrientation: true
     simCount: 2
     display:
@@ -174,20 +174,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 12.8.8.1068
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 57.0.2987.108
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: com.UCMobile.intl
@@ -196,8 +196,8 @@
     architecture: null
     deviceName: 'Blade V10 Vita'
     marketingName: 'Blade V10 Vita'
-    manufacturer: ZTE
-    brand: ZTE
+    manufacturer: zte
+    brand: zte
     dualOrientation: true
     simCount: 2
     display:
@@ -213,20 +213,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: null
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 96.0.4664.45
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 9; en-US; ZTE Blade V1000 Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.4.5.1308 Mobile Safari/537.36'
@@ -234,8 +234,8 @@
     architecture: null
     deviceName: 'Blade V1000'
     marketingName: 'Blade V1000'
-    manufacturer: ZTE
-    brand: ZTE
+    manufacturer: zte
+    brand: zte
     dualOrientation: true
     simCount: 1
     display:
@@ -251,20 +251,20 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 13.4.5.1308
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 78.0.3904.108
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 14; en-US; Z2450 Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 UCBrowser/13.7.8.1322 Mobile Safari/537.36'
@@ -272,8 +272,8 @@
     architecture: null
     deviceName: Z2450
     marketingName: 'Blade A55'
-    manufacturer: ZTE
-    brand: ZTE
+    manufacturer: zte
+    brand: zte
     dualOrientation: true
     simCount: 1
     display:
@@ -289,20 +289,20 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 13.7.8.1322
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 100.0.4896.58
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 13; en-US; Z2357N Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 UCBrowser/13.7.8.1322 Mobile Safari/537.36'
@@ -310,8 +310,8 @@
     architecture: null
     deviceName: Z2357N
     marketingName: 'Blade A75 5G'
-    manufacturer: ZTE
-    brand: ZTE
+    manufacturer: zte
+    brand: zte
     dualOrientation: true
     simCount: 2
     display:
@@ -327,20 +327,20 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 13.7.8.1322
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 100.0.4896.58
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 13; en-US; Z2353 Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 UCBrowser/13.7.8.1322 Mobile Safari/537.36'
@@ -348,8 +348,8 @@
     architecture: null
     deviceName: Z2353
     marketingName: Music
-    manufacturer: ZTE
-    brand: Nubia
+    manufacturer: zte
+    brand: nubia
     dualOrientation: true
     simCount: 2
     display:
@@ -365,20 +365,20 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 13.7.8.1322
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 100.0.4896.58
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; en-US; Z2577 Build/BP2A.250605.031.A3) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.9.1395 Mobile Safari/537.36'
@@ -386,8 +386,8 @@
     architecture: null
     deviceName: Z2577
     marketingName: 'Blade V80 Max'
-    manufacturer: ZTE
-    brand: ZTE
+    manufacturer: zte
+    brand: zte
     dualOrientation: true
     simCount: 2
     display:
@@ -403,20 +403,20 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 15.1.9.1395
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 123.0.6312.80
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 15; en-US; Z2474 Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 UCBrowser/12.3.0.1290 Mobile Safari/537.36'
@@ -424,8 +424,8 @@
     architecture: null
     deviceName: Z2474
     marketingName: 'Blade A76 4G'
-    manufacturer: ZTE
-    brand: ZTE
+    manufacturer: zte
+    brand: zte
     dualOrientation: true
     simCount: 2
     display:
@@ -441,20 +441,20 @@
     name: Android
     marketingName: Android
     version: 15.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 12.3.0.1290
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 149.0.7827.91
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 15; en-US; Z2473 Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.9.1395 Mobile Safari/537.36'
@@ -462,8 +462,8 @@
     architecture: null
     deviceName: Z2473
     marketingName: 'Blade A56'
-    manufacturer: ZTE
-    brand: ZTE
+    manufacturer: zte
+    brand: zte
     dualOrientation: true
     simCount: 2
     display:
@@ -479,20 +479,20 @@
     name: Android
     marketingName: Android
     version: 15.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 15.1.9.1395
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 123.0.6312.80
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 15; en-US; Z2469N Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.9.1395 Mobile Safari/537.36'
@@ -500,8 +500,8 @@
     architecture: null
     deviceName: Z2469N
     marketingName: 'Blade A76 5G'
-    manufacturer: ZTE
-    brand: ZTE
+    manufacturer: zte
+    brand: zte
     dualOrientation: true
     simCount: 2
     display:
@@ -517,20 +517,20 @@
     name: Android
     marketingName: Android
     version: 15.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 15.1.9.1395
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 123.0.6312.80
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 15; en-US; Z2468N Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.8.1394 Mobile Safari/537.36'
@@ -538,8 +538,8 @@
     architecture: null
     deviceName: Z2468N
     marketingName: 'nubia Air'
-    manufacturer: ZTE
-    brand: ZTE
+    manufacturer: zte
+    brand: zte
     dualOrientation: true
     simCount: 2
     display:
@@ -555,20 +555,20 @@
     name: Android
     marketingName: Android
     version: 15.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 15.1.8.1394
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 123.0.6312.80
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 15; en-US; Z2459 Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.9.1395 Mobile Safari/537.36'
@@ -576,8 +576,8 @@
     architecture: null
     deviceName: Z2459
     marketingName: 'Blade V70'
-    manufacturer: ZTE
-    brand: ZTE
+    manufacturer: zte
+    brand: zte
     dualOrientation: true
     simCount: 2
     display:
@@ -593,20 +593,20 @@
     name: Android
     marketingName: Android
     version: 15.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 15.1.9.1395
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 123.0.6312.80
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 14; es-LA; Z2460 Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.9.1395 Mobile Safari/537.36'
@@ -614,8 +614,8 @@
     architecture: null
     deviceName: Z2460
     marketingName: 'Music 2'
-    manufacturer: ZTE
-    brand: Nubia
+    manufacturer: zte
+    brand: nubia
     dualOrientation: true
     simCount: 2
     display:
@@ -631,17 +631,17 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'UC Browser'
     modus: null
     version: 15.1.9.1395
-    manufacturer: UCWeb
+    manufacturer: ucweb
     type: transcoder
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 123.0.6312.80
-    manufacturer: Google
+    manufacturer: google

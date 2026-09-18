@@ -6,8 +6,8 @@
     architecture: null
     deviceName: TA-1021
     marketingName: '6'
-    manufacturer: 'HMD Global'
-    brand: Nokia
+    manufacturer: hmd-global
+    brand: nokia
     dualOrientation: true
     simCount: 1
     display:
@@ -23,17 +23,17 @@
     name: Android
     marketingName: Android
     version: 9.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Via Browser'
     modus: null
     version: null
-    manufacturer: 'Tu Yafeng'
+    manufacturer: tu-yafeng
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 99.0.4844.58
-    manufacturer: Google
+    manufacturer: google

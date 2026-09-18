@@ -5,8 +5,8 @@
     architecture: null
     deviceName: HPPL63A
     marketingName: Panca
-    manufacturer: 'Hot Pepper'
-    brand: 'Hot Pepper'
+    manufacturer: hot-pepper
+    brand: hot-pepper
     dualOrientation: true
     simCount: 1
     display:
@@ -22,17 +22,17 @@
     name: Android
     marketingName: Android
     version: 13.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Yandex Browser'
     modus: null
     version: 24.7.3.124.00
-    manufacturer: Yandex
+    manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 126.0.6478.124
-    manufacturer: Google
+    manufacturer: google

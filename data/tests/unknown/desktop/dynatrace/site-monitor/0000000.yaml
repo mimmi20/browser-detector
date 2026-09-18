@@ -22,20 +22,20 @@
     name: Ubuntu
     marketingName: Ubuntu
     version: null
-    manufacturer: Canonical
+    manufacturer: canonical
     bits: null
   client:
     name: RuxitSynthetic
     modus: null
     version: 1.0.0
-    manufacturer: Dynatrace
+    manufacturer: dynatrace
     type: site-monitor
     isbot: true
     bits: null
   engine:
     name: Blink
     version: 80.0.3987.87
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.5672.126 Safari/537.36 RuxitSynthetic/1.0 v104032285451 t1437235942278817309 ath5a4d3a2e altpub cvcv=2 smf=0'
@@ -60,17 +60,17 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: RuxitSynthetic
     modus: null
     version: 1.0.0
-    manufacturer: Dynatrace
+    manufacturer: dynatrace
     type: site-monitor
     isbot: true
     bits: null
   engine:
     name: Blink
     version: 113.0.5672.126
-    manufacturer: Google
+    manufacturer: google

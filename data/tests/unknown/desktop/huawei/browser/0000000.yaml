@@ -29,20 +29,20 @@
     name: Windows
     marketingName: 'Windows 10'
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Huawei Browser'
     modus: null
     version: null
-    manufacturer: Huawei
+    manufacturer: huawei
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 92.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (PC; OpenHarmony 5.0; HarmonyOS 5.0) AppleWebKit/537.36 (KHTML,like Gecko) Chrome/114.0.0.0 Safari/537.36 ArkWeb/4.1.6.1 Browser/harmony360Browser/1.0.0'
@@ -67,20 +67,20 @@
     name: 'HarmonyOS NEXT'
     marketingName: 'HarmonyOS NEXT'
     version: 5.0.0
-    manufacturer: Huawei
+    manufacturer: huawei
     bits: null
   client:
     name: 'Harmony 360 Browser'
     modus: null
     version: 1.0.0
-    manufacturer: Huawei
+    manufacturer: huawei
     type: browser
     isbot: false
     bits: null
   engine:
     name: ArkWeb
     version: 4.1.6.1
-    manufacturer: Huawei
+    manufacturer: huawei
 -
   headers:
     user-agent: 'Mozilla/5.0 (PC; OpenHarmony 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36  ArkWeb/6.0.0.130 HuaweiBrowser/6.1.1.303'
@@ -105,20 +105,20 @@
     name: OpenHarmony
     marketingName: OpenHarmony
     version: 6.0.0
-    manufacturer: 'OpenAtom Foundation'
+    manufacturer: openatomFoundation
     bits: null
   client:
     name: 'Huawei Browser'
     modus: null
     version: 6.1.1.303
-    manufacturer: Huawei
+    manufacturer: huawei
     type: browser
     isbot: false
     bits: null
   engine:
     name: ArkWeb
     version: 6.0.0.130
-    manufacturer: Huawei
+    manufacturer: huawei
 -
   headers:
     user-agent: 'Mozilla/5.0 (PC; OpenHarmony 6.1; Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 ArkWeb/6.1.0.100 HuaweiBrowser/6.1.3.321'
@@ -143,17 +143,17 @@
     name: Windows
     marketingName: 'Windows 10'
     version: 10.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'Huawei Browser'
     modus: null
     version: 6.1.3.321
-    manufacturer: Huawei
+    manufacturer: huawei
     type: browser
     isbot: false
     bits: null
   engine:
     name: ArkWeb
     version: 6.1.0.100
-    manufacturer: Huawei
+    manufacturer: huawei

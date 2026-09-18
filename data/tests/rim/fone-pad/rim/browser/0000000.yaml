@@ -5,8 +5,8 @@
     architecture: null
     deviceName: 'BlackBerry Playbook'
     marketingName: 'BlackBerry Playbook'
-    manufacturer: RIM
-    brand: RIM
+    manufacturer: rim
+    brand: rim
     dualOrientation: true
     simCount: 1
     display:
@@ -22,17 +22,17 @@
     name: 'BlackBerry Tablet OS'
     marketingName: 'BlackBerry Tablet OS'
     version: 2.1.0
-    manufacturer: RIM
+    manufacturer: rim
     bits: null
   client:
     name: 'Blackberry Playbook Browser'
     modus: null
     version: 7.2.1.0
-    manufacturer: RIM
+    manufacturer: rim
     type: browser
     isbot: false
     bits: null
   engine:
     name: WebKit
     version: 536.2.0
-    manufacturer: Apple
+    manufacturer: apple

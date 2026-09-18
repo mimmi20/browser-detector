@@ -5,8 +5,8 @@
     architecture: null
     deviceName: 'Pixel Tablet'
     marketingName: 'Pixel Tablet'
-    manufacturer: Google
-    brand: Google
+    manufacturer: google
+    brand: google
     dualOrientation: true
     simCount: 0
     display:
@@ -22,20 +22,20 @@
     name: Android
     marketingName: Android
     version: 14.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Chrome WebView'
     modus: null
     version: 119.0.6045.193
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 119.0.6045.193
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; Pixel Tablet 2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.163 Safari/537.36'
@@ -43,8 +43,8 @@
     architecture: null
     deviceName: 'Pixel Tablet 2'
     marketingName: 'Pixel Tablet 2'
-    manufacturer: Google
-    brand: Google
+    manufacturer: google
+    brand: google
     dualOrientation: true
     simCount: 0
     display:
@@ -60,20 +60,20 @@
     name: Android
     marketingName: Android
     version: 15.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 119.0.6045.163
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 119.0.6045.163
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; kukui) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Safari/537.36'
@@ -81,8 +81,8 @@
     architecture: null
     deviceName: 'Kukui Chromebook'
     marketingName: 'Kukui Chromebook'
-    manufacturer: Google
-    brand: Google
+    manufacturer: google
+    brand: google
     dualOrientation: true
     simCount: 0
     display:
@@ -98,17 +98,17 @@
     name: ChromeOS
     marketingName: ChromeOS
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: Chrome
     modus: null
     version: 96.0.4664.104
-    manufacturer: Google
+    manufacturer: google
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 96.0.4664.104
-    manufacturer: Google
+    manufacturer: google

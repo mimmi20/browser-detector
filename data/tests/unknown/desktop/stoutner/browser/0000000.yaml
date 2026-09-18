@@ -23,20 +23,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'Privacy Browser'
     modus: null
     version: null
-    manufacturer: Stoutner
+    manufacturer: stoutner
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 106.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     sec-ch-ua-model: '""'
@@ -71,17 +71,17 @@
     name: Android
     marketingName: Android
     version: null
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Privacy Browser'
     modus: null
     version: null
-    manufacturer: Stoutner
+    manufacturer: stoutner
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 138.0.0
-    manufacturer: Google
+    manufacturer: google

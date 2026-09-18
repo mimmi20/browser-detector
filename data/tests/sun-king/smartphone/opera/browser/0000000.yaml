@@ -5,8 +5,8 @@
     architecture: null
     deviceName: 'EZ 1'
     marketingName: 'EZ 1'
-    manufacturer: 'Sun King'
-    brand: 'Sun King'
+    manufacturer: sun-king
+    brand: sun-king
     dualOrientation: true
     simCount: 1
     display:
@@ -22,17 +22,17 @@
     name: Android
     marketingName: Android
     version: 15.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: 'Opera Mobile'
     modus: null
     version: 99.2.2254.731
-    manufacturer: Opera
+    manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 148.0.7778.215
-    manufacturer: Google
+    manufacturer: google

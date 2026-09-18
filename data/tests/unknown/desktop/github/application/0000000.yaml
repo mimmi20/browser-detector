@@ -22,20 +22,20 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: 'Linux Foundation'
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: Atom
     modus: null
     version: 1.0.19
-    manufacturer: GitHub
+    manufacturer: github
     type: application
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 43.0.2357.65
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Atom/5.2.0.14 Safari/537.36'
@@ -60,20 +60,20 @@
     name: Windows
     marketingName: 'Windows 8.1'
     version: 8.1.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: Atom
     modus: null
     version: 5.2.0.14
-    manufacturer: GitHub
+    manufacturer: github
     type: application
     isbot: false
     bits: null
   engine:
     name: Blink
     version: 76.0.3809.132
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     user-agent: 'git/2.45.1.windows.1 (GitHub Desktop/3.4.6; win32 x64)'
@@ -98,13 +98,13 @@
     name: Windows
     marketingName: 'Windows 95'
     version: 95.0.0
-    manufacturer: Microsoft
+    manufacturer: microsoft
     bits: null
   client:
     name: 'GitHub Desktop'
     modus: null
     version: 3.4.6
-    manufacturer: GitHub
+    manufacturer: github
     type: application
     isbot: false
     bits: null

@@ -1,13 +1,52 @@
 -
   headers:
+    x-requested-with: com.marslab.browserz
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-A127F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.166 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SM-A127F
+    marketingName: 'Galaxy A12 (India)'
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 1600
+      height: 720
+      touch: true
+      size: 6.5
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 115.0.5790.166
+    manufacturer: google
+-
+  headers:
     x-requested-with: freedom.theanarch.org.freedom
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-A525F Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.5005.125 Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: SM-A525F
     marketingName: 'Galaxy A52 4G'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -23,7 +62,7 @@
     name: Android
     marketingName: Android
     version: 11.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -36,7 +75,7 @@
   engine:
     name: Blink
     version: 102.0.5005.125
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: com.yandex.browser.alpha
@@ -45,8 +84,8 @@
     architecture: null
     deviceName: SM-A715F
     marketingName: 'Galaxy A71 4G'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -62,7 +101,7 @@
     name: Android
     marketingName: Android
     version: 11.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -75,7 +114,7 @@
   engine:
     name: Blink
     version: 100.0.4896.88
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: com.sec.android.app.sbrowser.beta
@@ -84,8 +123,8 @@
     architecture: null
     deviceName: SM-S506DL
     marketingName: 'Galaxy A50'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -101,7 +140,7 @@
     name: Android
     marketingName: Android
     version: 11.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -114,7 +153,7 @@
   engine:
     name: Blink
     version: 101.0.4951.61
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: com.airwatch.browser
@@ -123,8 +162,8 @@
     architecture: null
     deviceName: SM-A505FN
     marketingName: 'Galaxy A50'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -140,7 +179,7 @@
     name: Android
     marketingName: Android
     version: 11.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -153,7 +192,7 @@
   engine:
     name: Blink
     version: 120.0.6099.230
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: ginxdroid.gdm
@@ -162,8 +201,8 @@
     architecture: null
     deviceName: SM-G977B
     marketingName: 'Galaxy S10 5G (International)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -179,7 +218,7 @@
     name: Android
     marketingName: Android
     version: 11.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -192,7 +231,7 @@
   engine:
     name: Blink
     version: 118.0.0.0
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: com.orbitum.browser
@@ -201,8 +240,8 @@
     architecture: null
     deviceName: SM-A207M
     marketingName: 'Galaxy A20s (LATAM, Brazil)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -218,7 +257,7 @@
     name: Android
     marketingName: Android
     version: 11.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -231,7 +270,7 @@
   engine:
     name: Blink
     version: 96.0.4664.45
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: com.xsafe.browser
@@ -240,8 +279,8 @@
     architecture: null
     deviceName: SM-A205G
     marketingName: 'Galaxy A20 (LATAM/Brazil)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -257,7 +296,7 @@
     name: Android
     marketingName: Android
     version: 11.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -270,7 +309,7 @@
   engine:
     name: Blink
     version: 141.0.7390.122
-    manufacturer: Google
+    manufacturer: google
 -
   headers:
     x-requested-with: com.kwah.privatebrowser
@@ -279,8 +318,8 @@
     architecture: null
     deviceName: SM-G965U
     marketingName: 'Galaxy S9+ (USA)'
-    manufacturer: Samsung
-    brand: Samsung
+    manufacturer: samsung
+    brand: samsung
     dualOrientation: true
     simCount: 1
     display:
@@ -296,7 +335,7 @@
     name: Android
     marketingName: Android
     version: 10.0.0
-    manufacturer: Google
+    manufacturer: google
     bits: null
   client:
     name: null
@@ -309,4 +348,4 @@
   engine:
     name: Blink
     version: 99.0.4844.73
-    manufacturer: Google
+    manufacturer: google
