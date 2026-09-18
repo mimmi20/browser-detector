@@ -182,6 +182,8 @@ final class DesktopTest extends TestCase
             ['Mozilla/5.0 (Windows IoT 10.0; Android 6.0.1; WebView/3.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Mobile Safari/537.36 Edge/17.17083'],
             ['Mozilla/4.0 (compatible; MSIE 5.01; Windows 98; Linux 3.3.8-3.3) [Netgem; 7.7.01-51; i-Player; netbox; sezmi_totalgem]'],
             ['Mozilla/5.0 (Linux; U; Intel Mac OSX 10_6_3; 3.2; de-de; Xoom Build/HTJ85B) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13'],
+            ['Apple AppleTV6,2 tvOS/17.1.0 Lifetime-tvOS/5.14.0 CFNetwork/1485'],
+            ['H443NM7F8H.CBSSportsApp/1.0 iOS/9.0 model/AppleTV5,3 build/13T393'],
         ];
     }
 }

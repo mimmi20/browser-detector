@@ -992,3 +992,31 @@
     size: 4.95
   type: smartphone
   platform: android
+'fly f40':
+  deviceName: 'F40'
+  marketingName: 'F40'
+  manufacturer: fly
+  brand: fly
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: 480
+    height: 320
+    touch: true
+    size: 3.78
+  type: smartphone
+  platform: android
+'fly f40+':
+  deviceName: 'F40+'
+  marketingName: 'F40+'
+  manufacturer: fly
+  brand: fly
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: 800
+    height: 480
+    touch: true
+    size: 4
+  type: smartphone
+  platform: android

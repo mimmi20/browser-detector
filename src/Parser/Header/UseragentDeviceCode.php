@@ -212,7 +212,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             $filtered,
         );
 
-//        if ($value === '0HuaweiU5705/Huawei/1.0/B100 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3') {
+//        if ($value === 'Mozilla/5.0 (Linux; arm_64; Android 16; SC-55F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.51 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36') {
 //            var_dump($normalizedValue, $filtered, $finds);
 //        }
 

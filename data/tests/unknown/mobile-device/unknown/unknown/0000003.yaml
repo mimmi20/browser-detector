@@ -2432,6 +2432,44 @@
     manufacturer: unknown
 -
   headers:
+    user-agent: samsung
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
     user-agent: 'ReqwirelessWeb/3.0 C55'
   device:
     architecture: null
@@ -3747,44 +3785,6 @@
     marketingName: 'Windows CE'
     version: null
     manufacturer: microsoft
-    bits: null
-  client:
-    name: null
-    modus: null
-    version: null
-    manufacturer: unknown
-    type: unknown
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: smartphoneApple
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
     bits: null
   client:
     name: null

@@ -3,12 +3,82 @@
   marketingName: U31
   manufacturer: sansui
   brand: sansui
-  dualOrientation: null
-  simCount: null
+  dualOrientation: true
+  simCount: 1
   display:
     width: 480
     height: 320
     touch: true
     size: 3.5
+  type: smartphone
+  platform: android
+'sansui sa41':
+  deviceName: SA41
+  marketingName: SA41
+  manufacturer: sansui
+  brand: sansui
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: 800
+    height: 480
+    touch: true
+    size: 4
+  type: smartphone
+  platform: android
+'sansui u30':
+  deviceName: U30
+  marketingName: U30
+  manufacturer: sansui
+  brand: sansui
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: 480
+    height: 320
+    touch: true
+    size: 3.5
+  type: smartphone
+  platform: android
+'sansui u32':
+  deviceName: U32
+  marketingName: U32
+  manufacturer: sansui
+  brand: sansui
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: 320
+    height: 240
+    touch: true
+    size: 3.2
+  type: smartphone
+  platform: android
+'sansui switch':
+  deviceName: Switch
+  marketingName: Switch
+  manufacturer: sansui
+  brand: sansui
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: 1280
+    height: 720
+    touch: true
+    size: 5.5
+  type: smartphone
+  platform: android
+'sansui sa40':
+  deviceName: SA40
+  marketingName: SA40
+  manufacturer: sansui
+  brand: sansui
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: 800
+    height: 480
+    touch: true
+    size: 4
   type: smartphone
   platform: android

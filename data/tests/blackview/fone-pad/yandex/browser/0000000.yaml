@@ -874,6 +874,44 @@
     manufacturer: google
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; ZENO 1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.290 YaBrowser/26.4.0.290.01 Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'Zeno 1'
+    marketingName: 'Zeno 1'
+    manufacturer: blackview
+    brand: blackview
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 1280
+      height: 800
+      touch: true
+      size: 8
+    type: fone-pad
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser'
+    modus: null
+    version: 26.4.0.290.01
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 146.0.7680.290
+    manufacturer: google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; ZENO 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.01 Safari/537.36'
   device:
     architecture: null

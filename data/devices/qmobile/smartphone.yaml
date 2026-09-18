@@ -1440,3 +1440,31 @@
     size: 6.6
   type: smartphone
   platform: android
+'qmobile x2 music':
+  deviceName: 'X2 Music'
+  marketingName: 'X2 Music'
+  manufacturer: qmobile
+  brand: qmobile
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 480
+    height: 320
+    touch: true
+    size: 3.5
+  type: smartphone
+  platform: android
+'qmobile 4g power':
+  deviceName: '4G Power'
+  marketingName: '4G Power'
+  manufacturer: qmobile
+  brand: qmobile
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: null
+    height: null
+    touch: true
+    size: 2.8
+  type: smartphone
+  platform: android

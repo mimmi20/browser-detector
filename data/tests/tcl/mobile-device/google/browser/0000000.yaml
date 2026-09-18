@@ -1,5 +1,43 @@
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 2.3.5; en-us; Coolpad 8056 Build/MocorDroid2.3.5) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
+  device:
+    architecture: null
+    deviceName: 'general Alcatel device'
+    marketingName: 'general Alcatel device'
+    manufacturer: tcl
+    brand: alcatel
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: MocorDroid
+    marketingName: MocorDroid
+    version: 2.3.5
+    manufacturer: unknown
+    bits: null
+  client:
+    name: 'Android Webkit'
+    modus: null
+    version: 4.0.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 533.1.0
+    manufacturer: apple
+-
+  headers:
     user-agent: 'ERO247 Android Application (13, ero247 v2.1) - TCT Vodafone Smart II TCT - FFFFFFFF-DA38-1081-17A9-496716A69E76'
   device:
     architecture: null

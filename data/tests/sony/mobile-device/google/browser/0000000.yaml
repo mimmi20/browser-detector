@@ -38,6 +38,120 @@
     manufacturer: apple
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; I9500 Build/MocorDroid4.2.2) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
+  device:
+    architecture: null
+    deviceName: 'general Sony device'
+    marketingName: 'general Sony device'
+    manufacturer: sony
+    brand: sony
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: MocorDroid
+    marketingName: MocorDroid
+    version: 4.2.2
+    manufacturer: unknown
+    bits: null
+  client:
+    name: 'Android Webkit'
+    modus: null
+    version: 4.0.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 533.1.0
+    manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android android 4.0.3; de-de; C3100 Build/MocorDroid2.3.5) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
+  device:
+    architecture: null
+    deviceName: 'general Sony device'
+    marketingName: 'general Sony device'
+    manufacturer: sony
+    brand: sony
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: MocorDroid
+    marketingName: MocorDroid
+    version: 2.3.5
+    manufacturer: unknown
+    bits: null
+  client:
+    name: 'Android Webkit'
+    modus: null
+    version: 4.0.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 533.1.0
+    manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 4.0.0; en-us; I9500 Build/MocorDroid2.3.5) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
+  device:
+    architecture: null
+    deviceName: 'general Sony device'
+    marketingName: 'general Sony device'
+    manufacturer: sony
+    brand: sony
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: MocorDroid
+    marketingName: MocorDroid
+    version: 2.3.5
+    manufacturer: unknown
+    bits: null
+  client:
+    name: 'Android Webkit'
+    modus: null
+    version: 4.0.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 533.1.0
+    manufacturer: apple
+-
+  headers:
     user-agent: 'Replaio 1.9.6 (Linux; Android 9; G8141 Build/47.2.A.4.41)'
   device:
     architecture: null

@@ -4618,3 +4618,31 @@
     size: 7.6
   type: phablet
   platform: android
+'samsung sm-f751b':
+  deviceName: SM-F751B
+  marketingName: 'Galaxy Z Flip 7 (International)'
+  manufacturer: samsung
+  brand: samsung
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 2520
+    height: 1080
+    touch: true
+    size: 6.9
+  type: phablet
+  platform: android
+'samsung sc-55f':
+  deviceName: SC-55F
+  marketingName: 'Galaxy Z Flip 7 (Japan)'
+  manufacturer: samsung
+  brand: samsung
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 2520
+    height: 1080
+    touch: true
+    size: 6.9
+  type: phablet
+  platform: android

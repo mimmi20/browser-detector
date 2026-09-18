@@ -468,6 +468,7 @@ final readonly class Headers
                         case 'mistral-ai-user':
                         case 'meta-webindexer':
                         case 'cohere-ai':
+                        case 'facebook app':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 
