@@ -15,11 +15,11 @@ namespace BrowserDetectorTest\Parser;
 
 use BrowserDetector\Parser\DeviceParser;
 use BrowserDetector\Parser\DeviceParserFactory;
+use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\LoggerInterface;
 use UaParser\DeviceParserInterface;
 
 #[CoversClass(className: DeviceParserFactory::class)]
@@ -31,30 +31,12 @@ final class DeviceParserFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
+        $ruleFileParser = $this->createMock(RulefileParserInterface::class);
+        $ruleFileParser
             ->expects(self::never())
-            ->method('info');
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
+            ->method('parseFile');
 
-        $deviceParserFactory = new DeviceParserFactory($logger);
+        $deviceParserFactory = new DeviceParserFactory(rulefileParser: $ruleFileParser);
 
         $deviceParser = $deviceParserFactory();
 

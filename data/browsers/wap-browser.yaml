@@ -1,0 +1,26 @@
+'dorado wap browser':
+  name: 'Dorado WAP Browser'
+  manufacturer: dorado
+  type: wap-browser
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Browser\/Dorado
+      - 'Dorado WAP\-Browser'
+  engine: unknown
+'maui wap browser':
+  name: 'MAUI Wap Browser'
+  manufacturer: unknown
+  type: wap-browser
+  version:
+    class: null
+    search: null
+  engine: unknown
+'wap browser':
+  name: 'WAP Browser'
+  manufacturer: unknown
+  type: wap-browser
+  version:
+    class: null
+    search: null
+  engine: null

@@ -51,11 +51,11 @@ final class EngineLoader implements EngineLoaderInterface
         $version      = $this->getVersion((object) $engine->getVersion(), $useragent);
         $manufacturer = new Company(type: 'unknown', name: null, brandname: null);
 
-        if ($engine->getManufacturer()->getBrandname() !== null) {
+        if ($engine->getManufacturer() !== null) {
             try {
-                $manufacturer = $this->companyLoader->load($engine->getManufacturer()->getBrandname());
+                $manufacturer = $this->companyLoader->load($engine->getManufacturer());
             } catch (NotFoundException $e) {
-                $this->logger->info($e);
+                $this->logger->error($e);
             }
         }
 

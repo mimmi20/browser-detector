@@ -1,0 +1,5 @@
+rules:
+  '/jolla c/i': 'jolla jolla c'
+  '/jolla; sailfish; tablet/i': 'jolla sailfish tablet'
+  /jolla/i: 'jolla sailfish'
+generic: 'general jolla device'

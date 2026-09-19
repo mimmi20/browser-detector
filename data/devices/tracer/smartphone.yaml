@@ -1,0 +1,28 @@
+'tracer gs1':
+  deviceName: GS1
+  marketingName: Oxygen
+  manufacturer: tracer
+  brand: tracer
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: 800
+    height: 480
+    touch: true
+    size: 5
+  type: smartphone
+  platform: android
+'tracer gs4':
+  deviceName: GS4
+  marketingName: Oxygen
+  manufacturer: tracer
+  brand: tracer
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: 854
+    height: 480
+    touch: true
+    size: 4.5
+  type: smartphone
+  platform: android

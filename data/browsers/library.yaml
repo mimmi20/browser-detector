@@ -1,0 +1,1361 @@
+apache-httpclient:
+  name: 'Apache HTTP Client'
+  manufacturer: apache
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Apache\-HttpClient
+  engine: unknown
+dart:
+  name: Dart
+  manufacturer: google
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Dart
+  engine: unknown
+'go httpclient':
+  name: 'GO HttpClient'
+  manufacturer: google
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Go\-http\-client
+      - Go
+  engine: unknown
+'guzzle http client':
+  name: 'Guzzle Http Client'
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - GuzzleHttp
+      - Guzzle
+  engine: unknown
+java:
+  name: 'Java Standard Library'
+  manufacturer: oracle
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Java
+  engine: unknown
+python-urllib:
+  name: Python-urllib
+  manufacturer: python-software-foundation
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - python\-urllib3
+      - Python\-urllib
+  engine: unknown
+python:
+  name: Python
+  manufacturer: python-software-foundation
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Python
+      - python\-requests
+  engine: unknown
+curl:
+  name: cURL
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - curl
+  engine: unknown
+axios:
+  name: Axios
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Axios
+      - axios
+  engine: unknown
+okhttp:
+  name: OkHttp
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - okhttp
+  engine: unknown
+python-requests:
+  name: 'Python Requests'
+  manufacturer: python-software-foundation
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - python\-requests
+  engine: unknown
+pycurl:
+  name: PycURL
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - PycURL
+  engine: unknown
+'curl php':
+  name: 'cURL PHP'
+  manufacturer: team-haxx
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Curl\/PHP
+  engine: unknown
+'pear http_request':
+  name: 'PEAR HTTP_Request'
+  manufacturer: php-group
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - HTTP_Request
+  engine: unknown
+'pear http_request2':
+  name: HTTP_Request2
+  manufacturer: php-group
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - HTTP_Request2
+  engine: unknown
+'pecl http client':
+  name: 'PECL::HTTP'
+  manufacturer: php-group
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'PECL::HTTP'
+  engine: unknown
+php:
+  name: PHP
+  manufacturer: php-group
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - PHP
+  engine: unknown
+php-soap:
+  name: PHP-SOAP
+  manufacturer: php-group
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - PHP\-SOAP
+  engine: unknown
+got:
+  name: got
+  manufacturer: 'sindre sorhus'
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - got
+  engine: unknown
+winhttp:
+  name: 'Windows HTTP'
+  manufacturer: microsoft
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - WinHttpRequest
+      - WinHttpRequest\.
+  engine: unknown
+node-fetch:
+  name: 'Node Fetch'
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - node\-fetch
+  engine: unknown
+mechanize:
+  name: Mechanize
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Mechanize
+  engine: webkit
+jsdom:
+  name: jsdom
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - jsdom
+  engine: null
+aiohttp:
+  name: aiohttp
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - aiohttp
+  engine: null
+libwww:
+  name: libwww
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - libwww
+  engine: unknown
+perl:
+  name: Perl
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - libwww\-perl
+      - perlclient
+  engine: unknown
+lua-resty-http:
+  name: 'LUA OpenResty NGINX'
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - lua-resty-http
+  engine: unknown
+python-httpx:
+  name: HTTPX
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - python-httpx
+  engine: unknown
+wget:
+  name: wget
+  manufacturer: free-software-foundation
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - wget2
+      - Wget
+      - wget
+  engine: unknown
+aria2:
+  name: Aria2
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - aria2
+  engine: unknown
+unirest-java:
+  name: 'unirest for java'
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - unirest-java
+  engine: unknown
+fasthttp:
+  name: fasthttp
+  manufacturer: unknown
+  type: library
+  version:
+    factory: null
+    search: null
+  engine: unknown
+postman-runtime:
+  name: 'Postman Desktop'
+  manufacturer: postman
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - PostmanRuntime
+  engine: unknown
+alamofire:
+  name: Alamofire
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Alamofire
+  engine: unknown
+undici:
+  name: undici
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - undici
+  engine: unknown
+safari-view-service:
+  name: 'Safari View Service'
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SafariViewService
+  engine: unknown
+matomo-tracker:
+  name: MatomoTracker
+  manufacturer: matomo
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - MatomoTrackerSDK
+      - Matomo
+  engine: unknown
+phantomjs:
+  name: PhantomJS
+  manufacturer: phantom-js
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - PhantomJS
+  engine: webkit
+slimerjs:
+  name: SlimerJS
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SlimerJS
+  engine: gecko
+php-curl-class:
+  name: 'PHP cURL Class'
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - PHP\-Curl\-Class
+  engine: unknown
+emacs:
+  name: Emacs
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Emacs\/
+  engine: unknown
+bun:
+  name: Bun
+  manufacturer: anthropic
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Bun\/
+  engine: unknown
+http-rb:
+  name: http.rb
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - http\.rb
+  engine: unknown
+ruby:
+  name: ruby
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ruby
+  engine: unknown
+ffuf:
+  name: FFUF
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Fuzz Faster U Fool v'
+      - 'Fuzz Faster U Fool'
+  engine: unknown
+r-curl:
+  name: r-curl
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - r-curl
+  engine: unknown
+faraday:
+  name: Faraday
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Faraday v'
+      - Faraday
+  engine: unknown
+www-mechanize:
+  name: WWW-Mechanize
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Mechanize
+  engine: unknown
+trafilatura:
+  name: trafilatura
+  manufacturer: adrien-barbaresi
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - trafilatura
+  engine: unknown
+resty:
+  name: Resty
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - go-resty
+  engine: unknown
+rest-client-for-ruby:
+  name: 'REST Client for Ruby'
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - rest-client
+  engine: unknown
+symfony-http-client:
+  name: 'Symfony HttpClient'
+  manufacturer: unknown
+  type: library
+  version:
+    factory: null
+    search: null
+  engine: unknown
+reactor-netty:
+  name: ReactorNetty
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ReactorNetty
+  engine: unknown
+go-network:
+  name: go-network
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - go-network-v
+      - go-network
+  engine: unknown
+hackney:
+  name: hackney
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - hackney
+  engine: unknown
+deno:
+  name: Deno
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Deno
+  engine: unknown
+msray-plus:
+  name: Msray-Plus
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - msray-plus
+  engine: unknown
+cpp-httplib:
+  name: cpp-httplib
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - cpp-httplib
+  engine: unknown
+sqlmap:
+  name: sqlmap
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - sqlmap
+  engine: null
+'jakarta commons httpclient':
+  name: 'Jakarta Commons HttpClient'
+  manufacturer: apache
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Jakarta Commons\-HttpClient'
+  engine: unknown
+python-httplib2:
+  name: httplib2
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - httplib2
+  engine: unknown
+httpie:
+  name: HTTPie
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - HTTPie
+  engine: unknown
+typhoeus:
+  name: Typhoeus
+  manufacturer: unknown
+  type: library
+  version:
+    class: null
+    search: null
+  engine: unknown
+cakephp:
+  name: CakePHP
+  manufacturer: unknown
+  type: library
+  version:
+    class: null
+    search: null
+  engine: unknown
+superagent:
+  name: superagent
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - superagent
+  engine: unknown
+gobuster:
+  name: Gobuster
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - gobuster
+  engine: unknown
+html-parser:
+  name: 'HTML Parser'
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - HTMLParser
+  engine: unknown
+lib-http:
+  name: LibHTTP
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - libhttp
+  engine: unknown
+reqwest:
+  name: reqwest
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - reqwest
+  engine: unknown
+rest-sharp:
+  name: RestSharp
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - RestSharp
+  engine: unknown
+anyevent-http:
+  name: 'AnyEvent HTTP'
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - AnyEvent-HTTP
+  engine: unknown
+java-http-client:
+  name: 'Java HTTP Client'
+  manufacturer: oracle
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Java-http-client
+  engine: unknown
+okdownload-library:
+  name: 'OKDownload Library'
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - OkDownload
+  engine: unknown
+esp32-http-client:
+  name: 'ESP32 HTTP Client'
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'ESP32 HTTP Client'
+  engine: unknown
+radio-downloader:
+  name: 'Radio Downloader'
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Radio Downloader'
+  engine: unknown
+podgrab:
+  name: Podgrab
+  manufacturer: unknown
+  type: library
+  version:
+    factory: null
+    search: null
+  engine: unknown
+down:
+  name: Down
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Down
+  engine: unknown
+gvfs:
+  name: gvfs
+  manufacturer: the-gnome-project
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - gvfs
+  engine: unknown
+libsyn:
+  name: Libsyn
+  manufacturer: unknown
+  type: library
+  version:
+    factory: null
+    search: null
+  engine: unknown
+tcl-http-client:
+  name: 'Tcl http client'
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Tcl http client package'
+  engine: unknown
+ffmpeg:
+  name: ffmpeg
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Lavf
+  engine: unknown
+gstreamer:
+  name: GStreamer
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'GStreamer souphttpsrc libsoup'
+      - 'GStreamer souphttpsrc'
+      - GStreamer
+  engine: unknown
+free-download-manager:
+  name: 'Free Download Manager'
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - FDM
+  engine: unknown
+resty-requests:
+  name: resty-requests
+  manufacturer: unknown
+  type: library
+  version:
+    factory: null
+    search: null
+  engine: unknown
+pr-downloader:
+  name: PRDownloader
+  manufacturer: unknown
+  type: library
+  version:
+    factory: null
+    search: null
+  engine: unknown
+libsoup:
+  name: libsoup
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - libsoup
+  engine: unknown
+http-tiny:
+  name: 'HTTP:Tiny'
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - HTTP-Tiny
+  engine: unknown
+git-annex:
+  name: git-annex
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - git-annex
+  engine: unknown
+file-downloader:
+  name: FileDownloader
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - FileDownloader
+  engine: unknown
+carrier-wave:
+  name: CarrierWave
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - CarrierWave
+  engine: unknown
+utorrent:
+  name: uTorrent
+  manufacturer: bittorrent
+  type: library
+  version:
+    factory: null
+    search: null
+  engine: unknown
+babashka-http-client:
+  name: 'Babashka HTTP Client'
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - babashka\.http-client
+  engine: unknown
+cpanel-http-client:
+  name: 'cPanel HTTP Client'
+  manufacturer: webpros
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Cpanel-HTTP-Client
+  engine: unknown
+python-xml-rpc:
+  name: XML-RPC
+  manufacturer: python-software-foundation
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Python-xmlrpc
+  engine: unknown
+insomnia-rest-client:
+  name: 'Insomnia REST Client'
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - insomnia
+  engine: unknown
+akka-http:
+  name: 'Akka HTTP'
+  manufacturer: lightbend
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - akka-http
+  engine: unknown
+webchk:
+  name: webchk
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'webchk v'
+      - webchk
+  engine: unknown
+req:
+  name: req
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - req\/v
+      - req
+  engine: unknown
+'smartsite httpclient':
+  name: 'Smartsite HTTPClient'
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Smartsite HTTPClient'
+  engine: unknown
+pimeyes-downloader-api:
+  name: pimeyes-downloader-api
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - pimeyes-downloader-api
+  engine: unknown
+http-get:
+  name: http-get
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - http-get
+  engine: unknown
+http-request:
+  name: http-request
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - http-request
+  engine: unknown
+node-urllib:
+  name: node-urllib
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - node-urllib
+  engine: unknown
+scalaj-http:
+  name: 'ScalaJ HTTP'
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - scalaj-http
+  engine: unknown
+go-http-client:
+  name: Go-http-client
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Go http package'
+  engine: unknown
+libcurl:
+  name: libcurl
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - libcurl\-agent
+  engine: unknown
+playwright:
+  name: Playwright
+  manufacturer: microsoft
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Playwright
+  engine: unknown
+cypress:
+  name: Cypress
+  manufacturer: cypress
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Cypress
+  engine: unknown
+docker:
+  name: docker
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - docker
+  engine: unknown
+quic-go:
+  name: quic-go
+  manufacturer: unknown
+  type: library
+  version:
+    factory: null
+    search: null
+  engine: unknown
+kohana-framework:
+  name: Kohana
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Kohana v'
+      - Kohana
+  engine: unknown
+jaunt:
+  name: Jaunt
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Jaunt
+  engine: unknown
+ultimate-sitemap-parser:
+  name: 'Ultimate Sitemap Parser'
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ultimate_sitemap_parser
+  engine: unknown
+grequests:
+  name: GRequests
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - GRequests
+  engine: unknown
+mikrotik-fetch:
+  name: 'Mikrotik Fetch'
+  manufacturer: mikrotik
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Mikrotik
+  engine: unknown
+r:
+  name: R
+  manufacturer: r-foundation
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - R
+  engine: unknown
+hubot:
+  name: Hubot
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Hubot
+  engine: unknown
+lodestone-php-parser:
+  name: 'Lodestone PHP Parser'
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Lodestone PHP Parser'
+  engine: unknown
+bic-tracker:
+  name: 'BIC Tracker'
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'BIC Tracker'
+  engine: unknown
+apidog:
+  name: Apidog
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Apidog
+  engine: unknown
+vimeo-php:
+  name: vimeo.php
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - vimeo\.php
+  engine: unknown
+cygwin-setup:
+  name: 'Cygwin Setup'
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Cygwin-Setup
+  engine: unknown
+ip-info-client:
+  name: IPinfo
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'IPinfoClient\/[^\/]+\/'
+  engine: unknown
+icap-client-library:
+  name: 'ICAP Client'
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ICAP-Client-Library
+  engine: unknown
+httprs:
+  name: httprs
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - httprs
+  engine: unknown
+electron-fetch:
+  name: 'Electron Fetch'
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - electron-fetch
+  engine: unknown
+mandrill-php:
+  name: 'Mandrill PHP'
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Mandrill-PHP
+  engine: unknown
+kiwi-tcms:
+  name: 'Kiwi TCMS'
+  manufacturer: otb
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - kiwi-tcms
+  engine: null
+kiwi-tcms-api:
+  name: 'Kiwi TCMS API'
+  manufacturer: otb
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - tcms-api
+  engine: null
+stealer:
+  name: Stealer
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Stealer
+  engine: null
+slim-framework:
+  name: 'Slim Framework'
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Slim Framework'
+  engine: null
+azure-data-factory:
+  name: 'Azure Data Factory'
+  manufacturer: microsoft
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - azure-data-factory
+  engine: null
+harbor-registry-client:
+  name: 'Harbor Registry Client'
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - harbor-registry-client
+  engine: null
+helm:
+  name: Helm
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Helm
+  engine: null
+skopeo:
+  name: Skopeo
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - skopeo
+  engine: null
+open-build-service:
+  name: 'Open Build Service'
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - BSRPC
+  engine: null
+build-kit:
+  name: BuildKit
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - buildkit\/v
+      - buildkit
+  engine: null
+buildah:
+  name: Buildah
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Buildah
+  engine: null
+go-container-registry:
+  name: 'go-container registry'
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - go-containerregistry\/v
+      - go-containerregistry
+  engine: null
+cri-o:
+  name: cri-o
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - cri-o
+  engine: null
+containerd:
+  name: Containerd
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - containerd\/v
+      - containerd
+  engine: null
+containers:
+  name: containers
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - containers
+  engine: null
+artifactory:
+  name: Artifactory
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Artifactory
+  engine: null
+pa11y:
+  name: Pa11y
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - pa11y
+  engine: null
+geoip-update:
+  name: 'GeoIP Update'
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - geoipupdate
+  engine: null
+cpp-rest-sdk:
+  name: 'C++ REST SDK'
+  manufacturer: microsoft
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - cpprestsdk
+  engine: null
+perl-rest-client:
+  name: 'Perl REST::Client'
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'REST::Client'
+  engine: null
+kl-http-client-curl:
+  name: KlHttpClientCurl
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - KlHttpClientCurl
+  engine: null
+embarcadero-uri-client:
+  name: 'Embarcadero URI Client'
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Embarcadero URI Client'
+  engine: null
+nscurl:
+  name: nscurl
+  manufacturer: unknown
+  type: library
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - nscurl
+  engine: null

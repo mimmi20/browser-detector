@@ -1,0 +1,11 @@
+rules:
+  /x6/i: 'runbo x6'
+  /x5-king/i: 'runbo x5-king'
+  /x5-w/i: 'runbo x5-w'
+  '/q5-?s/i': 'runbo q5s'
+  /q5/i: 'runbo q5'
+  /f1-tt/i: 'runbo f1-tt'
+  /f1-en/i: 'runbo f1-en'
+  /f1/i: 'runbo f1'
+  /tt/i: 'runbo tt'
+generic: 'general runbo device'

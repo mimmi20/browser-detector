@@ -13,15 +13,14 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser;
 
-use BrowserDetector\Parser\Helper\RulefileParser;
+use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use Override;
-use Psr\Log\LoggerInterface;
 use UaParser\EngineParserInterface;
 
 final readonly class EngineParserFactory implements EngineParserFactoryInterface
 {
     /** @throws void */
-    public function __construct(private LoggerInterface $logger)
+    public function __construct(private RulefileParserInterface $rulefileParser)
     {
         // nothing to do
     }
@@ -34,8 +33,6 @@ final readonly class EngineParserFactory implements EngineParserFactoryInterface
     #[Override]
     public function __invoke(): EngineParserInterface
     {
-        return new EngineParser(
-            rulefileParser: new RulefileParser(logger: $this->logger),
-        );
+        return new EngineParser(rulefileParser: $this->rulefileParser);
     }
 }

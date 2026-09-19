@@ -20,9 +20,9 @@ use function sprintf;
 
 final readonly class MobileParser implements MobileParserInterface
 {
-    private const string GENERIC_FILE = __DIR__ . '/../../../data/factories/devices/mobile.json';
+    private const string GENERIC_FILE = __DIR__ . '/../../../data/factories/devices/mobile.yaml';
 
-    private const string SPECIFIC_FILE = __DIR__ . '/../../../data/factories/devices/mobile/%s.json';
+    private const string SPECIFIC_FILE = __DIR__ . '/../../../data/factories/devices/mobile/%s.yaml';
 
     /** @throws void */
     public function __construct(private RulefileParserInterface $rulefileParser)

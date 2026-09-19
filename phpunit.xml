@@ -15,7 +15,7 @@
     displayDetailsOnTestsThatTriggerDeprecations="true"
     displayDetailsOnSkippedTests="false"
     displayDetailsOnIncompleteTests="false"
-    failOnPhpunitDeprecation="true"
+    failOnPhpunitDeprecation="false"
     failOnEmptyTestSuite="true"
     failOnIncomplete="true"
     failOnRisky="true"

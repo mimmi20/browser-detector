@@ -13,39 +13,37 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader\Data;
 
-use BrowserDetector\Iterator\FilterIterator;
 use BrowserDetector\Loader\InitData\Company as DataCompany;
-use Laminas\Hydrator\Strategy\StrategyInterface;
+use Exception;
 use Override;
-use RecursiveDirectoryIterator;
-use RecursiveIteratorIterator;
-use RuntimeException;
-use SplFileInfo;
+use Psr\Log\LoggerInterface;
+use Symfony\Component\Yaml\Exception\ParseException;
+use Symfony\Component\Yaml\Yaml;
 use UnexpectedValueException;
 
 use function array_key_exists;
 use function assert;
-use function file_get_contents;
+use function file_put_contents;
+use function get_debug_type;
 use function is_array;
 use function is_string;
 use function sprintf;
-use function str_replace;
 
 final class Company implements DataInterface
 {
-    private const string DATA_PATH = __DIR__ . '/../../../data/companies';
+    private const string DATA_PATH = __DIR__ . '/../../../data/companies/companies.yaml';
 
     /** @var array<string, DataCompany> */
     private array $items      = [];
     private bool $initialized = false;
 
     /** @throws void */
-    public function __construct(private readonly StrategyInterface $strategy)
+    public function __construct(private readonly LoggerInterface $logger)
     {
         // nothing to do
     }
 
-    /** @throws RuntimeException */
+    /** @throws void */
     #[Override]
     public function init(): void
     {
@@ -53,41 +51,44 @@ final class Company implements DataInterface
             return;
         }
 
-        $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator(self::DATA_PATH));
-        $files    = new FilterIterator($iterator, 'json');
+        try {
+            $fileData = Yaml::parseFile(self::DATA_PATH);
+        } catch (ParseException $e) {
+            $this->logger->error(
+                new Exception(
+                    sprintf('could not parse file %s', self::DATA_PATH),
+                    0,
+                    $e,
+                ),
+            );
 
-        foreach ($files as $file) {
-            assert($file instanceof SplFileInfo);
+            return;
+        }
 
-            $pathName = $file->getPathname();
-            $filepath = str_replace('\\', '/', $pathName);
-            assert(is_string($filepath));
+        if (!is_array($fileData)) {
+            return;
+        }
 
-            $content = @file_get_contents($filepath);
+        foreach ($fileData as $key => $data) {
+            $stringKey = (string) $key;
 
-            assert($content === false || is_string($content));
-
-            if ($content === false) {
-                throw new RuntimeException(sprintf('could not read file "%s"', $file));
+            if (array_key_exists($stringKey, $this->items) || !is_array($data)) {
+                continue;
             }
 
-            $fileData = $this->strategy->hydrate($content, []);
+            assert(
+                is_string($data['name']) || $data['name'] === null,
+                get_debug_type($data['name']),
+            );
+            assert(
+                is_string($data['brandname']) || $data['brandname'] === null,
+                get_debug_type($data['brandname']),
+            );
 
-            assert(is_array($fileData));
-
-            foreach ($fileData as $key => $data) {
-                $stringKey = (string) $key;
-
-                if (array_key_exists($stringKey, $this->items)) {
-                    continue;
-                }
-
-                if (!$data instanceof DataCompany) {
-                    continue;
-                }
-
-                $this->items[$stringKey] = $data;
-            }
+            $this->items[$stringKey] = new DataCompany(
+                name: $data['name'],
+                brandname: $data['brandname'],
+            );
         }
 
         $this->initialized = true;
@@ -101,6 +102,14 @@ final class Company implements DataInterface
             return $this->items[$stringKey];
         }
 
+        $this->logger->info(
+            sprintf(
+                '<fg:blue;bg=cyan;options=bold,underscore>deprecated class %s used to load data for company %s</>',
+                \BrowserDetector\Data\Company::class,
+                $stringKey,
+            ),
+        );
+
         try {
             $company = \BrowserDetector\Data\Company::fromName($stringKey);
 
@@ -110,6 +119,35 @@ final class Company implements DataInterface
             );
 
             $this->items[$stringKey] = $data;
+
+            try {
+                $fileData = Yaml::parseFile(self::DATA_PATH);
+
+                if (
+                    is_array($fileData)
+                    && (!array_key_exists($stringKey, $fileData) || !is_array($fileData[$stringKey]))
+                ) {
+                    $fileData[$stringKey] = [
+                        'name' => $company->getName(),
+                        'brandname' => $company->getBrandname(),
+                    ];
+
+                    file_put_contents(
+                        self::DATA_PATH,
+                        Yaml::dump($fileData, 4, 2),
+                    );
+                }
+            } catch (ParseException $e) {
+                $this->logger->error(
+                    new Exception(
+                        sprintf('could not parse file %s', self::DATA_PATH),
+                        0,
+                        $e,
+                    ),
+                );
+
+                return $this->items[$stringKey] ?? null;
+            }
         } catch (UnexpectedValueException) {
             // do nothing
         }

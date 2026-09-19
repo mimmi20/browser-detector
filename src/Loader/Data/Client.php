@@ -15,16 +15,19 @@ namespace BrowserDetector\Loader\Data;
 
 use BrowserDetector\Iterator\FilterIterator;
 use BrowserDetector\Loader\InitData\Client as DataClient;
-use Laminas\Hydrator\Strategy\StrategyInterface;
+use Exception;
 use Override;
+use Psr\Log\LoggerInterface;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
-use RuntimeException;
 use SplFileInfo;
+use Symfony\Component\Yaml\Exception\ParseException;
+use Symfony\Component\Yaml\Yaml;
+use UnexpectedValueException;
 
 use function array_key_exists;
 use function assert;
-use function file_get_contents;
+use function get_debug_type;
 use function is_array;
 use function is_string;
 use function sprintf;
@@ -39,12 +42,12 @@ final class Client implements DataInterface
     private bool $initialized = false;
 
     /** @throws void */
-    public function __construct(private readonly StrategyInterface $strategy)
+    public function __construct(private readonly LoggerInterface $logger)
     {
         // nothing to do
     }
 
-    /** @throws RuntimeException */
+    /** @throws UnexpectedValueException */
     #[Override]
     public function init(): void
     {
@@ -53,7 +56,7 @@ final class Client implements DataInterface
         }
 
         $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator(self::DATA_PATH));
-        $files    = new FilterIterator($iterator, 'json');
+        $files    = new FilterIterator($iterator, 'yaml');
 
         foreach ($files as $file) {
             assert($file instanceof SplFileInfo);
@@ -62,30 +65,57 @@ final class Client implements DataInterface
             $filepath = str_replace('\\', '/', $pathName);
             assert(is_string($filepath));
 
-            $content = @file_get_contents($filepath);
+            try {
+                $fileData = Yaml::parseFile($filepath);
+            } catch (ParseException $e) {
+                $this->logger->error(
+                    new Exception(
+                        sprintf('could not parse file %s', $filepath),
+                        0,
+                        $e,
+                    ),
+                );
 
-            assert($content === false || is_string($content));
-
-            if ($content === false) {
-                throw new RuntimeException(sprintf('could not read file "%s"', $file));
+                continue;
             }
 
-            $fileData = $this->strategy->hydrate($content, []);
-
-            assert(is_array($fileData));
+            if (!is_array($fileData)) {
+                continue;
+            }
 
             foreach ($fileData as $key => $data) {
                 $stringKey = (string) $key;
 
-                if (array_key_exists($stringKey, $this->items)) {
+                if (array_key_exists($stringKey, $this->items) || !is_array($data)) {
                     continue;
                 }
 
-                if (!$data instanceof DataClient) {
-                    continue;
-                }
+                assert(
+                    is_string($data['name']) || $data['name'] === null,
+                    get_debug_type($data['name']),
+                );
+                assert(
+                    is_string($data['manufacturer']) || $data['manufacturer'] === null,
+                    get_debug_type($data['manufacturer']),
+                );
+                assert(
+                    is_string($data['type']) || $data['type'] === null,
+                    get_debug_type($data['type']),
+                );
+                assert(
+                    is_string($data['engine']) || $data['engine'] === null,
+                    get_debug_type($data['engine']),
+                );
 
-                $this->items[$stringKey] = $data;
+                $this->items[$stringKey] = new DataClient(
+                    name: $data['name'],
+                    manufacturer: $data['manufacturer'],
+                    version: array_key_exists('version', $data) && is_array($data['version'])
+                        ? (object) $data['version']
+                        : null,
+                    type: $data['type'],
+                    engine: $data['engine'],
+                );
             }
         }
 
