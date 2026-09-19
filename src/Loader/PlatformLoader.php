@@ -62,7 +62,7 @@ final class PlatformLoader implements PlatformLoaderInterface
             try {
                 $manufacturer = $this->companyLoader->load($os->getManufacturer());
             } catch (NotFoundException $e) {
-                $this->logger->info($e);
+                $this->logger->error($e);
             }
         }
 
@@ -83,7 +83,7 @@ final class PlatformLoader implements PlatformLoaderInterface
                 }
             }
         } catch (UnexpectedValueException $e) {
-            $this->logger->info($e);
+            $this->logger->error($e);
         }
 
         return new Os(

@@ -71,7 +71,7 @@ final readonly class DeviceLoader implements DeviceLoaderInterface
             try {
                 $manufacturer = $this->companyLoader->load($manufacturerName);
             } catch (NotFoundException $e) {
-                $this->logger->info($e);
+                $this->logger->error($e);
             }
         }
 
@@ -82,7 +82,7 @@ final readonly class DeviceLoader implements DeviceLoaderInterface
             try {
                 $brand = $this->companyLoader->load($brandName);
             } catch (NotFoundException $e) {
-                $this->logger->info($e);
+                $this->logger->error($e);
             }
         }
 

@@ -15,7 +15,9 @@ namespace BrowserDetector\Loader\Data;
 
 use BrowserDetector\Iterator\FilterIterator;
 use BrowserDetector\Loader\InitData\Device as DataDevice;
+use Exception;
 use Override;
+use Psr\Log\LoggerInterface;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use SplFileInfo;
@@ -34,6 +36,7 @@ use function is_bool;
 use function is_float;
 use function is_int;
 use function is_string;
+use function sprintf;
 use function str_replace;
 
 final class Device implements DataInterface
@@ -45,12 +48,16 @@ final class Device implements DataInterface
     private bool $initialized = false;
 
     /** @throws void */
-    public function __construct(private readonly string $company)
+    public function __construct(private readonly string $company, private readonly LoggerInterface $logger)
     {
         // nothing to do
     }
 
-    /** @throws UnexpectedValueException */
+    /**
+     * @throws UnexpectedValueException
+     *
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
+     */
     #[Override]
     public function init(): void
     {
@@ -70,20 +77,47 @@ final class Device implements DataInterface
             $filepath = str_replace('\\', '/', $pathName);
             assert(is_string($filepath));
 
+            $fileData = null;
+
             try {
-                $fileData = Yaml::parseFile($filepath);
-            } catch (ParseException) {
+                $fileData = Yaml::parseFile(
+                    $filepath,
+                    Yaml::PARSE_EXCEPTION_ON_INVALID_TYPE | Yaml::PARSE_EXCEPTION_ON_ALIAS,
+                );
+            } catch (ParseException $e) {
+                $this->logger->error(
+                    new Exception(
+                        sprintf('    could not parse file %s', $filepath),
+                        0,
+                        $e,
+                    ),
+                );
+
                 continue;
             }
 
             if (!is_array($fileData)) {
+                $this->logger->error(
+                    new Exception(
+                        sprintf('    could not parse file %s', $filepath),
+                    ),
+                );
+
+                continue;
+            }
+
+            if ($fileData === []) {
                 continue;
             }
 
             foreach ($fileData as $key => $data) {
                 $stringKey = (string) $key;
 
-                if (array_key_exists($stringKey, $this->items) || !is_array($data)) {
+                if (array_key_exists($stringKey, $this->items)) {
+                    continue;
+                }
+
+                if (!is_array($data)) {
                     continue;
                 }
 

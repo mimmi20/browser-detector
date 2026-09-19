@@ -50,7 +50,7 @@ final class DetectorFactory
     public function __invoke(): Detector
     {
         if (!$this->detector instanceof Detector) {
-            $companyLoaderFactory = new CompanyLoaderFactory();
+            $companyLoaderFactory = new CompanyLoaderFactory(logger: $this->logger);
 
             $companyLoader = $companyLoaderFactory();
 
@@ -84,7 +84,7 @@ final class DetectorFactory
 
             $browserLoader = new BrowserLoader(
                 logger: $this->logger,
-                initData: new Data\Client(),
+                initData: new Data\Client(logger: $this->logger),
                 companyLoader: $companyLoader,
                 versionBuilder: new VersionBuilder(),
             );
@@ -93,7 +93,7 @@ final class DetectorFactory
             $browserParser        = $browserParserFactory();
 
             $normalizerFactory = new NormalizerFactory();
-            $mappingfileLoader = new MappingfileLoader();
+            $mappingfileLoader = new MappingfileLoader(logger: $this->logger);
 
             $headerLoader = new HeaderLoader(
                 deviceParser: $deviceParser,

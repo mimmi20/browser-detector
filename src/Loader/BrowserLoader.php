@@ -77,7 +77,7 @@ final class BrowserLoader implements BrowserLoaderInterface
             try {
                 $manufacturer = $this->companyLoader->load($manufacturerName);
             } catch (NotFoundException $e) {
-                $this->logger->info($e);
+                $this->logger->error($e);
             }
         }
 

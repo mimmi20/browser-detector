@@ -13,6 +13,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Loader;
 
+use BrowserDetector\Data\Company;
 use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\Data\Company as CompanyData;
 use BrowserDetector\Loader\Data\DataInterface;
@@ -21,10 +22,13 @@ use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use Psr\Log\LoggerInterface;
 use ReflectionException;
 use ReflectionProperty;
 use RuntimeException;
 use UaLoader\Exception\NotFoundException;
+
+use function sprintf;
 
 #[CoversClass(className: CompanyLoader::class)]
 #[CoversClass(className: CompanyData::class)]
@@ -38,7 +42,37 @@ final class CompanyLoaderTest extends TestCase
     {
         $companyKey = 'Dune HD';
 
-        $company = new CompanyData();
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::once())
+            ->method('info')
+            ->with(
+                sprintf(
+                    'deprecated class %s used to load data for company %s',
+                    Company::class,
+                    $companyKey,
+                ),
+            );
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $company = new CompanyData(logger: $logger);
 
         $companyLoader = new CompanyLoader($company);
 
@@ -56,7 +90,37 @@ final class CompanyLoaderTest extends TestCase
     {
         $companyKey = 'Dune HD';
 
-        $company = new CompanyData();
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::once())
+            ->method('info')
+            ->with(
+                sprintf(
+                    'deprecated class %s used to load data for company %s',
+                    Company::class,
+                    $companyKey,
+                ),
+            );
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $company = new CompanyData(logger: $logger);
 
         $companyLoader = new CompanyLoader($company);
 
@@ -79,7 +143,30 @@ final class CompanyLoaderTest extends TestCase
         $companyName = 'Dune HD';
         $brand       = 'Dune HD';
 
-        $initData = new CompanyData();
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $initData = new CompanyData(logger: $logger);
 
         $companyData = new DataCompany(name: $companyName, brandname: $brand);
 

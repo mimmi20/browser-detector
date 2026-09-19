@@ -55,7 +55,7 @@ final class EngineLoader implements EngineLoaderInterface
             try {
                 $manufacturer = $this->companyLoader->load($engine->getManufacturer());
             } catch (NotFoundException $e) {
-                $this->logger->info($e);
+                $this->logger->error($e);
             }
         }
 

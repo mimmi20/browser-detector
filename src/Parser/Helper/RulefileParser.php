@@ -53,7 +53,15 @@ final class RulefileParser implements RulefileParserInterface
         } else {
             try {
                 $factories = Yaml::parseFile($file);
-            } catch (ParseException) {
+            } catch (ParseException $e) {
+                $this->logger->error(
+                    new Exception(
+                        sprintf('could not parse file %s', $file),
+                        0,
+                        $e,
+                    ),
+                );
+
                 return $fallback;
             }
 

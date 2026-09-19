@@ -44,6 +44,7 @@ final class DeviceLoaderFactory implements DeviceLoaderFactoryInterface
             logger: $this->logger,
             initData: new Data\Device(
                 company: $company,
+                logger: $this->logger,
             ),
             companyLoader: $this->companyLoader,
         );

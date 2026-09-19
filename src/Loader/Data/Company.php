@@ -14,7 +14,9 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader\Data;
 
 use BrowserDetector\Loader\InitData\Company as DataCompany;
+use Exception;
 use Override;
+use Psr\Log\LoggerInterface;
 use Symfony\Component\Yaml\Exception\ParseException;
 use Symfony\Component\Yaml\Yaml;
 use UnexpectedValueException;
@@ -25,6 +27,7 @@ use function file_put_contents;
 use function get_debug_type;
 use function is_array;
 use function is_string;
+use function sprintf;
 
 final class Company implements DataInterface
 {
@@ -35,7 +38,7 @@ final class Company implements DataInterface
     private bool $initialized = false;
 
     /** @throws void */
-    public function __construct()
+    public function __construct(private readonly LoggerInterface $logger)
     {
         // nothing to do
     }
@@ -50,7 +53,15 @@ final class Company implements DataInterface
 
         try {
             $fileData = Yaml::parseFile(self::DATA_PATH);
-        } catch (ParseException) {
+        } catch (ParseException $e) {
+            $this->logger->error(
+                new Exception(
+                    sprintf('could not parse file %s', self::DATA_PATH),
+                    0,
+                    $e,
+                ),
+            );
+
             return;
         }
 
@@ -91,6 +102,14 @@ final class Company implements DataInterface
             return $this->items[$stringKey];
         }
 
+        $this->logger->info(
+            sprintf(
+                '<fg:blue;bg=cyan;options=bold,underscore>deprecated class %s used to load data for company %s</>',
+                \BrowserDetector\Data\Company::class,
+                $stringKey,
+            ),
+        );
+
         try {
             $company = \BrowserDetector\Data\Company::fromName($stringKey);
 
@@ -118,8 +137,16 @@ final class Company implements DataInterface
                         Yaml::dump($fileData, 4, 2),
                     );
                 }
-            } catch (ParseException) {
-                // do nothing
+            } catch (ParseException $e) {
+                $this->logger->error(
+                    new Exception(
+                        sprintf('could not parse file %s', self::DATA_PATH),
+                        0,
+                        $e,
+                    ),
+                );
+
+                return $this->items[$stringKey] ?? null;
             }
         } catch (UnexpectedValueException) {
             // do nothing

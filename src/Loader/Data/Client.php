@@ -15,7 +15,9 @@ namespace BrowserDetector\Loader\Data;
 
 use BrowserDetector\Iterator\FilterIterator;
 use BrowserDetector\Loader\InitData\Client as DataClient;
+use Exception;
 use Override;
+use Psr\Log\LoggerInterface;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use SplFileInfo;
@@ -28,6 +30,7 @@ use function assert;
 use function get_debug_type;
 use function is_array;
 use function is_string;
+use function sprintf;
 use function str_replace;
 
 final class Client implements DataInterface
@@ -39,7 +42,7 @@ final class Client implements DataInterface
     private bool $initialized = false;
 
     /** @throws void */
-    public function __construct()
+    public function __construct(private readonly LoggerInterface $logger)
     {
         // nothing to do
     }
@@ -64,7 +67,15 @@ final class Client implements DataInterface
 
             try {
                 $fileData = Yaml::parseFile($filepath);
-            } catch (ParseException) {
+            } catch (ParseException $e) {
+                $this->logger->error(
+                    new Exception(
+                        sprintf('could not parse file %s', $filepath),
+                        0,
+                        $e,
+                    ),
+                );
+
                 continue;
             }
 

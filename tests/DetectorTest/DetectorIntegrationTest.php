@@ -47,7 +47,10 @@ use UnexpectedValueException;
 use function assert;
 use function is_array;
 use function is_string;
+use function sprintf;
 use function str_replace;
+
+use const PHP_EOL;
 
 /** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */
 #[CoversClass(className: Detector::class)]
@@ -159,7 +162,13 @@ final class DetectorIntegrationTest extends TestCase
 
             try {
                 $fileData = Yaml::parseFile($filepath);
-            } catch (ParseException) {
+            } catch (ParseException $e) {
+                echo new \Exception(
+                    sprintf('could not parse file %s', $file),
+                    0,
+                    $e,
+                ), PHP_EOL;
+
                 continue;
             }
 

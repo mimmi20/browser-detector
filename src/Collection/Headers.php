@@ -311,7 +311,7 @@ final readonly class Headers
 
                     return $engineFrom;
                 } catch (UnexpectedValueException $e) {
-                    $this->logger->info($e);
+                    $this->logger->error($e);
                 }
             }
         }
@@ -635,7 +635,7 @@ final readonly class Headers
 
             return $clientData;
         } catch (UnexpectedValueException $e) {
-            $this->logger->info($e, ['headers' => $this->headers]);
+            $this->logger->error($e, ['headers' => $this->headers]);
         }
 
         return new ClientData(
@@ -817,7 +817,7 @@ final readonly class Headers
 
                     return $platformFromOs;
                 } catch (UnexpectedValueException $e) {
-                    $this->logger->info($e);
+                    $this->logger->error($e);
                 }
             }
         }
@@ -858,9 +858,14 @@ final readonly class Headers
 
                 return $deviceLoader->load($key);
             } catch (NotFoundException $e) {
-                $this->logger->info(
+                $this->logger->error(
                     new UnexpectedValueException(
-                        sprintf('Device "%s" of Manufacturer "%s" was not found', $key, $company),
+                        sprintf(
+                            'Device "%s" of Manufacturer "%s" was not found from device code %s',
+                            $key,
+                            $company,
+                            $deviceCodename,
+                        ),
                         0,
                         $e,
                     ),

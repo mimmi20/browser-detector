@@ -18,6 +18,7 @@ use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use Psr\Log\LoggerInterface;
 use RuntimeException;
 
 #[CoversClass(className: MappingfileLoader::class)]
@@ -29,7 +30,30 @@ final class MappingfileLoaderTest extends TestCase
      */
     public function testGetItemWithoutInit(): void
     {
-        $mappingfileLoader = new MappingfileLoader();
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $mappingfileLoader = new MappingfileLoader(logger: $logger);
 
         $result = $mappingfileLoader->getItem('test');
 
@@ -45,7 +69,30 @@ final class MappingfileLoaderTest extends TestCase
     {
         $expected = 'fantech=fantech m200h';
 
-        $mappingfileLoader = new MappingfileLoader();
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $mappingfileLoader = new MappingfileLoader(logger: $logger);
         $mappingfileLoader->init();
 
         $result = $mappingfileLoader->getItem('m200h');

@@ -14,7 +14,9 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Iterator\FilterIterator;
+use Exception;
 use Override;
+use Psr\Log\LoggerInterface;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use RuntimeException;
@@ -26,6 +28,7 @@ use function array_key_exists;
 use function assert;
 use function is_array;
 use function is_string;
+use function sprintf;
 use function str_replace;
 
 final class MappingfileLoader implements MappingfileLoaderInterface
@@ -37,7 +40,7 @@ final class MappingfileLoader implements MappingfileLoaderInterface
     private bool $initialized = false;
 
     /** @throws void */
-    public function __construct()
+    public function __construct(private readonly LoggerInterface $logger)
     {
         // nothing to do
     }
@@ -62,7 +65,15 @@ final class MappingfileLoader implements MappingfileLoaderInterface
 
             try {
                 $fileData = Yaml::parseFile($filepath);
-            } catch (ParseException) {
+            } catch (ParseException $e) {
+                $this->logger->error(
+                    new Exception(
+                        sprintf('could not parse file %s', $file),
+                        0,
+                        $e,
+                    ),
+                );
+
                 continue;
             }
 

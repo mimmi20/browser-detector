@@ -185,6 +185,8 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/\(lge[;,] (?P<devicecode>[^;,]+)[;,]/i',
             '/^mqqbrowser\/[\d.]+ \(linux; [\d.]+; (?P<devicecode>[^)]+)\)$/i',
             '/^onebrowser\/[\d.]+ \((?P<devicecode>[^)]+)\)$/i',
+            '/mozilla\/[\d.]+ \(linux; (?P<devicecode>[^);\/]+)(?:[);\/]?[^);\/]*)\)/i',
+            '/^(?P<devicecode>.*) mozilla\/[\d.]+ \(/i',
             '/dv\((?P<devicecode>[^);\/]+)(?:;? +(?:build|hmscore|release|miui)?[^)]+)?\);/',
             '/hw\/(?P<devicecode>.*)$/i',
             '/ (?P<devicecode>crkey)\//i',
@@ -212,9 +214,9 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             $filtered,
         );
 
-//        if ($value === 'Mozilla/5.0 (Linux; arm_64; Android 16; SC-55F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.51 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36') {
-//            var_dump($normalizedValue, $filtered, $finds);
-//        }
+        // if ($value === 'Mozilla/5.0 (Linux; arm_64; Android 16; SC-55F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.51 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36') {
+        //     var_dump($normalizedValue, $filtered, $finds);
+        // }
 
         try {
             $this->mappingFileParser->init();

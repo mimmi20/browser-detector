@@ -67,7 +67,7 @@ final class DeviceLoader2Test extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = new DeviceData(company: 'test-company');
+        $initData = new DeviceData(company: 'test-company', logger: $logger);
 
         $platformData = new DataDevice(
             architecture: Architecture::unknown,
@@ -160,7 +160,7 @@ final class DeviceLoader2Test extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = new DeviceData(company: 'test-company');
+        $initData = new DeviceData(company: 'test-company', logger: $logger);
 
         $platformData = new DataDevice(
             architecture: Architecture::unknown,

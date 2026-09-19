@@ -66,7 +66,7 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $client = new ClientData();
+        $client = new ClientData(logger: $logger);
 
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
         $companyLoader
@@ -198,7 +198,7 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $client = new ClientData();
+        $client = new ClientData(logger: $logger);
 
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
         $companyLoader
@@ -266,7 +266,7 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = new ClientData();
+        $initData = new ClientData(logger: $logger);
 
         $browserData = new DataClient(
             name: 'test-browser',

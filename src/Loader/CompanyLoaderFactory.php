@@ -14,10 +14,17 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use Override;
+use Psr\Log\LoggerInterface;
 
 final class CompanyLoaderFactory implements CompanyLoaderFactoryInterface
 {
     private CompanyLoader | null $companyLoader = null;
+
+    /** @throws void */
+    public function __construct(private readonly LoggerInterface $logger)
+    {
+        // nothing to do
+    }
 
     /** @throws void */
     #[Override]
@@ -25,7 +32,7 @@ final class CompanyLoaderFactory implements CompanyLoaderFactoryInterface
     {
         if (!$this->companyLoader instanceof CompanyLoader) {
             $this->companyLoader = new CompanyLoader(
-                initData: new Data\Company(),
+                initData: new Data\Company(logger: $this->logger),
             );
         }
 
