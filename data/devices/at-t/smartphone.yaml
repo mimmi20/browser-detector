@@ -152,3 +152,31 @@
     size: 6.75
   type: smartphone
   platform: android
+'at-t sn512a':
+  deviceName: SN512A
+  marketingName: 'Motivate Pro 2 5G'
+  manufacturer: coosea
+  brand: at-t
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 1520
+    height: 720
+    touch: true
+    size: 6.8
+  type: smartphone
+  platform: android
+'at-t sn333a':
+  deviceName: SN333A
+  marketingName: 'Verge 2 5G'
+  manufacturer: coosea
+  brand: at-t
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: null
+    height: null
+    touch: true
+    size: 6.5
+  type: smartphone
+  platform: android

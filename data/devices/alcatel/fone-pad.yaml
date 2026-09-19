@@ -406,7 +406,7 @@
   platform: android
 'alcatel 9027q':
   deviceName: 9027Q
-  marketingName: '3T 8 Tablet 4G'
+  marketingName: '3T 8" Tablet 4G'
   manufacturer: tcl
   brand: alcatel
   dualOrientation: true
@@ -542,5 +542,89 @@
     height: 800
     touch: true
     size: 10
+  type: fone-pad
+  platform: android
+'alcatel 9029z':
+  deviceName: 9029Z
+  marketingName: 'Joy Tab 4G'
+  manufacturer: tcl
+  brand: alcatel
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: 1280
+    height: 800
+    touch: true
+    size: 8
+  type: fone-pad
+  platform: android
+'alcatel 9032z':
+  deviceName: 9032Z
+  marketingName: '3T 8 Tablet 4G'
+  manufacturer: tcl
+  brand: alcatel
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: 1280
+    height: 800
+    touch: true
+    size: 8
+  type: fone-pad
+  platform: android
+'alcatel 9013x':
+  deviceName: 9013X
+  marketingName: '1T 7" 4G'
+  manufacturer: tcl
+  brand: alcatel
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: 1024
+    height: 600
+    touch: true
+    size: 7
+  type: fone-pad
+  platform: android
+'alcatel 9013x':
+  deviceName: 9013X
+  marketingName: '1T 7" 4G'
+  manufacturer: tcl
+  brand: alcatel
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: 1024
+    height: 600
+    touch: true
+    size: 7
+  type: fone-pad
+  platform: android
+'alcatel 9013x_ru':
+  deviceName: 9013X_RU
+  marketingName: '1T 7" 4G'
+  manufacturer: tcl
+  brand: alcatel
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: 1024
+    height: 600
+    touch: true
+    size: 7
+  type: fone-pad
+  platform: android
+'alcatel 9013x_eea':
+  deviceName: 9013X_EEA
+  marketingName: '1T 7" 4G'
+  manufacturer: tcl
+  brand: alcatel
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: 1024
+    height: 600
+    touch: true
+    size: 7
   type: fone-pad
   platform: android

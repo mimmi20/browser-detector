@@ -1254,6 +1254,44 @@
     manufacturer: rim
 -
   headers:
+    user-agent: 'UCWEB/2.0(BlackBerry; U; 5.2.0.57; en-us; 9000/5.2.0.57) U2/1.0.0 UCBrowser/8.1.0.216 U2/1.0.0 Mobile'
+  device:
+    architecture: null
+    deviceName: 'BlackBerry 9000'
+    marketingName: 'BlackBerry Bold 9000'
+    manufacturer: rim
+    brand: rim
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 480
+      height: 320
+      touch: false
+      size: 2.6
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'RIM OS'
+    marketingName: 'RIM OS'
+    version: null
+    manufacturer: rim
+    bits: null
+  client:
+    name: 'UC Browser'
+    modus: null
+    version: 8.1.0.216
+    manufacturer: ucweb
+    type: transcoder
+    isbot: false
+    bits: null
+  engine:
+    name: U2
+    version: 1.0.0
+    manufacturer: ucweb
+-
+  headers:
     user-agent: 'UCWEB/2.0(BlackBerry; U; 4.2.0.424; en-us; 9630/4.2.0.424) U2/1.0.0 UCBrowser/8.1.0.216 U2/1.0.0 Mobile'
   device:
     architecture: null

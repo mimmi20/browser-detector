@@ -33,7 +33,6 @@ rules:
   '/(?<!fbcr\/)megafon/i': megafon
   '/(?<![zu])zte(?!ti\/|l|_bp_ger)|racer|nubia|axonphone|smart ?(?:tab(?:10|7)|4g(?! (?:champion|p1))|ultra 6)/i': zte
   '/(?<!s)sagem/i': sagem
-  '/smart tab 4(?!g)|vfd?[ \-]?[0-9]{3,4}(?: +build|[;\/\)])|985n|vodafone smart 4|smart 4 turbo|vodafone 975(?!n)|(?<!fbcr\/)vodacom|chat_655w|555_blue|vodafone541|vodafonesmartchat/i': vodafone
   '/qmobile|q-smart|(?<!i)qtab|(?: x900| m300|lt700|lt500|(?:adr|android) 4\.2.* z[46])(?: +build|[;\/\)])|linq [lx]/i': qmobile
   '/fine-?power/i': fine-power
   '/a1 alpha/i': a1
@@ -170,6 +169,7 @@ rules:
   '/(?:adr|android) 1[3-9].* a065(?: +build|[;\/\)])|jelly2/i': nothing-phone
   '/(?:adr|android) 4\. a065(?: +build|[;\/\)])/i': micromax
   '/vertu[_ ]?constellation/i': vertu
+  '/vodafone|(?<!fbcr\/)vodacom/i': vodafone
   /sunmicrosystems/i: sun
   '/general mobile/i': general-mobile
   '/hammer(?!head)/i': hammer

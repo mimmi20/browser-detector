@@ -1140,6 +1140,44 @@
     manufacturer: google
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; SC-55F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.51 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SC-55F
+    marketingName: 'Galaxy Z Flip 7 (Japan)'
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2520
+      height: 1080
+      touch: true
+      size: 6.9
+    type: phablet
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Search Browser'
+    modus: null
+    version: 26.47.1
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 146.0.7680.51
+    manufacturer: google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; SM-F946U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.63 YaBrowser/26.4.6.63.00 Mobile Safari/537.36'
   device:
     architecture: null
@@ -1175,6 +1213,44 @@
   engine:
     name: Blink
     version: 146.0.7680.63
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; SC-54D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SC-54D
+    marketingName: 'Galaxy Z Flip 5 (Japan)'
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 2640
+      height: 1080
+      touch: true
+      size: 6.7
+    type: phablet
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser'
+    modus: null
+    version: 26.6.0.304.00
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 148.0.7778.304
     manufacturer: google
 -
   headers:
