@@ -1,81 +1,5 @@
 -
   headers:
-    user-agent: 'Opera/9.80 (MAUI Runtime; Opera Mini/4.4.39014/60.271; U; mr) Presto/2.12.423 Version/12.16'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: MRE
-    marketingName: 'MAUI Runtime Environment'
-    version: null
-    manufacturer: mediatek
-    bits: null
-  client:
-    name: 'Opera Mini'
-    modus: null
-    version: 4.4.39014
-    manufacturer: opera
-    type: transcoder
-    isbot: false
-    bits: null
-  engine:
-    name: Presto
-    version: 2.12.423
-    manufacturer: opera
--
-  headers:
-    user-agent: 'Opera/9.80 (Android; Opera Mini/7.0.29759/58.172; U; en) Presto/2.12.423 Version/12.16'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Opera Mini'
-    modus: null
-    version: 7.0.29759
-    manufacturer: opera
-    type: transcoder
-    isbot: false
-    bits: null
-  engine:
-    name: Presto
-    version: 2.12.423
-    manufacturer: opera
--
-  headers:
     user-agent: 'Opera/9.80 (Android; Opera Mini/20.1.2254/60.88; U; en) Presto/2.12.423 Version/12.16'
   device:
     architecture: null
@@ -3790,6 +3714,82 @@
     name: 'Opera Mini'
     modus: null
     version: 4.4.39014
+    manufacturer: opera
+    type: transcoder
+    isbot: false
+    bits: null
+  engine:
+    name: Presto
+    version: 2.12.423
+    manufacturer: opera
+-
+  headers:
+    user-agent: 'Opera/9.80 (Android; Opera Mini/22.0.2254/63.246; U; en) Presto/2.12.423 Version/12.16'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Opera Mini'
+    modus: null
+    version: 22.0.2254
+    manufacturer: opera
+    type: transcoder
+    isbot: false
+    bits: null
+  engine:
+    name: Presto
+    version: 2.12.423
+    manufacturer: opera
+-
+  headers:
+    user-agent: 'Opera/9.80 (Android; Opera Mini/7.5.35602/64.199; U; en) Presto/2.12.423 Version/12.16'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Opera Mini'
+    modus: null
+    version: 7.5.35602
     manufacturer: opera
     type: transcoder
     isbot: false

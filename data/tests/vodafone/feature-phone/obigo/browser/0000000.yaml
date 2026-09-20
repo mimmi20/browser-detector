@@ -112,3 +112,41 @@
     name: Teleca
     version: null
     manufacturer: obigo
+-
+  headers:
+    user-agent: 'Vodafone-553/VF 553- MTK 6235- V02c- December 032010- Vodafone- ITGR Obigo/Q03C Profile/MIDP-2.0 Configuration/CLDC-1.1'
+  device:
+    architecture: null
+    deviceName: 'VF 553'
+    marketingName: 'VF 553'
+    manufacturer: vodafone
+    brand: vodafone
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Obigo Q'
+    modus: null
+    version: 3.0.0
+    manufacturer: obigo
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Teleca
+    version: null
+    manufacturer: obigo

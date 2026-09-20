@@ -300,9 +300,8 @@ final class DeviceLoader1Test extends TestCase
 
         $logger = $this->createMock(LoggerInterface::class);
         $logger
-            ->expects(self::once())
-            ->method('info')
-            ->with($notFoundException, []);
+            ->expects(self::never())
+            ->method('info');
         $logger
             ->expects(self::never())
             ->method('notice');
@@ -310,8 +309,9 @@ final class DeviceLoader1Test extends TestCase
             ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(self::never())
-            ->method('error');
+            ->expects(self::once())
+            ->method('error')
+            ->with($notFoundException, []);
         $logger
             ->expects(self::never())
             ->method('critical');
@@ -392,9 +392,8 @@ final class DeviceLoader1Test extends TestCase
 
         $logger = $this->createMock(LoggerInterface::class);
         $logger
-            ->expects(self::once())
-            ->method('info')
-            ->with($notFoundException, []);
+            ->expects(self::never())
+            ->method('info');
         $logger
             ->expects(self::never())
             ->method('notice');
@@ -402,8 +401,9 @@ final class DeviceLoader1Test extends TestCase
             ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(self::never())
-            ->method('error');
+            ->expects(self::once())
+            ->method('error')
+            ->with($notFoundException, []);
         $logger
             ->expects(self::never())
             ->method('critical');
@@ -484,9 +484,8 @@ final class DeviceLoader1Test extends TestCase
 
         $logger = $this->createMock(LoggerInterface::class);
         $logger
-            ->expects(self::exactly(2))
-            ->method('info')
-            ->with($notFoundException, []);
+            ->expects(self::never())
+            ->method('info');
         $logger
             ->expects(self::never())
             ->method('notice');
@@ -494,8 +493,9 @@ final class DeviceLoader1Test extends TestCase
             ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(self::never())
-            ->method('error');
+            ->expects(self::exactly(2))
+            ->method('error')
+            ->with($notFoundException, []);
         $logger
             ->expects(self::never())
             ->method('critical');

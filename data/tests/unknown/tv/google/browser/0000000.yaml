@@ -418,6 +418,44 @@
     manufacturer: google
 -
   headers:
+    user-agent: 'HbbTV/1.6.1 (+DRM; Panasonic; SmartTV2022mid; 3.000; 0000-1111 222-3333; com.panasonic.SmartTV2022mid;) FVC/7.0 (Panasonic; com.panasonic.SmartTV2022mid;) Mozilla/5.0 (Linux; U; SmartTV; en-GB) AppleWebKit/xxx.x (KHTML, like Gecko) SmartTV/x.x.x Chrome/x.x.x.x Safari/x.x.x.x'
+  device:
+    architecture: null
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: null
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: null
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: null
+    manufacturer: apple
+-
+  headers:
     user-agent: 'Mozilla/5.0 (QtEmbedded; Linux) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/48.0 Safari/537.4 HbbTV/1.3.1 (+DRM; THTF_CVTE; LE40GY15; 1.00; TP.MS6486.PB752; )FVC/1.0(THTF_CVTE; THTF_CVTE_FVP_6486; )'
   device:
     architecture: null
@@ -3725,44 +3763,6 @@
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; Android TV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 14.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: Chrome
-    modus: null
-    version: 89.0.4389.72
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 89.0.4389.72
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 14; android TV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general TV device'

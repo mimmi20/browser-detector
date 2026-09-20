@@ -48,7 +48,7 @@ final class CompanyLoaderTest extends TestCase
             ->method('info')
             ->with(
                 sprintf(
-                    'deprecated class %s used to load data for company %s',
+                    '<fg:blue;bg=cyan;options=bold,underscore>deprecated class %s used to load data for company %s</>',
                     Company::class,
                     $companyKey,
                 ),
@@ -96,7 +96,7 @@ final class CompanyLoaderTest extends TestCase
             ->method('info')
             ->with(
                 sprintf(
-                    'deprecated class %s used to load data for company %s',
+                    '<fg:blue;bg=cyan;options=bold,underscore>deprecated class %s used to load data for company %s</>',
                     Company::class,
                     $companyKey,
                 ),

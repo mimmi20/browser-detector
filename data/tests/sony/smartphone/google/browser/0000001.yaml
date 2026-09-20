@@ -1,5 +1,507 @@
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; J9110 Build/55.2.A.4.332; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.45 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: J9110
+    marketingName: 'Xperia 1'
+    manufacturer: sony
+    brand: sony
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 3840
+      height: 1644
+      touch: true
+      size: 6.5
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 96.0.4664.45
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 96.0.4664.45
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Dalvik/2.1.0 (Linux; U; Android 11; XQ-AS52 Build/58.1.A.5.507)'
+  device:
+    architecture: null
+    deviceName: XQ-AS52
+    marketingName: 'Xperia 5 II 5G'
+    manufacturer: sony
+    brand: sony
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 2520
+      height: 1080
+      touch: true
+      size: 6.1
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Android Browser'
+    modus: null
+    version: 2.1.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: null
+    manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; XQ-BQ72) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.98 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: XQ-BQ72
+    marketingName: 'Xperia 5 III'
+    manufacturer: sony
+    brand: sony
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 2520
+      height: 1080
+      touch: true
+      size: 6.1
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 97.0.4692.98
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 97.0.4692.98
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; XQ-BE72) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.70 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: XQ-BE72
+    marketingName: 'Xperia Pro I'
+    manufacturer: sony
+    brand: sony
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 3840
+      height: 1644
+      touch: true
+      size: 6.5
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 97.0.4692.70
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 97.0.4692.70
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; XQ-BQ52) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.98 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: XQ-BQ52
+    marketingName: 'Xperia 5 III'
+    manufacturer: sony
+    brand: sony
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 2520
+      height: 1080
+      touch: true
+      size: 6.1
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 97.0.4692.98
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 97.0.4692.98
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; XQ-AS52 Build/58.1.A.5.530; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.101 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: XQ-AS52
+    marketingName: 'Xperia 5 II 5G'
+    manufacturer: sony
+    brand: sony
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 2520
+      height: 1080
+      touch: true
+      size: 6.1
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 98.0.4758.101
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 98.0.4758.101
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; H9436 Build/52.1.A.3.137; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.101 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: H9436
+    marketingName: 'Xperia XZ3'
+    manufacturer: sony
+    brand: sony
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 2880
+      height: 1440
+      touch: true
+      size: 6
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 98.0.4758.101
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 98.0.4758.101
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; XQ-AT51 Build/58.2.A.0.899; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/99.0.4844.73 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: XQ-AT51
+    marketingName: 'Xperia 1 II 5G (Global)'
+    manufacturer: sony
+    brand: sony
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 3840
+      height: 1644
+      touch: true
+      size: 6.5
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 99.0.4844.73
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 99.0.4844.73
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; XQ-BE52) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: XQ-BE52
+    marketingName: 'Xperia Pro I'
+    manufacturer: sony
+    brand: sony
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 3840
+      height: 1644
+      touch: true
+      size: 6.5
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 95.0.4638.74
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 95.0.4638.74
+    manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: '"G8441"'
+    sec-ch-ua-platform: '"Android"'
+    sec-ch-ua-platform-version: '"9.0.0"'
+    sec-ch-ua-full-version-list: '"Chromium";v="98.0.4758.141", " Not A;Brand";v="99.0.0.0"'
+    sec-ch-ua: '"Chromium";v="98", " Not A;Brand";v="99"'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-mobile: '?1'
+    user-agent: 'Mozilla/5.0 (Linux; Android 9; G8441) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.141 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: G8441
+    marketingName: 'Xperia XZ1 Compact'
+    manufacturer: sony
+    brand: sony
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 1280
+      height: 720
+      touch: true
+      size: 4.6
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chromium
+    modus: null
+    version: 98.0.4758.141
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 98.0.4758.141
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 9; H3413) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: H3413
+    marketingName: 'Xperia XA2+'
+    manufacturer: sony
+    brand: sony
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 2160
+      height: 1080
+      touch: true
+      size: 6
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 101.0.4951.41
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 101.0.4951.41
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; SO-53C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SO-53C
+    marketingName: 'Xperia Ace III'
+    manufacturer: sony
+    brand: sony
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 1496
+      height: 720
+      touch: true
+      size: 5.5
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 102.0.0.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 102.0.0.0
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; SOG06) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SOG06
+    marketingName: 'Xperia 1 IV'
+    manufacturer: sony
+    brand: sony
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 3840
+      height: 1644
+      touch: true
+      size: 6.5
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 102.0.0.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 102.0.0.0
+    manufacturer: google
+-
+  headers:
     sec-ch-ua-model: '"SO-41B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"11.0.0"'
@@ -81,6 +583,44 @@
   engine:
     name: Blink
     version: 102.0.5005.78
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; SO-51C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SO-51C
+    marketingName: 'Xperia 1 IV'
+    manufacturer: sony
+    brand: sony
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 3840
+      height: 1644
+      touch: true
+      size: 6.5
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 102.0.0.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 102.0.0.0
     manufacturer: google
 -
   headers:
@@ -423,6 +963,44 @@
   engine:
     name: Blink
     version: 103.0.0.0
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; SO-52C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SO-52C
+    marketingName: 'Xperia 10 IV'
+    manufacturer: sony
+    brand: sony
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 2520
+      height: 1080
+      touch: true
+      size: 6
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 98.0.4758.101
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 98.0.4758.101
     manufacturer: google
 -
   headers:
@@ -1779,6 +2357,44 @@
     manufacturer: google
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; SO-51D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SO-51D
+    marketingName: 'Xperia 1 V 5G UW'
+    manufacturer: sony
+    brand: sony
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 3840
+      height: 1644
+      touch: true
+      size: 6.5
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 130.0.0.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 130.0.0.0
+    manufacturer: google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; XQ-EC44) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Mobile Safari/537.36'
   device:
     architecture: null
@@ -1890,6 +2506,44 @@
   engine:
     name: Blink
     version: 131.0.6778.41
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; SO-51E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.6834.123 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SO-51E
+    marketingName: 'Xperia 1 VI'
+    manufacturer: sony
+    brand: sony
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2340
+      height: 1080
+      touch: true
+      size: 6.5
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 132.0.6834.123
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 132.0.6834.123
     manufacturer: google
 -
   headers:
@@ -2283,6 +2937,44 @@
     manufacturer: google
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; SOG15 Build/71.1.A.2.210; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SOG15
+    marketingName: 'Xperia 1 VII'
+    manufacturer: sony
+    brand: sony
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2340
+      height: 1080
+      touch: true
+      size: 6.5
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 149.0.7827.91
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SOG14 Build/70.2.A.4.22; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.217 Mobile Safari/537.36'
   device:
     architecture: null
@@ -2394,6 +3086,44 @@
   engine:
     name: Blink
     version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; SO-52F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.93 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SO-52F
+    marketingName: 'Xperia 10 VII 5G'
+    manufacturer: sony
+    brand: sony
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2340
+      height: 1080
+      touch: true
+      size: 6.1
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 149.0.7827.93
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.93
     manufacturer: google
 -
   headers:
@@ -2511,6 +3241,44 @@
     manufacturer: google
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; SO-52E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.215 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SO-52E
+    marketingName: 'Xperia 10 VI 5G'
+    manufacturer: sony
+    brand: sony
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2520
+      height: 1080
+      touch: true
+      size: 6.1
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 148.0.7778.215
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 148.0.7778.215
+    manufacturer: google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; A402SO Build/70.1.D.3.247; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
     architecture: null
@@ -2584,6 +3352,44 @@
   engine:
     name: Blink
     version: 120.0.6099.230
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; SO-51G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SO-51G
+    marketingName: 'Xperia 1 VIII 5G'
+    manufacturer: sony
+    brand: sony
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2340
+      height: 1080
+      touch: true
+      size: 6.5
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 149.0.0.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.0.0
     manufacturer: google
 -
   headers:

@@ -266,6 +266,44 @@
     manufacturer: apple
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 1.5.2.1-RT-20120109.203024; xx; W700 Build/AliyunOs-2012) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Yun OS'
+    marketingName: 'Yun OS'
+    version: 1.5.2.1
+    manufacturer: alibaba
+    bits: null
+  client:
+    name: 'Aliyun Browser'
+    modus: null
+    version: null
+    manufacturer: alibaba
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 533.1.0
+    manufacturer: apple
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 4.1.1; xx; YunOS/) AppleWebKit/536.28 (KHTML, like Gecko) Version/4.0 Mobile Safari/536.28 Tanggula/0.1.0'
   device:
     architecture: null

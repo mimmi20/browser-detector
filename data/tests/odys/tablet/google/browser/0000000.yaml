@@ -1,5 +1,81 @@
 -
   headers:
+    user-agent: 'Tablet-PC-4 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'
+  device:
+    architecture: null
+    deviceName: 'Tablet PC 4'
+    marketingName: 'Tablet PC 4'
+    manufacturer: odys
+    brand: weltbild
+    dualOrientation: true
+    simCount: 0
+    display:
+      width: 1024
+      height: 768
+      touch: true
+      size: 8
+    type: tablet
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linuxFoundation
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 11.0.696.34
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 534.24.0
+    manufacturer: apple
+-
+  headers:
+    user-agent: 'ELEMENT10 1 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24'
+  device:
+    architecture: null
+    deviceName: 'Element 10 1'
+    marketingName: 'Element 10 1'
+    manufacturer: odys
+    brand: odys
+    dualOrientation: true
+    simCount: 0
+    display:
+      width: 1024
+      height: 600
+      touch: true
+      size: 10.1
+    type: tablet
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linuxFoundation
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 11.0.696.34
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 534.24.0
+    manufacturer: apple
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; THANOS_10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.136 Safari/537.36'
   device:
     architecture: null

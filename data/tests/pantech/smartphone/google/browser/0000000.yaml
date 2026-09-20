@@ -226,3 +226,41 @@
     name: WebKit
     version: 534.30.0
     manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; IM-A860S Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.99 Apple Safari/537.36'
+  device:
+    architecture: null
+    deviceName: IM-A860S
+    marketingName: 'Vega No 6'
+    manufacturer: pantech
+    brand: pantech
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 1920
+      height: 1080
+      touch: true
+      size: 5.9
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linuxFoundation
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 32.0.1700.99
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 32.0.1700.99
+    manufacturer: google

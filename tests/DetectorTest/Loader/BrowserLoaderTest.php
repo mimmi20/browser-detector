@@ -244,9 +244,8 @@ final class BrowserLoaderTest extends TestCase
 
         $logger = $this->createMock(LoggerInterface::class);
         $logger
-            ->expects(self::once())
-            ->method('info')
-            ->with($notFoundException, []);
+            ->expects(self::never())
+            ->method('info');
         $logger
             ->expects(self::never())
             ->method('notice');
@@ -254,8 +253,9 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(self::never())
-            ->method('error');
+            ->expects(self::once())
+            ->method('error')
+            ->with($notFoundException, []);
         $logger
             ->expects(self::never())
             ->method('critical');

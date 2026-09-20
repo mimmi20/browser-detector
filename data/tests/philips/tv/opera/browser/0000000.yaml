@@ -231,17 +231,17 @@
     user-agent: 'CE-HTML/1.0 NETTV/6.0.2 SmartTvA/3.0.0 (PhilipsTV, 6.1.1,) enMozilla/5.0 (Linux; QM151E Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.125 Safari/537.36 OPR/31.0.1890.0 OMI/4.6.1.13.Sprinter.13'
   device:
     architecture: null
-    deviceName: 'NetTV Series'
-    marketingName: 'NetTV Series'
+    deviceName: QM151E
+    marketingName: QM151E
     manufacturer: philips
     brand: philips
     dualOrientation: false
     simCount: 0
     display:
-      width: null
-      height: null
+      width: 3840
+      height: 2160
       touch: false
-      size: null
+      size: 49
     type: tv
     ismobile: false
     istv: true
@@ -251,6 +251,44 @@
     marketingName: 'Android TV'
     version: null
     manufacturer: google
+    bits: null
+  client:
+    name: 'Opera Devices'
+    modus: null
+    version: 4.6.1.13
+    manufacturer: opera
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 44.0.2403.125
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; QM152E Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.125 Safari/537.36 OPR/31.0.1890.0 OMI/4.6.1.13.Sprinter.13'
+  device:
+    architecture: null
+    deviceName: QM152E
+    marketingName: QM152E
+    manufacturer: philips
+    brand: philips
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: 3840
+      height: 2160
+      touch: false
+      size: 49
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linuxFoundation
     bits: null
   client:
     name: 'Opera Devices'
