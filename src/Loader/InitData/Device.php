@@ -20,16 +20,16 @@ use UaResult\Device\Architecture;
 /** @phpcs:disable SlevomatCodingStandard.Classes.RequireConstructorPropertyPromotion.RequiredConstructorPropertyPromotion */
 final class Device
 {
-    private Architecture $architecture   = Architecture::unknown;
-    private string | null $deviceName    = null;
-    private string | null $marketingName = null;
-    private string | null $manufacturer  = null;
-    private string | null $brand         = null;
-    private Type | null $type            = null;
-    private bool | null $dualOrientation = null;
-    private int | null $simCount         = null;
-    private string | null $platform      = null;
-    private Bits $bits                   = Bits::unknown;
+    private Architecture $architecture      = Architecture::unknown;
+    private int | string | null $deviceName = null;
+    private string | null $marketingName    = null;
+    private string | null $manufacturer     = null;
+    private string | null $brand            = null;
+    private Type | null $type               = null;
+    private bool | null $dualOrientation    = null;
+    private int | null $simCount            = null;
+    private string | null $platform         = null;
+    private Bits $bits                      = Bits::unknown;
 
     /** @var array{width: int|null, height: int|null, touch: bool|null, size: float|null} */
     private array $display = ['width' => null, 'height' => null, 'touch' => null, 'size' => null];
@@ -41,7 +41,7 @@ final class Device
      */
     public function __construct(
         Architecture $architecture,
-        string | null $deviceName,
+        int | string | null $deviceName,
         string | null $marketingName,
         string | null $manufacturer,
         string | null $brand,
@@ -72,7 +72,7 @@ final class Device
     }
 
     /** @throws void */
-    public function getDeviceName(): string | null
+    public function getDeviceName(): int | string | null
     {
         return $this->deviceName;
     }
