@@ -195,6 +195,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/ (?P<devicecode>crkey)\//i',
             '/iemobile\/[\d.]+(?:; arm; touch(?:; rv:[\d.]+)?)?; (?P<devicecode>[a-z]+; ?[^);\/]+)/i',
             '/iemobile\/[\d.]+\) (?P<devicecode>[a-z]+; ?[^);\/]+)/i',
+            '/^(?P<devicecode>.+) up\.link\//i',
             // should be the last entry in the list
             '/^(?P<devicecode>.+)$/i',
         ];

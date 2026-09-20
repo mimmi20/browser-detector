@@ -100,8 +100,8 @@ final readonly class DeviceLoader implements DeviceLoaderInterface
 
         return new Device(
             architecture: $device->getArchitecture(),
-            deviceName: $device->getDeviceName(),
-            marketingName: $device->getMarketingName(),
+            deviceName: $device->getDeviceName() === null ? null : (string) $device->getDeviceName(),
+            marketingName: $device->getMarketingName() === null ? null : (string) $device->getMarketingName(),
             manufacturer: $manufacturer,
             brand: $brand,
             type: $deviceType,
