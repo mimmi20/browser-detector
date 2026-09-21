@@ -1,5 +1,43 @@
 -
   headers:
+    user-agent: 'testandroid.altervista.org/79.25.198.98 (compatible; MSIE 7.0;)'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Internet Explorer'
+    modus: null
+    version: 7.0.0
+    manufacturer: microsoft
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Trident
+    version: null
+    manufacturer: microsoft
+-
+  headers:
     user-agent: 'Qtek_9100/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)'
   device:
     architecture: null
@@ -2664,6 +2702,44 @@
   engine:
     name: Trident
     version: 5.1.0
+    manufacturer: microsoft
+-
+  headers:
+    user-agent: 'Mozilla / 5.0(compatible; MSIE 10.0; Windows Phone 8.0; Trident / 6.0; IEMobile / 10.0; ARM; Touch)'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.0.0
+    manufacturer: microsoft
+    bits: null
+  client:
+    name: IEMobile
+    modus: null
+    version: 10.0.0
+    manufacturer: microsoft
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Trident
+    version: 6.0.0
     manufacturer: microsoft
 -
   headers:

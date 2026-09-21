@@ -1014,6 +1014,44 @@
     manufacturer: google
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 9; PAD 7 MAX) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'Pad 7 Max'
+    marketingName: 'Pad 7 Max'
+    manufacturer: xiaomi
+    brand: xiaomi
+    dualOrientation: true
+    simCount: 0
+    display:
+      width: 3200
+      height: 2000
+      touch: true
+      size: 14
+    type: tablet
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 110.0.0.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 110.0.0.0
+    manufacturer: google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; 26048RP6AC Build/BP2A.250605.031.A3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.91 Safari/537.36'
   device:
     architecture: null
@@ -1315,6 +1353,44 @@
   engine:
     name: Blink
     version: 148.0.7778.217
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; Pad7pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.210 Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'Pad 7 Pro'
+    marketingName: 'Pad 7 Pro'
+    manufacturer: xiaomi
+    brand: xiaomi
+    dualOrientation: true
+    simCount: 0
+    display:
+      width: 3200
+      height: 2136
+      touch: true
+      size: 11.2
+    type: tablet
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 90.0.4430.210
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 90.0.4430.210
     manufacturer: google
 -
   headers:

@@ -308,7 +308,7 @@
   device:
     architecture: null
     deviceName: 'MacBook Air 10,1'
-    marketingName: 'MacBook Air 13" (2020)'
+    marketingName: 'MacBook Air M1 13" (2020)'
     manufacturer: apple
     brand: apple
     dualOrientation: false
@@ -1068,7 +1068,7 @@
   device:
     architecture: null
     deviceName: 'MacBook Pro 17,1'
-    marketingName: 'MacBook Pro 13" (2020)'
+    marketingName: 'MacBook Pro M1 13" (2020)'
     manufacturer: apple
     brand: apple
     dualOrientation: false
@@ -1258,7 +1258,7 @@
   device:
     architecture: null
     deviceName: 'MacBook Pro 18,1'
-    marketingName: 'MacBook Pro 16" (2021)'
+    marketingName: 'MacBook Pro M1 16" (2021)'
     manufacturer: apple
     brand: apple
     dualOrientation: false
@@ -1296,7 +1296,7 @@
   device:
     architecture: null
     deviceName: 'MacBook Pro 18,3'
-    marketingName: 'MacBook Pro 14" (2021)'
+    marketingName: 'MacBook Pro M1 14" (2021)'
     manufacturer: apple
     brand: apple
     dualOrientation: false
@@ -1334,7 +1334,7 @@
   device:
     architecture: null
     deviceName: 'MacBook Pro 18,2'
-    marketingName: 'MacBook Pro 16" (2021)'
+    marketingName: 'MacBook Pro M1 Max 16" (2021)'
     manufacturer: apple
     brand: apple
     dualOrientation: false
@@ -1372,7 +1372,7 @@
   device:
     architecture: null
     deviceName: 'MacBook Pro 18,4'
-    marketingName: 'MacBook Pro 14" (2021)'
+    marketingName: 'MacBook Pro M1 Max 14" (2021)'
     manufacturer: apple
     brand: apple
     dualOrientation: false
@@ -1410,7 +1410,7 @@
   device:
     architecture: null
     deviceName: 'Mac 14,9'
-    marketingName: 'MacBook Pro 14" (2023)'
+    marketingName: 'MacBook Pro M2 14" (2023)'
     manufacturer: apple
     brand: apple
     dualOrientation: false
@@ -1448,7 +1448,7 @@
   device:
     architecture: null
     deviceName: 'Mac 14,2'
-    marketingName: 'MacBook Air 13" (2022)'
+    marketingName: 'MacBook Air M2 13" (2022)'
     manufacturer: apple
     brand: apple
     dualOrientation: false
@@ -1472,6 +1472,44 @@
     name: Word
     modus: null
     version: 16.78.1008
+    manufacturer: microsoft
+    type: application
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'Microsoft Office Word/16.68.1211 (Mac OS/14.0; Desktop; en-US; AppStore; Apple/Mac14,7)'
+  device:
+    architecture: null
+    deviceName: 'Mac 14,7'
+    marketingName: 'MacBook Pro M2 13" (2022)'
+    manufacturer: apple
+    brand: apple
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: 2560
+      height: 1600
+      touch: false
+      size: 13.3
+    type: laptop
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 14.0.0
+    manufacturer: apple
+    bits: null
+  client:
+    name: Word
+    modus: null
+    version: 16.68.1211
     manufacturer: microsoft
     type: application
     isbot: false

@@ -3382,6 +3382,44 @@
     manufacturer: ucweb
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Java; U; en-us; gt-s5230) AppleWebKit/530.13 (KHTML, like Gecko) UCBrowser/8.6.0.199/69/352/UCWEB Mobile UNTRUSTED/1.0'
+  device:
+    architecture: null
+    deviceName: GT-S5230
+    marketingName: star
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 400
+      height: 240
+      touch: false
+      size: null
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'UC Browser'
+    modus: null
+    version: 8.6.0.199
+    manufacturer: ucweb
+    type: transcoder
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 530.13.0
+    manufacturer: apple
+-
+  headers:
     user-agent: 'Mozilla/5.0 (S60V3; U; en-us; SamsungI7110)/UC Browser8.4.0.159/28/352/UCWEB Mobile'
   device:
     architecture: null
@@ -3747,47 +3785,6 @@
       height: 240
       touch: false
       size: null
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
-  client:
-    name: 'UC Browser'
-    modus: null
-    version: 9.5.0.449
-    manufacturer: ucweb
-    type: transcoder
-    isbot: false
-    bits: null
-  engine:
-    name: U2
-    version: 1.0.0
-    manufacturer: ucweb
--
-  headers:
-    x-ucbrowser-ua: 'pf(Java);la(en-US);re(U2/1.0.0);dv(SAMSUNG-GT-S8600);pr(UCBrowser/9.5.0.449);ov(MIDP-2.0);pi(240*320);ss(240*320);up(U2/1.0.0);er(U);bt(GJ);pm(1);bv(0);nm(0);im(1);sr(0);nt(99);'
-    x-ucbrowser-device-ua: '?'
-    x-ucbrowser-device: 'samsung#-GT-S8600'
-    user-agent: 'UCWEB/2.0 (Java; U; MIDP-2.0; xx; SAMSUNG-GT-S8600) U2/1.0.0 UCBrowser/9.5.0.449 U2/1.0.0 Mobile UNTRUSTED/1.0'
-  device:
-    architecture: null
-    deviceName: GT-S8600
-    marketingName: 'Wave 3'
-    manufacturer: samsung
-    brand: samsung
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 800
-      height: 480
-      touch: false
-      size: 4
     type: feature-phone
     ismobile: true
     istv: false

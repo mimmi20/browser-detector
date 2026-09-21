@@ -1,6 +1,6 @@
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; Android Tablet) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.56 YaSearchBrowser/26.46.1 BroPP/1.0 YaSearchApp/26.46.1 webOmni Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 9; FSPLACE Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/138.0.7204.179 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -21,24 +21,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 9.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Search Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.46.1
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.56
+    version: 138.0.7204.179
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; Android Tablet) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.55 YaBrowser/26.4.7.55.00 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 9; Deadpool Build/PKQ1.181021.001; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/70.0.3538.110 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -59,24 +59,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 9.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.4.7.55.00
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.55
+    version: 70.0.3538.110
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; Android Tablet) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.54 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 9; B866 Build/PI; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/138.0.7204.179 YaBrowser/24.1.1.23 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -97,24 +97,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 9.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Search Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.47.1
+    version: 24.1.1.23
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.54
+    version: 138.0.7204.179
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; Android Tablet) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.54 YaSearchBrowser/26.46.1 BroPP/1.0 YaSearchApp/26.46.1 webOmni Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 9; arm; B861RE) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 YaBrowser/20.7.5.84.00 SA/3 Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -135,100 +135,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Search Browser'
-    modus: null
-    version: 26.46.1
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 146.0.7680.54
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; Android Tablet) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.51 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Search Browser'
-    modus: null
-    version: 26.47.1
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 146.0.7680.51
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; Android Tablet) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.49 YaBrowser/26.4.7.49.00 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
+    version: 9.0.0
     manufacturer: google
     bits: null
   client:
     name: 'Yandex Browser'
     modus: null
-    version: 26.4.7.49.00
+    version: 20.7.5.84.00
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.49
+    version: 83.0.4103.116
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; Android Tablet) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.43 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 9; arm; B861RE) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 YaBrowser/20.7.3.99.00 SA/1 Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -249,176 +173,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Search Browser'
-    modus: null
-    version: 26.47.1
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 146.0.7680.43
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; Android Tablet) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.2244 YaApp_Android/26.40.1 YaSearchBrowser/26.40.1 BroPP/1.0 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Search Browser'
-    modus: null
-    version: 26.40.1
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 146.0.7680.2244
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; Android Tablet) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.2223 YaApp_Android/26.40.1 YaSearchBrowser/26.40.1 BroPP/1.0 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Search Browser'
-    modus: null
-    version: 26.40.1
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 146.0.7680.2223
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; Android Tablet) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.2074 YaApp_Android/26.40.1 YaSearchBrowser/26.40.1 BroPP/1.0 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Search Browser'
-    modus: null
-    version: 26.40.1
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 146.0.7680.2074
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; Android Tablet) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.123 YaBrowser/26.4.5.123.00 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
+    version: 9.0.0
     manufacturer: google
     bits: null
   client:
     name: 'Yandex Browser'
     modus: null
-    version: 26.4.5.123.00
+    version: 20.7.3.99.00
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.123
+    version: 83.0.4103.116
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; Android Tablet) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.114 YaBrowser/26.4.4.114.00 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 9; arm; ABX) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 YaApp_Android/20.74/apad YaSearchBrowser/20.74/apad BroPP/1.0 SA/1 Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -439,138 +211,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser'
-    modus: null
-    version: 26.4.4.114.00
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 146.0.7680.114
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; Android Tablet) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.111 YaBrowser/26.4.1.111.00 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser'
-    modus: null
-    version: 26.4.1.111.00
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 146.0.7680.111
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; Android Tablet) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.105 YaBrowser/26.4.3.105.00 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser'
-    modus: null
-    version: 26.4.3.105.00
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 146.0.7680.105
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; Android Tablet) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.793 YaApp_Android/26.32.1 YaSearchBrowser/26.32.1 BroPP/1.0 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
+    version: 9.0.0
     manufacturer: google
     bits: null
   client:
     name: 'Yandex Search Browser'
     modus: null
-    version: 26.32.1
+    version: 20.74.0
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 144.0.7559.793
+    version: 83.0.4103.116
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; Android Tablet) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.690 YaSearchBrowser/26.32.1 BroPP/1.0 YaSearchApp/26.32.1 webOmni Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 9; arm; ABX-460) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 YaApp_Android/20.74/apad YaSearchBrowser/20.74/apad BroPP/1.0 SA/1 Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -591,62 +249,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Search Browser'
-    modus: null
-    version: 26.32.1
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 144.0.7559.690
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; Android Tablet) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.654 YaSearchBrowser/26.36.1 BroPP/1.0 YaSearchApp/26.36.1 webOmni Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
+    version: 9.0.0
     manufacturer: google
     bits: null
   client:
     name: 'Yandex Search Browser'
     modus: null
-    version: 26.36.1
+    version: 20.74.0
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 144.0.7559.654
+    version: 83.0.4103.116
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; Android Tablet) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.372 YaSearchBrowser/26.37.1 BroPP/1.0 YaSearchApp/26.37.1 webOmni Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 9; A250 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/79.0.3945.116 Mobile Safari/537.36 YandexSearch/7.52 YandexSearchBrowser/7.52'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -667,366 +287,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Search Browser'
-    modus: null
-    version: 26.37.1
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 144.0.7559.372
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; Android Tablet) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.109 YaBrowser/26.3.2.109.00 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser'
-    modus: null
-    version: 26.3.2.109.00
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 144.0.7559.109
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; Android Tablet) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.108 YaBrowser/26.3.2.108.00 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser'
-    modus: null
-    version: 26.3.2.108.00
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 144.0.7559.108
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; Android Tablet) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.108 YaBrowser/25.12.4.108.00 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser'
-    modus: null
-    version: 25.12.4.108.00
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 142.0.7444.108
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; Android Tablet) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.121 YaBrowser/25.10.1.121.00 SA/3 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser'
-    modus: null
-    version: 25.10.1.121.00
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 140.0.7339.121
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; Android Tablet) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.105 YaBrowser/25.8.5.105.00 SA/3 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser'
-    modus: null
-    version: 25.8.5.105.00
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 138.0.7204.105
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; Android) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser'
-    modus: null
-    version: 26.6.0.304.00
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 148.0.7778.304
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; Android) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.49 YaBrowser/26.4.7.49.00 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser'
-    modus: null
-    version: 26.4.7.49.00
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 146.0.7680.49
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; Android) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.316 YaBrowser/26.3.0.316.00 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser'
-    modus: null
-    version: 26.3.0.316.00
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 144.0.7559.316
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; Air Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.43 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
+    version: 9.0.0
     manufacturer: google
     bits: null
   client:
     name: 'Yandex Search Browser'
     modus: null
-    version: 26.47.1
+    version: 7.52.0
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.43
+    version: 79.0.3945.116
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; Air Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.411 YaSearchBrowser/25.89.1 BroPP/1.0 YaSearchApp/25.89.1 webOmni SA/3 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 17; Build/CP31.260608.007; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/150.0.7871.46 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -1047,24 +325,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 17.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Search Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 25.89.1
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 138.0.7204.411
+    version: 150.0.7871.46
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A7Q10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.64 YaSearchBrowser/26.43.1 BroPP/1.0 YaSearchApp/26.43.1 webOmni Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 17; Build/CP31.260608.007; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -1085,24 +363,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 17.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Search Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.43.1
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.64
+    version: 149.0.7827.91
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A73) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 17; Build/CP31.260522.006; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/150.0.7871.28 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -1123,24 +401,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 17.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.6.0.304.00
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 148.0.7778.304
+    version: 150.0.7871.28
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A73) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.51 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 17; Build/CP31.260522.006; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -1161,24 +439,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 17.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Search Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.47.1
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.51
+    version: 149.0.7827.91
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A73) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.49 YaBrowser/26.4.7.49.00 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 17; Build/CP31.260522.006; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/148.0.7778.215 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -1199,24 +477,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 17.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.4.7.49.00
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.49
+    version: 148.0.7778.215
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A25) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 17; Build/CP31.260522.006.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/150.0.7871.28 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -1237,24 +515,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 17.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.6.0.304.00
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 148.0.7778.304
+    version: 150.0.7871.28
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A25) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.144 YaApp_Android/26.60.1 YaSearchBrowser/26.60.1 BroPP/1.0 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 17; Build/CP31.260522.006.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/150.0.7871.13 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -1275,24 +553,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 17.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Search Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.60.1
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 148.0.7778.144
+    version: 150.0.7871.13
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A25) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.61 YaBrowser/26.4.6.61.00 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 17; Build/CP31.260508.005.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -1313,24 +591,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 17.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.4.6.61.00
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.61
+    version: 149.0.7827.91
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A25) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.56 YaSearchBrowser/26.46.1 BroPP/1.0 YaSearchApp/26.46.1 webOmni Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 17; Build/CP31.260508.005.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.159 YaBrowser/24.1.1.23 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -1351,24 +629,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 17.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Search Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.46.1
+    version: 24.1.1.23
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.56
+    version: 149.0.7827.159
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A25) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.49 YaBrowser/26.4.7.49.00 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; T522E Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -1389,24 +667,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 16.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.4.7.49.00
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.49
+    version: 149.0.7827.91
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A25) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.2244 YaApp_Android/26.40.1 YaSearchBrowser/26.40.1 BroPP/1.0 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; Seeker Build/BP2A.260328.900.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -1427,24 +705,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 16.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Search Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.40.1
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.2244
+    version: 149.0.7827.91
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A24) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.307 YaBrowser/26.6.0.307.00 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; S300 Pro Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/24.1.1.16 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -1465,24 +743,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 16.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.6.0.307.00
+    version: 24.1.1.16
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 148.0.7778.307
+    version: 149.0.7827.91
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A24) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; S300 Pro Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/148.0.7778.215 YaBrowser/24.1.1.16 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -1503,24 +781,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 16.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.6.0.304.00
+    version: 24.1.1.16
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 148.0.7778.304
+    version: 148.0.7778.215
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A24) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.302 YaBrowser/26.6.0.302.00 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; Note 56 Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.217 Mobile Safari/537.36 YandexSearch/7.52 YandexSearchBrowser/7.52'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -1541,62 +819,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser'
-    modus: null
-    version: 26.6.0.302.00
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 148.0.7778.302
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A24) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.144 YaApp_Android/26.60.1 YaSearchBrowser/26.60.1 BroPP/1.0 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
+    version: 16.0.0
     manufacturer: google
     bits: null
   client:
     name: 'Yandex Search Browser'
     modus: null
-    version: 26.60.1
+    version: 7.52.0
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 148.0.7778.144
+    version: 148.0.7778.217
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A24) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.64 YaSearchBrowser/26.45.1 BroPP/1.0 YaSearchApp/26.45.1 webOmni Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; FORT 5 Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.7339.207 Mobile Safari/537.36 YandexSearch/7.54 YandexSearchBrowser/7.54'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -1617,24 +857,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 16.0.0
     manufacturer: google
     bits: null
   client:
     name: 'Yandex Search Browser'
     modus: null
-    version: 26.45.1
+    version: 7.54.0
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.64
+    version: 140.0.7339.207
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A24) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.64 YaSearchBrowser/26.44.1 BroPP/1.0 YaSearchApp/26.44.1 webOmni Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; B10 Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/24.1.1.16 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -1655,24 +895,62 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 16.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 24.1.1.16
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; XPLORE X1 Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/137.0.7151.115 Mobile Safari/537.36 YandexSearch/7.54 YandexSearchBrowser/7.54'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
     manufacturer: google
     bits: null
   client:
     name: 'Yandex Search Browser'
     modus: null
-    version: 26.44.1
+    version: 7.54.0
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.64
+    version: 137.0.7151.115
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A24) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.64 YaSearchBrowser/26.43.1 BroPP/1.0 YaSearchApp/26.43.1 webOmni Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; WP58 Pro Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -1693,24 +971,708 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 25.12.0.63
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; tapas Build/AQ3A.240829.003; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 25.12.0.63
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; T626K Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 25.12.0.63
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; T626K Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/148.0.7778.215 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 25.12.0.63
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 148.0.7778.215
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; STARLET Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/138.0.7204.179 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 25.12.0.63
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 138.0.7204.179
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; Panther1 Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/148.0.7778.215 YaBrowser/24.1.1.23 (lite) Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 24.1.1.23
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 148.0.7778.215
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; P90 Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/24.1.1.23 (lite) Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 24.1.1.23
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; P90 Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/148.0.7778.217 YaBrowser/24.1.1.23 (lite) Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 24.1.1.23
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 148.0.7778.217
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; M8781 Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 25.12.0.63
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; M80 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/138.0.7204.179 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 25.12.0.63
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 138.0.7204.179
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; G1 Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 25.12.0.63
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; G1 Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/24.1.1.23 (lite) Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 24.1.1.23
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; G1 Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/148.0.7778.217 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 25.12.0.63
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 148.0.7778.217
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; F110 Pro Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.93 YaBrowser/24.1.1.23 (lite) Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 24.1.1.23
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.93
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; F110 Pro Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/24.1.1.23 (lite) Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 24.1.1.23
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; C69 Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 25.12.0.63
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; C61 Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 25.12.0.63
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; C60 Pro Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 25.12.0.63
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15.0.0; K; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 YaApp_Android/9.85 YaSearchBrowser/23.12.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
     manufacturer: google
     bits: null
   client:
     name: 'Yandex Search Browser'
     modus: null
-    version: 26.43.1
+    version: 23.12.1
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.64
+    version: 146.0.0.0
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A24) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.63 YaBrowser/26.4.6.63.00 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; X99Pro.E5_30160.667.FE Build/UTT2.241219.001; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/113.0.5672.136 YaBrowser/24.1.1.23 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -1731,24 +1693,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 14.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.4.6.63.00
+    version: 24.1.1.23
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.63
+    version: 113.0.5672.136
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A24) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.61 YaSearchBrowser/26.42.1 BroPP/1.0 YaSearchApp/26.42.1 webOmni Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; TV98 Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/112.0.5615.136 YaBrowser/24.1.1.23 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -1769,24 +1731,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 14.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Search Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.42.1
+    version: 24.1.1.23
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.61
+    version: 112.0.5615.136
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A24) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.61 YaBrowser/26.4.6.61.00 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; Smart Phone Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -1807,24 +1769,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 14.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.4.6.61.00
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.61
+    version: 149.0.7827.91
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A24) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.56 YaSearchBrowser/26.46.1 BroPP/1.0 YaSearchApp/26.46.1 webOmni Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; Smart Phone Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.159 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -1845,24 +1807,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 14.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Search Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.46.1
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.56
+    version: 149.0.7827.159
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A24) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.55 YaBrowser/26.4.7.55.00 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; ross Build/UD2A.240505.001.W1; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/128.0.6613.99 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -1883,24 +1845,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 14.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.4.7.55.00
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.55
+    version: 128.0.6613.99
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A24) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.54 YaSearchBrowser/26.46.1 BroPP/1.0 YaSearchApp/26.46.1 webOmni Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; ross Build/UD2A.231203.054; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/113.0.5672.136 YaBrowser/24.1.1.23 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -1921,24 +1883,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 14.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Search Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.46.1
+    version: 24.1.1.23
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.54
+    version: 113.0.5672.136
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A24) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.51 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; P1 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.2.0.51 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -1959,24 +1921,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 14.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Search Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.47.1
+    version: 25.2.0.51
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.51
+    version: 149.0.7827.91
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A24) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.49 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; P1 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -1997,24 +1959,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 14.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Search Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.47.1
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.49
+    version: 149.0.7827.91
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A24) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.49 YaBrowser/26.4.7.49.00 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; Note 16 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -2035,24 +1997,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 14.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.4.7.49.00
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.49
+    version: 149.0.7827.91
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A24) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.43 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; G1 Build/UP1A.231005.012; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -2073,24 +2035,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 14.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Search Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.47.1
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.43
+    version: 149.0.7827.91
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A24) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.2244 YaApp_Android/26.40.1 YaSearchBrowser/26.40.1 BroPP/1.0 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; G1 Build/UP1A.231005.011; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -2111,24 +2073,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 14.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Search Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.40.1
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.2244
+    version: 149.0.7827.91
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A24) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.123 YaBrowser/26.4.5.123.00 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; blue Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/113.0.5672.136 YaBrowser/24.1.1.23 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -2149,24 +2111,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 14.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.4.5.123.00
+    version: 24.1.1.23
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.123
+    version: 113.0.5672.136
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A24) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.123 YaBrowser/26.4.4.123.00 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; B3 Pro Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -2187,24 +2149,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 14.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.4.4.123.00
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.123
+    version: 149.0.7827.91
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A24) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.657 YaSearchBrowser/26.36.1 BroPP/1.0 YaSearchApp/26.36.1 webOmni Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; B3C Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -2225,24 +2187,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 14.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Search Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.36.1
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 144.0.7559.657
+    version: 149.0.7827.91
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A24) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.654 YaSearchBrowser/26.36.1 BroPP/1.0 YaSearchApp/26.36.1 webOmni Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; Android Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -2263,24 +2225,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 14.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Search Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.36.1
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 144.0.7559.654
+    version: 149.0.7827.91
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A19pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.49 YaBrowser/26.4.7.49.00 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; Android Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.159 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -2301,24 +2263,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 14.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.4.7.49.00
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.49
+    version: 149.0.7827.159
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A17 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.43 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; Android Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/148.0.7778.217 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -2339,24 +2301,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 14.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Search Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.47.1
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.43
+    version: 148.0.7778.217
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A17) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.54 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; A550 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -2377,24 +2339,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 14.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Search Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.47.1
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.54
+    version: 149.0.7827.91
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A17) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.51 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; A184 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -2415,24 +2377,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 14.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Search Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.47.1
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.51
+    version: 149.0.7827.91
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A15 PRO) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; A184 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/24.1.1.23 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -2453,24 +2415,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 14.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.6.0.304.00
+    version: 24.1.1.23
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 148.0.7778.304
+    version: 149.0.7827.91
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A15 PRO) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.144 YaApp_Android/26.60.1 YaSearchBrowser/26.60.1 BroPP/1.0 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 14.0; Google Build/QP1A.191105.004; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/131.0.6778.200 YaBrowser/24.1.1.23 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -2491,24 +2453,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 14.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Search Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.60.1
+    version: 24.1.1.23
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 148.0.7778.144
+    version: 131.0.6778.200
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A15 PRO) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.49 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 14.0.0; K; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 YandexSearch/7.80 YaSearchBrowser/10.44'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -2529,138 +2491,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Search Browser'
-    modus: null
-    version: 26.47.1
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 146.0.7680.49
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A15 PRO) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.49 YaBrowser/26.4.7.49.00 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser'
-    modus: null
-    version: 26.4.7.49.00
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 146.0.7680.49
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A15 Max) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser'
-    modus: null
-    version: 26.6.0.304.00
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 148.0.7778.304
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A15 Max) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.56 YaSearchBrowser/26.46.1 BroPP/1.0 YaSearchApp/26.46.1 webOmni Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
+    version: 14.0.0
     manufacturer: google
     bits: null
   client:
     name: 'Yandex Search Browser'
     modus: null
-    version: 26.46.1
+    version: 10.44.0
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.56
+    version: 146.0.0.0
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A15 Max) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.51 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 13; TrebleDroid vanilla Build/TQ3C.230805.001.A4; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/109.0.5414.123 YaBrowser/24.1.1.23 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -2681,24 +2529,670 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 13.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 24.1.1.23
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 109.0.5414.123
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 13; Smart Phone Build/N6F26Q; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/119.0.6045.193 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 25.12.0.63
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 119.0.6045.193
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 13; Smart Phone Build/N6F26Q; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/119.0.6045.193 YaBrowser/24.1.1.23 (lite) Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 24.1.1.23
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 119.0.6045.193
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 13; O8 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 25.12.0.63
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 13; Note 13 Pro Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 25.12.0.63
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 13; M10 Build/M10; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 25.12.0.63
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 13; E13 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/148.0.7778.215 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 25.12.0.63
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 148.0.7778.215
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 13; Android Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/114.0.5735.60 YaBrowser/24.1.1.23 (lite) Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 24.1.1.23
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 114.0.5735.60
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 13; AEVO-N3000RV-R Build/EVO-SW0-R5.250418.001; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/119.0.6045.141 YaBrowser/25.2.0.29 (lite) Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 25.2.0.29
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 119.0.6045.141
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 13; A180 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 25.12.0.63
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 13.0; S23 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/138.0.7204.181 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 25.12.0.63
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 138.0.7204.181
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; X96 TV Build/SP1A.211105.004; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/95.0.4638.74 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 25.12.0.63
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 95.0.4638.74
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; X25 Ultra Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 25.12.0.63
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; T95MAX Build/SP1A.210812.015; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/91.0.4472.114 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 25.12.0.63
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 91.0.4472.114
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; smart phone Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 25.12.0.63
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; smart phone Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/148.0.7778.215 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 25.12.0.63
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 148.0.7778.215
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; S99 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 25.12.0.63
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; S99 Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.91 Mobile Safari/537.36 YaApp_Android/9.20 YaSearchBrowser/9.20'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
     manufacturer: google
     bits: null
   client:
     name: 'Yandex Search Browser'
     modus: null
-    version: 26.47.1
+    version: 9.20.0
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.51
+    version: 149.0.7827.91
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A15 Max) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.49 YaBrowser/26.4.7.49.00 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; S25 Ultra Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -2719,24 +3213,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 12.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.4.7.49.00
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.49
+    version: 149.0.7827.91
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A15 Max) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.43 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; S25 Ultra Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.159 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -2757,24 +3251,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 12.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Search Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.47.1
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.43
+    version: 149.0.7827.159
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A15 Max) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.105 YaBrowser/26.4.3.105.00 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; S24 Ultra Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -2795,24 +3289,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 12.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.4.3.105.00
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.105
+    version: 149.0.7827.91
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A15 Max) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.42 YaBrowser/25.12.8.42.00 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; Phone Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/148.0.7778.215 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -2833,24 +3327,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 12.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 25.12.8.42.00
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 142.0.7444.42
+    version: 148.0.7778.215
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; A15 Max) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.892 YaSearchBrowser/25.102.1 BroPP/1.0 YaSearchApp/25.102.1 webOmni SA/3 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; Pad5pro Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -2871,24 +3365,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 12.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Search Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 25.102.1
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 140.0.7339.892
+    version: 149.0.7827.91
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; 7Spro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.51 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; Note30i Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -2909,24 +3403,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 12.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Search Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.47.1
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.51
+    version: 149.0.7827.91
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; 7SPRO) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.49 YaBrowser/26.4.7.49.00 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; Note 30i Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -2947,24 +3441,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 12.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.4.7.49.00
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.49
+    version: 149.0.7827.91
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; 2040) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.144 YaApp_Android/26.60.1 YaSearchBrowser/26.60.1 BroPP/1.0 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; M14 Pro Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -2985,24 +3479,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 12.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Search Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.60.1
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 148.0.7778.144
+    version: 149.0.7827.91
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; 2040) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.2244 YaApp_Android/26.40.1 YaSearchBrowser/26.40.1 BroPP/1.0 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; I25 ULTRA Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -3023,24 +3517,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 12.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Search Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.40.1
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.2244
+    version: 149.0.7827.91
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; 2040) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.115 YaBrowser/26.4.4.115.00 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; I25 ULTRA Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/148.0.7778.215 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -3061,24 +3555,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 12.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.4.4.115.00
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.115
+    version: 148.0.7778.215
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; 2040) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.43 YaBrowser/26.3.7.43.00 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; i16 PRO MAX Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -3099,24 +3593,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 12.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.3.7.43.00
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 144.0.7559.43
+    version: 149.0.7827.91
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; 17 Pro Max) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; i16 PRO MAX Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/148.0.7778.217 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -3137,24 +3631,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 12.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.6.0.304.00
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 148.0.7778.304
+    version: 148.0.7778.217
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; 17 Pro Max) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.112 YaBrowser/26.6.1.112.00 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; 16 Pro max Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -3175,24 +3669,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 12.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.6.1.112.00
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 148.0.7778.112
+    version: 149.0.7827.91
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; 17 Pro Max) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.49 YaBrowser/26.4.7.49.00 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 12.0; L903 Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/138.0.7204.179 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -3213,24 +3707,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 12.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.4.7.49.00
+    version: 25.12.0.63
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.49
+    version: 138.0.7204.179
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; 17 Pro Max) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.2074 YaApp_Android/26.40.1 YaSearchBrowser/26.40.1 BroPP/1.0 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 12.0; CMX Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/138.0.7204.179 YaBrowser/24.1.1.23 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -3251,24 +3745,24 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 12.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Search Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.40.1
+    version: 24.1.1.23
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.2074
+    version: 138.0.7204.179
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; 17 Pad) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.55 YaBrowser/26.4.7.55.00 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 12.0; 5026-2Q Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/138.0.7204.179 YaBrowser/24.1.1.23 (lite) Mobile Safari/537.36'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -3289,512 +3783,18 @@
   os:
     name: Android
     marketingName: Android
-    version: 10.0.0
+    version: 12.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Yandex Browser'
+    name: 'Yandex Browser Lite'
     modus: null
-    version: 26.4.7.55.00
+    version: 24.1.1.23
     manufacturer: yandex
     type: browser
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 146.0.7680.55
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; 17 Max) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.302 YaBrowser/26.6.0.302.00 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser'
-    modus: null
-    version: 26.6.0.302.00
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 148.0.7778.302
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; 17 Max) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.125 YaBrowser/26.3.4.125.00 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser'
-    modus: null
-    version: 26.3.4.125.00
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 144.0.7559.125
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; 16ProMax) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.51 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Search Browser'
-    modus: null
-    version: 26.47.1
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 146.0.7680.51
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; 16ProMax) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.43 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Search Browser'
-    modus: null
-    version: 26.47.1
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 146.0.7680.43
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; 15 Ultra) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.43 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Search Browser'
-    modus: null
-    version: 26.47.1
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 146.0.7680.43
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; 15 Pro max) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.49 YaBrowser/26.4.7.49.00 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser'
-    modus: null
-    version: 26.4.7.49.00
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 146.0.7680.49
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10.0; Smart Phone) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser'
-    modus: null
-    version: 26.6.0.304.00
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 148.0.7778.304
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10.0; Smart Phone) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.49 YaBrowser/26.4.7.49.00 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser'
-    modus: null
-    version: 26.4.7.49.00
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 146.0.7680.49
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10.0; Smart Phone) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.59 YaBrowser/25.8.9.59.00 SA/3 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser'
-    modus: null
-    version: 25.8.9.59.00
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 138.0.7204.59
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10.0; Smart Phone) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.405 YaSearchBrowser/25.89.1 BroPP/1.0 YaSearchApp/25.89.1 webOmni SA/3 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Search Browser'
-    modus: null
-    version: 25.89.1
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 138.0.7204.405
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10.0; Smart Phone) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.1921 YaApp_Android/25.80.1 YaSearchBrowser/25.80.1 BroPP/1.0 SA/3 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Search Browser'
-    modus: null
-    version: 25.80.1
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 138.0.7204.1921
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10.0; Smart Phone) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.1898 YaApp_Android/25.80.1 YaSearchBrowser/25.80.1 BroPP/1.0 SA/3 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Search Browser'
-    modus: null
-    version: 25.80.1
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 138.0.7204.1898
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10.0; Smart Phone) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.398 YaApp_Android/25.62.1 YaSearchBrowser/25.62.1 BroPP/1.0 SA/3 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Search Browser'
-    modus: null
-    version: 25.62.1
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 136.0.7103.398
+    version: 138.0.7204.179
     manufacturer: google

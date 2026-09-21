@@ -7,7 +7,7 @@
     marketingName: 'general Telefunken TV'
     manufacturer: telefunken
     brand: telefunken
-    dualOrientation: null
+    dualOrientation: false
     simCount: 0
     display:
       width: null
@@ -35,4 +35,80 @@
   engine:
     name: Blink
     version: 55.0.2883.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; TF-LED65S03T2SU Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 Safari/537.36'
+  device:
+    architecture: null
+    deviceName: TF-LED65S03T2SU
+    marketingName: TF-LED65S03T2SU
+    manufacturer: telefunken
+    brand: telefunken
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: 3840
+      height: 2160
+      touch: false
+      size: 65
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 144.0.7559.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 144.0.7559.0
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; TF-LED55S12T2SU Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 Safari/537.36'
+  device:
+    architecture: null
+    deviceName: TF-LED55S12T2SU
+    marketingName: TF-LED55S12T2SU
+    manufacturer: telefunken
+    brand: telefunken
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: 3840
+      height: 2160
+      touch: false
+      size: 55
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 144.0.7559.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 144.0.7559.0
     manufacturer: google

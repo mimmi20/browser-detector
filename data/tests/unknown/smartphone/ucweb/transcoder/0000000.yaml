@@ -1485,44 +1485,6 @@
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; U; Android 9; en-US; PAD 7 MAX Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.3.1389 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'UC Browser'
-    modus: null
-    version: 15.1.3.1389
-    manufacturer: ucweb
-    type: transcoder
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 123.0.6312.80
-    manufacturer: google
--
-  headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 9; en-US; Model-X3 Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.9.1395 Mobile Safari/537.36'
   device:
     architecture: null
@@ -3793,6 +3755,44 @@
     name: 'UC Browser'
     modus: null
     version: 15.1.9.1395
+    manufacturer: ucweb
+    type: transcoder
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 123.0.6312.80
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 13; en-US; AEOP519 Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.8.1394 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'UC Browser'
+    modus: null
+    version: 15.1.8.1394
     manufacturer: ucweb
     type: transcoder
     isbot: false
