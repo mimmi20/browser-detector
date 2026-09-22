@@ -15,13 +15,14 @@ namespace BrowserDetectorTest\Parser\Header;
 
 use BrowserDetector\Data\Engine;
 use BrowserDetector\Data\Os;
+use BrowserDetector\Loader\MappingfileLoaderInterface;
 use BrowserDetector\Parser\Header\XUcbrowserDevice;
-use BrowserDetector\Parser\Helper\DeviceInterface;
 use BrowserDetector\Version\NullVersion;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use Psr\Log\LoggerInterface;
 use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\NormalizerFactory;
 use UaParser\DeviceParserInterface;
@@ -70,19 +71,47 @@ final class XUcbrowserDevice1Test extends TestCase
             ->with($normalitedUa)
             ->willReturn($deviceCode);
 
-        $deviceCodeHelper = $this->createMock(DeviceInterface::class);
-        $deviceCodeHelper
+        $mappingFileParser = $this->createMock(MappingfileLoaderInterface::class);
+        $mappingFileParser
             ->expects($searchCode ? self::once() : self::never())
-            ->method('getDeviceCode')
+            ->method('init');
+        $mappingFileParser
+            ->expects($searchCode ? self::once() : self::never())
+            ->method('getItem')
             ->with(mb_strtolower($normalitedUa))
             ->willReturn(value: null);
+
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
 
         $deviceCodeOnlyHeader = new DeviceCodeOnlyHeader(
             value: $ua,
             deviceCode: new XUcbrowserDevice(
                 deviceParser: $deviceParser,
                 normalizer: $normalizerChain,
-                device: $deviceCodeHelper,
+                mappingFileParser: $mappingFileParser,
+                logger: $logger,
+                autoUpdate: false,
             ),
         );
 

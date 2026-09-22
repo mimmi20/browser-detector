@@ -314,6 +314,8 @@ final class MobileDeviceTest extends TestCase
             ['Mozilla/5.0 (Linux; Android 14; MiTV-AXTU0 Build/UKG3.250518.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.217 YaBrowser/25.10.1.638 (lite) TV Safari/537.36'],
             ['Mozilla/5.0 (Linux; arm_64; Android 14; VIDAA_TV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.123 YaBrowser/25.12.2.123.00 Mobile Safari/537.36'],
             ['FortiGate (FortiOS 7.0) Chrome/ Safari/'],
+            ['Apple AppleTV6,2 tvOS/17.1.0 Lifetime-tvOS/5.14.0 CFNetwork/1485'],
+            ['H443NM7F8H.CBSSportsApp/1.0 iOS/9.0 model/AppleTV5,3 build/13T393'],
         ];
     }
 }

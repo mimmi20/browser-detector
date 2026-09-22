@@ -58,11 +58,11 @@ final class PlatformLoader implements PlatformLoaderInterface
         $manufacturer  = new Company(type: 'unknown', name: null, brandname: null);
         $version       = $this->getVersion((object) $os->getVersion(), $useragent);
 
-        if ($os->getManufacturer()->getBrandname() !== null) {
+        if ($os->getManufacturer() !== null) {
             try {
-                $manufacturer = $this->companyLoader->load($os->getManufacturer()->getBrandname());
+                $manufacturer = $this->companyLoader->load($os->getManufacturer());
             } catch (NotFoundException $e) {
-                $this->logger->info($e);
+                $this->logger->error($e);
             }
         }
 
@@ -83,7 +83,7 @@ final class PlatformLoader implements PlatformLoaderInterface
                 }
             }
         } catch (UnexpectedValueException $e) {
-            $this->logger->info($e);
+            $this->logger->error($e);
         }
 
         return new Os(

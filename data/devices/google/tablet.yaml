@@ -1,0 +1,126 @@
+'google nexus 10':
+  deviceName: 'Nexus 10'
+  marketingName: 'Nexus 10'
+  manufacturer: samsung
+  brand: google
+  dualOrientation: true
+  simCount: 0
+  display:
+    width: 2560
+    height: 1600
+    touch: true
+    size: 10.1
+  type: tablet
+  platform: android
+'google nexus 7':
+  deviceName: 'Nexus 7'
+  marketingName: 'Nexus 7'
+  manufacturer: asus
+  brand: google
+  dualOrientation: true
+  simCount: 0
+  display:
+    width: 1280
+    height: 800
+    touch: true
+    size: 7
+  type: tablet
+  platform: android
+'google me370t':
+  deviceName: ME370T
+  marketingName: 'Nexus 7'
+  manufacturer: asus
+  brand: google
+  dualOrientation: true
+  simCount: 0
+  display:
+    width: 1280
+    height: 800
+    touch: true
+    size: 7
+  type: tablet
+  platform: android
+'google nexus 7p':
+  deviceName: 'Nexus 7P'
+  marketingName: 'Nexus 7P'
+  manufacturer: asus
+  brand: google
+  dualOrientation: true
+  simCount: 0
+  display:
+    width: null
+    height: null
+    touch: true
+    size: 7
+  type: tablet
+  platform: android
+'google nexus 9':
+  deviceName: 'Nexus 9'
+  marketingName: 'Nexus 9'
+  manufacturer: htc
+  brand: google
+  dualOrientation: true
+  simCount: 0
+  display:
+    width: 2048
+    height: 1536
+    touch: true
+    size: 8.9
+  type: tablet
+  platform: android
+'google pixel c':
+  deviceName: 'Pixel C'
+  marketingName: 'Pixel C'
+  manufacturer: google
+  brand: google
+  dualOrientation: true
+  simCount: 0
+  display:
+    width: 2560
+    height: 1800
+    touch: true
+    size: 10.2
+  type: tablet
+  platform: android
+'google kukui':
+  deviceName: 'Kukui Chromebook'
+  marketingName: 'Kukui Chromebook'
+  manufacturer: google
+  brand: google
+  dualOrientation: true
+  simCount: 0
+  display:
+    width: null
+    height: null
+    touch: true
+    size: null
+  type: tablet
+  platform: chromeos
+'google pixel tablet':
+  deviceName: 'Pixel Tablet'
+  marketingName: 'Pixel Tablet'
+  manufacturer: google
+  brand: google
+  dualOrientation: true
+  simCount: 0
+  display:
+    width: 2560
+    height: 1600
+    touch: true
+    size: 10.95
+  type: tablet
+  platform: chromeos
+'google pixel tablet 2':
+  deviceName: 'Pixel Tablet 2'
+  marketingName: 'Pixel Tablet 2'
+  manufacturer: google
+  brand: google
+  dualOrientation: true
+  simCount: 0
+  display:
+    width: 2560
+    height: 1600
+    touch: true
+    size: 10.95
+  type: tablet
+  platform: chromeos

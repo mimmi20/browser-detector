@@ -20,15 +20,14 @@ use BrowserDetector\Parser\Device\DarwinParser;
 use BrowserDetector\Parser\Device\DesktopParser;
 use BrowserDetector\Parser\Device\MobileParser;
 use BrowserDetector\Parser\Device\TvParser;
-use BrowserDetector\Parser\Helper\RulefileParser;
+use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use Override;
-use Psr\Log\LoggerInterface;
 use UaParser\DeviceParserInterface;
 
 final readonly class DeviceParserFactory implements DeviceParserFactoryInterface
 {
     /** @throws void */
-    public function __construct(private LoggerInterface $logger)
+    public function __construct(private RulefileParserInterface $rulefileParser)
     {
         // nothing to do
     }
@@ -41,11 +40,10 @@ final readonly class DeviceParserFactory implements DeviceParserFactoryInterface
     #[Override]
     public function __invoke(): DeviceParserInterface
     {
-        $rulefileParser = new RulefileParser(logger: $this->logger);
-        $darwinParser   = new DarwinParser(rulefileParser: $rulefileParser);
-        $mobileParser   = new MobileParser(rulefileParser: $rulefileParser);
-        $tvParser       = new TvParser(rulefileParser: $rulefileParser);
-        $desktopParser  = new DesktopParser(rulefileParser: $rulefileParser);
+        $darwinParser  = new DarwinParser(rulefileParser: $this->rulefileParser);
+        $mobileParser  = new MobileParser(rulefileParser: $this->rulefileParser);
+        $tvParser      = new TvParser(rulefileParser: $this->rulefileParser);
+        $desktopParser = new DesktopParser(rulefileParser: $this->rulefileParser);
 
         return new DeviceParser(
             darwinParser: $darwinParser,

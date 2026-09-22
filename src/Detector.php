@@ -145,7 +145,7 @@ final readonly class Detector implements DetectorInterface
                     $platformMarketingName = 'iPadOS';
                 }
             } catch (UnexpectedValueException $e) {
-                $this->logger->info($e);
+                $this->logger->error($e);
             }
         }
 

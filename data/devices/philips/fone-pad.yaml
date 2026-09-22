@@ -1,0 +1,28 @@
+'philips tle821l':
+  deviceName: TLE821L
+  marketingName: 'E Line 4G'
+  manufacturer: philips
+  brand: philips
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: 1280
+    height: 800
+    touch: true
+    size: 8
+  type: fone-pad
+  platform: android
+'philips pi4010g':
+  deviceName: PI4010G
+  marketingName: PI4010G
+  manufacturer: philips
+  brand: philips
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: 1280
+    height: 800
+    touch: true
+    size: 8
+  type: fone-pad
+  platform: android

@@ -1,0 +1,9 @@
+riddler:
+  name: Riddler
+  manufacturer: f-secure
+  type: security-search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Riddler
+  engine: unknown

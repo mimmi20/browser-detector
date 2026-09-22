@@ -26,7 +26,6 @@ use UaLoader\Exception\NotFoundException;
 use UaResult\Bits\Bits;
 use UaResult\Browser\Browser;
 use UaResult\Company\Company;
-use UnexpectedValueException;
 
 final class BrowserLoader implements BrowserLoaderInterface
 {
@@ -76,17 +75,9 @@ final class BrowserLoader implements BrowserLoaderInterface
 
         if ($manufacturerName !== null) {
             try {
-                $company = \BrowserDetector\Data\Company::fromName($manufacturerName);
-
-                $manufacturerName = $company->getBrandname() ?? 'unknown';
-            } catch (UnexpectedValueException) {
-                // do nothing
-            }
-
-            try {
                 $manufacturer = $this->companyLoader->load($manufacturerName);
             } catch (NotFoundException $e) {
-                $this->logger->info($e);
+                $this->logger->error($e);
             }
         }
 

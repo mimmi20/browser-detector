@@ -11,7 +11,6 @@
 
 declare(strict_types = 1);
 
-use Rector\CodeQuality\Rector\If_\ExplicitBoolCompareRector;
 use Rector\Config\RectorConfig;
 use Rector\DeadCode\Rector\Cast\RecastingRemovalRector;
 use Rector\DeadCode\Rector\ClassMethod\RemoveUnusedPromotedPropertyRector;
@@ -65,7 +64,6 @@ return RectorConfig::configure()
         YieldDataProviderRector::class,
         RenamePropertyToMatchTypeRector::class,
         RenameParamToMatchTypeRector::class,
-        ExplicitBoolCompareRector::class,
         NoSetupWithParentCallOverrideRector::class,
     ])
     ->withSkip([

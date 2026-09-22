@@ -693,21 +693,8 @@ final class Detector2Test extends TestCase
 
         $logger = $this->createMock(LoggerInterface::class);
         $logger
-            ->expects(self::once())
-            ->method('info')
-            ->willReturnCallback(
-                static function (string | Stringable $message, array $context = []) use ($notFoundException, $company, $key): void {
-                    assert($message instanceof UnexpectedValueException);
-                    self::assertInstanceOf(UnexpectedValueException::class, $message);
-                    self::assertSame(
-                        sprintf('Device "%s" of Manufacturer "%s" was not found', $key, $company),
-                        $message->getMessage(),
-                    );
-                    self::assertSame(0, $message->getCode());
-                    self::assertSame($notFoundException, $message->getPrevious());
-                    self::assertSame([], $context);
-                },
-            );
+            ->expects(self::never())
+            ->method('info');
         $logger
             ->expects(self::never())
             ->method('notice');
@@ -715,8 +702,26 @@ final class Detector2Test extends TestCase
             ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(self::never())
-            ->method('error');
+            ->expects(self::once())
+            ->method('error')
+            ->willReturnCallback(
+                static function (string | Stringable $message, array $context = []) use ($notFoundException, $company, $key, $deviceCodeForLoader): void {
+                    assert($message instanceof UnexpectedValueException);
+                    self::assertInstanceOf(UnexpectedValueException::class, $message);
+                    self::assertSame(
+                        sprintf(
+                            'Device "%s" of Manufacturer "%s" was not found from device code %s',
+                            $key,
+                            $company,
+                            $deviceCodeForLoader,
+                        ),
+                        $message->getMessage(),
+                    );
+                    self::assertSame(0, $message->getCode());
+                    self::assertSame($notFoundException, $message->getPrevious());
+                    self::assertSame([], $context);
+                },
+            );
         $logger
             ->expects(self::never())
             ->method('critical');

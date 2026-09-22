@@ -1,0 +1,114 @@
+<?php
+
+/**
+ * This file is part of the browser-detector package.
+ *
+ * Copyright (c) 2012-2026, Thomas Mueller <mimmi20@live.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+declare(strict_types = 1);
+
+namespace BrowserDetector\Loader;
+
+use BrowserDetector\Iterator\FilterIterator;
+use Exception;
+use Override;
+use Psr\Log\LoggerInterface;
+use RecursiveDirectoryIterator;
+use RecursiveIteratorIterator;
+use RuntimeException;
+use SplFileInfo;
+use Symfony\Component\Yaml\Exception\ParseException;
+use Symfony\Component\Yaml\Yaml;
+
+use function array_key_exists;
+use function assert;
+use function is_array;
+use function is_string;
+use function sprintf;
+use function str_replace;
+
+final class MappingfileLoader implements MappingfileLoaderInterface
+{
+    private const string DATA_PATH = __DIR__ . '/../../data/device-mapping';
+
+    /** @var array<string, non-empty-string> */
+    private array $devices    = [];
+    private bool $initialized = false;
+
+    /** @throws void */
+    public function __construct(private readonly LoggerInterface $logger)
+    {
+        // nothing to do
+    }
+
+    /** @throws RuntimeException */
+    #[Override]
+    public function init(): void
+    {
+        if ($this->initialized) {
+            return;
+        }
+
+        $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator(self::DATA_PATH));
+        $files    = new FilterIterator($iterator, 'yaml');
+
+        foreach ($files as $file) {
+            assert($file instanceof SplFileInfo);
+
+            $pathName = $file->getPathname();
+            $filepath = str_replace('\\', '/', $pathName);
+            assert(is_string($filepath));
+
+            try {
+                $fileData = Yaml::parseFile($filepath);
+            } catch (ParseException $e) {
+                $this->logger->error(
+                    new Exception(
+                        sprintf('could not parse file %s', $file),
+                        0,
+                        $e,
+                    ),
+                );
+
+                continue;
+            }
+
+            assert(is_array($fileData));
+
+            foreach ($fileData as $key => $data) {
+                $stringKey = (string) $key;
+
+                if (array_key_exists($stringKey, $this->devices)) {
+                    continue;
+                }
+
+                if (!is_string($data)) {
+                    continue;
+                }
+
+                if ($data === '') {
+                    continue;
+                }
+
+                $this->devices[$stringKey] = $data;
+            }
+        }
+
+        $this->initialized = true;
+    }
+
+    /**
+     * @return non-empty-string|null
+     *
+     * @throws void
+     */
+    #[Override]
+    public function getItem(string $code): string | null
+    {
+        return $this->devices[$code] ?? null;
+    }
+}

@@ -13,41 +13,27 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader;
 
-use BrowserDetector\Loader\InitData\Company as DataCompany;
-use Laminas\Hydrator\ArraySerializableHydrator;
-use Laminas\Hydrator\Exception\InvalidArgumentException;
-use Laminas\Hydrator\Strategy\CollectionStrategy;
-use Laminas\Hydrator\Strategy\StrategyChain;
-use Laminas\Hydrator\Strategy\StrategyInterface;
 use Override;
-use RuntimeException;
+use Psr\Log\LoggerInterface;
 
 final class CompanyLoaderFactory implements CompanyLoaderFactoryInterface
 {
     private CompanyLoader | null $companyLoader = null;
 
-    /** @throws RuntimeException */
+    /** @throws void */
+    public function __construct(private readonly LoggerInterface $logger)
+    {
+        // nothing to do
+    }
+
+    /** @throws void */
     #[Override]
-    public function __invoke(StrategyInterface $strategy): CompanyLoaderInterface
+    public function __invoke(): CompanyLoaderInterface
     {
         if (!$this->companyLoader instanceof CompanyLoader) {
-            try {
-                $this->companyLoader = new CompanyLoader(
-                    initData: new Data\Company(
-                        strategy: new StrategyChain(
-                            [
-                                new CollectionStrategy(
-                                    new ArraySerializableHydrator(),
-                                    DataCompany::class,
-                                ),
-                                $strategy,
-                            ],
-                        ),
-                    ),
-                );
-            } catch (InvalidArgumentException $e) {
-                throw new RuntimeException($e->getMessage(), $e->getCode(), $e);
-            }
+            $this->companyLoader = new CompanyLoader(
+                initData: new Data\Company(logger: $this->logger),
+            );
         }
 
         return $this->companyLoader;

@@ -15,7 +15,6 @@ namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\DeviceLoaderFactory;
-use Laminas\Hydrator\Exception\InvalidArgumentException;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
@@ -31,7 +30,6 @@ final class DeviceLoaderFactoryTest extends TestCase
     /**
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws InvalidArgumentException
      * @throws NotFoundException
      */
     public function testInvoke(): void
@@ -67,7 +65,7 @@ final class DeviceLoaderFactoryTest extends TestCase
         $companyLoader
             ->expects(self::atLeastOnce())
             ->method('load')
-            ->with('Apple')
+            ->with('apple')
             ->willReturn($comp);
 
         $deviceLoaderFactory = new DeviceLoaderFactory($logger, $companyLoader);

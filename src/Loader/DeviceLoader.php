@@ -24,7 +24,6 @@ use UaLoader\Exception\NotFoundException;
 use UaResult\Company\Company;
 use UaResult\Device\Device;
 use UaResult\Device\Display;
-use UnexpectedValueException;
 
 final readonly class DeviceLoader implements DeviceLoaderInterface
 {
@@ -70,17 +69,9 @@ final readonly class DeviceLoader implements DeviceLoaderInterface
 
         if ($manufacturerName !== null) {
             try {
-                $company = \BrowserDetector\Data\Company::fromName($manufacturerName);
-
-                $manufacturerName = $company->getBrandname() ?? 'unknown';
-            } catch (UnexpectedValueException) {
-                // do nothing
-            }
-
-            try {
                 $manufacturer = $this->companyLoader->load($manufacturerName);
             } catch (NotFoundException $e) {
-                $this->logger->info($e);
+                $this->logger->error($e);
             }
         }
 
@@ -89,17 +80,9 @@ final readonly class DeviceLoader implements DeviceLoaderInterface
 
         if ($brandName !== null) {
             try {
-                $company = \BrowserDetector\Data\Company::fromName($brandName);
-
-                $brandName = $company->getBrandname() ?? 'unknown';
-            } catch (UnexpectedValueException) {
-                // do nothing
-            }
-
-            try {
                 $brand = $this->companyLoader->load($brandName);
             } catch (NotFoundException $e) {
-                $this->logger->info($e);
+                $this->logger->error($e);
             }
         }
 
@@ -117,8 +100,8 @@ final readonly class DeviceLoader implements DeviceLoaderInterface
 
         return new Device(
             architecture: $device->getArchitecture(),
-            deviceName: $device->getDeviceName(),
-            marketingName: $device->getMarketingName(),
+            deviceName: $device->getDeviceName() === null ? null : (string) $device->getDeviceName(),
+            marketingName: $device->getMarketingName() === null ? null : (string) $device->getMarketingName(),
             manufacturer: $manufacturer,
             brand: $brand,
             type: $deviceType,

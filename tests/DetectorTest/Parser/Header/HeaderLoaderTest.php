@@ -13,12 +13,14 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Parser\Header;
 
+use BrowserDetector\Loader\MappingfileLoaderInterface;
 use BrowserDetector\Parser\Header\HeaderLoader;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use Psr\Log\LoggerInterface;
 use UaLoader\BrowserLoaderInterface;
 use UaLoader\EngineLoaderInterface;
 use UaLoader\PlatformLoaderInterface;
@@ -81,6 +83,36 @@ final class HeaderLoaderTest extends TestCase
             ->method('loadFromEngine');
 
         $normalizerFactory = new NormalizerFactory();
+        $mappingFileParser = $this->createMock(MappingfileLoaderInterface::class);
+        $mappingFileParser
+            ->expects(self::never())
+            ->method('init');
+        $mappingFileParser
+            ->expects(self::never())
+            ->method('getItem');
+
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
 
         $key = Constants::HEADER_TEST;
 
@@ -93,6 +125,9 @@ final class HeaderLoaderTest extends TestCase
             browserLoader: $browserLoader,
             platformLoader: $platformLoader,
             engineLoader: $engineLoader,
+            mappingFileParser: $mappingFileParser,
+            logger: $logger,
+            autoUpdate: false,
         );
 
         $this->expectException(NotFoundException::class);
@@ -156,6 +191,36 @@ final class HeaderLoaderTest extends TestCase
             ->method('loadFromEngine');
 
         $normalizerFactory = new NormalizerFactory();
+        $mappingFileParser = $this->createMock(MappingfileLoaderInterface::class);
+        $mappingFileParser
+            ->expects(self::never())
+            ->method('init');
+        $mappingFileParser
+            ->expects(self::never())
+            ->method('getItem');
+
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
 
         $headerLoader = new HeaderLoader(
             deviceParser: $deviceParser,
@@ -166,6 +231,9 @@ final class HeaderLoaderTest extends TestCase
             browserLoader: $browserLoader,
             platformLoader: $platformLoader,
             engineLoader: $engineLoader,
+            mappingFileParser: $mappingFileParser,
+            logger: $logger,
+            autoUpdate: false,
         );
 
         $header = $headerLoader->load($key, $value);
@@ -225,6 +293,36 @@ final class HeaderLoaderTest extends TestCase
             ->method('loadFromEngine');
 
         $normalizerFactory = new NormalizerFactory();
+        $mappingFileParser = $this->createMock(MappingfileLoaderInterface::class);
+        $mappingFileParser
+            ->expects(self::never())
+            ->method('init');
+        $mappingFileParser
+            ->expects(self::never())
+            ->method('getItem');
+
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
 
         $headerLoader = new HeaderLoader(
             deviceParser: $deviceParser,
@@ -235,6 +333,9 @@ final class HeaderLoaderTest extends TestCase
             browserLoader: $browserLoader,
             platformLoader: $platformLoader,
             engineLoader: $engineLoader,
+            mappingFileParser: $mappingFileParser,
+            logger: $logger,
+            autoUpdate: false,
         );
 
         self::assertTrue($headerLoader->has($key));

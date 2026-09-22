@@ -59,6 +59,7 @@ use function in_array;
 use function is_string;
 use function mb_strtolower;
 use function sprintf;
+use function str_contains;
 
 final readonly class Headers
 {
@@ -310,7 +311,7 @@ final readonly class Headers
 
                     return $engineFrom;
                 } catch (UnexpectedValueException $e) {
-                    $this->logger->info($e);
+                    $this->logger->error($e);
                 }
             }
         }
@@ -467,6 +468,7 @@ final readonly class Headers
                         case 'mistral-ai-user':
                         case 'meta-webindexer':
                         case 'cohere-ai':
+                        case 'facebook app':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 
@@ -633,7 +635,7 @@ final readonly class Headers
 
             return $clientData;
         } catch (UnexpectedValueException $e) {
-            $this->logger->info($e, ['headers' => $this->headers]);
+            $this->logger->error($e, ['headers' => $this->headers]);
         }
 
         return new ClientData(
@@ -815,7 +817,7 @@ final readonly class Headers
 
                     return $platformFromOs;
                 } catch (UnexpectedValueException $e) {
-                    $this->logger->info($e);
+                    $this->logger->error($e);
                 }
             }
         }
@@ -848,7 +850,7 @@ final readonly class Headers
             $deviceCodename = $deviceHeader->getDeviceCode();
         }
 
-        if ($deviceCodename !== null) {
+        if ($deviceCodename !== null && $deviceCodename !== '' && str_contains($deviceCodename, '=')) {
             [$company, $key] = explode('=', $deviceCodename, 2);
 
             try {
@@ -856,9 +858,14 @@ final readonly class Headers
 
                 return $deviceLoader->load($key);
             } catch (NotFoundException $e) {
-                $this->logger->info(
+                $this->logger->error(
                     new UnexpectedValueException(
-                        sprintf('Device "%s" of Manufacturer "%s" was not found', $key, $company),
+                        sprintf(
+                            'Device "%s" of Manufacturer "%s" was not found from device code %s',
+                            $key,
+                            $company,
+                            $deviceCodename,
+                        ),
                         0,
                         $e,
                     ),

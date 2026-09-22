@@ -1,0 +1,569 @@
+lighthouse:
+  name: Lighthouse
+  manufacturer: google
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Lighthouse
+  engine: null
+webpagetest:
+  name: WebPageTest
+  manufacturer: wpo-foundation
+  type: site-monitor
+  version:
+    class: null
+    search: null
+  engine: null
+'alexa site audit':
+  name: 'Alexa Site Audit'
+  manufacturer: alexa-internet
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'alexa site audit'
+  engine: unknown
+pingdom:
+  name: 'Pingdom Bot'
+  manufacturer: pingdom
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Pingdom\.com\_bot\_version\_
+      - PingdomPageSpeed
+      - PingdomTMS
+      - pingbot
+  engine: gecko
+nagios-check-http:
+  name: 'Nagios Check Http'
+  manufacturer: nagios-enterprises
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - check_http
+  engine: unknown
+web-alert-app:
+  name: 'Web Alert App'
+  manufacturer: web-alert
+  type: site-monitor
+  version:
+    factory: null
+    search: null
+  engine: unknown
+thousand-eyes:
+  name: ThousandEyes
+  manufacturer: unknown
+  type: site-monitor
+  version:
+    factory: null
+    search: null
+  engine: unknown
+'google pagespeed insights':
+  name: 'Google PageSpeed Insights'
+  manufacturer: google
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Google Page Speed Insights'
+  engine: null
+google-partner-monitoring:
+  name: 'Google Partner Monitoring'
+  manufacturer: google
+  type: site-monitor
+  version:
+    factory: null
+    search: null
+  engine: null
+website-pulse-checker:
+  name: 'WebSitePulse Checker'
+  manufacturer: unknown
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'websitepulse checker'
+  engine: null
+google-stackdriver-monitoring:
+  name: 'Google Stackdriver Monitoring'
+  manufacturer: google
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - GoogleStackdriverMonitoring
+  engine: null
+munin-bot:
+  name: MuninBot
+  manufacturer: munin
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - MuninBot
+      - munin\/
+  engine: null
+check-host:
+  name: CheckHost
+  manufacturer: check-host
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - CheckHost
+  engine: null
+ruxit-synthetic:
+  name: RuxitSynthetic
+  manufacturer: dynatrace
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - RuxitSynthetic
+  engine: null
+uptimerobot:
+  name: UptimeRobot
+  manufacturer: uptime-robot
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - UptimeRobot
+  engine: unknown
+uptimebot:
+  name: Uptimebot
+  manufacturer: uptime
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Uptimebot
+      - Uptime
+  engine: unknown
+wardbot:
+  name: WARDBot
+  manufacturer: ward
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - WARDBot
+  engine: unknown
+'cloudflare alwaysonline':
+  name: 'CloudFlare Always Online'
+  manufacturer: cloud-flare
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - CloudFlare\-AlwaysOnline
+  engine: unknown
+node-ping:
+  name: NodePing
+  manufacturer: node-ping
+  type: site-monitor
+  version:
+    factory: null
+    search: null
+  engine: unknown
+'freewebmonitoring sitechecker':
+  name: 'FreeWebMonitoring SiteChecker'
+  manufacturer: free-web-monitoring
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'FreeWebMonitoring SiteChecker'
+  engine: unknown
+datadog-agent:
+  name: 'Datadog Agent'
+  manufacturer: datadog
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Datadog Agent'
+      - 'Datadog\/?Synthetics'
+  engine: unknown
+url-inspector-bot:
+  name: URLinspectorBot
+  manufacturer: link-research-tools
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - URLinspectorBot
+  engine: unknown
+uptime-kuma:
+  name: Uptime-Kuma
+  manufacturer: louis-lam
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Uptime-Kuma
+  engine: unknown
+grafana:
+  name: Grafana
+  manufacturer: grafana-labs
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Grafana
+  engine: unknown
+oh-dear:
+  name: 'Oh Dear'
+  manufacturer: immutable
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - OhDear
+  engine: unknown
+cloudflare-smart-transit:
+  name: 'Cloudflare Smart Transit'
+  manufacturer: cloud-flare
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Cloudflare-Smart-Transit
+  engine: unknown
+blackbox-exporter:
+  name: 'Blackbox Exporter'
+  manufacturer: linux-foundation
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Blackbox Exporter'
+  engine: unknown
+pod-uptime:
+  name: PodUptime
+  manufacturer: spreaker
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - PodUptime
+  engine: unknown
+web-mon:
+  name: WebMon
+  manufacturer: unknown
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - WebMon
+  engine: unknown
+omtr-bot:
+  name: OmtrBot
+  manufacturer: unknown
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - OmtrBot
+  engine: unknown
+eye-monit:
+  name: EyeMonit
+  manufacturer: eyemonit
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - EyeMonIT_bot_version_
+      - EyeMonIT
+  engine: unknown
+site24x7-website-monitoring:
+  name: 'Site24x7 Website Monitoring'
+  manufacturer: zoho
+  type: site-monitor
+  version:
+    factory: null
+    search: null
+  engine: unknown
+dynatrace-synthetic:
+  name: DynatraceSynthetic
+  manufacturer: dynatrace
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - DynatraceSynthetic
+  engine: null
+bbc-forge-url-monitor:
+  name: 'BBC Forge URL Monitor'
+  manufacturer: bbc
+  type: site-monitor
+  version:
+    factory: null
+    search: null
+  engine: null
+bbc-page-monitor:
+  name: 'BBC Page Monitor'
+  manufacturer: bbc
+  type: site-monitor
+  version:
+    factory: null
+    search: null
+  engine: null
+chartable:
+  name: Chartable
+  manufacturer: spotify
+  type: site-monitor
+  version:
+    factory: null
+    search: null
+  engine: null
+cloudflare-diagnostics:
+  name: 'Cloudflare Diagnostics'
+  manufacturer: cloud-flare
+  type: site-monitor
+  version:
+    factory: null
+    search: null
+  engine: null
+cloudflare-traffic-manager:
+  name: 'Cloudflare Traffic Manager'
+  manufacturer: cloud-flare
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Cloudflare-Traffic-Manager
+  engine: null
+cloudflare-ssl-detector:
+  name: 'Cloudflare SSL Detector'
+  manufacturer: cloud-flare
+  type: site-monitor
+  version:
+    factory: null
+    search: null
+  engine: null
+ahrefs-site-audit:
+  name: AhrefsSiteAudit
+  manufacturer: ahrefs
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - AhrefsSiteAudit
+  engine: null
+online-or-not-bot:
+  name: 'OnlineOrNot Bot'
+  manufacturer: online-or-not
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - OnlineOrNot\.com_bot_
+  engine: null
+360-monitoring:
+  name: '360 Monitoring'
+  manufacturer: plesk
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - monitoring360bot
+  engine: null
+lastmod-bot:
+  name: 'LastMod Bot'
+  manufacturer: unknown
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - LastModBot
+  engine: null
+amazon-elb:
+  name: 'Amazon ELB'
+  manufacturer: amazon
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ELB-HealthChecker
+  engine: null
+rocket-monitor-bot:
+  name: RocketMonitorBot
+  manufacturer: radio-mast
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - RocketMonitorBot
+      - rocketmonitor
+  engine: null
+app-signal-bot:
+  name: AppSignalBot
+  manufacturer: app-signal
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - AppSignalBot
+  engine: null
+ping-admin-ru:
+  name: PingAdmin.Ru
+  manufacturer: unknown
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - PingAdmin\.Ru
+  engine: null
+catchpoint:
+  name: Catchpoint
+  manufacturer: catchpoint-systems
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Catchpoint
+  engine: null
+google-transparency-report:
+  name: 'Google Transparency Report'
+  manufacturer: google
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Google-Transparency-Report
+  engine: null
+collectd:
+  name: Collectd
+  manufacturer: unknown
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - collectd
+  engine: null
+uptimia:
+  name: Uptimia
+  manufacturer: jj-online
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Uptimia
+  engine: null
+contentking:
+  name: ContentKing
+  manufacturer: content-king
+  type: site-monitor
+  version:
+    class: null
+    search: null
+  engine: unknown
+status-cake:
+  name: StatusCake
+  manufacturer: traffic-cake
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'StatusCake Error Detector Crawler V'
+  engine: null
+http-mon:
+  name: HTTPMon
+  manufacturer: unknown
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - HTTPMon
+  engine: null
+montastic-monitor:
+  name: 'Montastic Monitor'
+  manufacturer: unknown
+  type: site-monitor
+  version:
+    factory: null
+    search: null
+  engine: null
+yottaa-site-monitor:
+  name: 'Yottaa Site Monitor'
+  manufacturer: yottaa
+  type: site-monitor
+  version:
+    factory: null
+    search: null
+  engine: null
+page-modified-pinger:
+  name: 'Page Modified Pinger'
+  manufacturer: valley-hosting
+  type: site-monitor
+  version:
+    factory: null
+    search: null
+  engine: null
+nimbo-stratus-bot:
+  name: 'Nimbostratus Bot'
+  manufacturer: cloud-system-networks
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Nimbostratus-Bot\/v
+      - Nimbostratus-Bot
+  engine: null
+phantomas:
+  name: phantomas
+  manufacturer: maciej-brencz
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - phantomas
+  engine: webkit
+monitor-us:
+  name: Monitor.Us
+  manufacturer: monitor.us
+  type: site-monitor
+  version:
+    factory: null
+    search: null
+  engine: null
+php-server-monitor:
+  name: 'PHP Server Monitor'
+  manufacturer: unknown
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - phpservermon
+  engine: null
+ghost-inspector:
+  name: 'Ghost Inspector'
+  manufacturer: unknown
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Ghost Inspector'
+  engine: null
+server-density:
+  name: 'Server Density'
+  manufacturer: unknown
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Server Density'
+  engine: null
+sixy-ch:
+  name: Sixy.ch
+  manufacturer: unknown
+  type: site-monitor
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Sixy\.ch
+  engine: null

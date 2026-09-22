@@ -18,8 +18,6 @@ use BrowserDetector\Loader\Data\DataInterface;
 use BrowserDetector\Loader\Data\Device as DeviceData;
 use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetector\Loader\InitData\Device as DataDevice;
-use Laminas\Hydrator\Strategy\StrategyInterface;
-use Override;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
@@ -69,36 +67,7 @@ final class DeviceLoader1Test extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $device = new DeviceData(
-            strategy: new class () implements StrategyInterface {
-                /**
-                 * @throws void
-                 *
-                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-                 */
-                #[Override]
-                public function extract(mixed $value, object | null $object = null): null
-                {
-                    return null;
-                }
-
-                /**
-                 * @param array<mixed>|null $data
-                 *
-                 * @return array<string, mixed>
-                 *
-                 * @throws void
-                 *
-                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-                 */
-                #[Override]
-                public function hydrate(mixed $value, array | null $data): array
-                {
-                    return [];
-                }
-            },
-            company: 'test-company',
-        );
+        $device = new DeviceData(company: 'test-company', logger: $logger);
 
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
         $companyLoader
@@ -148,36 +117,7 @@ final class DeviceLoader1Test extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $device = new DeviceData(
-            strategy: new class () implements StrategyInterface {
-                /**
-                 * @throws void
-                 *
-                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-                 */
-                #[Override]
-                public function extract(mixed $value, object | null $object = null): null
-                {
-                    return null;
-                }
-
-                /**
-                 * @param array<mixed>|null $data
-                 *
-                 * @return array<string, mixed>
-                 *
-                 * @throws void
-                 *
-                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-                 */
-                #[Override]
-                public function hydrate(mixed $value, array | null $data): array
-                {
-                    return [];
-                }
-            },
-            company: 'test-company',
-        );
+        $device = new DeviceData(company: 'test-company', logger: $logger);
 
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
         $companyLoader
@@ -286,36 +226,7 @@ final class DeviceLoader1Test extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = new DeviceData(
-            strategy: new class () implements StrategyInterface {
-                /**
-                 * @throws void
-                 *
-                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-                 */
-                #[Override]
-                public function extract(mixed $value, object | null $object = null): null
-                {
-                    return null;
-                }
-
-                /**
-                 * @param array<mixed>|null $data
-                 *
-                 * @return array<string, mixed>
-                 *
-                 * @throws void
-                 *
-                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-                 */
-                #[Override]
-                public function hydrate(mixed $value, array | null $data): array
-                {
-                    return [];
-                }
-            },
-            company: 'test-company',
-        );
+        $initData = new DeviceData(company: 'test-company', logger: $logger);
 
         $platformData = new DataDevice(
             architecture: Architecture::unknown,
@@ -389,9 +300,8 @@ final class DeviceLoader1Test extends TestCase
 
         $logger = $this->createMock(LoggerInterface::class);
         $logger
-            ->expects(self::once())
-            ->method('info')
-            ->with($notFoundException, []);
+            ->expects(self::never())
+            ->method('info');
         $logger
             ->expects(self::never())
             ->method('notice');
@@ -399,8 +309,9 @@ final class DeviceLoader1Test extends TestCase
             ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(self::never())
-            ->method('error');
+            ->expects(self::once())
+            ->method('error')
+            ->with($notFoundException, []);
         $logger
             ->expects(self::never())
             ->method('critical');
@@ -411,36 +322,7 @@ final class DeviceLoader1Test extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = new DeviceData(
-            strategy: new class () implements StrategyInterface {
-                /**
-                 * @throws void
-                 *
-                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-                 */
-                #[Override]
-                public function extract(mixed $value, object | null $object = null): null
-                {
-                    return null;
-                }
-
-                /**
-                 * @param array<mixed>|null $data
-                 *
-                 * @return array<string, mixed>
-                 *
-                 * @throws void
-                 *
-                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-                 */
-                #[Override]
-                public function hydrate(mixed $value, array | null $data): array
-                {
-                    return [];
-                }
-            },
-            company: 'test-company',
-        );
+        $initData = new DeviceData(company: 'test-company', logger: $logger);
 
         $platformData = new DataDevice(
             architecture: Architecture::unknown,
@@ -510,9 +392,8 @@ final class DeviceLoader1Test extends TestCase
 
         $logger = $this->createMock(LoggerInterface::class);
         $logger
-            ->expects(self::once())
-            ->method('info')
-            ->with($notFoundException, []);
+            ->expects(self::never())
+            ->method('info');
         $logger
             ->expects(self::never())
             ->method('notice');
@@ -520,8 +401,9 @@ final class DeviceLoader1Test extends TestCase
             ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(self::never())
-            ->method('error');
+            ->expects(self::once())
+            ->method('error')
+            ->with($notFoundException, []);
         $logger
             ->expects(self::never())
             ->method('critical');
@@ -532,36 +414,7 @@ final class DeviceLoader1Test extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = new DeviceData(
-            strategy: new class () implements StrategyInterface {
-                /**
-                 * @throws void
-                 *
-                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-                 */
-                #[Override]
-                public function extract(mixed $value, object | null $object = null): null
-                {
-                    return null;
-                }
-
-                /**
-                 * @param array<mixed>|null $data
-                 *
-                 * @return array<string, mixed>
-                 *
-                 * @throws void
-                 *
-                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-                 */
-                #[Override]
-                public function hydrate(mixed $value, array | null $data): array
-                {
-                    return [];
-                }
-            },
-            company: 'test-company',
-        );
+        $initData = new DeviceData(company: 'test-company', logger: $logger);
 
         $platformData = new DataDevice(
             architecture: Architecture::unknown,
@@ -631,9 +484,8 @@ final class DeviceLoader1Test extends TestCase
 
         $logger = $this->createMock(LoggerInterface::class);
         $logger
-            ->expects(self::exactly(2))
-            ->method('info')
-            ->with($notFoundException, []);
+            ->expects(self::never())
+            ->method('info');
         $logger
             ->expects(self::never())
             ->method('notice');
@@ -641,8 +493,9 @@ final class DeviceLoader1Test extends TestCase
             ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(self::never())
-            ->method('error');
+            ->expects(self::exactly(2))
+            ->method('error')
+            ->with($notFoundException, []);
         $logger
             ->expects(self::never())
             ->method('critical');
@@ -653,36 +506,7 @@ final class DeviceLoader1Test extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = new DeviceData(
-            strategy: new class () implements StrategyInterface {
-                /**
-                 * @throws void
-                 *
-                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-                 */
-                #[Override]
-                public function extract(mixed $value, object | null $object = null): null
-                {
-                    return null;
-                }
-
-                /**
-                 * @param array<mixed>|null $data
-                 *
-                 * @return array<string, mixed>
-                 *
-                 * @throws void
-                 *
-                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-                 */
-                #[Override]
-                public function hydrate(mixed $value, array | null $data): array
-                {
-                    return [];
-                }
-            },
-            company: 'test-company',
-        );
+        $initData = new DeviceData(company: 'test-company', logger: $logger);
 
         $platformData = new DataDevice(
             architecture: Architecture::unknown,
@@ -830,36 +654,7 @@ final class DeviceLoader1Test extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = new DeviceData(
-            strategy: new class () implements StrategyInterface {
-                /**
-                 * @throws void
-                 *
-                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-                 */
-                #[Override]
-                public function extract(mixed $value, object | null $object = null): null
-                {
-                    return null;
-                }
-
-                /**
-                 * @param array<mixed>|null $data
-                 *
-                 * @return array<string, mixed>
-                 *
-                 * @throws void
-                 *
-                 * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-                 */
-                #[Override]
-                public function hydrate(mixed $value, array | null $data): array
-                {
-                    return [];
-                }
-            },
-            company: 'test-company',
-        );
+        $initData = new DeviceData(company: 'test-company', logger: $logger);
 
         $platformData = new DataDevice(
             architecture: Architecture::unknown,
