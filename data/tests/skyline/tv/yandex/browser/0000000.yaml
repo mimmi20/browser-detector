@@ -1,5 +1,43 @@
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 65U7510) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.167 YaApp_Android/22.79.1 YaSearchBrowser/22.79.1 BroPP/1.0 SA/3 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 65U7510
+    marketingName: 65U7510
+    manufacturer: skyline
+    brand: skyline
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: 3840
+      height: 2160
+      touch: false
+      size: 65
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Search Browser'
+    modus: null
+    version: 22.79.1
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 102.0.5005.167
+    manufacturer: google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; 40LST6575 Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
   device:
     architecture: null

@@ -1,43 +1,5 @@
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 11; H31) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.105 YaBrowser/24.12.3.105.01 Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Tablet'
-    marketingName: 'general Tablet'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: tablet
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser'
-    modus: null
-    version: 24.12.3.105.01
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 130.0.6723.105
-    manufacturer: google
--
-  headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 11; G19) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.01 Safari/537.36'
   device:
     architecture: null
@@ -3797,4 +3759,42 @@
   engine:
     name: Blink
     version: 138.0.7204.105
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; ums512_1h10_Natv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.100 YaBrowser/25.8.5.100.01 Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Tablet'
+    marketingName: 'general Tablet'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: tablet
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser'
+    modus: null
+    version: 25.8.5.100.01
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 138.0.7204.100
     manufacturer: google

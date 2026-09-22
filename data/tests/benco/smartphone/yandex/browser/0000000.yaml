@@ -112,3 +112,41 @@
     name: Blink
     version: 148.0.7778.148
     manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 13; AEOP519) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.144 YaApp_Android/26.60.1 YaSearchBrowser/26.60.1 BroPP/1.0 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: AEOP519
+    marketingName: 'V90 Plus'
+    manufacturer: benco
+    brand: benco
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 1640
+      height: 720
+      touch: true
+      size: 6.56
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Search Browser'
+    modus: null
+    version: 26.60.1
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 148.0.7778.144
+    manufacturer: google
