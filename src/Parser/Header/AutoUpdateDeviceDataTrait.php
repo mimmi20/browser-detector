@@ -46,7 +46,7 @@ trait AutoUpdateDeviceDataTrait
             return;
         }
 
-        [$company, $singleDeviceCode] = explode('=', $code, 2);
+        [$company/*, $singleDeviceCode/**/] = explode('=', $code, 2);
 
         if ($company === '') {
             return;
