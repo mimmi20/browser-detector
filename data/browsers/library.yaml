@@ -1359,3 +1359,11 @@ nscurl:
     search:
       - nscurl
   engine: null
+coremedia:
+  name: 'Core Media'
+  manufacturer: apple
+  type: library
+  version:
+    factory: \BrowserDetector\Version\CoreMediaFactory
+    search: null
+  engine: webkit

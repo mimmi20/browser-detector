@@ -78,7 +78,7 @@ rules:
   /meta-externalagent/i: meta-external-agent
   /meta-externalads/i: meta-externalads
   /meta-webindexer/i: meta-webindexer
-  /fbav|fb_iab|facebook|metaiab/i: 'facebook app'
+  /fbav|fb_iab|facebook(?!\.com)|metaiab/i: 'facebook app'
   /copilotsapphire/i: microsoft-copilot
   /newssapphire/i: msn-app
   /bingsapphire|sapphire\//i: bingsearch
@@ -383,12 +383,14 @@ rules:
   /notionmail/i: notion-mail
   /tweakstyle/i: tweak-style
   /multimail/i: multi-mail
+  /chatall/i: chatall
   /espial|escape/i: 'espial tv browser'
   /sraf\//i: sraf
   /code\//i: 'vs code'
-  /chatall/i: chatall
+  /claude/i: claude
   /brave/i: brave
   /codex/i: codex
+  /slack/i: 'slack app'
   /odd\//i: 'odd browser'
   /skye/i: skye
   /electron\//i: electron

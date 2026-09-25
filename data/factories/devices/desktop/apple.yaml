@@ -17,6 +17,7 @@ rules:
   '/imac14%2C1|imac14,1/i': 'imac 14,1'
   '/imac12%2C1|imac12,1/i': 'imac 12,1'
   '/imac11%2C3|imac11,3/i': 'imac 11,3'
+  '/imac11%2C1|imac11,1/i': 'imac 11,1'
   '/imac10%2C1|imac10,1/i': 'imac 10,1'
   '/imac9%2C1|imac9,1/i': 'imac 9,1'
   '/imac8%2C1|imac8,1/i': 'imac 8,1'
@@ -127,5 +128,6 @@ rules:
   '/mac14%2c2|mac14,2/i': 'mac 14,2'
   '/mac13%2c2|mac13,2/i': 'mac 13,2'
   '/mac13%2c1|mac13,1/i': 'mac 13,1'
+  '/powermac10%2c1|powermac10,1/i': 'powermac 10,1'
   '/powermac|power macintosh/i': powermac
 generic: macintosh

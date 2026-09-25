@@ -739,7 +739,7 @@ rules:
   /facebookbot/i: facebook-bot
   /facebookcatalog/i: facebook-catalog
   /cf-facebook/i: cf-facebook
-  '/^\[fban|facebook/i': 'facebook app'
+  '/^\[fban|facebook(?!\.com)/i': 'facebook app'
   '/e\.ventures investment crawler/i': eventures-investment-crawler
   '/google page speed insights/i': 'google pagespeed insights'
   /gwf-carbon-txt-crawler/i: gwf-carbon-txt-crawler
@@ -1296,6 +1296,7 @@ rules:
   /uphonewebbrowser/i: uphone-browser
   /accessiblewebbot/i: accessible-web-bot
   '/let.?s ?encrypt/i': lets-encrypt-validation
+  /claude-searchbot/i: claude-searchbot
   /copyviodetector/i: copyvio-detector
   /statistikhessen/i: statistik-hessen
   /yadirectfetcher/i: ya-direct-fetcher
@@ -1438,6 +1439,8 @@ rules:
   /stackscopebot/i: stack-scope-bot
   /socialpushbot/i: social-push-bot
   '/brave browser/i': brave
+  /kimi-searchbot/i: kimi-search-bot
+  /mistralai-user/i: mistral-ai-user
   /researchscan/i: researchscan
   /dataprovider/i: dataprovider-spider
   '/inet browser/i': inet-browser
@@ -1566,6 +1569,7 @@ rules:
   /domainprobe/i: domain-probe
   /dnesakcebot/i: dnes-akce-bot
   /domaindrift/i: domain-drift
+  /claude-user/i: claude-user
   /domainscan/i: 'domainscan server monitoring'
   /jobroboter/i: jobroboter
   /webwikibot/i: webwikibot
@@ -1815,6 +1819,8 @@ rules:
   /trustbot/i: trust-bot
   /tlsprobe/i: tlsprobe
   /mycellar/i: my-cellar
+  /bravebot/i: brave-bot
+  /pangubot/i: pangu-bot
   /whatcms/i: what-cms
   /phoenix/i: phoenix
   /kagibot/i: kagi-bot
@@ -1840,6 +1846,7 @@ rules:
   /cincraw/i: cincraw
   /xenforo/i: xen-foro
   /live5ch/i: live-5ch
+  /kimibot/i: kimi-bot
   /onbbot/i: onbbot
   /orbbot/i: orbbot
   /edg\//i: edge
@@ -1856,6 +1863,7 @@ rules:
   /faveeo/i: faveeo
   /bazqux/i: bazqux-reader
   /midori/i: midori
+  /gptbot/i: gpt-bot
   /goose/i: goose-extractor
   /avant/i: avant
   /dvbot/i: dv-bot
@@ -1930,7 +1938,6 @@ rules:
   /sqlmap/i: sqlmap
   /winamp/i: winamp
   /wotbox/i: wotbox
-  /gptbot/i: gpt-bot
   /httpie/i: httpie
   /sqalix/i: sqalix
   /pompos/i: pompos

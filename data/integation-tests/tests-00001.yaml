@@ -4766,3 +4766,97 @@
       name: Blink
       version: '146.0.7680.51'
       manufacturer: google
+-
+  -
+    sec-ch-ua: '"Not_A Brand";v="99", "Chromium";v="142"'
+    sec-ch-ua-mobile: '?1'
+    sec-ch-ua-platform: '"Android"'
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; bH1D6l9wTg; U; de) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/142.0.7444.138 Mobile Safari/537.36'
+  -
+    headers:
+      sec-ch-ua-platform: '"Android"'
+      sec-ch-ua: '"Not_A Brand";v="99", "Chromium";v="142"'
+      sec-ch-ua-mobile: '?1'
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; bH1D6l9wTg; U; de) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/142.0.7444.138 Mobile Safari/537.36'
+    device:
+      architecture: null
+      deviceName: 'general Mobile Phone'
+      marketingName: 'general Mobile Phone'
+      manufacturer: unknown
+      brand: unknown
+      dualOrientation: true
+      simCount: 1
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: smartphone
+      ismobile: true
+      istv: false
+      bits: null
+    os:
+      name: 'Android'
+      marketingName: 'Android'
+      version: '16.0.0'
+      manufacturer: google
+      bits: null
+    client:
+      name: 'Avast Secure Browser'
+      modus: null
+      version: null
+      manufacturer: avast-software
+      type: browser
+      isbot: false
+      bits: null
+    engine:
+      name: Blink
+      version: '142.0.0'
+      manufacturer: google
+-
+  -
+    sec-ch-ua: '"Chromium";v="145", "Not:A-Brand";v="99"'
+    sec-ch-ua-mobile: '?0'
+    sec-ch-ua-platform: '"Windows"'
+    user-agent: 'Mozilla/5.0 (compatible; urlsuma/2.0; +https://urlsuma.de/bot.html)'
+  -
+    headers:
+      sec-ch-ua-platform: '"Windows"'
+      sec-ch-ua: '"Chromium";v="145", "Not:A-Brand";v="99"'
+      sec-ch-ua-mobile: '?0'
+      user-agent: 'Mozilla/5.0 (compatible; urlsuma/2.0; +https://urlsuma.de/bot.html)'
+    device:
+      architecture: null
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      dualOrientation: null
+      simCount: 0
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      bits: null
+    os:
+      name: 'Windows'
+      marketingName: 'Windows'
+      version: null
+      manufacturer: microsoft
+      bits: null
+    client:
+      name: 'URLSuMaBot'
+      modus: null
+      version: '2.0.0'
+      manufacturer: unknown
+      type: search-bot
+      isbot: true
+      bits: null
+    engine:
+      name: Blink
+      version: '145.0.0'
+      manufacturer: google

@@ -106,6 +106,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/^mozilla\/[\d.]+ \((?:andr[o0]id|tizen) [\d.]+(?:[^;]+)?(?:; arm(?:_64)?|; x86|; x64|; harmonyos|; mobile)?; (?P<devicecode>[^);\/]+)[^)]*\)/i',
             '/(?P<devicecode>pocketbook\/(?:6[23][1-9]|700))/i',
             '/^mozilla\/[\d.]+ \((?:smart-tv; )?(?:linux|andr[o0]id)(?:; arm(?:_64)?|; x86|; x64)?; (?:andr[o0]id|tizen)? ?[\d.]+(?:[^;]+)?(?:; arm(?:_64)?|; x86|; x64|; harmonyos|; mobile)?; (?P<devicecode>[^;\/]+)(?:(?:\/[^ ]+)? +(?:build|hmscore|release))[^)]+\)/i',
+            '/^mozilla\/[\d.]+ \((?:smart-tv; )?(?:linux|andr[o0]id)(?:; arm(?:_64)?|; x86|; x64)?; (?:andr[o0]id|tizen)? ?[\d.]+(?:[^;]+)?(?:; arm(?:_64)?|; x86|; x64|; harmonyos|; mobile)?; (?P<devicecode>.*)\) applewebkit/i',
             '/^mozilla\/[\d.]+ \((?:smart-tv; )?(?:linux|andr[o0]id)(?:; arm(?:_64)?|; x86|; x64)?; (?:andr[o0]id|tizen)? ?[\d.]+(?:[^;]+)?(?:; arm(?:_64)?|; x86|; x64|; harmonyos|; mobile)?; (?P<devicecode>[^);\/]+)[^)]*\)/i',
             '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi|androidhttpclient|worksmobile|googletagmanager)\/[\d.]+ ?\(linux; (?:(?:andr[o0]id|tizen) [\d.]+(?:[^;]+)?;(?: harmonyos;)?) (?P<devicecode>[^;\/]+)(?:;? +(?:build|hmscore|release))[^)]+\)/i',
             '/(?:androiddownloadmanager|mozilla|com\.[^\/]+|kodi|androidhttpclient|worksmobile|googletagmanager)\/[\d.]+ ?\(linux; (?:(?:andr[o0]id|tizen) [\d.]+(?:[^;]+)?;(?: harmonyos;)?) (?P<devicecode>[^);\/]+)[^)]*\)/i',
@@ -219,7 +220,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             $filtered,
         );
 
-        // if ($value === 'Mozilla/5.0 (Linux; arm_64; Android 16; SC-55F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.51 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36') {
+        // if ($value === 'Mozilla/5.0 (Linux; Android 10; moto g(8) plus Build/QPIS30.28-Q3-28-26-4-1-7; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/152.0.7977.88 Mobile Safari/537.36') {
         //     var_dump($normalizedValue, $filtered, $finds);
         // }
 

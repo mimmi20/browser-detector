@@ -460,6 +460,20 @@ imac:
     size: 27
   type: desktop
   platform: null
+'imac 11,1':
+  deviceName: 'iMac 11,1'
+  marketingName: 'iMac 27" (2009)'
+  manufacturer: apple
+  brand: apple
+  dualOrientation: false
+  simCount: 0
+  display:
+    width: 2560
+    height: 1440
+    touch: false
+    size: 27
+  type: desktop
+  platform: null
 'imac 10,1':
   deviceName: 'iMac 10,1'
   marketingName: 'iMac 21.5" (2009)'
@@ -575,6 +589,20 @@ imac:
 'mac 14,14':
   deviceName: 'Mac 14,14'
   marketingName: 'Mac Studio M2 Ultra (2023)'
+  manufacturer: apple
+  brand: apple
+  dualOrientation: false
+  simCount: 0
+  display:
+    width: null
+    height: null
+    touch: false
+    size: null
+  type: desktop
+  platform: null
+'powermac 10,1':
+  deviceName: 'PowerMac 10,1'
+  marketingName: 'Mac mini G4 (2005)'
   manufacturer: apple
   brand: apple
   dualOrientation: false

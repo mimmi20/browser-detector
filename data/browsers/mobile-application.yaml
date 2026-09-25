@@ -140,6 +140,7 @@ keeper:
   version:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
+      - 'Callpod Keeper for Android 1.0 \(app'
       - Keeper
   engine: unknown
 hi-search:
@@ -4676,4 +4677,20 @@ jokerbet:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - JOKERBET
+  engine: null
+all-documents-pdf:
+  name: 'All Documents & PDF Reader'
+  manufacturer: the-galaxy-info
+  type: mobile-application
+  version:
+    factory: null
+    search: null
+  engine: null
+cast-to-tv-screen:
+  name: 'Cast to TV & Screen Mirroring'
+  manufacturer: begamob-global
+  type: mobile-application
+  version:
+    factory: null
+    search: null
   engine: null

@@ -24,7 +24,8 @@ rules:
   /audiencenetworkforandroid/i: facebook-audience-network
   /fban\/ema.+fbav/i: 'facebook lite'
   /facebookbot|facebookplatform/i: facebook-bot
-  /fban|fbav|fb_iab|facebook/i: 'facebook app'
+  /meta-externalagent/i: meta-external-agent
+  /fban|fbav|fb_iab|facebook(?!\.com)/i: 'facebook app'
   '/psp /i': 'playstation browser'
   '/(?<!_)silk/i': silk
   /flipboard/i: 'flipboard app'
@@ -94,9 +95,14 @@ rules:
   /nexplayer/i: nexplayer
   /dolfin|dolphin/i: dolfin
   /arora/i: arora
+  '/(?<!like )twitterbot/i': twitterbot
+  /google-extended/i: google-extended
   /trellodesktop/i: trello-desktop
   /blogbeatbot/i: blog-beat-bot
+  /linkedinbot/i: linkedinbot
+  /telegrambot/i: telegrambot
   /ilunascape/i: ilunascape
+  /discordbot/i: discordbot
   /lunascape/i: lunascape
   /abevalbot/i: abeval-bot
   /wrtnbot/i: wrtnbot
@@ -546,6 +552,7 @@ rules:
   /com\.paint\.bynumber/i: paint-by-number
   /nortonpasswordmanager/i: norton-password-manager
   '/sticky password agent/i': sticky-password-agent
+  /slackbot-linkexpanding/i: slackbot-link-expanding
   '/spark desktop helper/i': spark-desktop
   '/safe in cloud\.free/i': safe-in-cloud-free
   /googlesoftwareupdate/i: chrome-update
