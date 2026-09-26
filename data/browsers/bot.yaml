@@ -1502,15 +1502,6 @@ grapefx:
     search:
       - grapeFX
   engine: unknown
-grindr:
-  name: Grindr
-  manufacturer: unknown
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - Grindr
-  engine: webkit
 'grouphigh bot':
   name: 'GroupHigh Bot'
   manufacturer: group-high

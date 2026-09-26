@@ -11,7 +11,9 @@ rules:
   '/imac18%2C2|imac18,2/i': 'imac 18,2'
   '/imac18%2C1|imac18,1/i': 'imac 18,1'
   '/imac17%2C1|imac17,1/i': 'imac 17,1'
+  '/imac16%2C7|imac16,7/i': 'imac 16,7'
   '/imac16%2C2|imac16,2/i': 'imac 16,2'
+  '/imac15%2C1|imac15,1/i': 'imac 15,1'
   '/imac14%2C4|imac14,4/i': 'imac 14,4'
   '/imac14%2C2|imac14,2/i': 'imac 14,2'
   '/imac14%2C1|imac14,1/i': 'imac 14,1'
@@ -22,6 +24,7 @@ rules:
   '/imac9%2C1|imac9,1/i': 'imac 9,1'
   '/imac8%2C1|imac8,1/i': 'imac 8,1'
   '/imac5%2C1|imac5,1/i': 'imac 5,1'
+  '/imac4%2C1|imac4,1/i': 'imac 4,1'
   /imac/i: imac
   '/macbookpro18%2C4|macbookpro18,4/i': 'macbook pro 18,4'
   '/macbookpro18%2C3|macbookpro18,3/i': 'macbook pro 18,3'
@@ -115,11 +118,14 @@ rules:
   '/macmini5%2c2|macmini5,2/i': 'mac mini 5,2'
   '/macmini5%2c1|macmini5,1/i': 'mac mini 5,1'
   /macmini/i: 'mac mini'
+  '/macpro7%2C1|macpro7,1/i': 'macpro 7,1'
   '/macpro6%2C1|macpro6,1/i': 'macpro 6,1'
   '/macpro5%2C1|macpro5,1/i': 'macpro 5,1'
   '/macpro3%2C1|macpro3,1/i': 'macpro 3,1'
   '/macpro1%2C1|macpro1,1/i': 'macpro 1,1'
   /macpro/i: macpro
+  '/mac16%2c2|mac16,2/i': 'mac 16,2'
+  '/mac15%2c13|mac15,13/i': 'mac 15,13'
   '/mac15%2c12|mac15,12/i': 'mac 15,12'
   '/mac14%2c14|mac14,14/i': 'mac 14,14'
   '/mac14%2c9|mac14,9/i': 'mac 14,9'
@@ -128,6 +134,7 @@ rules:
   '/mac14%2c2|mac14,2/i': 'mac 14,2'
   '/mac13%2c2|mac13,2/i': 'mac 13,2'
   '/mac13%2c1|mac13,1/i': 'mac 13,1'
+  '/powermac10%2c2|powermac10,2/i': 'powermac 10,2'
   '/powermac10%2c1|powermac10,1/i': 'powermac 10,1'
   '/powermac|power macintosh/i': powermac
 generic: macintosh

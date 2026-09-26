@@ -1174,6 +1174,34 @@ macbook:
     size: 15.4
   type: laptop
   platform: null
+'imac 16,7':
+  deviceName: 'iMac 16,7'
+  marketingName: 'MacBook Pro M4 Pro 16" (2024)'
+  manufacturer: apple
+  brand: apple
+  dualOrientation: false
+  simCount: 0
+  display:
+    width: 3456
+    height: 2234
+    touch: false
+    size: 16.2
+  type: laptop
+  platform: null
+'mac 15,13':
+  deviceName: 'Mac 15,13'
+  marketingName: 'MacBook Air M3 15" (2024)'
+  manufacturer: apple
+  brand: apple
+  dualOrientation: false
+  simCount: 0
+  display:
+    width: 2880
+    height: 1864
+    touch: false
+    size: 15.3
+  type: laptop
+  platform: null
 'mac 15,12':
   deviceName: 'Mac 15,12'
   marketingName: 'MacBook Air 13" (2024)'

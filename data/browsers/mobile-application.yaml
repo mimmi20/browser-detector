@@ -4725,3 +4725,12 @@ xp-iptv:
     search:
       - 'com\.sidhbalitech\.ninexplayer'
   engine: null
+grindr:
+  name: Grindr
+  manufacturer: unknown
+  type: mobile-application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Grindr
+  engine: null
