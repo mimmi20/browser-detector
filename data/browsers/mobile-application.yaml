@@ -2238,8 +2238,9 @@ wechat-share-extension:
   manufacturer: slack
   type: mobile-application
   version:
-    class: null
-    search: null
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Slack
   engine: null
 wayback-machine:
   name: 'Wayback Machine'
@@ -3569,8 +3570,9 @@ claude:
   manufacturer: anthropic
   type: mobile-application
   version:
-    class: null
-    search: null
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Claude
   engine: webkit
 ai-chat:
   name: 'AI Chat'

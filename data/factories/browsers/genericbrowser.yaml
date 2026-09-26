@@ -929,6 +929,7 @@ rules:
   /blackberry/i: blackberry
   /novarra-vision/i: novarra-vision
   /browserng|series60\//i: 'nokia oss browser'
+  /lotus notes traveler/i: lotus-notes-traveler
   '/(?<!devicename:)nokia/i': nokiabrowser
   '/psp /i': 'playstation browser'
   '/nintendo 3ds|netfront|nf\/?[34]|playstation [34]|browser\/netfont/i': netfront
@@ -1203,7 +1204,6 @@ rules:
   '/page modified pinger/i': page-modified-pinger
   '/lodestone php parser/i': lodestone-php-parser
   /go-containerregistry/i: go-container-registry
-  /lotus notes traveler/i: lotus-notes-traveler
   /internetmeasurement/i: internet-measurement
   /netcraftsurveyagent/i: 'netcraft survey agent'
   '/yandex\.gazeta bot|gazeta\.yandex/i': gazeta-bot
