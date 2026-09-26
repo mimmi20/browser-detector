@@ -383,6 +383,7 @@ rules:
   /notionmail/i: notion-mail
   /tweakstyle/i: tweak-style
   /multimail/i: multi-mail
+  /claudebot/i: claudebot
   /chatall/i: chatall
   /espial|escape/i: 'espial tv browser'
   /sraf\//i: sraf
@@ -441,7 +442,6 @@ rules:
   /amzn-user/i: amzn-user
   /builtwith/i: 'built-with crawler'
   /jiosphere/i: jio-sphere
-  /claudebot/i: claudebot
   /sitebulb/i: sitebulb
   /geedobot/i: geedo-bot
   /vibemate/i: vibe-mate
