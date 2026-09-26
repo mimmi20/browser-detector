@@ -328,3 +328,12 @@ davdroid:
     search:
       - DAVdroid
   engine: null
+citrix-secure-mail:
+  name: 'Citrix Secure Mail'
+  manufacturer: citrix
+  type: pim
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - WorxMail
+  engine: null

@@ -208,6 +208,20 @@ macpro:
     size: null
   type: desktop
   platform: null
+'macpro 7,1':
+  deviceName: 'MacPro 7,1'
+  marketingName: 'Mac Pro (2019)'
+  manufacturer: apple
+  brand: apple
+  dualOrientation: false
+  simCount: 0
+  display:
+    width: null
+    height: null
+    touch: false
+    size: null
+  type: desktop
+  platform: null
 powermac:
   deviceName: PowerMac
   marketingName: PowerMac
@@ -390,6 +404,20 @@ imac:
     size: 21.5
   type: desktop
   platform: null
+'imac 15,1':
+  deviceName: 'iMac 15,1'
+  marketingName: 'iMac 27" (2014-2015)'
+  manufacturer: apple
+  brand: apple
+  dualOrientation: false
+  simCount: 0
+  display:
+    width: 5120
+    height: 2880
+    touch: false
+    size: 27
+  type: desktop
+  platform: null
 'imac 14,4':
   deviceName: 'iMac 14,4'
   marketingName: 'iMac 21.5" (2014)'
@@ -460,6 +488,20 @@ imac:
     size: 27
   type: desktop
   platform: null
+'imac 11,1':
+  deviceName: 'iMac 11,1'
+  marketingName: 'iMac 27" (2009)'
+  manufacturer: apple
+  brand: apple
+  dualOrientation: false
+  simCount: 0
+  display:
+    width: 2560
+    height: 1440
+    touch: false
+    size: 27
+  type: desktop
+  platform: null
 'imac 10,1':
   deviceName: 'iMac 10,1'
   marketingName: 'iMac 21.5" (2009)'
@@ -516,6 +558,20 @@ imac:
     size: 17
   type: desktop
   platform: null
+'imac 4,1':
+  deviceName: 'iMac 4,1'
+  marketingName: 'iMac (2006)'
+  manufacturer: apple
+  brand: apple
+  dualOrientation: false
+  simCount: 0
+  display:
+    width: 1440
+    height: 900
+    touch: false
+    size: 17
+  type: desktop
+  platform: null
 'imac pro':
   deviceName: 'iMac Pro'
   marketingName: 'iMac Pro'
@@ -542,6 +598,20 @@ imac:
     height: 2880
     touch: false
     size: 27
+  type: desktop
+  platform: null
+'mac 16,2':
+  deviceName: 'Mac 16,2'
+  marketingName: 'iMac M4 24" (2024)'
+  manufacturer: apple
+  brand: apple
+  dualOrientation: false
+  simCount: 0
+  display:
+    width: 4480
+    height: 2520
+    touch: false
+    size: 23.5
   type: desktop
   platform: null
 'mac 13,1':
@@ -575,6 +645,34 @@ imac:
 'mac 14,14':
   deviceName: 'Mac 14,14'
   marketingName: 'Mac Studio M2 Ultra (2023)'
+  manufacturer: apple
+  brand: apple
+  dualOrientation: false
+  simCount: 0
+  display:
+    width: null
+    height: null
+    touch: false
+    size: null
+  type: desktop
+  platform: null
+'powermac 10,1':
+  deviceName: 'PowerMac 10,1'
+  marketingName: 'Mac mini G4 (2005)'
+  manufacturer: apple
+  brand: apple
+  dualOrientation: false
+  simCount: 0
+  display:
+    width: null
+    height: null
+    touch: false
+    size: null
+  type: desktop
+  platform: null
+'powermac 10,2':
+  deviceName: 'PowerMac 10,2'
+  marketingName: 'Mac mini G4 (2005)'
   manufacturer: apple
   brand: apple
   dualOrientation: false

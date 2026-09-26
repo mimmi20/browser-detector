@@ -38,14 +38,14 @@ final readonly class CompanyLoader implements CompanyLoaderInterface
 
         $companyData = $this->initData->getItem($key);
 
-        if ($companyData === null) {
+        if (! ($companyData instanceof Company)) {
             throw new NotFoundException('the company with key "' . $key . '" was not found');
         }
 
         return new Company(
             type: $key,
             name: $companyData->getName(),
-            brandname: $companyData->getBrandname(),
+            brandname: $companyData->getBrandName(),
         );
     }
 }

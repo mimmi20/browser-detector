@@ -89,6 +89,7 @@ rules:
   '/centil-schweiz webbot/i': 'centil-schweiz webbot'
   /socialradarbot/i: 'socialradar bot'
   /infegyatlas/i: infegyatlas
+  /com\.sidhbalitech\.ninexplayer/i: xp-iptv
   '/hubspot marketing grader/i': 'hubspot marketing grader'
   /whatsapp\/.+cloudapi/i: whatsapp-business
   /yowhatsapp2plus/i: yo-whatsapp-2+
@@ -739,7 +740,7 @@ rules:
   /facebookbot/i: facebook-bot
   /facebookcatalog/i: facebook-catalog
   /cf-facebook/i: cf-facebook
-  '/^\[fban|facebook/i': 'facebook app'
+  '/^\[fban|facebook(?!\.com)/i': 'facebook app'
   '/e\.ventures investment crawler/i': eventures-investment-crawler
   '/google page speed insights/i': 'google pagespeed insights'
   /gwf-carbon-txt-crawler/i: gwf-carbon-txt-crawler
@@ -928,6 +929,7 @@ rules:
   /blackberry/i: blackberry
   /novarra-vision/i: novarra-vision
   /browserng|series60\//i: 'nokia oss browser'
+  /lotus notes traveler/i: lotus-notes-traveler
   '/(?<!devicename:)nokia/i': nokiabrowser
   '/psp /i': 'playstation browser'
   '/nintendo 3ds|netfront|nf\/?[34]|playstation [34]|browser\/netfont/i': netfront
@@ -981,6 +983,7 @@ rules:
   /podcruncher/i: podcruncher
   /streamradio/i: streamradio
   '/rss_?radio/i': 'rssradio podcast player'
+  /iheartradio/i: iheart-radio
   /radio\.de/i: 'radio.de app'
   /getpodcast/i: get-podcast
   /just_audio/i: just-audio
@@ -1227,6 +1230,7 @@ rules:
   '/fuzz faster u fool/i': ffuf
   '/barracuda sentinel/i': barracuda-sentinel
   '/skype for business/i': skype-for-business
+  '/syncml http client/i': lotus-notes-traveler
   /steamchaturllookup/i: steam-chat-url-lookup
   /dynatracesynthetic/i: dynatrace-synthetic
   /cpanel-http-client/i: cpanel-http-client
@@ -1296,6 +1300,7 @@ rules:
   /uphonewebbrowser/i: uphone-browser
   /accessiblewebbot/i: accessible-web-bot
   '/let.?s ?encrypt/i': lets-encrypt-validation
+  /claude-searchbot/i: claude-searchbot
   /copyviodetector/i: copyvio-detector
   /statistikhessen/i: statistik-hessen
   /yadirectfetcher/i: ya-direct-fetcher
@@ -1438,6 +1443,9 @@ rules:
   /stackscopebot/i: stack-scope-bot
   /socialpushbot/i: social-push-bot
   '/brave browser/i': brave
+  /kimi-searchbot/i: kimi-search-bot
+  /mistralai-user/i: mistral-ai-user
+  '/syncml client/i': lotus-notes-traveler
   /researchscan/i: researchscan
   /dataprovider/i: dataprovider-spider
   '/inet browser/i': inet-browser
@@ -1502,6 +1510,8 @@ rules:
   /yandexdirect/i: yandex-direct
   /rootevidence/i: root-evidence
   /rankpulsebot/i: rank-pulse-bot
+  /^messenger\//i: messenger-x
+  /ocaml-cohttp/i: ocaml-cohttp
   /bitsightbot/i: bitsightbot
   /surdotlybot/i: surdotlybot
   /intelx\.io/i: intelligence-x
@@ -1566,6 +1576,7 @@ rules:
   /domainprobe/i: domain-probe
   /dnesakcebot/i: dnes-akce-bot
   /domaindrift/i: domain-drift
+  /claude-user/i: claude-user
   /domainscan/i: 'domainscan server monitoring'
   /jobroboter/i: jobroboter
   /webwikibot/i: webwikibot
@@ -1640,6 +1651,8 @@ rules:
   /orlightbot/i: orlight-bot
   /pipericbot/i: piperic-bot
   /webatlabot/i: webatla-bot
+  /lightpanda/i: lightpanda
+  /^tpa-wear\//i: the-podcast-app
   /kozmonavt|kocmohabt/i: kozmonavt
   /stractbot/i: stract-bot
   /screpybot/i: screpy-bot
@@ -1815,6 +1828,8 @@ rules:
   /trustbot/i: trust-bot
   /tlsprobe/i: tlsprobe
   /mycellar/i: my-cellar
+  /bravebot/i: brave-bot
+  /pangubot/i: pangu-bot
   /whatcms/i: what-cms
   /phoenix/i: phoenix
   /kagibot/i: kagi-bot
@@ -1840,6 +1855,7 @@ rules:
   /cincraw/i: cincraw
   /xenforo/i: xen-foro
   /live5ch/i: live-5ch
+  /kimibot/i: kimi-bot
   /onbbot/i: onbbot
   /orbbot/i: orbbot
   /edg\//i: edge
@@ -1856,6 +1872,7 @@ rules:
   /faveeo/i: faveeo
   /bazqux/i: bazqux-reader
   /midori/i: midori
+  /gptbot/i: gpt-bot
   /goose/i: goose-extractor
   /avant/i: avant
   /dvbot/i: dv-bot
@@ -1930,7 +1947,6 @@ rules:
   /sqlmap/i: sqlmap
   /winamp/i: winamp
   /wotbox/i: wotbox
-  /gptbot/i: gpt-bot
   /httpie/i: httpie
   /sqalix/i: sqalix
   /pompos/i: pompos
@@ -1951,6 +1967,7 @@ rules:
   /apidog/i: apidog
   /httprs/i: httprs
   /skopeo/i: skopeo
+  /^tpa\//i: the-podcast-app
   /mjbot/i: mjbot
   /axios/i: axios
   /bsbot/i: bsbot
