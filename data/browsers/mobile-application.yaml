@@ -4694,3 +4694,34 @@ cast-to-tv-screen:
     factory: null
     search: null
   engine: null
+lotus-notes-traveler:
+  name: 'Lotus Notes Traveler'
+  manufacturer: hcl
+  type: mobile-application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Lotus Notes Traveler WM'
+      - 'Lotus Notes Traveler Nokia'
+      - 'SyncML Client'
+      - 'SyncML HTTP Client'
+  engine: null
+the-podcast-app:
+  name: 'The Podcast App'
+  manufacturer: magnolia-apps
+  type: mobile-application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'TPA-Wear'
+      - 'TPA'
+  engine: null
+xp-iptv:
+  name: 'XP IPTV'
+  manufacturer: sidhbali-tech
+  type: mobile-application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'com\.sidhbalitech\.ninexplayer'
+  engine: null

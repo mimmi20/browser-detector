@@ -90,7 +90,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
         $matches = [];
 
         if (
-            preg_match('/^WhatsApp\/[0-9.]+[ \/](?P<code>[ANWi])$/', $normalizedValue, $matches)
+            preg_match('/^(?:WhatsApp|Messenger)\/[0-9.]+[ \/](?P<code>[ANWi])$/', $normalizedValue, $matches)
             && array_key_exists('code', $matches)
         ) {
             return match ($matches['code']) {
@@ -177,6 +177,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/kepler\/[\d.]+ \(linux; (?P<devicecode>[^);\/]+)\)/i',
             '/mozilla\/[\d.]+ \(linux; kepler [\d.]+; (?P<devicecode>[^);\/]+) user\/[\d.]+; wv\)/i',
             '/navermailapp\/[\d.]+ \(android [\d.]+; (?P<devicecode>[^);\/]+)\)/i',
+            '/iheartradio\/[\d.]+ \(android [\d.]+; (?P<devicecode>[^);\/]+)\)/i',
             '/hulu\/[\d.]+ \(fire os [\d.]+ \([^)]+\);[^;]+; (?P<devicecode>[^);\/]+); build/i',
             '/(?P<devicecode>[^();\/]+)\(android\/[\d.]+\) aliapp\(aliexpress\/[\d.]+\)/i',
             '/gm-android\/[\d.]+ \([\d.]+; m:(?P<devicecode>[^();\/]+); o:[\d.]+; d:/i',

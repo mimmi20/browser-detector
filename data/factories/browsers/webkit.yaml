@@ -92,6 +92,7 @@ rules:
   /yabrowser/i: yabrowser
   /yisouspider/i: yisouspider
   /crios/i: 'chrome for ios'
+  /com\.sidhbalitech\.ninexplayer/i: xp-iptv
   /nexplayer/i: nexplayer
   /dolfin|dolphin/i: dolfin
   /arora/i: arora
@@ -539,6 +540,7 @@ rules:
   /opa\/|com\.google\.opa/i: google-assistant
   '/(?<!via translate\.)goog(?!le)|googleother/i': googlebot
   /shopkeep-pocket/i: 'shopkeep pocket'
+  /worxmail/i: citrix-secure-mail
   '/^apple-(iphone|ip[ao]d)/i': 'exchange activesync'
   '/(?<![a-z])ios|iphone|ip[ao]d/i': 'mobile safari uiwebview'
   /cloudflare-amp/i: 'cloudflare amp fetcher'
@@ -614,7 +616,7 @@ rules:
   /perplexity/i: perplexity
   /powerpoint/i: powerpoint
   /sachnoiapp|sachnoi\.app/i: sach-noi
-  /^messenger/i: messenger-x
+  /^messenger\//i: messenger-x
   '/classic fm/i': classic-fm
   /^browser\//i: browser-app
   /bookmobile/i: book-mobile

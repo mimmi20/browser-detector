@@ -844,7 +844,7 @@ enum Company: string implements CompanyInterface
 
     case canonical = 'Canonical';
 
-    case linuxFoundation = 'Linux Foundation';
+    case linux-foundation = 'Linux Foundation';
 
     case mandriva = 'Mandriva';
 
@@ -4730,7 +4730,7 @@ enum Company: string implements CompanyInterface
             'sun', 'sun-microsystems', 'sun microsystems, inc.' => self::sun,
             'kaios', 'kaios technologies' => self::kaios,
             'canonical', 'canonical foundation' => self::canonical,
-            'linuxfoundation', 'linux foundation', 'linux-foundation' => self::linuxFoundation,
+            'linuxfoundation', 'linux foundation', 'linux-foundation' => self::linux-foundation,
             'mandriva' => self::mandriva,
             'fabiencoeurjoly', 'fabien coeurjoly' => self::fabienCoeurjoly,
             'mediatek' => self::mediatek,
@@ -7441,7 +7441,7 @@ enum Company: string implements CompanyInterface
             self::freebsd => 'free-bsd-foundation',
             self::vitanuova => 'vita-nuova',
             self::sun => 'sun-microsystems',
-            self::linuxFoundation => 'linux-foundation',
+            self::linux-foundation => 'linux-foundation',
             self::fabienCoeurjoly => 'fabien coeurjoly',
             self::acceleratedTechnology => 'accelerated-technology',
             self::symbianFoundation => 'symbian-foundation',

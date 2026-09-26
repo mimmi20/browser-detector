@@ -89,6 +89,7 @@ rules:
   '/centil-schweiz webbot/i': 'centil-schweiz webbot'
   /socialradarbot/i: 'socialradar bot'
   /infegyatlas/i: infegyatlas
+  /com\.sidhbalitech\.ninexplayer/i: xp-iptv
   '/hubspot marketing grader/i': 'hubspot marketing grader'
   /whatsapp\/.+cloudapi/i: whatsapp-business
   /yowhatsapp2plus/i: yo-whatsapp-2+
@@ -981,6 +982,7 @@ rules:
   /podcruncher/i: podcruncher
   /streamradio/i: streamradio
   '/rss_?radio/i': 'rssradio podcast player'
+  /iheartradio/i: iheart-radio
   /radio\.de/i: 'radio.de app'
   /getpodcast/i: get-podcast
   /just_audio/i: just-audio
@@ -1201,6 +1203,7 @@ rules:
   '/page modified pinger/i': page-modified-pinger
   '/lodestone php parser/i': lodestone-php-parser
   /go-containerregistry/i: go-container-registry
+  /lotus notes traveler/i: lotus-notes-traveler
   /internetmeasurement/i: internet-measurement
   /netcraftsurveyagent/i: 'netcraft survey agent'
   '/yandex\.gazeta bot|gazeta\.yandex/i': gazeta-bot
@@ -1227,6 +1230,7 @@ rules:
   '/fuzz faster u fool/i': ffuf
   '/barracuda sentinel/i': barracuda-sentinel
   '/skype for business/i': skype-for-business
+  '/syncml http client/i': lotus-notes-traveler
   /steamchaturllookup/i: steam-chat-url-lookup
   /dynatracesynthetic/i: dynatrace-synthetic
   /cpanel-http-client/i: cpanel-http-client
@@ -1441,6 +1445,7 @@ rules:
   '/brave browser/i': brave
   /kimi-searchbot/i: kimi-search-bot
   /mistralai-user/i: mistral-ai-user
+  '/syncml client/i': lotus-notes-traveler
   /researchscan/i: researchscan
   /dataprovider/i: dataprovider-spider
   '/inet browser/i': inet-browser
@@ -1505,6 +1510,8 @@ rules:
   /yandexdirect/i: yandex-direct
   /rootevidence/i: root-evidence
   /rankpulsebot/i: rank-pulse-bot
+  /^messenger\//i: messenger-x
+  /ocaml-cohttp/i: ocaml-cohttp
   /bitsightbot/i: bitsightbot
   /surdotlybot/i: surdotlybot
   /intelx\.io/i: intelligence-x
@@ -1645,6 +1652,7 @@ rules:
   /pipericbot/i: piperic-bot
   /webatlabot/i: webatla-bot
   /lightpanda/i: lightpanda
+  /^tpa-wear\//i: the-podcast-app
   /kozmonavt|kocmohabt/i: kozmonavt
   /stractbot/i: stract-bot
   /screpybot/i: screpy-bot
@@ -1959,6 +1967,7 @@ rules:
   /apidog/i: apidog
   /httprs/i: httprs
   /skopeo/i: skopeo
+  /^tpa\//i: the-podcast-app
   /mjbot/i: mjbot
   /axios/i: axios
   /bsbot/i: bsbot

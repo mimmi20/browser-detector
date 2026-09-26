@@ -1364,6 +1364,14 @@ coremedia:
   manufacturer: apple
   type: library
   version:
-    factory: \BrowserDetector\Version\CoreMediaFactory
+    factory: null
     search: null
+  engine: webkit
+ocaml-cohttp:
+  name: 'ocaml-cohttp'
+  manufacturer: linux-foundation
+  type: library
+  version:
+    factory: \BrowserDetector\Version\CoreMediaFactory
+    search: ocaml-cohttp
   engine: webkit

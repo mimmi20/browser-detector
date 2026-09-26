@@ -279,6 +279,7 @@ rules:
   /buscari/i: seekee
   /xshare/i: xshare
   /boohee/i: boohee
+  /grindr/i: grindr
   /crosswalk/i: crosswalk
   /com\.google\.android\.googlequicksearchbox/i: google-app
   '/(?:cpu iphone os|cpu os).*(?<!agent)version[ \/][0-9_.]+ +chrome\/(?:2[89]|[3-9][0-9]|[1-9][0-9]{2})\D/i': 'chrome for ios'
@@ -377,10 +378,13 @@ rules:
   /pingdom/i: pingdom
   /zumbot/i: zumbot
   /visionteacherforchromebooks/i: visionteacher-for-chromebooks
+  /slackbot-linkexpanding/i: slackbot-link-expanding
   /bykreatorworkstation/i: bykreator-workstation
+  /claude-searchbot/i: claude-searchbot
   /lagatos-browser/i: lagatos-browser
   /beakerbrowser/i: beaker-browser
   /trellodesktop/i: trello-desktop
+  /claude-user/i: claude-user
   /notionmail/i: notion-mail
   /tweakstyle/i: tweak-style
   /multimail/i: multi-mail
