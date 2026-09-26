@@ -90,7 +90,11 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
         $matches = [];
 
         if (
-            preg_match('/^(?:WhatsApp|Messenger)\/[0-9.]+[ \/](?P<code>[ANWi])$/', $normalizedValue, $matches)
+            preg_match(
+                '/^(?:WhatsApp|Messenger)\/[0-9.]+[ \/](?P<code>[ANWi])$/',
+                $normalizedValue,
+                $matches,
+            )
             && array_key_exists('code', $matches)
         ) {
             return match ($matches['code']) {

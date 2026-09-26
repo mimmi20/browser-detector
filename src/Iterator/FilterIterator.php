@@ -19,11 +19,11 @@ use SplFileInfo;
 
 use function assert;
 
-/** @phpstan-extends \FilterIterator<int|string, SplFileInfo, Iterator<SplFileInfo>> */
+/** @phpstan-extends \FilterIterator<int|string, SplFileInfo, Iterator<int|string, SplFileInfo>> */
 final class FilterIterator extends \FilterIterator
 {
     /**
-     * @param Iterator<SplFileInfo> $iterator
+     * @param Iterator<int|string, SplFileInfo> $iterator
      *
      * @throws void
      */
