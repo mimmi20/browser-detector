@@ -404,6 +404,20 @@ imac:
     size: 21.5
   type: desktop
   platform: null
+'imac 16,1':
+  deviceName: 'iMac 16,1'
+  marketingName: 'iMac 21.5" (2015)'
+  manufacturer: apple
+  brand: apple
+  dualOrientation: false
+  simCount: 0
+  display:
+    width: 1920
+    height: 1080
+    touch: false
+    size: 21.5
+  type: desktop
+  platform: null
 'imac 15,1':
   deviceName: 'iMac 15,1'
   marketingName: 'iMac 27" (2014-2015)'
@@ -558,6 +572,20 @@ imac:
     size: 17
   type: desktop
   platform: null
+'imac 4,2':
+  deviceName: 'iMac 4,2'
+  marketingName: 'iMac 17" (2006)'
+  manufacturer: apple
+  brand: apple
+  dualOrientation: false
+  simCount: 0
+  display:
+    width: 1440
+    height: 900
+    touch: false
+    size: 17
+  type: desktop
+  platform: null
 'imac 4,1':
   deviceName: 'iMac 4,1'
   marketingName: 'iMac (2006)'
@@ -614,6 +642,34 @@ imac:
     size: 23.5
   type: desktop
   platform: null
+'mac 15,14':
+  deviceName: 'Mac 15,14'
+  marketingName: 'Mac Studio M3 Ultra (2025)'
+  manufacturer: apple
+  brand: apple
+  dualOrientation: false
+  simCount: 0
+  display:
+    width: null
+    height: null
+    touch: false
+    size: null
+  type: desktop
+  platform: null
+'mac 14,14':
+  deviceName: 'Mac 14,14'
+  marketingName: 'Mac Studio M2 Ultra (2023)'
+  manufacturer: apple
+  brand: apple
+  dualOrientation: false
+  simCount: 0
+  display:
+    width: null
+    height: null
+    touch: false
+    size: null
+  type: desktop
+  platform: null
 'mac 13,1':
   deviceName: 'Mac 13,1'
   marketingName: 'Mac Studio M1 Max (2022)'
@@ -642,18 +698,18 @@ imac:
     size: null
   type: desktop
   platform: null
-'mac 14,14':
-  deviceName: 'Mac 14,14'
-  marketingName: 'Mac Studio M2 Ultra (2023)'
+'powermac 8,1':
+  deviceName: 'PowerMac 8,1'
+  marketingName: 'iMac G5 (2004)'
   manufacturer: apple
   brand: apple
   dualOrientation: false
   simCount: 0
   display:
-    width: null
-    height: null
+    width: 1440
+    height: 900
     touch: false
-    size: null
+    size: 17
   type: desktop
   platform: null
 'powermac 10,1':

@@ -261,9 +261,11 @@ rules:
   /imoandroid/i: imo-international-calls-chat
   /blackboard/i: blackboard-app
   /dogtorance/i: dogtorance-app
+  /xiaoyuzhou/i: xiao-yu-zhou
   /googlebot/i: googlebot
   /tuyasmart/i: smart-life
   /kakaotalk/i: kakaotalk
+  /newsbreak/i: newsbreak
   /genspark/i: genspark
   '/\[(?:hb\/29|pb\/(?:6[36]|81|1[02]8|115|149)|sx\/\d+)\]/i': secure-x
   '/\[pb\//i': proxy-browser

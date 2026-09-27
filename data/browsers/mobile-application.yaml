@@ -4736,3 +4736,12 @@ grindr:
     search:
       - Grindr
   engine: null
+newsbreak:
+  name: NewsBreak
+  manufacturer: particle-media
+  type: mobile-application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - newsbreak
+  engine: null

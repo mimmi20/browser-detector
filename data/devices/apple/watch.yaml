@@ -714,7 +714,7 @@
   platform: watchos
 'apple watch7,15':
   deviceName: 'Watch 7,15'
-  marketingName: 'Watch SE (Gen 3, 40mm)'
+  marketingName: 'Watch SE (Gen 3, 40mm, 5G)'
   manufacturer: apple
   brand: apple
   dualOrientation: true
@@ -724,6 +724,20 @@
     height: 324
     touch: true
     size: 1.8
+  type: smart-watch
+  platform: watchos
+'apple watch7,16':
+  deviceName: 'Watch 7,16'
+  marketingName: 'Watch SE (Gen 3, 44mm, 5G)'
+  manufacturer: apple
+  brand: apple
+  dualOrientation: true
+  simCount: 0
+  display:
+    width: 448
+    height: 368
+    touch: true
+    size: 2
   type: smart-watch
   platform: watchos
 'apple watch7,20':
@@ -780,5 +794,19 @@
     height: 416
     touch: true
     size: 2.1
+  type: smart-watch
+  platform: watchos
+'apple watch8,4':
+  deviceName: 'Watch 8,4'
+  marketingName: 'Watch Series 12 (42mm, 5G)'
+  manufacturer: apple
+  brand: apple
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: 446
+    height: 374
+    touch: true
+    size: 2
   type: smart-watch
   platform: watchos
