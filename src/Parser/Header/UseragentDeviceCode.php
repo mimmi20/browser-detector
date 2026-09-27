@@ -225,7 +225,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             $filtered,
         );
 
-        // if ($value === 'Mozilla/5.0 (Linux; Android 10; moto g(8) plus Build/QPIS30.28-Q3-28-26-4-1-7; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/152.0.7977.88 Mobile Safari/537.36') {
+        // if ($value === 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chr0me/87.0.4280.88 Safari/537.36 LG Browser/8.00.00(LGE; NIK50MEU4STN; 04.42.26; 0x00000001; DTV_C22P); webOS.TV-2022; LG NetCast.TV-2013 Compatible (LGE, NIK50MEU4STN, wireless)') {
         //     var_dump($normalizedValue, $filtered, $finds);
         // }
 
