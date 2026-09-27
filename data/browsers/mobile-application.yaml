@@ -4745,3 +4745,12 @@ newsbreak:
     search:
       - newsbreak
   engine: null
+aria2-app:
+  name: Aria2App
+  manufacturer: devgianlu
+  type: mobile-application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Aria2App
+  engine: null
