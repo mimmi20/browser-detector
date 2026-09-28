@@ -768,9 +768,23 @@
     size: 2.1
   type: smart-watch
   platform: watchos
+'apple watch7,19':
+  deviceName: 'Watch 7,19'
+  marketingName: 'Watch Series 11 (42mm, LTE)'
+  manufacturer: apple
+  brand: apple
+  dualOrientation: true
+  simCount: 0
+  display:
+    width: 446
+    height: 374
+    touch: true
+    size: 2
+  type: smart-watch
+  platform: watchos
 'apple watch7,20':
   deviceName: 'Watch 7,20'
-  marketingName: 'Watch Series 11 (46mm)'
+  marketingName: 'Watch Series 11 (46mm, LTE)'
   manufacturer: apple
   brand: apple
   dualOrientation: true

@@ -1372,6 +1372,6 @@ ocaml-cohttp:
   manufacturer: linux-foundation
   type: library
   version:
-    factory: \BrowserDetector\Version\CoreMediaFactory
+    factory: \BrowserDetector\Version\VersionBuilderFactory
     search: 'ocaml\-cohttp'
   engine: webkit

@@ -131,8 +131,10 @@ rules:
   '/macpro1%2C1|macpro1,1/i': 'macpro 1,1'
   /macpro/i: macpro
   '/mac16%2c7|mac16,7/i': 'mac 16,7'
+  '/mac16%2c6|mac16,6/i': 'mac 16,6'
   '/mac16%2c5|mac16,5/i': 'mac 16,5'
   '/mac16%2c2|mac16,2/i': 'mac 16,2'
+  '/mac16%2c1|mac16,1/i': 'mac 16,1'
   '/mac15%2c14|mac15,14/i': 'mac 15,14'
   '/mac15%2c13|mac15,13/i': 'mac 15,13'
   '/mac15%2c12|mac15,12/i': 'mac 15,12'
