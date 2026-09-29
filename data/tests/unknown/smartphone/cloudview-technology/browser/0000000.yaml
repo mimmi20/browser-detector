@@ -646,6 +646,44 @@
     manufacturer: google
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 14; en-za; P11 Plus Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.209 Mobile Safari/537.36 PHX/21.2'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Phoenix Browser'
+    modus: null
+    version: 21.2.0
+    manufacturer: cloudview-technology
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 140.0.7339.209
+    manufacturer: google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 14; en-za; AURORA Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.102 Mobile Safari/537.36 PHX/21.7'
   device:
     architecture: null
@@ -681,6 +719,44 @@
   engine:
     name: Blink
     version: 142.0.7444.102
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 14; en-us; P11 Plus Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.7499.192 Mobile Safari/537.36 PHX/21.7'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Phoenix Browser'
+    modus: null
+    version: 21.7.0
+    manufacturer: cloudview-technology
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 143.0.7499.192
     manufacturer: google
 -
   headers:

@@ -36,3 +36,41 @@
     name: Blink
     version: 145.0.0.0
     manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 15_0) AppleWebKit/605.1.15 (KHTML, like Gecko; compatible; meta-externalagent/1.1; +https://developers.facebook.com/docs/sharing/webmasters/crawler) Version/19.2 Safari/605.1.15'
+  device:
+    architecture: null
+    deviceName: Macintosh
+    marketingName: Macintosh
+    manufacturer: apple
+    brand: apple
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: desktop
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 15.0.0
+    manufacturer: apple
+    bits: null
+  client:
+    name: 'Meta ExternalAgent'
+    modus: null
+    version: 1.1.0
+    manufacturer: meta
+    type: crawler
+    isbot: true
+    bits: null
+  engine:
+    name: WebKit
+    version: 605.1.15
+    manufacturer: apple

@@ -910,3 +910,79 @@
     name: null
     version: null
     manufacturer: unknown
+-
+  headers:
+    user-agent: '${j${k8s:k5:-ND}i${sd:k5:-:}ldap://localhost#was-log4shell-${date:yyyy}k1n3ouQlymME1k6BrvlC.w.nessus.org}'
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: 'VLC Media Player'
+    modus: null
+    version: null
+    manufacturer: video-lan
+    type: multimedia-player
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: "require 'resolv'; Resolv.getaddress('vi6puz6rcgdyunaydn2opo2y6s7zldhkn26jr6pfivxt2gqvlcwa'+'.was.nessus.org')"
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: 'VLC Media Player'
+    modus: null
+    version: null
+    manufacturer: video-lan
+    type: multimedia-player
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown

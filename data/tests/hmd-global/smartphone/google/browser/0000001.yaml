@@ -730,3 +730,44 @@
     name: Blink
     version: 150.0.7871.124
     manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: 'HMD Aura'
+    sec-ch-ua-platform-version: 13.0.0
+    sec-ch-ua: '"Not(A:Brand";v="99.0.0.0", "Google Chrome";v="133.0.6943.121", "Chromium";v="133.0.6943.121"'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: Aura
+    marketingName: Aura
+    manufacturer: hmd-global
+    brand: hmd-global
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 1612
+      height: 720
+      touch: true
+      size: 6.56
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 133.0.6943.121
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 133.0.6943.121
+    manufacturer: google

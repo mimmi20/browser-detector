@@ -188,3 +188,41 @@
     name: Blink
     version: 108.0.0.0
     manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; F-52E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.91 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: F-52E
+    marketingName: 'Arrows We 2'
+    manufacturer: fujitsu
+    brand: fujitsu
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 1560
+      height: 720
+      touch: true
+      size: 6.1
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 149.0.7827.91
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google

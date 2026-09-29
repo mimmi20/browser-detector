@@ -115,3 +115,45 @@
     name: Blink
     version: 101.0.4951.61
     manufacturer: google
+-
+  headers:
+    x-requested-with: mark.via.gp
+    sec-ch-ua-platform: '"Android"'
+    sec-ch-ua: '"Not=A?Brand";v="99", "Android WebView";v="151", "Chromium";v="151"'
+    sec-ch-ua-mobile: '?1'
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; 2312DRAABG Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.200 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 2312DRAABG
+    marketingName: 'Redmi Note 13 5G'
+    manufacturer: xiaomi
+    brand: xiaomi
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2400
+      height: 1080
+      touch: true
+      size: 6.67
+    type: phablet
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Via Browser'
+    modus: null
+    version: null
+    manufacturer: tu-yafeng
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 151.0.0
+    manufacturer: google

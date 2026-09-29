@@ -5479,3 +5479,12 @@ wrtnbot:
     search:
       - Webglance
   engine: unknown
+pangu-bot:
+  name: 'PanguBot'
+  manufacturer: huawei
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - PanguBot
+  engine: unknown

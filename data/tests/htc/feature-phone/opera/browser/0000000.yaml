@@ -418,44 +418,6 @@
     manufacturer: opera
 -
   headers:
-    user-agent: 'PPC; 480x800; HTC_Touch_HD_T8282; OpVer 34.119.1.611 Opera/9.50(Microsoft Windows 5.1; U;en)'
-  device:
-    architecture: null
-    deviceName: T8282
-    marketingName: 'Touch HD'
-    manufacturer: htc
-    brand: htc
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 800
-      height: 480
-      touch: false
-      size: 3.8
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows XP'
-    version: 5.1.0
-    manufacturer: microsoft
-    bits: null
-  client:
-    name: Opera
-    modus: null
-    version: 9.50.0
-    manufacturer: opera
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Presto
-    version: null
-    manufacturer: opera
--
-  headers:
     user-agent: 'Opera/9.7 (Windows Mobile; Sprint:PPC-6700; Opera Mobi/35166; U; en) Presto/2.2.1'
   device:
     architecture: null

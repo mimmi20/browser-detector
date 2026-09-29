@@ -1439,7 +1439,7 @@ project:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - Project
-  engine: unknown
+  engine: null
 trello-desktop:
   name: TrelloDesktop
   manufacturer: atlassian
@@ -1448,4 +1448,13 @@ trello-desktop:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - TrelloDesktop
-  engine: unknown
+  engine: null
+bykreator-workstation:
+  name: Bykreator Workstation
+  manufacturer: bykreator-studio
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - BykreatorWorkstation
+  engine: null

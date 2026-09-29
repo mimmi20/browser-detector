@@ -22,7 +22,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: 'Songbird App'
@@ -174,7 +174,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Amarok
@@ -212,7 +212,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Amarok
@@ -326,7 +326,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: GoldenPod
@@ -378,44 +378,6 @@
     name: null
     version: null
     manufacturer: unknown
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.1) Gecko/2008072921 Songbird/0.7.0 (20080819112708)'
-  device:
-    architecture: null
-    deviceName: 'Windows Desktop'
-    marketingName: 'Windows Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows XP'
-    version: 5.1.0
-    manufacturer: microsoft
-    bits: null
-  client:
-    name: 'Songbird App'
-    modus: null
-    version: 0.7.0
-    manufacturer: unknown
-    type: multimedia-player
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: 1.9.0.1
-    manufacturer: mozilla
 -
   headers:
     user-agent: 'MPlayer 1.3.0 (Debian), built with gcc-6.2.1'
@@ -516,7 +478,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: 'radio.de App'
@@ -592,7 +554,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: StudioDisplay

@@ -1,43 +1,5 @@
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.76 Safari/537.36 Seznam.cz/1.2.1'
-  device:
-    architecture: null
-    deviceName: 'Windows Desktop'
-    marketingName: 'Windows Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows Vista'
-    version: 6.0.0
-    manufacturer: microsoft
-    bits: null
-  client:
-    name: 'Seznam Browser'
-    modus: null
-    version: 1.2.1
-    manufacturer: seznam
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 41.0.2272.76
-    manufacturer: google
--
-  headers:
     user-agent: 'Mozilla/5.0 (Windows NT 4.10; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2272.76 Safari/537.36 Seznam.cz/2.0.4'
   device:
     architecture: null
@@ -98,7 +60,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: 'Seznam Browser'

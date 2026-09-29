@@ -715,7 +715,7 @@ enum Os: string implements OsInterface
             self::javaos, self::javaMe => 'sun',
             self::kaios => 'kaios',
             self::kubuntu, self::ubuntu, self::xubuntu, self::ubuntuTouch => 'canonical',
-            self::linux, self::maemo, self::meego, self::tizen => 'linuxFoundation',
+            self::linux, self::maemo, self::meego, self::tizen => 'linux-foundation',
             self::mandrivaLinux, self::openMandriva => 'mandriva',
             self::morphos => 'fabienCoeurjoly',
             self::mre => 'mediatek',

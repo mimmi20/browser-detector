@@ -1050,3 +1050,52 @@
     name: Blink
     version: 150.0.0
     manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: '"2311DRK48G"'
+    x-requested-with: com.duckduckgo.mobile.android
+    sec-ch-ua-platform: '"Android"'
+    sec-ch-ua-platform-version: '"16.0.0"'
+    sec-ch-ua: '"Not=A?Brand";v="99", "DuckDuckGo";v="151", "Chromium";v="151"'
+    sec-ch-ua-full-version: '"151.0.7922.200"'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-mobile: '?1'
+    sec-ch-ua-wow64: '?0'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 2311DRK48G
+    marketingName: 'X6 Pro 5G'
+    manufacturer: xiaomi
+    brand: poco
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2712
+      height: 1220
+      touch: true
+      size: 6.67
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'DuckDuckGo Privacy Browser'
+    modus: null
+    version: 151.0.7922.200
+    manufacturer: duck-duck-go
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 151.0.0
+    manufacturer: google

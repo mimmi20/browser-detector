@@ -13,7 +13,6 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Parser\Header;
 
-use BrowserDetector\Data\Company;
 use BrowserDetector\Data\Os;
 use BrowserDetector\Parser\Header\SetVersionTrait;
 use BrowserDetector\Parser\Header\UseragentPlatformVersion;
@@ -32,6 +31,7 @@ use UaLoader\PlatformLoaderInterface;
 use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\Normalizer\NormalizerInterface;
 use UaParser\PlatformParserInterface;
+use UaResult\Company\Company;
 use UaResult\Os\OsInterface;
 use UnexpectedValueException;
 
@@ -434,7 +434,7 @@ final class UseragentPlatformVersionTest extends TestCase
         $loadedOs = new \UaResult\Os\Os(
             name: 'Android',
             marketingName: 'Android',
-            manufacturer: Company::unknown,
+            manufacturer: new Company('unknown', name: null, brandname: null),
             version: new NullVersion(),
         );
 
@@ -529,7 +529,7 @@ final class UseragentPlatformVersionTest extends TestCase
         $loadedOs = new \UaResult\Os\Os(
             name: 'Android',
             marketingName: 'Android',
-            manufacturer: Company::unknown,
+            manufacturer: new Company('unknown', name: null, brandname: null),
             version: new readonly class ([]) implements VersionInterface {
                 /**
                  * @param array<int, bool|string|null> $searches

@@ -13,11 +13,9 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Loader;
 
-use BrowserDetector\Data\Company;
 use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\Data\Company as CompanyData;
 use BrowserDetector\Loader\Data\DataInterface;
-use BrowserDetector\Loader\InitData\Company as DataCompany;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
@@ -27,109 +25,12 @@ use ReflectionException;
 use ReflectionProperty;
 use RuntimeException;
 use UaLoader\Exception\NotFoundException;
-
-use function sprintf;
+use UaResult\Company\Company;
 
 #[CoversClass(className: CompanyLoader::class)]
 #[CoversClass(className: CompanyData::class)]
 final class CompanyLoaderTest extends TestCase
 {
-    /**
-     * @throws NotFoundException
-     * @throws RuntimeException
-     */
-    public function testLoadFailHasNot(): void
-    {
-        $companyKey = 'Dune HD';
-
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::once())
-            ->method('info')
-            ->with(
-                sprintf(
-                    '<fg:blue;bg=cyan;options=bold,underscore>deprecated class %s used to load data for company %s</>',
-                    Company::class,
-                    $companyKey,
-                ),
-            );
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        $company = new CompanyData(logger: $logger);
-
-        $companyLoader = new CompanyLoader($company);
-
-        $this->expectException(NotFoundException::class);
-        $this->expectExceptionMessageIsOrContains('the company with key "Dune HD" was not found');
-
-        $companyLoader->load($companyKey);
-    }
-
-    /**
-     * @throws NotFoundException
-     * @throws RuntimeException
-     */
-    public function testLoadFailNullReturned(): void
-    {
-        $companyKey = 'Dune HD';
-
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::once())
-            ->method('info')
-            ->with(
-                sprintf(
-                    '<fg:blue;bg=cyan;options=bold,underscore>deprecated class %s used to load data for company %s</>',
-                    Company::class,
-                    $companyKey,
-                ),
-            );
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        $company = new CompanyData(logger: $logger);
-
-        $companyLoader = new CompanyLoader($company);
-
-        $this->expectException(NotFoundException::class);
-        $this->expectExceptionMessageIsOrContains('the company with key "Dune HD" was not found');
-
-        $companyLoader->load($companyKey);
-    }
-
     /**
      * @throws ExpectationFailedException
      * @throws Exception
@@ -168,7 +69,7 @@ final class CompanyLoaderTest extends TestCase
 
         $initData = new CompanyData(logger: $logger);
 
-        $companyData = new DataCompany(name: $companyName, brandname: $brand);
+        $companyData = new Company(type: $companyKey, name: $companyName, brandname: $brand);
 
         $prop = new ReflectionProperty($initData, 'items');
         $prop->setValue($initData, [$companyKey => $companyData]);
@@ -205,7 +106,7 @@ final class CompanyLoaderTest extends TestCase
         $companyName = 'A6 Corp';
         $brand       = 'A6 Corp';
 
-        $company = new DataCompany(name: $companyName, brandname: $brand);
+        $company = new Company(type: $companyKey, name: $companyName, brandname: $brand);
 
         $initData = $this->createMock(DataInterface::class);
         $initData

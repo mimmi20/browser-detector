@@ -288,7 +288,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Firefox
@@ -326,7 +326,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Firefox
@@ -364,7 +364,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Phoenix
@@ -1276,7 +1276,7 @@
     name: Linux
     marketingName: Linux
     version: 2.0.34
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: 'Mozilla Application Suite'
@@ -1352,7 +1352,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Firefox
@@ -1922,7 +1922,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Firebird
@@ -3078,44 +3078,6 @@
     manufacturer: mozilla
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Windows NT 6.0; rv:2.0) Gecko/20100101 Firefox/4.0 Opera 12.14'
-  device:
-    architecture: null
-    deviceName: 'Windows Desktop'
-    marketingName: 'Windows Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows Vista'
-    version: 6.0.0
-    manufacturer: microsoft
-    bits: null
-  client:
-    name: Firefox
-    modus: null
-    version: 4.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Presto
-    version: null
-    manufacturer: opera
--
-  headers:
     user-agent: 'Mozilla/5.0 (X11; U; Linux arm7tdmi; rv:1.8.1.11) Gecko/20071130 Minimo/0.025'
   device:
     architecture: null
@@ -3138,7 +3100,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Minimo
@@ -3785,6 +3747,44 @@
     marketingName: FreeBSD
     version: null
     manufacturer: freebsd
+    bits: null
+  client:
+    name: Firefox
+    modus: null
+    version: 42.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Gecko
+    version: 42.0.0
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (X11; NetBSD amd64; rv:42.0) Gecko/20100101 Firefox/42.0'
+  device:
+    architecture: null
+    deviceName: 'general Desktop'
+    marketingName: 'general Desktop'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: desktop
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: NetBSD
+    marketingName: NetBSD
+    version: null
+    manufacturer: unknown
     bits: null
   client:
     name: Firefox

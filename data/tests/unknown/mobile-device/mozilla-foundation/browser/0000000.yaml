@@ -592,7 +592,7 @@
     name: Maemo
     marketingName: Maemo
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Fennec
@@ -668,7 +668,7 @@
     name: Maemo
     marketingName: Maemo
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Fennec
@@ -1634,6 +1634,120 @@
     manufacturer: mozilla
 -
   headers:
+    user-agent: 'Mozilla/5.0 (compatible; OSS/1.0; Chameleon; Linux) MOT-E8/R6713_G_71.02.07R BER/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: null
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; OSS/1.0; Chameleon; Linux) MOT-EM30/Imperfecto_Lite_v10.3 BER/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: null
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; OSS/1.0; Chameleon; Linux) MOT-U9/R6632_G_81.11.29R BER/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: null
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Mobile; rv:26.0) Gecko/18.0 Firefox/26.0'
   device:
     architecture: null
@@ -2264,7 +2378,7 @@
     name: Maemo
     marketingName: Maemo
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Fennec
@@ -2720,7 +2834,7 @@
     name: Maemo
     marketingName: Maemo
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Fennec
@@ -3100,7 +3214,7 @@
     name: Maemo
     marketingName: Maemo
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Fennec
@@ -3138,7 +3252,7 @@
     name: Maemo
     marketingName: Maemo
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Fennec
@@ -3290,7 +3404,7 @@
     name: Maemo
     marketingName: Maemo
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Fennec
@@ -3328,7 +3442,7 @@
     name: Maemo
     marketingName: Maemo
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Fennec
@@ -3683,118 +3797,4 @@
   engine:
     name: Gecko
     version: 44.0.0
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Mobile; rv:34.0) Gecko/34.0 Firefox/34.0'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Firefox OS'
-    marketingName: 'Firefox OS'
-    version: 2.1.0
-    manufacturer: mozilla
-    bits: null
-  client:
-    name: Firefox
-    modus: null
-    version: 34.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: 34.0.0
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Mobile; rv:37.0) Gecko/37.0 Firefox/37.0 KaiOS/1.0'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: KaiOS
-    marketingName: KaiOS
-    version: 1.0.0
-    manufacturer: kaios
-    bits: null
-  client:
-    name: Firefox
-    modus: null
-    version: 37.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: 37.0.0
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Mobile; rv:48.0) Gecko/48.0 Firefox/48.0 KaiOS/2.0'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: KaiOS
-    marketingName: KaiOS
-    version: 2.0.0
-    manufacturer: kaios
-    bits: null
-  client:
-    name: Firefox
-    modus: null
-    version: 48.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: 48.0.0
     manufacturer: mozilla

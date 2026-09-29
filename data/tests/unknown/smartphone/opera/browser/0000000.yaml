@@ -1010,7 +1010,7 @@
     name: Maemo
     marketingName: Maemo
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: 'Opera Mobile'
@@ -1124,7 +1124,7 @@
     name: Maemo
     marketingName: Maemo
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: 'Opera Mobile'
@@ -1137,6 +1137,44 @@
   engine:
     name: Presto
     version: null
+    manufacturer: opera
+-
+  headers:
+    user-agent: 'Mot-WX308/v3 BTSTLE_G_0A.22.08RPS Release/10.11.2011 Browser/Opera Profile/MIDP-2.0 Configuration/CLDC-1.1 Sync/SyncClient1.1 Opera/9.80 (MTK; Nucleus; Opera Mobi/4000; U; de-DE) Presto/2.5.28 Version/10.10'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Opera Mobile'
+    modus: null
+    version: 10.10.0
+    manufacturer: opera
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Presto
+    version: 2.5.28
     manufacturer: opera
 -
   headers:
@@ -1542,7 +1580,7 @@
     name: Maemo
     marketingName: Maemo
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: 'Opera Mobile'
@@ -1846,7 +1884,7 @@
     name: Maemo
     marketingName: Maemo
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: 'Opera Mobile'
@@ -1884,7 +1922,7 @@
     name: Maemo
     marketingName: Maemo
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: 'Opera Mobile'
@@ -1922,7 +1960,7 @@
     name: Maemo
     marketingName: Maemo
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: 'Opera Mobile'
@@ -1960,7 +1998,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: 'Opera Mobile'
@@ -2454,7 +2492,7 @@
     name: Maemo
     marketingName: Maemo
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: 'Opera Mobile'
@@ -2492,7 +2530,7 @@
     name: MeeGo
     marketingName: MeeGo
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: 'Opera Mobile'
@@ -2737,6 +2775,44 @@
 -
   headers:
     user-agent: 'ASTRO36_TD/v3 MAUI/10A1032MP_ASTRO_W1052 Release/31.12.2010 Browser/Opera (HTTPS) Profile/MIDP-2.0 Configuration/CLDC-1.1 Sync/SyncClient1.1 Opera/9.80 (MTK; Nucleus; Opera Mobi/4000; U; es-SA) Presto/2.5.28 Version/10.10'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Opera Mobile'
+    modus: null
+    version: 10.10.0
+    manufacturer: opera
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Presto
+    version: 2.5.28
+    manufacturer: opera
+-
+  headers:
+    user-agent: 'MOT-EX440 MIDP-2.0/CLDC-1.1 Release/31.12.2010 Browser/Opera Sync/SyncClient1.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera/9.80 (MTK; Nucleus; Opera Mobi/4000; U; en-US) Presto/2.5.28 Version/10.10'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -3078,6 +3154,44 @@
     manufacturer: opera
 -
   headers:
+    user-agent: 'MOT-EX430 MIDP-2.0/CLDC-1.1 Release/31.12.2010 Browser/Opera Sync/SyncClient1.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera/9.80 (MTK; Nucleus; Opera Mobi/4000; U; en-US) Presto/2.5.28 Version/10.10'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Opera Mobile'
+    modus: null
+    version: 10.10.0
+    manufacturer: opera
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Presto
+    version: 2.5.28
+    manufacturer: opera
+-
+  headers:
     user-agent: 'Opera/9.80 (S60; SymbOS; Opera Mobi/SYB-1204232256; U; tr) Presto/2.10.254 Version/12.00'
   device:
     architecture: null
@@ -3144,6 +3258,44 @@
     name: 'Opera Mobile'
     modus: null
     version: 10.00.0
+    manufacturer: opera
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Presto
+    version: null
+    manufacturer: opera
+-
+  headers:
+    user-agent: 'MOT-A3100/ Opera/9.5 (Microsoft Windows; PPC; Opera Mobi/15405; U; zh-tw)'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Windows Mobile OS'
+    marketingName: 'Windows Mobile OS'
+    version: null
+    manufacturer: microsoft
+    bits: null
+  client:
+    name: 'Opera Mobile'
+    modus: null
+    version: 9.5.0
     manufacturer: opera
     type: browser
     isbot: false
@@ -3290,7 +3442,7 @@
     name: Maemo
     marketingName: Maemo
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: 'Opera Mobile'
@@ -3303,6 +3455,44 @@
   engine:
     name: Presto
     version: 2.9.201
+    manufacturer: opera
+-
+  headers:
+    user-agent: 'Mot-WX308/v3 BTSTLE_G_0A.1D.02RPS Release/10.11.2011 Browser/Opera Profile/MIDP-2.0 Configuration/CLDC-1.1 Sync/SyncClient1.1 Opera/9.80 (MTK; Nucleus; Opera Mobi/4000; U; de-DE) Presto/2.5.28 Version/10.10'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Opera Mobile'
+    modus: null
+    version: 10.10.0
+    manufacturer: opera
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Presto
+    version: 2.5.28
     manufacturer: opera
 -
   headers:
@@ -3496,6 +3686,44 @@
     manufacturer: opera
 -
   headers:
+    user-agent: 'Mot-WX308/v3 BTSTLE_G_0A.1F.07RPS Release/10.11.2011 Browser/Opera Profile/MIDP-2.0 Configuration/CLDC-1.1 Sync/SyncClient1.1 Opera/9.80 (MTK; Nucleus; Opera Mobi/4000; U; de-DE) Presto/2.5.28 Version/10.10'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Opera Mobile'
+    modus: null
+    version: 10.10.0
+    manufacturer: opera
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Presto
+    version: 2.5.28
+    manufacturer: opera
+-
+  headers:
     user-agent: 'Opera/9.80 (S60; SymbOS; Opera Mobi/SYB-1107071604; U; el) Presto/2.8.149 Version/11.10'
   device:
     architecture: null
@@ -3534,7 +3762,7 @@
     manufacturer: opera
 -
   headers:
-    user-agent: 'Opera/9.80 (S60; SymbOS; Opera Mobi/SYB-1202242143; U; de) Presto/2.10.254 Version/12.00'
+    user-agent: 'Mot-WX308/v3 BTSTLE_G_0A.23.02RPS Release/10.11.2011 Browser/Opera Profile/MIDP-2.0 Configuration/CLDC-1.1 Sync/SyncClient1.1 Opera/9.80 (MTK; Nucleus; Opera Mobi/4000; U; de-DE) Presto/2.5.28 Version/10.10'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'
@@ -3553,248 +3781,20 @@
     istv: false
     bits: null
   os:
-    name: 'Series 60'
-    marketingName: 'Series 60'
+    name: 'Java ME'
+    marketingName: 'Java ME'
     version: null
-    manufacturer: nokia
+    manufacturer: sun
     bits: null
   client:
     name: 'Opera Mobile'
     modus: null
-    version: 12.00.0
+    version: 10.10.0
     manufacturer: opera
     type: browser
     isbot: false
     bits: null
   engine:
     name: Presto
-    version: 2.10.254
-    manufacturer: opera
--
-  headers:
-    user-agent: 'Opera/9.80 (S60; SymbOS; Opera Mobi/SYB-1111011893; U; de) Presto/2.9.201 Version/11.50'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Series 60'
-    marketingName: 'Series 60'
-    version: null
-    manufacturer: nokia
-    bits: null
-  client:
-    name: 'Opera Mobile'
-    modus: null
-    version: 11.50.0
-    manufacturer: opera
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Presto
-    version: 2.9.201
-    manufacturer: opera
--
-  headers:
-    user-agent: 'Opera/9.80 (Linux armv7l; Maemo; Opera Mobi/14; U; de) Presto/2.9.201 Version/11.50'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Maemo
-    marketingName: Maemo
-    version: null
-    manufacturer: linuxFoundation
-    bits: null
-  client:
-    name: 'Opera Mobile'
-    modus: null
-    version: 11.50.0
-    manufacturer: opera
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Presto
-    version: 2.9.201
-    manufacturer: opera
--
-  headers:
-    user-agent: 'Opera/9.80 (S60; SymbOS; Opera Mobi/SYB-1104041444; U; de) Presto/2.7.81 Version/11.00'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Series 60'
-    marketingName: 'Series 60'
-    version: null
-    manufacturer: nokia
-    bits: null
-  client:
-    name: 'Opera Mobile'
-    modus: null
-    version: 11.00.0
-    manufacturer: opera
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Presto
-    version: 2.7.81
-    manufacturer: opera
--
-  headers:
-    user-agent: 'Opera/9.80 (Windows Mobile; WCE; Opera Mobi/WMD-50433; U; en-GB) Presto/2.4.13 Version/10.00'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: microsoft
-    bits: null
-  client:
-    name: 'Opera Mobile'
-    modus: null
-    version: 10.00.0
-    manufacturer: opera
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Presto
-    version: 2.4.13
-    manufacturer: opera
--
-  headers:
-    user-agent: 'Opera/9.80 (S60; SymbOS; Opera Mobi/SYB-1203052171; U; ro) Presto/2.10.254 Version/12.00'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Series 60'
-    marketingName: 'Series 60'
-    version: null
-    manufacturer: nokia
-    bits: null
-  client:
-    name: 'Opera Mobile'
-    modus: null
-    version: 12.00.0
-    manufacturer: opera
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Presto
-    version: 2.10.254
-    manufacturer: opera
--
-  headers:
-    user-agent: 'Opera/9.80 (S60; SymbOS; Opera Mobi/SYB-1204232255; U; ru) Presto/2.10.254 Version/12.00'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Series 60'
-    marketingName: 'Series 60'
-    version: null
-    manufacturer: nokia
-    bits: null
-  client:
-    name: 'Opera Mobile'
-    modus: null
-    version: 12.00.0
-    manufacturer: opera
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Presto
-    version: 2.10.254
+    version: 2.5.28
     manufacturer: opera

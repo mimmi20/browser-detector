@@ -1,0 +1,114 @@
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko; compatible; Amazonbot/0.1; +https://developer.amazon.com/support/amazonbot) Chrome/151.0.1727.22 Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'Linux Desktop'
+    marketingName: 'Linux Desktop'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: desktop
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: null
+  client:
+    name: 'Amazon Bot'
+    modus: null
+    version: 0.1.0
+    manufacturer: amazon
+    type: crawler
+    isbot: true
+    bits: null
+  engine:
+    name: Blink
+    version: 151.0.1727.22
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.1552.36 Safari/537.36; compatible; Amzn-SearchBot/1.0; +https://developer.amazon.com/support/amazonbot'
+  device:
+    architecture: null
+    deviceName: 'Linux Desktop'
+    marketingName: 'Linux Desktop'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: desktop
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: null
+  client:
+    name: 'Amazon Bot'
+    modus: null
+    version: null
+    manufacturer: amazon
+    type: crawler
+    isbot: true
+    bits: null
+  engine:
+    name: Blink
+    version: 126.0.1552.36
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko; compatible; Amazonbot/0.1; +https://developer.amazon.com/support/amazonbot) Chrome/136.0.6342.99 Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'Windows Desktop'
+    marketingName: 'Windows Desktop'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: desktop
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: Windows
+    marketingName: 'Windows 10'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: null
+  client:
+    name: 'Amazon Bot'
+    modus: null
+    version: 0.1.0
+    manufacturer: amazon
+    type: crawler
+    isbot: true
+    bits: null
+  engine:
+    name: Blink
+    version: 136.0.6342.99
+    manufacturer: google

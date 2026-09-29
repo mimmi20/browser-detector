@@ -568,3 +568,44 @@
     name: WebKit
     version: 1128.0.1
     manufacturer: apple
+-
+  headers:
+    sec-ch-ua-platform: '"Android"'
+    sec-ch-ua: '" Not A;Brand";v="99", "Chromium";v="99", "Google Chrome";v="99"'
+    sec-ch-ua-mobile: '?1'
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:143.0) Gecko/20100101 Firefox/143.0'
+  device:
+    architecture: null
+    deviceName: Macintosh
+    marketingName: Macintosh
+    manufacturer: apple
+    brand: apple
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: desktop
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 99.0.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 99.0.0
+    manufacturer: google

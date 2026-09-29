@@ -1,6 +1,6 @@
 -
   headers:
-    user-agent: 'facebookplatform/1.0 (+http://developers.facebook.com)'
+    user-agent: 'facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)'
   device:
     architecture: null
     deviceName: null
@@ -27,7 +27,7 @@
   client:
     name: 'Facebook Crawler'
     modus: null
-    version: 1.0.0
+    version: 1.1.0
     manufacturer: meta
     type: social-media-agent
     isbot: true
@@ -101,7 +101,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: 'Facebook Crawler'
@@ -311,3 +311,41 @@
     name: Blink
     version: 151.0.0
     manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; facebookexternalhit/1.1; +http://www.facebook.com/externalhit_uatext.php)'
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: 'Facebook Crawler'
+    modus: null
+    version: 1.1.0
+    manufacturer: meta
+    type: social-media-agent
+    isbot: true
+    bits: null
+  engine:
+    name: WebKit
+    version: 537.36.0
+    manufacturer: apple

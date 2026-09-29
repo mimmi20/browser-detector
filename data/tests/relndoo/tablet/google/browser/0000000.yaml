@@ -74,3 +74,44 @@
     name: Blink
     version: 149.0.7827.159
     manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: TAB9_ROW
+    sec-ch-ua-platform-version: 15.0.0
+    sec-ch-ua: '"Chromium";v="146.0.7680.120", "Not-A.Brand";v="24.0.0.0", "Google Chrome";v="146.0.7680.120"'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36'
+  device:
+    architecture: null
+    deviceName: TAB9_ROW
+    marketingName: TAB9
+    manufacturer: relndoo
+    brand: relndoo
+    dualOrientation: true
+    simCount: 0
+    display:
+      width: 2000
+      height: 1200
+      touch: true
+      size: 12
+    type: tablet
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 146.0.7680.120
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 146.0.7680.120
+    manufacturer: google

@@ -1,5 +1,205 @@
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; motorola razr 60 ultra Build/V2VL35.42-148-2-5-1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.102 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'Razr 60 Ultra'
+    marketingName: 'Razr 60 Ultra'
+    manufacturer: motorola
+    brand: motorola
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2912
+      height: 1224
+      touch: true
+      size: 7
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 142.0.7444.102
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 142.0.7444.102
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; moto g86 5G Build/V2VNS35.73-62-1-1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.102 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'Moto G86 5G'
+    marketingName: 'Moto G86 5G'
+    manufacturer: motorola
+    brand: motorola
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2712
+      height: 1220
+      touch: true
+      size: 6.67
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 142.0.7444.102
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 142.0.7444.102
+    manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: '"moto g34 5G"'
+    sec-ch-ua-platform: '"Android"'
+    sec-ch-ua-platform-version: '"15.0.0"'
+    sec-ch-ua: '"Chromium";v="125", "Not.A/Brand";v="24"'
+    sec-ch-ua-full-version: '"125.0.6422.165"'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-mobile: '?1'
+    sec-ch-ua-wow64: '?0'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'Moto G34 5G'
+    marketingName: 'Moto G34 5G'
+    manufacturer: motorola
+    brand: motorola
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 1600
+      height: 720
+      touch: true
+      size: 6.5
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chromium
+    modus: null
+    version: 125.0.6422.165
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 125.0.0
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; motorola edge 60 fusion Build/V2VCS35.33-132-6-2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.115 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'Edge 60 Fusion'
+    marketingName: 'Edge 60 Fusion'
+    manufacturer: motorola
+    brand: motorola
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2712
+      height: 1220
+      touch: true
+      size: 6.67
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 143.0.7499.115
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 143.0.7499.115
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Dalvik/2.1.0 (Linux; U; Android 14; motorola edge 40 neo Build/U1TMS34.107-34-9-3-4)'
+  device:
+    architecture: null
+    deviceName: 'Edge 40 Neo'
+    marketingName: 'Edge 40 Neo'
+    manufacturer: motorola
+    brand: motorola
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 2400
+      height: 1080
+      touch: true
+      size: 6.55
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Android Browser'
+    modus: null
+    version: 2.1.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: null
+    manufacturer: apple
+-
+  headers:
     sec-ch-ua-model: '"moto g(100)"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"12.0.0"'
@@ -886,3 +1086,41 @@
     name: Blink
     version: 150.0.7871.181
     manufacturer: google
+-
+  headers:
+    user-agent: 'Dalvik/2.1.0 (Linux; U; Android 14; motorola edge 30 neo Build/U1SSMS34.31-64-10-9)'
+  device:
+    architecture: null
+    deviceName: 'Edge 30 Neo'
+    marketingName: 'Edge 30 Neo'
+    manufacturer: motorola
+    brand: motorola
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 2400
+      height: 1080
+      touch: true
+      size: 6.28
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Android Browser'
+    modus: null
+    version: 2.1.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: null
+    manufacturer: apple

@@ -79,6 +79,44 @@
     user-agent: 'Mozilla/5.0 (Linux; Android 9; moto g(7) play Build/PPYS29.105-134-4; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.90 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/245.0.0.39.118;]'
   device:
     architecture: null
+    deviceName: 'Moto G7 Play'
+    marketingName: 'Moto G7 Play'
+    manufacturer: motorola
+    brand: motorola
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 1512
+      height: 720
+      touch: true
+      size: 5.7
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Facebook App'
+    modus: null
+    version: 245.0.0.39.118
+    manufacturer: meta
+    type: mobile-application
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 78.0.3904.90
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 9; moto g(7) power Build/PPOS29.114-134-4; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.96 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/246.0.0.49.121;] comdirect/1.0 (appVersion:19.10.0;deviceType:mobile)'
+  device:
+    architecture: null
     deviceName: 'Moto G7 Power'
     marketingName: 'Moto G7 Power'
     manufacturer: motorola
@@ -103,14 +141,52 @@
   client:
     name: 'Facebook App'
     modus: null
-    version: 245.0.0.39.118
+    version: 246.0.0.49.121
     manufacturer: meta
     type: mobile-application
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 78.0.3904.90
+    version: 78.0.3904.96
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 9; moto g(6) plus Build/PPWS29.116-20-11; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.96 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/247.0.0.42.116;] comdirect/1.0 (appVersion:19.10.0;deviceName:nokia 6;deviceType:mobile)'
+  device:
+    architecture: null
+    deviceName: 'Moto G6 Plus'
+    marketingName: 'Moto G6 Plus'
+    manufacturer: motorola
+    brand: motorola
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 2160
+      height: 1080
+      touch: true
+      size: 5.9
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Facebook App'
+    modus: null
+    version: 247.0.0.42.116
+    manufacturer: meta
+    type: mobile-application
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 78.0.3904.96
     manufacturer: google
 -
   headers:
@@ -228,20 +304,20 @@
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 9; moto g(6) Build/PPSS29.55-37-7-6; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.162 Mobile Safari/537.36 Instagram 135.0.0.28.119 Android (28/9; 480dpi; 1080x2016; motorola; moto g(6); ali_n; qcom; de_DE; 206670920) comdirect/1.0 (appVersion:20.3.0;deviceName:nokia 6;deviceType:mobile)'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; moto g(7) plus Build/QPWS30.61-21-3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.149 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/263.0.0.46.121;] comdirect/1.0 (appVersion:20.3.0;deviceName:nokia 2.1;deviceType:mobile)'
   device:
     architecture: null
-    deviceName: 'Moto G6 Plus'
-    marketingName: 'Moto G6 Plus'
+    deviceName: 'Moto G7 Plus'
+    marketingName: 'Moto G7 Plus'
     manufacturer: motorola
     brand: motorola
     dualOrientation: true
     simCount: 1
     display:
-      width: 2160
+      width: 2270
       height: 1080
       touch: true
-      size: 5.9
+      size: 6.2
     type: smartphone
     ismobile: true
     istv: false
@@ -249,20 +325,20 @@
   os:
     name: Android
     marketingName: Android
-    version: 9.0.0
+    version: 10.0.0
     manufacturer: google
     bits: null
   client:
-    name: 'Instagram App'
+    name: 'Facebook App'
     modus: null
-    version: 135.0.0.28.119
+    version: 263.0.0.46.121
     manufacturer: meta
     type: mobile-application
     isbot: false
     bits: null
   engine:
     name: Blink
-    version: 80.0.3987.162
+    version: 80.0.3987.149
     manufacturer: google
 -
   headers:
@@ -307,17 +383,17 @@
     user-agent: 'Mozilla/5.0 (Linux; Android 9; moto g(8) plus Build/PPI29.65-51; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.162 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/266.0.0.64.124;] comdirect/1.0 (appVersion:20.4.0;deviceName:nokia 8;deviceType:mobile)'
   device:
     architecture: null
-    deviceName: 'Moto G8 Play'
-    marketingName: 'Moto G8 Play'
+    deviceName: 'Moto G8 Plus'
+    marketingName: 'Moto G8 Plus'
     manufacturer: motorola
     brand: motorola
     dualOrientation: true
-    simCount: 2
+    simCount: 1
     display:
-      width: 1520
-      height: 720
+      width: 2280
+      height: 1080
       touch: true
-      size: 6.2
+      size: 6.3
     type: smartphone
     ismobile: true
     istv: false
@@ -364,6 +440,44 @@
     name: Android
     marketingName: Android
     version: 10.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Facebook App'
+    modus: null
+    version: 287.0.0.50.119
+    manufacturer: meta
+    type: mobile-application
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 85.0.4183.101
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 9; moto g(8) power lite Build/POD29.348-23; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/85.0.4183.101 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/287.0.0.50.119;] comdirect/1.0 (appVersion:20.9.0;deviceName:nokia 8;deviceType:mobile)'
+  device:
+    architecture: null
+    deviceName: 'Moto G8 Power Lite'
+    marketingName: 'Moto G8 Power Lite'
+    manufacturer: motorola
+    brand: motorola
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 1600
+      height: 720
+      touch: true
+      size: 6.5
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
     manufacturer: google
     bits: null
   client:
@@ -494,44 +608,6 @@
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 9; moto g(6) Build/PPSS29.55-37-7-10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/85.0.4183.127 Mobile Safari/537.36[FBAN/EMA;FBLC/fr_FR;FBAV/218.0.0.6.119;] comdirect/1.0 (appVersion:20.9.2;deviceName:nokia 6;deviceType:mobile)'
-  device:
-    architecture: null
-    deviceName: 'Moto G6 Plus'
-    marketingName: 'Moto G6 Plus'
-    manufacturer: motorola
-    brand: motorola
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: 2160
-      height: 1080
-      touch: true
-      size: 5.9
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Facebook Lite'
-    modus: null
-    version: 218.0.0.6.119
-    manufacturer: meta
-    type: mobile-application
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 85.0.4183.127
-    manufacturer: google
--
-  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; motorola razr 5G Build/QPS30.205-Q3-43-51; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.185 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/295.0.0.36.119;]'
   device:
     architecture: null
@@ -611,17 +687,17 @@
     user-agent: 'Mozilla/5.0 (Linux; Android 10; moto g(9) play Build/QPX30.30-Q3-16-18; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/85.0.4183.120 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/288.1.0.47.123;]'
   device:
     architecture: null
-    deviceName: 'Moto G9 Plus'
-    marketingName: 'Moto G9 Plus'
+    deviceName: 'Moto G9 Play'
+    marketingName: 'Moto G9 Play'
     manufacturer: motorola
     brand: motorola
     dualOrientation: true
     simCount: 2
     display:
-      width: 2400
-      height: 1080
+      width: 1600
+      height: 720
       touch: true
-      size: 6.81
+      size: 6.5
     type: smartphone
     ismobile: true
     istv: false
@@ -649,17 +725,17 @@
     user-agent: 'Mozilla/5.0 (Linux; Android 10; moto g(7) play Build/QPYS30.52-22-9; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.110 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/288.0.0.15.118;]'
   device:
     architecture: null
-    deviceName: 'Moto G7 Power'
-    marketingName: 'Moto G7 Power'
+    deviceName: 'Moto G7 Play'
+    marketingName: 'Moto G7 Play'
     manufacturer: motorola
     brand: motorola
     dualOrientation: true
     simCount: 1
     display:
-      width: 1570
+      width: 1512
       height: 720
       touch: true
-      size: 6.2
+      size: 5.7
     type: smartphone
     ismobile: true
     istv: false
@@ -763,8 +839,8 @@
     user-agent: 'Mozilla/5.0 (Linux; Android 10; moto e(7) Build/QOFS30.569-36-10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.92 Mobile Safari/537.36[FBAN/EMA;FBLC/de_DE;FBAV/280.0.0.9.119;]'
   device:
     architecture: null
-    deviceName: 'Moto E7 Plus'
-    marketingName: 'Moto E7 Plus'
+    deviceName: 'Moto E7'
+    marketingName: 'Moto E7'
     manufacturer: motorola
     brand: motorola
     dualOrientation: true
@@ -801,17 +877,17 @@
     user-agent: 'Mozilla/5.0 (Linux; Android 10; moto g(8) power lite Build/QODS30.163-17-18; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.45 Mobile Safari/537.36[FBAN/EMA;FBLC/de_DE;FBAV/280.0.0.9.119;]'
   device:
     architecture: null
-    deviceName: 'Moto G8 Play'
-    marketingName: 'Moto G8 Play'
+    deviceName: 'Moto G8 Power Lite'
+    marketingName: 'Moto G8 Power Lite'
     manufacturer: motorola
     brand: motorola
     dualOrientation: true
     simCount: 2
     display:
-      width: 1520
+      width: 1600
       height: 720
       touch: true
-      size: 6.2
+      size: 6.5
     type: smartphone
     ismobile: true
     istv: false
@@ -1026,6 +1102,44 @@
     manufacturer: google
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; moto g(9) plus Build/RPA31.Q2-59-17-4-3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.87 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/352.0.0.21.117;]'
+  device:
+    architecture: null
+    deviceName: 'Moto G9 Plus'
+    marketingName: 'Moto G9 Plus'
+    manufacturer: motorola
+    brand: motorola
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2400
+      height: 1080
+      touch: true
+      size: 6.81
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Facebook App'
+    modus: null
+    version: 352.0.0.21.117
+    manufacturer: meta
+    type: mobile-application
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 98.0.4758.87
+    manufacturer: google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; moto e20 Build/RON31.266-41; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/352.0.0.21.117;]'
   device:
     architecture: null
@@ -1061,6 +1175,44 @@
   engine:
     name: Blink
     version: 97.0.4692.98
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; moto g(8) Build/RPJS31.Q4U-47-35-12; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.87 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/352.0.0.21.117;]'
+  device:
+    architecture: null
+    deviceName: 'Moto G8'
+    marketingName: 'Moto G8'
+    manufacturer: motorola
+    brand: motorola
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 1560
+      height: 720
+      touch: true
+      size: 6.4
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Facebook App'
+    modus: null
+    version: 352.0.0.21.117
+    manufacturer: meta
+    type: mobile-application
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 98.0.4758.87
     manufacturer: google
 -
   headers:
@@ -1143,12 +1295,12 @@
     user-agent: 'Mozilla/5.0 (Linux; Android 11; moto g(60)s Build/RRLS31.Q2X-70-44-3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Instagram 255.1.0.17.102 Android (30/11; 400dpi; 1080x2285; motorola; moto g(60)s; lisbon; mt6785; de_DE; 405431927)'
   device:
     architecture: null
-    deviceName: 'Moto G60'
-    marketingName: 'Moto G60'
+    deviceName: 'Moto G60s'
+    marketingName: 'Moto G60s'
     manufacturer: motorola
     brand: motorola
     dualOrientation: true
-    simCount: 1
+    simCount: 2
     display:
       width: 2460
       height: 1080
@@ -1181,12 +1333,12 @@
     user-agent: 'Mozilla/5.0 (Linux; Android 11; moto g(60)s Build/RRLS31.Q2X-70-44-2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/90.0.4430.210 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/364.0.0.24.132;]'
   device:
     architecture: null
-    deviceName: 'Moto G60'
-    marketingName: 'Moto G60'
+    deviceName: 'Moto G60s'
+    marketingName: 'Moto G60s'
     manufacturer: motorola
     brand: motorola
     dualOrientation: true
-    simCount: 1
+    simCount: 2
     display:
       width: 2460
       height: 1080
@@ -1447,17 +1599,17 @@
     user-agent: 'Mozilla/5.0 (Linux; Android 10; moto g(8) plus Build/QPIS30.28-Q3-28-26-4-1-7; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/127.0.6533.103 Mobile Safari/537.36 Instagram 346.1.0.46.104 Android (29/10; 420dpi; 1080x2081; motorola; moto g(8) plus; doha_n; qcom; de_DE; 637459775)'
   device:
     architecture: null
-    deviceName: 'Moto G8 Play'
-    marketingName: 'Moto G8 Play'
+    deviceName: 'Moto G8 Plus'
+    marketingName: 'Moto G8 Plus'
     manufacturer: motorola
     brand: motorola
     dualOrientation: true
-    simCount: 2
+    simCount: 1
     display:
-      width: 1520
-      height: 720
+      width: 2280
+      height: 1080
       touch: true
-      size: 6.2
+      size: 6.3
     type: smartphone
     ismobile: true
     istv: false

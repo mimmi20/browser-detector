@@ -87,14 +87,6 @@ beyondpod:
     search:
       - BeyondPod
   engine: webkit
-coremedia:
-  name: CoreMedia
-  manufacturer: apple
-  type: multimedia-player
-  version:
-    factory: \BrowserDetector\Version\CoreMediaFactory
-    search: null
-  engine: webkit
 custom:
   name: Custom
   manufacturer: unknown

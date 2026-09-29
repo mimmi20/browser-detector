@@ -494,6 +494,44 @@
     manufacturer: google
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; BUZZ 6 Pro Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.215 Mobile Safari/537.36;dubox;4.19.2;BUZZ+6+Pro;android-android;14;JSbridge1.0.10;jointbridge;1.1.39;'
+  device:
+    architecture: null
+    deviceName: 'Buzz 6 Pro'
+    marketingName: 'Buzz 6 Pro'
+    manufacturer: ace
+    brand: ace
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 1612
+      height: 720
+      touch: true
+      size: 6.6
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 148.0.7778.215
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 148.0.7778.215
+    manufacturer: google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; BUZZ 3 Lite) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
     architecture: null
@@ -529,4 +567,45 @@
   engine:
     name: Blink
     version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: 'BUZZ 6 Pro'
+    sec-ch-ua-platform-version: 14.0.0
+    sec-ch-ua: '"Not)A;Brand";v="99.0.0.0", "Google Chrome";v="127.0.6533.64", "Chromium";v="127.0.6533.64"'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'Buzz 6 Pro'
+    marketingName: 'Buzz 6 Pro'
+    manufacturer: ace
+    brand: ace
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 1612
+      height: 720
+      touch: true
+      size: 6.6
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 127.0.6533.64
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 127.0.6533.64
     manufacturer: google

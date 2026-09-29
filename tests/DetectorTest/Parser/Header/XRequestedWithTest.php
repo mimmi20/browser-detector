@@ -668,6 +668,9 @@ final class XRequestedWithTest extends TestCase
             ['com.uc.browser.en', true, 'ucbrowser mini', true, null, false, Os::unknown],
             ['com.lexi.browser', true, 'lexi-browser', true, null, false, Os::unknown],
             ['com.fulldive.mobile', true, 'fulldive-browser', true, null, false, Os::unknown],
+            ['com.alldocuments.pdfreader.tools', true, 'all-documents-pdf', true, null, false, Os::unknown],
+            ['com.casttotv.screenmirroring.smarttv.castvideo', true, 'cast-to-tv-screen', true, null, false, Os::unknown],
+            ['com.zhiliaoapp.musically', true, 'tiktok', true, null, false, Os::unknown],
         ];
     }
 }

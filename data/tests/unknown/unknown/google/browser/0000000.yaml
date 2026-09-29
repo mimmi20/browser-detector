@@ -228,44 +228,6 @@
     manufacturer: apple
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Wind/ws NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows Vista'
-    version: 6.0.0
-    manufacturer: microsoft
-    bits: null
-  client:
-    name: Chrome
-    modus: null
-    version: 33.0.1750.154
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 33.0.1750.154
-    manufacturer: google
--
-  headers:
     user-agent: 'Mozilla/5.0 AppleWebKit/537.35 (KHTML, like Gecko) Chrome/27.0.1453.110 Safari/537.36 Opera/13.12.231'
   device:
     architecture: null
@@ -2948,7 +2910,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Chrome
@@ -3798,3 +3760,41 @@
     name: WebKit
     version: null
     manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36 comdirect/1.0 (appVersion:20.8.0;deviceType:desktop)'
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 55.0.2883.95
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 55.0.2883.95
+    manufacturer: google

@@ -1,43 +1,5 @@
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-GB; rv:1.0; trendictionbot0.5.0; trendiction search; http://www.trendiction.de/bot; please let us know of any problems; web at trendiction.com) Gecko/20071127 Firefox/3.0.0.11'
-  device:
-    architecture: null
-    deviceName: 'Windows Desktop'
-    marketingName: 'Windows Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows Vista'
-    version: 6.0.0
-    manufacturer: microsoft
-    bits: null
-  client:
-    name: 'Trendiction Bot'
-    modus: null
-    version: 0.5.0
-    manufacturer: unknown
-    type: crawler
-    isbot: true
-    bits: null
-  engine:
-    name: Gecko
-    version: 1.0.0
-    manufacturer: mozilla
--
-  headers:
     user-agent: 'Mozilla/5.0 (Windows; chromeframe/2.4.8.5746) AppleWebKit/1.0 (KHTML, like Gecko) Bromium Safari/1.0'
   device:
     architecture: null
@@ -212,7 +174,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Larbin
@@ -288,7 +250,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Prerender
@@ -326,7 +288,7 @@
     name: Linux
     marketingName: Linux
     version: 5.4.0
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: broken-link-checker
@@ -402,7 +364,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: 'VirusTotal Cloud'
@@ -592,7 +554,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Prerender

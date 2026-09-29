@@ -421,3 +421,41 @@
     name: Blink
     version: 150.0.7871.46
     manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 15; de-de; 25028RN03Y Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/151.0.7922.199 Mobile Safari/537.36 Lite Browser/4.24'
+  device:
+    architecture: null
+    deviceName: 25028RN03Y
+    marketingName: 'Redmi A5 4G'
+    manufacturer: xiaomi
+    brand: xiaomi
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 1640
+      height: 720
+      touch: true
+      size: 6.88
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: HyperOS
+    marketingName: HyperOS
+    version: null
+    manufacturer: xiaomi
+    bits: null
+  client:
+    name: 'GO Browser'
+    modus: null
+    version: 4.24.0
+    manufacturer: unknown
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 151.0.7922.199
+    manufacturer: google

@@ -1,385 +1,5 @@
 -
   headers:
-    user-agent: 'IBrowse/2.3 (AmigaOS 3.5)'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: 'Amiga OS'
-    marketingName: 'Amiga OS'
-    version: 3.5.0
-    manufacturer: unknown
-    bits: null
-  client:
-    name: IBrowse
-    modus: null
-    version: 2.3.0
-    manufacturer: unknown
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'IBrowse/1.22 (AmigaOS 3.0)'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: 'Amiga OS'
-    marketingName: 'Amiga OS'
-    version: 3.0.0
-    manufacturer: unknown
-    bits: null
-  client:
-    name: IBrowse
-    modus: null
-    version: 1.22.0
-    manufacturer: unknown
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'Galeon (IE4 compatible; Galeon; Windows XP)'
-  device:
-    architecture: null
-    deviceName: 'Windows Desktop'
-    marketingName: 'Windows Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows XP'
-    version: 5.1.0
-    manufacturer: microsoft
-    bits: null
-  client:
-    name: Galeon
-    modus: null
-    version: null
-    manufacturer: unknown
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: EVE-minibrowser/3.0
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: MiniBrowser
-    modus: null
-    version: 3.0.0
-    manufacturer: unknown
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: null
-    manufacturer: apple
--
-  headers:
-    user-agent: 'ELinks/0.9.1 (textmode; SunOS 5.9 sun4u; 122x42)'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: SunOS
-    marketingName: SunOS
-    version: 5.9.0
-    manufacturer: oracle
-    bits: null
-  client:
-    name: ELinks
-    modus: null
-    version: 0.9.1
-    manufacturer: unknown
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Text
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'ELinks/0.11.4rc1 (textmode; FreeBSD 7.1-PRERELEASE i386; 160x64-2)'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 7.1.0-dev
-    manufacturer: freebsd
-    bits: null
-  client:
-    name: ELinks
-    modus: null
-    version: 0.11.4-RC+1
-    manufacturer: unknown
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Text
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'ELinks/0.11.3 (textmode; CYGWIN_NT-6.0 1.5.25(0.156/4/2) i686; 130x45-2)'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: Windows
-    version: null
-    manufacturer: microsoft
-    bits: null
-  client:
-    name: ELinks
-    modus: null
-    version: 0.11.3
-    manufacturer: unknown
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Text
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'ELinks/0.10.4-7-debian (textmode; GNU/kFreeBSD 5.3-17 i686; 143x53-2)'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: 'Debian with FreeBSD Kernel'
-    marketingName: 'Debian with FreeBSD Kernel'
-    version: 5.3.17
-    manufacturer: softwareInThePublicInterest
-    bits: null
-  client:
-    name: ELinks
-    modus: null
-    version: 0.10.4.7
-    manufacturer: unknown
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Text
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'ELinks/0.10.4-7-debian (textmode; GNU/kFreeBSD 5.3-1 i686; 143x53-2)'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: 'Debian with FreeBSD Kernel'
-    marketingName: 'Debian with FreeBSD Kernel'
-    version: 5.3.1
-    manufacturer: softwareInThePublicInterest
-    bits: null
-  client:
-    name: ELinks
-    modus: null
-    version: 0.10.4.7
-    manufacturer: unknown
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Text
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'ELinks (0.9.2; Linux 2.6.7-gentoo-r11 i586; 80x25)'
-  device:
-    architecture: null
-    deviceName: 'Linux Desktop'
-    marketingName: 'Linux Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: 'Gentoo Linux'
-    marketingName: 'Gentoo Linux'
-    version: null
-    manufacturer: gentoo
-    bits: null
-  client:
-    name: ELinks
-    modus: null
-    version: 0.9.2
-    manufacturer: unknown
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Text
-    version: null
-    manufacturer: unknown
--
-  headers:
     user-agent: 'ELinks (0.4pre5; Unix; 80x25)'
   device:
     architecture: null
@@ -1162,7 +782,7 @@
     name: Linux
     marketingName: Linux
     version: 2.2.16.22
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: BrowseX
@@ -1276,7 +896,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: kded
@@ -1314,7 +934,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: kded
@@ -1352,7 +972,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: kded
@@ -1428,7 +1048,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Awesomium
@@ -2112,7 +1732,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: QtWebkit
@@ -2188,7 +1808,7 @@
     name: Linux
     marketingName: Linux
     version: 3.8.0
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: IBrowse
@@ -2531,7 +2151,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Galeon
@@ -3459,44 +3079,6 @@
     manufacturer: unknown
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36 114Browser/5.0'
-  device:
-    architecture: null
-    deviceName: 'Windows Desktop'
-    marketingName: 'Windows Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows XP'
-    version: 5.1.0
-    manufacturer: microsoft
-    bits: null
-  client:
-    name: '114 Browser'
-    modus: null
-    version: 5.0.0
-    manufacturer: unknown
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 31.0.1650.63
-    manufacturer: google
--
-  headers:
     user-agent: 'Uzbl (X11; U; Arch Linux; de-DE) Webkit/1.1.10'
   device:
     architecture: null
@@ -3687,44 +3269,6 @@
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Windows NT 5.1; rv:60.9) Gecko/20100101 Goanna/4.1 Firefox/60.9 Mypal/28.3.1'
-  device:
-    architecture: null
-    deviceName: 'Windows Desktop'
-    marketingName: 'Windows Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows XP'
-    version: 5.1.0
-    manufacturer: microsoft
-    bits: null
-  client:
-    name: Mypal
-    modus: null
-    version: 28.3.1
-    manufacturer: unknown
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Goanna
-    version: 4.1.0
-    manufacturer: moonchild
--
-  headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.8.1.18) Gecko/20081206 Firefox/2.0.0.18 Kazehakase/0.5.4'
   device:
     architecture: null
@@ -3799,3 +3343,470 @@
     name: WebKit
     version: 533.3.0
     manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Windows NT 4.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1709.113 Amigo/32.0.1709.113 MRCHROME SOC Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'Windows Desktop'
+    marketingName: 'Windows Desktop'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: desktop
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: 'Windows NT'
+    marketingName: 'Windows NT'
+    version: 4.0.0
+    manufacturer: microsoft
+    bits: null
+  client:
+    name: Amigo
+    modus: null
+    version: 32.0.1709.113
+    manufacturer: unknown
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 32.0.1709.113
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Windows; U; Windows NT 6.1; cs-CZ) AppleWebKit/532.4 (KHTML, like Gecko) MiniBrowser/3.0 Safari/532.4'
+  device:
+    architecture: null
+    deviceName: 'Windows Desktop'
+    marketingName: 'Windows Desktop'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: desktop
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: Windows
+    marketingName: 'Windows 7'
+    version: 7.0.0
+    manufacturer: microsoft
+    bits: null
+  client:
+    name: MiniBrowser
+    modus: null
+    version: 3.0.0
+    manufacturer: unknown
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 532.4.0
+    manufacturer: apple
+-
+  headers:
+    user-agent: 'BriskBard/1.0 (Windows 6.1) BriskBard/1.0'
+  device:
+    architecture: null
+    deviceName: 'Windows Desktop'
+    marketingName: 'Windows Desktop'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: desktop
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: Windows
+    marketingName: 'Windows 7'
+    version: 7.0.0
+    manufacturer: microsoft
+    bits: null
+  client:
+    name: BriskBard
+    modus: null
+    version: 1.0.0
+    manufacturer: unknown
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (X11; Linux x86_64; Deepin 15.5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 NFSBrowser/5.0.0.1886'
+  device:
+    architecture: null
+    deviceName: 'Linux Desktop'
+    marketingName: 'Linux Desktop'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: desktop
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: Deepin
+    marketingName: Deepin
+    version: 15.5.0
+    manufacturer: deepinTechnology
+    bits: null
+  client:
+    name: 'NFS Browser'
+    modus: null
+    version: 5.0.0.1886
+    manufacturer: unknown
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 55.0.2883.75
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36 EastBrowser/3.0'
+  device:
+    architecture: null
+    deviceName: 'Windows Desktop'
+    marketingName: 'Windows Desktop'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: desktop
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: Windows
+    marketingName: 'Windows 10'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: null
+  client:
+    name: 'East Browser'
+    modus: null
+    version: 3.0.0
+    manufacturer: unknown
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 70.0.3538.110
+    manufacturer: google
+-
+  headers:
+    user-agent: 'IBrowse 2.4demo'
+  device:
+    architecture: null
+    deviceName: 'general Desktop'
+    marketingName: 'general Desktop'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: desktop
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: IBrowse
+    modus: null
+    version: 2.4.0-dev
+    manufacturer: unknown
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    sec-ch-ua-model: '""'
+    sec-ch-ua-platform: '"Windows"'
+    sec-ch-ua-platform-version: '"10.0.0"'
+    sec-ch-ua: '".Not/A)Brand";v="99", "WaveBrowser";v="103", "WaveBrowser";v="103"'
+    sec-ch-ua-full-version: '"1.2.8.1"'
+    sec-ch-ua-bitness: '"64"'
+    sec-ch-ua-arch: '"x86"'
+    sec-ch-ua-mobile: '?0'
+    user-agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.53 Safari/537.36'
+  device:
+    architecture: x86
+    deviceName: 'Windows Desktop'
+    marketingName: 'Windows Desktop'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: desktop
+    ismobile: false
+    istv: false
+    bits: 64
+  os:
+    name: Windows
+    marketingName: 'Windows 10'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 64
+  client:
+    name: 'Wave Browser'
+    modus: null
+    version: 1.2.8.1
+    manufacturer: unknown
+    type: browser
+    isbot: false
+    bits: 64
+  engine:
+    name: Blink
+    version: 103.0.0
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/61.0.3163.128 Safari/534.24 Lite Browser/4.7'
+  device:
+    architecture: null
+    deviceName: 'Linux Desktop'
+    marketingName: 'Linux Desktop'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: desktop
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: HyperOS
+    marketingName: HyperOS
+    version: null
+    manufacturer: xiaomi
+    bits: null
+  client:
+    name: 'GO Browser'
+    modus: null
+    version: 4.7.0
+    manufacturer: unknown
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 61.0.3163.128
+    manufacturer: google
+-
+  headers:
+    sec-ch-ua-platform: '"Windows"'
+    sec-ch-ua: '"Not_A Brand";v="8", "Chromium";v="120", "YaBrowser";v="24.1", "Yowser";v="2.5"'
+    sec-ch-ua-mobile: '?0'
+    user-agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'Windows Desktop'
+    marketingName: 'Windows Desktop'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: desktop
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: Windows
+    marketingName: 'Windows 10'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: null
+  client:
+    name: Yowser
+    modus: null
+    version: 2.5.0
+    manufacturer: unknown
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 120.0.0
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Chrome (AppleWebKit/537.1; Chrome50.0; Windows NT 6.3; Trident/5.0; UBrowser/5.7.15319.202)'
+  device:
+    architecture: null
+    deviceName: 'Windows Desktop'
+    marketingName: 'Windows Desktop'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: desktop
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: Windows
+    marketingName: 'Windows 8.1'
+    version: 8.1.0
+    manufacturer: microsoft
+    bits: null
+  client:
+    name: UBrowser
+    modus: null
+    version: 5.7.15319.202
+    manufacturer: unknown
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Trident
+    version: 5.0.0
+    manufacturer: microsoft
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Unknown; U; UNIX BSD/SYSV system; C -) AppleWebKit/527 (KHTML, like Gecko, Safari/419.3) Arora/0.10.2'
+  device:
+    architecture: null
+    deviceName: 'general Desktop'
+    marketingName: 'general Desktop'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: desktop
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: BSD
+    marketingName: BSD
+    version: null
+    manufacturer: berkeley
+    bits: null
+  client:
+    name: Arora
+    modus: null
+    version: 0.10.2
+    manufacturer: unknown
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 527.0.0
+    manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) TweakStyle/0.9.2 Chrome/49.0.2623.75 Electron/0.37.5 Safari/537.36 (Tab 1)'
+  device:
+    architecture: null
+    deviceName: 'Windows Desktop'
+    marketingName: 'Windows Desktop'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: desktop
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: Windows
+    marketingName: 'Windows 10'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: null
+  client:
+    name: TweakStyle
+    modus: null
+    version: 0.9.2
+    manufacturer: unknown
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 49.0.2623.75
+    manufacturer: google

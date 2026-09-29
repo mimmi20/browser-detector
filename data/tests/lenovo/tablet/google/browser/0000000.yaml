@@ -3688,3 +3688,41 @@
     name: Blink
     version: 150.0.7871.124
     manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 13; TB300FU Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.6167.178 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: TB300FU
+    marketingName: 'Tab M8 Wi-Fi (4rd Gen)'
+    manufacturer: lenovo
+    brand: lenovo
+    dualOrientation: true
+    simCount: 0
+    display:
+      width: 1280
+      height: 800
+      touch: true
+      size: 8
+    type: tablet
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 121.0.6167.178
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 121.0.6167.178
+    manufacturer: google

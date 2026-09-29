@@ -60,7 +60,7 @@
     name: Tizen
     marketingName: Tizen
     version: 2.3.0
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: 'Samsung Browser'
@@ -136,7 +136,7 @@
     name: Tizen
     marketingName: Tizen
     version: 2.3.0
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: 'SmartTV WebBrowser'
@@ -212,7 +212,7 @@
     name: Tizen
     marketingName: Tizen
     version: 3.0.0
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: 'Samsung Browser'
@@ -301,42 +301,4 @@
   engine:
     name: WebKit
     version: 605.1.15
-    manufacturer: apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Windows NT 6.0/SmartTV) AppleWebKit/606 (KHTML, like Gecko) OpenWebKitSharp'
-  device:
-    architecture: null
-    deviceName: 'Smart TV'
-    marketingName: 'Smart TV'
-    manufacturer: samsung
-    brand: samsung
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows Vista'
-    version: 6.0.0
-    manufacturer: microsoft
-    bits: null
-  client:
-    name: 'SmartTV WebBrowser'
-    modus: null
-    version: null
-    manufacturer: samsung
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 606.0.0
     manufacturer: apple

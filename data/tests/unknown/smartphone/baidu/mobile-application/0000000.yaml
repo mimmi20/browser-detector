@@ -190,6 +190,44 @@
     manufacturer: google
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 13; TB138plus Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.25 SP-engine/3.51.0 bd_dvt/1 baiduboxapp/15.26.0.10 (Baidu; P1 13) NABar/1.0'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Baidu Box App'
+    modus: null
+    version: 15.26.0.10
+    manufacturer: baidu
+    type: mobile-application
+    isbot: false
+    bits: null
+  engine:
+    name: T7
+    version: 15.25.0
+    manufacturer: baidu
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; 2022-L6 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.25 SP-engine/3.50.0 bd_dvt/0 baiduboxapp/15.25.0.11 (Baidu; P1 13) NABar/1.0'
   device:
     architecture: null
@@ -985,4 +1023,42 @@
   engine:
     name: T7
     version: 15.33.0
+    manufacturer: baidu
+-
+  headers:
+    user-agent: 'like Gecko) Version/4.0 Chrome/35.0.1916.138 Mobile Safari/537.36 T7/6.3 rabbit/1.0 baiduboxapp/7.4 (Baidu; P1 6.0.1)'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: 'Baidu Box App'
+    modus: null
+    version: 7.4.0
+    manufacturer: baidu
+    type: mobile-application
+    isbot: false
+    bits: null
+  engine:
+    name: T7
+    version: 6.3.0
     manufacturer: baidu

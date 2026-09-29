@@ -1,119 +1,5 @@
 -
   headers:
-    user-agent: 'Mozilla/5.0 (X11; U; OpenBSD alpha; en-AU; rv:1.8.1.6) Gecko/20071230 Firefox/2.0.0.6'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: OpenBSD
-    marketingName: OpenBSD
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Firefox
-    modus: null
-    version: 2.0.0.6
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: 1.8.1.6
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 (X11; U; NetBSD alpha; nl-NL; rv:1.8.1.6) Gecko/20071121 Firefox/2.0.0.6'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: NetBSD
-    marketingName: NetBSD
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Firefox
-    modus: null
-    version: 2.0.0.6
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: 1.8.1.6
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 (X11; U; NetBSD i386; fr-FR; rv:1.8.1.6) Gecko/20110607 Firefox/2.0.0.6'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: NetBSD
-    marketingName: NetBSD
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Firefox
-    modus: null
-    version: 2.0.0.6
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: 1.8.1.6
-    manufacturer: mozilla
--
-  headers:
     user-agent: 'Mozilla/5.0 (X11; U; NetBSD i386; en-NZ; rv:1.8.1.6) Gecko/20110704 Firefox/2.0.0.6'
   device:
     architecture: null
@@ -3785,6 +3671,120 @@
     marketingName: FreeBSD
     version: null
     manufacturer: freebsd
+    bits: null
+  client:
+    name: Firefox
+    modus: null
+    version: 7.0.1
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Gecko
+    version: 7.0.1
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.8.1.14) Gecko/20080621 Firefox/2.0.0.14'
+  device:
+    architecture: null
+    deviceName: 'general Desktop'
+    marketingName: 'general Desktop'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: desktop
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: null
+    manufacturer: freebsd
+    bits: null
+  client:
+    name: Firefox
+    modus: null
+    version: 2.0.0.14
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Gecko
+    version: 1.8.1.14
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (X11; U; SunOS sun4u; en-US; rv:1.9.2.23) Gecko/20110921 Firefox/3.6.23'
+  device:
+    architecture: null
+    deviceName: 'general Desktop'
+    marketingName: 'general Desktop'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: desktop
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: SunOS
+    marketingName: SunOS
+    version: null
+    manufacturer: oracle
+    bits: null
+  client:
+    name: Firefox
+    modus: null
+    version: 3.6.23
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Gecko
+    version: 1.9.2.23
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (X11; SunOS i86pc; rv:7.0.1) Gecko/20100101 Firefox/7.0.1'
+  device:
+    architecture: null
+    deviceName: 'general Desktop'
+    marketingName: 'general Desktop'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: desktop
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: SunOS
+    marketingName: SunOS
+    version: null
+    manufacturer: oracle
     bits: null
   client:
     name: Firefox

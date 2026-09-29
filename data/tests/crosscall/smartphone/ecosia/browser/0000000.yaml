@@ -36,3 +36,44 @@
     name: Blink
     version: 88.0.4324.181
     manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: 'Stellar-M6 Chamonix Mont-Blanc'
+    sec-ch-ua-platform-version: 15.0.0
+    sec-ch-ua: '"Chromium";v="143.0.7499.52", "Not A(Brand";v="24.0.0.0"'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36 (Ecosia android@143.0.0.0)'
+  device:
+    architecture: null
+    deviceName: 'Stellar-M6 Chamonix Mont-Blanc'
+    marketingName: 'Stellar-M6 Chamonix Mont-Blanc'
+    manufacturer: crosscall
+    brand: crosscall
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 1560
+      height: 720
+      touch: true
+      size: 6.1
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Ecosia
+    modus: null
+    version: 143.0.0.0
+    manufacturer: ecosia
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 143.0.7499.52
+    manufacturer: google

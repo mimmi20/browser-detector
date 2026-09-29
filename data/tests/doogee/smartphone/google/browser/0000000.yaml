@@ -2364,6 +2364,44 @@
     manufacturer: google
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; Blade GT Ultra) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'Blade GT'
+    marketingName: 'Blade GT'
+    manufacturer: doogee
+    brand: doogee
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2400
+      height: 1080
+      touch: true
+      size: 6.72
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 135.0.0.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 135.0.0.0
+    manufacturer: google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; S118 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36'
   device:
     architecture: null
@@ -2513,6 +2551,44 @@
   engine:
     name: Blink
     version: 137.0.0.0
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; Blade10 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.125 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'Blade 10 Ultra'
+    marketingName: 'Blade 10 Ultra'
+    manufacturer: doogee
+    brand: doogee
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 1600
+      height: 720
+      touch: true
+      size: 6.56
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 136.0.7103.125
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 136.0.7103.125
     manufacturer: google
 -
   headers:
@@ -2837,54 +2913,6 @@
   engine:
     name: Blink
     version: 131.0.6778.260
-    manufacturer: google
--
-  headers:
-    sec-ch-ua-model: '"Blade GT"'
-    sec-ch-ua-platform: '"Android"'
-    sec-ch-ua-platform-version: '"14.0.0"'
-    sec-ch-ua: '"Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"'
-    sec-ch-ua-full-version: '"146.0.7680.164"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
-    sec-ch-ua-wow64: '?0'
-    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'Blade GT'
-    marketingName: 'Blade GT'
-    manufacturer: doogee
-    brand: doogee
-    dualOrientation: true
-    simCount: 2
-    display:
-      width: 2400
-      height: 1080
-      touch: true
-      size: 6.72
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: Chrome
-    modus: null
-    version: 146.0.0
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 146.0.0
     manufacturer: google
 -
   headers:

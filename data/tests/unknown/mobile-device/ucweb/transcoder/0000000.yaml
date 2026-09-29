@@ -440,7 +440,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: 'UC Browser'
@@ -902,6 +902,82 @@
     name: 'UC Browser'
     modus: null
     version: 7.2.2.51
+    manufacturer: ucweb
+    type: transcoder
+    isbot: false
+    bits: null
+  engine:
+    name: Trident
+    version: null
+    manufacturer: microsoft
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Java; U; Pt-br; aplix jblend) UCBrowser8.3.0.154/69/444/UCWEB Mobile, MOT-A3100/1.0 Release/09.09.2008 Profile/MIDP-2.0 Configuration/CLDC-1.1 Software/WM6.1 UNTRUSTED/1.0'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'UC Browser'
+    modus: null
+    version: 8.3.0.154
+    manufacturer: ucweb
+    type: transcoder
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'MOT-Q8_CMCC/1.0 Release/01.10.2007 Profile/MIDP-2.0 Configuration/CLDC-1.1 Software/WM6.0 (compatible; MSIE 4.01; Windows CE; Smartphone)/UCWEB7.9.0.94/33/999'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: microsoft
+    bits: null
+  client:
+    name: 'UC Browser'
+    modus: null
+    version: 7.9.0.94
     manufacturer: ucweb
     type: transcoder
     isbot: false
@@ -2584,6 +2660,47 @@
     manufacturer: unknown
 -
   headers:
+    x-ucbrowser-ua: 'pf(Java);la(en-US);re(U2/1.0.0);dv(j2me);pr(UCBrowser/9.5.0.449);ov(MIDP-2.0);pi(240*320);ss(240*320);up(U2/1.0.0);er(U);bt(GJ);pm(1);bv(0);nm(0);im(0);sr(0);nt(99);'
+    x-ucbrowser-device-ua: 'MOT-A1200e/1.0 LinuxOS/2.4.20 Release/1.31.2007 Browser/Opera8.00 Profile/MIDP-2.0 Configuration/CLDC-1.1 Software/R541_G_11.56.11R'
+    x-ucbrowser-device: j2me
+    user-agent: 'SAMSUNG-GT-S3770K/S3770KDDLH1 Profile/MIDP-2.0 Configuration/CLDC-1.1 Untrusted/1.0'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'UC Browser'
+    modus: null
+    version: 9.5.0.449
+    manufacturer: ucweb
+    type: transcoder
+    isbot: false
+    bits: null
+  engine:
+    name: U2
+    version: 1.0.0
+    manufacturer: ucweb
+-
+  headers:
     user-agent: UCWEB7.9.0.94/139/444
   device:
     architecture: null
@@ -2720,7 +2837,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: 'UC Browser'
@@ -2796,7 +2913,7 @@
     name: Tizen
     marketingName: Tizen
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: 'UC Browser'

@@ -22,50 +22,12 @@
     name: Linux
     marketingName: Linux
     version: 2.6.7
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Mosaic
     modus: null
     version: 2.7.0-beta+5
-    manufacturer: ncsa
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'NCSA_Mosaic/2.0 (Windows 3.1)'
-  device:
-    architecture: null
-    deviceName: 'Windows Desktop'
-    marketingName: 'Windows Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 3.1'
-    version: 3.1.0
-    manufacturer: microsoft
-    bits: null
-  client:
-    name: Mosaic
-    modus: null
-    version: 2.0.0
     manufacturer: ncsa
     type: browser
     isbot: false

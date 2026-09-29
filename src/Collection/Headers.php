@@ -398,6 +398,8 @@ final readonly class Headers
                         case 'googlebot':
                         case 'audisto-crawler':
                         case 'meta-external-agent':
+                        case 'avast secure browser':
+                        case 'urlsuma-bot':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 

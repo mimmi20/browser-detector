@@ -476,6 +476,9 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.uc.browser.en' => 'ucbrowser mini',
             'com.lexi.browser' => 'lexi-browser',
             'com.fulldive.mobile' => 'fulldive-browser',
+            'com.alldocuments.pdfreader.tools' => 'all-documents-pdf',
+            'com.casttotv.screenmirroring.smarttv.castvideo' => 'cast-to-tv-screen',
+            'com.zhiliaoapp.musically' => 'tiktok',
             default => null,
         };
     }

@@ -60,7 +60,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: SeaMonkey
@@ -98,7 +98,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Thunderbird
@@ -187,44 +187,6 @@
   engine:
     name: Gecko
     version: 20.0.0
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Windows NT 5.1; rv:8.0) Gecko/20111105 Thunderbird/8.0'
-  device:
-    architecture: null
-    deviceName: 'Windows Desktop'
-    marketingName: 'Windows Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows XP'
-    version: 5.1.0
-    manufacturer: microsoft
-    bits: null
-  client:
-    name: Thunderbird
-    modus: null
-    version: 8.0.0
-    manufacturer: mozilla-foundation
-    type: pim
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: 8.0.0
     manufacturer: mozilla
 -
   headers:
@@ -3797,4 +3759,42 @@
   engine:
     name: Gecko
     version: 1.9.1.16
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (X11; OpenBSD macppc; rv:22.0) Gecko/20100101 Firefox/22.0 SeaMonkey/2.19'
+  device:
+    architecture: null
+    deviceName: 'general Desktop'
+    marketingName: 'general Desktop'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: desktop
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: OpenBSD
+    marketingName: OpenBSD
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: SeaMonkey
+    modus: null
+    version: 2.19.0
+    manufacturer: mozilla-foundation
+    type: pim
+    isbot: false
+    bits: null
+  engine:
+    name: Gecko
+    version: 22.0.0
     manufacturer: mozilla

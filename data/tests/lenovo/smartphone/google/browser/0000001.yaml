@@ -1,43 +1,5 @@
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 14; moto g stylus (2023) Build/U1THS34.65-74-1-7-24;) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.91 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'Moto G Stylus (2023)'
-    marketingName: 'Moto G Stylus (2023)'
-    manufacturer: lenovo
-    brand: motorola
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: 1600
-      height: 720
-      touch: true
-      size: 6.5
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: Chrome
-    modus: null
-    version: 149.0.7827.91
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 149.0.7827.91
-    manufacturer: google
--
-  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; Lenovo Legion Y90) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36'
   device:
     architecture: null
@@ -187,4 +149,52 @@
   engine:
     name: Blink
     version: 150.0.7871.181
+    manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: '"motorola edge 60 neo"'
+    sec-ch-ua-platform: '"Android"'
+    sec-ch-ua-platform-version: '"16.0.0"'
+    sec-ch-ua: '"Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"'
+    sec-ch-ua-full-version: '"152.0.7977.82"'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-mobile: '?1'
+    sec-ch-ua-wow64: '?0'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'Edge 60 Neo 5G'
+    marketingName: 'Edge 60 Neo 5G'
+    manufacturer: lenovo
+    brand: motorola
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2670
+      height: 1200
+      touch: true
+      size: 6.36
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 152.0.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 152.0.0
     manufacturer: google

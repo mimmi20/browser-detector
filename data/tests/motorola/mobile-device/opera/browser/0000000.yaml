@@ -22,7 +22,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Opera
@@ -60,7 +60,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Opera
@@ -74,44 +74,6 @@
     name: Presto
     version: null
     manufacturer: opera
--
-  headers:
-    user-agent: 'Mozilla/4.1 (compatible; MSIE 5.0; Symbian OS) Opera 6.0  [en]./MOT-A920./P325'
-  device:
-    architecture: null
-    deviceName: 'general Motorola device'
-    marketingName: 'general Motorola device'
-    manufacturer: motorola
-    brand: motorola
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
-  client:
-    name: Opera
-    modus: null
-    version: 6.0.0
-    manufacturer: opera
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Elektra
-    version: null
-    manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Linux; Motorola E690; 781) MOT-E690/R533_G_11.10.16R Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera 8.00 [zh-cn]'
@@ -136,7 +98,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Opera
@@ -174,392 +136,12 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Opera
     modus: null
     version: 8.00.0
-    manufacturer: opera
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Presto
-    version: null
-    manufacturer: opera
--
-  headers:
-    user-agent: 'MOT-EX118 MIDP-2.0/CLDC-1.1 Release/31.12.2010 Browser/Opera Sync/SyncClient1.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera/9.80 (MTK; U) Presto/2.5.28 Version/10.10'
-  device:
-    architecture: null
-    deviceName: 'general Motorola device'
-    marketingName: 'general Motorola device'
-    manufacturer: motorola
-    brand: motorola
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linuxFoundation
-    bits: null
-  client:
-    name: 'Opera Mobile'
-    modus: null
-    version: 10.10.0
-    manufacturer: opera
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Presto
-    version: 2.5.28
-    manufacturer: opera
--
-  headers:
-    user-agent: 'MOT-EX119 MIDP-2.0/CLDC-1.1 Release/31.12.2010 Browser/Opera Sync/SyncClient1.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera/9.80 (MTK; U) Presto/2.5.28 Version/10.10'
-  device:
-    architecture: null
-    deviceName: 'general Motorola device'
-    marketingName: 'general Motorola device'
-    manufacturer: motorola
-    brand: motorola
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linuxFoundation
-    bits: null
-  client:
-    name: 'Opera Mobile'
-    modus: null
-    version: 10.10.0
-    manufacturer: opera
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Presto
-    version: 2.5.28
-    manufacturer: opera
--
-  headers:
-    user-agent: 'MOT-EX225 MIDP-2.0/CLDC-1.1 Release/31.12.2010 Browser/Opera Sync/SyncClient1.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera/9.80 (MTK; U; en-US) Presto/2.5.28 Version/10.10'
-  device:
-    architecture: null
-    deviceName: 'general Motorola device'
-    marketingName: 'general Motorola device'
-    manufacturer: motorola
-    brand: motorola
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
-  client:
-    name: 'Opera Mobile'
-    modus: null
-    version: 10.10.0
-    manufacturer: opera
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Presto
-    version: 2.5.28
-    manufacturer: opera
--
-  headers:
-    user-agent: 'MOT-EX226 MIDP-2.0/CLDC-1.1 Release/31.12.2010 Browser/Opera Sync/SyncClient1.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera/9.80 (MTK; U; en-US) Presto/2.5.28 Version/10.10'
-  device:
-    architecture: null
-    deviceName: 'general Motorola device'
-    marketingName: 'general Motorola device'
-    manufacturer: motorola
-    brand: motorola
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
-  client:
-    name: 'Opera Mobile'
-    modus: null
-    version: 10.10.0
-    manufacturer: opera
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Presto
-    version: 2.5.28
-    manufacturer: opera
--
-  headers:
-    user-agent: 'MOT-K3m/99.40.07R BER2.2 Mozilla/4.0 (compatible; MSIE 6.0; 12003173) Profile/MIDP-2.0 Configuration/CLDC-1.1  Opera 8.00 [de]'
-  device:
-    architecture: null
-    deviceName: 'general Motorola device'
-    marketingName: 'general Motorola device'
-    manufacturer: motorola
-    brand: motorola
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
-  client:
-    name: Opera
-    modus: null
-    version: 8.00.0
-    manufacturer: opera
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Presto
-    version: null
-    manufacturer: opera
--
-  headers:
-    user-agent: 'MOT-MOTORAZRmaxxV3/96.80.51R BER2.2 Mozilla/4.0 (compatible; MSIE 6.0; 11073071) Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera 8.00 [en]'
-  device:
-    architecture: null
-    deviceName: 'general Motorola device'
-    marketingName: 'general Motorola device'
-    manufacturer: motorola
-    brand: motorola
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
-  client:
-    name: Opera
-    modus: null
-    version: 8.00.0
-    manufacturer: opera
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Presto
-    version: null
-    manufacturer: opera
--
-  headers:
-    user-agent: 'MOT-MOTOROKRE6/1.0 LinuxOS/2.4.20 Release/8.4.2006 Browser/Opera8.00 Profile/MIDP2.0 Configuration/CLDC1.1 Software/R533_G_11.10.54R'
-  device:
-    architecture: null
-    deviceName: 'general Motorola device'
-    marketingName: 'general Motorola device'
-    manufacturer: motorola
-    brand: motorola
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linuxFoundation
-    bits: null
-  client:
-    name: Opera
-    modus: null
-    version: 8.00.0
-    manufacturer: opera
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Presto
-    version: null
-    manufacturer: opera
--
-  headers:
-    user-agent: 'MOT-MOTOV9/A0.05.20R_03 BER2.2 Mozilla/4.0 (compatible; MSIE 6.0; 13003348) Profile/MIDP-2.0 Configuration/CLDC-1.1  Opera 8.60 [de]'
-  device:
-    architecture: null
-    deviceName: 'general Motorola device'
-    marketingName: 'general Motorola device'
-    manufacturer: motorola
-    brand: motorola
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
-  client:
-    name: Opera
-    modus: null
-    version: 8.60.0
-    manufacturer: opera
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Presto
-    version: null
-    manufacturer: opera
--
-  headers:
-    user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Smartphone; 240x320; MOT-Q-UMTS/01.00.98R) Opera 8.65 [en]'
-  device:
-    architecture: null
-    deviceName: 'general Motorola device'
-    marketingName: 'general Motorola device'
-    manufacturer: motorola
-    brand: motorola
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: microsoft
-    bits: null
-  client:
-    name: 'Opera Mobile'
-    modus: null
-    version: 8.65.0
-    manufacturer: opera
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Presto
-    version: null
-    manufacturer: opera
--
-  headers:
-    user-agent: 'MOT-ZN300/13.02.0BR_B BER2.2 Mozilla/4.0 (compatible; MSIE 6.0; 17243441) Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera 8.65 [es]'
-  device:
-    architecture: null
-    deviceName: 'general Motorola device'
-    marketingName: 'general Motorola device'
-    manufacturer: motorola
-    brand: motorola
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
-  client:
-    name: Opera
-    modus: null
-    version: 8.65.0
     manufacturer: opera
     type: browser
     isbot: false
@@ -630,7 +212,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Opera
@@ -668,7 +250,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Opera
@@ -706,126 +288,12 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Opera
     modus: null
     version: 7.50.0
-    manufacturer: opera
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Presto
-    version: null
-    manufacturer: opera
--
-  headers:
-    user-agent: 'MOT-MOTOROKR E6/1.0/R533_G_11.10.31R Mozilla/4.0 (compatible; MSIE 6.0; Linux; MOTOROKR E6; 781) Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera 8.00 [en] UP.Link/1.1'
-  device:
-    architecture: null
-    deviceName: 'general Motorola device'
-    marketingName: 'general Motorola device'
-    manufacturer: motorola
-    brand: motorola
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linuxFoundation
-    bits: null
-  client:
-    name: Opera
-    modus: null
-    version: 8.00.0
-    manufacturer: opera
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Presto
-    version: null
-    manufacturer: opera
--
-  headers:
-    user-agent: 'MOT-MOTOROKR E6/1.0/R533_G_11.10.31R Mozilla/4.0 (compatible; MSIE 6.0; Linux; MOTOROKR E6; 781) Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera 8.00 [en]'
-  device:
-    architecture: null
-    deviceName: 'general Motorola device'
-    marketingName: 'general Motorola device'
-    manufacturer: motorola
-    brand: motorola
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linuxFoundation
-    bits: null
-  client:
-    name: Opera
-    modus: null
-    version: 8.00.0
-    manufacturer: opera
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Presto
-    version: null
-    manufacturer: opera
--
-  headers:
-    user-agent: 'MOT-MOTOROKR E6 Opera 8.00 [en] UP.Link/1.1'
-  device:
-    architecture: null
-    deviceName: 'general Motorola device'
-    marketingName: 'general Motorola device'
-    manufacturer: motorola
-    brand: motorola
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Opera
-    modus: null
-    version: 8.00.0
     manufacturer: opera
     type: browser
     isbot: false
@@ -858,7 +326,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Opera
@@ -896,7 +364,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Opera
@@ -934,7 +402,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Opera
@@ -972,7 +440,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Opera
@@ -1010,7 +478,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Opera
@@ -1048,7 +516,7 @@
     name: Linux
     marketingName: Linux
     version: null
-    manufacturer: linuxFoundation
+    manufacturer: linux-foundation
     bits: null
   client:
     name: Opera
