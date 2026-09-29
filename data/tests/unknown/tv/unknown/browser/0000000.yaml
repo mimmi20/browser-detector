@@ -342,44 +342,6 @@
     manufacturer: apple
 -
   headers:
-    user-agent: 'Mozilla/5.0 (avdn/onyx.stb.2010; avui/tv; avvp/ssl; avrt/cehtml; avkb/pc,B:1572866; avst/off; Onyx Windows; U; Windows NT 5.1; xx; rv:1.8.1.13) CE-HTML/1.0 OreganMediaBrowser/4.25.2'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows XP'
-    version: 5.1.0
-    manufacturer: microsoft
-    bits: null
-  client:
-    name: ABrowse
-    modus: null
-    version: null
-    manufacturer: unknown
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
     user-agent: 'InettvBrowser/1.0 (00A0B0;VIP1200J;001;000) TvpsExtInfo/A07F91 (6A07000000000001;10) (compatible; MSIE 6.0; Win32)'
   device:
     architecture: null

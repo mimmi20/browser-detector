@@ -38,44 +38,6 @@
     manufacturer: unknown
 -
   headers:
-    user-agent: 'acebookexternalhit/1.0 (+http://www.facebook.com/externalhit_uatext.php)'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Facebook App'
-    modus: null
-    version: null
-    manufacturer: meta
-    type: mobile-application
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
     user-agent: UKFA9XBX6K.net.whatsapp.WhatsApp
   device:
     architecture: null
@@ -228,82 +190,6 @@
     manufacturer: unknown
 -
   headers:
-    user-agent: 'acebookexternalhit/1.0 (+http://www.facebook.com/externalhit_uatext.php) comdirect/1.0 (appVersion:20.10.3)'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Facebook App'
-    modus: null
-    version: null
-    manufacturer: meta
-    type: mobile-application
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'acebookexternalhit/1.0 (+http://www.facebook.com/externalhit_uatext.php) comdirect/1.0 (appVersion:21.11.0)'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Facebook App'
-    modus: null
-    version: null
-    manufacturer: meta
-    type: mobile-application
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
     user-agent: facebook-processing
   device:
     architecture: null
@@ -418,7 +304,7 @@
     manufacturer: unknown
 -
   headers:
-    user-agent: 'acebookexternalhit/1.0 (+http://www.facebook.com/externalhit­_uatext.php)'
+    user-agent: 'Mozilla/5.0 (compatible; WhatsApp/10.0.2.1)'
   device:
     architecture: null
     deviceName: null
@@ -443,9 +329,9 @@
     manufacturer: unknown
     bits: null
   client:
-    name: 'Facebook App'
+    name: WhatsApp
     modus: null
-    version: null
+    version: 10.0.2.1
     manufacturer: meta
     type: mobile-application
     isbot: false
@@ -454,3 +340,79 @@
     name: null
     version: null
     manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; WhatsApp/10.0.2.1)'
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: WhatsApp
+    modus: null
+    version: 10.0.2.1
+    manufacturer: meta
+    type: mobile-application
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 537.36.0
+    manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; WhatsApp/10.0.2.1'
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: WhatsApp
+    modus: null
+    version: 10.0.2.1
+    manufacturer: meta
+    type: mobile-application
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 537.36.0
+    manufacturer: apple

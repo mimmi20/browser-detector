@@ -3455,6 +3455,44 @@
     manufacturer: google
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 9; N8 PLUS Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.6312.118 Mobile Safari/537.36 XiaoMi/MiuiBrowser/14.47.1-gn'
+  device:
+    architecture: null
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Mi Browser'
+    modus: null
+    version: 14.47.1
+    manufacturer: xiaomi
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 123.0.6312.118
+    manufacturer: google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; T519H Build/BP2A.250605.031.A3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36 XiaoMi/MiuiBrowser/14.56.0-gn'
   device:
     architecture: null
@@ -3760,44 +3798,6 @@
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; U10 Build/TQ2A.230405.003.B2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36 XiaoMi/MiuiBrowser/14.56.0-gn'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Mi Browser'
-    modus: null
-    version: 14.56.0
-    manufacturer: xiaomi
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 135.0.7049.79
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 13; topaz Build/TKQ1.221114.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36 XiaoMi/MiuiBrowser/14.56.0-gn'
   device:
     architecture: null
     deviceName: 'general Mobile Phone'

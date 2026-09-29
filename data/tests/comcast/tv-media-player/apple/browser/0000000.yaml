@@ -682,3 +682,79 @@
     name: WebKit
     version: 601.1.0
     manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; x86_64 GNU/Linux) AppleWebKit/601.1 (KHTML, like Gecko) Version/8.0 Safari/601.1 WPE 1.0.0.0 Xfinity PERF3 partnerId:xglobal'
+  device:
+    architecture: null
+    deviceName: PERF3
+    marketingName: 'Xfinity PERF3'
+    manufacturer: comcast
+    brand: comcast
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv-media-player
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: null
+  client:
+    name: Safari
+    modus: null
+    version: 8.0.0
+    manufacturer: apple
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 601.1.0
+    manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; x86_64 GNU/Linux) AppleWebKit/601.1 (KHTML, like Gecko) Version/8.0 Safari/601.1 WPE ComcastAppPlatform COESST11AEI Firebolt/1.7.0 1.0.0.0 Xfinity'
+  device:
+    architecture: null
+    deviceName: 'general Comcast device'
+    marketingName: 'general Comcast device'
+    manufacturer: comcast
+    brand: comcast
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv-media-player
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: null
+  client:
+    name: Safari
+    modus: null
+    version: 8.0.0
+    manufacturer: apple
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 601.1.0
+    manufacturer: apple

@@ -1,6 +1,6 @@
 -
   headers:
-    user-agent: smartphoneApple
+    user-agent: 'SEC-SGHX426 UP.Link/5.1.2.9'
   device:
     architecture: null
     deviceName: 'general Mobile device'
@@ -38,7 +38,7 @@
     manufacturer: unknown
 -
   headers:
-    user-agent: tabletApple
+    user-agent: 'SEC-SGHX426 UP.Link/1.1'
   device:
     architecture: null
     deviceName: 'general Mobile device'
@@ -76,7 +76,7 @@
     manufacturer: unknown
 -
   headers:
-    user-agent: PlayStationNetwork/1.0
+    user-agent: SEC-SGHX426
   device:
     architecture: null
     deviceName: 'general Mobile device'
@@ -114,7 +114,7 @@
     manufacturer: unknown
 -
   headers:
-    user-agent: CDM-8900
+    user-agent: 'SEC-SGHX400 UP.Link/1.1'
   device:
     architecture: null
     deviceName: 'general Mobile device'
@@ -152,45 +152,7 @@
     manufacturer: unknown
 -
   headers:
-    user-agent: 'PenguinFear (compatible; windows ce;; Windows NT 5.0)'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: microsoft
-    bits: null
-  client:
-    name: null
-    modus: null
-    version: null
-    manufacturer: unknown
-    type: unknown
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: portalmmm/2.0_M341i(c10;TB)
+    user-agent: SEC-SGHX210/1.0
   device:
     architecture: null
     deviceName: 'general Mobile device'
@@ -228,7 +190,7 @@
     manufacturer: unknown
 -
   headers:
-    user-agent: 'SEC-SGHX427M UP.Link/1.1 (Google WAP Proxy/1.0)'
+    user-agent: SEC-SGHX200/1.0
   device:
     architecture: null
     deviceName: 'general Mobile device'
@@ -266,7 +228,7 @@
     manufacturer: unknown
 -
   headers:
-    user-agent: 'WinWAP-PRO/3.1 (3.1.5.190) UP.Link/5.1.2.5 (Google WAP Proxy/1.0)'
+    user-agent: 'SEC-SGHX160/1.0 UP.Link/6.3.1.12.0'
   device:
     architecture: null
     deviceName: 'general Mobile device'
@@ -304,45 +266,7 @@
     manufacturer: unknown
 -
   headers:
-    user-agent: 'WM2003/1 (Windows CE 3.0; U) [en]'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: 3.0.0
-    manufacturer: microsoft
-    bits: null
-  client:
-    name: null
-    modus: null
-    version: null
-    manufacturer: unknown
-    type: unknown
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'qvygfkkvkhtcmiyidrhgaosvnz poljnmvymzxgw'
+    user-agent: 'SEC-SGHX160/1.0 UP.Link/1.1'
   device:
     architecture: null
     deviceName: 'general Mobile device'
@@ -380,7 +304,7 @@
     manufacturer: unknown
 -
   headers:
-    user-agent: strib-mobile-app-webview
+    user-agent: SEC-SGHX160/1.0
   device:
     architecture: null
     deviceName: 'general Mobile device'
@@ -418,7 +342,7 @@
     manufacturer: unknown
 -
   headers:
-    user-agent: 'SEC-SGHX210/1.0 UP.Link/6.3.1.13.0'
+    user-agent: SEC-SGHX140
   device:
     architecture: null
     deviceName: 'general Mobile device'
@@ -456,7 +380,7 @@
     manufacturer: unknown
 -
   headers:
-    user-agent: 'https://s-mobile-versicherungsmakler.de/'
+    user-agent: SEC-SGHX120/1.0
   device:
     architecture: null
     deviceName: 'general Mobile device'
@@ -494,7 +418,7 @@
     manufacturer: unknown
 -
   headers:
-    user-agent: 'CaptiveNetworkSupport-416 wispr'
+    user-agent: SEC-SGHX120
   device:
     architecture: null
     deviceName: 'general Mobile device'
@@ -513,10 +437,10 @@
     istv: false
     bits: null
   os:
-    name: iOS
-    marketingName: iOS
+    name: null
+    marketingName: null
     version: null
-    manufacturer: apple
+    manufacturer: unknown
     bits: null
   client:
     name: null
@@ -527,13 +451,12 @@
     isbot: false
     bits: null
   engine:
-    name: WebKit
+    name: null
     version: null
-    manufacturer: apple
+    manufacturer: unknown
 -
   headers:
-    x-requested-with: com.apgsolutionsllc.APGSOLUTIONSLLC0007
-    user-agent: 'Dalvik/2.1.0 (Linux; U; Android 11; VEON 4K Smart TV Build/RTT2.220103.001)'
+    user-agent: SEC-SGHX105-X105UVDB1-NW.Browser3.01
   device:
     architecture: null
     deviceName: 'general Mobile device'
@@ -552,10 +475,10 @@
     istv: false
     bits: null
   os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 11.0.0
-    manufacturer: google
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
     bits: null
   client:
     name: null
@@ -566,13 +489,12 @@
     isbot: false
     bits: null
   engine:
-    name: WebKit
+    name: null
     version: null
-    manufacturer: apple
+    manufacturer: unknown
 -
   headers:
-    x-requested-with: xnx.browser.browse.Xnxnewx
-    user-agent: XXXAndroidApp/
+    user-agent: 'SEC-SGHX105 UP.Link/1.1'
   device:
     architecture: null
     deviceName: 'general Mobile device'
@@ -591,10 +513,3278 @@
     istv: false
     bits: null
   os:
-    name: Android
-    marketingName: Android
+    name: null
+    marketingName: null
     version: null
-    manufacturer: google
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHX105 NW.Browser3.01'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: SEC-SGHX105
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHV208*NDQ2OTE5NTExMzI0MDMz UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHV208*NDQ2OTE5NTExMzI0MDMz'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHV208*MzUyNDgwMDAzNzAwMzMx'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHV208*MzUyNDgwMDAyMjM5NDIy UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHV208*MzUyNDgwMDAwNzA0NzU3 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHV208*MzUyNDgwMDAwNjE4NTg1 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHV208*MzUyMjg4MDAzOTA1MTY4 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHV208*MzUyMjg4MDAyNDYxMjk2 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHV208*MzUyMjg4MDAyNDU2NzI2'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHV208*MzUyMjg4MDAxOTczODk1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHV208*MzUyMjg4MDAxNzk2MzIw UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHV208*MzUyMjg4MDAwMDI5MDYx'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHV208*MzUyMjg4MDA4MTgyMTQ0'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHV208*MzUyMjg4MDA4MjcyNDA4 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHV208*MzUyMjg4MDA4MDU1NjA1 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHV208*MzUyMjg4MDA3NDkwOTUx UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHV208*MzUyMjg4MDA2ODQ1ODA5 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHV208*MzUyMjg4MDA2NzQ3Njkw UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHV208*MzUyMjg4MDA2NjI5NTI2'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHV208*MzUyMjg4MDA2MTcxODc1 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHV208*MzUyMjg4MDA2MDQ5NjQy UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHV208*MzUyMjg4MDA1OTM0Mjk5 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHV208*MzUyMjg4MDA0OTU4OTUw UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHV208*MzUxODkxMDAxMzI5MDA5'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHV208*MzUxODg5MDAwNDA5NDAw'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHV208*MzUxNjIzMDA5NTI2ODE5'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHV208*MzUxNjIzMDA5MjY3Mjk5'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHV208*MzUxNjIzMDA4ODEzODA0 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHV208*MzUxNjIzMDA4NjM4NjQ5 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHV208*MzUxNjIzMDA3NDkyMDQ4 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHV208*MzUxNjIzMDA1NjA2MTM2 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHV208*MzUxNjI1MDAwNTk1MjIy UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: SEC-SGHV206
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHV205 NW.Browser3.01'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHV200 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: SEC-SGHV200
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS308*NDQ2OTE5NTExMzI0MDMz UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS308*NDQ2OTE5NTExMzI0MDMz'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS308*MzUxOTU5MDAzMzg0OTcz UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS308*MzUxOTU5MDAyOTI4NDcz UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS308*MzUxOTU5MDAyOTg3ODAw UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS308*MzUxOTU5MDAyMzAxOTEx UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS308*MzUxOTU5MDAyMzA4NDUy UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS308*MzUxOTU5MDAxOTYzMzY0'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS308*MzUxOTU5MDAxODM2MjQ4 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS308*MzUxOTU5MDAxNjY4MDQ3 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS308*MzUxOTU5MDAxNjY1NTA2 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS308*MzUxOTU5MDAxNjUzODY2 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS308*MzUxOTU5MDAxMzEzNjg1 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS308*MzUxOTU5MDAwNzE5NDYw UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS308*MzUxOTU5MDAwNzE4NTYx UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS308*MzUxOTU5MDAwNjE4MjQx'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS308*MzUxOTU5MDAwMTU3NDE0'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS308*MzUxOTU5MDAwMDg0MTM5 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS308*MzUxOTU5MDAwMDA4ODgw UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS308*MzUwNDY3ODkzMjQ0ODEx UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS308*MzUwNDY3ODkzMjM4NTQw UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS308*MzUwNDY3ODk5ODYyOTEz UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS308*MzUwNDY3ODk5ODcwNjI3 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS308*MzUwNDY3ODk5NTk0OTUz UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS308*MzUwNDY3ODk3OTY1OTk5 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS308*MzUwNDY3ODk3OTE5MzAx UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS308*MzUwNDY3ODk2ODI4MjYz UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS308*MzUwNDY3ODk1MzY2MjI0 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS308*MzUwNDY3ODk1MTM0MjM0 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS308*MzUwNDY3ODk0NjMwNjA0 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS307 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: SEC-SGHS307
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: SEC-SGHS300M
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS300 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: SEC-SGHS300
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS208+*MzUxNDEwODkwMDUwOTQ3 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS208*MzUxNDEwODkxOTcwMDQ0'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS208*MzUxNDEwODkxOTA1NDUz UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS208*MzUxNDEwODkxODkyOTU4 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS208*MzUxNDEwODkxMzAyMTMx UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS208*MzUxNDEwODkwMDQ3NDA2 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS200 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: SEC-SGHS200
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHS105 NW.Browser3.01'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: SEC-SGHS100
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHP738*MDAwMDAwMDAwMDAwMDAw'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: SEC-SGHP735-P735UVDJ2-TSS1.01
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'SEC-SGHP730C/1.0 UP.Link/1.1'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
     bits: null
   client:
     name: null

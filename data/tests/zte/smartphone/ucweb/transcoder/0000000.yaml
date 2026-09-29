@@ -229,6 +229,44 @@
     manufacturer: google
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 11; ru; ZTE_Blade_A31_Plus_RU Build/RP1A.201005.001) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1 UCBrowser/10.9.8.1006 Mobile'
+  device:
+    architecture: null
+    deviceName: 'Blade A31 Plus'
+    marketingName: 'Blade A31 Plus'
+    manufacturer: zte
+    brand: zte
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 960
+      height: 480
+      touch: true
+      size: 6
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'UC Browser'
+    modus: null
+    version: 10.9.8.1006
+    manufacturer: ucweb
+    type: transcoder
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 528.5.0
+    manufacturer: apple
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 9; en-US; ZTE Blade V1000 Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.4.5.1308 Mobile Safari/537.36'
   device:
     architecture: null
@@ -265,6 +303,44 @@
     name: Blink
     version: 78.0.3904.108
     manufacturer: google
+-
+  headers:
+    user-agent: 'UCWEB/2.0 (MIDP-2.0; U; Adr 9; ru; ZTE_Blade_L130RU) U2/1.0.0 UCBrowser/10.7.6.805 U2/1.0.0 Mobile'
+  device:
+    architecture: null
+    deviceName: 'Blade L130RU'
+    marketingName: 'Blade L130'
+    manufacturer: zte
+    brand: zte
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 800
+      height: 480
+      touch: true
+      size: 4
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'UC Browser'
+    modus: null
+    version: 10.7.6.805
+    manufacturer: ucweb
+    type: transcoder
+    isbot: false
+    bits: null
+  engine:
+    name: U2
+    version: 1.0.0
+    manufacturer: ucweb
 -
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 14; en-US; Z2450 Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 UCBrowser/13.7.8.1322 Mobile Safari/537.36'

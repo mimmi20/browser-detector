@@ -1,51 +1,5 @@
 -
   headers:
-    sec-ch-ua-model: '"mars"'
-    sec-ch-ua-platform: '"Android"'
-    sec-ch-ua-platform-version: '"13.0.0"'
-    sec-ch-ua: '"Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"'
-    sec-ch-ua-full-version: '"120.0.6099.145"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-mobile: '?1'
-    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: null
-    display:
-      width: null
-      height: null
-      touch: null
-      size: null
-    type: unknown
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: Chrome
-    modus: null
-    version: 120.0.0
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 120.0.0
-    manufacturer: google
--
-  headers:
     sec-ch-ua-model: '"S7_EEA"'
     x-requested-with: XMLHttpRequest
     sec-ch-ua-platform: '"Android"'
@@ -1760,6 +1714,44 @@
   engine:
     name: Blink
     version: 145.0.0
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.6312.86 Safari/537.36'
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 123.0.6312.86
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 123.0.6312.86
     manufacturer: google
 -
   headers:
@@ -3868,4 +3860,209 @@
   engine:
     name: Blink
     version: 127.0.0
+    manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: uis8581a2h10_Automotive
+    sec-ch-ua-platform-version: 12.0.0
+    sec-ch-ua: '"Chromium";v="148.0.7778.167", "Google Chrome";v="148.0.7778.167", "Not/A)Brand";v="99.0.0.0"'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36'
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: null
+    display:
+      width: null
+      height: null
+      touch: null
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 148.0.7778.167
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 148.0.7778.167
+    manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: the101loop
+    sec-ch-ua-platform-version: 14.0.0
+    sec-ch-ua: '"Chromium";v="142.0.7444.171", "Google Chrome";v="142.0.7444.171", "Not_A Brand";v="99.0.0.0"'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: null
+    display:
+      width: null
+      height: null
+      touch: null
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 142.0.7444.171
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 142.0.7444.171
+    manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: 'Spectra J1 PRO'
+    sec-ch-ua-platform-version: 14.0.0
+    sec-ch-ua: '"Google Chrome";v="143.0.7499.109", "Chromium";v="143.0.7499.109", "Not A(Brand";v="24.0.0.0"'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: null
+    display:
+      width: null
+      height: null
+      touch: null
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 143.0.7499.109
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 143.0.7499.109
+    manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: Spectra_J2_Pro
+    sec-ch-ua-platform-version: 15.0.0
+    sec-ch-ua: '"Not;A=Brand";v="8.0.0.0", "Chromium";v="150.0.7871.128", "Google Chrome";v="150.0.7871.128"'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: null
+    display:
+      width: null
+      height: null
+      touch: null
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 150.0.7871.128
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 150.0.7871.128
+    manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: Spectra_J3_MTN
+    sec-ch-ua-platform-version: 16.0.0
+    sec-ch-ua: '"Chromium";v="152.0.7977.42", "Not?A_Brand";v="24.0.0.0", "Google Chrome";v="152.0.7977.42"'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: null
+    display:
+      width: null
+      height: null
+      touch: null
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 152.0.7977.42
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 152.0.7977.42
     manufacturer: google

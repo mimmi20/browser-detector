@@ -152,44 +152,6 @@
     manufacturer: unknown
 -
   headers:
-    user-agent: 'Tor Browser/2.15 (Windows XP 1.1; fr_CA;)'
-  device:
-    architecture: null
-    deviceName: 'Windows Desktop'
-    marketingName: 'Windows Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows XP'
-    version: 5.1.0
-    manufacturer: microsoft
-    bits: null
-  client:
-    name: 'Tor Browser'
-    modus: null
-    version: 2.15.0
-    manufacturer: tor
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
     user-agent: 'Tor Browser/17.6 (Ark Linux 1.9; fr;)'
   device:
     architecture: null

@@ -226,3 +226,50 @@
     name: Blink
     version: 149.0.7827.91
     manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: '"Fairphone 6"'
+    sec-ch-ua-platform: '"Android"'
+    sec-ch-ua-platform-version: '"16"'
+    sec-ch-ua: '"OperaMobile";v="101", " Not;A Brand";v="99", "Chromium";v="151", "Opera";v="136"'
+    sec-ch-ua-full-version: '"101.1.5178.89889"'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-mobile: '?1'
+    sec-ch-ua-wow64: '?0'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36 OPR/101.0.0.0'
+  device:
+    architecture: null
+    deviceName: FP6
+    marketingName: '6'
+    manufacturer: fairphone
+    brand: fairphone
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2484
+      height: 1116
+      touch: true
+      size: 6.31
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Opera Mobile'
+    modus: null
+    version: 101.1.5178.89889
+    manufacturer: opera
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 151.0.0
+    manufacturer: google

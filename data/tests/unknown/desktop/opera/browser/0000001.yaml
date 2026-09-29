@@ -1,119 +1,5 @@
 -
   headers:
-    user-agent: 'Opera/4.02 (X11; U; ca)'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
-  client:
-    name: Opera
-    modus: null
-    version: 4.02.0
-    manufacturer: opera
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Elektra
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'Opera/8.02 (X11; U; bg)'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
-  client:
-    name: Opera
-    modus: null
-    version: 8.02.0
-    manufacturer: opera
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Presto
-    version: null
-    manufacturer: opera
--
-  headers:
-    user-agent: 'Opera/7.51 (X11; U; sv)'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
-  client:
-    name: Opera
-    modus: null
-    version: 7.51.0
-    manufacturer: opera
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Presto
-    version: null
-    manufacturer: opera
--
-  headers:
     user-agent: 'Opera/9.52 (X11; U; ja)'
   device:
     architecture: null
@@ -3798,3 +3684,117 @@
     name: Trident
     version: 5.0.0
     manufacturer: microsoft
+-
+  headers:
+    user-agent: 'Opera/9.80 (X11; FreeBSD 9.0-RELEASE amd64; U; ru) Presto/2.10.289 Version/12.00'
+  device:
+    architecture: null
+    deviceName: 'general Desktop'
+    marketingName: 'general Desktop'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: desktop
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 9.0.0
+    manufacturer: freebsd
+    bits: null
+  client:
+    name: Opera
+    modus: null
+    version: 12.00.0
+    manufacturer: opera
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Presto
+    version: 2.10.289
+    manufacturer: opera
+-
+  headers:
+    user-agent: 'Opera/9.80 (X11; FreeBSD 8.3-RELEASE-p4 i386; U; en) Presto/2.10.289 Version/12.02'
+  device:
+    architecture: null
+    deviceName: 'general Desktop'
+    marketingName: 'general Desktop'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: desktop
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 8.3.0
+    manufacturer: freebsd
+    bits: null
+  client:
+    name: Opera
+    modus: null
+    version: 12.02.0
+    manufacturer: opera
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Presto
+    version: 2.10.289
+    manufacturer: opera
+-
+  headers:
+    user-agent: 'Opera/9.80 (X11; FreeBSD 9.1-STABLE amd64) Presto/2.12.388 Version/12.12'
+  device:
+    architecture: null
+    deviceName: 'general Desktop'
+    marketingName: 'general Desktop'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: desktop
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 9.1.0
+    manufacturer: freebsd
+    bits: null
+  client:
+    name: Opera
+    modus: null
+    version: 12.12.0
+    manufacturer: opera
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Presto
+    version: 2.12.388
+    manufacturer: opera

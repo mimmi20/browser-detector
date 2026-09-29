@@ -36,3 +36,44 @@
     name: Blink
     version: 149.0.7827.91
     manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: theloop_ROW
+    sec-ch-ua-platform-version: 15.0.0
+    sec-ch-ua: '"Google Chrome";v="137.0.7151.115", "Chromium";v="137.0.7151.115", "Not/A)Brand";v="24.0.0.0"'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: loop
+    marketingName: loop
+    manufacturer: loop-dl
+    brand: loop-dl
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: smart-speaker
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 137.0.7151.115
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 137.0.7151.115
+    manufacturer: google

@@ -616,3 +616,44 @@
     name: Blink
     version: 149.0.7827.91
     manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: TMRV085G
+    sec-ch-ua-platform-version: 15.0.0
+    sec-ch-ua: '"Google Chrome";v="131.0.6778.260", "Chromium";v="131.0.6778.260", "Not_A Brand";v="24.0.0.0"'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: TMRV085G
+    marketingName: 'Revvl 8 5G'
+    manufacturer: t-mobile
+    brand: t-mobile
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 1640
+      height: 720
+      touch: true
+      size: 6.6
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 131.0.6778.260
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 131.0.6778.260
+    manufacturer: google

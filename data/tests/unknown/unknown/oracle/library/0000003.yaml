@@ -1,5 +1,43 @@
 -
   headers:
+    user-agent: 'Java/1.8.0_181 comdirect/1.0 (appVersion:20.3.0)'
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Java Standard Library'
+    modus: null
+    version: 1.8.0.181
+    manufacturer: oracle
+    type: library
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
     user-agent: Java/13.0.2
   device:
     architecture: null
@@ -3752,44 +3790,6 @@
     name: 'Java Standard Library'
     modus: null
     version: 21.0.9
-    manufacturer: oracle
-    type: library
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: Java-http-client/11.0.13
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
-  client:
-    name: 'Java HTTP Client'
-    modus: null
-    version: 11.0.13
     manufacturer: oracle
     type: library
     isbot: false

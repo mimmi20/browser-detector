@@ -1,5 +1,81 @@
 -
   headers:
+    user-agent: 'Apidog/1.0.0 (https://apidog.com)'
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: Apidog
+    modus: null
+    version: 1.0.0
+    manufacturer: unknown
+    type: library
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'BIC Tracker'
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: 'BIC Tracker'
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: library
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
     user-agent: 'Lodestone PHP Parser'
   device:
     architecture: null
@@ -902,6 +978,310 @@
     name: Axios
     modus: null
     version: 1.19.0
+    manufacturer: unknown
+    type: library
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: null
+    manufacturer: apple
+-
+  headers:
+    user-agent: okhttp/5.5.0
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: null
+  client:
+    name: OkHttp
+    modus: null
+    version: 5.5.0
+    manufacturer: unknown
+    type: library
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'go-resty/2.17.2 (https://github.com/go-resty/resty)'
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: Resty
+    modus: null
+    version: 2.17.2
+    manufacturer: unknown
+    type: library
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: okhttp/5.4.0
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: null
+  client:
+    name: OkHttp
+    modus: null
+    version: 5.4.0
+    manufacturer: unknown
+    type: library
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'Python/3.11 aiohttp/3.14.3'
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: aiohttp
+    modus: null
+    version: 3.14.3
+    manufacturer: unknown
+    type: library
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: curl/8.22.0
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: cURL
+    modus: null
+    version: 8.22.0
+    manufacturer: unknown
+    type: library
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'Python/3.14 aiohttp/3.14.3'
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: aiohttp
+    modus: null
+    version: 3.14.3
+    manufacturer: unknown
+    type: library
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: JFrogArtifactory/7.146.25
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: Artifactory
+    modus: null
+    version: 7.146.25
+    manufacturer: unknown
+    type: library
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: axios/1.20.0
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: Axios
+    modus: null
+    version: 1.20.0
     manufacturer: unknown
     type: library
     isbot: false

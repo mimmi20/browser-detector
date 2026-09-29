@@ -722,6 +722,44 @@
     manufacturer: google
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 11; SM-A1660) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.49 YaBrowser/26.4.7.49.00 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SM-A1660
+    marketingName: 'Galaxy A16 5G'
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2340
+      height: 1080
+      touch: true
+      size: 6.7
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser'
+    modus: null
+    version: 26.4.7.49.00
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 146.0.7680.49
+    manufacturer: google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; SM-M305F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.51 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36'
   device:
     architecture: null
@@ -1137,4 +1175,42 @@
   engine:
     name: Blink
     version: 150.0.7871.306
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; SM-A125F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.168 YaApp_Android/26.80.1 YaSearchBrowser/26.80.1 BroPP/1.0 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SM-A125F
+    marketingName: 'Galaxy A12 (International)'
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 1600
+      height: 720
+      touch: true
+      size: 6.5
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Search Browser'
+    modus: null
+    version: 26.80.1
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 150.0.7871.168
     manufacturer: google

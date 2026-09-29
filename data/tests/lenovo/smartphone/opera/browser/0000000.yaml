@@ -38,6 +38,44 @@
     manufacturer: google
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 9; moto g(6)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Mobile Safari/537.36 OPR/54.3.2672.50220 comdirect/1.0 (appVersion:19.11.0;deviceName:nokia 6;deviceType:mobile)'
+  device:
+    architecture: null
+    deviceName: 'Moto G6'
+    marketingName: 'Moto G6'
+    manufacturer: lenovo
+    brand: motorola
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 2160
+      height: 1080
+      touch: true
+      size: 5.7
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Opera Mobile'
+    modus: null
+    version: 54.3.2672.50220
+    manufacturer: opera
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 76.0.3809.132
+    manufacturer: google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; Moto Z3 Play Build/PPWS29.131-27-1-2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.93 Mobile Safari/537.36 OPT/2.0.87'
   device:
     architecture: null
@@ -111,6 +149,44 @@
   engine:
     name: Blink
     version: 86.0.4240.198
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 9; moto g(6) Build/PPSS29.55-37-7-10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Mobile Safari/537.36 OPT/2.9'
+  device:
+    architecture: null
+    deviceName: 'Moto G6'
+    marketingName: 'Moto G6'
+    manufacturer: lenovo
+    brand: motorola
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 2160
+      height: 1080
+      touch: true
+      size: 5.7
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Opera Touch'
+    modus: null
+    version: 2.9.0
+    manufacturer: opera
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 88.0.4324.181
     manufacturer: google
 -
   headers:

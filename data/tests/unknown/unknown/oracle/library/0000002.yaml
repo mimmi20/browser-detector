@@ -1482,6 +1482,44 @@
     manufacturer: unknown
 -
   headers:
+    user-agent: 'SoftBank/1.0/920T/TJ001 Java/Java/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1'
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: null
+    display:
+      width: null
+      height: null
+      touch: null
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: 'Java Standard Library'
+    modus: null
+    version: 1.0.0
+    manufacturer: oracle
+    type: library
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
     user-agent: Java/1.5.0_22
   device:
     architecture: null
@@ -3752,44 +3790,6 @@
     name: 'Java Standard Library'
     modus: null
     version: 1.8.0.222
-    manufacturer: oracle
-    type: library
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'Java/1.8.0_181 comdirect/1.0 (appVersion:20.3.0)'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
-  client:
-    name: 'Java Standard Library'
-    modus: null
-    version: 1.8.0.181
     manufacturer: oracle
     type: library
     isbot: false

@@ -3380,3 +3380,79 @@
     name: Blink
     version: 148.0.7778.110
     manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; BRP-NX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.114 YaBrowser/26.8.4.114.00 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: BRP-NX1
+    marketingName: X9c
+    manufacturer: huawei
+    brand: honor
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2700
+      height: 1224
+      touch: true
+      size: 6.78
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser'
+    modus: null
+    version: 26.8.4.114.00
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 150.0.7871.114
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; BNE-LX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.119 YaBrowser/26.8.3.119.00 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: BNE-LX1
+    marketingName: 'Nova 10 SE 4G'
+    manufacturer: huawei
+    brand: huawei
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 2400
+      height: 1080
+      touch: true
+      size: 6.67
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser'
+    modus: null
+    version: 26.8.3.119.00
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 150.0.7871.119
+    manufacturer: google

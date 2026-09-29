@@ -27,7 +27,45 @@
   client:
     name: 'Keeper Password Manager'
     modus: null
+    version: 17.5.10.146301
+    manufacturer: keeper
+    type: mobile-application
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
     version: null
+    manufacturer: apple
+-
+  headers:
+    user-agent: 'Callpod Keeper for Android 1.0 (app 18.0.10.147101/14710101) Dalvik/2.1.0 (Linux; U; Android 17; SM-F971U Build/CP2A.260605.016)'
+  device:
+    architecture: null
+    deviceName: SM-F971U
+    marketingName: 'Galaxy Z Fold 8 5G (USA)'
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2448
+      height: 1848
+      touch: true
+      size: 7.6
+    type: phablet
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 17.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Keeper Password Manager'
+    modus: null
+    version: 18.0.10.147101
     manufacturer: keeper
     type: mobile-application
     isbot: false

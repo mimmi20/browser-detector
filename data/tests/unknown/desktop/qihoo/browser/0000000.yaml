@@ -152,44 +152,6 @@
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Windows NT 5.0) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19 QIHU 360EE'
-  device:
-    architecture: null
-    deviceName: 'Windows Desktop'
-    marketingName: 'Windows Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 2000'
-    version: 5.0.0
-    manufacturer: microsoft
-    bits: null
-  client:
-    name: '360 Speed Browser'
-    modus: null
-    version: null
-    manufacturer: qihoo
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 535.19.0
-    manufacturer: apple
--
-  headers:
     user-agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24; 360browser(securitypay,securityinstalled)'
   device:
     architecture: null
@@ -264,44 +226,6 @@
     name: Trident
     version: 4.0.0
     manufacturer: microsoft
--
-  headers:
-    user-agent: 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; BTRS129225; chromeframe/20.0.1132.47; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.1; 360SE)'
-  device:
-    architecture: null
-    deviceName: 'Windows Desktop'
-    marketingName: 'Windows Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows XP'
-    version: 5.1.0
-    manufacturer: microsoft
-    bits: null
-  client:
-    name: '360 Secure Browser'
-    modus: null
-    version: null
-    manufacturer: qihoo
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: null
-    manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 7.0; (Windows NT 6.1) AppleWebKit/537.36 (KHTML like Gecko); Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Chrome/45.0.2454.101 Safari/537.36 QIHU 360EE)'

@@ -684,3 +684,41 @@
     name: Gecko
     version: 537.36.0
     manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Android 10.2; Mobile; SM-A107M; rv:140.0esr) Gecko/140.0esr Firefox/140.0esr'
+  device:
+    architecture: null
+    deviceName: SM-A107M
+    marketingName: 'Galaxy A10s'
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 1520
+      height: 720
+      touch: true
+      size: 6.2
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.2.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Firefox
+    modus: null
+    version: 140.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Gecko
+    version: 140.0.0
+    manufacturer: mozilla

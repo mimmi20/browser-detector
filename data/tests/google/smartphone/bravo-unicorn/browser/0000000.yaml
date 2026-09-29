@@ -188,3 +188,41 @@
     name: Blink
     version: 115.0.5970.168
     manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 16; de-de; Pixel 9a Build/CP1A.260505.005) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5970.168 Mobile Safari/537.36 HeyTapBrowser/45.14.6.1'
+  device:
+    architecture: null
+    deviceName: 'Pixel 9a'
+    marketingName: 'Pixel 9a'
+    manufacturer: google
+    brand: google
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 2424
+      height: 1080
+      touch: true
+      size: 6.3
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: HeyTapBrowser
+    modus: null
+    version: 45.14.6.1
+    manufacturer: bravo-unicorn
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 115.0.5970.168
+    manufacturer: google

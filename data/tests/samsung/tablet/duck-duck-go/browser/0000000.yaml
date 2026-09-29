@@ -527,3 +527,52 @@
     name: Blink
     version: 150.0.0
     manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: '"SM-T220"'
+    x-requested-with: com.duckduckgo.mobile.android
+    sec-ch-ua-platform: '"Android"'
+    sec-ch-ua-platform-version: '"14.0.0"'
+    sec-ch-ua: '"Not=A?Brand";v="99", "DuckDuckGo";v="151", "Chromium";v="151"'
+    sec-ch-ua-full-version: '"151.0.7922.199"'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-form-factors: '"Desktop"'
+    sec-ch-ua-mobile: '?0'
+    sec-ch-ua-wow64: '?0'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SM-T220
+    marketingName: 'Galaxy Tab A7 Lite 8.7" Wi-Fi (2021)'
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: true
+    simCount: 0
+    display:
+      width: 1340
+      height: 800
+      touch: true
+      size: 8.7
+    type: tablet
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'DuckDuckGo Privacy Browser'
+    modus: null
+    version: 151.0.7922.199
+    manufacturer: duck-duck-go
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 151.0.0
+    manufacturer: google

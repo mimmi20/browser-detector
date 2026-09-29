@@ -79,17 +79,17 @@
     user-agent: 'Mozilla/5.0 (Linux; Android 9; ZTE Blade L130) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Mobile Safari/537.36 OPR/54.2.2672.49907'
   device:
     architecture: null
-    deviceName: Blade
-    marketingName: Blade
+    deviceName: 'Blade L130'
+    marketingName: 'Blade L130'
     manufacturer: zte
     brand: zte
     dualOrientation: true
-    simCount: 1
+    simCount: 2
     display:
       width: 800
       height: 480
       touch: true
-      size: 3.5
+      size: 4
     type: smartphone
     ismobile: true
     istv: false
@@ -877,17 +877,17 @@
     user-agent: 'Mozilla/5.0 (Linux; Android 10; Blade L210) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36 OPR/77.0.4054.90'
   device:
     architecture: null
-    deviceName: 'Blade L2'
-    marketingName: 'Blade L2'
+    deviceName: 'Blade L210'
+    marketingName: 'Blade L210'
     manufacturer: zte
     brand: zte
     dualOrientation: true
     simCount: 1
     display:
-      width: 854
+      width: 960
       height: 480
       touch: true
-      size: 5
+      size: 6
     type: smartphone
     ismobile: true
     istv: false
@@ -1061,6 +1061,44 @@
   engine:
     name: Blink
     version: 122.0.6261.149
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 9; Blade L8RU Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36 OPR/77.0.4054.90'
+  device:
+    architecture: null
+    deviceName: 'Blade L8RU'
+    marketingName: 'Blade L8'
+    manufacturer: zte
+    brand: zte
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 960
+      height: 480
+      touch: true
+      size: 5
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Opera Mobile'
+    modus: null
+    version: 77.0.4054.90
+    manufacturer: opera
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 91.0.4472.101
     manufacturer: google
 -
   headers:
@@ -1361,6 +1399,53 @@
     name: Android
     marketingName: Android
     version: 13.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Opera Mobile'
+    modus: null
+    version: 100.4.5122.89709
+    manufacturer: opera
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.0
+    manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: '"ZTE Blade A53"'
+    sec-ch-ua-platform: '"Android"'
+    sec-ch-ua-platform-version: '"12"'
+    sec-ch-ua: '"Opera";v="134", "Chromium";v="149", ";Not A Brand";v="99", "OperaMobile";v="100"'
+    sec-ch-ua-full-version: '"100.4.5122.89709"'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-mobile: '?1'
+    sec-ch-ua-wow64: '?0'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36 OPR/100.0.0.0'
+  device:
+    architecture: null
+    deviceName: 'Blade A53'
+    marketingName: 'Blade A53'
+    manufacturer: zte
+    brand: zte
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 1600
+      height: 720
+      touch: true
+      size: 6.52
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
     manufacturer: google
     bits: null
   client:
