@@ -120,6 +120,7 @@ final class Safari implements SafariInterface
         '26.4',
         '26.5',
         '26.6',
+        '26.7',
         '27.0',
         '27.1',
         '27.2',

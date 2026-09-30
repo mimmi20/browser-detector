@@ -37,7 +37,6 @@ rules:
   '/fujitsu(?!toshiba)| m702 | m532 | m305 |f-41a|f-10d|f-0[0-9][defkl]|is11t|fartm933kz|isw1[13]f|901fj/i': fujitsu
   '/shaan|iball|snap 4g2|andi 4f arc3|andi ?[34]\.5|andi ?5h/i': iball
   '/akai|glory[ _](?:o2|l3|g5)|eco e2|tab-7800|tab-7830|tab-9800q?|x6 metal|aktb-703mz|ilike q8|mid7034c/i': akai
-  '/lava[ _\-\.]|(?<!a)iris[ _]?[^\/;]+(?: +build|[;\/\)])|(?<!sie-)a76(?: +build|[;\/\)])|x1 selfie(?: +build|[;\/\)])|x41 plus(?: +build|[;\/\)])|flair z1|kkt ?20|pixelv1|pixel v2\+?|(?: x17|x1 atom|x5 4g| z[679]0|(?:adr|android) 5\.1.* (?:a79|a52|v5|x10))(?: +build|[;\/\)])|(?:adr|android) [56]\..* x11(?: +build|[;\/\)])|e-tab ivory|ivorys|qpad e704|x1 beats|atom 2|l[xz][gx][0-9]{3}/i': lava
   '/(?<!bo|fbcr\/|825_|by )t-mobile|(?<!u |im)pulse(?!\/)|ameo|garminfone|revvlplus c3701a|era g1/i': t-mobile
   '/(?<!lec|[gmnopkt])htc(?![mo]| streaming player)|htcone(?:x\+)? /i': htc
   /ac0731b|ac0732c|ac1024c|ac7803c|bc9710am|el72b|er71b|lc0720c|lc0723b|lc0725b|lc0804b|lc0808b|lc0809b|lc0810c|lc0816c|lc0901d|lc1016c|mt0724b|mt0729b|mt0729d|mt0739d|mt0811b|mt0812e|mt7801c|oc1020a|qs9719d|qs9718c|qs9715f|qs1023h|qs0815c|qs0730c|qs0728c|qs0717d|qs0716d|qs0715c|rc0709b|rc0710b|rc0718c|rc0719h|rc0721b|rc0722c|rc0726b|rc0734h|rc0743h|rc0813c|rc0817c|rc1018c|rc1019g|rc1025f|rc1301c|rc7802f|rc9711b|rc9712c|rc9716b|rc9717b|rc9724c|rc9726c|rc9727f|rc9730c|rc9731c|ts0807b|ts1013b|ts9708b|vm0711a|vm1017a/i: 3q
@@ -130,6 +129,7 @@ rules:
   /inoipad|inoi_/i: inoi
   '/(?<!s)cepter/i': cepter
   /netbox-shines/i: netbox
+  '/lava[ _\-\.]/i': lava
   /qtcarbrowser/i: teslamotors
   /(?<!\-)minix/i: minix
   '/kruger&matz/i': kruger-matz
@@ -284,6 +284,8 @@ rules:
   /siragon/i: siragon
   /quantum/i: quantum
   /toscido/i: toscido
+  /spectra/i: spectra
+  /artfone/i: artfone
   /realme/i: realme
   /skytex/i: skytex
   /vestel/i: vestel
@@ -559,6 +561,7 @@ rules:
   /meu/i: meu
   /twz/i: twz
   /ckk/i: ckk
+  /twl/i: twl-mobile
   '/(?<!t)agm/i': agm
   /hmd/i: hmd-global
   /ai\+/i: ai-plus
