@@ -517,8 +517,8 @@
   type: smartphone
   platform: android
 'vivo v3max':
-  deviceName: V3Max
-  marketingName: V3Max
+  deviceName: 'V3 Max'
+  marketingName: 'V3 Max'
   manufacturer: bbk
   brand: vivo
   dualOrientation: true
@@ -685,8 +685,8 @@
   type: smartphone
   platform: android
 'vivo x20 plus a':
-  deviceName: 'X20Plus A'
-  marketingName: 'X20Plus A'
+  deviceName: 'X20 Plus A'
+  marketingName: 'X20 Plus A'
   manufacturer: bbk
   brand: vivo
   dualOrientation: true
@@ -11815,8 +11815,22 @@
   type: smartphone
   platform: android
 'vivo v3max l':
-  deviceName: 'V3Max L'
-  marketingName: 'V3Max L'
+  deviceName: 'V3 Max L'
+  marketingName: 'V3 Max L'
+  manufacturer: bbk
+  brand: vivo
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 1920
+    height: 1080
+    touch: true
+    size: 5.5
+  type: smartphone
+  platform: android
+'vivo v3max a':
+  deviceName: 'V3 Max A'
+  marketingName: 'V3 Max A'
   manufacturer: bbk
   brand: vivo
   dualOrientation: true

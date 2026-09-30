@@ -558,6 +558,76 @@
     size: 1.92
   type: smart-watch
   platform: watchos
+'apple watch7,1':
+  deviceName: 'Watch 7,1'
+  marketingName: 'Watch Series 9 (41mm)'
+  manufacturer: apple
+  brand: apple
+  dualOrientation: true
+  simCount: 0
+  display:
+    width: 430
+    height: 352
+    touch: true
+    size: 1.8
+  type: smart-watch
+  platform: watchos
+'apple watch7,2':
+  deviceName: 'Watch 7,2'
+  marketingName: 'Watch Series 9 (45mm)'
+  manufacturer: apple
+  brand: apple
+  dualOrientation: true
+  simCount: 0
+  display:
+    width: 484
+    height: 396
+    touch: true
+    size: 1.9
+  type: smart-watch
+  platform: watchos
+'apple watch7,3':
+  deviceName: 'Watch 7,3'
+  marketingName: 'Watch Series 9 (41mm, LTE)'
+  manufacturer: apple
+  brand: apple
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: 430
+    height: 352
+    touch: true
+    size: 1.8
+  type: smart-watch
+  platform: watchos
+'apple watch7,4':
+  deviceName: 'Watch 7,4'
+  marketingName: 'Watch Series 9 (45mm, LTE)'
+  manufacturer: apple
+  brand: apple
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: 484
+    height: 396
+    touch: true
+    size: 1.9
+  type: smart-watch
+  platform: watchos
+'apple watch7,5':
+  deviceName: 'Watch 7,5'
+  marketingName: 'Watch Ultra 2 (49mm)'
+  manufacturer: apple
+  brand: apple
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: 502
+    height: 410
+    touch: true
+    size: 1.92
+  type: smart-watch
+  platform: watchos
 'apple watch7,8':
   deviceName: 'Watch 7,8'
   marketingName: 'Watch Series 10 (42mm)'
@@ -614,74 +684,18 @@
     size: 2.1
   type: smart-watch
   platform: watchos
-'apple watch7,5':
-  deviceName: 'Watch 7,5'
-  marketingName: 'Watch Ultra 2 (49mm)'
-  manufacturer: apple
-  brand: apple
-  dualOrientation: true
-  simCount: 1
-  display:
-    width: 502
-    height: 410
-    touch: true
-    size: 1.92
-  type: smart-watch
-  platform: watchos
-'apple watch7,4':
-  deviceName: 'Watch 7,4'
-  marketingName: 'Watch Series 9 (45mm, LTE)'
-  manufacturer: apple
-  brand: apple
-  dualOrientation: true
-  simCount: 1
-  display:
-    width: 484
-    height: 396
-    touch: true
-    size: 1.9
-  type: smart-watch
-  platform: watchos
-'apple watch7,3':
-  deviceName: 'Watch 7,3'
-  marketingName: 'Watch Series 9 (41mm, LTE)'
-  manufacturer: apple
-  brand: apple
-  dualOrientation: true
-  simCount: 1
-  display:
-    width: 430
-    height: 352
-    touch: true
-    size: 1.8
-  type: smart-watch
-  platform: watchos
-'apple watch7,1':
-  deviceName: 'Watch 7,1'
-  marketingName: 'Watch Series 9 (41mm)'
+'apple watch7,12':
+  deviceName: 'Watch 7,12'
+  marketingName: 'Watch Ultra 3 (49mm)'
   manufacturer: apple
   brand: apple
   dualOrientation: true
   simCount: 0
   display:
-    width: 430
-    height: 352
+    width: 514
+    height: 422
     touch: true
-    size: 1.8
-  type: smart-watch
-  platform: watchos
-'apple watch7,2':
-  deviceName: 'Watch 7,2'
-  marketingName: 'Watch Series 9 (45mm)'
-  manufacturer: apple
-  brand: apple
-  dualOrientation: true
-  simCount: 0
-  display:
-    width: 484
-    height: 396
-    touch: true
-    size: 1.9
+    size: 1.95
   type: smart-watch
   platform: watchos
 'apple watch7,13':
@@ -718,7 +732,7 @@
   manufacturer: apple
   brand: apple
   dualOrientation: true
-  simCount: 0
+  simCount: 1
   display:
     width: 394
     height: 324
@@ -732,7 +746,7 @@
   manufacturer: apple
   brand: apple
   dualOrientation: true
-  simCount: 0
+  simCount: 1
   display:
     width: 448
     height: 368
@@ -774,7 +788,7 @@
   manufacturer: apple
   brand: apple
   dualOrientation: true
-  simCount: 0
+  simCount: 1
   display:
     width: 446
     height: 374
@@ -788,7 +802,7 @@
   manufacturer: apple
   brand: apple
   dualOrientation: true
-  simCount: 0
+  simCount: 1
   display:
     width: 496
     height: 416
