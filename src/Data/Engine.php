@@ -26,7 +26,7 @@ enum Engine: string implements EngineInterface
 {
     case unknown = 'unknown';
 
-    case blackberry = 'black-berry';
+    case blackberry = 'blackberry';
 
     case blink = 'Blink';
 
@@ -95,7 +95,7 @@ enum Engine: string implements EngineInterface
     {
         // the last one
         return match (mb_strtolower($name)) {
-            'black-berry', 'blackberry' => self::blackberry,
+            'blackberry' => self::blackberry,
             'blink' => self::blink,
             'clecko' => self::clecko,
             'edge' => self::edge,
@@ -143,7 +143,7 @@ enum Engine: string implements EngineInterface
     public function getManufacturer(): string | null
     {
         return match ($this) {
-            self::blackberry => 'rim',
+            self::blackberry => 'blackberry',
             self::blink => 'google',
             self::edge, self::trident => 'microsoft',
             self::gecko, self::servo => 'mozilla',
