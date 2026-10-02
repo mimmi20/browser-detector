@@ -1,0 +1,42 @@
+'general veon tv':
+  deviceName: 'general VEON tv'
+  marketingName: 'general VEON tv'
+  manufacturer: veon
+  brand: veon
+  dualOrientation: null
+  simCount: null
+  display:
+    width: null
+    height: null
+    touch: false
+    size: null
+  type: tv
+  platform: android
+'veon 4k android tv':
+  deviceName: '4K Android TV'
+  marketingName: '4K Android TV'
+  manufacturer: veon
+  brand: veon
+  dualOrientation: false
+  simCount: 0
+  display:
+    width: 3840
+    height: 2160
+    touch: false
+    size: null
+  type: tv
+  platform: android
+'veon 2k android tv':
+  deviceName: '2K Android TV'
+  marketingName: '2K Android TV'
+  manufacturer: veon
+  brand: veon
+  dualOrientation: false
+  simCount: 0
+  display:
+    width: 1920
+    height: 1080
+    touch: false
+    size: null
+  type: tv
+  platform: android

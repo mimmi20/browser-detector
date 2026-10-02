@@ -26,6 +26,7 @@ use function array_first;
 use function array_key_exists;
 use function array_map;
 use function mb_strtolower;
+use function mb_trim;
 use function preg_match;
 
 final readonly class UseragentPlatformCode implements PlatformCodeInterface
@@ -53,6 +54,7 @@ final readonly class UseragentPlatformCode implements PlatformCodeInterface
      * @throws void
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
     #[Override]
     public function getPlatformCode(string $value, string | null $derivate = null): OsInterface
@@ -96,7 +98,7 @@ final readonly class UseragentPlatformCode implements PlatformCodeInterface
 
         if (
             preg_match(
-                '/^(?:(?:Yo[a-zA-Z]{2}|GB)?WhatsApp|YoWhatsApp2Plus)\/[0-9.]+[ \/](?P<code>[ANWi])$/',
+                '/^(?:(?:Yo[a-zA-Z]{2}|GB)?WhatsApp|YoWhatsApp2Plus|Messenger)\/[0-9.]+[ \/](?P<code>[ANWi])$/',
                 $normalizedValue,
                 $matches,
             )
@@ -147,22 +149,26 @@ final readonly class UseragentPlatformCode implements PlatformCodeInterface
             static fn (string $regex): bool => (bool) preg_match($regex, $normalizedValue),
         );
 
-        $results = array_map(
+        $finds = array_map(
             static function (string $regex) use ($normalizedValue): string {
                 $matches = [];
 
                 preg_match($regex, $normalizedValue, $matches);
 
-                $code = mb_strtolower($matches['platform'] ?? '');
+                return ($matches['platform'] ?? '')
+                        |> mb_strtolower(...)
+                        |> mb_trim(...);
+            },
+            $filtered,
+        );
 
-                // @todo: need to find a solution to find android forks like mocordroid
-                return match ($code) {
+        $results = array_map(
+            static fn (string $code): string => match ($code) {
                     'android', 'tizen', 'openharmony', 'kaios', 'ios', 'harmonyos', 'myos' => $code,
                     'andr0id', 'a' => 'android',
                     default => '',
-                };
             },
-            $filtered,
+            $finds,
         );
 
         $code = array_first($results);
@@ -170,6 +176,10 @@ final readonly class UseragentPlatformCode implements PlatformCodeInterface
         if ($code !== null && $code !== '') {
             return Os::fromName($code);
         }
+
+        // if ($value === 'Mozilla/5.0 (Linux; Android 12; BRAVIA 4K AE1 Build/STT2.231117.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 YaBrowser/25.10.1.638 (lite) TV Safari/537.36') {
+        //     var_dump($normalizedValue, $filtered, $finds, $code);
+        // }
 
         return $this->platformParser->parse($normalizedValue);
     }
