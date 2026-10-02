@@ -96,9 +96,9 @@ final class EngineTest extends TestCase
                 'key' => 'unknown',
             ],
             [
-                'type' => 'black-berry',
-                'name' => 'black-berry',
-                'company' => 'rim',
+                'type' => 'blackberry',
+                'name' => 'blackberry',
+                'company' => 'blackberry',
                 'version' => ['factory' => null, 'search' => null],
                 'key' => 'blackberry',
             ],

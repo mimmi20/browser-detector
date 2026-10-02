@@ -3769,8 +3769,9 @@ lark-browser:
   manufacturer: mobiu-space
   type: browser
   version:
-    factory: null
-    search: null
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Lark
   engine: null
 pluma-browser:
   name: Pluma
