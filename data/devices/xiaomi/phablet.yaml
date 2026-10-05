@@ -3274,3 +3274,59 @@
     size: 6.5
   type: phablet
   platform: android
+'xiaomi mi 10 ultra':
+  deviceName: 'Mi 10 Ultra LTE'
+  marketingName: 'Mi 10 Ultra LTE'
+  manufacturer: xiaomi
+  brand: xiaomi
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: 2340
+    height: 1080
+    touch: true
+    size: 6.67
+  type: phablet
+  platform: android
+'xiaomi mix fold 2':
+  deviceName: 'Mix Fold 2'
+  marketingName: 'Mix Fold 2'
+  manufacturer: xiaomi
+  brand: xiaomi
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 2160
+    height: 1916
+    touch: true
+    size: 8.03
+  type: phablet
+  platform: android
+'xiaomi mi mix fold':
+  deviceName: 'Mi Mix Fold'
+  marketingName: 'Mi Mix Fold'
+  manufacturer: xiaomi
+  brand: xiaomi
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 2480
+    height: 1816
+    touch: true
+    size: 8.01
+  type: phablet
+  platform: android
+'xiaomi mi 6 plus':
+  deviceName: 'Mi 6 Plus'
+  marketingName: 'Mi 6 Plus'
+  manufacturer: xiaomi
+  brand: xiaomi
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 1920
+    height: 1080
+    touch: true
+    size: 5.7
+  type: phablet
+  platform: android

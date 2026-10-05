@@ -164,9 +164,9 @@ final readonly class UseragentPlatformCode implements PlatformCodeInterface
 
         $results = array_map(
             static fn (string $code): string => match ($code) {
-                    'android', 'tizen', 'openharmony', 'kaios', 'ios', 'harmonyos', 'myos' => $code,
-                    'andr0id', 'a' => 'android',
-                    default => '',
+                'android', 'tizen', 'openharmony', 'kaios', 'ios', 'harmonyos', 'myos' => $code,
+                'andr0id', 'a' => 'android',
+                default => '',
             },
             $finds,
         );

@@ -52,7 +52,6 @@ rules:
   '/(?<![\s])nook(?! browser)|bn[tr]v[0-9]+/i': barnesnoble
   '/mtc[ _]|smart[ _]surf[ _]4g/i': mtc
   '/ark[ _]benefit[ _](?:m3s|m4)|impulse[ _]p[12]/i': ark
-  '/meizu|mz-[a-z]|mz-16t|(?<!o)m6[st]|(?:m04[05]|m35[1356]|mx[ -]?[2345](?: pro)?|(?:mz-)?m[1-6] note|m181[36]|m852h|m721c|m681[cq]|m612c|m57[18]c|m3[esx]|m03[12]|m1 metal|m1 e|[ _]m2|m2 e|pro [567](?: plus)?|pro 7-h|(?:adr|android) [24]\..* m9|16th|mblu[ _]2[12](?: pro)?|(?:adr|android) 7\..* 15 lite)(?: +build|[;\/\)])/i': meizu
   '/thl[ _]|(?<![0-9])w[12]00| (?:w8|t11)(?: +build|[;\/\)])|(?:adr|android) 4\.4.* t6 ?pro(?: +build|[;\/\)])|(?:adr|android) 4\.2.* t200(?: +build|[;\/\)])/i': thl
   '/spice(?!i)|mi-?516|mi-?440|mi-?363/i': spice
   '/allview|p[456789]_(?:quad|energy|emagic|lite|seon)|a[5689]_(?:lite|duo|ready|quad)|ax4nano|x[123456]_soul|p41_emagic|viva_?(?:h802|h7s|i10g)/i': allview
@@ -175,6 +174,7 @@ rules:
   '/wiz aero/i': wiz-aero
   '/sami[_ ]/i': sami
   '/me-?cool/i': mecool
+  /polarline/i: polar-line
   /sprd(?!-)/i: sprd
   /kaicloud/i: kaiomy
   /polaroid/i: polaroid
@@ -374,6 +374,7 @@ rules:
   /funtab/i: funtab
   /astech/i: astech
   '/dorado(?! wap)/i': dorado
+  /meizu/i: meizu
   /tesla/i: comtrade-tesla
   /cubot/i: cubot
   /sanyo/i: sanyo
