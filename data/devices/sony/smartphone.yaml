@@ -448,7 +448,21 @@
   platform: android
 'sony sov43':
   deviceName: SOV43
-  marketingName: 'Xperia 10 II WiMAX 2+'
+  marketingName: 'Xperia 10 II'
+  manufacturer: sony
+  brand: sony
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: 2520
+    height: 1080
+    touch: true
+    size: 6
+  type: smartphone
+  platform: null
+'sony xperia 10 ii':
+  deviceName: 'Xperia 10 II'
+  marketingName: 'Xperia 10 II'
   manufacturer: sony
   brand: sony
   dualOrientation: true
@@ -6228,6 +6242,20 @@
     size: 6.5
   type: smartphone
   platform: android
+'sony xperia 1 ii':
+  deviceName: 'Xperia 1 II'
+  marketingName: 'Xperia 1 II 5G'
+  manufacturer: sony
+  brand: sony
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 3840
+    height: 1644
+    touch: true
+    size: 6.5
+  type: smartphone
+  platform: android
 'sony xq-ct54':
   deviceName: XQ-CT54
   marketingName: 'Xperia 1 IV'
@@ -7280,6 +7308,20 @@
   platform: android
 'sony sog02':
   deviceName: SOG02
+  marketingName: 'Xperia 5 II 5G'
+  manufacturer: sony
+  brand: sony
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: 2520
+    height: 1080
+    touch: true
+    size: 6.1
+  type: smartphone
+  platform: android
+'sony xperia 5 ii':
+  deviceName: 'Xperia 5 II'
   marketingName: 'Xperia 5 II 5G'
   manufacturer: sony
   brand: sony
