@@ -348,3 +348,31 @@
     size: 5.99
   type: smartphone
   platform: android
+'leagoo m5 edge':
+  deviceName: 'M5 Edge'
+  marketingName: 'M5 Edge'
+  manufacturer: leagoo
+  brand: leagoo
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 1280
+    height: 720
+    touch: true
+    size: 5
+  type: smartphone
+  platform: android
+'leagoo m5 plus lte':
+  deviceName: 'M5 Plus LTE'
+  marketingName: 'M5 Plus LTE'
+  manufacturer: leagoo
+  brand: leagoo
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 1280
+    height: 720
+    touch: true
+    size: 5.5
+  type: smartphone
+  platform: android

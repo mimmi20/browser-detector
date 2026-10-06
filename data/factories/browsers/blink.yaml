@@ -283,6 +283,7 @@ rules:
   /xshare/i: xshare
   /boohee/i: boohee
   /grindr/i: grindr
+  /lark\//i: lark-browser
   /crosswalk/i: crosswalk
   /com\.google\.android\.googlequicksearchbox/i: google-app
   '/(?:cpu iphone os|cpu os).*(?<!agent)version[ \/][0-9_.]+ +chrome\/(?:2[89]|[3-9][0-9]|[1-9][0-9]{2})\D/i': 'chrome for ios'

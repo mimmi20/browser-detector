@@ -337,3 +337,12 @@ citrix-secure-mail:
     search:
       - WorxMail
   engine: null
+blackberry-work:
+  name: 'BlackBerry Work'
+  manufacturer: blackberry
+  type: pim
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'BLACKBERRY-WorkConnect'
+  engine: null

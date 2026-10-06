@@ -1214,3 +1214,41 @@
     name: Blink
     version: 150.0.7871.168
     manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.66 YaSearchBrowser/26.85.1 BroPP/1.0 YaSearchApp/26.85.1 webOmni Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SM-S928B
+    marketingName: 'Galaxy S24 Ultra'
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 3120
+      height: 1440
+      touch: true
+      size: 6.8
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Search Browser'
+    modus: null
+    version: 26.85.1
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 150.0.7871.66
+    manufacturer: google

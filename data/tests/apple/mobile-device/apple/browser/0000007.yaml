@@ -635,7 +635,7 @@
   client:
     name: Safari
     modus: null
-    version: null
+    version: 26.7.0
     manufacturer: apple
     type: browser
     isbot: false
@@ -1061,4 +1061,118 @@
   engine:
     name: WebKit
     version: 605.1.15
+    manufacturer: apple
+-
+  headers:
+    user-agent: 'NetworkingExtension/8625.2.5.10.1 Network/6681.40.82 iOS/27.2'
+  device:
+    architecture: null
+    deviceName: 'general Apple device'
+    marketingName: 'general Apple device'
+    manufacturer: apple
+    brand: apple
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 27.2.0
+    manufacturer: apple
+    bits: null
+  client:
+    name: Safari
+    modus: null
+    version: 27.2.0
+    manufacturer: apple
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: null
+    manufacturer: apple
+-
+  headers:
+    user-agent: 'Canary-iOS/2118 CFNetwork/3896.100.1.2.1 Darwin/27.0.0'
+  device:
+    architecture: null
+    deviceName: 'general Apple device'
+    marketingName: 'general Apple device'
+    manufacturer: apple
+    brand: apple
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 27.0.0
+    manufacturer: apple
+    bits: null
+  client:
+    name: 'Mobile Safari UIWebView'
+    modus: null
+    version: null
+    manufacturer: apple
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 3896.100.1.2.1
+    manufacturer: apple
+-
+  headers:
+    user-agent: 'com.apple.AuthenticationServicesCore.AuthenticationServicesAgent/22625.1.29.11.27 CFNetwork/3896.100.1.1.1 Darwin/27.0.0'
+  device:
+    architecture: null
+    deviceName: 'general Apple device'
+    marketingName: 'general Apple device'
+    manufacturer: apple
+    brand: apple
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 27.0.0
+    manufacturer: apple
+    bits: null
+  client:
+    name: Safari
+    modus: null
+    version: 27.2.0
+    manufacturer: apple
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 3896.100.1.1.1
     manufacturer: apple

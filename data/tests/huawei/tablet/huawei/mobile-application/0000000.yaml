@@ -265,3 +265,41 @@
     name: Blink
     version: 88.0.4324.93
     manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; MRDI-W09 Build/HUAWEIMRDI-W09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 Safari/537.36 HuaweiBrowser/16.0.9.302 HMSCore/6.15.6.332'
+  device:
+    architecture: null
+    deviceName: MRDI-W09
+    marketingName: 'MatePad Pro 12.2" Wi-Fi (2025)'
+    manufacturer: huawei
+    brand: honor
+    dualOrientation: true
+    simCount: 0
+    display:
+      width: 2800
+      height: 1840
+      touch: true
+      size: 12.2
+    type: tablet
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Huawei Mobile Services'
+    modus: null
+    version: 6.15.6.332
+    manufacturer: huawei
+    type: mobile-application
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 114.0.5735.196
+    manufacturer: google

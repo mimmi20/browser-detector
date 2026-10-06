@@ -228,44 +228,6 @@
     manufacturer: apple
 -
   headers:
-    user-agent: 'Dalvik/2.1.0 (Linux; U; Android 11; VEON 4K Smart TV Build/RTT2.220103.001)'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 11.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Android Browser'
-    modus: null
-    version: 2.1.0
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: null
-    manufacturer: apple
--
-  headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 9; TVB-100 Build/PI)'
   device:
     architecture: null
@@ -2812,44 +2774,6 @@
     manufacturer: apple
 -
   headers:
-    user-agent: 'Dalvik/2.1.0 (Linux; U; Android 13; Pulla Build/TP1A.220624.014)'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Android Browser'
-    modus: null
-    version: 2.1.0
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: null
-    manufacturer: apple
--
-  headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 13; C9 Build/TP1A.220624.014)'
   device:
     architecture: null
@@ -3341,4 +3265,131 @@
   engine:
     name: Blink
     version: 62.0.858.0
+    manufacturer: google
+-
+  headers:
+    user-agent: 'EverphoneContactBot/0.1 (+mailto:tamara.omomo@everphone.de) Chrome/124 Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 124.0.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 124.0.0
+    manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: '""'
+    sec-ch-ua-platform: '"Windows"'
+    sec-ch-ua-platform-version: '""'
+    sec-ch-ua: '"HeadlessChrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"'
+    sec-ch-ua-full-version: '"153.0.8010.12"'
+    sec-ch-ua-bitness: '"64"'
+    sec-ch-ua-arch: '"x86"'
+    sec-ch-ua-form-factors: '"Desktop"'
+    sec-ch-ua-mobile: '?0'
+    sec-ch-ua-wow64: '?0'
+    user-agent: 'EverphoneContactBot/0.1 (+mailto:tamara.omomo@everphone.de) Chrome/124 Safari/537.36'
+  device:
+    architecture: x86
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: 64
+  os:
+    name: Windows
+    marketingName: Windows
+    version: null
+    manufacturer: microsoft
+    bits: 64
+  client:
+    name: 'Headless Chrome'
+    modus: null
+    version: 153.0.8010.12
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: 64
+  engine:
+    name: Blink
+    version: 153.0.0
+    manufacturer: google
+-
+  headers:
+    sec-ch-ua-platform: '"Windows"'
+    sec-ch-ua: '"HeadlessChrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"'
+    sec-ch-ua-mobile: '?0'
+    user-agent: 'EverphoneContactBot/0.1 (+mailto:tamara.omomo@everphone.de) Chrome/124 Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: Windows
+    marketingName: Windows
+    version: null
+    manufacturer: microsoft
+    bits: null
+  client:
+    name: 'Headless Chrome'
+    modus: null
+    version: 153.0.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 153.0.0
     manufacturer: google

@@ -824,6 +824,20 @@
     size: 5.7
   type: smartphone
   platform: android
+'samsung sm-a015az':
+  deviceName: SM-A015AZ
+  marketingName: 'Galaxy A01 (USA)'
+  manufacturer: samsung
+  brand: samsung
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: 1520
+    height: 720
+    touch: true
+    size: 5.7
+  type: smartphone
+  platform: android
 'samsung sm-a015v':
   deviceName: SM-A015V
   marketingName: 'Galaxy A01 (Verizon)'
@@ -5530,11 +5544,11 @@
   platform: android
 'samsung sm-c7010':
   deviceName: SM-C7010
-  marketingName: 'Galaxy C7 Pro Duos'
+  marketingName: 'Galaxy C7 Pro'
   manufacturer: samsung
   brand: samsung
   dualOrientation: true
-  simCount: 1
+  simCount: 2
   display:
     width: 1920
     height: 1080
@@ -10416,7 +10430,7 @@
   platform: android
 'samsung sm-j737f':
   deviceName: SM-J737F
-  marketingName: 'Galaxy J7'
+  marketingName: 'Galaxy J7 (2018)'
   manufacturer: samsung
   brand: samsung
   dualOrientation: true
@@ -10430,7 +10444,7 @@
   platform: android
 'samsung sm-j737s':
   deviceName: SM-J737S
-  marketingName: 'Galaxy J7'
+  marketingName: 'Galaxy J7 (2018)'
   manufacturer: samsung
   brand: samsung
   dualOrientation: true
@@ -11312,7 +11326,7 @@
   platform: android
 'samsung sm-j737r4':
   deviceName: SM-J737R4
-  marketingName: 'Galaxy J7(US Cellular)'
+  marketingName: 'Galaxy J7 (US Cellular, 2018)'
   manufacturer: samsung
   brand: samsung
   dualOrientation: true
@@ -36186,5 +36200,33 @@
     height: null
     touch: true
     size: null
+  type: smartphone
+  platform: android
+'samsung sm-g781nk22':
+  deviceName: SM-G781NK22
+  marketingName: 'Galaxy S20 FE 5G (Korea)'
+  manufacturer: samsung
+  brand: samsung
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: 2400
+    height: 1080
+    touch: true
+    size: 6.5
+  type: smartphone
+  platform: android
+'samsung sm-f415f':
+  deviceName: SM-F415F
+  marketingName: 'Galaxy F41 (India)'
+  manufacturer: samsung
+  brand: samsung
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 2340
+    height: 1080
+    touch: true
+    size: 6.4
   type: smartphone
   platform: android

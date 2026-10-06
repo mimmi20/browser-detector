@@ -2271,3 +2271,44 @@
     name: Blink
     version: 150.0.0
     manufacturer: google
+-
+  headers:
+    sec-ch-ua-platform: '"Android"'
+    sec-ch-ua: '"Microsoft Edge";v="129", "Chromium";v="129", "Not?A_Brand";v="24"'
+    sec-ch-ua-mobile: '?1'
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; Redmi Note10 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.6668.90 Mobile Safari/537.36 EdgA/129.0.2792.79'
+  device:
+    architecture: null
+    deviceName: 'Redmi Note 10 Pro'
+    marketingName: 'Redmi Note 10 Pro'
+    manufacturer: xiaomi
+    brand: xiaomi
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2400
+      height: 1080
+      touch: true
+      size: 6.67
+    type: phablet
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Edge
+    modus: null
+    version: 129.0.0
+    manufacturer: microsoft
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 129.0.0
+    manufacturer: google

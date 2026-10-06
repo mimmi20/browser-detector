@@ -6146,7 +6146,7 @@
   platform: android
 'huawei pra-al00x':
   deviceName: PRA-AL00X
-  marketingName: 'P8 Lite (2017)'
+  marketingName: 'Honor 8 Lite (2017)'
   manufacturer: huawei
   brand: huawei
   dualOrientation: true
@@ -9030,7 +9030,7 @@
   platform: android
 'huawei fig-al10':
   deviceName: FIG-AL10
-  marketingName: 'P Smart'
+  marketingName: 'Enjoy 7S'
   manufacturer: huawei
   brand: huawei
   dualOrientation: true
@@ -10570,7 +10570,7 @@
   platform: android
 'huawei gra-ul10':
   deviceName: GRA-UL10
-  marketingName: P8
+  marketingName: 'P8 Premium'
   manufacturer: huawei
   brand: huawei
   dualOrientation: true
@@ -20662,3 +20662,45 @@
     size: 6.67
   type: smartphone
   platform: android
+'huawei sgt-al00':
+  deviceName: SGT-AL00
+  marketingName: 'Mate 80 Pro'
+  manufacturer: huawei
+  brand: huawei
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 2832
+    height: 1280
+    touch: true
+    size: 6.75
+  type: smartphone
+  platform: null
+'huawei lmr-lx9':
+  deviceName: LMR-LX9
+  marketingName: 'Pura 80 Pro'
+  manufacturer: huawei
+  brand: huawei
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 2848
+    height: 1276
+    touch: true
+    size: 6.8
+  type: smartphone
+  platform: null
+'huawei lmr-al00':
+  deviceName: LMR-AL00
+  marketingName: 'Pura 80 Pro'
+  manufacturer: huawei
+  brand: huawei
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 2848
+    height: 1276
+    touch: true
+    size: 6.8
+  type: smartphone
+  platform: null

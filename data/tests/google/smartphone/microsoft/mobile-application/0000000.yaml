@@ -266,3 +266,41 @@
     name: Blink
     version: 124.0.0.0
     manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; Pixel 9 Build/BP2A.250705.008; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36 BingSapphire/32.3.430811006'
+  device:
+    architecture: null
+    deviceName: 'Pixel 9'
+    marketingName: 'Pixel 9'
+    manufacturer: google
+    brand: google
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2424
+      height: 1080
+      touch: true
+      size: 6.3
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Bing Search'
+    modus: null
+    version: 32.3.430811006
+    manufacturer: microsoft
+    type: mobile-application
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 124.0.0.0
+    manufacturer: google

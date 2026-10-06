@@ -1530,6 +1530,44 @@
     manufacturer: google
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; SUP-AL90 Build/HUAWEISUP-AL90) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.196 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SUP-AL90
+    marketingName: 'Honor 9x Pro'
+    manufacturer: huawei
+    brand: huawei
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2760
+      height: 1320
+      touch: true
+      size: 7
+    type: phablet
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 114.0.5735.196
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 114.0.5735.196
+    manufacturer: google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; Huawei Mate X9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Mobile Safari/537.36'
   device:
     architecture: null

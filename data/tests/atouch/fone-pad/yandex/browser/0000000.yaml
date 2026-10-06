@@ -38,6 +38,82 @@
     manufacturer: google
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12.0; SE Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.59 YaBrowser/25.8.9.59.00 SA/3 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'SE Pro'
+    marketingName: 'SE Pro'
+    manufacturer: atouch
+    brand: atouch
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 1280
+      height: 800
+      touch: true
+      size: 10.1
+    type: fone-pad
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser'
+    modus: null
+    version: 25.8.9.59.00
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 138.0.7204.59
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12.0; SE Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.405 YaSearchBrowser/25.89.1 BroPP/1.0 YaSearchApp/25.89.1 webOmni SA/3 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'SE Pro'
+    marketingName: 'SE Pro'
+    manufacturer: atouch
+    brand: atouch
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 1280
+      height: 800
+      touch: true
+      size: 10.1
+    type: fone-pad
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Search Browser'
+    modus: null
+    version: 25.89.1
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 138.0.7204.405
+    manufacturer: google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12.0; SE Max) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.503 YaApp_Android/24.65.1 YaSearchBrowser/24.65.1 BroPP/1.0 SA/3 Mobile Safari/537.36'
   device:
     architecture: null

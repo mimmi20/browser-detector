@@ -152,6 +152,82 @@
     manufacturer: google
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; TECNO CH6IS) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: CH6is
+    marketingName: 'Camon 19 Neo'
+    manufacturer: tecno
+    brand: tecno
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2460
+      height: 1080
+      touch: true
+      size: 6.8
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 103.0.0.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 103.0.0.0
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; TECNO KG5ks Build/RP1A.201005.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: KG5ks
+    marketingName: 'Spark 8C'
+    manufacturer: tecno
+    brand: tecno
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 1612
+      height: 720
+      touch: true
+      size: 6.6
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 149.0.7827.91
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; Tecno Spark 40 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.6422.134 Mobile Safari/537.36'
   device:
     architecture: null

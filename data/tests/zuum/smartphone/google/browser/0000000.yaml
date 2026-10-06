@@ -460,3 +460,41 @@
     name: Blink
     version: 149.0.7827.91
     manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; STELLAR P5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.98 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'Stellar P5'
+    marketingName: 'Stellar P5'
+    manufacturer: zuum
+    brand: zuum
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 1640
+      height: 720
+      touch: true
+      size: 6.82
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 97.0.4692.98
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 97.0.4692.98
+    manufacturer: google

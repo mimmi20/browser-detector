@@ -801,17 +801,17 @@
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; moto g play - 2026) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.49 YaBrowser/26.4.7.49.00 Mobile Safari/537.36'
   device:
     architecture: null
-    deviceName: 'Moto G Play'
-    marketingName: 'Moto G Play'
+    deviceName: 'Moto G Play 2026'
+    marketingName: 'Moto G Play (2026)'
     manufacturer: motorola
     brand: motorola
     dualOrientation: true
-    simCount: 1
+    simCount: 2
     display:
-      width: 1280
+      width: 1604
       height: 720
       touch: true
-      size: 5
+      size: 6.7
     type: smartphone
     ismobile: true
     istv: false
@@ -874,20 +874,58 @@
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 11; Moto Z Play) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 YaBrowser/22.11.5.82.00 SA/3 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; moto g play - 2024) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.112 YaBrowser/26.4.1.112.00 Mobile Safari/537.36'
   device:
     architecture: null
-    deviceName: 'Moto Z'
-    marketingName: 'Moto Z'
+    deviceName: 'Moto G Play 2024'
+    marketingName: 'Moto G Play (2024)'
     manufacturer: motorola
     brand: motorola
     dualOrientation: true
     simCount: 1
     display:
-      width: 2560
-      height: 1440
+      width: 1600
+      height: 720
       touch: true
-      size: null
+      size: 6.5
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser'
+    modus: null
+    version: 26.4.1.112.00
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 146.0.7680.112
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 11; Moto Z Play) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 YaBrowser/22.11.5.82.00 SA/3 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'Moto Z Play'
+    marketingName: 'Moto Z Play'
+    manufacturer: motorola
+    brand: motorola
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 1920
+      height: 1080
+      touch: true
+      size: 5.5
     type: smartphone
     ismobile: true
     istv: false

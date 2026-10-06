@@ -74,3 +74,126 @@
     name: Blink
     version: 149.0.7827.91
     manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: 'Spectra J1 PRO'
+    sec-ch-ua-platform-version: 14.0.0
+    sec-ch-ua: '"Google Chrome";v="143.0.7499.109", "Chromium";v="143.0.7499.109", "Not A(Brand";v="24.0.0.0"'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'J1 Pro'
+    marketingName: 'J1 Pro'
+    manufacturer: spectra
+    brand: spectra
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 1612
+      height: 720
+      touch: true
+      size: 6.56
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 143.0.7499.109
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 143.0.7499.109
+    manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: Spectra_J2_Pro
+    sec-ch-ua-platform-version: 15.0.0
+    sec-ch-ua: '"Not;A=Brand";v="8.0.0.0", "Chromium";v="150.0.7871.128", "Google Chrome";v="150.0.7871.128"'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'J2 Pro'
+    marketingName: 'J2 Pro'
+    manufacturer: spectra
+    brand: spectra
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 1612
+      height: 720
+      touch: true
+      size: 6.56
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 150.0.7871.128
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 150.0.7871.128
+    manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: Spectra_J3_MTN
+    sec-ch-ua-platform-version: 16.0.0
+    sec-ch-ua: '"Chromium";v="152.0.7977.42", "Not?A_Brand";v="24.0.0.0", "Google Chrome";v="152.0.7977.42"'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: J3
+    marketingName: J3
+    manufacturer: spectra
+    brand: spectra
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 1280
+      height: 720
+      touch: true
+      size: 6.517
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 152.0.7977.42
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 152.0.7977.42
+    manufacturer: google

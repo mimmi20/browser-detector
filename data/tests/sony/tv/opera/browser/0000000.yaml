@@ -247,10 +247,10 @@
     istv: true
     bits: null
   os:
-    name: Linux
-    marketingName: Linux
+    name: 'Android TV'
+    marketingName: 'Android TV'
     version: null
-    manufacturer: linux-foundation
+    manufacturer: google
     bits: null
   client:
     name: 'Opera Devices'
@@ -912,6 +912,44 @@
     manufacturer: google
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; SVP-DTV15 Build/LMP) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36 OPR/22.0.1481.0 OMI/4.2.13.63.Diamond.128'
+  device:
+    architecture: null
+    deviceName: 'Bravia 4K 2015'
+    marketingName: 'Bravia 4K 2015'
+    manufacturer: sony
+    brand: sony
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: 3840
+      height: 2160
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: null
+  client:
+    name: 'Opera Devices'
+    modus: null
+    version: 4.2.13.63
+    manufacturer: opera
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 35.0.1916.153
+    manufacturer: google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36 OPR/22.0.1481.0 OMI/4.2.12.48.ALSAN3.122 HbbTV/1.2.1 (; Sony; KD-55XD8577; v3.925; 2015;) sony.hbbtv.tv.2015HE'
   device:
     architecture: null
@@ -1083,10 +1121,10 @@
     istv: true
     bits: null
   os:
-    name: Linux
-    marketingName: Linux
+    name: 'Android TV'
+    marketingName: 'Android TV'
     version: null
-    manufacturer: linux-foundation
+    manufacturer: google
     bits: null
   client:
     name: Opera

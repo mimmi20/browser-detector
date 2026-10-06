@@ -2356,6 +2356,82 @@
     manufacturer: google
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; S86) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.49 YaApp_Android/26.61.1 YaSearchBrowser/26.61.1 BroPP/1.0 (beta) Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: S86
+    marketingName: S86
+    manufacturer: doogee
+    brand: doogee
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 1560
+      height: 720
+      touch: true
+      size: 6.1
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Search Browser'
+    modus: null
+    version: 26.61.1
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 148.0.7778.49
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; S86) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: S86
+    marketingName: S86
+    manufacturer: doogee
+    brand: doogee
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 1560
+      height: 720
+      touch: true
+      size: 6.1
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser'
+    modus: null
+    version: 26.6.0.304.00
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 148.0.7778.304
+    manufacturer: google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; X50 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/91.0.4472.114 YaBrowser/25.2.0.51 (lite) Mobile Safari/537.36'
   device:
     architecture: null
@@ -2446,6 +2522,44 @@
       height: 720
       touch: true
       size: 5.5
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 25.12.0.63
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; S86 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: S86
+    marketingName: S86
+    manufacturer: doogee
+    brand: doogee
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 1560
+      height: 720
+      touch: true
+      size: 6.1
     type: smartphone
     ismobile: true
     istv: false

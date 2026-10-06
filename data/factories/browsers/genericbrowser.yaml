@@ -926,6 +926,7 @@ rules:
   '/(?<!c)blazer/i': 'palm blazer'
   '/openwave|up\.browser| up\//i': 'openwave mobile browser'
   /flycast/i: flycast
+  /blackberry-workconnect/i: blackberry-work
   /blackberry/i: blackberry
   /novarra-vision/i: novarra-vision
   /browserng|series60\//i: 'nokia oss browser'
@@ -1446,6 +1447,7 @@ rules:
   /kimi-searchbot/i: kimi-search-bot
   /mistralai-user/i: mistral-ai-user
   '/syncml client/i': lotus-notes-traveler
+  /isonsearchbot/i: ison-search-bot
   /researchscan/i: researchscan
   /dataprovider/i: dataprovider-spider
   '/inet browser/i': inet-browser

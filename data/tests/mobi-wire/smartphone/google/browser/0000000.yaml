@@ -112,3 +112,41 @@
     name: Blink
     version: 141.0.7390.111
     manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; Vodafone Lite 4G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.98 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'Lite 4G'
+    marketingName: 'Lite 4G'
+    manufacturer: mobi-wire
+    brand: vodafone
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 960
+      height: 480
+      touch: true
+      size: 4.95
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 97.0.4692.98
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 97.0.4692.98
+    manufacturer: google

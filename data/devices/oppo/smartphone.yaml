@@ -2686,6 +2686,20 @@
     size: 5.5
   type: smartphone
   platform: android
+'oppo r9t':
+  deviceName: R9t
+  marketingName: R9
+  manufacturer: bbk
+  brand: oppo
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: 1920
+    height: 1080
+    touch: true
+    size: 5.5
+  type: smartphone
+  platform: android
 'oppo r9 plusm a':
   deviceName: 'R9 Plusm A'
   marketingName: 'R9 Plusm A'
@@ -8718,5 +8732,47 @@
     height: 1080
     touch: true
     size: 6.4
+  type: smartphone
+  platform: android
+'oppo r11 plus':
+  deviceName: 'R11 Plus'
+  marketingName: 'R11 Plus'
+  manufacturer: bbk
+  brand: oppo
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 1920
+    height: 1080
+    touch: true
+    size: 6
+  type: smartphone
+  platform: android
+'oppo reno 6 pro plus':
+  deviceName: 'Reno 6 Pro Plus 5G'
+  marketingName: 'Reno 6 Pro Plus 5G'
+  manufacturer: bbk
+  brand: oppo
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 2400
+    height: 1080
+    touch: true
+    size: 6.55
+  type: smartphone
+  platform: android
+'oppo reno 5 pro plus':
+  deviceName: 'Reno 5 Pro Plus 5G'
+  marketingName: 'Reno 5 Pro Plus 5G'
+  manufacturer: bbk
+  brand: oppo
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 2400
+    height: 1080
+    touch: true
+    size: 6.55
   type: smartphone
   platform: android

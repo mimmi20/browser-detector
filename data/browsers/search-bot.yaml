@@ -1546,3 +1546,12 @@ centurybot:
     factory: null
     search: null
   engine: unknown
+ison-search-bot:
+  name: IsonSearchBot
+  manufacturer: epithre
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - IsonSearchBot
+  engine: unknown

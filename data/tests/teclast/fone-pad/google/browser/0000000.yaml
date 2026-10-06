@@ -1119,6 +1119,44 @@
     manufacturer: google
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; T40_Pro_W_ROW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36'
+  device:
+    architecture: null
+    deviceName: T40_Pro_W_ROW
+    marketingName: 'T40 Pro W'
+    manufacturer: teclast
+    brand: teclast
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2000
+      height: 1200
+      touch: true
+      size: 10.4
+    type: fone-pad
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 105.0.0.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 105.0.0.0
+    manufacturer: google
+-
+  headers:
     sec-ch-ua-model: '"M50_EEA"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"13.0.0"'

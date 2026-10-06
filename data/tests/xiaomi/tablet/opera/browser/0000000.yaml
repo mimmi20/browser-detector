@@ -378,3 +378,41 @@
     name: Blink
     version: 149.0.7827.91
     manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; Mi Pad5 Wi-Fi) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.141 Mobile Safari/537.36 OPR/102.0.4880.38'
+  device:
+    architecture: null
+    deviceName: 'Mi Pad 5 Wi-Fi'
+    marketingName: 'Mi Pad 5 Wi-Fi'
+    manufacturer: xiaomi
+    brand: xiaomi
+    dualOrientation: true
+    simCount: 0
+    display:
+      width: 2560
+      height: 1600
+      touch: true
+      size: 11
+    type: tablet
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Opera Mobile'
+    modus: null
+    version: 102.0.4880.38
+    manufacturer: opera
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 116.0.5845.141
+    manufacturer: google

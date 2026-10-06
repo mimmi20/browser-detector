@@ -5192,6 +5192,20 @@
     size: 12.4
   type: fone-pad
   platform: android
+'samsung sm-t738r4':
+  deviceName: SM-T738R4
+  marketingName: 'Galaxy Tab S7 FE 12.4" 5G (USA)'
+  manufacturer: samsung
+  brand: samsung
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: 2560
+    height: 1600
+    touch: true
+    size: 12.4
+  type: fone-pad
+  platform: android
 'samsung sm-x518u':
   deviceName: SM-X518U
   marketingName: 'Galaxy Tab S9 FE 10.9" 5G (USA)'
@@ -5376,7 +5390,7 @@
   platform: android
 'samsung sm-t507':
   deviceName: SM-T507
-  marketingName: 'Galaxy Tab A7 10.4" LTE'
+  marketingName: 'Galaxy Tab A7 10.4" LTE (2020)'
   manufacturer: samsung
   brand: samsung
   dualOrientation: true

@@ -570,6 +570,44 @@
     manufacturer: google
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; Motorola Moto G Stylus (2023)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.186 Mobile Safari/537.36 OPR/114.0.5282.222'
+  device:
+    architecture: null
+    deviceName: 'Moto G Stylus (2023)'
+    marketingName: 'Moto G Stylus (2023)'
+    manufacturer: lenovo
+    brand: motorola
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 1600
+      height: 720
+      touch: true
+      size: 6.5
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Opera Mobile'
+    modus: null
+    version: 114.0.5282.222
+    manufacturer: opera
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 128.0.6613.186
+    manufacturer: google
+-
+  headers:
     sec-ch-ua-model: '"moto g06"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"15"'

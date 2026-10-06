@@ -48,10 +48,10 @@
     dualOrientation: false
     simCount: 0
     display:
-      width: null
-      height: null
+      width: 1920
+      height: 1080
       touch: false
-      size: 24
+      size: null
     type: tv
     ismobile: false
     istv: true
@@ -86,10 +86,10 @@
     dualOrientation: false
     simCount: 0
     display:
-      width: null
-      height: null
+      width: 3840
+      height: 2160
       touch: false
-      size: 24
+      size: null
     type: tv
     ismobile: false
     istv: true
@@ -98,6 +98,44 @@
     name: Android
     marketingName: Android
     version: 14.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 25.10.1.638
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; SWTV-22TGS-4K Build/RTM7.230903.046; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 YaBrowser/25.10.1.638 (lite) TV Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SWTV-22TGS-4K
+    marketingName: SWTV-22TGS-4K
+    manufacturer: sky-worth
+    brand: sky-worth
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: 3840
+      height: 2160
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
     manufacturer: google
     bits: null
   client:

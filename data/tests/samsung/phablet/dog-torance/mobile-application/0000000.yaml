@@ -340,3 +340,41 @@
     name: Blink
     version: 147.0.7727.137
     manufacturer: google
+-
+  headers:
+    user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 17; SM-F971B Build/CP2A.260605.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/153.0.8010.36 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SM-F971B
+    marketingName: 'Galaxy Z Fold 8 5G (International)'
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2448
+      height: 1848
+      touch: true
+      size: 7.6
+    type: phablet
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 17.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Dogtorance
+    modus: null
+    version: 1.2.0
+    manufacturer: dog-torance
+    type: mobile-application
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 153.0.8010.36
+    manufacturer: google

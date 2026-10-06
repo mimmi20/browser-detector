@@ -38,44 +38,6 @@
     manufacturer: unknown
 -
   headers:
-    user-agent: lg
-  device:
-    architecture: null
-    deviceName: GT505
-    marketingName: GT505
-    manufacturer: lg
-    brand: lg
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 400
-      height: 240
-      touch: false
-      size: 3
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
-  client:
-    name: null
-    modus: null
-    version: null
-    manufacturer: unknown
-    type: unknown
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
     user-agent: 'LG-LG220CTF268435459300686055000000017725198456 UPBROWSER/6238 (GUI) MMP/20'
   device:
     architecture: null
@@ -3776,6 +3738,44 @@
       height: 240
       touch: false
       size: 3
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: LG-GD570
+  device:
+    architecture: null
+    deviceName: GD570
+    marketingName: dLite
+    manufacturer: lg
+    brand: lg
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 400
+      height: 240
+      touch: false
+      size: 2.8
     type: feature-phone
     ismobile: true
     istv: false
