@@ -1,43 +1,5 @@
 -
   headers:
-    user-agent: LG-GD570
-  device:
-    architecture: null
-    deviceName: GD570
-    marketingName: dLite
-    manufacturer: lg
-    brand: lg
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 400
-      height: 240
-      touch: false
-      size: 2.8
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
-  client:
-    name: null
-    modus: null
-    version: null
-    manufacturer: unknown
-    type: unknown
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
     user-agent: LG-GD580
   device:
     architecture: null
@@ -3776,6 +3738,44 @@
       height: 128
       touch: false
       size: 1.7
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: LG-KP260
+  device:
+    architecture: null
+    deviceName: KP260
+    marketingName: KP260
+    manufacturer: lg
+    brand: lg
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 160
+      height: 128
+      touch: false
+      size: 1.77
     type: feature-phone
     ismobile: true
     istv: false

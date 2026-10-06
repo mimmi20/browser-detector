@@ -1,5 +1,43 @@
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; SAMSUNG SM-E135F) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/20.0 Chrome/106.0.5249.126 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SM-E135F
+    marketingName: 'Galaxy F13'
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2408
+      height: 1080
+      touch: true
+      size: 6.6
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Samsung Browser'
+    modus: null
+    version: 20.0.0
+    manufacturer: samsung
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 106.0.5249.126
+    manufacturer: google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SAMSUNG SM-A525M) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/23.0 Chrome/115.0.0.0 Mobile Safari/537.36'
   device:
     architecture: null
@@ -1140,6 +1178,44 @@
     manufacturer: google
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; SAMSUNG SM-A015AZ) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/15.0 Chrome/90.0.4430.210 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SM-A015AZ
+    marketingName: 'Galaxy A01 (USA)'
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 1520
+      height: 720
+      touch: true
+      size: 5.7
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Samsung Browser'
+    modus: null
+    version: 15.0.0
+    manufacturer: samsung
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 90.0.4430.210
+    manufacturer: google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; SAMSUNG SM-M105F) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/14.2 Chrome/87.0.4280.141 Mobile Safari/537.36'
   device:
     architecture: null
@@ -1296,7 +1372,7 @@
   device:
     architecture: null
     deviceName: SM-J737S
-    marketingName: 'Galaxy J7'
+    marketingName: 'Galaxy J7 (2018)'
     manufacturer: samsung
     brand: samsung
     dualOrientation: true

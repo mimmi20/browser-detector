@@ -1938,6 +1938,82 @@
     manufacturer: google
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; Realme Narzo 70 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.6272.2 Mobile Safari/537.36 OPR/109.0.5089.0'
+  device:
+    architecture: null
+    deviceName: 'Narzo 70 Pro'
+    marketingName: 'Narzo 70 Pro 5G'
+    manufacturer: bbk
+    brand: realme
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2400
+      height: 1080
+      touch: true
+      size: 6.67
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Opera Mobile'
+    modus: null
+    version: 109.0.5089.0
+    manufacturer: opera
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 123.0.6272.2
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; Reno5 Pro+) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.5993.118 Mobile Safari/537.36 OPR/104.0.4944.54'
+  device:
+    architecture: null
+    deviceName: 'Reno 5 Pro Plus 5G'
+    marketingName: 'Reno 5 Pro Plus 5G'
+    manufacturer: bbk
+    brand: oppo
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2400
+      height: 1080
+      touch: true
+      size: 6.55
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Opera Mobile'
+    modus: null
+    version: 104.0.4944.54
+    manufacturer: opera
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 118.0.5993.118
+    manufacturer: google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; Realme V3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.120 Mobile Safari/537.36 OPR/113.0.5230.55'
   device:
     architecture: null

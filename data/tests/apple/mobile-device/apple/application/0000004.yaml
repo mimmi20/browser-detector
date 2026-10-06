@@ -302,3 +302,79 @@
     name: WebKit
     version: 3860.700.1
     manufacturer: apple
+-
+  headers:
+    user-agent: 'autofill_provider_extension/1 CFNetwork/3860.700.2 Darwin/25.6.0'
+  device:
+    architecture: null
+    deviceName: 'general Apple device'
+    marketingName: 'general Apple device'
+    manufacturer: apple
+    brand: apple
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 26.6.0
+    manufacturer: apple
+    bits: null
+  client:
+    name: CFNetwork
+    modus: null
+    version: null
+    manufacturer: apple
+    type: application
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 3860.700.2
+    manufacturer: apple
+-
+  headers:
+    user-agent: 'Autofill/18.0.0.30816 CFNetwork/3896.100.1.2.1 Darwin/27.0.0'
+  device:
+    architecture: null
+    deviceName: 'general Apple device'
+    marketingName: 'general Apple device'
+    manufacturer: apple
+    brand: apple
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 27.0.0
+    manufacturer: apple
+    bits: null
+  client:
+    name: CFNetwork
+    modus: null
+    version: null
+    manufacturer: apple
+    type: application
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 3896.100.1.2.1
+    manufacturer: apple

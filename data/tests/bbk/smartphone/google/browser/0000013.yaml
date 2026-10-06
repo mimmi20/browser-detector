@@ -950,6 +950,44 @@
     manufacturer: google
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; Reno5 Pro+) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.6834.15 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'Reno 5 Pro Plus 5G'
+    marketingName: 'Reno 5 Pro Plus 5G'
+    manufacturer: bbk
+    brand: oppo
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2400
+      height: 1080
+      touch: true
+      size: 6.55
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 132.0.6834.15
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 132.0.6834.15
+    manufacturer: google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; iQOO U3x 4G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36'
   device:
     architecture: null
@@ -2229,4 +2267,90 @@
   engine:
     name: Blink
     version: 146.0.0.0
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; V2318) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.144 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: V2318
+    marketingName: V30
+    manufacturer: bbk
+    brand: vivo
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2800
+      height: 1260
+      touch: true
+      size: 6.78
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 120.0.6099.144
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 120.0.6099.144
+    manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: '"V2454DA"'
+    sec-ch-ua-platform: '"Android"'
+    sec-ch-ua-platform-version: '"16.0.0"'
+    sec-ch-ua: '"Google Chrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"'
+    sec-ch-ua-full-version: '"153.0.8010.53"'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-mobile: '?1'
+    sec-ch-ua-wow64: '?0'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: V2454DA
+    marketingName: 'X200 Ultra'
+    manufacturer: bbk
+    brand: vivo
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 3168
+      height: 1440
+      touch: true
+      size: 6.82
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 153.0.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 153.0.0
     manufacturer: google

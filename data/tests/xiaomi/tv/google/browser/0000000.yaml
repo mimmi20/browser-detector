@@ -340,3 +340,41 @@
     name: Blink
     version: 149.0.7827.159
     manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; MiTV-MSOR0 Build/RTT8.210119.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'MiTV MSOR0'
+    marketingName: 'MiTV MSOR0'
+    manufacturer: xiaomi
+    brand: xiaomi
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: 8.0.0
+    manufacturer: amazon
+    bits: null
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 149.0.7827.91
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google

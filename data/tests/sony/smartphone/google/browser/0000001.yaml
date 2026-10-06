@@ -3393,6 +3393,120 @@
     manufacturer: google
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; Xperia 5 II) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.65 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'Xperia 5 II'
+    marketingName: 'Xperia 5 II 5G'
+    manufacturer: sony
+    brand: sony
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 2520
+      height: 1080
+      touch: true
+      size: 6.1
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 110.0.5481.65
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 110.0.5481.65
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; Xperia 1 II) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.5563.58 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'Xperia 1 II'
+    marketingName: 'Xperia 1 II 5G'
+    manufacturer: sony
+    brand: sony
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 3840
+      height: 1644
+      touch: true
+      size: 6.5
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 111.0.5563.58
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 111.0.5563.58
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; Xperia 10 II) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.5615.100 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'Xperia 10 II'
+    marketingName: 'Xperia 10 II'
+    manufacturer: sony
+    brand: sony
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 2520
+      height: 1080
+      touch: true
+      size: 6
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 112.0.5615.100
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 112.0.5615.100
+    manufacturer: google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; SO-51G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36'
   device:
     architecture: null

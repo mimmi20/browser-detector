@@ -124,10 +124,10 @@
     dualOrientation: false
     simCount: 0
     display:
-      width: 1920
-      height: 1080
+      width: 3840
+      height: 2160
       touch: false
-      size: 24
+      size: null
     type: tv
     ismobile: false
     istv: true
@@ -162,10 +162,10 @@
     dualOrientation: false
     simCount: 0
     display:
-      width: null
-      height: null
+      width: 3840
+      height: 2160
       touch: false
-      size: 24
+      size: null
     type: tv
     ismobile: false
     istv: true
@@ -200,10 +200,10 @@
     dualOrientation: false
     simCount: 0
     display:
-      width: null
-      height: null
+      width: 1920
+      height: 1080
       touch: false
-      size: 24
+      size: null
     type: tv
     ismobile: false
     istv: true
@@ -238,10 +238,10 @@
     dualOrientation: false
     simCount: 0
     display:
-      width: null
-      height: null
+      width: 3840
+      height: 2160
       touch: false
-      size: 24
+      size: null
     type: tv
     ismobile: false
     istv: true
@@ -276,10 +276,10 @@
     dualOrientation: false
     simCount: 0
     display:
-      width: null
-      height: null
+      width: 3840
+      height: 2160
       touch: false
-      size: 24
+      size: null
     type: tv
     ismobile: false
     istv: true
@@ -317,7 +317,7 @@
       width: null
       height: null
       touch: false
-      size: 21
+      size: null
     type: tv
     ismobile: false
     istv: true
@@ -326,6 +326,272 @@
     name: Android
     marketingName: Android
     version: 14.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 149.0.7827.91
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; SWTV-23AE-4KR3 Build/RTK5.250429.026; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SWTV-23AE-4KR3
+    marketingName: SWTV-23AE-4KR3
+    manufacturer: sky-worth
+    brand: sky-worth
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: 3840
+      height: 2160
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 149.0.7827.91
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; SWTV-22TGS-4K Build/RTM7.230903.046; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.93 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SWTV-22TGS-4K
+    marketingName: SWTV-22TGS-4K
+    manufacturer: sky-worth
+    brand: sky-worth
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: 3840
+      height: 2160
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 149.0.7827.93
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.93
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; SWTV-22NA-4K Build/RTM9.241015.070; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SWTV-22NA-4K
+    marketingName: SWTV-22NA-4K
+    manufacturer: sky-worth
+    brand: sky-worth
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: 3840
+      height: 2160
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 149.0.7827.91
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; SWTV-22AE-4K Build/RTMA.250416.068; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SWTV-22AE-4K
+    marketingName: SWTV-22AE-4K
+    manufacturer: sky-worth
+    brand: sky-worth
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: 3840
+      height: 2160
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 149.0.7827.91
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; SWTV-21SA Build/RTMA.250416.213; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SWTV-21SA
+    marketingName: SWTV-21SA
+    manufacturer: sky-worth
+    brand: sky-worth
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 149.0.7827.91
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; SWTV-20SA Build/RTM5.220609.106; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.93 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SWTV-20SA
+    marketingName: SWTV-20SA
+    manufacturer: sky-worth
+    brand: sky-worth
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 149.0.7827.93
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.93
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; SWTV-20NA Build/RTM5.220609.106; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SWTV-20NA
+    marketingName: SWTV-20NA
+    manufacturer: sky-worth
+    brand: sky-worth
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
     manufacturer: google
     bits: null
   client:

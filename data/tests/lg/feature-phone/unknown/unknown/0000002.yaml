@@ -1,43 +1,5 @@
 -
   headers:
-    user-agent: LG-KP260
-  device:
-    architecture: null
-    deviceName: KP260
-    marketingName: KP260
-    manufacturer: lg
-    brand: lg
-    dualOrientation: false
-    simCount: 1
-    display:
-      width: 160
-      height: 128
-      touch: false
-      size: 1.77
-    type: feature-phone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
-  client:
-    name: null
-    modus: null
-    version: null
-    manufacturer: unknown
-    type: unknown
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
     user-agent: 'lg-kp260 UNTRUSTED/1.0'
   device:
     architecture: null
@@ -3767,6 +3729,44 @@
     architecture: null
     deviceName: U8138
     marketingName: U8138
+    manufacturer: lg
+    brand: lg
+    dualOrientation: false
+    simCount: 1
+    display:
+      width: 220
+      height: 176
+      touch: false
+      size: null
+    type: feature-phone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: LG-U8150
+  device:
+    architecture: null
+    deviceName: U8150
+    marketingName: U8150
     manufacturer: lg
     brand: lg
     dualOrientation: false

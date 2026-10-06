@@ -3222,44 +3222,6 @@
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 17; SM-F9710 Build/CP2A.260605.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/147.0.7727.137 Mobile Safari/537.36 Lark/7.73.11 LarkLocale/zh_CN ChannelName/Feishu appid/482431; appname/Feishu;'
-  device:
-    architecture: null
-    deviceName: SM-F9710
-    marketingName: 'Galaxy Z Fold 8 5G (China)'
-    manufacturer: samsung
-    brand: samsung
-    dualOrientation: true
-    simCount: 2
-    display:
-      width: 2448
-      height: 1848
-      touch: true
-      size: 7.6
-    type: phablet
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 17.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Chrome WebView'
-    modus: null
-    version: 147.0.7727.137
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 147.0.7727.137
-    manufacturer: google
--
-  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 17; SM-F971C Build/CP2A.260605.016) AppleWebKit/537.36 (KHTML, like Gecko) Ojxvms/4.0 Chrome/150.0.7871.182 Mobile Safari/537.36'
   device:
     architecture: null
@@ -3381,4 +3343,52 @@
   engine:
     name: Blink
     version: 152.0.0
+    manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: '"SM-F976B"'
+    sec-ch-ua-platform: '"Android"'
+    sec-ch-ua-platform-version: '"17.0.0"'
+    sec-ch-ua: '"Google Chrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"'
+    sec-ch-ua-full-version: '"153.0.8010.53"'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-form-factors: '"Desktop"'
+    sec-ch-ua-mobile: '?0'
+    sec-ch-ua-wow64: '?0'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36'
+  device:
+    architecture: null
+    deviceName: SM-F976B
+    marketingName: 'Galaxy Z Fold 8 Ultra (International)'
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2504
+      height: 2256
+      touch: true
+      size: 8
+    type: phablet
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 17.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 153.0.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 153.0.0
     manufacturer: google

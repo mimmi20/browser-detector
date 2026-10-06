@@ -2942,6 +2942,44 @@
     manufacturer: google
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 12; en-us; LMR-LX9 Build/JOP24G) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: LMR-LX9
+    marketingName: 'Pura 80 Pro'
+    manufacturer: huawei
+    brand: huawei
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2848
+      height: 1276
+      touch: true
+      size: 6.8
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 68.0.3440.91
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 68.0.3440.91
+    manufacturer: google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9.0; nova 5z) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.97 Mobile Safari/537.36'
   device:
     architecture: null
@@ -3838,44 +3876,6 @@
     name: Android
     marketingName: Android
     version: 16.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: Chrome
-    modus: null
-    version: 149.0.7827.91
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 149.0.7827.91
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 15; NLA-LX3 Build/HONORNLA-L33) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.91 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: NLA-LX3
-    marketingName: X5c
-    manufacturer: huawei
-    brand: honor
-    dualOrientation: true
-    simCount: 2
-    display:
-      width: 1600
-      height: 720
-      touch: true
-      size: 6.74
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
     manufacturer: google
     bits: null
   client:

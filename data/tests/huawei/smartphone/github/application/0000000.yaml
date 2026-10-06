@@ -152,6 +152,44 @@
     manufacturer: google
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; LMR-LX9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Atom/1.6.2.3 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: LMR-LX9
+    marketingName: 'Pura 80 Pro'
+    manufacturer: huawei
+    brand: huawei
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2848
+      height: 1276
+      touch: true
+      size: 6.8
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Atom
+    modus: null
+    version: 1.6.2.3
+    manufacturer: github
+    type: application
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 96.0.4664.110
+    manufacturer: google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; HRY-LX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Atom/1.6.2.3 Mobile Safari/537.36'
   device:
     architecture: null

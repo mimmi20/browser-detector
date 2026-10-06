@@ -2924,6 +2924,82 @@
     manufacturer: google
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; Redmi Note10 JE) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.127 Mobile Safari/537.36 OPR/112.0.5197.30'
+  device:
+    architecture: null
+    deviceName: 'Redmi Note 10 JE'
+    marketingName: 'Redmi Note 10 JE'
+    manufacturer: xiaomi
+    brand: xiaomi
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2400
+      height: 1080
+      touch: true
+      size: 6.5
+    type: phablet
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Opera Mobile'
+    modus: null
+    version: 112.0.5197.30
+    manufacturer: opera
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 126.0.6478.127
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; Redmi Note10 5G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.5993.118 Mobile Safari/537.36 OPR/105.0.4957.0'
+  device:
+    architecture: null
+    deviceName: 'Redmi Note 10 5G'
+    marketingName: 'Redmi Note 10 5G'
+    manufacturer: xiaomi
+    brand: xiaomi
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 2400
+      height: 1080
+      touch: true
+      size: 6.5
+    type: phablet
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Opera Mobile'
+    modus: null
+    version: 105.0.4957.0
+    manufacturer: opera
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 118.0.5993.118
+    manufacturer: google
+-
+  headers:
     sec-ch-ua-model: '"23124RA7EO"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"15"'

@@ -3570,3 +3570,41 @@
     name: Blink
     version: 53.0.2785.34
     manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chr0me/94.0.4606.128 Safari/537.36 LG Browser/8.00.00(LGE; 65QNED756RB; 13.40.97; 0x00000001; DTV_W23M); webOS.TV-2022; LG NetCast.TV-2013 Compatible (LGE, 65QNED756RB, wireless)'
+  device:
+    architecture: null
+    deviceName: 65QNED756RB
+    marketingName: 65QNED756RB
+    manufacturer: lg
+    brand: lg
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: 3840
+      height: 2160
+      touch: false
+      size: 65
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 23.0.0
+    manufacturer: lg
+    bits: null
+  client:
+    name: 'LG Browser'
+    modus: null
+    version: 8.00.00
+    manufacturer: lg
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 94.0.4606.128
+    manufacturer: google

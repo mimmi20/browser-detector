@@ -1409,17 +1409,17 @@
     user-agent: 'Microsoft Office Excel/16.112.817 (Mac OS/15.3.1; Desktop; en-US; NonAppStore; Apple/Mac16,3)'
   device:
     architecture: null
-    deviceName: Macintosh
-    marketingName: Macintosh
+    deviceName: 'Mac 16,3'
+    marketingName: 'iMac M4 24" (2024)'
     manufacturer: apple
     brand: apple
     dualOrientation: false
     simCount: 0
     display:
-      width: null
-      height: null
+      width: 4480
+      height: 2520
       touch: false
-      size: null
+      size: 23.5
     type: desktop
     ismobile: false
     istv: false
@@ -1444,11 +1444,11 @@
     manufacturer: unknown
 -
   headers:
-    user-agent: 'Microsoft Office PowerPoint/16.111.726 (Mac OS/26.6.2; Desktop; en-US; AppStore; Apple/Mac16,8)'
+    user-agent: 'Microsoft Office PowerPoint/16.111.726 (Mac OS/26.6.2; Desktop; en-US; AppStore; Apple/Mac16,9)'
   device:
     architecture: null
-    deviceName: Macintosh
-    marketingName: Macintosh
+    deviceName: 'Mac 16,9'
+    marketingName: 'Mac Studio M4 Max (2025)'
     manufacturer: apple
     brand: apple
     dualOrientation: false
@@ -1472,6 +1472,44 @@
     name: PowerPoint
     modus: null
     version: 16.111.726
+    manufacturer: microsoft
+    type: application
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'Microsoft Office Excel/16.111.719 (Mac OS/26.4; Desktop; en-US; AppStore; Apple/Mac17,6)'
+  device:
+    architecture: null
+    deviceName: Macintosh
+    marketingName: Macintosh
+    manufacturer: apple
+    brand: apple
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: desktop
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 26.4.0
+    manufacturer: apple
+    bits: null
+  client:
+    name: Excel
+    modus: null
+    version: 16.111.719
     manufacturer: microsoft
     type: application
     isbot: false

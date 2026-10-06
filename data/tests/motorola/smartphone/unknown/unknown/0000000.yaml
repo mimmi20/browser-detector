@@ -38,6 +38,44 @@
     manufacturer: unknown
 -
   headers:
+    user-agent: 'MotoE2(4G-LTE) Build/LPIS23.29-18.9-2'
+  device:
+    architecture: null
+    deviceName: XT1528
+    marketingName: 'Moto E (2nd Gen)'
+    manufacturer: motorola
+    brand: motorola
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 960
+      height: 540
+      touch: true
+      size: 4.5
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
     user-agent: 'MotoG3 Build/MCI24.107-79'
   device:
     architecture: null

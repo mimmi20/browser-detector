@@ -36,3 +36,41 @@
     name: null
     version: null
     manufacturer: unknown
+-
+  headers:
+    user-agent: 'DandroidCrawler/0.1 (+https://wemigrate.co.uk/crawler; learning project; dan.smith@bitmovers.co.uk)'
+  device:
+    architecture: null
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: null
+  client:
+    name: Crawler
+    modus: null
+    version: 0.1.0
+    manufacturer: linkfluence
+    type: crawler
+    isbot: true
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
