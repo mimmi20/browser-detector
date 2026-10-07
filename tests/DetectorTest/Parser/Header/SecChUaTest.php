@@ -296,6 +296,7 @@ final class SecChUaTest extends TestCase
             ['"Not.A/Brand";v="99", "PrivateBrowsing";v="136"', true, 'private-browsing', true, '136.0.0', true, Engine::blink, true, '136.0.0'],
             ['"Lightpanda";v="1"', true, 'lightpanda', true, '1.0.0', true, Engine::blink, false, null],
             ['"Not/A)Brand";v="99.0.0.0", "Google Chrome";v="132.0.6834.210", "Chromium";v="132.0.6834.210", "Puffin";v="132.0.8.80800"', true, 'puffin-cloud-browser', true, '132.0.8.80800', true, Engine::blink, true, '132.0.6834.210'],
+            ['"Samsung Browser";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"', true, 'samsungbrowser', true, '30.0.0', true, Engine::blink, true, '143.0.0'],
         ];
     }
 }
