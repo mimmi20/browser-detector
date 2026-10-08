@@ -198,11 +198,12 @@ rules:
   /slack-imgproxy/i: slack-img-proxy
   '/snap[ -]url[ -]preview(?: service)?/i': 'snap url preview service'
   /magpie-crawler/i: 'magpie crawler'
+  /oai-searchbot/i: oai-searchbot
   /uptimerobot/i: uptimerobot
   '/fdse robot/i': 'fdse robot'
   /gaisbot/i: gais-bot
   /thinkchaos/i: think-chaos
-  '/(?<![\/\(])robots|testcrawler/i': testcrawler
+  '/(?<![\/\(])robots(?!\.txt)|testcrawler/i': testcrawler
   /mediumbot-metatagfetcher/i: mediumbot-metatag-fetcher
   /mediumbot-proxyfetcher/i: mediumbot-proxy-fetcher
   /arquivo-web-crawler/i: arquivo-web-crawler
@@ -1419,7 +1420,6 @@ rules:
   /yandexmetrika/i: yandex-metrika
   /woorankreview/i: woorank-review
   /perplexitybot/i: perplexity-bot
-  /oai-searchbot/i: oai-searchbot
   '/crazy browser/i': 'crazy browser'
   /securityaudit/i: security-audit
   /yandextracker/i: yandex-tracker
