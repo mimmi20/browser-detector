@@ -3,8 +3,8 @@
   marketingName: 'FlowBox-F2'
   manufacturer: telecom-argentina
   brand: telecom-argentina
-  dualOrientation: null
-  simCount: null
+  dualOrientation: false
+  simCount: 0
   display:
     width: null
     height: null
@@ -17,8 +17,22 @@
   marketingName: 'FlowBox-Z3'
   manufacturer: telecom-argentina
   brand: telecom-argentina
-  dualOrientation: null
-  simCount: null
+  dualOrientation: false
+  simCount: 0
+  display:
+    width: null
+    height: null
+    touch: false
+    size: null
+  type: tv-set-top-box
+  platform: android
+'telecom-argentina flowbox-z4':
+  deviceName: 'FlowBox-Z4'
+  marketingName: 'FlowBox-Z4'
+  manufacturer: telecom-argentina
+  brand: telecom-argentina
+  dualOrientation: false
+  simCount: 0
   display:
     width: null
     height: null
