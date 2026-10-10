@@ -479,6 +479,8 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.alldocuments.pdfreader.tools' => 'all-documents-pdf',
             'com.casttotv.screenmirroring.smarttv.castvideo' => 'cast-to-tv-screen',
             'com.zhiliaoapp.musically' => 'tiktok',
+            'com.fevdev.nakedbrowser', 'com.fevdev.nakedbrowserlts' => 'naked-browser',
+            'com.fevdev.nakedbrowserpro' => 'naked-browser-pro',
             default => null,
         };
     }

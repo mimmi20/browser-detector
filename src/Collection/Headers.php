@@ -471,6 +471,7 @@ final readonly class Headers
                         case 'meta-webindexer':
                         case 'cohere-ai':
                         case 'facebook app':
+                        case 'shap-bot':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 
