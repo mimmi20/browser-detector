@@ -238,7 +238,21 @@
   platform: android
 'huawei oxf-an00':
   deviceName: OXF-AN00
-  marketingName: 'Honor V30'
+  marketingName: 'Honor View 30'
+  manufacturer: huawei
+  brand: huawei
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: 2400
+    height: 1080
+    touch: true
+    size: 6.57
+  type: phablet
+  platform: android
+'huawei oxf-an00l':
+  deviceName: OXF-AN00L
+  marketingName: 'Honor View 30'
   manufacturer: huawei
   brand: huawei
   dualOrientation: true
