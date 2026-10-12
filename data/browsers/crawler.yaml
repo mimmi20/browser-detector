@@ -5488,3 +5488,12 @@ pangu-bot:
     search:
       - PanguBot
   engine: unknown
+everphone-contact-bot:
+  name: EverphoneContactBot
+  manufacturer: everphone
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - EverphoneContactBot
+  engine: unknown

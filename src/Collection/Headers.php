@@ -501,6 +501,7 @@ final readonly class Headers
                         case 'scrapy':
                         case 'seekportbot':
                         case 'product-lookout-bot':
+                        case 'everphone-contact-bot':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 

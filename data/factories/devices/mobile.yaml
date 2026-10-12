@@ -141,7 +141,7 @@ rules:
   /engeldroid/i: engel-droid
   /multilaser/i: multilaser
   /pandigital/i: pandigital
-  /polarline_/i: polar
+  /polarline_/i: polar-line
   '/poly ?pad/i': polypad
   '/tech ?pad/i': techpad
   /m\.t\.t\./i: mtt
@@ -565,7 +565,7 @@ rules:
   /h96_/i: h96
   /itel/i: itel
   /veon/i: veon
-  /econ/i: econ
+  /econ(?![st])/i: econ
   /meu/i: meu
   /twz/i: twz
   /ckk/i: ckk
