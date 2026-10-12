@@ -90,6 +90,7 @@ final class SecChUaClientCode implements ClientCodeInterface
             'ray' => 'ray-browser',
             'privatebrowsing' => 'private-browsing',
             'puffin' => 'puffin-cloud-browser',
+            'reflectionbot' => 'reflection-bot',
             default => $code,
         };
     }

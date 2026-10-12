@@ -5497,3 +5497,108 @@ everphone-contact-bot:
     search:
       - EverphoneContactBot
   engine: unknown
+vege-bot:
+  name: VegeBot
+  manufacturer: terry-kyle
+  type: crawler
+  version:
+    factory: null
+    search: null
+  engine: unknown
+vegi-bot:
+  name: 'Vegi Bot'
+  manufacturer: terry-kyle
+  type: crawler
+  version:
+    factory: null
+    search: null
+  engine: unknown
+keenable-bot:
+  name: KeenableBot
+  manufacturer: keenable-ai
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - KeenableBot
+  engine: unknown
+keenable-user:
+  name: Keenable-User
+  manufacturer: keenable-ai
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Keenable-User
+  engine: unknown
+moonrank-ai-bot:
+  name: MoonrankBot
+  manufacturer: moonrank-ai
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - MoonrankBot
+  engine: unknown
+world-bot:
+  name: WorldBot
+  manufacturer: world-labs
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - WorldBot
+  engine: unknown
+aipbot:
+  name: aipbot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - aipbot
+  engine: unknown
+sens-ai:
+  name: 'Sens.ai'
+  manufacturer: sovereign-intelligence
+  type: crawler
+  version:
+    factory: null
+    search: null
+  engine: unknown
+reflection-bot:
+  name: Reflectionbot
+  manufacturer: reflection-ai
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Reflectionbot
+  engine: unknown
+nekuda-scanner:
+  name: 'Nekuda WebMCP Discovery Bot'
+  manufacturer: nekuda
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - nekuda-scanner
+  engine: unknown
+raylu-bot:
+  name: RayluBot
+  manufacturer: raylu
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - RayluBot
+  engine: unknown
+voco-scale-research:
+  name: VOCO-SCALE-Research
+  manufacturer: connexia-strategy
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - VOCO-SCALE-Research
+  engine: unknown
