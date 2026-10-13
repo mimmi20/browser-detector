@@ -141,6 +141,24 @@ parameters:
         - tests\DetectorTest\Parser\Header\SecChUaPlatformVersionTest.php
     -
       identifier: argument.named
+    -
+      identifier: phpunit.noAssertFuncCallInTests
+    -
+      identifier: symplify.noJustPropertyAssign
+    -
+      identifier: symplify.requiredInterfaceContractNamespace
+    -
+      identifier: symplify.noReturnSetterMethod
+      paths:
+        - src/Parser/Header/SetVersionTrait.php
+    -
+      identifier: symplify.forbiddenTrait
+    -
+      identifier: symplify.noReference
+    -
+      identifier: symplify.forbiddenSwitch
+    -
+      identifier: symplify.noNullableServiceInConstructor
 
 services:
   errorFormatter.sarif:

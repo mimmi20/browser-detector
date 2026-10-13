@@ -13,8 +13,10 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Device;
 
+use ArgumentCountError;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use Override;
+use ValueError;
 
 use function sprintf;
 
@@ -42,11 +44,15 @@ final readonly class DarwinParser implements DarwinParserInterface
     {
         $mode = $this->rulefileParser->parseFile(self::GENERIC_FILE, $useragent, 'unknown');
 
-        $key = $this->rulefileParser->parseFile(
-            sprintf(self::SPECIFIC_FILE, $mode),
-            $useragent,
-            'unknown',
-        );
+        try {
+            $key = $this->rulefileParser->parseFile(
+                sprintf(self::SPECIFIC_FILE, $mode),
+                $useragent,
+                'unknown',
+            );
+        } catch (ArgumentCountError | ValueError) {
+            $key = 'unknown';
+        }
 
         return 'apple=' . $key;
     }
