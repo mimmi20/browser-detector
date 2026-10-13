@@ -537,3 +537,52 @@
     name: Blink
     version: 149.0.0
     manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: '"Pixel 9 Pro XL"'
+    x-requested-with: com.duckduckgo.mobile.android
+    sec-ch-ua-platform: '"Android"'
+    sec-ch-ua-platform-version: '"17.0.0"'
+    sec-ch-ua: '"DuckDuckGo";v="153", "Not_A Brand";v="8", "Chromium";v="153"'
+    sec-ch-ua-full-version: '"153.0.8010.36"'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-mobile: '?1'
+    sec-ch-ua-wow64: '?0'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'Pixel 9 Pro XL'
+    marketingName: 'Pixel 9 Pro XL'
+    manufacturer: google
+    brand: google
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 2992
+      height: 1344
+      touch: true
+      size: 6.8
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 17.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'DuckDuckGo Privacy Browser'
+    modus: null
+    version: 153.0.8010.36
+    manufacturer: duck-duck-go
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 153.0.0
+    manufacturer: google

@@ -1746,3 +1746,41 @@
     name: null
     version: null
     manufacturer: unknown
+-
+  headers:
+    user-agent: 'Dalvik/2.1.0 (Linux; U; Android 12; vivo 1938 Build/SP1A.210812.003) [FBAN/FB4A;FBAV/580.0.0.51.74;FBPN/com.facebook.katana;FBLC/en_US;FBBV/1074589553;FBCR/ZONG;FBMF/vivo;FBBD/vivo;FBDV/vivo 1938;FBSV/12;FBCA/arm64-v8a:null;FBDM/{density=2.0,width=720,height=1411};FB_FW/1;FBRV/1081735749;] FBBK/1'
+  device:
+    architecture: null
+    deviceName: '1938'
+    marketingName: Y30
+    manufacturer: bbk
+    brand: vivo
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 1560
+      height: 720
+      touch: true
+      size: 6.47
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Facebook App'
+    modus: null
+    version: 580.0.0.51.74
+    manufacturer: meta
+    type: mobile-application
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: null
+    manufacturer: apple

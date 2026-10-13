@@ -3307,3 +3307,82 @@
     name: WebKit
     version: 605.1.15
     manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 365.0.0.24.109 (iPhone17,4; iOS 18.7; es_ES; es-ES; scale=3.00; 1290x2796; 785195381)'
+  device:
+    architecture: null
+    deviceName: 'iPhone 17,4'
+    marketingName: 'iPhone 16 Plus'
+    manufacturer: apple
+    brand: apple
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 2796
+      height: 1290
+      touch: true
+      size: 6.7
+    type: phablet
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 18.7.0
+    manufacturer: apple
+    bits: null
+  client:
+    name: 'Instagram App'
+    modus: null
+    version: 365.0.0.24.109
+    manufacturer: meta
+    type: mobile-application
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: 605.1.15
+    manufacturer: apple
+-
+  headers:
+    sec-ch-ua-platform: '"Chrome OS"'
+    sec-ch-ua: '"Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"'
+    sec-ch-ua-mobile: '?0'
+    user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 365.0.0.24.109 (iPhone17,4; iOS 18.7; es_ES; es-ES; scale=3.00; 1290x2796; 785195381)'
+  device:
+    architecture: null
+    deviceName: 'iPhone 17,4'
+    marketingName: 'iPhone 16 Plus'
+    manufacturer: apple
+    brand: apple
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 2796
+      height: 1290
+      touch: true
+      size: 6.7
+    type: phablet
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: ChromeOS
+    marketingName: ChromeOS
+    version: null
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Instagram App'
+    modus: null
+    version: 365.0.0.24.109
+    manufacturer: meta
+    type: mobile-application
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 120.0.0
+    manufacturer: google

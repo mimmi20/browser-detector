@@ -2316,3 +2316,41 @@
     name: null
     version: null
     manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; riscoperta-l1/1.0; +https://studiostorti.com; paolo@studiostorti.com)'
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: 'RISC OS'
+    marketingName: 'RISC OS'
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: 'AOL Explorer'
+    modus: null
+    version: null
+    manufacturer: aol
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: null
+    manufacturer: apple

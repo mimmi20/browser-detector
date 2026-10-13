@@ -3726,3 +3726,41 @@
     name: Blink
     version: 121.0.6167.178
     manufacturer: google
+-
+  headers:
+    user-agent: 'Dalvik/2.1.0 (Linux; U; Android 12; TB328FU Build/SP1A.210812.016)'
+  device:
+    architecture: null
+    deviceName: TB328FU
+    marketingName: 'Tab M10 Wi-Fi (3rd Gen)'
+    manufacturer: lenovo
+    brand: lenovo
+    dualOrientation: true
+    simCount: 0
+    display:
+      width: 1920
+      height: 1200
+      touch: true
+      size: 10.1
+    type: tablet
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Android Browser'
+    modus: null
+    version: 2.1.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: null
+    manufacturer: apple

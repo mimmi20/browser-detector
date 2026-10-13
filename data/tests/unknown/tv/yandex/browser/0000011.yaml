@@ -1,195 +1,5 @@
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; Gameplay Build/RTK3.240516.029; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 YaBrowser/25.10.1.638 (lite) TV Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser Lite'
-    modus: null
-    version: 25.10.1.638
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 149.0.7827.91
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; Gameplay Build/RTK3.240516.029; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.226 YaBrowser/25.10.1.638 (lite) TV Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser Lite'
-    modus: null
-    version: 25.10.1.638
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 148.0.7778.226
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; G7max Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.1.2.229 (lite) TV Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser Lite'
-    modus: null
-    version: 24.1.2.229
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 83.0.4103.120
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; FUSE 4K Build/RTT0.211009.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 YaBrowser/25.10.1.638 (lite) TV Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser Lite'
-    modus: null
-    version: 25.10.1.638
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 149.0.7827.91
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; EU 4K Android TV Build/RTO8.260427.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/135.0.7049.111 YaBrowser/24.12.0.453 (lite) TV Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 11.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser Lite'
-    modus: null
-    version: 24.12.0.453
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 135.0.7049.111
-    manufacturer: google
--
-  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; EU 4K Android TV Build/RTO8.250915.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.171 YaBrowser/24.12.0.453 (lite) TV Safari/537.36'
   device:
     architecture: null
@@ -415,44 +225,6 @@
   engine:
     name: Blink
     version: 139.0.7258.158
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; DTP2162 Build/RVC; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 YaBrowser/25.10.1.638 (lite) TV Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser Lite'
-    modus: null
-    version: 25.10.1.638
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 149.0.7827.91
     manufacturer: google
 -
   headers:
@@ -1748,82 +1520,6 @@
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; CADENA PRO X CSB-248 White Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 YaBrowser/25.10.1.638 (lite) TV Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser Lite'
-    modus: null
-    version: 25.10.1.638
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 149.0.7827.91
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; CADENA PRO W2 CSB-243 Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.217 YaBrowser/25.10.1.638 (lite) TV Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser Lite'
-    modus: null
-    version: 25.10.1.638
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 148.0.7778.217
-    manufacturer: google
--
-  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; BO_W2 Build/RTT0.210829.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/120.0.6099.230 YaBrowser/24.1.2.229 (lite) TV Safari/537.36'
   device:
     architecture: null
@@ -1897,234 +1593,6 @@
   engine:
     name: Blink
     version: 108.0.5359.128
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; BLAUPUNKT Android TV Build/RTO5.260324.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.174 YaBrowser/25.7.1.605 (lite) TV Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 11.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser Lite'
-    modus: null
-    version: 25.7.1.605
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 142.0.7444.174
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; BLAUPUNKT Android TV Build/RTO5.260324.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.7339.207 YaBrowser/23.1.0.73 (lite) TV Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 11.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser Lite'
-    modus: null
-    version: 23.1.0.73
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 140.0.7339.207
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; BLAUPUNKT Android TV Build/RTO5.260324.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/135.0.7049.111 YaBrowser/25.7.1.605 (lite) TV Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 11.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser Lite'
-    modus: null
-    version: 25.7.1.605
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 135.0.7049.111
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; BLAUPUNKT Android TV Build/RTO5.260324.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/135.0.7049.111 YaBrowser/24.12.0.453 (lite) TV Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 11.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser Lite'
-    modus: null
-    version: 24.12.0.453
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 135.0.7049.111
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; BLAUPUNKT Android TV 2K Build/RTO5.250812.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.174 YaBrowser/25.10.1.638 (lite) TV Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 11.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser Lite'
-    modus: null
-    version: 25.10.1.638
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 142.0.7444.174
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; BLAUPUNKT Android TV 2K Build/RTO5.250812.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.171 YaBrowser/25.10.1.638 (lite) TV Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 11.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser Lite'
-    modus: null
-    version: 25.10.1.638
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 142.0.7444.171
     manufacturer: google
 -
   headers:
@@ -2964,424 +2432,6 @@
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; AI PONT PLUS FF Build/RTM8.240401.221; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/120.0.6099.230 YaBrowser/25.10.1.638 (lite) TV Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser Lite'
-    modus: null
-    version: 25.10.1.638
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 120.0.6099.230
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; AI PONT MAX FF Build/RTMA.250416.110; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.93 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser Lite'
-    modus: null
-    version: 24.1.2.86
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 149.0.7827.93
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; AI PONT MAX FF Build/RTMA.250416.110; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 YaBrowser/25.10.1.638 (lite) TV Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser Lite'
-    modus: null
-    version: 25.10.1.638
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 149.0.7827.91
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; AI PONT MAX FF Build/RTMA.250416.110; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser Lite'
-    modus: null
-    version: 24.1.2.86
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 149.0.7827.91
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; AI PONT MAX FF Build/RTMA.250416.110; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 YaBrowser/24.12.0.453 (lite) TV Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser Lite'
-    modus: null
-    version: 24.12.0.453
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 149.0.7827.91
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; AI PONT MAX FF Build/RTMA.250416.110; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.159 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser Lite'
-    modus: null
-    version: 24.1.2.86
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 149.0.7827.159
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; AI PONT MAX FF Build/RTMA.250416.110; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.215 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser Lite'
-    modus: null
-    version: 24.1.2.86
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 148.0.7778.215
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; AI PONT MAX FF Build/RTMA.250416.110; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/147.0.7727.111 YaBrowser/25.10.1.638 (lite) TV Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser Lite'
-    modus: null
-    version: 25.10.1.638
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 147.0.7727.111
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; AI PONT MAX FF Build/RTMA.250416.110; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/135.0.7049.111 YaBrowser/25.10.1.638 (lite) TV Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser Lite'
-    modus: null
-    version: 25.10.1.638
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 135.0.7049.111
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; AI PONT MAX FF Build/RTMA.250416.110; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/135.0.7049.111 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser Lite'
-    modus: null
-    version: 24.1.2.86
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 135.0.7049.111
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; AI PONT MAX FF Build/RTM8.240401.174; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser Lite'
-    modus: null
-    version: 24.1.2.86
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 149.0.7827.91
-    manufacturer: google
--
-  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; Aiplus4K Build/RTM8.240401.148; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 YaBrowser/25.10.1.638 (lite) TV Safari/537.36'
   device:
     architecture: null
@@ -3797,4 +2847,954 @@
   engine:
     name: Blink
     version: 113.0.5672.163
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; 65LEX-8273UTS2C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 24.12.0.453
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 113.0.5672.163
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; 65LED-8259UTS2C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 24.1.2.86
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 113.0.5672.163
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; 65LED-8249-UTS2C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 24.1.2.86
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 113.0.5672.163
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; 55UHDS103T2 Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 24.1.2.86
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 113.0.5672.163
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; 55UEY1 Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 24.1.2.86
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 113.0.5672.163
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; 55UEY1 Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/23.1.0.59 (lite) TV Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 23.1.0.59
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 113.0.5672.163
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; 55UCY3-G Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 24.12.0.453
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 113.0.5672.163
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; 55UCY2-G Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 24.1.2.86
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 113.0.5672.163
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; 55UCY2-G Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 24.12.0.453
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 113.0.5672.163
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; 55LU8130S Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/23.1.0.59 (lite) TV Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 23.1.0.59
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 113.0.5672.163
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; 55LN6800 Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 24.1.2.86
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 113.0.5672.163
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; 55LEX-8264UTS2C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 24.12.0.453
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 113.0.5672.163
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; 55F01 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 24.12.0.453
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 113.0.5672.163
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; 50UEY1 Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 24.1.2.86
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 113.0.5672.163
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; 50UCY1 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 24.1.2.86
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 113.0.5672.163
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; 50UCY1 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 24.12.0.453
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 113.0.5672.163
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; 50UCY1 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/23.1.0.73 (lite) TV Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 23.1.0.73
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 113.0.5672.163
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; 50UCY1-B Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 24.12.0.453
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 113.0.5672.163
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; 50LN6800 Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 24.1.2.86
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 113.0.5672.163
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; 50LEX-8232-UTS2C Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 24.1.2.86
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 113.0.5672.163
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; 4K T31 Smart TV Build/RTM8.240401.143; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 YaBrowser/25.10.1.638 (lite) TV Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 25.10.1.638
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; 4K T31 Smart TV Build/RTM8.240401.143; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.7339.207 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 24.1.2.86
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 140.0.7339.207
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; 4K SMART TV Build/RTMA.250416.153; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 YaBrowser/25.10.1.638 (lite) TV Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 25.10.1.638
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; 4K SMART TV Build/RTM7.230903.130; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 YaBrowser/25.10.1.638 (lite) TV Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 25.10.1.638
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; 4K SMART TV Build/RTM6.230109.231; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.93 YaBrowser/25.10.1.638 (lite) TV Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 25.10.1.638
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.93
     manufacturer: google

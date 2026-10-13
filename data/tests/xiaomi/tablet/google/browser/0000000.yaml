@@ -1430,3 +1430,51 @@
     name: Blink
     version: 150.0.7871.181
     manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: '"25099RP13G"'
+    sec-ch-ua-platform: '"Android"'
+    sec-ch-ua-platform-version: '"16.0.0"'
+    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
+    sec-ch-ua-full-version: '"154.0.8037.94"'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-form-factors: '"Desktop"'
+    sec-ch-ua-mobile: '?0'
+    sec-ch-ua-wow64: '?0'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 25099RP13G
+    marketingName: 'Redmi Pad 2 Pro Wi-Fi'
+    manufacturer: xiaomi
+    brand: xiaomi
+    dualOrientation: true
+    simCount: 0
+    display:
+      width: 2560
+      height: 1600
+      touch: true
+      size: 12.1
+    type: tablet
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 154.0.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 154.0.0
+    manufacturer: google

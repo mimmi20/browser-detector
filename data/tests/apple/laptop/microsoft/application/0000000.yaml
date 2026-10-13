@@ -1710,6 +1710,44 @@
     manufacturer: unknown
 -
   headers:
+    user-agent: 'Microsoft Office Excel/16.112.817 (Mac OS/26.5.2; Desktop; en-US; AppStore; Apple/Mac16,12)'
+  device:
+    architecture: null
+    deviceName: 'Mac 16,12'
+    marketingName: 'MacBook Air M4 13" (2025)'
+    manufacturer: apple
+    brand: apple
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: 2560
+      height: 1664
+      touch: false
+      size: 13.6
+    type: laptop
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 26.5.2
+    manufacturer: apple
+    bits: null
+  client:
+    name: Excel
+    modus: null
+    version: 16.112.817
+    manufacturer: microsoft
+    type: application
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
     user-agent: 'Microsoft Office Excel/16.112.821 (Mac OS/27.0; Desktop; en-US; AppStore; Apple/Mac17,2)'
   device:
     architecture: null
@@ -1852,6 +1890,158 @@
     name: PowerPoint
     modus: null
     version: 16.112.817
+    manufacturer: microsoft
+    type: application
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'Microsoft Office Excel/16.111.719 (Mac OS/26.4; Desktop; en-US; AppStore; Apple/Mac17,6)'
+  device:
+    architecture: null
+    deviceName: 'Mac 17,6'
+    marketingName: 'MacBook Pro M5 Max 16" (2026)'
+    manufacturer: apple
+    brand: apple
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: 3456
+      height: 2234
+      touch: false
+      size: 16.2
+    type: laptop
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 26.4.0
+    manufacturer: apple
+    bits: null
+  client:
+    name: Excel
+    modus: null
+    version: 16.111.719
+    manufacturer: microsoft
+    type: application
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'Microsoft Office Excel/16.111.719 (Mac OS/26.4; Desktop; en-US; AppStore; Apple/Mac17,7)'
+  device:
+    architecture: null
+    deviceName: 'Mac 17,7'
+    marketingName: 'MacBook Pro M5 Max 14" (2026)'
+    manufacturer: apple
+    brand: apple
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: 3024
+      height: 1964
+      touch: false
+      size: 14.2
+    type: laptop
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 26.4.0
+    manufacturer: apple
+    bits: null
+  client:
+    name: Excel
+    modus: null
+    version: 16.111.719
+    manufacturer: microsoft
+    type: application
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'Microsoft Office Excel/16.111.719 (Mac OS/26.4; Desktop; en-US; AppStore; Apple/Mac17,8)'
+  device:
+    architecture: null
+    deviceName: 'Mac 17,8'
+    marketingName: 'MacBook Pro M5 Pro 16" (2026)'
+    manufacturer: apple
+    brand: apple
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: 3456
+      height: 2234
+      touch: false
+      size: 16.2
+    type: laptop
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 26.4.0
+    manufacturer: apple
+    bits: null
+  client:
+    name: Excel
+    modus: null
+    version: 16.111.719
+    manufacturer: microsoft
+    type: application
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'Microsoft Office Excel/16.111.719 (Mac OS/26.4; Desktop; en-US; AppStore; Apple/Mac17,9)'
+  device:
+    architecture: null
+    deviceName: 'Mac 17,9'
+    marketingName: 'MacBook Pro M5 Pro 14" (2026)'
+    manufacturer: apple
+    brand: apple
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: 3024
+      height: 1964
+      touch: false
+      size: 14.2
+    type: laptop
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 26.4.0
+    manufacturer: apple
+    bits: null
+  client:
+    name: Excel
+    modus: null
+    version: 16.111.719
     manufacturer: microsoft
     type: application
     isbot: false

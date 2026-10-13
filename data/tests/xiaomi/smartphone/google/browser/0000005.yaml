@@ -2386,6 +2386,44 @@
     manufacturer: google
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; POCO X9 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.7450.205 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'Poco X9 Pro 5G'
+    marketingName: 'Poco X9 Pro 5G'
+    manufacturer: xiaomi
+    brand: xiaomi
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2756
+      height: 1268
+      touch: true
+      size: 6.67
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 147.0.7450.205
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 147.0.7450.205
+    manufacturer: google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; M025EC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5013.1 Mobile Safari/537.36'
   device:
     architecture: null
@@ -3980,41 +4018,3 @@
     name: Blink
     version: 83.0.4103.101
     manufacturer: google
--
-  headers:
-    user-agent: 'Dalvik/2.1.0 (Linux; U; Android 15; 26020RNB4L Build/AP3A.240905.015.A2)'
-  device:
-    architecture: null
-    deviceName: 26020RNB4L
-    marketingName: 'Redmi A7'
-    manufacturer: xiaomi
-    brand: xiaomi
-    dualOrientation: true
-    simCount: 2
-    display:
-      width: 1600
-      height: 720
-      touch: true
-      size: 6.9
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Android Browser'
-    modus: null
-    version: 2.1.0
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: null
-    manufacturer: apple

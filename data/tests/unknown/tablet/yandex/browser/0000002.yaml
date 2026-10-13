@@ -1,43 +1,5 @@
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm; Android 9; A15PRO) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.01 Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Tablet'
-    marketingName: 'general Tablet'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: tablet
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser'
-    modus: null
-    version: 26.6.0.304.01
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 148.0.7778.304
-    manufacturer: google
--
-  headers:
     user-agent: 'Mozilla/5.0 (Linux; arm; Android 9; A15_PRO) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.01 Safari/537.36'
   device:
     architecture: null
@@ -1631,44 +1593,6 @@
   engine:
     name: Blink
     version: 132.0.6834.97
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm; Android 12; ZVT255CP) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.43 YaBrowser/25.10.7.43.00 Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Tablet'
-    marketingName: 'general Tablet'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: tablet
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Yandex Browser'
-    modus: null
-    version: 25.10.7.43.00
-    manufacturer: yandex
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 140.0.7339.43
     manufacturer: google
 -
   headers:
@@ -3790,6 +3714,82 @@
     name: 'Yandex Browser Lite'
     modus: null
     version: 24.1.2.86
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 144.0.7559.0
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; tv43) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 YaBrowser/23.3.5.83.01 Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general Tablet'
+    marketingName: 'general Tablet'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: tablet
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser'
+    modus: null
+    version: 23.3.5.83.01
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 110.0.0.0
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; TQ65UFGHH11 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+  device:
+    architecture: null
+    deviceName: 'general Tablet'
+    marketingName: 'general Tablet'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: true
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: tablet
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 24.12.0.453
     manufacturer: yandex
     type: browser
     isbot: false

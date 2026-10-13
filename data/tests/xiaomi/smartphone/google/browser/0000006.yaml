@@ -1,5 +1,43 @@
 -
   headers:
+    user-agent: 'Dalvik/2.1.0 (Linux; U; Android 15; 26020RNB4L Build/AP3A.240905.015.A2)'
+  device:
+    architecture: null
+    deviceName: 26020RNB4L
+    marketingName: 'Redmi A7'
+    manufacturer: xiaomi
+    brand: xiaomi
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 1600
+      height: 720
+      touch: true
+      size: 6.9
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Android Browser'
+    modus: null
+    version: 2.1.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: null
+    manufacturer: apple
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; 2404ARN45A Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.159 Mobile Safari/537.36'
   device:
     architecture: null
@@ -903,4 +941,270 @@
   engine:
     name: Blink
     version: 153.0.0
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; Mi 10 Lite 5G; Build/QQ1B.200616.129) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'Mi 10 Lite 5G'
+    marketingName: 'Mi 10 Lite 5G'
+    manufacturer: xiaomi
+    brand: xiaomi
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2400
+      height: 1080
+      touch: true
+      size: 6.57
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 153.0.0.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 153.0.0.0
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; Redmi K70; Build/BP4A.250721.186) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'Redmi K70'
+    marketingName: 'Redmi K70'
+    manufacturer: xiaomi
+    brand: xiaomi
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 3200
+      height: 1440
+      touch: true
+      size: 6.67
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 153.0.0.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 153.0.0.0
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Dalvik/2.1.0 (Linux; U; Android 16; 25078RA3EE Build/BP2A.250605.031.A3)'
+  device:
+    architecture: null
+    deviceName: 25078RA3EE
+    marketingName: 'Redmi 15C 4G'
+    manufacturer: xiaomi
+    brand: xiaomi
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 1600
+      height: 720
+      touch: true
+      size: 6.9
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Android Browser'
+    modus: null
+    version: 2.1.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: null
+    manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 13; Mi 11T; Build/TD1A.220808.25) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'Mi 11T'
+    marketingName: 'Mi 11T'
+    manufacturer: xiaomi
+    brand: xiaomi
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2400
+      height: 1080
+      touch: true
+      size: 6.67
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 153.0.0.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 153.0.0.0
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; Mi 11 Lite 5G; Build/AP4A.251222.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'Mi 11 Lite 5G'
+    marketingName: 'Mi 11 Lite 5G'
+    manufacturer: xiaomi
+    brand: xiaomi
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 2400
+      height: 1080
+      touch: true
+      size: 6.55
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 153.0.0.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 153.0.0.0
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; Mi 11; Build/UD2A.240106.135) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'Mi 11'
+    marketingName: 'Mi 11'
+    manufacturer: xiaomi
+    brand: xiaomi
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 3200
+      height: 1440
+      touch: true
+      size: 6.81
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 153.0.0.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 153.0.0.0
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; Redmi K60; Build/SD1A.211218.39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'Redmi K60'
+    marketingName: 'Redmi K60'
+    manufacturer: xiaomi
+    brand: xiaomi
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 3200
+      height: 1440
+      touch: true
+      size: 6.67
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 153.0.0.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 153.0.0.0
     manufacturer: google

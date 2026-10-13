@@ -340,3 +340,41 @@
     name: Blink
     version: 130.0.6723.86
     manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; Tecno Spark 5 pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.6420.3 Mobile Safari/537.36 OPR/111.0.5168.3'
+  device:
+    architecture: null
+    deviceName: 'Spark 5 Pro'
+    marketingName: 'Spark 5 Pro'
+    manufacturer: tecno
+    brand: tecno
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 1600
+      height: 720
+      touch: true
+      size: 6.6
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Opera Mobile'
+    modus: null
+    version: 111.0.5168.3
+    manufacturer: opera
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 125.0.6420.3
+    manufacturer: google

