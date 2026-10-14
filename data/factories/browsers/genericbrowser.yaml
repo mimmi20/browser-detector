@@ -1133,6 +1133,7 @@ rules:
   '/(?<![a-z])uptime(?:bot)?\//i': uptimebot
   /googlestackdrivermonitoring/i: google-stackdriver-monitoring
   /infoguarddisclosureresearch/i: info-guard-disclosure-research
+  /dieanalysten-adresspruefung/i: dieanalysten-adresspruefung
   /cloudflare-traffic-manager/i: cloudflare-traffic-manager
   /google-stale-content-probe/i: google-stale-content-probe
   /google-transparency-report/i: google-transparency-report

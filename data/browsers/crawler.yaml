@@ -5620,3 +5620,12 @@ sunrise-transcription-reach:
     search:
       - SunriseTranscriptionReach
   engine: unknown
+dieanalysten-adresspruefung:
+  name: dieanalysten-Adresspruefung
+  manufacturer: die-analysten
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - dieanalysten-Adresspruefung
+  engine: unknown
