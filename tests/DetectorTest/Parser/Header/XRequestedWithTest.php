@@ -671,6 +671,9 @@ final class XRequestedWithTest extends TestCase
             ['com.alldocuments.pdfreader.tools', true, 'all-documents-pdf', true, null, false, Os::unknown],
             ['com.casttotv.screenmirroring.smarttv.castvideo', true, 'cast-to-tv-screen', true, null, false, Os::unknown],
             ['com.zhiliaoapp.musically', true, 'tiktok', true, null, false, Os::unknown],
+            ['com.fevdev.nakedbrowser', true, 'naked-browser', true, null, false, Os::unknown],
+            ['com.fevdev.nakedbrowserlts', true, 'naked-browser', true, null, false, Os::unknown],
+            ['com.fevdev.nakedbrowserpro', true, 'naked-browser-pro', true, null, false, Os::unknown],
         ];
     }
 }

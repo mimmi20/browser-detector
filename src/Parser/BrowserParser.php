@@ -13,9 +13,11 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser;
 
+use ArgumentCountError;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use Override;
 use UaParser\BrowserParserInterface;
+use ValueError;
 
 use function sprintf;
 
@@ -41,10 +43,14 @@ final readonly class BrowserParser implements BrowserParserInterface
     {
         $mode = $this->rulefileParser->parseFile(self::GENERIC_FILE, $useragent, 'unknown');
 
-        return $this->rulefileParser->parseFile(
-            sprintf(self::SPECIFIC_FILE, $mode),
-            $useragent,
-            'unknown',
-        );
+        try {
+            return $this->rulefileParser->parseFile(
+                sprintf(self::SPECIFIC_FILE, $mode),
+                $useragent,
+                'unknown',
+            );
+        } catch (ArgumentCountError | ValueError) {
+            return 'unknown';
+        }
     }
 }

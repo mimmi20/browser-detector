@@ -138,3 +138,45 @@
     size: 42
   type: tv
   platform: null
+'jvc 4k smart tv nz':
+  deviceName: '4K Smart TV NZ'
+  marketingName: '4K Smart TV'
+  manufacturer: jvc
+  brand: jvc
+  dualOrientation: false
+  simCount: 0
+  display:
+    width: 3840
+    height: 2160
+    touch: false
+    size: null
+  type: tv
+  platform: android-tv
+'jvc 4k isdb tv':
+  deviceName: '4K ISDB TV'
+  marketingName: 4K
+  manufacturer: jvc
+  brand: jvc
+  dualOrientation: false
+  simCount: 0
+  display:
+    width: 3840
+    height: 2160
+    touch: false
+    size: null
+  type: tv
+  platform: android-tv
+'jvc 4k atsc tv':
+  deviceName: '4K ATSC TV'
+  marketingName: 4K
+  manufacturer: jvc
+  brand: jvc
+  dualOrientation: false
+  simCount: 0
+  display:
+    width: 3840
+    height: 2160
+    touch: false
+    size: null
+  type: tv
+  platform: android-tv

@@ -3237,3 +3237,41 @@
     name: Blink
     version: 151.0.0
     manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-A202F Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/153.0.8010.36 Mobile Safari/537.36 OcIdWebView ({\"os\":\"Android\",\"osVersion\":\"30\",\"app\":\"com.google.android.gms\",\"appVersion\":\"263332001\",\"style\":3,\"callingAppId\":\"com.google.android.googlequicksearchbox\",\"isDarkTheme\":false})'
+  device:
+    architecture: null
+    deviceName: SM-A202F
+    marketingName: 'Galaxy A20e'
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 1560
+      height: 720
+      touch: true
+      size: 5.8
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Google App'
+    modus: null
+    version: null
+    manufacturer: google
+    type: mobile-application
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 153.0.8010.36
+    manufacturer: google

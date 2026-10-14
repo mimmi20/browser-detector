@@ -13,6 +13,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Header;
 
+use ArgumentCountError;
 use BrowserDetector\Iterator\FilterIterator;
 use CallbackFilterIterator;
 use RecursiveDirectoryIterator;
@@ -21,6 +22,7 @@ use SplFileInfo;
 use Symfony\Component\Yaml\Exception\ParseException;
 use Symfony\Component\Yaml\Yaml;
 use UnexpectedValueException;
+use ValueError;
 
 use function array_any;
 use function array_filter;
@@ -52,7 +54,11 @@ trait AutoUpdateDeviceDataTrait
             return;
         }
 
-        $file = sprintf(__DIR__ . '/../../../data/device-mapping/%s.yaml', $company);
+        try {
+            $file = sprintf(__DIR__ . '/../../../data/device-mapping/%s.yaml', $company);
+        } catch (ArgumentCountError | ValueError) {
+            return;
+        }
 
         $devicesFromMappingFile = [];
 

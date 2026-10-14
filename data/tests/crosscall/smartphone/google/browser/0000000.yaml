@@ -82,6 +82,44 @@
     manufacturer: google
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; Stellar-M6E Build/AQ3A.250226.002) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.91 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: Stellar-M6e
+    marketingName: Stellar-M6e
+    manufacturer: crosscall
+    brand: crosscall
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 2340
+      height: 1080
+      touch: true
+      size: 6.09
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 149.0.7827.91
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
     sec-ch-ua-model: Stellar-M6
     sec-ch-ua-platform-version: 14.0.0
     sec-ch-ua: '"Google Chrome";v="131.0.6778.261", "Chromium";v="131.0.6778.261", "Not_A Brand";v="24.0.0.0"'

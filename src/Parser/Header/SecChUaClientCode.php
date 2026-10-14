@@ -56,7 +56,7 @@ final class SecChUaClientCode implements ClientCodeInterface
             'avastsecurebrowser' => 'avast secure browser',
             'wavebrowser' => 'wave-browser',
             'duckduckgo' => 'duckduck app',
-            'samsung internet' => 'samsungbrowser',
+            'samsung internet', 'samsung browser' => 'samsungbrowser',
             'norton secure browser', 'norton private browser' => 'norton-secure-browser',
             'microsoft edge webview2' => 'edge webview',
             'headlesschrome' => 'headless-chrome',
@@ -90,6 +90,7 @@ final class SecChUaClientCode implements ClientCodeInterface
             'ray' => 'ray-browser',
             'privatebrowsing' => 'private-browsing',
             'puffin' => 'puffin-cloud-browser',
+            'reflectionbot' => 'reflection-bot',
             default => $code,
         };
     }

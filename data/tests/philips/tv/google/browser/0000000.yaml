@@ -152,6 +152,44 @@
     manufacturer: google
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 9; PHILIPS 4K TV Build/PTM5.200218.905; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: '4K TV'
+    marketingName: 4K
+    manufacturer: philips
+    brand: philips
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: 3840
+      height: 2160
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 138.0.7204.179
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 138.0.7204.179
+    manufacturer: google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; Philips Google TV TA5 Build/UKN2.241117.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
     architecture: null
@@ -307,8 +345,8 @@
     user-agent: 'Mozilla/5.0 (Linux; Android 11; Philips Google TV TA7 Build/RTM5.220609.199; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
     architecture: null
-    deviceName: 'general Philips TV'
-    marketingName: 'general Philips TV'
+    deviceName: 'Google TV TA7'
+    marketingName: 'Android TV'
     manufacturer: philips
     brand: philips
     dualOrientation: false
@@ -345,8 +383,8 @@
     user-agent: 'Mozilla/5.0 (Linux; Android 11; Philips Google TV TA6 LT Build/RTM9.241015.009; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
     architecture: null
-    deviceName: 'general Philips TV'
-    marketingName: 'general Philips TV'
+    deviceName: 'Google TV TA6 LT'
+    marketingName: 'Android TV'
     manufacturer: philips
     brand: philips
     dualOrientation: false
@@ -383,8 +421,8 @@
     user-agent: 'Mozilla/5.0 (Linux; Android 11; Philips FHD Android TV Build/RTM2.210929.098; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.159 Mobile Safari/537.36'
   device:
     architecture: null
-    deviceName: 'general Philips TV'
-    marketingName: 'general Philips TV'
+    deviceName: 'FHD Android TV'
+    marketingName: FHD
     manufacturer: philips
     brand: philips
     dualOrientation: false
@@ -415,6 +453,44 @@
   engine:
     name: Blink
     version: 149.0.7827.159
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; Philips 4K A1 Build/RTM8.240401.161; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: '4K A1'
+    marketingName: 4K
+    manufacturer: philips
+    brand: philips
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: 3840
+      height: 2160
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 149.0.7827.91
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
     manufacturer: google
 -
   headers:

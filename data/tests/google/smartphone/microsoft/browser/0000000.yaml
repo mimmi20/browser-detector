@@ -1675,3 +1675,41 @@
     name: WebKit
     version: 537.36.0
     manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; Pixel 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 EdgA/136.0.0.0'
+  device:
+    architecture: null
+    deviceName: 'Pixel 8'
+    marketingName: 'Pixel 8'
+    manufacturer: google
+    brand: google
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 2400
+      height: 1080
+      touch: true
+      size: 6.2
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Edge Mobile for Android'
+    modus: null
+    version: 136.0.0.0
+    manufacturer: microsoft
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 136.0.0.0
+    manufacturer: google

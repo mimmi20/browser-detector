@@ -536,3 +536,51 @@
     name: Blink
     version: 149.0.7827.91
     manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: '"9445X"'
+    sec-ch-ua-platform: '"Android"'
+    sec-ch-ua-platform-version: '"16.0.0"'
+    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
+    sec-ch-ua-full-version: '"154.0.8037.57"'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-form-factors: '"Desktop"'
+    sec-ch-ua-mobile: '?0'
+    sec-ch-ua-wow64: '?0'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 9445X
+    marketingName: 'Tab A1 Plus'
+    manufacturer: tcl
+    brand: tcl
+    dualOrientation: true
+    simCount: 0
+    display:
+      width: 2400
+      height: 1600
+      touch: true
+      size: 12.2
+    type: tablet
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: Chrome
+    modus: null
+    version: 154.0.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 154.0.0
+    manufacturer: google

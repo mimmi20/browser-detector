@@ -1,5 +1,43 @@
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; FlowBox-Z4 Build/UKG3.250826.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: FlowBox-Z4
+    marketingName: FlowBox-Z4
+    manufacturer: telecom-argentina
+    brand: telecom-argentina
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv-set-top-box
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 149.0.7827.91
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; FlowBox-Z3 Build/UKG3.250826.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
     architecture: null
@@ -7,7 +45,7 @@
     marketingName: FlowBox-Z3
     manufacturer: telecom-argentina
     brand: telecom-argentina
-    dualOrientation: null
+    dualOrientation: false
     simCount: 0
     display:
       width: null
@@ -45,7 +83,7 @@
     marketingName: FlowBox-F2
     manufacturer: telecom-argentina
     brand: telecom-argentina
-    dualOrientation: null
+    dualOrientation: false
     simCount: 0
     display:
       width: null
@@ -73,4 +111,42 @@
   engine:
     name: Blink
     version: 149.0.7827.91
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; FlowBox-S2 Build/RTT0.211009.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.159 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: FlowBox-S2
+    marketingName: FlowBox-S2
+    manufacturer: telecom-argentina
+    brand: telecom-argentina
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv-set-top-box
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 149.0.7827.159
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 149.0.7827.159
     manufacturer: google

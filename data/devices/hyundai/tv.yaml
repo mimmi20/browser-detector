@@ -28,7 +28,7 @@
   platform: null
 'hyundai 4k google tv':
   deviceName: '4K Google TV'
-  marketingName: ''
+  marketingName: '4K Google TV'
   manufacturer: hyundai
   brand: hyundai
   dualOrientation: false
@@ -38,5 +38,19 @@
     height: null
     touch: false
     size: null
+  type: tv
+  platform: null
+'hyundai hyled5017w4km':
+  deviceName: 'HYLED5017W4KM'
+  marketingName: 'HYLED5017W4KM'
+  manufacturer: hyundai
+  brand: hyundai
+  dualOrientation: false
+  simCount: 0
+  display:
+    width: 3840
+    height: 2160
+    touch: false
+    size: 50
   type: tv
   platform: null

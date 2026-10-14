@@ -198,11 +198,12 @@ rules:
   /slack-imgproxy/i: slack-img-proxy
   '/snap[ -]url[ -]preview(?: service)?/i': 'snap url preview service'
   /magpie-crawler/i: 'magpie crawler'
+  /oai-searchbot/i: oai-searchbot
   /uptimerobot/i: uptimerobot
   '/fdse robot/i': 'fdse robot'
   /gaisbot/i: gais-bot
   /thinkchaos/i: think-chaos
-  '/(?<![\/\(])robots|testcrawler/i': testcrawler
+  '/(?<![\/\(])robots(?!\.txt)|testcrawler/i': testcrawler
   /mediumbot-metatagfetcher/i: mediumbot-metatag-fetcher
   /mediumbot-proxyfetcher/i: mediumbot-proxy-fetcher
   /arquivo-web-crawler/i: arquivo-web-crawler
@@ -1149,6 +1150,7 @@ rules:
   /search\.marginalia\.nu/i: marginalia-crawler
   '/hubspot ads link fetcher/i': hubspot-ads-link-fetcher
   '/victorreader stream trek/i': victor-reader-stream-trek
+  /moonrankbot.*moonrank\.ai/i: moonrank-ai-bot
   /heurekabot-imagefulltext/i: heureka-bot-image-fulltext
   '/boardreader blog indexer/i': boardreader-blog-indexer
   /cloudflare-alwaysonline/i: 'cloudflare alwaysonline'
@@ -1232,6 +1234,7 @@ rules:
   '/barracuda sentinel/i': barracuda-sentinel
   '/skype for business/i': skype-for-business
   '/syncml http client/i': lotus-notes-traveler
+  /voco-scale-research/i: voco-scale-research
   /steamchaturllookup/i: steam-chat-url-lookup
   /dynatracesynthetic/i: dynatrace-synthetic
   /cpanel-http-client/i: cpanel-http-client
@@ -1370,6 +1373,7 @@ rules:
   /micromessenger/i: 'wechat app'
   /companymatcher/i: company-matcher
   /serendeputybot/i: serendeputy-bot
+  /nekuda-scanner/i: nekuda-scanner
   /pingadmin\.ru/i: ping-admin-ru
   /repolookoutbot/i: repo-lookout-bot
   '/alittle client/i': a-little-client
@@ -1406,6 +1410,7 @@ rules:
   '/proxy ?checker/i': proxy-checker
   /shopifychecker/i: shopify-checker
   /wp2shell-check/i: wp2shell-check
+  /momentleadsbot/i: moment-leads-bot
   /censysinspect/i: censysinspect
   /t3versionsbot/i: t3-versions-bot
   '/acorn phoenix/i': acorn-phoenix
@@ -1419,7 +1424,6 @@ rules:
   /yandexmetrika/i: yandex-metrika
   /woorankreview/i: woorank-review
   /perplexitybot/i: perplexity-bot
-  /oai-searchbot/i: oai-searchbot
   '/crazy browser/i': 'crazy browser'
   /securityaudit/i: security-audit
   /yandextracker/i: yandex-tracker
@@ -1448,6 +1452,7 @@ rules:
   /mistralai-user/i: mistral-ai-user
   '/syncml client/i': lotus-notes-traveler
   /isonsearchbot/i: ison-search-bot
+  /keenable-user/i: keenable-user
   /researchscan/i: researchscan
   /dataprovider/i: dataprovider-spider
   '/inet browser/i': inet-browser
@@ -1579,6 +1584,8 @@ rules:
   /dnesakcebot/i: dnes-akce-bot
   /domaindrift/i: domain-drift
   /claude-user/i: claude-user
+  /google-test/i: google-test-bot
+  /keenablebot/i: keenable-bot
   /domainscan/i: 'domainscan server monitoring'
   /jobroboter/i: jobroboter
   /webwikibot/i: webwikibot
@@ -1832,6 +1839,9 @@ rules:
   /mycellar/i: my-cellar
   /bravebot/i: brave-bot
   /pangubot/i: pangu-bot
+  /vegi bot/i: vegi-bot
+  /sens\.ai/i: sens-ai
+  /raylubot/i: raylu-bot
   /whatcms/i: what-cms
   /phoenix/i: phoenix
   /kagibot/i: kagi-bot
@@ -1928,6 +1938,7 @@ rules:
   /acrobat/i: adobe-acrobat-reader
   /stealer/i: stealer
   /buildah/i: buildah
+  /vegebot/i: vege-bot
   /deno\//i: deno
   /espn\//i: 'espn radio'
   /hulu\//i: hulu
@@ -1970,6 +1981,7 @@ rules:
   /httprs/i: httprs
   /skopeo/i: skopeo
   /^tpa\//i: the-podcast-app
+  /aipbot/i: aipbot
   /mjbot/i: mjbot
   /axios/i: axios
   /bsbot/i: bsbot

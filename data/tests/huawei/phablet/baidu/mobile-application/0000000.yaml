@@ -74,3 +74,41 @@
     name: T7
     version: 11.20.0
     manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 9; TNY-AL00 Build/HUAWEITNY-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/76.0.3809.89 Mobile Safari/537.36 T7/11.18 SP-engine/2.14.0 baiduboxapp/11.18.0.12 (Baidu; P1 9)'
+  device:
+    architecture: null
+    deviceName: TNY-AL00
+    marketingName: 'Honor Magic 2 Premium Edition'
+    manufacturer: huawei
+    brand: huawei
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 2340
+      height: 1080
+      touch: true
+      size: 7.12
+    type: phablet
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Baidu Box App'
+    modus: null
+    version: 11.18.0.12
+    manufacturer: baidu
+    type: mobile-application
+    isbot: false
+    bits: null
+  engine:
+    name: T7
+    version: 11.18.0
+    manufacturer: baidu

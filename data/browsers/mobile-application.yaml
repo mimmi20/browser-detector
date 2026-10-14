@@ -3009,6 +3009,7 @@ terabox-app:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - TeraBox
+      - dubox;
   engine: null
 netflix-app:
   name: 'Netflix App'

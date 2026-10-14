@@ -3330,3 +3330,31 @@
     size: 5.7
   type: phablet
   platform: android
+'xiaomi redmi note 9s pro':
+  deviceName: 'Redmi Note 9S Pro'
+  marketingName: 'Redmi Note 9S Pro'
+  manufacturer: xiaomi
+  brand: xiaomi
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 2400
+    height: 1080
+    touch: true
+    size: 6.67
+  type: phablet
+  platform: android
+'xiaomi redmi note 9 pro 5g':
+  deviceName: 'Redmi Note 9 Pro 5G'
+  marketingName: 'Redmi Note 9 Pro 5G'
+  manufacturer: xiaomi
+  brand: xiaomi
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 2400
+    height: 1080
+    touch: true
+    size: 6.67
+  type: phablet
+  platform: android

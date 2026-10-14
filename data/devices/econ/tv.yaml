@@ -1,3 +1,17 @@
+'general econ tv':
+  deviceName: 'general Econ tv'
+  marketingName: 'general Econ tv'
+  manufacturer: econ
+  brand: econ
+  dualOrientation: false
+  simCount: 0
+  display:
+    width: 1366
+    height: 768
+    touch: false
+    size: 32
+  type: tv
+  platform: null
 'econ ex-32hs024b':
   deviceName: EX-32HS024B
   marketingName: EX-32HS024B
@@ -10,5 +24,33 @@
     height: 768
     touch: false
     size: 32
+  type: tv
+  platform: null
+'econ ex-40fs013b':
+  deviceName: EX-40FS013B
+  marketingName: EX-40FS013B
+  manufacturer: econ
+  brand: econ
+  dualOrientation: false
+  simCount: 0
+  display:
+    width: 1920
+    height: 1080
+    touch: false
+    size: 40
+  type: tv
+  platform: null
+'econ ex-65us007b':
+  deviceName: EX-65US007B
+  marketingName: EX-65US007B
+  manufacturer: econ
+  brand: econ
+  dualOrientation: false
+  simCount: 0
+  display:
+    width: 3840
+    height: 2160
+    touch: false
+    size: 65
   type: tv
   platform: null

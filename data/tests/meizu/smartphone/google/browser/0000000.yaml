@@ -342,44 +342,6 @@
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 9; ARTLINE-KMX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.92 Safari/537.36'
-  device:
-    architecture: null
-    deviceName: MX
-    marketingName: MX
-    manufacturer: meizu
-    brand: meizu
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: 960
-      height: 640
-      touch: true
-      size: 4
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: Chrome
-    modus: null
-    version: 96.0.4664.92
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 96.0.4664.92
-    manufacturer: google
--
-  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; MEIZU 18X Build/RKQ1.210614.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36'
   device:
     architecture: null
@@ -719,42 +681,4 @@
   engine:
     name: Blink
     version: 124.0.6367.219
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 10; T3AMX3 Build/QTT5.200819.003; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: MX
-    marketingName: MX
-    manufacturer: meizu
-    brand: meizu
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: 960
-      height: 640
-      touch: true
-      size: 4
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Chrome WebView'
-    modus: null
-    version: 149.0.7827.91
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 149.0.7827.91
     manufacturer: google
