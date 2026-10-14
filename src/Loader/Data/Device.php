@@ -160,11 +160,14 @@ final class Device implements DataInterface
                     is_int($data['display']['height']) || $data['display']['height'] === null,
                     get_debug_type($data['display']['height']),
                 );
-                assert(is_bool($data['display']['touch']), get_debug_type($data['display']['touch']));
                 assert(
-                    is_float($data['display']['size']) || is_int(
-                        $data['display']['size'],
-                    ) || $data['display']['size'] === null,
+                    is_bool($data['display']['touch']) || $data['display']['touch'] === null,
+                    get_debug_type($data['display']['touch']),
+                );
+                assert(
+                    is_float($data['display']['size'])
+                    || is_int($data['display']['size'])
+                    || $data['display']['size'] === null,
                     get_debug_type($data['display']['size']),
                 );
                 assert(
