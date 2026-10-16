@@ -472,6 +472,7 @@ final readonly class Headers
                         case 'cohere-ai':
                         case 'facebook app':
                         case 'shap-bot':
+                        case 'tiktok':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 

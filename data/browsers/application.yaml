@@ -1458,3 +1458,12 @@ bykreator-workstation:
     search:
       - BykreatorWorkstation
   engine: null
+kerio-connect:
+  name: KerioConnect
+  manufacturer: gfi
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - KerioConnect
+  engine: null

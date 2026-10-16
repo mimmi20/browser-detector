@@ -5611,3 +5611,21 @@ moment-leads-bot:
     search:
       - MomentLeadsBot
   engine: unknown
+sunrise-transcription-reach:
+  name: SunriseTranscriptionReach
+  manufacturer: sunrise-transcription
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SunriseTranscriptionReach
+  engine: unknown
+dieanalysten-adresspruefung:
+  name: dieanalysten-Adresspruefung
+  manufacturer: die-analysten
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - dieanalysten-Adresspruefung
+  engine: unknown
