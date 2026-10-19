@@ -25,7 +25,11 @@ rules:
   '/lge; mtc/i': mtc
   /50sfsw6m|55sfsw6m/i: simfer
   '/[;(] ?lge? ?;|lg google tv|ti320-du|webos\.tv|lgwebostv|web0s;|linuxweb0s|lgsmarttv/i': lg
+  '/star ?light[;,)]/i': star-light
+  '/telesystem[;,)]/i': tele-system
   '/awox(?:_oem)?;/i': awox
+  '/smarttech[;,)]/i': smart-tech
+  '/saba[;,)]/i': saba
   '/[;(] ?hisense;|hisense_gx1200v|hisense google tv|hisense-nt72671d|hismart\-?tv|he55a6103fuwt/i': hisense
   '/[;(] ?telefunken;|telefunken,/i': telefunken
   '/[;(] ?toshiba;|toshiba[,\-]/i': toshiba
@@ -95,6 +99,7 @@ rules:
   /xgem/i: xgem
   /hoco/i: hoco
   '/k&m,/i': kruger-matz
+  /nei[;,)]/i: nei
   '/[;(] ?mtk;/i': mediatek
   /netcast/i: lg
   /netgem/i: netgem

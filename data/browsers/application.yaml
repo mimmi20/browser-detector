@@ -1467,3 +1467,12 @@ kerio-connect:
     search:
       - KerioConnect
   engine: null
+jamf-pro-self-service-plus:
+  name: 'Jamf Pro Self Service Plus'
+  manufacturer: jamf
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Self Service\\+'
+  engine: null
