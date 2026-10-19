@@ -25,6 +25,7 @@ rules:
   '/lge; mtc/i': mtc
   /50sfsw6m|55sfsw6m/i: simfer
   '/[;(] ?lge? ?;|lg google tv|ti320-du|webos\.tv|lgwebostv|web0s;|linuxweb0s|lgsmarttv/i': lg
+  '/awox(?:_oem)?;/i': awox
   '/[;(] ?hisense;|hisense_gx1200v|hisense google tv|hisense-nt72671d|hismart\-?tv|he55a6103fuwt/i': hisense
   '/[;(] ?telefunken;|telefunken,/i': telefunken
   '/[;(] ?toshiba;|toshiba[,\-]/i': toshiba
@@ -51,7 +52,6 @@ rules:
   '/tivo(?!os)|tcd[4-9a-f]{3}000/i': tivo
   /xfinity|wnxi11aei|scxi11bei|scxi11aic|tx061aei|ax061aei|ax014anc|ax014anm|sx022an|pxd01ani|px051aei|px032ani|px013an|mx011an|cxd01ani|ax013an/i: comcast
   '/shield android tv/i': nvidia
-  '/awox(?:_oem)?;/i': awox
   '/essentiel[;,)]|essentiel b/i': essentiel-b
   /blaupunkt_umc/i: blaupunkt
   '/edenwood[;,)]/i': edenwood
@@ -73,6 +73,7 @@ rules:
   /ecostar/i: ecostar
   /profilo/i: profilo
   /pioneer/i: pioneer
+  /rombica/i: rombica
   /43lex-/i: bbk
   /astro;/i: astro-my
   /dm-led/i: digma

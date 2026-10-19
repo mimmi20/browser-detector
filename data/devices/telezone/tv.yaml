@@ -1,0 +1,28 @@
+'general telezone tv':
+  deviceName: 'general Telezone TV'
+  marketingName: 'general Telezone TV'
+  manufacturer: telezone
+  brand: telezone
+  dualOrientation: false
+  simCount: 0
+  display:
+    width: null
+    height: null
+    touch: false
+    size: null
+  type: tv
+  platform: linux
+'telezone tz50wf1':
+  deviceName: TZ50WF1
+  marketingName: TZ50WF1
+  manufacturer: telezone
+  brand: telezone
+  dualOrientation: false
+  simCount: 0
+  display:
+    width: 3840
+    height: 2160
+    touch: false
+    size: 50
+  type: tv
+  platform: linux
