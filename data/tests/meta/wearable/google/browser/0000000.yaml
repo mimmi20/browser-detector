@@ -36,3 +36,41 @@
     name: Blink
     version: 146.0.7680.188
     manufacturer: google
+-
+  headers:
+    user-agent: 'Dalvik/2.1.0 (Linux; U; Android 14; Quest 3 Build/UP1A.231005.007.A1)'
+  device:
+    architecture: null
+    deviceName: 'Quest 3'
+    marketingName: 'Quest 3'
+    manufacturer: meta
+    brand: meta
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: 2208
+      height: 2064
+      touch: true
+      size: null
+    type: wearable
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Android Browser'
+    modus: null
+    version: 2.1.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: null
+    manufacturer: apple

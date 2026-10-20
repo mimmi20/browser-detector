@@ -378,3 +378,41 @@
     name: WebKit
     version: null
     manufacturer: apple
+-
+  headers:
+    user-agent: 'com.google.GoogleMobile/440.2 iPad/27.0.1 hw/iPad14_6'
+  device:
+    architecture: null
+    deviceName: 'iPad 14,6'
+    marketingName: 'iPad Pro 12.9" (6th Gen) 5G'
+    manufacturer: apple
+    brand: apple
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 2732
+      height: 2048
+      touch: true
+      size: 12.9
+    type: fone-pad
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 27.0.1
+    manufacturer: apple
+    bits: null
+  client:
+    name: 'Google Mobile App'
+    modus: null
+    version: 440.2.0
+    manufacturer: google
+    type: mobile-application
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: null
+    manufacturer: apple

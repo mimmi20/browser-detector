@@ -2514,3 +2514,163 @@
     name: Blink
     version: 154.0.8037.61
     manufacturer: google
+-
+  headers:
+    user-agent: 'Instagram 450.0.0.50.77 Android (36/16; 450dpi; 1080x2340; samsung; SM-S938B; pa3q; qcom; de_DE; 1084452405)'
+  device:
+    architecture: null
+    deviceName: SM-S938B
+    marketingName: 'Galaxy S25 Ultra 5G (International)'
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 3120
+      height: 1440
+      touch: true
+      size: 6.9
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Instagram App'
+    modus: null
+    version: 450.0.0.50.77
+    manufacturer: meta
+    type: mobile-application
+    isbot: false
+    bits: null
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; SM-A156U Build/AP3A.240905.015.A2; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.7339.119 Mobile Safari/537.36 MetaIAB'
+  device:
+    architecture: null
+    deviceName: SM-A156U
+    marketingName: 'Galaxy A15 5G (USA)'
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2340
+      height: 1080
+      touch: true
+      size: 6.5
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Facebook App'
+    modus: null
+    version: null
+    manufacturer: meta
+    type: mobile-application
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 140.0.7339.119
+    manufacturer: google
+-
+  headers:
+    x-requested-with: com.facebook.orca
+    sec-ch-ua-platform: '"Android"'
+    sec-ch-ua: '"Android WebView";v="153", "Not_A Brand";v="8", "Chromium";v="153"'
+    sec-ch-ua-mobile: '?1'
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-A566B Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/153.0.8010.36 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/581.0.0.49.91;]'
+  device:
+    architecture: null
+    deviceName: SM-A566B
+    marketingName: 'Galaxy A56 5G (International)'
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2340
+      height: 1080
+      touch: true
+      size: 6.7
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Facebook Messenger App'
+    modus: null
+    version: 581.0.0.49.91
+    manufacturer: meta
+    type: mobile-application
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 153.0.0
+    manufacturer: google
+-
+  headers:
+    x-requested-with: com.facebook.orca
+    sec-ch-ua-platform: '"Android"'
+    sec-ch-ua: '"Chromium";v="154", "Android WebView";v="154", "Not A(Brand";v="99"'
+    sec-ch-ua-mobile: '?1'
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-A346B Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/154.0.8037.57 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/581.0.0.49.91;]'
+  device:
+    architecture: null
+    deviceName: SM-A346B
+    marketingName: 'Galaxy A34 5G (International)'
+    manufacturer: samsung
+    brand: samsung
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 2340
+      height: 1080
+      touch: true
+      size: 6.6
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Facebook Messenger App'
+    modus: null
+    version: 581.0.0.49.91
+    manufacturer: meta
+    type: mobile-application
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 154.0.0
+    manufacturer: google

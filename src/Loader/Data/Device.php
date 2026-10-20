@@ -122,12 +122,22 @@ final class Device implements DataInterface
                 }
 
                 assert(
-                    is_string($data['deviceName']) || $data['deviceName'] === null,
-                    get_debug_type($data['deviceName']),
+                    is_int($data['deviceName'])
+                    || is_string($data['deviceName'])
+                    || $data['deviceName'] === null,
+                    sprintf(
+                        'the devicename should be an Int, a String or NUll, but was %s',
+                        get_debug_type($data['deviceName']),
+                    ),
                 );
                 assert(
-                    is_string($data['marketingName']) || $data['marketingName'] === null,
-                    get_debug_type($data['marketingName']),
+                    is_int($data['marketingName'])
+                    || is_string($data['marketingName'])
+                    || $data['marketingName'] === null,
+                    sprintf(
+                        'the marketingName should be an Int, a String or NUll, but was %s',
+                        get_debug_type($data['marketingName']),
+                    ),
                 );
                 assert(
                     is_string($data['manufacturer']) || $data['manufacturer'] === null,
@@ -150,11 +160,14 @@ final class Device implements DataInterface
                     is_int($data['display']['height']) || $data['display']['height'] === null,
                     get_debug_type($data['display']['height']),
                 );
-                assert(is_bool($data['display']['touch']), get_debug_type($data['display']['touch']));
                 assert(
-                    is_float($data['display']['size']) || is_int(
-                        $data['display']['size'],
-                    ) || $data['display']['size'] === null,
+                    is_bool($data['display']['touch']) || $data['display']['touch'] === null,
+                    get_debug_type($data['display']['touch']),
+                );
+                assert(
+                    is_float($data['display']['size'])
+                    || is_int($data['display']['size'])
+                    || $data['display']['size'] === null,
                     get_debug_type($data['display']['size']),
                 );
                 assert(

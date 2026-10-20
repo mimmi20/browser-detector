@@ -1133,6 +1133,7 @@ rules:
   '/(?<![a-z])uptime(?:bot)?\//i': uptimebot
   /googlestackdrivermonitoring/i: google-stackdriver-monitoring
   /infoguarddisclosureresearch/i: info-guard-disclosure-research
+  /dieanalysten-adresspruefung/i: dieanalysten-adresspruefung
   /cloudflare-traffic-manager/i: cloudflare-traffic-manager
   /google-stale-content-probe/i: google-stale-content-probe
   /google-transparency-report/i: google-transparency-report
@@ -1142,6 +1143,7 @@ rules:
   /google-adwords-displayads/i: google-adwords-displayads
   '/overcast\/.+podcast sync/i': overcast-podcast-sync
   '/clickagy intelligence bot/i': clickagy-intelligence-bot
+  /sunrisetranscriptionreach/i: sunrise-transcription-reach
   '/sunrisebrowser|sunrise[\/ ]/i': sunrise
   /vu-server-health-scanner/i: vu-server-health-scanner
   /cloudflare-smart-transit/i: cloudflare-smart-transit

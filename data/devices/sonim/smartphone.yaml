@@ -12,3 +12,31 @@
     size: 5.5
   type: smartphone
   platform: android
+'sonim xp8800':
+  deviceName: XP8800
+  marketingName: XP8
+  manufacturer: sonim
+  brand: sonim
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 1920
+    height: 1080
+    touch: true
+    size: 5
+  type: smartphone
+  platform: android
+'sonim xp7700':
+  deviceName: XP7700
+  marketingName: XP7
+  manufacturer: sonim
+  brand: sonim
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: 800
+    height: 480
+    touch: true
+    size: 3
+  type: smartphone
+  platform: android

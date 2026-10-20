@@ -3324,3 +3324,41 @@
     name: Gecko
     version: 1.9.2.13
     manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; WARP-Research/1.0; shop-tech-check)'
+  device:
+    architecture: null
+    deviceName: 'general Desktop'
+    marketingName: 'general Desktop'
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: desktop
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: OS/2
+    marketingName: OS/2
+    version: null
+    manufacturer: ibm
+    bits: null
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla

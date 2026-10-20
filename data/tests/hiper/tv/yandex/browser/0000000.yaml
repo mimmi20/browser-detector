@@ -1,5 +1,81 @@
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 11; Hiper S-Pad) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.701 YaSearchBrowser/23.93/apad BroPP/1.0 YaSearchApp/23.93/apad webOmni SA/3 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general HIPER device'
+    marketingName: 'general HIPER device'
+    manufacturer: hiper
+    brand: hiper
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Search Browser'
+    modus: null
+    version: 23.93.0
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 116.0.5845.701
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 11; HIPER-M-Pad) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.505 YaApp_Android/24.16/apad YaSearchBrowser/24.16/apad BroPP/1.0 SA/3 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'general HIPER device'
+    marketingName: 'general HIPER device'
+    manufacturer: hiper
+    brand: hiper
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Search Browser'
+    modus: null
+    version: 24.16.0
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 120.0.6099.505
+    manufacturer: google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; H24YQ2200GR-2 Build/PPR2.180905.006.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.279 (lite) TV Safari/537.36'
   device:
     architecture: null

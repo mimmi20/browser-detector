@@ -102,7 +102,7 @@ rules:
   /edgw\//i: 'edge webview'
   /edg\//i: edge
   /citrixchromeapp/i: 'citrix chrome app'
-  /kiwi/i: kiwi
+  /kiwi chrome/i: kiwi
   /yaanibrowser/i: yaanibrowser
   /refindbot/i: refindbot
   /instagram/i: 'instagram app'
@@ -392,6 +392,7 @@ rules:
   /lagatos-browser/i: lagatos-browser
   /beakerbrowser/i: beaker-browser
   /trellodesktop/i: trello-desktop
+  /kerioconnect/i: kerio-connect
   /claude-user/i: claude-user
   /notionmail/i: notion-mail
   /tweakstyle/i: tweak-style

@@ -74,3 +74,41 @@
     name: Blink
     version: 88.0.4324.182
     manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Odin/88.4324.2.10 Safari/537.36 HbbTV/1.6.1 (+DRM;Hisense;2022_VS1243FD1_AWOX;V0100.01.00S.N0526;VS1243FD1;SmartTV_2022_1_FHD;) FVC/7.0 (Hisense;SmartTV_2022_1_FHD;) LaTivu_1.0.1_2022'
+  device:
+    architecture: null
+    deviceName: 'Smart TV (2022)'
+    marketingName: 'Smart TV (2022)'
+    manufacturer: awox
+    brand: awox
+    dualOrientation: false
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    bits: null
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: null
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Odin Browser'
+    modus: null
+    version: 88.4324.2.10
+    manufacturer: hisense
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 88.0.4324.182
+    manufacturer: google

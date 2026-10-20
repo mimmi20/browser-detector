@@ -1444,6 +1444,44 @@
     manufacturer: google
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 10; Camon 20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.54 YaSearchBrowser/26.46.1 BroPP/1.0 YaSearchApp/26.46.1 webOmni Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'Camon 20'
+    marketingName: 'Camon 20'
+    manufacturer: tecno
+    brand: tecno
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2400
+      height: 1080
+      touch: true
+      size: 6.67
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Search Browser'
+    modus: null
+    version: 26.46.1
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 146.0.7680.54
+    manufacturer: google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; TECNO KN8) AppleWebKit/537.36 (KHTML, like Gecko) YazekaApp/26.3.7.400 Chrome/144.0.7559.400 YaSearchBrowser/26.37.1 BroPP/1.0 YaSearchApp/26.37.1 webOmni Mobile Safari/537.36'
   device:
     architecture: null
@@ -1821,6 +1859,44 @@
   engine:
     name: Blink
     version: 146.0.7680.49
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; Camon 20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.55 YaBrowser/26.4.7.55.00 Mobile Safari/537.36'
+  device:
+    architecture: null
+    deviceName: 'Camon 20'
+    marketingName: 'Camon 20'
+    manufacturer: tecno
+    brand: tecno
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2400
+      height: 1080
+      touch: true
+      size: 6.67
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Yandex Browser'
+    modus: null
+    version: 26.4.7.55.00
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 146.0.7680.55
     manufacturer: google
 -
   headers:

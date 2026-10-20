@@ -1328,3 +1328,41 @@
     name: WebKit
     version: null
     manufacturer: apple
+-
+  headers:
+    user-agent: 'com.google.GoogleMobile/441.5 iPhone/26.6.2 hw/iPhone12_3'
+  device:
+    architecture: null
+    deviceName: 'iPhone 12,3'
+    marketingName: 'iPhone 11 Pro'
+    manufacturer: apple
+    brand: apple
+    dualOrientation: true
+    simCount: 1
+    display:
+      width: 2436
+      height: 1125
+      touch: true
+      size: 5.8
+    type: phablet
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 26.6.2
+    manufacturer: apple
+    bits: null
+  client:
+    name: 'Google Mobile App'
+    modus: null
+    version: 441.5.0
+    manufacturer: google
+    type: mobile-application
+    isbot: false
+    bits: null
+  engine:
+    name: WebKit
+    version: null
+    manufacturer: apple
