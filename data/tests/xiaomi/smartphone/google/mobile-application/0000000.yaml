@@ -2913,3 +2913,41 @@
     name: Blink
     version: 151.0.7922.83
     manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; 2412DPC0AG Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/153.0.8010.39 Mobile Safari/537.36 GoogleApp/17.62.10.ve.arm64'
+  device:
+    architecture: null
+    deviceName: 2412DPC0AG
+    marketingName: 'X7 Pro'
+    manufacturer: xiaomi
+    brand: poco
+    dualOrientation: true
+    simCount: 2
+    display:
+      width: 2712
+      height: 1220
+      touch: true
+      size: 6.67
+    type: smartphone
+    ismobile: true
+    istv: false
+    bits: null
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: null
+  client:
+    name: 'Google Search App'
+    modus: null
+    version: 17.62.10
+    manufacturer: google
+    type: mobile-application
+    isbot: false
+    bits: null
+  engine:
+    name: Blink
+    version: 153.0.8010.39
+    manufacturer: google

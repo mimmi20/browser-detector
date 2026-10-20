@@ -1,43 +1,5 @@
 -
   headers:
-    user-agent: GreenWebChecker/1.0.0
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: GreenWebChecker
-    modus: null
-    version: 1.0.0
-    manufacturer: unknown
-    type: crawler
-    isbot: true
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
     user-agent: 'Mozilla/5.0 (compatible; MomentLeadsBot/1.0; +mailto:abuse@moment-leads.com) AppleWebKit/537.36'
   device:
     architecture: null
@@ -64,6 +26,44 @@
     bits: null
   client:
     name: MomentLeadsBot
+    modus: null
+    version: 1.0.0
+    manufacturer: unknown
+    type: crawler
+    isbot: true
+    bits: null
+  engine:
+    name: WebKit
+    version: 537.36.0
+    manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; OAI-AdsBot/1.0; +https://openai.com/adsbot'
+  device:
+    architecture: null
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    dualOrientation: null
+    simCount: 0
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    bits: null
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: null
+  client:
+    name: Adsbot
     modus: null
     version: 1.0.0
     manufacturer: unknown
