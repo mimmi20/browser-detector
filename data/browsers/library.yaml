@@ -1373,5 +1373,6 @@ ocaml-cohttp:
   type: library
   version:
     factory: \BrowserDetector\Version\VersionBuilderFactory
-    search: 'ocaml\\-cohttp'
-  engine: webkit
+    search:
+      - 'ocaml\-cohttp'
+  engine: null

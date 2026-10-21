@@ -134,7 +134,7 @@ final readonly class PlatformParser implements PlatformParserInterface
             '/irix/i' => Os::irix,
             '/(?<![ch])aix(?![u\-])/i' => Os::aix,
             '/(tru64|digital) unix/i' => Os::tru64unix,
-            '/osf1/i' => Os::osf1,
+            '/osf1(?![0-9])/i' => Os::osf1,
             '/unix/i' => Os::unix,
             '/fydeos/i' => Os::fydeOS,
             '/kukui|(?<!i)cros(?!s)|build\/r\d+-\d+[.\d]+|(?<!for)chromebook/i' => Os::chromeos,
