@@ -473,6 +473,7 @@ final readonly class Headers
                         case 'facebook app':
                         case 'shap-bot':
                         case 'tiktok':
+                        case 'perplexity-bot':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 
@@ -503,6 +504,7 @@ final readonly class Headers
                         case 'seekportbot':
                         case 'product-lookout-bot':
                         case 'everphone-contact-bot':
+                        case 'snapchat-ads':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 
