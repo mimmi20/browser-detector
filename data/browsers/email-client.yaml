@@ -124,3 +124,12 @@ eudora:
     search:
       - Eudora
   engine: gecko
+edison-mail:
+  name: EdisonMail
+  manufacturer: edison-software
+  type: email-client
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - EdisonMail
+  engine: gecko

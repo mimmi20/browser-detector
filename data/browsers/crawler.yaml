@@ -5629,3 +5629,12 @@ dieanalysten-adresspruefung:
     search:
       - dieanalysten-Adresspruefung
   engine: unknown
+9bot:
+  name: 9bot
+  manufacturer: 9bot
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 9bot
+  engine: unknown

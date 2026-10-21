@@ -124,6 +124,15 @@ whatsapp:
       - WhatsAppElectron
       - WhatsApp
   engine: null
+whatsapp-web:
+  name: 'WhatsApp Web'
+  manufacturer: meta
+  type: mobile-application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - WhatsApp
+  engine: null
 whatsapp-business:
   name: 'WhatsApp Business'
   manufacturer: meta

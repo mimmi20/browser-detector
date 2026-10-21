@@ -148,7 +148,7 @@ final class DetectorIntegrationTest extends TestCase
     public static function providerUa(): array
     {
         $iterator = new RecursiveIteratorIterator(
-            new RecursiveDirectoryIterator('data/integation-tests'),
+            new RecursiveDirectoryIterator('data/integration-tests'),
         );
         $files    = new FilterIterator($iterator, 'yaml');
         $data     = [];
