@@ -200,3 +200,138 @@
       name: Blink
       version: '139.0.0'
       manufacturer: google
+-
+  -
+    user-agent: 'ocaml-cohttp/6.0.0'
+  -
+    headers:
+      user-agent: 'ocaml-cohttp/6.0.0'
+    device:
+      architecture: null
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      dualOrientation: null
+      simCount: 0
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      bits: null
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: null
+    client:
+      name: ocaml-cohttp
+      modus: null
+      version: '6.0.0'
+      manufacturer: linux-foundation
+      type: library
+      isbot: false
+      bits: null
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  -
+    sec-ch-ua: '"HeadlessChrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"'
+    sec-ch-ua-mobile: '?1'
+    sec-ch-ua-platform: '"Windows"'
+    user-agent: 'Mozilla/5.0 (compatible; SnapchatAds/1.0; +https://businesshelp.snapchat.com/s/article/adsbot-crawler)'
+  -
+    headers:
+      sec-ch-ua-platform: '"Windows"'
+      sec-ch-ua: '"HeadlessChrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"'
+      sec-ch-ua-mobile: '?1'
+      user-agent: 'Mozilla/5.0 (compatible; SnapchatAds/1.0; +https://businesshelp.snapchat.com/s/article/adsbot-crawler)'
+    device:
+      architecture: null
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      dualOrientation: null
+      simCount: 0
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: true
+      istv: false
+      bits: null
+    os:
+      name: Windows
+      marketingName: Windows
+      version: null
+      manufacturer: microsoft
+      bits: null
+    client:
+      name: 'Snapchat Ads'
+      modus: null
+      version: '1.0.0'
+      manufacturer: snap
+      type: crawler
+      isbot: true
+      bits: null
+    engine:
+      name: Blink
+      version: '131.0.0'
+      manufacturer: google
+-
+  -
+    sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
+    sec-ch-ua-mobile: '?0'
+    sec-ch-ua-platform: '"Linux"'
+    user-agent: 'Mozilla/5.0 (compatible; PerplexityBot/1.0; +https://perplexity.ai/perplexitybot)'
+  -
+    headers:
+      sec-ch-ua-platform: '"Linux"'
+      sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
+      sec-ch-ua-mobile: '?0'
+      user-agent: 'Mozilla/5.0 (compatible; PerplexityBot/1.0; +https://perplexity.ai/perplexitybot)'
+    device:
+      architecture: null
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      dualOrientation: null
+      simCount: 0
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      bits: null
+    os:
+      name: Linux
+      marketingName: Linux
+      version: null
+      manufacturer: linux-foundation
+      bits: null
+    client:
+      name: PerplexityBot
+      modus: null
+      version: '1.0.0'
+      manufacturer: perplexity
+      type: crawler
+      isbot: true
+      bits: null
+    engine:
+      name: Blink
+      version: '155.0.0'
+      manufacturer: google
