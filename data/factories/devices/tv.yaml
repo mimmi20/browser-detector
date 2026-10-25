@@ -24,7 +24,7 @@ rules:
   /jvc/i: jvc
   '/lge; mtc/i': mtc
   /50sfsw6m|55sfsw6m/i: simfer
-  '/[;(] ?lge? ?;|lg google tv|ti320-du|webos\.tv|lgwebostv|web0s;|linuxweb0s|lgsmarttv/i': lg
+  '/[;(] ?lge? ?;|lg google tv|ti320-du|webos\.tv|lgwebostv|web0s;|linuxweb0s|lgsmarttv|;lge[0-9]/i': lg
   '/star ?light[;,)]/i': star-light
   '/telesystem[;,)]/i': tele-system
   '/awox(?:_oem)?;/i': awox
@@ -65,6 +65,7 @@ rules:
   '/_coles[;,)]/i': coles
   '/clikon[;,)]/i': clikon
   /manhattan;/i: manhattan
+  /selevision/i: selevision
   /e500ac55c/i: element
   '/elco[;,)]/i': elco
   /polaroid/i: polaroid
@@ -78,6 +79,8 @@ rules:
   /profilo/i: profilo
   /pioneer/i: pioneer
   /rombica/i: rombica
+  /infomir/i: infomir
+  /inverto/i: inverto
   /43lex-/i: bbk
   /astro;/i: astro-my
   /dm-led/i: digma

@@ -1564,3 +1564,48 @@ google-test-bot:
     search:
       - 'Google-Test'
   engine: null
+yandex-verticals:
+  name: YandexVerticals
+  manufacturer: yandex
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - YandexVerticals
+  engine: unknown
+yandex-sprav-bot:
+  name: YandexSpravBot
+  manufacturer: yandex
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - YandexSpravBot
+  engine: unknown
+yandex-for-domain:
+  name: YandexForDomain
+  manufacturer: yandex
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - YandexForDomain
+  engine: unknown
+yandex-ad-net:
+  name: YandexAdNet
+  manufacturer: yandex
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - YandexAdNet
+  engine: unknown
+yandex-screenshot-bot:
+  name: YandexScreenshotBot
+  manufacturer: yandex
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - YandexScreenshotBot
+  engine: unknown

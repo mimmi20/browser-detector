@@ -317,8 +317,9 @@ final class BrowserLoaderTest extends TestCase
             'modus' => null,
             'version' => '1.11.111.1111.11111',
             'manufacturer' => 'unknown',
-            'bits' => Bits::unknown,
             'type' => 'unknown',
+            'isbot' => false,
+            'bits' => 0,
         ];
 
         self::assertSame($expected, $clientData->getClient()->toArray());

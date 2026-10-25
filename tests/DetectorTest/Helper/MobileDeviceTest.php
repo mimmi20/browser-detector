@@ -205,6 +205,7 @@ final class MobileDeviceTest extends TestCase
             ['Echo/1.0(APNG)'],
             ['ios/14.8 com.paint.bynumber/2.72.0'],
             ['Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 (Ecosia android@148.0.0.0)'],
+            ['Mozilla/5.0 (Linux; de_DE) AppleWebKit/534.34 PocketBook/622 (screen 600x800; FW D622.4.0.373)'],
         ];
     }
 

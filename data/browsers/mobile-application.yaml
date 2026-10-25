@@ -4764,3 +4764,21 @@ aria2-app:
     search:
       - Aria2App
   engine: null
+superbalist:
+  name: Superbalist
+  manufacturer: fashion-united
+  type: mobile-application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Superbalist
+  engine: null
+momo:
+  name: MOMO
+  manufacturer: hello-group
+  type: mobile-application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - momoWebView
+  engine: null
