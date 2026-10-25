@@ -234,6 +234,7 @@ final class UseragentDeviceCodeTest extends TestCase
     public function testWithUas4(): void
     {
         $value = 'A/8.1.0/ANS/L51/msm8909/unknown/QCX3/l3584062258010650401/-/+490760838/-/ANS/110712/110713/-/2.5/1/W';
+        $value2 = 'A/8.1.0/ANS/L51/msm8909/unknown/QCX3/l3584062258010650401/-/+490760838/-/ANS/110712/110713/-/2.5/1';
 
         $logger = $this->createMock(LoggerInterface::class);
         $logger
@@ -272,7 +273,7 @@ final class UseragentDeviceCodeTest extends TestCase
         $mappingFileParser
             ->expects(self::once())
             ->method('getItem')
-            ->with(mb_strtolower($value))
+            ->with(mb_strtolower($value2))
             ->willReturn(value: null);
 
         $normalizer = $this->createMock(NormalizerInterface::class);
