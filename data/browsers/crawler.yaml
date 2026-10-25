@@ -5638,3 +5638,12 @@ dieanalysten-adresspruefung:
     search:
       - 9bot
   engine: unknown
+isonai-user:
+  name: 'IsonAI-User'
+  manufacturer: epithre
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'IsonAI-User'
+  engine: unknown
