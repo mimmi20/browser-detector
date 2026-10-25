@@ -24,6 +24,7 @@ use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use UaNormalizer\Normalizer\Exception\Exception;
+use UaNormalizer\Normalizer\NormalizerInterface;
 use UaNormalizer\NormalizerFactory;
 use UaParser\DeviceParserInterface;
 use UaRequest\Exception\NotFoundException;
@@ -36,7 +37,7 @@ use function mb_strtolower;
 use function sprintf;
 
 #[CoversClass(className: XUcbrowserDevice::class)]
-final class XUcbrowserDevice1Test extends TestCase
+final class XUcbrowserDeviceTest extends TestCase
 {
     /**
      * @throws ExpectationFailedException
@@ -254,5 +255,183 @@ final class XUcbrowserDevice1Test extends TestCase
             ['maui e800', true, 'e800'],
             ['Opera', false, ''],
         ];
+    }
+
+    /** @throws \PHPUnit\Framework\Exception */
+    public function testGetDeviceCodeWithNormalizerException(): void
+    {
+        $value     = 'test-value';
+        $exception = new Exception('test');
+
+        $deviceParser = $this->createMock(DeviceParserInterface::class);
+        $deviceParser
+            ->expects(self::never())
+            ->method('parse');
+
+        $normalizer = $this->createMock(NormalizerInterface::class);
+        $normalizer
+            ->expects(self::once())
+            ->method('normalize')
+            ->with($value)
+            ->willThrowException($exception);
+
+        $mappingFileParser = $this->createMock(MappingfileLoaderInterface::class);
+        $mappingFileParser
+            ->expects(self::never())
+            ->method('init');
+        $mappingFileParser
+            ->expects(self::never())
+            ->method('getItem');
+
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $xUcbrowserDevice = new XUcbrowserDevice(
+            deviceParser: $deviceParser,
+            normalizer: $normalizer,
+            mappingFileParser: $mappingFileParser,
+            logger: $logger,
+            autoUpdate: false,
+        );
+
+        self::assertNull($xUcbrowserDevice->getDeviceCode($value));
+    }
+
+    /** @throws \PHPUnit\Framework\Exception */
+    public function testGetDeviceCode(): void
+    {
+        $value = 'test-value';
+
+        $deviceParser = $this->createMock(DeviceParserInterface::class);
+        $deviceParser
+            ->expects(self::never())
+            ->method('parse');
+
+        $normalizer = $this->createMock(NormalizerInterface::class);
+        $normalizer
+            ->expects(self::once())
+            ->method('normalize')
+            ->with($value)
+            ->willReturn(value: null);
+
+        $mappingFileParser = $this->createMock(MappingfileLoaderInterface::class);
+        $mappingFileParser
+            ->expects(self::never())
+            ->method('init');
+        $mappingFileParser
+            ->expects(self::never())
+            ->method('getItem');
+
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $xUcbrowserDevice = new XUcbrowserDevice(
+            deviceParser: $deviceParser,
+            normalizer: $normalizer,
+            mappingFileParser: $mappingFileParser,
+            logger: $logger,
+            autoUpdate: false,
+        );
+
+        self::assertNull($xUcbrowserDevice->getDeviceCode($value));
+    }
+
+    /** @throws \PHPUnit\Framework\Exception */
+    public function testGetDeviceCode2(): void
+    {
+        $value = 'test-value';
+
+        $deviceParser = $this->createMock(DeviceParserInterface::class);
+        $deviceParser
+            ->expects(self::never())
+            ->method('parse');
+
+        $normalizer = $this->createMock(NormalizerInterface::class);
+        $normalizer
+            ->expects(self::once())
+            ->method('normalize')
+            ->with($value)
+            ->willReturn('');
+
+        $mappingFileParser = $this->createMock(MappingfileLoaderInterface::class);
+        $mappingFileParser
+            ->expects(self::never())
+            ->method('init');
+        $mappingFileParser
+            ->expects(self::never())
+            ->method('getItem');
+
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $xUcbrowserDevice = new XUcbrowserDevice(
+            deviceParser: $deviceParser,
+            normalizer: $normalizer,
+            mappingFileParser: $mappingFileParser,
+            logger: $logger,
+            autoUpdate: false,
+        );
+
+        self::assertNull($xUcbrowserDevice->getDeviceCode($value));
     }
 }

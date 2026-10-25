@@ -71,7 +71,6 @@ final class DetectorIntegrationTest extends TestCase
      * @param array<string, mixed>                      $expected
      *
      * @throws Exception
-     * @throws InvalidArgumentException
      * @throws UnexpectedValueException
      * @throws ExpectationFailedException
      * @throws RuntimeException

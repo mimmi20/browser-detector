@@ -31,8 +31,12 @@ use UaRequest\GenericRequestInterface;
 use UaRequest\Header\HeaderInterface;
 use UaRequest\RequestBuilderInterface;
 use UaResult\Bits\Bits;
+use UaResult\Browser\Browser;
 use UaResult\Device\Architecture;
+use UaResult\Device\Device;
 use UaResult\Device\FormFactor;
+use UaResult\Os\Os;
+use UaResult\Result\Result;
 use UnexpectedValueException;
 
 use function array_map;
@@ -72,37 +76,47 @@ final readonly class Detector implements DetectorInterface
      *
      * @return array<mixed>
      *
-     * @throws InvalidArgumentException
-     * @throws UnexpectedValueException
+     * @throws void
      */
     #[Override]
     public function getBrowser(array | GenericRequestInterface | MessageInterface | string $headers): array
     {
-        $genericRequest = $this->requestBuilder->buildRequest($headers);
-        $cacheId        = $genericRequest->getHash();
+        try {
+            $genericRequest = $this->requestBuilder->buildRequest($headers);
+        } catch (UnexpectedValueException $e) {
+            $this->logger->error($e);
 
-        if ($this->cache->hasItem($cacheId)) {
-            $item = $this->cache->getItem($cacheId);
-            assert(is_array($item));
-
-            return $item;
+            return [];
         }
 
-        $item = $this->parse($genericRequest);
+        $cacheId = $genericRequest->getHash();
 
-        $this->cache->setItem($cacheId, $item);
+        try {
+            if ($this->cache->hasItem($cacheId)) {
+                $item = $this->cache->getItem($cacheId);
+                assert(is_array($item));
+
+                return $item;
+            }
+
+            $item = $this->parse($genericRequest)->toArray();
+
+            $this->cache->setItem($cacheId, $item);
+        } catch (InvalidArgumentException | \UnexpectedValueException $e) {
+            $this->logger->error($e);
+
+            return [];
+        }
 
         return $item;
     }
 
     /**
-     * @return array{headers: array<non-empty-string, string>, device: array{architecture: string|null, deviceName: string|null, marketingName: string|null, manufacturer: string|null, brand: string|null, dualOrientation: bool|null, simCount: int|null, display: array{width: int|null, height: int|null, touch: bool|null, size: float|null}, type: string|null, ismobile: bool, istv: bool, bits: int|null}, os: array{name: string|null, marketingName: string|null, version: string|null, manufacturer: string|null}, client: array{name: string|null, version: string|null, manufacturer: string|null, type: string|null, isbot: bool}, engine: array{name: string|null, version: string|null, manufacturer: string|null}}
-     *
-     * @throws UnexpectedValueException
+     * @throws void
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
-    private function parse(GenericRequestInterface $genericRequest): array
+    private function parse(GenericRequestInterface $genericRequest): Result
     {
         $engineCodename = Engine::unknown;
 
@@ -131,21 +145,25 @@ final readonly class Detector implements DetectorInterface
         if (mb_strtolower($platformName ?? '') === 'ios') {
             $engineCodename = Engine::webkit;
 
-            try {
-                $version             = $os->getVersion();
-                $iosVersion          = $version->getVersion(VersionInterface::IGNORE_MINOR);
-                $deviceMarketingName = $device->getMarketingName();
+            $version = $os->getVersion();
 
-                if (
-                    $deviceMarketingName !== null
-                    && str_contains(mb_strtolower($deviceMarketingName), 'ipad')
-                    && $iosVersion >= 13
-                ) {
-                    $platformName          = 'iPadOS';
-                    $platformMarketingName = 'iPadOS';
-                }
+            try {
+                $iosVersion = (int) $version->getVersion(VersionInterface::IGNORE_MINOR);
             } catch (UnexpectedValueException $e) {
                 $this->logger->error($e);
+
+                $iosVersion = 0;
+            }
+
+            $deviceMarketingName = $device->getMarketingName();
+
+            if (
+                $deviceMarketingName !== null
+                && str_contains(mb_strtolower($deviceMarketingName), 'ipad')
+                && $iosVersion >= 13
+            ) {
+                $platformName          = 'iPadOS';
+                $platformMarketingName = 'iPadOS';
             }
         }
 
@@ -160,9 +178,9 @@ final readonly class Detector implements DetectorInterface
             $company = 'apple';
             $key     = 'macintosh';
 
-            try {
-                $deviceLoader = ($this->deviceLoaderFactory)($company);
+            $deviceLoader = ($this->deviceLoaderFactory)($company);
 
+            try {
                 $device = $deviceLoader->load($key)->getDevice();
             } catch (NotFoundException $e) {
                 $this->logger->info(
@@ -210,46 +228,26 @@ final readonly class Detector implements DetectorInterface
             $isMobile = $deviceType->isMobile();
         }
 
-        return [
-            'headers' => array_map(
+        return new Result(
+            headers: array_map(
                 callback: static fn (HeaderInterface $header): string => $header->getValue(),
                 array: $genericRequest->getHeaders(),
             ),
-            'device' => [
-                'architecture' => $architecture === Architecture::unknown ? null : $architecture->value,
-                'deviceName' => $device->getDeviceName(),
-                'marketingName' => $device->getMarketingName(),
-                'manufacturer' => $device->getManufacturer()->getKey(),
-                'brand' => $device->getBrand()->getKey(),
-                'dualOrientation' => $device->getDualOrientation(),
-                'simCount' => $device->getSimCount(),
-                'display' => $device->getDisplay()->toArray(),
-                'type' => $deviceType->getType(),
-                'ismobile' => $isMobile,
-                'istv' => $deviceType->isTv(),
-                'bits' => $deviceBits === Bits::unknown ? null : $deviceBits->value,
-            ],
-            'os' => [
-                'name' => $platformName,
-                'marketingName' => $platformMarketingName,
-                'version' => $os->getVersion()->getVersion(),
-                'manufacturer' => $os->getManufacturer()->getKey(),
-                'bits' => $deviceBits === Bits::unknown ? null : $deviceBits->value,
-            ],
-            'client' => [
-                'name' => $browser->getName(),
-                'modus' => null,
-                'version' => $browser->getVersion()->getVersion(),
-                'manufacturer' => $browser->getManufacturer()->getKey(),
-                'type' => $browser->getType()->getType(),
-                'isbot' => $browser->getType()->isBot(),
-                'bits' => $headers->getDeviceIsWow64() ? 32 : ($deviceBits === Bits::unknown ? null : $deviceBits->value),
-            ],
-            'engine' => [
-                'name' => $engine->getName(),
-                'version' => $engine->getVersion()->getVersion(),
-                'manufacturer' => $engine->getManufacturer()->getKey(),
-            ],
-        ];
+            device: $device
+                ->withArchitecture($architecture)
+                ->withType($deviceType)
+                ->withIsMobile($isMobile)
+                ->withBits($deviceBits),
+            os: $os
+                ->withBits($deviceBits)
+                ->withName($platformName)
+                ->withMarketingName($platformMarketingName),
+            browser: $browser->withBits(
+                $headers->getDeviceIsWow64()
+                    ? Bits::thirtytwo
+                    : $deviceBits,
+            ),
+            engine: $engine,
+        );
     }
 }

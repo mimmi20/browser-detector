@@ -22,6 +22,7 @@ use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UaNormalizer\Normalizer\Exception\Exception;
+use UaNormalizer\Normalizer\NormalizerInterface;
 use UaNormalizer\NormalizerFactory;
 use UaParser\DeviceParserInterface;
 use UaRequest\Exception\NotFoundException;
@@ -32,7 +33,7 @@ use UaResult\Device\Architecture;
 use function sprintf;
 
 #[CoversClass(className: XDeviceUseragent::class)]
-final class XDeviceUseragent1Test extends TestCase
+final class XDeviceUseragentTest extends TestCase
 {
     /**
      * @throws ExpectationFailedException
@@ -190,5 +191,72 @@ final class XDeviceUseragent1Test extends TestCase
             ['Nokia6288/2.0 (05.94) Profile/MIDP-2.0 Configuration/CLDC-1.1', true, ''],
             ['Mozilla/5.0 (iPhone; U; CPU like Mac OS X; en) AppleWebKit/420.1 (KHTML, like Gecko) Version/3.0 Mobile/4A93 Safari/419.3', true, 'iPhone'],
         ];
+    }
+
+    /** @throws \PHPUnit\Framework\Exception */
+    public function testGetDeviceCodeWithNormalizerException(): void
+    {
+        $value     = 'test-value';
+        $exception = new Exception('test');
+
+        $deviceParser = $this->createMock(DeviceParserInterface::class);
+        $deviceParser
+            ->expects(self::never())
+            ->method('parse');
+
+        $normalizer = $this->createMock(NormalizerInterface::class);
+        $normalizer
+            ->expects(self::once())
+            ->method('normalize')
+            ->with($value)
+            ->willThrowException($exception);
+
+        $xDeviceUseragent = new XDeviceUseragent(deviceParser: $deviceParser, normalizer: $normalizer);
+
+        self::assertNull($xDeviceUseragent->getDeviceCode($value));
+    }
+
+    /** @throws \PHPUnit\Framework\Exception */
+    public function testGetDeviceCode(): void
+    {
+        $value = 'test-value';
+
+        $deviceParser = $this->createMock(DeviceParserInterface::class);
+        $deviceParser
+            ->expects(self::never())
+            ->method('parse');
+
+        $normalizer = $this->createMock(NormalizerInterface::class);
+        $normalizer
+            ->expects(self::once())
+            ->method('normalize')
+            ->with($value)
+            ->willReturn(value: null);
+
+        $xDeviceUseragent = new XDeviceUseragent(deviceParser: $deviceParser, normalizer: $normalizer);
+
+        self::assertNull($xDeviceUseragent->getDeviceCode($value));
+    }
+
+    /** @throws \PHPUnit\Framework\Exception */
+    public function testGetDeviceCode2(): void
+    {
+        $value = 'test-value';
+
+        $deviceParser = $this->createMock(DeviceParserInterface::class);
+        $deviceParser
+            ->expects(self::never())
+            ->method('parse');
+
+        $normalizer = $this->createMock(NormalizerInterface::class);
+        $normalizer
+            ->expects(self::once())
+            ->method('normalize')
+            ->with($value)
+            ->willReturn('');
+
+        $xDeviceUseragent = new XDeviceUseragent(deviceParser: $deviceParser, normalizer: $normalizer);
+
+        self::assertNull($xDeviceUseragent->getDeviceCode($value));
     }
 }

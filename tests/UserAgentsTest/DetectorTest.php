@@ -267,9 +267,7 @@ final class DetectorTest extends TestCase
      * @param array<string, mixed>                      $expectedResult
      *
      * @throws InvalidArgumentException
-     * @throws NotFoundException
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
      * @throws \PHPUnit\Framework\Exception
      */
     #[DataProvider(methodName: 'providerGetBrowser')]
