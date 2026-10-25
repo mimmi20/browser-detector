@@ -22,7 +22,6 @@ use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
-use Psr\SimpleCache\InvalidArgumentException;
 use Stringable;
 use UaDeviceType\Type;
 use UaLoader\BrowserLoaderInterface;

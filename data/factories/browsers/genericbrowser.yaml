@@ -1410,6 +1410,7 @@ rules:
   /artelleadradar/i: artel-lead-radar
   '/server density/i': server-density
   '/proxy ?checker/i': proxy-checker
+  '/tizen ?browser|slp browser/i': 'tizen browser'
   /shopifychecker/i: shopify-checker
   /wp2shell-check/i: wp2shell-check
   /momentleadsbot/i: moment-leads-bot

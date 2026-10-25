@@ -37,7 +37,6 @@ use Stringable;
 use Symfony\Component\Yaml\Exception\ParseException;
 use Symfony\Component\Yaml\Yaml;
 use UaLoader\Exception\NotFoundException;
-use UnexpectedValueException;
 
 use function assert;
 use function is_array;
@@ -295,13 +294,12 @@ final class DetectorTest extends TestCase
 
         self::assertEquals(
             $expectedResult['headers'],
-            $result['headers'],
             sprintf(
                 "detection header result mismatch for headers %s\ntest headers:%s\nexpected result: %s\nactual result: %s",
                 $encodedHeaders,
                 var_export($headers, return: true),
                 var_export($expectedResult['headers'], return: true),
-                var_export($result['headers'], return: true),
+                var_export($result['headers'] ?? [], return: true),
             ),
         );
 

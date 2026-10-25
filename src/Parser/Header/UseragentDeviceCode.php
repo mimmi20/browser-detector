@@ -207,6 +207,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/iemobile\/[\d.]+\) (?P<devicecode>[a-z]+; ?[^);\/]+)/i',
             '/^(?P<devicecode>.+)\/[\d.]+ up\.link\//i',
             '/^(?P<devicecode>.+) up\.link\//i',
+            '/^(?P<devicecode>.+)[_;]/i',
             // should be the last entry in the list
             '/^(?P<devicecode>.+)$/i',
         ];
