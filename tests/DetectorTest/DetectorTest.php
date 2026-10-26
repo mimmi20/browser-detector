@@ -314,13 +314,11 @@ final class DetectorTest extends TestCase
         $expected = [
             'headers' => $headers,
             'device' => [
-                'architecture' => null,
+                'architecture' => '',
                 'deviceName' => null,
                 'marketingName' => null,
                 'manufacturer' => 'unknown',
                 'brand' => 'unknown',
-                'dualOrientation' => null,
-                'simCount' => null,
                 'display' => [
                     'width' => null,
                     'height' => null,
@@ -330,14 +328,9 @@ final class DetectorTest extends TestCase
                 'type' => 'unknown',
                 'ismobile' => false,
                 'istv' => false,
-                'bits' => null,
-            ],
-            'os' => [
-                'name' => null,
-                'marketingName' => null,
-                'version' => null,
-                'manufacturer' => 'unknown',
-                'bits' => null,
+                'dualOrientation' => null,
+                'simCount' => null,
+                'bits' => 0,
             ],
             'client' => [
                 'name' => null,
@@ -346,7 +339,14 @@ final class DetectorTest extends TestCase
                 'manufacturer' => 'unknown',
                 'type' => 'unknown',
                 'isbot' => false,
-                'bits' => null,
+                'bits' => 0,
+            ],
+            'os' => [
+                'name' => null,
+                'marketingName' => null,
+                'version' => null,
+                'manufacturer' => 'unknown',
+                'bits' => 0,
             ],
             'engine' => [
                 'name' => null,
@@ -549,8 +549,6 @@ final class DetectorTest extends TestCase
                 'marketingName' => null,
                 'manufacturer' => 'unknown',
                 'brand' => 'unknown',
-                'dualOrientation' => null,
-                'simCount' => null,
                 'display' => [
                     'width' => null,
                     'height' => null,
@@ -560,14 +558,9 @@ final class DetectorTest extends TestCase
                 'type' => 'unknown',
                 'ismobile' => false,
                 'istv' => false,
-                'bits' => null,
-            ],
-            'os' => [
-                'name' => null,
-                'marketingName' => null,
-                'version' => null,
-                'manufacturer' => 'unknown',
-                'bits' => null,
+                'dualOrientation' => null,
+                'simCount' => null,
+                'bits' => 0,
             ],
             'client' => [
                 'name' => null,
@@ -576,7 +569,14 @@ final class DetectorTest extends TestCase
                 'manufacturer' => 'unknown',
                 'type' => 'unknown',
                 'isbot' => false,
-                'bits' => null,
+                'bits' => 0,
+            ],
+            'os' => [
+                'name' => null,
+                'marketingName' => null,
+                'version' => null,
+                'manufacturer' => 'unknown',
+                'bits' => 0,
             ],
             'engine' => [
                 'name' => null,
@@ -773,13 +773,11 @@ final class DetectorTest extends TestCase
         $expected = [
             'headers' => $headers,
             'device' => [
-                'architecture' => null,
+                'architecture' => '',
                 'deviceName' => null,
                 'marketingName' => null,
                 'manufacturer' => 'unknown',
                 'brand' => 'unknown',
-                'dualOrientation' => null,
-                'simCount' => null,
                 'display' => [
                     'width' => null,
                     'height' => null,
@@ -789,13 +787,8 @@ final class DetectorTest extends TestCase
                 'type' => 'unknown',
                 'ismobile' => false,
                 'istv' => false,
-                'bits' => $bits->value,
-            ],
-            'os' => [
-                'name' => null,
-                'marketingName' => null,
-                'version' => null,
-                'manufacturer' => 'unknown',
+                'dualOrientation' => null,
+                'simCount' => null,
                 'bits' => $bits->value,
             ],
             'client' => [
@@ -805,6 +798,13 @@ final class DetectorTest extends TestCase
                 'manufacturer' => 'unknown',
                 'type' => 'unknown',
                 'isbot' => false,
+                'bits' => $bits->value,
+            ],
+            'os' => [
+                'name' => null,
+                'marketingName' => null,
+                'version' => null,
+                'manufacturer' => 'unknown',
                 'bits' => $bits->value,
             ],
             'engine' => [
@@ -1001,13 +1001,11 @@ final class DetectorTest extends TestCase
         $expected = [
             'headers' => $headers,
             'device' => [
-                'architecture' => null,
+                'architecture' => '',
                 'deviceName' => null,
                 'marketingName' => null,
                 'manufacturer' => 'unknown',
                 'brand' => 'unknown',
-                'dualOrientation' => null,
-                'simCount' => null,
                 'display' => [
                     'width' => null,
                     'height' => null,
@@ -1017,14 +1015,9 @@ final class DetectorTest extends TestCase
                 'type' => 'unknown',
                 'ismobile' => true,
                 'istv' => false,
-                'bits' => null,
-            ],
-            'os' => [
-                'name' => null,
-                'marketingName' => null,
-                'version' => null,
-                'manufacturer' => 'unknown',
-                'bits' => null,
+                'dualOrientation' => null,
+                'simCount' => null,
+                'bits' => 0,
             ],
             'client' => [
                 'name' => null,
@@ -1033,7 +1026,14 @@ final class DetectorTest extends TestCase
                 'manufacturer' => 'unknown',
                 'type' => 'unknown',
                 'isbot' => false,
-                'bits' => null,
+                'bits' => 0,
+            ],
+            'os' => [
+                'name' => null,
+                'marketingName' => null,
+                'version' => null,
+                'manufacturer' => 'unknown',
+                'bits' => 0,
             ],
             'engine' => [
                 'name' => null,
@@ -1231,13 +1231,11 @@ final class DetectorTest extends TestCase
         $expected = [
             'headers' => $headers,
             'device' => [
-                'architecture' => null,
+                'architecture' => '',
                 'deviceName' => 'LM-G710',
                 'marketingName' => 'G7 ThinQ',
                 'manufacturer' => 'lg',
                 'brand' => 'lg',
-                'dualOrientation' => null,
-                'simCount' => null,
                 'display' => [
                     'width' => 3120,
                     'height' => 1440,
@@ -1247,14 +1245,9 @@ final class DetectorTest extends TestCase
                 'type' => 'smartphone',
                 'ismobile' => true,
                 'istv' => false,
-                'bits' => null,
-            ],
-            'os' => [
-                'name' => 'Android',
-                'marketingName' => 'Android',
-                'version' => null,
-                'manufacturer' => 'google',
-                'bits' => null,
+                'dualOrientation' => null,
+                'simCount' => null,
+                'bits' => 0,
             ],
             'client' => [
                 'name' => null,
@@ -1263,7 +1256,14 @@ final class DetectorTest extends TestCase
                 'manufacturer' => 'unknown',
                 'type' => 'unknown',
                 'isbot' => false,
-                'bits' => null,
+                'bits' => 0,
+            ],
+            'os' => [
+                'name' => 'Android',
+                'marketingName' => 'Android',
+                'version' => null,
+                'manufacturer' => 'google',
+                'bits' => 0,
             ],
             'engine' => [
                 'name' => null,
@@ -1504,13 +1504,11 @@ final class DetectorTest extends TestCase
         $expected = [
             'headers' => $headers,
             'device' => [
-                'architecture' => null,
+                'architecture' => '',
                 'deviceName' => null,
                 'marketingName' => null,
                 'manufacturer' => 'unknown',
                 'brand' => 'unknown',
-                'dualOrientation' => null,
-                'simCount' => null,
                 'display' => [
                     'width' => null,
                     'height' => null,
@@ -1520,14 +1518,9 @@ final class DetectorTest extends TestCase
                 'type' => 'unknown',
                 'ismobile' => false,
                 'istv' => false,
-                'bits' => null,
-            ],
-            'os' => [
-                'name' => null,
-                'marketingName' => null,
-                'version' => null,
-                'manufacturer' => 'unknown',
-                'bits' => null,
+                'dualOrientation' => null,
+                'simCount' => null,
+                'bits' => 0,
             ],
             'client' => [
                 'name' => null,
@@ -1536,7 +1529,14 @@ final class DetectorTest extends TestCase
                 'manufacturer' => 'unknown',
                 'type' => 'unknown',
                 'isbot' => false,
-                'bits' => null,
+                'bits' => 0,
+            ],
+            'os' => [
+                'name' => null,
+                'marketingName' => null,
+                'version' => null,
+                'manufacturer' => 'unknown',
+                'bits' => 0,
             ],
             'engine' => [
                 'name' => null,

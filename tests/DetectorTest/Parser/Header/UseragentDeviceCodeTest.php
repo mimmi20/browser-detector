@@ -271,10 +271,14 @@ final class UseragentDeviceCodeTest extends TestCase
             ->expects(self::once())
             ->method('init');
         $mappingFileParser
-            ->expects(self::once())
+            ->expects(self::exactly(2))
             ->method('getItem')
-            ->with(mb_strtolower($value2))
-            ->willReturn(value: null);
+            ->willReturnMap(
+                [
+                    [mb_strtolower($value2), null],
+                    [mb_strtolower($value), null],
+                ],
+            );
 
         $normalizer = $this->createMock(NormalizerInterface::class);
         $normalizer

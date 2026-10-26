@@ -458,3 +458,12 @@ xen-foro:
     search:
       - 2GDPR
   engine: unknown
+tunein-dirmon:
+  name: TuneIn-DirMon
+  manufacturer: tune-in
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - TuneIn-DirMon
+  engine: unknown

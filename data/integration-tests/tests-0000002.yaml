@@ -1,23 +1,109 @@
 -
-  -
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; SC-55F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.51 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; SC-55F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.51 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: SC-55F
+      marketingName: 'Galaxy Z Flip 7 (Japan)'
+      manufacturer: samsung
+      brand: samsung
+      display:
+        width: 2520
+        height: 1080
+        touch: true
+        size: 6.9
+      type: phablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Yandex Search Browser'
+      modus: null
+      version: 26.47.1
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 146.0.7680.51
+      manufacturer: google
+-
+  headers:
+    sec-ch-ua: '"Not_A Brand";v="99", "Chromium";v="142"'
+    sec-ch-ua-mobile: '?1'
+    sec-ch-ua-platform: '"Android"'
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; bH1D6l9wTg; U; de) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/142.0.7444.138 Mobile Safari/537.36'
+  expected:
+    headers:
+      sec-ch-ua-platform: '"Android"'
+      sec-ch-ua: '"Not_A Brand";v="99", "Chromium";v="142"'
+      sec-ch-ua-mobile: '?1'
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; bH1D6l9wTg; U; de) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/142.0.7444.138 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Mobile Phone'
+      marketingName: 'general Mobile Phone'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Avast Secure Browser'
+      modus: null
+      version: null
+      manufacturer: avast-software
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 142.0.0
+      manufacturer: google
+-
+  headers:
     sec-ch-ua: '"Chromium";v="145", "Not:A-Brand";v="99"'
     sec-ch-ua-mobile: '?0'
     sec-ch-ua-platform: '"Windows"'
     user-agent: 'Mozilla/5.0 (compatible; urlsuma/2.0; +https://urlsuma.de/bot.html)'
-  -
+  expected:
     headers:
       sec-ch-ua-platform: '"Windows"'
       sec-ch-ua: '"Chromium";v="145", "Not:A-Brand";v="99"'
       sec-ch-ua-mobile: '?0'
       user-agent: 'Mozilla/5.0 (compatible; urlsuma/2.0; +https://urlsuma.de/bot.html)'
     device:
-      architecture: null
+      architecture: ''
       deviceName: null
       marketingName: null
       manufacturer: unknown
       brand: unknown
-      dualOrientation: null
-      simCount: 0
       display:
         width: null
         height: null
@@ -26,45 +112,45 @@
       type: unknown
       ismobile: false
       istv: false
-      bits: null
-    os:
-      name: 'Windows'
-      marketingName: 'Windows'
-      version: null
-      manufacturer: microsoft
-      bits: null
+      dualOrientation: null
+      simCount: 0
+      bits: 0
     client:
-      name: 'URLSuMaBot'
+      name: URLSuMaBot
       modus: null
-      version: '2.0.0'
+      version: 2.0.0
       manufacturer: unknown
       type: search-bot
       isbot: true
-      bits: null
+      bits: 0
+    os:
+      name: Windows
+      marketingName: Windows
+      version: null
+      manufacturer: microsoft
+      bits: 0
     engine:
       name: Blink
-      version: '145.0.0'
+      version: 145.0.0
       manufacturer: google
 -
-  -
+  headers:
     sec-ch-ua: '"Not=A?Brand";v="99", "Google Chrome";v="151", "Chromium";v="151"'
     sec-ch-ua-mobile: '?0'
     sec-ch-ua-platform: '"Linux"'
     user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ShapBot/0.1.0'
-  -
+  expected:
     headers:
       sec-ch-ua-platform: '"Linux"'
       sec-ch-ua: '"Not=A?Brand";v="99", "Google Chrome";v="151", "Chromium";v="151"'
       sec-ch-ua-mobile: '?0'
       user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ShapBot/0.1.0'
     device:
-      architecture: null
+      architecture: ''
       deviceName: null
       marketingName: null
       manufacturer: unknown
       brand: unknown
-      dualOrientation: null
-      simCount: 0
       display:
         width: null
         height: null
@@ -73,27 +159,29 @@
       type: unknown
       ismobile: false
       istv: false
-      bits: null
-    os:
-      name: 'Linux'
-      marketingName: 'Linux'
-      version: null
-      manufacturer: linux-foundation
-      bits: null
+      dualOrientation: null
+      simCount: 0
+      bits: 0
     client:
-      name: 'ShapBot'
+      name: ShapBot
       modus: null
-      version: '0.1.0'
+      version: 0.1.0
       manufacturer: parallel-web-systems
       type: crawler
       isbot: true
-      bits: null
+      bits: 0
+    os:
+      name: Linux
+      marketingName: Linux
+      version: null
+      manufacturer: linux-foundation
+      bits: 0
     engine:
       name: Blink
-      version: '151.0.0'
+      version: 151.0.0
       manufacturer: google
 -
-  -
+  headers:
     sec-ch-ua-model: '""'
     sec-ch-ua-platform: '"Windows"'
     sec-ch-ua-platform-version: '""'
@@ -105,7 +193,7 @@
     sec-ch-ua-mobile: '?0'
     sec-ch-ua-wow64: '?0'
     user-agent: 'EverphoneContactBot/0.1 (+mailto:tamara.omomo@everphone.de) Chrome/124 Safari/537.36'
-  -
+  expected:
     headers:
       sec-ch-ua-model: '""'
       sec-ch-ua-platform: '"Windows"'
@@ -124,8 +212,6 @@
       marketingName: 'general Mobile device'
       manufacturer: unknown
       brand: unknown
-      dualOrientation: null
-      simCount: 0
       display:
         width: null
         height: null
@@ -134,45 +220,45 @@
       type: mobile-device
       ismobile: true
       istv: false
-      bits: 64
-    os:
-      name: 'Windows'
-      marketingName: 'Windows'
-      version: null
-      manufacturer: microsoft
+      dualOrientation: null
+      simCount: 0
       bits: 64
     client:
-      name: 'EverphoneContactBot'
+      name: EverphoneContactBot
       modus: null
-      version: '0.1.0'
+      version: 0.1.0
       manufacturer: everphone
       type: crawler
       isbot: true
       bits: 64
+    os:
+      name: Windows
+      marketingName: Windows
+      version: null
+      manufacturer: microsoft
+      bits: 64
     engine:
       name: Blink
-      version: '153.0.0'
+      version: 153.0.0
       manufacturer: google
 -
-  -
+  headers:
     sec-ch-ua: '"Chromium";v="139", "Google Chrome";v="139", "Not-A.Brand";v="99"'
     sec-ch-ua-mobile: '?1'
     sec-ch-ua-platform: '"Android"'
     user-agent: 'Mozilla/5.0 (Linux, Android 15, SM-S911U Build/AP3A.240905.015.A2, ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/139.0.7258.158 Mobile Safari/537.36 musical_ly_2024105040 JsSdk/1.0 NetType/MOBILE Channel/googleplay AppName/musical_ly app_ver'
-  -
+  expected:
     headers:
       sec-ch-ua-platform: '"Android"'
       sec-ch-ua: '"Chromium";v="139", "Google Chrome";v="139", "Not-A.Brand";v="99"'
       sec-ch-ua-mobile: '?1'
       user-agent: 'Mozilla/5.0 (Linux, Android 15, SM-S911U Build/AP3A.240905.015.A2, ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/139.0.7258.158 Mobile Safari/537.36 musical_ly_2024105040 JsSdk/1.0 NetType/MOBILE Channel/googleplay AppName/musical_ly app_ver'
     device:
-      architecture: null
+      architecture: ''
       deviceName: SM-S911U
       marketingName: 'Galaxy S23 (USA)'
       manufacturer: samsung
       brand: samsung
-      dualOrientation: true
-      simCount: 1
       display:
         width: 2340
         height: 1080
@@ -181,39 +267,39 @@
       type: smartphone
       ismobile: true
       istv: false
-      bits: null
-    os:
-      name: Android
-      marketingName: Android
-      version: '15.0.0'
-      manufacturer: google
-      bits: null
+      dualOrientation: true
+      simCount: 1
+      bits: 0
     client:
       name: TikTok
       modus: null
-      version: '2024105040.0.0'
+      version: 2024105040.0.0
       manufacturer: tiktok
       type: mobile-application
       isbot: false
-      bits: null
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 15.0.0
+      manufacturer: google
+      bits: 0
     engine:
       name: Blink
-      version: '139.0.0'
+      version: 139.0.0
       manufacturer: google
 -
-  -
-    user-agent: 'ocaml-cohttp/6.0.0'
-  -
+  headers:
+    user-agent: ocaml-cohttp/6.0.0
+  expected:
     headers:
-      user-agent: 'ocaml-cohttp/6.0.0'
+      user-agent: ocaml-cohttp/6.0.0
     device:
-      architecture: null
+      architecture: ''
       deviceName: null
       marketingName: null
       manufacturer: unknown
       brand: unknown
-      dualOrientation: null
-      simCount: 0
       display:
         width: null
         height: null
@@ -222,45 +308,45 @@
       type: unknown
       ismobile: false
       istv: false
-      bits: null
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: ocaml-cohttp
+      modus: null
+      version: 6.0.0
+      manufacturer: linux-foundation
+      type: library
+      isbot: false
+      bits: 0
     os:
       name: null
       marketingName: null
       version: null
       manufacturer: unknown
-      bits: null
-    client:
-      name: ocaml-cohttp
-      modus: null
-      version: '6.0.0'
-      manufacturer: linux-foundation
-      type: library
-      isbot: false
-      bits: null
+      bits: 0
     engine:
       name: null
       version: null
       manufacturer: unknown
 -
-  -
+  headers:
     sec-ch-ua: '"HeadlessChrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"'
     sec-ch-ua-mobile: '?1'
     sec-ch-ua-platform: '"Windows"'
     user-agent: 'Mozilla/5.0 (compatible; SnapchatAds/1.0; +https://businesshelp.snapchat.com/s/article/adsbot-crawler)'
-  -
+  expected:
     headers:
       sec-ch-ua-platform: '"Windows"'
       sec-ch-ua: '"HeadlessChrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"'
       sec-ch-ua-mobile: '?1'
       user-agent: 'Mozilla/5.0 (compatible; SnapchatAds/1.0; +https://businesshelp.snapchat.com/s/article/adsbot-crawler)'
     device:
-      architecture: null
+      architecture: ''
       deviceName: null
       marketingName: null
       manufacturer: unknown
       brand: unknown
-      dualOrientation: null
-      simCount: 0
       display:
         width: null
         height: null
@@ -269,45 +355,45 @@
       type: unknown
       ismobile: true
       istv: false
-      bits: null
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Snapchat Ads'
+      modus: null
+      version: 1.0.0
+      manufacturer: snap
+      type: crawler
+      isbot: true
+      bits: 0
     os:
       name: Windows
       marketingName: Windows
       version: null
       manufacturer: microsoft
-      bits: null
-    client:
-      name: 'Snapchat Ads'
-      modus: null
-      version: '1.0.0'
-      manufacturer: snap
-      type: crawler
-      isbot: true
-      bits: null
+      bits: 0
     engine:
       name: Blink
-      version: '131.0.0'
+      version: 131.0.0
       manufacturer: google
 -
-  -
+  headers:
     sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
     sec-ch-ua-mobile: '?0'
     sec-ch-ua-platform: '"Linux"'
     user-agent: 'Mozilla/5.0 (compatible; PerplexityBot/1.0; +https://perplexity.ai/perplexitybot)'
-  -
+  expected:
     headers:
       sec-ch-ua-platform: '"Linux"'
       sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
       sec-ch-ua-mobile: '?0'
       user-agent: 'Mozilla/5.0 (compatible; PerplexityBot/1.0; +https://perplexity.ai/perplexitybot)'
     device:
-      architecture: null
+      architecture: ''
       deviceName: null
       marketingName: null
       manufacturer: unknown
       brand: unknown
-      dualOrientation: null
-      simCount: 0
       display:
         width: null
         height: null
@@ -316,186 +402,188 @@
       type: unknown
       ismobile: false
       istv: false
-      bits: null
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: PerplexityBot
+      modus: null
+      version: 1.0.0
+      manufacturer: perplexity
+      type: crawler
+      isbot: true
+      bits: 0
     os:
       name: Linux
       marketingName: Linux
       version: null
       manufacturer: linux-foundation
-      bits: null
-    client:
-      name: PerplexityBot
-      modus: null
-      version: '1.0.0'
-      manufacturer: perplexity
-      type: crawler
-      isbot: true
-      bits: null
+      bits: 0
     engine:
       name: Blink
-      version: '155.0.0'
+      version: 155.0.0
       manufacturer: google
 -
-  -
+  headers:
     user-agent: 'Mozilla/5.0 (QtEmbedded; Linux) AppleWebKit/537.4 (KHTML, like Gecko) MWB/1.0 Safari/537.4 HbbTV/1.1.1 (; TOSHIBA; MWB;;;) TOSHIBA-DTV-2014A (DTV_L6463; 8.1.97.07.01.1; 2014A; EU)'
-  -
+  expected:
     headers:
       user-agent: 'Mozilla/5.0 (QtEmbedded; Linux) AppleWebKit/537.4 (KHTML, like Gecko) MWB/1.0 Safari/537.4 HbbTV/1.1.1 (; TOSHIBA; MWB;;;) TOSHIBA-DTV-2014A (DTV_L6463; 8.1.97.07.01.1; 2014A; EU)'
     device:
-      architecture: null
-      deviceName: null
-      marketingName: null
-      manufacturer: unknown
-      brand: unknown
-      dualOrientation: null
-      simCount: 0
+      architecture: ''
+      deviceName: 'general Toshiba TV'
+      marketingName: 'general Toshiba TV'
+      manufacturer: toshiba
+      brand: toshiba
       display:
         width: null
         height: null
         touch: false
         size: null
-      type: unknown
+      type: tv
       ismobile: false
-      istv: false
-      bits: null
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: Safari
+      modus: null
+      version: 4.0.0
+      manufacturer: apple
+      type: browser
+      isbot: false
+      bits: 0
     os:
       name: Linux
       marketingName: Linux
       version: null
       manufacturer: linux-foundation
-      bits: null
-    client:
-      name: PerplexityBot
-      modus: null
-      version: '1.0.0'
-      manufacturer: perplexity
-      type: crawler
-      isbot: true
-      bits: null
+      bits: 0
     engine:
-      name: Blink
-      version: '155.0.0'
-      manufacturer: google
+      name: WebKit
+      version: 537.4.0
+      manufacturer: apple
 -
-  -
+  headers:
     user-agent: 'OneBrowser/3.1 (SAMSUNG-GT-B6520/1.0)'
-  -
+  expected:
     headers:
       user-agent: 'OneBrowser/3.1 (SAMSUNG-GT-B6520/1.0)'
     device:
-      architecture: null
-      deviceName: null
-      marketingName: null
-      manufacturer: unknown
-      brand: unknown
-      dualOrientation: null
-      simCount: 0
+      architecture: ''
+      deviceName: GT-B6520
+      marketingName: 'Omnia Pro 5'
+      manufacturer: samsung
+      brand: samsung
       display:
-        width: null
-        height: null
+        width: 320
+        height: 240
         touch: false
-        size: null
-      type: unknown
-      ismobile: false
+        size: 2.4
+      type: feature-phone
+      ismobile: true
       istv: false
-      bits: null
-    os:
-      name: Linux
-      marketingName: Linux
-      version: null
-      manufacturer: linux-foundation
-      bits: null
+      dualOrientation: false
+      simCount: 1
+      bits: 0
     client:
-      name: PerplexityBot
+      name: OneBrowser
       modus: null
-      version: '1.0.0'
-      manufacturer: perplexity
-      type: crawler
-      isbot: true
-      bits: null
+      version: 3.1.0
+      manufacturer: unknown
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
     engine:
-      name: Blink
-      version: '155.0.0'
-      manufacturer: google
+      name: WebKit
+      version: null
+      manufacturer: apple
 -
-  -
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Tizen 2.2.1.3; SM-R750) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.76 efl-webengine/0.1.1.1 Mobile Safari/537.36'
-  -
+  expected:
     headers:
       user-agent: 'Mozilla/5.0 (Linux; Tizen 2.2.1.3; SM-R750) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.76 efl-webengine/0.1.1.1 Mobile Safari/537.36'
     device:
-      architecture: null
-      deviceName: null
-      marketingName: null
-      manufacturer: unknown
-      brand: unknown
-      dualOrientation: null
-      simCount: 0
+      architecture: ''
+      deviceName: SM-R750
+      marketingName: 'Gear S (40mm)'
+      manufacturer: samsung
+      brand: samsung
       display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: unknown
-      ismobile: false
+        width: 480
+        height: 360
+        touch: true
+        size: 2.0
+      type: smart-watch
+      ismobile: true
       istv: false
-      bits: null
-    os:
-      name: Linux
-      marketingName: Linux
-      version: null
-      manufacturer: linux-foundation
-      bits: null
+      dualOrientation: false
+      simCount: 0
+      bits: 0
     client:
-      name: PerplexityBot
+      name: Chrome
       modus: null
-      version: '1.0.0'
-      manufacturer: perplexity
-      type: crawler
-      isbot: true
-      bits: null
+      version: 34.0.1847.76
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Tizen
+      marketingName: Tizen
+      version: 2.2.1.3
+      manufacturer: linux-foundation
+      bits: 0
     engine:
       name: Blink
-      version: '155.0.0'
+      version: 34.0.1847.76
       manufacturer: google
 -
-  -
+  headers:
     user-agent: 'Apple AppleTV6,2 tvOS/17.1.0 Lifetime-tvOS/5.14.0 CFNetwork/1485'
-  -
+  expected:
     headers:
       user-agent: 'Apple AppleTV6,2 tvOS/17.1.0 Lifetime-tvOS/5.14.0 CFNetwork/1485'
     device:
-      architecture: null
-      deviceName: null
-      marketingName: null
-      manufacturer: unknown
-      brand: unknown
-      dualOrientation: null
-      simCount: 0
+      architecture: ''
+      deviceName: 'AppleTV 6,2'
+      marketingName: 'Apple TV 4K'
+      manufacturer: apple
+      brand: apple
       display:
         width: null
         height: null
         touch: false
         size: null
-      type: unknown
+      type: tv-set-top-box
       ismobile: false
-      istv: false
-      bits: null
-    os:
-      name: Linux
-      marketingName: Linux
-      version: null
-      manufacturer: linux-foundation
-      bits: null
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
     client:
-      name: PerplexityBot
+      name: CFNetwork
       modus: null
-      version: '1.0.0'
-      manufacturer: perplexity
-      type: crawler
-      isbot: true
-      bits: null
+      version: null
+      manufacturer: apple
+      type: application
+      isbot: false
+      bits: 0
+    os:
+      name: tvOS
+      marketingName: tvOS
+      version: 17.1.0
+      manufacturer: apple
+      bits: 0
     engine:
-      name: Blink
-      version: '155.0.0'
-      manufacturer: google
+      name: WebKit
+      version: 1485.0.0
+      manufacturer: apple
