@@ -530,3 +530,45 @@
     size: 6.1
   type: phablet
   platform: ios
+'apple iphone 19,2':
+  deviceName: 'iPhone 19,2'
+  marketingName: 'iPhone 18 Pro'
+  manufacturer: apple
+  brand: apple
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 2622
+    height: 1206
+    touch: true
+    size: 6.3
+  type: phablet
+  platform: ios
+'apple iphone 19,3':
+  deviceName: 'iPhone 19,3'
+  marketingName: 'iPhone 18 Pro Max'
+  manufacturer: apple
+  brand: apple
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 2868
+    height: 1320
+    touch: true
+    size: 6.9
+  type: phablet
+  platform: ios
+'apple iphone 19,7':
+  deviceName: 'iPhone 19,7'
+  marketingName: 'iPhone 18 Pro Max'
+  manufacturer: apple
+  brand: apple
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 2868
+    height: 1320
+    touch: true
+    size: 6.9
+  type: phablet
+  platform: ios
