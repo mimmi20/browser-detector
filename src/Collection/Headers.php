@@ -474,6 +474,8 @@ final readonly class Headers
                         case 'shap-bot':
                         case 'tiktok':
                         case 'perplexity-bot':
+                        case 'sender-bot':
+                        case 'kakao-bot':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 
@@ -556,6 +558,23 @@ final readonly class Headers
                 if (is_string($lastClientCodename)) {
                     switch ($lastClientCodename) {
                         case 'chatgpt-user-bot':
+                            $clientCodename = $lastClientCodename;
+                            $clientHeader   = array_last($headersWithClientCode);
+
+                            break;
+                        default:
+                            // do nothing
+                    }
+                }
+
+                break;
+            case 'lightpanda':
+                $lastClientCodename = array_last($clientCodes);
+                $clientHeader       = array_first($headersWithClientCode);
+
+                if (is_string($lastClientCodename)) {
+                    switch ($lastClientCodename) {
+                        case 'lightpanda-test-crawler':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 

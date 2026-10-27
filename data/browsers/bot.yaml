@@ -4043,33 +4043,6 @@ twitturls:
     search:
       - Twitturls
   engine: unknown
-typo3:
-  name: Typo3
-  manufacturer: unknown
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - TYPO3
-  engine: unknown
-'typo3 linkvalidator':
-  name: 'TYPO3 Linkvalidator'
-  manufacturer: unknown
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - TYPO3\-linkvalidator
-  engine: unknown
-typolinkvalidator:
-  name: TypoLinkvalidator
-  manufacturer: unknown
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - TypoLinkvalidator
-  engine: unknown
 ucrawlr:
   name: uCrawlr
   manufacturer: ucoz
