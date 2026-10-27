@@ -1,0 +1,4100 @@
+-
+  headers:
+    user-agent: 'NavCrawl/0.4 (+https://example.com/bot)'
+  expected:
+    headers:
+      user-agent: 'NavCrawl/0.4 (+https://example.com/bot)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Desktop App 1.0.6'
+  expected:
+    headers:
+      user-agent: 'Desktop App 1.0.6'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'agenttrust-collector (+https://agenttru.st)'
+  expected:
+    headers:
+      user-agent: 'agenttrust-collector (+https://agenttru.st)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'HudHud-HostProbe/1.0 (+liveness)'
+  expected:
+    headers:
+      user-agent: 'HudHud-HostProbe/1.0 (+liveness)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: SearchBot/0.1
+  expected:
+    headers:
+      user-agent: SearchBot/0.1
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'SalesOS-CompanyVerifier/1.0 (+https://salessearch.co.uk)'
+  expected:
+    headers:
+      user-agent: 'SalesOS-CompanyVerifier/1.0 (+https://salessearch.co.uk)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: DomainImporter/1.0
+  expected:
+    headers:
+      user-agent: DomainImporter/1.0
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: WebIDS-NG-RedirectTracker/1.0
+  expected:
+    headers:
+      user-agent: WebIDS-NG-RedirectTracker/1.0
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'MolotowSiteCheck/1.0 (+https://molotow-web.com/site-check)'
+  expected:
+    headers:
+      user-agent: 'MolotowSiteCheck/1.0 (+https://molotow-web.com/site-check)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: Jetfuel-VLM-Raw-Fetch/1.0
+  expected:
+    headers:
+      user-agent: Jetfuel-VLM-Raw-Fetch/1.0
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: gdat-laion-research/1.0
+  expected:
+    headers:
+      user-agent: gdat-laion-research/1.0
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'de-scanner/1.0 (+link discovery bot; kontakt: markusbra@gmail.com)'
+  expected:
+    headers:
+      user-agent: 'de-scanner/1.0 (+link discovery bot; kontakt: markusbra@gmail.com)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'lead-scraper/0.1.0 (+mailto:leo.rink@me.com)'
+  expected:
+    headers:
+      user-agent: 'lead-scraper/0.1.0 (+mailto:leo.rink@me.com)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: n8n
+  expected:
+    headers:
+      user-agent: n8n
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: msh-pdf-origin-canary/1
+  expected:
+    headers:
+      user-agent: msh-pdf-origin-canary/1
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'HunterLogosRobot/1.0 (+https://logos.hunter.io/robot)'
+  expected:
+    headers:
+      user-agent: 'HunterLogosRobot/1.0 (+https://logos.hunter.io/robot)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'JB-FDR-Research/1.0 (+kontakt: datenschutz@jb-finanzberatung.de)'
+  expected:
+    headers:
+      user-agent: 'JB-FDR-Research/1.0 (+kontakt: datenschutz@jb-finanzberatung.de)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'VendiBot/1.0 (+https://vendigroup.eu/bot; kontakt: bot@vendigroup.eu)'
+  expected:
+    headers:
+      user-agent: 'VendiBot/1.0 (+https://vendigroup.eu/bot; kontakt: bot@vendigroup.eu)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'AkquiseAuffrischer/1.0 (Abgleich eigener Newsletter-Kontakte; Impressumsdaten)'
+  expected:
+    headers:
+      user-agent: 'AkquiseAuffrischer/1.0 (Abgleich eigener Newsletter-Kontakte; Impressumsdaten)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: 'RISC OS'
+      marketingName: 'RISC OS'
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 't2i-data-curation/1.0 (research dataset ingest; contact: ximensun) requests'
+  expected:
+    headers:
+      user-agent: 't2i-data-curation/1.0 (research dataset ingest; contact: ximensun) requests'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'GoodReports-Compliance-Audit/1.0 (+robots.txt compliance review of previously collected data)'
+  expected:
+    headers:
+      user-agent: 'GoodReports-Compliance-Audit/1.0 (+robots.txt compliance review of previously collected data)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'LohiSoftBot/1.0 (+message@lohisoft.com)'
+  expected:
+    headers:
+      user-agent: 'LohiSoftBot/1.0 (+message@lohisoft.com)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'SofyaBot/1.0 (+https://sofya.co/bot)'
+  expected:
+    headers:
+      user-agent: 'SofyaBot/1.0 (+https://sofya.co/bot)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Elgato Stream Deck'
+  expected:
+    headers:
+      user-agent: 'Elgato Stream Deck'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'SAAS_worldparser/1.0 (+https://github.com/truboter/SAAS_worldparser)'
+  expected:
+    headers:
+      user-agent: 'SAAS_worldparser/1.0 (+https://github.com/truboter/SAAS_worldparser)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'cms-scanner/2.0 (research)'
+  expected:
+    headers:
+      user-agent: 'cms-scanner/2.0 (research)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'UmaiBot/1.0 (+https://umai.entelijan.com)'
+  expected:
+    headers:
+      user-agent: 'UmaiBot/1.0 (+https://umai.entelijan.com)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'CMS-Security-Auditor/1.0 (+authorized self-check; contact: local-admin)'
+  expected:
+    headers:
+      user-agent: 'CMS-Security-Auditor/1.0 (+authorized self-check; contact: local-admin)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'AtlasBot/1.0 (+https://atlas.harmoniamix.com/bot)'
+  expected:
+    headers:
+      user-agent: 'AtlasBot/1.0 (+https://atlas.harmoniamix.com/bot)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: HostingPanel-SensitiveFileAudit/2.0
+  expected:
+    headers:
+      user-agent: HostingPanel-SensitiveFileAudit/2.0
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: YUTAA-SCANNER-DEFUNCT/1.0
+  expected:
+    headers:
+      user-agent: YUTAA-SCANNER-DEFUNCT/1.0
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'PoweredByBot/1.0 (+https://poweredby.keywordseverywhere.com/bot)'
+  expected:
+    headers:
+      user-agent: 'PoweredByBot/1.0 (+https://poweredby.keywordseverywhere.com/bot)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'WarmerlyBot/1.0 (+https://warmerly.com/bot)'
+  expected:
+    headers:
+      user-agent: 'WarmerlyBot/1.0 (+https://warmerly.com/bot)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: sitemap-parser-rs/0.1.0
+  expected:
+    headers:
+      user-agent: sitemap-parser-rs/0.1.0
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'NoveoSiteBot/0.1 (+https://noveodigital.be)'
+  expected:
+    headers:
+      user-agent: 'NoveoSiteBot/0.1 (+https://noveodigital.be)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'whisk-sag/0.1 (+personal recipe index)'
+  expected:
+    headers:
+      user-agent: 'whisk-sag/0.1 (+personal recipe index)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'UhrigSolutionsBot/1.0 (+https://uhrig-solutions.de/; info@uhrig-solutions.de) technology-survey'
+  expected:
+    headers:
+      user-agent: 'UhrigSolutionsBot/1.0 (+https://uhrig-solutions.de/; info@uhrig-solutions.de) technology-survey'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'ScopeCampusResolver2/1.0 (+lukasjosef; Ausbildungsstellen-Recherche, hoeflich)'
+  expected:
+    headers:
+      user-agent: 'ScopeCampusResolver2/1.0 (+lukasjosef; Ausbildungsstellen-Recherche, hoeflich)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: Tiny-Crawler-101/0.0.3
+  expected:
+    headers:
+      user-agent: Tiny-Crawler-101/0.0.3
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: dataset-acq/1.0
+  expected:
+    headers:
+      user-agent: dataset-acq/1.0
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'megawika2-report-generation/1.0 (+https://github.com/jhu-clsp/megawika-2; research data pipeline)'
+  expected:
+    headers:
+      user-agent: 'megawika2-report-generation/1.0 (+https://github.com/jhu-clsp/megawika-2; research data pipeline)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: LuisSearchBot/1.0
+  expected:
+    headers:
+      user-agent: LuisSearchBot/1.0
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'hostio-bot/0.1 (+https://github.com/airyland/host.io; contact=i@mao.li)'
+  expected:
+    headers:
+      user-agent: 'hostio-bot/0.1 (+https://github.com/airyland/host.io; contact=i@mao.li)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: EMAIL-EU-Academic-Crawler/4.1
+  expected:
+    headers:
+      user-agent: EMAIL-EU-Academic-Crawler/4.1
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: mini-search-domain-info/1.0
+  expected:
+    headers:
+      user-agent: mini-search-domain-info/1.0
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: msh-pdfmin/1
+  expected:
+    headers:
+      user-agent: msh-pdfmin/1
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: Nextcloud-Server-Crawler/34.0.2
+  expected:
+    headers:
+      user-agent: Nextcloud-Server-Crawler/34.0.2
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'consumer-scraper/1.0 (+https://git.emarketshield.at)'
+  expected:
+    headers:
+      user-agent: 'consumer-scraper/1.0 (+https://git.emarketshield.at)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'SquirrelScan/2.0 (+https://squirrelscan.com)'
+  expected:
+    headers:
+      user-agent: 'SquirrelScan/2.0 (+https://squirrelscan.com)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: request-image-size
+  expected:
+    headers:
+      user-agent: request-image-size
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: CGrab/v8.12.0
+  expected:
+    headers:
+      user-agent: CGrab/v8.12.0
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'RankoBot/1.0 (+https://ranko.tools/bot)'
+  expected:
+    headers:
+      user-agent: 'RankoBot/1.0 (+https://ranko.tools/bot)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'RepublicResearch/2.3.2 (+https://auvralabs.com; public company-data verification)'
+  expected:
+    headers:
+      user-agent: 'RepublicResearch/2.3.2 (+https://auvralabs.com; public company-data verification)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'CCrawl/2.0 (+https://ccrawl.tamnd.com/bot)'
+  expected:
+    headers:
+      user-agent: 'CCrawl/2.0 (+https://ccrawl.tamnd.com/bot)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: ExoPriors-Nucleus/domain-pages
+  expected:
+    headers:
+      user-agent: ExoPriors-Nucleus/domain-pages
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: 'Nucleus OS'
+      marketingName: Nucleus
+      version: null
+      manufacturer: acceleratedTechnology
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'CompanyDB-enrichment/2.0 (+https://companydb.webforce.be)'
+  expected:
+    headers:
+      user-agent: 'CompanyDB-enrichment/2.0 (+https://companydb.webforce.be)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'odyssey-viscacha/1.0 (research; contact: infra@odyssey.systems)'
+  expected:
+    headers:
+      user-agent: 'odyssey-viscacha/1.0 (research; contact: infra@odyssey.systems)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 's-live/1.0 (+factory)'
+  expected:
+    headers:
+      user-agent: 's-live/1.0 (+factory)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'ShowYourselfBot/1.0 (+https://showyourself.me)'
+  expected:
+    headers:
+      user-agent: 'ShowYourselfBot/1.0 (+https://showyourself.me)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'BelenDomainLifecyclePilot/1.0 (+https://harita.belengroup.de)'
+  expected:
+    headers:
+      user-agent: 'BelenDomainLifecyclePilot/1.0 (+https://harita.belengroup.de)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'webshopok-kutatas/0.1 (+kapcsolat: test@datalistshop.eu; belso piackutatas, .de webshopok)'
+  expected:
+    headers:
+      user-agent: 'webshopok-kutatas/0.1 (+kapcsolat: test@datalistshop.eu; belso piackutatas, .de webshopok)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'JobrouteBot/1.0 (+https://jobroute.io/about-bot)'
+  expected:
+    headers:
+      user-agent: 'JobrouteBot/1.0 (+https://jobroute.io/about-bot)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'metabase-cve-2026-72898-detect/1.0 (benign detection probes only)'
+  expected:
+    headers:
+      user-agent: 'metabase-cve-2026-72898-detect/1.0 (benign detection probes only)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: feroxbuster/2.13.1
+  expected:
+    headers:
+      user-agent: feroxbuster/2.13.1
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: OctopusTools/1.0
+  expected:
+    headers:
+      user-agent: OctopusTools/1.0
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'https://rfi.nessus.org/rfi.txt'
+  expected:
+    headers:
+      user-agent: 'https://rfi.nessus.org/rfi.txt'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: '>]><test><name>&xxe;</name></test>'
+  expected:
+    headers:
+      user-agent: '>]><test><name>&xxe;</name></test>'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: rfi.nessus.org/rfi.txt
+  expected:
+    headers:
+      user-agent: rfi.nessus.org/rfi.txt
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: '></iframe>'
+  expected:
+    headers:
+      user-agent: '></iframe>'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'hTtPs://rfi.nessus.org/rfi.txt'
+  expected:
+    headers:
+      user-agent: 'hTtPs://rfi.nessus.org/rfi.txt'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: '+[]><x></x>'
+  expected:
+    headers:
+      user-agent: '+[]><x></x>'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: //xssrcLPSaliXE.was.tenable.com
+  expected:
+    headers:
+      user-agent: //xssrcLPSaliXE.was.tenable.com
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: xssrcjzPfWlCl.was.tenable.com
+  expected:
+    headers:
+      user-agent: xssrcjzPfWlCl.was.tenable.com
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: ../WEB-INF/web.xml
+  expected:
+    headers:
+      user-agent: ../WEB-INF/web.xml
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: NetFront
+      version: null
+      manufacturer: access
+-
+  headers:
+    user-agent: WEB-INF/web.xml
+  expected:
+    headers:
+      user-agent: WEB-INF/web.xml
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: NetFront
+      version: null
+      manufacturer: access
+-
+  headers:
+    user-agent: was-tnb-frj
+  expected:
+    headers:
+      user-agent: was-tnb-frj
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: was-tnb-bok
+  expected:
+    headers:
+      user-agent: was-tnb-bok
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'url:file://WEB-INF/web.xml'
+  expected:
+    headers:
+      user-agent: 'url:file://WEB-INF/web.xml'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: NetFront
+      version: null
+      manufacturer: access
+-
+  headers:
+    user-agent: 'url:file://../WEB-INF/web.xml'
+  expected:
+    headers:
+      user-agent: 'url:file://../WEB-INF/web.xml'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: NetFront
+      version: null
+      manufacturer: access
+-
+  headers:
+    user-agent: 'url:file://../../WEB-INF/web.xml'
+  expected:
+    headers:
+      user-agent: 'url:file://../../WEB-INF/web.xml'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: NetFront
+      version: null
+      manufacturer: access
+-
+  headers:
+    user-agent: 'url:file:///proc/self/cwd/../../../../../../../etc/passwd'
+  expected:
+    headers:
+      user-agent: 'url:file:///proc/self/cwd/../../../../../../../etc/passwd'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'url:file://localhost/etc/passwd'
+  expected:
+    headers:
+      user-agent: 'url:file://localhost/etc/passwd'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'url:file://\\/\\/etc/passwd'
+  expected:
+    headers:
+      user-agent: 'url:file://\\/\\/etc/passwd'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'url:file:///etc/passwd'
+  expected:
+    headers:
+      user-agent: 'url:file:///etc/passwd'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'url:file://../../../../../../../../etc/passwd'
+  expected:
+    headers:
+      user-agent: 'url:file://../../../../../../../../etc/passwd'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: '+ str(13500*68167)'
+  expected:
+    headers:
+      user-agent: '+ str(13500*68167)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'res.send(`WAS${13500*68167}`)'
+  expected:
+    headers:
+      user-agent: 'res.send(`WAS${13500*68167}`)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'netdoc://WEB-INF/web.xml'
+  expected:
+    headers:
+      user-agent: 'netdoc://WEB-INF/web.xml'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: NetFront
+      version: null
+      manufacturer: access
+-
+  headers:
+    user-agent: 'netdoc://../WEB-INF/web.xml'
+  expected:
+    headers:
+      user-agent: 'netdoc://../WEB-INF/web.xml'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: NetFront
+      version: null
+      manufacturer: access
+-
+  headers:
+    user-agent: 'netdoc://../../WEB-INF/web.xml'
+  expected:
+    headers:
+      user-agent: 'netdoc://../../WEB-INF/web.xml'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: NetFront
+      version: null
+      manufacturer: access
+-
+  headers:
+    user-agent: 'netdoc:///proc/self/cwd/../../../../../../../etc/passwd'
+  expected:
+    headers:
+      user-agent: 'netdoc:///proc/self/cwd/../../../../../../../etc/passwd'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'netdoc://localhost/etc/passwd'
+  expected:
+    headers:
+      user-agent: 'netdoc://localhost/etc/passwd'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'netdoc://\\/\\/etc/passwd'
+  expected:
+    headers:
+      user-agent: 'netdoc://\\/\\/etc/passwd'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'netdoc:///etc/passwd'
+  expected:
+    headers:
+      user-agent: 'netdoc:///etc/passwd'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'netdoc://../../../../../../../../etc/passwd'
+  expected:
+    headers:
+      user-agent: 'netdoc://../../../../../../../../etc/passwd'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: '|id'
+  expected:
+    headers:
+      user-agent: '|id'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: '`id`'
+  expected:
+    headers:
+      user-agent: '`id`'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: ;id
+  expected:
+    headers:
+      user-agent: ;id
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: '&&id'
+  expected:
+    headers:
+      user-agent: '&&id'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: id
+  expected:
+    headers:
+      user-agent: id
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown

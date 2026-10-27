@@ -1,0 +1,4214 @@
+-
+  headers:
+    user-agent: 'nekuda-scanner/1.0 (+https://bot.nekuda.ai)'
+  expected:
+    headers:
+      user-agent: 'nekuda-scanner/1.0 (+https://bot.nekuda.ai)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Nekuda WebMCP Discovery Bot'
+      modus: null
+      version: 1.0.0
+      manufacturer: nekuda
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; NetcraftSurveyAgent/1.0; +info@netcraft.com)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; NetcraftSurveyAgent/1.0; +info@netcraft.com)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Netcraft Survey Agent'
+      modus: null
+      version: 1.0.0
+      manufacturer: netcraft
+      type: search-bot
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'OmniWeb 622.8.0.112916'
+  expected:
+    headers:
+      user-agent: 'OmniWeb 622.8.0.112916'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: OmniWeb
+      modus: null
+      version: 622.8.0.112916
+      manufacturer: omni-development
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: WebKit
+      version: null
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'OI-Crawler/Nutch (https://openintel.nl/webcrawl/)'
+  expected:
+    headers:
+      user-agent: 'OI-Crawler/Nutch (https://openintel.nl/webcrawl/)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: OI-Crawler
+      modus: null
+      version: null
+      manufacturer: open-intel
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'ChatGPT User Bot'
+      modus: null
+      version: 1.0.0
+      manufacturer: openai
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: WebKit
+      version: 537.36.0
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: OAI-SearchBot
+      modus: null
+      version: 1.0.0
+      manufacturer: openai
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: WebKit
+      version: 537.36.0
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; GPTBot/1.2; +https://openai.com/gptbot)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; GPTBot/1.2; +https://openai.com/gptbot)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'GPT Bot'
+      modus: null
+      version: 1.2.0
+      manufacturer: openai
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: WebKit
+      version: 537.36.0
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; OAI-SearchBot/1.3; +https://openai.com/searchbot)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; OAI-SearchBot/1.3; +https://openai.com/searchbot)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: OAI-SearchBot
+      modus: null
+      version: 1.3.0
+      manufacturer: openai
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    sec-ch-ua-platform: '"macOS"'
+    sec-ch-ua: '"Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"'
+    sec-ch-ua-mobile: '?0'
+    user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; ChatGPT-User/1.0; +https://openai.com/bot)'
+  expected:
+    headers:
+      sec-ch-ua-platform: '"macOS"'
+      sec-ch-ua: '"Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"'
+      sec-ch-ua-mobile: '?0'
+      user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; ChatGPT-User/1.0; +https://openai.com/bot)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'ChatGPT User Bot'
+      modus: null
+      version: 1.0.0
+      manufacturer: openai
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: 'Mac OS X'
+      marketingName: 'Mac OS X'
+      version: null
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: Blink
+      version: 145.0.0
+      manufacturer: google
+-
+  headers:
+    sec-ch-ua-platform: '"Windows"'
+    sec-ch-ua: '"Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"'
+    sec-ch-ua-mobile: '?0'
+    user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; ChatGPT-User/1.0; +https://openai.com/bot)'
+  expected:
+    headers:
+      sec-ch-ua-platform: '"Windows"'
+      sec-ch-ua: '"Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"'
+      sec-ch-ua-mobile: '?0'
+      user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; ChatGPT-User/1.0; +https://openai.com/bot)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'ChatGPT User Bot'
+      modus: null
+      version: 1.0.0
+      manufacturer: openai
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: Windows
+      marketingName: Windows
+      version: null
+      manufacturer: microsoft
+      bits: 0
+    engine:
+      name: Blink
+      version: 145.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; ChatGPT-User/1.0; +https://openai.com/bot)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; ChatGPT-User/1.0; +https://openai.com/bot)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'ChatGPT User Bot'
+      modus: null
+      version: 1.0.0
+      manufacturer: openai
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; GPTBot/1.2; +https://openai.com/gptbot)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; GPTBot/1.2; +https://openai.com/gptbot)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'GPT Bot'
+      modus: null
+      version: 1.2.0
+      manufacturer: openai
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: Java/17.0.12
+  expected:
+    headers:
+      user-agent: Java/17.0.12
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Java Standard Library'
+      modus: null
+      version: 17.0.12
+      manufacturer: oracle
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: JavaOS
+      marketingName: JavaOS
+      version: null
+      manufacturer: sun
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: Java/17.0.19
+  expected:
+    headers:
+      user-agent: Java/17.0.19
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Java Standard Library'
+      modus: null
+      version: 17.0.19
+      manufacturer: oracle
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: JavaOS
+      marketingName: JavaOS
+      version: null
+      manufacturer: sun
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: '${T(java.lang.System).properties}'
+  expected:
+    headers:
+      user-agent: '${T(java.lang.System).properties}'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Java Standard Library'
+      modus: null
+      version: null
+      manufacturer: oracle
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: JavaOS
+      marketingName: JavaOS
+      version: null
+      manufacturer: sun
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'JavasCript:wasxsscontext8v4o5e'
+  expected:
+    headers:
+      user-agent: 'JavasCript:wasxsscontext8v4o5e'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Java Standard Library'
+      modus: null
+      version: null
+      manufacturer: oracle
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: JavaOS
+      marketingName: JavaOS
+      version: null
+      manufacturer: sun
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'JavasCript:wasxsscontext8r1e4t'
+  expected:
+    headers:
+      user-agent: 'JavasCript:wasxsscontext8r1e4t'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Java Standard Library'
+      modus: null
+      version: null
+      manufacturer: oracle
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: JavaOS
+      marketingName: JavaOS
+      version: null
+      manufacturer: sun
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'JavasCript:wasxsscontext6h6z7i'
+  expected:
+    headers:
+      user-agent: 'JavasCript:wasxsscontext6h6z7i'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Java Standard Library'
+      modus: null
+      version: null
+      manufacturer: oracle
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: JavaOS
+      marketingName: JavaOS
+      version: null
+      manufacturer: sun
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'JavasCript:wasxsscontext4t6u2s'
+  expected:
+    headers:
+      user-agent: 'JavasCript:wasxsscontext4t6u2s'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Java Standard Library'
+      modus: null
+      version: null
+      manufacturer: oracle
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: JavaOS
+      marketingName: JavaOS
+      version: null
+      manufacturer: sun
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'JavasCript:wasxsscontext4k8w8c'
+  expected:
+    headers:
+      user-agent: 'JavasCript:wasxsscontext4k8w8c'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Java Standard Library'
+      modus: null
+      version: null
+      manufacturer: oracle
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: JavaOS
+      marketingName: JavaOS
+      version: null
+      manufacturer: sun
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'JavasCript:wasxsscontext0z8p7i'
+  expected:
+    headers:
+      user-agent: 'JavasCript:wasxsscontext0z8p7i'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Java Standard Library'
+      modus: null
+      version: null
+      manufacturer: oracle
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: JavaOS
+      marketingName: JavaOS
+      version: null
+      manufacturer: sun
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: Java/1.8.0_504
+  expected:
+    headers:
+      user-agent: Java/1.8.0_504
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Java Standard Library'
+      modus: null
+      version: 1.8.0.504
+      manufacturer: oracle
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: JavaOS
+      marketingName: JavaOS
+      version: null
+      manufacturer: sun
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: Java/25.0.1
+  expected:
+    headers:
+      user-agent: Java/25.0.1
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Java Standard Library'
+      modus: null
+      version: 25.0.1
+      manufacturer: oracle
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: JavaOS
+      marketingName: JavaOS
+      version: null
+      manufacturer: sun
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'JavasCript:wasxsscontext6n8k4x'
+  expected:
+    headers:
+      user-agent: 'JavasCript:wasxsscontext6n8k4x'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Java Standard Library'
+      modus: null
+      version: null
+      manufacturer: oracle
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: JavaOS
+      marketingName: JavaOS
+      version: null
+      manufacturer: sun
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'JavasCript:wasxsscontext4w1o2j'
+  expected:
+    headers:
+      user-agent: 'JavasCript:wasxsscontext4w1o2j'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Java Standard Library'
+      modus: null
+      version: null
+      manufacturer: oracle
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: JavaOS
+      marketingName: JavaOS
+      version: null
+      manufacturer: sun
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'JavasCript:wasxsscontext1h3g4j'
+  expected:
+    headers:
+      user-agent: 'JavasCript:wasxsscontext1h3g4j'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Java Standard Library'
+      modus: null
+      version: null
+      manufacturer: oracle
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: JavaOS
+      marketingName: JavaOS
+      version: null
+      manufacturer: sun
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'JavasCript:wasxsscontext0r4j4f'
+  expected:
+    headers:
+      user-agent: 'JavasCript:wasxsscontext0r4j4f'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Java Standard Library'
+      modus: null
+      version: null
+      manufacturer: oracle
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: JavaOS
+      marketingName: JavaOS
+      version: null
+      manufacturer: sun
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: OWLer
+  expected:
+    headers:
+      user-agent: OWLer
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Owler Bot'
+      modus: null
+      version: null
+      manufacturer: owler
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; AclippBot/1.0; +https://aclipp.com)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; AclippBot/1.0; +https://aclipp.com)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: PagePeeker
+      modus: null
+      version: 1.0.0
+      manufacturer: page-peeker
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Hello from Palo Alto Networks, find out more about our scans in https://docs-cortex.paloaltonetworks.com/r/1/Cortex-Xpanse/Scanning-activity'
+  expected:
+    headers:
+      user-agent: 'Hello from Palo Alto Networks, find out more about our scans in https://docs-cortex.paloaltonetworks.com/r/1/Cortex-Xpanse/Scanning-activity'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Cortex Xpanse'
+      modus: null
+      version: null
+      manufacturer: palo-alto
+      type: security-checker
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ShapBot/0.1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ShapBot/0.1.0'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: ShapBot
+      modus: null
+      version: 0.1.0
+      manufacturer: parallel-web-systems
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: WebKit
+      version: 537.36.0
+      manufacturer: apple
+-
+  headers:
+    sec-ch-ua-model: '""'
+    sec-ch-ua-platform: '"Linux"'
+    sec-ch-ua-platform-version: '""'
+    sec-ch-ua: '"Not=A?Brand";v="99", "Google Chrome";v="151", "Chromium";v="151"'
+    sec-ch-ua-full-version: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-mobile: '?0'
+    sec-ch-ua-wow64: '?0'
+    user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ShapBot/0.1.0'
+  expected:
+    headers:
+      sec-ch-ua-model: '""'
+      sec-ch-ua-platform: '"Linux"'
+      sec-ch-ua-platform-version: '""'
+      sec-ch-ua: '"Not=A?Brand";v="99", "Google Chrome";v="151", "Chromium";v="151"'
+      sec-ch-ua-full-version: '""'
+      sec-ch-ua-bitness: '""'
+      sec-ch-ua-arch: '""'
+      sec-ch-ua-mobile: '?0'
+      sec-ch-ua-wow64: '?0'
+      user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ShapBot/0.1.0'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: ShapBot
+      modus: null
+      version: 0.1.0
+      manufacturer: parallel-web-systems
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: Linux
+      marketingName: Linux
+      version: null
+      manufacturer: linux-foundation
+      bits: 0
+    engine:
+      name: Blink
+      version: 151.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; PerplexityBot/1.0; +https://perplexity.ai/perplexitybot)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; PerplexityBot/1.0; +https://perplexity.ai/perplexitybot)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: PerplexityBot
+      modus: null
+      version: 1.0.0
+      manufacturer: perplexity
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: WebKit
+      version: 537.36.0
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Perplexity-User/1.0; +https://perplexity.ai/perplexity-user)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Perplexity-User/1.0; +https://perplexity.ai/perplexity-user)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Perplexity User'
+      modus: null
+      version: 1.0.0
+      manufacturer: perplexity
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: WebKit
+      version: 537.36.0
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; PerplexityBot/1.0; +https://perplexity.ai/perplexitybot)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; PerplexityBot/1.0; +https://perplexity.ai/perplexitybot)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: PerplexityBot
+      modus: null
+      version: 1.0.0
+      manufacturer: perplexity
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; Perplexity-User/1.0; +https://perplexity.ai/perplexity-user)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; Perplexity-User/1.0; +https://perplexity.ai/perplexity-user)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Perplexity User'
+      modus: null
+      version: 1.0.0
+      manufacturer: perplexity
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    sec-ch-ua-platform: '"macOS"'
+    sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
+    sec-ch-ua-mobile: '?0'
+    user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; PerplexityBot/1.0; +https://perplexity.ai/perplexitybot)'
+  expected:
+    headers:
+      sec-ch-ua-platform: '"macOS"'
+      sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
+      sec-ch-ua-mobile: '?0'
+      user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; PerplexityBot/1.0; +https://perplexity.ai/perplexitybot)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: PerplexityBot
+      modus: null
+      version: 1.0.0
+      manufacturer: perplexity
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: 'Mac OS X'
+      marketingName: 'Mac OS X'
+      version: null
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: Blink
+      version: 155.0.0
+      manufacturer: google
+-
+  headers:
+    sec-ch-ua-platform: '"Linux"'
+    sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
+    sec-ch-ua-mobile: '?0'
+    user-agent: 'Mozilla/5.0 (compatible; PerplexityBot/1.0; +https://perplexity.ai/perplexitybot)'
+  expected:
+    headers:
+      sec-ch-ua-platform: '"Linux"'
+      sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
+      sec-ch-ua-mobile: '?0'
+      user-agent: 'Mozilla/5.0 (compatible; PerplexityBot/1.0; +https://perplexity.ai/perplexitybot)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: PerplexityBot
+      modus: null
+      version: 1.0.0
+      manufacturer: perplexity
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: Linux
+      marketingName: Linux
+      version: null
+      manufacturer: linux-foundation
+      bits: 0
+    engine:
+      name: Blink
+      version: 155.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'php://input'
+  expected:
+    headers:
+      user-agent: 'php://input'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: PHP
+      modus: null
+      version: null
+      manufacturer: php-group
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: rwoksihk72cywbex7phpkvd2p3bnlgkdrtud5mngmcddzzbcotfq
+  expected:
+    headers:
+      user-agent: rwoksihk72cywbex7phpkvd2p3bnlgkdrtud5mngmcddzzbcotfq
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: PHP
+      modus: null
+      version: null
+      manufacturer: php-group
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; OnlineShopsBot/0.1; +https://verosoft.pl)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; OnlineShopsBot/0.1; +https://verosoft.pl)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Picsearch Bot'
+      modus: null
+      version: 0.1.0
+      manufacturer: picsearch
+      type: search-bot
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; Pinterestbot/1.0; +http://www.pinterest.com/bot.html)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; Pinterestbot/1.0; +http://www.pinterest.com/bot.html)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Pinterest Bot'
+      modus: null
+      version: 1.0.0
+      manufacturer: pinterest
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Poggio-Citations 1.0 (+https://docs.poggio.io/api/robots)'
+  expected:
+    headers:
+      user-agent: 'Poggio-Citations 1.0 (+https://docs.poggio.io/api/robots)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Poggio-Citations
+      modus: null
+      version: 1.0.0
+      manufacturer: poggio-labs
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: PostmanRuntime/7.56.0
+  expected:
+    headers:
+      user-agent: PostmanRuntime/7.56.0
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Postman Desktop'
+      modus: null
+      version: 7.56.0
+      manufacturer: postman
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: PostmanRuntime/7.56.1
+  expected:
+    headers:
+      user-agent: PostmanRuntime/7.56.1
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Postman Desktop'
+      modus: null
+      version: 7.56.1
+      manufacturer: postman
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: PostmanRuntime/7.55.1
+  expected:
+    headers:
+      user-agent: PostmanRuntime/7.55.1
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Postman Desktop'
+      modus: null
+      version: 7.55.1
+      manufacturer: postman
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: PostmanRuntime/2.11.2
+  expected:
+    headers:
+      user-agent: PostmanRuntime/2.11.2
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Postman Desktop'
+      modus: null
+      version: 2.11.2
+      manufacturer: postman
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'TAIA/0.0 (https://taia.tngtech.com; taia-dev@tngtech.com) httpx/0.28.1'
+  expected:
+    headers:
+      user-agent: 'TAIA/0.0 (https://taia.tngtech.com; taia-dev@tngtech.com) httpx/0.28.1'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: httpx
+      modus: null
+      version: 0.28.1
+      manufacturer: project-discovery
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: python-requests/2.19.1
+  expected:
+    headers:
+      user-agent: python-requests/2.19.1
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Python Requests'
+      modus: null
+      version: 2.19.1
+      manufacturer: python-software-foundation
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: python-requests/2.27.1
+  expected:
+    headers:
+      user-agent: python-requests/2.27.1
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Python Requests'
+      modus: null
+      version: 2.27.1
+      manufacturer: python-software-foundation
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: python-requests/2.31.0
+  expected:
+    headers:
+      user-agent: python-requests/2.31.0
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Python Requests'
+      modus: null
+      version: 2.31.0
+      manufacturer: python-software-foundation
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: python-requests/2.32.3
+  expected:
+    headers:
+      user-agent: python-requests/2.32.3
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Python Requests'
+      modus: null
+      version: 2.32.3
+      manufacturer: python-software-foundation
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: python-urllib3/2.2.3
+  expected:
+    headers:
+      user-agent: python-urllib3/2.2.3
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Python-urllib
+      modus: null
+      version: 2.2.3
+      manufacturer: python-software-foundation
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: python-requests/2.32.4
+  expected:
+    headers:
+      user-agent: python-requests/2.32.4
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Python Requests'
+      modus: null
+      version: 2.32.4
+      manufacturer: python-software-foundation
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: python-requests/2.32.5
+  expected:
+    headers:
+      user-agent: python-requests/2.32.5
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Python Requests'
+      modus: null
+      version: 2.32.5
+      manufacturer: python-software-foundation
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: Python-urllib/3.14
+  expected:
+    headers:
+      user-agent: Python-urllib/3.14
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Python-urllib
+      modus: null
+      version: 3.14.0
+      manufacturer: python-software-foundation
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: python-requests/2.33.0
+  expected:
+    headers:
+      user-agent: python-requests/2.33.0
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Python Requests'
+      modus: null
+      version: 2.33.0
+      manufacturer: python-software-foundation
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: python-requests/2.33.1
+  expected:
+    headers:
+      user-agent: python-requests/2.33.1
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Python Requests'
+      modus: null
+      version: 2.33.1
+      manufacturer: python-software-foundation
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: python-requests/2.34.2
+  expected:
+    headers:
+      user-agent: python-requests/2.34.2
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Python Requests'
+      modus: null
+      version: 2.34.2
+      manufacturer: python-software-foundation
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: python-urllib3/2.8.0
+  expected:
+    headers:
+      user-agent: python-urllib3/2.8.0
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Python-urllib
+      modus: null
+      version: 2.8.0
+      manufacturer: python-software-foundation
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; Qwantbot/1.0; +https://help.qwant.com/bot/)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; Qwantbot/1.0; +https://help.qwant.com/bot/)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Qwantbot
+      modus: null
+      version: 1.0.0
+      manufacturer: qwant
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'RayluBot/1.0 (+https://raylu.ai/bot)'
+  expected:
+    headers:
+      user-agent: 'RayluBot/1.0 (+https://raylu.ai/bot)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: RayluBot
+      modus: null
+      version: 1.0.0
+      manufacturer: raylu
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'RecordedFuture Global Inventory Crawler'
+  expected:
+    headers:
+      user-agent: 'RecordedFuture Global Inventory Crawler'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: RecordedFuture
+      modus: null
+      version: null
+      manufacturer: recorded-future
+      type: security-checker
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Reflectionbot/1.0; +https://reflection.ai/bot) Chrome/151.0.0.0 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Reflectionbot/1.0; +https://reflection.ai/bot) Chrome/151.0.0.0 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Reflectionbot
+      modus: null
+      version: 1.0.0
+      manufacturer: reflection-ai
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Blink
+      version: 151.0.0.0
+      manufacturer: google
+-
+  headers:
+    sec-ch-ua-platform: '"Linux"'
+    sec-ch-ua: '"Chromium";v="151", "Not)A;Brand";v="24", "Reflectionbot";v="1"'
+    sec-ch-ua-mobile: '?0'
+    user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Reflectionbot/1.0; +https://reflection.ai/bot) Chrome/151.0.0.0 Safari/537.36'
+  expected:
+    headers:
+      sec-ch-ua-platform: '"Linux"'
+      sec-ch-ua: '"Chromium";v="151", "Not)A;Brand";v="24", "Reflectionbot";v="1"'
+      sec-ch-ua-mobile: '?0'
+      user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Reflectionbot/1.0; +https://reflection.ai/bot) Chrome/151.0.0.0 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Reflectionbot
+      modus: null
+      version: 1.0.0
+      manufacturer: reflection-ai
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: Linux
+      marketingName: Linux
+      version: null
+      manufacturer: linux-foundation
+      bits: 0
+    engine:
+      name: Blink
+      version: 151.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 researchscan.comsys.rwth-aachen.de'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 researchscan.comsys.rwth-aachen.de'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Research Scan'
+      modus: null
+      version: null
+      manufacturer: rwth-aachen
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Screaming Frog SEO Spider/23.3'
+  expected:
+    headers:
+      user-agent: 'Screaming Frog SEO Spider/23.3'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Screaming Frog SEO Spider'
+      modus: null
+      version: 23.3.0
+      manufacturer: screaming-frog
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    sec-ch-ua: '"Lightpanda";v="1"'
+    user-agent: Lightpanda/1.0
+  expected:
+    headers:
+      sec-ch-ua: '"Lightpanda";v="1"'
+      user-agent: Lightpanda/1.0
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Lightpanda
+      modus: null
+      version: 1.0.0
+      manufacturer: selecy
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Blink
+      version: null
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Lightpanda/1.0 internal-testing-crawler'
+  expected:
+    headers:
+      user-agent: 'Lightpanda/1.0 internal-testing-crawler'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Lightpanda
+      modus: null
+      version: 1.0.0
+      manufacturer: selecy
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: Lightpanda/1.0
+  expected:
+    headers:
+      user-agent: Lightpanda/1.0
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Lightpanda
+      modus: null
+      version: 1.0.0
+      manufacturer: selecy
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    sec-ch-ua-full-version-list: '"Lightpanda";v="1.0.0-nightly.9540+a5e6ad80b"'
+    sec-ch-ua: '"Lightpanda";v="1"'
+    user-agent: 'Lightpanda/1.0 internal-testing-crawler'
+  expected:
+    headers:
+      sec-ch-ua-full-version-list: '"Lightpanda";v="1.0.0-nightly.9540+a5e6ad80b"'
+      sec-ch-ua: '"Lightpanda";v="1"'
+      user-agent: 'Lightpanda/1.0 internal-testing-crawler'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Lightpanda
+      modus: null
+      version: 1.0.0
+      manufacturer: selecy
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Blink
+      version: null
+      manufacturer: google
+-
+  headers:
+    sec-ch-ua-full-version-list: '"Lightpanda";v="0.4.0"'
+    sec-ch-ua: '"Lightpanda";v="1"'
+    user-agent: Lightpanda/1.0
+  expected:
+    headers:
+      sec-ch-ua-full-version-list: '"Lightpanda";v="0.4.0"'
+      sec-ch-ua: '"Lightpanda";v="1"'
+      user-agent: Lightpanda/1.0
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Lightpanda
+      modus: null
+      version: 0.4.0
+      manufacturer: selecy
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Blink
+      version: null
+      manufacturer: google
+-
+  headers:
+    sec-ch-ua-full-version-list: '"Lightpanda";v="1.0.0-nightly.9268+909108e29"'
+    sec-ch-ua: '"Lightpanda";v="1"'
+    user-agent: 'Lightpanda/1.0 internal-testing-crawler'
+  expected:
+    headers:
+      sec-ch-ua-full-version-list: '"Lightpanda";v="1.0.0-nightly.9268+909108e29"'
+      sec-ch-ua: '"Lightpanda";v="1"'
+      user-agent: 'Lightpanda/1.0 internal-testing-crawler'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Lightpanda
+      modus: null
+      version: 1.0.0
+      manufacturer: selecy
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Blink
+      version: null
+      manufacturer: google
+-
+  headers:
+    sec-ch-ua-full-version-list: '"Lightpanda";v="1.0.0-nightly.8982+fa1b9ab03"'
+    sec-ch-ua: '"Lightpanda";v="1"'
+    user-agent: 'Lightpanda/1.0 internal-testing-crawler'
+  expected:
+    headers:
+      sec-ch-ua-full-version-list: '"Lightpanda";v="1.0.0-nightly.8982+fa1b9ab03"'
+      sec-ch-ua: '"Lightpanda";v="1"'
+      user-agent: 'Lightpanda/1.0 internal-testing-crawler'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Lightpanda
+      modus: null
+      version: 1.0.0
+      manufacturer: selecy
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Blink
+      version: null
+      manufacturer: google
+-
+  headers:
+    sec-ch-ua-full-version-list: '"Lightpanda";v="1.0.0-nightly.9842+ce46f90f1"'
+    sec-ch-ua: '"Lightpanda";v="1"'
+    user-agent: 'Lightpanda/1.0 internal-testing-crawler'
+  expected:
+    headers:
+      sec-ch-ua-full-version-list: '"Lightpanda";v="1.0.0-nightly.9842+ce46f90f1"'
+      sec-ch-ua: '"Lightpanda";v="1"'
+      user-agent: 'Lightpanda/1.0 internal-testing-crawler'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Lightpanda
+      modus: null
+      version: 1.0.0
+      manufacturer: selecy
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Blink
+      version: null
+      manufacturer: google
+-
+  headers:
+    sec-ch-ua-full-version-list: '"Lightpanda";v="1.1.0-nightly.10379+430727e14"'
+    sec-ch-ua: '"Lightpanda";v="1"'
+    user-agent: 'Lightpanda/1.0 internal-testing-crawler'
+  expected:
+    headers:
+      sec-ch-ua-full-version-list: '"Lightpanda";v="1.1.0-nightly.10379+430727e14"'
+      sec-ch-ua: '"Lightpanda";v="1"'
+      user-agent: 'Lightpanda/1.0 internal-testing-crawler'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Lightpanda
+      modus: null
+      version: 1.1.0
+      manufacturer: selecy
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Blink
+      version: null
+      manufacturer: google
+-
+  headers:
+    sec-ch-ua-full-version-list: '"Lightpanda";v="1.0.0"'
+    sec-ch-ua: '"Lightpanda";v="1"'
+    user-agent: Lightpanda/1.0
+  expected:
+    headers:
+      sec-ch-ua-full-version-list: '"Lightpanda";v="1.0.0"'
+      sec-ch-ua: '"Lightpanda";v="1"'
+      user-agent: Lightpanda/1.0
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Lightpanda
+      modus: null
+      version: 1.0.0
+      manufacturer: selecy
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Blink
+      version: null
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; SemrushBot-SI/0.97; +http://www.semrush.com/bot.html)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; SemrushBot-SI/0.97; +http://www.semrush.com/bot.html)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: SemrushBot
+      modus: null
+      version: null
+      manufacturer: semrush
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; SiteAuditBot/0.97; +http://www.semrush.com/bot.html)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; SiteAuditBot/0.97; +http://www.semrush.com/bot.html)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: SiteAuditBot
+      modus: null
+      version: 0.97.0
+      manufacturer: semrush
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'SeobilityBot (SEO Tool; https://www.seobility.net/sites/bot.html)'
+  expected:
+    headers:
+      user-agent: 'SeobilityBot (SEO Tool; https://www.seobility.net/sites/bot.html)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: SeobilityBot
+      modus: null
+      version: null
+      manufacturer: seobility
+      type: seo-analytics
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; DotBot/1.2; +https://opensiteexplorer.org/dotbot; help@moz.com)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; DotBot/1.2; +https://opensiteexplorer.org/dotbot; help@moz.com)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: DotBot
+      modus: null
+      version: 1.2.0
+      manufacturer: seomoz
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'serpstatbot/2.1 (advanced backlink tracking bot; https://serpstatbot.com/; abuse@serpstatbot.com)'
+  expected:
+    headers:
+      user-agent: 'serpstatbot/2.1 (advanced backlink tracking bot; https://serpstatbot.com/; abuse@serpstatbot.com)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: serpstatbot
+      modus: null
+      version: 2.1.0
+      manufacturer: serpstat
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; SeznamBot/4.0; +https://o-seznam.cz/napoveda/vyhledavani/en/seznambot-crawler/)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; SeznamBot/4.0; +https://o-seznam.cz/napoveda/vyhledavani/en/seznambot-crawler/)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: SeznamBot
+      modus: null
+      version: 4.0.0
+      manufacturer: seznam
+      type: search-bot
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; InternetMeasurement/1.0; +https://internet-measurement.com/)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; InternetMeasurement/1.0; +https://internet-measurement.com/)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: InternetMeasurement
+      modus: null
+      version: 1.0.0
+      manufacturer: sharashka
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: WhatsApp/2
+  expected:
+    headers:
+      user-agent: WhatsApp/2
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Signal
+      modus: null
+      version: null
+      manufacturer: signal
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'got (https://github.com/sindresorhus/got)'
+  expected:
+    headers:
+      user-agent: 'got (https://github.com/sindresorhus/got)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: got
+      modus: null
+      version: null
+      manufacturer: 'sindre sorhus'
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; Optimizer)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; Optimizer)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Optimizer Bot'
+      modus: null
+      version: null
+      manufacturer: sistrix
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; SeekportBot; +https://bot.seekport.com)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; SeekportBot; +https://bot.seekport.com)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: SeekportBot
+      modus: null
+      version: null
+      manufacturer: sistrix
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    sec-ch-ua-platform: '"Linux"'
+    sec-ch-ua: '"HeadlessChrome";v="149", "Chromium";v="149", "Not)A;Brand";v="24"'
+    sec-ch-ua-mobile: '?0'
+    user-agent: 'Mozilla/5.0 (compatible; SeekportBot; +https://bot.seekport.com)'
+  expected:
+    headers:
+      sec-ch-ua-platform: '"Linux"'
+      sec-ch-ua: '"HeadlessChrome";v="149", "Chromium";v="149", "Not)A;Brand";v="24"'
+      sec-ch-ua-mobile: '?0'
+      user-agent: 'Mozilla/5.0 (compatible; SeekportBot; +https://bot.seekport.com)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: SeekportBot
+      modus: null
+      version: null
+      manufacturer: sistrix
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: Linux
+      marketingName: Linux
+      version: null
+      manufacturer: linux-foundation
+      bits: 0
+    engine:
+      name: Blink
+      version: 149.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Slackbot-LinkExpanding 1.0 (+https://api.slack.com/robots)'
+  expected:
+    headers:
+      user-agent: 'Slackbot-LinkExpanding 1.0 (+https://api.slack.com/robots)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Slackbot-Link-Expanding
+      modus: null
+      version: 1.0.0
+      manufacturer: slack
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Slackbot-LinkExpanding/1.0; +https://api.slack.com/robots)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Slackbot-LinkExpanding/1.0; +https://api.slack.com/robots)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Slackbot-Link-Expanding
+      modus: null
+      version: 1.0.0
+      manufacturer: slack
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: WebKit
+      version: 537.36.0
+      manufacturer: apple
+-
+  headers:
+    sec-ch-ua-model: '""'
+    sec-ch-ua-platform: '"Windows"'
+    sec-ch-ua-platform-version: '""'
+    sec-ch-ua: '"HeadlessChrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"'
+    sec-ch-ua-full-version: '"131.0.6778.33"'
+    sec-ch-ua-bitness: '"64"'
+    sec-ch-ua-arch: '"x64"'
+    sec-ch-ua-mobile: '?1'
+    sec-ch-ua-wow64: '?0'
+    user-agent: 'Mozilla/5.0 (compatible; SnapchatAds/1.0; +https://businesshelp.snapchat.com/s/article/adsbot-crawler)'
+  expected:
+    headers:
+      sec-ch-ua-model: '""'
+      sec-ch-ua-platform: '"Windows"'
+      sec-ch-ua-platform-version: '""'
+      sec-ch-ua: '"HeadlessChrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"'
+      sec-ch-ua-full-version: '"131.0.6778.33"'
+      sec-ch-ua-bitness: '"64"'
+      sec-ch-ua-arch: '"x64"'
+      sec-ch-ua-mobile: '?1'
+      sec-ch-ua-wow64: '?0'
+      user-agent: 'Mozilla/5.0 (compatible; SnapchatAds/1.0; +https://businesshelp.snapchat.com/s/article/adsbot-crawler)'
+    device:
+      architecture: x64
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 64
+    client:
+      name: 'Snapchat Ads'
+      modus: null
+      version: 1.0.0
+      manufacturer: snap
+      type: crawler
+      isbot: true
+      bits: 64
+    os:
+      name: Windows
+      marketingName: Windows
+      version: null
+      manufacturer: microsoft
+      bits: 64
+    engine:
+      name: Blink
+      version: 131.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Snap URL Preview Service; bot; snapchat; https://developers.snap.com/robots'
+  expected:
+    headers:
+      user-agent: 'Snap URL Preview Service; bot; snapchat; https://developers.snap.com/robots'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Snap URL Preview Service'
+      modus: null
+      version: null
+      manufacturer: snap
+      type: service-agent
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Sogou web spider/4.0(+http://www.sogou.com/docs/help/webmasters.htm#07)'
+  expected:
+    headers:
+      user-agent: 'Sogou web spider/4.0(+http://www.sogou.com/docs/help/webmasters.htm#07)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Sogou Web Spider'
+      modus: null
+      version: 4.0.0
+      manufacturer: sogou
+      type: search-bot
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    sec-ch-ua-platform: '"Linux"'
+    sec-ch-ua: '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"'
+    sec-ch-ua-mobile: '?0'
+    user-agent: 'Sogou web spider/4.0'
+  expected:
+    headers:
+      sec-ch-ua-platform: '"Linux"'
+      sec-ch-ua: '"Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"'
+      sec-ch-ua-mobile: '?0'
+      user-agent: 'Sogou web spider/4.0'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Sogou Web Spider'
+      modus: null
+      version: 4.0.0
+      manufacturer: sogou
+      type: search-bot
+      isbot: true
+      bits: 0
+    os:
+      name: Linux
+      marketingName: Linux
+      version: null
+      manufacturer: linux-foundation
+      bits: 0
+    engine:
+      name: Blink
+      version: 136.0.0
+      manufacturer: google
+-
+  headers:
+    sec-ch-ua-platform: '"Windows"'
+    sec-ch-ua: '"Not/A)Brand";v="99", "Chromium";v="148"'
+    sec-ch-ua-mobile: '?0'
+    user-agent: 'Sogou web spider/4.0(+http://www.sogou.com/docs/help/webmasters.htm#07)'
+  expected:
+    headers:
+      sec-ch-ua-platform: '"Windows"'
+      sec-ch-ua: '"Not/A)Brand";v="99", "Chromium";v="148"'
+      sec-ch-ua-mobile: '?0'
+      user-agent: 'Sogou web spider/4.0(+http://www.sogou.com/docs/help/webmasters.htm#07)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Sogou Web Spider'
+      modus: null
+      version: 4.0.0
+      manufacturer: sogou
+      type: search-bot
+      isbot: true
+      bits: 0
+    os:
+      name: Windows
+      marketingName: Windows
+      version: null
+      manufacturer: microsoft
+      bits: 0
+    engine:
+      name: Blink
+      version: 148.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'IDG/EU (http://spaziodati.eu/)'
+  expected:
+    headers:
+      user-agent: 'IDG/EU (http://spaziodati.eu/)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: IDG
+      modus: null
+      version: null
+      manufacturer: spazio-dati
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'StartmeBot/1.0 (+https://start.me/bot)'
+  expected:
+    headers:
+      user-agent: 'StartmeBot/1.0 (+https://start.me/bot)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: startmebot
+      modus: null
+      version: 1.0.0
+      manufacturer: start.me
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; YouBot/1.0; +https://docs.you.com/youbot; env:prod) Chrome/142.0.0.0 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; YouBot/1.0; +https://docs.you.com/youbot; env:prod) Chrome/142.0.0.0 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: YouBot
+      modus: null
+      version: 1.0.0
+      manufacturer: su-sea
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Blink
+      version: 142.0.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; YouBot/1.0; +https://you.com/bot)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; YouBot/1.0; +https://you.com/bot)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: YouBot
+      modus: null
+      version: 1.0.0
+      manufacturer: su-sea
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
