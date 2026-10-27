@@ -1,0 +1,4100 @@
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; T10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.61 YaBrowser/26.4.6.61.01 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; T10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.61 YaBrowser/26.4.6.61.01 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: T10
+      marketingName: T10
+      manufacturer: panasonic
+      brand: panasonic
+      display:
+        width: 800
+        height: 480
+        touch: true
+        size: 3.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 26.4.6.61.01
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 12.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 146.0.7680.61
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; Panasonic Google TV LCD Build/RTMA.250416.180; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; Panasonic Google TV LCD Build/RTMA.250416.180; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'Viera TV'
+      marketingName: 'Viera TV'
+      manufacturer: panasonic
+      brand: panasonic
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 149.0.7827.91
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: 'Android TV'
+      marketingName: 'Android TV'
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 149.0.7827.91
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; Panasonic Google TV Build/RTMA.250416.180; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.192 YaBrowser/25.7.1.605 (lite) TV Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; Panasonic Google TV Build/RTMA.250416.180; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.192 YaBrowser/25.7.1.605 (lite) TV Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'Viera TV'
+      marketingName: 'Viera TV'
+      manufacturer: panasonic
+      brand: panasonic
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 25.7.1.605
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: 'Android TV'
+      marketingName: 'Android TV'
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 143.0.7499.192
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; TX8 Build/QP1A.191105.004) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.186 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 10; TX8 Build/QP1A.191105.004) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.186 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: TX8
+      marketingName: TX8
+      manufacturer: pantech
+      brand: pantech
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 74.0.3729.186
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 10.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 74.0.3729.186
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; TX1 Build/QP1A.191105.004; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.149 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 10; TX1 Build/QP1A.191105.004; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.149 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: TX1
+      marketingName: TX1
+      manufacturer: pantech
+      brand: pantech
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 80.0.3987.149
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 10.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 80.0.3987.149
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; PartnerTV BOX Build/STTC.220803.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.93 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 12; PartnerTV BOX Build/STTC.220803.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.93 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'Partner TV Box'
+      marketingName: 'Partner TV Box'
+      manufacturer: partner-communications
+      brand: partner-communications
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: tv-set-top-box
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 149.0.7827.93
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 12.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 149.0.7827.93
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 13; PET 101-H232E-13 Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.91 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 13; PET 101-H232E-13 Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.91 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'PET 101-H232E-13'
+      marketingName: 'PET 101'
+      manufacturer: peaq
+      brand: peaq
+      display:
+        width: 1280
+        height: 800
+        touch: true
+        size: 10.1
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 149.0.7827.91
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 13.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 149.0.7827.91
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; PGS4000 Build/URO2.250625.083; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 14; PGS4000 Build/URO2.250625.083; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: PGS4000
+      marketingName: 'PGS 4000'
+      manufacturer: peaq
+      brand: peaq
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: tv-stick
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 149.0.7827.91
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 14.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 149.0.7827.91
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; PGS1000 Build/URO2.250625.020) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.60 Mobile Safari/537.36 ZIB/106-9.8.3'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 14; PGS1000 Build/URO2.250625.020) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.60 Mobile Safari/537.36 ZIB/106-9.8.3'
+    device:
+      architecture: ''
+      deviceName: PGS1000
+      marketingName: 'PGS 1000'
+      manufacturer: peaq
+      brand: peaq
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: tv-stick
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 136.0.7103.60
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 14.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 136.0.7103.60
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; Philco Smart TV Build/UKNV.251230.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 14; Philco Smart TV Build/UKNV.251230.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'Smart TV'
+      marketingName: 'Smart TV'
+      manufacturer: philco
+      brand: philco
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 149.0.7827.91
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: 'Android TV'
+      marketingName: 'Android TV'
+      version: 14.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 149.0.7827.91
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 15; en-us; Philips S6320T Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.7151.115 Mobile Safari/537.36 PHX/21.7'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 15; en-us; Philips S6320T Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.7151.115 Mobile Safari/537.36 PHX/21.7'
+    device:
+      architecture: ''
+      deviceName: S6320T
+      marketingName: 'Essence 30'
+      manufacturer: philips
+      brand: philips
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Phoenix Browser'
+      modus: null
+      version: 21.7.0
+      manufacturer: cloudview-technology
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 15.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 137.0.7151.115
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 13; en-us; PHILIPS S6210 Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.60 Mobile Safari/537.36 PHX/21.7'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 13; en-us; PHILIPS S6210 Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.60 Mobile Safari/537.36 PHX/21.7'
+    device:
+      architecture: ''
+      deviceName: S6210
+      marketingName: 'Essence 10'
+      manufacturer: philips
+      brand: philips
+      display:
+        width: 1612
+        height: 720
+        touch: true
+        size: 6.56
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Phoenix Browser'
+      modus: null
+      version: 21.7.0
+      manufacturer: cloudview-technology
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 13.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 114.0.5735.60
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; PHILIPS S6210T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.215 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 15; PHILIPS S6210T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.215 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: S6210T
+      marketingName: 'Essence 12'
+      manufacturer: philips
+      brand: philips
+      display:
+        width: null
+        height: null
+        touch: true
+        size: 6.6
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 148.0.7778.215
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 15.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 148.0.7778.215
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 13; PHILIPS S7710) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.91 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 13; PHILIPS S7710) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.91 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: S7710
+      marketingName: 'Omni 10'
+      manufacturer: philips
+      brand: philips
+      display:
+        width: 1612
+        height: 720
+        touch: true
+        size: 6.6
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 149.0.7827.91
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 13.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 149.0.7827.91
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 13; PHILIPS S6310) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.215 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 13; PHILIPS S6310) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.215 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: S6310
+      marketingName: 'Essence 20'
+      manufacturer: philips
+      brand: philips
+      display:
+        width: 1612
+        height: 720
+        touch: true
+        size: 6.56
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 148.0.7778.215
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 13.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 148.0.7778.215
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; Philips S8325) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.61 YaBrowser/26.4.6.61.00 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; Philips S8325) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.61 YaBrowser/26.4.6.61.00 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: S8325
+      marketingName: Xenium
+      manufacturer: philips
+      brand: philips
+      display:
+        width: 1600
+        height: 720
+        touch: true
+        size: 6.75
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 26.4.6.61.00
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 146.0.7680.61
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; Philips S8320) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.123 YaBrowser/26.4.5.123.00 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; Philips S8320) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.123 YaBrowser/26.4.5.123.00 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: S8320
+      marketingName: Xenium
+      manufacturer: philips
+      brand: philips
+      display:
+        width: 1600
+        height: 720
+        touch: true
+        size: 6.75
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 26.4.5.123.00
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 15.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 146.0.7680.123
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 9; PHILIPS 4K TV Build/PTM5.200218.905; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 9; PHILIPS 4K TV Build/PTM5.200218.905; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: '4K TV'
+      marketingName: 4K
+      manufacturer: philips
+      brand: philips
+      display:
+        width: 3840
+        height: 2160
+        touch: false
+        size: null
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 138.0.7204.179
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 9.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 138.0.7204.179
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; Philips Google TV TA5 Build/UKN2.241117.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 14; Philips Google TV TA5 Build/UKN2.241117.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'Google TV TA5'
+      marketingName: 'Google TV TA5'
+      manufacturer: philips
+      brand: philips
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 149.0.7827.91
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: 'Android TV'
+      marketingName: 'Android TV'
+      version: 14.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 149.0.7827.91
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; PHILIPS 4K SMART TV Build/UKN3.250415.072; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 14; PHILIPS 4K SMART TV Build/UKN3.250415.072; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: '4K Smart TV'
+      marketingName: '4K Smart TV'
+      manufacturer: philips
+      brand: philips
+      display:
+        width: 3840
+        height: 2160
+        touch: false
+        size: null
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 149.0.7827.91
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: 'Android TV'
+      marketingName: 'Android TV'
+      version: 14.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 149.0.7827.91
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; Philips 4K GA1 Build/UKRC.260302.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 14; Philips 4K GA1 Build/UKRC.260302.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: '4K GA1'
+      marketingName: '4K GA1'
+      manufacturer: philips
+      brand: philips
+      display:
+        width: 3840
+        height: 2160
+        touch: false
+        size: null
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 149.0.7827.91
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 14.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 149.0.7827.91
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; TPM191E Build/STT2.230526.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.7339.207 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 12; TPM191E Build/STT2.230526.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.7339.207 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: TPM191E
+      marketingName: TPM191E
+      manufacturer: philips
+      brand: philips
+      display:
+        width: 3840
+        height: 2160
+        touch: false
+        size: 49.5
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 140.0.7339.207
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 12.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 140.0.7339.207
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; Philips Google TV TA7 Build/RTM5.220609.199; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; Philips Google TV TA7 Build/RTM5.220609.199; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'Google TV TA7'
+      marketingName: 'Android TV'
+      manufacturer: philips
+      brand: philips
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 149.0.7827.91
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: 'Android TV'
+      marketingName: 'Android TV'
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 149.0.7827.91
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; Philips Google TV TA6 LT Build/RTM9.241015.009; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; Philips Google TV TA6 LT Build/RTM9.241015.009; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'Google TV TA6 LT'
+      marketingName: 'Android TV'
+      manufacturer: philips
+      brand: philips
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 149.0.7827.91
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: 'Android TV'
+      marketingName: 'Android TV'
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 149.0.7827.91
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; Philips FHD Android TV Build/RTM2.210929.098; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.159 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; Philips FHD Android TV Build/RTM2.210929.098; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.159 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'FHD Android TV'
+      marketingName: FHD
+      manufacturer: philips
+      brand: philips
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 149.0.7827.159
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: 'Android TV'
+      marketingName: 'Android TV'
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 149.0.7827.159
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; Philips 4K A1 Build/RTM8.240401.161; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; Philips 4K A1 Build/RTM8.240401.161; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: '4K A1'
+      marketingName: 4K
+      manufacturer: philips
+      brand: philips
+      display:
+        width: 3840
+        height: 2160
+        touch: false
+        size: null
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 149.0.7827.91
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 149.0.7827.91
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; 2021 Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.178 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 10; 2021 Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.178 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'Smart TV UHD (2021-2022)'
+      marketingName: 'Smart TV UHD (2021-2022)'
+      manufacturer: philips
+      brand: philips
+      display:
+        width: 3840
+        height: 2160
+        touch: false
+        size: null
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 148.0.7778.178
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 10.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 148.0.7778.178
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 10; 2021) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 YaBrowser/20.11.5.124.00 SA/3 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 10; 2021) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 YaBrowser/20.11.5.124.00 SA/3 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'Smart TV UHD (2021-2022)'
+      marketingName: 'Smart TV UHD (2021-2022)'
+      manufacturer: philips
+      brand: philips
+      display:
+        width: 3840
+        height: 2160
+        touch: false
+        size: null
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 20.11.5.124.00
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 10.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 86.0.4240.198
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 10; 2021) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.372 YaSearchBrowser/26.37.1 BroPP/1.0 YaSearchApp/26.37.1 webOmni Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 10; 2021) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.372 YaSearchBrowser/26.37.1 BroPP/1.0 YaSearchApp/26.37.1 webOmni Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'Smart TV UHD (2021-2022)'
+      marketingName: 'Smart TV UHD (2021-2022)'
+      manufacturer: philips
+      brand: philips
+      display:
+        width: 3840
+        height: 2160
+        touch: false
+        size: null
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Search Browser'
+      modus: null
+      version: 26.37.1
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 10.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.372
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; Philips Google TV TB3 Build/STT2.230831.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 YaBrowser/25.10.1.638 (lite) TV Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 12; Philips Google TV TB3 Build/STT2.230831.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 YaBrowser/25.10.1.638 (lite) TV Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'Google TV TB3'
+      marketingName: 'Android TV'
+      manufacturer: philips
+      brand: philips
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 25.10.1.638
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: 'Android TV'
+      marketingName: 'Android TV'
+      version: 12.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 149.0.7827.91
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 10; PICO 4 OS5.13.7 like Quest; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/90.0.4430.210 Mobile VR Safari/537.36 OPR/60.0.2254.59405'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 10; PICO 4 OS5.13.7 like Quest; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/90.0.4430.210 Mobile VR Safari/537.36 OPR/60.0.2254.59405'
+    device:
+      architecture: ''
+      deviceName: '4'
+      marketingName: '4'
+      manufacturer: pico
+      brand: pico
+      display:
+        width: 2160
+        height: 2160
+        touch: true
+        size: 2.56
+      type: wearable
+      ismobile: true
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Opera Mobile'
+      modus: null
+      version: 60.0.2254.59405
+      manufacturer: opera
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 10.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 90.0.4430.210
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; M6 Max) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.54 YaSearchBrowser/26.47.1/apad BroPP/1.0 YaSearchApp/26.47.1/apad webOmni Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; M6 Max) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.54 YaSearchBrowser/26.47.1/apad BroPP/1.0 YaSearchApp/26.47.1/apad webOmni Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: M6
+      marketingName: M6
+      manufacturer: pipo
+      brand: pipo
+      display:
+        width: 2048
+        height: 1536
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Search Browser'
+      modus: null
+      version: 26.47.1
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 10.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 146.0.7680.54
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K; ru_RU) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.171 Mobile Safari/537.36 PocketBook/700K3 (screen 1264x1680; FW U700k3.6.10.2359; LCP)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 10; K; ru_RU) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.171 Mobile Safari/537.36 PocketBook/700K3 (screen 1264x1680; FW U700k3.6.10.2359; LCP)'
+    device:
+      architecture: ''
+      deviceName: 'general PocketBook device'
+      marketingName: 'general PocketBook device'
+      manufacturer: pocketbook
+      brand: pocketbook
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 122.0.6261.171
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 10.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 122.0.6261.171
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K; ru_RU) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.171 Mobile Safari/537.36 PocketBook/634 (screen 1072x1448; FW U634.6.10.3425; LCP)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 10; K; ru_RU) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.171 Mobile Safari/537.36 PocketBook/634 (screen 1072x1448; FW U634.6.10.3425; LCP)'
+    device:
+      architecture: ''
+      deviceName: 'general PocketBook device'
+      marketingName: 'general PocketBook device'
+      manufacturer: pocketbook
+      brand: pocketbook
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 122.0.6261.171
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 10.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 122.0.6261.171
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K; ru_RU) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.171 Mobile Safari/537.36 PocketBook/634K3 (screen 1072x1448; FW U634k3.6.10.2544; LCP)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 10; K; ru_RU) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.171 Mobile Safari/537.36 PocketBook/634K3 (screen 1072x1448; FW U634k3.6.10.2544; LCP)'
+    device:
+      architecture: ''
+      deviceName: 'general PocketBook device'
+      marketingName: 'general PocketBook device'
+      manufacturer: pocketbook
+      brand: pocketbook
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 122.0.6261.171
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 10.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 122.0.6261.171
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K; ru_RU) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.171 Mobile Safari/537.36 PocketBook/629 (screen 758x1024; FW U629.6.10.1461; LCP)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 10; K; ru_RU) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.171 Mobile Safari/537.36 PocketBook/629 (screen 758x1024; FW U629.6.10.1461; LCP)'
+    device:
+      architecture: ''
+      deviceName: 'general PocketBook device'
+      marketingName: 'general PocketBook device'
+      manufacturer: pocketbook
+      brand: pocketbook
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 122.0.6261.171
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 10.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 122.0.6261.171
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 9; Polarline_42PL11TC-SM Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/64.0.3282.123 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 9; Polarline_42PL11TC-SM Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/64.0.3282.123 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general PolarLine tv'
+      marketingName: 'general PolarLine tv'
+      manufacturer: polar-line
+      brand: polar-line
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 64.0.3282.123
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 9.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 64.0.3282.123
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; POLARLINE_W_65PU51TC-SM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; POLARLINE_W_65PU51TC-SM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 65PU51TC-SM
+      marketingName: 65PU51TC-SM
+      manufacturer: polar-line
+      brand: polar-line
+      display:
+        width: 3840
+        height: 2160
+        touch: false
+        size: 65.0
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.12.0.453
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 83.0.4103.120
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; POLARLINE_W_55PQ71STC-SM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; POLARLINE_W_55PQ71STC-SM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general PolarLine tv'
+      marketingName: 'general PolarLine tv'
+      manufacturer: polar-line
+      brand: polar-line
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.12.0.453
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 83.0.4103.120
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; POLARLINE_W_50PU11TC-SM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; POLARLINE_W_50PU11TC-SM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 50PU11TC-SM
+      marketingName: 50PU11TC-SM
+      manufacturer: polar-line
+      brand: polar-line
+      display:
+        width: 3840
+        height: 2160
+        touch: false
+        size: 50.0
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.12.0.453
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 83.0.4103.120
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; POLARLINE_W_43PL52TC-SM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/25.10.1.638 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; POLARLINE_W_43PL52TC-SM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/25.10.1.638 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 43PL52TC-SM
+      marketingName: 43PL52TC-SM
+      manufacturer: polar-line
+      brand: polar-line
+      display:
+        width: 1920
+        height: 1080
+        touch: false
+        size: 43.0
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 25.10.1.638
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 83.0.4103.120
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; POLARLINE_W_32PL53T?-SM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/25.10.1.638 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; POLARLINE_W_32PL53T?-SM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/25.10.1.638 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general PolarLine tv'
+      marketingName: 'general PolarLine tv'
+      manufacturer: polar-line
+      brand: polar-line
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 25.10.1.638
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 83.0.4103.120
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; POLARLINE_W_32PL53TC-SM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; POLARLINE_W_32PL53TC-SM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 32PL53TC-SM
+      marketingName: 32PL53TC-SM
+      manufacturer: polar-line
+      brand: polar-line
+      display:
+        width: 1920
+        height: 1080
+        touch: false
+        size: 32.0
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.12.0.453
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 83.0.4103.120
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 9; POLAR_K_P50U51T2SCSM Build/PPR2.180905.006.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.158 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 9; POLAR_K_P50U51T2SCSM Build/PPR2.180905.006.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.158 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Polar tv'
+      marketingName: 'general Polar tv'
+      manufacturer: polar
+      brand: polar
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 66.0.3359.158
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 9.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 66.0.3359.158
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; POLAR_W_P32L34T2CSM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; POLAR_W_P32L34T2CSM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: P32L34T2CSM
+      marketingName: P32L34T2CSM
+      manufacturer: polar
+      brand: polar
+      display:
+        width: 1920
+        height: 1080
+        touch: false
+        size: 32.0
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 83.0.4103.120
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 83.0.4103.120
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; POLAR_WK_P43L32T2CSM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; POLAR_WK_P43L32T2CSM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: P43L32T2CSM
+      marketingName: P43L32T2CSM
+      manufacturer: polar
+      brand: polar
+      display:
+        width: 1920
+        height: 1080
+        touch: false
+        size: 43.0
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 83.0.4103.120
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 83.0.4103.120
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; POLAR_W_P55Q81T2SCSM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; POLAR_W_P55Q81T2SCSM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Polar tv'
+      marketingName: 'general Polar tv'
+      manufacturer: polar
+      brand: polar
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.12.0.453
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 83.0.4103.120
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; POLAR_W_P50U52T2CSM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; POLAR_W_P50U52T2CSM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: P50U52T2CSM
+      marketingName: P50U52T2CSM
+      manufacturer: polar
+      brand: polar
+      display:
+        width: 3840
+        height: 2160
+        touch: false
+        size: 50.0
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.12.0.453
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 83.0.4103.120
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; POLAR_W_P43U52T2CSM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; POLAR_W_P43U52T2CSM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: P43U52T2CSM
+      marketingName: P43U52T2CSM
+      manufacturer: polar
+      brand: polar
+      display:
+        width: 3840
+        height: 2160
+        touch: false
+        size: 43.0
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.12.0.453
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 83.0.4103.120
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; POLAR_W_P43U51T2SCSM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/25.10.1.638 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; POLAR_W_P43U51T2SCSM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/25.10.1.638 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: P43U51T2SCSM
+      marketingName: P43U51T2SCSM
+      manufacturer: polar
+      brand: polar
+      display:
+        width: 3840
+        height: 2160
+        touch: false
+        size: 43.0
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 25.10.1.638
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 83.0.4103.120
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; POLAR_W_P43L32T2CSM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/25.10.1.638 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; POLAR_W_P43L32T2CSM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/25.10.1.638 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: P43L32T2CSM
+      marketingName: P43L32T2CSM
+      manufacturer: polar
+      brand: polar
+      display:
+        width: 1920
+        height: 1080
+        touch: false
+        size: 43.0
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 25.10.1.638
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 83.0.4103.120
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; POLAR_W_P43L21T2SCSM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; POLAR_W_P43L21T2SCSM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: P43L21T2SCSM
+      marketingName: P43L21T2SCSM
+      manufacturer: polar
+      brand: polar
+      display:
+        width: 1920
+        height: 1080
+        touch: false
+        size: 43.0
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.12.0.453
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 83.0.4103.120
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; POLAR_W_P42L31T2CSM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; POLAR_W_P42L31T2CSM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: P42L31T2CSM
+      marketingName: P42L31T2CSM
+      manufacturer: polar
+      brand: polar
+      display:
+        width: 1920
+        height: 1080
+        touch: false
+        size: 42.0
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.12.0.453
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 83.0.4103.120
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; POLAR_W_P32L33T2CSM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; POLAR_W_P32L33T2CSM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: P32L33T2CSM
+      marketingName: P32L33T2CSM
+      manufacturer: polar
+      brand: polar
+      display:
+        width: 1366
+        height: 768
+        touch: false
+        size: 32.0
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.12.0.453
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 83.0.4103.120
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; POLAR_W_P32L32T2CSM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; POLAR_W_P32L32T2CSM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: P32L32T2CSM
+      marketingName: P32L32T2CSM
+      manufacturer: polar
+      brand: polar
+      display:
+        width: 1366
+        height: 768
+        touch: false
+        size: 32.0
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.12.0.453
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 83.0.4103.120
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; Polaroid 2K Android TV Build/RTO8.250915.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.171 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; Polaroid 2K Android TV Build/RTO8.250915.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.171 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Polaroid TV'
+      marketingName: 'general Polaroid TV'
+      manufacturer: polaroid
+      brand: polaroid
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 142.0.7444.171
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: 'Android TV'
+      marketingName: 'Android TV'
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 142.0.7444.171
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; POLYTRON4K Build/RTT2.220118.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; POLYTRON4K Build/RTT2.220118.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: '4K Android TV'
+      marketingName: '4K Android TV'
+      manufacturer: polytron
+      brand: polytron
+      display:
+        width: 3840
+        height: 2160
+        touch: false
+        size: null
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 149.0.7827.91
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 149.0.7827.91
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; POLYTRON2K Build/RTMA.250416.094; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; POLYTRON2K Build/RTMA.250416.094; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: '2K Android TV'
+      marketingName: '2K Android TV'
+      manufacturer: polytron
+      brand: polytron
+      display:
+        width: 1920
+        height: 1080
+        touch: false
+        size: null
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 149.0.7827.91
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 149.0.7827.91
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 11; en-us; X85 PRO Build/RP1A.201005.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.98 Mobile Safari/537.36 PHX/19.8'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 11; en-us; X85 PRO Build/RP1A.201005.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.98 Mobile Safari/537.36 PHX/19.8'
+    device:
+      architecture: ''
+      deviceName: 'X85 Pro'
+      marketingName: 'X85 Pro'
+      manufacturer: premio
+      brand: premio
+      display:
+        width: null
+        height: null
+        touch: true
+        size: 6.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Phoenix Browser'
+      modus: null
+      version: 19.8.0
+      manufacturer: cloudview-technology
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 97.0.4692.98
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; X85 PRO Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; X85 PRO Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'X85 Pro'
+      marketingName: 'X85 Pro'
+      manufacturer: premio
+      brand: premio
+      display:
+        width: null
+        height: null
+        touch: true
+        size: 6.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 149.0.7827.91
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 149.0.7827.91
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; X85 PRO Build/RP1A.201005.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.91 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; X85 PRO Build/RP1A.201005.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.91 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'X85 Pro'
+      marketingName: 'X85 Pro'
+      manufacturer: premio
+      brand: premio
+      display:
+        width: null
+        height: null
+        touch: true
+        size: 6.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 149.0.7827.91
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 149.0.7827.91
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 11; X85 PRO Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36 OPR/99.2.2254.731'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 11; X85 PRO Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36 OPR/99.2.2254.731'
+    device:
+      architecture: ''
+      deviceName: 'X85 Pro'
+      marketingName: 'X85 Pro'
+      manufacturer: premio
+      brand: premio
+      display:
+        width: null
+        height: null
+        touch: true
+        size: 6.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Opera Mobile'
+      modus: null
+      version: 99.2.2254.731
+      manufacturer: opera
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 149.0.7827.91
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; X85 PRO) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.52 YaSearchBrowser/26.61.1 BroPP/1.0 YaSearchApp/26.61.1 webOmni (beta) Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; X85 PRO) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.52 YaSearchBrowser/26.61.1 BroPP/1.0 YaSearchApp/26.61.1 webOmni (beta) Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'X85 Pro'
+      marketingName: 'X85 Pro'
+      manufacturer: premio
+      brand: premio
+      display:
+        width: null
+        height: null
+        touch: true
+        size: 6.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Yandex Search Browser'
+      modus: null
+      version: 26.61.1
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 148.0.7778.52
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; X85 PRO) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.32 YaBrowser/26.6.1.32.00 (alpha) Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; X85 PRO) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.32 YaBrowser/26.6.1.32.00 (alpha) Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'X85 Pro'
+      marketingName: 'X85 Pro'
+      manufacturer: premio
+      brand: premio
+      display:
+        width: null
+        height: null
+        touch: true
+        size: 6.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 26.6.1.32.00
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 148.0.7778.32
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; X85 PRO Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; X85 PRO Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'X85 Pro'
+      marketingName: 'X85 Pro'
+      manufacturer: premio
+      brand: premio
+      display:
+        width: null
+        height: null
+        touch: true
+        size: 6.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 25.12.0.63
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 149.0.7827.91
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; PMT4348_3G_E_RU Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/150.0.7871.28 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; PMT4348_3G_E_RU Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/150.0.7871.28 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: PMT4348_3G_E_RU
+      marketingName: 'Node F8 3G'
+      manufacturer: prestigio
+      brand: prestigio
+      display:
+        width: 1280
+        height: 800
+        touch: true
+        size: 8.0
+      type: fone-pad
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 150.0.7871.28
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 150.0.7871.28
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; PMT4228_3G_RU Build/RP1A.201005.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.215 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; PMT4228_3G_RU Build/RP1A.201005.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.215 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: PMT4228_3G_RU
+      marketingName: 'Node E8 3G'
+      manufacturer: prestigio
+      brand: prestigio
+      display:
+        width: 1280
+        height: 800
+        touch: true
+        size: 8.0
+      type: fone-pad
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 148.0.7778.215
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 148.0.7778.215
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; Profilo Smart TV Build/RTM8.240226.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; Profilo Smart TV Build/RTM8.240226.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'Smart TV'
+      marketingName: 'Smart TV'
+      manufacturer: profilo
+      brand: profilo
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 149.0.7827.91
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: 'Android TV'
+      marketingName: 'Android TV'
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 149.0.7827.91
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; Profilo 4K Android TV Build/RTM7.230903.080; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.196 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; Profilo 4K Android TV Build/RTM7.230903.080; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.196 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: '4K Android TV'
+      marketingName: '4K Android TV'
+      manufacturer: profilo
+      brand: profilo
+      display:
+        width: 3840
+        height: 2160
+        touch: false
+        size: null
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 114.0.5735.196
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: 'Android TV'
+      marketingName: 'Android TV'
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 114.0.5735.196
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; Profilo 2K Android TV Build/RTM7.230903.109; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; Profilo 2K Android TV Build/RTM7.230903.109; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general PROFiLO device'
+      marketingName: 'general PROFiLO device'
+      manufacturer: profilo
+      brand: profilo
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 149.0.7827.91
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: 'Android TV'
+      marketingName: 'Android TV'
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 149.0.7827.91
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; Profilo 2K Android TV Build/RTO3.231013.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.171 YaBrowser/25.10.1.638 (lite) TV Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; Profilo 2K Android TV Build/RTO3.231013.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.171 YaBrowser/25.10.1.638 (lite) TV Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general PROFiLO device'
+      marketingName: 'general PROFiLO device'
+      manufacturer: profilo
+      brand: profilo
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 25.10.1.638
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: 'Android TV'
+      marketingName: 'Android TV'
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 142.0.7444.171
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; QK001 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 Mobile Safari/537.36 WpsMoffice/14.34.0/arm64-v8a/1840/appIsPhone'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; QK001 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 Mobile Safari/537.36 WpsMoffice/14.34.0/arm64-v8a/1840/appIsPhone'
+    device:
+      architecture: ''
+      deviceName: QK001
+      marketingName: 'Q30 Pro'
+      manufacturer: qihoo
+      brand: qihoo
+      display:
+        width: 2400
+        height: 1080
+        touch: true
+        size: 6.7
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'WPS Office'
+      modus: null
+      version: 14.34.0
+      manufacturer: wps-software
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 83.0.4103.120
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; DuoQin F22; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 Mobile Safari/537.36 Sapphire/1.11.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; DuoQin F22; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 Mobile Safari/537.36 Sapphire/1.11.1'
+    device:
+      architecture: ''
+      deviceName: F22
+      marketingName: F22
+      manufacturer: qin
+      brand: qin
+      display:
+        width: 640
+        height: 480
+        touch: true
+        size: 2.8
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Bing Search'
+      modus: null
+      version: 1.11.1
+      manufacturer: microsoft
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 83.0.4103.120
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; F22Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.63 YaBrowser/26.4.6.63.00 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; F22Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.63 YaBrowser/26.4.6.63.00 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'F22 Pro'
+      marketingName: 'F22 Pro'
+      manufacturer: qin
+      brand: qin
+      display:
+        width: 960
+        height: 640
+        touch: true
+        size: 3.54
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 26.4.6.63.00
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 14.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 146.0.7680.63
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 11; en-us; QMobile_4G_Ultra Build/RP1A.200720.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.178 Mobile Safari/537.36 PHX/21.7'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 11; en-us; QMobile_4G_Ultra Build/RP1A.200720.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.178 Mobile Safari/537.36 PHX/21.7'
+    device:
+      architecture: ''
+      deviceName: 'general QMobile device'
+      marketingName: 'general QMobile device'
+      manufacturer: qmobile
+      brand: qmobile
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Phoenix Browser'
+      modus: null
+      version: 21.7.0
+      manufacturer: cloudview-technology
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 148.0.7778.178
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; QMobile_4G_Power) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; QMobile_4G_Power) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: '4G Power'
+      marketingName: '4G Power'
+      manufacturer: qmobile
+      brand: qmobile
+      display:
+        width: null
+        height: null
+        touch: true
+        size: 2.8
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 94.0.4606.85
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 94.0.4606.85
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 10.0; Z6 Build/QP1A.191105.004; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 10.0; Z6 Build/QP1A.191105.004; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: Z6
+      marketingName: 'Noir Z6'
+      manufacturer: qmobile
+      brand: qmobile
+      display:
+        width: 1920
+        height: 1080
+        touch: true
+        size: 5.0
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 101.0.4951.61
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 10.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 101.0.4951.61
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; LemonTV MINI Build/SP1A.211105.004; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 12; LemonTV MINI Build/SP1A.211105.004; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'LemonTV MINI'
+      marketingName: 'LemonTV MINI'
+      manufacturer: qstartech
+      brand: qstartech
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: tv-set-top-box
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 149.0.7827.91
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 12.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 149.0.7827.91
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; WO W17Pro Max) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; WO W17Pro Max) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'W17 Pro'
+      marketingName: 'W17 Pro'
+      manufacturer: ramos
+      brand: ramos
+      display:
+        width: 1024
+        height: 600
+        touch: true
+        size: 7.0
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 26.6.0.304.00
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 12.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 148.0.7778.304
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; WO W17Pro Max) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.144 YaApp_Android/26.60.1 YaSearchBrowser/26.60.1 BroPP/1.0 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; WO W17Pro Max) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.144 YaApp_Android/26.60.1 YaSearchBrowser/26.60.1 BroPP/1.0 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'W17 Pro'
+      marketingName: 'W17 Pro'
+      manufacturer: ramos
+      brand: ramos
+      display:
+        width: 1024
+        height: 600
+        touch: true
+        size: 7.0
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Search Browser'
+      modus: null
+      version: 26.60.1
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 12.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 148.0.7778.144
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; RAVOZ V7 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 14; RAVOZ V7 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: V7
+      marketingName: V7
+      manufacturer: ravoz
+      brand: ravoz
+      display:
+        width: 1600
+        height: 720
+        touch: true
+        size: 6.517
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 149.0.7827.91
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 14.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 149.0.7827.91
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; RAVOZ A7 Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.150 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/566.0.0.48.73;IABMV/1;]'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 15; RAVOZ A7 Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.150 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/566.0.0.48.73;IABMV/1;]'
+    device:
+      architecture: ''
+      deviceName: A7
+      marketingName: A7
+      manufacturer: ravoz
+      brand: ravoz
+      display:
+        width: 1600
+        height: 720
+        touch: true
+        size: 6.67
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Facebook App'
+      modus: null
+      version: 566.0.0.48.73
+      manufacturer: meta
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 15.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 149.0.7827.150
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 16; en-US; RAVOZ A7 Build/BP2A.250605.031.A3) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.8.1394 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 16; en-US; RAVOZ A7 Build/BP2A.250605.031.A3) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.8.1394 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: A7
+      marketingName: A7
+      manufacturer: ravoz
+      brand: ravoz
+      display:
+        width: 1600
+        height: 720
+        touch: true
+        size: 6.67
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'UC Browser'
+      modus: null
+      version: 15.1.8.1394
+      manufacturer: ucweb
+      type: transcoder
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 123.0.6312.80
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; CA24HSY25F Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.5845.275 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; CA24HSY25F Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.5845.275 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: CA24HSY25F
+      marketingName: CA24HSY25F
+      manufacturer: razz
+      brand: razz
+      display:
+        width: 1366
+        height: 768
+        touch: false
+        size: 24.0
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 116.0.5845.275
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 116.0.5845.275
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; HC55USY26F Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; HC55USY26F Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: HC55USY26F
+      marketingName: HC55USY26F
+      manufacturer: razz
+      brand: razz
+      display:
+        width: 3840
+        height: 2160
+        touch: false
+        size: 55.0
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 113.0.5672.163
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 113.0.5672.163
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; HC50USY26FC Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; HC50USY26FC Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: HC50USY26FC
+      marketingName: HC50USY26FC
+      manufacturer: razz
+      brand: razz
+      display:
+        width: 3840
+        height: 2160
+        touch: false
+        size: 50.0
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 113.0.5672.163
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 113.0.5672.163
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; HC50USY26F Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; HC50USY26F Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: HC50USY26F
+      marketingName: HC50USY26F
+      manufacturer: razz
+      brand: razz
+      display:
+        width: 3840
+        height: 2160
+        touch: false
+        size: 50.0
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 113.0.5672.163
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 113.0.5672.163
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; HC43FSY26F Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; HC43FSY26F Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: HC43FSY26F
+      marketingName: HC43FSY26F
+      manufacturer: razz
+      brand: razz
+      display:
+        width: 1920
+        height: 1080
+        touch: false
+        size: 43.0
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 113.0.5672.163
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 113.0.5672.163
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; HC32HSY26F Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; HC32HSY26F Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: HC32HSY26F
+      marketingName: HC32HSY26F
+      manufacturer: razz
+      brand: razz
+      display:
+        width: 1366
+        height: 768
+        touch: false
+        size: 32.0
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 113.0.5672.163
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 113.0.5672.163
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; C50QSY25F Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; C50QSY25F Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: C50QSY25F
+      marketingName: C50QSY25F
+      manufacturer: razz
+      brand: razz
+      display:
+        width: 3840
+        height: 2160
+        touch: false
+        size: 50.0
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 113.0.5672.163
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 113.0.5672.163
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; C32HSY24F Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; C32HSY24F Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: C32HSY24F
+      marketingName: C32HSY24F
+      manufacturer: razz
+      brand: razz
+      display:
+        width: 1280
+        height: 720
+        touch: false
+        size: 32.0
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 113.0.5672.163
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 113.0.5672.163
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; C32FSY25F Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; C32FSY25F Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: C32FSY25F
+      marketingName: C32FSY25F
+      manufacturer: razz
+      brand: razz
+      display:
+        width: 1920
+        height: 1080
+        touch: false
+        size: 32.0
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 113.0.5672.163
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 113.0.5672.163
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; C24HSY25F Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; C24HSY25F Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: C24HSY25F
+      marketingName: C24HSY25F
+      manufacturer: razz
+      brand: razz
+      display:
+        width: 1366
+        height: 768
+        touch: false
+        size: 24.0
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 113.0.5672.163
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 113.0.5672.163
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 13; CE32FSA26F Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 13; CE32FSA26F Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: CE32FSA26F
+      marketingName: CE32FSA26F
+      manufacturer: razz
+      brand: razz
+      display:
+        width: 1920
+        height: 1080
+        touch: false
+        size: 32.0
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.12.0.453
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 13.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 101.0.4951.61
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; HC55USY26F Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; HC55USY26F Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: HC55USY26F
+      marketingName: HC55USY26F
+      manufacturer: razz
+      brand: razz
+      display:
+        width: 3840
+        height: 2160
+        touch: false
+        size: 55.0
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 113.0.5672.163
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; HC50USY26F Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; HC50USY26F Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: HC50USY26F
+      marketingName: HC50USY26F
+      manufacturer: razz
+      brand: razz
+      display:
+        width: 3840
+        height: 2160
+        touch: false
+        size: 50.0
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 113.0.5672.163
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; HC43FSY26F Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; HC43FSY26F Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: HC43FSY26F
+      marketingName: HC43FSY26F
+      manufacturer: razz
+      brand: razz
+      display:
+        width: 1920
+        height: 1080
+        touch: false
+        size: 43.0
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 113.0.5672.163
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; CA24HSY25F Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; CA24HSY25F Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: CA24HSY25F
+      marketingName: CA24HSY25F
+      manufacturer: razz
+      brand: razz
+      display:
+        width: 1366
+        height: 768
+        touch: false
+        size: 24.0
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 113.0.5672.163
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; C50QSY25F Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; C50QSY25F Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: C50QSY25F
+      marketingName: C50QSY25F
+      manufacturer: razz
+      brand: razz
+      display:
+        width: 3840
+        height: 2160
+        touch: false
+        size: 50.0
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 113.0.5672.163
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; C32HSY24F Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; C32HSY24F Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: C32HSY24F
+      marketingName: C32HSY24F
+      manufacturer: razz
+      brand: razz
+      display:
+        width: 1280
+        height: 720
+        touch: false
+        size: 32.0
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 113.0.5672.163
+      manufacturer: google

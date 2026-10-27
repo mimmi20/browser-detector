@@ -1,0 +1,4100 @@
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; LT-50NX8001S Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; LT-50NX8001S Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; Kids A8 DA5B8P01) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.61 YaBrowser/26.4.6.61.01 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; Kids A8 DA5B8P01) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.61 YaBrowser/26.4.6.61.01 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 26.4.6.61.01
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 146.0.7680.61
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; Kids A8 DA5B8P01) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.115 YaBrowser/26.4.4.115.01 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; Kids A8 DA5B8P01) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.115 YaBrowser/26.4.4.115.01 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 26.4.4.115.01
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 146.0.7680.115
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; Kids A8 DA5B8P01) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.757 YaApp_Android/25.126.1/apad YaSearchBrowser/25.126.1/apad BroPP/1.0 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; Kids A8 DA5B8P01) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.757 YaApp_Android/25.126.1/apad YaSearchBrowser/25.126.1/apad BroPP/1.0 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Search Browser'
+      modus: null
+      version: 25.126.1
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 142.0.7444.757
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; Kids A8 DA5B8P01) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.103 YaBrowser/24.6.4.103.01 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; Kids A8 DA5B8P01) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.103 YaBrowser/24.6.4.103.01 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 24.6.4.103.01
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 124.0.6367.103
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; Kids A7 DA5B7P01) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.215 YaBrowser/25.12.3.215.01 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; Kids A7 DA5B7P01) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.215 YaBrowser/25.12.3.215.01 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 25.12.3.215.01
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 142.0.7444.215
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; JHD43F1 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; JHD43F1 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HY-65U01FB Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HY-65U01FB Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HY-55U01FB Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HY-55U01FB Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HY-50U01FB Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HY-50U01FB Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HY-43U01FB Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HY-43U01FB Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HY-43U01FB Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HY-43U01FB Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.12.0.453
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HY-43F01FB Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HY-43F01FB Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HY-40F01FB Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HY-40F01FB Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HY-32H01FB Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HY-32H01FB Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HY-24H01FW Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HY-24H01FW Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-65UHD068-HK22 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-65UHD068-HK22 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.12.0.453
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-65U11B-VS-M Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-65U11B-VS-M Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-55U11B-VS-M Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-55U11B-VS-M Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-50U11B-VS-M Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-50U11B-VS-M Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-50U11B-VS-M Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-50U11B-VS-M Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.12.0.453
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-50QLED11B-PA25 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-50QLED11B-PA25 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-43FHD11G-HC22 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-43FHD11G-HC22 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-43F11B-VS-M Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-43F11B-VS-M Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-43F06W-VZ-M Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-43F06W-VZ-M Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-43F06B-VZ-M Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-43F06B-VZ-M Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-43F06B-VZ-M Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-43F06B-VZ-M Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.12.0.453
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-43F06B-VZ-M Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/23.1.0.59 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-43F06B-VZ-M Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/23.1.0.59 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 23.1.0.59
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-32HDR11B-S2-T9 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-32HDR11B-S2-T9 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.12.0.453
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-32HDR11B-HC22 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-32HDR11B-HC22 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-32HDR11B-HA22 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-32HDR11B-HA22 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-32HD11B-PA25 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-32HD11B-PA25 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-32H11B-VS-M Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-32H11B-VS-M Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-32H06W-VZ-M Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-32H06W-VZ-M Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-32H06W-VZ-M Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-32H06W-VZ-M Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.12.0.453
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-32H06B-VZ-M Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-32H06B-VZ-M Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-32H06B-VZ-M Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-32H06B-VZ-M Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.12.0.453
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-24H06B-VZ-M Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HTY-24H06B-VZ-M Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HORIZONT-24H25B Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HORIZONT-24H25B Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HK1 RBOX W2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.32 YaBrowser/26.6.1.32.00 (alpha) Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HK1 RBOX W2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.32 YaBrowser/26.6.1.32.00 (alpha) Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 26.6.1.32.00
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 148.0.7778.32
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HK1 RBOX W2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HK1 RBOX W2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 26.6.0.304.00
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 148.0.7778.304
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HK1 RBOX W2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.49 YaBrowser/26.4.7.49.00 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HK1 RBOX W2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.49 YaBrowser/26.4.7.49.00 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 26.4.7.49.00
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 146.0.7680.49
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HIBERG55YUHD-R Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HIBERG55YUHD-R Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HARPER Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HARPER Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HARPER Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; HARPER Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.12.0.453
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; H50QSY24F Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; H50QSY24F Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.12.0.453
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; G7PH-23MM) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.5993.98 YaBrowser/23.11.5.98.00 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; G7PH-23MM) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.5993.98 YaBrowser/23.11.5.98.00 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 23.11.5.98.00
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 118.0.5993.98
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; G636) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 YaBrowser/21.11.7.71.01 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; G636) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 YaBrowser/21.11.7.71.01 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 21.11.7.71.01
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 94.0.4606.85
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; DOFFLER-32KHS57 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; DOFFLER-32KHS57 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; DOFFLER-32KHS57 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/23.1.0.59 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; DOFFLER-32KHS57 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/23.1.0.59 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 23.1.0.59
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; DM-LED24SBB32 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; DM-LED24SBB32 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; DIVISAT) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.710 YaApp_Android/25.104.1/apad YaSearchBrowser/25.104.1/apad BroPP/1.0 SA/3 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; DIVISAT) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.710 YaApp_Android/25.104.1/apad YaSearchBrowser/25.104.1/apad BroPP/1.0 SA/3 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Search Browser'
+      modus: null
+      version: 25.104.1
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 140.0.7339.710
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; Dialogue Media) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.84 YaBrowser/24.12.2.84.00 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; Dialogue Media) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.84 YaBrowser/24.12.2.84.00 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 24.12.2.84.00
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 130.0.6723.84
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; CT-TV0010-55QLED Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; CT-TV0010-55QLED Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; CT-TV0010-55QLED Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; CT-TV0010-55QLED Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.12.0.453
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; CT-TV0010-50QLED Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; CT-TV0010-50QLED Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.12.0.453
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; CT-TV0010-43QLED Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; CT-TV0010-43QLED Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.12.0.453
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; CT-8855 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; CT-8855 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; C28) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.396 YaApp_Android/25.62/apad YaSearchBrowser/25.62/apad BroPP/1.0 SA/3 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; C28) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.396 YaApp_Android/25.62/apad YaSearchBrowser/25.62/apad BroPP/1.0 SA/3 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Search Browser'
+      modus: null
+      version: 25.62.0
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 136.0.7103.396
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; auto_rk_t20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.43 YaBrowser/26.3.7.43.01 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; auto_rk_t20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.43 YaBrowser/26.3.7.43.01 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 26.3.7.43.01
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.43
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; auto_rk_t20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.753 YaApp_Android/25.126.1/apad YaSearchBrowser/25.126.1/apad BroPP/1.0 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; auto_rk_t20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.753 YaApp_Android/25.126.1/apad YaSearchBrowser/25.126.1/apad BroPP/1.0 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Search Browser'
+      modus: null
+      version: 25.126.1
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 142.0.7444.753
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; auto_rk_t10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.64 YaSearchBrowser/26.44.1/apad BroPP/1.0 YaSearchApp/26.44.1/apad webOmni Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; auto_rk_t10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.64 YaSearchBrowser/26.44.1/apad BroPP/1.0 YaSearchApp/26.44.1/apad webOmni Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Search Browser'
+      modus: null
+      version: 26.44.1
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 146.0.7680.64
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; auto_rk_t10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.121 YaBrowser/26.4.5.121.01 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; auto_rk_t10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.121 YaBrowser/26.4.5.121.01 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 26.4.5.121.01
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 146.0.7680.121
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; auto_rk_t10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.654 YaSearchBrowser/26.36.1/apad BroPP/1.0 YaSearchApp/26.36.1/apad webOmni Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; auto_rk_t10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.654 YaSearchBrowser/26.36.1/apad BroPP/1.0 YaSearchApp/26.36.1/apad webOmni Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Search Browser'
+      modus: null
+      version: 26.36.1
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.654
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; AM8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; AM8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 26.6.0.304.00
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 148.0.7778.304
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; AM8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.61 YaBrowser/26.4.6.61.00 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; AM8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.61 YaBrowser/26.4.6.61.00 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 26.4.6.61.00
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 146.0.7680.61
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; AM8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.51 YaSearchBrowser/26.47.1/apad BroPP/1.0 YaSearchApp/26.47.1/apad webOmni Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; AM8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.51 YaSearchBrowser/26.47.1/apad BroPP/1.0 YaSearchApp/26.47.1/apad webOmni Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Search Browser'
+      modus: null
+      version: 26.47.1
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 146.0.7680.51
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; AM8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.49 YaBrowser/26.4.7.49.00 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; AM8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.49 YaBrowser/26.4.7.49.00 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 26.4.7.49.00
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 146.0.7680.49
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; AM8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.2244 YaApp_Android/26.40.1/apad YaSearchBrowser/26.40.1/apad BroPP/1.0 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; AM8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.2244 YaApp_Android/26.40.1/apad YaSearchBrowser/26.40.1/apad BroPP/1.0 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Search Browser'
+      modus: null
+      version: 26.40.1
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 146.0.7680.2244
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; AM8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.123 YaBrowser/26.4.5.123.00 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; AM8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.123 YaBrowser/26.4.5.123.00 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 26.4.5.123.00
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 146.0.7680.123
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; AM7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; AM7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 26.6.0.304.00
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 148.0.7778.304
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; AM7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.112 YaBrowser/26.6.1.112.00 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; AM7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.112 YaBrowser/26.6.1.112.00 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 26.6.1.112.00
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 148.0.7778.112
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; AM7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.61 YaBrowser/26.4.6.61.00 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; AM7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.61 YaBrowser/26.4.6.61.00 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 26.4.6.61.00
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 146.0.7680.61
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; AM7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.49 YaBrowser/26.4.7.49.00 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; AM7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.49 YaBrowser/26.4.7.49.00 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 26.4.7.49.00
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 146.0.7680.49
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; AM7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.896 YaSearchBrowser/25.61/apad BroPP/1.0 YaSearchApp/25.61/apad webOmni SA/3 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; AM7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.896 YaSearchBrowser/25.61/apad BroPP/1.0 YaSearchApp/25.61/apad webOmni SA/3 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Search Browser'
+      modus: null
+      version: 25.61.0
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 136.0.7103.896
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; A65UY Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; A65UY Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; A55UY Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; A55UY Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; A50UY Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; A50UY Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; A43FY Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; A43FY Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; A32HY Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; A32HY Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 75UCY3 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 75UCY3 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 65UCY2-G Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 65UCY2-G Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 65UCY2-G Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 65UCY2-G Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.12.0.453
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 65UCY2-G Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.11.0.385 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 65UCY2-G Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.11.0.385 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.11.0.385
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 65UCY1 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 65UCY1 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 65UCY1 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 65UCY1 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.12.0.453
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 65LEX-8292-UTS2C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 65LEX-8292-UTS2C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.12.0.453
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 65LED-8249-UTS2C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 65LED-8249-UTS2C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 65LED-8246-UTS2C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 65LED-8246-UTS2C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.12.0.453
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 58P09 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 58P09 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.12.0.453
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 55UE-AYVB Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 55UE-AYVB Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.12.0.453
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 55UCY3-G Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 55UCY3-G Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 55UCY3-G Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 55UCY3-G Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.12.0.453
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 55UCY2-G Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 55UCY2-G Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 55UCY2-G Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 55UCY2-G Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.12.0.453
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 55U550T Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 55U550T Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 55LU8130S Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 55LU8130S Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.12.0.453
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 55LEX-8280UTS2C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 55LEX-8280UTS2C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.12.0.453
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 55LEX-8249UTS2C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 55LEX-8249UTS2C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.12.0.453
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 55LED-8259UTS2C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; 55LED-8259UTS2C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.0 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV'
+    device:
+      architecture: ''
+      deviceName: 'general Tablet'
+      marketingName: 'general Tablet'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser Lite'
+      modus: null
+      version: 24.1.2.86
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.0
+      manufacturer: google

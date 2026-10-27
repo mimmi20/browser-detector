@@ -705,6 +705,7 @@ rules:
   /wattpad/i: wattpad
   /whisper/i: whisper
   /sparrow/i: viasat-browser
+  /slack\//i: 'slack app'
   /^cliqz/i: cliqz-browser
   /^ucast/i: ucast
   /uforia/i: uforia
@@ -737,7 +738,6 @@ rules:
   /maven/i: maven
   /viber/i: viber
   /radio/i: 'radio app'
-  /slack/i: 'slack app'
   /share/i: share-app
   /^siri/i: siri
   /^mail/i: 'apple mail'

@@ -401,13 +401,13 @@ rules:
   /multimail/i: multi-mail
   /claudebot/i: claudebot
   /chatall/i: chatall
+  /slack\//i: 'slack app'
   /espial|escape/i: 'espial tv browser'
   /sraf\//i: sraf
   /code\//i: 'vs code'
   /claude/i: claude
   /brave/i: brave
   /codex/i: codex
-  /slack/i: 'slack app'
   /odd\//i: 'odd browser'
   /skye/i: skye
   /electron\//i: electron

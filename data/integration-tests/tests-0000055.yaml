@@ -1,0 +1,4112 @@
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/603.3.3 (KHTML, like Gecko) Version/10.1.2 Safari/603.3.3'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/603.3.3 (KHTML, like Gecko) Version/10.1.2 Safari/603.3.3'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: Safari
+      modus: null
+      version: 10.1.2
+      manufacturer: apple
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 10.12.6
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 603.3.3
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'slopsearch-macos-crawler/1.0 (+https://search.sloppy.at/about)'
+  expected:
+    headers:
+      user-agent: 'slopsearch-macos-crawler/1.0 (+https://search.sloppy.at/about)'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: slopsearch
+      modus: null
+      version: 1.0.0
+      manufacturer: christopher-albert
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Citrix Workspace/23.05.0.36 MacOSX/13.4.0 com.citrix.receiver.nomas X1Class CWACapable'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Citrix Workspace/23.05.0.36 MacOSX/13.4.0 com.citrix.receiver.nomas X1Class CWACapable'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Citrix Workspace'
+      modus: null
+      version: 23.05.0.36
+      manufacturer: citrix
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 13.4.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 605.1.15
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:24.0) Gecko/20100101 Firefox/24.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:24.0) Gecko/20100101 Firefox/24.0'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 41.0.2228.0
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Windows
+      marketingName: 'Windows 7'
+      version: 7.0.0
+      manufacturer: microsoft
+      bits: 0
+    engine:
+      name: Blink
+      version: 41.0.2228.0
+      manufacturer: google
+-
+  headers:
+    sec-ch-ua-platform: '"Linux"'
+    sec-ch-ua: '"HeadlessChrome";v="117", "Not;A=Brand";v="8", "Chromium";v="117"'
+    sec-ch-ua-mobile: '?0'
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36'
+  expected:
+    headers:
+      sec-ch-ua-platform: '"Linux"'
+      sec-ch-ua: '"HeadlessChrome";v="117", "Not;A=Brand";v="8", "Chromium";v="117"'
+      sec-ch-ua-mobile: '?0'
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Headless Chrome'
+      modus: null
+      version: 117.0.0
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 10.15.4
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: Blink
+      version: 117.0.0
+      manufacturer: google
+-
+  headers:
+    sec-ch-ua-platform: '"Linux"'
+    sec-ch-ua: '"Not)A;Brand";v="8", "Chromium";v="138"'
+    sec-ch-ua-mobile: '?0'
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.14 Safari/605.1.15'
+  expected:
+    headers:
+      sec-ch-ua-platform: '"Linux"'
+      sec-ch-ua: '"Not)A;Brand";v="8", "Chromium";v="138"'
+      sec-ch-ua-mobile: '?0'
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.14 Safari/605.1.15'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: Chromium
+      modus: null
+      version: 138.0.0
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 10.15.7
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: Blink
+      version: 138.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_12_6) AppleWebKit/535.0 (KHTML, like Gecko) Chrome/13.0.884.0 Safari/535.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_12_6) AppleWebKit/535.0 (KHTML, like Gecko) Chrome/13.0.884.0 Safari/535.0'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 13.0.884.0
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 10.12.6
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 535.0.0
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 (compatible; meta-externalads/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler))'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 (compatible; meta-externalads/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler))'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Meta External Ads'
+      modus: null
+      version: 1.1.0
+      manufacturer: meta
+      type: social-media-agent
+      isbot: true
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 10.15.7
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: Blink
+      version: 145.0.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) EdgiOS/150 Version/16.0 Safari/605.1.15'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) EdgiOS/150 Version/16.0 Safari/605.1.15'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Edge Mobile for iOS'
+      modus: null
+      version: 150.0.0
+      manufacturer: microsoft
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 10.15.7
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 605.1.15
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; x86) AppleWebKit/537.36 (KHTML, like Gecko) Edge/85.0.0.0 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; x86) AppleWebKit/537.36 (KHTML, like Gecko) Edge/85.0.0.0 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: Edge
+      modus: null
+      version: 85.0.0.0
+      manufacturer: microsoft
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 10.15.7
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: Edge
+      version: 85.0.0.0
+      manufacturer: microsoft
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Thunderbird/140.12.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Thunderbird/140.12.1'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: Thunderbird
+      modus: null
+      version: 140.12.1
+      manufacturer: mozilla-foundation
+      type: pim
+      isbot: false
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 10.15.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: Gecko
+      version: 140.0.0
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Norton/148.0.0.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Norton/148.0.0.0'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Norton Secure Browser'
+      modus: null
+      version: 148.0.0.0
+      manufacturer: norton-life-lock
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 10.15.7
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: Blink
+      version: 148.0.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 12_3_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 OPR/85.0.4341.18'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 12_3_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 OPR/85.0.4341.18'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: Opera
+      modus: null
+      version: 85.0.4341.18
+      manufacturer: opera
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 12.3.1
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: Blink
+      version: 100.0.4896.127
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; x86) AppleWebKit/537.36 (KHTML, like Gecko) Opera/78.0.0.0 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; x86) AppleWebKit/537.36 (KHTML, like Gecko) Opera/78.0.0.0 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: Opera
+      modus: null
+      version: 78.0.0.0
+      manufacturer: opera
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 10.15.7
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 537.36.0
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15 RDDocuments/8.10.2.1024'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15 RDDocuments/8.10.2.1024'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'RDDocuments App'
+      modus: null
+      version: 8.10.2.1024
+      manufacturer: readdle
+      type: application
+      isbot: false
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 10.15.7
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 605.1.15
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) SparkDesktop/3.30.2 Chrome/148.0.7778.218 Electron/42.3.3 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) SparkDesktop/3.30.2 Chrome/148.0.7778.218 Electron/42.3.3 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: SparkDesktop
+      modus: null
+      version: 3.30.2
+      manufacturer: spark-mail
+      type: pim
+      isbot: false
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 10.15.7
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: Blink
+      version: 148.0.7778.218
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 MicroMessenger/6.8.0(0x16080000) NetType/WIFI MiniProgramEnv/Mac MacWechat/WMPF MacWechat/3.8.6(0x13080610) XWEB/1156'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 MicroMessenger/6.8.0(0x16080000) NetType/WIFI MiniProgramEnv/Mac MacWechat/WMPF MacWechat/3.8.6(0x13080610) XWEB/1156'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'WeChat App'
+      modus: null
+      version: 6.8.0
+      manufacturer: tencent
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 10.13.6
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: Blink
+      version: 107.0.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Arc/1.113.0 (Mac OS X Version 15.7.7 (Build 24G720))'
+  expected:
+    headers:
+      user-agent: 'Arc/1.113.0 (Mac OS X Version 15.7.7 (Build 24G720))'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: Arc
+      modus: null
+      version: 1.113.0
+      manufacturer: the-browser-company
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 15.7.4-RC+2
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.3 Safari/605.1.15 Reeder/5.4'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.3 Safari/605.1.15 Reeder/5.4'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: Reeder
+      modus: null
+      version: 5.4.0
+      manufacturer: unknown
+      type: feed-reader
+      isbot: false
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 10.15.7
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 605.1.15
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (darwin) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/15.2.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (darwin) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/15.2.1'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: jsdom
+      modus: null
+      version: 15.2.1
+      manufacturer: unknown
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: Macintosh
+      marketingName: Macintosh
+      version: null
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 537.36.0
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'SafariViewService/8624.2.5.10.8 CFNetwork/3860.600.12 Darwin/25.5.0'
+  expected:
+    headers:
+      user-agent: 'SafariViewService/8624.2.5.10.8 CFNetwork/3860.600.12 Darwin/25.5.0'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Safari View Service'
+      modus: null
+      version: 8624.2.5.10.8
+      manufacturer: unknown
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 26.5.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.600.12
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 12_3_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Vivaldi/4.3'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 12_3_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Vivaldi/4.3'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: Vivaldi
+      modus: null
+      version: 4.3.0
+      manufacturer: vivaldi
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 12.3.1
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: Blink
+      version: 100.0.4896.127
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 12_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.41 YaBrowser/21.2.0.2458 Yowser/2.5 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 12_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.41 YaBrowser/21.2.0.2458 Yowser/2.5 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 21.2.0.2458
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 12.1.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: Blink
+      version: 88.0.4324.41
+      manufacturer: google
+-
+  headers:
+    user-agent: 'com.google.GoogleMobile/425.6 iPad/26.5 hw/iPad15_6'
+  expected:
+    headers:
+      user-agent: 'com.google.GoogleMobile/425.6 iPad/26.5 hw/iPad15_6'
+    device:
+      architecture: ''
+      deviceName: 'iPad 15,6'
+      marketingName: 'iPad Air M3 13" 5G'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 2732
+        height: 2048
+        touch: true
+        size: 13.0
+      type: fone-pad
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Google Mobile App'
+      modus: null
+      version: 425.6.0
+      manufacturer: google
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iPadOS
+      marketingName: iPadOS
+      version: 26.5.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: null
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'App/13 CFNetwork/3860.700.1 Darwin/25.6.0'
+  expected:
+    headers:
+      user-agent: 'App/13 CFNetwork/3860.700.1 Darwin/25.6.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: CFNetwork
+      modus: null
+      version: null
+      manufacturer: apple
+      type: application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.6.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.700.1
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Canary%20Mail/2234 CFNetwork/3860.700.1 Darwin/25.6.0'
+  expected:
+    headers:
+      user-agent: 'Canary%20Mail/2234 CFNetwork/3860.700.1 Darwin/25.6.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: CFNetwork
+      modus: null
+      version: null
+      manufacturer: apple
+      type: application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.6.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.700.1
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'DMRegister/64 CFNetwork/3826.400.120 Darwin/24.3.0'
+  expected:
+    headers:
+      user-agent: 'DMRegister/64 CFNetwork/3826.400.120 Darwin/24.3.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: CFNetwork
+      modus: null
+      version: null
+      manufacturer: apple
+      type: application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 18.3.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3826.400.120
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Autofill/17.9.2.29505 CFNetwork/3860.600.12 Darwin/25.5.0'
+  expected:
+    headers:
+      user-agent: 'Autofill/17.9.2.29505 CFNetwork/3860.600.12 Darwin/25.5.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: CFNetwork
+      modus: null
+      version: null
+      manufacturer: apple
+      type: application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.5.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.600.12
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'DEVONagent/3.11.11 CFNetwork/3860.600.21 Darwin/25.5.0'
+  expected:
+    headers:
+      user-agent: 'DEVONagent/3.11.11 CFNetwork/3860.600.21 Darwin/25.5.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: CFNetwork
+      modus: null
+      version: null
+      manufacturer: apple
+      type: application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.5.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.600.21
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'App/13 CFNetwork/3890.100.1 Darwin/27.0.0'
+  expected:
+    headers:
+      user-agent: 'App/13 CFNetwork/3890.100.1 Darwin/27.0.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: CFNetwork
+      modus: null
+      version: null
+      manufacturer: apple
+      type: application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 27.0.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3890.100.1
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6.2 Mobile/15E148 Safari/604.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6.2 Mobile/15E148 Safari/604.1'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Safari
+      modus: null
+      version: 16.6.2
+      manufacturer: apple
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 10.15.7
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 605.1.15
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.7.5 Mobile/15E148 Safari/604.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.7.5 Mobile/15E148 Safari/604.1'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Safari
+      modus: null
+      version: 18.7.5
+      manufacturer: apple
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 10.15.7
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 605.1.15
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'NetworkingExtension/8624.4.2.10.1 Network/5812.160.7 iOS/26.6'
+  expected:
+    headers:
+      user-agent: 'NetworkingExtension/8624.4.2.10.1 Network/5812.160.7 iOS/26.6'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Safari
+      modus: null
+      version: 26.6.0
+      manufacturer: apple
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.6.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: null
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'NetworkingExtension/8625.1.22.10.3 Network/6681.0.498.502.1 iOS/27.0'
+  expected:
+    headers:
+      user-agent: 'NetworkingExtension/8625.1.22.10.3 Network/6681.0.498.502.1 iOS/27.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Safari
+      modus: null
+      version: 27.0.0
+      manufacturer: apple
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 27.0.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: null
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'com.apple.AuthenticationServicesCore.AuthenticationServicesAgent/8625.1.20.10.3 CFNetwork/3888.100.1 Darwin/27.0.0'
+  expected:
+    headers:
+      user-agent: 'com.apple.AuthenticationServicesCore.AuthenticationServicesAgent/8625.1.20.10.3 CFNetwork/3888.100.1 Darwin/27.0.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Safari
+      modus: null
+      version: 6.0.0
+      manufacturer: apple
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 27.0.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3888.100.1
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'com.apple.AuthenticationServicesCore.AuthenticationServicesAgent/22625.1.20.11.3 CFNetwork/3888.100.1 Darwin/27.0.0'
+  expected:
+    headers:
+      user-agent: 'com.apple.AuthenticationServicesCore.AuthenticationServicesAgent/22625.1.20.11.3 CFNetwork/3888.100.1 Darwin/27.0.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Safari
+      modus: null
+      version: 27.2.0
+      manufacturer: apple
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 27.0.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3888.100.1
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'com.apple.AuthenticationServicesCore.AuthenticationServicesAgent/21624.2.5.11.8 CFNetwork/3860.600.21 Darwin/25.5.0'
+  expected:
+    headers:
+      user-agent: 'com.apple.AuthenticationServicesCore.AuthenticationServicesAgent/21624.2.5.11.8 CFNetwork/3860.600.21 Darwin/25.5.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Safari
+      modus: null
+      version: 27.2.0
+      manufacturer: apple
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.5.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.600.21
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'NetworkingExtension/8624.4.3.10.2 Network/5812.160.8.0.1 iOS/26.6'
+  expected:
+    headers:
+      user-agent: 'NetworkingExtension/8624.4.3.10.2 Network/5812.160.8.0.1 iOS/26.6'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Safari
+      modus: null
+      version: 26.6.0
+      manufacturer: apple
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.6.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: null
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'com.apple.AuthenticationServicesCore.AuthenticationServicesAgent/8625.1.22.10.3 CFNetwork/3890.100.1 Darwin/27.0.0'
+  expected:
+    headers:
+      user-agent: 'com.apple.AuthenticationServicesCore.AuthenticationServicesAgent/8625.1.22.10.3 CFNetwork/3890.100.1 Darwin/27.0.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Safari
+      modus: null
+      version: 6.0.0
+      manufacturer: apple
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 27.0.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3890.100.1
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'com.apple.AuthenticationServicesCore.AuthenticationServicesAgent/8624.4.3.10.2 CFNetwork/3860.700.1 Darwin/25.6.0'
+  expected:
+    headers:
+      user-agent: 'com.apple.AuthenticationServicesCore.AuthenticationServicesAgent/8624.4.3.10.2 CFNetwork/3860.700.1 Darwin/25.6.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Safari
+      modus: null
+      version: 6.0.0
+      manufacturer: apple
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.6.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.700.1
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'com.apple.AuthenticationServicesCore.AuthenticationServicesAgent/8624.4.2.10.1 CFNetwork/3860.700.1 Darwin/25.6.0'
+  expected:
+    headers:
+      user-agent: 'com.apple.AuthenticationServicesCore.AuthenticationServicesAgent/8624.4.2.10.1 CFNetwork/3860.700.1 Darwin/25.6.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Safari
+      modus: null
+      version: 6.0.0
+      manufacturer: apple
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.6.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.700.1
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'NetworkingExtension/8624.4.5.10.3 Network/5812.160.9 iOS/26.6'
+  expected:
+    headers:
+      user-agent: 'NetworkingExtension/8624.4.5.10.3 Network/5812.160.9 iOS/26.6'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Safari
+      modus: null
+      version: 26.6.0
+      manufacturer: apple
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.6.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: null
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'com.apple.AuthenticationServicesCore.AuthenticationServicesAgent/22625.1.22.11.4 CFNetwork/3890.100.1 Darwin/27.0.0'
+  expected:
+    headers:
+      user-agent: 'com.apple.AuthenticationServicesCore.AuthenticationServicesAgent/22625.1.22.11.4 CFNetwork/3890.100.1 Darwin/27.0.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Safari
+      modus: null
+      version: 27.2.0
+      manufacturer: apple
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 27.0.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3890.100.1
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'com.apple.AuthenticationServicesCore.AuthenticationServicesAgent/8624.4.5.10.3 CFNetwork/3860.700.1 Darwin/25.6.0'
+  expected:
+    headers:
+      user-agent: 'com.apple.AuthenticationServicesCore.AuthenticationServicesAgent/8624.4.5.10.3 CFNetwork/3860.700.1 Darwin/25.6.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Safari
+      modus: null
+      version: 6.0.0
+      manufacturer: apple
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.6.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.700.1
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Spark/1043 CFNetwork/3860.600.21 Darwin/25.5.0'
+  expected:
+    headers:
+      user-agent: 'Spark/1043 CFNetwork/3860.600.21 Darwin/25.5.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Spark
+      modus: null
+      version: 1043.0.0
+      manufacturer: baidu
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.5.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.600.21
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Ecosia/3108 CFNetwork/3860.600.12 Darwin/25.5.0'
+  expected:
+    headers:
+      user-agent: 'Ecosia/3108 CFNetwork/3860.600.12 Darwin/25.5.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Ecosia
+      modus: null
+      version: null
+      manufacturer: ecosia
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.5.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.600.12
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Ecosia/3108 CFNetwork/3826.600.41.2.1 Darwin/24.6.0'
+  expected:
+    headers:
+      user-agent: 'Ecosia/3108 CFNetwork/3826.600.41.2.1 Darwin/24.6.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Ecosia
+      modus: null
+      version: null
+      manufacturer: ecosia
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 18.6.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3826.600.41.2.1
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Ecosia/3060 CFNetwork/1498.700.2 Darwin/23.6.0'
+  expected:
+    headers:
+      user-agent: 'Ecosia/3060 CFNetwork/1498.700.2 Darwin/23.6.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Ecosia
+      modus: null
+      version: null
+      manufacturer: ecosia
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 17.6.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 1498.700.2
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Ecosia/3108 CFNetwork/3826.500.131 Darwin/24.5.0'
+  expected:
+    headers:
+      user-agent: 'Ecosia/3108 CFNetwork/3826.500.131 Darwin/24.5.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Ecosia
+      modus: null
+      version: null
+      manufacturer: ecosia
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 18.5.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3826.500.131
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Ecosia/3108 CFNetwork/3860.400.51 Darwin/25.3.0'
+  expected:
+    headers:
+      user-agent: 'Ecosia/3108 CFNetwork/3860.400.51 Darwin/25.3.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Ecosia
+      modus: null
+      version: null
+      manufacturer: ecosia
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.3.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.400.51
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Ecosia/3108 CFNetwork/3860.100.1 Darwin/25.0.0'
+  expected:
+    headers:
+      user-agent: 'Ecosia/3108 CFNetwork/3860.100.1 Darwin/25.0.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Ecosia
+      modus: null
+      version: null
+      manufacturer: ecosia
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.0.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.100.1
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Ecosia/2630 CFNetwork/3826.500.131 Darwin/24.5.0'
+  expected:
+    headers:
+      user-agent: 'Ecosia/2630 CFNetwork/3826.500.131 Darwin/24.5.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Ecosia
+      modus: null
+      version: null
+      manufacturer: ecosia
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 18.5.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3826.500.131
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Ecosia/3108 CFNetwork/3860.500.112 Darwin/25.4.0'
+  expected:
+    headers:
+      user-agent: 'Ecosia/3108 CFNetwork/3860.500.112 Darwin/25.4.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Ecosia
+      modus: null
+      version: null
+      manufacturer: ecosia
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.4.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.500.112
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Ecosia/3108 CFNetwork/3826.400.120 Darwin/24.3.0'
+  expected:
+    headers:
+      user-agent: 'Ecosia/3108 CFNetwork/3826.400.120 Darwin/24.3.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Ecosia
+      modus: null
+      version: null
+      manufacturer: ecosia
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 18.3.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3826.400.120
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Ecosia/3108 CFNetwork/1498.700.2 Darwin/23.6.0'
+  expected:
+    headers:
+      user-agent: 'Ecosia/3108 CFNetwork/1498.700.2 Darwin/23.6.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Ecosia
+      modus: null
+      version: null
+      manufacturer: ecosia
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 17.6.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 1498.700.2
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Google/428.4.939275213 CFNetwork/3860.600.12 Darwin/25.5.0'
+  expected:
+    headers:
+      user-agent: 'Google/428.4.939275213 CFNetwork/3860.600.12 Darwin/25.5.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Google Search App'
+      modus: null
+      version: 428.4.939275213
+      manufacturer: google
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.5.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.600.12
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Keeper/17.9.2.29505 CFNetwork/3860.300.31 Darwin/25.2.0'
+  expected:
+    headers:
+      user-agent: 'Keeper/17.9.2.29505 CFNetwork/3860.300.31 Darwin/25.2.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Keeper Password Manager'
+      modus: null
+      version: 17.9.2.29505
+      manufacturer: keeper
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.2.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.300.31
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'stickypassword/3 CFNetwork/3860.600.12 Darwin/25.5.0'
+  expected:
+    headers:
+      user-agent: 'stickypassword/3 CFNetwork/3860.600.12 Darwin/25.5.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Sticky Password'
+      modus: null
+      version: 3.0.0
+      manufacturer: lamantine-software
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.5.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.600.12
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Edge/150.0.4078.81 CFNetwork/3860.500.112 Darwin/25.4.0'
+  expected:
+    headers:
+      user-agent: 'Edge/150.0.4078.81 CFNetwork/3860.500.112 Darwin/25.4.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Edge
+      modus: null
+      version: 150.0.4078.81
+      manufacturer: microsoft
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.4.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.500.112
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Edge/150.0.4078.81 CFNetwork/3860.600.12 Darwin/25.5.0'
+  expected:
+    headers:
+      user-agent: 'Edge/150.0.4078.81 CFNetwork/3860.600.12 Darwin/25.5.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Edge
+      modus: null
+      version: 150.0.4078.81
+      manufacturer: microsoft
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.5.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.600.12
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Edge/150.0.4078.58 CFNetwork/3860.600.12 Darwin/25.5.0'
+  expected:
+    headers:
+      user-agent: 'Edge/150.0.4078.58 CFNetwork/3860.600.12 Darwin/25.5.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Edge
+      modus: null
+      version: 150.0.4078.58
+      manufacturer: microsoft
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.5.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.600.12
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'NortonPasswordManager/8.8.9.326 CFNetwork/3860.600.12 Darwin/25.5.0'
+  expected:
+    headers:
+      user-agent: 'NortonPasswordManager/8.8.9.326 CFNetwork/3860.600.12 Darwin/25.5.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Norton Password Manager'
+      modus: null
+      version: 8.8.9.326
+      manufacturer: norton-mobile
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.5.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.600.12
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Opera/3 CFNetwork/3860.600.12 Darwin/25.5.0'
+  expected:
+    headers:
+      user-agent: 'Opera/3 CFNetwork/3860.600.12 Darwin/25.5.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Opera
+      modus: null
+      version: 3.0.0
+      manufacturer: opera
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.5.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.600.12
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Quiche%20Browser/322 CFNetwork/3860.600.12 Darwin/25.5.0'
+  expected:
+    headers:
+      user-agent: 'Quiche%20Browser/322 CFNetwork/3860.600.12 Darwin/25.5.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Quiche Browser'
+      modus: null
+      version: null
+      manufacturer: quiche-industries
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.5.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.600.12
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'SafeInCloud/2503005 CFNetwork/3860.600.21 Darwin/25.5.0'
+  expected:
+    headers:
+      user-agent: 'SafeInCloud/2503005 CFNetwork/3860.600.21 Darwin/25.5.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: SafeInCloud
+      modus: null
+      version: null
+      manufacturer: safe-in-cloud
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.5.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.600.21
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'SafeInCloud%202/2704010 CFNetwork/3860.600.12 Darwin/25.5.0'
+  expected:
+    headers:
+      user-agent: 'SafeInCloud%202/2704010 CFNetwork/3860.600.12 Darwin/25.5.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: SafeInCloud
+      modus: null
+      version: null
+      manufacturer: safe-in-cloud
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.5.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.600.12
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Telegram/33181 CFNetwork/3860.300.31 Darwin/25.2.0'
+  expected:
+    headers:
+      user-agent: 'Telegram/33181 CFNetwork/3860.300.31 Darwin/25.2.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Telegram App'
+      modus: null
+      version: null
+      manufacturer: telegram
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.2.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.300.31
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Client/73827 CFNetwork/3860.600.12 Darwin/25.5.0'
+  expected:
+    headers:
+      user-agent: 'Client/73827 CFNetwork/3860.600.12 Darwin/25.5.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Client
+      modus: null
+      version: 73827.0.0
+      manufacturer: unknown
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.5.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.600.12
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Client/73911 CFNetwork/3860.600.12 Darwin/25.5.0'
+  expected:
+    headers:
+      user-agent: 'Client/73911 CFNetwork/3860.600.12 Darwin/25.5.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Client
+      modus: null
+      version: 73911.0.0
+      manufacturer: unknown
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.5.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.600.12
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Client/73827 CFNetwork/3860.300.31 Darwin/25.2.0'
+  expected:
+    headers:
+      user-agent: 'Client/73827 CFNetwork/3860.300.31 Darwin/25.2.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Client
+      modus: null
+      version: 73827.0.0
+      manufacturer: unknown
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.2.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.300.31
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Client/73827 CFNetwork/3860.400.51 Darwin/25.3.0'
+  expected:
+    headers:
+      user-agent: 'Client/73827 CFNetwork/3860.400.51 Darwin/25.3.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Client
+      modus: null
+      version: 73827.0.0
+      manufacturer: unknown
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.3.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.400.51
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Client/73827 CFNetwork/3826.600.41 Darwin/24.6.0'
+  expected:
+    headers:
+      user-agent: 'Client/73827 CFNetwork/3826.600.41 Darwin/24.6.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Client
+      modus: null
+      version: 73827.0.0
+      manufacturer: unknown
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 18.6.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3826.600.41
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Client/73120 CFNetwork/1496.0.7 Darwin/23.5.0'
+  expected:
+    headers:
+      user-agent: 'Client/73120 CFNetwork/1496.0.7 Darwin/23.5.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Client
+      modus: null
+      version: 73120.0.0
+      manufacturer: unknown
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 17.5.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 1496.0.7
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Client/73120 CFNetwork/1410.1 Darwin/22.6.0'
+  expected:
+    headers:
+      user-agent: 'Client/73120 CFNetwork/1410.1 Darwin/22.6.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Client
+      modus: null
+      version: 73120.0.0
+      manufacturer: unknown
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 16.6.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 1410.1.0
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Client/73120 CFNetwork/1498.700.2.2.1 Darwin/23.6.0'
+  expected:
+    headers:
+      user-agent: 'Client/73120 CFNetwork/1498.700.2.2.1 Darwin/23.6.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Client
+      modus: null
+      version: 73120.0.0
+      manufacturer: unknown
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 17.6.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 1498.700.2.2.1
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Client/73145 CFNetwork/3860.400.51 Darwin/25.3.0'
+  expected:
+    headers:
+      user-agent: 'Client/73145 CFNetwork/3860.400.51 Darwin/25.3.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Client
+      modus: null
+      version: 73145.0.0
+      manufacturer: unknown
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.3.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.400.51
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Client/73827 CFNetwork/3826.600.41.2.1 Darwin/24.6.0'
+  expected:
+    headers:
+      user-agent: 'Client/73827 CFNetwork/3826.600.41.2.1 Darwin/24.6.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Client
+      modus: null
+      version: 73827.0.0
+      manufacturer: unknown
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 18.6.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3826.600.41.2.1
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Client/73827 CFNetwork/1335.0.3.4 Darwin/21.6.0'
+  expected:
+    headers:
+      user-agent: 'Client/73827 CFNetwork/1335.0.3.4 Darwin/21.6.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Client
+      modus: null
+      version: 73827.0.0
+      manufacturer: unknown
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 15.6.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 1335.0.3.4
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Client/73145 CFNetwork/3826.400.120 Darwin/24.3.0'
+  expected:
+    headers:
+      user-agent: 'Client/73145 CFNetwork/3826.400.120 Darwin/24.3.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Client
+      modus: null
+      version: 73145.0.0
+      manufacturer: unknown
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 18.3.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3826.400.120
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Client/73145 CFNetwork/1335.0.3.4 Darwin/21.6.0'
+  expected:
+    headers:
+      user-agent: 'Client/73145 CFNetwork/1335.0.3.4 Darwin/21.6.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Client
+      modus: null
+      version: 73145.0.0
+      manufacturer: unknown
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 15.6.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 1335.0.3.4
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Client/73911 CFNetwork/3860.400.51 Darwin/25.3.0'
+  expected:
+    headers:
+      user-agent: 'Client/73911 CFNetwork/3860.400.51 Darwin/25.3.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Client
+      modus: null
+      version: 73911.0.0
+      manufacturer: unknown
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.3.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.400.51
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Client/73911 CFNetwork/3860.300.31 Darwin/25.2.0'
+  expected:
+    headers:
+      user-agent: 'Client/73911 CFNetwork/3860.300.31 Darwin/25.2.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Client
+      modus: null
+      version: 73911.0.0
+      manufacturer: unknown
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.2.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.300.31
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Client/73827 CFNetwork/3860.500.112 Darwin/25.4.0'
+  expected:
+    headers:
+      user-agent: 'Client/73827 CFNetwork/3860.500.112 Darwin/25.4.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Client
+      modus: null
+      version: 73827.0.0
+      manufacturer: unknown
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.4.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.500.112
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Client/73827 CFNetwork/1498.700.2.2.1 Darwin/23.6.0'
+  expected:
+    headers:
+      user-agent: 'Client/73827 CFNetwork/1498.700.2.2.1 Darwin/23.6.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Client
+      modus: null
+      version: 73827.0.0
+      manufacturer: unknown
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 17.6.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 1498.700.2.2.1
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Client/2060 CFNetwork/3860.600.12 Darwin/25.5.0'
+  expected:
+    headers:
+      user-agent: 'Client/2060 CFNetwork/3860.600.12 Darwin/25.5.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Client
+      modus: null
+      version: 2060.0.0
+      manufacturer: unknown
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.5.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.600.12
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Client/74210 CFNetwork/3860.600.12 Darwin/25.5.0'
+  expected:
+    headers:
+      user-agent: 'Client/74210 CFNetwork/3860.600.12 Darwin/25.5.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Client
+      modus: null
+      version: 74210.0.0
+      manufacturer: unknown
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.5.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.600.12
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Client/74210 CFNetwork/3860.400.51 Darwin/25.3.0'
+  expected:
+    headers:
+      user-agent: 'Client/74210 CFNetwork/3860.400.51 Darwin/25.3.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Client
+      modus: null
+      version: 74210.0.0
+      manufacturer: unknown
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.3.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.400.51
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Client/74210 CFNetwork/3826.600.41.2.1 Darwin/24.6.0'
+  expected:
+    headers:
+      user-agent: 'Client/74210 CFNetwork/3826.600.41.2.1 Darwin/24.6.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Client
+      modus: null
+      version: 74210.0.0
+      manufacturer: unknown
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 18.6.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3826.600.41.2.1
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Client/73911 CFNetwork/1498.700.2.2.1 Darwin/23.6.0'
+  expected:
+    headers:
+      user-agent: 'Client/73911 CFNetwork/1498.700.2.2.1 Darwin/23.6.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Client
+      modus: null
+      version: 73911.0.0
+      manufacturer: unknown
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 17.6.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 1498.700.2.2.1
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Client/74210 CFNetwork/3890.100.1 Darwin/27.0.0'
+  expected:
+    headers:
+      user-agent: 'Client/74210 CFNetwork/3890.100.1 Darwin/27.0.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Client
+      modus: null
+      version: 74210.0.0
+      manufacturer: unknown
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 27.0.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3890.100.1
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Client/73911 CFNetwork/1410.1 Darwin/22.6.0'
+  expected:
+    headers:
+      user-agent: 'Client/73911 CFNetwork/1410.1 Darwin/22.6.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Client
+      modus: null
+      version: 73911.0.0
+      manufacturer: unknown
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 16.6.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 1410.1.0
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Client/74276 CFNetwork/3860.600.12 Darwin/25.5.0'
+  expected:
+    headers:
+      user-agent: 'Client/74276 CFNetwork/3860.600.12 Darwin/25.5.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Client
+      modus: null
+      version: 74276.0.0
+      manufacturer: unknown
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.5.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.600.12
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Client/74210 CFNetwork/1335.0.3.4 Darwin/21.6.0'
+  expected:
+    headers:
+      user-agent: 'Client/74210 CFNetwork/1335.0.3.4 Darwin/21.6.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Client
+      modus: null
+      version: 74210.0.0
+      manufacturer: unknown
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 15.6.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 1335.0.3.4
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Client/73911 CFNetwork/3860.500.112 Darwin/25.4.0'
+  expected:
+    headers:
+      user-agent: 'Client/73911 CFNetwork/3860.500.112 Darwin/25.4.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Client
+      modus: null
+      version: 73911.0.0
+      manufacturer: unknown
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.4.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.500.112
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Client/73911 CFNetwork/3826.400.120 Darwin/24.3.0'
+  expected:
+    headers:
+      user-agent: 'Client/73911 CFNetwork/3826.400.120 Darwin/24.3.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Client
+      modus: null
+      version: 73911.0.0
+      manufacturer: unknown
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 18.3.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3826.400.120
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Client/73911 CFNetwork/3826.600.41.2.1 Darwin/24.6.0'
+  expected:
+    headers:
+      user-agent: 'Client/73911 CFNetwork/3826.600.41.2.1 Darwin/24.6.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Client
+      modus: null
+      version: 73911.0.0
+      manufacturer: unknown
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 18.6.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3826.600.41.2.1
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Client/66494 CFNetwork/3860.600.12 Darwin/25.5.0'
+  expected:
+    headers:
+      user-agent: 'Client/66494 CFNetwork/3860.600.12 Darwin/25.5.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Client
+      modus: null
+      version: 66494.0.0
+      manufacturer: unknown
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.5.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.600.12
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Client/74276 CFNetwork/3860.300.31 Darwin/25.2.0'
+  expected:
+    headers:
+      user-agent: 'Client/74276 CFNetwork/3860.300.31 Darwin/25.2.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Client
+      modus: null
+      version: 74276.0.0
+      manufacturer: unknown
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.2.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.300.31
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Client/74210 CFNetwork/3860.300.31 Darwin/25.2.0'
+  expected:
+    headers:
+      user-agent: 'Client/74210 CFNetwork/3860.300.31 Darwin/25.2.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Client
+      modus: null
+      version: 74210.0.0
+      manufacturer: unknown
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.2.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.300.31
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Client/74210 CFNetwork/3860.500.112 Darwin/25.4.0'
+  expected:
+    headers:
+      user-agent: 'Client/74210 CFNetwork/3860.500.112 Darwin/25.4.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Client
+      modus: null
+      version: 74210.0.0
+      manufacturer: unknown
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.4.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.500.112
+      manufacturer: apple
