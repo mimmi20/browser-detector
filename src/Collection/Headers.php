@@ -606,7 +606,7 @@ final readonly class Headers
 
         assert($clientHeader instanceof HeaderInterface);
 
-        $headersWithClientCode = array_filter(
+        $headersWithClientCodeFiltered = array_filter(
             $clientCodes,
             static fn (string | null $clientCode): bool => $clientCodename === $clientCode,
         );
@@ -618,12 +618,12 @@ final readonly class Headers
             ),
             'vivaldi', 'samsungbrowser' => array_key_exists(
                 'sec-ch-ua-full-version-list',
-                $headersWithClientCode,
+                $headersWithClientCodeFiltered,
             ) ? $clientVersions['sec-ch-ua-full-version-list']
-                : (array_key_exists('sec-ch-ua', $headersWithClientCode) ? $clientVersions['sec-ch-ua']
+                : (array_key_exists('sec-ch-ua', $headersWithClientCodeFiltered) ? $clientVersions['sec-ch-ua']
                     : (array_key_exists(
                         'user-agent',
-                        $headersWithClientCode,
+                        $headersWithClientCodeFiltered,
                     ) ? $clientVersions['user-agent'] : array_last($clientVersions))),
             'chrome' => $chromeClientVersion
                 ?? $clientVersions['sec-ch-ua-full-version-list']
@@ -632,17 +632,25 @@ final readonly class Headers
                 ?? array_last($clientVersions),
             default => array_key_exists(
                 'sec-ch-ua-full-version-list',
-                $headersWithClientCode,
+                $headersWithClientCodeFiltered,
             ) ? $clientVersions['sec-ch-ua-full-version-list']
-                : (array_key_exists(
-                    'sec-ch-ua',
-                    $headersWithClientCode,
-                ) ? ($clientVersions['sec-ch-ua-full-version'] ?? $clientVersions['sec-ch-ua'])
-                    : (array_key_exists(
-                        'user-agent',
-                        $headersWithClientCode,
-                    ) ? $clientVersions['user-agent'] : array_last($clientVersions))),
+                : (array_key_exists('sec-ch-ua', $headersWithClientCodeFiltered)
+                    ? ($clientVersions['sec-ch-ua-full-version'] ?? $clientVersions['sec-ch-ua'])
+                    : (array_key_exists('user-agent', $headersWithClientCodeFiltered)
+                        ? $clientVersions['user-agent']
+                        : array_last($clientVersions)
+                    )
+                ),
         };
+
+        // if (
+        //     array_key_exists('user-agent', $headersWithClientCode)
+        //     && ($headersWithClientCode['user-agent'] ?? null)?->getValue() === 'Lightpanda/1.0 internal-testing-crawler'/**/
+        // ) {
+        //     var_dump($headersWithClientCode, $clientCodes, $clientVersions);
+        //
+        //     exit;
+        // }
 
         try {
             $clientData = $this->browserLoader->load(
