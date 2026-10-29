@@ -515,3 +515,12 @@ wp2shell-check:
       - wp2shell-checker
       - wp2shell-check
   engine: unknown
+safe-cve-2026-87902-checker:
+  name:  Safe-CVE-2026-87902-Checker
+  manufacturer: unknown
+  type: security-checker
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Safe-CVE-2026-87902-Checker
+  engine: unknown

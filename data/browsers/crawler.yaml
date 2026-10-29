@@ -6581,7 +6581,7 @@ internet-data-io:
       - InternetData\.io
   engine: unknown
 chain-deal-bot:
-  name:  ChaindealBot
+  name: ChaindealBot
   manufacturer: chainmatics
   type: crawler
   version:
@@ -6590,8 +6590,8 @@ chain-deal-bot:
       - ChaindealBot
   engine: unknown
 websuche-de:
-  name:  websuche.de
-  manufacturer: chainmatics
+  name: websuche.de
+  manufacturer: unknown
   type: crawler
   version:
     factory: \BrowserDetector\Version\VersionBuilderFactory
@@ -6599,11 +6599,928 @@ websuche-de:
       - websuche\.de
   engine: unknown
 internal-markdown-scraper:
-  name:  InternalMarkdownScraper
-  manufacturer: chainmatics
+  name: InternalMarkdownScraper
+  manufacturer: unknown
   type: crawler
   version:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - InternalMarkdownScraper
+  engine: unknown
+research-fetch:
+  name: 'research fetch'
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'research fetch'
+  engine: unknown
+newsletter-catalog-research:
+  name: NewsletterCatalogResearch
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - NewsletterCatalogResearch
+  engine: unknown
+privara-news-bot:
+  name: PrivaraNewsBot
+  manufacturer: loica
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - PrivaraNewsBot
+  engine: unknown
+lead-genny-bot:
+  name: LeadGennyBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - LeadGennyBot
+  engine: unknown
+core11-local-research:
+  name: Core11LocalResearch
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Core11LocalResearch
+  engine: unknown
+gmaps-site-probe:
+  name: gmaps-site-probe
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - gmaps-site-probe
+  engine: unknown
+purchase-detector-bot:
+  name: PurchaseDetectorBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - PurchaseDetectorBot
+  engine: unknown
+app-scout-contact-bot:
+  name: AppScoutContactBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - AppScoutContactBot
+  engine: unknown
+stoqlab-bot:
+  name: StoqlabBot
+  manufacturer: arhai
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - StoqlabBot
+  engine: unknown
+trend-bowl-bot:
+  name: TrendBowlBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - TrendBowlBot
+  engine: unknown
+apcosys-bot:
+  name: ApcosysBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ApcosysBot
+  engine: unknown
+barrigaz-bot:
+  name: BarrigazBot
+  manufacturer: barrigaz
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - BarrigazBot
+  engine: unknown
+beansllm-corpus-bot:
+  name: BeansLLM-CorpusBot
+  manufacturer: beans-llm
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - BeansLLM-CorpusBot
+  engine: unknown
+colectare-domenii:
+  name: colectare-domenii
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - colectare-domenii
+  engine: unknown
+wp-report-bot:
+  name: WPReportBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - WPReportBot
+  engine: unknown
+domain-impr-checker:
+  name: DomainImprChecker
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - DomainImprChecker
+  engine: unknown
+wp-pipeline:
+  name: WP-Pipeline
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - WP-Pipeline
+  engine: unknown
+data-scout-bot:
+  name: DataScoutBot
+  manufacturer: gamma-it-solutions
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - DataScoutBot
+  engine: unknown
+dede-bot:
+  name: dede-bot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - dede-bot
+  engine: unknown
+image-review:
+  name: image-review
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - image-review
+  engine: unknown
+fte-bot:
+  name: FTEBot
+  manufacturer: nextgen-equity-partners
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - FTEBot
+  engine: unknown
+riscoperta-l1:
+  name: riscoperta-l1
+  manufacturer: studio-storti
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - riscoperta-l1
+  engine: unknown
+page-source-search-bot:
+  name: PageSourceSearchBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - PageSourceSearchBot
+  engine: unknown
+kuendifix-bot:
+  name: KuendifixBot
+  manufacturer: christoph-gaul
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - KuendifixBot
+  engine: unknown
+attest-layer-research:
+  name: AttestLayerResearch
+  manufacturer: rabie-abdollah-macbahi
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - AttestLayerResearch
+  engine: unknown
+domainfinder-access-study:
+  name: domainfinder-access-study
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - domainfinder-access-study
+  engine: unknown
+brandfetch-preflight:
+  name: 'Brandfetch Preflight'
+  manufacturer: brand-fetch
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Brandfetch preflight'
+  engine: unknown
+majestic-metadata-collector:
+  name: MajesticMetadataCollector
+  manufacturer: majestic
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - MajesticMetadataCollector
+  engine: unknown
+ganges-contact-finder:
+  name: GangesContactFinder
+  manufacturer: jay-paras-agencies
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - GangesContactFinder
+  engine: unknown
+agentic-resource-search-surface-census:
+  name: AgenticResourceSearch-SurfaceCensus
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - AgenticResourceSearch-SurfaceCensus
+  engine: unknown
+nge-research:
+  name: NGE-Research
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - NGE-Research
+  engine: unknown
+pl-lead-db:
+  name: pl-lead-db
+  manufacturer: synthropia
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - pl-lead-db
+  engine: unknown
+fyndbot:
+  name: fyndbot
+  manufacturer: fynd
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - fyndbot
+  engine: unknown
+ai-api-relay-market-research:
+  name: AIAPIRelayMarketResearch
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - AIAPIRelayMarketResearch
+  engine: unknown
+full-stack-gtm-bot:
+  name: FullStackGTM-bot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - FullStackGTM-bot
+  engine: unknown
+state-of-ssl-research:
+  name: StateOfSSL-Research
+  manufacturer: digicert
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - StateOfSSL-Research
+  engine: unknown
+gazetteer-bot:
+  name: GazetteerBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - GazetteerBot
+  engine: unknown
+segugio:
+  name: Segugio
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Segugio
+  engine: unknown
+company-research:
+  name: company-research
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - company-research
+  engine: unknown
+public-homepage-check:
+  name: public-homepage-check
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - public-homepage-check
+  engine: unknown
+site-review:
+  name: SiteReview
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SiteReview
+  engine: unknown
+mush-domain-census:
+  name: MushDomainCensus
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - MushDomainCensus
+  engine: unknown
+study-smarter-content-research:
+  name: StudySmarterContentResearch
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - StudySmarterContentResearch
+  engine: unknown
+recherche-bot:
+  name: RechercheBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - RechercheBot
+  engine: unknown
+ic-research-w2:
+  name: ICResearch-W2
+  manufacturer: bergische-universität-wuppertal
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ICResearch-W2
+  engine: unknown
+tender-ai-hub:
+  name: TenderAIHub
+  manufacturer: tender-ai
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - TenderAIHub
+  engine: unknown
+daten-alle-bot:
+  name: DatenalleBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - DatenalleBot
+  engine: unknown
+bedrock-prospect-research:
+  name: BedrockProspectResearch
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - BedrockProspectResearch
+  engine: unknown
+hi-wolfs-bot:
+  name: HiWolfsBot
+  manufacturer: hi-wolfs
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - HiWolfsBot
+  engine: unknown
+startpage-private-image-proxy:
+  name: StartpagePrivateImageProxy
+  manufacturer: surfboard
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - StartpagePrivateImageProxy
+  engine: unknown
+online-shops-bot:
+  name: OnlineShopsBot
+  manufacturer: vero-soft
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - OnlineShopsBot
+  engine: unknown
+job-scraper:
+  name: JobScraper
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - JobScraper
+  engine: unknown
+rfx-search-research:
+  name: RFXSearch-Research
+  manufacturer: rfx-search
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - RFXSearch-Research
+  engine: unknown
+reseller-research:
+  name: ResellerResearch
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ResellerResearch
+  engine: unknown
+layer-5-ocean:
+  name: Layer5Ocean
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Layer5Ocean
+  engine: unknown
+ct-sender-poc:
+  name: ct-sender-poc
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ct-sender-poc
+  engine: unknown
+list-signal-bot:
+  name: ListSignalBot
+  manufacturer: keybloc
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ListSignalBot
+  engine: unknown
+domain-spider:
+  name: DomainSpider
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - DomainSpider
+  engine: unknown
+env-scanner:
+  name: EnvScanner
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - EnvScanner
+  engine: unknown
+jobdaten-bot:
+  name: JobdatenBot
+  manufacturer: diligent-recruitment
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - JobdatenBot
+  engine: unknown
+sql-spider:
+  name: SQLSpider
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SQLSpider
+  engine: unknown
+company-public-data-collector:
+  name: CompanyPublicDataCollector
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - CompanyPublicDataCollector
+  engine: unknown
+url-cleaner:
+  name: URLCleaner
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - URLCleaner
+  engine: unknown
+crawl360:
+  name: Crawl360
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Crawl360
+  engine: unknown
+parameter-fetch:
+  name: ParameterFetch
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ParameterFetch
+  engine: unknown
+chakloon-bot:
+  name: ChakloonBot
+  manufacturer: chakloon
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ChakloonBot
+  engine: unknown
+creo-scope-bot:
+  name: CreoScopeBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - CreoScopeBot
+  engine: unknown
+net-api:
+  name: NetAPI
+  manufacturer: code-rockers
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - NetAPI
+  engine: unknown
+kbcnet-contact-bot:
+  name: KBCnetContactBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - KBCnetContactBot
+  engine: unknown
+knoten-lead-check:
+  name: KnotenLeadCheck
+  manufacturer: lars-kiewning
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - KnotenLeadCheck
+  engine: unknown
+glass-dollar-www-indexer:
+  name: GlassDollarWWWIndexer
+  manufacturer: angel-data
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - GlassDollarWWWIndexer
+  engine: unknown
+refonte-learning-partnership-bot:
+  name: RefonteLearningPartnershipBot
+  manufacturer: refonte-learning
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - RefonteLearningPartnershipBot
+  engine: unknown
+geocheck-study:
+  name: geocheck-study
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - geocheck-study
+  engine: unknown
+dealroom-website-check:
+  name: Dealroom-website-check
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Dealroom-website-check
+  engine: unknown
+company-db-worker:
+  name: company-db-worker
+  manufacturer: business-mcp
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - company-db-worker
+  engine: unknown
+vendi-bot:
+  name: VendiBot
+  manufacturer: vendi-group
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - VendiBot
+  engine: unknown
+premiro-bot:
+  name: PremiroBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - PremiroBot
+  engine: unknown
+overture-maps-linkchecker:
+  name: Overture-Maps-LinkChecker
+  manufacturer: overture-maps-foundation
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Overture-Maps-LinkChecker
+  engine: unknown
+tld-netprobe:
+  name: tld-netprobe
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - tld-netprobe
+  engine: unknown
+qlyze-bot:
+  name: QlyzeBot
+  manufacturer: qlyze
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - QlyzeBot
+  engine: unknown
+scrape-central:
+  name: scrape_central
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - scrape_central
+  engine: unknown
+generic-bot:
+  name: 'Generic Bot'
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: null
+    search: null
+  engine: unknown
+qwen-bot:
+  name: Qwenbot
+  manufacturer: alibaba
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Qwenbot
+  engine: unknown
+moonshot-bot:
+  name: MoonshotBot
+  manufacturer: moonshot-ai
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - MoonshotBot
+  engine: unknown
+grok-bot:
+  name: GrokBot
+  manufacturer: x-ai
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - GrokBot
+  engine: unknown
+hunyuan:
+  name: Hunyuan
+  manufacturer: tencent
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Hunyuan
+  engine: unknown
+company-data-research:
+  name: company-data-research
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - company-data-research
+  engine: unknown
+hostio-bot:
+  name: hostio-bot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - hostio-bot
+  engine: unknown
+alyze-bot:
+  name: 'alyze Bot'
+  manufacturer: alexandre-tourette
+  type: crawler
+  version:
+    class: null
+    search: null
+  engine: unknown
+hcp-analyzer:
+  name: 'HCP Analyzer'
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'HCP Analyzer'
+  engine: unknown
+page-analyzer:
+  name: 'Page Analyzer'
+  manufacturer: ranks
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Page Analyzer v'
+      - 'Page Analyzer'
+  engine: unknown
+sofya-bot:
+  name: SofyaBot
+  manufacturer: sofya
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SofyaBot
+  engine: unknown
+molotow-site-check:
+  name: MolotowSiteCheck
+  manufacturer: molotow-web-development
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - MolotowSiteCheck
+  engine: unknown
+domain-print-bot:
+  name: domainprintbot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - domainprintbot
+  engine: unknown
+stack-detector-bot:
+  name: StackDetectorBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - StackDetectorBot
+  engine: unknown
+wolf-of-seo-301-scan:
+  name: WolfOfSEO-301-scan
+  manufacturer: wolf-of-seo
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - WolfOfSEO-301-scan
+  engine: unknown
+seotrends-bot:
+  name: SeotrendsBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SeotrendsBot
+  engine: unknown
+top-1m-bot:
+  name: Top1mBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Top1mBot
+  engine: unknown
+dbd-bot:
+  name: 'DBD Bot'
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'DBD Bot'
+  engine: unknown
+domain-bot:
+  name: DomainBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - DomainBot
+  engine: unknown
+enrichment-prefilter:
+  name: enrichment-prefilter
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - enrichment-prefilter
+  engine: unknown
+seo-juice-search-bot:
+  name: SEOJuice-SearchBot
+  manufacturer: calm-north-labs
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SEOJuice-SearchBot
   engine: unknown

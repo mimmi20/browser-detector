@@ -161,14 +161,6 @@ ajaxsnapbot:
     class: null
     search: null
   engine: unknown
-'alyze bot':
-  name: 'alyze Bot'
-  manufacturer: alexandre-tourette
-  type: bot
-  version:
-    class: null
-    search: null
-  engine: unknown
 'amazon cloudfront':
   name: 'Amazon CloudFront'
   manufacturer: amazon
@@ -2701,16 +2693,6 @@ pad-bot:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - PAD\-bot
-  engine: unknown
-'page analyzer':
-  name: 'Page Analyzer'
-  manufacturer: ranks
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - 'Page Analyzer v'
-      - 'Page Analyzer'
   engine: unknown
 pagebull:
   name: Pagebull

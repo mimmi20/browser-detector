@@ -467,3 +467,12 @@ tunein-dirmon:
     search:
       - TuneIn-DirMon
   engine: unknown
+autofill-provider-extension:
+  name: autofill_provider_extension
+  manufacturer: unknown
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - autofill_provider_extension
+  engine: unknown

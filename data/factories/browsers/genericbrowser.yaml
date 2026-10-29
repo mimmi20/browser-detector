@@ -628,6 +628,7 @@ rules:
   /yisouspider/i: yisouspider
   /hivabot/i: hivabot
   '/comodo spider/i': 'comodo spider'
+  /onlineshopsbot/i: online-shops-bot
   /psbot-image|psbot-page|psbot\//i: 'picsearch bot'
   /bloglovin/i: 'bloglovin bot'
   /viralvideochart/i: 'viralvideochart bot'
@@ -702,6 +703,7 @@ rules:
   /httpclient/i: httpclient
   /implisensebot/i: implisensebot
   /buibui-bot/i: buibui-bot
+  /startpageprivateimageproxy/i: startpage-private-image-proxy
   /thumbshots-de-bot/i: thumbshots-de-bot
   /aiohttp/i: aiohttp
   /apache\//i: apache-server
@@ -828,6 +830,7 @@ rules:
   /cyberduck/i: cyberduck
   /accserver/i: accserver
   /izsearch/i: 'izsearch bot'
+  /top1mbot/i: top-1m-bot
   /wnmbot/i: wnmbot
   /uipbot/i: uipbot
   /dmbot/i: dmbot
@@ -849,8 +852,9 @@ rules:
   '/camo asset proxy/i': 'camo asset proxy'
   /yahoocachesystem/i: yahoocachesystem
   /wmtips\.com/i: 'webmaster tips bot'
-  /brokenlinkcheck\.com/i: brokenlinkcheck
+  /overture-maps-linkchecker/i: overture-maps-linkchecker
   /moodlebot-linkchecker/i: moodlebot-linkchecker
+  /brokenlinkcheck\.com/i: brokenlinkcheck
   /backlink-check\.de/i: backlink-check-bot
   /linkcheckbot/i: linkcheck-bot
   /linkcheck/i: linkcheck
@@ -1023,7 +1027,7 @@ rules:
   /ypmobile|ypmobapp/i: 'yellowpages mobile app'
   /samsung-agent/i: 'samsung agent'
   /tenfourfox/i: tenfourfox
-  '/(?<!_)aol(?!tv)/i': 'aol explorer'
+  '/(?<![_p])aol(?!tv)/i': 'aol explorer'
   '/pale ?moon/i': palemoon
   /abrowse/i: abrowse
   /oregano/i: oregano
@@ -1033,11 +1037,12 @@ rules:
   '/netbox(?!-)/i': netbox
   /doggcatcher/i: doggcatcher
   /veooz/i: 'veooz bot'
-  '/page analyzer/i': 'page analyzer'
+  '/page analyzer/i': page-analyzer
+  '/hcp analyzer/i': hcp-analyzer
   /webanalyzer/i: web-analyzer
   /wappalyzer/i: wappalyzer
   /pdrl\.fm/i: podroll-analyzer
-  /alyze/i: 'alyze bot'
+  /alyze/i: alyze-bot
   /prospectb2b/i: 'prospectb2b bot'
   /turlvalidator/i: turlvalidator
   /getlinkinfo/i: 'getlinkinfo bot'
@@ -1118,6 +1123,7 @@ rules:
   /com\.apple\.invitation-registration/i: apple-invites
   '/microb|maemo ?browser|tablet browser/i': microb
   /google-area120-privacypolicyfetcher/i: google-area-120-privacy-policy-fetcher
+  /agenticresourcesearch-surfacecensus/i: agentic-resource-search-surface-census
   '/mikrotik\/[0-9]+\.[0-9x]+ fetch/i': mikrotik-fetch
   '/edacious & intelligent web robot/i': edacious-intelligent-web-robot
   '/wheregoes\.com redirect checker/i': wheregoes-redirect-checker
@@ -1131,6 +1137,7 @@ rules:
   /digiconsultleadintelligencebot/i: digi-consult-lead-intelligence-bot
   /serpreputationmanagementagent/i: semrush-reputation-management
   /web-image-collection-research/i: web-image-collection-research
+  /refontelearningpartnershipbot/i: refonte-learning-partnership-bot
   /amilabs-interleaved-research/i: amilabs-interleaved-research
   /oupenghd/i: 'oupeng hd browser'
   /oupeng|com\.oupeng\.browser/i: 'oupeng browser'
@@ -1142,10 +1149,13 @@ rules:
   /googlestackdrivermonitoring/i: google-stackdriver-monitoring
   /infoguarddisclosureresearch/i: info-guard-disclosure-research
   /dieanalysten-adresspruefung/i: dieanalysten-adresspruefung
+  /safe-cve-2026-87902-checker/i: safe-cve-2026-87902-checker
+  /studysmartercontentresearch/i: study-smarter-content-research
   /cloudflare-traffic-manager/i: cloudflare-traffic-manager
   /google-stale-content-probe/i: google-stale-content-probe
   /google-transparency-report/i: google-transparency-report
   '/j\. river internet reader/i': jriver-media-center
+  /companypublicdatacollector/i: company-public-data-collector
   /yandexmobilescreenshotbot/i: yandex-mobile-screenshot-bot
   /microsoft\.data\.mashup/i: microsoft-power-query
   /google-adwords-displayads/i: google-adwords-displayads
@@ -1166,7 +1176,11 @@ rules:
   /corpmap-impressumpruefung/i: corpmap-impressumpruefung
   /jsystem3-metadata-indexer/i: jsystem3-metadata-indexer
   /research-dataset-download/i: research-dataset-download
+  /newslettercatalogresearch/i: newsletter-catalog-research
+  /domainfinder-access-study/i: domainfinder-access-study
+  /majesticmetadatacollector/i: majestic-metadata-collector
   /nextcloud-server-crawler/i: nextcloud-server-crawler
+  /aiapirelaymarketresearch/i: ai-api-relay-market-research
   /cloudflare-alwaysonline/i: 'cloudflare alwaysonline'
   /cloudflare-healthchecks/i: cloudflare-health-checks
   /cloudservermarketspider/i: cloud-server-market-spider
@@ -1186,6 +1200,7 @@ rules:
   /redlineuniverseresearch/i: redline-universe-research
   /domaininventoryresearch/i: domain-inventory-research
   /internalmarkdownscraper/i: internal-markdown-scraper
+  /bedrockprospectresearch/i: bedrock-prospect-research
   /google-adwords-express/i: google-adwords-express
   /google-adwords-instant/i: google-adwords-instant
   /scamadviserexternalhit/i: scamadviser-external-hit
@@ -1211,6 +1226,7 @@ rules:
   /article50guardresearch/i: article-50-guard-research
   /companiesenrichmentbot/i: companies-enrichment-bot
   /statamic-lead-research/i: statamic-lead-research
+  /dealroom-website-check/i: dealroom-website-check
   /google-cloudvertexbot/i: google-cloud-vertex-bot
   /magentovalidatorfixed/i: magento-validator-fixed
   '/sidetrade indexer bot/i': 'sidetrade indexer bot'
@@ -1233,9 +1249,14 @@ rules:
   '/page modified pinger/i': page-modified-pinger
   '/lodestone php parser/i': lodestone-php-parser
   /klarna-prospect-check/i: klarna-prospect-check
+  '/brandfetch preflight/i': brandfetch-preflight
+  /public-homepage-check/i: public-homepage-check
+  /glassdollarwwwindexer/i: glass-dollar-www-indexer
+  /company-data-research/i: company-data-research
   /go-containerregistry/i: go-container-registry
   /indexboxcompaniesbot/i: index-box-companies-bot
   /image-sites-research/i: image-sites-research
+  /enrichment-prefilter/i: enrichment-prefilter
   /internetmeasurement/i: internet-measurement
   /netcraftsurveyagent/i: 'netcraft survey agent'
   '/yandex\.gazeta bot|gazeta\.yandex/i': gazeta-bot
@@ -1269,6 +1290,11 @@ rules:
   '/syncml http client/i': lotus-notes-traveler
   /voco-scale-research/i: voco-scale-research
   /opencode-smartfetch/i: opencode-smartfetch
+  /core11localresearch/i: core11-local-research
+  /purchasedetectorbot/i: purchase-detector-bot
+  /attestlayerresearch/i: attest-layer-research
+  /gangescontactfinder/i: ganges-contact-finder
+  /stateofssl-research/i: state-of-ssl-research
   /steamchaturllookup/i: steam-chat-url-lookup
   /dynatracesynthetic/i: dynatrace-synthetic
   /cpanel-http-client/i: cpanel-http-client
@@ -1282,6 +1308,11 @@ rules:
   /vitrincardirectory/i: vitrin-car-directory
   /leadterminaldetest/i: lead-terminal-de-test
   /company-data-check/i: company-data-check
+  /appscoutcontactbot/i: app-scout-contact-bot
+  /beansllm-corpusbot/i: beansllm-corpus-bot
+  /rfxsearch-research/i: rfx-search-research
+  /wolfofseo-301-scan/i: wolf-of-seo-301-scan
+  /seojuice-searchbot/i: seo-juice-search-bot
   /digitalshadowsbot/i: digital-shadows-bot
   /netpeakcheckerbot/i: netpeak-checker-bot
   /seoscanners\.net/i: seoscanners-net
@@ -1317,6 +1348,9 @@ rules:
   /productlookoutbot/i: product-lookout-bot
   /agenticaiplatform/i: agentic-ai-platform
   /eu-domains-enrich/i: eu-domains-enrich
+  /colectare-domenii/i: colectare-domenii
+  /domainimprchecker/i: domain-impr-checker
+  /company-db-worker/i: company-db-worker
   /privacypolicybot/i: privacy-policy-bot
   '/vuhuv(?:bot|rbt)/i': vuhuv-bot
   /ugaresearchagent/i: uga-research-agent
@@ -1357,6 +1391,14 @@ rules:
   /millionroundsbot/i: million-rounds-bot
   '/reconix research/i': reconix-research
   /internetdata\.io/i: internet-data-io
+  /gmaps-site-probe/i: gmaps-site-probe
+  /fullstackgtm-bot/i: full-stack-gtm-bot
+  /company-research/i: company-research
+  /mushdomaincensus/i: mush-domain-census
+  /resellerresearch/i: reseller-research
+  /kbcnetcontactbot/i: kbcnet-contact-bot
+  /molotowsitecheck/i: molotow-site-check
+  /stackdetectorbot/i: stack-detector-bot
   /copyviodetector/i: copyvio-detector
   /statistikhessen/i: statistik-hessen
   /yadirectfetcher/i: ya-direct-fetcher
@@ -1460,6 +1502,9 @@ rules:
   /aivisibilitybot/i: ai-visibility-bot
   /clueweb-crawler/i: clueweb-crawler
   /monacosearchbot/i: monaco-search-bot
+  '/research fetch/i': research-fetch
+  /knotenleadcheck/i: knoten-lead-check
+  /vexelsearchbot/i: vexel-search-bot
   /awariosmartbot/i: awario-smart-bot
   /google-amphtml/i: google-amphtml
   /xchaos_arachne/i: 'xchaos arachne'
@@ -1475,6 +1520,11 @@ rules:
   /momentleadsbot/i: moment-leads-bot
   /studio-crawler/i: studio-crawler
   /finderpediabot/i: finderpedia-bot
+  /privaranewsbot/i: privara-news-bot
+  /parameterfetch/i: parameter-fetch
+  /geocheck-study/i: geocheck-study
+  /scrape_central/i: scrape-central
+  /domainprintbot/i: domain-print-bot
   /censysinspect/i: censysinspect
   /t3versionsbot/i: t3-versions-bot
   '/acorn phoenix/i': acorn-phoenix
@@ -1526,6 +1576,10 @@ rules:
   /semiologicbot/i: semiologic-bot
   /codexresearch/i: codex-research
   /minisearchbot/i: mini-search-bot
+  /riscoperta-l1/i: riscoperta-l1
+  /icresearch-w2/i: ic-research-w2
+  /ct-sender-poc/i: ct-sender-poc
+  /listsignalbot/i: list-signal-bot
   /researchscan/i: researchscan
   /dataprovider/i: dataprovider-spider
   '/inet browser/i': inet-browser
@@ -1600,6 +1654,19 @@ rules:
   /re-script-lp/i: re-script-lp
   /chaindealbot/i: chain-deal-bot
   /websuche\.de/i: websuche-de
+  /leadgennybot/i: lead-genny-bot
+  /trendbowlbot/i: trend-bowl-bot
+  /datascoutbot/i: data-scout-bot
+  /image-review/i: image-review
+  /kuendifixbot/i: kuendifix-bot
+  /nge-research/i: nge-research
+  /gazetteerbot/i: gazetteer-bot
+  /recherchebot/i: recherche-bot
+  /datenallebot/i: daten-alle-bot
+  /domainspider/i: domain-spider
+  /creoscopebot/i: creo-scope-bot
+  /tld-netprobe/i: tld-netprobe
+  /seotrendsbot/i: seotrends-bot
   /bitsightbot/i: bitsightbot
   /surdotlybot/i: surdotlybot
   /intelx\.io/i: intelligence-x
@@ -1681,6 +1748,14 @@ rules:
   /research-b2/i: research-b2
   /firmcredbot/i: firm-cred-bot
   /firmenradar/i: firmen-radar
+  /barrigazbot/i: barrigaz-bot
+  /wpreportbot/i: wp-report-bot
+  /wp-pipeline/i: wp-pipeline
+  /tenderaihub/i: tender-ai-hub
+  /layer5ocean/i: layer-5-ocean
+  /jobdatenbot/i: jobdaten-bot
+  /chakloonbot/i: chakloon-bot
+  /moonshotbot/i: moonshot-bot
   /domainscan/i: 'domainscan server monitoring'
   /jobroboter/i: jobroboter
   /webwikibot/i: webwikibot
@@ -1758,6 +1833,16 @@ rules:
   /lightpanda/i: lightpanda
   /^tpa-wear\//i: the-podcast-app
   /asomonitor/i: aso-monitor
+  /stoqlabbot/i: stoqlab-bot
+  /apcosysbot/i: apcosys-bot
+  /pl-lead-db/i: pl-lead-db
+  /sitereview/i: site-review
+  /hiwolfsbot/i: hi-wolfs-bot
+  /jobscraper/i: job-scraper
+  /envscanner/i: env-scanner
+  /urlcleaner/i: url-cleaner
+  /premirobot/i: premiro-bot
+  /hostio-bot/i: hostio-bot
   /kozmonavt|kocmohabt/i: kozmonavt
   /stractbot/i: stract-bot
   /screpybot/i: screpy-bot
@@ -1851,6 +1936,8 @@ rules:
   /themapbot/i: the-map-bot
   /nvidiabot/i: nvidia-bot
   /poliasbot/i: polias-bot
+  /sqlspider/i: sql-spider
+  /domainbot/i: domain-bot
   /neevabot/i: neevabot
   /msoffice/i: office
   /centuryb/i: centuryb
@@ -1924,7 +2011,7 @@ rules:
   /http-get/i: http-get
   /fever\//i: fever
   /sklikbot/i: sklik-bot
-  /360se/i: '360 secure browser'
+  /(?<!\.)360se/i: '360 secure browser'
   /chromium/i: chromium
   /overcast/i: overcast
   /what-vpn/i: what-vpn
@@ -1954,6 +2041,12 @@ rules:
   /tldwpbot/i: tldwp-bot
   /adscan\//i: adscan
   /firmaapi/i: firma-api-bot
+  /dede-bot/i: dede-bot
+  /jobwende/i: jobwende
+  /crawl360/i: crawl360
+  /vendibot/i: vendi-bot
+  /qlyzebot/i: qlyze-bot
+  /sofyabot/i: sofya-bot
   /whatcms/i: what-cms
   /phoenix/i: phoenix
   /kagibot/i: kagi-bot
@@ -1983,6 +2076,12 @@ rules:
   /dobas\//i: dobas
   /opengtm/i: open-gtm
   /indudex/i: indudex
+  /fyndbot/i: fyndbot
+  /segugio/i: segugio
+  /qwenbot/i: qwen-bot
+  /grokbot/i: grok-bot
+  /hunyuan/i: hunyuan
+  '/dbd bot/i': dbd-bot
   /onbbot/i: onbbot
   /orbbot/i: orbbot
   /edg\//i: edge
@@ -2000,6 +2099,8 @@ rules:
   /bazqux/i: bazqux-reader
   /midori/i: midori
   /gptbot/i: gpt-bot
+  /ftebot/i: fte-bot
+  /netapi/i: net-api
   /goose/i: goose-extractor
   /avant/i: avant
   /dvbot/i: dv-bot
@@ -2011,6 +2112,7 @@ rules:
   /daum\//i: daum
   /2gdpr/i: 2gdpr
   /kaupr/i: kaupr
+  /compatible; research/i: generic-bot
   /mozilla/i: mozilla
   '/2ip bot/i': '2ip bot'
   /dart\//i: dart
@@ -2136,7 +2238,7 @@ rules:
   /pa11y/i: pa11y
   /nmap/i: nmap
   /itms/i: itms
-  /ning/i: ning
+  /(?<!r)ning/i: ning
   /nbot/i: nbot
   /helm/i: helm
   '/(?<![\.e])php/i': php

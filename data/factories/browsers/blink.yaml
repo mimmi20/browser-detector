@@ -123,7 +123,7 @@ rules:
   '/(?<![px])iron(\/| (?!build|pro)|$)/i': iron
   /haosouspider/i: haosouspider
   /feedly/i: 'feedly feed fetcher'
-  /360se/i: '360 secure browser'
+  /(?<!\.)360se/i: '360 secure browser'
   /360ee/i: '360 speed browser'
   /appengine-google/i: 'google app engine'
   /numukibrowser/i: numuki-browser
@@ -389,6 +389,7 @@ rules:
   /visionteacherforchromebooks/i: visionteacher-for-chromebooks
   /slackbot-linkexpanding/i: slackbot-link-expanding
   /bykreatorworkstation/i: bykreator-workstation
+  /pagesourcesearchbot/i: page-source-search-bot
   /claude-searchbot/i: claude-searchbot
   /lagatos-browser/i: lagatos-browser
   /beakerbrowser/i: beaker-browser

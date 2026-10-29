@@ -1609,3 +1609,22 @@ yandex-screenshot-bot:
     search:
       - YandexScreenshotBot
   engine: unknown
+jobwende:
+  name: jobwende
+  manufacturer: sören-schuster
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - jobwende
+  engine: unknown
+vexel-search-bot:
+  name: VexelSearchBot
+  manufacturer: vexel-group
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - VexelSearchBot\-
+      - VexelSearchBot
+  engine: unknown

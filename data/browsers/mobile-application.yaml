@@ -3524,8 +3524,11 @@ safe-in-cloud:
   manufacturer: safe-in-cloud
   type: mobile-application
   version:
-    factory: null
-    search: null
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SafeInCloud%202
+      - 'SafeInCloud 2'
+      - SafeInCloud
   engine: null
 safe-in-cloud-free:
   name: 'SafeInCloud Free'
@@ -4781,4 +4784,13 @@ momo:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - momoWebView
+  engine: null
+apps-for-google-app:
+  name: 'Apps for Google App'
+  manufacturer: unknown
+  type: mobile-application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Apps for Google App'
   engine: null
