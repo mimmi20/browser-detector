@@ -514,12 +514,12 @@
       simCount: 0
       bits: 0
     client:
-      name: Safari
+      name: AzureAI-SearchBot
       modus: null
-      version: null
-      manufacturer: apple
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -555,12 +555,12 @@
       simCount: 0
       bits: 0
     client:
-      name: Safari
+      name: SEOJuice-SearchBot
       modus: null
-      version: null
-      manufacturer: apple
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: calm-north-labs
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -719,12 +719,12 @@
       simCount: 0
       bits: 0
     client:
-      name: Safari
+      name: MoonrankBot
       modus: null
-      version: null
-      manufacturer: apple
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: moonrank-ai
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -760,12 +760,12 @@
       simCount: 0
       bits: 0
     client:
-      name: Safari
+      name: 'Agentic AI Platform'
       modus: null
-      version: null
-      manufacturer: apple
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -2466,8 +2466,8 @@
       user-agent: ddg_win/0.174.8.0
     device:
       architecture: ''
-      deviceName: null
-      marketingName: null
+      deviceName: 'general Desktop'
+      marketingName: 'general Desktop'
       manufacturer: unknown
       brand: unknown
       display:
@@ -2475,10 +2475,10 @@
         height: null
         touch: false
         size: null
-      type: unknown
+      type: desktop
       ismobile: false
       istv: false
-      dualOrientation: null
+      dualOrientation: false
       simCount: 0
       bits: 0
     client:
@@ -2507,8 +2507,8 @@
       user-agent: ddg_win/0.175.1.0
     device:
       architecture: ''
-      deviceName: null
-      marketingName: null
+      deviceName: 'general Desktop'
+      marketingName: 'general Desktop'
       manufacturer: unknown
       brand: unknown
       display:
@@ -2516,10 +2516,10 @@
         height: null
         touch: false
         size: null
-      type: unknown
+      type: desktop
       ismobile: false
       istv: false
-      dualOrientation: null
+      dualOrientation: false
       simCount: 0
       bits: 0
     client:
@@ -2548,8 +2548,8 @@
       user-agent: ddg_win/0.176.2.0
     device:
       architecture: ''
-      deviceName: null
-      marketingName: null
+      deviceName: 'general Desktop'
+      marketingName: 'general Desktop'
       manufacturer: unknown
       brand: unknown
       display:
@@ -2557,10 +2557,10 @@
         height: null
         touch: false
         size: null
-      type: unknown
+      type: desktop
       ismobile: false
       istv: false
-      dualOrientation: null
+      dualOrientation: false
       simCount: 0
       bits: 0
     client:
@@ -3613,12 +3613,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Headless Chrome'
+      name: quillbot
       modus: null
-      version: 123.0.0
-      manufacturer: google
-      type: browser
-      isbot: false
+      version: null
+      manufacturer: learneo
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: Windows
@@ -3895,12 +3895,12 @@
       simCount: 0
       bits: 64
     client:
-      name: 'Headless Chrome'
+      name: Clearscopebot
       modus: null
-      version: 133.0.6943.16
-      manufacturer: google
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 64
     os:
       name: Windows

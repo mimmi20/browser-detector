@@ -350,12 +350,12 @@
       simCount: 0
       bits: 0
     client:
-      name: null
+      name: MolotowSiteCheck
       modus: null
-      version: null
-      manufacturer: unknown
-      type: unknown
-      isbot: false
+      version: 1.0.0
+      manufacturer: molotow-web-development
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -924,12 +924,12 @@
       simCount: 0
       bits: 0
     client:
-      name: null
+      name: SofyaBot
       modus: null
-      version: null
-      manufacturer: unknown
-      type: unknown
-      isbot: false
+      version: 1.0.0
+      manufacturer: sofya
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -1744,12 +1744,12 @@
       simCount: 0
       bits: 0
     client:
-      name: null
+      name: hostio-bot
       modus: null
-      version: null
+      version: 0.1.0
       manufacturer: unknown
-      type: unknown
-      isbot: false
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null

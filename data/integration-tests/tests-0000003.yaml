@@ -2693,11 +2693,11 @@
       simCount: 0
       bits: 0
     client:
-      name: CFNetwork
+      name: 'Apps for Google App'
       modus: null
-      version: null
-      manufacturer: apple
-      type: application
+      version: 37.0.0
+      manufacturer: unknown
+      type: mobile-application
       isbot: false
       bits: 0
     os:
@@ -2734,12 +2734,12 @@
       simCount: 0
       bits: 0
     client:
-      name: CFNetwork
+      name: autofill_provider_extension
       modus: null
-      version: null
-      manufacturer: apple
-      type: application
-      isbot: false
+      version: 22.0.0
+      manufacturer: unknown
+      type: service-agent
+      isbot: true
       bits: 0
     os:
       name: iOS

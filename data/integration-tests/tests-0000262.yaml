@@ -2756,10 +2756,10 @@
       simCount: 0
       bits: 0
     client:
-      name: Crawler
+      name: DENIC-Crawler
       modus: null
       version: 42.0.0
-      manufacturer: linkfluence
+      manufacturer: denic
       type: crawler
       isbot: true
       bits: 0
@@ -2973,11 +2973,11 @@
       simCount: 0
       bits: 0
     client:
-      name: nbot
+      name: BLUNbot
       modus: null
       version: 1.0.0
-      manufacturer: unknown
-      type: bot
+      manufacturer: blun
+      type: crawler
       isbot: true
       bits: 0
     os:
@@ -3096,9 +3096,9 @@
       simCount: 0
       bits: 0
     client:
-      name: linkCheck
+      name: EyeAbleBrokenLinkChecker
       modus: null
-      version: null
+      version: 1.0.0
       manufacturer: unknown
       type: crawler
       isbot: true

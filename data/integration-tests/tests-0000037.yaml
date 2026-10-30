@@ -797,12 +797,12 @@
       simCount: 0
       bits: 0
     client:
-      name: Chrome
+      name: PageSourceSearchBot
       modus: null
-      version: 128.0.0.0
-      manufacturer: google
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -885,12 +885,12 @@
       simCount: 0
       bits: 0
     client:
-      name: Chrome
+      name: 'Workybara crawler'
       modus: null
-      version: 128.0.0.0
-      manufacturer: google
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: workybara
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -930,12 +930,12 @@
       simCount: 0
       bits: 0
     client:
-      name: Chrome
+      name: SenderBot
       modus: null
-      version: 143.0.0
-      manufacturer: google
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: sender-online-marketing
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -1760,7 +1760,7 @@
       modus: null
       version: null
       manufacturer: hello-world-digital
-      type: bot
+      type: crawler
       isbot: true
       bits: 0
     os:
@@ -2008,10 +2008,10 @@
       simCount: 0
       bits: 0
     client:
-      name: AdsTxtCrawler
+      name: 'Bidflow AdsTxtCrawler'
       modus: null
       version: 1.0.0
-      manufacturer: iab-technology
+      manufacturer: bidflow
       type: crawler
       isbot: true
       bits: 0
@@ -3303,12 +3303,12 @@
       simCount: 0
       bits: 0
     client:
-      name: Edge
+      name: SenderBot
       modus: null
-      version: 145.0.0
-      manufacturer: microsoft
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: sender-online-marketing
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: Windows
@@ -3608,12 +3608,12 @@
       simCount: 0
       bits: 0
     client:
-      name: Links
+      name: OpenBacklinksBot
       modus: null
-      version: null
-      manufacturer: mikulas-patocka
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: open-backlinks
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -3622,7 +3622,7 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Text
+      name: null
       version: null
       manufacturer: unknown
 -
@@ -4112,12 +4112,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: 'Generic Bot'
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: null
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -4126,9 +4126,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: Mozilla

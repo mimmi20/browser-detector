@@ -514,12 +514,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: ParameterFetch
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -528,9 +528,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; URLCleaner/1.0; +https://github.com/url-cleaner)'
@@ -555,12 +555,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: URLCleaner
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -569,9 +569,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; SQLSpider/1.1)'
@@ -596,12 +596,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: SQLSpider
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.1.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -610,9 +610,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; EnvScanner/0.4; audit)'
@@ -637,12 +637,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: EnvScanner
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 0.4.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -651,9 +651,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; JobdatenBot/1.0; +https://jobdaten.com)'
@@ -678,12 +678,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: JobdatenBot
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: diligent-recruitment
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -692,9 +692,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; EnvScanner/0.5; audit)'
@@ -760,12 +760,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: DomainSpider
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 0.2.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -774,9 +774,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; ListSignalBot/1.0; +https://listsignal.com/bot)'
@@ -801,12 +801,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: ListSignalBot
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: keybloc
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -815,9 +815,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 Layer5Ocean/2.0'
@@ -842,12 +842,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: Layer5Ocean
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 2.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -856,9 +856,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; RFXSearch-Research/1.0; +https://rfxsearch.com)'
@@ -883,12 +883,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: RFXSearch-Research
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: rfx-search
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -897,9 +897,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; BedrockProspectResearch/1.0; public-contact-research)'
@@ -924,12 +924,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: BedrockProspectResearch
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -938,9 +938,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; DatenalleBot/1.0; Impressum-Abgleich)'
@@ -965,12 +965,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: DatenalleBot
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -979,9 +979,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; TenderAIHub/1.0; +https://tenderr-ai.com)'
@@ -1006,12 +1006,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: TenderAIHub
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: tender-ai
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -1020,9 +1020,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; RechercheBot/1.0; +mailto:kontakt@example.de) Pruefung oeffentlich zugaenglicher Angebote'
@@ -1047,12 +1047,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: RechercheBot
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -1061,9 +1061,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; SiteReview/1.0)'
@@ -1088,12 +1088,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: SiteReview
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -1102,9 +1102,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; public-homepage-check/1.0)'
@@ -1129,12 +1129,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: public-homepage-check
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -1143,9 +1143,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; company-research/1.0)'
@@ -1170,12 +1170,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: company-research
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -1184,9 +1184,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; StateOfSSL-Research/1.0; +https://www.geotrust.com/research/state-of-ssl)'
@@ -1211,12 +1211,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: StateOfSSL-Research
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: digicert
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -1225,9 +1225,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; FullStackGTM-bot/1.0; +https://fullstackgtm.com/bot)'
@@ -1252,12 +1252,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: FullStackGTM-bot
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -1266,9 +1266,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; AIAPIRelayMarketResearch/1.0; public-web-only)'
@@ -1293,12 +1293,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: AIAPIRelayMarketResearch
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -1307,9 +1307,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; pl-lead-db/0.1; +https://synthropia.ai)'
@@ -1334,12 +1334,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: pl-lead-db
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 0.1.0
+      manufacturer: synthropia
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -1348,9 +1348,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; NGE-Research/1.0)'
@@ -1375,12 +1375,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: NGE-Research
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -1389,9 +1389,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; GangesContactFinder/1.0; +https://www.ganges.world)'
@@ -1416,12 +1416,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: GangesContactFinder
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: jay-paras-agencies
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -1430,9 +1430,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; Brandfetch preflight; +https://brandfetch.com)'
@@ -1457,12 +1457,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: 'Brandfetch Preflight'
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: null
+      manufacturer: brand-fetch
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -1471,9 +1471,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; FTEBot/2.1; +https://nextgen-equity.com)'
@@ -1498,12 +1498,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: FTEBot
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 2.1.0
+      manufacturer: nextgen-equity-partners
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -1512,9 +1512,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 image-review'
@@ -1539,12 +1539,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: image-review
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: null
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -1553,9 +1553,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; dede-bot/1.0)'
@@ -1580,12 +1580,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: dede-bot
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -1594,9 +1594,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; WP-Pipeline/3.1)'
@@ -1621,12 +1621,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: WP-Pipeline
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 3.1.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -1635,9 +1635,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; colectare-domenii/1.0)'
@@ -1662,12 +1662,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: colectare-domenii
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -1676,9 +1676,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; TrendBowlBot/1.0; info@trendbowl.app)'
@@ -1703,12 +1703,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: TrendBowlBot
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -1717,9 +1717,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; gmaps-site-probe/1.0; research)'
@@ -1744,12 +1744,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: gmaps-site-probe
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -1758,9 +1758,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; LeadGennyBot/1.0)'
@@ -1785,12 +1785,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: LeadGennyBot
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -1799,9 +1799,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; InternalMarkdownScraper/1.0)'
@@ -1826,12 +1826,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: InternalMarkdownScraper
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -1840,9 +1840,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; websuche.de/2.0; +https://websuche.de)'
@@ -1867,12 +1867,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: websuche.de
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 2.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -1881,9 +1881,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; ChaindealBot/1.0; +https://chaindeal.de)'
@@ -1908,12 +1908,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: ChaindealBot
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: chainmatics
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -1922,9 +1922,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (research fetch; pt16 r13 V-E4)'
@@ -1949,12 +1949,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: 'research fetch'
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: null
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -1963,9 +1963,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; InternetData.io/1.0; +https://internetdata.io/scan)'
@@ -1990,12 +1990,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: InternetData.io
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -2004,9 +2004,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; FirmenRadar/1.0)'
@@ -2031,12 +2031,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: FirmenRadar
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -2045,9 +2045,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (research fetch; pt16 r13 V-E5)'
@@ -2113,12 +2113,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: Overture
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -2127,9 +2127,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; DyonysosRadar/1.0; +https://dyonysos.fr)'
@@ -2154,12 +2154,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: DyonysosRadar
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: dyonysos
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -2168,9 +2168,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; AIVisibilityBot/1.0)'
@@ -2195,12 +2195,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: AIVisibilityBot
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -2209,9 +2209,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; SEA-Check/1.0; +https://onlinemarketingliebe.com)'
@@ -2236,12 +2236,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: SEA-Check
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: online-marketing-liebe
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -2250,9 +2250,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; Vereinsrecherche; +mailto:benjamin.schulz@trude-kuh.de)'
@@ -2277,12 +2277,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: Vereinsrecherche
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: null
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -2291,9 +2291,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; BusinessWebsiteResearch/1.0)'
@@ -2318,12 +2318,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: BusinessWebsiteResearch
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -2332,9 +2332,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; url-toolkit-research/0.1)'
@@ -2359,12 +2359,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: url-toolkit-research
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 0.1.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -2373,9 +2373,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; company-data-check/1.0)'
@@ -2400,12 +2400,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: company-data-check
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -2414,9 +2414,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; LeadTerminalDETest/0.1)'
@@ -2441,12 +2441,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: LeadTerminalDETest
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 0.1.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -2455,9 +2455,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; ClusesiaScan/1.0; accessibility-research; +mailto:support@ignionapps.com)'
@@ -2482,12 +2482,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: ClusesiaScan
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -2496,9 +2496,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; WebParser/1.0)'
@@ -2523,12 +2523,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: WebParser
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -2537,9 +2537,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; adscan/1.0)'
@@ -2564,12 +2564,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: adscan
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -2578,9 +2578,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; AIVAIMPRINT/1.0; +https://deutschlandvoucher.de)'
@@ -2605,12 +2605,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: AIVAIMPRINT
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: deutschland-voucher-media
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -2619,9 +2619,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; ThroxyListCheck/1.0)'
@@ -2646,12 +2646,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: ThroxyListCheck
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -2660,9 +2660,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; jSystem3-metadata-indexer/0.1)'
@@ -2687,12 +2687,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: jSystem3-metadata-indexer
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 0.1.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -2701,9 +2701,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MoribianResolverPilot/0.1; company identity lookup)'
@@ -2728,12 +2728,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: MoribianResolverPilot
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 0.1.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -2742,9 +2742,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 CMS detector'
@@ -2769,12 +2769,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: 'CMS detector'
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: null
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -2783,9 +2783,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; dobas/1.0; +https://github.com/dobas)'
@@ -2810,12 +2810,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: dobas
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -2824,9 +2824,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; bloom-crawler/1.0)'
@@ -2851,12 +2851,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: bloom-crawler
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -2865,9 +2865,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; HeimsterBot/1.0; +https://heimster.ch/ueber-uns)'
@@ -2892,12 +2892,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: HeimsterBot
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: phase-shift
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -2906,9 +2906,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; BoldwinAdsTxtBot/2.0; +https://bold-win.com)'
@@ -2933,12 +2933,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: BoldwinAdsTxtBot
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 2.0.0
+      manufacturer: boldwin
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -2947,9 +2947,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; ShopwareDomainSnooper/0.1; +https://example.invalid/bot)'
@@ -2974,12 +2974,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: ShopwareDomainSnooper
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 0.1.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -2988,9 +2988,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; WebsucheBot/0.1; +mailto:KarlosPolinaster23@proton.me)'
@@ -3015,12 +3015,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: WebsucheBot
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 0.1.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -3029,9 +3029,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; eu-domains-enrich/0.1; +https://gitlab.com/parkmo)'
@@ -3056,12 +3056,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: eu-domains-enrich
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 0.1.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -3070,9 +3070,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; company-contact-check/1.1; one homepage + up to two legal/contact pages per site)'
@@ -3097,12 +3097,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: company-contact-check
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.1.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -3111,9 +3111,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; KakaoBot/1.0; +https://developers.kakao.com/bot)'
@@ -3138,12 +3138,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: KakaoBot
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: kakao
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -3152,9 +3152,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; InovvoSiteClassifier/1.0; +https://inovvo.com/categorizer/classifier)'
@@ -3179,12 +3179,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: InovvoSiteClassifier
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: inovvo
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -3193,9 +3193,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; Indudex/0.1; +https://indudex.com/legal/sources.html)'
@@ -3220,12 +3220,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: Indudex
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 0.1.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -3234,9 +3234,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; research-b2/2.0)'
@@ -3261,12 +3261,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: research-b2
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 2.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -3275,9 +3275,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; BFB2B-StoreIndex/0.1; +p.webshare.io)'
@@ -3302,12 +3302,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: BFB2B-StoreIndex
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 0.1.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -3316,9 +3316,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; research-dataset-download)'
@@ -3343,12 +3343,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: research-dataset-download
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: null
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -3357,9 +3357,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; GetAskAI/1.0; +https://getaskai.com)'
@@ -3384,12 +3384,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: GetAskAI
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: get-ask-ai
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -3398,9 +3398,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; BookmarkCheck/1.0)'
@@ -3425,12 +3425,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: BookmarkCheck
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -3439,9 +3439,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; RankCitedBot/1.0; +https://rankcited.com/bot)'
@@ -3466,12 +3466,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: RankCitedBot
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: rank-cited
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -3480,9 +3480,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MRE-Leadmaschine/1.0; Kontakt: Mutumane Real Estate)'
@@ -3507,23 +3507,23 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: MRE-Leadmaschine
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
-      name: MRE
-      marketingName: 'MAUI Runtime Environment'
+      name: null
+      marketingName: null
       version: null
-      manufacturer: mediatek
+      manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; AppliquEmployerIntel/0.1; +mailto:a.s.astapchik@gmail.com)'
@@ -3548,12 +3548,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: AppliquEmployerIntel
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 0.1.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -3562,9 +3562,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; CorpMap-Impressumpruefung/1.0; +https://corp-map.com)'
@@ -3589,12 +3589,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: 'CorpMap Impressumpruefung'
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: it-dienstleistungen-maurice-mierzwa
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -3603,9 +3603,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; Ready4BotsScout/0.1)'
@@ -3630,12 +3630,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: Ready4BotsScout
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 0.1.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -3644,9 +3644,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; LeadScraper/0.2; B2B-Recherche)'
@@ -3671,12 +3671,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: LeadScraper
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 0.2.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -3685,9 +3685,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; EveryTabBot/1.0; +https://everytab.site/bot.html)'
@@ -3712,12 +3712,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: EveryTabBot
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -3726,9 +3726,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; VitrinCarDirectory/1.0; +https://www.vitrincar.com/dealer-directory-bot)'
@@ -3753,12 +3753,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: VitrinCarDirectory
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: vitrin-network
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -3767,9 +3767,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; klarna-prospect-check/1.0)'
@@ -3794,12 +3794,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: klarna-prospect-check
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -3808,9 +3808,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; HridoyLeadCheck/1.0; homepage-only business site check)'
@@ -3835,12 +3835,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: HridoyLeadCheck
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -3849,9 +3849,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; KakaoBot/1.0; +https://cs.kakao.com/helps_html/1073213012)'
@@ -3917,12 +3917,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: dieanalysten-check
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -3931,9 +3931,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 JobRadarCareerDiscovery/1.0'
@@ -3958,12 +3958,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: JobRadarCareerDiscovery
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -3972,9 +3972,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; LeadPipelineBot/1.0; +https://swiss-market-radar.ch)'

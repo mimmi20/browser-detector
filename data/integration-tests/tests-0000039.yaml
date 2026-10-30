@@ -188,12 +188,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: Hunyuan
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: tencent
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -202,9 +202,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; xAI-Grok/1.0; +https://x.ai/)'
@@ -270,12 +270,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: GrokBot
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: x-ai
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -284,9 +284,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MoonshotBot/1.0; +https://kimi.ai/)'
@@ -311,12 +311,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: MoonshotBot
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: moonshot-ai
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -325,9 +325,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; Qwenbot/1.0; +https://qwen.alibaba.com/)'
@@ -352,12 +352,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: Qwenbot
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: alibaba
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -366,9 +366,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; research)'
@@ -434,12 +434,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: scrape_central
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -448,9 +448,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; GrokBot/1.0; +https://x.ai/grokbot)'
@@ -516,12 +516,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: QlyzeBot
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: qlyze
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -530,9 +530,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; credscanner-ai/1.0)'
@@ -2730,12 +2730,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: GlassDollarWWWIndexer
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: angel-data
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -2744,9 +2744,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; CuriousReader/1.0; mailto:curious-reader@agentmail.to)'
@@ -3591,12 +3591,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: KnotenLeadCheck
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: lars-kiewning
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -3605,9 +3605,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; EnvScanner/2.0)'

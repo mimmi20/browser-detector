@@ -145,12 +145,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: PlagAwareBot
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 3.2.0
+      manufacturer: plag-aware
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -159,9 +159,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; WP-Safe-Scanner/1.0)'
@@ -186,12 +186,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: WP-Safe-Scanner
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -200,9 +200,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; wpbot/1.4; +https://forms.gle/ajBaxygz9jSR8p8G9)'
@@ -227,12 +227,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: wpbot
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.4.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -241,9 +241,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; LaravelChecker/1.0)'
@@ -350,12 +350,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: PBN.BOT
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -364,9 +364,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; AuroQuantisOutreachBot/1.0; +contact@auroquantis.example)'
@@ -473,12 +473,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: ArenaUnfurlBot
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: arena-intelligence
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -487,9 +487,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; RevicBot/1.0)'
@@ -555,12 +555,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: URLValidator
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -569,9 +569,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; DomainScores/2.1; +https://www.domainscores.net/headers)'
@@ -678,12 +678,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: EveryLawyer-DomainFinder
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 0.1.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -692,9 +692,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; CompanyScraper/1.0)'
@@ -760,12 +760,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: WebCache-mdream-rs
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -774,9 +774,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; EmailExtractor/1.0)'
@@ -801,12 +801,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: EmailExtractor
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -815,9 +815,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; LeadFinder/2.0; +research)'
@@ -883,12 +883,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: enrichment-prefilter
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -897,9 +897,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; DomainBot/1.0)'
@@ -924,12 +924,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: DomainBot
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -938,9 +938,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; JSHunt/2.0)'
@@ -1047,12 +1047,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: SeotrendsBot
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -1061,9 +1061,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; ComplianceSearchTool/1.0)'
@@ -1375,12 +1375,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: WolfOfSEO-301-scan
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 0.1.0
+      manufacturer: wolf-of-seo
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -1389,9 +1389,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; TechnoLeadBot/0.1; +https://example.com/bot)'
@@ -1539,12 +1539,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: SenderBot
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: sender-online-marketing
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -1553,9 +1553,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; GBT-Market-Site-Catalog/1.0; +https://gbt.adaptivai.app)'
@@ -3794,12 +3794,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: LeadPipelineBot
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: nicolai-wolko
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -3808,9 +3808,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; BRIEF-WebsiteVerifier/0.2)'
@@ -3876,12 +3876,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: company-data-research
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -3890,9 +3890,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; LexAidSpeedQualityAI/5.1; +https://rechtecheck.de/)'

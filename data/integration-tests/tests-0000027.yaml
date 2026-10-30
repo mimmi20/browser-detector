@@ -2634,23 +2634,23 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: WARP-Research
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
-      name: OS/2
-      marketingName: OS/2
+      name: null
+      marketingName: null
       version: null
-      manufacturer: ibm
+      manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     sec-ch-ua-platform: '"macOS"'

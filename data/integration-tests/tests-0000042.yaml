@@ -559,7 +559,7 @@
       modus: null
       version: 0.7.0
       manufacturer: unknown
-      type: bot
+      type: crawler
       isbot: true
       bits: 0
     os:
@@ -801,11 +801,11 @@
       simCount: 0
       bits: 0
     client:
-      name: mbot
+      name: Top1mBot
       modus: null
       version: 1.0.0
       manufacturer: unknown
-      type: bot
+      type: crawler
       isbot: true
       bits: 0
     os:
@@ -1088,11 +1088,11 @@
       simCount: 0
       bits: 0
     client:
-      name: Typo3
+      name: TYPO3-TLD-Census
       modus: null
-      version: null
+      version: 0.1.0
       manufacturer: unknown
-      type: bot
+      type: crawler
       isbot: true
       bits: 0
     os:
@@ -1801,10 +1801,10 @@
       simCount: 0
       bits: 0
     client:
-      name: TestCrawler
+      name: ethicrawl
       modus: null
-      version: null
-      manufacturer: unknown
+      version: 0.1.0
+      manufacturer: digital-pebble
       type: crawler
       isbot: true
       bits: 0
@@ -2088,10 +2088,10 @@
       simCount: 0
       bits: 0
     client:
-      name: linkCheck
+      name: Overture-Maps-LinkChecker
       modus: null
-      version: null
-      manufacturer: unknown
+      version: 1.0.0
+      manufacturer: overture-maps-foundation
       type: crawler
       isbot: true
       bits: 0

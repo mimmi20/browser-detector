@@ -977,12 +977,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Java Standard Library'
+      name: 'Generic Bot'
       modus: null
       version: null
-      manufacturer: oracle
-      type: library
-      isbot: false
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: JavaOS
@@ -1704,11 +1704,11 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Picsearch Bot'
+      name: OnlineShopsBot
       modus: null
       version: 0.1.0
-      manufacturer: picsearch
-      type: search-bot
+      manufacturer: vero-soft
+      type: crawler
       isbot: true
       bits: 0
     os:
@@ -3171,12 +3171,12 @@
       simCount: 0
       bits: 0
     client:
-      name: Lightpanda
+      name: 'Lightpanda Test Crawler'
       modus: null
-      version: 1.1.0
+      version: 1.0.0
       manufacturer: selecy
-      type: browser
-      isbot: false
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
