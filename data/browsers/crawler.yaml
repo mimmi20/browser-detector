@@ -7819,3 +7819,21 @@ quillbot:
     search:
       - quillbot
   engine: unknown
+agow-poi-robots-audit:
+  name: agow-poi-robots-audit
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - agow-poi-robots-audit
+  engine: unknown
+mre-leadmaschine:
+  name: MRE-Leadmaschine
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - MRE-Leadmaschine
+  engine: unknown

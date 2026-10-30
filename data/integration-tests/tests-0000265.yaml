@@ -818,3 +818,44 @@
       name: Blink
       version: 81.0.4044.117
       manufacturer: google
+-
+  headers:
+    user-agent: 'agow-poi-robots-audit/1 (robots.txt-only rights audit, one fetch per host; contact pratyay@amazon.com)'
+  expected:
+    headers:
+      user-agent: 'agow-poi-robots-audit/1 (robots.txt-only rights audit, one fetch per host; contact pratyay@amazon.com)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: TestCrawler
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown

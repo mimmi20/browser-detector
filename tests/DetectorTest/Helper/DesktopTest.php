@@ -145,6 +145,7 @@ final class DesktopTest extends TestCase
             ['Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Safari PrcmNovel_iOS/1.11.8'],
             ['CitrixReceiver/18.12.0.65534 (X11; Linux x86_64) Warthog/9.0.8024 (Release) X1Class CWACapable'],
             ['FortiGate (FortiOS 7.0) Chrome/ Safari/'],
+            ['ddg_win/0.176.2.0'],
         ];
     }
 

@@ -318,6 +318,7 @@ final class MobileDeviceTest extends TestCase
             ['FortiGate (FortiOS 7.0) Chrome/ Safari/'],
             ['Apple AppleTV6,2 tvOS/17.1.0 Lifetime-tvOS/5.14.0 CFNetwork/1485'],
             ['H443NM7F8H.CBSSportsApp/1.0 iOS/9.0 model/AppleTV5,3 build/13T393'],
+            ['ddg_win/0.176.2.0'],
         ];
     }
 }
