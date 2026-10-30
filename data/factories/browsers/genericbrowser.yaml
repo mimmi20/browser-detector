@@ -748,18 +748,25 @@ rules:
   /facebookcatalog/i: facebook-catalog
   /cf-facebook/i: cf-facebook
   '/^\[fban|facebook(?!\.com)/i': 'facebook app'
+  '/lightpanda\/[0-9\.]+ internal-testing-crawler/i': lightpanda-test-crawler
   '/e\.ventures investment crawler/i': eventures-investment-crawler
   '/google page speed insights/i': 'google pagespeed insights'
+  /nextcloud-server-crawler/i: nextcloud-server-crawler
   /gwf-carbon-txt-crawler/i: gwf-carbon-txt-crawler
   '/ror sitemap generator/i': 'ror sitemap generator'
   '/sitemap generator/i': 'sitemap generator'
   '/embed php library/i': 'embed php library'
   /broker-db-crawler/i: broker-db-crawler
   /phpneuralnetwork/i: php-neural-network
+  /bitninja-crawler/i: bitninja-crawler
   /googlebot-video/i: googlebot-video
   '/audisto crawler/i': audisto-crawler
+  /clueweb-crawler/i: clueweb-crawler
+  /studio-crawler/i: studio-crawler
   /http_request2/i: 'pear http_request2'
   /wirereaderbot/i: wire-reader-bot
+  /bloom-crawler/i: bloom-crawler
+  /denic-crawler/i: denic-crawler
   /1001firmsbot/i: 1001-firms-bot
   /nalezenczbot/i: nalezen-cz-bot
   /websuse\.de/i: websuse-crawler
@@ -1116,7 +1123,6 @@ rules:
   '/citrix(?:receiver| workspace| viewer)|cwawebview|cwa\//i': citrix-workspace
   '/y!j; for robot study|yahoo japan; for robot study/i': yahoo-robot-study
   '/amazon[- ]route ?53[- ]health[- ]check[- ]service/i': amazon-route53-health-check
-  '/lightpanda\/[0-9\.]+ internal-testing-crawler/i': lightpanda-test-crawler
   /bbc\.co\.uk\/display\/men\/page\+monitor/i: bbc-page-monitor
   '/kaspersky lab content filtering research/i': kaspersky-content-filtering-research
   '/cloudflare custom hostname verification/i': cloudflare-custom-hostname-verification
@@ -1181,7 +1187,6 @@ rules:
   /newslettercatalogresearch/i: newsletter-catalog-research
   /domainfinder-access-study/i: domainfinder-access-study
   /majesticmetadatacollector/i: majestic-metadata-collector
-  /nextcloud-server-crawler/i: nextcloud-server-crawler
   /aiapirelaymarketresearch/i: ai-api-relay-market-research
   /everylawyer-domainfinder/i: every-lawyer-domain-finder
   /cloudflare-alwaysonline/i: 'cloudflare alwaysonline'
@@ -1384,6 +1389,7 @@ rules:
   /captainobviousbot/i: captain-obvious-bot
   /resellerenrichbot/i: reseller-enrich-bot
   /azureai-searchbot/i: azureai-searchbot
+  /maklerlistebayern/i: makler-liste-bayern
   /uphonewebbrowser/i: uphone-browser
   /accessiblewebbot/i: accessible-web-bot
   '/let.?s ?encrypt/i': lets-encrypt-validation
@@ -1404,7 +1410,6 @@ rules:
   /kbcnetcontactbot/i: kbcnet-contact-bot
   /molotowsitecheck/i: molotow-site-check
   /stackdetectorbot/i: stack-detector-bot
-  /bitninja-crawler/i: bitninja-crawler
   /copyviodetector/i: copyvio-detector
   /statistikhessen/i: statistik-hessen
   /yadirectfetcher/i: ya-direct-fetcher
@@ -1507,7 +1512,6 @@ rules:
   /ready4botsscout/i: ready-4-bots-scout
   /throxylistcheck/i: throxy-list-check
   /aivisibilitybot/i: ai-visibility-bot
-  /clueweb-crawler/i: clueweb-crawler
   /monacosearchbot/i: monaco-search-bot
   '/research fetch/i': research-fetch
   /knotenleadcheck/i: knoten-lead-check
@@ -1525,7 +1529,6 @@ rules:
   /shopifychecker/i: shopify-checker
   /wp2shell-check/i: wp2shell-check
   /momentleadsbot/i: moment-leads-bot
-  /studio-crawler/i: studio-crawler
   /finderpediabot/i: finderpedia-bot
   /privaranewsbot/i: privara-news-bot
   /parameterfetch/i: parameter-fetch
@@ -1579,7 +1582,6 @@ rules:
   /keenable-user/i: keenable-user
   /tunein-dirmon/i: tunein-dirmon
   /bookmarkcheck/i: bookmark-check
-  /bloom-crawler/i: bloom-crawler
   /dyonysosradar/i: dyonysos-radar
   /allurlinfobot/i: all-url-info-bot
   /semiologicbot/i: semiologic-bot
@@ -1589,7 +1591,6 @@ rules:
   /icresearch-w2/i: ic-research-w2
   /ct-sender-poc/i: ct-sender-poc
   /listsignalbot/i: list-signal-bot
-  /denic-crawler/i: denic-crawler
   /researchscan/i: researchscan
   /dataprovider/i: dataprovider-spider
   '/inet browser/i': inet-browser
@@ -1856,6 +1857,7 @@ rules:
   /urlcleaner/i: url-cleaner
   /premirobot/i: premiro-bot
   /hostio-bot/i: hostio-bot
+  /lanternbot/i: lantern-bot
   /kozmonavt|kocmohabt/i: kozmonavt
   /stractbot/i: stract-bot
   /screpybot/i: screpy-bot
@@ -2063,6 +2065,7 @@ rules:
   /qlyzebot/i: qlyze-bot
   /sofyabot/i: sofya-bot
   /sebot-wa/i: sebot-wa
+  /pbn\.bot/i: pbn-bot
   /whatcms/i: what-cms
   /phoenix/i: phoenix
   /kagibot/i: kagi-bot
@@ -2131,6 +2134,8 @@ rules:
   /kaupr/i: kaupr
   /wpbot/i: wp-bot
   /compatible; research/i: generic-bot
+  /^mozilla\/[0-9]\.0 \(compatible\)$/i: generic-bot
+  '/^chrome$/i': generic-bot
   /mozilla/i: mozilla
   '/2ip bot/i': '2ip bot'
   /dart\//i: dart

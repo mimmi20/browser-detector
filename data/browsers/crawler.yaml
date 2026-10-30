@@ -7738,3 +7738,30 @@ sebot-wa:
     search:
       - SEBot-WA
   engine: unknown
+lantern-bot:
+  name: LanternBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - LanternBot
+  engine: unknown
+makler-liste-bayern:
+  name: MaklerlisteBayern
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - MaklerlisteBayern
+  engine: unknown
+pbn-bot:
+  name: 'PBN.BOT'
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'PBN.BOT'
+  engine: unknown

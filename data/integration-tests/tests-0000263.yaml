@@ -4256,3 +4256,85 @@
       name: Blink
       version: 135.0.7049.79
       manufacturer: google
+-
+  headers:
+    user-agent: 'LanternBot/1.0 (+https://selfhost-search.rork.app/about; independent search index)'
+  expected:
+    headers:
+      user-agent: 'LanternBot/1.0 (+https://selfhost-search.rork.app/about; independent search index)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: nbot
+      modus: null
+      version: 1.0.0
+      manufacturer: unknown
+      type: bot
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; MaklerlisteBayern/1.0; robots-aware research)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; MaklerlisteBayern/1.0; robots-aware research)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: TestCrawler
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
