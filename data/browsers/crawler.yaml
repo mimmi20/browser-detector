@@ -7524,3 +7524,217 @@ seo-juice-search-bot:
     search:
       - SEOJuice-SearchBot
   engine: unknown
+research-bot:
+  name: ResearchBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ResearchBot
+  engine: unknown
+yisouspider:
+  name: YisouSpider
+  manufacturer: yisou
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - YisouSpider
+  engine: unknown
+blun-bot:
+  name: BLUNbot
+  manufacturer: blun
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - BLUNbot
+  engine: unknown
+eye-able-broken-link-checker:
+  name: EyeAbleBrokenLinkChecker
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - EyeAbleBrokenLinkChecker
+  engine: unknown
+email-extractor:
+  name: EmailExtractor
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - EmailExtractor
+  engine: unknown
+stormcrawler:
+  name: StormCrawler
+  manufacturer: digital-pebble
+  type: crawler
+  version:
+    class: null
+    search: null
+  engine: null
+ethicrawl:
+  name: ethicrawl
+  manufacturer: digital-pebble
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ethicrawl
+  engine: null
+webcache-mdream-rs:
+  name: WebCache-mdream-rs
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - WebCache-mdream-rs
+  engine: unknown
+every-lawyer-domain-finder:
+  name: EveryLawyer-DomainFinder
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - EveryLawyer-DomainFinder
+  engine: unknown
+turlvalidator:
+  name: TURLValidator
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - TURLValidator
+  engine: unknown
+url-validator:
+  name: URLValidator
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - URLValidator
+  engine: unknown
+arena-unfurl-bot:
+  name: ArenaUnfurlBot
+  manufacturer: arena-intelligence
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ArenaUnfurlBot
+  engine: unknown
+associate-bot:
+  name: AssociateBot
+  manufacturer: silvernova
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - AssociateBot
+  engine: unknown
+fobizz-bot:
+  name: FobizzBot
+  manufacturer: 101skills
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - FobizzBot
+  engine: unknown
+bitninja-crawler:
+  name: BitNinja-Crawler
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - BitNinja-Crawler
+  engine: unknown
+azureai-searchbot:
+  name: AzureAI-SearchBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - AzureAI-SearchBot
+  engine: unknown
+owp-bot:
+  name: OWPBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - OWPBot
+  engine: unknown
+wp-bot:
+  name: wpbot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - wpbot
+  engine: unknown
+wp-safe-scanner:
+  name: WP-Safe-Scanner
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - WP-Safe-Scanner
+  engine: unknown
+linkup-bot:
+  name: LinkupBot
+  manufacturer: linkup-technologies
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - LinkupBot
+  engine: unknown
+plag-aware-bot:
+  name: PlagAwareBot
+  manufacturer: plag-aware
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - PlagAwareBot
+  engine: unknown
+denic-crawler:
+  name: DENIC-Crawler
+  manufacturer: denic
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - DENIC-Crawler
+  engine: unknown
+'onlinestreet bot':
+  name: 'onlinestreet Bot'
+  manufacturer: hello-world-digital
+  type: crawler
+  version:
+    class: null
+    search: null
+  engine: unknown
+sebot-wa:
+  name: SEBot-WA
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SEBot-WA
+  engine: unknown

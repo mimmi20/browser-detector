@@ -3040,15 +3040,6 @@ refindbot:
     search:
       - Refindbot
   engine: unknown
-research-bot:
-  name: ResearchBot
-  manufacturer: unknown
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - ResearchBot
-  engine: unknown
 restify:
   name: restify
   manufacturer: mark-cavage
@@ -3672,14 +3663,6 @@ steeler:
     search:
       - Steeler
   engine: unknown
-stormcrawler:
-  name: StormCrawler
-  manufacturer: digital-pebble
-  type: bot
-  version:
-    class: null
-    search: null
-  engine: null
 'stratagems kumo':
   name: 'Stratagems Kumo'
   manufacturer: unknown
@@ -3971,15 +3954,6 @@ turingmachine:
     search:
       - TuringMachine
   engine: webkit
-turlvalidator:
-  name: TURLValidator
-  manufacturer: unknown
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - TURLValidator
-  engine: unknown
 tweetbot:
   name: Tweetbot
   manufacturer: unknown
@@ -4793,15 +4767,6 @@ yahooexternalcache:
     class: null
     search: null
   engine: unknown
-yisouspider:
-  name: YisouSpider
-  manufacturer: yisou
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - YisouSpider
-  engine: unknown
 yodaobot:
   name: YodaoBot
   manufacturer: unknown
@@ -5145,14 +5110,6 @@ hokifybot:
 jaddjabot:
   name: jaddjabot
   manufacturer: unknown
-  type: bot
-  version:
-    class: null
-    search: null
-  engine: unknown
-'onlinestreet bot':
-  name: 'onlinestreet Bot'
-  manufacturer: hello-world-digital
   type: bot
   version:
     class: null

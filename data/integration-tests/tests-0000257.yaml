@@ -1031,3 +1031,3144 @@
       name: Blink
       version: 97.0.4692.98
       manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Claude/2.19675.0 Chrome/152.0.7977.130 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Claude/2.19675.0 Chrome/152.0.7977.130 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: Claude
+      modus: null
+      version: 2.19675.0
+      manufacturer: anthropic
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 10.15.7
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: Blink
+      version: 152.0.7977.130
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1 Safari/605.1.15'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1 Safari/605.1.15'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: Safari
+      modus: null
+      version: 11.1.0
+      manufacturer: apple
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 10.13.4
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 605.1.15
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.66 Safari/535.11'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.66 Safari/535.11'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 17.0.963.66
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: 'Mac OS X'
+      marketingName: 'Mac OS X'
+      version: 10.7.2
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 535.11.0
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 75.0.3770.100
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 10.14.5
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: Blink
+      version: 75.0.3770.100
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/154 Version/11.1.1 Safari/605.1.15'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/154 Version/11.1.1 Safari/605.1.15'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome for iOS'
+      modus: null
+      version: 154.0.0
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 10.15.7
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 605.1.15
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh) AppleWebKit/537.36 Chrome/124 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Macintosh) AppleWebKit/537.36 Chrome/124 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 124.0.0
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Macintosh
+      marketingName: Macintosh
+      version: null
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: Blink
+      version: 124.0.0
+      manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: '""'
+    sec-ch-ua-platform: '"macOS"'
+    sec-ch-ua-platform-version: '"14_0"'
+    sec-ch-ua: '"HeadlessChrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"'
+    sec-ch-ua-full-version: '"131.0.6778.33"'
+    sec-ch-ua-bitness: '"64"'
+    sec-ch-ua-arch: '"x64"'
+    sec-ch-ua-mobile: '?0'
+    sec-ch-ua-wow64: '?0'
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15'
+  expected:
+    headers:
+      sec-ch-ua-model: '""'
+      sec-ch-ua-platform: '"macOS"'
+      sec-ch-ua-platform-version: '"14_0"'
+      sec-ch-ua: '"HeadlessChrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"'
+      sec-ch-ua-full-version: '"131.0.6778.33"'
+      sec-ch-ua-bitness: '"64"'
+      sec-ch-ua-arch: '"x64"'
+      sec-ch-ua-mobile: '?0'
+      sec-ch-ua-wow64: '?0'
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15'
+    device:
+      architecture: x64
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 64
+    client:
+      name: 'Headless Chrome'
+      modus: null
+      version: 131.0.6778.33
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 64
+    os:
+      name: 'Mac OS X'
+      marketingName: 'Mac OS X'
+      version: 14.0.0
+      manufacturer: apple
+      bits: 64
+    engine:
+      name: Blink
+      version: 131.0.0
+      manufacturer: google
+-
+  headers:
+    sec-ch-ua: '"Chromium";v="126", "Not/A)Brand";v="8"'
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15'
+  expected:
+    headers:
+      sec-ch-ua: '"Chromium";v="126", "Not/A)Brand";v="8"'
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: Chromium
+      modus: null
+      version: 126.0.0
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 10.15.7
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: Blink
+      version: 126.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: Edge
+      modus: null
+      version: 120.0.0.0
+      manufacturer: microsoft
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 10.15.7
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: Blink
+      version: 120.0.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; x86) AppleWebKit/537.36 (KHTML, like Gecko) Edge/83.0.0.0 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; x86) AppleWebKit/537.36 (KHTML, like Gecko) Edge/83.0.0.0 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: Edge
+      modus: null
+      version: 83.0.0.0
+      manufacturer: microsoft
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 10.15.7
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: Edge
+      version: 83.0.0.0
+      manufacturer: microsoft
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/115.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/115.0'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: Firefox
+      modus: null
+      version: 115.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 10.15.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: Gecko
+      version: 109.0.0
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:157.0) Gecko/20100101 Thunderbird/157.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:157.0) Gecko/20100101 Thunderbird/157.0'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: Thunderbird
+      modus: null
+      version: 157.0.0
+      manufacturer: mozilla-foundation
+      type: pim
+      isbot: false
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 10.15.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: Gecko
+      version: 157.0.0
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 OPR/106.0.0.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 OPR/106.0.0.0'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: Opera
+      modus: null
+      version: 106.0.0.0
+      manufacturer: opera
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 14.3.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: Blink
+      version: 121.0.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; arm64) AppleWebKit/537.36 (KHTML, like Gecko) Opera/64.0.0.0 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; arm64) AppleWebKit/537.36 (KHTML, like Gecko) Opera/64.0.0.0 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: Opera
+      modus: null
+      version: 64.0.0.0
+      manufacturer: opera
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 10.15.7
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 537.36.0
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.6325.49 Safari/537.36 QIHU 360EE'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.6325.49 Safari/537.36 QIHU 360EE'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: '360 Speed Browser'
+      modus: null
+      version: null
+      manufacturer: qihoo
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 10.15.7
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: Blink
+      version: 148.0.6325.49
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) SparkDesktop/3.31.6 Chrome/148.0.7778.218 Electron/42.3.3 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) SparkDesktop/3.31.6 Chrome/148.0.7778.218 Electron/42.3.3 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: SparkDesktop
+      modus: null
+      version: 3.31.6
+      manufacturer: spark-mail
+      type: pim
+      isbot: false
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 10.15.7
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: Blink
+      version: 148.0.7778.218
+      manufacturer: google
+-
+  headers:
+    user-agent: 'SafariViewService/8625.1.29.10.33 CFNetwork/3896.100.1.2.1 Darwin/27.0.0'
+  expected:
+    headers:
+      user-agent: 'SafariViewService/8625.1.29.10.33 CFNetwork/3896.100.1.2.1 Darwin/27.0.0'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Safari View Service'
+      modus: null
+      version: 8625.1.29.10.33
+      manufacturer: unknown
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 27.0.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3896.100.1.2.1
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Vivaldi/6.0.2979.18'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Vivaldi/6.0.2979.18'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: Vivaldi
+      modus: null
+      version: 6.0.2979.18
+      manufacturer: vivaldi
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: macOS
+      marketingName: macOS
+      version: 13.4.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: Blink
+      version: 114.0.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'WidgetKitExtension/77252 CFNetwork/3860.700.2 Darwin/25.6.0'
+  expected:
+    headers:
+      user-agent: 'WidgetKitExtension/77252 CFNetwork/3860.700.2 Darwin/25.6.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: WidgetKitExtension
+      modus: null
+      version: null
+      manufacturer: apple
+      type: service-agent
+      isbot: true
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.6.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.700.2
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPod; U; CPU iPhone OS 3_2 like Mac OS X; nso-ZA) AppleWebKit/535.4.5 (KHTML, like Gecko) Version/4.0.5 Mobile/8B115 Safari/6535.4.5'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (iPod; U; CPU iPhone OS 3_2 like Mac OS X; nso-ZA) AppleWebKit/535.4.5 (KHTML, like Gecko) Version/4.0.5 Mobile/8B115 Safari/6535.4.5'
+    device:
+      architecture: ''
+      deviceName: 'iPod Touch'
+      marketingName: 'iPod Touch'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 480
+        height: 320
+        touch: true
+        size: null
+      type: mobile-media-player
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: Safari
+      modus: null
+      version: 4.0.5
+      manufacturer: apple
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: 'iPhone OS'
+      marketingName: 'iPhone OS'
+      version: 3.2.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 535.4.5
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'com.google.GoogleMobile/441.5 iPhone/26.6 hw/iPhone16_2'
+  expected:
+    headers:
+      user-agent: 'com.google.GoogleMobile/441.5 iPhone/26.6 hw/iPhone16_2'
+    device:
+      architecture: ''
+      deviceName: 'iPhone 16,2'
+      marketingName: 'iPhone 15 Pro Max'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 2796
+        height: 1290
+        touch: true
+        size: 6.7
+      type: phablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Google Mobile App'
+      modus: null
+      version: 441.5.0
+      manufacturer: google
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.6.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: null
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 26_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/23G90 Instagram 448.0.0.39.66 (iPhone18,2; iOS 26_6_2; tr_TR; tr; scale=3.00; 1320x2868; IABMV/1; 1072661960) NW/3 Safari/604.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 26_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/23G90 Instagram 448.0.0.39.66 (iPhone18,2; iOS 26_6_2; tr_TR; tr; scale=3.00; 1320x2868; IABMV/1; 1072661960) NW/3 Safari/604.1'
+    device:
+      architecture: ''
+      deviceName: 'iPhone 18,2'
+      marketingName: 'iPhone 17 Pro Max'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 2868
+        height: 1320
+        touch: true
+        size: 6.9
+      type: phablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Instagram App'
+      modus: null
+      version: 448.0.0.39.66
+      manufacturer: meta
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.6.2
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 605.1.15
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 26_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/23G90 Instagram 450.1.0.35.61 (iPhone17,2; iOS 26_6_2; de_DE; de; scale=3.00; 1320x2868; IABMV/1; 1084815185) Safari/604.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 26_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/23G90 Instagram 450.1.0.35.61 (iPhone17,2; iOS 26_6_2; de_DE; de; scale=3.00; 1320x2868; IABMV/1; 1084815185) Safari/604.1'
+    device:
+      architecture: ''
+      deviceName: 'iPhone 17,2'
+      marketingName: 'iPhone 16 Pro Max'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 2868
+        height: 1320
+        touch: true
+        size: 6.9
+      type: phablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Instagram App'
+      modus: null
+      version: 450.1.0.35.61
+      manufacturer: meta
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.6.2
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 605.1.15
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 27_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/24A446 Safari/604.1 [FBAN/FBIOS;FBAV/582.0.0.37.71;FBBV/1084662387;FBDV/iPhone15,2;FBMD/iPhone;FBSN/iOS;FBSV/27.0.1;FBSS/3;FBID/phone;FBLC/nl_NL;FBOP/5;FBRV/1091456650;IABMV/1]'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 27_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/24A446 Safari/604.1 [FBAN/FBIOS;FBAV/582.0.0.37.71;FBBV/1084662387;FBDV/iPhone15,2;FBMD/iPhone;FBSN/iOS;FBSV/27.0.1;FBSS/3;FBID/phone;FBLC/nl_NL;FBOP/5;FBRV/1091456650;IABMV/1]'
+    device:
+      architecture: ''
+      deviceName: 'iPhone 15,2'
+      marketingName: 'iPhone 14 Pro'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 2556
+        height: 1179
+        touch: true
+        size: 6.1
+      type: phablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Facebook App'
+      modus: null
+      version: 582.0.0.37.71
+      manufacturer: meta
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 27.0.1
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 605.1.15
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 26_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/23G90 Instagram 451.0.0.37.60 (iPhone18,1; iOS 26_6_2; de_DE; de; scale=3.00; 1206x2622; IABMV/1; 1088109557) Safari/604.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 26_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/23G90 Instagram 451.0.0.37.60 (iPhone18,1; iOS 26_6_2; de_DE; de; scale=3.00; 1206x2622; IABMV/1; 1088109557) Safari/604.1'
+    device:
+      architecture: ''
+      deviceName: 'iPhone 18,1'
+      marketingName: 'iPhone 17 Pro'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 2622
+        height: 1206
+        touch: true
+        size: 6.3
+      type: phablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Instagram App'
+      modus: null
+      version: 451.0.0.37.60
+      manufacturer: meta
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.6.2
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 605.1.15
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_7_10 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Version/16.7.10 Safari/605.1.15 AlohaBrowser/8.10.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_7_10 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Version/16.7.10 Safari/605.1.15 AlohaBrowser/8.10.0'
+    device:
+      architecture: ''
+      deviceName: iPhone
+      marketingName: iPhone
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 480
+        height: 320
+        touch: true
+        size: 3.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Aloha Browser'
+      modus: null
+      version: 8.10.0
+      manufacturer: aloha-mobile
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 16.7.10
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 605.1.15
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_0_2 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13A452 baiduboxapp/0_11.0.1.8_enohpi_4331_057/2.0.9_1C2%258enohPi/1099a/0F911506131616C65E9CED35A7097666C6266092BFCCSCMFGMI/1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_0_2 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13A452 baiduboxapp/0_11.0.1.8_enohpi_4331_057/2.0.9_1C2%258enohPi/1099a/0F911506131616C65E9CED35A7097666C6266092BFCCSCMFGMI/1'
+    device:
+      architecture: ''
+      deviceName: iPhone
+      marketingName: iPhone
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 480
+        height: 320
+        touch: true
+        size: 3.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 0.11.0.1.8
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 9.0.2
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 601.1.46
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 26_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6.2 Mobile/15E148 Safari/604.1 (Ecosia ios@12.6.0.3386)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 26_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6.2 Mobile/15E148 Safari/604.1 (Ecosia ios@12.6.0.3386)'
+    device:
+      architecture: ''
+      deviceName: iPhone
+      marketingName: iPhone
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 480
+        height: 320
+        touch: true
+        size: 3.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Ecosia
+      modus: null
+      version: 12.6.0.3386
+      manufacturer: ecosia
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.6.2
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 605.1.15
+      manufacturer: apple
+-
+  headers:
+    sec-ch-ua-platform: '"macOS"'
+    sec-ch-ua: '"Not A(Brand";v="99", "Google Chrome";v="121", "Chromium";v="121"'
+    sec-ch-ua-mobile: '?0'
+    user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1'
+  expected:
+    headers:
+      sec-ch-ua-platform: '"macOS"'
+      sec-ch-ua: '"Not A(Brand";v="99", "Google Chrome";v="121", "Chromium";v="121"'
+      sec-ch-ua-mobile: '?0'
+      user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1'
+    device:
+      architecture: ''
+      deviceName: iPhone
+      marketingName: iPhone
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 480
+        height: 320
+        touch: true
+        size: 3.5
+      type: smartphone
+      ismobile: false
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 121.0.0
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 16.0.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 121.0.0
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_5_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/374.0.773146746 Mobile/15E148 Safari/604.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_5_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/374.0.773146746 Mobile/15E148 Safari/604.1'
+    device:
+      architecture: ''
+      deviceName: iPhone
+      marketingName: iPhone
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 480
+        height: 320
+        touch: true
+        size: 3.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Google Search App'
+      modus: null
+      version: 374.0.773146746
+      manufacturer: google
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 18.5.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 605.1.15
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Safari Line/26.15.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Safari Line/26.15.1'
+    device:
+      architecture: ''
+      deviceName: iPhone
+      marketingName: iPhone
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 480
+        height: 320
+        touch: true
+        size: 3.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Line
+      modus: null
+      version: 26.15.1
+      manufacturer: line
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 18.7.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 605.1.15
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/20E252 [FBAN/FBIOS;FBAV/578.1.0.71.72;FBBV/1063022819;FBDV/iPhone12,1;FBMD/iPhone;FBSN/iOS;FBSV/16.4.1;FBSS/2;FBID/phone;FBLC/fr_FR;FBOP/5;FBRV/1070730809]'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/20E252 [FBAN/FBIOS;FBAV/578.1.0.71.72;FBBV/1063022819;FBDV/iPhone12,1;FBMD/iPhone;FBSN/iOS;FBSV/16.4.1;FBSS/2;FBID/phone;FBLC/fr_FR;FBOP/5;FBRV/1070730809]'
+    device:
+      architecture: ''
+      deviceName: 'iPhone 12,1'
+      marketingName: 'iPhone 11'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 1792
+        height: 828
+        touch: true
+        size: 6.1
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Facebook App'
+      modus: null
+      version: 578.1.0.71.72
+      manufacturer: meta
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 16.4.1
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 605.1.15
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1 OPT/6.7.3'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1 OPT/6.7.3'
+    device:
+      architecture: ''
+      deviceName: iPhone
+      marketingName: iPhone
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 480
+        height: 320
+        touch: true
+        size: 3.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Opera Touch'
+      modus: null
+      version: 6.7.3
+      manufacturer: opera
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.6.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 605.1.15
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 OPR/85.0.0.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 OPR/85.0.0.0'
+    device:
+      architecture: ''
+      deviceName: iPhone
+      marketingName: iPhone
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 480
+        height: 320
+        touch: true
+        size: 3.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Opera
+      modus: null
+      version: 85.0.0.0
+      manufacturer: opera
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 14.0.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 537.36.0
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.0 Mobile/15E148 Safari/604.1 OPX/3.3.2'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.0 Mobile/15E148 Safari/604.1 OPX/3.3.2'
+    device:
+      architecture: ''
+      deviceName: iPhone
+      marketingName: iPhone
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 480
+        height: 320
+        touch: true
+        size: 3.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Opera GX'
+      modus: null
+      version: 3.3.2
+      manufacturer: opera
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 27.0.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 605.1.15
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 27_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) QwantMobile/6.9.0 Mobile/15E148 Safari/604.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 27_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) QwantMobile/6.9.0 Mobile/15E148 Safari/604.1'
+    device:
+      architecture: ''
+      deviceName: iPhone
+      marketingName: iPhone
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 480
+        height: 320
+        touch: true
+        size: 3.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Qwant Mobile'
+      modus: null
+      version: 6.9.0
+      manufacturer: qwant
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 27.0.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 605.1.15
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_1 like Mac OS X) AppleWebKit/519.3.19 (KHTML, like Gecko) Version/13.1 Mobile/15E148 Snapchat/11.16.0.25 (like Safari/519.3, panda)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_1 like Mac OS X) AppleWebKit/519.3.19 (KHTML, like Gecko) Version/13.1 Mobile/15E148 Snapchat/11.16.0.25 (like Safari/519.3, panda)'
+    device:
+      architecture: ''
+      deviceName: iPhone
+      marketingName: iPhone
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 480
+        height: 320
+        touch: true
+        size: 3.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Snapchat
+      modus: null
+      version: 11.16.0.25
+      manufacturer: snap
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 13.1.1
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 519.3.19
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_2 like Mac OS X) AppleWebKit/603.2.4 (KHTML, like Gecko) Version/10.0 MQQBrowser/8.6.3 Mobile/14F89 Safari/602.1 MttCustomUA/2 QBWebViewType/1 WKType/1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_2 like Mac OS X) AppleWebKit/603.2.4 (KHTML, like Gecko) Version/10.0 MQQBrowser/8.6.3 Mobile/14F89 Safari/602.1 MttCustomUA/2 QBWebViewType/1 WKType/1'
+    device:
+      architecture: ''
+      deviceName: iPhone
+      marketingName: iPhone
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 480
+        height: 320
+        touch: true
+        size: 3.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'QQ Browser'
+      modus: null
+      version: 8.6.3
+      manufacturer: tencent
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 10.3.2
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 603.2.4
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_3 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G34 MicroMessenger/6.7.0 NetType/WIFI Language/zh_CN'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_3 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G34 MicroMessenger/6.7.0 NetType/WIFI Language/zh_CN'
+    device:
+      architecture: ''
+      deviceName: iPhone
+      marketingName: iPhone
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 480
+        height: 320
+        touch: true
+        size: 3.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'WeChat App'
+      modus: null
+      version: 6.7.0
+      manufacturer: tencent
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 9.3.3
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 601.1.46
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'ArcMobile2/1.48.0 (iPhone; iOS 27.0; Scale/3.00)'
+  expected:
+    headers:
+      user-agent: 'ArcMobile2/1.48.0 (iPhone; iOS 27.0; Scale/3.00)'
+    device:
+      architecture: ''
+      deviceName: iPhone
+      marketingName: iPhone
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 480
+        height: 320
+        touch: true
+        size: 3.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Arc Search'
+      modus: null
+      version: 1.48.0
+      manufacturer: the-browser-company
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 27.0.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: null
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 26_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/23G90 Twitter for iPhone/12.28.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 26_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/23G90 Twitter for iPhone/12.28.1'
+    device:
+      architecture: ''
+      deviceName: iPhone
+      marketingName: iPhone
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 480
+        height: 320
+        touch: true
+        size: 3.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: X
+      modus: null
+      version: 12.28.1
+      manufacturer: twitter
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.6.2
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 605.1.15
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Version/26.7.1 Safari/605.1.15 (AirWatch Browser v26.07)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Version/26.7.1 Safari/605.1.15 (AirWatch Browser v26.07)'
+    device:
+      architecture: ''
+      deviceName: iPhone
+      marketingName: iPhone
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 480
+        height: 320
+        touch: true
+        size: 3.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'AirWatch Browser'
+      modus: null
+      version: 26.07.0
+      manufacturer: vmware
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.7.1
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 605.1.15
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 26_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 YaBrowser/26.10.0.1738.10 SA/3 Mobile/15E148 Safari/604.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 26_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 YaBrowser/26.10.0.1738.10 SA/3 Mobile/15E148 Safari/604.1'
+    device:
+      architecture: ''
+      deviceName: iPhone
+      marketingName: iPhone
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 480
+        height: 320
+        touch: true
+        size: 3.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 26.10.0.1738.10
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.6.2
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 605.1.15
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPad; CPU OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (iPad; CPU OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1'
+    device:
+      architecture: ''
+      deviceName: iPad
+      marketingName: iPad
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 1024
+        height: 768
+        touch: true
+        size: 9.7
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: Safari
+      modus: null
+      version: 9.0.0
+      manufacturer: apple
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 9.1.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 601.1.46
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPad; CPU OS 16_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.5 Mobile/15E148 Safari/604.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (iPad; CPU OS 16_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.5 Mobile/15E148 Safari/604.1'
+    device:
+      architecture: ''
+      deviceName: iPad
+      marketingName: iPad
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 1024
+        height: 768
+        touch: true
+        size: 9.7
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: Safari
+      modus: null
+      version: 16.5.0
+      manufacturer: apple
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iPadOS
+      marketingName: iPadOS
+      version: 16.5.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 605.1.15
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPad; CPU OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (iPad; CPU OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148'
+    device:
+      architecture: ''
+      deviceName: iPad
+      marketingName: iPad
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 1024
+        height: 768
+        touch: true
+        size: 9.7
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mobile Safari UIWebView'
+      modus: null
+      version: null
+      manufacturer: apple
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iPadOS
+      marketingName: iPadOS
+      version: 18.7.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 605.1.15
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPad; CPU OS 17_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/124.0.6367.111 Mobile/15E148 Safari/604.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (iPad; CPU OS 17_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/124.0.6367.111 Mobile/15E148 Safari/604.1'
+    device:
+      architecture: ''
+      deviceName: iPad
+      marketingName: iPad
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 1024
+        height: 768
+        touch: true
+        size: 9.7
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome for iOS'
+      modus: null
+      version: 124.0.6367.111
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iPadOS
+      marketingName: iPadOS
+      version: 17.2.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 605.1.15
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPad; CPU iPad OS 12_5_7 like Mac OS X) AppleWebKit/531.2 (KHTML, like Gecko) CriOS/59.0.894.0 Mobile/86M137 Safari/531.2'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (iPad; CPU iPad OS 12_5_7 like Mac OS X) AppleWebKit/531.2 (KHTML, like Gecko) CriOS/59.0.894.0 Mobile/86M137 Safari/531.2'
+    device:
+      architecture: ''
+      deviceName: iPad
+      marketingName: iPad
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 1024
+        height: 768
+        touch: true
+        size: 9.7
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Chrome for iOS'
+      modus: null
+      version: 59.0.894.0
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 12.5.7
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 531.2.0
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPad; CPU OS 26_7_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) EdgiOS/153.0.4234.46 Version/26.0 Mobile/15E148 Safari/604.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (iPad; CPU OS 26_7_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) EdgiOS/153.0.4234.46 Version/26.0 Mobile/15E148 Safari/604.1'
+    device:
+      architecture: ''
+      deviceName: iPad
+      marketingName: iPad
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 1024
+        height: 768
+        touch: true
+        size: 9.7
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Edge Mobile for iOS'
+      modus: null
+      version: 153.0.4234.46
+      manufacturer: microsoft
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iPadOS
+      marketingName: iPadOS
+      version: 26.7.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 605.1.15
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPad; CPU iPad OS 10_3_4 like Mac OS X) AppleWebKit/532.1 (KHTML, like Gecko) FxiOS/16.9x0551.0 Mobile/33D661 Safari/532.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (iPad; CPU iPad OS 10_3_4 like Mac OS X) AppleWebKit/532.1 (KHTML, like Gecko) FxiOS/16.9x0551.0 Mobile/33D661 Safari/532.1'
+    device:
+      architecture: ''
+      deviceName: iPad
+      marketingName: iPad
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 1024
+        height: 768
+        touch: true
+        size: 9.7
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Firefox Mobile for iOS'
+      modus: null
+      version: 16.9.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 10.3.4
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 532.1.0
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; ASUS_AI2401_H Build/BQ2A.250610.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/153.0.8010.57 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; ASUS_AI2401_H Build/BQ2A.250610.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/153.0.8010.57 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'AI2401 H'
+      marketingName: 'ZenFone 11 Ultra'
+      manufacturer: asus
+      brand: asus
+      display:
+        width: 2400
+        height: 1080
+        touch: true
+        size: 6.78
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 153.0.8010.57
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 153.0.8010.57
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; ASUS_AI2202 Build/UKQ1.230924.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/153.0.8010.36 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 14; ASUS_AI2202 Build/UKQ1.230924.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/153.0.8010.36 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: AI2202
+      marketingName: 'ZenFone 9'
+      manufacturer: asus
+      brand: asus
+      display:
+        width: 2400
+        height: 1080
+        touch: true
+        size: 5.9
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 153.0.8010.36
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 14.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 153.0.8010.36
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 13; CPH2023; Build/TQ2A.230608.207) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 13; CPH2023; Build/TQ2A.230608.207) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: CPH2023
+      marketingName: 'Find X2'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 3168
+        height: 1440
+        touch: true
+        size: 6.78
+      type: phablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 153.0.0.0
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 13.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 153.0.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 13; de-de; RMX3085 Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5970.168 Mobile Safari/537.36 HeyTapBrowser/45.14.8.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 13; de-de; RMX3085 Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5970.168 Mobile Safari/537.36 HeyTapBrowser/45.14.8.1'
+    device:
+      architecture: ''
+      deviceName: RMX3085
+      marketingName: '8'
+      manufacturer: bbk
+      brand: realme
+      display:
+        width: 2400
+        height: 1080
+        touch: true
+        size: 6.4
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: HeyTapBrowser
+      modus: null
+      version: 45.14.8.1
+      manufacturer: bravo-unicorn
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 13.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 115.0.5970.168
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 13; de-de; CPH2211 Build/TP1A.220905.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5970.168 Mobile Safari/537.36 HeyTapBrowser/45.14.8.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 13; de-de; CPH2211 Build/TP1A.220905.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5970.168 Mobile Safari/537.36 HeyTapBrowser/45.14.8.1'
+    device:
+      architecture: ''
+      deviceName: CPH2211
+      marketingName: 'Reno 5Z'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2400
+        height: 1080
+        touch: true
+        size: 6.43
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: HeyTapBrowser
+      modus: null
+      version: 45.14.8.1
+      manufacturer: bravo-unicorn
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 13.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 115.0.5970.168
+      manufacturer: google
+-
+  headers:
+    user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 12; HD1903 Build/SKQ1.211113.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/154.0.8037.106 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 12; HD1903 Build/SKQ1.211113.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/154.0.8037.106 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: HD1903
+      marketingName: 7T
+      manufacturer: bbk
+      brand: oneplus
+      display:
+        width: 2400
+        height: 1080
+        touch: true
+        size: 6.55
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: Dogtorance
+      modus: null
+      version: 1.2.0
+      manufacturer: dog-torance
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 12.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 154.0.8037.106
+      manufacturer: google
+-
+  headers:
+    user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 16; CPH2581 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/153.0.8010.39 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 16; CPH2581 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/153.0.8010.39 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: CPH2581
+      marketingName: '12'
+      manufacturer: bbk
+      brand: oneplus
+      display:
+        width: 3168
+        height: 1440
+        touch: true
+        size: 6.82
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: Dogtorance
+      modus: null
+      version: 1.2.0
+      manufacturer: dog-torance
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 153.0.8010.39
+      manufacturer: google
+-
+  headers:
+    user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 16; CPH2841 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/155.0.8059.43 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 16; CPH2841 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/155.0.8059.43 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: CPH2841
+      marketingName: 'Find X9 Ultra'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 3168
+        height: 1440
+        touch: true
+        size: 6.82
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: Dogtorance
+      modus: null
+      version: 1.2.0
+      manufacturer: dog-torance
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 155.0.8059.43
+      manufacturer: google
+-
+  headers:
+    user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 16; CPH2663 Build/UKQ1.231108.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/155.0.8059.43 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 16; CPH2663 Build/UKQ1.231108.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/155.0.8059.43 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: CPH2663
+      marketingName: 'Nord 4'
+      manufacturer: bbk
+      brand: oneplus
+      display:
+        width: 2772
+        height: 1240
+        touch: true
+        size: 6.74
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: Dogtorance
+      modus: null
+      version: 1.2.0
+      manufacturer: dog-torance
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 155.0.8059.43
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; CPH2747 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/154.0.8037.101 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; CPH2747 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/154.0.8037.101 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: CPH2747
+      marketingName: '15'
+      manufacturer: bbk
+      brand: oneplus
+      display:
+        width: 2772
+        height: 1272
+        touch: true
+        size: 6.78
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 154.0.8037.101
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 154.0.8037.101
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; CPH2663 Build/UKQ1.231108.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/153.0.8010.36 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 14; CPH2663 Build/UKQ1.231108.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/153.0.8010.36 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: CPH2663
+      marketingName: 'Nord 4'
+      manufacturer: bbk
+      brand: oneplus
+      display:
+        width: 2772
+        height: 1240
+        touch: true
+        size: 6.74
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 153.0.8010.36
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 14.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 153.0.8010.36
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; CPH2173; Build/AD1A.230111.9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 14; CPH2173; Build/AD1A.230111.9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: CPH2173
+      marketingName: 'Find X3 Pro'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 3216
+        height: 1440
+        touch: true
+        size: 6.7
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 153.0.0.0
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 14.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 153.0.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 13; CPH2145; Build/TQ3C.230726.110) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 13; CPH2145; Build/TQ3C.230726.110) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: CPH2145
+      marketingName: 'Reno 5 5G (International)'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2400
+        height: 1080
+        touch: true
+        size: 6.43
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 153.0.0.0
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 13.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 153.0.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 13; CPH1951; Build/TQ1A.220424.105) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 13; CPH1951; Build/TQ1A.220424.105) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: CPH1951
+      marketingName: 'Reno 2Z'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2400
+        height: 1080
+        touch: true
+        size: 6.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 153.0.0.0
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 13.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 153.0.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; CPH2195; Build/SP1A.220226.227) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 12; CPH2195; Build/SP1A.220226.227) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: CPH2195
+      marketingName: 'A54 5G'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2400
+        height: 1080
+        touch: true
+        size: 6.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 153.0.0.0
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 12.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 153.0.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; CPH2251; Build/RD1A.200107.232) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; CPH2251; Build/RD1A.200107.232) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: CPH2251
+      marketingName: 'Reno 6 5G (International)'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2400
+        height: 1080
+        touch: true
+        size: 6.43
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 153.0.0.0
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 153.0.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; CPH1917; Build/RQ1D.200920.108) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; CPH1917; Build/RQ1D.200920.108) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: CPH1917
+      marketingName: Reno
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2340
+        height: 1080
+        touch: true
+        size: 6.4
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 153.0.0.0
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 153.0.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; CPH2207; Build/BP4A.251113.53) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; CPH2207; Build/BP4A.251113.53) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: CPH2207
+      marketingName: 'Find X3 Neo 5G'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2400
+        height: 1080
+        touch: true
+        size: 6.55
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 153.0.0.0
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 153.0.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; CPH2371; Build/BP1A.240616.100) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 15; CPH2371; Build/BP1A.240616.100) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: CPH2371
+      marketingName: 'Reno 7 5G'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2400
+        height: 1080
+        touch: true
+        size: 6.43
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 153.0.0.0
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 15.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 153.0.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 13; CPH2065; Build/TP1A.220924.56) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 13; CPH2065; Build/TP1A.220924.56) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: CPH2065
+      marketingName: 'Reno 4Z 5G'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2400
+        height: 1080
+        touch: true
+        size: 6.57
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 153.0.0.0
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 13.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 153.0.0.0
+      manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: '"CPH2219"'
+    sec-ch-ua-platform: '"Android"'
+    sec-ch-ua-platform-version: '"13.0.0"'
+    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
+    sec-ch-ua-full-version: '"154.0.8037.92"'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-mobile: '?1'
+    sec-ch-ua-wow64: '?0'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36'
+  expected:
+    headers:
+      sec-ch-ua-model: '"CPH2219"'
+      sec-ch-ua-platform: '"Android"'
+      sec-ch-ua-platform-version: '"13.0.0"'
+      sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
+      sec-ch-ua-full-version: '"154.0.8037.92"'
+      sec-ch-ua-bitness: '""'
+      sec-ch-ua-arch: '""'
+      sec-ch-ua-form-factors: '"Mobile"'
+      sec-ch-ua-mobile: '?1'
+      sec-ch-ua-wow64: '?0'
+      user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: CPH2219
+      marketingName: F19s
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2400
+        height: 1080
+        touch: true
+        size: 6.43
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 154.0.0
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 13.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 154.0.0
+      manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: '"CPH2581"'
+    sec-ch-ua-platform: '"Android"'
+    sec-ch-ua-platform-version: '"16.0.0"'
+    sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
+    sec-ch-ua-full-version: '"155.0.8059.39"'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-mobile: '?1'
+    sec-ch-ua-wow64: '?0'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36'
+  expected:
+    headers:
+      sec-ch-ua-model: '"CPH2581"'
+      sec-ch-ua-platform: '"Android"'
+      sec-ch-ua-platform-version: '"16.0.0"'
+      sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
+      sec-ch-ua-full-version: '"155.0.8059.39"'
+      sec-ch-ua-bitness: '""'
+      sec-ch-ua-arch: '""'
+      sec-ch-ua-form-factors: '"Mobile"'
+      sec-ch-ua-mobile: '?1'
+      sec-ch-ua-wow64: '?0'
+      user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: CPH2581
+      marketingName: '12'
+      manufacturer: bbk
+      brand: oneplus
+      display:
+        width: 3168
+        height: 1440
+        touch: true
+        size: 6.82
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 155.0.0
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 155.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; CPH2653 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/154.0.8037.107 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; CPH2653 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/154.0.8037.107 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: CPH2653
+      marketingName: '13'
+      manufacturer: bbk
+      brand: oneplus
+      display:
+        width: 3168
+        height: 1440
+        touch: true
+        size: 6.82
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 154.0.8037.107
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 154.0.8037.107
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 9; ONEPLUS A6000 Build/PKQ1.180716.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/044704 Mobile Safari/537.36 V1_AND_SQ_8.0.7_1204_YYB_D QQ/8.0.7.4085 NetType/WIFI WebP/0.3.0 Pixel/1080 StatusBarHeight/80'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 9; ONEPLUS A6000 Build/PKQ1.180716.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/044704 Mobile Safari/537.36 V1_AND_SQ_8.0.7_1204_YYB_D QQ/8.0.7.4085 NetType/WIFI WebP/0.3.0 Pixel/1080 StatusBarHeight/80'
+    device:
+      architecture: ''
+      deviceName: A6000
+      marketingName: '6'
+      manufacturer: bbk
+      brand: oneplus
+      display:
+        width: 2280
+        height: 1080
+        touch: true
+        size: 6.28
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'QQ Browser'
+      modus: null
+      version: 6.2.0
+      manufacturer: tencent
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 9.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 66.0.3359.126
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; ROCK 3 Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/152.0.7977.87 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; ROCK 3 Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/152.0.7977.87 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'Rock 3'
+      marketingName: 'Rock 3'
+      manufacturer: blackview
+      brand: blackview
+      display:
+        width: 2460
+        height: 1080
+        touch: true
+        size: 6.78
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 152.0.7977.87
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 152.0.7977.87
+      manufacturer: google

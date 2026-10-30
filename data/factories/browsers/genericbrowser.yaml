@@ -203,6 +203,7 @@ rules:
   /oai-searchbot/i: oai-searchbot
   /uptimerobot/i: uptimerobot
   '/fdse robot/i': 'fdse robot'
+  /ethicrawl/i: ethicrawl
   /gaisbot/i: gais-bot
   /thinkchaos/i: think-chaos
   '/(?<![\/\(])robots(?!\.txt)|testcrawler/i': testcrawler
@@ -853,6 +854,7 @@ rules:
   /yahoocachesystem/i: yahoocachesystem
   /wmtips\.com/i: 'webmaster tips bot'
   /overture-maps-linkchecker/i: overture-maps-linkchecker
+  /eyeablebrokenlinkchecker/i: eye-able-broken-link-checker
   /moodlebot-linkchecker/i: moodlebot-linkchecker
   /brokenlinkcheck\.com/i: brokenlinkcheck
   /backlink-check\.de/i: backlink-check-bot
@@ -1181,6 +1183,7 @@ rules:
   /majesticmetadatacollector/i: majestic-metadata-collector
   /nextcloud-server-crawler/i: nextcloud-server-crawler
   /aiapirelaymarketresearch/i: ai-api-relay-market-research
+  /everylawyer-domainfinder/i: every-lawyer-domain-finder
   /cloudflare-alwaysonline/i: 'cloudflare alwaysonline'
   /cloudflare-healthchecks/i: cloudflare-health-checks
   /cloudservermarketspider/i: cloud-server-market-spider
@@ -1313,6 +1316,7 @@ rules:
   /rfxsearch-research/i: rfx-search-research
   /wolfofseo-301-scan/i: wolf-of-seo-301-scan
   /seojuice-searchbot/i: seo-juice-search-bot
+  /webcache-mdream-rs/i: webcache-mdream-rs
   /digitalshadowsbot/i: digital-shadows-bot
   /netpeakcheckerbot/i: netpeak-checker-bot
   /seoscanners\.net/i: seoscanners-net
@@ -1379,6 +1383,7 @@ rules:
   /adobeone-datasets/i: adobeone-datasets
   /captainobviousbot/i: captain-obvious-bot
   /resellerenrichbot/i: reseller-enrich-bot
+  /azureai-searchbot/i: azureai-searchbot
   /uphonewebbrowser/i: uphone-browser
   /accessiblewebbot/i: accessible-web-bot
   '/let.?s ?encrypt/i': lets-encrypt-validation
@@ -1399,6 +1404,7 @@ rules:
   /kbcnetcontactbot/i: kbcnet-contact-bot
   /molotowsitecheck/i: molotow-site-check
   /stackdetectorbot/i: stack-detector-bot
+  /bitninja-crawler/i: bitninja-crawler
   /copyviodetector/i: copyvio-detector
   /statistikhessen/i: statistik-hessen
   /yadirectfetcher/i: ya-direct-fetcher
@@ -1454,6 +1460,7 @@ rules:
   /securityheaders/i: security-headers
   /yandexverticals/i: yandex-verticals
   /yandexfordomain/i: yandex-for-domain
+  /wp-safe-scanner/i: wp-safe-scanner
   /panscient\.com/i: panscient
   /hgfalphaxcrawl/i: hgf-alpha-x-crawl
   /unimatrix-zero/i: unimatrix-zero
@@ -1525,6 +1532,8 @@ rules:
   /geocheck-study/i: geocheck-study
   /scrape_central/i: scrape-central
   /domainprintbot/i: domain-print-bot
+  /emailextractor/i: email-extractor
+  /arenaunfurlbot/i: arena-unfurl-bot
   /censysinspect/i: censysinspect
   /t3versionsbot/i: t3-versions-bot
   '/acorn phoenix/i': acorn-phoenix
@@ -1580,6 +1589,7 @@ rules:
   /icresearch-w2/i: ic-research-w2
   /ct-sender-poc/i: ct-sender-poc
   /listsignalbot/i: list-signal-bot
+  /denic-crawler/i: denic-crawler
   /researchscan/i: researchscan
   /dataprovider/i: dataprovider-spider
   '/inet browser/i': inet-browser
@@ -1667,6 +1677,9 @@ rules:
   /creoscopebot/i: creo-scope-bot
   /tld-netprobe/i: tld-netprobe
   /seotrendsbot/i: seotrends-bot
+  /urlvalidator/i: url-validator
+  /associatebot/i: associate-bot
+  /plagawarebot/i: plag-aware-bot
   /bitsightbot/i: bitsightbot
   /surdotlybot/i: surdotlybot
   /intelx\.io/i: intelligence-x
@@ -1926,6 +1939,8 @@ rules:
   /ninetails/i: ninetails
   /rainmeter/i: rainmeter
   /shopalike/i: shop-alike
+  /fobizzbot/i: fobizz-bot
+  /linkupbot/i: linkup-bot
   /sixy\.ch/i: sixy-ch
   /priecobot/i: pri-eco-bot
   /cmslookup/i: cms-lookup
@@ -2047,6 +2062,7 @@ rules:
   /vendibot/i: vendi-bot
   /qlyzebot/i: qlyze-bot
   /sofyabot/i: sofya-bot
+  /sebot-wa/i: sebot-wa
   /whatcms/i: what-cms
   /phoenix/i: phoenix
   /kagibot/i: kagi-bot
@@ -2101,6 +2117,7 @@ rules:
   /gptbot/i: gpt-bot
   /ftebot/i: fte-bot
   /netapi/i: net-api
+  /owpbot/i: owp-bot
   /goose/i: goose-extractor
   /avant/i: avant
   /dvbot/i: dv-bot
@@ -2112,6 +2129,7 @@ rules:
   /daum\//i: daum
   /2gdpr/i: 2gdpr
   /kaupr/i: kaupr
+  /wpbot/i: wp-bot
   /compatible; research/i: generic-bot
   /mozilla/i: mozilla
   '/2ip bot/i': '2ip bot'
@@ -2156,6 +2174,7 @@ rules:
   /stealer/i: stealer
   /buildah/i: buildah
   /vegebot/i: vege-bot
+  /blunbot/i: blun-bot
   /deno\//i: deno
   /espn\//i: 'espn radio'
   /hulu\//i: hulu
