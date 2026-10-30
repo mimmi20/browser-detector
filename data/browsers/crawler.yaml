@@ -7765,3 +7765,12 @@ pbn-bot:
     search:
       - 'PBN.BOT'
   engine: unknown
+metatron-bot:
+  name: MetatronBot
+  manufacturer: metatron-marketing
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - MetatronBot
+  engine: unknown

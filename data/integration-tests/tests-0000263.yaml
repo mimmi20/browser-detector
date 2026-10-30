@@ -4338,3 +4338,85 @@
       name: null
       version: null
       manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; crawler)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; crawler)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Crawler
+      modus: null
+      version: null
+      manufacturer: linkfluence
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'MetatronBot/1.0 (+https://metatron.marketing; consulting@metatron.marketing)'
+  expected:
+    headers:
+      user-agent: 'MetatronBot/1.0 (+https://metatron.marketing; consulting@metatron.marketing)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: nbot
+      modus: null
+      version: 1.0.0
+      manufacturer: unknown
+      type: bot
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
