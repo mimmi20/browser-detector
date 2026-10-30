@@ -29,7 +29,6 @@ use ReflectionException;
 use ReflectionProperty;
 use RuntimeException;
 use UaLoader\Exception\NotFoundException;
-use UaResult\Bits\Bits;
 use UnexpectedValueException;
 
 #[CoversClass(className: BrowserLoader::class)]

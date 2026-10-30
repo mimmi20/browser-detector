@@ -620,11 +620,13 @@ final readonly class Headers
                 'sec-ch-ua-full-version-list',
                 $headersWithClientCodeFiltered,
             ) ? $clientVersions['sec-ch-ua-full-version-list']
-                : (array_key_exists('sec-ch-ua', $headersWithClientCodeFiltered) ? $clientVersions['sec-ch-ua']
-                    : (array_key_exists(
-                        'user-agent',
-                        $headersWithClientCodeFiltered,
-                    ) ? $clientVersions['user-agent'] : array_last($clientVersions))),
+                : (array_key_exists('sec-ch-ua', $headersWithClientCodeFiltered)
+                    ? $clientVersions['sec-ch-ua']
+                    : (array_key_exists('user-agent', $headersWithClientCodeFiltered)
+                        ? $clientVersions['user-agent']
+                        : array_last($clientVersions)
+                    )
+                ),
             'chrome' => $chromeClientVersion
                 ?? $clientVersions['sec-ch-ua-full-version-list']
                 ?? $clientVersions['sec-ch-ua']

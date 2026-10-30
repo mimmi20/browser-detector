@@ -46,7 +46,6 @@ use UaResult\Device\Architecture;
 use UaResult\Engine\Engine;
 use UnexpectedValueException;
 
-use function mb_strtolower;
 use function sprintf;
 
 /** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */
