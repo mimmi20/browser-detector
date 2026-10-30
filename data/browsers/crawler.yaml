@@ -7774,3 +7774,48 @@ metatron-bot:
     search:
       - MetatronBot
   engine: unknown
+warp-research:
+  name: WARP-Research
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - WARP-Research
+  engine: unknown
+open-backlinks-bot:
+  name: OpenBacklinksBot
+  manufacturer: open-backlinks
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - OpenBacklinksBot
+  engine: unknown
+kontakty-bot:
+  name: KontaktyBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - KontaktyBot
+  engine: unknown
+clearscope-bot:
+  name: Clearscopebot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Clearscopebot
+  engine: unknown
+quillbot:
+  name: quillbot
+  manufacturer: learneo
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - quillbot
+  engine: unknown

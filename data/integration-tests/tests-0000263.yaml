@@ -4420,3 +4420,205 @@
       name: null
       version: null
       manufacturer: unknown
+-
+  headers:
+    sec-ch-ua-platform: '"macOS"'
+    sec-ch-ua: '"Not=A?Brand";v="99", "HeadlessChrome";v="151", "Chromium";v="151"'
+    sec-ch-ua-mobile: '?0'
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36; ClaudeBot/1.0; +claudebot@anthropic.com)'
+  expected:
+    headers:
+      sec-ch-ua-platform: '"macOS"'
+      sec-ch-ua: '"Not=A?Brand";v="99", "HeadlessChrome";v="151", "Chromium";v="151"'
+      sec-ch-ua-mobile: '?0'
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36; ClaudeBot/1.0; +claudebot@anthropic.com)'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: ClaudeBot
+      modus: null
+      version: 1.0.0
+      manufacturer: anthropic
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: 'Mac OS X'
+      marketingName: 'Mac OS X'
+      version: 10.15.7
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: Blink
+      version: 151.0.0
+      manufacturer: google
+-
+  headers:
+    sec-ch-ua-platform: '"macOS"'
+    sec-ch-ua: '"Brave";v="125", "Chromium";v="125", "Not.A/Brand";v="24"'
+    sec-ch-ua-mobile: '?0'
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36'
+  expected:
+    headers:
+      sec-ch-ua-platform: '"macOS"'
+      sec-ch-ua: '"Brave";v="125", "Chromium";v="125", "Not.A/Brand";v="24"'
+      sec-ch-ua-mobile: '?0'
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: Brave
+      modus: null
+      version: 125.0.0
+      manufacturer: brave-software
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: 'Mac OS X'
+      marketingName: 'Mac OS X'
+      version: 10.15.7
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: Blink
+      version: 125.0.0
+      manufacturer: google
+-
+  headers:
+    sec-ch-ua-platform: '"macOS"'
+    sec-ch-ua: '"Chromium";v="147", "Not.A/Brand";v="8"'
+    sec-ch-ua-mobile: '?0'
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36'
+  expected:
+    headers:
+      sec-ch-ua-platform: '"macOS"'
+      sec-ch-ua: '"Chromium";v="147", "Not.A/Brand";v="8"'
+      sec-ch-ua-mobile: '?0'
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: Chromium
+      modus: null
+      version: 147.0.0
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: 'Mac OS X'
+      marketingName: 'Mac OS X'
+      version: 10.15.7
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: Blink
+      version: 147.0.0
+      manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: '""'
+    sec-ch-ua-platform: '"macOS"'
+    sec-ch-ua-platform-version: '"10.15.7"'
+    sec-ch-ua: '"Chromium";v="153", "Google Chrome";v="153"'
+    sec-ch-ua-full-version: '"153.0.0.0"'
+    sec-ch-ua-bitness: '"64"'
+    sec-ch-ua-arch: '"x86"'
+    sec-ch-ua-form-factors: '"Desktop"'
+    sec-ch-ua-mobile: '?0'
+    sec-ch-ua-wow64: '?0'
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Chrome-Lighthouse'
+  expected:
+    headers:
+      sec-ch-ua-model: '""'
+      sec-ch-ua-platform: '"macOS"'
+      sec-ch-ua-platform-version: '"10.15.7"'
+      sec-ch-ua: '"Chromium";v="153", "Google Chrome";v="153"'
+      sec-ch-ua-full-version: '"153.0.0.0"'
+      sec-ch-ua-bitness: '"64"'
+      sec-ch-ua-arch: '"x86"'
+      sec-ch-ua-form-factors: '"Desktop"'
+      sec-ch-ua-mobile: '?0'
+      sec-ch-ua-wow64: '?0'
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Chrome-Lighthouse'
+    device:
+      architecture: x86
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 64
+    client:
+      name: Lighthouse
+      modus: null
+      version: null
+      manufacturer: google
+      type: site-monitor
+      isbot: true
+      bits: 64
+    os:
+      name: 'Mac OS X'
+      marketingName: 'Mac OS X'
+      version: 10.15.7
+      manufacturer: apple
+      bits: 64
+    engine:
+      name: Blink
+      version: 153.0.0
+      manufacturer: google

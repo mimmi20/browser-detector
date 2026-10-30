@@ -1,0 +1,4250 @@
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/601.2.4 (KHTML, like Gecko) Version/9.0.1 Safari/601.2.4 facebookexternalhit/1.1 Facebot Twitterbot/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/601.2.4 (KHTML, like Gecko) Version/9.0.1 Safari/601.2.4 facebookexternalhit/1.1 Facebot Twitterbot/1.0'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Facebook Crawler'
+      modus: null
+      version: 1.1.0
+      manufacturer: meta
+      type: social-media-agent
+      isbot: true
+      bits: 0
+    os:
+      name: 'Mac OS X'
+      marketingName: 'Mac OS X'
+      version: 10.11.1
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 601.2.4
+      manufacturer: apple
+-
+  headers:
+    sec-ch-ua-platform: '"macOS"'
+    sec-ch-ua: '"Chromium";v="148", "Microsoft Edge";v="148", "Not/A)Brand";v="99"'
+    sec-ch-ua-mobile: '?0'
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0'
+  expected:
+    headers:
+      sec-ch-ua-platform: '"macOS"'
+      sec-ch-ua: '"Chromium";v="148", "Microsoft Edge";v="148", "Not/A)Brand";v="99"'
+      sec-ch-ua-mobile: '?0'
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: Edge
+      modus: null
+      version: 148.0.0
+      manufacturer: microsoft
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: 'Mac OS X'
+      marketingName: 'Mac OS X'
+      version: 10.15.7
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: Blink
+      version: 148.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 OPR/56.0.3051.116'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 OPR/56.0.3051.116'
+    device:
+      architecture: ''
+      deviceName: Macintosh
+      marketingName: Macintosh
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: Opera
+      modus: null
+      version: 56.0.3051.116
+      manufacturer: opera
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: 'Mac OS X'
+      marketingName: 'Mac OS X'
+      version: 10.10.6
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: Blink
+      version: 70.0.3538.102
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/601.2.4 (KHTML, like Gecko) Version/9.0.1 Safari/601.2.4 facebookexternalhit/1.1 BIGO-baiguoyuan (SM-S901B__imoAndroidBeta__indigo__stable__2026.08.1058__Android__16__0__kKx8oSGmXKdVBgRy__8737335104632553943__26081058__DE__DE)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/601.2.4 (KHTML, like Gecko) Version/9.0.1 Safari/601.2.4 facebookexternalhit/1.1 BIGO-baiguoyuan (SM-S901B__imoAndroidBeta__indigo__stable__2026.08.1058__Android__16__0__kKx8oSGmXKdVBgRy__8737335104632553943__26081058__DE__DE)'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Facebook Crawler'
+      modus: null
+      version: 1.1.0
+      manufacturer: meta
+      type: social-media-agent
+      isbot: true
+      bits: 0
+    os:
+      name: 'Mac OS X'
+      marketingName: 'Mac OS X'
+      version: 10.11.1
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 601.2.4
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPod; U; CPU iPhone OS 4_1 like Mac OS X; wa-BE) AppleWebKit/532.18.1 (KHTML, like Gecko) Version/4.0.5 Mobile/8B116 Safari/6532.18.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (iPod; U; CPU iPhone OS 4_1 like Mac OS X; wa-BE) AppleWebKit/532.18.1 (KHTML, like Gecko) Version/4.0.5 Mobile/8B116 Safari/6532.18.1'
+    device:
+      architecture: ''
+      deviceName: 'iPod Touch'
+      marketingName: 'iPod Touch'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 480
+        height: 320
+        touch: true
+        size: null
+      type: mobile-media-player
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: Safari
+      modus: null
+      version: 4.0.5
+      manufacturer: apple
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 4.1.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 532.18.1
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 7_1_2 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Version/7.0 Mobile Safari/537.36 (compatible; Bytespider; https://bytedance.sg.larkoffice.com/docx/K5bxdypulop3IIxrJb0lOjLVgFe)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 7_1_2 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Version/7.0 Mobile Safari/537.36 (compatible; Bytespider; https://bytedance.sg.larkoffice.com/docx/K5bxdypulop3IIxrJb0lOjLVgFe)'
+    device:
+      architecture: ''
+      deviceName: iPhone
+      marketingName: iPhone
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 480
+        height: 320
+        touch: true
+        size: 3.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Bytespider
+      modus: null
+      version: null
+      manufacturer: bytedance
+      type: search-bot
+      isbot: true
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 7.1.2
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 537.36.0
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25 (compatible; SiteAuditBot/0.97; +http://www.semrush.com/bot.html)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25 (compatible; SiteAuditBot/0.97; +http://www.semrush.com/bot.html)'
+    device:
+      architecture: ''
+      deviceName: iPhone
+      marketingName: iPhone
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 480
+        height: 320
+        touch: true
+        size: 3.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: SiteAuditBot
+      modus: null
+      version: 0.97.0
+      manufacturer: semrush
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 6.0.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 536.26.0
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 7.1.1; ASUS_Z01MDA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.117 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 7.1.1; ASUS_Z01MDA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.117 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: Z01MD
+      marketingName: 'ZenFone 4 Selfie Pro'
+      manufacturer: asus
+      brand: asus
+      display:
+        width: 1280
+        height: 720
+        touch: true
+        size: 5.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 81.0.4044.117
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 7.1.1
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 81.0.4044.117
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'Nexus 7'
+      marketingName: 'Nexus 7'
+      manufacturer: asus
+      brand: google
+      display:
+        width: 1280
+        height: 800
+        touch: true
+        size: 7.0
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 81.0.4044.138
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 6.0.1
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 81.0.4044.138
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 7.1.1; zh-CN; OPPO R11t Build/NMF26X) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/11.9.4.974 UWS/2.14.0.9 Mobile Safari/537.36 AliApp(TB/7.9.2) UCBS/2.11.1.1 TTID/10001401@taobao_android_7.9.2 WindVane/8.3.0 1080X1920'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 7.1.1; zh-CN; OPPO R11t Build/NMF26X) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/11.9.4.974 UWS/2.14.0.9 Mobile Safari/537.36 AliApp(TB/7.9.2) UCBS/2.11.1.1 TTID/10001401@taobao_android_7.9.2 WindVane/8.3.0 1080X1920'
+    device:
+      architecture: ''
+      deviceName: R11t
+      marketingName: R11t
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 1920
+        height: 1080
+        touch: true
+        size: 5.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Taobao
+      modus: null
+      version: 7.9.2
+      manufacturer: alibaba
+      type: application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 7.1.1
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 57.0.2987.108
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 6.0.1; zh-CN; vivo X9L Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/11.8.8.968 UWS/2.13.1.10 Mobile Safari/537.36 AliApp(TB/7.7.2) UCBS/2.11.1.1 WindVane/8.3.0 1080X1920'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 6.0.1; zh-CN; vivo X9L Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/11.8.8.968 UWS/2.13.1.10 Mobile Safari/537.36 AliApp(TB/7.7.2) UCBS/2.11.1.1 WindVane/8.3.0 1080X1920'
+    device:
+      architecture: ''
+      deviceName: X9L
+      marketingName: X9L
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 1920
+        height: 1080
+        touch: true
+        size: 5.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Taobao
+      modus: null
+      version: 7.7.2
+      manufacturer: alibaba
+      type: application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 6.0.1
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 57.0.2987.108
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 8.1.0; vivo NEX A Build/OPM1.171019.026; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.83 Mobile Safari/537.36 T7/11.1 baiduboxapp/11.1.0.10 (Baidu; P1 8.1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 8.1.0; vivo NEX A Build/OPM1.171019.026; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.83 Mobile Safari/537.36 T7/11.1 baiduboxapp/11.1.0.10 (Baidu; P1 8.1.0)'
+    device:
+      architecture: ''
+      deviceName: 'NEX A'
+      marketingName: 'NEX A'
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 2316
+        height: 1080
+        touch: true
+        size: 6.59
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 11.1.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 8.1.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 11.1.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 7.1.1; OPPO R11 Build/NMF26X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.83 Mobile Safari/537.36 T7/11.3 baiduboxapp/11.3.6.11 (Baidu; P1 7.1.1)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 7.1.1; OPPO R11 Build/NMF26X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.83 Mobile Safari/537.36 T7/11.3 baiduboxapp/11.3.6.11 (Baidu; P1 7.1.1)'
+    device:
+      architecture: ''
+      deviceName: R11
+      marketingName: R11
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 1920
+        height: 1080
+        touch: true
+        size: 5.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 11.3.6.11
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 7.1.1
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 11.3.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 8.1; ONEPLUS A5010 Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044328 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 8.1; ONEPLUS A5010 Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044328 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: A5010
+      marketingName: 5T
+      manufacturer: bbk
+      brand: oneplus
+      display:
+        width: 2160
+        height: 1080
+        touch: true
+        size: 6.01
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'QQ Browser'
+      modus: null
+      version: 6.2.0
+      manufacturer: tencent
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 8.1.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 57.0.2987.132
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 8.1; PACT00 Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044408 Mobile Safari/537.36 wxwork/2.7.2 MicroMessenger/6.3.22 NetType/4G Language/zh'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 8.1; PACT00 Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044408 Mobile Safari/537.36 wxwork/2.7.2 MicroMessenger/6.3.22 NetType/4G Language/zh'
+    device:
+      architecture: ''
+      deviceName: PACT00
+      marketingName: R15
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2280
+        height: 1080
+        touch: true
+        size: 6.28
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: WeCom
+      modus: null
+      version: 2.7.2
+      manufacturer: tencent
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 8.1.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 57.0.2987.132
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 7.0; BV8000Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 YaBrowser/20.3.5.90.00 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 7.0; BV8000Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 YaBrowser/20.3.5.90.00 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'BV8000 Pro'
+      marketingName: 'BV8000 Pro'
+      manufacturer: blackview
+      brand: blackview
+      display:
+        width: 1920
+        height: 1080
+        touch: true
+        size: 5.0
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 20.3.5.90.00
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 7.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 80.0.3987.132
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 7.0; BQru-4500) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.162 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 7.0; BQru-4500) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.162 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: BQru-4500
+      marketingName: Stanford
+      manufacturer: bq
+      brand: bq
+      display:
+        width: 854
+        height: 480
+        touch: true
+        size: 4.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 80.0.3987.162
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 7.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 80.0.3987.162
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 5.1; T8-PLUS) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36 OPR/56.1.2780.51589'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 5.1; T8-PLUS) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36 OPR/56.1.2780.51589'
+    device:
+      architecture: ''
+      deviceName: 'T8 Plus'
+      marketingName: 'T8 Plus'
+      manufacturer: cube
+      brand: cube
+      display:
+        width: 1920
+        height: 1200
+        touch: true
+        size: 8.0
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Opera Mobile'
+      modus: null
+      version: 56.1.2780.51589
+      manufacturer: opera
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 5.1.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 78.0.3904.108
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 5.0.2; zh-CN; GN9006 Build/LRX21M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/11.8.0.960 UWS/2.12.1.22 Mobile Safari/537.36 AliApp(TB/7.6.4) UCBS/2.11.1.1 WindVane/8.3.0 1080X1776'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 5.0.2; zh-CN; GN9006 Build/LRX21M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/11.8.0.960 UWS/2.12.1.22 Mobile Safari/537.36 AliApp(TB/7.6.4) UCBS/2.11.1.1 WindVane/8.3.0 1080X1776'
+    device:
+      architecture: ''
+      deviceName: GN9006
+      marketingName: 'Elife S7'
+      manufacturer: gionee
+      brand: gionee
+      display:
+        width: 1920
+        height: 1080
+        touch: true
+        size: 5.2
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Taobao
+      modus: null
+      version: 7.6.4
+      manufacturer: alibaba
+      type: application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 5.0.2
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 57.0.2987.108
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 6.0.1; JDN-L01) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 6.0.1; JDN-L01) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: JDN-L01
+      marketingName: 'MediaPad T2 8.0 Pro'
+      manufacturer: huawei
+      brand: huawei
+      display:
+        width: null
+        height: null
+        touch: true
+        size: 8.0
+      type: fone-pad
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 81.0.4044.138
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 6.0.1
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 81.0.4044.138
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 7.0; KOB-L09 Build/HUAWEIKOB-L09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.76 Mobile Safari/537.36 YaApp_Android/9.00 YaSearchBrowser/9.00'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 7.0; KOB-L09 Build/HUAWEIKOB-L09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.76 Mobile Safari/537.36 YaApp_Android/9.00 YaSearchBrowser/9.00'
+    device:
+      architecture: ''
+      deviceName: KOB-L09
+      marketingName: 'MediaPad T3 8.0 LTE'
+      manufacturer: huawei
+      brand: huawei
+      display:
+        width: 1280
+        height: 800
+        touch: true
+        size: 8.0
+      type: fone-pad
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Yandex Search Browser'
+      modus: null
+      version: 9.00.0
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 7.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 72.0.3626.76
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 8.0.0; zh-CN; DUK-AL20 Build/HUAWEIDUK-AL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/11.9.4.974 UWS/2.14.0.4 Mobile Safari/537.36 AliApp(TB/7.8.6) UCBS/2.11.1.1 TTID/227200@taobao_android_7.8.6 WindVane/8.3.0 1440X2408'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 8.0.0; zh-CN; DUK-AL20 Build/HUAWEIDUK-AL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/11.9.4.974 UWS/2.14.0.4 Mobile Safari/537.36 AliApp(TB/7.8.6) UCBS/2.11.1.1 TTID/227200@taobao_android_7.8.6 WindVane/8.3.0 1440X2408'
+    device:
+      architecture: ''
+      deviceName: DUK-AL20
+      marketingName: 'Honor V9'
+      manufacturer: huawei
+      brand: huawei
+      display:
+        width: 2560
+        height: 1440
+        touch: true
+        size: 5.7
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Taobao
+      modus: null
+      version: 7.8.6
+      manufacturer: alibaba
+      type: application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 8.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 57.0.2987.108
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 7.0; MHA-AL00 Build/HUAWEIMHA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/76.0.3809.89 Mobile Safari/537.36 T7/11.18 SP-engine/2.14.0 baiduboxapp/11.18.0.12 (Baidu; P1 7.0) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 7.0; MHA-AL00 Build/HUAWEIMHA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/76.0.3809.89 Mobile Safari/537.36 T7/11.18 SP-engine/2.14.0 baiduboxapp/11.18.0.12 (Baidu; P1 7.0) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: MHA-AL00
+      marketingName: 'Mate 9'
+      manufacturer: huawei
+      brand: huawei
+      display:
+        width: 1920
+        height: 1080
+        touch: true
+        size: 5.9
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 11.18.0.12
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 7.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 11.18.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 8.1.0; BKK-AL10 Build/HONORBKK-AL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/76.0.3809.89 Mobile Safari/537.36 T7/11.17 SP-engine/2.13.0 baiduboxapp/11.17.0.13 (Baidu; P1 8.1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 8.1.0; BKK-AL10 Build/HONORBKK-AL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/76.0.3809.89 Mobile Safari/537.36 T7/11.17 SP-engine/2.13.0 baiduboxapp/11.17.0.13 (Baidu; P1 8.1.0)'
+    device:
+      architecture: ''
+      deviceName: BKK-AL10
+      marketingName: 'Honor 8C (China)'
+      manufacturer: huawei
+      brand: huawei
+      display:
+        width: 1520
+        height: 720
+        touch: true
+        size: 6.76
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 11.17.0.13
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 8.1.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 11.17.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 8.1; CLT-TL00 Build/HUAWEICLT-TL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.116 Mobile Safari/537.36 T7/10.9 baiduboxapp/10.9.5.10 (Baidu; P1 8.1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 8.1; CLT-TL00 Build/HUAWEICLT-TL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.116 Mobile Safari/537.36 T7/10.9 baiduboxapp/10.9.5.10 (Baidu; P1 8.1.0)'
+    device:
+      architecture: ''
+      deviceName: CLT-TL00
+      marketingName: 'P20 Pro'
+      manufacturer: huawei
+      brand: huawei
+      display:
+        width: 2240
+        height: 1080
+        touch: true
+        size: 6.1
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 10.9.5.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 8.1.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 10.9.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 8.0.0; ATU-LX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 8.0.0; ATU-LX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: ATU-LX3
+      marketingName: 'Y6 (2018)'
+      manufacturer: huawei
+      brand: huawei
+      display:
+        width: 1440
+        height: 720
+        touch: true
+        size: 5.7
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 81.0.4044.138
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 8.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 81.0.4044.138
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 5.1; HUAWEI CUN-L23) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.117 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 5.1; HUAWEI CUN-L23) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.117 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: CUN-L23
+      marketingName: 'Y5 II'
+      manufacturer: huawei
+      brand: huawei
+      display:
+        width: 1280
+        height: 720
+        touch: true
+        size: 5.0
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 81.0.4044.117
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 5.1.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 81.0.4044.117
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 6.0; FRD-L09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 6.0; FRD-L09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: FRD-L09
+      marketingName: 'Honor 8 (Europe)'
+      manufacturer: huawei
+      brand: huawei
+      display:
+        width: 1920
+        height: 1080
+        touch: true
+        size: 5.2
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 70.0.3538.110
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 6.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 70.0.3538.110
+      manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: '"PRA-LX1"'
+    sec-ch-ua-platform: '"Android"'
+    sec-ch-ua-platform-version: '"7.0.0"'
+    sec-ch-ua: '"Google Chrome";v="119", "Chromium";v="119", "Not?A_Brand";v="24"'
+    sec-ch-ua-full-version: '"119.0.6045.193"'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-mobile: '?1'
+    sec-ch-ua-wow64: '?0'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36'
+  expected:
+    headers:
+      sec-ch-ua-model: '"PRA-LX1"'
+      sec-ch-ua-platform: '"Android"'
+      sec-ch-ua-platform-version: '"7.0.0"'
+      sec-ch-ua: '"Google Chrome";v="119", "Chromium";v="119", "Not?A_Brand";v="24"'
+      sec-ch-ua-full-version: '"119.0.6045.193"'
+      sec-ch-ua-bitness: '""'
+      sec-ch-ua-arch: '""'
+      sec-ch-ua-mobile: '?1'
+      sec-ch-ua-wow64: '?0'
+      user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: PRA-LX1
+      marketingName: 'P8 Lite (2017)'
+      manufacturer: huawei
+      brand: huawei
+      display:
+        width: 1920
+        height: 1080
+        touch: true
+        size: 5.2
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 119.0.0
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 7.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 119.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 5.0.1; HUAWEI GRA-UL00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 5.0.1; HUAWEI GRA-UL00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: GRA-UL00
+      marketingName: P8
+      manufacturer: huawei
+      brand: huawei
+      display:
+        width: 1920
+        height: 1080
+        touch: true
+        size: 5.2
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 81.0.4044.138
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 5.0.1
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 81.0.4044.138
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 6.0; PLK-TL01H Build/HONORPLK-TL01H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.0.0 MQQBrowser/6.6 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 6.0; PLK-TL01H Build/HONORPLK-TL01H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.0.0 MQQBrowser/6.6 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: PLK-TL01H
+      marketingName: 'Honor 7'
+      manufacturer: huawei
+      brand: huawei
+      display:
+        width: 1920
+        height: 1080
+        touch: true
+        size: 5.2
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'QQ Browser'
+      modus: null
+      version: 6.6.0
+      manufacturer: tencent
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 6.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 37.0.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 7.0; zh-cn; VKY-AL00 Build/HUAWEIVKY-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/9.9 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 7.0; zh-cn; VKY-AL00 Build/HUAWEIVKY-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/9.9 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: VKY-AL00
+      marketingName: 'P10 Plus'
+      manufacturer: huawei
+      brand: huawei
+      display:
+        width: 2560
+        height: 1440
+        touch: true
+        size: 5.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'QQ Browser'
+      modus: null
+      version: 9.9.0
+      manufacturer: tencent
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 7.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 66.0.3359.126
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 8.0.0zh-cn; BND-AL00 Build/HONORBND-AL00) AppleWebKit/537.36 (KHTML, like Gecko)Version/4.0 Chrome/57.0.2987.132 MQQBrowser/8.1 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 8.0.0zh-cn; BND-AL00 Build/HONORBND-AL00) AppleWebKit/537.36 (KHTML, like Gecko)Version/4.0 Chrome/57.0.2987.132 MQQBrowser/8.1 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: BND-AL00
+      marketingName: 'Honor 7X'
+      manufacturer: huawei
+      brand: huawei
+      display:
+        width: 2160
+        height: 1080
+        touch: true
+        size: 5.93
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'QQ Browser'
+      modus: null
+      version: 8.1.0
+      manufacturer: tencent
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 8.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 57.0.2987.132
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 7.0; FRD-AL00 Build/HUAWEIFRD-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36 MicroMessenger/6.6.6.1300(0x26060637) NetType/4G Language/zh_CN'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 7.0; FRD-AL00 Build/HUAWEIFRD-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36 MicroMessenger/6.6.6.1300(0x26060637) NetType/4G Language/zh_CN'
+    device:
+      architecture: ''
+      deviceName: FRD-AL00
+      marketingName: 'Honor 8 (China, USA)'
+      manufacturer: huawei
+      brand: huawei
+      display:
+        width: 1920
+        height: 1080
+        touch: true
+        size: 5.2
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'WeChat App'
+      modus: null
+      version: 6.6.6.1300
+      manufacturer: tencent
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 7.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 60.0.3112.116
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 7.0; HUAWEI NXT-AL10 Build/HUAWEINXT-AL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.49 Mobile MQQBrowser/6.2 TBS/043622 Safari/537.36 MicroMessenger/6.5.22.1160 NetType/WIFI Language/zh_CN'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 7.0; HUAWEI NXT-AL10 Build/HUAWEINXT-AL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.49 Mobile MQQBrowser/6.2 TBS/043622 Safari/537.36 MicroMessenger/6.5.22.1160 NetType/WIFI Language/zh_CN'
+    device:
+      architecture: ''
+      deviceName: NXT-AL10
+      marketingName: 'Mate 8'
+      manufacturer: huawei
+      brand: huawei
+      display:
+        width: 1920
+        height: 1080
+        touch: true
+        size: 6.0
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'WeChat App'
+      modus: null
+      version: 6.5.22.1160
+      manufacturer: tencent
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 7.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 53.0.2785.49
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-CN; HUAWEI C8818 Build/HuaweiC8818) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/40.0.2214.89 UCBrowser/11.4.2.936 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-CN; HUAWEI C8818 Build/HuaweiC8818) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/40.0.2214.89 UCBrowser/11.4.2.936 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: C8818
+      marketingName: C8818
+      manufacturer: huawei
+      brand: huawei
+      display:
+        width: 1280
+        height: 720
+        touch: true
+        size: 5.0
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'UC Browser'
+      modus: null
+      version: 11.4.2.936
+      manufacturer: ucweb
+      type: transcoder
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 4.4.4
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 40.0.2214.89
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 7.0; zh-CN; VKY-AL00 Build/HUAWEIVKY-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/11.8.2.962 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 7.0; zh-CN; VKY-AL00 Build/HUAWEIVKY-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/11.8.2.962 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: VKY-AL00
+      marketingName: 'P10 Plus'
+      manufacturer: huawei
+      brand: huawei
+      display:
+        width: 2560
+        height: 1440
+        touch: true
+        size: 5.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'UC Browser'
+      modus: null
+      version: 11.8.2.962
+      manufacturer: ucweb
+      type: transcoder
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 7.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 57.0.2987.108
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 8.0.0; zh-CN; HWI-AL00 Build/HUAWEIHWI-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.0.8.988 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 8.0.0; zh-CN; HWI-AL00 Build/HUAWEIHWI-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.0.8.988 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: HWI-AL00
+      marketingName: 'Nova 2S'
+      manufacturer: huawei
+      brand: huawei
+      display:
+        width: 2160
+        height: 1080
+        touch: true
+        size: 6.0
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'UC Browser'
+      modus: null
+      version: 12.0.8.988
+      manufacturer: ucweb
+      type: transcoder
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 8.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 57.0.2987.108
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 8.0.0; zh-CN; BLA-AL00 Build/HUAWEIBLA-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.1.0.990 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 8.0.0; zh-CN; BLA-AL00 Build/HUAWEIBLA-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.1.0.990 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: BLA-AL00
+      marketingName: 'Mate 10 Pro'
+      manufacturer: huawei
+      brand: huawei
+      display:
+        width: 2160
+        height: 1080
+        touch: true
+        size: 6.0
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'UC Browser'
+      modus: null
+      version: 12.1.0.990
+      manufacturer: ucweb
+      type: transcoder
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 8.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 57.0.2987.108
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 7.0; zh-CN; FRD-AL10 Build/HUAWEIFRD-AL10) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.1.0.990 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 7.0; zh-CN; FRD-AL10 Build/HUAWEIFRD-AL10) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.1.0.990 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: FRD-AL10
+      marketingName: 'Honor 8 (China)'
+      manufacturer: huawei
+      brand: huawei
+      display:
+        width: 1920
+        height: 1080
+        touch: true
+        size: 5.2
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'UC Browser'
+      modus: null
+      version: 12.1.0.990
+      manufacturer: ucweb
+      type: transcoder
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 7.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 57.0.2987.108
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 7.0; JMM-L22) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 YaBrowser/20.3.5.90.00 SA/1 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 7.0; JMM-L22) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 YaBrowser/20.3.5.90.00 SA/1 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: JMM-L22
+      marketingName: 'Honor 6C Pro'
+      manufacturer: huawei
+      brand: huawei
+      display:
+        width: 1280
+        height: 720
+        touch: true
+        size: 5.2
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 20.3.5.90.00
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 7.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 80.0.3987.132
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 7.0; TRT-LX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 YaBrowser/20.3.5.90.00 SA/1 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 7.0; TRT-LX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 YaBrowser/20.3.5.90.00 SA/1 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: TRT-LX1
+      marketingName: 'Y7 (2017)'
+      manufacturer: huawei
+      brand: huawei
+      display:
+        width: 1280
+        height: 720
+        touch: true
+        size: 5.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 20.3.5.90.00
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 7.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 80.0.3987.132
+      manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: '"BAH2-W19"'
+    x-requested-with: com.duckduckgo.mobile.android
+    sec-ch-ua-platform: '"Android"'
+    sec-ch-ua-platform-version: '"8.0.0"'
+    sec-ch-ua: '"Not)A;Brand";v="8", "Chromium";v="138", "DuckDuckGo";v="138"'
+    sec-ch-ua-full-version: '"138.0.7204.179"'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-form-factors: '"Desktop"'
+    sec-ch-ua-mobile: '?0'
+    sec-ch-ua-wow64: '?0'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36'
+  expected:
+    headers:
+      sec-ch-ua-model: '"BAH2-W19"'
+      x-requested-with: com.duckduckgo.mobile.android
+      sec-ch-ua-platform: '"Android"'
+      sec-ch-ua-platform-version: '"8.0.0"'
+      sec-ch-ua: '"Not)A;Brand";v="8", "Chromium";v="138", "DuckDuckGo";v="138"'
+      sec-ch-ua-full-version: '"138.0.7204.179"'
+      sec-ch-ua-bitness: '""'
+      sec-ch-ua-arch: '""'
+      sec-ch-ua-form-factors: '"Desktop"'
+      sec-ch-ua-mobile: '?0'
+      sec-ch-ua-wow64: '?0'
+      user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: BAH2-W19
+      marketingName: 'MediaPad M5 Lite 10.1" Wi-Fi'
+      manufacturer: huawei
+      brand: huawei
+      display:
+        width: 1920
+        height: 1200
+        touch: true
+        size: 10.1
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'DuckDuckGo Privacy Browser'
+      modus: null
+      version: 138.0.7204.179
+      manufacturer: duck-duck-go
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 8.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 138.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'Nexus 5'
+      marketingName: 'Nexus 5'
+      manufacturer: lg
+      brand: google
+      display:
+        width: 1920
+        height: 1080
+        touch: true
+        size: 5.0
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 55.0.2883.87
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 6.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 55.0.2883.87
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 8.0.0; LG-H870DS Build/OPR1.170623.032) AppleWebKit/537.37 (KHTML, like Gecko) Chrome/68.0.3440.91 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 8.0.0; LG-H870DS Build/OPR1.170623.032) AppleWebKit/537.37 (KHTML, like Gecko) Chrome/68.0.3440.91 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: H870DS
+      marketingName: G6
+      manufacturer: lg
+      brand: lg
+      display:
+        width: 2880
+        height: 1440
+        touch: true
+        size: 5.7
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 68.0.3440.91
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 8.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 68.0.3440.91
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.94 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.94 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'Nexus 5X'
+      marketingName: 'Nexus 5X'
+      manufacturer: lg
+      brand: google
+      display:
+        width: 1920
+        height: 1080
+        touch: true
+        size: 5.2
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 122.0.6261.94
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 6.0.1
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 122.0.6261.94
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'
+    device:
+      architecture: ''
+      deviceName: 'Nexus 5X'
+      marketingName: 'Nexus 5X'
+      manufacturer: lg
+      brand: google
+      display:
+        width: 1920
+        height: 1080
+        touch: true
+        size: 5.2
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Google Bot'
+      modus: null
+      version: 2.1.0
+      manufacturer: google
+      type: search-bot
+      isbot: true
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 6.0.1
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 99.0.4844.84
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.224 Mobile Safari/537.36 (compatible; Google-InspectionTool/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.224 Mobile Safari/537.36 (compatible; Google-InspectionTool/1.0)'
+    device:
+      architecture: ''
+      deviceName: 'Nexus 5X'
+      marketingName: 'Nexus 5X'
+      manufacturer: lg
+      brand: google
+      display:
+        width: 1920
+        height: 1080
+        touch: true
+        size: 5.2
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Google-InspectionTool
+      modus: null
+      version: 1.0.0
+      manufacturer: google
+      type: search-bot
+      isbot: true
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 6.0.1
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 120.0.6099.224
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.52 Mobile Safari/537.36 (compatible; AdsBot-Google-Mobile; +http://www.google.com/mobile/adsbot.html)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.52 Mobile Safari/537.36 (compatible; AdsBot-Google-Mobile; +http://www.google.com/mobile/adsbot.html)'
+    device:
+      architecture: ''
+      deviceName: 'Nexus 5X'
+      marketingName: 'Nexus 5X'
+      manufacturer: lg
+      brand: google
+      display:
+        width: 1920
+        height: 1080
+        touch: true
+        size: 5.2
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'AdsBot Google-Mobile'
+      modus: null
+      version: null
+      manufacturer: google
+      type: search-bot
+      isbot: true
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 6.0.1
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 153.0.8010.52
+      manufacturer: google
+-
+  headers:
+    sec-ch-ua-platform: '"Android"'
+    sec-ch-ua: '"Chromium";v="122", "Not(A:Brand";v="24", "Microsoft Edge";v="122", "Edge Side Panel";v="122"'
+    sec-ch-ua-mobile: '?1'
+    user-agent: 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36 Edg/122.0.0.0'
+  expected:
+    headers:
+      sec-ch-ua-platform: '"Android"'
+      sec-ch-ua: '"Chromium";v="122", "Not(A:Brand";v="24", "Microsoft Edge";v="122", "Edge Side Panel";v="122"'
+      sec-ch-ua-mobile: '?1'
+      user-agent: 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36 Edg/122.0.0.0'
+    device:
+      architecture: ''
+      deviceName: 'Nexus 5'
+      marketingName: 'Nexus 5'
+      manufacturer: lg
+      brand: google
+      display:
+        width: 1920
+        height: 1080
+        touch: true
+        size: 5.0
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Edge Side Panel'
+      modus: null
+      version: 122.0.0
+      manufacturer: microsoft
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 6.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 122.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Android 7.0; Mobile; LG-M150; rv:68.0) Gecko/68.0 Firefox/68.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Android 7.0; Mobile; LG-M150; rv:68.0) Gecko/68.0 Firefox/68.0'
+    device:
+      architecture: ''
+      deviceName: M150
+      marketingName: 'Phoenix 3 LTE'
+      manufacturer: lg
+      brand: lg
+      display:
+        width: 854
+        height: 480
+        touch: true
+        size: 5.0
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Firefox
+      modus: null
+      version: 68.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 7.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Gecko
+      version: 68.0.0
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 7.1.2; M_bot_tab_71) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.117 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 7.1.2; M_bot_tab_71) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.117 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'M Bot Tab 71'
+      marketingName: 'M Bot Tab 71'
+      manufacturer: logicom
+      brand: logicom
+      display:
+        width: 1024
+        height: 600
+        touch: true
+        size: 7.0
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 81.0.4044.117
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 7.1.2
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 81.0.4044.117
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 7.1.2; M6 Note Build/N2G47H; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044409 Mobile Safari/537.36 V1_AND_SQ_7.9.8_999_YYB_D QQ/7.9.8.3935 NetType/4G WebP/0.3.0 Pixel/1080 StatusBarHeight/42'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 7.1.2; M6 Note Build/N2G47H; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044409 Mobile Safari/537.36 V1_AND_SQ_7.9.8_999_YYB_D QQ/7.9.8.3935 NetType/4G WebP/0.3.0 Pixel/1080 StatusBarHeight/42'
+    device:
+      architecture: ''
+      deviceName: 'M6 Note'
+      marketingName: 'M6 Note'
+      manufacturer: meizu
+      brand: meizu
+      display:
+        width: 1920
+        height: 1080
+        touch: true
+        size: 5.5
+      type: phablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'QQ Browser'
+      modus: null
+      version: 6.2.0
+      manufacturer: tencent
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 7.1.2
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 57.0.2987.132
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 8.1.0; zh-cn; 16 X Build/OPM1.171019.026) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/9.8 Mobile Safari/537.36 MiniQB/null'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 8.1.0; zh-cn; 16 X Build/OPM1.171019.026) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/9.8 Mobile Safari/537.36 MiniQB/null'
+    device:
+      architecture: ''
+      deviceName: 16X
+      marketingName: 16X
+      manufacturer: meizu
+      brand: meizu
+      display:
+        width: 2160
+        height: 1080
+        touch: true
+        size: 6.0
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'QQ Browser'
+      modus: null
+      version: 9.8.0
+      manufacturer: tencent
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 8.1.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 66.0.3359.126
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 6.0; zh-CN; MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/40.0.2214.89 UCBrowser/11.3.5.908 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 6.0; zh-CN; MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/40.0.2214.89 UCBrowser/11.3.5.908 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: MX6
+      marketingName: MX6
+      manufacturer: meizu
+      brand: meizu
+      display:
+        width: 1920
+        height: 1080
+        touch: true
+        size: 5.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'UC Browser'
+      modus: null
+      version: 11.3.5.908
+      manufacturer: ucweb
+      type: transcoder
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 6.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 40.0.2214.89
+      manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: 'Surface Pro'
+    sec-ch-ua-platform: macOS
+    sec-ch-ua-platform-version: 0.0.0
+    sec-ch-ua-full-version-list: '"Chrome";v="142.0.0.0"'
+    sec-ch-ua: '"Not;A Brand";v="99", "Google Chrome";v="142", "Chromium";v="142"'
+    sec-ch-ua-full-version: '"142.0.0.0"'
+    sec-ch-ua-bitness: '64'
+    sec-ch-ua-arch: x64
+    sec-ch-ua-mobile: '?0'
+    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 15_7_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36'
+  expected:
+    headers:
+      sec-ch-ua-model: 'Surface Pro'
+      sec-ch-ua-platform: macOS
+      sec-ch-ua-platform-version: 0.0.0
+      sec-ch-ua-full-version-list: '"Chrome";v="142.0.0.0"'
+      sec-ch-ua: '"Not;A Brand";v="99", "Google Chrome";v="142", "Chromium";v="142"'
+      sec-ch-ua-full-version: '"142.0.0.0"'
+      sec-ch-ua-bitness: '64'
+      sec-ch-ua-arch: x64
+      sec-ch-ua-mobile: '?0'
+      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 15_7_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36'
+    device:
+      architecture: x64
+      deviceName: 'Surface Pro'
+      marketingName: 'Surface Pro'
+      manufacturer: microsoft
+      brand: microsoft
+      display:
+        width: 1920
+        height: 1080
+        touch: true
+        size: 10.6
+      type: tablet
+      ismobile: false
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 64
+    client:
+      name: Chrome
+      modus: null
+      version: 142.0.0.0
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 64
+    os:
+      name: 'Mac OS X'
+      marketingName: 'Mac OS X'
+      version: 0.0.0
+      manufacturer: apple
+      bits: 64
+    engine:
+      name: Blink
+      version: 142.0.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 5.1; XT1058) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 5.1; XT1058) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: XT1058
+      marketingName: 'Moto X'
+      manufacturer: motorola
+      brand: motorola
+      display:
+        width: 1280
+        height: 720
+        touch: true
+        size: 4.7
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 81.0.4044.138
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 5.1.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 81.0.4044.138
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 6.0.1; XT1563) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.117 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 6.0.1; XT1563) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.117 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: XT1563
+      marketingName: 'Moto X Play'
+      manufacturer: motorola
+      brand: motorola
+      display:
+        width: 1920
+        height: 1080
+        touch: true
+        size: 5.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 81.0.4044.117
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 6.0.1
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 81.0.4044.117
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 7.1.1; Moto E (4) Plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 7.1.1; Moto E (4) Plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'Moto E4 Plus'
+      marketingName: 'Moto E4 Plus'
+      manufacturer: motorola
+      brand: motorola
+      display:
+        width: 1280
+        height: 720
+        touch: true
+        size: 5.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 73.0.3683.75
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 7.1.1
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 73.0.3683.75
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 8.1.0; Moto G (4)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36 PTST/261003.223935'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 8.1.0; Moto G (4)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36 PTST/261003.223935'
+    device:
+      architecture: ''
+      deviceName: 'Moto G4'
+      marketingName: 'Moto G4'
+      manufacturer: motorola
+      brand: motorola
+      display:
+        width: 1920
+        height: 1080
+        touch: true
+        size: 5.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: WebPageTest
+      modus: null
+      version: null
+      manufacturer: wpo-foundation
+      type: site-monitor
+      isbot: true
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 8.1.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 155.0.0.0
+      manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: '"SM-T585"'
+    sec-ch-ua-platform: '"Android"'
+    sec-ch-ua-platform-version: '"8.1.0"'
+    sec-ch-ua: '"Not)A;Brand";v="8", "Chromium";v="138", "Google Chrome";v="138"'
+    sec-ch-ua-full-version: '"138.0.7204.179"'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-form-factors: '"Desktop"'
+    sec-ch-ua-mobile: '?0'
+    sec-ch-ua-wow64: '?0'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36'
+  expected:
+    headers:
+      sec-ch-ua-model: '"SM-T585"'
+      sec-ch-ua-platform: '"Android"'
+      sec-ch-ua-platform-version: '"8.1.0"'
+      sec-ch-ua: '"Not)A;Brand";v="8", "Chromium";v="138", "Google Chrome";v="138"'
+      sec-ch-ua-full-version: '"138.0.7204.179"'
+      sec-ch-ua-bitness: '""'
+      sec-ch-ua-arch: '""'
+      sec-ch-ua-form-factors: '"Desktop"'
+      sec-ch-ua-mobile: '?0'
+      sec-ch-ua-wow64: '?0'
+      user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: SM-T585
+      marketingName: 'Galaxy Tab A 10.1" LTE (2016)'
+      manufacturer: samsung
+      brand: samsung
+      display:
+        width: 1920
+        height: 1200
+        touch: true
+        size: 10.1
+      type: fone-pad
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 138.0.0
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 8.1.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 138.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 4.3; en-us; SM-N900T Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 4.3; en-us; SM-N900T Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30'
+    device:
+      architecture: ''
+      deviceName: SM-N900T
+      marketingName: 'Galaxy Note 3 LTE (T-Mobile)'
+      manufacturer: samsung
+      brand: samsung
+      display:
+        width: 1920
+        height: 1080
+        touch: true
+        size: 5.7
+      type: phablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Android Webkit'
+      modus: null
+      version: 4.0.0
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 4.3.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: WebKit
+      version: 534.30.0
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 5.0; SM-N9000Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 5.0; SM-N9000Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: SM-N9000Q
+      marketingName: 'Galaxy Note 3'
+      manufacturer: samsung
+      brand: samsung
+      display:
+        width: 1920
+        height: 1080
+        touch: true
+        size: 5.7
+      type: phablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 81.0.4044.138
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 5.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 81.0.4044.138
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G532F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G532F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: SM-G532F
+      marketingName: 'Galaxy Grand Prime Plus'
+      manufacturer: samsung
+      brand: samsung
+      display:
+        width: 960
+        height: 540
+        touch: true
+        size: 5.0
+      type: phablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 106.0.0.0
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 6.0.1
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 106.0.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 4.1; en-us; GT-N7100 Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/15.4 Mobile Safari/534.30'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 4.1; en-us; GT-N7100 Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/15.4 Mobile Safari/534.30'
+    device:
+      architecture: ''
+      deviceName: GT-N7100
+      marketingName: 'Galaxy Note 2 LTE'
+      manufacturer: samsung
+      brand: samsung
+      display:
+        width: 1280
+        height: 720
+        touch: true
+        size: 5.5
+      type: phablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Android Webkit'
+      modus: null
+      version: 15.4.0
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 4.1.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: WebKit
+      version: 534.30.0
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G900F Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G900F Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: SM-G900F
+      marketingName: 'Galaxy S5 LTE'
+      manufacturer: samsung
+      brand: samsung
+      display:
+        width: 1920
+        height: 1080
+        touch: true
+        size: 5.1
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 55.0.2883.91
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 6.0.1
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 55.0.2883.91
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 7.0; SM-G930V Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 7.0; SM-G930V Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: SM-G930V
+      marketingName: 'Galaxy S7 (Verizon)'
+      manufacturer: samsung
+      brand: samsung
+      display:
+        width: 2560
+        height: 1440
+        touch: true
+        size: 5.1
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 59.0.3071.125
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 7.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 59.0.3071.125
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozlila/5.0 (Linux; Android 7.0; SM-G892A Bulid/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.107 Moblie Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozlila/5.0 (Linux; Android 7.0; SM-G892A Bulid/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.107 Moblie Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: SM-G892A
+      marketingName: 'Galaxy S8 Active'
+      manufacturer: samsung
+      brand: samsung
+      display:
+        width: 2960
+        height: 1440
+        touch: true
+        size: 5.8
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 60.0.3112.107
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 7.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 60.0.3112.107
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 4.4.2; GT-I9301I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 4.4.2; GT-I9301I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: GT-I9301I
+      marketingName: 'Galaxy S3 Neo Plus'
+      manufacturer: samsung
+      brand: samsung
+      display:
+        width: 1280
+        height: 720
+        touch: true
+        size: 4.8
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 81.0.4044.138
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 4.4.2
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 81.0.4044.138
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 5.1.1; SM-G925F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 5.1.1; SM-G925F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: SM-G925F
+      marketingName: 'Galaxy S6 Edge (Global)'
+      manufacturer: samsung
+      brand: samsung
+      display:
+        width: 2560
+        height: 1440
+        touch: true
+        size: 5.1
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 81.0.4044.138
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 5.1.1
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 81.0.4044.138
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G900V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.14 Mobile Safari/537.36,gzip(gfe),gzip(gfe)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G900V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.14 Mobile Safari/537.36,gzip(gfe),gzip(gfe)'
+    device:
+      architecture: ''
+      deviceName: SM-G900V
+      marketingName: 'Galaxy S5 CDMA (Verizon)'
+      manufacturer: samsung
+      brand: samsung
+      display:
+        width: 1920
+        height: 1080
+        touch: true
+        size: 5.1
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 83.0.4103.14
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 6.0.1
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 83.0.4103.14
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2559.1212 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2559.1212 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: SM-G900P
+      marketingName: 'Galaxy S5 (Sprint)'
+      manufacturer: samsung
+      brand: samsung
+      display:
+        width: 1920
+        height: 1080
+        touch: true
+        size: 5.1
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 41.0.2559.1212
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 5.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 41.0.2559.1212
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 4.4.2; GT-I9190) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.89 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 4.4.2; GT-I9190) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.89 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: GT-I9190
+      marketingName: 'Galaxy S4 Mini'
+      manufacturer: samsung
+      brand: samsung
+      display:
+        width: 960
+        height: 540
+        touch: true
+        size: 4.3
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 76.0.3809.89
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 4.4.2
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 76.0.3809.89
+      manufacturer: google
+-
+  headers:
+    sec-ch-ua-platform: '"Android"'
+    sec-ch-ua: '"Not.A/Brand";v="8", "Chromium";v="114", "Microsoft Edge";v="114"'
+    sec-ch-ua-mobile: '?1'
+    user-agent: 'Mozilla/5.0 (Linux; Android 8.0.0; SM-J330G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 EdgA/114.0.1823.74'
+  expected:
+    headers:
+      sec-ch-ua-platform: '"Android"'
+      sec-ch-ua: '"Not.A/Brand";v="8", "Chromium";v="114", "Microsoft Edge";v="114"'
+      sec-ch-ua-mobile: '?1'
+      user-agent: 'Mozilla/5.0 (Linux; Android 8.0.0; SM-J330G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 EdgA/114.0.1823.74'
+    device:
+      architecture: ''
+      deviceName: SM-J330G
+      marketingName: 'Galaxy J3 (2017)'
+      manufacturer: samsung
+      brand: samsung
+      display:
+        width: 1280
+        height: 720
+        touch: true
+        size: 5.0
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Edge
+      modus: null
+      version: 114.0.0
+      manufacturer: microsoft
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 8.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 114.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 4.4.2; SM-G355H Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.158 Mobile Safari/537.36 OPR/47.3.2249.130976'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 4.4.2; SM-G355H Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.158 Mobile Safari/537.36 OPR/47.3.2249.130976'
+    device:
+      architecture: ''
+      deviceName: SM-G355H
+      marketingName: 'Galaxy Core 2 Dual SIM'
+      manufacturer: samsung
+      brand: samsung
+      display:
+        width: 800
+        height: 480
+        touch: true
+        size: 4.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Opera Mobile'
+      modus: null
+      version: 47.3.2249.130976
+      manufacturer: opera
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 4.4.2
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 66.0.3359.158
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 8.0.0; SAMSUNG SM-G930V) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/11.2 Chrome/75.0.3770.143 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 8.0.0; SAMSUNG SM-G930V) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/11.2 Chrome/75.0.3770.143 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: SM-G930V
+      marketingName: 'Galaxy S7 (Verizon)'
+      manufacturer: samsung
+      brand: samsung
+      display:
+        width: 2560
+        height: 1440
+        touch: true
+        size: 5.1
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Samsung Browser'
+      modus: null
+      version: 11.2.0
+      manufacturer: samsung
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 8.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 75.0.3770.143
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 6.0.1; SM-C9000 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/043804 Mobile Safari/537.36 MicroMessenger/6.5.23.1180 NetType/4G Language/zh_CN'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 6.0.1; SM-C9000 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/043804 Mobile Safari/537.36 MicroMessenger/6.5.23.1180 NetType/4G Language/zh_CN'
+    device:
+      architecture: ''
+      deviceName: SM-C9000
+      marketingName: 'Galaxy C9 Pro Duos'
+      manufacturer: samsung
+      brand: samsung
+      display:
+        width: 1920
+        height: 1080
+        touch: true
+        size: 6.0
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'WeChat App'
+      modus: null
+      version: 6.5.23.1180
+      manufacturer: tencent
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 6.0.1
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 57.0.2987.132
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 7.0; SM-C5000 Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044005 Mobile Safari/537.36 MicroMessenger/6.6.5.1280(0x26060536) NetType/4G Language/zh_CN'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 7.0; SM-C5000 Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044005 Mobile Safari/537.36 MicroMessenger/6.6.5.1280(0x26060536) NetType/4G Language/zh_CN'
+    device:
+      architecture: ''
+      deviceName: SM-C5000
+      marketingName: 'Galaxy C5'
+      manufacturer: samsung
+      brand: samsung
+      display:
+        width: 1920
+        height: 1080
+        touch: true
+        size: null
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'WeChat App'
+      modus: null
+      version: 6.6.5.1280
+      manufacturer: tencent
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 7.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 57.0.2987.132
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 7.0; zh-CN; SM-G9550 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/40.0.2214.89 UCBrowser/11.7.0.953 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 7.0; zh-CN; SM-G9550 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/40.0.2214.89 UCBrowser/11.7.0.953 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: SM-G9550
+      marketingName: 'Galaxy S8+'
+      manufacturer: samsung
+      brand: samsung
+      display:
+        width: 2960
+        height: 1440
+        touch: true
+        size: 6.2
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'UC Browser'
+      modus: null
+      version: 11.7.0.953
+      manufacturer: ucweb
+      type: transcoder
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 7.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 40.0.2214.89
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 5.1.1; SM-J105H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 YaBrowser/20.2.0.215.00 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 5.1.1; SM-J105H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 YaBrowser/20.2.0.215.00 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: SM-J105H
+      marketingName: 'Galaxy J1 Mini Duos (2016)'
+      manufacturer: samsung
+      brand: samsung
+      display:
+        width: 800
+        height: 480
+        touch: true
+        size: 4.3
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 20.2.0.215.00
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 5.1.1
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 79.0.3945.117
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 6.0.1; SM-G935F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 YaBrowser/20.3.5.90.00 SA/1 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 6.0.1; SM-G935F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 YaBrowser/20.3.5.90.00 SA/1 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: SM-G935F
+      marketingName: 'Galaxy S7 Edge (Global)'
+      manufacturer: samsung
+      brand: samsung
+      display:
+        width: 2560
+        height: 1440
+        touch: true
+        size: 5.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 20.3.5.90.00
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 6.0.1
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 80.0.3987.132
+      manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: '"SM-T580"'
+    sec-ch-ua-platform: '"Android"'
+    sec-ch-ua-platform-version: '"8.1.0"'
+    sec-ch-ua: '"Not)A;Brand";v="8", "Chromium";v="138", "Google Chrome";v="138"'
+    sec-ch-ua-full-version: '"138.0.7204.180"'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-form-factors: '"Desktop"'
+    sec-ch-ua-mobile: '?0'
+    sec-ch-ua-wow64: '?0'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36'
+  expected:
+    headers:
+      sec-ch-ua-model: '"SM-T580"'
+      sec-ch-ua-platform: '"Android"'
+      sec-ch-ua-platform-version: '"8.1.0"'
+      sec-ch-ua: '"Not)A;Brand";v="8", "Chromium";v="138", "Google Chrome";v="138"'
+      sec-ch-ua-full-version: '"138.0.7204.180"'
+      sec-ch-ua-bitness: '""'
+      sec-ch-ua-arch: '""'
+      sec-ch-ua-form-factors: '"Desktop"'
+      sec-ch-ua-mobile: '?0'
+      sec-ch-ua-wow64: '?0'
+      user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: SM-T580
+      marketingName: 'Galaxy Tab A 10.1" Wi-Fi (2016)'
+      manufacturer: samsung
+      brand: samsung
+      display:
+        width: 1920
+        height: 1200
+        touch: true
+        size: 10.1
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 138.0.0
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 8.1.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 138.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 5.0.2; SAMSUNG SM-T550 Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/3.3 Chrome/38.0.2125.102 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 5.0.2; SAMSUNG SM-T550 Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/3.3 Chrome/38.0.2125.102 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: SM-T550
+      marketingName: 'Galaxy Tab A 9.7" Wi-Fi'
+      manufacturer: samsung
+      brand: samsung
+      display:
+        width: 1024
+        height: 768
+        touch: true
+        size: 9.7
+      type: tablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Samsung Browser'
+      modus: null
+      version: 3.3.0
+      manufacturer: samsung
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 5.0.2
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 38.0.2125.102
+      manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: '"SM-T580"'
+    sec-ch-ua-platform: '"Android"'
+    sec-ch-ua-platform-version: '"8.1.0"'
+    sec-ch-ua: '"Chromium";v="122", "Not(A:Brand";v="24", "Samsung Internet";v="26.0"'
+    sec-ch-ua-full-version: '"122.0.6261.120"'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-mobile: '?0'
+    sec-ch-ua-wow64: '?0'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/26.0 Chrome/122.0.0.0 Safari/537.36'
+  expected:
+    headers:
+      sec-ch-ua-model: '"SM-T580"'
+      sec-ch-ua-platform: '"Android"'
+      sec-ch-ua-platform-version: '"8.1.0"'
+      sec-ch-ua: '"Chromium";v="122", "Not(A:Brand";v="24", "Samsung Internet";v="26.0"'
+      sec-ch-ua-full-version: '"122.0.6261.120"'
+      sec-ch-ua-bitness: '""'
+      sec-ch-ua-arch: '""'
+      sec-ch-ua-mobile: '?0'
+      sec-ch-ua-wow64: '?0'
+      user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/26.0 Chrome/122.0.0.0 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: SM-T580
+      marketingName: 'Galaxy Tab A 10.1" Wi-Fi (2016)'
+      manufacturer: samsung
+      brand: samsung
+      display:
+        width: 1920
+        height: 1200
+        touch: true
+        size: 10.1
+      type: tablet
+      ismobile: false
+      istv: false
+      dualOrientation: true
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Samsung Browser'
+      modus: null
+      version: 26.0.0
+      manufacturer: samsung
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 8.1.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 122.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 8.0.0; SO-02J Build/34.4.B.1.135; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.138 Mobile Safari/537.36 Sleipnir/3.5.20'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 8.0.0; SO-02J Build/34.4.B.1.135; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.138 Mobile Safari/537.36 Sleipnir/3.5.20'
+    device:
+      architecture: ''
+      deviceName: SO-02J
+      marketingName: 'Xperia X Compact'
+      manufacturer: sony
+      brand: sony
+      display:
+        width: 1280
+        height: 720
+        touch: true
+        size: 4.6
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Sleipnir
+      modus: null
+      version: 3.5.20
+      manufacturer: fenrir
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 8.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 81.0.4044.138
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 4.4.4; C6503) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 4.4.4; C6503) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: C6503
+      marketingName: 'Xperia ZL'
+      manufacturer: sony
+      brand: sony
+      display:
+        width: 1920
+        height: 1080
+        touch: true
+        size: 5.0
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 77.0.3865.92
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 4.4.4
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 77.0.3865.92
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 8.0.0; G3212) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 YaBrowser/20.3.5.90.00 SA/1 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 8.0.0; G3212) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 YaBrowser/20.3.5.90.00 SA/1 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: G3212
+      marketingName: 'Xperia XA1 Ultra'
+      manufacturer: sony
+      brand: sony
+      display:
+        width: 1920
+        height: 1080
+        touch: true
+        size: 6.0
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 20.3.5.90.00
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 8.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 80.0.3987.132
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 8.1.0; A501DL Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.138 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 8.1.0; A501DL Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.138 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: A501DL
+      marketingName: A1
+      manufacturer: tcl
+      brand: alcatel
+      display:
+        width: 960
+        height: 480
+        touch: true
+        size: 5.0
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 81.0.4044.138
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 8.1.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 81.0.4044.138
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 8.1.0; BBE100-4 Build/OPM1.171019.026; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 8.1.0; BBE100-4 Build/OPM1.171019.026; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: BBE100-4
+      marketingName: 'KEY2 LE'
+      manufacturer: tcl
+      brand: blackberry
+      display:
+        width: 1620
+        height: 1080
+        touch: true
+        size: 4.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 138.0.7204.179
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 8.1.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 138.0.7204.179
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 8.1.0; TECNO SA7S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.101 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 8.1.0; TECNO SA7S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.101 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: SA7S
+      marketingName: 'Pop 2 Air'
+      manufacturer: tecno
+      brand: tecno
+      display:
+        width: 854
+        height: 480
+        touch: true
+        size: 5.0
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 75.0.3770.101
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 8.1.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 75.0.3770.101
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/4.038533357 Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1) QQBrowser/6.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/4.038533357 Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1) QQBrowser/6.0'
+    device:
+      architecture: ''
+      deviceName: 'Windows Desktop'
+      marketingName: 'Windows Desktop'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'QQ Browser'
+      modus: null
+      version: 6.0.0
+      manufacturer: tencent
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Windows
+      marketingName: 'Windows XP'
+      version: 5.1.0
+      manufacturer: microsoft
+      bits: 0
+    engine:
+      name: Trident
+      version: null
+      manufacturer: microsoft
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 7.0;) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; PetalBot;+https://webmaster.petalsearch.com/site/petalbot)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 7.0;) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; PetalBot;+https://webmaster.petalsearch.com/site/petalbot)'
+    device:
+      architecture: ''
+      deviceName: 'general Mobile Phone'
+      marketingName: 'general Mobile Phone'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: PetalBot
+      modus: null
+      version: null
+      manufacturer: aspiegel
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 7.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: WebKit
+      version: 537.36.0
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux;u;Android 4.2.2;zh-cn;) AppleWebKit/534.46 (KHTML,like Gecko) Version/5.1 Mobile Safari/10600.6.3 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux;u;Android 4.2.2;zh-cn;) AppleWebKit/534.46 (KHTML,like Gecko) Version/5.1 Mobile Safari/10600.6.3 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)'
+    device:
+      architecture: ''
+      deviceName: 'general Mobile Phone'
+      marketingName: 'general Mobile Phone'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: BaiduSpider
+      modus: null
+      version: 2.0.0
+      manufacturer: baidu
+      type: search-bot
+      isbot: true
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 4.2.2
+      manufacturer: google
+      bits: 0
+    engine:
+      name: WebKit
+      version: 534.46.0
+      manufacturer: apple
+-
+  headers:
+    sec-ch-ua-model: '""'
+    sec-ch-ua-platform: '"Android"'
+    sec-ch-ua-platform-version: '"8.0.0"'
+    sec-ch-ua: '"Not)A;Brand";v="8", "Chromium";v="138", "Brave";v="138"'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-mobile: '?1'
+    sec-ch-ua-wow64: '?0'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36'
+  expected:
+    headers:
+      sec-ch-ua-model: '""'
+      sec-ch-ua-platform: '"Android"'
+      sec-ch-ua-platform-version: '"8.0.0"'
+      sec-ch-ua: '"Not)A;Brand";v="8", "Chromium";v="138", "Brave";v="138"'
+      sec-ch-ua-bitness: '""'
+      sec-ch-ua-arch: '""'
+      sec-ch-ua-mobile: '?1'
+      sec-ch-ua-wow64: '?0'
+      user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Mobile Phone'
+      marketingName: 'general Mobile Phone'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Brave
+      modus: null
+      version: 138.0.0
+      manufacturer: brave-software
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 8.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 138.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 5.0) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; Bytespider; https://zhanzhang.toutiao.com/)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 5.0) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; Bytespider; https://zhanzhang.toutiao.com/)'
+    device:
+      architecture: ''
+      deviceName: 'general Mobile Phone'
+      marketingName: 'general Mobile Phone'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Bytespider
+      modus: null
+      version: null
+      manufacturer: bytedance
+      type: search-bot
+      isbot: true
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 5.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: WebKit
+      version: 537.36.0
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 5.0) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; TikTokSpider; ttspider-feedback@tiktok.com)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 5.0) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; TikTokSpider; ttspider-feedback@tiktok.com)'
+    device:
+      architecture: ''
+      deviceName: 'general Mobile Phone'
+      marketingName: 'general Mobile Phone'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: TikTokSpider
+      modus: null
+      version: null
+      manufacturer: bytedance
+      type: search-bot
+      isbot: true
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 5.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: WebKit
+      version: 537.36.0
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 8.1.0) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.138 Mobile Safari/537.36 DuckDuckGo/5'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 8.1.0) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.138 Mobile Safari/537.36 DuckDuckGo/5'
+    device:
+      architecture: ''
+      deviceName: 'general Mobile Phone'
+      marketingName: 'general Mobile Phone'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'DuckDuckGo Privacy Browser'
+      modus: null
+      version: 5.0.0
+      manufacturer: duck-duck-go
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 8.1.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 81.0.4044.138
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 7.0; P8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 7.0; P8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Mobile Phone'
+      marketingName: 'general Mobile Phone'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 81.0.4044.138
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 7.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 81.0.4044.138
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Android 4.4; Mobile; rv:41.0) Gecko/41.0 Firefox/41.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Android 4.4; Mobile; rv:41.0) Gecko/41.0 Firefox/41.0'
+    device:
+      architecture: ''
+      deviceName: 'general Mobile Phone'
+      marketingName: 'general Mobile Phone'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Firefox
+      modus: null
+      version: 41.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 4.4.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Gecko
+      version: 41.0.0
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Android 3.2.6; Mobile; rv:49.0) Gecko/49.0 Firefox/49.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Android 3.2.6; Mobile; rv:49.0) Gecko/49.0 Firefox/49.0'
+    device:
+      architecture: ''
+      deviceName: 'general Mobile Phone'
+      marketingName: 'general Mobile Phone'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Firefox
+      modus: null
+      version: 49.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 3.2.6
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Gecko
+      version: 49.0.0
+      manufacturer: mozilla

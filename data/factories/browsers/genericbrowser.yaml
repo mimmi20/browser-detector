@@ -199,6 +199,7 @@ rules:
   /yeti|naver\.com\/robots/i: naverbot
   /slack-imgproxy/i: slack-img-proxy
   '/snap[ -]url[ -]preview(?: service)?/i': 'snap url preview service'
+  /maklerlistebayern/i: makler-liste-bayern
   /magpie-crawler/i: 'magpie crawler'
   /oai-searchbot/i: oai-searchbot
   /uptimerobot/i: uptimerobot
@@ -658,6 +659,7 @@ rules:
   '/online link validator/i': 'online link validator'
   /monitorbacklinkswp/i: 'incoming links - wordpress plugin'
   /linkscanprocessor/i: link-scan-processor
+  /openbacklinksbot/i: open-backlinks-bot
   /linkscannerbot/i: link-scanner-bot
   /brokenlinksbot/i: broken-links-bot
   '/linkstats bot/i': 'linkstats bot'
@@ -964,7 +966,7 @@ rules:
   /tcms-api/i: kiwi-tcms-api
   /hotjava/i: hotjava
   /azureus/i: azureus-vuze
-  /java/i: java
+  /java(?!script)/i: java
   /fetchstream/i: fetch-stream
   /autoit/i: autoit
   /atvoice/i: atvoice
@@ -1389,7 +1391,6 @@ rules:
   /captainobviousbot/i: captain-obvious-bot
   /resellerenrichbot/i: reseller-enrich-bot
   /azureai-searchbot/i: azureai-searchbot
-  /maklerlistebayern/i: makler-liste-bayern
   /uphonewebbrowser/i: uphone-browser
   /accessiblewebbot/i: accessible-web-bot
   '/let.?s ?encrypt/i': lets-encrypt-validation
@@ -1591,6 +1592,8 @@ rules:
   /icresearch-w2/i: ic-research-w2
   /ct-sender-poc/i: ct-sender-poc
   /listsignalbot/i: list-signal-bot
+  /warp-research/i: warp-research
+  /clearscopebot/i: clearscope-bot
   /researchscan/i: researchscan
   /dataprovider/i: dataprovider-spider
   '/inet browser/i': inet-browser
@@ -1771,6 +1774,7 @@ rules:
   /chakloonbot/i: chakloon-bot
   /moonshotbot/i: moonshot-bot
   /metatronbot/i: metatron-bot
+  /kontaktybot/i: kontakty-bot
   /domainscan/i: 'domainscan server monitoring'
   /jobroboter/i: jobroboter
   /webwikibot/i: webwikibot
@@ -2067,6 +2071,7 @@ rules:
   /sofyabot/i: sofya-bot
   /sebot-wa/i: sebot-wa
   /pbn\.bot/i: pbn-bot
+  /quillbot/i: quillbot
   /whatcms/i: what-cms
   /phoenix/i: phoenix
   /kagibot/i: kagi-bot
@@ -2135,6 +2140,7 @@ rules:
   /kaupr/i: kaupr
   /wpbot/i: wp-bot
   /compatible; research/i: generic-bot
+  /javascript:/i: generic-bot
   /^mozilla\/[0-9]\.0 \(compatible\)$/i: generic-bot
   /^mozilla\/[0-9]\.0$/i: generic-bot
   /^mozilla$/i: generic-bot

@@ -400,6 +400,7 @@ final readonly class Headers
                         case 'meta-external-agent':
                         case 'avast secure browser':
                         case 'urlsuma-bot':
+                        case 'sender-bot':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 
@@ -507,6 +508,8 @@ final readonly class Headers
                         case 'product-lookout-bot':
                         case 'everphone-contact-bot':
                         case 'snapchat-ads':
+                        case 'clearscope-bot':
+                        case 'quillbot':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 
@@ -558,6 +561,7 @@ final readonly class Headers
                 if (is_string($lastClientCodename)) {
                     switch ($lastClientCodename) {
                         case 'chatgpt-user-bot':
+                        case 'sender-bot':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 

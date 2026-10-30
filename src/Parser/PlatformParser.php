@@ -226,7 +226,7 @@ final readonly class PlatformParser implements PlatformParserInterface
             '/\bprofile\b|gt\-c3312r|kkt20|lemon b556|spark284|obigo|jasmine\/1\.0|netfront|profile\/midp|j2me\/|java|micromaxx650|dolfin\/|yuanda50|wap[- ]?browser/i' => Os::javaos,
             '/macintosh|os=mac 10|camino|pubsub|integrity|mac ?os[;\/]/i' => Os::macintosh,
             '/risc/i' => Os::riscos,
-            '/os\/2|warp/i' => Os::os2,
+            '/os\/2|warp(?!-)/i' => Os::os2,
             '/cp\/m/i' => Os::cpm,
             '/nintendo wii|wiios/i' => Os::nintendoWiiOs,
             '/nintendo 3ds/i' => Os::nintendoOs,
