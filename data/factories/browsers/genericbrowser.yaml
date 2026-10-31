@@ -2276,7 +2276,7 @@ rules:
   /(?<!r)ning/i: ning
   /nbot/i: nbot
   /helm/i: helm
-  '/(?<![\.e])php/i': php
+  '/(?<![\.\b])php\b/i': php
   /^ds9/i: deep-search-9
   /Mstar;OWB/: 'origyn web browser'
   /OWB/: 'odyssey web browser'
