@@ -622,7 +622,7 @@ rules:
   /orangeradio/i: orange-radio
   /wordcookies/i: word-cookies
   /radioline/i: radio-line
-  '/kids listen|kids listen/i': kids-listen
+  '/kids listen/i': kids-listen
   '/pic collage/i': pic-collage
   /safeincloud/i: safe-in-cloud
   /radio\.de/i: 'radio.de app'
@@ -630,6 +630,7 @@ rules:
   /powerpoint/i: powerpoint
   /sachnoiapp|sachnoi\.app/i: sach-noi
   /^messenger\//i: messenger-x
+  '/canary mail/i': canary-mail
   '/classic fm/i': classic-fm
   /^browser\//i: browser-app
   /bookmobile/i: book-mobile

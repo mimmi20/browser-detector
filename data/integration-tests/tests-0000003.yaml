@@ -2447,12 +2447,12 @@
       simCount: 0
       bits: 0
     client:
-      name: CFNetwork
+      name: autofill_provider_extension
       modus: null
-      version: null
-      manufacturer: apple
-      type: application
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: service-agent
+      isbot: true
       bits: 0
     os:
       name: iOS

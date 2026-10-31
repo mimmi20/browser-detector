@@ -154,6 +154,7 @@ final readonly class PlatformParser implements PlatformParserInterface
             '/vidaa[\/;_\-]/i' => Os::vidaaOS,
             '/[\d\s]+lite browser\/(\d+\.\d+)$/i' => Os::hyperOS,
             '/myos\d+\.\d+/i' => Os::myOS,
+            '/linux like android/i' => Os::linux,
             '/andr0id|android[ _]?tv|g[o0][o0]gle[ _]tv|smarttv 4k|smart[ _]?tv|bravia ([248]k|bf1|vu3|tl2?)|android[ _]?uhd[ _]?tv/i' => Os::androidtv,
             '/sm-r[0-9]{3}/i' => Os::wearos,
             '/android (\d+[.\d]*);.+release\.go$/i' => Os::androidGo,

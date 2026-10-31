@@ -346,3 +346,12 @@ blackberry-work:
     search:
       - 'BLACKBERRY-WorkConnect'
   engine: null
+canary-mail:
+  name: 'Canary Mail'
+  manufacturer: cartasec
+  type: pim
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Canary Mail'
+  engine: null

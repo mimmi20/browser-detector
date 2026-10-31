@@ -1564,15 +1564,15 @@
       user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 11; P25_EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.01 Safari/537.36'
     device:
       architecture: ''
-      deviceName: 'general Tablet'
-      marketingName: 'general Tablet'
-      manufacturer: unknown
-      brand: unknown
+      deviceName: P25_EEA
+      marketingName: P25
+      manufacturer: teclast
+      brand: teclast
       display:
-        width: null
-        height: null
+        width: 1280
+        height: 800
         touch: true
-        size: null
+        size: 10.1
       type: tablet
       ismobile: true
       istv: false

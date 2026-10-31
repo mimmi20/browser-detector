@@ -1564,20 +1564,20 @@
       user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 11; itel S661LPN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.7727.56 YaBrowser/141.0.7390.122 SA/3 Mobile Safari/537.36'
     device:
       architecture: ''
-      deviceName: 'general iTel device'
-      marketingName: 'general iTel device'
+      deviceName: S661LPN
+      marketingName: 'Vision 3'
       manufacturer: itel
       brand: itel
       display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: mobile-device
+        width: 1600
+        height: 720
+        touch: true
+        size: 6.6
+      type: smartphone
       ismobile: true
       istv: false
-      dualOrientation: null
-      simCount: 0
+      dualOrientation: true
+      simCount: 2
       bits: 0
     client:
       name: 'Yandex Browser'

@@ -284,6 +284,10 @@ final class DetectorIntegrationTest extends TestCase
     {
         $result = $this->detector->getBrowser($headers);
 
+        // if (($headers['user-agent'] ?? '') === 'Nextcloud-Server-Crawler/34.0.1') {
+        //     var_dump($headers, $expected, $result);
+        // }
+
         self::assertSame($expected, $result);
     }
 
