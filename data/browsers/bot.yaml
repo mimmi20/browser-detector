@@ -161,14 +161,6 @@ ajaxsnapbot:
     class: null
     search: null
   engine: unknown
-'alyze bot':
-  name: 'alyze Bot'
-  manufacturer: alexandre-tourette
-  type: bot
-  version:
-    class: null
-    search: null
-  engine: unknown
 'amazon cloudfront':
   name: 'Amazon CloudFront'
   manufacturer: amazon
@@ -906,15 +898,6 @@ domainsbot:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - domainsbot
-  engine: unknown
-'domainscan server monitoring':
-  name: 'DomainScan Server Monitoring'
-  manufacturer: gh-software
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - DomainSCAN
   engine: unknown
 domainsigmacrawler:
   name: DomainSigmaCrawler
@@ -2702,16 +2685,6 @@ pad-bot:
     search:
       - PAD\-bot
   engine: unknown
-'page analyzer':
-  name: 'Page Analyzer'
-  manufacturer: ranks
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - 'Page Analyzer v'
-      - 'Page Analyzer'
-  engine: unknown
 pagebull:
   name: Pagebull
   manufacturer: unknown
@@ -3057,15 +3030,6 @@ refindbot:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - Refindbot
-  engine: unknown
-research-bot:
-  name: ResearchBot
-  manufacturer: unknown
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - ResearchBot
   engine: unknown
 restify:
   name: restify
@@ -3690,14 +3654,6 @@ steeler:
     search:
       - Steeler
   engine: unknown
-stormcrawler:
-  name: StormCrawler
-  manufacturer: digital-pebble
-  type: bot
-  version:
-    class: null
-    search: null
-  engine: null
 'stratagems kumo':
   name: 'Stratagems Kumo'
   manufacturer: unknown
@@ -3989,15 +3945,6 @@ turingmachine:
     search:
       - TuringMachine
   engine: webkit
-turlvalidator:
-  name: TURLValidator
-  manufacturer: unknown
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - TURLValidator
-  engine: unknown
 tweetbot:
   name: Tweetbot
   manufacturer: unknown
@@ -4042,33 +3989,6 @@ twitturls:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - Twitturls
-  engine: unknown
-typo3:
-  name: Typo3
-  manufacturer: unknown
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - TYPO3
-  engine: unknown
-'typo3 linkvalidator':
-  name: 'TYPO3 Linkvalidator'
-  manufacturer: unknown
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - TYPO3\-linkvalidator
-  engine: unknown
-typolinkvalidator:
-  name: TypoLinkvalidator
-  manufacturer: unknown
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - TypoLinkvalidator
   engine: unknown
 ucrawlr:
   name: uCrawlr
@@ -4838,15 +4758,6 @@ yahooexternalcache:
     class: null
     search: null
   engine: unknown
-yisouspider:
-  name: YisouSpider
-  manufacturer: yisou
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - YisouSpider
-  engine: unknown
 yodaobot:
   name: YodaoBot
   manufacturer: unknown
@@ -5190,14 +5101,6 @@ hokifybot:
 jaddjabot:
   name: jaddjabot
   manufacturer: unknown
-  type: bot
-  version:
-    class: null
-    search: null
-  engine: unknown
-'onlinestreet bot':
-  name: 'onlinestreet Bot'
-  manufacturer: hello-world-digital
   type: bot
   version:
     class: null

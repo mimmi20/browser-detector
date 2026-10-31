@@ -1,0 +1,4118 @@
+-
+  headers:
+    sec-ch-ua-platform: '"Windows"'
+    sec-ch-ua: '"Not;A=Brand";v="99", "Google Chrome";v="139", "Chromium";v="139"'
+    sec-ch-ua-mobile: '?0'
+    user-agent: 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'
+  expected:
+    headers:
+      sec-ch-ua-platform: '"Windows"'
+      sec-ch-ua: '"Not;A=Brand";v="99", "Google Chrome";v="139", "Chromium";v="139"'
+      sec-ch-ua-mobile: '?0'
+      user-agent: 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Google Bot'
+      modus: null
+      version: 2.1.0
+      manufacturer: google
+      type: search-bot
+      isbot: true
+      bits: 0
+    os:
+      name: Windows
+      marketingName: Windows
+      version: null
+      manufacturer: microsoft
+      bits: 0
+    engine:
+      name: Blink
+      version: 139.0.0
+      manufacturer: google
+-
+  headers:
+    sec-ch-ua-platform: '"macOS"'
+    sec-ch-ua: '"Not;A=Brand";v="99", "Google Chrome";v="139", "Chromium";v="139"'
+    sec-ch-ua-mobile: '?0'
+    user-agent: 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'
+  expected:
+    headers:
+      sec-ch-ua-platform: '"macOS"'
+      sec-ch-ua: '"Not;A=Brand";v="99", "Google Chrome";v="139", "Chromium";v="139"'
+      sec-ch-ua-mobile: '?0'
+      user-agent: 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Google Bot'
+      modus: null
+      version: 2.1.0
+      manufacturer: google
+      type: search-bot
+      isbot: true
+      bits: 0
+    os:
+      name: 'Mac OS X'
+      marketingName: 'Mac OS X'
+      version: null
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: Blink
+      version: 139.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/149.0.7827.200 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/149.0.7827.200 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Google Bot'
+      modus: null
+      version: 2.1.0
+      manufacturer: google
+      type: search-bot
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Blink
+      version: 149.0.7827.200
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 AppleWebKit/537.36 Chrome/149.0.7827.200 Safari/537.36 Google-Ads-Conversions'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 AppleWebKit/537.36 Chrome/149.0.7827.200 Safari/537.36 Google-Ads-Conversions'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Google Ads Conversions'
+      modus: null
+      version: null
+      manufacturer: google
+      type: search-bot
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Blink
+      version: 149.0.7827.200
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (en-us) AppleWebKit/537.36(KHTML, like Gecko; Google-Adwords-DisplayAds-WebRender;) Chrome/149.0.7827.200Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (en-us) AppleWebKit/537.36(KHTML, like Gecko; Google-Adwords-DisplayAds-WebRender;) Chrome/149.0.7827.200Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Google Adwords DisplayAds WebRender'
+      modus: null
+      version: null
+      manufacturer: google
+      type: search-bot
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Blink
+      version: 149.0.7827.200
+      manufacturer: google
+-
+  headers:
+    user-agent: 'HubSpot Connect 2.0 (http://dev.hubspot.com/) (namespace: CUSTOMER_AGENT_LOOP_ATTACHMENTS_URL_FETCHER) - customer-agent-loop-rpc-server-web'
+  expected:
+    headers:
+      user-agent: 'HubSpot Connect 2.0 (http://dev.hubspot.com/) (namespace: CUSTOMER_AGENT_LOOP_ATTACHMENTS_URL_FETCHER) - customer-agent-loop-rpc-server-web'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'HubSpot Connect'
+      modus: null
+      version: 2.0.0
+      manufacturer: hubspot-inc
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Turnitin (https://bit.ly/2UvnfoQ)'
+  expected:
+    headers:
+      user-agent: 'Turnitin (https://bit.ly/2UvnfoQ)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: TurnitinBot
+      modus: null
+      version: null
+      manufacturer: iparadigms
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    sec-ch-ua-platform: '"Windows"'
+    sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "Google Chrome";v="150"'
+    sec-ch-ua-mobile: '?0'
+    user-agent: 'meta-externalagent/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler)'
+  expected:
+    headers:
+      sec-ch-ua-platform: '"Windows"'
+      sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "Google Chrome";v="150"'
+      sec-ch-ua-mobile: '?0'
+      user-agent: 'meta-externalagent/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Meta ExternalAgent'
+      modus: null
+      version: 1.1.0
+      manufacturer: meta
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: Windows
+      marketingName: Windows
+      version: null
+      manufacturer: microsoft
+      bits: 0
+    engine:
+      name: Blink
+      version: 150.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/100.0.4896.127 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/100.0.4896.127 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: BingBot
+      modus: null
+      version: 2.0.0
+      manufacturer: microsoft
+      type: search-bot
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Blink
+      version: 100.0.4896.127
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 Firefox/35.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 Firefox/35.0'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Firefox
+      modus: null
+      version: 35.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; AdBot/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; AdBot/1.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; DomainExtractor/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; DomainExtractor/1.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; bot/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; bot/1.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; HRW-HubSpot-Company-Check/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; HRW-HubSpot-Company-Check/1.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; CT-WP-Scanner/1.0; +https://example.com/bot)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; CT-WP-Scanner/1.0; +https://example.com/bot)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; DomainCollector/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; DomainCollector/1.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; GeoSurge/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; GeoSurge/1.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; RecScan/2.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; RecScan/2.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: RecScan
+      modus: null
+      version: 2.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; URLValidator/1.4)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; URLValidator/1.4)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: URLValidator
+      modus: null
+      version: 1.4.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; platform-fingerprint/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; platform-fingerprint/1.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 NextJSDetector/2.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 NextJSDetector/2.0'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: NextJSDetector
+      modus: null
+      version: 2.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; JoomlaDetector/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; JoomlaDetector/1.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: JoomlaDetector
+      modus: null
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; StatusCheck/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; StatusCheck/1.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: StatusCheck
+      modus: null
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; ads-txt/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; ads-txt/1.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: ads-txt
+      modus: null
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; URLAliveChecker/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; URLAliveChecker/1.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: URLAliveChecker
+      modus: null
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; ePassage24-WebsiteFinder/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; ePassage24-WebsiteFinder/1.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: ePassage24-WebsiteFinder
+      modus: null
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; CVE-2026-4020-go-scanner/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; CVE-2026-4020-go-scanner/1.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: CVE-2026-4020-go-scanner
+      modus: null
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; relaion5b-source/0.1)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; relaion5b-source/0.1)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: relaion5b-source
+      modus: null
+      version: 0.1.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; VjusLogoPreview/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; VjusLogoPreview/1.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: VjusLogoPreview
+      modus: null
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; dead-link-checker/0.1; +https://git.woa.com/web_search/spider/fetcher/databus/agent-browser)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; dead-link-checker/0.1; +https://git.woa.com/web_search/spider/fetcher/databus/agent-browser)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: dead-link-checker
+      modus: null
+      version: 0.1.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; PrismBulkBuilderCorpusBot/1.0; +https://prismorchestrator.com)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; PrismBulkBuilderCorpusBot/1.0; +https://prismorchestrator.com)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: PrismBulkBuilderCorpusBot
+      modus: null
+      version: 1.0.0
+      manufacturer: prism
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; RecScan/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; RecScan/1.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; CosmosDataCompDownloader/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; CosmosDataCompDownloader/1.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: CosmosDataCompDownloader
+      modus: null
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; fp-dead-link-checker/1.0; +https://www.forward-publishing.com)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; fp-dead-link-checker/1.0; +https://www.forward-publishing.com)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: fp-dead-link-checker
+      modus: null
+      version: 1.0.0
+      manufacturer: forward-publishing
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; manma-tech/1.0; +https://manma.cc)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; manma-tech/1.0; +https://manma.cc)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: manma-tech
+      modus: null
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'mozilla firefox 5.0/krynos made'
+  expected:
+    headers:
+      user-agent: 'mozilla firefox 5.0/krynos made'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Firefox
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; foda-scanner/0.1)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; foda-scanner/0.1)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: foda-scanner
+      modus: null
+      version: 0.1.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; HaveInListEnricher/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; HaveInListEnricher/1.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: HaveInListEnricher
+      modus: null
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; research-scraper/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; research-scraper/1.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; AonsightMetaBot/1.0; +https://aonsight.com/bot)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; AonsightMetaBot/1.0; +https://aonsight.com/bot)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: AonsightMetaBot
+      modus: null
+      version: 1.0.0
+      manufacturer: aonsight
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; AvenodeRadar/0.1; +https://avenode.com/security)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; AvenodeRadar/0.1; +https://avenode.com/security)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: AvenodeRadar
+      modus: null
+      version: 0.1.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; FossickBot/1.0; +https://fossick.bot)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; FossickBot/1.0; +https://fossick.bot)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: FossickBot
+      modus: null
+      version: 1.0.0
+      manufacturer: datafreak
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; deadweb-prober/1.0; +https://github.com/Crawlora-org/dead-web-commoncrawl)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; deadweb-prober/1.0; +https://github.com/Crawlora-org/dead-web-commoncrawl)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: deadweb-prober
+      modus: null
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; StackyEnrich/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; StackyEnrich/1.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: StackyEnrich
+      modus: null
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 datacomp-large-downloader/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 datacomp-large-downloader/1.0'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: datacomp-large-downloader
+      modus: null
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; GoogleAdsTxtChecker/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; GoogleAdsTxtChecker/1.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: GoogleAdsTxtChecker
+      modus: null
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; Clearscopebot/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; Clearscopebot/1.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Clearscopebot
+      modus: null
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; GEO-Score-Validator/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; GEO-Score-Validator/1.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: GEO-Score-Validator
+      modus: null
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; Cartalys-Intel/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; Cartalys-Intel/1.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Cartalys-Intel
+      modus: null
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; RankariaBot/1.0; +https://soogle.ai)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; RankariaBot/1.0; +https://soogle.ai)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: RankariaBot
+      modus: null
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; ModemScanner/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; ModemScanner/1.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; GoFastSiteChecker/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; GoFastSiteChecker/1.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; Found8RootSignalPrefilter/1.0; +https://grotstudios.de)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; Found8RootSignalPrefilter/1.0; +https://grotstudios.de)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: WebKit
+      version: null
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 CMS-Detector/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 CMS-Detector/1.0'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; EnforceGateBot/0.1; +https://www.enforcegate.com/bot)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; EnforceGateBot/0.1; +https://www.enforcegate.com/bot)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 NextScanner/4.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 NextScanner/4.0'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; SecurityResearch/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; SecurityResearch/1.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; tld-netprobe/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; tld-netprobe/1.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: tld-netprobe
+      modus: null
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; impressum-research/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; impressum-research/1.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; Found8FreshDiscovery/1.0; +https://grotstudios.de)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; Found8FreshDiscovery/1.0; +https://grotstudios.de)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: WebKit
+      version: null
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; ArcusResearch/1.0; +https://arcuscompliance.com)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; ArcusResearch/1.0; +https://arcuscompliance.com)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; TrendizzPrefilter/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; TrendizzPrefilter/1.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; AxForge-prospect-research/1.0; +https://axforge.ai)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; AxForge-prospect-research/1.0; +https://axforge.ai)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; Unternehmensdaten-Pruefung/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; Unternehmensdaten-Pruefung/1.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; MentoDomainAudit/1.0; +https://mento.vc)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; MentoDomainAudit/1.0; +https://mento.vc)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; corpus-pdf-collector/0.1; +https://commoncrawl.org)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; corpus-pdf-collector/0.1; +https://commoncrawl.org)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; TechScanBot/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; TechScanBot/1.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: nbot
+      modus: null
+      version: 1.0.0
+      manufacturer: unknown
+      type: bot
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; ToolissBot/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; ToolissBot/1.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; FirmenCRM-Backfill/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; FirmenCRM-Backfill/1.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; GoScanner/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; GoScanner/1.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; atlas)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; atlas)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; TechStackCheck/1.0; +https://example.com/bot)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; TechStackCheck/1.0; +https://example.com/bot)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; SEPA-detect-research/1.0; +checkout payment-method survey)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; SEPA-detect-research/1.0; +checkout payment-method survey)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 ArtiwireEvidenceVerifier/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 ArtiwireEvidenceVerifier/1.0'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; JobAdPartner-CompanyVerify/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; JobAdPartner-CompanyVerify/1.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; canonical-image-ingest/1.0; +https://huggingface.co/)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; canonical-image-ingest/1.0; +https://huggingface.co/)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; RevenueBaseBot/1.0)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; RevenueBaseBot/1.0)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; DomainAtlas/1.0; +research snapshot)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; DomainAtlas/1.0; +research snapshot)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; MediaMonitor/1.0; +https://bawaggroup.com)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; MediaMonitor/1.0; +https://bawaggroup.com)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; SEOToolsOutreach/1.0; +https://seotools.info/bot)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; SEOToolsOutreach/1.0; +https://seotools.info/bot)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; Tier1Bot/1.0; +mailto:ops@example.com)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; Tier1Bot/1.0; +mailto:ops@example.com)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; EggheadLabsLeadResearch/1.0; +mailto:owais.ahmed.shariff@gmail.com) one-off polite homepage fingerprint; 1 request per domain'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; EggheadLabsLeadResearch/1.0; +mailto:owais.ahmed.shariff@gmail.com) one-off polite homepage fingerprint; 1 request per domain'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Mozilla Application Suite'
+      modus: null
+      version: 5.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'check_http/v2.2 (monitoring-plugins 2.2)'
+  expected:
+    headers:
+      user-agent: 'check_http/v2.2 (monitoring-plugins 2.2)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Nagios Check Http'
+      modus: null
+      version: null
+      manufacturer: nagios-enterprises
+      type: site-monitor
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: NaverMailApp/3.1.8
+  expected:
+    headers:
+      user-agent: NaverMailApp/3.1.8
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'NAVER Mail'
+      modus: null
+      version: 3.1.8
+      manufacturer: naver
+      type: pim
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; MixRankBot; crawler@mixrank.com)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; MixRankBot; crawler@mixrank.com)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'MixRank Bot'
+      modus: null
+      version: null
+      manufacturer: online-media-group
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; pplx-trust-judge/1.0; +https://www.perplexity.ai/)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; pplx-trust-judge/1.0; +https://www.perplexity.ai/)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Perplexity
+      modus: null
+      version: null
+      manufacturer: perplexity
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; river-rl-groundedness/1.0; +https://perplexity.ai)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; river-rl-groundedness/1.0; +https://perplexity.ai)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Perplexity
+      modus: null
+      version: null
+      manufacturer: perplexity
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'hggh PhantomJS Webspeed Test'
+  expected:
+    headers:
+      user-agent: 'hggh PhantomJS Webspeed Test'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: PhantomJS
+      modus: null
+      version: null
+      manufacturer: phantom-js
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: WebKit
+      version: null
+      manufacturer: apple
+-
+  headers:
+    user-agent: PHP-SOAP/8.5.6
+  expected:
+    headers:
+      user-agent: PHP-SOAP/8.5.6
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: PHP-SOAP
+      modus: null
+      version: 8.5.6
+      manufacturer: php-group
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'presearch_com Spider/Nutch-1.20'
+  expected:
+    headers:
+      user-agent: 'presearch_com Spider/Nutch-1.20'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Presearch Bot'
+      modus: null
+      version: null
+      manufacturer: presearch
+      type: search-bot
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: httpx.rb/1.2.5
+  expected:
+    headers:
+      user-agent: httpx.rb/1.2.5
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: httpx
+      modus: null
+      version: null
+      manufacturer: project-discovery
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: Python-urllib/2.7
+  expected:
+    headers:
+      user-agent: Python-urllib/2.7
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Python-urllib
+      modus: null
+      version: 2.7.0
+      manufacturer: python-software-foundation
+      type: library
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; ZGrab2/1.0; +https://zmap.io)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; ZGrab2/1.0; +https://zmap.io)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: zgrab
+      modus: null
+      version: 2.0.0
+      manufacturer: rwth-aachen
+      type: security-checker
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Screaming Frog SEO Spider/19.8'
+  expected:
+    headers:
+      user-agent: 'Screaming Frog SEO Spider/19.8'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Screaming Frog SEO Spider'
+      modus: null
+      version: 19.8.0
+      manufacturer: screaming-frog
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'SitemapCrawler/1.0 (semantic-visions.com crawler)'
+  expected:
+    headers:
+      user-agent: 'SitemapCrawler/1.0 (semantic-visions.com crawler)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: svEye
+      modus: null
+      version: null
+      manufacturer: semantic-visions
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; BacklinksExtendedBot)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; BacklinksExtendedBot)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: BacklinksExtendedBot
+      modus: null
+      version: null
+      manufacturer: semrush
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; DotBot/1.1; http://www.opensiteexplorer.org/dotbot, help@moz.com)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; DotBot/1.1; http://www.opensiteexplorer.org/dotbot, help@moz.com)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: DotBot
+      modus: null
+      version: 1.1.0
+      manufacturer: seomoz
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; SERankingBacklinksBot/1.0; +https://seranking.com/backlinks-crawler)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; SERankingBacklinksBot/1.0; +https://seranking.com/backlinks-crawler)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: SERankingBacklinksBot
+      modus: null
+      version: 1.0.0
+      manufacturer: ser-acquisition
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'AwarioSmartBot/1.0 (+https://awario.com/bots.html; bots@awario.com)'
+  expected:
+    headers:
+      user-agent: 'AwarioSmartBot/1.0 (+https://awario.com/bots.html; bots@awario.com)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: AwarioSmartBot
+      modus: null
+      version: 1.0.0
+      manufacturer: tech-fusion
+      type: search-bot
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: WebKit
+      version: null
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; AwarioBot/1.0; +https://awario.com/bots.html)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; AwarioBot/1.0; +https://awario.com/bots.html)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: AwarioBot
+      modus: null
+      version: 1.0.0
+      manufacturer: tech-fusion
+      type: search-bot
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown

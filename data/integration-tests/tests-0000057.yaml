@@ -1,0 +1,4100 @@
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; Find X2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.140 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 10; Find X2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.140 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'Find X2'
+      marketingName: 'Find X2'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 3168
+        height: 1440
+        touch: true
+        size: 6.78
+      type: phablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 131.0.6778.140
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 10.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 131.0.6778.140
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; Reno4 Pro IN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.183 Mobile Safari/537.36 EdgA/138.0.3351.121'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 10; Reno4 Pro IN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.183 Mobile Safari/537.36 EdgA/138.0.3351.121'
+    device:
+      architecture: ''
+      deviceName: 'Reno 4 Pro IN'
+      marketingName: 'Reno 4 Pro 4G (India)'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2400
+        height: 1080
+        touch: true
+        size: 6.5
+      type: phablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Edge Mobile for Android'
+      modus: null
+      version: 138.0.3351.121
+      manufacturer: microsoft
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 10.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 138.0.7204.183
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; Find X2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.7258.138 Mobile Safari/537.36 EdgA/139.0.3405.111'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 10; Find X2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.7258.138 Mobile Safari/537.36 EdgA/139.0.3405.111'
+    device:
+      architecture: ''
+      deviceName: 'Find X2'
+      marketingName: 'Find X2'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 3168
+        height: 1440
+        touch: true
+        size: 6.78
+      type: phablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Edge Mobile for Android'
+      modus: null
+      version: 139.0.3405.111
+      manufacturer: microsoft
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 10.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 139.0.7258.138
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; realme RMX2180; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/150.0.7871.46 Mobile Safari/537.36 Sapphire/1.11.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; realme RMX2180; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/150.0.7871.46 Mobile Safari/537.36 Sapphire/1.11.1'
+    device:
+      architecture: ''
+      deviceName: RMX2180
+      marketingName: C15
+      manufacturer: bbk
+      brand: realme
+      display:
+        width: 1600
+        height: 720
+        touch: true
+        size: 6.5
+      type: phablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Bing Search'
+      modus: null
+      version: 1.11.1
+      manufacturer: microsoft
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 150.0.7871.46
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; Reno4 Pro IN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36 OPR/77.0.4054.90'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 10; Reno4 Pro IN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36 OPR/77.0.4054.90'
+    device:
+      architecture: ''
+      deviceName: 'Reno 4 Pro IN'
+      marketingName: 'Reno 4 Pro 4G (India)'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2400
+        height: 1080
+        touch: true
+        size: 6.5
+      type: phablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Opera Mobile'
+      modus: null
+      version: 77.0.4054.90
+      manufacturer: opera
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 10.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 91.0.4472.101
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; Find X2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.234 Mobile Safari/537.36 OPR/107.0.5012.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 10; Find X2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.234 Mobile Safari/537.36 OPR/107.0.5012.0'
+    device:
+      architecture: ''
+      deviceName: 'Find X2'
+      marketingName: 'Find X2'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 3168
+        height: 1440
+        touch: true
+        size: 6.78
+      type: phablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Opera Mobile'
+      modus: null
+      version: 107.0.5012.0
+      manufacturer: opera
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 10.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 120.0.6099.234
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; RMX2041) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.51 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; RMX2041) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.51 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: RMX2041
+      marketingName: 6i
+      manufacturer: bbk
+      brand: realme
+      display:
+        width: 1600
+        height: 720
+        touch: true
+        size: 6.5
+      type: phablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Yandex Search Browser'
+      modus: null
+      version: 26.47.1
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 10.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 146.0.7680.51
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; V2509A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.96 Mobile Safari/537.36 AlohaBrowser/4.1.4'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; V2509A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.96 Mobile Safari/537.36 AlohaBrowser/4.1.4'
+    device:
+      architecture: ''
+      deviceName: V2509A
+      marketingName: 'X300 5G'
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 2640
+        height: 1216
+        touch: true
+        size: 6.31
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Aloha Browser'
+      modus: null
+      version: 4.1.4
+      manufacturer: aloha-mobile
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 83.0.4103.96
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; V2571A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.76 SP-engine/3.17.0 baiduboxapp/13.76.0.10 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; V2571A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.76 SP-engine/3.17.0 baiduboxapp/13.76.0.10 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: V2571A
+      marketingName: S60
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 2750
+        height: 1260
+        touch: true
+        size: 6.59
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 13.76.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 13.76.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; V2561A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.65 SP-engine/3.59.0 bd_dvt/0 baiduboxapp/15.65.0.10 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; V2561A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.65 SP-engine/3.59.0 bd_dvt/0 baiduboxapp/15.65.0.10 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: V2561A
+      marketingName: 'Y600 Pro'
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 2800
+        height: 1260
+        touch: true
+        size: 6.83
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 15.65.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.65.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; V2559A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.61 SP-engine/3.58.0 bd_dvt/0 baiduboxapp/15.62.0.11 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; V2559A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.61 SP-engine/3.58.0 bd_dvt/0 baiduboxapp/15.62.0.11 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: V2559A
+      marketingName: 'Y60 5G'
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 1600
+        height: 720
+        touch: true
+        size: 6.74
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 15.62.0.11
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.61.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; V2551A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.61 SP-engine/3.58.0 bd_dvt/0 baiduboxapp/15.62.0.11 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; V2551A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.61 SP-engine/3.58.0 bd_dvt/0 baiduboxapp/15.62.0.11 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: V2551A
+      marketingName: 'iQOO Z11 (China)'
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 2800
+        height: 1260
+        touch: true
+        size: 6.83
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 15.62.0.11
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.61.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; V2548A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; V2548A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: V2548A
+      marketingName: 'X300s 5G'
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 2800
+        height: 1260
+        touch: true
+        size: 6.78
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App Lite'
+      modus: null
+      version: 7.8.0.11
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.48.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; V2548A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; V2548A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: V2548A
+      marketingName: 'X300s 5G'
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 2800
+        height: 1260
+        touch: true
+        size: 6.78
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App Lite'
+      modus: null
+      version: 7.8.0.11
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 138.0.7204.179
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; V2532A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.61 SP-engine/3.58.0 bd_dvt/0 baiduboxapp/15.62.0.11 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; V2532A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.61 SP-engine/3.58.0 bd_dvt/0 baiduboxapp/15.62.0.11 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: V2532A
+      marketingName: 'iQOO Z11x'
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 2344
+        height: 1080
+        touch: true
+        size: 6.76
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 15.62.0.11
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.61.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; V2531A Build/BP2A.250605.031.A3_V1920L11; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.40 SP-engine/3.58.0 bd_dvt/0 baiduboxapp/15.63.0.10 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; V2531A Build/BP2A.250605.031.A3_V1920L11; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.40 SP-engine/3.58.0 bd_dvt/0 baiduboxapp/15.63.0.10 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: V2531A
+      marketingName: 'Y500i 5G'
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 1570
+        height: 720
+        touch: true
+        size: 6.75
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 15.63.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 13.40.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; V2531A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.6.0.10 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; V2531A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.6.0.10 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: V2531A
+      marketingName: 'Y500i 5G'
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 1570
+        height: 720
+        touch: true
+        size: 6.75
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App Lite'
+      modus: null
+      version: 7.6.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.48.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; V2528A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.56 SP-engine/3.57.0 bd_dvt/0 baiduboxapp/15.57.1.10 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; V2528A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.56 SP-engine/3.57.0 bd_dvt/0 baiduboxapp/15.57.1.10 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: V2528A
+      marketingName: 'S50 5G'
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 2750
+        height: 1260
+        touch: true
+        size: 6.59
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 15.57.1.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.56.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; V2528A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; V2528A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: V2528A
+      marketingName: 'S50 5G'
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 2750
+        height: 1260
+        touch: true
+        size: 6.59
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App Lite'
+      modus: null
+      version: 7.8.0.11
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.48.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; V2528A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36 SP-engine/2.81.0 matrixstyle/0 tomas/6.99.0.92 lite baiduboxapp/6.99.0.92 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; V2528A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36 SP-engine/2.81.0 matrixstyle/0 tomas/6.99.0.92 lite baiduboxapp/6.99.0.92 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: V2528A
+      marketingName: 'S50 5G'
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 2750
+        height: 1260
+        touch: true
+        size: 6.59
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App Lite'
+      modus: null
+      version: 6.99.0.92
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 138.0.7204.179
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; V2520A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/3.55.0 bd_dvt/0 baiduboxapp/15.48.0.10 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; V2520A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/3.55.0 bd_dvt/0 baiduboxapp/15.48.0.10 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: V2520A
+      marketingName: 'iQOO Neo 11 5G'
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 3168
+        height: 1440
+        touch: true
+        size: 6.82
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 15.48.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.48.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; V2520A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/2.81.0 matrixstyle/0 flyflow/7.2.0.31 lite baiduboxapp/7.2.0.31 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; V2520A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/2.81.0 matrixstyle/0 flyflow/7.2.0.31 lite baiduboxapp/7.2.0.31 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: V2520A
+      marketingName: 'iQOO Neo 11 5G'
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 3168
+        height: 1440
+        touch: true
+        size: 6.82
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App Lite'
+      modus: null
+      version: 7.2.0.31
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.48.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; V2520A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/134.0.6998.135 Mobile Safari/537.36 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; V2520A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/134.0.6998.135 Mobile Safari/537.36 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: V2520A
+      marketingName: 'iQOO Neo 11 5G'
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 3168
+        height: 1440
+        touch: true
+        size: 6.82
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App Lite'
+      modus: null
+      version: 7.8.0.11
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 134.0.6998.135
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; V2516A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.60 SP-engine/3.57.0 bd_dvt/0 baiduboxapp/15.60.0.10 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; V2516A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.60 SP-engine/3.57.0 bd_dvt/0 baiduboxapp/15.60.0.10 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: V2516A
+      marketingName: 'Y500 Pro 5G'
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 2800
+        height: 1260
+        touch: true
+        size: 6.67
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 15.60.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.60.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; V2516A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.9.0.10 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; V2516A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.9.0.10 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: V2516A
+      marketingName: 'Y500 Pro 5G'
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 2800
+        height: 1260
+        touch: true
+        size: 6.67
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App Lite'
+      modus: null
+      version: 7.9.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 138.0.7204.179
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; V2509A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.61 SP-engine/3.58.0 bd_dvt/0 baiduboxapp/15.62.0.11 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; V2509A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.61 SP-engine/3.58.0 bd_dvt/0 baiduboxapp/15.62.0.11 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: V2509A
+      marketingName: 'X300 5G'
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 2640
+        height: 1216
+        touch: true
+        size: 6.31
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 15.62.0.11
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.61.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; V2509A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; V2509A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: V2509A
+      marketingName: 'X300 5G'
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 2640
+        height: 1216
+        touch: true
+        size: 6.31
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App Lite'
+      modus: null
+      version: 7.8.0.11
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 138.0.7204.179
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; V2502DA Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.40 SP-engine/3.58.0 bd_dvt/0 baiduboxapp/15.63.0.10 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; V2502DA Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.40 SP-engine/3.58.0 bd_dvt/0 baiduboxapp/15.63.0.10 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: V2502DA
+      marketingName: 'X300 Pro'
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 2800
+        height: 1260
+        touch: true
+        size: 6.78
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 15.63.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 13.40.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; V2436A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.56 SP-engine/3.57.0 bd_dvt/2 baiduboxapp/15.57.1.10 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; V2436A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.56 SP-engine/3.57.0 bd_dvt/2 baiduboxapp/15.57.1.10 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: V2436A
+      marketingName: 'X Fold 5'
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 2480
+        height: 2200
+        touch: true
+        size: 8.03
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 15.57.1.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.56.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; V2436A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; V2436A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: V2436A
+      marketingName: 'X Fold 5'
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 2480
+        height: 2200
+        touch: true
+        size: 8.03
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App Lite'
+      modus: null
+      version: 7.8.0.11
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.48.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; RMX8899 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.65 SP-engine/3.59.0 bd_dvt/0 baiduboxapp/15.65.0.10 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; RMX8899 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.65 SP-engine/3.59.0 bd_dvt/0 baiduboxapp/15.65.0.10 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: RMX8899
+      marketingName: 'Neo 8'
+      manufacturer: bbk
+      brand: realme
+      display:
+        width: 2772
+        height: 1272
+        touch: true
+        size: 6.78
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 15.65.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.65.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; RMX5112 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.61 SP-engine/3.57.0 bd_dvt/0 baiduboxapp/15.61.0.11 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; RMX5112 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.61 SP-engine/3.57.0 bd_dvt/0 baiduboxapp/15.61.0.11 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: RMX5112
+      marketingName: 15T
+      manufacturer: bbk
+      brand: realme
+      display:
+        width: 2372
+        height: 1080
+        touch: true
+        size: 6.57
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 15.61.0.11
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.61.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; RMX5075 Build/UKQ1.231108.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.40 SP-engine/3.59.0 bd_dvt/0 baiduboxapp/15.64.0.10 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; RMX5075 Build/UKQ1.231108.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.40 SP-engine/3.59.0 bd_dvt/0 baiduboxapp/15.64.0.10 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: RMX5075
+      marketingName: '14 5G'
+      manufacturer: bbk
+      brand: realme
+      display:
+        width: 2400
+        height: 1080
+        touch: true
+        size: 6.67
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 15.64.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 13.40.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; RMX3989 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; RMX3989 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: RMX3989
+      marketingName: '13 Pro 5G'
+      manufacturer: bbk
+      brand: realme
+      display:
+        width: 2412
+        height: 1080
+        touch: true
+        size: 6.7
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App Lite'
+      modus: null
+      version: 7.8.0.11
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 138.0.7204.179
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; RMX3953 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.65 SP-engine/3.59.0 bd_dvt/0 baiduboxapp/15.65.0.10 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; RMX3953 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.65 SP-engine/3.59.0 bd_dvt/0 baiduboxapp/15.65.0.10 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: RMX3953
+      marketingName: 'V60 Pro'
+      manufacturer: bbk
+      brand: realme
+      display:
+        width: 1604
+        height: 720
+        touch: true
+        size: 6.67
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 15.65.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.65.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; RMX3953 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36 SP-engine/2.87.0 baiduboxapp/13.49.0.10 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; RMX3953 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36 SP-engine/2.87.0 baiduboxapp/13.49.0.10 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: RMX3953
+      marketingName: 'V60 Pro'
+      manufacturer: bbk
+      brand: realme
+      display:
+        width: 1604
+        height: 720
+        touch: true
+        size: 6.67
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 13.49.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 138.0.7204.179
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; RMX3953 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; RMX3953 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: RMX3953
+      marketingName: 'V60 Pro'
+      manufacturer: bbk
+      brand: realme
+      display:
+        width: 1604
+        height: 720
+        touch: true
+        size: 6.67
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App Lite'
+      modus: null
+      version: 7.8.0.11
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 138.0.7204.179
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; RMX3948 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.56 SP-engine/3.57.0 bd_dvt/0 baiduboxapp/15.58.0.10 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; RMX3948 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.56 SP-engine/3.57.0 bd_dvt/0 baiduboxapp/15.58.0.10 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: RMX3948
+      marketingName: V70s
+      manufacturer: bbk
+      brand: realme
+      display:
+        width: 1604
+        height: 720
+        touch: true
+        size: 6.67
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 15.58.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.56.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; RMX3948 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.32 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/6.96.0.10 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; RMX3948 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.32 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/6.96.0.10 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: RMX3948
+      marketingName: V70s
+      manufacturer: bbk
+      brand: realme
+      display:
+        width: 1604
+        height: 720
+        touch: true
+        size: 6.67
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App Lite'
+      modus: null
+      version: 6.96.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.32.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; RMX3948 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; RMX3948 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: RMX3948
+      marketingName: V70s
+      manufacturer: bbk
+      brand: realme
+      display:
+        width: 1604
+        height: 720
+        touch: true
+        size: 6.67
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App Lite'
+      modus: null
+      version: 7.8.0.11
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 138.0.7204.179
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; PMT110 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.76 SP-engine/3.17.0 baiduboxapp/13.76.0.10 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; PMT110 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.76 SP-engine/3.17.0 baiduboxapp/13.76.0.10 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: PMT110
+      marketingName: 'A6s Pro'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2372
+        height: 1080
+        touch: true
+        size: 6.57
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 13.76.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 13.76.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; PMM110 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.60 SP-engine/3.57.0 bd_dvt/0 baiduboxapp/15.60.0.10 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; PMM110 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.60 SP-engine/3.57.0 bd_dvt/0 baiduboxapp/15.60.0.10 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: PMM110
+      marketingName: 'Reno 16 5G'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2640
+        height: 1216
+        touch: true
+        size: 6.32
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 15.60.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.60.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; PME110 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.56 SP-engine/3.57.0 bd_dvt/0 baiduboxapp/15.58.0.10 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; PME110 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.56 SP-engine/3.57.0 bd_dvt/0 baiduboxapp/15.58.0.10 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: PME110
+      marketingName: 'Find X9s Pro'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2640
+        height: 1216
+        touch: true
+        size: 6.32
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 15.58.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.56.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; PMD110 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.60 SP-engine/3.57.0 bd_dvt/0 baiduboxapp/15.60.0.10 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; PMD110 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.60 SP-engine/3.57.0 bd_dvt/0 baiduboxapp/15.60.0.10 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: PMD110
+      marketingName: 'Reno 15c 5G'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2760
+        height: 1256
+        touch: true
+        size: 6.59
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 15.60.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.60.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; PLY110 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; PLY110 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: PLY110
+      marketingName: 'Turbo 6V'
+      manufacturer: bbk
+      brand: oneplus
+      display:
+        width: 2772
+        height: 1272
+        touch: true
+        size: 6.78
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App Lite'
+      modus: null
+      version: 7.8.0.11
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.48.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; PLY110 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.76 SP-engine/3.17.0 baiduboxapp/13.76.0.10 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; PLY110 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.76 SP-engine/3.17.0 baiduboxapp/13.76.0.10 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: PLY110
+      marketingName: 'Turbo 6V'
+      manufacturer: bbk
+      brand: oneplus
+      display:
+        width: 2772
+        height: 1272
+        touch: true
+        size: 6.78
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 13.76.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 13.76.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; PLY110 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.9.0.10 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; PLY110 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.9.0.10 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: PLY110
+      marketingName: 'Turbo 6V'
+      manufacturer: bbk
+      brand: oneplus
+      display:
+        width: 2772
+        height: 1272
+        touch: true
+        size: 6.78
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App Lite'
+      modus: null
+      version: 7.9.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 138.0.7204.179
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; PLW110 Build/AP3A.240617.008; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.61 SP-engine/3.58.0 bd_dvt/0 baiduboxapp/15.62.0.11 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; PLW110 Build/AP3A.240617.008; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.61 SP-engine/3.58.0 bd_dvt/0 baiduboxapp/15.62.0.11 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: PLW110
+      marketingName: 'Reno 15 5G (China)'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2640
+        height: 1216
+        touch: true
+        size: 6.32
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 15.62.0.11
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.61.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; PLW110 Build/AP3A.240617.008; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; PLW110 Build/AP3A.240617.008; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: PLW110
+      marketingName: 'Reno 15 5G (China)'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2640
+        height: 1216
+        touch: true
+        size: 6.32
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App Lite'
+      modus: null
+      version: 7.8.0.11
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.48.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; PLV110 Build/AP3A.240617.008; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.61 SP-engine/3.58.0 bd_dvt/0 baiduboxapp/15.62.0.11 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; PLV110 Build/AP3A.240617.008; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.61 SP-engine/3.58.0 bd_dvt/0 baiduboxapp/15.62.0.11 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: PLV110
+      marketingName: 'Reno 15 Pro 5G (China)'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2772
+        height: 1272
+        touch: true
+        size: 6.78
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 15.62.0.11
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.61.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; PLV110 Build/AP3A.240617.008; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; PLV110 Build/AP3A.240617.008; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: PLV110
+      marketingName: 'Reno 15 Pro 5G (China)'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2772
+        height: 1272
+        touch: true
+        size: 6.78
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App Lite'
+      modus: null
+      version: 7.8.0.11
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.48.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; PLU110 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.61 SP-engine/3.57.0 bd_dvt/0 baiduboxapp/15.61.0.11 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; PLU110 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.61 SP-engine/3.57.0 bd_dvt/0 baiduboxapp/15.61.0.11 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: PLU110
+      marketingName: 'Turbo 6'
+      manufacturer: bbk
+      brand: oneplus
+      display:
+        width: 2772
+        height: 1272
+        touch: true
+        size: 6.78
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 15.61.0.11
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.61.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; PLS120 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.52 SP-engine/3.56.0 bd_dvt/0 baiduboxapp/15.52.0.10 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; PLS120 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.52 SP-engine/3.56.0 bd_dvt/0 baiduboxapp/15.52.0.10 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: PLS120
+      marketingName: 'A6 5G'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2372
+        height: 1080
+        touch: true
+        size: 6.57
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 15.52.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.52.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; PLS120 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/2.81.0 matrixstyle/0 tomas/6.99.0.92 lite baiduboxapp/6.99.0.92 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; PLS120 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/2.81.0 matrixstyle/0 tomas/6.99.0.92 lite baiduboxapp/6.99.0.92 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: PLS120
+      marketingName: 'A6 5G'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2372
+        height: 1080
+        touch: true
+        size: 6.57
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App Lite'
+      modus: null
+      version: 6.99.0.92
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.48.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; PLR110 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.76 SP-engine/3.17.0 baiduboxapp/13.76.0.10 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; PLR110 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.76 SP-engine/3.17.0 baiduboxapp/13.76.0.10 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: PLR110
+      marketingName: 'Ace 6T'
+      manufacturer: bbk
+      brand: oneplus
+      display:
+        width: 2800
+        height: 1272
+        touch: true
+        size: 6.83
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 13.76.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 13.76.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; PLQ110 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.42 SP-engine/3.55.0 bd_dvt/0 baiduboxapp/15.42.0.11 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; PLQ110 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.42 SP-engine/3.55.0 bd_dvt/0 baiduboxapp/15.42.0.11 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: PLQ110
+      marketingName: 'Ace 6'
+      manufacturer: bbk
+      brand: oneplus
+      display:
+        width: 2800
+        height: 1272
+        touch: true
+        size: 6.83
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 15.42.0.11
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.42.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; PLQ110 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; PLQ110 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: PLQ110
+      marketingName: 'Ace 6'
+      manufacturer: bbk
+      brand: oneplus
+      display:
+        width: 2800
+        height: 1272
+        touch: true
+        size: 6.83
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App Lite'
+      modus: null
+      version: 7.8.0.11
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 138.0.7204.179
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; PLP110 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.40 SP-engine/3.59.0 bd_dvt/2 baiduboxapp/15.64.0.10 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; PLP110 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.40 SP-engine/3.59.0 bd_dvt/2 baiduboxapp/15.64.0.10 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: PLP110
+      marketingName: 'Find N6'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2480
+        height: 2248
+        touch: true
+        size: 8.12
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 15.64.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 13.40.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; PLL110 Build/TP1A.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.5.0.10 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; PLL110 Build/TP1A.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.5.0.10 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: PLL110
+      marketingName: 'A6 GT'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2800
+        height: 1280
+        touch: true
+        size: 6.8
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App Lite'
+      modus: null
+      version: 7.5.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.48.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; PLL110 Build/TP1A.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.40 SP-engine/3.56.0 bd_dvt/0 baiduboxapp/15.51.0.10 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; PLL110 Build/TP1A.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.40 SP-engine/3.56.0 bd_dvt/0 baiduboxapp/15.51.0.10 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: PLL110
+      marketingName: 'A6 GT'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2800
+        height: 1280
+        touch: true
+        size: 6.8
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 15.51.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 13.40.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; PLK110 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.76 SP-engine/3.17.0 baiduboxapp/13.76.0.10 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; PLK110 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.76 SP-engine/3.17.0 baiduboxapp/13.76.0.10 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: PLK110
+      marketingName: '15'
+      manufacturer: bbk
+      brand: oneplus
+      display:
+        width: 2772
+        height: 1272
+        touch: true
+        size: 6.78
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 13.76.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 13.76.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; PLJ110 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.53 SP-engine/3.57.0 bd_dvt/0 baiduboxapp/15.53.0.10 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; PLJ110 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.53 SP-engine/3.57.0 bd_dvt/0 baiduboxapp/15.53.0.10 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: PLJ110
+      marketingName: 'Find X9'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2760
+        height: 1256
+        touch: true
+        size: 6.59
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 15.53.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.53.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; PLJ110 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; PLJ110 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: PLJ110
+      marketingName: 'Find X9'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2760
+        height: 1256
+        touch: true
+        size: 6.59
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App Lite'
+      modus: null
+      version: 7.8.0.11
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.48.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; PLG110 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.54 SP-engine/3.57.0 bd_dvt/0 baiduboxapp/15.55.0.10 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; PLG110 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.54 SP-engine/3.57.0 bd_dvt/0 baiduboxapp/15.55.0.10 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: PLG110
+      marketingName: 'Find X9 Pro'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2772
+        height: 1272
+        touch: true
+        size: 6.78
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 15.55.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.54.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; PLG110 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; PLG110 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: PLG110
+      marketingName: 'Find X9 Pro'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2772
+        height: 1272
+        touch: true
+        size: 6.78
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App Lite'
+      modus: null
+      version: 7.8.0.11
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.48.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; PLG110 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; PLG110 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: PLG110
+      marketingName: 'Find X9 Pro'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2772
+        height: 1272
+        touch: true
+        size: 6.78
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App Lite'
+      modus: null
+      version: 7.8.0.11
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 138.0.7204.179
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; PKW120 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.53 SP-engine/3.57.0 bd_dvt/0 baiduboxapp/15.53.0.10 (Baidu; P1 16) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; PKW120 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.53 SP-engine/3.57.0 bd_dvt/0 baiduboxapp/15.53.0.10 (Baidu; P1 16) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: PKW120
+      marketingName: 'A5 5G'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 1604
+        height: 720
+        touch: true
+        size: 6.67
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 15.53.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.53.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; V2443BA Build/AP3A.240905.015.A2_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 15) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 15; V2443BA Build/AP3A.240905.015.A2_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 15) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: V2443BA
+      marketingName: 'Y50 (China)'
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 1600
+        height: 720
+        touch: true
+        size: 6.74
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App Lite'
+      modus: null
+      version: 7.8.0.11
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 15.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.48.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; V2443A Build/AP3A.240905.015.A2_V1907L5; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.61 SP-engine/3.58.0 bd_dvt/0 baiduboxapp/15.62.0.11 (Baidu; P1 15) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 15; V2443A Build/AP3A.240905.015.A2_V1907L5; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.61 SP-engine/3.58.0 bd_dvt/0 baiduboxapp/15.62.0.11 (Baidu; P1 15) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: V2443A
+      marketingName: 'Y50 (China)'
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 1600
+        height: 720
+        touch: true
+        size: 6.74
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 15.62.0.11
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 15.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.61.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; V2443A Build/AP3A.240905.015.A2_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 15) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 15; V2443A Build/AP3A.240905.015.A2_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 15) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: V2443A
+      marketingName: 'Y50 (China)'
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 1600
+        height: 720
+        touch: true
+        size: 6.74
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App Lite'
+      modus: null
+      version: 7.8.0.11
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 15.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.48.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; V2443A Build/AP3A.240905.015.A2_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/126.0.6478.71 Mobile Safari/537.36 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.9.0.10 (Baidu; P1 15) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 15; V2443A Build/AP3A.240905.015.A2_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/126.0.6478.71 Mobile Safari/537.36 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.9.0.10 (Baidu; P1 15) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: V2443A
+      marketingName: 'Y50 (China)'
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 1600
+        height: 720
+        touch: true
+        size: 6.74
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App Lite'
+      modus: null
+      version: 7.9.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 15.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 126.0.6478.71
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; RMX5112 Build/AP3A.240617.008; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.4.0.10 (Baidu; P1 15) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 15; RMX5112 Build/AP3A.240617.008; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.4.0.10 (Baidu; P1 15) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: RMX5112
+      marketingName: 15T
+      manufacturer: bbk
+      brand: realme
+      display:
+        width: 2372
+        height: 1080
+        touch: true
+        size: 6.57
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App Lite'
+      modus: null
+      version: 7.4.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 15.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.48.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; RMX5105 Build/UKQ1.231108.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.40 SP-engine/3.59.0 bd_dvt/0 baiduboxapp/15.64.0.10 (Baidu; P1 15) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 15; RMX5105 Build/UKQ1.231108.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.40 SP-engine/3.59.0 bd_dvt/0 baiduboxapp/15.64.0.10 (Baidu; P1 15) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: RMX5105
+      marketingName: '15 5G'
+      manufacturer: bbk
+      brand: realme
+      display:
+        width: 2800
+        height: 1280
+        touch: true
+        size: 6.8
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 15.64.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 15.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 13.40.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; RMX3989 Build/AP3A.240617.008; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.0.0.10 (Baidu; P1 15) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 15; RMX3989 Build/AP3A.240617.008; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.0.0.10 (Baidu; P1 15) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: RMX3989
+      marketingName: '13 Pro 5G'
+      manufacturer: bbk
+      brand: realme
+      display:
+        width: 2412
+        height: 1080
+        touch: true
+        size: 6.7
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App Lite'
+      modus: null
+      version: 7.0.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 15.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.48.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; PLT120 Build/AP3A.240617.008; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.76 SP-engine/3.17.0 baiduboxapp/13.76.0.10 (Baidu; P1 15) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 15; PLT120 Build/AP3A.240617.008; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.76 SP-engine/3.17.0 baiduboxapp/13.76.0.10 (Baidu; P1 15) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: PLT120
+      marketingName: 'A6 5G'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 1570
+        height: 720
+        touch: true
+        size: 6.75
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 13.76.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 15.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 13.76.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; V2442A Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.40 SP-engine/3.57.0 bd_dvt/0 baiduboxapp/15.59.0.10 (Baidu; P1 14) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 14; V2442A Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.40 SP-engine/3.57.0 bd_dvt/0 baiduboxapp/15.59.0.10 (Baidu; P1 14) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: V2442A
+      marketingName: Y37c
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 1612
+        height: 720
+        touch: true
+        size: 6.56
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 15.59.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 14.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 13.40.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; RMX3989 Build/UKQ1.231108.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.40 SP-engine/3.59.0 bd_dvt/0 baiduboxapp/15.64.0.10 (Baidu; P1 14) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 14; RMX3989 Build/UKQ1.231108.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.40 SP-engine/3.59.0 bd_dvt/0 baiduboxapp/15.64.0.10 (Baidu; P1 14) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: RMX3989
+      marketingName: '13 Pro 5G'
+      manufacturer: bbk
+      brand: realme
+      display:
+        width: 2412
+        height: 1080
+        touch: true
+        size: 6.7
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App'
+      modus: null
+      version: 15.64.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 14.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 13.40.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 13; V2314DA Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.6.0.10 (Baidu; P1 13) NABar/1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 13; V2314DA Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.6.0.10 (Baidu; P1 13) NABar/1.0'
+    device:
+      architecture: ''
+      deviceName: V2314DA
+      marketingName: Y100t
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 2388
+        height: 1080
+        touch: true
+        size: 6.64
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Baidu Box App Lite'
+      modus: null
+      version: 7.6.0.10
+      manufacturer: baidu
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 13.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: T7
+      version: 15.48.0
+      manufacturer: baidu
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; RMX8899 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.17.10'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; RMX8899 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.17.10'
+    device:
+      architecture: ''
+      deviceName: RMX8899
+      marketingName: 'Neo 8'
+      manufacturer: bbk
+      brand: realme
+      display:
+        width: 2772
+        height: 1272
+        touch: true
+        size: 6.78
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: HeyTapBrowser
+      modus: null
+      version: 40.10.17.10
+      manufacturer: bravo-unicorn
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 115.0.5790.168
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; RMX3953 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.17.10'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; RMX3953 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.17.10'
+    device:
+      architecture: ''
+      deviceName: RMX3953
+      marketingName: 'V60 Pro'
+      manufacturer: bbk
+      brand: realme
+      display:
+        width: 1604
+        height: 720
+        touch: true
+        size: 6.67
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: HeyTapBrowser
+      modus: null
+      version: 40.10.17.10
+      manufacturer: bravo-unicorn
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 115.0.5790.168
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; RMX3948 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.3.9'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; RMX3948 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.3.9'
+    device:
+      architecture: ''
+      deviceName: RMX3948
+      marketingName: V70s
+      manufacturer: bbk
+      brand: realme
+      display:
+        width: 1604
+        height: 720
+        touch: true
+        size: 6.67
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: HeyTapBrowser
+      modus: null
+      version: 40.10.3.9
+      manufacturer: bravo-unicorn
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 115.0.5790.168
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PMK110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.15.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PMK110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.15.1'
+    device:
+      architecture: ''
+      deviceName: PMK110
+      marketingName: 'Reno 16 Pro 5G'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2772
+        height: 1272
+        touch: true
+        size: 6.78
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: HeyTapBrowser
+      modus: null
+      version: 40.10.15.1
+      manufacturer: bravo-unicorn
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 115.0.5790.168
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PMH110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.17.10'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PMH110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.17.10'
+    device:
+      architecture: ''
+      deviceName: PMH110
+      marketingName: 'K15 Pro 5G'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2760
+        height: 1256
+        touch: true
+        size: 6.59
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: HeyTapBrowser
+      modus: null
+      version: 40.10.17.10
+      manufacturer: bravo-unicorn
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 115.0.5790.168
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PMD110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.18.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PMD110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.18.1'
+    device:
+      architecture: ''
+      deviceName: PMD110
+      marketingName: 'Reno 15c 5G'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2760
+        height: 1256
+        touch: true
+        size: 6.59
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: HeyTapBrowser
+      modus: null
+      version: 40.10.18.1
+      manufacturer: bravo-unicorn
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 115.0.5790.168
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PMB110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.10.9'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PMB110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.10.9'
+    device:
+      architecture: ''
+      deviceName: PMB110
+      marketingName: 'Ace 6 Ultra 5G'
+      manufacturer: bbk
+      brand: oneplus
+      display:
+        width: 2772
+        height: 1272
+        touch: true
+        size: 6.78
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: HeyTapBrowser
+      modus: null
+      version: 40.10.10.9
+      manufacturer: bravo-unicorn
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 115.0.5790.168
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PMA120 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.10.9'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PMA120 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.10.9'
+    device:
+      architecture: ''
+      deviceName: PMA120
+      marketingName: 'Find X9 Satellite Edition'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 3168
+        height: 1440
+        touch: true
+        size: 6.82
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: HeyTapBrowser
+      modus: null
+      version: 40.10.10.9
+      manufacturer: bravo-unicorn
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 115.0.5790.168
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PMA110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.17.10'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PMA110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.17.10'
+    device:
+      architecture: ''
+      deviceName: PMA110
+      marketingName: 'Find X9 Ultra'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 3168
+        height: 1440
+        touch: true
+        size: 6.82
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: HeyTapBrowser
+      modus: null
+      version: 40.10.17.10
+      manufacturer: bravo-unicorn
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 115.0.5790.168
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLY110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.17.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLY110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.17.1'
+    device:
+      architecture: ''
+      deviceName: PLY110
+      marketingName: 'Turbo 6V'
+      manufacturer: bbk
+      brand: oneplus
+      display:
+        width: 2772
+        height: 1272
+        touch: true
+        size: 6.78
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: HeyTapBrowser
+      modus: null
+      version: 40.10.17.1
+      manufacturer: bravo-unicorn
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 115.0.5790.168
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLW110 Build/AP3A.240617.008) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.6.9'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLW110 Build/AP3A.240617.008) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.6.9'
+    device:
+      architecture: ''
+      deviceName: PLW110
+      marketingName: 'Reno 15 5G (China)'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2640
+        height: 1216
+        touch: true
+        size: 6.32
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: HeyTapBrowser
+      modus: null
+      version: 40.10.6.9
+      manufacturer: bravo-unicorn
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 115.0.5790.168
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLV110 Build/AP3A.240617.008) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.17.10'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLV110 Build/AP3A.240617.008) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.17.10'
+    device:
+      architecture: ''
+      deviceName: PLV110
+      marketingName: 'Reno 15 Pro 5G (China)'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2772
+        height: 1272
+        touch: true
+        size: 6.78
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: HeyTapBrowser
+      modus: null
+      version: 40.10.17.10
+      manufacturer: bravo-unicorn
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 115.0.5790.168
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLU110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.8.9'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLU110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.8.9'
+    device:
+      architecture: ''
+      deviceName: PLU110
+      marketingName: 'Turbo 6'
+      manufacturer: bbk
+      brand: oneplus
+      display:
+        width: 2772
+        height: 1272
+        touch: true
+        size: 6.78
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: HeyTapBrowser
+      modus: null
+      version: 40.10.8.9
+      manufacturer: bravo-unicorn
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 115.0.5790.168
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLT130 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.16.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLT130 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.16.1'
+    device:
+      architecture: ''
+      deviceName: PLT130
+      marketingName: 'A6t 5G'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 1570
+        height: 720
+        touch: true
+        size: 6.75
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: HeyTapBrowser
+      modus: null
+      version: 40.10.16.1
+      manufacturer: bravo-unicorn
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 115.0.5790.168
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLS120 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.18.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLS120 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.18.1'
+    device:
+      architecture: ''
+      deviceName: PLS120
+      marketingName: 'A6 5G'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2372
+        height: 1080
+        touch: true
+        size: 6.57
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: HeyTapBrowser
+      modus: null
+      version: 40.10.18.1
+      manufacturer: bravo-unicorn
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 115.0.5790.168
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLR110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.18.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLR110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.18.1'
+    device:
+      architecture: ''
+      deviceName: PLR110
+      marketingName: 'Ace 6T'
+      manufacturer: bbk
+      brand: oneplus
+      display:
+        width: 2800
+        height: 1272
+        touch: true
+        size: 6.83
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: HeyTapBrowser
+      modus: null
+      version: 40.10.18.1
+      manufacturer: bravo-unicorn
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 115.0.5790.168
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLQ110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.18.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLQ110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.18.1'
+    device:
+      architecture: ''
+      deviceName: PLQ110
+      marketingName: 'Ace 6'
+      manufacturer: bbk
+      brand: oneplus
+      display:
+        width: 2800
+        height: 1272
+        touch: true
+        size: 6.83
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: HeyTapBrowser
+      modus: null
+      version: 40.10.18.1
+      manufacturer: bravo-unicorn
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 115.0.5790.168
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLP110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.17.10'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLP110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.17.10'
+    device:
+      architecture: ''
+      deviceName: PLP110
+      marketingName: 'Find N6'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2480
+        height: 2248
+        touch: true
+        size: 8.12
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: HeyTapBrowser
+      modus: null
+      version: 40.10.17.10
+      manufacturer: bravo-unicorn
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 115.0.5790.168
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLK110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.16.2'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLK110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.16.2'
+    device:
+      architecture: ''
+      deviceName: PLK110
+      marketingName: '15'
+      manufacturer: bbk
+      brand: oneplus
+      display:
+        width: 2772
+        height: 1272
+        touch: true
+        size: 6.78
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: HeyTapBrowser
+      modus: null
+      version: 40.10.16.2
+      manufacturer: bravo-unicorn
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 115.0.5790.168
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLJ110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.18.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLJ110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.18.1'
+    device:
+      architecture: ''
+      deviceName: PLJ110
+      marketingName: 'Find X9'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2760
+        height: 1256
+        touch: true
+        size: 6.59
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: HeyTapBrowser
+      modus: null
+      version: 40.10.18.1
+      manufacturer: bravo-unicorn
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 115.0.5790.168
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLG110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.16.2'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLG110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.168 Mobile Safari/537.36 HeyTapBrowser/40.10.16.2'
+    device:
+      architecture: ''
+      deviceName: PLG110
+      marketingName: 'Find X9 Pro'
+      manufacturer: bbk
+      brand: oppo
+      display:
+        width: 2772
+        height: 1272
+        touch: true
+        size: 6.78
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: HeyTapBrowser
+      modus: null
+      version: 40.10.16.2
+      manufacturer: bravo-unicorn
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 115.0.5790.168
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 16; vi-vn; RMX5566 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5970.168 Mobile Safari/537.36 HeyTapBrowser/45.14.3.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 16; vi-vn; RMX5566 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5970.168 Mobile Safari/537.36 HeyTapBrowser/45.14.3.1'
+    device:
+      architecture: ''
+      deviceName: RMX5566
+      marketingName: 'C85 4G'
+      manufacturer: bbk
+      brand: realme
+      display:
+        width: 1570
+        height: 720
+        touch: true
+        size: 6.8
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: HeyTapBrowser
+      modus: null
+      version: 45.14.3.1
+      manufacturer: bravo-unicorn
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 115.0.5970.168
+      manufacturer: google

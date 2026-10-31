@@ -1531,7 +1531,7 @@ century-bot:
   engine: unknown
 cl0q-crawler:
   name: cl0q-crawler
-  manufacturer: unknown
+  manufacturer: cl0q
   type: search-bot
   version:
     factory: \BrowserDetector\Version\VersionBuilderFactory
@@ -1564,3 +1564,67 @@ google-test-bot:
     search:
       - 'Google-Test'
   engine: null
+yandex-verticals:
+  name: YandexVerticals
+  manufacturer: yandex
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - YandexVerticals
+  engine: unknown
+yandex-sprav-bot:
+  name: YandexSpravBot
+  manufacturer: yandex
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - YandexSpravBot
+  engine: unknown
+yandex-for-domain:
+  name: YandexForDomain
+  manufacturer: yandex
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - YandexForDomain
+  engine: unknown
+yandex-ad-net:
+  name: YandexAdNet
+  manufacturer: yandex
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - YandexAdNet
+  engine: unknown
+yandex-screenshot-bot:
+  name: YandexScreenshotBot
+  manufacturer: yandex
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - YandexScreenshotBot
+  engine: unknown
+jobwende:
+  name: jobwende
+  manufacturer: sören-schuster
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - jobwende
+  engine: unknown
+vexel-search-bot:
+  name: VexelSearchBot
+  manufacturer: vexel-group
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - VexelSearchBot\-
+      - VexelSearchBot
+  engine: unknown

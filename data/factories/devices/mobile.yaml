@@ -221,7 +221,7 @@ rules:
   /softbank/i: softbank
   /formuler/i: aloys
   /oukitel/i: oukitel
-  /kyocera/i: kyocera
+  /kyocera|kwc-/i: kyocera
   /logicom/i: logicom
   /pantech/i: pantech
   /alcatel/i: alcatel

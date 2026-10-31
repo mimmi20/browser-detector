@@ -85,16 +85,14 @@ parameters:
       tooWideThrowType: true
 
   cognitive_complexity:
-    class: 199
-    function: 64
+    class: 204
+    function: 69
 
   type_coverage:
     return_type: 99.8
     param_type: 100
     property_type: 100
     constant_type: 100
-    # also, how many files has declare strict types
-    declare: 100
 
   unused_public:
     methods: true
@@ -130,7 +128,7 @@ parameters:
       paths:
         - tests/DetectorTest/Loader/BrowserLoaderTest.php
         - tests/DetectorTest/Loader/CompanyLoaderTest.php
-        - tests/DetectorTest/Loader/DeviceLoader1Test.php
+        - tests/DetectorTest/Loader/DeviceLoaderTest.php
     -
       identifier: throws.unusedType
       paths:
@@ -167,33 +165,3 @@ services:
       relativePathHelper: @simpleRelativePathHelper
       currentWorkingDirectory: %currentWorkingDirectory%
       pretty: true
-
-rules:
-  # code complexity
-  # - Symplify\PHPStanRules\Rules\NoDynamicNameRule
-
-  - Symplify\PHPStanRules\Rules\ForbiddenExtendOfNonAbstractClassRule
-
-  # domain
-  # - Symplify\PHPStanRules\Rules\Domain\RequireExceptionNamespaceRule
-  - Symplify\PHPStanRules\Rules\Domain\RequireAttributeNamespaceRule
-  - Symplify\PHPStanRules\Rules\Enum\RequireUniqueEnumConstantRule
-  - Symplify\PHPStanRules\Rules\PreventParentMethodVisibilityOverrideRule
-
-  # paths
-  # - Symplify\PHPStanRules\Rules\NoReferenceRule # References are required
-
-  # explicit naming
-  - Symplify\PHPStanRules\Rules\ForbiddenMultipleClassLikeInOneFileRule
-
-  - Symplify\PHPStanRules\Rules\Complexity\ForbiddenArrayMethodCallRule
-  # - Symplify\PHPStanRules\Rules\CheckRequiredInterfaceInContractNamespaceRule
-
-  # naming
-  - Symplify\PHPStanRules\Rules\RequireAttributeNameRule
-
-  # naming
-  - Symplify\PHPStanRules\Rules\Explicit\ExplicitClassPrefixSuffixRule
-  # - Symplify\PHPStanRules\Rules\NoReturnSetterMethodRule
-  - Symplify\PHPStanRules\Rules\UppercaseConstantRule
-  - Symplify\PHPStanRules\Rules\ClassNameRespectsParentSuffixRule

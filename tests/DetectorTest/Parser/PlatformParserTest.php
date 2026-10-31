@@ -64,4 +64,18 @@ final class PlatformParserTest extends TestCase
 
         self::assertSame(Os::series30, $os);
     }
+
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
+    public function testParse4(): void
+    {
+        $useragent = 'Mozilla/5.0 (compatible; MRE-Leadmaschine/1.0; Kontakt: Mutumane Real Estate)';
+
+        $platformParser = new PlatformParser();
+        $os             = $platformParser->parse($useragent);
+
+        self::assertSame(Os::unknown, $os);
+    }
 }

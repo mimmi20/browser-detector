@@ -36,8 +36,6 @@ use SplFileInfo;
 use Stringable;
 use Symfony\Component\Yaml\Exception\ParseException;
 use Symfony\Component\Yaml\Yaml;
-use UaLoader\Exception\NotFoundException;
-use UnexpectedValueException;
 
 use function assert;
 use function is_array;
@@ -255,7 +253,6 @@ final class DetectorTest extends TestCase
      *
      * @throws void
      */
-    #[CoversNothing]
     #[Override]
     protected function setUp(): void
     {
@@ -267,9 +264,7 @@ final class DetectorTest extends TestCase
      * @param array<string, mixed>                      $expectedResult
      *
      * @throws InvalidArgumentException
-     * @throws NotFoundException
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
      * @throws \PHPUnit\Framework\Exception
      */
     #[DataProvider(methodName: 'providerGetBrowser')]
@@ -297,13 +292,13 @@ final class DetectorTest extends TestCase
 
         self::assertEquals(
             $expectedResult['headers'],
-            $result['headers'],
+            $result['headers'] ?? [],
             sprintf(
                 "detection header result mismatch for headers %s\ntest headers:%s\nexpected result: %s\nactual result: %s",
                 $encodedHeaders,
                 var_export($headers, return: true),
                 var_export($expectedResult['headers'], return: true),
-                var_export($result['headers'], return: true),
+                var_export($result['headers'] ?? [], return: true),
             ),
         );
 

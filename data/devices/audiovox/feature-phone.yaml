@@ -82,3 +82,31 @@
     size: 1.8
   type: feature-phone
   platform: java
+'audiovox pm-8920':
+  deviceName: PM-8920
+  marketingName: PM-8920
+  manufacturer: audiovox
+  brand: audiovox
+  dualOrientation: false
+  simCount: 1
+  display:
+    width: 160
+    height: 128
+    touch: false
+    size: 1.8
+  type: feature-phone
+  platform: java
+'audiovox cdm-8900':
+  deviceName: CDM-8900
+  marketingName: CDM-8900
+  manufacturer: audiovox
+  brand: audiovox
+  dualOrientation: false
+  simCount: 1
+  display:
+    width: 160
+    height: 128
+    touch: false
+    size: 1.8
+  type: feature-phone
+  platform: java

@@ -1,7 +1,8 @@
 rules:
   '/(?<![l_])edge\//i': edge
+  '/^chrome$/i': genericbrowser
   '/(?<![4\(])chr[o0]me(?!book|cast|\))|crmo|com\.tcl\.browser/i': blink
-  '/(?<!like )gecko|firefox|minefield|shiretoko|bonecho|namoroka|treco/i': gecko
+  '/(?<!like )gecko|firefox(?!-plugin)|minefield|shiretoko|bonecho|namoroka|treco/i': gecko
   '/webkit|safari(?!com)|cfnetwork|dalvik|ipad|ipod|iphone|khtml/i': webkit
   '/(?<![a-zA-Z])iOS/': webkit
   '/presto\/|(?<![o@])opera(?!t)/i': presto

@@ -124,6 +124,15 @@ whatsapp:
       - WhatsAppElectron
       - WhatsApp
   engine: null
+whatsapp-web:
+  name: 'WhatsApp Web'
+  manufacturer: meta
+  type: mobile-application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - WhatsApp
+  engine: null
 whatsapp-business:
   name: 'WhatsApp Business'
   manufacturer: meta
@@ -3515,8 +3524,11 @@ safe-in-cloud:
   manufacturer: safe-in-cloud
   type: mobile-application
   version:
-    factory: null
-    search: null
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SafeInCloud%202
+      - 'SafeInCloud 2'
+      - SafeInCloud
   engine: null
 safe-in-cloud-free:
   name: 'SafeInCloud Free'
@@ -4754,4 +4766,40 @@ aria2-app:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - Aria2App
+  engine: null
+superbalist:
+  name: Superbalist
+  manufacturer: fashion-united
+  type: mobile-application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Superbalist
+  engine: null
+momo:
+  name: MOMO
+  manufacturer: hello-group
+  type: mobile-application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - momoWebView
+  engine: null
+apps-for-google-app:
+  name: 'Apps for Google App'
+  manufacturer: unknown
+  type: mobile-application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'Apps for Google App'
+  engine: null
+des-moines-register:
+  name: 'Des Moines Register'
+  manufacturer: unknown
+  type: mobile-application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - DMRegister
   engine: null

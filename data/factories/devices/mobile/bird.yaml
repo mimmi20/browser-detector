@@ -11,6 +11,7 @@ rules:
   /s918/i: 'bird s918'
   /s789\+/i: 'bird s789+'
   '/s710[ _]bleu/i': 'bird s710 bleu'
+  /s580/i: 'bird s580'
   /s305a/i: 'bird s305a'
   '/s305[ _]cmcc/i': 'bird s305 cmcc'
   '/s230[ _]cmcc/i': 'bird s230 cmcc'

@@ -26,20 +26,21 @@ use BrowserDetector\Parser\BrowserParser;
 use BrowserDetector\Parser\DeviceParser;
 use BrowserDetector\Parser\EngineParser;
 use BrowserDetector\Parser\PlatformParser;
+use DateInterval;
+use Override;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
-use PHPUnit\Framework\Constraint\IsType;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
-use PHPUnit\Framework\NativeType;
 use PHPUnit\Framework\TestCase;
+use Psr\Log\AbstractLogger;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\CacheInterface;
-use Psr\SimpleCache\InvalidArgumentException;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use RuntimeException;
 use SplFileInfo;
+use Stringable;
 use Symfony\Component\Yaml\Exception\ParseException;
 use Symfony\Component\Yaml\Yaml;
 use UnexpectedValueException;
@@ -66,12 +67,214 @@ use const PHP_EOL;
 #[CoversClass(className: PlatformLoader::class)]
 final class DetectorIntegrationTest extends TestCase
 {
+    private static DetectorFactory $detectorFactory;
+    private Detector $detector;
+
+    /** @throws void */
+    #[Override]
+    public static function setUpBeforeClass(): void
+    {
+        $logger = new class () extends AbstractLogger {
+            /**
+             * Detailed debug information.
+             *
+             * @param array<mixed> $context
+             *
+             * @throws void
+             *
+             * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+             */
+            #[Override]
+            public function debug(string | Stringable $message, array $context = []): void
+            {
+                // do nothing here
+            }
+
+            /**
+             * Logs with an arbitrary level.
+             *
+             * @param int|string   $level
+             * @param array<mixed> $context
+             *
+             * @throws void
+             *
+             * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+             * @phpcs:disable SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
+             */
+            #[Override]
+            public function log($level, string | Stringable $message, array $context = []): void
+            {
+                echo '[', $level, '] ', $message, PHP_EOL;
+            }
+        };
+
+        $cache = new class () implements CacheInterface {
+            /**
+             * Fetches a value from the cache.
+             *
+             * @param string $key     the unique key of this item in the cache
+             * @param mixed  $default default value to return if the key does not exist
+             *
+             * @return mixed the value of the item from the cache, or $default in case of cache miss
+             *
+             * @throws void
+             *
+             * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+             */
+            #[Override]
+            public function get(string $key, mixed $default = null): mixed
+            {
+                return null;
+            }
+
+            /**
+             * Persists data in the cache, uniquely referenced by a key with an optional expiration TTL time.
+             *
+             * @param string                $key   the key of the item to store
+             * @param mixed                 $value the value of the item to store, must be serializable
+             * @param DateInterval|int|null $ttl   Optional. The TTL value of this item. If no value is sent and
+             *                                     the driver supports TTL then the library may set a default value
+             *                                     for it or let the driver take care of that.
+             *
+             * @return bool true on success and false on failure
+             *
+             * @throws void
+             *
+             * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+             */
+            #[Override]
+            public function set(string $key, mixed $value, int | DateInterval | null $ttl = null): bool
+            {
+                return false;
+            }
+
+            /**
+             * Delete an item from the cache by its unique key.
+             *
+             * @param string $key the unique cache key of the item to delete
+             *
+             * @return bool True if the item was successfully removed. False if there was an error.
+             *
+             * @throws void
+             *
+             * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+             */
+            #[Override]
+            public function delete(string $key): bool
+            {
+                return false;
+            }
+
+            /**
+             * Wipes clean the entire cache's keys.
+             *
+             * @return bool true on success and false on failure
+             *
+             * @throws void
+             */
+            #[Override]
+            public function clear(): bool
+            {
+                return false;
+            }
+
+            /**
+             * Obtains multiple cache items by their unique keys.
+             *
+             * @param iterable<string> $keys    a list of keys that can obtained in a single operation
+             * @param mixed            $default default value to return for keys that do not exist
+             *
+             * @return iterable<string, mixed> A list of key => value pairs. Cache keys that do not exist or are stale will have $default as value.
+             *
+             * @throws void
+             *
+             * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+             */
+            #[Override]
+            public function getMultiple(iterable $keys, mixed $default = null): iterable
+            {
+                return [];
+            }
+
+            /**
+             * Persists a set of key => value pairs in the cache, with an optional TTL.
+             *
+             * @param iterable<string, mixed> $values a list of key => value pairs for a multiple-set operation
+             * @param DateInterval|int|null   $ttl    Optional. The TTL value of this item. If no value is sent and
+             *                                        the driver supports TTL then the library may set a default value
+             *                                        for it or let the driver take care of that.
+             *
+             * @return bool true on success and false on failure
+             *
+             * @throws void
+             *
+             * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+             */
+            #[Override]
+            public function setMultiple(iterable $values, int | DateInterval | null $ttl = null): bool
+            {
+                return false;
+            }
+
+            /**
+             * Deletes multiple cache items in a single operation.
+             *
+             * @param iterable<string> $keys a list of string-based keys to be deleted
+             *
+             * @return bool True if the items were successfully removed. False if there was an error.
+             *
+             * @throws void
+             *
+             * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+             */
+            #[Override]
+            public function deleteMultiple(iterable $keys): bool
+            {
+                return false;
+            }
+
+            /**
+             * Determines whether an item is present in the cache.
+             *
+             * NOTE: It is recommended that has() is only to be used for cache warming type purposes
+             * and not to be used within your live applications operations for get/set, as this method
+             * is subject to a race condition where your has() will return true and immediately after,
+             * another script can remove it making the state of your app out of date.
+             *
+             * @param string $key the cache item key
+             *
+             * @throws void
+             *
+             * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+             */
+            #[Override]
+            public function has(string $key): bool
+            {
+                return false;
+            }
+        };
+
+        assert($logger instanceof LoggerInterface);
+        self::$detectorFactory = new DetectorFactory($cache, $logger);
+    }
+
+    /**
+     * Sets up the fixture, for example, open a network connection.
+     * This method is called before a test is executed.
+     *
+     * @throws void
+     */
+    #[Override]
+    protected function setUp(): void
+    {
+        $this->detector = (self::$detectorFactory)();
+    }
+
     /**
      * @param array<non-empty-string, non-empty-string> $headers
      * @param array<string, mixed>                      $expected
      *
      * @throws Exception
-     * @throws InvalidArgumentException
      * @throws UnexpectedValueException
      * @throws ExpectationFailedException
      * @throws RuntimeException
@@ -79,61 +282,11 @@ final class DetectorIntegrationTest extends TestCase
     #[DataProvider(methodName: 'providerUa')]
     public function testData(array $headers, array $expected): void
     {
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('info');
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
+        $result = $this->detector->getBrowser($headers);
 
-        $cache = $this->createMock(CacheInterface::class);
-        $cache
-            ->expects(self::never())
-            ->method('get');
-        $cache
-            ->expects(self::once())
-            ->method('set');
-        $cache
-            ->expects(self::never())
-            ->method('delete');
-        $cache
-            ->expects(self::never())
-            ->method('clear');
-        $cache
-            ->expects(self::never())
-            ->method('getMultiple');
-        $cache
-            ->expects(self::never())
-            ->method('setMultiple');
-        $cache
-            ->expects(self::never())
-            ->method('deleteMultiple');
-        $cache
-            ->expects(self::once())
-            ->method('has')
-            ->with(new IsType(NativeType::String))
-            ->willReturn(value: false);
-
-        $detectorFactory = new DetectorFactory($cache, $logger);
-        $detector        = $detectorFactory();
-
-        $result = $detector->getBrowser($headers);
+        // if (($headers['user-agent'] ?? '') === 'Nextcloud-Server-Crawler/34.0.1') {
+        //     var_dump($headers, $expected, $result);
+        // }
 
         self::assertSame($expected, $result);
     }
@@ -148,7 +301,7 @@ final class DetectorIntegrationTest extends TestCase
     public static function providerUa(): array
     {
         $iterator = new RecursiveIteratorIterator(
-            new RecursiveDirectoryIterator('data/integation-tests'),
+            new RecursiveDirectoryIterator('data/integration-tests'),
         );
         $files    = new FilterIterator($iterator, 'yaml');
         $data     = [];

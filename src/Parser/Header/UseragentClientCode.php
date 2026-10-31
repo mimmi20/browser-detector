@@ -71,6 +71,10 @@ final readonly class UseragentClientCode implements ClientCodeInterface
             return null;
         }
 
+        if (preg_match('/^WhatsApp\/[0-9.]+[ \/]N$/', $normalizedValue)) {
+            return 'whatsapp-web';
+        }
+
         $regexes = [
             '/pr\((?P<client>ucbrowser)(?:\/[\d.]+)?\);/i',
             '/^mozilla\/[\d.]+ \(mobile; [^;]+(?:;android)?; rv:[^)]+\) gecko\/[\d.]+ (?P<client>firefox)\/[\d.]+ kaios\/[\d.]+$/i',

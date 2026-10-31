@@ -161,6 +161,8 @@ final class TvTest extends TestCase
             ['Mozilla/4.0 (compatible; Win32; WinHttp.WinHttpRequest.5)'],
             ['Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Safari PrcmNovel_iOS/1.11.8'],
             ['FortiGate (FortiOS 7.0) Chrome/ Safari/'],
+            ['Mozilla/5.0 (Linux; Tizen 2.2.1.3; SM-R750) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.76 efl-webengine/0.1.1.1 Mobile Safari/537.36'],
+            ['ddg_win/0.176.2.0'],
         ];
     }
 }
