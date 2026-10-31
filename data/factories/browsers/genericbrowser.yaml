@@ -795,7 +795,6 @@ rules:
   /omgili/i: omgili-bot
   /isara/i: isara-search
   /nutch/i: nutch
-  '/(?<!web |-)crawler/i': crawler
   /apple-pubsub/i: 'apple pubsub'
   /bigbozz/i: 'bigbozz - financial search'
   /eccp/i: eccp
@@ -2339,13 +2338,19 @@ rules:
   /^np|npbot/i: name-protect-bot
   /javascript:/i: generic-bot
   /validator/i: generic-bot
+  /extractor/i: generic-bot
   /research/i: generic-bot
   /crawler/i: generic-bot
   /checker/i: generic-bot
+  /scraper/i: generic-bot
+  /scanner/i: generic-bot
+  /-check/i: generic-bot
   /bot/i: generic-bot
   /^mozilla\/[0-9]\.0 \(compatible\)$/i: generic-bot
   /^mozilla\/[0-9]\.0$/i: generic-bot
   /^mozilla$/i: generic-bot
+  /^firefox$/i: generic-bot
   /^chrome$/i: generic-bot
+  /^node$/i: generic-bot
   /mozilla/i: mozilla
 generic: unknown

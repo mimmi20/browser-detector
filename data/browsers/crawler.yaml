@@ -8404,3 +8404,21 @@ capper-lead-research:
     search:
       - capper-lead-research
   engine: unknown
+aranet-search-bot:
+  name: Aranet-SearchBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Aranet-SearchBot
+  engine: unknown
+shap-user:
+  name: Shap-User
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Shap-User
+  engine: unknown
