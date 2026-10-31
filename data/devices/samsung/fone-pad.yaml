@@ -2128,7 +2128,21 @@
   platform: android
 'samsung sm-t295':
   deviceName: SM-T295
-  marketingName: 'Galaxy Tab A 8.0" LTE (2019, Global)'
+  marketingName: 'Galaxy Tab A 8.0" 4G (2019, Global)'
+  manufacturer: samsung
+  brand: samsung
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: 1280
+    height: 800
+    touch: true
+    size: 8
+  type: fone-pad
+  platform: android
+'samsung sm-t295c':
+  deviceName: SM-T295C
+  marketingName: 'Galaxy Tab A 8.0" 4G (2019, Global)'
   manufacturer: samsung
   brand: samsung
   dualOrientation: true
@@ -3612,7 +3626,7 @@
   platform: android
 'samsung sm-t866n':
   deviceName: SM-T866N
-  marketingName: 'Galaxy Tab S6 10.5" LTE'
+  marketingName: 'Galaxy Tab S6 10.5" 5G'
   manufacturer: samsung
   brand: samsung
   dualOrientation: true
