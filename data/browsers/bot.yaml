@@ -899,15 +899,6 @@ domainsbot:
     search:
       - domainsbot
   engine: unknown
-'domainscan server monitoring':
-  name: 'DomainScan Server Monitoring'
-  manufacturer: gh-software
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - DomainSCAN
-  engine: unknown
 domainsigmacrawler:
   name: DomainSigmaCrawler
   manufacturer: domain-sigma

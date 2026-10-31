@@ -8026,3 +8026,381 @@ vjus-logo-preview:
     search:
       - VjusLogoPreview
   engine: unknown
+hunt-bot:
+  name: HUNT-Bot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - HUNT-Bot
+  engine: unknown
+nextjs-detector:
+  name: NextJSDetector
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - NextJSDetector
+  engine: unknown
+es-crawler:
+  name: es-crawler
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - es-crawler
+  engine: unknown
+joomla-detector:
+  name: JoomlaDetector
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - JoomlaDetector
+  engine: unknown
+icresearch-livebs-phase1:
+  name: ICResearch-LiveBS-Phase1
+  manufacturer: bergische-universität-wuppertal
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ICResearch-LiveBS-Phase1
+  engine: unknown
+dead-link-checker:
+  name: dead-link-checker
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - dead-link-checker
+  engine: unknown
+prism-bulk-builder-corpus-bot:
+  name: PrismBulkBuilderCorpusBot
+  manufacturer: prism
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - PrismBulkBuilderCorpusBot
+  engine: unknown
+rec-scan:
+  name: RecScan
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - RecScan
+  engine: unknown
+cosmos-data-comp-downloader:
+  name: CosmosDataCompDownloader
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - CosmosDataCompDownloader
+  engine: unknown
+govini-dq-checker:
+  name: Govini-DQ-Checker
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Govini-DQ-Checker
+  engine: unknown
+fp-dead-link-checker:
+  name: fp-dead-link-checker
+  manufacturer: forward-publishing
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - fp-dead-link-checker
+  engine: unknown
+company-scraper:
+  name: CompanyScraper
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - CompanyScraper
+  engine: unknown
+manma-tech:
+  name: manma-tech
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - manma-tech
+  engine: unknown
+foda-scanner:
+  name: foda-scanner
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - foda-scanner
+  engine: unknown
+exposure-scanner:
+  name: ExposureScanner
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ExposureScanner
+  engine: unknown
+have-in-list-enricher:
+  name: HaveInListEnricher
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - HaveInListEnricher
+  engine: unknown
+scryer:
+  name: Scryer
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Scryer
+  engine: unknown
+nextjs-scanner:
+  name: nextjs-scanner
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - nextjs-scanner
+  engine: unknown
+purity-bot:
+  name: PurityBot
+  manufacturer: purili
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - PurityBot
+  engine: unknown
+passkey-domain-check:
+  name: passkey-domain-check
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - passkey-domain-check
+  engine: unknown
+aonsight-meta-bot:
+  name: AonsightMetaBot
+  manufacturer: aonsight
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - AonsightMetaBot
+  engine: unknown
+avenode-radar:
+  name: AvenodeRadar
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - AvenodeRadar
+  engine: unknown
+ctscan-research:
+  name: ctscan-research
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ctscan-research
+  engine: unknown
+internet-2-bot:
+  name: internet2bot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - internet2bot
+  engine: unknown
+fossick-bot:
+  name: FossickBot
+  manufacturer: datafreak
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - FossickBot
+  engine: unknown
+deadweb-prober:
+  name: deadweb-prober
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - deadweb-prober
+  engine: unknown
+nyxys-knowledge-factory:
+  name: NYXYS-KnowledgeFactory
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - NYXYS-KnowledgeFactory
+  engine: unknown
+bragmant-bot:
+  name: BragmantBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - BragmantBot
+  engine: unknown
+stacky-enrich:
+  name: StackyEnrich
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - StackyEnrich
+  engine: unknown
+lead-finder:
+  name: LeadFinder
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - LeadFinder
+  engine: unknown
+datacomp-large-downloader:
+  name: datacomp-large-downloader
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - datacomp-large-downloader
+  engine: unknown
+google-ads-txt-checker:
+  name: GoogleAdsTxtChecker
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - GoogleAdsTxtChecker
+  engine: unknown
+hub-crawler-eino:
+  name: hub-crawler-eino
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - hub-crawler-eino
+  engine: unknown
+geo-score-validator:
+  name: GEO-Score-Validator
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - GEO-Score-Validator
+  engine: unknown
+cartalys-intel:
+  name: Cartalys-Intel
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Cartalys-Intel
+  engine: unknown
+rankaria-bot:
+  name: RankariaBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - RankariaBot
+  engine: unknown
+domainscan-server-monitoring:
+  name: 'DomainScan Server Monitoring'
+  manufacturer: gh-software
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - DomainSCAN
+  engine: unknown
+shopify-domain-scanner:
+  name: ShopifyDomainScanner
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ShopifyDomainScanner
+  engine: unknown
+carniwa-presence-resolver:
+  name: CarniWa-PresenceResolver
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - CarniWa-PresenceResolver
+  engine: unknown
+rivry-bot:
+  name: RivryBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - RivryBot
+  engine: unknown
+live-domain-finder:
+  name: LiveDomainFinder
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - LiveDomainFinder
+  engine: unknown
+capper-lead-research:
+  name: capper-lead-research
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - capper-lead-research
+  engine: unknown

@@ -3847,11 +3847,11 @@
       simCount: 0
       bits: 0
     client:
-      name: DBot
+      name: S33DBot
       modus: null
       version: 4.0.0
-      manufacturer: get-download
-      type: bot
+      manufacturer: s33d
+      type: crawler
       isbot: true
       bits: 0
     os:
@@ -3929,12 +3929,12 @@
       simCount: 0
       bits: 0
     client:
-      name: Chrome
+      name: AkoniLeadHuntBot
       modus: null
-      version: 126.0.0
-      manufacturer: google
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: akoni-recruiting-systems
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -3970,12 +3970,12 @@
       simCount: 0
       bits: 0
     client:
-      name: Chrome
+      name: SectorBot
       modus: null
-      version: 124.0.0
-      manufacturer: google
-      type: browser
-      isbot: false
+      version: 0.1.0
+      manufacturer: serdartorun
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null

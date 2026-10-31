@@ -3882,20 +3882,20 @@
       user-agent: 'Mozilla/5.0 (X11; Debian; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.6778.73 Safari/537.36 OPR/119.0.5312.185'
     device:
       architecture: ''
-      deviceName: X11
-      marketingName: X11
-      manufacturer: cubot
-      brand: cubot
+      deviceName: 'Linux Desktop'
+      marketingName: 'Linux Desktop'
+      manufacturer: unknown
+      brand: unknown
       display:
-        width: 1280
-        height: 720
-        touch: true
-        size: 5.5
-      type: smartphone
-      ismobile: true
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
       istv: false
-      dualOrientation: true
-      simCount: 1
+      dualOrientation: false
+      simCount: 0
       bits: 0
     client:
       name: Opera

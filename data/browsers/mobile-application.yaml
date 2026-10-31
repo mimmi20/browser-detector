@@ -4794,3 +4794,12 @@ apps-for-google-app:
     search:
       - 'Apps for Google App'
   engine: null
+des-moines-register:
+  name: 'Des Moines Register'
+  manufacturer: unknown
+  type: mobile-application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - DMRegister
+  engine: null

@@ -645,8 +645,10 @@ rules:
   /jitsi-meet/i: jitsi-meet
   '/skyeng app/i': skyeng-app
   '/my bentley/i': my-bentley
-  /discord\//i: discord-app
   '/sp browser/i': sp-browser
+  /dmregister/i: des-moines-register
+  /autofill\//i: autofill-system-component
+  /discord\//i: discord-app
   /net\.mede/i: net-mede
   '/nrc audio/i': nrc-audio
   /cronomail/i: cronomail

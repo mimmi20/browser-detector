@@ -476,3 +476,12 @@ autofill-provider-extension:
     search:
       - autofill_provider_extension
   engine: unknown
+autofill-system-component:
+  name: 'Autofill (System Component)'
+  manufacturer: apple
+  type: service-agent
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Autofill
+  engine: unknown

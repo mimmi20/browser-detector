@@ -656,7 +656,6 @@ rules:
   /wget/i: wget
   /scrapy/i: scrapy
   /moozilla/i: moozilla
-  /antbot/i: antbot
   /browsershots/i: browsershots
   /revolt/i: 'bot revolt'
   /pdrlabs/i: 'pdrlabs bot'
@@ -781,6 +780,7 @@ rules:
   /fyberspider/i: fyberspider
   /gsa-crawler/i: gsa-crawler
   /webbcrawler/i: webb-crawler
+  /bragmantbot/i: bragmant-bot
   /toquo\.es/i: toquo.es-bot
   '/pecl::http/i': 'pecl http client'
   /phpmyadmin/i: php-my-admin
@@ -791,6 +791,7 @@ rules:
   /nlcrawler/i: nlcrawler
   /voilabot/i: voilabot
   /cakephp/i: cakephp
+  /antbot/i: antbot
   /omgili/i: omgili-bot
   /isara/i: isara-search
   /nutch/i: nutch
@@ -1196,9 +1197,17 @@ rules:
   /newslettercatalogresearch/i: newsletter-catalog-research
   /domainfinder-access-study/i: domainfinder-access-study
   /majesticmetadatacollector/i: majestic-metadata-collector
+  /prismbulkbuildercorpusbot/i: prism-bulk-builder-corpus-bot
+  /datacomp-large-downloader/i: datacomp-large-downloader
   /aiapirelaymarketresearch/i: ai-api-relay-market-research
   /everylawyer-domainfinder/i: every-lawyer-domain-finder
   /polibrigroundingresolver/i: polibri-grounding-resolver
+  /caption-dataset-download/i: caption-dataset-download
+  /epassage24-websitefinder/i: epassage24-website-finder
+  /cve-2026-4020-go-scanner/i: cve-2026-4020-go-scanner
+  /icresearch-livebs-phase1/i: icresearch-livebs-phase1
+  /cosmosdatacompdownloader/i: cosmos-data-comp-downloader
+  /carniwa-presenceresolver/i: carniwa-presence-resolver
   /cloudflare-alwaysonline/i: 'cloudflare alwaysonline'
   /cloudflare-healthchecks/i: cloudflare-health-checks
   /cloudservermarketspider/i: cloud-server-market-spider
@@ -1210,10 +1219,7 @@ rules:
   '/victorreader stream 503|victorreader_/i': victor-reader-stream-new-generation
   '/tcl http client package/i': tcl-http-client
   '/doubletwist cloudplayer/i': doubletwist-cloudplayer
-  /caption-dataset-download/i: caption-dataset-download
   '/nxploited nf-fu scanner/i': nxploited-nf-fu-scanner
-  /epassage24-websitefinder/i: epassage24-website-finder
-  /cve-2026-4020-go-scanner/i: cve-2026-4020-go-scanner
   '/zelist\.ro feed parser/i': ze-list
   /ultimate_sitemap_parser/i: ultimate-sitemap-parser
   /jobradarcareerdiscovery/i: job-radar-career-discovery
@@ -1248,6 +1254,7 @@ rules:
   /companiesenrichmentbot/i: companies-enrichment-bot
   /statamic-lead-research/i: statamic-lead-research
   /dealroom-website-check/i: dealroom-website-check
+  /nyxys-knowledgefactory/i: nyxys-knowledge-factory
   /google-cloudvertexbot/i: google-cloud-vertex-bot
   /magentovalidatorfixed/i: magento-validator-fixed
   '/sidetrade indexer bot/i': 'sidetrade indexer bot'
@@ -1294,6 +1301,10 @@ rules:
   /inovvositeclassifier/i: inovvo-site-classifier
   /url-toolkit-research/i: url-toolkit-research
   /cl0q-favicon-grabber/i: cl0q-favicon-grabber
+  /fp-dead-link-checker/i: fp-dead-link-checker
+  /passkey-domain-check/i: passkey-domain-check
+  /shopifydomainscanner/i: shopify-domain-scanner
+  /capper-lead-research/i: capper-lead-research
   /broken-link-checker/i: broken-link-checker
   /icap-client-library/i: icap-client-library
   /postitleaddiscovery/i: postit-lead-discovery
@@ -1321,6 +1332,8 @@ rules:
   /stateofssl-research/i: state-of-ssl-research
   /javiwos-coldmailbot/i: javiwos-coldmail-bot
   /lighthouse-research/i: lighthouse-research
+  /googleadstxtchecker/i: google-ads-txt-checker
+  /geo-score-validator/i: geo-score-validator
   /steamchaturllookup/i: steam-chat-url-lookup
   /dynatracesynthetic/i: dynatrace-synthetic
   /cpanel-http-client/i: cpanel-http-client
@@ -1339,6 +1352,7 @@ rules:
   /rfxsearch-research/i: rfx-search-research
   /wolfofseo-301-scan/i: wolf-of-seo-301-scan
   /seojuice-searchbot/i: seo-juice-search-bot
+  /haveinlistenricher/i: have-in-list-enricher
   /webcache-mdream-rs/i: webcache-mdream-rs
   /digitalshadowsbot/i: digital-shadows-bot
   /netpeakcheckerbot/i: netpeak-checker-bot
@@ -1406,6 +1420,8 @@ rules:
   /captainobviousbot/i: captain-obvious-bot
   /resellerenrichbot/i: reseller-enrich-bot
   /azureai-searchbot/i: azureai-searchbot
+  /dead-link-checker/i: dead-link-checker
+  /govini-dq-checker/i: govini-dq-checker
   /uphonewebbrowser/i: uphone-browser
   /accessiblewebbot/i: accessible-web-bot
   '/let.?s ?encrypt/i': lets-encrypt-validation
@@ -1428,6 +1444,9 @@ rules:
   /stackdetectorbot/i: stack-detector-bot
   /mre-leadmaschine/i: mre-leadmaschine
   /relaion5b-source/i: relaion5b-source
+  /akonileadhuntbot/i: akoni-lead-hunt-bot
+  /hub-crawler-eino/i: hub-crawler-eino
+  /livedomainfinder/i: live-domain-finder
   /copyviodetector/i: copyvio-detector
   /statistikhessen/i: statistik-hessen
   /yadirectfetcher/i: ya-direct-fetcher
@@ -1486,6 +1505,8 @@ rules:
   /wp-safe-scanner/i: wp-safe-scanner
   /pewpewsearchbot/i: pew-pew-search-bot
   /vjuslogopreview/i: vjus-logo-preview
+  /exposurescanner/i: exposure-scanner
+  /aonsightmetabot/i: aonsight-meta-bot
   /panscient\.com/i: panscient
   /hgfalphaxcrawl/i: hgf-alpha-x-crawl
   /unimatrix-zero/i: unimatrix-zero
@@ -1536,6 +1557,7 @@ rules:
   '/research fetch/i': research-fetch
   /knotenleadcheck/i: knoten-lead-check
   /urlalivechecker/i: url-alive-checker
+  /ctscan-research/i: ctscan-research
   /vexelsearchbot/i: vexel-search-bot
   /awariosmartbot/i: awario-smart-bot
   /google-amphtml/i: google-amphtml
@@ -1558,6 +1580,12 @@ rules:
   /domainprintbot/i: domain-print-bot
   /emailextractor/i: email-extractor
   /arenaunfurlbot/i: arena-unfurl-bot
+  /nextjsdetector/i: nextjs-detector
+  /joomladetector/i: joomla-detector
+  /companyscraper/i: company-scraper
+  /nextjs-scanner/i: nextjs-scanner
+  /deadweb-prober/i: deadweb-prober
+  /cartalys-intel/i: cartalys-intel
   /censysinspect/i: censysinspect
   /t3versionsbot/i: t3-versions-bot
   '/acorn phoenix/i': acorn-phoenix
@@ -1703,6 +1731,10 @@ rules:
   /urlvalidator/i: url-validator
   /associatebot/i: associate-bot
   /plagawarebot/i: plag-aware-bot
+  /foda-scanner/i: foda-scanner
+  /avenoderadar/i: avenode-radar
+  /internet2bot/i: internet-2-bot
+  /stackyenrich/i: stacky-enrich
   /bitsightbot/i: bitsightbot
   /surdotlybot/i: surdotlybot
   /intelx\.io/i: intelligence-x
@@ -1794,7 +1826,8 @@ rules:
   /metatronbot/i: metatron-bot
   /kontaktybot/i: kontakty-bot
   /statuscheck/i: status-check
-  /domainscan/i: 'domainscan server monitoring'
+  /rankariabot/i: rankaria-bot
+  /domainscan/i: domainscan-server-monitoring
   /jobroboter/i: jobroboter
   /webwikibot/i: webwikibot
   /websusebot/i: websuse-bot
@@ -1882,6 +1915,10 @@ rules:
   /premirobot/i: premiro-bot
   /hostio-bot/i: hostio-bot
   /lanternbot/i: lantern-bot
+  /es-crawler/i: es-crawler
+  /manma-tech/i: manma-tech
+  /fossickbot/i: fossick-bot
+  /leadfinder/i: lead-finder
   /kozmonavt|kocmohabt/i: kozmonavt
   /stractbot/i: stract-bot
   /screpybot/i: screpy-bot
@@ -1979,6 +2016,7 @@ rules:
   /poliasbot/i: polias-bot
   /sqlspider/i: sql-spider
   /domainbot/i: domain-bot
+  /puritybot/i: purity-bot
   /neevabot/i: neevabot
   /msoffice/i: office
   /centuryb/i: centuryb
@@ -2050,6 +2088,7 @@ rules:
   /collectd/i: collectd
   /imgproxy/i: imgproxy
   /http-get/i: http-get
+  /hunt-bot/i: hunt-bot
   /fever\//i: fever
   /sklikbot/i: sklik-bot
   /(?<!\.)360se/i: '360 secure browser'
@@ -2092,6 +2131,7 @@ rules:
   /pbn\.bot/i: pbn-bot
   /quillbot/i: quillbot
   /lyonlbot/i: lyonl-bot
+  /rivrybot/i: rivry-bot
   /whatcms/i: what-cms
   /phoenix/i: phoenix
   /kagibot/i: kagi-bot
@@ -2128,6 +2168,7 @@ rules:
   '/dbd bot/i': dbd-bot
   /aeverly/i: aeverly
   /ads-txt/i: ads-txt
+  /recscan/i: rec-scan
   /onbbot/i: onbbot
   /orbbot/i: orbbot
   /edg\//i: edge
@@ -2148,6 +2189,7 @@ rules:
   /ftebot/i: fte-bot
   /netapi/i: net-api
   /owpbot/i: owp-bot
+  /scryer/i: scryer
   /goose/i: goose-extractor
   /avant/i: avant
   /dvbot/i: dv-bot
@@ -2160,13 +2202,6 @@ rules:
   /2gdpr/i: 2gdpr
   /kaupr/i: kaupr
   /wpbot/i: wp-bot
-  /compatible; research/i: generic-bot
-  /javascript:/i: generic-bot
-  /^mozilla\/[0-9]\.0 \(compatible\)$/i: generic-bot
-  /^mozilla\/[0-9]\.0$/i: generic-bot
-  /^mozilla$/i: generic-bot
-  /^chrome$/i: generic-bot
-  /mozilla/i: mozilla
   '/2ip bot/i': '2ip bot'
   /dart\//i: dart
   /zaldamo/i: zaldamo
@@ -2292,7 +2327,7 @@ rules:
   /pa11y/i: pa11y
   /nmap/i: nmap
   /itms/i: itms
-  /(?<!r)ning/i: ning
+  /(?<![nr])ning/i: ning
   /nbot/i: nbot
   /helm/i: helm
   '/(?<![\.\b])php\b/i': php
@@ -2302,4 +2337,15 @@ rules:
   /w3m/i: w3m
   /^R\//: r
   /^np|npbot/i: name-protect-bot
+  /javascript:/i: generic-bot
+  /validator/i: generic-bot
+  /research/i: generic-bot
+  /crawler/i: generic-bot
+  /checker/i: generic-bot
+  /bot/i: generic-bot
+  /^mozilla\/[0-9]\.0 \(compatible\)$/i: generic-bot
+  /^mozilla\/[0-9]\.0$/i: generic-bot
+  /^mozilla$/i: generic-bot
+  /^chrome$/i: generic-bot
+  /mozilla/i: mozilla
 generic: unknown
