@@ -23,6 +23,7 @@ use JsonException;
 use Override;
 use PHPUnit\Framework\Attributes\CoversNothing;
 use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\Attributes\Group;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\AbstractLogger;
@@ -54,6 +55,7 @@ use const PHP_EOL;
 
 /** @infection-ignore-all */
 #[CoversNothing]
+#[Group(name: 'integration')]
 final class DetectorTest extends TestCase
 {
     private static DetectorFactory $detectorFactory;

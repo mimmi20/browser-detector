@@ -30,6 +30,7 @@ use DateInterval;
 use Override;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\Attributes\Group;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -65,6 +66,7 @@ use const PHP_EOL;
 #[CoversClass(className: EngineLoader::class)]
 #[CoversClass(className: BrowserLoader::class)]
 #[CoversClass(className: PlatformLoader::class)]
+#[Group(name: 'integration')]
 final class DetectorIntegrationTest extends TestCase
 {
     private static DetectorFactory $detectorFactory;
