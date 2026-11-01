@@ -8638,7 +8638,7 @@
   platform: android
 'samsung sm-j260az':
   deviceName: SM-J260AZ
-  marketingName: 'Galaxy J2 Core'
+  marketingName: 'Galaxy J2 Pure'
   manufacturer: samsung
   brand: samsung
   dualOrientation: true
@@ -11242,7 +11242,7 @@
   platform: android
 'samsung sm-g611s':
   deviceName: SM-G611S
-  marketingName: 'Galaxy J7 Prime 2 (Lorea)'
+  marketingName: 'Galaxy On7 Prime (Korea)'
   manufacturer: samsung
   brand: samsung
   dualOrientation: true
@@ -31934,7 +31934,7 @@
   platform: android
 'samsung sm-a166l':
   deviceName: SM-A166L
-  marketingName: 'Galaxy A16 5G'
+  marketingName: 'Galaxy Buddy 4'
   manufacturer: samsung
   brand: samsung
   dualOrientation: true
@@ -35112,7 +35112,7 @@
   platform: android
 'samsung sm-g887n':
   deviceName: SM-G887N
-  marketingName: 'Galaxy A8s'
+  marketingName: 'Galaxy A9 Pro'
   manufacturer: samsung
   brand: samsung
   dualOrientation: true
@@ -36354,5 +36354,19 @@
     height: 1440
     touch: true
     size: 5.1
+  type: smartphone
+  platform: android
+'samsung galaxy s23 ultra':
+  deviceName: 'Galaxy S23 Ultra'
+  marketingName: 'Galaxy S23 Ultra'
+  manufacturer: samsung
+  brand: samsung
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: 3088
+    height: 1440
+    touch: true
+    size: 6.8
   type: smartphone
   platform: android
