@@ -1072,19 +1072,19 @@
       user-agent: 'Mozilla/5.0 (Linux; Android 9; HTY-32HDR06B-S2.PT320AT025 Build/PPR2.180905.006.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 Mobile Safari/537.36'
     device:
       architecture: ''
-      deviceName: 'general Toshiba device'
-      marketingName: 'general Toshiba device'
-      manufacturer: toshiba
-      brand: toshiba
+      deviceName: HTY-32HDR06B-S2.PT320AT025
+      marketingName: HTY-32HDR06B-S2.PT320AT025
+      manufacturer: hartens
+      brand: hartens
       display:
-        width: null
-        height: null
+        width: 1366
+        height: 768
         touch: false
-        size: null
-      type: mobile-device
-      ismobile: true
-      istv: false
-      dualOrientation: null
+        size: 32.0
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
       simCount: 0
       bits: 0
     client:
@@ -2068,7 +2068,7 @@
       type: tv-set-top-box
       ismobile: false
       istv: true
-      dualOrientation: null
+      dualOrientation: false
       simCount: 0
       bits: 0
     client:
@@ -2109,7 +2109,7 @@
       type: tv-set-top-box
       ismobile: false
       istv: true
-      dualOrientation: null
+      dualOrientation: false
       simCount: 0
       bits: 0
     client:
@@ -2150,7 +2150,7 @@
       type: tv-set-top-box
       ismobile: false
       istv: true
-      dualOrientation: null
+      dualOrientation: false
       simCount: 0
       bits: 0
     client:
@@ -2191,7 +2191,7 @@
       type: tv-set-top-box
       ismobile: false
       istv: true
-      dualOrientation: null
+      dualOrientation: false
       simCount: 0
       bits: 0
     client:
@@ -2232,7 +2232,7 @@
       type: tv-set-top-box
       ismobile: false
       istv: true
-      dualOrientation: null
+      dualOrientation: false
       simCount: 0
       bits: 0
     client:
@@ -2273,7 +2273,7 @@
       type: tv-set-top-box
       ismobile: false
       istv: true
-      dualOrientation: null
+      dualOrientation: false
       simCount: 0
       bits: 0
     client:
@@ -2314,7 +2314,7 @@
       type: tv-set-top-box
       ismobile: false
       istv: true
-      dualOrientation: null
+      dualOrientation: false
       simCount: 0
       bits: 0
     client:
@@ -2355,7 +2355,7 @@
       type: tv-set-top-box
       ismobile: false
       istv: true
-      dualOrientation: null
+      dualOrientation: false
       simCount: 0
       bits: 0
     client:
@@ -2396,7 +2396,7 @@
       type: tv-set-top-box
       ismobile: false
       istv: true
-      dualOrientation: null
+      dualOrientation: false
       simCount: 0
       bits: 0
     client:
@@ -2712,15 +2712,15 @@
       user-agent: 'Mozilla/5.0 (Linux; Android 10.2.5; Corrisoft G7 Power Build/QQ2A.200501.001.B2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.6668.100 Mobile Safari/537.36'
     device:
       architecture: ''
-      deviceName: Power
-      marketingName: Power
-      manufacturer: ulefone
-      brand: ulefone
+      deviceName: 'general Mobile Phone'
+      marketingName: 'general Mobile Phone'
+      manufacturer: unknown
+      brand: unknown
       display:
-        width: 1920
-        height: 1080
+        width: null
+        height: null
         touch: true
-        size: 5.5
+        size: null
       type: smartphone
       ismobile: true
       istv: false
@@ -2855,20 +2855,20 @@
       user-agent: 'Mozilla/5.0 (Linux; Android 9; Ulefone Power Armor 18) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.120 Mobile Safari/537.36 OPR/113.0.5230.55'
     device:
       architecture: ''
-      deviceName: Power
-      marketingName: Power
+      deviceName: 'Power Armor 18'
+      marketingName: 'Power Armor 18'
       manufacturer: ulefone
       brand: ulefone
       display:
-        width: 1920
+        width: 2408
         height: 1080
         touch: true
-        size: 5.5
+        size: 6.58
       type: smartphone
       ismobile: true
       istv: false
       dualOrientation: true
-      simCount: 1
+      simCount: 2
       bits: 0
     client:
       name: 'Opera Mobile'

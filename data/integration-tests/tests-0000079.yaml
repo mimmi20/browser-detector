@@ -1523,20 +1523,20 @@
       user-agent: 'Mozilla/5.0 (Linux; Android 9; ud710_ctg30air_native Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.71 MQQBrowser/6.2 TBS/048449 Mobile Safari/537.36;XiaoEHelperApp;tongtongnewapp_platform=android;tongtongnewapp_version=6.1.0;tongtongnewapp_device=pad;XEGuardWhitelist'
     device:
       architecture: ''
-      deviceName: 'general iTel device'
-      marketingName: 'general iTel device'
-      manufacturer: itel
-      brand: itel
+      deviceName: 'general Mobile Phone'
+      marketingName: 'general Mobile Phone'
+      manufacturer: unknown
+      brand: unknown
       display:
         width: null
         height: null
-        touch: false
+        touch: true
         size: null
-      type: mobile-device
+      type: smartphone
       ismobile: true
       istv: false
-      dualOrientation: null
-      simCount: 0
+      dualOrientation: true
+      simCount: 1
       bits: 0
     client:
       name: 'QQ Browser'

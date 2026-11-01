@@ -141,7 +141,7 @@
       type: tv-media-player
       ismobile: false
       istv: true
-      dualOrientation: null
+      dualOrientation: false
       simCount: 0
       bits: 0
     client:
@@ -177,12 +177,12 @@
       display:
         width: null
         height: null
-        touch: false
+        touch: true
         size: null
-      type: tv-media-player
+      type: peripheral
       ismobile: false
-      istv: true
-      dualOrientation: null
+      istv: false
+      dualOrientation: false
       simCount: 0
       bits: 0
     client:
@@ -218,12 +218,12 @@
       display:
         width: null
         height: null
-        touch: false
+        touch: true
         size: null
-      type: tv-media-player
+      type: peripheral
       ismobile: false
-      istv: true
-      dualOrientation: null
+      istv: false
+      dualOrientation: false
       simCount: 0
       bits: 0
     client:
@@ -785,8 +785,8 @@
       user-agent: 'Mozilla/5.0 (Linux; Android 11; MiTV-MOOR6 Build/RTM5.220609.003; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
     device:
       architecture: ''
-      deviceName: TV
-      marketingName: TV
+      deviceName: 'MiTV MOOR6'
+      marketingName: 'MiTV MOOR6'
       manufacturer: xiaomi
       brand: xiaomi
       display:
@@ -3426,8 +3426,8 @@
       user-agent: 'Mozilla/5.0 (Linux; Android 9; Blade V10 Vita RU Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36 EdgA/91.0.864.48'
     device:
       architecture: ''
-      deviceName: 'Blade V10 Vita'
-      marketingName: 'Blade V10 Vita'
+      deviceName: 'Blade V10 Vita RU'
+      marketingName: 'Blade V10 Vita RU'
       manufacturer: zte
       brand: zte
       display:

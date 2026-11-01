@@ -744,16 +744,16 @@
       user-agent: 'Mozilla/5.0 (Linux; Android 9.0; SM-T295C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.186 Mobile Safari/537.36 OPR/114.0.5282.144'
     device:
       architecture: ''
-      deviceName: 'general Mobile Phone'
-      marketingName: 'general Mobile Phone'
-      manufacturer: unknown
-      brand: unknown
+      deviceName: SM-T295C
+      marketingName: 'Galaxy Tab A 8.0" 4G (2019, Global)'
+      manufacturer: samsung
+      brand: samsung
       display:
-        width: null
-        height: null
+        width: 1280
+        height: 800
         touch: true
-        size: null
-      type: smartphone
+        size: 8.0
+      type: fone-pad
       ismobile: true
       istv: false
       dualOrientation: true
@@ -785,15 +785,15 @@
       user-agent: 'Mozilla/5.0 (Linux; Android 9.0; SM-A505R4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.45 Mobile Safari/537.36 OPR/100.0.4815.13'
     device:
       architecture: ''
-      deviceName: 'general Mobile Phone'
-      marketingName: 'general Mobile Phone'
-      manufacturer: unknown
-      brand: unknown
+      deviceName: SM-A505R4
+      marketingName: 'Galaxy A50 (USA)'
+      manufacturer: samsung
+      brand: samsung
       display:
-        width: null
-        height: null
+        width: 2340
+        height: 1080
         touch: true
-        size: null
+        size: 6.4
       type: smartphone
       ismobile: true
       istv: false
@@ -1318,20 +1318,20 @@
       user-agent: 'Mozilla/5.0 (Linux; Android 9.0; Reno Ace) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36 OPR/77.0.4054.90'
     device:
       architecture: ''
-      deviceName: 'general Mobile Phone'
-      marketingName: 'general Mobile Phone'
-      manufacturer: unknown
-      brand: unknown
+      deviceName: 'Reno Ace'
+      marketingName: 'Reno Ace'
+      manufacturer: bbk
+      brand: oppo
       display:
-        width: null
-        height: null
+        width: 2400
+        height: 1080
         touch: true
-        size: null
+        size: 6.5
       type: smartphone
       ismobile: true
       istv: false
       dualOrientation: true
-      simCount: 1
+      simCount: 2
       bits: 0
     client:
       name: 'Opera Mobile'
@@ -1400,20 +1400,20 @@
       user-agent: 'Mozilla/5.0 (Linux; Android 9.0; Reno Ace 2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.158 Mobile Safari/537.36 OPR/123.0.5644.0'
     device:
       architecture: ''
-      deviceName: 'general Mobile Phone'
-      marketingName: 'general Mobile Phone'
-      manufacturer: unknown
-      brand: unknown
+      deviceName: 'Reno Ace 2'
+      marketingName: 'Reno Ace 2'
+      manufacturer: bbk
+      brand: oppo
       display:
-        width: null
-        height: null
+        width: 2400
+        height: 1080
         touch: true
-        size: null
+        size: 6.55
       type: smartphone
       ismobile: true
       istv: false
       dualOrientation: true
-      simCount: 1
+      simCount: 2
       bits: 0
     client:
       name: 'Opera Mobile'

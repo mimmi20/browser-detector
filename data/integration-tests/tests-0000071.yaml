@@ -1482,15 +1482,15 @@
       user-agent: 'Mozilla/5.0 (Linux; Android 9; HTY-55UHDO11G-HC22 Build/PPR2.180905.006.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/23.1.0.73 (lite) TV Safari/537.36'
     device:
       architecture: ''
-      deviceName: 'general Hartens tv'
-      marketingName: 'general Hartens tv'
+      deviceName: HTY-55UHDO11G-HC22
+      marketingName: HTY-55UHDO11G-HC22
       manufacturer: hartens
       brand: hartens
       display:
-        width: null
-        height: null
+        width: 3840
+        height: 2160
         touch: false
-        size: null
+        size: 55.0
       type: tv
       ismobile: false
       istv: true
@@ -1523,15 +1523,15 @@
       user-agent: 'Mozilla/5.0 (Linux; Android 9; HTY-55UHD06B-S2 Build/PPR2.180905.006.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
     device:
       architecture: ''
-      deviceName: 'general Hartens tv'
-      marketingName: 'general Hartens tv'
+      deviceName: HTY-55UHD06B-S2
+      marketingName: HTY-55UHD06B-S2
       manufacturer: hartens
       brand: hartens
       display:
-        width: null
-        height: null
+        width: 3840
+        height: 2160
         touch: false
-        size: null
+        size: 55.0
       type: tv
       ismobile: false
       istv: true
@@ -1605,15 +1605,15 @@
       user-agent: 'Mozilla/5.0 (Linux; Android 9; HTY-50UHD05B-S2 Build/PPR2.180905.006.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.12.0.453 (lite) TV Safari/537.36'
     device:
       architecture: ''
-      deviceName: 'general Hartens tv'
-      marketingName: 'general Hartens tv'
+      deviceName: HTY-50UHD05B-S2
+      marketingName: HTY-50UHD05B-S2
       manufacturer: hartens
       brand: hartens
       display:
-        width: null
-        height: null
+        width: 3840
+        height: 2160
         touch: false
-        size: null
+        size: 50.0
       type: tv
       ismobile: false
       istv: true
@@ -1728,15 +1728,15 @@
       user-agent: 'Mozilla/5.0 (Linux; Android 9; HTY-43UHD11B-S2 Build/PPR2.180905.006.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
     device:
       architecture: ''
-      deviceName: 'general Hartens tv'
-      marketingName: 'general Hartens tv'
+      deviceName: HTY-43UHD11B-S2
+      marketingName: HTY-43UHD11B-S2
       manufacturer: hartens
       brand: hartens
       display:
-        width: null
-        height: null
+        width: 3840
+        height: 2160
         touch: false
-        size: null
+        size: 43.0
       type: tv
       ismobile: false
       istv: true
@@ -1851,15 +1851,15 @@
       user-agent: 'Mozilla/5.0 (Linux; Android 9; HTY-32HDR11B-S2 Build/PPR2.180905.006.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
     device:
       architecture: ''
-      deviceName: 'general Hartens tv'
-      marketingName: 'general Hartens tv'
+      deviceName: HTY-32HDR11B-S2
+      marketingName: HTY-32HDR11B-S2
       manufacturer: hartens
       brand: hartens
       display:
-        width: null
-        height: null
+        width: 1366
+        height: 768
         touch: false
-        size: null
+        size: 32.0
       type: tv
       ismobile: false
       istv: true
@@ -2917,20 +2917,20 @@
       user-agent: 'Mozilla/5.0 (Linux; Android 11; HIPER HIPER-M-Pad; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.132 Mobile Safari/537.36 Sapphire/1.11.1'
     device:
       architecture: ''
-      deviceName: 'general HIPER device'
-      marketingName: 'general HIPER device'
+      deviceName: M-Pad
+      marketingName: M-Pad
       manufacturer: hiper
       brand: hiper
       display:
         width: null
         height: null
-        touch: false
+        touch: true
         size: null
-      type: tv
-      ismobile: false
-      istv: true
-      dualOrientation: null
-      simCount: 0
+      type: fone-pad
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
       bits: 0
     client:
       name: 'Bing Search'
@@ -4024,8 +4024,8 @@
       user-agent: 'Mozilla/5.0 (Linux; Android 9; HiSmartTV A4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Mobile Safari/537.36'
     device:
       architecture: ''
-      deviceName: 'general HiSense TV'
-      marketingName: 'general HiSense TV'
+      deviceName: 'HiSmartTV A4'
+      marketingName: 'HiSmartTV A4'
       manufacturer: hisense
       brand: hisense
       display:

@@ -4036,12 +4036,12 @@
       simCount: 0
       bits: 0
     client:
-      name: Crawler
+      name: 'Android Webkit'
       modus: null
-      version: 0.1.0
-      manufacturer: linkfluence
-      type: crawler
-      isbot: true
+      version: null
+      manufacturer: google
+      type: browser
+      isbot: false
       bits: 0
     os:
       name: Android
@@ -4050,9 +4050,9 @@
       manufacturer: google
       bits: 0
     engine:
-      name: null
+      name: WebKit
       version: null
-      manufacturer: unknown
+      manufacturer: apple
 -
   headers:
     user-agent: 'Microsoft Office Word/16.0 (OMDroid 14; Microsoft Office Word 16.0; Pro)'

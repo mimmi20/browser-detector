@@ -3450,19 +3450,19 @@
       user-agent: 'Mozilla/5.0 (Linux; Android 9; Ugoos AM3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36'
     device:
       architecture: ''
-      deviceName: 'general Tablet'
-      marketingName: 'general Tablet'
-      manufacturer: unknown
-      brand: unknown
+      deviceName: AM3
+      marketingName: AM3
+      manufacturer: ugoos
+      brand: ugoos
       display:
         width: null
         height: null
-        touch: true
+        touch: false
         size: null
-      type: tablet
-      ismobile: true
-      istv: false
-      dualOrientation: true
+      type: tv-set-top-box
+      ismobile: false
+      istv: true
+      dualOrientation: false
       simCount: 0
       bits: 0
     client:

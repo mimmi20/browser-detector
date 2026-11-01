@@ -2917,19 +2917,19 @@
       user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; tv43) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 YaBrowser/23.3.5.83.01 Safari/537.36'
     device:
       architecture: ''
-      deviceName: 'general Tablet'
-      marketingName: 'general Tablet'
+      deviceName: 'general TV device'
+      marketingName: 'general TV device'
       manufacturer: unknown
       brand: unknown
       display:
         width: null
         height: null
-        touch: true
+        touch: false
         size: null
-      type: tablet
-      ismobile: true
-      istv: false
-      dualOrientation: true
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
       simCount: 0
       bits: 0
     client:
