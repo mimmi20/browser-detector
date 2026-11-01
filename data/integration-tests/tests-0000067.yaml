@@ -1233,20 +1233,20 @@
       user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 9; Blackview BV6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.49 YaBrowser/26.4.7.49.00 Mobile Safari/537.36'
     device:
       architecture: ''
-      deviceName: 'general Blackview device'
-      marketingName: 'general Blackview device'
+      deviceName: BV6000
+      marketingName: BV6000
       manufacturer: blackview
       brand: blackview
       display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: mobile-device
+        width: 1280
+        height: 720
+        touch: true
+        size: 4.7
+      type: smartphone
       ismobile: true
       istv: false
-      dualOrientation: null
-      simCount: 0
+      dualOrientation: true
+      simCount: 1
       bits: 0
     client:
       name: 'Yandex Browser'

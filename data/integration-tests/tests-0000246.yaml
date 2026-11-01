@@ -655,12 +655,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: DomainCollector
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -669,9 +669,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; GeoSurge/1.0)'
@@ -696,12 +696,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: GeoSurge
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -710,9 +710,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible; RecScan/2.0)'
@@ -819,12 +819,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: platform-fingerprint
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -833,9 +833,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 NextJSDetector/2.0'

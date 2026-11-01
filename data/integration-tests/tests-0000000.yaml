@@ -892,11 +892,11 @@
       simCount: 1
       bits: 0
     client:
-      name: 'Android Webkit'
+      name: 'IMO HD Video Calls & Chat'
       modus: null
-      version: null
-      manufacturer: google
-      type: browser
+      version: 2020.03.2011
+      manufacturer: imo
+      type: mobile-application
       isbot: false
       bits: 0
     os:
@@ -906,9 +906,9 @@
       manufacturer: google
       bits: 0
     engine:
-      name: WebKit
+      name: null
       version: null
-      manufacturer: apple
+      manufacturer: unknown
 -
   headers:
     user-agent: 'com.amazon.sics/3.0.200230.0 (KFSUWI; Android 22; Amazon)'
