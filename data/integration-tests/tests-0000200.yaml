@@ -3901,19 +3901,19 @@
       user-agent: 'Mozilla/5.0 (Linux; Android 9; RealtekATV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.185 Safari/537.36'
     device:
       architecture: ''
-      deviceName: 'general Tablet'
-      marketingName: 'general Tablet'
-      manufacturer: unknown
-      brand: unknown
+      deviceName: RealtekATV
+      marketingName: RealtekATV
+      manufacturer: realtek
+      brand: realtek
       display:
-        width: null
-        height: null
-        touch: true
-        size: null
-      type: tablet
-      ismobile: true
-      istv: false
-      dualOrientation: true
+        width: 3840
+        height: 2160
+        touch: false
+        size: 43.0
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
       simCount: 0
       bits: 0
     client:

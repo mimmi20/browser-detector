@@ -3525,12 +3525,12 @@
       simCount: 0
       bits: 0
     client:
-      name: Chrome
+      name: 'Generic Bot'
       modus: null
       version: null
-      manufacturer: google
-      type: browser
-      isbot: false
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -3539,9 +3539,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: WebKit
+      name: null
       version: null
-      manufacturer: apple
+      manufacturer: unknown
 -
   headers:
     user-agent: '"Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"'

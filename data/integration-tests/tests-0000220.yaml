@@ -2261,19 +2261,19 @@
       user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; Orbsmart_TR43) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.61 YaBrowser/26.4.6.61.00 Safari/537.36'
     device:
       architecture: ''
-      deviceName: 'general Tablet'
-      marketingName: 'general Tablet'
-      manufacturer: unknown
-      brand: unknown
+      deviceName: TR43
+      marketingName: TR43
+      manufacturer: orbsmart
+      brand: orbsmart
       display:
         width: null
         height: null
-        touch: true
+        touch: false
         size: null
-      type: tablet
-      ismobile: true
-      istv: false
-      dualOrientation: true
+      type: tv-media-player
+      ismobile: false
+      istv: true
+      dualOrientation: false
       simCount: 0
       bits: 0
     client:

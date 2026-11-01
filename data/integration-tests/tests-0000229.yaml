@@ -4065,19 +4065,19 @@
       user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; DiLink4.0 For BYD AUTO) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.51 YaBrowser/24.4.7.51.01 Safari/537.36'
     device:
       architecture: ''
-      deviceName: 'general Tablet'
-      marketingName: 'general Tablet'
-      manufacturer: unknown
-      brand: unknown
+      deviceName: 'DiLink 4.0'
+      marketingName: 'DiLink 4.0'
+      manufacturer: byd
+      brand: byd
       display:
         width: null
         height: null
         touch: true
         size: null
-      type: tablet
-      ismobile: true
+      type: car-entertainment-system
+      ismobile: false
       istv: false
-      dualOrientation: true
+      dualOrientation: false
       simCount: 0
       bits: 0
     client:

@@ -345,12 +345,12 @@
       simCount: 0
       bits: 0
     client:
-      name: Chrome
+      name: SectorBot
       modus: null
-      version: 124.0.0
-      manufacturer: google
-      type: browser
-      isbot: false
+      version: 1.0.0
+      manufacturer: serdartorun
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -2500,10 +2500,10 @@
       simCount: 0
       bits: 0
     client:
-      name: Crawler
+      name: 'Generic Bot'
       modus: null
       version: null
-      manufacturer: linkfluence
+      manufacturer: unknown
       type: crawler
       isbot: true
       bits: 0
@@ -4153,12 +4153,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: 'Generic Bot'
       modus: null
       version: null
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -4167,9 +4167,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/6.0 (compatible)'
@@ -4194,12 +4194,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: 'Generic Bot'
       modus: null
-      version: 6.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: null
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -4208,9 +4208,9 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown
 -
   headers:
     user-agent: 'Mozilla/5.0 (compatible)'
@@ -4235,12 +4235,12 @@
       simCount: 0
       bits: 0
     client:
-      name: 'Mozilla Application Suite'
+      name: 'Generic Bot'
       modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
+      version: null
+      manufacturer: unknown
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null
@@ -4249,6 +4249,6 @@
       manufacturer: unknown
       bits: 0
     engine:
-      name: Gecko
+      name: null
       version: null
-      manufacturer: mozilla
+      manufacturer: unknown

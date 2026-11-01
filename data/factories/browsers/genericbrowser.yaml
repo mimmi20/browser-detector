@@ -1078,6 +1078,7 @@ rules:
   /freshrss/i: fresh-rss
   /simplepie/i: simplepie
   /netscape/i: netscape
+  /imoandroid\/20\d{2}/i: imo-hd-video-calls-chat
   /avastsecurebrowser/i: 'avast secure browser'
   /nextcloud-android/i: nextcloud
   /googletagmanager/i: google-tag-manager
@@ -1173,6 +1174,7 @@ rules:
   /google-transparency-report/i: google-transparency-report
   '/j\. river internet reader/i': jriver-media-center
   /companypublicdatacollector/i: company-public-data-collector
+  /nsfw-go-placeholder-filter/i: nsfw-go-placeholder-filter
   /yandexmobilescreenshotbot/i: yandex-mobile-screenshot-bot
   /microsoft\.data\.mashup/i: microsoft-power-query
   /google-adwords-displayads/i: google-adwords-displayads
@@ -1282,6 +1284,7 @@ rules:
   /company-data-research/i: company-data-research
   /agow-poi-robots-audit/i: agow-poi-robots-audit
   /shopware-research-bot/i: shopware-research-bot
+  /multi-country-domains/i: multi-country-domains
   /go-containerregistry/i: go-container-registry
   /indexboxcompaniesbot/i: index-box-companies-bot
   /image-sites-research/i: image-sites-research
@@ -1304,6 +1307,8 @@ rules:
   /passkey-domain-check/i: passkey-domain-check
   /shopifydomainscanner/i: shopify-domain-scanner
   /capper-lead-research/i: capper-lead-research
+  /passive-shop-targets/i: passive-shop-targets
+  /platform-fingerprint/i: platform-fingerprint
   /broken-link-checker/i: broken-link-checker
   /icap-client-library/i: icap-client-library
   /postitleaddiscovery/i: postit-lead-discovery
@@ -1557,6 +1562,7 @@ rules:
   /knotenleadcheck/i: knoten-lead-check
   /urlalivechecker/i: url-alive-checker
   /ctscan-research/i: ctscan-research
+  /domaincollector/i: domain-collector
   /vexelsearchbot/i: vexel-search-bot
   /awariosmartbot/i: awario-smart-bot
   /google-amphtml/i: google-amphtml
@@ -1734,6 +1740,7 @@ rules:
   /avenoderadar/i: avenode-radar
   /internet2bot/i: internet-2-bot
   /stackyenrich/i: stacky-enrich
+  /domainscores/i: domain-scores
   /bitsightbot/i: bitsightbot
   /surdotlybot/i: surdotlybot
   /intelx\.io/i: intelligence-x
@@ -2131,6 +2138,7 @@ rules:
   /quillbot/i: quillbot
   /lyonlbot/i: lyonl-bot
   /rivrybot/i: rivry-bot
+  /geosurge/i: geo-surge
   /whatcms/i: what-cms
   /phoenix/i: phoenix
   /kagibot/i: kagi-bot

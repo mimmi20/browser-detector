@@ -2119,12 +2119,12 @@
       simCount: 0
       bits: 0
     client:
-      name: CFNetwork
+      name: 'Autofill (System Component)'
       modus: null
-      version: null
+      version: 18.0.0.30816
       manufacturer: apple
-      type: application
-      isbot: false
+      type: service-agent
+      isbot: true
       bits: 0
     os:
       name: iOS
@@ -2611,12 +2611,12 @@
       simCount: 0
       bits: 0
     client:
-      name: CFNetwork
+      name: autofill_provider_extension
       modus: null
-      version: null
-      manufacturer: apple
-      type: application
-      isbot: false
+      version: 1.0.0
+      manufacturer: unknown
+      type: service-agent
+      isbot: true
       bits: 0
     os:
       name: iOS
@@ -2652,12 +2652,12 @@
       simCount: 0
       bits: 0
     client:
-      name: CFNetwork
+      name: 'Autofill (System Component)'
       modus: null
-      version: null
+      version: 18.0.0.30816
       manufacturer: apple
-      type: application
-      isbot: false
+      type: service-agent
+      isbot: true
       bits: 0
     os:
       name: iOS
@@ -2775,12 +2775,12 @@
       simCount: 0
       bits: 0
     client:
-      name: CFNetwork
+      name: autofill_provider_extension
       modus: null
-      version: null
-      manufacturer: apple
-      type: application
-      isbot: false
+      version: 25.0.0
+      manufacturer: unknown
+      type: service-agent
+      isbot: true
       bits: 0
     os:
       name: iOS

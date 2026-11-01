@@ -1933,20 +1933,20 @@
       user-agent: 'Mozilla/5.0 (Linux; arm; Android 9; RealtekATV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 YaBrowser/23.3.1.88.00 SA/3 Mobile Safari/537.36'
     device:
       architecture: ''
-      deviceName: 'general Mobile Phone'
-      marketingName: 'general Mobile Phone'
-      manufacturer: unknown
-      brand: unknown
+      deviceName: RealtekATV
+      marketingName: RealtekATV
+      manufacturer: realtek
+      brand: realtek
       display:
-        width: null
-        height: null
-        touch: true
-        size: null
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 1
+        width: 3840
+        height: 2160
+        touch: false
+        size: 43.0
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
+      simCount: 0
       bits: 0
     client:
       name: 'Yandex Browser'

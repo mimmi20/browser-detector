@@ -240,7 +240,7 @@ rules:
   '/google wireless transcoder/i': 'google wireless transcoder'
   /mailmaster_android_mobile/i: mail-master
   /alipayclient|aliapp\(ap/i: ali-pay
-  '/imoandroid\/20\d{2}/i': imo-hd-video-calls-chat
+  /imoandroid\/20\d{2}/i: imo-hd-video-calls-chat
   /grokapp/i: grok-app
   '/ok(?:android|ios|app)/i': odnoklassniki
   '/trill app_version/i': tiktok

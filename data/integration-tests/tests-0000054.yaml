@@ -2724,8 +2724,8 @@
       user-agent: 'Mozilla/5.0 (Linux; Android 9; AKAITV Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Mobile Safari/537.36 OPR/76.0.4017.208'
     device:
       architecture: ''
-      deviceName: 'general Akai device'
-      marketingName: 'general Akai device'
+      deviceName: 'Smart TV'
+      marketingName: 'Smart TV'
       manufacturer: akai
       brand: akai
       display:
@@ -2733,10 +2733,10 @@
         height: null
         touch: false
         size: null
-      type: mobile-device
-      ismobile: true
-      istv: false
-      dualOrientation: null
+      type: tv
+      ismobile: false
+      istv: true
+      dualOrientation: false
       simCount: 0
       bits: 0
     client:

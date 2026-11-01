@@ -295,7 +295,7 @@ rules:
   /tiktokspider/i: tiktok-spider
   '/com\.tcl\.browser|\d+\/tclwebkit\d+[.\d]*/i': browse-here
   /tiktok|musical_ly|com\.zhiliaoapp\.musically/i: tiktok
-  '/imoandroid\/20\d{2}/i': imo-hd-video-calls-chat
+  /imoandroid\/20\d{2}/i: imo-hd-video-calls-chat
   /uphonewebbrowser/i: uphone-browser
   /googletagmanager/i: google-tag-manager
   '/(?<!p)latina\//i': latina

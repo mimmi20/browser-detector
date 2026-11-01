@@ -8422,3 +8422,66 @@ shap-user:
     search:
       - Shap-User
   engine: unknown
+domain-collector:
+  name: DomainCollector
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - DomainCollector
+  engine: unknown
+geo-surge:
+  name: GeoSurge
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - GeoSurge
+  engine: unknown
+domain-scores:
+  name: DomainScores
+  manufacturer: pragmatic-security
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - DomainScores
+  engine: unknown
+passive-shop-targets:
+  name: passive-shop-targets
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - passive-shop-targets
+  engine: unknown
+multi-country-domains:
+  name: multi-country-domains
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - multi-country-domains
+  engine: unknown
+platform-fingerprint:
+  name: platform-fingerprint
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - platform-fingerprint
+  engine: unknown
+nsfw-go-placeholder-filter:
+  name: nsfw-go-placeholder-filter
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - nsfw-go-placeholder-filter
+  engine: unknown
