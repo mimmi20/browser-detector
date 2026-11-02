@@ -1,456 +1,5 @@
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 15; Z2473) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.118 Mobile Safari/537.36 VivoBrowser/10.8.3.4'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; Android 15; Z2473) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.118 Mobile Safari/537.36 VivoBrowser/10.8.3.4'
-    device:
-      architecture: ''
-      deviceName: Z2473
-      marketingName: 'Blade A56'
-      manufacturer: zte
-      brand: zte
-      display:
-        width: 1600
-        height: 720
-        touch: true
-        size: 6.75
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 2
-      bits: 0
-    client:
-      name: 'vivo Browser'
-      modus: null
-      version: 10.8.3.4
-      manufacturer: vivo
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 15.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 123.0.6312.118
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 15; Z2469N Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36 XiaoMi/MiuiBrowser/14.56.0-gn'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; Android 15; Z2469N Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36 XiaoMi/MiuiBrowser/14.56.0-gn'
-    device:
-      architecture: ''
-      deviceName: Z2469N
-      marketingName: 'Blade A76 5G'
-      manufacturer: zte
-      brand: zte
-      display:
-        width: 1612
-        height: 720
-        touch: true
-        size: 6.75
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 2
-      bits: 0
-    client:
-      name: 'Mi Browser'
-      modus: null
-      version: 14.56.0
-      manufacturer: xiaomi
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 15.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 135.0.7049.79
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; NX809J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.148 YaApp_Android/26.60.1 YaSearchBrowser/26.60.1 BroPP/1.0 Mobile Safari/537.36'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; NX809J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.148 YaApp_Android/26.60.1 YaSearchBrowser/26.60.1 BroPP/1.0 Mobile Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: NX809J
-      marketingName: 'Red Magic 11 Pro'
-      manufacturer: zte
-      brand: nubia
-      display:
-        width: 2688
-        height: 1216
-        touch: true
-        size: 6.85
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 2
-      bits: 0
-    client:
-      name: 'Yandex Search Browser'
-      modus: null
-      version: 26.60.1
-      manufacturer: yandex
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 16.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 148.0.7778.148
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; NX741J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.1105 YaSearchBrowser/25.122.1 BroPP/1.0 YaSearchApp/25.122.1 webOmni Mobile Safari/537.36'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; NX741J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.1105 YaSearchBrowser/25.122.1 BroPP/1.0 YaSearchApp/25.122.1 webOmni Mobile Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: NX741J
-      marketingName: 'Z80 Ultra'
-      manufacturer: zte
-      brand: nubia
-      display:
-        width: 2688
-        height: 1216
-        touch: true
-        size: 6.85
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 2
-      bits: 0
-    client:
-      name: 'Yandex Search Browser'
-      modus: null
-      version: 25.122.1
-      manufacturer: yandex
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 16.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 142.0.7444.1105
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; NX799J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.109 YaBrowser/26.3.2.109.00 Mobile Safari/537.36'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; NX799J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.109 YaBrowser/26.3.2.109.00 Mobile Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: NX799J
-      marketingName: 'Red Magic 11 Air'
-      manufacturer: zte
-      brand: nubia
-      display:
-        width: 2688
-        height: 1216
-        touch: true
-        size: 6.85
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 2
-      bits: 0
-    client:
-      name: 'Yandex Browser'
-      modus: null
-      version: 26.3.2.109.00
-      manufacturer: yandex
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 16.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 144.0.7559.109
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; Z2577) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.51 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; Z2577) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.51 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: Z2577
-      marketingName: 'Blade V80 Max'
-      manufacturer: zte
-      brand: zte
-      display:
-        width: 1640
-        height: 720
-        touch: true
-        size: 6.9
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 2
-      bits: 0
-    client:
-      name: 'Yandex Search Browser'
-      modus: null
-      version: 26.47.1
-      manufacturer: yandex
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 16.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 146.0.7680.51
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; Z2577) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.123 YaBrowser/26.4.5.123.00 Mobile Safari/537.36'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; Z2577) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.123 YaBrowser/26.4.5.123.00 Mobile Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: Z2577
-      marketingName: 'Blade V80 Max'
-      manufacturer: zte
-      brand: zte
-      display:
-        width: 1640
-        height: 720
-        touch: true
-        size: 6.9
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 2
-      bits: 0
-    client:
-      name: 'Yandex Browser'
-      modus: null
-      version: 26.4.5.123.00
-      manufacturer: yandex
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 16.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 146.0.7680.123
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; Z2474) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.64 YaSearchBrowser/26.44.1 BroPP/1.0 YaSearchApp/26.44.1 webOmni Mobile Safari/537.36'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; Z2474) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.64 YaSearchBrowser/26.44.1 BroPP/1.0 YaSearchApp/26.44.1 webOmni Mobile Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: Z2474
-      marketingName: 'Blade A76 4G'
-      manufacturer: zte
-      brand: zte
-      display:
-        width: 1612
-        height: 720
-        touch: true
-        size: 6.75
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 2
-      bits: 0
-    client:
-      name: 'Yandex Search Browser'
-      modus: null
-      version: 26.44.1
-      manufacturer: yandex
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 15.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 146.0.7680.64
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; Z2474) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.61 YaBrowser/26.4.6.61.00 Mobile Safari/537.36'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; Z2474) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.61 YaBrowser/26.4.6.61.00 Mobile Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: Z2474
-      marketingName: 'Blade A76 4G'
-      manufacturer: zte
-      brand: zte
-      display:
-        width: 1612
-        height: 720
-        touch: true
-        size: 6.75
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 2
-      bits: 0
-    client:
-      name: 'Yandex Browser'
-      modus: null
-      version: 26.4.6.61.00
-      manufacturer: yandex
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 15.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 146.0.7680.61
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; Z2473) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.59 YaSearchBrowser/26.61.1 BroPP/1.0 YaSearchApp/26.61.1 webOmni Mobile Safari/537.36'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; Z2473) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.59 YaSearchBrowser/26.61.1 BroPP/1.0 YaSearchApp/26.61.1 webOmni Mobile Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: Z2473
-      marketingName: 'Blade A56'
-      manufacturer: zte
-      brand: zte
-      display:
-        width: 1600
-        height: 720
-        touch: true
-        size: 6.75
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 2
-      bits: 0
-    client:
-      name: 'Yandex Search Browser'
-      modus: null
-      version: 26.61.1
-      manufacturer: yandex
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 15.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 148.0.7778.59
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; Z2473) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Mobile Safari/537.36'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; Z2473) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Mobile Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: Z2473
-      marketingName: 'Blade A56'
-      manufacturer: zte
-      brand: zte
-      display:
-        width: 1600
-        height: 720
-        touch: true
-        size: 6.75
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 2
-      bits: 0
-    client:
-      name: 'Yandex Browser'
-      modus: null
-      version: 26.6.0.304.00
-      manufacturer: yandex
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 15.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 148.0.7778.304
-      manufacturer: google
--
-  headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; Z2469N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.51 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36'
   expected:
     headers:
@@ -820,11 +369,11 @@
       manufacturer: google
 -
   headers:
-    x-requested-with: com.zte.nubrowser
-    sec-ch-ua-platform: '"Android"'
     sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "Android WebView";v="150"'
     sec-ch-ua-mobile: '?1'
+    sec-ch-ua-platform: '"Android"'
     user-agent: 'Mozilla/5.0 (Linux; Android 15; Z2458 Build/AP3A.240905.015.A2; WV) AppleWebKit/537.36(KHTML,like Gecko)Version/4.0 Chrome/150.0.7871.125 Mobile Safari/537.36'
+    x-requested-with: com.zte.nubrowser
   expected:
     headers:
       x-requested-with: com.zte.nubrowser
@@ -1279,14 +828,14 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"HeadlessChrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"'
+    sec-ch-ua-arch: '"x64"'
+    sec-ch-ua-bitness: '"64"'
+    sec-ch-ua-full-version: '"131.0.6778.33"'
+    sec-ch-ua-mobile: '?0'
     sec-ch-ua-model: '""'
     sec-ch-ua-platform: '"macOS"'
     sec-ch-ua-platform-version: '"14_0"'
-    sec-ch-ua: '"HeadlessChrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"'
-    sec-ch-ua-full-version: '"131.0.6778.33"'
-    sec-ch-ua-bitness: '"64"'
-    sec-ch-ua-arch: '"x64"'
-    sec-ch-ua-mobile: '?0'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15'
   expected:
@@ -2201,9 +1750,9 @@
       manufacturer: apple
 -
   headers:
-    sec-ch-ua-platform: '"macOS"'
     sec-ch-ua: '"Not A(Brand";v="99", "Google Chrome";v="121", "Chromium";v="121"'
     sec-ch-ua-mobile: '?0'
+    sec-ch-ua-platform: '"macOS"'
     user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1'
   expected:
     headers:
@@ -3929,15 +3478,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"154.0.8037.92"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"CPH2219"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"13.0.0"'
-    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
-    sec-ch-ua-full-version: '"154.0.8037.92"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36'
   expected:
@@ -3990,15 +3539,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"155.0.8059.39"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"CPH2581"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
-    sec-ch-ua-full-version: '"155.0.8059.39"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36'
   expected:
@@ -4171,4 +3720,455 @@
     engine:
       name: Blink
       version: 152.0.7977.87
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 13; X70 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/153.0.8010.36 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 13; X70 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/153.0.8010.36 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: X70
+      marketingName: X70
+      manufacturer: cubot
+      brand: cubot
+      display:
+        width: 2408
+        height: 1080
+        touch: true
+        size: 6.58
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 153.0.8010.36
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 13.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 153.0.8010.36
+      manufacturer: google
+-
+  headers:
+    user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 15; FP4 Build/FP4.QREL.15.19.1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/153.0.8010.36 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 15; FP4 Build/FP4.QREL.15.19.1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/153.0.8010.36 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: FP4
+      marketingName: '4'
+      manufacturer: fairphone
+      brand: fairphone
+      display:
+        width: 2340
+        height: 1080
+        touch: true
+        size: 6.3
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Dogtorance
+      modus: null
+      version: 1.2.0
+      manufacturer: dog-torance
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 15.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 153.0.8010.36
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; Fairphone 6 Build/FP6.QREL.16.111.0; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/154.0.8037.57 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; Fairphone 6 Build/FP6.QREL.16.111.0; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/154.0.8037.57 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: FP6
+      marketingName: '6'
+      manufacturer: fairphone
+      brand: fairphone
+      display:
+        width: 2484
+        height: 1116
+        touch: true
+        size: 6.31
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 154.0.8037.57
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 154.0.8037.57
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; FP4 Build/FP4.SREL.15.19.2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/154.0.8037.57 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 15; FP4 Build/FP4.SREL.15.19.2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/154.0.8037.57 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: FP4
+      marketingName: '4'
+      manufacturer: fairphone
+      brand: fairphone
+      display:
+        width: 2340
+        height: 1080
+        touch: true
+        size: 6.3
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 154.0.8037.57
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 15.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 154.0.8037.57
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; FP5 Build/AQ3A.240912.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/155.0.8059.43 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 15; FP5 Build/AQ3A.240912.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/155.0.8059.43 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: FP5
+      marketingName: '5'
+      manufacturer: fairphone
+      brand: fairphone
+      display:
+        width: 2700
+        height: 1224
+        touch: true
+        size: 6.46
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 155.0.8059.43
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 15.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 155.0.8059.43
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; E940-2849-01 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/153.0.8010.57 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 14; E940-2849-01 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/153.0.8010.57 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: E940-2849-01
+      marketingName: 'GX6 Pro'
+      manufacturer: gigaset
+      brand: gigaset
+      display:
+        width: 2412
+        height: 1080
+        touch: true
+        size: 6.6
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 153.0.8010.57
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 14.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 153.0.8010.57
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; U; Android 16; de-de; Pixel 9a Build/BP2A.250605.031.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5970.168 Mobile Safari/537.36 HeyTapBrowser/45.14.8.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; U; Android 16; de-de; Pixel 9a Build/BP2A.250605.031.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5970.168 Mobile Safari/537.36 HeyTapBrowser/45.14.8.1'
+    device:
+      architecture: ''
+      deviceName: 'Pixel 9a'
+      marketingName: 'Pixel 9a'
+      manufacturer: google
+      brand: google
+      display:
+        width: 2424
+        height: 1080
+        touch: true
+        size: 6.3
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: HeyTapBrowser
+      modus: null
+      version: 45.14.8.1
+      manufacturer: bravo-unicorn
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 115.0.5970.168
+      manufacturer: google
+-
+  headers:
+    user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 17; Pixel 9 Pro Build/CP2A.260805.005; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/153.0.8010.36 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 17; Pixel 9 Pro Build/CP2A.260805.005; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/153.0.8010.36 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'Pixel 9 Pro'
+      marketingName: 'Pixel 9 Pro'
+      manufacturer: google
+      brand: google
+      display:
+        width: 2856
+        height: 1280
+        touch: true
+        size: 6.3
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: Dogtorance
+      modus: null
+      version: 1.2.0
+      manufacturer: dog-torance
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 17.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 153.0.8010.36
+      manufacturer: google
+-
+  headers:
+    user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 17; Pixel 8a Build/CP2A.260805.005; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/154.0.8037.57 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 17; Pixel 8a Build/CP2A.260805.005; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/154.0.8037.57 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'Pixel 8a'
+      marketingName: 'Pixel 8a'
+      manufacturer: google
+      brand: google
+      display:
+        width: 2400
+        height: 1080
+        touch: true
+        size: 6.1
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Dogtorance
+      modus: null
+      version: 1.2.0
+      manufacturer: dog-torance
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 17.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 154.0.8037.57
+      manufacturer: google
+-
+  headers:
+    user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 17; Pixel 10 Pro Build/CP3A.260905.009; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/153.0.8010.36 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 17; Pixel 10 Pro Build/CP3A.260905.009; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/153.0.8010.36 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'Pixel 10 Pro'
+      marketingName: 'Pixel 10 Pro'
+      manufacturer: google
+      brand: google
+      display:
+        width: 2856
+        height: 1280
+        touch: true
+        size: 6.3
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: Dogtorance
+      modus: null
+      version: 1.2.0
+      manufacturer: dog-torance
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 17.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 153.0.8010.36
+      manufacturer: google
+-
+  headers:
+    user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 17; Pixel 8 Build/CP3A.260905.009; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/154.0.8037.57 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 17; Pixel 8 Build/CP3A.260905.009; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/154.0.8037.57 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'Pixel 8'
+      marketingName: 'Pixel 8'
+      manufacturer: google
+      brand: google
+      display:
+        width: 2400
+        height: 1080
+        touch: true
+        size: 6.2
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Dogtorance
+      modus: null
+      version: 1.2.0
+      manufacturer: dog-torance
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 17.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 154.0.8037.57
       manufacturer: google

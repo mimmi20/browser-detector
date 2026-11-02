@@ -1,374 +1,5 @@
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; HY320mini) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.101 Mobile Safari/537.36'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; Android 11; HY320mini) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.101 Mobile Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: 'general Mobile Phone'
-      marketingName: 'general Mobile Phone'
-      manufacturer: unknown
-      brand: unknown
-      display:
-        width: null
-        height: null
-        touch: true
-        size: null
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 1
-      bits: 0
-    client:
-      name: Chrome
-      modus: null
-      version: 75.0.3770.101
-      manufacturer: google
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 11.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 75.0.3770.101
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; HY320 Build/SP1A.210812.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 Mobile Safari/537.36'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; Android 11; HY320 Build/SP1A.210812.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 Mobile Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: 'general Mobile Phone'
-      marketingName: 'general Mobile Phone'
-      manufacturer: unknown
-      brand: unknown
-      display:
-        width: null
-        height: null
-        touch: true
-        size: null
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 1
-      bits: 0
-    client:
-      name: 'Chrome WebView'
-      modus: null
-      version: 83.0.4103.120
-      manufacturer: google
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 11.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 83.0.4103.120
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; HY320 Build/RP1A.201005.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 Mobile Safari/537.36'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; Android 11; HY320 Build/RP1A.201005.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 Mobile Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: 'general Mobile Phone'
-      marketingName: 'general Mobile Phone'
-      manufacturer: unknown
-      brand: unknown
-      display:
-        width: null
-        height: null
-        touch: true
-        size: null
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 1
-      bits: 0
-    client:
-      name: 'Chrome WebView'
-      modus: null
-      version: 83.0.4103.120
-      manufacturer: google
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 11.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 83.0.4103.120
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; HY300Pro Build/RP1A.201005.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 Mobile Safari/537.36'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; Android 11; HY300Pro Build/RP1A.201005.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 Mobile Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: 'general Mobile Phone'
-      marketingName: 'general Mobile Phone'
-      manufacturer: unknown
-      brand: unknown
-      display:
-        width: null
-        height: null
-        touch: true
-        size: null
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 1
-      bits: 0
-    client:
-      name: 'Chrome WebView'
-      modus: null
-      version: 83.0.4103.120
-      manufacturer: google
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 11.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 83.0.4103.120
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; HY300) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Mobile Safari/537.36'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; Android 11; HY300) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Mobile Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: 'general Mobile Phone'
-      marketingName: 'general Mobile Phone'
-      manufacturer: unknown
-      brand: unknown
-      display:
-        width: null
-        height: null
-        touch: true
-        size: null
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 1
-      bits: 0
-    client:
-      name: Chrome
-      modus: null
-      version: 72.0.3626.121
-      manufacturer: google
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 11.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 72.0.3626.121
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; HY300-A Build/SP1A.210812.015) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.158 Mobile Safari/537.36'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; Android 11; HY300-A Build/SP1A.210812.015) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.158 Mobile Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: 'general Mobile Phone'
-      marketingName: 'general Mobile Phone'
-      manufacturer: unknown
-      brand: unknown
-      display:
-        width: null
-        height: null
-        touch: true
-        size: null
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 1
-      bits: 0
-    client:
-      name: Chrome
-      modus: null
-      version: 66.0.3359.158
-      manufacturer: google
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 11.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 66.0.3359.158
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; HY300-A Build/SP1A.210812.015-1729138207; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 Mobile Safari/537.36'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; Android 11; HY300-A Build/SP1A.210812.015-1729138207; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 Mobile Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: 'general Mobile Phone'
-      marketingName: 'general Mobile Phone'
-      manufacturer: unknown
-      brand: unknown
-      display:
-        width: null
-        height: null
-        touch: true
-        size: null
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 1
-      bits: 0
-    client:
-      name: 'Chrome WebView'
-      modus: null
-      version: 83.0.4103.120
-      manufacturer: google
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 11.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 83.0.4103.120
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; HY-24H01FW Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; Android 11; HY-24H01FW Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: 'general Mobile Phone'
-      marketingName: 'general Mobile Phone'
-      manufacturer: unknown
-      brand: unknown
-      display:
-        width: null
-        height: null
-        touch: true
-        size: null
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 1
-      bits: 0
-    client:
-      name: 'Chrome WebView'
-      modus: null
-      version: 113.0.5672.163
-      manufacturer: google
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 11.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 113.0.5672.163
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; HY-24H01FB Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; Android 11; HY-24H01FB Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: 'general Mobile Phone'
-      marketingName: 'general Mobile Phone'
-      manufacturer: unknown
-      brand: unknown
-      display:
-        width: null
-        height: null
-        touch: true
-        size: null
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 1
-      bits: 0
-    client:
-      name: 'Chrome WebView'
-      modus: null
-      version: 113.0.5672.163
-      manufacturer: google
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 11.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 113.0.5672.163
-      manufacturer: google
--
-  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; HTY-75UHD11B-HH25 Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36'
   expected:
     headers:
@@ -4063,6 +3694,375 @@
   expected:
     headers:
       user-agent: 'Mozilla/5.0 (Linux; Android 11; DOFFLER50KUS65 Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Mobile Phone'
+      marketingName: 'general Mobile Phone'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 113.0.5672.163
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 113.0.5672.163
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; DOFFLER-32KHS57 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; DOFFLER-32KHS57 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Mobile Phone'
+      marketingName: 'general Mobile Phone'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 113.0.5672.163
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 113.0.5672.163
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; DM-LED24SBB32 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; DM-LED24SBB32 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Mobile Phone'
+      marketingName: 'general Mobile Phone'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 113.0.5672.163
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 113.0.5672.163
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; decoder Build/RTT4.250215.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; decoder Build/RTT4.250215.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Mobile Phone'
+      marketingName: 'general Mobile Phone'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 149.0.7827.91
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 149.0.7827.91
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; DBOX02 Build/RTM9.241015.060; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; DBOX02 Build/RTM9.241015.060; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Mobile Phone'
+      marketingName: 'general Mobile Phone'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 149.0.7827.91
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 149.0.7827.91
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; DBOD02 Build/RTM8.240401.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; DBOD02 Build/RTM8.240401.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Mobile Phone'
+      marketingName: 'general Mobile Phone'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 149.0.7827.91
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 149.0.7827.91
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; DAEWOO SMART TV Build/RTM3.211215.196; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; DAEWOO SMART TV Build/RTM3.211215.196; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Mobile Phone'
+      marketingName: 'general Mobile Phone'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 149.0.7827.91
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: 'Android TV'
+      marketingName: 'Android TV'
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 149.0.7827.91
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; D68S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.210 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; D68S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.210 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Mobile Phone'
+      marketingName: 'general Mobile Phone'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 90.0.4430.210
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 90.0.4430.210
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; CTTV0022-32Q Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; CTTV0022-32Q Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'general Mobile Phone'
+      marketingName: 'general Mobile Phone'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: true
+        size: null
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 113.0.5672.163
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 113.0.5672.163
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; CT-TV0021-55QLED Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 11; CT-TV0021-55QLED Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36'
     device:
       architecture: ''
       deviceName: 'general Mobile Phone'

@@ -1,171 +1,5 @@
 -
   headers:
-    user-agent: 'Mozilla/5.0 (compatible; AgentBot/1.0)'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (compatible; AgentBot/1.0)'
-    device:
-      architecture: ''
-      deviceName: null
-      marketingName: null
-      manufacturer: unknown
-      brand: unknown
-      display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: unknown
-      ismobile: false
-      istv: false
-      dualOrientation: null
-      simCount: 0
-      bits: 0
-    client:
-      name: 'Generic Bot'
-      modus: null
-      version: null
-      manufacturer: unknown
-      type: crawler
-      isbot: true
-      bits: 0
-    os:
-      name: null
-      marketingName: null
-      version: null
-      manufacturer: unknown
-      bits: 0
-    engine:
-      name: null
-      version: null
-      manufacturer: unknown
--
-  headers:
-    user-agent: 'Mozilla/5.0 (compatible; CodaAI-Audit/8.0)'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (compatible; CodaAI-Audit/8.0)'
-    device:
-      architecture: ''
-      deviceName: null
-      marketingName: null
-      manufacturer: unknown
-      brand: unknown
-      display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: unknown
-      ismobile: false
-      istv: false
-      dualOrientation: null
-      simCount: 0
-      bits: 0
-    client:
-      name: 'Mozilla Application Suite'
-      modus: null
-      version: 5.0.0
-      manufacturer: mozilla-foundation
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: null
-      marketingName: null
-      version: null
-      manufacturer: unknown
-      bits: 0
-    engine:
-      name: Gecko
-      version: null
-      manufacturer: mozilla
--
-  headers:
-    sec-ch-ua-platform: '"Windows"'
-    user-agent: 'Mozilla/5.0 (compatible; SenderBot/1.0; Sender Online Marketing GmbH; +https://sender-marketing.de/bot)'
-  expected:
-    headers:
-      sec-ch-ua-platform: '"Windows"'
-      user-agent: 'Mozilla/5.0 (compatible; SenderBot/1.0; Sender Online Marketing GmbH; +https://sender-marketing.de/bot)'
-    device:
-      architecture: ''
-      deviceName: null
-      marketingName: null
-      manufacturer: unknown
-      brand: unknown
-      display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: unknown
-      ismobile: false
-      istv: false
-      dualOrientation: null
-      simCount: 0
-      bits: 0
-    client:
-      name: SenderBot
-      modus: null
-      version: 1.0.0
-      manufacturer: sender-online-marketing
-      type: crawler
-      isbot: true
-      bits: 0
-    os:
-      name: Windows
-      marketingName: Windows
-      version: null
-      manufacturer: microsoft
-      bits: 0
-    engine:
-      name: null
-      version: null
-      manufacturer: unknown
--
-  headers:
-    user-agent: 'Mozilla/5.0 (compatible; YiBot/1.0; +https://01.ai/)'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (compatible; YiBot/1.0; +https://01.ai/)'
-    device:
-      architecture: ''
-      deviceName: null
-      marketingName: null
-      manufacturer: unknown
-      brand: unknown
-      display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: unknown
-      ismobile: false
-      istv: false
-      dualOrientation: null
-      simCount: 0
-      bits: 0
-    client:
-      name: 'Generic Bot'
-      modus: null
-      version: null
-      manufacturer: unknown
-      type: crawler
-      isbot: true
-      bits: 0
-    os:
-      name: null
-      marketingName: null
-      version: null
-      manufacturer: unknown
-      bits: 0
-    engine:
-      name: null
-      version: null
-      manufacturer: unknown
--
-  headers:
     user-agent: 'Mozilla/5.0 (compatible; Hunyuan/1.0; +https://hunyuan.tencent.com/)'
   expected:
     headers:
@@ -3651,8 +3485,8 @@
       manufacturer: unknown
 -
   headers:
-    x-requested-with: XMLHttpRequest
     user-agent: 'Mozilla/5.0 (compatible; EnvScanner/2.0)'
+    x-requested-with: XMLHttpRequest
   expected:
     headers:
       x-requested-with: XMLHttpRequest
@@ -4102,3 +3936,167 @@
       name: Gecko
       version: null
       manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; A11yScanBot/1.0; +http://46.62.237.229/bot)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; A11yScanBot/1.0; +http://46.62.237.229/bot)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: nbot
+      modus: null
+      version: 1.0.0
+      manufacturer: unknown
+      type: bot
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; FirstSeenBot/1.0; +https://getfirstseen.com/bot)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; FirstSeenBot/1.0; +https://getfirstseen.com/bot)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: nbot
+      modus: null
+      version: 1.0.0
+      manufacturer: unknown
+      type: bot
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; de-pe-finder/1.0; research screen, low rate)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; de-pe-finder/1.0; research screen, low rate)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Generic Bot'
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 WP-Async-Scanner'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 WP-Async-Scanner'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Generic Bot'
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown

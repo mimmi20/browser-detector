@@ -1,292 +1,5 @@
 -
   headers:
-    user-agent: 'Python/3.10 aiohttp/3.14.3'
-  expected:
-    headers:
-      user-agent: 'Python/3.10 aiohttp/3.14.3'
-    device:
-      architecture: ''
-      deviceName: null
-      marketingName: null
-      manufacturer: unknown
-      brand: unknown
-      display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: unknown
-      ismobile: false
-      istv: false
-      dualOrientation: null
-      simCount: 0
-      bits: 0
-    client:
-      name: aiohttp
-      modus: null
-      version: 3.14.3
-      manufacturer: unknown
-      type: library
-      isbot: false
-      bits: 0
-    os:
-      name: null
-      marketingName: null
-      version: null
-      manufacturer: unknown
-      bits: 0
-    engine:
-      name: null
-      version: null
-      manufacturer: unknown
--
-  headers:
-    user-agent: 'StartpagePrivateImageProxy/3.0 (https://www.startpage.com/; dev@startpage.com) aiohttp.client/3.14.1'
-  expected:
-    headers:
-      user-agent: 'StartpagePrivateImageProxy/3.0 (https://www.startpage.com/; dev@startpage.com) aiohttp.client/3.14.1'
-    device:
-      architecture: ''
-      deviceName: null
-      marketingName: null
-      manufacturer: unknown
-      brand: unknown
-      display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: unknown
-      ismobile: false
-      istv: false
-      dualOrientation: null
-      simCount: 0
-      bits: 0
-    client:
-      name: StartpagePrivateImageProxy
-      modus: null
-      version: 3.0.0
-      manufacturer: surfboard
-      type: crawler
-      isbot: true
-      bits: 0
-    os:
-      name: null
-      marketingName: null
-      version: null
-      manufacturer: unknown
-      bits: 0
-    engine:
-      name: null
-      version: null
-      manufacturer: unknown
--
-  headers:
-    user-agent: KlHttpClientCurl/26.0.0.748
-  expected:
-    headers:
-      user-agent: KlHttpClientCurl/26.0.0.748
-    device:
-      architecture: ''
-      deviceName: null
-      marketingName: null
-      manufacturer: unknown
-      brand: unknown
-      display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: unknown
-      ismobile: false
-      istv: false
-      dualOrientation: null
-      simCount: 0
-      bits: 0
-    client:
-      name: KlHttpClientCurl
-      modus: null
-      version: 26.0.0.748
-      manufacturer: unknown
-      type: library
-      isbot: false
-      bits: 0
-    os:
-      name: null
-      marketingName: null
-      version: null
-      manufacturer: unknown
-      bits: 0
-    engine:
-      name: null
-      version: null
-      manufacturer: unknown
--
-  headers:
-    user-agent: 'Python/3.13 aiohttp/3.14.3'
-  expected:
-    headers:
-      user-agent: 'Python/3.13 aiohttp/3.14.3'
-    device:
-      architecture: ''
-      deviceName: null
-      marketingName: null
-      manufacturer: unknown
-      brand: unknown
-      display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: unknown
-      ismobile: false
-      istv: false
-      dualOrientation: null
-      simCount: 0
-      bits: 0
-    client:
-      name: aiohttp
-      modus: null
-      version: 3.14.3
-      manufacturer: unknown
-      type: library
-      isbot: false
-      bits: 0
-    os:
-      name: null
-      marketingName: null
-      version: null
-      manufacturer: unknown
-      bits: 0
-    engine:
-      name: null
-      version: null
-      manufacturer: unknown
--
-  headers:
-    user-agent: 'Python/3.11 aiohttp/3.14.4'
-  expected:
-    headers:
-      user-agent: 'Python/3.11 aiohttp/3.14.4'
-    device:
-      architecture: ''
-      deviceName: null
-      marketingName: null
-      manufacturer: unknown
-      brand: unknown
-      display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: unknown
-      ismobile: false
-      istv: false
-      dualOrientation: null
-      simCount: 0
-      bits: 0
-    client:
-      name: aiohttp
-      modus: null
-      version: 3.14.4
-      manufacturer: unknown
-      type: library
-      isbot: false
-      bits: 0
-    os:
-      name: null
-      marketingName: null
-      version: null
-      manufacturer: unknown
-      bits: 0
-    engine:
-      name: null
-      version: null
-      manufacturer: unknown
--
-  headers:
-    user-agent: 'Mozilla/5.0 (compatible; urlsuma/2.0; +https://urlsuma.de/bot.html)'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (compatible; urlsuma/2.0; +https://urlsuma.de/bot.html)'
-    device:
-      architecture: ''
-      deviceName: null
-      marketingName: null
-      manufacturer: unknown
-      brand: unknown
-      display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: unknown
-      ismobile: false
-      istv: false
-      dualOrientation: null
-      simCount: 0
-      bits: 0
-    client:
-      name: URLSuMaBot
-      modus: null
-      version: 2.0.0
-      manufacturer: unknown
-      type: search-bot
-      isbot: true
-      bits: 0
-    os:
-      name: null
-      marketingName: null
-      version: null
-      manufacturer: unknown
-      bits: 0
-    engine:
-      name: null
-      version: null
-      manufacturer: unknown
--
-  headers:
-    user-agent: 'OrlightBot/1.0 (+https://orlight.net/bot)'
-  expected:
-    headers:
-      user-agent: 'OrlightBot/1.0 (+https://orlight.net/bot)'
-    device:
-      architecture: ''
-      deviceName: null
-      marketingName: null
-      manufacturer: unknown
-      brand: unknown
-      display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: unknown
-      ismobile: false
-      istv: false
-      dualOrientation: null
-      simCount: 0
-      bits: 0
-    client:
-      name: OrlightBot
-      modus: null
-      version: 1.0.0
-      manufacturer: unknown
-      type: search-bot
-      isbot: true
-      bits: 0
-    os:
-      name: null
-      marketingName: null
-      version: null
-      manufacturer: unknown
-      bits: 0
-    engine:
-      name: null
-      version: null
-      manufacturer: unknown
--
-  headers:
     user-agent: 'Mozilla/5.0 (compatible; PriEcoBot/1.0.0; +https://prieco.net)'
   expected:
     headers:
@@ -408,53 +121,6 @@
       name: null
       version: null
       manufacturer: unknown
--
-  headers:
-    sec-ch-ua-platform: '"Windows"'
-    sec-ch-ua: '"Chromium";v="145", "Not:A-Brand";v="99"'
-    sec-ch-ua-mobile: '?0'
-    user-agent: 'Mozilla/5.0 (compatible; urlsuma/2.0; +https://urlsuma.de/bot.html)'
-  expected:
-    headers:
-      sec-ch-ua-platform: '"Windows"'
-      sec-ch-ua: '"Chromium";v="145", "Not:A-Brand";v="99"'
-      sec-ch-ua-mobile: '?0'
-      user-agent: 'Mozilla/5.0 (compatible; urlsuma/2.0; +https://urlsuma.de/bot.html)'
-    device:
-      architecture: ''
-      deviceName: null
-      marketingName: null
-      manufacturer: unknown
-      brand: unknown
-      display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: unknown
-      ismobile: false
-      istv: false
-      dualOrientation: null
-      simCount: 0
-      bits: 0
-    client:
-      name: URLSuMaBot
-      modus: null
-      version: 2.0.0
-      manufacturer: unknown
-      type: search-bot
-      isbot: true
-      bits: 0
-    os:
-      name: Windows
-      marketingName: Windows
-      version: null
-      manufacturer: microsoft
-      bits: 0
-    engine:
-      name: Blink
-      version: 145.0.0
-      manufacturer: google
 -
   headers:
     user-agent: 'Observer/1.0 (+https://obsrvr.net/about; crawler@obsrvr.net)'
@@ -4075,6 +3741,334 @@
   expected:
     headers:
       user-agent: MertOzturkQ
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'NavCrawl/0.4 (+https://example.com/bot)'
+  expected:
+    headers:
+      user-agent: 'NavCrawl/0.4 (+https://example.com/bot)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Generic Bot'
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Desktop App 1.0.6'
+  expected:
+    headers:
+      user-agent: 'Desktop App 1.0.6'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'agenttrust-collector (+https://agenttru.st)'
+  expected:
+    headers:
+      user-agent: 'agenttrust-collector (+https://agenttru.st)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'HudHud-HostProbe/1.0 (+liveness)'
+  expected:
+    headers:
+      user-agent: 'HudHud-HostProbe/1.0 (+liveness)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: SearchBot/0.1
+  expected:
+    headers:
+      user-agent: SearchBot/0.1
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Generic Bot'
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'SalesOS-CompanyVerifier/1.0 (+https://salessearch.co.uk)'
+  expected:
+    headers:
+      user-agent: 'SalesOS-CompanyVerifier/1.0 (+https://salessearch.co.uk)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: DomainImporter/1.0
+  expected:
+    headers:
+      user-agent: DomainImporter/1.0
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: null
+      modus: null
+      version: null
+      manufacturer: unknown
+      type: unknown
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: WebIDS-NG-RedirectTracker/1.0
+  expected:
+    headers:
+      user-agent: WebIDS-NG-RedirectTracker/1.0
     device:
       architecture: ''
       deviceName: null

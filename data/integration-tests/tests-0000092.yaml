@@ -1,382 +1,5 @@
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 9; SM-A205G Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.117 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/263.0.0.18.125;]'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; Android 9; SM-A205G Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.117 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/263.0.0.18.125;]'
-    device:
-      architecture: ''
-      deviceName: SM-A205G
-      marketingName: 'Galaxy A20 (LATAM/Brazil)'
-      manufacturer: samsung
-      brand: samsung
-      display:
-        width: 1560
-        height: 720
-        touch: true
-        size: 6.4
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 1
-      bits: 0
-    client:
-      name: 'Facebook Messenger App'
-      modus: null
-      version: 263.0.0.18.125
-      manufacturer: meta
-      type: mobile-application
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 9.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 81.0.4044.117
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-A515F Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.159 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/568.0.0.46.89;]'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-A515F Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.159 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/568.0.0.46.89;]'
-    device:
-      architecture: ''
-      deviceName: SM-A515F
-      marketingName: 'Galaxy A51 4G (Global)'
-      manufacturer: samsung
-      brand: samsung
-      display:
-        width: 2400
-        height: 1080
-        touch: true
-        size: 6.5
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 1
-      bits: 0
-    client:
-      name: 'Facebook App'
-      modus: null
-      version: 568.0.0.46.89
-      manufacturer: meta
-      type: mobile-application
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 13.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 149.0.7827.159
-      manufacturer: google
--
-  headers:
-    x-requested-with: com.facebook.orca
-    sec-ch-ua-platform: '"Android"'
-    sec-ch-ua: '"Android WebView";v="149", "Chromium";v="149", "Not)A;Brand";v="24"'
-    sec-ch-ua-mobile: '?1'
-    user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-A515F Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.159 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/568.0.0.46.89;]'
-  expected:
-    headers:
-      x-requested-with: com.facebook.orca
-      sec-ch-ua-platform: '"Android"'
-      sec-ch-ua: '"Android WebView";v="149", "Chromium";v="149", "Not)A;Brand";v="24"'
-      sec-ch-ua-mobile: '?1'
-      user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-A515F Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.159 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/568.0.0.46.89;]'
-    device:
-      architecture: ''
-      deviceName: SM-A515F
-      marketingName: 'Galaxy A51 4G (Global)'
-      manufacturer: samsung
-      brand: samsung
-      display:
-        width: 2400
-        height: 1080
-        touch: true
-        size: 6.5
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 1
-      bits: 0
-    client:
-      name: 'Facebook Messenger App'
-      modus: null
-      version: 568.0.0.46.89
-      manufacturer: meta
-      type: mobile-application
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 13.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 149.0.0
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-A256B Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.163 Mobile Safari/537.36 Instagram 437.0.0.33.78 Android (36/16; 450dpi; 1080x2340; samsung; SM-A256B; a25x; s5e8825; de_DE; 1011909390; IABMV/1)'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-A256B Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.163 Mobile Safari/537.36 Instagram 437.0.0.33.78 Android (36/16; 450dpi; 1080x2340; samsung; SM-A256B; a25x; s5e8825; de_DE; 1011909390; IABMV/1)'
-    device:
-      architecture: ''
-      deviceName: SM-A256B
-      marketingName: 'Galaxy A25 5G (International)'
-      manufacturer: samsung
-      brand: samsung
-      display:
-        width: 2340
-        height: 1080
-        touch: true
-        size: 6.5
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 2
-      bits: 0
-    client:
-      name: 'Instagram App'
-      modus: null
-      version: 437.0.0.33.78
-      manufacturer: meta
-      type: mobile-application
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 16.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 149.0.7827.163
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-A217M Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.192 Mobile Safari/537.36 [FBAN/FB4A;FBAV/567.1.0.52.74;FBBV/1003893687;FBDM/{density=1.75,width=720,height=1448};FBLC/en_US;FBRV/1012267334;FBCR/FSM Telecom;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A217M;FBSV/12;FBOP/19;FBCA/arm64-v8a:;]'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-A217M Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.192 Mobile Safari/537.36 [FBAN/FB4A;FBAV/567.1.0.52.74;FBBV/1003893687;FBDM/{density=1.75,width=720,height=1448};FBLC/en_US;FBRV/1012267334;FBCR/FSM Telecom;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A217M;FBSV/12;FBOP/19;FBCA/arm64-v8a:;]'
-    device:
-      architecture: ''
-      deviceName: SM-A217M
-      marketingName: 'Galaxy A21s (2020, USA)'
-      manufacturer: samsung
-      brand: samsung
-      display:
-        width: 1600
-        height: 720
-        touch: true
-        size: 6.5
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 1
-      bits: 0
-    client:
-      name: 'Facebook App'
-      modus: null
-      version: 567.1.0.52.74
-      manufacturer: meta
-      type: mobile-application
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 12.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 149.0.7827.192
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-S918B Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.159 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/568.0.0.46.74;IABMV/1;]'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-S918B Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.159 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/568.0.0.46.74;IABMV/1;]'
-    device:
-      architecture: ''
-      deviceName: SM-S918B
-      marketingName: 'Galaxy S23 Ultra (International)'
-      manufacturer: samsung
-      brand: samsung
-      display:
-        width: 3088
-        height: 1440
-        touch: true
-        size: 6.8
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 1
-      bits: 0
-    client:
-      name: 'Facebook App'
-      modus: null
-      version: 568.0.0.46.74
-      manufacturer: meta
-      type: mobile-application
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 16.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 149.0.7827.159
-      manufacturer: google
--
-  headers:
-    user-agent: '[FBAN/FB4A;FBAV/568.0.0.46.74;FBBV/1008693793;FBDM/{density=2.8125,width=1080,height=2316};FBLC/nl_NL;FBRV/1014340677;FBCR/Telenet;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-S918B;FBSV/16;FBOP/1;FBCA/arm64-v8a:;]'
-  expected:
-    headers:
-      user-agent: '[FBAN/FB4A;FBAV/568.0.0.46.74;FBBV/1008693793;FBDM/{density=2.8125,width=1080,height=2316};FBLC/nl_NL;FBRV/1014340677;FBCR/Telenet;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-S918B;FBSV/16;FBOP/1;FBCA/arm64-v8a:;]'
-    device:
-      architecture: ''
-      deviceName: SM-S918B
-      marketingName: 'Galaxy S23 Ultra (International)'
-      manufacturer: samsung
-      brand: samsung
-      display:
-        width: 3088
-        height: 1440
-        touch: true
-        size: 6.8
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 1
-      bits: 0
-    client:
-      name: 'Facebook App'
-      modus: null
-      version: 568.0.0.46.74
-      manufacturer: meta
-      type: mobile-application
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 16.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: null
-      version: null
-      manufacturer: unknown
--
-  headers:
-    user-agent: '[FBAN/FB4A;FBAV/568.0.0.46.74;FBBV/1008693150;FBDM/{density=2.625,width=1080,height=2186};FBLC/nl_NL;FBRV/1014340677;FBCR/Proximus;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A515F;FBSV/13;FBOP/19;FBCA/arm64-v8a:;]'
-  expected:
-    headers:
-      user-agent: '[FBAN/FB4A;FBAV/568.0.0.46.74;FBBV/1008693150;FBDM/{density=2.625,width=1080,height=2186};FBLC/nl_NL;FBRV/1014340677;FBCR/Proximus;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A515F;FBSV/13;FBOP/19;FBCA/arm64-v8a:;]'
-    device:
-      architecture: ''
-      deviceName: SM-A515F
-      marketingName: 'Galaxy A51 4G (Global)'
-      manufacturer: samsung
-      brand: samsung
-      display:
-        width: 2400
-        height: 1080
-        touch: true
-        size: 6.5
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 1
-      bits: 0
-    client:
-      name: 'Facebook App'
-      modus: null
-      version: 568.0.0.46.74
-      manufacturer: meta
-      type: mobile-application
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 13.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: null
-      version: null
-      manufacturer: unknown
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-S931B Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/150.0.7871.46 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/570.0.0.34.87;]'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-S931B Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/150.0.7871.46 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/570.0.0.34.87;]'
-    device:
-      architecture: ''
-      deviceName: SM-S931B
-      marketingName: 'Galaxy S25 (International)'
-      manufacturer: samsung
-      brand: samsung
-      display:
-        width: 2340
-        height: 1080
-        touch: true
-        size: 6.2
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 2
-      bits: 0
-    client:
-      name: 'Facebook App'
-      modus: null
-      version: 570.0.0.34.87
-      manufacturer: meta
-      type: mobile-application
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 16.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 150.0.7871.46
-      manufacturer: google
--
-  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-A528B Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.150 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/566.0.0.48.73;IABMV/1;] FBNV/500'
   expected:
     headers:
@@ -582,11 +205,11 @@
       manufacturer: unknown
 -
   headers:
-    x-requested-with: com.facebook.orca
-    sec-ch-ua-platform: '"Android"'
     sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "Android WebView";v="150"'
     sec-ch-ua-mobile: '?1'
+    sec-ch-ua-platform: '"Android"'
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-S931B Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/150.0.7871.46 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/570.0.0.34.87;]'
+    x-requested-with: com.facebook.orca
   expected:
     headers:
       x-requested-with: com.facebook.orca
@@ -1533,15 +1156,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Microsoft Edge";v="149", "Chromium";v="149", "Not)A;Brand";v="24"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"149.0.4022.80"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-G780G"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"13.0.0"'
-    sec-ch-ua: '"Microsoft Edge";v="149", "Chromium";v="149", "Not)A;Brand";v="24"'
-    sec-ch-ua-full-version: '"149.0.4022.80"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36 EdgA/149.0.0.0'
   expected:
@@ -1635,9 +1258,9 @@
       manufacturer: google
 -
   headers:
-    sec-ch-ua-platform: '"Android"'
     sec-ch-ua: '"Chromium";v="135", "Not;A=Brand";v="24", "Microsoft Edge";v="135"'
     sec-ch-ua-mobile: '?1'
+    sec-ch-ua-platform: '"Android"'
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-A725F/DS) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.114 Mobile Safari/537.36 EdgA/135.0.3179.98'
   expected:
     headers:
@@ -1682,15 +1305,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Microsoft Edge";v="149", "Chromium";v="149", "Not)A;Brand";v="24"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"149.0.4022.105"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A546B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Microsoft Edge";v="149", "Chromium";v="149", "Not)A;Brand";v="24"'
-    sec-ch-ua-full-version: '"149.0.4022.105"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36 EdgA/149.0.0.0'
   expected:
@@ -2317,11 +1940,11 @@
       manufacturer: google
 -
   headers:
-    x-requested-with: com.microsoft.bing
-    sec-ch-ua-platform: '"Android"'
     sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "Android WebView";v="150"'
     sec-ch-ua-mobile: '?1'
+    sec-ch-ua-platform: '"Android"'
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-A546B Build/BP4A.251205.006; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.163 Mobile Safari/537.36'
+    x-requested-with: com.microsoft.bing
   expected:
     headers:
       x-requested-with: com.microsoft.bing
@@ -2366,11 +1989,11 @@
       manufacturer: google
 -
   headers:
-    x-requested-with: com.microsoft.bing
-    sec-ch-ua-platform: '"Android"'
     sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "Android WebView";v="150"'
     sec-ch-ua-mobile: '?1'
+    sec-ch-ua-platform: '"Android"'
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-A256B Build/BP4A.251205.006; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/150.0.7871.124 Mobile Safari/537.36'
+    x-requested-with: com.microsoft.bing
   expected:
     headers:
       x-requested-with: com.microsoft.bing
@@ -4175,4 +3798,373 @@
     engine:
       name: Blink
       version: 137.0.7151.27
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; SM-G988Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6768.4 Mobile Safari/537.36 OPR/116.0.5366.13'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 10; SM-G988Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6768.4 Mobile Safari/537.36 OPR/116.0.5366.13'
+    device:
+      architecture: ''
+      deviceName: SM-G988Q
+      marketingName: 'Galaxy S20 Ultra 5G'
+      manufacturer: samsung
+      brand: samsung
+      display:
+        width: 3200
+        height: 1440
+        touch: true
+        size: 6.9
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Opera Mobile'
+      modus: null
+      version: 116.0.5366.13
+      manufacturer: opera
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 10.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 131.0.6768.4
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; SM-G988A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.7 Mobile Safari/537.36 OPR/115.0.5285.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 10; SM-G988A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.7 Mobile Safari/537.36 OPR/115.0.5285.0'
+    device:
+      architecture: ''
+      deviceName: SM-G988A
+      marketingName: 'Galaxy S20 Ultra 5G'
+      manufacturer: samsung
+      brand: samsung
+      display:
+        width: 3200
+        height: 1440
+        touch: true
+        size: 6.9
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Opera Mobile'
+      modus: null
+      version: 115.0.5285.0
+      manufacturer: opera
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 10.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 128.0.6613.7
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; SM-G986T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.200 Mobile Safari/537.36 OPR/106.0.4998.41'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 10; SM-G986T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.200 Mobile Safari/537.36 OPR/106.0.4998.41'
+    device:
+      architecture: ''
+      deviceName: SM-G986T
+      marketingName: 'Galaxy S20+ 5G'
+      manufacturer: samsung
+      brand: samsung
+      display:
+        width: 3200
+        height: 1440
+        touch: true
+        size: 6.7
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Opera Mobile'
+      modus: null
+      version: 106.0.4998.41
+      manufacturer: opera
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 10.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 120.0.6099.200
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; SM-G986P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36 OPR/77.0.4054.90'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 10; SM-G986P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36 OPR/77.0.4054.90'
+    device:
+      architecture: ''
+      deviceName: SM-G986P
+      marketingName: 'Galaxy S20+ 5G'
+      manufacturer: samsung
+      brand: samsung
+      display:
+        width: 3200
+        height: 1440
+        touch: true
+        size: 6.7
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Opera Mobile'
+      modus: null
+      version: 77.0.4054.90
+      manufacturer: opera
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 10.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 91.0.4472.101
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; SM-G986DS) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.115 Mobile Safari/537.36 OPR/120.0.5543.8'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 10; SM-G986DS) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.115 Mobile Safari/537.36 OPR/120.0.5543.8'
+    device:
+      architecture: ''
+      deviceName: SM-G986DS
+      marketingName: 'Galaxy S20+ 5G'
+      manufacturer: samsung
+      brand: samsung
+      display:
+        width: 3200
+        height: 1440
+        touch: true
+        size: 6.7
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Opera Mobile'
+      modus: null
+      version: 120.0.5543.8
+      manufacturer: opera
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 10.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 135.0.7049.115
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; SM-G981R4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36 OPR/77.0.4054.90'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 10; SM-G981R4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36 OPR/77.0.4054.90'
+    device:
+      architecture: ''
+      deviceName: SM-G981R4
+      marketingName: 'Galaxy S20 5G'
+      manufacturer: samsung
+      brand: samsung
+      display:
+        width: 3200
+        height: 1440
+        touch: true
+        size: 6.2
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Opera Mobile'
+      modus: null
+      version: 77.0.4054.90
+      manufacturer: opera
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 10.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 91.0.4472.101
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; SM-G715V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.42 Mobile Safari/537.36 OPR/121.0.5565.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 10; SM-G715V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.42 Mobile Safari/537.36 OPR/121.0.5565.0'
+    device:
+      architecture: ''
+      deviceName: SM-G715V
+      marketingName: 'Galaxy Xcover Pro (USA)'
+      manufacturer: samsung
+      brand: samsung
+      display:
+        width: 2340
+        height: 1080
+        touch: true
+        size: 6.3
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Opera Mobile'
+      modus: null
+      version: 121.0.5565.0
+      manufacturer: opera
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 10.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 135.0.7049.42
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; SM-F707W) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.115 Mobile Safari/537.36 OPR/120.0.5543.161'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 10; SM-F707W) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.115 Mobile Safari/537.36 OPR/120.0.5543.161'
+    device:
+      architecture: ''
+      deviceName: SM-F707W
+      marketingName: 'Galaxy Z Flip 5G (Canada)'
+      manufacturer: samsung
+      brand: samsung
+      display:
+        width: 2636
+        height: 1080
+        touch: true
+        size: 6.7
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Opera Mobile'
+      modus: null
+      version: 120.0.5543.161
+      manufacturer: opera
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 10.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 135.0.7049.115
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; SM-F707U1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.42 Mobile Safari/537.36 OPR/121.0.5558.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 10; SM-F707U1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.42 Mobile Safari/537.36 OPR/121.0.5558.0'
+    device:
+      architecture: ''
+      deviceName: SM-F707U1
+      marketingName: 'Galaxy Z Flip 5G (USA unlocked)'
+      manufacturer: samsung
+      brand: samsung
+      display:
+        width: 2636
+        height: 1080
+        touch: true
+        size: 6.7
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Opera Mobile'
+      modus: null
+      version: 121.0.5558.0
+      manufacturer: opera
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 10.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 135.0.7049.42
       manufacturer: google

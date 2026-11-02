@@ -1,345 +1,5 @@
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/603.3.3 (KHTML, like Gecko) Version/10.1.2 Safari/603.3.3'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/603.3.3 (KHTML, like Gecko) Version/10.1.2 Safari/603.3.3'
-    device:
-      architecture: ''
-      deviceName: Macintosh
-      marketingName: Macintosh
-      manufacturer: apple
-      brand: apple
-      display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: desktop
-      ismobile: false
-      istv: false
-      dualOrientation: false
-      simCount: 0
-      bits: 0
-    client:
-      name: Safari
-      modus: null
-      version: 10.1.2
-      manufacturer: apple
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: macOS
-      marketingName: macOS
-      version: 10.12.6
-      manufacturer: apple
-      bits: 0
-    engine:
-      name: WebKit
-      version: 603.3.3
-      manufacturer: apple
--
-  headers:
-    user-agent: 'slopsearch-macos-crawler/1.0 (+https://search.sloppy.at/about)'
-  expected:
-    headers:
-      user-agent: 'slopsearch-macos-crawler/1.0 (+https://search.sloppy.at/about)'
-    device:
-      architecture: ''
-      deviceName: Macintosh
-      marketingName: Macintosh
-      manufacturer: apple
-      brand: apple
-      display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: desktop
-      ismobile: false
-      istv: false
-      dualOrientation: false
-      simCount: 0
-      bits: 0
-    client:
-      name: slopsearch
-      modus: null
-      version: 1.0.0
-      manufacturer: christopher-albert
-      type: crawler
-      isbot: true
-      bits: 0
-    os:
-      name: null
-      marketingName: null
-      version: null
-      manufacturer: unknown
-      bits: 0
-    engine:
-      name: null
-      version: null
-      manufacturer: unknown
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Citrix Workspace/23.05.0.36 MacOSX/13.4.0 com.citrix.receiver.nomas X1Class CWACapable'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Citrix Workspace/23.05.0.36 MacOSX/13.4.0 com.citrix.receiver.nomas X1Class CWACapable'
-    device:
-      architecture: ''
-      deviceName: Macintosh
-      marketingName: Macintosh
-      manufacturer: apple
-      brand: apple
-      display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: desktop
-      ismobile: false
-      istv: false
-      dualOrientation: false
-      simCount: 0
-      bits: 0
-    client:
-      name: 'Citrix Workspace'
-      modus: null
-      version: 23.05.0.36
-      manufacturer: citrix
-      type: mobile-application
-      isbot: false
-      bits: 0
-    os:
-      name: macOS
-      marketingName: macOS
-      version: 13.4.0
-      manufacturer: apple
-      bits: 0
-    engine:
-      name: WebKit
-      version: 605.1.15
-      manufacturer: apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:24.0) Gecko/20100101 Firefox/24.0'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:24.0) Gecko/20100101 Firefox/24.0'
-    device:
-      architecture: ''
-      deviceName: Macintosh
-      marketingName: Macintosh
-      manufacturer: apple
-      brand: apple
-      display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: desktop
-      ismobile: false
-      istv: false
-      dualOrientation: false
-      simCount: 0
-      bits: 0
-    client:
-      name: Chrome
-      modus: null
-      version: 41.0.2228.0
-      manufacturer: google
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Windows
-      marketingName: 'Windows 7'
-      version: 7.0.0
-      manufacturer: microsoft
-      bits: 0
-    engine:
-      name: Blink
-      version: 41.0.2228.0
-      manufacturer: google
--
-  headers:
-    sec-ch-ua-platform: '"Linux"'
-    sec-ch-ua: '"HeadlessChrome";v="117", "Not;A=Brand";v="8", "Chromium";v="117"'
-    sec-ch-ua-mobile: '?0'
-    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36'
-  expected:
-    headers:
-      sec-ch-ua-platform: '"Linux"'
-      sec-ch-ua: '"HeadlessChrome";v="117", "Not;A=Brand";v="8", "Chromium";v="117"'
-      sec-ch-ua-mobile: '?0'
-      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: Macintosh
-      marketingName: Macintosh
-      manufacturer: apple
-      brand: apple
-      display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: desktop
-      ismobile: false
-      istv: false
-      dualOrientation: false
-      simCount: 0
-      bits: 0
-    client:
-      name: 'Headless Chrome'
-      modus: null
-      version: 117.0.0
-      manufacturer: google
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: macOS
-      marketingName: macOS
-      version: 10.15.4
-      manufacturer: apple
-      bits: 0
-    engine:
-      name: Blink
-      version: 117.0.0
-      manufacturer: google
--
-  headers:
-    sec-ch-ua-platform: '"Linux"'
-    sec-ch-ua: '"Not)A;Brand";v="8", "Chromium";v="138"'
-    sec-ch-ua-mobile: '?0'
-    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.14 Safari/605.1.15'
-  expected:
-    headers:
-      sec-ch-ua-platform: '"Linux"'
-      sec-ch-ua: '"Not)A;Brand";v="8", "Chromium";v="138"'
-      sec-ch-ua-mobile: '?0'
-      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.14 Safari/605.1.15'
-    device:
-      architecture: ''
-      deviceName: Macintosh
-      marketingName: Macintosh
-      manufacturer: apple
-      brand: apple
-      display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: desktop
-      ismobile: false
-      istv: false
-      dualOrientation: false
-      simCount: 0
-      bits: 0
-    client:
-      name: Chromium
-      modus: null
-      version: 138.0.0
-      manufacturer: google
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: macOS
-      marketingName: macOS
-      version: 10.15.7
-      manufacturer: apple
-      bits: 0
-    engine:
-      name: Blink
-      version: 138.0.0
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_12_6) AppleWebKit/535.0 (KHTML, like Gecko) Chrome/13.0.884.0 Safari/535.0'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_12_6) AppleWebKit/535.0 (KHTML, like Gecko) Chrome/13.0.884.0 Safari/535.0'
-    device:
-      architecture: ''
-      deviceName: Macintosh
-      marketingName: Macintosh
-      manufacturer: apple
-      brand: apple
-      display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: desktop
-      ismobile: false
-      istv: false
-      dualOrientation: false
-      simCount: 0
-      bits: 0
-    client:
-      name: Chrome
-      modus: null
-      version: 13.0.884.0
-      manufacturer: google
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: macOS
-      marketingName: macOS
-      version: 10.12.6
-      manufacturer: apple
-      bits: 0
-    engine:
-      name: WebKit
-      version: 535.0.0
-      manufacturer: apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 (compatible; meta-externalads/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler))'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 (compatible; meta-externalads/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler))'
-    device:
-      architecture: ''
-      deviceName: Macintosh
-      marketingName: Macintosh
-      manufacturer: apple
-      brand: apple
-      display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: desktop
-      ismobile: false
-      istv: false
-      dualOrientation: false
-      simCount: 0
-      bits: 0
-    client:
-      name: 'Meta External Ads'
-      modus: null
-      version: 1.1.0
-      manufacturer: meta
-      type: social-media-agent
-      isbot: true
-      bits: 0
-    os:
-      name: macOS
-      marketingName: macOS
-      version: 10.15.7
-      manufacturer: apple
-      bits: 0
-    engine:
-      name: Blink
-      version: 145.0.0.0
-      manufacturer: google
--
-  headers:
     user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) EdgiOS/150 Version/16.0 Safari/605.1.15'
   expected:
     headers:
@@ -4109,4 +3769,332 @@
     engine:
       name: WebKit
       version: 3860.500.112
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Client/74210 CFNetwork/3826.400.120 Darwin/24.3.0'
+  expected:
+    headers:
+      user-agent: 'Client/74210 CFNetwork/3826.400.120 Darwin/24.3.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Client
+      modus: null
+      version: 74210.0.0
+      manufacturer: unknown
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 18.3.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3826.400.120
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Client/65627 CFNetwork/3826.600.41.2.1 Darwin/24.6.0'
+  expected:
+    headers:
+      user-agent: 'Client/65627 CFNetwork/3826.600.41.2.1 Darwin/24.6.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Client
+      modus: null
+      version: 65627.0.0
+      manufacturer: unknown
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 18.6.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3826.600.41.2.1
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Viber/28.2.2.3 CFNetwork/3860.600.12 Darwin/25.5.0'
+  expected:
+    headers:
+      user-agent: 'Viber/28.2.2.3 CFNetwork/3860.600.12 Darwin/25.5.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Viber
+      modus: null
+      version: 28.2.2.3
+      manufacturer: viber-media
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.5.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.600.12
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Viber/28.3.0.4 CFNetwork/3860.600.12 Darwin/25.5.0'
+  expected:
+    headers:
+      user-agent: 'Viber/28.3.0.4 CFNetwork/3860.600.12 Darwin/25.5.0'
+    device:
+      architecture: ''
+      deviceName: 'general Apple device'
+      marketingName: 'general Apple device'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: mobile-device
+      ismobile: true
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Viber
+      modus: null
+      version: 28.3.0.4
+      manufacturer: viber-media
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.5.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 3860.600.12
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 26_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/23C55 Instagram 434.0.0.28.78 (iPhone14,5; iOS 26_2; de_DE; de; scale=3.00; 1170x2532; IABMV/1; 994860828) Safari/604.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 26_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/23C55 Instagram 434.0.0.28.78 (iPhone14,5; iOS 26_2; de_DE; de; scale=3.00; 1170x2532; IABMV/1; 994860828) Safari/604.1'
+    device:
+      architecture: ''
+      deviceName: 'iPhone 14,5'
+      marketingName: 'iPhone 13'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 2532
+        height: 1170
+        touch: true
+        size: 6.1
+      type: phablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Instagram App'
+      modus: null
+      version: 434.0.0.28.78
+      manufacturer: meta
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.2.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 605.1.15
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBAV/567.0.0.27.106;FBBV/1001940950;FBDV/iPhone14,5;FBMD/iPhone;FBSN/iOS;FBSV/26.5;FBSS/3;FBCR/;FBID/phone;FBLC/nl_NL;FBOP/80]'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBAV/567.0.0.27.106;FBBV/1001940950;FBDV/iPhone14,5;FBMD/iPhone;FBSN/iOS;FBSV/26.5;FBSS/3;FBCR/;FBID/phone;FBLC/nl_NL;FBOP/80]'
+    device:
+      architecture: ''
+      deviceName: 'iPhone 14,5'
+      marketingName: 'iPhone 13'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 2532
+        height: 1170
+        touch: true
+        size: 6.1
+      type: phablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Facebook App'
+      modus: null
+      version: 567.0.0.27.106
+      manufacturer: meta
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.5.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 605.1.15
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 26_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/23F81 Instagram 436.0.0.24.53 (iPhone18,3; iOS 26_5_1; de_DE; de; scale=3.00; 1206x2622; IABMV/1; 1005037813) NW/3 Safari/604.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 26_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/23F81 Instagram 436.0.0.24.53 (iPhone18,3; iOS 26_5_1; de_DE; de; scale=3.00; 1206x2622; IABMV/1; 1005037813) NW/3 Safari/604.1'
+    device:
+      architecture: ''
+      deviceName: 'iPhone 18,3'
+      marketingName: 'iPhone 17'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 2622
+        height: 1206
+        touch: true
+        size: 6.3
+      type: phablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Instagram App'
+      modus: null
+      version: 436.0.0.24.53
+      manufacturer: meta
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.5.1
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 605.1.15
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 26_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/23F77 Instagram 436.0.0.24.53 (iPhone15,4; iOS 26_5; de_DE; de; scale=3.00; 1179x2556; IABMV/1; 1005037813) Safari/604.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 26_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/23F77 Instagram 436.0.0.24.53 (iPhone15,4; iOS 26_5; de_DE; de; scale=3.00; 1179x2556; IABMV/1; 1005037813) Safari/604.1'
+    device:
+      architecture: ''
+      deviceName: 'iPhone 15,4'
+      marketingName: 'iPhone 15'
+      manufacturer: apple
+      brand: apple
+      display:
+        width: 2556
+        height: 1179
+        touch: true
+        size: 6.1
+      type: phablet
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Instagram App'
+      modus: null
+      version: 436.0.0.24.53
+      manufacturer: meta
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: iOS
+      marketingName: iOS
+      version: 26.5.0
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: WebKit
+      version: 605.1.15
       manufacturer: apple

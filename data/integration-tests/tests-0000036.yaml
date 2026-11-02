@@ -1,46 +1,5 @@
 -
   headers:
-    user-agent: 'Apache-HttpClient/4.5.13 (Java/17.0.15)'
-  expected:
-    headers:
-      user-agent: 'Apache-HttpClient/4.5.13 (Java/17.0.15)'
-    device:
-      architecture: ''
-      deviceName: null
-      marketingName: null
-      manufacturer: unknown
-      brand: unknown
-      display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: unknown
-      ismobile: false
-      istv: false
-      dualOrientation: null
-      simCount: 0
-      bits: 0
-    client:
-      name: 'Apache HTTP Client'
-      modus: null
-      version: 4.5.13
-      manufacturer: apache
-      type: library
-      isbot: false
-      bits: 0
-    os:
-      name: JavaOS
-      marketingName: JavaOS
-      version: null
-      manufacturer: sun
-      bits: 0
-    engine:
-      name: null
-      version: null
-      manufacturer: unknown
--
-  headers:
     user-agent: 'Apache-HttpClient/4.5.12 (Java/1.8.0_472)'
   expected:
     headers:
@@ -2624,9 +2583,9 @@
       manufacturer: unknown
 -
   headers:
-    sec-ch-ua-platform: '"Linux"'
     sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "Google Chrome";v="150"'
     sec-ch-ua-mobile: '?0'
+    sec-ch-ua-platform: '"Linux"'
     user-agent: 'DuckAssistBot/1.2; (+http://duckduckgo.com/duckassistbot.html)'
   expected:
     headers:
@@ -2712,9 +2671,9 @@
       manufacturer: unknown
 -
   headers:
-    sec-ch-ua-platform: '"Linux"'
     sec-ch-ua: '"Not=A?Brand";v="99", "Google Chrome";v="151", "Chromium";v="151"'
     sec-ch-ua-mobile: '?0'
+    sec-ch-ua-platform: '"Linux"'
     user-agent: 'DuckDuckBot/1.0; (+http://duckduckgo.com/duckduckbot.html)'
   expected:
     headers:
@@ -3333,9 +3292,9 @@
       manufacturer: unknown
 -
   headers:
-    sec-ch-ua-platform: '"Linux"'
     sec-ch-ua: '"Chromium";v="151", "Not=A?Brand";v="99"'
     sec-ch-ua-mobile: '?0'
+    sec-ch-ua-platform: '"Linux"'
     user-agent: 'Mozilla/5.0 (compatible; ev-crawler/1.0; +https://headline.com/legal/crawler)'
   expected:
     headers:
@@ -3585,9 +3544,9 @@
       manufacturer: apple
 -
   headers:
-    sec-ch-ua-platform: '"Windows"'
     sec-ch-ua: '"HeadlessChrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"'
     sec-ch-ua-mobile: '?0'
+    sec-ch-ua-platform: '"Windows"'
     user-agent: quillbot.com
   expected:
     headers:
@@ -3632,9 +3591,9 @@
       manufacturer: google
 -
   headers:
-    sec-ch-ua-platform: '"Windows"'
     sec-ch-ua: '"Chromium";v="134", "Not:A-Brand";v="24", "HeadlessChrome";v="134"'
     sec-ch-ua-mobile: '?1'
+    sec-ch-ua-platform: '"Windows"'
     user-agent: pc
   expected:
     headers:
@@ -3679,9 +3638,9 @@
       manufacturer: google
 -
   headers:
-    sec-ch-ua-platform: '"Windows"'
     sec-ch-ua: '"HeadlessChrome";v="141", "Not?A_Brand";v="8", "Chromium";v="141"'
     sec-ch-ua-mobile: '?0'
+    sec-ch-ua-platform: '"Windows"'
     user-agent: YisouSpider
   expected:
     headers:
@@ -3726,9 +3685,9 @@
       manufacturer: google
 -
   headers:
-    sec-ch-ua-platform: '"Windows"'
     sec-ch-ua: '"Not:A-Brand";v="99", "HeadlessChrome";v="145", "Chromium";v="145"'
     sec-ch-ua-mobile: '?0'
+    sec-ch-ua-platform: '"Windows"'
     user-agent: kagi-fetcher/1.0
   expected:
     headers:
@@ -3855,14 +3814,14 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Not(A:Brand";v="99", "HeadlessChrome";v="133", "Chromium";v="133"'
+    sec-ch-ua-arch: '"x64"'
+    sec-ch-ua-bitness: '"64"'
+    sec-ch-ua-full-version: '"133.0.6943.16"'
+    sec-ch-ua-mobile: '?0'
     sec-ch-ua-model: '""'
     sec-ch-ua-platform: '"Windows"'
     sec-ch-ua-platform-version: '""'
-    sec-ch-ua: '"Not(A:Brand";v="99", "HeadlessChrome";v="133", "Chromium";v="133"'
-    sec-ch-ua-full-version: '"133.0.6943.16"'
-    sec-ch-ua-bitness: '"64"'
-    sec-ch-ua-arch: '"x64"'
-    sec-ch-ua-mobile: '?0'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (compatible; Clearscopebot/1.0)'
   expected:
@@ -3996,9 +3955,9 @@
       manufacturer: google
 -
   headers:
-    sec-ch-ua-platform: '"macOS"'
     sec-ch-ua: '"Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"'
     sec-ch-ua-mobile: '?0'
+    sec-ch-ua-platform: '"macOS"'
     user-agent: 'Mozilla/5.0 (compatible; SenderBot/1.0; Sender Online Marketing GmbH; +https://sender-marketing.de/bot)'
   expected:
     headers:
@@ -4043,9 +4002,9 @@
       manufacturer: google
 -
   headers:
-    sec-ch-ua-platform: '"macOS"'
     sec-ch-ua: '"Not-A.Brand";v="24", "Chromium";v="146"'
     sec-ch-ua-mobile: '?0'
+    sec-ch-ua-platform: '"macOS"'
     user-agent: 'Mozilla/5.0 (compatible; SenderBot/1.0; Sender Online Marketing GmbH; +https://sender-marketing.de/bot)'
   expected:
     headers:
@@ -4090,9 +4049,9 @@
       manufacturer: google
 -
   headers:
-    sec-ch-ua-platform: '"macOS"'
     sec-ch-ua: '"Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"'
     sec-ch-ua-mobile: '?0'
+    sec-ch-ua-platform: '"macOS"'
     user-agent: 'Mozilla/5.0 (compatible; SenderBot/1.0; Sender Online Marketing GmbH; +https://sender-marketing.de/bot)'
   expected:
     headers:
@@ -4137,9 +4096,9 @@
       manufacturer: google
 -
   headers:
-    sec-ch-ua-platform: '"macOS"'
     sec-ch-ua: '"Google Chrome";v="141", "Not?A_Brand";v="8", "Chromium";v="141"'
     sec-ch-ua-mobile: '?0'
+    sec-ch-ua-platform: '"macOS"'
     user-agent: 'Mozilla/5.0 (compatible; SenderBot/1.0; Sender Online Marketing GmbH; +https://sender-marketing.de/bot)'
   expected:
     headers:
@@ -4181,4 +4140,51 @@
     engine:
       name: Blink
       version: 141.0.0
+      manufacturer: google
+-
+  headers:
+    sec-ch-ua: '"Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"'
+    sec-ch-ua-mobile: '?0'
+    sec-ch-ua-platform: '"Windows"'
+    user-agent: 'Mozilla/5.0 (compatible; SenderBot/1.0; Sender Online Marketing GmbH; +https://sender-marketing.de/bot)'
+  expected:
+    headers:
+      sec-ch-ua-platform: '"Windows"'
+      sec-ch-ua: '"Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"'
+      sec-ch-ua-mobile: '?0'
+      user-agent: 'Mozilla/5.0 (compatible; SenderBot/1.0; Sender Online Marketing GmbH; +https://sender-marketing.de/bot)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 145.0.0
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Windows
+      marketingName: Windows
+      version: null
+      manufacturer: microsoft
+      bits: 0
+    engine:
+      name: Blink
+      version: 145.0.0
       manufacturer: google

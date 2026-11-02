@@ -1,374 +1,5 @@
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; HEY2-W19) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.107 YaBrowser/26.4.3.107.01 Safari/537.36'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; HEY2-W19) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.107 YaBrowser/26.4.3.107.01 Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: HEY2-W19
-      marketingName: 'Pad 9 12.1" Wi-Fi'
-      manufacturer: huawei
-      brand: honor
-      display:
-        width: 2560
-        height: 1600
-        touch: true
-        size: 12.1
-      type: tablet
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 0
-      bits: 0
-    client:
-      name: 'Yandex Browser'
-      modus: null
-      version: 26.4.3.107.01
-      manufacturer: yandex
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 14.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 146.0.7680.107
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; TXZ-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.307 YaBrowser/26.6.0.307.01 Safari/537.36'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; TXZ-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.307 YaBrowser/26.6.0.307.01 Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: TXZ-W09
-      marketingName: 'MatePad 11.5" Wi-Fi (2025)'
-      manufacturer: huawei
-      brand: huawei
-      display:
-        width: 2456
-        height: 1600
-        touch: true
-        size: 11.5
-      type: tablet
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 0
-      bits: 0
-    client:
-      name: 'Yandex Browser'
-      modus: null
-      version: 26.6.0.307.01
-      manufacturer: yandex
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 12.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 148.0.7778.307
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; TXZ-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.71 YaSearchBrowser/26.44.1 BroPP/1.0 YaSearchApp/26.44.1 webOmni Mobile Safari/537.36'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; TXZ-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.71 YaSearchBrowser/26.44.1 BroPP/1.0 YaSearchApp/26.44.1 webOmni Mobile Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: TXZ-W09
-      marketingName: 'MatePad 11.5" Wi-Fi (2025)'
-      manufacturer: huawei
-      brand: huawei
-      display:
-        width: 2456
-        height: 1600
-        touch: true
-        size: 11.5
-      type: tablet
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 0
-      bits: 0
-    client:
-      name: 'Yandex Search Browser'
-      modus: null
-      version: 26.44.1
-      manufacturer: yandex
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 12.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 146.0.7680.71
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; SLG-W10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.63 YaBrowser/26.4.6.63.01 Safari/537.36'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; SLG-W10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.63 YaBrowser/26.4.6.63.01 Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: SLG-W10
-      marketingName: 'MatePad 11.5" S Wi-Fi (2025)'
-      manufacturer: huawei
-      brand: huawei
-      display:
-        width: 2800
-        height: 1840
-        touch: true
-        size: 11.5
-      type: tablet
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 0
-      bits: 0
-    client:
-      name: 'Yandex Browser'
-      modus: null
-      version: 26.4.6.63.01
-      manufacturer: yandex
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 12.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 146.0.7680.63
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; SLG-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.307 YaBrowser/26.6.0.307.01 Safari/537.36'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; SLG-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.307 YaBrowser/26.6.0.307.01 Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: SLG-W09
-      marketingName: 'MatePad 11.5" S Wi-Fi (2025)'
-      manufacturer: huawei
-      brand: huawei
-      display:
-        width: 2800
-        height: 1840
-        touch: true
-        size: 11.5
-      type: tablet
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 0
-      bits: 0
-    client:
-      name: 'Yandex Browser'
-      modus: null
-      version: 26.6.0.307.01
-      manufacturer: yandex
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 12.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 148.0.7778.307
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; SLG-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.71 YaSearchBrowser/26.44.1 BroPP/1.0 YaSearchApp/26.44.1 webOmni Mobile Safari/537.36'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; SLG-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.71 YaSearchBrowser/26.44.1 BroPP/1.0 YaSearchApp/26.44.1 webOmni Mobile Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: SLG-W09
-      marketingName: 'MatePad 11.5" S Wi-Fi (2025)'
-      manufacturer: huawei
-      brand: huawei
-      display:
-        width: 2800
-        height: 1840
-        touch: true
-        size: 11.5
-      type: tablet
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 0
-      bits: 0
-    client:
-      name: 'Yandex Search Browser'
-      modus: null
-      version: 26.44.1
-      manufacturer: yandex
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 12.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 146.0.7680.71
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; MRO-W00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.123 YaBrowser/26.4.4.123.01 Safari/537.36'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; MRO-W00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.123 YaBrowser/26.4.4.123.01 Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: MRO-W00
-      marketingName: 'MatePad Pro 12.2" Wi-Fi (2024)'
-      manufacturer: huawei
-      brand: huawei
-      display:
-        width: 2800
-        height: 1840
-        touch: true
-        size: 12.2
-      type: tablet
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 0
-      bits: 0
-    client:
-      name: 'Yandex Browser'
-      modus: null
-      version: 26.4.4.123.01
-      manufacturer: yandex
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 12.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 146.0.7680.123
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; MRDI-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.307 YaBrowser/26.6.0.307.01 Safari/537.36'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; MRDI-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.307 YaBrowser/26.6.0.307.01 Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: MRDI-W09
-      marketingName: 'MatePad Pro 12.2" Wi-Fi (2025)'
-      manufacturer: huawei
-      brand: huawei
-      display:
-        width: 2800
-        height: 1840
-        touch: true
-        size: 12.2
-      type: tablet
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 0
-      bits: 0
-    client:
-      name: 'Yandex Browser'
-      modus: null
-      version: 26.6.0.307.01
-      manufacturer: yandex
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 12.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 148.0.7778.307
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; MRDI-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.71 YaSearchBrowser/26.44.1/apad BroPP/1.0 YaSearchApp/26.44.1/apad webOmni Safari/537.36'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; MRDI-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.71 YaSearchBrowser/26.44.1/apad BroPP/1.0 YaSearchApp/26.44.1/apad webOmni Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: MRDI-W09
-      marketingName: 'MatePad Pro 12.2" Wi-Fi (2025)'
-      manufacturer: huawei
-      brand: huawei
-      display:
-        width: 2800
-        height: 1840
-        touch: true
-        size: 12.2
-      type: tablet
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 0
-      bits: 0
-    client:
-      name: 'Yandex Search Browser'
-      modus: null
-      version: 26.44.1
-      manufacturer: yandex
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 12.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 146.0.7680.71
-      manufacturer: google
--
-  headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; GEM-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.302 YaBrowser/26.6.0.302.01 Safari/537.36'
   expected:
     headers:
@@ -4097,4 +3728,373 @@
     engine:
       name: Blink
       version: 135.0.7049.79
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 15; Infinix X6725D Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/147.0.7727.137 Mobile Safari/537.36 YandexSearch/7.54 YandexSearchWebView/7.54'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 15; Infinix X6725D Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/147.0.7727.137 Mobile Safari/537.36 YandexSearch/7.54 YandexSearchWebView/7.54'
+    device:
+      architecture: ''
+      deviceName: X6725D
+      marketingName: 'Smart 10'
+      manufacturer: infinix
+      brand: infinix
+      display:
+        width: 1600
+        height: 720
+        touch: true
+        size: 6.67
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Yandex Search App'
+      modus: null
+      version: 7.54.0
+      manufacturer: yandex
+      type: application
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 15.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 147.0.7727.137
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; Infinix X6511 Build/RP1A.201005.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.746 YaApp_Android/26.32.1 YaSearchBrowser/26.32.1 BroPP/1.0 SA/3 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; Infinix X6511 Build/RP1A.201005.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.746 YaApp_Android/26.32.1 YaSearchBrowser/26.32.1 BroPP/1.0 SA/3 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: X6511
+      marketingName: 'Smart 6'
+      manufacturer: infinix
+      brand: infinix
+      display:
+        width: 1600
+        height: 720
+        touch: true
+        size: 6.6
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Yandex Search Browser'
+      modus: null
+      version: 26.32.1
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 11.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.746
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm; Android 10; Infinix X6823C Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.108 YaBrowser/26.3.2.108.00 SA/3 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm; Android 10; Infinix X6823C Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.108 YaBrowser/26.3.2.108.00 SA/3 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: X6823C
+      marketingName: 'Smart 6 Plus (India)'
+      manufacturer: infinix
+      brand: infinix
+      display:
+        width: 1600
+        height: 720
+        touch: true
+        size: 6.82
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 26.3.2.108.00
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 10.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 144.0.7559.108
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; Infinix X6891) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.59 YaSearchBrowser/26.61.1 BroPP/1.0 YaSearchApp/26.61.1 webOmni Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; Infinix X6891) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.59 YaSearchBrowser/26.61.1 BroPP/1.0 YaSearchApp/26.61.1 webOmni Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: X6891
+      marketingName: 'GT 50 Pro 5G'
+      manufacturer: infinix
+      brand: infinix
+      display:
+        width: 2644
+        height: 1208
+        touch: true
+        size: 6.78
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Yandex Search Browser'
+      modus: null
+      version: 26.61.1
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 148.0.7778.59
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; Infinix X6887) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.49 YaBrowser/26.4.7.49.00 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; Infinix X6887) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.49 YaBrowser/26.4.7.49.00 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: X6887
+      marketingName: 'Note Edge 5G'
+      manufacturer: infinix
+      brand: infinix
+      display:
+        width: 2644
+        height: 1208
+        touch: true
+        size: 6.78
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 26.4.7.49.00
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 146.0.7680.49
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; Infinix X6840B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.55 YaBrowser/26.4.7.55.00 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; Infinix X6840B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.55 YaBrowser/26.4.7.55.00 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: X6840B
+      marketingName: 'Smart 20 4G'
+      manufacturer: infinix
+      brand: infinix
+      display:
+        width: 1576
+        height: 720
+        touch: true
+        size: 6.78
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 26.4.7.55.00
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 146.0.7680.55
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; NOTE 60) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; NOTE 60) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'Note 60'
+      marketingName: 'Note 60'
+      manufacturer: infinix
+      brand: infinix
+      display:
+        width: 2644
+        height: 1208
+        touch: true
+        size: 6.78
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Yandex Browser'
+      modus: null
+      version: 26.6.0.304.00
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 15.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 148.0.7778.304
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; NOTE 60) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.144 YaApp_Android/26.60.1 YaSearchBrowser/26.60.1 BroPP/1.0 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; NOTE 60) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.144 YaApp_Android/26.60.1 YaSearchBrowser/26.60.1 BroPP/1.0 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: 'Note 60'
+      marketingName: 'Note 60'
+      manufacturer: infinix
+      brand: infinix
+      display:
+        width: 2644
+        height: 1208
+        touch: true
+        size: 6.78
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Yandex Search Browser'
+      modus: null
+      version: 26.60.1
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 15.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 148.0.7778.144
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; Infinix X6725) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.1898 YaApp_Android/25.80.1 YaSearchBrowser/25.80.1 BroPP/1.0 SA/3 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; Infinix X6725) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.1898 YaApp_Android/25.80.1 YaSearchBrowser/25.80.1 BroPP/1.0 SA/3 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: X6725
+      marketingName: 'Smart 10'
+      manufacturer: infinix
+      brand: infinix
+      display:
+        width: 1600
+        height: 720
+        touch: true
+        size: 6.67
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Yandex Search Browser'
+      modus: null
+      version: 25.80.1
+      manufacturer: yandex
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 15.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 138.0.7204.1898
       manufacturer: google

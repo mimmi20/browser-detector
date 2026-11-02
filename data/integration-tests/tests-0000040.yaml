@@ -1,169 +1,5 @@
 -
   headers:
-    user-agent: 'Mozilla/5.0 (compatible; A11yScanBot/1.0; +http://46.62.237.229/bot)'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (compatible; A11yScanBot/1.0; +http://46.62.237.229/bot)'
-    device:
-      architecture: ''
-      deviceName: null
-      marketingName: null
-      manufacturer: unknown
-      brand: unknown
-      display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: unknown
-      ismobile: false
-      istv: false
-      dualOrientation: null
-      simCount: 0
-      bits: 0
-    client:
-      name: nbot
-      modus: null
-      version: 1.0.0
-      manufacturer: unknown
-      type: bot
-      isbot: true
-      bits: 0
-    os:
-      name: null
-      marketingName: null
-      version: null
-      manufacturer: unknown
-      bits: 0
-    engine:
-      name: null
-      version: null
-      manufacturer: unknown
--
-  headers:
-    user-agent: 'Mozilla/5.0 (compatible; FirstSeenBot/1.0; +https://getfirstseen.com/bot)'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (compatible; FirstSeenBot/1.0; +https://getfirstseen.com/bot)'
-    device:
-      architecture: ''
-      deviceName: null
-      marketingName: null
-      manufacturer: unknown
-      brand: unknown
-      display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: unknown
-      ismobile: false
-      istv: false
-      dualOrientation: null
-      simCount: 0
-      bits: 0
-    client:
-      name: nbot
-      modus: null
-      version: 1.0.0
-      manufacturer: unknown
-      type: bot
-      isbot: true
-      bits: 0
-    os:
-      name: null
-      marketingName: null
-      version: null
-      manufacturer: unknown
-      bits: 0
-    engine:
-      name: null
-      version: null
-      manufacturer: unknown
--
-  headers:
-    user-agent: 'Mozilla/5.0 (compatible; de-pe-finder/1.0; research screen, low rate)'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (compatible; de-pe-finder/1.0; research screen, low rate)'
-    device:
-      architecture: ''
-      deviceName: null
-      marketingName: null
-      manufacturer: unknown
-      brand: unknown
-      display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: unknown
-      ismobile: false
-      istv: false
-      dualOrientation: null
-      simCount: 0
-      bits: 0
-    client:
-      name: 'Generic Bot'
-      modus: null
-      version: null
-      manufacturer: unknown
-      type: crawler
-      isbot: true
-      bits: 0
-    os:
-      name: null
-      marketingName: null
-      version: null
-      manufacturer: unknown
-      bits: 0
-    engine:
-      name: null
-      version: null
-      manufacturer: unknown
--
-  headers:
-    user-agent: 'Mozilla/5.0 WP-Async-Scanner'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 WP-Async-Scanner'
-    device:
-      architecture: ''
-      deviceName: null
-      marketingName: null
-      manufacturer: unknown
-      brand: unknown
-      display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: unknown
-      ismobile: false
-      istv: false
-      dualOrientation: null
-      simCount: 0
-      bits: 0
-    client:
-      name: 'Generic Bot'
-      modus: null
-      version: null
-      manufacturer: unknown
-      type: crawler
-      isbot: true
-      bits: 0
-    os:
-      name: null
-      marketingName: null
-      version: null
-      manufacturer: unknown
-      bits: 0
-    engine:
-      name: null
-      version: null
-      manufacturer: unknown
--
-  headers:
     user-agent: 'Mozilla/5.0 (compatible; BLGBot/1.0)'
   expected:
     headers:
@@ -4087,6 +3923,170 @@
       manufacturer: ncsa
       type: browser
       isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'nekuda-scanner/1.0 (+https://bot.nekuda.ai)'
+  expected:
+    headers:
+      user-agent: 'nekuda-scanner/1.0 (+https://bot.nekuda.ai)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Nekuda WebMCP Discovery Bot'
+      modus: null
+      version: 1.0.0
+      manufacturer: nekuda
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; NetcraftSurveyAgent/1.0; +info@netcraft.com)'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (compatible; NetcraftSurveyAgent/1.0; +info@netcraft.com)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Netcraft Survey Agent'
+      modus: null
+      version: 1.0.0
+      manufacturer: netcraft
+      type: search-bot
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'OmniWeb 622.8.0.112916'
+  expected:
+    headers:
+      user-agent: 'OmniWeb 622.8.0.112916'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: OmniWeb
+      modus: null
+      version: 622.8.0.112916
+      manufacturer: omni-development
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: WebKit
+      version: null
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'OI-Crawler/Nutch (https://openintel.nl/webcrawl/)'
+  expected:
+    headers:
+      user-agent: 'OI-Crawler/Nutch (https://openintel.nl/webcrawl/)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: OI-Crawler
+      modus: null
+      version: null
+      manufacturer: open-intel
+      type: crawler
+      isbot: true
       bits: 0
     os:
       name: null

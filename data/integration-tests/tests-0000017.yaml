@@ -3157,18 +3157,18 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "DuckDuckGo";v="150"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"150.0.7871.181"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A566B"'
-    x-requested-with: com.duckduckgo.mobile.android
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "DuckDuckGo";v="150"'
-    sec-ch-ua-full-version: '"150.0.7871.181"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36'
+    x-requested-with: com.duckduckgo.mobile.android
   expected:
     headers:
       sec-ch-ua-model: '"SM-A566B"'
@@ -3220,18 +3220,18 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "DuckDuckGo";v="150"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"150.0.7871.181"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A528B"'
-    x-requested-with: com.duckduckgo.mobile.android
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"14.0.0"'
-    sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "DuckDuckGo";v="150"'
-    sec-ch-ua-full-version: '"150.0.7871.181"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36'
+    x-requested-with: com.duckduckgo.mobile.android
   expected:
     headers:
       sec-ch-ua-model: '"SM-A528B"'
@@ -3283,18 +3283,18 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "DuckDuckGo";v="150"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"150.0.7871.181"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-S901B"'
-    x-requested-with: com.duckduckgo.mobile.android
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "DuckDuckGo";v="150"'
-    sec-ch-ua-full-version: '"150.0.7871.181"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36'
+    x-requested-with: com.duckduckgo.mobile.android
   expected:
     headers:
       sec-ch-ua-model: '"SM-S901B"'
@@ -3346,18 +3346,18 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "DuckDuckGo";v="150"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"150.0.7871.181"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A546B"'
-    x-requested-with: com.duckduckgo.mobile.android
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "DuckDuckGo";v="150"'
-    sec-ch-ua-full-version: '"150.0.7871.181"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36'
+    x-requested-with: com.duckduckgo.mobile.android
   expected:
     headers:
       sec-ch-ua-model: '"SM-A546B"'
@@ -3409,18 +3409,18 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "DuckDuckGo";v="150"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"150.0.7871.181"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A176B"'
-    x-requested-with: com.duckduckgo.mobile.android
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "DuckDuckGo";v="150"'
-    sec-ch-ua-full-version: '"150.0.7871.181"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36'
+    x-requested-with: com.duckduckgo.mobile.android
   expected:
     headers:
       sec-ch-ua-model: '"SM-A176B"'
@@ -3472,18 +3472,18 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "DuckDuckGo";v="150"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"150.0.7871.181"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A175F"'
-    x-requested-with: com.duckduckgo.mobile.android
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "DuckDuckGo";v="150"'
-    sec-ch-ua-full-version: '"150.0.7871.181"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36'
+    x-requested-with: com.duckduckgo.mobile.android
   expected:
     headers:
       sec-ch-ua-model: '"SM-A175F"'
@@ -3535,18 +3535,18 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "DuckDuckGo";v="150"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"150.0.7871.181"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-S928B"'
-    x-requested-with: com.duckduckgo.mobile.android
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "DuckDuckGo";v="150"'
-    sec-ch-ua-full-version: '"150.0.7871.181"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36'
+    x-requested-with: com.duckduckgo.mobile.android
   expected:
     headers:
       sec-ch-ua-model: '"SM-S928B"'
@@ -3598,18 +3598,18 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "DuckDuckGo";v="150"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"150.0.7871.181"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-G736B"'
-    x-requested-with: com.duckduckgo.mobile.android
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"15.0.0"'
-    sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "DuckDuckGo";v="150"'
-    sec-ch-ua-full-version: '"150.0.7871.181"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36'
+    x-requested-with: com.duckduckgo.mobile.android
   expected:
     headers:
       sec-ch-ua-model: '"SM-G736B"'
@@ -3661,18 +3661,18 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "DuckDuckGo";v="150"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"150.0.7871.181"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-G990B"'
-    x-requested-with: com.duckduckgo.mobile.android
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "DuckDuckGo";v="150"'
-    sec-ch-ua-full-version: '"150.0.7871.181"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36'
+    x-requested-with: com.duckduckgo.mobile.android
   expected:
     headers:
       sec-ch-ua-model: '"SM-G990B"'
@@ -3724,18 +3724,18 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "DuckDuckGo";v="150"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"150.0.7871.181"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A750FN"'
-    x-requested-with: com.duckduckgo.mobile.android
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"10.0.0"'
-    sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "DuckDuckGo";v="150"'
-    sec-ch-ua-full-version: '"150.0.7871.181"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36'
+    x-requested-with: com.duckduckgo.mobile.android
   expected:
     headers:
       sec-ch-ua-model: '"SM-A750FN"'
@@ -3787,18 +3787,18 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "DuckDuckGo";v="150"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"150.0.7871.181"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A525F"'
-    x-requested-with: com.duckduckgo.mobile.android
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"14.0.0"'
-    sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "DuckDuckGo";v="150"'
-    sec-ch-ua-full-version: '"150.0.7871.181"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36'
+    x-requested-with: com.duckduckgo.mobile.android
   expected:
     headers:
       sec-ch-ua-model: '"SM-A525F"'
@@ -3850,18 +3850,18 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "DuckDuckGo";v="150"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"150.0.7871.181"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A576B"'
-    x-requested-with: com.duckduckgo.mobile.android
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "DuckDuckGo";v="150"'
-    sec-ch-ua-full-version: '"150.0.7871.181"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36'
+    x-requested-with: com.duckduckgo.mobile.android
   expected:
     headers:
       sec-ch-ua-model: '"SM-A576B"'
@@ -3913,18 +3913,18 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Not=A?Brand";v="99", "DuckDuckGo";v="151", "Chromium";v="151"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"151.0.7922.83"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A256B"'
-    x-requested-with: com.duckduckgo.mobile.android
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Not=A?Brand";v="99", "DuckDuckGo";v="151", "Chromium";v="151"'
-    sec-ch-ua-full-version: '"151.0.7922.83"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36'
+    x-requested-with: com.duckduckgo.mobile.android
   expected:
     headers:
       sec-ch-ua-model: '"SM-A256B"'
@@ -3976,18 +3976,18 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Not=A?Brand";v="99", "DuckDuckGo";v="151", "Chromium";v="151"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"151.0.7922.83"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A266B"'
-    x-requested-with: com.duckduckgo.mobile.android
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Not=A?Brand";v="99", "DuckDuckGo";v="151", "Chromium";v="151"'
-    sec-ch-ua-full-version: '"151.0.7922.83"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36'
+    x-requested-with: com.duckduckgo.mobile.android
   expected:
     headers:
       sec-ch-ua-model: '"SM-A266B"'
@@ -4039,18 +4039,18 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "DuckDuckGo";v="150"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"150.0.7871.181"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-M526BR"'
-    x-requested-with: com.duckduckgo.mobile.android
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"13.0.0"'
-    sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "DuckDuckGo";v="150"'
-    sec-ch-ua-full-version: '"150.0.7871.181"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36'
+    x-requested-with: com.duckduckgo.mobile.android
   expected:
     headers:
       sec-ch-ua-model: '"SM-M526BR"'
@@ -4102,18 +4102,18 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "DuckDuckGo";v="150"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"150.0.7871.181"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-S731B"'
-    x-requested-with: com.duckduckgo.mobile.android
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "DuckDuckGo";v="150"'
-    sec-ch-ua-full-version: '"150.0.7871.181"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36'
+    x-requested-with: com.duckduckgo.mobile.android
   expected:
     headers:
       sec-ch-ua-model: '"SM-S731B"'
@@ -4165,18 +4165,18 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Not)A;Brand";v="8", "Chromium";v="138", "DuckDuckGo";v="138"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"138.0.7204.180"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-G950F"'
-    x-requested-with: com.duckduckgo.mobile.android
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"9.0.0"'
-    sec-ch-ua: '"Not)A;Brand";v="8", "Chromium";v="138", "DuckDuckGo";v="138"'
-    sec-ch-ua-full-version: '"138.0.7204.180"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36'
+    x-requested-with: com.duckduckgo.mobile.android
   expected:
     headers:
       sec-ch-ua-model: '"SM-G950F"'
@@ -4228,18 +4228,18 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Chromium";v="152", "Not?A_Brand";v="24", "DuckDuckGo";v="152"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"152.0.7977.87"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-G780G"'
-    x-requested-with: com.duckduckgo.mobile.android
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"13.0.0"'
-    sec-ch-ua: '"Chromium";v="152", "Not?A_Brand";v="24", "DuckDuckGo";v="152"'
-    sec-ch-ua-full-version: '"152.0.7977.87"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Mobile Safari/537.36'
+    x-requested-with: com.duckduckgo.mobile.android
   expected:
     headers:
       sec-ch-ua-model: '"SM-G780G"'
@@ -4291,18 +4291,18 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Not=A?Brand";v="99", "DuckDuckGo";v="151", "Chromium";v="151"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"151.0.7922.202"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-S921B"'
-    x-requested-with: com.duckduckgo.mobile.android
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Not=A?Brand";v="99", "DuckDuckGo";v="151", "Chromium";v="151"'
-    sec-ch-ua-full-version: '"151.0.7922.202"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36'
+    x-requested-with: com.duckduckgo.mobile.android
   expected:
     headers:
       sec-ch-ua-model: '"SM-S921B"'
@@ -4354,18 +4354,18 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Chromium";v="152", "Not?A_Brand";v="24", "DuckDuckGo";v="152"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"152.0.7977.87"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A556B"'
-    x-requested-with: com.duckduckgo.mobile.android
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Chromium";v="152", "Not?A_Brand";v="24", "DuckDuckGo";v="152"'
-    sec-ch-ua-full-version: '"152.0.7977.87"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Mobile Safari/537.36'
+    x-requested-with: com.duckduckgo.mobile.android
   expected:
     headers:
       sec-ch-ua-model: '"SM-A556B"'
@@ -4417,18 +4417,18 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Not=A?Brand";v="99", "DuckDuckGo";v="151", "Chromium";v="151"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"151.0.7922.199"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A346B"'
-    x-requested-with: com.duckduckgo.mobile.android
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Not=A?Brand";v="99", "DuckDuckGo";v="151", "Chromium";v="151"'
-    sec-ch-ua-full-version: '"151.0.7922.199"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 16) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/151.0.0.0 Mobile DuckDuckGo/5 Safari/537.36'
+    x-requested-with: com.duckduckgo.mobile.android
   expected:
     headers:
       sec-ch-ua-model: '"SM-A346B"'
@@ -4480,18 +4480,18 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Not=A?Brand";v="99", "DuckDuckGo";v="151", "Chromium";v="151"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"151.0.7922.199"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A155F"'
-    x-requested-with: com.duckduckgo.mobile.android
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Not=A?Brand";v="99", "DuckDuckGo";v="151", "Chromium";v="151"'
-    sec-ch-ua-full-version: '"151.0.7922.199"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36'
+    x-requested-with: com.duckduckgo.mobile.android
   expected:
     headers:
       sec-ch-ua-model: '"SM-A155F"'
@@ -4543,18 +4543,18 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Not=A?Brand";v="99", "DuckDuckGo";v="151", "Chromium";v="151"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"151.0.7922.202"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A556E"'
-    x-requested-with: com.duckduckgo.mobile.android
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Not=A?Brand";v="99", "DuckDuckGo";v="151", "Chromium";v="151"'
-    sec-ch-ua-full-version: '"151.0.7922.202"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36'
+    x-requested-with: com.duckduckgo.mobile.android
   expected:
     headers:
       sec-ch-ua-model: '"SM-A556E"'

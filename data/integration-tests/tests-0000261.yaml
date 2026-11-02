@@ -1,685 +1,14 @@
 -
   headers:
-    sec-ch-ua-model: '"SM-G781B"'
-    sec-ch-ua-platform: '"Android"'
-    sec-ch-ua-platform-version: '"13.0.0"'
-    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
-    sec-ch-ua-full-version: '"154.0.8037.92"'
-    sec-ch-ua-bitness: '""'
+    sec-ch-ua: '"Google Chrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"'
     sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
-    sec-ch-ua-wow64: '?0'
-    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36'
-  expected:
-    headers:
-      sec-ch-ua-model: '"SM-G781B"'
-      sec-ch-ua-platform: '"Android"'
-      sec-ch-ua-platform-version: '"13.0.0"'
-      sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
-      sec-ch-ua-full-version: '"154.0.8037.92"'
-      sec-ch-ua-bitness: '""'
-      sec-ch-ua-arch: '""'
-      sec-ch-ua-form-factors: '"Mobile"'
-      sec-ch-ua-mobile: '?1'
-      sec-ch-ua-wow64: '?0'
-      user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: SM-G781B
-      marketingName: 'Galaxy S20 FE 5G (International)'
-      manufacturer: samsung
-      brand: samsung
-      display:
-        width: 2400
-        height: 1080
-        touch: true
-        size: 6.5
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 1
-      bits: 0
-    client:
-      name: Chrome
-      modus: null
-      version: 154.0.0
-      manufacturer: google
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 13.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 154.0.0
-      manufacturer: google
--
-  headers:
-    sec-ch-ua-model: '"SM-S911B"'
-    sec-ch-ua-platform: '"Android"'
-    sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
-    sec-ch-ua-full-version: '"154.0.8037.126"'
     sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
     sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"153.0.8010.52"'
     sec-ch-ua-mobile: '?1'
-    sec-ch-ua-wow64: '?0'
-    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36'
-  expected:
-    headers:
-      sec-ch-ua-model: '"SM-S911B"'
-      sec-ch-ua-platform: '"Android"'
-      sec-ch-ua-platform-version: '"16.0.0"'
-      sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
-      sec-ch-ua-full-version: '"154.0.8037.126"'
-      sec-ch-ua-bitness: '""'
-      sec-ch-ua-arch: '""'
-      sec-ch-ua-form-factors: '"Mobile"'
-      sec-ch-ua-mobile: '?1'
-      sec-ch-ua-wow64: '?0'
-      user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: SM-S911B
-      marketingName: 'Galaxy S23 (International)'
-      manufacturer: samsung
-      brand: samsung
-      display:
-        width: 2340
-        height: 1080
-        touch: true
-        size: 6.1
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 1
-      bits: 0
-    client:
-      name: Chrome
-      modus: null
-      version: 154.0.0
-      manufacturer: google
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 16.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 154.0.0
-      manufacturer: google
--
-  headers:
-    sec-ch-ua-model: '"SM-S721B"'
-    sec-ch-ua-platform: '"Android"'
-    sec-ch-ua-platform-version: '"17.0.0"'
-    sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
-    sec-ch-ua-full-version: '"155.0.8059.39"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
-    sec-ch-ua-wow64: '?0'
-    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36'
-  expected:
-    headers:
-      sec-ch-ua-model: '"SM-S721B"'
-      sec-ch-ua-platform: '"Android"'
-      sec-ch-ua-platform-version: '"17.0.0"'
-      sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
-      sec-ch-ua-full-version: '"155.0.8059.39"'
-      sec-ch-ua-bitness: '""'
-      sec-ch-ua-arch: '""'
-      sec-ch-ua-form-factors: '"Mobile"'
-      sec-ch-ua-mobile: '?1'
-      sec-ch-ua-wow64: '?0'
-      user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: SM-S721B
-      marketingName: 'Galaxy S24 FE (International)'
-      manufacturer: samsung
-      brand: samsung
-      display:
-        width: 2340
-        height: 1080
-        touch: true
-        size: 6.7
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 1
-      bits: 0
-    client:
-      name: Chrome
-      modus: null
-      version: 155.0.0
-      manufacturer: google
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 17.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 155.0.0
-      manufacturer: google
--
-  headers:
-    sec-ch-ua-model: '"SM-A266B"'
-    sec-ch-ua-platform: '"Android"'
-    sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
-    sec-ch-ua-full-version: '"155.0.8059.39"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
-    sec-ch-ua-wow64: '?0'
-    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36'
-  expected:
-    headers:
-      sec-ch-ua-model: '"SM-A266B"'
-      sec-ch-ua-platform: '"Android"'
-      sec-ch-ua-platform-version: '"16.0.0"'
-      sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
-      sec-ch-ua-full-version: '"155.0.8059.39"'
-      sec-ch-ua-bitness: '""'
-      sec-ch-ua-arch: '""'
-      sec-ch-ua-form-factors: '"Mobile"'
-      sec-ch-ua-mobile: '?1'
-      sec-ch-ua-wow64: '?0'
-      user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: SM-A266B
-      marketingName: 'Galaxy A26 5G (International)'
-      manufacturer: samsung
-      brand: samsung
-      display:
-        width: 2340
-        height: 1080
-        touch: true
-        size: 6.7
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 2
-      bits: 0
-    client:
-      name: Chrome
-      modus: null
-      version: 155.0.0
-      manufacturer: google
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 16.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 155.0.0
-      manufacturer: google
--
-  headers:
-    sec-ch-ua-model: '"SM-A366B"'
-    sec-ch-ua-platform: '"Android"'
-    sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
-    sec-ch-ua-full-version: '"155.0.8059.39"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
-    sec-ch-ua-wow64: '?0'
-    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36'
-  expected:
-    headers:
-      sec-ch-ua-model: '"SM-A366B"'
-      sec-ch-ua-platform: '"Android"'
-      sec-ch-ua-platform-version: '"16.0.0"'
-      sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
-      sec-ch-ua-full-version: '"155.0.8059.39"'
-      sec-ch-ua-bitness: '""'
-      sec-ch-ua-arch: '""'
-      sec-ch-ua-form-factors: '"Mobile"'
-      sec-ch-ua-mobile: '?1'
-      sec-ch-ua-wow64: '?0'
-      user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: SM-A366B
-      marketingName: 'Galaxy A36 5G (International)'
-      manufacturer: samsung
-      brand: samsung
-      display:
-        width: 2340
-        height: 1080
-        touch: true
-        size: 6.7
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 2
-      bits: 0
-    client:
-      name: Chrome
-      modus: null
-      version: 155.0.0
-      manufacturer: google
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 16.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 155.0.0
-      manufacturer: google
--
-  headers:
-    sec-ch-ua-model: '"SM-S711U1"'
-    sec-ch-ua-platform: '"Android"'
-    sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
-    sec-ch-ua-full-version: '"155.0.8059.39"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
-    sec-ch-ua-wow64: '?0'
-    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36'
-  expected:
-    headers:
-      sec-ch-ua-model: '"SM-S711U1"'
-      sec-ch-ua-platform: '"Android"'
-      sec-ch-ua-platform-version: '"16.0.0"'
-      sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
-      sec-ch-ua-full-version: '"155.0.8059.39"'
-      sec-ch-ua-bitness: '""'
-      sec-ch-ua-arch: '""'
-      sec-ch-ua-form-factors: '"Mobile"'
-      sec-ch-ua-mobile: '?1'
-      sec-ch-ua-wow64: '?0'
-      user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: SM-S711U1
-      marketingName: 'Galaxy S23 FE (USA)'
-      manufacturer: samsung
-      brand: samsung
-      display:
-        width: 2340
-        height: 1080
-        touch: true
-        size: 6.4
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 2
-      bits: 0
-    client:
-      name: Chrome
-      modus: null
-      version: 155.0.0
-      manufacturer: google
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 16.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 155.0.0
-      manufacturer: google
--
-  headers:
-    sec-ch-ua-model: '"SM-A165F"'
-    sec-ch-ua-platform: '"Android"'
-    sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
-    sec-ch-ua-full-version: '"154.0.8037.127"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
-    sec-ch-ua-wow64: '?0'
-    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36'
-  expected:
-    headers:
-      sec-ch-ua-model: '"SM-A165F"'
-      sec-ch-ua-platform: '"Android"'
-      sec-ch-ua-platform-version: '"16.0.0"'
-      sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
-      sec-ch-ua-full-version: '"154.0.8037.127"'
-      sec-ch-ua-bitness: '""'
-      sec-ch-ua-arch: '""'
-      sec-ch-ua-form-factors: '"Mobile"'
-      sec-ch-ua-mobile: '?1'
-      sec-ch-ua-wow64: '?0'
-      user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: SM-A165F
-      marketingName: 'Galaxy A16 (International)'
-      manufacturer: samsung
-      brand: samsung
-      display:
-        width: 2340
-        height: 1080
-        touch: true
-        size: 6.7
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 2
-      bits: 0
-    client:
-      name: Chrome
-      modus: null
-      version: 154.0.0
-      manufacturer: google
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 16.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 154.0.0
-      manufacturer: google
--
-  headers:
-    sec-ch-ua-model: '"SM-G781U1"'
-    sec-ch-ua-platform: '"Android"'
-    sec-ch-ua-platform-version: '"13.0.0"'
-    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
-    sec-ch-ua-full-version: '"154.0.8037.126"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
-    sec-ch-ua-wow64: '?0'
-    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36'
-  expected:
-    headers:
-      sec-ch-ua-model: '"SM-G781U1"'
-      sec-ch-ua-platform: '"Android"'
-      sec-ch-ua-platform-version: '"13.0.0"'
-      sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
-      sec-ch-ua-full-version: '"154.0.8037.126"'
-      sec-ch-ua-bitness: '""'
-      sec-ch-ua-arch: '""'
-      sec-ch-ua-form-factors: '"Mobile"'
-      sec-ch-ua-mobile: '?1'
-      sec-ch-ua-wow64: '?0'
-      user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: SM-G781U1
-      marketingName: 'Galaxy S20 FE 5G (USA unlocked)'
-      manufacturer: samsung
-      brand: samsung
-      display:
-        width: 2400
-        height: 1080
-        touch: true
-        size: 6.5
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 1
-      bits: 0
-    client:
-      name: Chrome
-      modus: null
-      version: 154.0.0
-      manufacturer: google
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 13.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 154.0.0
-      manufacturer: google
--
-  headers:
-    sec-ch-ua-model: '"SM-A226B"'
-    sec-ch-ua-platform: '"Android"'
-    sec-ch-ua-platform-version: '"13.0.0"'
-    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
-    sec-ch-ua-full-version: '"154.0.8037.127"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
-    sec-ch-ua-wow64: '?0'
-    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36'
-  expected:
-    headers:
-      sec-ch-ua-model: '"SM-A226B"'
-      sec-ch-ua-platform: '"Android"'
-      sec-ch-ua-platform-version: '"13.0.0"'
-      sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
-      sec-ch-ua-full-version: '"154.0.8037.127"'
-      sec-ch-ua-bitness: '""'
-      sec-ch-ua-arch: '""'
-      sec-ch-ua-form-factors: '"Mobile"'
-      sec-ch-ua-mobile: '?1'
-      sec-ch-ua-wow64: '?0'
-      user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: SM-A226B
-      marketingName: 'Galaxy A22 5G (International)'
-      manufacturer: samsung
-      brand: samsung
-      display:
-        width: 2400
-        height: 1080
-        touch: true
-        size: 6.6
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 1
-      bits: 0
-    client:
-      name: Chrome
-      modus: null
-      version: 154.0.0
-      manufacturer: google
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 13.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 154.0.0
-      manufacturer: google
--
-  headers:
-    sec-ch-ua-model: '"SM-A137F"'
-    sec-ch-ua-platform: '"Android"'
-    sec-ch-ua-platform-version: '"14.0.0"'
-    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
-    sec-ch-ua-full-version: '"154.0.8037.126"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
-    sec-ch-ua-wow64: '?0'
-    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36'
-  expected:
-    headers:
-      sec-ch-ua-model: '"SM-A137F"'
-      sec-ch-ua-platform: '"Android"'
-      sec-ch-ua-platform-version: '"14.0.0"'
-      sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
-      sec-ch-ua-full-version: '"154.0.8037.126"'
-      sec-ch-ua-bitness: '""'
-      sec-ch-ua-arch: '""'
-      sec-ch-ua-form-factors: '"Mobile"'
-      sec-ch-ua-mobile: '?1'
-      sec-ch-ua-wow64: '?0'
-      user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: SM-A137F
-      marketingName: 'Galaxy A13'
-      manufacturer: samsung
-      brand: samsung
-      display:
-        width: 2408
-        height: 1080
-        touch: true
-        size: 6.6
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 1
-      bits: 0
-    client:
-      name: Chrome
-      modus: null
-      version: 154.0.0
-      manufacturer: google
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 14.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 154.0.0
-      manufacturer: google
--
-  headers:
-    sec-ch-ua-model: '"SM-S908B"'
-    sec-ch-ua-platform: '"Android"'
-    sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
-    sec-ch-ua-full-version: '"154.0.8037.126"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
-    sec-ch-ua-wow64: '?0'
-    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36'
-  expected:
-    headers:
-      sec-ch-ua-model: '"SM-S908B"'
-      sec-ch-ua-platform: '"Android"'
-      sec-ch-ua-platform-version: '"16.0.0"'
-      sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
-      sec-ch-ua-full-version: '"154.0.8037.126"'
-      sec-ch-ua-bitness: '""'
-      sec-ch-ua-arch: '""'
-      sec-ch-ua-form-factors: '"Mobile"'
-      sec-ch-ua-mobile: '?1'
-      sec-ch-ua-wow64: '?0'
-      user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: SM-S908B
-      marketingName: 'Galaxy S22 Ultra 5G (International)'
-      manufacturer: samsung
-      brand: samsung
-      display:
-        width: 3088
-        height: 1440
-        touch: true
-        size: 6.8
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 1
-      bits: 0
-    client:
-      name: Chrome
-      modus: null
-      version: 154.0.0
-      manufacturer: google
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 16.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 154.0.0
-      manufacturer: google
--
-  headers:
     sec-ch-ua-model: '"SM-A156B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Google Chrome";v="153", "Not_A Brand";v="8", "Chromium";v="153"'
-    sec-ch-ua-full-version: '"153.0.8010.52"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36'
   expected:
@@ -732,15 +61,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"154.0.8037.126"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-S921B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
-    sec-ch-ua-full-version: '"154.0.8037.126"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36'
   expected:
@@ -793,15 +122,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"155.0.8059.39"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A505FN"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"11.0.0"'
-    sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
-    sec-ch-ua-full-version: '"155.0.8059.39"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36'
   expected:
@@ -854,15 +183,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"154.0.8037.127"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-S936B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
-    sec-ch-ua-full-version: '"154.0.8037.127"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36'
   expected:
@@ -915,15 +244,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"155.0.8059.39"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-S942B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
-    sec-ch-ua-full-version: '"155.0.8059.39"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36'
   expected:
@@ -976,15 +305,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"154.0.8037.126"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A166B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
-    sec-ch-ua-full-version: '"154.0.8037.126"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36'
   expected:
@@ -1037,15 +366,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"154.0.8037.127"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A175F"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
-    sec-ch-ua-full-version: '"154.0.8037.127"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36'
   expected:
@@ -1098,15 +427,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"154.0.8037.126"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A515F"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"13.0.0"'
-    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
-    sec-ch-ua-full-version: '"154.0.8037.126"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36'
   expected:
@@ -1159,15 +488,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"154.0.8037.126"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-S731B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
-    sec-ch-ua-full-version: '"154.0.8037.126"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36'
   expected:
@@ -1220,15 +549,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"154.0.8037.126"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A336B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
-    sec-ch-ua-full-version: '"154.0.8037.126"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36'
   expected:
@@ -1281,15 +610,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"154.0.8037.92"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A536B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
-    sec-ch-ua-full-version: '"154.0.8037.92"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36'
   expected:
@@ -1342,15 +671,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"154.0.8037.126"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A576B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
-    sec-ch-ua-full-version: '"154.0.8037.126"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36'
   expected:
@@ -1403,15 +732,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"154.0.8037.92"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A556E"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
-    sec-ch-ua-full-version: '"154.0.8037.92"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36'
   expected:
@@ -1464,15 +793,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"154.0.8037.92"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A256E"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"14.0.0"'
-    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
-    sec-ch-ua-full-version: '"154.0.8037.92"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36'
   expected:
@@ -2017,15 +1346,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"155.0.8059.84"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-S947B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"17.0.0"'
-    sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
-    sec-ch-ua-full-version: '"155.0.8059.84"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36'
   expected:
@@ -2078,15 +1407,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"155.0.8059.84"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-S926B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
-    sec-ch-ua-full-version: '"155.0.8059.84"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36'
   expected:
@@ -2139,15 +1468,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"155.0.8059.79"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A155F"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
-    sec-ch-ua-full-version: '"155.0.8059.79"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36'
   expected:
@@ -2200,15 +1529,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"152.0.7977.82"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A145R"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"15.0.0"'
-    sec-ch-ua: '"Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"'
-    sec-ch-ua-full-version: '"152.0.7977.82"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Mobile Safari/537.36'
   expected:
@@ -2261,14 +1590,14 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Chromium";v="137", "Not/A)Brand";v="24"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-full-version: '"137.0.7337.0"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A366B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Chromium";v="137", "Not/A)Brand";v="24"'
-    sec-ch-ua-full-version: '"137.0.7337.0"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36'
   expected:
@@ -2320,15 +1649,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"155.0.8059.39"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A525F"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"14.0.0"'
-    sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
-    sec-ch-ua-full-version: '"155.0.8059.39"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36'
   expected:
@@ -2381,15 +1710,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"154.0.8037.126"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A346B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
-    sec-ch-ua-full-version: '"154.0.8037.126"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36'
   expected:
@@ -2442,15 +1771,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"155.0.8059.79"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A217F"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"12.0.0"'
-    sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
-    sec-ch-ua-full-version: '"155.0.8059.79"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36'
   expected:
@@ -2503,15 +1832,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"155.0.8059.39"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A725F"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"14.0.0"'
-    sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
-    sec-ch-ua-full-version: '"155.0.8059.39"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36'
   expected:
@@ -2564,15 +1893,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"155.0.8059.39"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A256B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
-    sec-ch-ua-full-version: '"155.0.8059.39"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36'
   expected:
@@ -2625,15 +1954,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Chromium";v="142", "Google Chrome";v="142", "Not_A Brand";v="99"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"142.0.7444.171"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A202F"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"10.0.0"'
-    sec-ch-ua: '"Chromium";v="142", "Google Chrome";v="142", "Not_A Brand";v="99"'
-    sec-ch-ua-full-version: '"142.0.7444.171"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Mobile Safari/537.36'
   expected:
@@ -2686,15 +2015,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"155.0.8059.79"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-S711B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
-    sec-ch-ua-full-version: '"155.0.8059.79"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36'
   expected:
@@ -2747,15 +2076,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"154.0.8037.126"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A376B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
-    sec-ch-ua-full-version: '"154.0.8037.126"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36'
   expected:
@@ -2931,9 +2260,9 @@
       manufacturer: apple
 -
   headers:
-    sec-ch-ua-platform: '"Android"'
     sec-ch-ua: '"Chromium";v="140", "Not)A;Brand";v="24", "Google Chrome";v="140"'
     sec-ch-ua-mobile: '?1'
+    sec-ch-ua-platform: '"Android"'
     user-agent: 'Mozilla/5.0 (Linux; Android 15; SM-A566B Build/AP3A.240905.015.A2; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.7339.119 Mobile Safari/537.36 MetaIAB'
   expected:
     headers:
@@ -3101,14 +2430,14 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"OperaMobile";v="102", "Opera";v="137", "Chromium";v="152", " Not A;Brand";v="99"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-full-version: '"102.4.5206.90738"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-S928B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"17"'
-    sec-ch-ua: '"OperaMobile";v="102", "Opera";v="137", "Chromium";v="152", " Not A;Brand";v="99"'
-    sec-ch-ua-full-version: '"102.4.5206.90738"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Mobile Safari/537.36 OPR/102.0.0.0'
   expected:
@@ -3160,14 +2489,14 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"OperaMobile";v="102", "Opera";v="137", "Chromium";v="152", " Not A;Brand";v="99"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-full-version: '"102.3.5206.90530"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A256B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"14"'
-    sec-ch-ua: '"OperaMobile";v="102", "Opera";v="137", "Chromium";v="152", " Not A;Brand";v="99"'
-    sec-ch-ua-full-version: '"102.3.5206.90530"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Mobile Safari/537.36 OPR/102.0.0.0'
   expected:
@@ -3219,15 +2548,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Samsung Internet";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"143.0.7499.194"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-S911B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Samsung Internet";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"'
-    sec-ch-ua-full-version: '"143.0.7499.194"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/30.0 Chrome/143.0.0.0 Mobile Safari/537.36'
   expected:
@@ -3280,15 +2609,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Samsung Internet";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"143.0.7499.194"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A146P"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"15.0.0"'
-    sec-ch-ua: '"Samsung Internet";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"'
-    sec-ch-ua-full-version: '"143.0.7499.194"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/30.0 Chrome/143.0.0.0 Mobile Safari/537.36'
   expected:
@@ -3341,15 +2670,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Samsung Internet";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"143.0.7499.194"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-S901B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"13.0.0"'
-    sec-ch-ua: '"Samsung Internet";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"'
-    sec-ch-ua-full-version: '"143.0.7499.194"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/30.0 Chrome/143.0.0.0 Mobile Safari/537.36'
   expected:
@@ -3402,15 +2731,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Samsung Browser";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"143.0.7499.194"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-S711B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"15.0.0"'
-    sec-ch-ua: '"Samsung Browser";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"'
-    sec-ch-ua-full-version: '"143.0.7499.194"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/30.0 Chrome/143.0.0.0 Mobile Safari/537.36'
   expected:
@@ -3463,15 +2792,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Samsung Browser";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"143.0.7499.194"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A546B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Samsung Browser";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"'
-    sec-ch-ua-full-version: '"143.0.7499.194"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/30.0 Chrome/143.0.0.0 Mobile Safari/537.36'
   expected:
@@ -3524,15 +2853,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Samsung Browser";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"143.0.7499.194"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A165F"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Samsung Browser";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"'
-    sec-ch-ua-full-version: '"143.0.7499.194"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/30.0 Chrome/143.0.0.0 Mobile Safari/537.36'
   expected:
@@ -3585,15 +2914,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Samsung Browser";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"143.0.7499.194"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A336B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Samsung Browser";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"'
-    sec-ch-ua-full-version: '"143.0.7499.194"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/30.0 Chrome/143.0.0.0 Mobile Safari/537.36'
   expected:
@@ -3646,15 +2975,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Samsung Browser";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"143.0.7499.194"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-G973F"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"12.0.0"'
-    sec-ch-ua: '"Samsung Browser";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"'
-    sec-ch-ua-full-version: '"143.0.7499.194"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/30.0 Chrome/143.0.0.0 Mobile Safari/537.36'
   expected:
@@ -3707,15 +3036,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Samsung Browser";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"143.0.7499.194"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A566B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Samsung Browser";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"'
-    sec-ch-ua-full-version: '"143.0.7499.194"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/30.0 Chrome/143.0.0.0 Mobile Safari/537.36'
   expected:
@@ -3768,15 +3097,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Samsung Browser";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"143.0.7499.194"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A842B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Samsung Browser";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"'
-    sec-ch-ua-full-version: '"143.0.7499.194"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/30.0 Chrome/143.0.0.0 Mobile Safari/537.36'
   expected:
@@ -3829,15 +3158,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Samsung Browser";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"143.0.7499.194"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-S931B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Samsung Browser";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"'
-    sec-ch-ua-full-version: '"143.0.7499.194"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/30.0 Chrome/143.0.0.0 Mobile Safari/537.36'
   expected:
@@ -3890,15 +3219,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Samsung Browser";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"143.0.7499.194"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A528B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"14.0.0"'
-    sec-ch-ua: '"Samsung Browser";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"'
-    sec-ch-ua-full-version: '"143.0.7499.194"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/30.0 Chrome/143.0.0.0 Mobile Safari/537.36'
   expected:
@@ -3951,15 +3280,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Samsung Browser";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"143.0.7499.194"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-S921B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Samsung Browser";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"'
-    sec-ch-ua-full-version: '"143.0.7499.194"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/30.0 Chrome/143.0.0.0 Mobile Safari/537.36'
   expected:
@@ -4012,15 +3341,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Samsung Browser";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"143.0.7499.194"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-S908B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Samsung Browser";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"'
-    sec-ch-ua-full-version: '"143.0.7499.194"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/30.0 Chrome/143.0.0.0 Mobile Safari/537.36'
   expected:
@@ -4073,15 +3402,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Samsung Browser";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"143.0.7499.194"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A556B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Samsung Browser";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"'
-    sec-ch-ua-full-version: '"143.0.7499.194"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/30.0 Chrome/143.0.0.0 Mobile Safari/537.36'
   expected:
@@ -4134,15 +3463,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Samsung Browser";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"143.0.7499.194"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A356B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Samsung Browser";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"'
-    sec-ch-ua-full-version: '"143.0.7499.194"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/30.0 Chrome/143.0.0.0 Mobile Safari/537.36'
   expected:
@@ -4195,15 +3524,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Samsung Browser";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"143.0.7499.194"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-S936B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Samsung Browser";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"'
-    sec-ch-ua-full-version: '"143.0.7499.194"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/30.0 Chrome/143.0.0.0 Mobile Safari/537.36'
   expected:
@@ -4256,15 +3585,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Samsung Browser";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"143.0.7499.194"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-S926B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Samsung Browser";v="30.0", "Chromium";v="143", "Not A(Brand";v="24"'
-    sec-ch-ua-full-version: '"143.0.7499.194"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/30.0 Chrome/143.0.0.0 Mobile Safari/537.36'
   expected:
@@ -4522,15 +3851,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Desktop"'
+    sec-ch-ua-full-version: '"154.0.8037.126"'
+    sec-ch-ua-mobile: '?0'
     sec-ch-ua-model: '"SM-X210"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
-    sec-ch-ua-full-version: '"154.0.8037.126"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Desktop"'
-    sec-ch-ua-mobile: '?0'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36'
   expected:
@@ -4583,15 +3912,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Desktop"'
+    sec-ch-ua-full-version: '"154.0.8037.57"'
+    sec-ch-ua-mobile: '?0'
     sec-ch-ua-model: '"SM-P613"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"14.0.0"'
-    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
-    sec-ch-ua-full-version: '"154.0.8037.57"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Desktop"'
-    sec-ch-ua-mobile: '?0'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36'
   expected:
@@ -4644,15 +3973,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Desktop"'
+    sec-ch-ua-full-version: '"154.0.8037.57"'
+    sec-ch-ua-mobile: '?0'
     sec-ch-ua-model: '"SM-P610"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"13.0.0"'
-    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
-    sec-ch-ua-full-version: '"154.0.8037.57"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Desktop"'
-    sec-ch-ua-mobile: '?0'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36'
   expected:
@@ -4992,15 +4321,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Desktop"'
+    sec-ch-ua-full-version: '"154.0.8037.126"'
+    sec-ch-ua-mobile: '?0'
     sec-ch-ua-model: '"SM-T510"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"11.0.0"'
-    sec-ch-ua: '"Chromium";v="154", "Google Chrome";v="154", "Not A(Brand";v="99"'
-    sec-ch-ua-full-version: '"154.0.8037.126"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Desktop"'
-    sec-ch-ua-mobile: '?0'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36'
   expected:
@@ -5135,15 +4464,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Desktop"'
+    sec-ch-ua-full-version: '"155.0.8059.79"'
+    sec-ch-ua-mobile: '?0'
     sec-ch-ua-model: '"SM-X200"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"14.0.0"'
-    sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
-    sec-ch-ua-full-version: '"155.0.8059.79"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Desktop"'
-    sec-ch-ua-mobile: '?0'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36'
   expected:
@@ -5196,15 +4525,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Desktop"'
+    sec-ch-ua-full-version: '"155.0.8059.79"'
+    sec-ch-ua-mobile: '?0'
     sec-ch-ua-model: '"SM-T500"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"12.0.0"'
-    sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
-    sec-ch-ua-full-version: '"155.0.8059.79"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Desktop"'
-    sec-ch-ua-mobile: '?0'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36'
   expected:
@@ -5257,14 +4586,14 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"OperaMobile";v="102", "Opera";v="137", "Chromium";v="152", " Not A;Brand";v="99"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-full-version: '"102.4.5206.90738"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-T720"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"11"'
-    sec-ch-ua: '"OperaMobile";v="102", "Opera";v="137", "Chromium";v="152", " Not A;Brand";v="99"'
-    sec-ch-ua-full-version: '"102.4.5206.90738"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36 OPR/102.0.0.0'
   expected:
@@ -5395,4 +4724,495 @@
     engine:
       name: Blink
       version: 153.0.8010.36
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; XQ-ES54 Build/70.2.A.4.168; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/154.0.8037.57 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; XQ-ES54 Build/70.2.A.4.168; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/154.0.8037.57 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: XQ-ES54
+      marketingName: 'Xperia 10 VI 5G'
+      manufacturer: sony
+      brand: sony
+      display:
+        width: 2520
+        height: 1080
+        touch: true
+        size: 6.1
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 154.0.8037.57
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 154.0.8037.57
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 17; XQ-GE54 Build/73.1.A.2.74; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/155.0.8059.43 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 17; XQ-GE54 Build/73.1.A.2.74; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/155.0.8059.43 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: XQ-GE54
+      marketingName: 'Xperia 1 VIII 5G'
+      manufacturer: sony
+      brand: sony
+      display:
+        width: 2340
+        height: 1080
+        touch: true
+        size: 6.5
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 155.0.8059.43
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 17.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 155.0.8059.43
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; XQ-AS52 Build/58.2.A.10.126; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/154.0.8037.106 Mobile Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 12; XQ-AS52 Build/58.2.A.10.126; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/154.0.8037.106 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: XQ-AS52
+      marketingName: 'Xperia 5 II 5G'
+      manufacturer: sony
+      brand: sony
+      display:
+        width: 2520
+        height: 1080
+        touch: true
+        size: 6.1
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: 'Chrome WebView'
+      modus: null
+      version: 154.0.8037.106
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 12.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 154.0.8037.106
+      manufacturer: google
+-
+  headers:
+    sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"155.0.8059.79"'
+    sec-ch-ua-mobile: '?1'
+    sec-ch-ua-model: '"XQ-CC54"'
+    sec-ch-ua-platform: '"Android"'
+    sec-ch-ua-platform-version: '"14.0.0"'
+    sec-ch-ua-wow64: '?0'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36'
+  expected:
+    headers:
+      sec-ch-ua-model: '"XQ-CC54"'
+      sec-ch-ua-platform: '"Android"'
+      sec-ch-ua-platform-version: '"14.0.0"'
+      sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
+      sec-ch-ua-full-version: '"155.0.8059.79"'
+      sec-ch-ua-bitness: '""'
+      sec-ch-ua-arch: '""'
+      sec-ch-ua-form-factors: '"Mobile"'
+      sec-ch-ua-mobile: '?1'
+      sec-ch-ua-wow64: '?0'
+      user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: XQ-CC54
+      marketingName: 'Xperia 10 IV'
+      manufacturer: sony
+      brand: sony
+      display:
+        width: 2520
+        height: 1080
+        touch: true
+        size: 6.0
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 1
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 155.0.0
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 14.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 155.0.0
+      manufacturer: google
+-
+  headers:
+    sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"155.0.8059.39"'
+    sec-ch-ua-mobile: '?1'
+    sec-ch-ua-model: '"XQ-DC54"'
+    sec-ch-ua-platform: '"Android"'
+    sec-ch-ua-platform-version: '"15.0.0"'
+    sec-ch-ua-wow64: '?0'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36'
+  expected:
+    headers:
+      sec-ch-ua-model: '"XQ-DC54"'
+      sec-ch-ua-platform: '"Android"'
+      sec-ch-ua-platform-version: '"15.0.0"'
+      sec-ch-ua: '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"'
+      sec-ch-ua-full-version: '"155.0.8059.39"'
+      sec-ch-ua-bitness: '""'
+      sec-ch-ua-arch: '""'
+      sec-ch-ua-form-factors: '"Mobile"'
+      sec-ch-ua-mobile: '?1'
+      sec-ch-ua-wow64: '?0'
+      user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: XQ-DC54
+      marketingName: 'Xperia 10 V'
+      manufacturer: sony
+      brand: sony
+      display:
+        width: 2520
+        height: 1080
+        touch: true
+        size: 6.1
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: Chrome
+      modus: null
+      version: 155.0.0
+      manufacturer: google
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 15.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 155.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Windows NT 6.2; rv:156.0.) Gecko/20100101 Firefox/156.0. anonymized by Abelssoft 275495279'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Windows NT 6.2; rv:156.0.) Gecko/20100101 Firefox/156.0. anonymized by Abelssoft 275495279'
+    device:
+      architecture: ''
+      deviceName: 'Windows Desktop'
+      marketingName: 'Windows Desktop'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: AntiBrowserSpy
+      modus: null
+      version: null
+      manufacturer: abelssoft
+      type: application
+      isbot: false
+      bits: 0
+    os:
+      name: Windows
+      marketingName: 'Windows 8'
+      version: 8.0.0
+      manufacturer: microsoft
+      bits: 0
+    engine:
+      name: Gecko
+      version: 156.0.0
+      manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.3800.97 Safari/537.36 anonymized by Abelssoft 1864624334'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.3800.97 Safari/537.36 anonymized by Abelssoft 1864624334'
+    device:
+      architecture: ''
+      deviceName: 'Windows Desktop'
+      marketingName: 'Windows Desktop'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: AntiBrowserSpy
+      modus: null
+      version: null
+      manufacturer: abelssoft
+      type: application
+      isbot: false
+      bits: 0
+    os:
+      name: Windows
+      marketingName: 'Windows 8'
+      version: 8.0.0
+      manufacturer: microsoft
+      bits: 0
+    engine:
+      name: Blink
+      version: 145.0.3800.97
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Claude/2.31226.1 Chrome/152.0.7977.130 Safari/537.36 MSIX'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Claude/2.31226.1 Chrome/152.0.7977.130 Safari/537.36 MSIX'
+    device:
+      architecture: ''
+      deviceName: 'Windows Desktop'
+      marketingName: 'Windows Desktop'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: Claude
+      modus: null
+      version: 2.31226.1
+      manufacturer: anthropic
+      type: mobile-application
+      isbot: false
+      bits: 0
+    os:
+      name: Windows
+      marketingName: 'Windows 10'
+      version: 10.0.0
+      manufacturer: microsoft
+      bits: 0
+    engine:
+      name: Blink
+      version: 152.0.7977.130
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36/Nutch-1.23-SNAPSHOT'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36/Nutch-1.23-SNAPSHOT'
+    device:
+      architecture: ''
+      deviceName: 'Windows Desktop'
+      marketingName: 'Windows Desktop'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: Nutch
+      modus: null
+      version: 1.23.0
+      manufacturer: apache
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: Windows
+      marketingName: 'Windows 10'
+      version: 10.0.0
+      manufacturer: microsoft
+      bits: 0
+    engine:
+      name: Blink
+      version: 139.0.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+    device:
+      architecture: ''
+      deviceName: 'Windows Desktop'
+      marketingName: 'Windows Desktop'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: Safari
+      modus: null
+      version: null
+      manufacturer: apple
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Windows
+      marketingName: 'Windows 10'
+      version: 10.0.0
+      manufacturer: microsoft
+      bits: 0
+    engine:
+      name: WebKit
+      version: 537.36.0
+      manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36 AVG/153.0.0.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36 AVG/153.0.0.0'
+    device:
+      architecture: ''
+      deviceName: 'Windows Desktop'
+      marketingName: 'Windows Desktop'
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: desktop
+      ismobile: false
+      istv: false
+      dualOrientation: false
+      simCount: 0
+      bits: 0
+    client:
+      name: 'AVG Secure Browser'
+      modus: null
+      version: 153.0.0.0
+      manufacturer: avast-software
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Windows
+      marketingName: 'Windows 10'
+      version: 10.0.0
+      manufacturer: microsoft
+      bits: 0
+    engine:
+      name: Blink
+      version: 153.0.0.0
       manufacturer: google

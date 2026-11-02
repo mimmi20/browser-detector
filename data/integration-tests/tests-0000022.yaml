@@ -205,8 +205,8 @@
       manufacturer: google
 -
   headers:
-    x-requested-with: com.linkedin.android
     user-agent: 'Mozilla/5.0 (Linux; Android 15; SM-A146P Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.7339.207 Mobile Safari/537.36 [LinkedInApp]/2.200.63'
+    x-requested-with: com.linkedin.android
   expected:
     headers:
       x-requested-with: com.linkedin.android
@@ -1560,9 +1560,9 @@
       manufacturer: google
 -
   headers:
-    sec-ch-ua-platform: '"Android"'
     sec-ch-ua: '"Not)A;Brand";v="99", "Google Chrome";v="140", "Chromium";v="140"'
     sec-ch-ua-mobile: '?1'
+    sec-ch-ua-platform: '"Android"'
     user-agent: 'Mozilla/5.0 (Linux; Android 15; SM-A166U Build/AP3A.240905.015.A2; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.7339.119 Mobile Safari/537.36 MetaIAB'
   expected:
     headers:
@@ -1607,11 +1607,11 @@
       manufacturer: google
 -
   headers:
-    x-requested-with: com.facebook.orca
-    sec-ch-ua-platform: '"Android"'
     sec-ch-ua: '"Android WebView";v="153", "Not_A Brand";v="8", "Chromium";v="153"'
     sec-ch-ua-mobile: '?1'
+    sec-ch-ua-platform: '"Android"'
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-A566B Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/153.0.8010.36 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/581.0.0.49.91;]'
+    x-requested-with: com.facebook.orca
   expected:
     headers:
       x-requested-with: com.facebook.orca
@@ -1656,11 +1656,11 @@
       manufacturer: google
 -
   headers:
-    x-requested-with: com.facebook.orca
-    sec-ch-ua-platform: '"Android"'
     sec-ch-ua: '"Chromium";v="154", "Android WebView";v="154", "Not A(Brand";v="99"'
     sec-ch-ua-mobile: '?1'
+    sec-ch-ua-platform: '"Android"'
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-A346B Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/154.0.8037.57 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/581.0.0.49.91;]'
+    x-requested-with: com.facebook.orca
   expected:
     headers:
       x-requested-with: com.facebook.orca
@@ -2074,15 +2074,15 @@
       manufacturer: apple
 -
   headers:
+    sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "Microsoft Edge";v="150"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"150.0.4078.96"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-S918B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "Microsoft Edge";v="150"'
-    sec-ch-ua-full-version: '"150.0.4078.96"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36 EdgA/150.0.0.0'
   expected:
@@ -2176,9 +2176,9 @@
       manufacturer: google
 -
   headers:
-    sec-ch-ua-platform: '"Android"'
     sec-ch-ua: '"Not/A)Brand";v="8", "Chromium";v="124", "Microsoft Edge";v="124"'
     sec-ch-ua-mobile: '?1'
+    sec-ch-ua-platform: '"Android"'
     user-agent: 'Mozilla/5.0 (Linux; Android 15; SM-S901E Build/AP3A.240905.015.A2; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36 EdgA/124.0.2478.64'
   expected:
     headers:
@@ -2346,15 +2346,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Chromium";v="152", "Not?A_Brand";v="24", "Microsoft Edge";v="152"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"152.0.4191.65"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A566B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Chromium";v="152", "Not?A_Brand";v="24", "Microsoft Edge";v="152"'
-    sec-ch-ua-full-version: '"152.0.4191.65"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Mobile Safari/537.36 EdgA/152.0.0.0'
   expected:
@@ -2407,15 +2407,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Chromium";v="152", "Not?A_Brand";v="24", "Microsoft Edge";v="152"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"152.0.4191.65"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-G780G"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"13.0.0"'
-    sec-ch-ua: '"Chromium";v="152", "Not?A_Brand";v="24", "Microsoft Edge";v="152"'
-    sec-ch-ua-full-version: '"152.0.4191.65"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Mobile Safari/537.36 EdgA/152.0.0.0'
   expected:
@@ -2468,15 +2468,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Not=A?Brand";v="99", "Microsoft Edge";v="151", "Chromium";v="151"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"151.0.4129.96"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-S901B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"15.0.0"'
-    sec-ch-ua: '"Not=A?Brand";v="99", "Microsoft Edge";v="151", "Chromium";v="151"'
-    sec-ch-ua-full-version: '"151.0.4129.96"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36 EdgA/151.0.0.0'
   expected:
@@ -2570,15 +2570,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Microsoft Edge";v="153", "Not_A Brand";v="8", "Chromium";v="153"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"153.0.4234.49"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A546B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Microsoft Edge";v="153", "Not_A Brand";v="8", "Chromium";v="153"'
-    sec-ch-ua-full-version: '"153.0.4234.49"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36 EdgA/153.0.0.0'
   expected:
@@ -2754,9 +2754,9 @@
       manufacturer: google
 -
   headers:
-    sec-ch-ua-platform: '"Android"'
     sec-ch-ua: '"Chromium";v="124", "Not;A=Brand";v="24", "Microsoft Edge";v="124"'
     sec-ch-ua-mobile: '?1'
+    sec-ch-ua-platform: '"Android"'
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-G781U1 Build/TP1A.220624.014; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36 EdgA/124.0.2478.64'
   expected:
     headers:
@@ -2844,9 +2844,9 @@
       manufacturer: google
 -
   headers:
-    sec-ch-ua-platform: '"Android"'
     sec-ch-ua: '"Chromium";v="124", "Not)A;Brand";v="24", "Microsoft Edge";v="124"'
     sec-ch-ua-mobile: '?1'
+    sec-ch-ua-platform: '"Android"'
     user-agent: 'Mozilla/5.0 (Linux; Android 15; SM-A055M Build/AP3A.240905.015.A2; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36 EdgA/124.0.2478.64'
   expected:
     headers:
@@ -2891,15 +2891,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Microsoft Edge";v="153", "Not_A Brand";v="8", "Chromium";v="153"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"153.0.4234.49"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-S921B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Microsoft Edge";v="153", "Not_A Brand";v="8", "Chromium";v="153"'
-    sec-ch-ua-full-version: '"153.0.4234.49"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36 EdgA/153.0.0.0'
   expected:
@@ -2952,9 +2952,9 @@
       manufacturer: google
 -
   headers:
-    sec-ch-ua-platform: '"Android"'
     sec-ch-ua: '"Not/A)Brand";v="8", "Chromium";v="124", "Microsoft Edge";v="124"'
     sec-ch-ua-mobile: '?1'
+    sec-ch-ua-platform: '"Android"'
     user-agent: 'Mozilla/5.0 (Linux; Android 15; SM-A146U1 Build/AP3A.240905.015.A2; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36 EdgA/124.0.2478.64'
   expected:
     headers:
@@ -3163,9 +3163,9 @@
       manufacturer: google
 -
   headers:
-    sec-ch-ua-platform: '"Android"'
     sec-ch-ua: '"Microsoft Edge";v="135", "Not(A:Brand";v="8", "Chromium";v="135"'
     sec-ch-ua-mobile: '?1'
+    sec-ch-ua-platform: '"Android"'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; SM-G981W) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.96 Mobile Safari/537.36 EdgA/135.0.3179.85'
   expected:
     headers:
@@ -3210,15 +3210,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Microsoft Edge";v="153", "Not_A Brand";v="8", "Chromium";v="153"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"153.0.4234.49"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"SM-A356B"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"16.0.0"'
-    sec-ch-ua: '"Microsoft Edge";v="153", "Not_A Brand";v="8", "Chromium";v="153"'
-    sec-ch-ua-full-version: '"153.0.4234.49"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36 EdgA/153.0.0.0'
   expected:
@@ -3271,9 +3271,9 @@
       manufacturer: google
 -
   headers:
-    sec-ch-ua-platform: '"Android"'
     sec-ch-ua: '"Microsoft Edge";v="124", "Not(A:Brand";v="8", "Chromium";v="124"'
     sec-ch-ua-mobile: '?1'
+    sec-ch-ua-platform: '"Android"'
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-A226BR Build/TP1A.220624.014; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36 EdgA/124.0.2478.64'
   expected:
     headers:
@@ -3318,9 +3318,9 @@
       manufacturer: google
 -
   headers:
-    sec-ch-ua-platform: '"Android"'
     sec-ch-ua: '"Not A;Brand";v="99", "Chromium";v="101", "Microsoft Edge";v="101"'
     sec-ch-ua-mobile: '?1'
+    sec-ch-ua-platform: '"Android"'
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-A037G/DSN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Mobile Safari/537.36 EdgA/80.0.361.111'
   expected:
     headers:
@@ -3488,9 +3488,9 @@
       manufacturer: google
 -
   headers:
-    sec-ch-ua-platform: '"Android"'
     sec-ch-ua: '"Google Chrome";v="124", "Chromium";v="124", "Not?A_Brand";v="24"'
     sec-ch-ua-mobile: '?1'
+    sec-ch-ua-platform: '"Android"'
     user-agent: 'Mozilla/5.0 (Linux; Android 15; SM-S931W Build/AP3A.240905.015.A2; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36 BingSapphire/32.3.430811006'
   expected:
     headers:
@@ -3699,9 +3699,9 @@
       manufacturer: google
 -
   headers:
-    sec-ch-ua-platform: '"Android"'
     sec-ch-ua: '"Google Chrome";v="124", "Not(A:Brand";v="8", "Chromium";v="124"'
     sec-ch-ua-mobile: '?1'
+    sec-ch-ua-platform: '"Android"'
     user-agent: 'Mozilla/5.0 (Linux; Android 15; SM-S908U1 Build/AP3A.240905.015.A2; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36 BingSapphire/32.3.430811006'
   expected:
     headers:
@@ -4115,17 +4115,17 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "Android WebView";v="150"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-full-version: '""'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '""'
-    x-requested-with: mobi.mgeek.TunnyBrowser
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '""'
-    sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "Android WebView";v="150"'
-    sec-ch-ua-full-version: '""'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-S921B Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/117.0.0.0 Mobile Safari/537.36'
+    x-requested-with: mobi.mgeek.TunnyBrowser
   expected:
     headers:
       sec-ch-ua-model: '""'

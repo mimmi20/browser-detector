@@ -1,374 +1,5 @@
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; 4K Android TV Box Build/RTT0.210829.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.5005.78 YaBrowser/24.1.2.342 (lite) TV Safari/537.36'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; Android 11; 4K Android TV Box Build/RTT0.210829.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.5005.78 YaBrowser/24.1.2.342 (lite) TV Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: 'general TV device'
-      marketingName: 'general TV device'
-      manufacturer: unknown
-      brand: unknown
-      display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: tv
-      ismobile: false
-      istv: true
-      dualOrientation: false
-      simCount: 0
-      bits: 0
-    client:
-      name: 'Yandex Browser Lite'
-      modus: null
-      version: 24.1.2.342
-      manufacturer: yandex
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: 'Android TV'
-      marketingName: 'Android TV'
-      version: 11.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 102.0.5005.78
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; 4K AI Smart TV Build/RTO7.250723.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.174 YaBrowser/25.10.1.638 (lite) TV Safari/537.36'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; Android 11; 4K AI Smart TV Build/RTO7.250723.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.174 YaBrowser/25.10.1.638 (lite) TV Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: 'general TV device'
-      marketingName: 'general TV device'
-      manufacturer: unknown
-      brand: unknown
-      display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: tv
-      ismobile: false
-      istv: true
-      dualOrientation: false
-      simCount: 0
-      bits: 0
-    client:
-      name: 'Yandex Browser Lite'
-      modus: null
-      version: 25.10.1.638
-      manufacturer: yandex
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: 'Android TV'
-      marketingName: 'Android TV'
-      version: 11.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 142.0.7444.174
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; 40FHD Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; Android 11; 40FHD Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: 'general TV device'
-      marketingName: 'general TV device'
-      manufacturer: unknown
-      brand: unknown
-      display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: tv
-      ismobile: false
-      istv: true
-      dualOrientation: false
-      simCount: 0
-      bits: 0
-    client:
-      name: 'Yandex Browser Lite'
-      modus: null
-      version: 24.12.0.453
-      manufacturer: yandex
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 11.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 113.0.5672.163
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; 32SN4500 Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; Android 11; 32SN4500 Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: 'general TV device'
-      marketingName: 'general TV device'
-      manufacturer: unknown
-      brand: unknown
-      display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: tv
-      ismobile: false
-      istv: true
-      dualOrientation: false
-      simCount: 0
-      bits: 0
-    client:
-      name: 'Yandex Browser Lite'
-      modus: null
-      version: 24.1.2.86
-      manufacturer: yandex
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 11.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 113.0.5672.163
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; 2K T56 Smart TV Build/RTM8.240401.113; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 YaBrowser/25.10.1.638 (lite) TV Safari/537.36'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; Android 11; 2K T56 Smart TV Build/RTM8.240401.113; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 YaBrowser/25.10.1.638 (lite) TV Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: 'general TV device'
-      marketingName: 'general TV device'
-      manufacturer: unknown
-      brand: unknown
-      display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: tv
-      ismobile: false
-      istv: true
-      dualOrientation: false
-      simCount: 0
-      bits: 0
-    client:
-      name: 'Yandex Browser Lite'
-      modus: null
-      version: 25.10.1.638
-      manufacturer: yandex
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: 'Android TV'
-      marketingName: 'Android TV'
-      version: 11.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 149.0.7827.91
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; 2K SMART TV Build/RTM8.240401.113; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 YaBrowser/24.12.0.453 (lite) TV Safari/537.36'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; Android 11; 2K SMART TV Build/RTM8.240401.113; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 YaBrowser/24.12.0.453 (lite) TV Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: 'general TV device'
-      marketingName: 'general TV device'
-      manufacturer: unknown
-      brand: unknown
-      display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: tv
-      ismobile: false
-      istv: true
-      dualOrientation: false
-      simCount: 0
-      bits: 0
-    client:
-      name: 'Yandex Browser Lite'
-      modus: null
-      version: 24.12.0.453
-      manufacturer: yandex
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: 'Android TV'
-      marketingName: 'Android TV'
-      version: 11.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 149.0.7827.91
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; 2K SMART TV Build/RTM8.240401.113; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.159 YaBrowser/24.12.0.453 (lite) TV Safari/537.36'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; Android 11; 2K SMART TV Build/RTM8.240401.113; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.159 YaBrowser/24.12.0.453 (lite) TV Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: 'general TV device'
-      marketingName: 'general TV device'
-      manufacturer: unknown
-      brand: unknown
-      display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: tv
-      ismobile: false
-      istv: true
-      dualOrientation: false
-      simCount: 0
-      bits: 0
-    client:
-      name: 'Yandex Browser Lite'
-      modus: null
-      version: 24.12.0.453
-      manufacturer: yandex
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: 'Android TV'
-      marketingName: 'Android TV'
-      version: 11.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 149.0.7827.159
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; 2K SMART TV Build/RTK3.240516.035; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.215 YaBrowser/25.10.1.638 (lite) TV Safari/537.36'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; Android 11; 2K SMART TV Build/RTK3.240516.035; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.215 YaBrowser/25.10.1.638 (lite) TV Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: 'general TV device'
-      marketingName: 'general TV device'
-      manufacturer: unknown
-      brand: unknown
-      display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: tv
-      ismobile: false
-      istv: true
-      dualOrientation: false
-      simCount: 0
-      bits: 0
-    client:
-      name: 'Yandex Browser Lite'
-      modus: null
-      version: 25.10.1.638
-      manufacturer: yandex
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: 'Android TV'
-      marketingName: 'Android TV'
-      version: 11.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 148.0.7778.215
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; 2K SMART TV Build/RTK2.230523.052; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 YaBrowser/25.10.1.638 (lite) TV Safari/537.36'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; Android 11; 2K SMART TV Build/RTK2.230523.052; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 YaBrowser/25.10.1.638 (lite) TV Safari/537.36'
-    device:
-      architecture: ''
-      deviceName: 'general TV device'
-      marketingName: 'general TV device'
-      manufacturer: unknown
-      brand: unknown
-      display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: tv
-      ismobile: false
-      istv: true
-      dualOrientation: false
-      simCount: 0
-      bits: 0
-    client:
-      name: 'Yandex Browser Lite'
-      modus: null
-      version: 25.10.1.638
-      manufacturer: yandex
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: 'Android TV'
-      marketingName: 'Android TV'
-      version: 11.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 149.0.7827.91
-      manufacturer: google
--
-  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; 2K SMART TV Build/RTK2.230523.008; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 YaBrowser/25.10.1.638 (lite) TV Safari/537.36'
   expected:
     headers:
@@ -3485,9 +3116,9 @@
       manufacturer: google
 -
   headers:
-    sec-ch-ua-platform: '"Linux"'
     sec-ch-ua: '"Google Chrome";v="149", "Chromium";v="149", "Not)A;Brand";v="24"'
     sec-ch-ua-mobile: '?0'
+    sec-ch-ua-platform: '"Linux"'
     user-agent: 'DuckAssistBot/1.2; (+http://duckduckgo.com/duckassistbot.html)'
   expected:
     headers:
@@ -3518,53 +3149,6 @@
       version: 1.2.0
       manufacturer: duck-duck-go
       type: crawler
-      isbot: true
-      bits: 0
-    os:
-      name: Linux
-      marketingName: Linux
-      version: null
-      manufacturer: linux-foundation
-      bits: 0
-    engine:
-      name: Blink
-      version: 149.0.0
-      manufacturer: google
--
-  headers:
-    sec-ch-ua-platform: '"Linux"'
-    sec-ch-ua: '"Google Chrome";v="149", "Chromium";v="149", "Not)A;Brand";v="24"'
-    sec-ch-ua-mobile: '?0'
-    user-agent: 'DuckDuckBot/1.0; (+http://duckduckgo.com/duckduckbot.html)'
-  expected:
-    headers:
-      sec-ch-ua-platform: '"Linux"'
-      sec-ch-ua: '"Google Chrome";v="149", "Chromium";v="149", "Not)A;Brand";v="24"'
-      sec-ch-ua-mobile: '?0'
-      user-agent: 'DuckDuckBot/1.0; (+http://duckduckgo.com/duckduckbot.html)'
-    device:
-      architecture: ''
-      deviceName: null
-      marketingName: null
-      manufacturer: unknown
-      brand: unknown
-      display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: unknown
-      ismobile: false
-      istv: false
-      dualOrientation: null
-      simCount: 0
-      bits: 0
-    client:
-      name: 'DuckDuck Bot'
-      modus: null
-      version: 1.0.0
-      manufacturer: duck-duck-go
-      type: search-bot
       isbot: true
       bits: 0
     os:
@@ -4030,9 +3614,9 @@
       manufacturer: google
 -
   headers:
-    sec-ch-ua-platform: '"Windows"'
     sec-ch-ua: '"Chromium";v="148", "HeadlessChrome";v="148", "Not/A)Brand";v="99"'
     sec-ch-ua-mobile: '?0'
+    sec-ch-ua-platform: '"Windows"'
     user-agent: 'SaferPageCrawler/0.3 (+https://saferpage.de/bot; schedules passive DACH website checks; report examples: https://saferpage.de/tests; kostenloser Report: https://saferpage.de/geld.de)'
   expected:
     headers:
@@ -4077,15 +3661,15 @@
       manufacturer: google
 -
   headers:
+    sec-ch-ua: '"Not)A;Brand";v="8", "Chromium";v="138", "Google Chrome";v="138"'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-full-version: '"138.0.7204.179"'
+    sec-ch-ua-mobile: '?1'
     sec-ch-ua-model: '"K9"'
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua-platform-version: '"9.0.0"'
-    sec-ch-ua: '"Not)A;Brand";v="8", "Chromium";v="138", "Google Chrome";v="138"'
-    sec-ch-ua-full-version: '"138.0.7204.179"'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-form-factors: '"Mobile"'
-    sec-ch-ua-mobile: '?1'
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36'
   expected:
@@ -4136,3 +3720,431 @@
       name: Blink
       version: 138.0.0
       manufacturer: google
+-
+  headers:
+    sec-ch-ua: '"Not;A=Brand";v="99", "Google Chrome";v="139", "Chromium";v="139"'
+    sec-ch-ua-mobile: '?0'
+    sec-ch-ua-platform: '"Windows"'
+    user-agent: 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'
+  expected:
+    headers:
+      sec-ch-ua-platform: '"Windows"'
+      sec-ch-ua: '"Not;A=Brand";v="99", "Google Chrome";v="139", "Chromium";v="139"'
+      sec-ch-ua-mobile: '?0'
+      user-agent: 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Google Bot'
+      modus: null
+      version: 2.1.0
+      manufacturer: google
+      type: search-bot
+      isbot: true
+      bits: 0
+    os:
+      name: Windows
+      marketingName: Windows
+      version: null
+      manufacturer: microsoft
+      bits: 0
+    engine:
+      name: Blink
+      version: 139.0.0
+      manufacturer: google
+-
+  headers:
+    sec-ch-ua: '"Not;A=Brand";v="99", "Google Chrome";v="139", "Chromium";v="139"'
+    sec-ch-ua-mobile: '?0'
+    sec-ch-ua-platform: '"macOS"'
+    user-agent: 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'
+  expected:
+    headers:
+      sec-ch-ua-platform: '"macOS"'
+      sec-ch-ua: '"Not;A=Brand";v="99", "Google Chrome";v="139", "Chromium";v="139"'
+      sec-ch-ua-mobile: '?0'
+      user-agent: 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Google Bot'
+      modus: null
+      version: 2.1.0
+      manufacturer: google
+      type: search-bot
+      isbot: true
+      bits: 0
+    os:
+      name: 'Mac OS X'
+      marketingName: 'Mac OS X'
+      version: null
+      manufacturer: apple
+      bits: 0
+    engine:
+      name: Blink
+      version: 139.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/149.0.7827.200 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/149.0.7827.200 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Google Bot'
+      modus: null
+      version: 2.1.0
+      manufacturer: google
+      type: search-bot
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Blink
+      version: 149.0.7827.200
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 AppleWebKit/537.36 Chrome/149.0.7827.200 Safari/537.36 Google-Ads-Conversions'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 AppleWebKit/537.36 Chrome/149.0.7827.200 Safari/537.36 Google-Ads-Conversions'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Google Ads Conversions'
+      modus: null
+      version: null
+      manufacturer: google
+      type: search-bot
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Blink
+      version: 149.0.7827.200
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (en-us) AppleWebKit/537.36(KHTML, like Gecko; Google-Adwords-DisplayAds-WebRender;) Chrome/149.0.7827.200Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (en-us) AppleWebKit/537.36(KHTML, like Gecko; Google-Adwords-DisplayAds-WebRender;) Chrome/149.0.7827.200Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Google Adwords DisplayAds WebRender'
+      modus: null
+      version: null
+      manufacturer: google
+      type: search-bot
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Blink
+      version: 149.0.7827.200
+      manufacturer: google
+-
+  headers:
+    user-agent: 'HubSpot Connect 2.0 (http://dev.hubspot.com/) (namespace: CUSTOMER_AGENT_LOOP_ATTACHMENTS_URL_FETCHER) - customer-agent-loop-rpc-server-web'
+  expected:
+    headers:
+      user-agent: 'HubSpot Connect 2.0 (http://dev.hubspot.com/) (namespace: CUSTOMER_AGENT_LOOP_ATTACHMENTS_URL_FETCHER) - customer-agent-loop-rpc-server-web'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'HubSpot Connect'
+      modus: null
+      version: 2.0.0
+      manufacturer: hubspot-inc
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    user-agent: 'Turnitin (https://bit.ly/2UvnfoQ)'
+  expected:
+    headers:
+      user-agent: 'Turnitin (https://bit.ly/2UvnfoQ)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: TurnitinBot
+      modus: null
+      version: null
+      manufacturer: iparadigms
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: null
+      version: null
+      manufacturer: unknown
+-
+  headers:
+    sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "Google Chrome";v="150"'
+    sec-ch-ua-mobile: '?0'
+    sec-ch-ua-platform: '"Windows"'
+    user-agent: 'meta-externalagent/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler)'
+  expected:
+    headers:
+      sec-ch-ua-platform: '"Windows"'
+      sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "Google Chrome";v="150"'
+      sec-ch-ua-mobile: '?0'
+      user-agent: 'meta-externalagent/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler)'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: 'Meta ExternalAgent'
+      modus: null
+      version: 1.1.0
+      manufacturer: meta
+      type: crawler
+      isbot: true
+      bits: 0
+    os:
+      name: Windows
+      marketingName: Windows
+      version: null
+      manufacturer: microsoft
+      bits: 0
+    engine:
+      name: Blink
+      version: 150.0.0
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/100.0.4896.127 Safari/537.36'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/100.0.4896.127 Safari/537.36'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: BingBot
+      modus: null
+      version: 2.0.0
+      manufacturer: microsoft
+      type: search-bot
+      isbot: true
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Blink
+      version: 100.0.4896.127
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 Firefox/35.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 Firefox/35.0'
+    device:
+      architecture: ''
+      deviceName: null
+      marketingName: null
+      manufacturer: unknown
+      brand: unknown
+      display:
+        width: null
+        height: null
+        touch: false
+        size: null
+      type: unknown
+      ismobile: false
+      istv: false
+      dualOrientation: null
+      simCount: 0
+      bits: 0
+    client:
+      name: Firefox
+      modus: null
+      version: 35.0.0
+      manufacturer: mozilla-foundation
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: null
+      marketingName: null
+      version: null
+      manufacturer: unknown
+      bits: 0
+    engine:
+      name: Gecko
+      version: null
+      manufacturer: mozilla

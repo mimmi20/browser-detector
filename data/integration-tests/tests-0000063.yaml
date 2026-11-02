@@ -1,374 +1,5 @@
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLU110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.71 MQQBrowser/20.3 Mobile Safari/537.36 COVC/048801'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLU110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.71 MQQBrowser/20.3 Mobile Safari/537.36 COVC/048801'
-    device:
-      architecture: ''
-      deviceName: PLU110
-      marketingName: 'Turbo 6'
-      manufacturer: bbk
-      brand: oneplus
-      display:
-        width: 2772
-        height: 1272
-        touch: true
-        size: 6.78
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 2
-      bits: 0
-    client:
-      name: 'QQ Browser'
-      modus: null
-      version: 20.3.0
-      manufacturer: tencent
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 16.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 121.0.6167.71
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLS120 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.71 MQQBrowser/20.1 Mobile Safari/537.36 SogouMSE/20.1 COVC/048401'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLS120 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.71 MQQBrowser/20.1 Mobile Safari/537.36 SogouMSE/20.1 COVC/048401'
-    device:
-      architecture: ''
-      deviceName: PLS120
-      marketingName: 'A6 5G'
-      manufacturer: bbk
-      brand: oppo
-      display:
-        width: 2372
-        height: 1080
-        touch: true
-        size: 6.57
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 2
-      bits: 0
-    client:
-      name: 'QQ Browser'
-      modus: null
-      version: 20.1.0
-      manufacturer: tencent
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 16.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 121.0.6167.71
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLR110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.71 MQQBrowser/20.3 Mobile Safari/537.36 COVC/048801'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLR110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.71 MQQBrowser/20.3 Mobile Safari/537.36 COVC/048801'
-    device:
-      architecture: ''
-      deviceName: PLR110
-      marketingName: 'Ace 6T'
-      manufacturer: bbk
-      brand: oneplus
-      display:
-        width: 2800
-        height: 1272
-        touch: true
-        size: 6.83
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 2
-      bits: 0
-    client:
-      name: 'QQ Browser'
-      modus: null
-      version: 20.3.0
-      manufacturer: tencent
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 16.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 121.0.6167.71
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLQ110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.71 MQQBrowser/20.3 Mobile Safari/537.36 COVC/048801'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLQ110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.71 MQQBrowser/20.3 Mobile Safari/537.36 COVC/048801'
-    device:
-      architecture: ''
-      deviceName: PLQ110
-      marketingName: 'Ace 6'
-      manufacturer: bbk
-      brand: oneplus
-      display:
-        width: 2800
-        height: 1272
-        touch: true
-        size: 6.83
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 2
-      bits: 0
-    client:
-      name: 'QQ Browser'
-      modus: null
-      version: 20.3.0
-      manufacturer: tencent
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 16.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 121.0.6167.71
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLL110 Build/TP1A.220905.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.71 MQQBrowser/20.3 Mobile Safari/537.36 COVC/048801'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLL110 Build/TP1A.220905.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.71 MQQBrowser/20.3 Mobile Safari/537.36 COVC/048801'
-    device:
-      architecture: ''
-      deviceName: PLL110
-      marketingName: 'A6 GT'
-      manufacturer: bbk
-      brand: oppo
-      display:
-        width: 2800
-        height: 1280
-        touch: true
-        size: 6.8
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 2
-      bits: 0
-    client:
-      name: 'QQ Browser'
-      modus: null
-      version: 20.3.0
-      manufacturer: tencent
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 16.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 121.0.6167.71
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLK110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.71 MQQBrowser/20.3 Mobile Safari/537.36 COVC/048801'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLK110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.71 MQQBrowser/20.3 Mobile Safari/537.36 COVC/048801'
-    device:
-      architecture: ''
-      deviceName: PLK110
-      marketingName: '15'
-      manufacturer: bbk
-      brand: oneplus
-      display:
-        width: 2772
-        height: 1272
-        touch: true
-        size: 6.78
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 2
-      bits: 0
-    client:
-      name: 'QQ Browser'
-      modus: null
-      version: 20.3.0
-      manufacturer: tencent
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 16.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 121.0.6167.71
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLJ110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.71 MQQBrowser/20.3 Mobile Safari/537.36 COVC/048801'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLJ110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.71 MQQBrowser/20.3 Mobile Safari/537.36 COVC/048801'
-    device:
-      architecture: ''
-      deviceName: PLJ110
-      marketingName: 'Find X9'
-      manufacturer: bbk
-      brand: oppo
-      display:
-        width: 2760
-        height: 1256
-        touch: true
-        size: 6.59
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 2
-      bits: 0
-    client:
-      name: 'QQ Browser'
-      modus: null
-      version: 20.3.0
-      manufacturer: tencent
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 16.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 121.0.6167.71
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLG110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.71 MQQBrowser/20.3 Mobile Safari/537.36 COVC/048801'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-cn; PLG110 Build/BP2A.250605.015) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.71 MQQBrowser/20.3 Mobile Safari/537.36 COVC/048801'
-    device:
-      architecture: ''
-      deviceName: PLG110
-      marketingName: 'Find X9 Pro'
-      manufacturer: bbk
-      brand: oppo
-      display:
-        width: 2772
-        height: 1272
-        touch: true
-        size: 6.78
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 2
-      bits: 0
-    client:
-      name: 'QQ Browser'
-      modus: null
-      version: 20.3.0
-      manufacturer: tencent
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 16.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 121.0.6167.71
-      manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; U; Android 15; zh-cn; V2443A Build/AP3A.240905.015.A2_V000L1) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.71 MQQBrowser/20.3 Mobile Safari/537.36 COVC/048801'
-  expected:
-    headers:
-      user-agent: 'Mozilla/5.0 (Linux; U; Android 15; zh-cn; V2443A Build/AP3A.240905.015.A2_V000L1) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.71 MQQBrowser/20.3 Mobile Safari/537.36 COVC/048801'
-    device:
-      architecture: ''
-      deviceName: V2443A
-      marketingName: 'Y50 (China)'
-      manufacturer: bbk
-      brand: vivo
-      display:
-        width: 1600
-        height: 720
-        touch: true
-        size: 6.74
-      type: smartphone
-      ismobile: true
-      istv: false
-      dualOrientation: true
-      simCount: 2
-      bits: 0
-    client:
-      name: 'QQ Browser'
-      modus: null
-      version: 20.3.0
-      manufacturer: tencent
-      type: browser
-      isbot: false
-      bits: 0
-    os:
-      name: Android
-      marketingName: Android
-      version: 15.0.0
-      manufacturer: google
-      bits: 0
-    engine:
-      name: Blink
-      version: 121.0.6167.71
-      manufacturer: google
--
-  headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 14; zh-cn; RMX3989 Build/UKQ1.231108.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.71 MQQBrowser/20.3 Mobile Safari/537.36 COVC/048801'
   expected:
     headers:
@@ -4097,4 +3728,373 @@
     engine:
       name: Blink
       version: 131.0.6778.200
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; V2562) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.118 Mobile Safari/537.36 VivoBrowser/14.7.4.2'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; V2562) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.118 Mobile Safari/537.36 VivoBrowser/14.7.4.2'
+    device:
+      architecture: ''
+      deviceName: V2562
+      marketingName: 'X300 Ultra'
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 3168
+        height: 1440
+        touch: true
+        size: 6.82
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'vivo Browser'
+      modus: null
+      version: 14.7.4.2
+      manufacturer: vivo
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 123.0.6312.118
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; V2561) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.200 Mobile Safari/537.36 VivoBrowser/16.2.1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; V2561) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.200 Mobile Safari/537.36 VivoBrowser/16.2.1.0'
+    device:
+      architecture: ''
+      deviceName: V2561
+      marketingName: 'X200T 5G'
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 2800
+        height: 1260
+        touch: true
+        size: 6.67
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'vivo Browser'
+      modus: null
+      version: 16.2.1.0
+      manufacturer: vivo
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 131.0.6778.200
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; V2561A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.200 Mobile Safari/537.36 VivoBrowser/27.2.10.4'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; V2561A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.200 Mobile Safari/537.36 VivoBrowser/27.2.10.4'
+    device:
+      architecture: ''
+      deviceName: V2561A
+      marketingName: 'Y600 Pro'
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 2800
+        height: 1260
+        touch: true
+        size: 6.83
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'vivo Browser'
+      modus: null
+      version: 27.2.10.4
+      manufacturer: vivo
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 131.0.6778.200
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; V2559A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.200 Mobile Safari/537.36 VivoBrowser/29.6.0.2'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; V2559A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.200 Mobile Safari/537.36 VivoBrowser/29.6.0.2'
+    device:
+      architecture: ''
+      deviceName: V2559A
+      marketingName: 'Y60 5G'
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 1600
+        height: 720
+        touch: true
+        size: 6.74
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'vivo Browser'
+      modus: null
+      version: 29.6.0.2
+      manufacturer: vivo
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 131.0.6778.200
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; V2558) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.200 Mobile Safari/537.36 VivoBrowser/16.0.4.2'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; V2558) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.200 Mobile Safari/537.36 VivoBrowser/16.0.4.2'
+    device:
+      architecture: ''
+      deviceName: V2558
+      marketingName: 'V70 FE 5G'
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 2800
+        height: 1260
+        touch: true
+        size: 6.83
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'vivo Browser'
+      modus: null
+      version: 16.0.4.2
+      manufacturer: vivo
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 131.0.6778.200
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; V2556) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.200 Mobile Safari/537.36 VivoBrowser/16.2.1.0'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; V2556) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.200 Mobile Safari/537.36 VivoBrowser/16.2.1.0'
+    device:
+      architecture: ''
+      deviceName: V2556
+      marketingName: Y05
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 1600
+        height: 720
+        touch: true
+        size: 6.74
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'vivo Browser'
+      modus: null
+      version: 16.2.1.0
+      manufacturer: vivo
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 131.0.6778.200
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; V2555) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.118 Mobile Safari/537.36 VivoBrowser/14.7.4.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; V2555) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.118 Mobile Safari/537.36 VivoBrowser/14.7.4.1'
+    device:
+      architecture: ''
+      deviceName: V2555
+      marketingName: Y11d
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 1600
+        height: 720
+        touch: true
+        size: 6.74
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'vivo Browser'
+      modus: null
+      version: 14.7.4.1
+      manufacturer: vivo
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 123.0.6312.118
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; V2553) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.200 Mobile Safari/537.36 VivoBrowser/16.2.1.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; V2553) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.200 Mobile Safari/537.36 VivoBrowser/16.2.1.1'
+    device:
+      architecture: ''
+      deviceName: V2553
+      marketingName: 'Y21 5G'
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 1600
+        height: 720
+        touch: true
+        size: 6.74
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'vivo Browser'
+      modus: null
+      version: 16.2.1.1
+      manufacturer: vivo
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 131.0.6778.200
+      manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; V2550) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.118 Mobile Safari/537.36 VivoBrowser/14.7.4.1'
+  expected:
+    headers:
+      user-agent: 'Mozilla/5.0 (Linux; Android 16; V2550) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.118 Mobile Safari/537.36 VivoBrowser/14.7.4.1'
+    device:
+      architecture: ''
+      deviceName: V2550
+      marketingName: 'V70 FE'
+      manufacturer: bbk
+      brand: vivo
+      display:
+        width: 2800
+        height: 1260
+        touch: true
+        size: 6.83
+      type: smartphone
+      ismobile: true
+      istv: false
+      dualOrientation: true
+      simCount: 2
+      bits: 0
+    client:
+      name: 'vivo Browser'
+      modus: null
+      version: 14.7.4.1
+      manufacturer: vivo
+      type: browser
+      isbot: false
+      bits: 0
+    os:
+      name: Android
+      marketingName: Android
+      version: 16.0.0
+      manufacturer: google
+      bits: 0
+    engine:
+      name: Blink
+      version: 123.0.6312.118
       manufacturer: google
