@@ -104,74 +104,11 @@ jobs:
       upload-flag: ""
       use-phpstan: true
       skip-infection: false
-      option-phpunit: " --exclude-group=integration"
+      option-phpunit: ""
     secrets:
       ENV_CODECLIMATE_API_KEY: ${{ secrets.CODECLIMATE_API_KEY }}
       ENV_CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
       ENV_STRYKER_DASHBOARD_API_KEY: ${{ secrets.STRYKER_DASHBOARD_API_KEY }}
-
-  tests2:
-    name: "Integration Tests with PHPUnit"
-
-    needs: "analytics"
-
-    runs-on: "${{ matrix.operating-system }}"
-
-    continue-on-error: false
-
-    strategy:
-      fail-fast: false
-
-      matrix:
-        operating-system:
-          - "ubuntu-latest"
-
-        php-version:
-          - "8.5"
-
-        dependencies:
-          - "lowest"
-
-    steps:
-      - name: "Checkout"
-        uses: "actions/checkout@v7"
-        with:
-          # Disabling shallow clone is recommended for improving relevancy of reporting
-          fetch-depth: 0
-          lfs: false
-          persist-credentials: false
-
-      - name: "Install PHP"
-        uses: "shivammathur/setup-php@2.40.0"
-        with:
-          php-version: "${{ matrix.php-version }}"
-          extensions: "none, phar, json, opcache, curl, iconv, mbstring, ctype, dom, fileinfo, intl, simplexml, tokenizer, xml, xmlwriter"
-          ini-values: "opcache.enable=1, opcache.fast_shutdown=0, zend.assertions=1, assert.exception=On, intl.default_locale=de, intl.use_exceptions=1, zend.exception_ignore_args=0"
-          coverage: "none"
-          tools: "composer:v2"
-        env:
-          fail-fast: true
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          phpts: "nts"
-          debug: true
-
-      - name: "Update dependencies with composer"
-        uses: "ramsey/composer-install@4.0.0"
-        with:
-          dependency-versions: "${{ matrix.dependencies }}"
-          composer-options: "--optimize-autoloader --prefer-dist --prefer-stable -v"
-
-      - name: "Run integration tests with phpunit/phpunit"
-        run: "vendor/bin/phpunit --configuration=phpunit.xml --no-coverage --colors --display-warnings --display-deprecations --display-notices --display-phpunit-notices --group=integration"
-
-      - name: "Enable annotations for validation errors and warnings"
-        uses: "korelstar/xmllint-problem-matcher@v1"
-
-      - name: "Validate phpcs.xml"
-        uses: "ChristophWurst/xmllint-action@v1"
-        with:
-          xml-file: "phpunit.xml"
-          xml-schema-file: "vendor/phpunit/phpunit/phpunit.xsd"
 
   integration-tests:
     name: "Integration Tests with PHPUnit"

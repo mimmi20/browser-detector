@@ -375,8 +375,8 @@
       user-agent: 'Mozilla/5.0 (Linux; arm; Android 9; MiTV-MFTP0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.49 YaBrowser/24.4.6.49.00 SA/3 Mobile Safari/537.36'
     device:
       architecture: ''
-      deviceName: TV
-      marketingName: TV
+      deviceName: 'MiTV MFTP0'
+      marketingName: 'MiTV MFTP0'
       manufacturer: xiaomi
       brand: xiaomi
       display:
@@ -1113,20 +1113,20 @@
       user-agent: 'Mozilla/5.0 (Linux; Android 9; ZTE Axon 40 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.171 Mobile Safari/537.36 OPR/101.0.4843.43'
     device:
       architecture: ''
-      deviceName: 'general ZTE device'
-      marketingName: 'general ZTE device'
+      deviceName: 'Axon 40 Pro'
+      marketingName: 'Axon 40 Pro 5G'
       manufacturer: zte
       brand: zte
       display:
-        width: null
-        height: null
-        touch: false
-        size: null
-      type: mobile-device
+        width: 2400
+        height: 1080
+        touch: true
+        size: 6.67
+      type: smartphone
       ismobile: true
       istv: false
-      dualOrientation: null
-      simCount: 0
+      dualOrientation: true
+      simCount: 2
       bits: 0
     client:
       name: 'Opera Mobile'
