@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 13; CPH2467 Build/RKQ1.211119.001)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CPH2467
     marketingName: 'Nord CE 3 Lite'
     manufacturer: bbk
     brand: oneplus
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Android Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; PHB110) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: PHB110
     marketingName: '11'
     manufacturer: bbk
     brand: oneplus
-    dualOrientation: true
-    simCount: 2
     display:
       width: 3216
       height: 1440
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 112.0.0.0
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; RMX2063 Build/QKQ1.191222.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.135 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RMX2063
     marketingName: '6 Pro'
     manufacturer: bbk
     brand: realme
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -93,13 +91,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 112.0.5615.135
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; V2219) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V2219
     marketingName: 'X90 Pro'
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2800
       height: 1260
@@ -131,13 +129,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 112.0.0.0
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; RMX3311 Build/TP1A.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.131 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RMX3311
     marketingName: 'GT 2'
     manufacturer: bbk
     brand: realme
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -169,13 +167,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 113.0.5672.131
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; V2053) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V2053
     marketingName: 'Y52 5G'
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2408
       height: 1080
@@ -207,13 +205,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 113.0.0.0
@@ -239,13 +239,11 @@
     sec-ch-ua-mobile: '?1'
     user-agent: 'Mozilla/5.0 (Linux; Android 12; RMX3085) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RMX3085
     marketingName: '8'
     manufacturer: bbk
     brand: realme
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -254,13 +252,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chromium
     modus: null
@@ -268,7 +262,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 112.0.0
@@ -286,13 +286,11 @@
     sec-ch-ua-mobile: '?1'
     user-agent: 'Mozilla/5.0 (Linux; Android 12; AC2003) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AC2003
     marketingName: 'Nord 5G (International)'
     manufacturer: bbk
     brand: oneplus
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -301,13 +299,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chromium
     modus: null
@@ -315,7 +309,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 112.0.0
@@ -324,13 +324,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; CPH2527) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CPH2527
     marketingName: 'F23 5G'
     manufacturer: bbk
     brand: oppo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -339,13 +337,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -353,7 +347,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 108.0.0.0
@@ -362,13 +362,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; CPH2415 Build/TP1A.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.162 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CPH2415
     marketingName: '10T 5G'
     manufacturer: bbk
     brand: oneplus
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2412
       height: 1080
@@ -377,13 +375,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -391,7 +385,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 113.0.5672.162
@@ -400,13 +400,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; CPH2159 Build/SKQ1.210216.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/106.0.5249.126 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CPH2159
     marketingName: 'Reno 5 4G'
     manufacturer: bbk
     brand: oppo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -415,13 +413,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -429,7 +423,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 106.0.5249.126
@@ -438,13 +438,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; iQOO U3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.146 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iQOO U3'
     marketingName: 'iQOO U3'
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2408
       height: 1080
@@ -453,13 +451,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -467,7 +461,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.146
@@ -476,13 +476,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; iQOO Neo 5 Lite) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iQOO Neo 5 Lite'
     marketingName: 'iQOO Neo 5 Lite'
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2408
       height: 1080
@@ -491,13 +489,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -505,7 +499,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 91.0.4472.101
@@ -514,13 +514,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; Vivo U20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.5615.47 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: U20
     marketingName: U20
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -529,13 +527,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -543,7 +537,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 112.0.5615.47
@@ -552,13 +552,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; RMX3660) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RMX3660
     marketingName: '10 Pro 5G'
     manufacturer: bbk
     brand: realme
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -567,13 +565,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -581,7 +575,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 108.0.0.0
@@ -590,13 +590,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; iQOO Neo 3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iQOO Neo 3'
     marketingName: 'iQOO Neo 3'
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2408
       height: 1080
@@ -605,13 +603,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -619,7 +613,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 91.0.4472.101
@@ -628,13 +628,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; iQOO Neo 5S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iQOO Neo 5S'
     marketingName: 'iQOO Neo 5S'
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -643,13 +641,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -657,7 +651,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 91.0.4472.101
@@ -666,13 +666,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; OPPO F19 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.5615.100 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'F19 Pro'
     marketingName: 'F19 Pro'
     manufacturer: bbk
     brand: oppo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -681,13 +679,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -695,7 +689,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 112.0.5615.100
@@ -704,13 +704,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; V2249) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V2249
     marketingName: Y27
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2388
       height: 1080
@@ -719,13 +717,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -733,7 +727,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 104.0.0.0
@@ -742,13 +742,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; V2253) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V2253
     marketingName: 'T2x 5G (India)'
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2408
       height: 1080
@@ -757,13 +755,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -771,7 +765,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 104.0.0.0
@@ -780,13 +780,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; CPH2419) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CPH2419
     marketingName: '10T 5G'
     manufacturer: bbk
     brand: oneplus
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2412
       height: 1080
@@ -795,13 +793,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -809,7 +803,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 99.0.4844.88
@@ -818,13 +818,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; HD1925) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HD1925
     marketingName: '7T Pro 5G McLaren Edition'
     manufacturer: bbk
     brand: oneplus
-    dualOrientation: true
-    simCount: 2
     display:
       width: 3120
       height: 1440
@@ -833,13 +831,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -847,7 +841,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 87.0.4280.141
@@ -856,13 +856,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; V2043) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V2043
     marketingName: 'Y20 (2021)'
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -871,13 +869,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -885,7 +879,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 94.0.4606.61
@@ -894,13 +894,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; RMX2030 Build/QKQ1.200209.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RMX2030
     marketingName: 5i
     manufacturer: bbk
     brand: realme
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -909,13 +907,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -923,7 +917,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 116.0.0.0
@@ -932,13 +932,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; RMX1971 Build/RKQ1.201217.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RMX1971
     marketingName: '5 Pro'
     manufacturer: bbk
     brand: realme
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -947,13 +945,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -961,7 +955,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 116.0.0.0
@@ -970,13 +970,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; CPH2271 Build/TP1A.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.5414.85 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CPH2271
     marketingName: A16s
     manufacturer: bbk
     brand: oppo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -985,13 +983,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -999,7 +993,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 109.0.5414.85
@@ -1008,13 +1008,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; RMX3521 Build/RKQ1.211119.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RMX3521
     marketingName: '9'
     manufacturer: bbk
     brand: realme
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -1023,13 +1021,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1037,7 +1031,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 116.0.0.0
@@ -1046,13 +1046,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; V2229) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V2229
     marketingName: Y02s
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1061,13 +1059,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1075,7 +1069,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 91.0.4472.114
@@ -1084,13 +1084,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; RMX3830) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RMX3830
     marketingName: C51
     manufacturer: bbk
     brand: realme
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1099,13 +1097,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1113,7 +1107,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 108.0.0.0
@@ -1122,13 +1122,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; V2254) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V2254
     marketingName: Y02t
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1137,13 +1135,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1151,7 +1145,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 104.0.0.0
@@ -1160,13 +1160,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; V2238) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V2238
     marketingName: Y22
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -1175,13 +1173,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1189,7 +1183,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 104.0.0.0
@@ -1198,13 +1198,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; RMX1805) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.143 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RMX1805
     marketingName: '2'
     manufacturer: bbk
     brand: realme
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1520
       height: 720
@@ -1213,13 +1211,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1227,7 +1221,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 75.0.3770.143
@@ -1236,13 +1236,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; CPH2515 Build/RKQ1.211119.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CPH2515
     marketingName: 'Nord N30 5G'
     manufacturer: bbk
     brand: oneplus
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -1251,13 +1249,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1265,7 +1259,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 116.0.0.0
@@ -1274,13 +1274,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; CPH2389 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.141 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CPH2389
     marketingName: 'Nord N300 5G'
     manufacturer: bbk
     brand: oneplus
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1612
       height: 720
@@ -1289,13 +1287,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1303,7 +1297,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 107.0.5304.141
@@ -1312,13 +1312,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; CPH2519 Build/TP1A.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/118.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CPH2519
     marketingName: 'Find N3 Flip'
     manufacturer: bbk
     brand: oppo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2520
       height: 1080
@@ -1327,13 +1325,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1341,7 +1335,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 118.0.0.0
@@ -1350,13 +1350,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; CPH2521 Build/SKQ1.221119.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CPH2521
     marketingName: 'Reno 10 Pro+ 5G'
     manufacturer: bbk
     brand: oppo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2772
       height: 1240
@@ -1365,13 +1363,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1379,7 +1373,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 116.0.0.0
@@ -1388,13 +1388,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; CPH2523 Build/RKQ1.211119.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/118.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CPH2523
     marketingName: 'Reno 9A 5G'
     manufacturer: bbk
     brand: oppo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -1403,13 +1401,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1417,7 +1411,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 118.0.0.0
@@ -1426,13 +1426,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; A301OP Build/RKQ1.211119.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/118.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A301OP
     marketingName: 'Reno 9A 5G'
     manufacturer: bbk
     brand: oppo
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -1441,13 +1439,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1455,7 +1449,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 118.0.0.0
@@ -1464,13 +1464,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; CPH2591 Build/TP1A.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CPH2591
     marketingName: A18
     manufacturer: bbk
     brand: oppo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -1479,13 +1477,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1493,7 +1487,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 111.0.5563.116
@@ -1502,13 +1502,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; CPH2525 Build/RKQ1.211119.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/117.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CPH2525
     marketingName: 'Reno 10 Pro 5G'
     manufacturer: bbk
     brand: oppo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2412
       height: 1080
@@ -1517,13 +1515,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1531,7 +1525,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 117.0.0.0
@@ -1540,13 +1540,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; CPH2529) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CPH2529
     marketingName: 'A98 5G'
     manufacturer: bbk
     brand: oppo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -1555,13 +1553,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1569,7 +1563,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 113.0.0.0
@@ -1578,13 +1578,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; CPH2551 Build/TP1A.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/118.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CPH2551
     marketingName: Open
     manufacturer: bbk
     brand: oneplus
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2440
       height: 2268
@@ -1593,13 +1591,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1607,7 +1601,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 118.0.0.0
@@ -1616,13 +1616,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; CPH2569 Build/TP1A.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/117.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CPH2569
     marketingName: 'Nord CE3 5G'
     manufacturer: bbk
     brand: oneplus
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2412
       height: 1080
@@ -1631,13 +1629,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1645,7 +1639,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 117.0.0.0
@@ -1654,13 +1654,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; CPH2579 Build/TP1A.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/118.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CPH2579
     marketingName: A38
     manufacturer: bbk
     brand: oppo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -1669,13 +1667,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1683,7 +1677,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 118.0.0.0
@@ -1692,13 +1692,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; PJC110 Build/TP1A.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.145 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: PJC110
     marketingName: 'K11 5G'
     manufacturer: bbk
     brand: oppo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -1707,13 +1705,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1721,7 +1715,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 81.0.4044.145
@@ -1730,13 +1730,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; PHV110 Build/SP1A.210812.016; xx-xx) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.129 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: PHV110
     marketingName: 'Reno 10 Pro 5G (China)'
     manufacturer: bbk
     brand: oppo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2772
       height: 1240
@@ -1745,13 +1743,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1759,7 +1753,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 103.0.5060.129
@@ -1768,13 +1768,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; CPH2409 Build/RKQ1.211119.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/118.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CPH2409
     marketingName: 'Nord CE2 Lite 5G'
     manufacturer: bbk
     brand: oneplus
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2412
       height: 1080
@@ -1783,13 +1781,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1797,7 +1791,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 118.0.0.0
@@ -1814,13 +1814,11 @@
     sec-ch-ua-mobile: '?1'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RMX3741
     marketingName: '11 Pro+ 5G'
     manufacturer: bbk
     brand: realme
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2412
       height: 1080
@@ -1829,13 +1827,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1843,7 +1837,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 119.0.0
@@ -1852,13 +1852,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; I2212) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: I2212
     marketingName: 'iQOO 11 5G'
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 3200
       height: 1440
@@ -1867,13 +1865,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1881,7 +1875,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 98.0.4758.101
@@ -1890,13 +1890,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; CPH2197 Build/TP1A.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/119.0.6045.193 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CPH2197
     marketingName: 'A74 5G'
     manufacturer: bbk
     brand: oppo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -1905,13 +1903,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1919,7 +1913,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 119.0.6045.193
@@ -1928,13 +1928,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; V2041 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/119.0.6045.67 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V2041
     marketingName: 'Y72 5G (International)'
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2408
       height: 1080
@@ -1943,13 +1941,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1957,7 +1951,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 119.0.6045.67
@@ -1966,13 +1966,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; ONEPLUS 6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.89 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '6'
     marketingName: '6'
     manufacturer: bbk
     brand: oneplus
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2280
       height: 1080
@@ -1981,13 +1979,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1995,7 +1989,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 76.0.3809.89
@@ -2004,13 +2004,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; I2216) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: I2216
     marketingName: 'iQOO Z7x 5G (India)'
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2388
       height: 1080
@@ -2019,13 +2017,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2033,7 +2027,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 104.0.0.0
@@ -2042,13 +2042,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; I2207) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: I2207
     marketingName: 'iQOO Z7 5G'
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -2057,13 +2055,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2071,7 +2065,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 98.0.4758.101
@@ -2080,13 +2080,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 13; en-us; V2244 Build/JOP24G) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V2244
     marketingName: 'V29 Lite 5G'
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -2095,13 +2093,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2109,7 +2103,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 68.0.3440.91
@@ -2118,13 +2118,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 13; en-us; V2312 Build/JOP24G) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V2312
     marketingName: 'T2x 5G'
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2408
       height: 1080
@@ -2133,13 +2131,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2147,7 +2141,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 68.0.3440.91
@@ -2156,13 +2156,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 13; en-us; V2324 Build/JOP24G) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V2324
     marketingName: Y36
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2388
       height: 1080
@@ -2171,13 +2169,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2185,7 +2179,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 68.0.3440.91
@@ -2194,13 +2194,11 @@
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 14; RMX3890 Build/UKQ1.230917.001)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RMX3890
     marketingName: 'C67 4G'
     manufacturer: bbk
     brand: realme
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -2209,13 +2207,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Android Browser'
     modus: null
@@ -2223,7 +2217,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -2232,13 +2232,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; RMX3263 Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/120.0.6099.194 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RMX3263
     marketingName: C21Y
     manufacturer: bbk
     brand: realme
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -2247,13 +2245,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2261,7 +2255,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 120.0.6099.194
@@ -2270,13 +2270,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; V2006 Build/SP1A.210812.003; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/122.0.6261.27 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V2006
     marketingName: 'X50 Pro'
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2376
       height: 1080
@@ -2285,13 +2283,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2299,7 +2293,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.27
@@ -2308,13 +2308,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; RMX3511 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/120.0.6099.230 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RMX3511
     marketingName: C35
     manufacturer: bbk
     brand: realme
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2408
       height: 1080
@@ -2323,13 +2321,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2337,7 +2331,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 120.0.6099.230
@@ -2346,13 +2346,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; CPH2447 Build/TP1A.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/119.0.6045.66 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CPH2447
     marketingName: '11'
     manufacturer: bbk
     brand: oneplus
-    dualOrientation: true
-    simCount: 2
     display:
       width: 3216
       height: 1440
@@ -2361,13 +2359,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2375,7 +2369,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 119.0.6045.66
@@ -2384,13 +2384,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; CPH2581 Build/UKQ1.230924.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.164 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CPH2581
     marketingName: '12'
     manufacturer: bbk
     brand: oneplus
-    dualOrientation: true
-    simCount: 2
     display:
       width: 3168
       height: 1440
@@ -2399,13 +2397,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2413,7 +2407,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 121.0.6167.164
@@ -2422,13 +2422,11 @@
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 11; CPH2021 Build/RP1A.200720.011)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CPH2021
     marketingName: A91
     manufacturer: bbk
     brand: oppo
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -2437,13 +2435,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Android Browser'
     modus: null
@@ -2451,7 +2445,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -2460,13 +2460,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12.0; RMX2001 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RMX2001
     marketingName: '6'
     manufacturer: bbk
     brand: realme
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -2475,13 +2473,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2489,7 +2483,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 100.0.4896
@@ -2498,13 +2498,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; V2252) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V2252
     marketingName: Y02t
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -2513,13 +2511,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2527,7 +2521,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 104.0.0.0
@@ -2536,13 +2536,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; V2239 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/119.0.6045.163 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V2239
     marketingName: 'Y100 (International)'
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -2551,13 +2549,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2565,7 +2559,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 119.0.6045.163
@@ -2574,13 +2574,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; V2230A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V2230A
     marketingName: 'Y35 5G'
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -2589,13 +2587,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2603,7 +2597,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 107.0.0.0
@@ -2612,13 +2612,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; V2236) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.97 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V2236
     marketingName: Y02
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -2627,13 +2625,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2641,7 +2635,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 104.0.5112.97
@@ -2650,13 +2650,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; V2236A Build/SP1A.210812.003; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/91.0.4472.114 Mobile Safari/537.36 matrixstyle/1 SP-engine/2.53.0 bdapp/1.0 (tomas; tomas) tomas/2.22.5.11 (Baidu; P1 12) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V2236A
     marketingName: 'Y11 (2023)'
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -2665,13 +2663,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2679,7 +2673,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 91.0.4472.114
@@ -2688,13 +2688,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; iQOO U3x 5G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iQOO U3x 5G'
     marketingName: 'iQOO U3x 5G'
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2408
       height: 1080
@@ -2703,13 +2701,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2717,7 +2711,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 89.0.4389.90
@@ -2726,13 +2726,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; CPH2583 Build/UKQ1.230924.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.40 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CPH2583
     marketingName: '12'
     manufacturer: bbk
     brand: oneplus
-    dualOrientation: true
-    simCount: 2
     display:
       width: 3168
       height: 1440
@@ -2741,13 +2739,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2755,7 +2749,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.6312.40
@@ -2764,13 +2764,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; CPH2603 Build/UP1A.230620.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/122.0.6261.119 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CPH2603
     marketingName: 'Reno 11 F 5G'
     manufacturer: bbk
     brand: oppo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2412
       height: 1080
@@ -2779,13 +2777,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2793,7 +2787,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.119
@@ -2802,13 +2802,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; CPH2599 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/122.0.6261.119 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CPH2599
     marketingName: 'Reno 11'
     manufacturer: bbk
     brand: oppo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2412
       height: 1080
@@ -2817,13 +2815,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2831,7 +2825,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.119
@@ -2840,13 +2840,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; CPH2573 Build/UKQ1.230924.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/122.0.6261.66 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CPH2573
     marketingName: '12'
     manufacturer: bbk
     brand: oneplus
-    dualOrientation: true
-    simCount: 2
     display:
       width: 3168
       height: 1440
@@ -2855,13 +2853,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2869,7 +2863,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.66
@@ -2878,13 +2878,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; CPH2048) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CPH2048
     marketingName: 'Reno 3'
     manufacturer: bbk
     brand: oppo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -2893,13 +2891,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2907,7 +2901,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 87.0.4280.141
@@ -2916,13 +2916,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; V2321) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V2321
     marketingName: 'T2 Pro 5G'
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -2931,13 +2929,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2945,7 +2939,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 98.0.4758.101
@@ -2954,13 +2954,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; V2242 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/122.0.6261.119 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V2242
     marketingName: 'V25e 4G (International)'
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2404
       height: 1080
@@ -2969,13 +2967,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2983,7 +2977,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.119
@@ -2992,13 +2992,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; V2232A Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V2232A
     marketingName: 'iQOO Neo 7 Racing Edition'
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -3007,13 +3005,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3021,7 +3015,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 116.0.0.0
@@ -3030,13 +3030,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; iQOO Z1x 5G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iQOO Z1x 5G'
     marketingName: 'iQOO Z1x 5G'
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2408
       height: 1080
@@ -3045,13 +3043,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3059,7 +3053,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 74.0.3729.157
@@ -3068,13 +3068,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; PJU110) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.6312.40 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: PJU110
     marketingName: A1x
     manufacturer: bbk
     brand: oppo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -3083,13 +3081,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3097,7 +3091,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.6312.40
@@ -3106,13 +3106,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; RMX3999) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RMX3999
     marketingName: '12 5G'
     manufacturer: bbk
     brand: realme
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -3121,13 +3119,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3135,7 +3129,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.0.0
@@ -3144,13 +3144,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; V2230EA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V2230EA
     marketingName: 'iQOO Z7i'
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -3159,13 +3157,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3173,7 +3167,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 107.0.0.0
@@ -3182,13 +3182,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; A303OP Build/TP1A.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/122.0.6261.119 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A303OP
     marketingName: 'A79 5G'
     manufacturer: bbk
     brand: oppo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -3197,13 +3195,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -3211,7 +3205,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.119
@@ -3220,13 +3220,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; V2272A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V2272A
     marketingName: 'iQOO Z7x 5G'
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2388
       height: 1080
@@ -3235,13 +3233,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3249,7 +3243,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.0.0
@@ -3258,13 +3258,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; V2318A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V2318A
     marketingName: G2
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -3273,13 +3271,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3287,7 +3281,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.0.0
@@ -3296,13 +3296,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; CPH2607) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CPH2607
     marketingName: 'Reno 11 Pro'
     manufacturer: bbk
     brand: oppo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2412
       height: 1080
@@ -3311,13 +3309,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3325,7 +3319,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.0.0
@@ -3334,13 +3334,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; CPH2609) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CPH2609
     marketingName: 12R
     manufacturer: bbk
     brand: oneplus
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2780
       height: 1264
@@ -3349,13 +3347,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3363,7 +3357,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.0.0
@@ -3372,13 +3372,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; V2309) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V2309
     marketingName: 'X100 Pro'
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2800
       height: 1260
@@ -3387,13 +3385,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3401,7 +3395,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.0.0
@@ -3410,13 +3410,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9.0; V1936TL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V1936TL
     marketingName: 'iQOO Neo 855 Racing'
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -3425,13 +3423,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3439,7 +3433,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 83.0.4103.61
@@ -3448,13 +3448,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; RMX3751) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RMX3751
     marketingName: '11 5G (2023)'
     manufacturer: bbk
     brand: realme
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -3463,13 +3461,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3477,7 +3471,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.0.0
@@ -3486,13 +3486,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; V2315) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V2315
     marketingName: 'Y28 5G'
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -3501,13 +3499,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3515,7 +3509,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 124.0.0.0
@@ -3524,13 +3524,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; RMX3843) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RMX3843
     marketingName: '12 Pro 5G'
     manufacturer: bbk
     brand: realme
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2412
       height: 1080
@@ -3539,13 +3537,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3553,7 +3547,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 124.0.0.0
@@ -3562,13 +3562,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; RMX3868) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RMX3868
     marketingName: 'Narzo 70 Pro 5G'
     manufacturer: bbk
     brand: realme
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -3577,13 +3575,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3591,7 +3585,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 124.0.0.0
@@ -3600,13 +3600,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; RMX3998) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RMX3998
     marketingName: '12x 5G (India)'
     manufacturer: bbk
     brand: realme
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -3615,13 +3613,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3629,7 +3623,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 124.0.0.0
@@ -3638,13 +3638,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; V2218) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V2218
     marketingName: X90
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2800
       height: 1260
@@ -3653,13 +3651,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3667,7 +3661,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.0.0
@@ -3676,13 +3676,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; V2339 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.196 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V2339
     marketingName: V30e
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -3691,13 +3689,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -3705,7 +3699,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.5735.196
@@ -3714,13 +3714,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; V2317A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V2317A
     marketingName: 'Y12 (2023)'
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -3729,13 +3727,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3743,7 +3737,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 107.0.0.0
@@ -3752,13 +3752,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; RMX3870) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RMX3870
     marketingName: 'P1 5G'
     manufacturer: bbk
     brand: realme
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -3767,13 +3765,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3781,7 +3775,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 98.0.4758.101
@@ -3790,13 +3790,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; V2034 Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.123 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V2034
     marketingName: Y20a
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -3805,13 +3803,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -3819,7 +3813,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 124.0.6367.123

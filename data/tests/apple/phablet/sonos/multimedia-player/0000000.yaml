@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Linux UPnP/1.0 Sonos/54.2-72031 (ICRU_iPhone11,6)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPhone 11,6'
     marketingName: 'iPhone XS Max'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2688
       height: 1242
@@ -17,13 +15,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: null
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Sonos
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: sonos
     type: multimedia-player
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: null
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Linux UPnP/1.0 Sonos/52.13-69030 (ICRU_iPhone10,3)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPhone 10,3'
     marketingName: 'iPhone X'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2436
       height: 1125
@@ -55,13 +53,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: null
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Sonos
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: sonos
     type: multimedia-player
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: null
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: null

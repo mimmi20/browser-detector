@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 (KHTML, like Gecko; compatible; Slackbot-LinkExpanding/1.0; +https://api.slack.com/robots) Chrome/128.0.812.39 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 8'
     marketingName: 'Pixel 8'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Slackbot-Link-Expanding
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: slack
     type: crawler
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 128.0.812.39
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.8653.35 Mobile Safari/537.36; compatible; Slackbot-LinkExpanding/1.0; +https://api.slack.com/robots'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 7'
     marketingName: 'Pixel 7'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Slackbot-Link-Expanding
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: slack
     type: crawler
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 91.0.8653.35
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Pixel 6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.3787.135 Mobile Safari/537.36; compatible; Slackbot-LinkExpanding/1.0; +https://api.slack.com/robots'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 6'
     marketingName: 'Pixel 6'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -93,13 +91,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Slackbot-Link-Expanding
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: slack
     type: crawler
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 151.0.3787.135

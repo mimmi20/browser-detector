@@ -12,13 +12,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36 (Ecosia android@144.0.0.0)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 9132G
     marketingName: 'Tab 8" 4G'
     manufacturer: tcl
     brand: tcl
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 800
@@ -27,13 +25,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -41,7 +35,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.0

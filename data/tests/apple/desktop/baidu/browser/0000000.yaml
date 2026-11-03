@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Spark/679 CFNetwork/1121.1.2 Darwin/19.3.0 (x86_64) comdirect/1.0 (appVersion:20.2.0)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Macintosh
     marketingName: Macintosh
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 10.15.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Spark
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: baidu
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 10.15.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 1121.1.2

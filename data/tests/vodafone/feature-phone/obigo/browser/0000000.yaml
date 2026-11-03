@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Vodafone541/2.0 Profile V010 06/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '541'
     marketingName: '541'
     manufacturer: vodafone
     brand: vodafone
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Obigo Q'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: obigo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Teleca
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Vodafone_555_Blue/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q05A'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '555 Blue'
     marketingName: '555 Blue'
     manufacturer: vodafone
     brand: vodafone
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -55,13 +53,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Obigo Q'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: obigo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Teleca
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Vodafone_Chat_655W/010 06/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q05A'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Chat 655W'
     marketingName: 'Chat 655W'
     manufacturer: vodafone
     brand: vodafone
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -93,13 +91,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Obigo Q'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: obigo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Teleca
     version: null
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Vodafone-553/VF 553- MTK 6235- V02c- December 032010- Vodafone- ITGR Obigo/Q03C Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'VF 553'
     marketingName: 'VF 553'
     manufacturer: vodafone
     brand: vodafone
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -131,13 +129,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Obigo Q'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: obigo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Teleca
     version: null

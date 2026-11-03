@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (DTV;TSBNetTV/T0C.0102.18E)NetFront/3.1 InettvBrowser/1.0 (000039;T0C;0102;18E)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'NetTV Series'
     marketingName: 'NetTV Series'
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: NetFront
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: access
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: NetFront
     version: 3.1.0
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Linux; xx; DTV; TSBNetTV/T3701B6.0203.6DD) AppleWebKit/536(KHTML, like Gecko) NX/3.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'NetTV Series'
     marketingName: 'NetTV Series'
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'NetFront NX'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: access
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 536.0.0

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Audible, Android, 1.5.5, tmo_de, HTC Desire S, htc_saga, 2.3.5, 1.0, mobile; Retry: 1/5/5'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Desire S'
     marketingName: 'Desire S'
     manufacturer: htc
     brand: htc
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Audible
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: amazon
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 7.1.1; ASUS Chromebook Flip C100PA Build/R62-9901.77.0; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Chromebook Flip C100PA'
     marketingName: 'Chromebook Flip C100PA'
     manufacturer: asus
     brand: asus
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1366
       height: 768
@@ -17,13 +15,9 @@
     type: laptop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: ChromeOS
-    marketingName: ChromeOS
-    version: 9901.77.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: ChromeOS
+    marketingName: ChromeOS
+    version: 9901.77.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 56.0.2924.87
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 7.1.1; ASUS Chromebook Flip C101PA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.99 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Chromebook Flip C101PA'
     marketingName: 'Chromebook Flip C101PA'
     manufacturer: asus
     brand: asus
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1280
       height: 800
@@ -55,13 +53,9 @@
     type: laptop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: ChromeOS
-    marketingName: ChromeOS
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: ChromeOS
+    marketingName: ChromeOS
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 80.0.3987.99

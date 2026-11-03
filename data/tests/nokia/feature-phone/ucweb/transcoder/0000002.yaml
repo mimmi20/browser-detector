@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (S60V3; U; en-us; NokiaC5-00.2)/UC Browser8.5.0.183/28/444/UCWEB Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C5-00
     marketingName: C5
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Series 60'
-    marketingName: 'Series 60'
-    version: 3.0.0
-    manufacturer: nokia
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Series 60'
+    marketingName: 'Series 60'
+    version: 3.0.0
+    manufacturer: nokia
+    bits: 0
   engine:
     name: null
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Nokia5230/UC Browser7.9.0.102/50/355/UCWEB'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '5230'
     marketingName: Nuron
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 640
       height: 360
@@ -55,13 +53,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Nokia6500s-1/2.0 (06.60) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Java; U; en-us; nokia6500s-1) UCBrowser8.2.0.132/70/355/UCWEB Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '6500 Slide'
     marketingName: '6500 Slide'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -93,13 +91,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Nokia3110c/2.0 (07.21) Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/5.0 (Java; U; en-us; nokia3110c) UCBrowser8.3.0.154/69/405/UCWEB Mobile UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '3110 Classic'
     marketingName: '3110 Classic'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -131,13 +129,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'NokiaX3-02.5/5.0 (07.32) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Java; U; en-us; nokiax3-02.5) AppleWebKit/530.13 (KHTML, like Gecko) UCBrowser/8.6.0.199/69/444/UCWEB Mobile UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X3-02
     marketingName: X3
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -169,13 +167,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: WebKit
     version: 530.13.0
@@ -192,13 +192,11 @@
   headers:
     user-agent: NokiaX6-00UCBrowser/8.7.1.234/50/444/UCWEB
   device:
-    architecture: null
+    architecture: ''
     deviceName: X6-00
     marketingName: X6
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 640
       height: 360
@@ -207,13 +205,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Nokia7610Supernova/2.0 (07.23) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0(Java; U; MIDP-2.0; en-us; nokia7610supernova) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '7610 Supernova'
     marketingName: '7610 Supernova'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 208
       height: 176
@@ -245,13 +243,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'NokiaX2-01/5.0 (08.63) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Java; U; en-us; nokiax2-01) UCBrowser8.3.0.154/69/352/UCWEB Mobile UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X2-01
     marketingName: X2
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -283,13 +281,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (S60V3; U; en-us; NOKIA6730c)/UC Browser8.2.0.132/28/355/UCWEB Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '6730 Classic'
     marketingName: '6730 Classic'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -321,13 +319,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Series 60'
-    marketingName: 'Series 60'
-    version: 3.0.0
-    manufacturer: nokia
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Series 60'
+    marketingName: 'Series 60'
+    version: 3.0.0
+    manufacturer: nokia
+    bits: 0
   engine:
     name: null
     version: null
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (S60V5; U; en-in; Nokia5230)/UC Browser8.4.0.159/50/351/UCWEB Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '5230'
     marketingName: Nuron
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 640
       height: 360
@@ -359,13 +357,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Series 60'
-    marketingName: 'Series 60'
-    version: 5.0.0
-    manufacturer: nokia
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Series 60'
+    marketingName: 'Series 60'
+    version: 5.0.0
+    manufacturer: nokia
+    bits: 0
   engine:
     name: null
     version: null
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'Nokia6630/1.0 (6.03.40) SymbianOS/8.0 Series60/2.6 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.9.1.120/27/351/UCWEB'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '6630'
     marketingName: '6630'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 208
       height: 176
@@ -397,13 +395,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Series 60'
-    marketingName: 'Series 60'
-    version: 2.6.0
-    manufacturer: nokia
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Series 60'
+    marketingName: 'Series 60'
+    version: 2.6.0
+    manufacturer: nokia
+    bits: 0
   engine:
     name: null
     version: null
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'nokian70-1/UC Browser7.8.0.95/70/351 UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: N70
     marketingName: N70
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 208
       height: 176
@@ -435,13 +433,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'NokiaE52-1/UC Browser7.8.0.95/28/351'
   device:
-    architecture: null
+    architecture: ''
     deviceName: E52
     marketingName: E52
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -473,13 +471,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'NokiaN97/UC Browser7.7.2.91/50/355'
   device:
-    architecture: null
+    architecture: ''
     deviceName: N97
     marketingName: N97
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 640
       height: 360
@@ -511,13 +509,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'NokiaE63/UC Browser7.2.2.51/28/352'
   device:
-    architecture: null
+    architecture: ''
     deviceName: E63
     marketingName: E63
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -549,13 +547,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'NOKIAN85/UC Browser7.4.0.65/28/355'
   device:
-    architecture: null
+    architecture: ''
     deviceName: N85
     marketingName: N85
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -587,13 +585,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'NokiaN73/UC Browser7.2.2.51/28/352'
   device:
-    architecture: null
+    architecture: ''
     deviceName: N73
     marketingName: N73
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -625,13 +623,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -648,13 +648,11 @@
   headers:
     user-agent: NokiaN81/UCWEB7.3.1.56/28/999
   device:
-    architecture: null
+    architecture: ''
     deviceName: N81
     marketingName: N81
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -663,13 +661,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -677,7 +671,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -686,13 +686,11 @@
   headers:
     user-agent: 'Nokia3200/4.18 (UCWEB 3.3B)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '3200'
     marketingName: '3200'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 128
       height: 128
@@ -701,13 +699,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -715,7 +709,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -724,13 +724,11 @@
   headers:
     user-agent: 'Nokia3100/06.01 (UCWEB 3.3B)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '3100'
     marketingName: '3100'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 128
       height: 128
@@ -739,13 +737,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -753,7 +747,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -762,13 +762,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (S60V3; U; ru; NokiaN73) AppleWebKit/530.13 (KHTML, like Gecko) UCBrowser/8.6.0.199/28/444/UCWEB Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: N73
     marketingName: N73
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -777,13 +775,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Series 60'
-    marketingName: 'Series 60'
-    version: 3.0.0
-    manufacturer: nokia
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -791,7 +785,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Series 60'
+    marketingName: 'Series 60'
+    version: 3.0.0
+    manufacturer: nokia
+    bits: 0
   engine:
     name: WebKit
     version: 530.13.0
@@ -800,13 +800,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (S60V3; U; ru; NokiaC5-00.2) AppleWebKit/530.13 (KHTML, like Gecko) UCBrowser/8.7.0.218/28/352/UCWEB Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C5-00
     marketingName: C5
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -815,13 +813,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Series 60'
-    marketingName: 'Series 60'
-    version: 3.0.0
-    manufacturer: nokia
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -829,7 +823,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Series 60'
+    marketingName: 'Series 60'
+    version: 3.0.0
+    manufacturer: nokia
+    bits: 0
   engine:
     name: WebKit
     version: 530.13.0
@@ -838,13 +838,11 @@
   headers:
     user-agent: 'NokiaE71/UC Browser8.0.4.121/28/444/UCWEB'
   device:
-    architecture: null
+    architecture: ''
     deviceName: E71
     marketingName: E71
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -853,13 +851,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -867,7 +861,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -876,13 +876,11 @@
   headers:
     user-agent: 'NOKIAN95 8GB/UC Browser8.0.3.107/28/444/UCWEB'
   device:
-    architecture: null
+    architecture: ''
     deviceName: N95
     marketingName: N95
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -891,13 +889,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -905,7 +899,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -914,13 +914,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Symbian3; U; en-us; NokiaE6-00) AppleWebKit/530.13 (KHTML, like Gecko) UCBrowser/8.7.1.234/51/355/UCWEB Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: E6-00
     marketingName: E6
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 640
       height: 480
@@ -929,13 +927,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -943,7 +937,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: WebKit
     version: 530.13.0
@@ -952,13 +952,11 @@
   headers:
     user-agent: 'Nokia110/2.0 (03.33) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Java; U; en-us; nokia110) UCBrowser8.3.1.161/70/352/UCWEB Mobile UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '110'
     marketingName: '110'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -967,13 +965,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -981,7 +975,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -990,13 +990,11 @@
   headers:
     user-agent: 'Nokia200/2.0 (10.58) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Java; U; en-us; nokia200) AppleWebKit/530.13 (KHTML, like Gecko) UCBrowser/8.5.0.185/82/352/UCWEB Mobile UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '200'
     marketingName: 'Asha 200'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -1005,13 +1003,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1019,7 +1013,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: WebKit
     version: 530.13.0
@@ -1028,13 +1028,11 @@
   headers:
     user-agent: 'Nokia200/2.0 (10.61) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Java; U; kau; nokia200) UCBrowser8.3.0.154/70/405/UCWEB Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '200'
     marketingName: 'Asha 200'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -1043,13 +1041,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1057,7 +1051,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -1066,13 +1066,11 @@
   headers:
     user-agent: 'Nokia202/2.0 (20.52) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Java; U; en-us; nokia202) UCBrowser8.3.1.161/70/405/UCWEB Mobile UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '202'
     marketingName: 'Asha 202'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -1081,13 +1079,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1095,7 +1089,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -1104,13 +1104,11 @@
   headers:
     user-agent: 'NokiaX2-05/2.0 (08.60) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0 (Java; U; MIDP-2.0; en-US; NokiaX2-05) U2/1.0.0 UCBrowser/9.4.1.377 U2/1.0.0 Mobile UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X2-05
     marketingName: X2
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -1119,13 +1117,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1133,7 +1127,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -1142,13 +1142,11 @@
   headers:
     user-agent: 'UCWEB/2.0 (Symbian; U; S60 V3; en-US; NOKIAN78) U2/1.0.0 UCBrowser/9.2.0.336 U2/1.0.0 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: N78
     marketingName: N78
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -1157,13 +1155,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Series 60'
-    marketingName: 'Series 60'
-    version: 3.0.0
-    manufacturer: nokia
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1171,7 +1165,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Series 60'
+    marketingName: 'Series 60'
+    version: 3.0.0
+    manufacturer: nokia
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -1180,13 +1180,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (NOKIA6700s)UC AppleWebkit(like Gecko) Safari/530'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 6700s
     marketingName: '6700 Slide'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -1195,13 +1193,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1209,7 +1203,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -1218,13 +1218,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Nokia500)UC AppleWebkit(like Gecko) Safari/530'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '500'
     marketingName: 'Asha 500'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 640
       height: 360
@@ -1233,13 +1231,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1247,7 +1241,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -1256,13 +1256,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (NOKIAE90)UC AppleWebkit(like Gecko) Safari/530'
   device:
-    architecture: null
+    architecture: ''
     deviceName: E90
     marketingName: E90
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 800
       height: 352
@@ -1271,13 +1269,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1285,7 +1279,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -1294,13 +1294,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Nokia5250)UC AppleWebkit(like Gecko) Safari/530'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '5250'
     marketingName: '5250'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 640
       height: 360
@@ -1309,13 +1307,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1323,7 +1317,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -1332,13 +1332,11 @@
   headers:
     user-agent: 'UCWEB/2.0 (Java; U; MIDP-2.0; xx; Nokia6233) U2/1.0.0 UCBrowser/9.4.1.377 U2/1.0.0 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '6233'
     marketingName: '6233'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -1347,13 +1345,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1361,7 +1355,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -1370,13 +1370,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (NokiaC5-01)UC AppleWebkit(like Gecko) Safari/530'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C5-01
     marketingName: C5
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -1385,13 +1383,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1399,7 +1393,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -1408,13 +1408,11 @@
   headers:
     user-agent: 'UCWEB/2.0(Java; U; MIDP-2.0; xx; nokiac5-05) U2/1.0.0 UCBrowser/8.8.0.227 U2/1.0.0 Mobile UNTRUSTED/1.0 3gpp-gba'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C5-05
     marketingName: C5
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 640
       height: 360
@@ -1423,13 +1421,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1437,7 +1431,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -1446,13 +1446,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (S60V3; U; xx; NokiaE63)/UC Browser8.5.0.183/28/354/UCWEB Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: E63
     marketingName: E63
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -1461,13 +1459,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Series 60'
-    marketingName: 'Series 60'
-    version: 3.0.0
-    manufacturer: nokia
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1475,7 +1469,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Series 60'
+    marketingName: 'Series 60'
+    version: 3.0.0
+    manufacturer: nokia
+    bits: 0
   engine:
     name: null
     version: null
@@ -1485,13 +1485,11 @@
     x-ucbrowser-ua: 'pf(Symbian);er(U);la(zh-CN);up(U2/1.0.0);re(U2/1.0.0);dv(NokiaE72-1);pr(UCBrowser/8.9.0.253);ov(S60V3);pi(320*240);ss(320*240);bt(UC);pm(1);bv(0);nm(0);im(0);sr(2);nt(2)'
     user-agent: NokiaE72-1/UCWEB8.9.0.253/28/999
   device:
-    architecture: null
+    architecture: ''
     deviceName: E72-1
     marketingName: E72
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -1500,13 +1498,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1514,7 +1508,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -1526,13 +1526,11 @@
     x-ucbrowser-device: 'nokia#200'
     user-agent: 'Nokia200/2.0 (11.95) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0 (Java; U; MIDP-2.0; xx; Nokia200) U2/1.0.0 UCBrowser/9.4.1.377 U2/1.0.0 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '200'
     marketingName: 'Asha 200'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -1541,13 +1539,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1555,7 +1549,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -1567,13 +1567,11 @@
     x-ucbrowser-device: 'nokia#C2-01'
     user-agent: 'NokiaC2-01/5.0 (11.40) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0 (Java; U; MIDP-2.0; xx; NokiaC2-01) U2/1.0.0 UCBrowser/9.5.0.449 U2/1.0.0 Mobile UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C2-01
     marketingName: C2
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -1582,13 +1580,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1596,7 +1590,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -1608,13 +1608,11 @@
     x-ucbrowser-device: 'nokia#501'
     user-agent: 'UCWEB/2.0 (Java; U; MIDP-2.0; xx; Nokia501) U2/1.0.0 UCBrowser/9.5.0.449 U2/1.0.0 Mobile UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '501'
     marketingName: 'Asha 501'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -1623,13 +1621,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1637,7 +1631,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -1649,13 +1649,11 @@
     x-ucbrowser-device: 'NOKIA # 6120c'
     user-agent: 'UCWEB/2.0 (Symbian; U; S60 V3; xx; NOKIA6120c) U2/1.0.0 UCBrowser/9.2.0.336 U2/1.0.0 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 6120c
     marketingName: '6120 Classic'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -1664,13 +1662,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1678,7 +1672,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -1690,13 +1690,11 @@
     x-ucbrowser-device: 'nokia#503s'
     user-agent: 'UCWEB/2.0 (Java; U; MIDP-2.0; xx; Nokia503s) U2/1.0.0 UCBrowser/9.4.1.377 U2/1.0.0 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '503'
     marketingName: 'Asha 503'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -1705,13 +1703,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1719,7 +1713,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -1731,13 +1731,11 @@
     x-ucbrowser-device: 'nokia#Asha230DualSIM'
     user-agent: 'UCWEB/2.0 (Java; U; MIDP-2.0; xx; NokiaAsha230DualSIM) U2/1.0.0 UCBrowser/9.4.1.377 U2/1.0.0 Mobile UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '230 DS'
     marketingName: 'Asha 230 DualSIM'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -1746,13 +1744,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1760,7 +1754,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -1769,13 +1769,11 @@
   headers:
     user-agent: 'NokiaC3-00/5.0 (07.20) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Java; U; en-us; nokiac3-00) AppleWebKit/530.13 (KHTML, like Gecko) UCBrowser/8.6.0.199/69/444/UCWEB Mobile UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C3-00
     marketingName: C3
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -1784,13 +1782,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1798,7 +1792,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: WebKit
     version: 530.13.0
@@ -1807,13 +1807,11 @@
   headers:
     user-agent: 'NokiaC3-00/5.0 (08.65) Profile/MIDP-2.1 Configuration/CLDC-1.1 nokiac3-00/UC Browser7.7.1.88/69/444 UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C3-00
     marketingName: C3
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -1822,13 +1820,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1836,7 +1830,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -1845,13 +1845,11 @@
   headers:
     user-agent: 'Nokia2690/2.0 (10.10) Profile/MIDP-2.1 Configuration/CLDC-1.1 nokia2690/UC Browser7.4.0.65/69/352 UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '2690'
     marketingName: '2690'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -1860,13 +1858,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1874,7 +1868,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -1883,13 +1883,11 @@
   headers:
     user-agent: 'NokiaX2-05/2.0 (08.30) Profile/MIDP-2.1 Configuration/CLDC-1.1 nokiax2-05/UC Browser7.7.1.88/69/444 UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X2-05
     marketingName: X2
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -1898,13 +1896,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1912,7 +1906,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -1921,13 +1921,11 @@
   headers:
     user-agent: 'NOKIAE50/UC Browser7.8.0.95/28/352'
   device:
-    architecture: null
+    architecture: ''
     deviceName: E50
     marketingName: E50
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -1936,13 +1934,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1950,7 +1944,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -1959,13 +1959,11 @@
   headers:
     user-agent: 'NokiaC5-00.2/UC Browser7.9.0.102/28/355/UCWEB'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C5-00
     marketingName: C5
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -1974,13 +1972,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1988,7 +1982,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -1997,13 +1997,11 @@
   headers:
     user-agent: 'NOKIAE5-00/UC Browser7.9.0.102/28/355/UCWEB'
   device:
-    architecture: null
+    architecture: ''
     deviceName: E5-00
     marketingName: E5
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -2012,13 +2010,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2026,7 +2020,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -2035,13 +2035,11 @@
   headers:
     user-agent: 'NokiaC5-03/UC Browser7.9.0.102/50/355/UCWEB'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C5-03
     marketingName: C5
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 640
       height: 360
@@ -2050,13 +2048,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2064,7 +2058,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -2073,13 +2073,11 @@
   headers:
     user-agent: 'NokiaC2-03/2.0 (06.51) Profile/MIDP-2.1 Configuration/CLDC-1.1 nokiac2-03/UC Browser8.0.3.107/70/355'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C2-03
     marketingName: C2
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -2088,13 +2086,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2102,7 +2096,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -2111,13 +2111,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (S60V5; U; en-us; NokiaC5-03)/UC Browser8.2.0.132/50/352/UCWEB Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C5-03
     marketingName: C5
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 640
       height: 360
@@ -2126,13 +2124,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Series 60'
-    marketingName: 'Series 60'
-    version: 5.0.0
-    manufacturer: nokia
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2140,7 +2134,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Series 60'
+    marketingName: 'Series 60'
+    version: 5.0.0
+    manufacturer: nokia
+    bits: 0
   engine:
     name: null
     version: null
@@ -2149,13 +2149,11 @@
   headers:
     user-agent: 'Nokia305/2.0 (03.60) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Java; U; kau; nokia305) UCBrowser8.2.1.144/69/444/UCWEB Mobile UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '305'
     marketingName: 'Asha 305'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -2164,13 +2162,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2178,7 +2172,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -2187,13 +2187,11 @@
   headers:
     user-agent: 'Nokia2700c-2/2.0 (09.80) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Java; U; kau; nokia2700c-2) UCBrowser8.3.0.154/69/444/UCWEB Mobile UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '2700 Classic'
     marketingName: '2700 Classic'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -2202,13 +2200,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2216,7 +2210,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -2225,13 +2225,11 @@
   headers:
     user-agent: 'Nokia303/5.0 (13.44) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Java; U; kau; nokia303) UCBrowser8.3.0.154/70/355/UCWEB Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '303'
     marketingName: 'Asha 303'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -2240,13 +2238,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2254,7 +2248,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -2263,13 +2263,11 @@
   headers:
     user-agent: 'NokiaC2-00/2.0 (03.45) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Java; U; kau; nokiac2-00) UCBrowser8.3.0.154/69/352/UCWEB Mobile UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C2-00
     marketingName: C2
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -2278,13 +2276,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2292,7 +2286,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -2301,13 +2301,11 @@
   headers:
     user-agent: 'NokiaC2-05/2.0 (08.60) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Java; U; kau; nokiac2-05) UCBrowser8.3.0.154/69/405/UCWEB Mobile UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C2-05
     marketingName: C2
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -2316,13 +2314,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2330,7 +2324,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -2339,13 +2339,11 @@
   headers:
     user-agent: 'NokiaX2-02/2.0 (10.90) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Java; U; kau; nokiax2-02) UCBrowser8.3.0.154/69/352/UCWEB Mobile UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X2-02
     marketingName: X2
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -2354,13 +2352,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2368,7 +2362,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -2377,13 +2377,11 @@
   headers:
     user-agent: 'Nokia302/5.0 (14.53) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Java; U; en-us; nokia302) UCBrowser8.3.1.161/69/355/UCWEB Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '302'
     marketingName: 'Asha 302'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -2392,13 +2390,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2406,7 +2400,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -2415,13 +2415,11 @@
   headers:
     user-agent: 'NokiaC3-01/5.0 (05.65) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Java; U; en-us; nokiac3-01) UCBrowser8.3.1.161/69/355/UCWEB Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C3-01
     marketingName: C3
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -2430,13 +2428,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2444,7 +2438,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -2453,13 +2453,11 @@
   headers:
     user-agent: 'NokiaX2-00/5.0 (08.25) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Java; U; kau; nokiax2-00) UCBrowser8.4.0.159/70/352/UCWEB Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X2-00
     marketingName: X2
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -2468,13 +2466,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2482,7 +2476,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -2491,13 +2491,11 @@
   headers:
     user-agent: 'Nokia5130c-2/2.0 (07.95) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Java; U; en-us; nokia5130c-2) AppleWebKit/530.13 (KHTML, like Gecko) UCBrowser/8.5.0.185/83/352/UCWEB Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '5130'
     marketingName: '5130 XpressMusic'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -2506,13 +2504,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2520,7 +2514,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: WebKit
     version: 530.13.0
@@ -2529,13 +2529,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (S60V3; U; en-us; NOKIAE5-00) AppleWebKit/530.13 (KHTML, like Gecko) UCBrowser/8.6.0.199/28/352/UCWEB Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: E5-00
     marketingName: E5
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -2544,13 +2542,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Series 60'
-    marketingName: 'Series 60'
-    version: 3.0.0
-    manufacturer: nokia
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2558,7 +2552,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Series 60'
+    marketingName: 'Series 60'
+    version: 3.0.0
+    manufacturer: nokia
+    bits: 0
   engine:
     name: WebKit
     version: 530.13.0
@@ -2567,13 +2567,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (S60V5; U; en-us; NokiaN97 mini) AppleWebKit/530.13 (KHTML, like Gecko) UCBrowser/8.6.0.199/50/405/UCWEB Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'N97 Mini'
     marketingName: 'N97 Mini'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 640
       height: 360
@@ -2582,13 +2580,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Series 60'
-    marketingName: 'Series 60'
-    version: 5.0.0
-    manufacturer: nokia
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2596,7 +2590,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Series 60'
+    marketingName: 'Series 60'
+    version: 5.0.0
+    manufacturer: nokia
+    bits: 0
   engine:
     name: WebKit
     version: 530.13.0
@@ -2605,13 +2605,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Java; U; en-us; nokiae75-1) AppleWebKit/530.13 (KHTML, like Gecko) UCBrowser/8.6.0.199/70/352/UCWEB Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: E75-1
     marketingName: E75
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -2620,13 +2618,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2634,7 +2628,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: WebKit
     version: 530.13.0
@@ -2643,13 +2643,11 @@
   headers:
     user-agent: 'NokiaC3-01/5.0 (05.65) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Java; U; en-us; nokiac3-01) AppleWebKit/530.13 (KHTML, like Gecko) UCBrowser/8.6.0.199/70/352/UCWEB Mobile UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C3-01
     marketingName: C3
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -2658,13 +2656,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2672,7 +2666,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: WebKit
     version: 530.13.0
@@ -2681,13 +2681,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (S60V3; U; en-us; NokiaE63) AppleWebKit/530.13 (KHTML, like Gecko) UCBrowser/8.7.0.218/28/352/UCWEB Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: E63
     marketingName: E63
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -2696,13 +2694,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Series 60'
-    marketingName: 'Series 60'
-    version: 3.0.0
-    manufacturer: nokia
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2710,7 +2704,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Series 60'
+    marketingName: 'Series 60'
+    version: 3.0.0
+    manufacturer: nokia
+    bits: 0
   engine:
     name: WebKit
     version: 530.13.0
@@ -2719,13 +2719,11 @@
   headers:
     user-agent: 'Nokia2710c-2/2.0 (06.21) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0(Java; U; MIDP-2.0; en-us; nokia2710c-2) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '2710 Classic'
     marketingName: '2710 Classic'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -2734,13 +2732,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2748,7 +2742,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: U2
     version: 1.0.0

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'LENOVO-P708_ENG_FRE_A/(2006.05.31)S276/WAP1.2.1 Profile//'
   device:
-    architecture: null
+    architecture: ''
     deviceName: P70
     marketingName: P70
     manufacturer: lenovo
     brand: lenovo
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 720
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: LENOVO-P708_ENG_RUS_S280/(2006.10.12)S280/WAP1.2.1
   device:
-    architecture: null
+    architecture: ''
     deviceName: P70
     marketingName: P70
     manufacturer: lenovo
     brand: lenovo
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 720
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'LENOVO-P902/(2005.03.28)Ver1.0.4/WAP2.0 Profile/MIDP-1.0 Configuration/CLDC-1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: P90
     marketingName: P90
     manufacturer: lenovo
     brand: lenovo
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1080
@@ -93,13 +91,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'LENOVO-S9/(2007.05.08)S120/WAP2.0 Profile/MIDP2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: P2
     marketingName: P2
     manufacturer: lenovo
     brand: lenovo
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1080
@@ -131,13 +129,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'WAP Browser Karbonn K80/1.0.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: K80
     marketingName: K80
     manufacturer: lenovo
     brand: lenovo
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1080
@@ -169,13 +167,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null

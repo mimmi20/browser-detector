@@ -2,13 +2,11 @@
   headers:
     user-agent: 'SAGEM-myS-7/1.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'my S-7'
     marketingName: 'my S-7'
     manufacturer: sagem
     brand: sagem
-    dualOrientation: null
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: null
+    simCount: 1
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: null

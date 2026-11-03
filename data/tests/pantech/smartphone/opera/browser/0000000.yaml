@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Opera (Linux; U; 4.0.4; zh-cn; PantechP8010; 540*888) UCWEB7.9.0.94/139/444'
   device:
-    architecture: null
+    architecture: ''
     deviceName: P8010
     marketingName: Flex
     manufacturer: pantech
     brand: pantech
-    dualOrientation: true
-    simCount: 1
     display:
       width: 960
       height: 540
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Opera
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Presto
     version: null

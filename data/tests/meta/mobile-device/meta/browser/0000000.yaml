@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux x86_64; Quest) AppleWebKit/537.36 (KHTML, like Gecko) OculusBrowser/20.0.0.3.8.358844291 SamsungBrowser/4.0 Chrome/98.0.4758.119 VR Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Meta device'
     marketingName: 'general Meta device'
     manufacturer: meta
     brand: meta
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Horizon
-    marketingName: Horizon
-    version: null
-    manufacturer: meta
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: OculusBrowser
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: meta
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Horizon
+    marketingName: Horizon
+    version: null
+    manufacturer: meta
+    bits: 0
   engine:
     name: Blink
     version: 98.0.4758.119

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux like Android; cs_CZ) AppleWebKit/534.34 PocketBook/840 (screen 1200x1600; FW W840.5.4.98) Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'PocketBook Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: pocketbook
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 534.34.0
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux like Android; en_US) AppleWebKit/534.34 PocketBook/515 (screen 600x800; FW W515.4.4.540) Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'PocketBook Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: pocketbook
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 534.34.0
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux like Android; en_US) AppleWebKit/534.34 PocketBook/614 (screen 600x800; FW W515.4.4.540) Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -93,13 +91,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'PocketBook Browser'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: pocketbook
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 534.34.0
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux like Android; en_US) AppleWebKit/534.34 PocketBook/640 (screen 600x800; FW W640.4.4.530) Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -131,13 +129,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'PocketBook Browser'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: pocketbook
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 534.34.0
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux like Android; en_US) AppleWebKit/534.34 PocketBook/650 (screen 758x1024; FW E650.5.0.329) Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -169,13 +167,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'PocketBook Browser'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: pocketbook
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 534.34.0
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux like Android; ru_RU) AppleWebKit/534.34 PocketBook/630 (screen 758x1024; FW R630.5.2.375) Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -207,13 +205,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'PocketBook Browser'
     modus: null
@@ -221,7 +215,51 @@
     manufacturer: pocketbook
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
+  engine:
+    name: WebKit
+    version: 534.34.0
+    manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; en_US) AppleWebKit/534.34 PocketBook/801 (screen 600x800; FW W801.4.1.886)'
+  device:
+    architecture: ''
+    deviceName: 'general Mobile device'
+    marketingName: 'general Mobile device'
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: mobile-device
+    ismobile: true
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'PocketBook Browser'
+    modus: null
+    version: null
+    manufacturer: pocketbook
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 534.34.0
@@ -230,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux like Android; en_US) AppleWebkit/538.1 PocketBook/641 (screen 758x1024; FW U641.5.18.72) Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -245,13 +281,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'PocketBook Browser'
     modus: null
@@ -259,7 +291,13 @@
     manufacturer: pocketbook
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 538.1.0

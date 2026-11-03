@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Palmscape/PR5 (PalmPilot Pro; I)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Pilot
     marketingName: Pilot
     manufacturer: palm
     brand: palm
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 160
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: PalmOS
-    marketingName: PalmOS
-    version: null
-    manufacturer: palm
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: Palmscape
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: unknown
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: PalmOS
+    marketingName: PalmOS
+    version: null
+    manufacturer: palm
+    bits: 0
   engine:
     name: null
     version: null

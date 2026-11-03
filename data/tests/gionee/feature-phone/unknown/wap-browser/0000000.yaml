@@ -2,13 +2,11 @@
   headers:
     user-agent: 'GIONEE50_12864_11B_HW (MRE\3.0.00(3072) resolution\240320 chipset\MT6250 touch\1 tpannel\0 camera\1 gsensor\0 keyboard\normal) 1305QM_0201_V1999 Release/2013.06.07 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/Profile/MIDP-2.0 Configuration/CLDC-1.1 Q03C1-2.40 en-US'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '50'
     marketingName: '50'
     manufacturer: gionee
     brand: gionee
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'MAUI Wap Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null

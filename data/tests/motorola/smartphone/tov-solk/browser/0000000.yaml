@@ -3,13 +3,11 @@
     x-requested-with: com.clariobrowser.clario
     user-agent: 'Mozilla/5.0 (Linux; Android 13; moto g42 Build/T2SES33.73-23-2-15; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.7339.155 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G42'
     marketingName: 'Moto G42'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -18,13 +16,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Clario Browser'
     modus: null
@@ -32,7 +26,13 @@
     manufacturer: tov-solk
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 140.0.7339.155

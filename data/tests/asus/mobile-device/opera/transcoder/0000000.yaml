@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (Opera Mini/5.0 U;compatible; MSIE 6.0; Windows CE; IEMobile 7.6) ASUS-P527/1.0 Profile/MIDP-2.0 Confi'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Asus device'
     marketingName: 'general Asus device'
     manufacturer: asus
     brand: asus
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Mini'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: opera
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Presto
     version: null

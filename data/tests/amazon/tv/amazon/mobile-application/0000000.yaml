@@ -2,13 +2,11 @@
   headers:
     user-agent: Amazon;AFTTI43;756a522d9f1648b89e76e80be654456a;;tpapi;3.202.356
   device:
-    architecture: null
+    architecture: ''
     deviceName: AFTTI43
     marketingName: 'Fire TV 4-Series (2021)'
     manufacturer: amazon
     brand: amazon
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -17,13 +15,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: null
-    manufacturer: amazon
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Amazon Fire'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: amazon
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: null
+    manufacturer: amazon
+    bits: 0
   engine:
     name: null
     version: null

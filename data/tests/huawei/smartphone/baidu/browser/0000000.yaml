@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; LRA-AN00 Build/HONORLRA-AN00;) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.38 SP-engine/2.76.0 languageType/0 bdh_dvt/0 bdh_de/0 bdh_ds/0 bdapp/1.0 (bdhonorbrowser; bdhonorbrowser) bdhonorbrowser/8.1.1.6 (P1 14) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LRA-AN00
     marketingName: 'Magic V Flip 5G'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2520
       height: 1080
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'HONOR Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: baidu
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: T7
     version: 13.38.0
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; AGT-AN00 Build/HONORAGT-AN00;) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.38 SP-engine/2.76.0 languageType/0 bdh_dvt/0 bdh_de/1 bdh_ds/1 bdapp/1.0 (bdhonorbrowser; bdhonorbrowser) bdhonorbrowser/8.0.9.18 (Baidu; P1 14) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AGT-AN00
     marketingName: '80 GT'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'HONOR Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: baidu
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: T7
     version: 13.38.0
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; NIC-AN00 Build/HONORNIC-AN00;) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.38 SP-engine/2.76.0 languageType/0 bdh_dvt/0 bdh_de/0 bdh_ds/0 bdapp/1.0 (bdhonorbrowser; bdhonorbrowser) bdhonorbrowser/9.2.0.3 (P1 15) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NIC-AN00
     marketingName: 'Play 60'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1604
       height: 720
@@ -93,13 +91,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'HONOR Browser'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: baidu
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: T7
     version: 13.38.0
@@ -117,13 +117,11 @@
     x-requested-with: com.hihonor.baidu.browser
     user-agent: 'Mozilla/5.0 (Linux; Android 13; ANY-AN00 Build/HONORANY-AN00;) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.38 SP-engine/2.76.0 languageType/1 bdh_dvt/0 bdh_de/1 bdapp/1.0 (bdhonorbrowser; bdhonorbrowser) bdhonorbrowser/8.0.5.4 (Baidu; P1 13) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: ANY-AN00
     marketingName: 'Honor X30'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2388
       height: 1080
@@ -132,13 +130,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'HONOR Browser'
     modus: null
@@ -146,7 +140,13 @@
     manufacturer: baidu
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: T7
     version: 13.38.0
@@ -155,13 +155,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SER-AN00; GMSCore 25.38.30 (260400-807569344)) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.5845.114 HonorBrowser/3.5.2.307  Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SER-AN00
     marketingName: 'Power 2'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2640
       height: 1200
@@ -170,13 +168,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'HONOR Browser'
     modus: null
@@ -184,7 +178,13 @@
     manufacturer: baidu
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 116.0.5845.114
@@ -193,13 +193,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; PNM-AN20; GMSCore 26.04.38 (260400-867839860)) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.5845.114 HonorBrowser/3.4.3.303  Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: PNM-AN20
     marketingName: 'Magic V6'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2352
       height: 2172
@@ -208,13 +206,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'HONOR Browser'
     modus: null
@@ -222,7 +216,13 @@
     manufacturer: baidu
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 116.0.5845.114
@@ -231,13 +231,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; PNM-AN10; GMSCore 26.04.38 (260400-867839860)) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.5845.114 HonorBrowser/3.5.3.300  Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: PNM-AN10
     marketingName: 'Magic V6'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2352
       height: 2172
@@ -246,13 +244,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'HONOR Browser'
     modus: null
@@ -260,7 +254,13 @@
     manufacturer: baidu
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 116.0.5845.114
@@ -269,13 +269,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; BKQ-AN90; GMSCore 26.04.38 (260400-867839860)) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.5845.114 HonorBrowser/3.5.2.307  Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BKQ-AN90
     marketingName: 'Magic 8 Pro'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2808
       height: 1256
@@ -284,13 +282,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'HONOR Browser'
     modus: null
@@ -298,7 +292,13 @@
     manufacturer: baidu
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 116.0.5845.114
@@ -307,13 +307,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; BKQ-AN00; GMSCore 26.04.38 (260400-867839860)) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.5845.114 HonorBrowser/3.5.3.300  Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BKQ-AN00
     marketingName: 'Magic 8 5G'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2760
       height: 1256
@@ -322,13 +320,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'HONOR Browser'
     modus: null
@@ -336,7 +330,13 @@
     manufacturer: baidu
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 116.0.5845.114
@@ -345,13 +345,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; AAP-AN00; GMSCore 26.22.33 (260400-932714197)) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.5845.114 HonorBrowser/3.5.3.304  Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AAP-AN00
     marketingName: Win
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2800
       height: 1272
@@ -360,13 +358,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'HONOR Browser'
     modus: null
@@ -374,7 +368,13 @@
     manufacturer: baidu
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 116.0.5845.114
@@ -383,13 +383,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; AAK-AN00; GMSCore 26.23.34 (260400-933906539)) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.5845.114 HonorBrowser/3.5.3.300  Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AAK-AN00
     marketingName: 'Win RT'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2800
       height: 1272
@@ -398,13 +396,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'HONOR Browser'
     modus: null
@@ -412,7 +406,13 @@
     manufacturer: baidu
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 116.0.5845.114
@@ -421,13 +421,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; NLA-AN00 Build/HONORNLA-AN00;) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.38 SP-engine/2.76.0 languageType/0 bdh_dvt/0 bdh_de/0 bdh_ds/0 bdapp/1.0 (bdhonorbrowser; bdhonorbrowser) bdhonorbrowser/8.1.2.21 (P1 15) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NLA-AN00
     marketingName: 'Honor Play 60A 5G'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -436,13 +434,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'HONOR Browser'
     modus: null
@@ -450,7 +444,13 @@
     manufacturer: baidu
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: T7
     version: 13.38.0
@@ -459,13 +459,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; NLA-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.5845.114 HonorBrowser/3.5.2.307  Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NLA-AN00
     marketingName: 'Honor Play 60A 5G'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -474,13 +472,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'HONOR Browser'
     modus: null
@@ -488,7 +482,13 @@
     manufacturer: baidu
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 116.0.5845.114
@@ -497,13 +497,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; LOG-AN10) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.5845.114 HonorBrowser/3.0.7.305  Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LOG-AN10
     marketingName: 'Honor Play 10T'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2412
       height: 1080
@@ -512,13 +510,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'HONOR Browser'
     modus: null
@@ -526,7 +520,13 @@
     manufacturer: baidu
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 116.0.5845.114
@@ -535,13 +535,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; BRE-AL00b) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.5845.114 HonorBrowser/3.1.1.306  Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BRE-AL00b
     marketingName: 'Enjoy 70X Energy'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2700
       height: 1224
@@ -550,13 +548,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'HONOR Browser'
     modus: null
@@ -564,8 +558,52 @@
     manufacturer: baidu
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 116.0.5845.114
     manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 16; PTP-AN00 Build/HONORPTP-AN00;) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.38 SP-engine/2.76.0 languageType/0 bdh_dvt/0 bdh_de/0 bdh_ds/0 bdapp/1.0 (bdhonorbrowser; bdhonorbrowser) bdhonorbrowser/9.9.0.3 (P1 16) NABar/1.0'
+  device:
+    architecture: ''
+    deviceName: PTP-AN00
+    marketingName: 'Magic 7'
+    manufacturer: huawei
+    brand: honor
+    display:
+      width: 2800
+      height: 1264
+      touch: true
+      size: 6.78
+    type: smartphone
+    ismobile: true
+    istv: false
+    dualOrientation: true
+    simCount: 2
+    bits: 0
+  client:
+    name: 'HONOR Browser'
+    modus: null
+    version: 9.9.0.3
+    manufacturer: baidu
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
+  engine:
+    name: T7
+    version: 13.38.0
+    manufacturer: baidu

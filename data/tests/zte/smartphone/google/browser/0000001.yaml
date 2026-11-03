@@ -1,52 +1,12 @@
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; ZTE A2022L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.58 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: A2022L
-    marketingName: 'Axon 30 Pro 5G'
-    manufacturer: zte
-    brand: zte
-    dualOrientation: true
-    simCount: 2
-    display:
-      width: 2400
-      height: 1080
-      touch: true
-      size: 6.67
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: Chrome
-    modus: null
-    version: 99.0.4844.58
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 99.0.4844.58
-    manufacturer: google
--
-  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; ZTE A2020N2 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.40 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'A2020N2 Pro'
     marketingName: 'Axon 10 Pro 5G'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -55,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -69,7 +25,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 102.0.5005.40
@@ -78,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; Z6251V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Z6251V
     marketingName: 'Blade 11 Prime (2020)'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -93,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -107,7 +63,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 102.0.0.0
@@ -116,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; NX709S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NX709S
     marketingName: 'Red Magic 7S Pro'
     manufacturer: zte
     brand: nubia
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -131,13 +91,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -145,7 +101,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 105.0.0.0
@@ -154,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; ZTE Blade A52 Lite) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.98 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Blade A52 Lite'
     marketingName: 'Blade A52 Lite'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -169,13 +129,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -183,7 +139,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 97.0.4692.98
@@ -192,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; ZTE 7540N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 7540N
     marketingName: 'Blade A72 5G'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -207,13 +167,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -221,7 +177,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 105.0.0.0
@@ -230,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; ZTE 2050 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/106.0.5249.126 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '2050'
     marketingName: 'Blade 20 Smart'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1560
       height: 720
@@ -245,13 +205,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -259,7 +215,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 106.0.5249.126
@@ -268,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; ZTE A7040) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A7040
     marketingName: 'Blade V40'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -283,13 +243,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -297,7 +253,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 107.0.0.0
@@ -306,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; ZTE 8045) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '8045'
     marketingName: 'Blade V40 Vita'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -321,13 +281,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -335,7 +291,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 107.0.0.0
@@ -344,13 +306,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; Z3353CA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Z3353CA
     marketingName: 'Blade A3 Plus'
     manufacturer: zte
     brand: nubia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 960
       height: 480
@@ -359,13 +319,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -373,7 +329,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 106.0.0.0
@@ -382,13 +344,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; ZTE 9100N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 9100N
     marketingName: 'Blade V40'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -397,13 +357,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -411,7 +367,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 108.0.0.0
@@ -420,13 +382,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; A202ZT) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A202ZT
     marketingName: 'Libero 5G III'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -435,13 +395,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -449,7 +405,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 108.0.0.0
@@ -458,13 +420,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; ZTE A2121E Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.5414.86 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A2121E
     marketingName: 'Axon 20 5G'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2460
       height: 1080
@@ -473,13 +433,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -487,7 +443,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 109.0.5414.86
@@ -496,13 +458,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; ZTE N939Sc) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: N939Sc
     marketingName: 'Weiwu 3 Dual SIM'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1080
@@ -511,13 +471,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -525,7 +481,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 89.0.4389.90
@@ -534,13 +496,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; NX711J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NX711J
     marketingName: Z50
     manufacturer: zte
     brand: nubia
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -549,13 +509,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -563,7 +519,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 110.0.0.0
@@ -572,13 +534,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; NX729J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NX729J
     marketingName: 'Red Magic 8 Pro'
     manufacturer: zte
     brand: nubia
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2480
       height: 1116
@@ -587,13 +547,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -601,7 +557,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 110.0.0.0
@@ -610,13 +572,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; ZTE 9047) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '9047'
     marketingName: 'Axon 40 SE'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -625,13 +585,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -639,7 +595,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 110.0.0.0
@@ -648,13 +610,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; ZTE Blade A52RU) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Blade A52RU'
     marketingName: 'Blade A52RU'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -663,13 +623,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -677,7 +633,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 94.0.4606.85
@@ -686,13 +648,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; ZTE A2023PG Build/SKQ1.220213.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/110.0.5481.154 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A2023PG
     marketingName: 'Axon 40 Ultra'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2480
       height: 1116
@@ -701,13 +661,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -715,7 +671,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 110.0.5481.154
@@ -724,13 +686,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; Z5157V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Z5157V
     marketingName: 'Blade A3 Prime'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1440
       height: 720
@@ -739,13 +699,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -753,7 +709,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 111.0.0.0
@@ -762,13 +724,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; ZTE 9045) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '9045'
     marketingName: 'Blade V40'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -777,13 +737,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -791,7 +747,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 112.0.0.0
@@ -800,13 +762,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; ZTE A7050) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A7050
     marketingName: 'Blade A72s'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -815,13 +775,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -829,7 +785,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 113.0.0.0
@@ -838,13 +800,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; ZTE 8046) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '8046'
     marketingName: 'Blade V40 Design'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2408
       height: 1080
@@ -853,13 +813,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -867,7 +823,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 113.0.0.0
@@ -876,13 +838,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; ZTE 9046) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '9046'
     marketingName: 'Blade V40 Pro'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -891,13 +851,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -905,7 +861,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 112.0.0.0
@@ -914,13 +876,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; VTL-202201) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VTL-202201
     marketingName: 'Metavertu 5G'
     manufacturer: zte
     brand: vertu
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -929,13 +889,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -943,7 +899,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 99.0.4844.88
@@ -952,13 +914,11 @@
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 11; ZTE 8045 Build/RP1A.201005.001)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '8045'
     marketingName: 'Blade V40 Vita'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -967,13 +927,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Android Browser'
     modus: null
@@ -981,7 +937,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -999,13 +961,11 @@
     sec-ch-ua-mobile: '?1'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A2023G
     marketingName: 'Axon 40 Pro 5G'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -1014,13 +974,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1028,7 +984,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.0
@@ -1037,13 +999,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; NX679S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NX679S
     marketingName: 'Red Magic 7S 5G'
     manufacturer: zte
     brand: nubia
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -1052,13 +1012,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1066,7 +1022,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 106.0.0.0
@@ -1075,13 +1037,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; ZTE 8045 Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '8045'
     marketingName: 'Blade V40 Vita'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1090,13 +1050,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1104,7 +1060,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 116.0.0.0
@@ -1113,13 +1075,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; ZTE Blade A52 Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/117.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Blade A52'
     marketingName: 'Blade A52'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1128,13 +1088,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1142,7 +1098,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 117.0.0.0
@@ -1151,13 +1113,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; ZTE Blade A53+ Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/117.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Blade A53+'
     marketingName: 'Blade A53+'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1166,13 +1126,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1180,7 +1136,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 117.0.0.0
@@ -1189,13 +1151,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; ZTE Blade A33+ Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/110.0.5481.153 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Blade A33+'
     marketingName: 'Blade A33+'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1014
       height: 480
@@ -1204,13 +1164,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1218,7 +1174,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 110.0.5481.153
@@ -1227,13 +1189,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; Blade L210RU Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.96 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Blade L210RU'
     marketingName: 'Blade L210'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 1
     display:
       width: 960
       height: 480
@@ -1242,13 +1202,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1256,7 +1212,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 72.0.3626.96
@@ -1265,13 +1227,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; ZTE Blade A54 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/119.0.6045.163 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Blade A54'
     marketingName: 'Blade A54'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -1280,13 +1240,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1294,7 +1250,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 119.0.6045.163
@@ -1303,13 +1265,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; ZTE 9050N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 9050N
     marketingName: 'Blade V50 5G'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2380
       height: 1080
@@ -1318,13 +1278,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1332,7 +1288,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 111.0.0.0
@@ -1341,13 +1303,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; ZTE Blade A53+ Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.144 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Blade A53+'
     marketingName: 'Blade A53+'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1356,13 +1316,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1370,7 +1326,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 120.0.6099.144
@@ -1379,13 +1341,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; ZTE 7060 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.143 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '7060'
     marketingName: 'Blade A73 5G'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1394,13 +1354,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1408,7 +1364,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 121.0.6167.143
@@ -1417,13 +1379,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; ZTE A7040 Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/120.0.6099.230 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A7040
     marketingName: 'Blade V40'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -1432,13 +1392,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1446,7 +1402,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 120.0.6099.230
@@ -1463,13 +1425,11 @@
     sec-ch-ua-mobile: '?1'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Blade A54'
     marketingName: 'Blade A54'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -1478,13 +1438,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1492,7 +1448,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.0
@@ -1501,13 +1463,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; ZTE Blade L220 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/122.0.6261.120 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Blade L220'
     marketingName: 'Blade L220'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1014
       height: 480
@@ -1516,13 +1476,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1530,7 +1486,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.120
@@ -1539,13 +1501,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; ZTE 8550) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '8550'
     marketingName: 'Blade V50 Vita'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1554,13 +1514,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1568,7 +1524,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 111.0.0.0
@@ -1577,13 +1539,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; 5G UG Phone U23) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.6312.99 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '5G UG Phone U23'
     marketingName: '5G UG Phone U23'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1592,13 +1552,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1606,7 +1562,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.6312.99
@@ -1621,13 +1583,11 @@
     sec-ch-ua-mobile: '?1'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A303ZT
     marketingName: 'Anshin Family'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -1636,13 +1596,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1650,7 +1606,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 125.0.6422.165
@@ -1665,13 +1627,11 @@
     sec-ch-ua-mobile: '?1'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Z6255CA
     marketingName: 'Blade A72'
     manufacturer: zte
     brand: nubia
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1680,13 +1640,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1694,7 +1650,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.120
@@ -1703,13 +1665,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; ZTE Blade A53 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Blade A53 Pro'
     marketingName: 'Blade A53 Pro'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1718,13 +1678,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1732,7 +1688,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.0.0
@@ -1741,13 +1703,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; ZTE 7160N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 7160N
     marketingName: 'Blade A73 5G'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1756,13 +1716,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1770,7 +1726,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.0.0
@@ -1779,13 +1741,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; ZTE 8150N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 8150N
     marketingName: 'Blade V50 Design 5G'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2408
       height: 1080
@@ -1794,13 +1754,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1808,7 +1764,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.0.0
@@ -1817,13 +1779,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; ZTE 7060) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '7060'
     marketingName: 'Blade A73 5G'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1832,13 +1792,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1846,7 +1802,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.0.0
@@ -1855,13 +1817,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; ZTE Blade A33s) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Blade A33s'
     marketingName: 'Blade A33s'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1870,13 +1830,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1884,7 +1840,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 110.0.0.0
@@ -1893,13 +1855,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; ZTE Blade A34) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Blade A34'
     marketingName: 'Blade A34'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -1908,13 +1868,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1922,7 +1878,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.0.0
@@ -1931,13 +1893,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; Z2352N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Z2352N
     marketingName: 'Neo 2 5G'
     manufacturer: zte
     brand: nubia
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -1946,13 +1906,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1960,7 +1916,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 125.0.0.0
@@ -1969,13 +1931,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; ZTE Nubia Z20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6267.203 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Nubia Z20'
     marketingName: Z20
     manufacturer: zte
     brand: nubia
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -1984,13 +1944,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1998,7 +1954,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6267.203
@@ -2007,13 +1969,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10.0; ZTE Axon 11 5G) AppleWebKit/547.2 (KHTML, like Gecko) ZTE Browser/73.4.1895.8 Mobile Safari/510.83'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Axon 11 5G'
     marketingName: 'Axon 11 5G'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -2022,13 +1982,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Android Webkit'
     modus: null
@@ -2036,7 +1992,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: 547.2.0
@@ -2045,13 +2007,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; Z2356) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Z2356
     marketingName: 'Axon 60'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -2060,13 +2020,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2074,7 +2030,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 126.0.0.0
@@ -2083,13 +2045,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; ZTE A2024H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A2024H
     marketingName: 'Axon 50 Ultra 5G'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -2098,13 +2058,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2112,7 +2068,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 126.0.0.0
@@ -2121,13 +2083,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; A302ZT) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A302ZT
     marketingName: 'Libero 5G IV'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2408
       height: 1080
@@ -2136,13 +2096,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2150,7 +2106,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 126.0.0.0
@@ -2159,13 +2121,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; ZTE 9042N Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/99.0.4844.88 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 9042N
     marketingName: 'Voyage 40 Pro+'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -2174,13 +2134,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2188,7 +2144,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 99.0.4844.88
@@ -2197,13 +2159,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; Z2359) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Z2359
     marketingName: 'Blade A75 4G'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -2212,13 +2172,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2226,7 +2182,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 120.0.0.0
@@ -2235,13 +2197,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; A2022P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A2022P
     marketingName: 'Axon 30 Ultra 5G'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -2250,13 +2210,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2264,7 +2220,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 119.0.0.0
@@ -2273,13 +2235,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; Z2350 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/126.0.6478.186 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Z2350
     marketingName: 'Blade V60 Design 4G'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -2288,13 +2248,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2302,7 +2258,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 126.0.6478.186
@@ -2311,13 +2273,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; Z2453) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Z2453
     marketingName: 'Blade A35'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -2326,13 +2286,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2340,7 +2296,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 129.0.0.0
@@ -2349,13 +2311,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; ZTE Blade A32 Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/125.0.6422.53 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Blade A32'
     marketingName: 'Blade A32'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1440
       height: 720
@@ -2364,13 +2324,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2378,7 +2334,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 125.0.6422.53
@@ -2387,13 +2349,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; ZTE Blade A5 2020 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.179 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Blade A5 (2020)'
     marketingName: 'Blade A5 (2020)'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1560
       height: 720
@@ -2402,13 +2362,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2416,7 +2372,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 124.0.6367.179
@@ -2425,13 +2387,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; ZTE 8050 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/127.0.6533.103 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '8050'
     marketingName: 'Blade V50 Design'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2408
       height: 1080
@@ -2440,13 +2400,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2454,7 +2410,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 127.0.6533.103
@@ -2463,13 +2425,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; ZTE 8550 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/125.0.6422.148 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '8550'
     marketingName: 'Blade V50 Vita'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -2478,13 +2438,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2492,7 +2448,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 125.0.6422.148
@@ -2501,13 +2463,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; NX769J Build/UKQ1.230917.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/126.0.6478.71 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NX769J
     marketingName: 'Red Magic 9 Pro'
     manufacturer: zte
     brand: nubia
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2480
       height: 1116
@@ -2516,13 +2476,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2530,7 +2486,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 126.0.6478.71
@@ -2547,13 +2509,11 @@
     sec-ch-ua-mobile: '?1'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '8050'
     marketingName: 'Blade V50 Design'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2408
       height: 1080
@@ -2562,13 +2522,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2576,7 +2532,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 125.0.0
@@ -2585,13 +2547,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; NX725J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NX725J
     marketingName: 'Z60S Pro'
     manufacturer: zte
     brand: nubia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2800
       height: 1260
@@ -2600,13 +2560,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2614,7 +2570,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 129.0.0.0
@@ -2623,13 +2585,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; ZTE 7160N Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/129.0.6668.70 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 7160N
     marketingName: 'Blade A73 5G'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -2638,13 +2598,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2652,7 +2608,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 129.0.6668.70
@@ -2661,13 +2623,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; ZTE Blade A7 2020 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/130.0.6723.86 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Blade A7 (2020)'
     marketingName: 'Blade A7 (2020)'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1560
       height: 720
@@ -2676,13 +2636,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2690,7 +2646,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 130.0.6723.86
@@ -2699,13 +2661,11 @@
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 11; ZTE Blade A52 Build/RP1A.201005.001)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Blade A52'
     marketingName: 'Blade A52'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -2714,13 +2674,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Android Browser'
     modus: null
@@ -2728,7 +2684,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -2737,13 +2699,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; VTL-202301) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VTL-202301
     marketingName: 'Metavertu 2 5G'
     manufacturer: zte
     brand: vertu
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2800
       height: 1260
@@ -2752,13 +2712,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2766,7 +2722,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 130.0.0.0
@@ -2775,13 +2737,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; NX724J Build/TKQ1.221220.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/130.0.6723.60 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NX724J
     marketingName: 'Flip 5G'
     manufacturer: zte
     brand: nubia
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2790
       height: 1188
@@ -2790,13 +2750,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2804,7 +2760,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 130.0.6723.60
@@ -2813,13 +2775,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; Blade A3 2019RU Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Blade A3 (2019) RU'
     marketingName: 'Blade A3 (2019) RU'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 1
     display:
       width: 960
       height: 480
@@ -2828,13 +2788,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2842,7 +2798,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 91.0.4472.101
@@ -2851,13 +2813,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; Blade A7 2020RU Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Blade A7 (2020) RU'
     marketingName: 'Blade A7 (2020) RU'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1560
       height: 720
@@ -2866,13 +2826,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2880,7 +2836,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 87.0.4280.88
@@ -2889,13 +2851,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; Blade V1000RU) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Blade V1000RU'
     marketingName: 'Blade V1000'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2280
       height: 1080
@@ -2904,13 +2864,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2918,7 +2874,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 91.0.4472.101
@@ -2927,13 +2889,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Z7540) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Z7540
     marketingName: 'ZMax 5G'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -2942,13 +2902,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2956,7 +2912,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 130.0.0.0
@@ -2965,13 +2927,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; NX302J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NX302J
     marketingName: 'Focus 5G'
     manufacturer: zte
     brand: nubia
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -2980,13 +2940,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2994,7 +2950,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 107.0.0.0
@@ -3003,13 +2965,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; NX733J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NX733J
     marketingName: 'Z70 Ultra'
     manufacturer: zte
     brand: nubia
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2688
       height: 1216
@@ -3018,13 +2978,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3032,7 +2988,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 131.0.0.0
@@ -3041,13 +3003,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; NX789J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NX789J
     marketingName: 'Red Magic 10 Pro'
     manufacturer: zte
     brand: nubia
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2688
       height: 1216
@@ -3056,13 +3016,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3070,7 +3026,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 133.0.0.0
@@ -3079,13 +3041,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; NX736J Build/AQ3A.240812.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.123 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NX736J
     marketingName: 'Z70 Ultra Starry Night'
     manufacturer: zte
     brand: nubia
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2688
       height: 1216
@@ -3094,13 +3054,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -3108,7 +3064,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 132.0.6834.123
@@ -3117,13 +3079,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; 5G UG Phone U25) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '5G UG Phone U25'
     marketingName: '5G UG Phone U25'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -3132,13 +3092,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3146,7 +3102,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 135.0.0.0
@@ -3155,13 +3117,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; Z2466 Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.100 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Z2466
     marketingName: 'Blade A35s'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -3170,13 +3130,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3184,7 +3140,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 135.0.7049.100
@@ -3193,13 +3155,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; Z2359 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/134.0.6998.135 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Z2359
     marketingName: 'Blade A75 4G'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -3208,13 +3168,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -3222,7 +3178,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 134.0.6998.135
@@ -3231,13 +3193,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; ZTE Blade A34 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/133.0.6943.138 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Blade A34'
     marketingName: 'Blade A34'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -3246,13 +3206,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -3260,7 +3216,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 133.0.6943.138
@@ -3269,13 +3231,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; NX789J Build/AQ3A.240812.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/134.0.6998.39 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NX789J
     marketingName: 'Red Magic 10 Pro'
     manufacturer: zte
     brand: nubia
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2688
       height: 1216
@@ -3284,13 +3244,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -3298,7 +3254,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 134.0.6998.39
@@ -3307,13 +3269,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; Z2351N Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/135.0.7049.111 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Z2351N
     marketingName: 'Focus Pro 5G'
     manufacturer: zte
     brand: nubia
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -3322,13 +3282,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -3336,7 +3292,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 135.0.7049.111
@@ -3353,13 +3315,11 @@
     sec-ch-ua-mobile: '?1'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Z2450
     marketingName: 'Blade A55'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -3368,13 +3328,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3382,7 +3338,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 135.0.0
@@ -3391,13 +3353,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; Z2465N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Z2465N
     marketingName: 'Neo 3 GT 5G'
     manufacturer: zte
     brand: nubia
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2392
       height: 1080
@@ -3406,13 +3366,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3420,7 +3376,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 135.0.0.0
@@ -3429,13 +3391,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; Z5157Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.98 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Z5157Y
     marketingName: 'Blade A3v'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1440
       height: 720
@@ -3444,13 +3404,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3458,7 +3414,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 97.0.4692.98
@@ -3467,13 +3429,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; Z2467 Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/137.0.7151.61 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Z2467
     marketingName: 'Blade V70 Max'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -3482,13 +3442,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -3496,7 +3452,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 137.0.7151.61
@@ -3505,13 +3467,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; NX779J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NX779J
     marketingName: 'Red Magic 10 Air'
     manufacturer: zte
     brand: nubia
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2480
       height: 1116
@@ -3520,13 +3480,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3534,7 +3490,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 137.0.0.0
@@ -3543,13 +3505,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; NX737J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NX737J
     marketingName: 'Z70S Ultra'
     manufacturer: zte
     brand: nubia
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2688
       height: 1216
@@ -3558,13 +3518,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3572,7 +3528,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 137.0.0.0
@@ -3581,13 +3543,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; ZTE 2050RU) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 2050RU
     marketingName: 'Blade 20 Smart'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1560
       height: 720
@@ -3596,13 +3556,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3610,7 +3566,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 81.0.4044.138
@@ -3619,13 +3581,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; NX669J Build/SKQ1.220502.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/137.0.7151.115 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NX669J
     marketingName: 'Red Magic 6 5G'
     manufacturer: zte
     brand: nubia
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -3634,13 +3594,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -3648,7 +3604,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 137.0.7151.115
@@ -3657,13 +3619,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; ZTE A2020RU Pro Build/QKQ1.191117.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.117 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'A2020RU Pro'
     marketingName: 'Axon 10 Pro'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -3672,13 +3632,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -3686,7 +3642,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 81.0.4044.117
@@ -3703,13 +3665,11 @@
     sec-ch-ua-mobile: '?1'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Z2353
     marketingName: Music
     manufacturer: zte
     brand: nubia
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -3718,13 +3678,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3732,7 +3688,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 137.0.0
@@ -3741,13 +3703,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; Z2472) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Z2472
     marketingName: 'Blade A36'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -3756,13 +3716,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3770,7 +3726,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 138.0.0.0
@@ -3779,13 +3741,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; Z2458 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.102 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Z2458
     marketingName: 'Blade V70 Vita'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -3794,13 +3754,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -3808,7 +3764,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 142.0.7444.102
@@ -3817,13 +3779,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; NX733J Build/AQ3A.240812.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/141.0.7390.122 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NX733J
     marketingName: 'Z70 Ultra'
     manufacturer: zte
     brand: nubia
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2688
       height: 1216
@@ -3832,13 +3792,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -3846,8 +3802,52 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 141.0.7390.122
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; ZTE A2322G Build/SKQ1.220213.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.102 Mobile Safari/537.36'
+  device:
+    architecture: ''
+    deviceName: A2322G
+    marketingName: 'Axon 30 5G'
+    manufacturer: zte
+    brand: zte
+    display:
+      width: 2460
+      height: 1080
+      touch: true
+      size: 6.92
+    type: smartphone
+    ismobile: true
+    istv: false
+    dualOrientation: true
+    simCount: 2
+    bits: 0
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 142.0.7444.102
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
+  engine:
+    name: Blink
+    version: 142.0.7444.102
     manufacturer: google

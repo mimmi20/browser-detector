@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) ASUS1210/MR2_V3.5.0A'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '1210'
     marketingName: '1210'
     manufacturer: asus
     brand: asus
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) ASUS-GalaxyII/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Galaxy 2'
     marketingName: 'Galaxy 2'
     manufacturer: asus
     brand: asus
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -55,13 +53,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'MOZILLA/40 (COMPATIBLE MSIE 60 WINDOWS CE PPC) ASUS-GALAXYII/10'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Galaxy 2'
     marketingName: 'Galaxy 2'
     manufacturer: asus
     brand: asus
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -93,13 +91,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) ASUSP750/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: P750
     marketingName: P750
     manufacturer: asus
     brand: asus
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -131,13 +129,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: null

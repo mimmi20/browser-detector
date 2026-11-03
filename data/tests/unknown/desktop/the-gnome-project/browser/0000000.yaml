@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; Linux i686; fr-fr) AppleWebKit/531.2+ (KHTML, like Gecko) Version/5.0 Safari/531.2+ Debian/squeeze (2.30.6-1) Epiphany/2.30.6'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Debian
-    marketingName: Debian
-    version: 6.0.0
-    manufacturer: softwareInThePublicInterest
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Debian
+    marketingName: Debian
+    version: 6.0.0
+    manufacturer: softwareInThePublicInterest
+    bits: 0
   engine:
     name: WebKit
     version: 531.2.0
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.26+ (KHTML, like Gecko) Version/5.0 Safari/534.26+ Ubuntu/10.10 (2.30.6-1ubuntu5) Epiphany/2.30.6'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: 10.10.0
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: 10.10.0
+    manufacturer: canonical
+    bits: 0
   engine:
     name: WebKit
     version: 534.26.0
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; Linux i686; en; rv:1.8.1.1) Gecko/20070117 Epiphany/2.16 BonEcho/2.0.0.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -93,13 +91,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Gecko
     version: 1.8.1.1
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; OpenBSD arm; en-us) AppleWebKit/531.2+ (KHTML, like Gecko) Safari/531.2+ Epiphany/2.30.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -131,13 +129,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: OpenBSD
-    marketingName: OpenBSD
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: OpenBSD
+    marketingName: OpenBSD
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 531.2.0
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; Linux x86_64; nl-nl) AppleWebKit/531.2+ (KHTML, like Gecko) Safari/531.2+ Epiphany/2.29.91'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -169,13 +167,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 531.2.0
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; Linux x86_64; zh-cn) AppleWebKit/531.2+ (KHTML, like Gecko) Safari/531.2+ Epiphany/2.28.2 SUSE/2.28.0-2.4'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -207,13 +205,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Suse Linux'
-    marketingName: 'Suse Linux'
-    version: 2.28.0.2.4
-    manufacturer: suse
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Suse Linux'
+    marketingName: 'Suse Linux'
+    version: 2.28.0.2.4
+    manufacturer: suse
+    bits: 0
   engine:
     name: WebKit
     version: 531.2.0
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; Linux x86_64; en; rv:1.9.0.8) Gecko/20080528 Fedora/2.24.3-4.fc10 Epiphany/2.22 Firefox/3.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -245,13 +243,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Fedora Linux'
-    marketingName: 'Fedora Linux'
-    version: 10.0.0
-    manufacturer: redhat
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fedora Linux'
+    marketingName: 'Fedora Linux'
+    version: 10.0.0
+    manufacturer: redhat
+    bits: 0
   engine:
     name: Gecko
     version: 1.9.0.8
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; Linux x86_64; en; rv:1.9.0.14) Gecko/20080528 Ubuntu/9.10 (karmic) Epiphany/2.22 Firefox/3.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -283,13 +281,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: 9.10.0
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: 9.10.0
+    manufacturer: canonical
+    bits: 0
   engine:
     name: Gecko
     version: 1.9.0.14
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; Linux i686; en; rv:1.9) Gecko/20080528 (Gentoo) Epiphany/2.22 Firefox/3.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -321,13 +319,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Gentoo Linux'
-    marketingName: 'Gentoo Linux'
-    version: null
-    manufacturer: gentoo
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Gentoo Linux'
+    marketingName: 'Gentoo Linux'
+    version: null
+    manufacturer: gentoo
+    bits: 0
   engine:
     name: Gecko
     version: 1.9.0
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; Linux x86_64; en; rv:1.8.1.13) Gecko/20080326 (Debian-1.8.1.13-1) Epiphany/2.20'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -359,13 +357,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Debian
-    marketingName: Debian
-    version: 1.8.1.13.1
-    manufacturer: softwareInThePublicInterest
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Debian
+    marketingName: Debian
+    version: 1.8.1.13.1
+    manufacturer: softwareInThePublicInterest
+    bits: 0
   engine:
     name: Gecko
     version: 1.8.1.13
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; Linux ppc; en; rv:1.8.1.13) Gecko/20080325 Epiphany/2.20 Firefox/2.0.0.13'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -397,13 +395,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Macintosh
-    marketingName: Macintosh
-    version: null
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Macintosh
+    marketingName: Macintosh
+    version: null
+    manufacturer: apple
+    bits: 0
   engine:
     name: Gecko
     version: 1.8.1.13
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD i386; pl; rv:1.8.1.12) Gecko/20080213 Epiphany/2.20 Firefox/2.0.0.12'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -435,13 +433,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: null
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: null
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: Gecko
     version: 1.8.1.12
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD i386; en; rv:1.8.1.12) Gecko/20080213 Epiphany/2.20 Firefox/2.0.0.12'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -473,13 +471,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: null
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: null
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: Gecko
     version: 1.8.1.12
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; OpenBSD amd64; en; rv:1.8.1.6) Gecko/20070817 Epiphany/2.18 Firefox/2.0.0.6'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -511,13 +509,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: OpenBSD
-    marketingName: OpenBSD
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: OpenBSD
+    marketingName: OpenBSD
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Gecko
     version: 1.8.1.6
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.8.1) Gecko/20070322 Epiphany/2.18'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -549,13 +547,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: null
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: null
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: Gecko
     version: 1.8.1
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; SunOS 5.11; en-US; rv:1.8.0.2) Gecko/20050405 Epiphany/1.7.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -587,13 +585,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: SunOS
-    marketingName: SunOS
-    version: 5.11.0
-    manufacturer: oracle
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: SunOS
+    marketingName: SunOS
+    version: 5.11.0
+    manufacturer: oracle
+    bits: 0
   engine:
     name: Gecko
     version: 1.8.0.2
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; SunOS sun4u; en-US; rv:1.7.5) Gecko/20050105 Epiphany/1.4.8'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -625,13 +623,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: SunOS
-    marketingName: SunOS
-    version: null
-    manufacturer: oracle
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: SunOS
+    marketingName: SunOS
+    version: null
+    manufacturer: oracle
+    bits: 0
   engine:
     name: Gecko
     version: 1.7.5
@@ -648,13 +648,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Fedora; Linux x86_64) AppleWebKit/602.1 (KHTML, like Gecko) Version/8.0 Safari/602.1 Epiphany/3.18.5'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -663,13 +661,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Fedora Linux'
-    marketingName: 'Fedora Linux'
-    version: null
-    manufacturer: redhat
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -677,60 +671,26 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fedora Linux'
+    marketingName: 'Fedora Linux'
+    version: null
+    manufacturer: redhat
+    bits: 0
   engine:
     name: WebKit
     version: 602.1.0
     manufacturer: apple
 -
   headers:
-    user-agent: 'Mozilla/5.0 (X11; U; NetBSD i386; en-US; rv:1.7.3) Gecko/20041126 Epiphany/1.4.5'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: NetBSD
-    marketingName: NetBSD
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'GNOME Web'
-    modus: null
-    version: 1.4.5
-    manufacturer: the-gnome-project
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: 1.7.3
-    manufacturer: mozilla
--
-  headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD amd64; en-us) AppleWebKit/531.2  (KHTML, like Gecko) Safari/531.2  Epiphany/2.30.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -739,13 +699,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: null
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -753,7 +709,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: null
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: WebKit
     version: 531.2.0
@@ -762,13 +724,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; OpenBSD arm; en-us) AppleWebKit/531.2  (KHTML, like Gecko) Safari/531.2  Epiphany/2.30.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -777,13 +737,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: OpenBSD
-    marketingName: OpenBSD
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -791,7 +747,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: OpenBSD
+    marketingName: OpenBSD
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 531.2.0
@@ -800,13 +762,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD i386; en; rv:1.8.1.10) Gecko/20071201 Epiphany/2.20 Firefox/2.0.0.10'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -815,13 +775,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: null
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -829,7 +785,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: null
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: Gecko
     version: 1.8.1.10
@@ -838,13 +800,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.7.7) Gecko/20050505 Epiphany/1.6.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -853,13 +813,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: null
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -867,7 +823,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: null
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: Gecko
     version: 1.7.7
@@ -876,13 +838,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.7.2) Gecko/20040809 Epiphany/1.2.8'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -891,13 +851,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: null
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -905,7 +861,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: null
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: Gecko
     version: 1.7.2
@@ -914,13 +876,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD amd64; en; rv:1.8.1.20) Gecko/20090422 Epiphany/2.22 Firefox/2.0.0.20'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -929,13 +889,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: null
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -943,7 +899,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: null
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: Gecko
     version: 1.8.1.20
@@ -952,13 +914,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; FreeBSD i386) AppleWebKit/534.26+ (KHTML, like Gecko) Version/5.0 Safari/534.26+ Epiphany/2.30.6'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -967,13 +927,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: null
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -981,7 +937,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: null
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: WebKit
     version: 534.26.0
@@ -990,13 +952,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; SunOS sun4u; de-de) AppleWebKit/531.2+ (KHTML, like Gecko) Safari/531.2+ Epiphany/2.30.6'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1005,13 +965,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: SunOS
-    marketingName: SunOS
-    version: null
-    manufacturer: oracle
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -1019,7 +975,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: SunOS
+    marketingName: SunOS
+    version: null
+    manufacturer: oracle
+    bits: 0
   engine:
     name: WebKit
     version: 531.2.0
@@ -1028,13 +990,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD amd64; en; rv:1.9.0.14) Gecko/20080528 Epiphany/2.22 Firefox/3.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1043,13 +1003,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: null
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -1057,7 +1013,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: null
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: Gecko
     version: 1.9.0.14
@@ -1066,13 +1028,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD i386; en; rv:1.9.0.14) Gecko/20080528 Epiphany/2.22 Firefox/3.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1081,13 +1041,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: null
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -1095,7 +1051,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: null
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: Gecko
     version: 1.9.0.14
@@ -1104,13 +1066,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; Linux x86_64; en; rv:1.8.1.2) Gecko/20070208 Mandriva/2.0.0.2-1mdv2007.1 (2007.1) Epiphany/2.18 Firefox/2.0.0.2'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1119,13 +1079,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mandriva Linux'
-    marketingName: 'Mandriva Linux'
-    version: 2007.1.0
-    manufacturer: mandriva
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -1133,7 +1089,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mandriva Linux'
+    marketingName: 'Mandriva Linux'
+    version: 2007.1.0
+    manufacturer: mandriva
+    bits: 0
   engine:
     name: Gecko
     version: 1.8.1.2
@@ -1142,13 +1104,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD i386; de-de) AppleWebKit/531.2+ (KHTML, like Gecko) Safari/531.2+ Epiphany/2.30.6'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1157,13 +1117,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: null
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -1171,7 +1127,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: null
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: WebKit
     version: 531.2.0
@@ -1180,13 +1142,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.7) Gecko/20040628 Epiphany/1.2.6'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1195,13 +1155,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: null
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -1209,7 +1165,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: null
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: Gecko
     version: 1.7.0
@@ -1218,13 +1180,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; OpenBSD amd64) AppleWebKit/605.1 (KHTML, like Gecko) Version/11.0 Safari/605.1 Epiphany/3.24.4'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1233,13 +1193,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: OpenBSD
-    marketingName: OpenBSD
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -1247,7 +1203,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: OpenBSD
+    marketingName: OpenBSD
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.0
@@ -1256,13 +1218,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.4) Gecko/20031008 Epiphany/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1271,13 +1231,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: null
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -1285,7 +1241,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: null
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: Gecko
     version: 1.4.0
@@ -1294,13 +1256,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.7.3) Gecko/20041201 Epiphany/1.4.6'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1309,13 +1269,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: null
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -1323,7 +1279,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: null
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: Gecko
     version: 1.7.3
@@ -1332,13 +1294,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.7) Gecko/20040701 Epiphany/1.2.8'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1347,13 +1307,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: null
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -1361,7 +1317,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: null
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: Gecko
     version: 1.7.0
@@ -1370,13 +1332,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.5) Gecko/20031208 Epiphany/1.0.6'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1385,13 +1345,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: null
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -1399,7 +1355,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: null
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: Gecko
     version: 1.5.0
@@ -1408,13 +1370,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.6) Gecko/20040223 Epiphany/1.0.7'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1423,13 +1383,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: null
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -1437,7 +1393,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: null
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: Gecko
     version: 1.6.0
@@ -1446,13 +1408,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.6) Gecko/20040415 Epiphany/1.2.2'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1461,13 +1421,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: null
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -1475,7 +1431,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: null
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: Gecko
     version: 1.6.0
@@ -1484,13 +1446,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.6) Gecko/20040429 Epiphany/1.2.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1499,13 +1459,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: null
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -1513,7 +1469,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: null
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: Gecko
     version: 1.6.0
@@ -1522,13 +1484,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.7.2) Gecko/20040821 Epiphany/1.2.8'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1537,13 +1497,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: null
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -1551,7 +1507,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: null
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: Gecko
     version: 1.7.2
@@ -1560,13 +1522,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.7.2) Gecko/20041016 Epiphany/1.2.8'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1575,13 +1535,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: null
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -1589,7 +1545,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: null
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: Gecko
     version: 1.7.2
@@ -1598,13 +1560,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.7.3) Gecko/20041112 Epiphany/1.4.4'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1613,13 +1573,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: null
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -1627,7 +1583,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: null
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: Gecko
     version: 1.7.3
@@ -1636,13 +1598,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.7.3) Gecko/20041116 Epiphany/1.4.6'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1651,13 +1611,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: null
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -1665,7 +1621,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: null
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: Gecko
     version: 1.7.3
@@ -1674,13 +1636,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; OpenBSD arm; en-us) AppleWebKit/531.2  (KHTML like Gecko) Safari/531.2  Epiphany/2.30.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1689,13 +1649,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: OpenBSD
-    marketingName: OpenBSD
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -1703,7 +1659,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: OpenBSD
+    marketingName: OpenBSD
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 531.2.0
@@ -1712,13 +1674,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; FreeBSD amd64) AppleWebKit/535.22+ (KHTML, like Gecko) Chromium/17.0.963.56 Chrome/17.0.963.56 Safari/535.22+ Epiphany/2.30.6'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1727,13 +1687,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: null
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'GNOME Web'
     modus: null
@@ -1741,7 +1697,13 @@
     manufacturer: the-gnome-project
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: null
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: WebKit
     version: 535.22.0

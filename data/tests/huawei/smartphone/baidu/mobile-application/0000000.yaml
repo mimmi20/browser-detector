@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; ANE-LX1 Build/HUAWEIANE-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.83 Mobile Safari/537.36 T7/11.11 baiduboxapp/11.11.0.12 (Baidu; P1 9) comdirect/1.0 (appVersion:19.11.0;deviceType:mobile)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: ANE-LX1
     marketingName: 'P20 Lite'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2280
       height: 1080
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: T7
     version: 11.11.0
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; HLK-AL00 Build/HONORHLK-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.64 Mobile Safari/537.36 baiduboxapp/10.5.0.10 (Baidu; P1 9)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HLK-AL00
     marketingName: 'Honor 9X'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 70.0.3538.64
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; VOG-AL10 Build/HUAWEIVOG-AL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/76.0.3809.89 Mobile Safari/537.36 T7/11.22 SP-engine/2.18.0 baiduboxapp/11.22.0.10 (Baidu; P1 10)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VOG-AL10
     marketingName: 'P30 Pro'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -93,13 +91,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: T7
     version: 11.22.0
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; BKL-AL20 Build/HUAWEIBKL-AL20; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/76.0.3809.89 Mobile Safari/537.36 T7/12.7 SP-engine/2.27.0 baiduboxapp/12.7.0.10 (Baidu; P1 9) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BKL-AL20
     marketingName: 'Honor View 10'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2160
       height: 1080
@@ -131,13 +129,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: T7
     version: 12.7.0
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; INE-AL00 Build/HUAWEIINE-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/76.0.3809.89 Mobile Safari/537.36 T7/11.21 SP-engine/2.17.0 baiduboxapp/11.21.3.10 (Baidu; P1 9)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: INE-AL00
     marketingName: 'Nova 3i'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -169,13 +167,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: T7
     version: 11.21.0
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; BMH-TN10 Build/HUAWEIBMH-TN10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/76.0.3809.89 Mobile Safari/537.36 T7/12.23 BDOS/1.0 (HarmonyOS 2.1.0) SP-engine/2.35.0 baiduboxapp/12.23.5.10 (Baidu; P1 10) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BMH-TN10
     marketingName: 'Honor 30'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -207,13 +205,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: HarmonyOS
-    marketingName: HarmonyOS
-    version: 2.1.0
-    manufacturer: huawei
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: HarmonyOS
+    marketingName: HarmonyOS
+    version: 2.1.0
+    manufacturer: huawei
+    bits: 0
   engine:
     name: T7
     version: 12.23.0
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; Hera-BD00 Build/HinovaHera-BD00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.93 Mobile Safari/537.36 SP-engine/2.25.0 baiduboxapp/12.3.0.11 (Baidu; P1 11) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Hera-BD00
     marketingName: 'Hi Nova 9 5G'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -245,13 +243,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.93
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; HJC-LX9 Build/HONORHJC-L29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.106 Mobile Safari/537.36 SP-engine/2.36.0 baiduboxapp/12.26.5.10 (Baidu; P1 10) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HJC-LX9
     marketingName: 'Play 20 Pro'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -283,13 +281,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 83.0.4103.106
@@ -307,13 +307,11 @@
     x-requested-with: com.baidu.searchbox
     user-agent: 'Mozilla/5.0 (Linux; Android 10; CLT-AL01 Build/HUAWEICLT-AL01; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/76.0.3809.89 Mobile Safari/537.36 T7/12.24 BDOS/1.0 (HarmonyOS 2.2.0) SP-engine/2.36.0 baiduboxapp/12.25.0.10 (Baidu; P1 10) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CLT-AL01
     marketingName: 'P20 Pro'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2240
       height: 1080
@@ -322,13 +320,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: HarmonyOS
-    marketingName: HarmonyOS
-    version: 2.2.0
-    manufacturer: huawei
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -336,7 +330,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: HarmonyOS
+    marketingName: HarmonyOS
+    version: 2.2.0
+    manufacturer: huawei
+    bits: 0
   engine:
     name: T7
     version: 12.24.0
@@ -345,13 +345,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; TET-AN10 Build/HUAWEITET-AN10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/76.0.3809.89 Safari/537.36 T7/12.26 BDOS/1.0 (HarmonyOS 2.2.0) SP-engine/2.36.0 baiduboxapp/12.26.5.10 (Baidu; P1 10) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TET-AN10
     marketingName: 'Mate X2'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2480
       height: 2200
@@ -360,13 +358,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: HarmonyOS
-    marketingName: HarmonyOS
-    version: 2.2.0
-    manufacturer: huawei
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -374,7 +368,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: HarmonyOS
+    marketingName: HarmonyOS
+    version: 2.2.0
+    manufacturer: huawei
+    bits: 0
   engine:
     name: T7
     version: 12.26.0
@@ -383,13 +383,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; FIO-BD00 Build/PTACFIO-BD00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.23 SP-engine/2.61.0 baiduboxapp/13.23.0.11 (Baidu; P1 11) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: FIO-BD00
     marketingName: 'Nova 9 SE'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2388
       height: 1080
@@ -398,13 +396,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -412,7 +406,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: T7
     version: 13.23.0
@@ -421,13 +421,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; BNE-AL00 Build/HUAWEIBNE-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.25 BDOS/1.0 (HarmonyOS 2.2.0) SP-engine/2.63.0 baiduboxapp/13.25.0.10 (Baidu; P1 11) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BNE-AL00
     marketingName: 'Nova 10 SE 4G'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -436,13 +434,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: HarmonyOS
-    marketingName: HarmonyOS
-    version: 2.2.0
-    manufacturer: huawei
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -450,7 +444,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: HarmonyOS
+    marketingName: HarmonyOS
+    version: 2.2.0
+    manufacturer: huawei
+    bits: 0
   engine:
     name: T7
     version: 13.25.0
@@ -459,13 +459,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; FRL-TN00 Build/HUAWEIFRL-TN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.32 BDOS/1.0 (HarmonyOS 2.2.0) SP-engine/2.70.0 baiduboxapp/13.32.0.10 (Baidu; P1 10) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: FRL-TN00
     marketingName: 'Enjoy 20 Plus 5G'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -474,13 +472,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: HarmonyOS
-    marketingName: HarmonyOS
-    version: 2.2.0
-    manufacturer: huawei
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -488,7 +482,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: HarmonyOS
+    marketingName: HarmonyOS
+    version: 2.2.0
+    manufacturer: huawei
+    bits: 0
   engine:
     name: T7
     version: 13.32.0
@@ -497,13 +497,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; LNA-AL00 Build/HUAWEILNA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.32 BDOS/1.0 (HarmonyOS 3.0.0) SP-engine/2.70.0 baiduboxapp/13.32.5.10 (Baidu; P1 12) NABar'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LNA-AL00
     marketingName: P60
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2700
       height: 1220
@@ -512,13 +510,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: HarmonyOS
-    marketingName: HarmonyOS
-    version: 3.0.0
-    manufacturer: huawei
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -526,7 +520,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: HarmonyOS
+    marketingName: HarmonyOS
+    version: 3.0.0
+    manufacturer: huawei
+    bits: 0
   engine:
     name: T7
     version: 13.32.0
@@ -535,13 +535,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; VOG-AL10 Build/HUAWEIVOG-AL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.37 BDOS/1.0 (HarmonyOS 2.2.0) SP-engine/2.75.0 baiduboxapp/13.37.5.10 (Baidu; P1 10) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VOG-AL10
     marketingName: 'P30 Pro'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -550,13 +548,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: HarmonyOS
-    marketingName: HarmonyOS
-    version: 2.2.0
-    manufacturer: huawei
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -564,7 +558,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: HarmonyOS
+    marketingName: HarmonyOS
+    version: 2.2.0
+    manufacturer: huawei
+    bits: 0
   engine:
     name: T7
     version: 13.37.0
@@ -573,13 +573,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.37 BDOS/1.0 (HarmonyOS 2.2.0) SP-engine/2.75.0 baiduboxapp/13.37.5.10 (Baidu; P1 10) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HMA-AL00
     marketingName: 'Mate 20 (China)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2244
       height: 1080
@@ -588,13 +586,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: HarmonyOS
-    marketingName: HarmonyOS
-    version: 2.2.0
-    manufacturer: huawei
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -602,7 +596,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: HarmonyOS
+    marketingName: HarmonyOS
+    version: 2.2.0
+    manufacturer: huawei
+    bits: 0
   engine:
     name: T7
     version: 13.37.0
@@ -611,13 +611,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; ELS-AN00 Build/HUAWEIELS-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.42 BDOS/1.0 (HarmonyOS 3.0.0) SP-engine/2.80.0 baiduboxapp/13.42.5.10 (Baidu; P1 12) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: ELS-AN00
     marketingName: 'P40 Pro 5G'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2640
       height: 1200
@@ -626,13 +624,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: HarmonyOS
-    marketingName: HarmonyOS
-    version: 3.0.0
-    manufacturer: huawei
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -640,7 +634,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: HarmonyOS
+    marketingName: HarmonyOS
+    version: 3.0.0
+    manufacturer: huawei
+    bits: 0
   engine:
     name: T7
     version: 13.42.0
@@ -649,13 +649,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; ANA-AN00 Build/HUAWEIANA-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.48 BDOS/1.0 (HarmonyOS 3.0.0) SP-engine/2.86.0 baiduboxapp/13.48.5.10 (Baidu; P1 12) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: ANA-AN00
     marketingName: 'P40 5G'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2310
       height: 1080
@@ -664,13 +662,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: HarmonyOS
-    marketingName: HarmonyOS
-    version: 3.0.0
-    manufacturer: huawei
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -678,7 +672,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: HarmonyOS
+    marketingName: HarmonyOS
+    version: 3.0.0
+    manufacturer: huawei
+    bits: 0
   engine:
     name: T7
     version: 13.48.0
@@ -687,13 +687,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; NCO-AL00 Build/HUAWEINCO-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.48 BDOS/1.0 (HarmonyOS 3.0.0) SP-engine/2.86.0 baiduboxapp/13.48.5.10 (Baidu; P1 12) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NCO-AL00
     marketingName: 'Nova 10 4G'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -702,13 +700,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: HarmonyOS
-    marketingName: HarmonyOS
-    version: 3.0.0
-    manufacturer: huawei
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -716,7 +710,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: HarmonyOS
+    marketingName: HarmonyOS
+    version: 3.0.0
+    manufacturer: huawei
+    bits: 0
   engine:
     name: T7
     version: 13.48.0
@@ -725,13 +725,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; HPB-AN00 Build/HONORHPB-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.51 SP-engine/2.89.0 baiduboxapp/13.51.5.11 (Baidu; P1 12) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HPB-AN00
     marketingName: '70 Pro+'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2652
       height: 1200
@@ -740,13 +738,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -754,7 +748,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: T7
     version: 13.51.0
@@ -763,13 +763,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; JER-AN10 Build/HUAWEIJER-AN10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.51 BDOS/1.0 (HarmonyOS 3.0.0) SP-engine/2.89.0 baiduboxapp/13.51.0.10 (Baidu; P1 12) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: JER-AN10
     marketingName: 'Nova 7 Pro 5G'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -778,13 +776,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: HarmonyOS
-    marketingName: HarmonyOS
-    version: 3.0.0
-    manufacturer: huawei
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -792,7 +786,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: HarmonyOS
+    marketingName: HarmonyOS
+    version: 3.0.0
+    manufacturer: huawei
+    bits: 0
   engine:
     name: T7
     version: 13.51.0
@@ -801,13 +801,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; NOH-AN80 Build/HUAWEINOH-AN80; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.53 BDOS/1.0 (HarmonyOS 3.0.0) SP-engine/2.91.0 baiduboxapp/13.53.5.10 (Baidu; P1 12) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NOH-AN80
     marketingName: 'Mate 40E Pro 5G'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2772
       height: 1344
@@ -816,13 +814,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: HarmonyOS
-    marketingName: HarmonyOS
-    version: 3.0.0
-    manufacturer: huawei
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -830,7 +824,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: HarmonyOS
+    marketingName: HarmonyOS
+    version: 3.0.0
+    manufacturer: huawei
+    bits: 0
   engine:
     name: T7
     version: 13.53.0
@@ -839,13 +839,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; LLY-AN00 Build/HONORLLY-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.53 SP-engine/2.91.0 baiduboxapp/13.53.5.10 (Baidu; P1 13) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LLY-AN00
     marketingName: 'X50i+ 5G'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2412
       height: 1080
@@ -854,13 +852,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -868,7 +862,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: T7
     version: 13.53.0
@@ -877,13 +877,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; FIN-AL60 Build/HUAWEIFIN-AL60; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.51 BDOS/1.0 (HarmonyOS 3.0.0) light/1.0 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/6.25.0.10 (Baidu; P1 12)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: FIN-AL60
     marketingName: 'Nova 12 Lite'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2412
       height: 1084
@@ -892,13 +890,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: HarmonyOS
-    marketingName: HarmonyOS
-    version: 3.0.0
-    manufacturer: huawei
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App Lite'
     modus: null
@@ -906,7 +900,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: HarmonyOS
+    marketingName: HarmonyOS
+    version: 3.0.0
+    manufacturer: huawei
+    bits: 0
   engine:
     name: T7
     version: 13.51.0
@@ -915,13 +915,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; CHA-AL80 Build/HUAWEICHA-AL80; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.51 BDOS/1.0 (HarmonyOS 2.2.0) light/1.0 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/6.25.0.10 (Baidu; P1 10)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CHA-AL80
     marketingName: 'Nova 10z'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -930,13 +928,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: HarmonyOS
-    marketingName: HarmonyOS
-    version: 2.2.0
-    manufacturer: huawei
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App Lite'
     modus: null
@@ -944,7 +938,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: HarmonyOS
+    marketingName: HarmonyOS
+    version: 2.2.0
+    manufacturer: huawei
+    bits: 0
   engine:
     name: T7
     version: 13.51.0
@@ -953,13 +953,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; BAL-AL80 Build/HUAWEIBAL-AL80; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.51 BDOS/1.0 (HarmonyOS 3.0.0) light/1.0 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/6.25.0.10 (Baidu; P1 12)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BAL-AL80
     marketingName: 'P50 Pocket'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2790
       height: 1188
@@ -968,13 +966,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: HarmonyOS
-    marketingName: HarmonyOS
-    version: 3.0.0
-    manufacturer: huawei
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App Lite'
     modus: null
@@ -982,7 +976,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: HarmonyOS
+    marketingName: HarmonyOS
+    version: 3.0.0
+    manufacturer: huawei
+    bits: 0
   engine:
     name: T7
     version: 13.51.0
@@ -991,13 +991,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; ADY-AL00 Build/HUAWEIADY-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.56 BDOS/1.0 (HarmonyOS 3.0.0) light/1.0 SP-engine/2.95.0 baiduboxapp/13.56.0.11 (Baidu; P1 12)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: ADY-AL00
     marketingName: 'Pura 70'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2760
       height: 1256
@@ -1006,13 +1004,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: HarmonyOS
-    marketingName: HarmonyOS
-    version: 3.0.0
-    manufacturer: huawei
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -1020,7 +1014,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: HarmonyOS
+    marketingName: HarmonyOS
+    version: 3.0.0
+    manufacturer: huawei
+    bits: 0
   engine:
     name: T7
     version: 13.56.0
@@ -1029,13 +1029,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; BLK-AL00 Build/HUAWEIBLK-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.56 BDOS/1.0 (HarmonyOS 3.0.0) SP-engine/2.95.0 baiduboxapp/13.56.0.11 (Baidu; P1 12) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BLK-AL00
     marketingName: 'Nova 12'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2412
       height: 1084
@@ -1044,13 +1042,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: HarmonyOS
-    marketingName: HarmonyOS
-    version: 3.0.0
-    manufacturer: huawei
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -1058,7 +1052,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: HarmonyOS
+    marketingName: HarmonyOS
+    version: 3.0.0
+    manufacturer: huawei
+    bits: 0
   engine:
     name: T7
     version: 13.56.0
@@ -1067,13 +1067,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; KOZ-AL00CM Build/HONORKOZ-AL00CM; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.59 SP-engine/2.98.0 baiduboxapp/13.59.5.10 (Baidu; P1 12) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KOZ-AL00CM
     marketingName: 'Play 20a'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1082,13 +1080,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -1096,7 +1090,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: T7
     version: 13.59.0
@@ -1105,13 +1105,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; TET-AN00 Build/HUAWEITET-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.55 BDOS/1.0 (HarmonyOS 3.0.0) SP-engine/2.94.0 baiduboxapp/13.55.5.10 (Baidu; P1 12) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TET-AN00
     marketingName: 'Mate X2'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2480
       height: 2200
@@ -1120,13 +1118,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: HarmonyOS
-    marketingName: HarmonyOS
-    version: 3.0.0
-    manufacturer: huawei
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -1134,7 +1128,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: HarmonyOS
+    marketingName: HarmonyOS
+    version: 3.0.0
+    manufacturer: huawei
+    bits: 0
   engine:
     name: T7
     version: 13.55.0
@@ -1143,13 +1143,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; VER-AN00 Build/HONORVER-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Safari/537.36 T7/13.52 SP-engine/2.90.0 baiduboxapp/13.52.5.10 (Baidu; P1 14) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VER-AN00
     marketingName: 'Magic Vs2'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2344
       height: 2156
@@ -1158,13 +1156,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -1172,7 +1166,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: T7
     version: 13.52.0
@@ -1181,13 +1181,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; VCE-AL00 Build/HUAWEIVCE-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.60 SP-engine/2.99.0 baiduboxapp/13.60.0.10 (Baidu; P1 10) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VCE-AL00
     marketingName: 'Nova 4'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2310
       height: 1080
@@ -1196,13 +1194,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -1210,7 +1204,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: T7
     version: 13.60.0
@@ -1220,13 +1220,11 @@
     x-requested-with: com.baidu.searchbox
     user-agent: 'Mozilla/5.0 (Linux; Android 12; LSA-AN00 Build/HONORLSA-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.57 SP-engine/2.96.0 baiduboxapp/13.57.5.10 (Baidu; P1 12) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LSA-AN00
     marketingName: '60'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -1235,13 +1233,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -1249,7 +1243,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: T7
     version: 13.57.0
@@ -1258,13 +1258,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; AMP-AN00 Build/HONORAMP-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.84 SP-engine/3.26.0 baiduboxapp/13.85.0.10 (Baidu; P1 15) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AMP-AN00
     marketingName: '300 Pro'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2700
       height: 1224
@@ -1273,13 +1271,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -1287,7 +1281,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: T7
     version: 13.84.0
@@ -1296,13 +1296,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; PTP-AN20 Build/HONORPTP-AN20; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.84 SP-engine/3.26.0 baiduboxapp/13.85.0.10 (Baidu; P1 15) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: PTP-AN20
     marketingName: 'Magic 7 RSR Porsche Design'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2800
       height: 1280
@@ -1311,13 +1309,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -1325,7 +1319,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: T7
     version: 13.84.0
@@ -1334,13 +1334,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; DNN-AN00 Build/HONORDNN-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.14 SP-engine/3.36.0 bd_dvt/0 baiduboxapp/15.14.0.10 (Baidu; P1 15) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: DNN-AN00
     marketingName: '400 (China)'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2736
       height: 1264
@@ -1349,13 +1347,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -1363,7 +1357,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: T7
     version: 15.14.0
@@ -1372,13 +1372,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; DVD-AN80 Build/HONORDVD-AN80; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.83 SP-engine/3.24.0 baiduboxapp/13.83.0.10 (Baidu; P1 15) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: DVD-AN80
     marketingName: Power
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2700
       height: 1224
@@ -1387,13 +1385,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -1401,7 +1395,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: T7
     version: 13.83.0
@@ -1410,13 +1410,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; DVD-AN00 Build/HONORDVD-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.3 SP-engine/3.31.0 baiduboxapp/15.4.0.10 (Baidu; P1 15) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: DVD-AN00
     marketingName: Power
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2700
       height: 1224
@@ -1425,13 +1423,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -1439,7 +1433,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: T7
     version: 15.3.0
@@ -1448,13 +1448,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; AGI-AN00 Build/HONORAGI-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.14 SP-engine/3.36.0 bd_dvt/0 baiduboxapp/15.15.0.10 (Baidu; P1 15) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AGI-AN00
     marketingName: 'X60 GT'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2664
       height: 1200
@@ -1463,13 +1461,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -1477,7 +1471,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: T7
     version: 15.14.0
@@ -1486,13 +1486,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; MAA-AN10 Build/HONORMAA-AN10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.13 SP-engine/3.36.0 bd_dvt/0 baiduboxapp/15.13.0.10 (Baidu; P1 15) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: MAA-AN10
     marketingName: '100 Pro'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2700
       height: 1224
@@ -1501,13 +1499,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -1515,7 +1509,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: T7
     version: 15.13.0
@@ -1524,13 +1524,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; BKL-TL10 Build/HUAWEIBKL-TL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.83 Mobile Safari/537.36 T7/11.8 baiduboxapp/11.8.0.10 (Baidu; P1 9)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BKL-TL10
     marketingName: 'Honor V10'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2160
       height: 1080
@@ -1539,13 +1537,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -1553,7 +1547,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: T7
     version: 11.8.0
@@ -1562,13 +1562,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SER-AN00 Build/HONORSER-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.65 SP-engine/3.59.0 bd_dvt/0 baiduboxapp/15.65.0.10 (Baidu; P1 16) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SER-AN00
     marketingName: 'Power 2'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2640
       height: 1200
@@ -1577,13 +1575,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -1591,7 +1585,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: T7
     version: 15.65.0
@@ -1600,13 +1600,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SER-AN00 Build/HONORSER-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.7.0.10 (Baidu; P1 16) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SER-AN00
     marketingName: 'Power 2'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2640
       height: 1200
@@ -1615,13 +1613,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App Lite'
     modus: null
@@ -1629,7 +1623,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: T7
     version: 15.48.0
@@ -1638,13 +1638,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; PNM-AN10 Build/HONORPNM-AN10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.40 SP-engine/3.59.0 bd_dvt/2 baiduboxapp/15.64.0.10 (Baidu; P1 16) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: PNM-AN10
     marketingName: 'Magic V6'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2352
       height: 2172
@@ -1653,13 +1651,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -1667,7 +1661,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: T7
     version: 13.40.0
@@ -1676,13 +1676,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; BKQ-AN00 Build/HONORBKQ-ANXX; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.40 SP-engine/3.59.0 bd_dvt/0 baiduboxapp/15.64.0.10 (Baidu; P1 16) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BKQ-AN00
     marketingName: 'Magic 8 5G'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2760
       height: 1256
@@ -1691,13 +1689,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -1705,7 +1699,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: T7
     version: 13.40.0
@@ -1714,13 +1714,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; AAK-AN00 Build/HONORAAK-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.48 SP-engine/2.81.0 matrixstyle/0 lite baiduboxapp/7.8.0.11 (Baidu; P1 16) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AAK-AN00
     marketingName: 'Win RT'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2800
       height: 1272
@@ -1729,13 +1727,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App Lite'
     modus: null
@@ -1743,7 +1737,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: T7
     version: 15.48.0
@@ -1752,13 +1752,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; AAK-AN00 Build/HONORAAK-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.40 SP-engine/3.59.0 bd_dvt/0 baiduboxapp/15.64.0.10 (Baidu; P1 16) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AAK-AN00
     marketingName: 'Win RT'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2800
       height: 1272
@@ -1767,13 +1765,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -1781,7 +1775,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: T7
     version: 13.40.0
@@ -1790,13 +1790,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; NLA-AN00 Build/HONORNLA-AN00X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.40 SP-engine/3.59.0 bd_dvt/0 baiduboxapp/15.64.0.10 (Baidu; P1 15) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NLA-AN00
     marketingName: 'Honor Play 60A 5G'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1805,13 +1803,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -1819,7 +1813,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: T7
     version: 13.40.0
@@ -1828,13 +1828,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; NLA-AN00 Build/HONORNLA-AN00X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36 SP-engine/3.17.0 baiduboxapp/13.76.0.10 (Baidu; P1 15) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NLA-AN00
     marketingName: 'Honor Play 60A 5G'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1843,13 +1841,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -1857,7 +1851,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 116.0.0.0
@@ -1866,13 +1866,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; LOG-AN10 Build/HONORLGN-AN10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.56 SP-engine/3.57.0 bd_dvt/0 baiduboxapp/15.57.1.10 (Baidu; P1 15) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LOG-AN10
     marketingName: 'Honor Play 10T'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2412
       height: 1080
@@ -1881,13 +1879,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -1895,7 +1889,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: T7
     version: 15.56.0
@@ -1904,13 +1904,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; BRP-AN80 Build/HONORBRP-AN80; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/15.61 SP-engine/3.58.0 bd_dvt/0 baiduboxapp/15.62.0.11 (Baidu; P1 15) NABar/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BRP-AN80
     marketingName: 'Magic 7 Lite'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2700
       height: 1224
@@ -1919,13 +1917,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -1933,7 +1927,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: T7
     version: 15.61.0
@@ -1942,13 +1942,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; CLT-AL01 Build/HUAWEICLT-AL01; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.110 Mobile Safari/537.36 baiduboxapp/10.5.0.10 (Baidu; P1 9)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CLT-AL01
     marketingName: 'P20 Pro'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2240
       height: 1080
@@ -1957,13 +1955,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -1971,7 +1965,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 70.0.3538.110
@@ -1980,13 +1980,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; PAR-AL00 Build/HUAWEIPAR-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.83 Mobile Safari/537.36 T7/11.1 lite baiduboxapp/4.2.0.10 (Baidu; P1 9)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: PAR-AL00
     marketingName: 'Nova 3'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -1995,13 +1993,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Baidu Box App Lite'
     modus: null
@@ -2009,7 +2003,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: T7
     version: 11.1.0
@@ -2018,13 +2018,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; BKL-AL00 Build/HUAWEIBKL-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.83 Mobile Safari/537.36 T7/11.5 baiduboxapp/11.5.0.10 (Baidu; P1 9)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BKL-AL00
     marketingName: 'Honor View 10'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2160
       height: 1080
@@ -2033,13 +2031,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -2047,7 +2041,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: T7
     version: 11.5.0
@@ -2056,13 +2056,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; SEA-AL10 Build/HUAWEISEA-AL1001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.83 Mobile Safari/537.36 T7/11.3 baiduboxapp/11.3.6.11 (Baidu; P1 9)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SEA-AL10
     marketingName: 'Nova 5 Pro'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -2071,13 +2069,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Baidu Box App'
     modus: null
@@ -2085,7 +2079,13 @@
     manufacturer: baidu
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: T7
     version: 11.3.0

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 6.0.1; SM919 Build/MXB48T; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.49 Mobile MQQBrowser/6.2 TBS/043024 Safari/537.36 MicroMessenger/6.5.4.1000 NetType/WIFI Language/zh_CN'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM919
     marketingName: M1L
     manufacturer: smartisan
     brand: smartisan
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2560
       height: 1440
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Smartisan OS'
-    marketingName: 'Smartisan OS'
-    version: 3.0.0
-    manufacturer: smartisan
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'WeChat App'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: tencent
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Smartisan OS'
+    marketingName: 'Smartisan OS'
+    version: 3.0.0
+    manufacturer: smartisan
+    bits: 0
   engine:
     name: Blink
     version: 53.0.2785.49
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 4.4.2; zh-cn; SM701 Build/SANFRANCISCO) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025469 Mobile Safari/533.1 MicroMessenger/6.2.5.49_r7ead8bf.620 NetType/WIFI Language/zh_CN QQ/6.6.0.2935'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM701
     marketingName: T1
     manufacturer: smartisan
     brand: smartisan
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1080
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Smartisan OS'
-    marketingName: 'Smartisan OS'
-    version: 1.5.0
-    manufacturer: smartisan
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'WeChat App'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: tencent
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Smartisan OS'
+    marketingName: 'Smartisan OS'
+    version: 1.5.0
+    manufacturer: smartisan
+    bits: 0
   engine:
     name: WebKit
     version: 533.1.0
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 5.1.1; SM801 Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.49 Mobile MQQBrowser/6.2 TBS/043024 Safari/537.36 MicroMessenger/6.5.4.1000 NetType/4G Language/zh_CN'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM801
     marketingName: T2
     manufacturer: smartisan
     brand: smartisan
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1080
@@ -93,13 +91,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Smartisan OS'
-    marketingName: 'Smartisan OS'
-    version: 2.5.0
-    manufacturer: smartisan
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'WeChat App'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: tencent
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Smartisan OS'
+    marketingName: 'Smartisan OS'
+    version: 2.5.0
+    manufacturer: smartisan
+    bits: 0
   engine:
     name: Blink
     version: 53.0.2785.49
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 4.4.2; SM705 Build/SANFRANCISCO; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.49 Mobile MQQBrowser/6.2 TBS/043024 Safari/537.36 MicroMessenger/6.5.4.1000 NetType/4G Language/zh_CN'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM705
     marketingName: T1
     manufacturer: smartisan
     brand: smartisan
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1080
@@ -131,13 +129,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Smartisan OS'
-    marketingName: 'Smartisan OS'
-    version: 1.5.0
-    manufacturer: smartisan
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'WeChat App'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: tencent
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Smartisan OS'
+    marketingName: 'Smartisan OS'
+    version: 1.5.0
+    manufacturer: smartisan
+    bits: 0
   engine:
     name: Blink
     version: 53.0.2785.49
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; DT1901A Build/QKQ1.191222.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120 MQQBrowser/6.2 TBS/045435 Mobile Safari/537.36 MMWEBID/2793 MicroMessenger/7.0.21.1800(0x27001539) Process/tools WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: DT1901A
     marketingName: 'Nut Pro 3'
     manufacturer: smartisan
     brand: smartisan
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -169,13 +167,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Smartisan OS'
-    marketingName: 'Smartisan OS'
-    version: 6.0.0
-    manufacturer: smartisan
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'WeChat App'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: tencent
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Smartisan OS'
+    marketingName: 'Smartisan OS'
+    version: 6.0.0
+    manufacturer: smartisan
+    bits: 0
   engine:
     name: Blink
     version: 77.0.3865.120
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 8.1.0; DE106 Build/OPM1.171019.026; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120 MQQBrowser/6.2 TBS/045222 Mobile Safari/537.36 MMWEBID/7084 MicroMessenger/7.0.14.1660(0x27000E38) Process/tools NetType/WIFI Language/zh_CN ABI/arm64 WeChat/arm32'
   device:
-    architecture: null
+    architecture: ''
     deviceName: DE106
     marketingName: R1
     manufacturer: smartisan
     brand: smartisan
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2424
       height: 1080
@@ -207,13 +205,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Smartisan OS'
-    marketingName: 'Smartisan OS'
-    version: 6.0.0
-    manufacturer: smartisan
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'WeChat App'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: tencent
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Smartisan OS'
+    marketingName: 'Smartisan OS'
+    version: 6.0.0
+    manufacturer: smartisan
+    bits: 0
   engine:
     name: Blink
     version: 77.0.3865.120

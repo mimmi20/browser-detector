@@ -2,13 +2,11 @@
   headers:
     user-agent: 'LGE-LG8700 UP.Browser/6.2.3.2 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LG870
     marketingName: 'Optimus F7'
     manufacturer: lg
     brand: lg
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 720
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'LGE-MX210/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X210
     marketingName: K7
     manufacturer: lg
     brand: lg
-    dualOrientation: true
-    simCount: 1
     display:
       width: 854
       height: 480
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'LGE-MX240/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X240
     marketingName: 'K8 (2017)'
     manufacturer: lg
     brand: t-mobile
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 720
@@ -93,13 +91,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'LGE-MX500/1.0 UP.Browser/6.2.3.2 UP.Browser/6.2.3.2 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X500
     marketingName: X500
     manufacturer: lg
     brand: lg
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 720
@@ -131,13 +129,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null

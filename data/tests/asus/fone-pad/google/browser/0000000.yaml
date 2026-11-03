@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Linux Ventana; de-de; Transformer TF101G Build/HTJ85B) AppleWebKit/534.13 (KHTML, like Gecko) Chrome/8.0 Safari/534.13'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TF101G
     marketingName: 'Eee Pad Transformer 3G'
     manufacturer: asus
     brand: asus
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 800
@@ -17,13 +15,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Ventana Linux'
-    marketingName: 'Ventana Linux'
-    version: null
-    manufacturer: ventana
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Ventana Linux'
+    marketingName: 'Ventana Linux'
+    version: null
+    manufacturer: ventana
+    bits: 0
   engine:
     name: WebKit
     version: 534.13.0
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Windowshop/5.50.8010 (Android/4.0.3/Transformer TF101G)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TF101G
     marketingName: 'Eee Pad Transformer 3G'
     manufacturer: asus
     brand: asus
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 800
@@ -55,13 +53,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: Windows
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Android Webkit'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: Windows
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; MeMo Pad FHD 10 LTE) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.93 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'MeMO Pad FHD 10 LTE'
     marketingName: 'MeMO Pad FHD 10 LTE'
     manufacturer: asus
     brand: asus
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1200
@@ -93,13 +91,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 79.0.3945.93

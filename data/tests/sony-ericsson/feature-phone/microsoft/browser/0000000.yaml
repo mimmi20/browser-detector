@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (Compatible; MSIE 6.0; Windows NT 5.1) SonyEricssonM1i/R1AA Profile/MIDP-2.1 Configuration/CLDC-1.1; Windows Phone 6.5'
   device:
-    architecture: null
+    architecture: ''
     deviceName: M1i
     marketingName: M1i
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 6.5.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 6.5.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'SonyEricssonM1i/R1BA Browser/Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Profile/MIDP-2.1 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: M1i
     marketingName: M1i
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -55,13 +53,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) SonyEricssonK610i/R1L Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: K610i
     marketingName: K610i
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -93,13 +91,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: null

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'SAMSUNG-GT-i8000/1.0 (Windows CE; Opera Mobi; U; en) Opera 9.5'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-I8000
     marketingName: 'Omnia II'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Presto
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'SAMSUNG-SGH-i900/1.0 Opera 9.5'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SGH-I900
     marketingName: Omnia
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -55,13 +53,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Presto
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'SAMSUNG-GT-C3312R Opera/9.80 (X11; Linux zvav; U; en) Presto/2.12.423 Version/12.16'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-C3312R
     marketingName: 'Champ Deluxe Duos'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -93,13 +91,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Presto
     version: 2.12.423
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 4.0; ) Opera, SAMSUNG-B2100/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Untrusted/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-B2100
     marketingName: Xplorer
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 120
@@ -131,13 +129,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Presto
     version: null
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 4.0; ) Opera/UCWEB7.4.0.57/69/351, SAMSUNG-GT-B3410/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-B3410
     marketingName: 'Corby Text'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -169,13 +167,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Presto
     version: null
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'SAMSUNG-GT-B7300C_CMCC/1.0 Opera 9.5'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-B7300C
     marketingName: 'Omnia Lite'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -207,13 +205,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Presto
     version: null
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'SAMSUNG-GT-B7300Orange/BVII3 (Windows CE; Opera Mobi; U; en) Opera 9.5'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-B7300
     marketingName: 'Omnia Lite'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -245,13 +243,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Presto
     version: null
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 4.0; ) Opera/UC Browser7.8.0.95/69/351, SAMSUNG-GT-C3222/C3222DDJL3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-C3222
     marketingName: 'Ch@t 322'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -283,13 +281,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Presto
     version: null
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 4.0; ) Opera/UCWEB7.5.0.66/69/352, SAMSUNG-GT-C5212i/C5212iXEJH2 Profile/MIDP-2.0 Configuration'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-C5212i
     marketingName: GT-C5212i
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -321,13 +319,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Presto
     version: null
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'Opera/9.62 (X11;Linux i686; U; en) Presto/2.2.0/SAMSUNG-GT-I6410-Vodafone/'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-I6410
     marketingName: M1
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -359,13 +357,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Presto
     version: 2.2.0
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'SAMSUNG-GT-i8000H/1.0 (Windows CE; Opera Mobi; U; en) Opera 9.5'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-I8000H
     marketingName: 'Omnia II'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -397,13 +395,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Presto
     version: null
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'SAMSUNG-GT-I8000U/1.0 Software/WM6.5 Release/01.24.2009 Profile/MIDP-2.1 Configuration/CLDC-1.1 Opera 9.5 (Windows CE; PPC; Opera Mobi; U; zh-cn)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-I8000U
     marketingName: 'Omnia II'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -435,13 +433,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Presto
     version: null
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'SAMSUNG-GT-I8330-Vodafone/I8330BUJF8 Opera/9.8 (SLP; Linux/SLP/R1; U; en) Presto/2.4.21 Version/10.00 SMM-MMS/1.2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-I8330
     marketingName: GT-I8330
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -473,13 +471,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Presto
     version: 2.4.21
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'SAMSUNG-SCH-M710/(null)ID4 (compatible; MSIE 6.0; Windows CE; PPC) Opera 9.5 Presto/2.2.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SCH-M710
     marketingName: 'T*OMNIA II'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -511,13 +509,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Presto
     version: 2.2.1
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'SAMSUNG-SGH-A937/A937UCJE1!(zW( Opera/9.80 (BREW 5.0.3; Opera Mobi/BP206/135; U; en) Presto/2.4.15 Version/10.00 profile/MIDP-2.1 configuration/CLDC'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SGH-A937
     marketingName: SGH-A937
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -549,13 +547,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Brew
-    marketingName: Brew
-    version: 5.0.3
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Brew
+    marketingName: Brew
+    version: 5.0.3
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Presto
     version: 2.4.15
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'SAMSUNG-SGH-A967/A967UCKH5 BMP/1.0.3 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLD-1.1 Opera/9.80 (BREW 5.0.4; Opera Mobi/BP96; U; en; SGH-A967/A967UCKH5) Presto/2.5.28 Version/10.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SGH-A967
     marketingName: SGH-A967
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -587,13 +585,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Brew
-    marketingName: Brew
-    version: 5.0.4
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Brew
+    marketingName: Brew
+    version: 5.0.4
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Presto
     version: 2.5.28
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 4.0; ) Opera, SAMSUNG-SGH-I637/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/4.0 UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SGH-I637
     marketingName: Jack
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -625,13 +623,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Presto
     version: null
@@ -648,13 +648,11 @@
   headers:
     user-agent: 'SAMSUNG-SGH-L810-Vodafone/L810ACIB1 SHP/VPP/R5 Opera/9.5 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SGH-L810
     marketingName: SGH-L810
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -663,13 +661,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -677,7 +671,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Presto
     version: null
@@ -686,13 +686,11 @@
   headers:
     user-agent: 'SAMSUNG-SPH-M7200/(null)ID4 (compatible; MSIE 6.0; Windows CE; PPC) Opera 9.5'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SPH-M7200
     marketingName: SPH-M7200
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -701,13 +699,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -715,7 +709,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Presto
     version: null
@@ -724,13 +724,11 @@
   headers:
     user-agent: 'SAMSUNG-SPH-M7350/(null)ID4 (compatible; MSIE 6.0; Windows CE; PPC) Opera 9.5'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SPH-M7350
     marketingName: 'OZ Omnia'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -739,13 +737,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -753,7 +747,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Presto
     version: null
@@ -762,13 +762,11 @@
   headers:
     user-agent: 'Opera/9.70 (BREW 4.0.3; U; en; Samsung; Opera Mobi; Presto/2.2.1/INT) Sprint M850 SprintTitan/OSGi-4.1 Profile/MIDP-2.1 Configuration/CDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SPH-M850
     marketingName: 'Instinct HD (Sprint)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 1
     display:
       width: 480
       height: 320
@@ -777,13 +775,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Brew
-    marketingName: Brew
-    version: 4.0.3
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -791,7 +785,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Brew
+    marketingName: Brew
+    version: 4.0.3
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Presto
     version: 2.2.1
@@ -800,13 +800,11 @@
   headers:
     user-agent: 'SAMSUNG-GT-B7350/1.0 Opera/9.80 (Windows Mobile; Windows CE; Opera Mobi/ORS-75XXX; U) Presto/2, 4, 13 Version/10.00'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-B7350
     marketingName: 'Omnia Pro 4'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 320
@@ -815,13 +813,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -829,7 +823,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Presto
     version: 2.0.0
@@ -838,13 +838,11 @@
   headers:
     user-agent: 'SAMSUNG-S8000/S8000BOIK6 SHP/VPP/R5 Opera/9.5 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-S8000
     marketingName: Jet
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -853,13 +851,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -867,7 +861,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Presto
     version: null
@@ -876,13 +876,11 @@
   headers:
     user-agent: 'Vodafone/1.0/SAMSUNG-GT-B7610/NBUIK1 Browser/Opera/9.5 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-B7610
     marketingName: Louvre
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -891,13 +889,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -905,7 +899,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Presto
     version: null
@@ -914,13 +914,11 @@
   headers:
     user-agent: 'SAMSUNG-SGH-i780/1.0 (compatible; MSIE 6.0; Windows CE; PPC) Opera 8.65'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SGH-I780
     marketingName: SGH-I780
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -929,13 +927,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -943,7 +937,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Presto
     version: null
@@ -952,13 +952,11 @@
   headers:
     user-agent: 'SAMSUNG-GT-B7610/1.0 Opera 9.5'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-B7610
     marketingName: Louvre
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -967,13 +965,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -981,7 +975,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Presto
     version: null
@@ -990,13 +990,11 @@
   headers:
     user-agent: 'samsung-sgh-i900v/amhk1 opera 9.5'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SGH-I900V
     marketingName: Omnia
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -1005,13 +1003,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -1019,7 +1013,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Presto
     version: null
@@ -1028,13 +1028,11 @@
   headers:
     user-agent: 'SAMSUNG-S8300/S8300BOIH3 SHP/VPP/R5 Opera/9.5 NexPlayer/2.9.1 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-S8300
     marketingName: 'Ultra Touch'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -1043,13 +1041,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -1057,7 +1051,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Presto
     version: null
@@ -1066,13 +1066,11 @@
   headers:
     user-agent: 'SAMSUNG-SGH-i900/AKHJ1 profile/MIDP-2.0 configuration/CLDC-1.1 Opera 9.5'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SGH-I900
     marketingName: Omnia
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -1081,13 +1079,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -1095,7 +1089,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Presto
     version: null
@@ -1104,13 +1104,11 @@
   headers:
     user-agent: 'SAMSUNG-GT-i8000T Opera 9.5'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-I8000T
     marketingName: 'Omnia II'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -1119,13 +1117,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -1133,7 +1127,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Presto
     version: null
@@ -1142,13 +1142,11 @@
   headers:
     user-agent: 'SAMSUNG-GT-B7620/1.0 Browser/Opera/9.5 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-B7620
     marketingName: 'Giorgio Armani'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -1157,13 +1155,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -1171,7 +1165,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Presto
     version: null
@@ -1180,13 +1180,11 @@
   headers:
     user-agent: 'Opera/9.5 (Microsoft Windows; Windows CE; Opera Mobi/9.5; U; en) 480x800 SAMSUNG SCH-i920 PPC'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SCH-i920
     marketingName: 'Omnia II'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -1195,13 +1193,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -1209,7 +1203,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Presto
     version: null
@@ -1218,13 +1218,11 @@
   headers:
     user-agent: 'SAMSUNG-GT-C3322i Opera/9.80 (X11; Linux zvav; U; xx) Presto/2.8.119 Version/11.10'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-C3322I
     marketingName: 'Metro Duos'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -1233,13 +1231,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -1247,7 +1241,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Presto
     version: 2.8.119
@@ -1256,13 +1256,11 @@
   headers:
     user-agent: 'SAMSUNG-GT-S5611 Opera/9.80 (X11; Linux zvav; U; xx) Presto/2.8.119 Version/11.10'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-S5611
     marketingName: GT-S5611
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -1271,13 +1269,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -1285,7 +1279,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Presto
     version: 2.8.119

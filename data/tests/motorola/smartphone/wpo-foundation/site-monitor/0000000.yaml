@@ -11,13 +11,11 @@
     sec-ch-ua-mobile: '?1'
     user-agent: 'Mozilla/5.0 (Linux; Android 8.1.0; Moto G (4)) AppleWebKit/537.36 (KHTML like Gecko) Chrome/100.0.4896.60 Mobile Safari/537.36 PTST/240201.144844'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G Power (2022)'
     marketingName: 'Moto G Power (2022)'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -26,12 +24,8 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: 64
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
+    dualOrientation: true
+    simCount: 1
     bits: 64
   client:
     name: WebPageTest
@@ -40,6 +34,12 @@
     manufacturer: wpo-foundation
     type: site-monitor
     isbot: true
+    bits: 64
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
     bits: 64
   engine:
     name: Blink

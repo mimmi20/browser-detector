@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Opera/8.01 (J2ME/MIDP; Opera Mini/1.1.3314/hifi/tmobile/cz; Siemens ME75; cs; U; ssr)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: ME75
     marketingName: ME75
     manufacturer: siemens
     brand: siemens
-    dualOrientation: false
-    simCount: 1
     display:
       width: 176
       height: 132
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mini'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: opera
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Presto
     version: null

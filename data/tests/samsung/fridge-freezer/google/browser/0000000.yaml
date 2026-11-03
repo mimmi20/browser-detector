@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG Family Hub 4.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Family Hub'
     marketingName: 'Family Hub'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: fridge-freezer
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Tizen
-    marketingName: Tizen
-    version: 4.0.0
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Tizen
+    marketingName: Tizen
+    version: 4.0.0
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Blink
     version: 56.0.2924.0

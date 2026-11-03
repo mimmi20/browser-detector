@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (MeeGo) AppleWebKit/534.34 (KHTML, like Gecko) HeliumMobileBrowser/1.0.0 Mobile Safari/534.34'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: MeeGo
-    marketingName: MeeGo
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: HeliumMobileBrowser
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: orange-labs
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: MeeGo
+    marketingName: MeeGo
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 534.34.0

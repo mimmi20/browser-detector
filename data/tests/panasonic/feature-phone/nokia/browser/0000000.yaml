@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Panasonic-X800/1.0 SymbianOS/7.0 Series60/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X800
     marketingName: X800
     manufacturer: panasonic
     brand: panasonic
-    dualOrientation: false
-    simCount: 1
     display:
       width: 208
       height: 176
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Series 60'
-    marketingName: 'Series 60'
-    version: 2.0.0
-    manufacturer: nokia
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia OSS Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Series 60'
+    marketingName: 'Series 60'
+    version: 2.0.0
+    manufacturer: nokia
+    bits: 0
   engine:
     name: null
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Panasonic-X701/1.0 SymbianOS/7.0 Series60/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X701
     marketingName: X701
     manufacturer: panasonic
     brand: panasonic
-    dualOrientation: false
-    simCount: 1
     display:
       width: 208
       height: 176
@@ -55,13 +53,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Series 60'
-    marketingName: 'Series 60'
-    version: 2.0.0
-    manufacturer: nokia
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia OSS Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Series 60'
+    marketingName: 'Series 60'
+    version: 2.0.0
+    manufacturer: nokia
+    bits: 0
   engine:
     name: null
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Panasonic-X700/1.0 SymbianOS/7.0 Series60/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X700
     marketingName: X700
     manufacturer: panasonic
     brand: panasonic
-    dualOrientation: false
-    simCount: 1
     display:
       width: 208
       height: 176
@@ -93,13 +91,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Series 60'
-    marketingName: 'Series 60'
-    version: 2.0.0
-    manufacturer: nokia
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia OSS Browser'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Series 60'
+    marketingName: 'Series 60'
+    version: 2.0.0
+    manufacturer: nokia
+    bits: 0
   engine:
     name: null
     version: null

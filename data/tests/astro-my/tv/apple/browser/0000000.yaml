@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Astro;AS620SM;2.2) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0 Safari/605.1.15'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AS620SM
     marketingName: AS620SM
     manufacturer: astro-my
     brand: astro-my
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Astro;AS630SM;2.2) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0 Safari/605.1.15'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AS630SM
     marketingName: AS630SM
     manufacturer: astro-my
     brand: astro-my
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Astro;KSTB6112;2.2) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0 Safari/605.1.15'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KSTB6112
     marketingName: KSTB6112
     manufacturer: astro-my
     brand: astro-my
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -93,13 +91,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (LG-C195 AppleWebkit/531 Browser/Phantom/V2.0 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C195
     marketingName: C195
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Phantom Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: WebKit
     version: 531.0.0
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (LG-C199 AppleWebkit/531 Browser/Phantom/V2.0 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C199
     marketingName: C199
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -55,13 +53,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Phantom Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: WebKit
     version: 531.0.0
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (LG-T580 AppleWebkit/531 Browser/Phantom/V2.0 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: T580
     marketingName: T580
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -93,13 +91,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Phantom Browser'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: WebKit
     version: 531.0.0
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (LG-T500 AppleWebkit/531 Browser/Phantom/V2.0 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: T500
     marketingName: Ego
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -131,13 +129,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Phantom Browser'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: WebKit
     version: 531.0.0
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (LG-T385 AppleWebkit/531 Browser/Phantom/V2.0 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: T385
     marketingName: T385
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -169,13 +167,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Phantom Browser'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: WebKit
     version: 531.0.0
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (LG-C205 AppleWebkit/531 Browser/Phantom/V2.0 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C205
     marketingName: C205
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -207,13 +205,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Phantom Browser'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: WebKit
     version: 531.0.0
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (LG-C330 AppleWebkit/531 Browser/Phantom/V2.0 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C330
     marketingName: Etna
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -245,13 +243,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Phantom Browser'
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: WebKit
     version: 531.0.0
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (LG-C333 AppleWebkit/531 Browser/Phantom/V2.0 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C333
     marketingName: 'Tri Chip'
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -283,13 +281,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Phantom Browser'
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: WebKit
     version: 531.0.0
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (LG-C360 AppleWebkit/531 Browser/Phantom/V2.0 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C360
     marketingName: C360
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -321,13 +319,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Phantom Browser'
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: WebKit
     version: 531.0.0
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (LG-C365 AppleWebkit/531 Browser/Phantom/V2.0 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C365
     marketingName: C365
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -359,13 +357,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Phantom Browser'
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: WebKit
     version: 531.0.0
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (LG-C370 AppleWebkit/531 Browser/Phantom/V2.0 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C370
     marketingName: C370
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 480
       height: 320
@@ -397,13 +395,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Phantom Browser'
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: WebKit
     version: 531.0.0
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (LG-C375 AppleWebkit/531 Browser/Phantom/V2.0 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C375
     marketingName: 'Cookie Tweet'
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -435,13 +433,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Phantom Browser'
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: WebKit
     version: 531.0.0
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (LG-T370 AppleWebkit/531 Browser/Phantom/V2.0 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: T370
     marketingName: 'Cookie Smart'
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -473,13 +471,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Phantom Browser'
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: WebKit
     version: 531.0.0
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (LG-T375 AppleWebkit/531 Browser/Phantom/V2.0 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: T375
     marketingName: 'Cookie Smart'
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -511,13 +509,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Phantom Browser'
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: WebKit
     version: 531.0.0
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (LG-T395 AppleWebkit/531 Browser/Phantom/V2.0 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: T395
     marketingName: 'Cookie Smart'
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -549,13 +547,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Phantom Browser'
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: WebKit
     version: 531.0.0
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (LG-T505 AppleWebkit/531 Browser/Phantom/V2.0 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 Java/A'
   device:
-    architecture: null
+    architecture: ''
     deviceName: T505
     marketingName: Ego
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -587,13 +585,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Phantom Browser'
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: WebKit
     version: 531.0.0
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (LG-T510 AppleWebkit/531 Browser/Phantom/V2.0 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: T510
     marketingName: T510
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -625,13 +623,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Phantom Browser'
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: WebKit
     version: 531.0.0
@@ -648,13 +648,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (LG-T515 AppleWebkit/531 Browser/Phantom/V2.0 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: T515
     marketingName: 'Cookie Duo'
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -663,13 +661,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Phantom Browser'
     modus: null
@@ -677,7 +671,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: WebKit
     version: 531.0.0
@@ -686,13 +686,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (LG-T530-Orange/V10b AppleWebkit/531 Browser/Phantom/V2.0 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: T530
     marketingName: Ego
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -701,13 +699,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Phantom Browser'
     modus: null
@@ -715,7 +709,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: WebKit
     version: 531.0.0
@@ -724,13 +724,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (LG-T565 AppleWebkit/531 Browser/Phantom/V2.0 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: T565
     marketingName: T565
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -739,13 +737,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Phantom Browser'
     modus: null
@@ -753,7 +747,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: WebKit
     version: 531.0.0
@@ -762,13 +762,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (LG-T565b AppleWebkit/531 Browser/Phantom/V2.0 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: T565b
     marketingName: T565b
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -777,13 +775,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Phantom Browser'
     modus: null
@@ -791,7 +785,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: WebKit
     version: 531.0.0
@@ -800,13 +800,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (LG-T585 AppleWebkit/531 Browser/Phantom/V2.0 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: T585
     marketingName: T585
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -815,13 +813,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Phantom Browser'
     modus: null
@@ -829,7 +823,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: WebKit
     version: 531.0.0
@@ -838,13 +838,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (LG-C193 AppleWebkit/531 Browser/Phantom/V2.0 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C193
     marketingName: C193
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -853,13 +851,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Phantom Browser'
     modus: null
@@ -867,7 +861,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: WebKit
     version: 531.0.0
@@ -876,13 +876,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (LG-T505 AppleWebkit/531 Browser/Phantom/V2.0 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: T505
     marketingName: Ego
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -891,13 +889,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Phantom Browser'
     modus: null
@@ -905,7 +899,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: WebKit
     version: 531.0.0
@@ -914,13 +914,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (LG-C397 AppleWebkit/531 Browser/Phantom/V2.0 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C397
     marketingName: C397
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -929,13 +927,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Phantom Browser'
     modus: null
@@ -943,7 +937,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: WebKit
     version: 531.0.0
@@ -952,13 +952,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (LG-T595 AppleWebkit/531 Browser/Phantom/V2.0 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: T595
     marketingName: T595
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -967,13 +965,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Phantom Browser'
     modus: null
@@ -981,7 +975,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: WebKit
     version: 531.0.0
@@ -990,13 +990,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (LG-C207 AppleWebkit/531 Browser/Phantom/V2.0 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C207
     marketingName: C207
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -1005,13 +1003,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Phantom Browser'
     modus: null
@@ -1019,7 +1013,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: WebKit
     version: 531.0.0

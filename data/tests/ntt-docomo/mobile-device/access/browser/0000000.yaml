@@ -2,13 +2,11 @@
   headers:
     user-agent: 'DoCoMo/2.0 NetFront3.0(c100;TB)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general DoCoMo device'
     marketingName: 'general DoCoMo device'
     manufacturer: ntt-docomo
     brand: ntt-docomo
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: NetFront
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: access
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: NetFront
     version: 3.0.0
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'DoCoMo/2.0 NetFront3.0(c500;TB;W24H16)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general DoCoMo device'
     marketingName: 'general DoCoMo device'
     manufacturer: ntt-docomo
     brand: ntt-docomo
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: NetFront
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: access
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: NetFront
     version: 3.0.0

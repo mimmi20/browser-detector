@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; VIA X45 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/151.0.7922.97 Mobile Safari/537.36 Instagram 441.0.0.43.81 Android (34/14; 345dpi; 1080x2400; Casper; VIA X45; VIA_X45; mt6789; tr_TR; 1031695351; IABMV/1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Via X45'
     marketingName: 'Via X45'
     manufacturer: casper
     brand: casper
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 151.0.7922.97
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Instagram 441.0.0.43.81 Android (34/14; 345dpi; 2400x1080; Casper; VIA X45; VIA_X45; mt6789; tr_TR; 1031695351)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Via X45'
     marketingName: 'Via X45'
     manufacturer: casper
     brand: casper
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null

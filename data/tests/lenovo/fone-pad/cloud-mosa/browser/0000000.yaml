@@ -3,13 +3,11 @@
     x-puffin-ua: Android/LenovoA3300-HV/600x976
     user-agent: 'Mozilla/5.0 (X11; U; Linux x86_64; xx) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/30.0.1599.114 Safari/537.36 Puffin/4.2.0.1824AT'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A3300-HV
     marketingName: 'TAB A7-30 Wi-Fi + 3G'
     manufacturer: lenovo
     brand: lenovo
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1024
       height: 600
@@ -18,13 +16,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Puffin
     modus: null
@@ -32,7 +26,13 @@
     manufacturer: cloud-mosa
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 30.0.1599.114

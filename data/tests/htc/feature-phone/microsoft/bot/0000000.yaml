@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar C110e;7.10;8107)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Radar C110e'
     marketingName: 'Radar C110e'
     manufacturer: htc
     brand: htc
-    dualOrientation: false
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 7.10.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Windows Phone Search'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: microsoft
     type: bot
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 7.10.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Windows Phone Search (Windows Phone OS 7.10;HTC;TITAN X310e;7.10;8107)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X310e
     marketingName: Titan
     manufacturer: htc
     brand: htc
-    dualOrientation: false
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -55,13 +53,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 7.10.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Windows Phone Search'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: microsoft
     type: bot
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 7.10.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Mozart;7.10;8107)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: T8698
     marketingName: '7 Mozart'
     manufacturer: htc
     brand: htc
-    dualOrientation: false
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -93,13 +91,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 7.10.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Windows Phone Search'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: microsoft
     type: bot
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 7.10.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: null

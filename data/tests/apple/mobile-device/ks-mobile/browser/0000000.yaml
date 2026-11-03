@@ -2,13 +2,11 @@
   headers:
     user-agent: 'ksmobilebrowser/3.3.12572.1002 CFNetwork/758.2.8 Darwin/15.0.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 9.2.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'KS Mobile Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: ks-mobile
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 9.2.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 758.2.8
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'ksmobilebrowser/4.19.13490.500 CFNetwork/893.14.2 Darwin/17.3.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 11.2.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'KS Mobile Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: ks-mobile
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 11.2.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 893.14.2

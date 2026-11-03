@@ -16,8 +16,6 @@
     marketingName: 'Surface Pro'
     manufacturer: microsoft
     brand: microsoft
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -26,12 +24,8 @@
     type: tablet
     ismobile: false
     istv: false
-    bits: 64
-  os:
-    name: Windows
-    marketingName: 'Windows 11'
-    version: 11.0.0
-    manufacturer: microsoft
+    dualOrientation: true
+    simCount: 0
     bits: 64
   client:
     name: Chrome
@@ -40,6 +34,12 @@
     manufacturer: google
     type: browser
     isbot: false
+    bits: 64
+  os:
+    name: Windows
+    marketingName: 'Windows 11'
+    version: 11.0.0
+    manufacturer: microsoft
     bits: 64
   engine:
     name: Blink

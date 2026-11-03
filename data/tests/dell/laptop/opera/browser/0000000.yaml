@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; Dell Chromebook 11 (3180)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36 OPR/54.1.2672.49808'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Chromebook 11 (3180)'
     marketingName: 'Chromebook 11 (3180)'
     manufacturer: dell
     brand: dell
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1366
       height: 768
@@ -17,13 +15,9 @@
     type: laptop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: ChromeOS
-    marketingName: ChromeOS
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: ChromeOS
+    marketingName: ChromeOS
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 76.0.3809.132

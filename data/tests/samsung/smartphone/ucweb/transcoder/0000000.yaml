@@ -2,13 +2,11 @@
   headers:
     user-agent: 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; GT-S6812) U2/1.0.0 UCBrowser/9.0.0.366 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-S6812
     marketingName: 'Galaxy Fame Duos'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 480
       height: 320
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'UCWEB/2.0 (Windows; U; wds 7.10; en-US; SAMSUNG; SGH-i917) U2/1.0.0 UCBrowser/3.2.0.340 U2/1.0.0 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SGH-I917
     marketingName: Focus
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 7.10.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 7.10.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'UCWEB/2.0 (Java; U; MIDP-2.0; xx; SAMSUNG-GT-S5250) U2/1.0.0 UCBrowser/9.5.0.449 U2/1.0.0 Mobile UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-S5250
     marketingName: 'Wave 525'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -93,13 +91,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'UCWEB/2.0 (Windows; U; wds 7.10; en-US; SAMSUNG; GT-I8350) U2/1.0.0 UCBrowser/3.2.0.340 U2/1.0.0 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-I8350
     marketingName: 'Omnia W'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -131,13 +129,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 7.10.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 7.10.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'UCWEB/2.0(Linux; U; Opera Mini/7.1.32052/30.3697; en-us; GT-S5670 Build/GINGERBREAD) U2/1.0.0 UCBrowser/9.4.1.362 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-S5670
     marketingName: 'Galaxy Fit'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -169,13 +167,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 2.3.6; en-US; GT-I9300 Build/MocorDroid2.2.2) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.2.0.535 U3/0.8.0 Mobile Safari/534.30'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-I9300
     marketingName: 'Galaxy S3'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 720
@@ -207,13 +205,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: MocorDroid
-    marketingName: MocorDroid
-    version: 2.2.2
-    manufacturer: unknown
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: MocorDroid
+    marketingName: MocorDroid
+    version: 2.2.2
+    manufacturer: unknown
+    bits: 0
   engine:
     name: U3
     version: 0.8.0
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; ru; SHV-E210K) U2/1.0.0 UCBrowser/9.8.0.534 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SHV-E210K
     marketingName: 'Galaxy S3 (Korea KT)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 720
@@ -245,13 +243,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; SM-A500F Build/LRX22G) U2/1.0.0 UCBrowser/10.6.8.732 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A500F
     marketingName: 'Galaxy A5 (Global)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 720
@@ -283,13 +281,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; GT-S6312 Build/JZO54K) U2/1.0.0 UCBrowser/10.2.0.584 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-S6312
     marketingName: 'Galaxy Young Duos'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 480
       height: 320
@@ -321,13 +319,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'UCWEB/2.0(Linux; U; Opera Mini/7.1.32052/30.3697; en-US; GT-I8190 Build/JZO54K) U2/1.0.0 UCBrowser/10.5.2.582 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-I8190
     marketingName: 'Galaxy S3 Mini'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -359,13 +357,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'UCWEB/2.0(Linux; U; Opera Mini/7.1.32052/30.3697; en-US; GT-I9100 Build/JZO54K) U2/1.0.0 UCBrowser/10.5.0.575 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-I9100
     marketingName: 'Galaxy S2'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -397,13 +395,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; GT-I8160P Build/JZO54K) U2/1.0.0 UCBrowser/10.1.4.573 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-I8160P
     marketingName: 'Galaxy Ace 2 NFC'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -435,13 +433,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'UCWEB/2.0(Linux; U; Opera Mini/7.1.32052/30.3697; en-US; SM-G903F Build/LMY47X) U2/1.0.0 UCBrowser/10.7.5.658 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G903F
     marketingName: 'Galaxy S5 Neo'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1080
@@ -473,13 +471,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'UCWEB/2.0(Linux; U; Opera Mini/7.1.32052/30.3697; en-US; GT-I9205 Build/KOT49H) U2/1.0.0 UCBrowser/10.6.2.599 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-I9205
     marketingName: 'Galaxy Mega 6.3'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 720
@@ -511,13 +509,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; GT-I9300) U2/1.0.0 UCBrowser/9.7.0.520 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-I9300
     marketingName: 'Galaxy S3'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 720
@@ -549,13 +547,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; GT-I9070 Build/JZO54K) U2/1.0.0 UCBrowser/10.3.0.622 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-I9070
     marketingName: 'Galaxy S Advance'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -587,13 +585,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'UCWEB/2.0(Linux; U; Opera Mini/7.1.32052/30.3697; en-US; GT-S6500D Build/KTU84Q) U2/1.0.0 UCBrowser/10.10.8.820 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-S6500D
     marketingName: 'Galaxy Mini 2'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 480
       height: 320
@@ -625,13 +623,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -648,13 +648,11 @@
   headers:
     user-agent: 'UCWEB/2.0(Linux; U; Opera Mini/7.1.32052/30.3697; en-US; SM-J110H Build/KTU84P) U2/1.0.0 UCBrowser/11.0.5.850 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-J110H
     marketingName: 'Galaxy J1 Ace LTE'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 800
       height: 480
@@ -663,13 +661,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -677,7 +671,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -686,13 +686,11 @@
   headers:
     user-agent: 'UCWEB/2.0(Linux; U; Opera Mini/7.1.32052/30.3697; en-US; SM-G900F Build/MMB29M) U2/1.0.0 UCBrowser/11.0.8.855 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G900F
     marketingName: 'Galaxy S5 LTE'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1080
@@ -701,13 +699,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -715,7 +709,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -724,13 +724,11 @@
   headers:
     user-agent: 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; SM-J200G Build/LMY47X) U2/1.0.0 UCBrowser/10.7.9.856 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-J200G
     marketingName: 'Galaxy J2 4G Duos'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 960
       height: 540
@@ -739,13 +737,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -753,7 +747,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -762,13 +762,11 @@
   headers:
     user-agent: SAMSUNG-GT-I8350/UCWEB2.0.0.149/47/32079
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-I8350
     marketingName: 'Omnia W'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -777,13 +775,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -791,7 +785,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: null
     version: null
@@ -800,13 +800,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Java; U; Pt-br; samsung-gt-s5250) UCBrowser8.2.0.132/69/352/UCWEB Mobile UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-S5250
     marketingName: 'Wave 525'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -815,13 +813,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -829,7 +823,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -838,13 +838,11 @@
   headers:
     user-agent: 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; samsung-gt-s5380) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-S5380
     marketingName: 'Wave Y'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 480
       height: 320
@@ -853,13 +851,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -867,7 +861,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -876,13 +876,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Java; U; Pt-br; samsung-gt-s5380b) AppleWebKit/530.13 (KHTML, like Gecko) UCBrowser/8.5.0.185/83/352/UCWEB Mobile UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-S5380B
     marketingName: 'Wave Y'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 480
       height: 320
@@ -891,13 +889,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -905,7 +899,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: WebKit
     version: 530.13.0
@@ -914,13 +914,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Java; U; Pt-br; samsung-gt-s5380d) UCBrowser8.4.0.159/69/352/UCWEB Mobile UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-S5380D
     marketingName: 'Wave Y'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 480
       height: 320
@@ -929,13 +927,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -943,7 +937,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -952,13 +952,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Java; U; ru; samsung-gt-s5380f) UCBrowser8.3.0.154/69/352/UCWEB Mobile UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-S5380F
     marketingName: 'Wave Y'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 480
       height: 320
@@ -967,13 +965,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -981,7 +975,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -990,13 +990,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Java; U; ru; samsung-gt-s5380g) UCBrowser8.4.0.159/70/352/UCWEB Mobile UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-S5380G
     marketingName: 'Wave Y'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 480
       height: 320
@@ -1005,13 +1003,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1019,7 +1013,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1028,13 +1028,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Java; U; Id; samsung-gt-s5380k) UCBrowser8.3.0.154/69/444/UCWEB Mobile UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-S5380K
     marketingName: 'Wave Y'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 480
       height: 320
@@ -1043,13 +1041,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1057,7 +1051,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1066,13 +1066,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Java; U; Pt-br; samsung-gt-s7230b) AppleWebKit/530.13 (KHTML, like Gecko) UCBrowser/8.5.0.185/82/405/UCWEB Mobile UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-S7230B
     marketingName: 'Wave 723'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -1081,13 +1079,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1095,7 +1089,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: WebKit
     version: 530.13.0
@@ -1104,13 +1104,11 @@
   headers:
     user-agent: 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; SAMSUNG-GT-S7230E) U2/1.0.0 UCBrowser/9.3.0.326 U2/1.0.0 Mobile UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-S7230E
     marketingName: 'Wave 723'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -1119,13 +1117,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1133,7 +1127,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -1142,13 +1142,11 @@
   headers:
     user-agent: 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; samsung-gt-s8500) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-S8500
     marketingName: 'Wave 2'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -1157,13 +1155,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1171,7 +1165,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -1180,13 +1180,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Java; U; en-in; samsung-gt-s8530) UCBrowser8.2.1.144/70/352/UCWEB Mobile UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-S8530
     marketingName: 'Wave 2'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -1195,13 +1193,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1209,7 +1203,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1218,13 +1218,11 @@
   headers:
     user-agent: SAMSUNG-SGH-i677/UCWEB2.0.0.149/47/32079
   device:
-    architecture: null
+    architecture: ''
     deviceName: SGH-I677
     marketingName: 'Focus Flash'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -1233,13 +1231,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1247,7 +1241,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: null
     version: null
@@ -1256,13 +1256,11 @@
   headers:
     user-agent: SAMSUNG-SGH-I917/UCWEB2.4.0.188/47/999
   device:
-    architecture: null
+    architecture: ''
     deviceName: SGH-I917
     marketingName: Focus
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -1271,13 +1269,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1285,7 +1279,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: null
     version: null
@@ -1294,13 +1294,11 @@
   headers:
     user-agent: SAMSUNG-SGH-i937/UCWEB2.2.0.157/47/32079
   device:
-    architecture: null
+    architecture: ''
     deviceName: SGH-I937
     marketingName: 'Focus S'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -1309,13 +1307,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1323,7 +1317,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: null
     version: null
@@ -1332,13 +1332,11 @@
   headers:
     user-agent: 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.2697; en-US; GT-S5302) U2/1.0.0 UCBrowser/9.3.0.440 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-S5302
     marketingName: 'Galaxy Pocket Duos'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -1347,13 +1345,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1361,7 +1355,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -1370,13 +1370,11 @@
   headers:
     user-agent: 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; ; GT-S7580) U2/1.0.0 UCBrowser/9.8.0.534 Mobile AppEngine-Google; (+http://code.google.com/appengine; appid: s~dedekuntoro13)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-S7580
     marketingName: 'Trend Plus'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -1385,13 +1383,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1399,7 +1393,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -1408,13 +1408,11 @@
   headers:
     user-agent: 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; SM-A700FD Build/KTU84P) U2/1.0.0 UCBrowser/10.9.2.962 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A700FD
     marketingName: 'Galaxy A7 LTE Duos'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1920
       height: 1080
@@ -1423,13 +1421,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1437,7 +1431,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -1446,13 +1446,11 @@
   headers:
     user-agent: 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; GT-S6102) U2/1.0.0 UCBrowser/9.2.0.419 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-S6102
     marketingName: 'Galaxy Y Duos'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -1461,13 +1459,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1475,7 +1469,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -1484,13 +1484,11 @@
   headers:
     user-agent: 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; GT-S5301) U2/1.0.0 UCBrowser/9.2.0.419 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-S5301
     marketingName: 'Galaxy Pocket Plus'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -1499,13 +1497,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1513,7 +1507,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -1522,13 +1522,11 @@
   headers:
     user-agent: 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; GT-S6810P) U2/1.0.0 UCBrowser/9.2.0.419 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-S6810P
     marketingName: 'Galaxy Fame (NFC)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 480
       height: 320
@@ -1537,13 +1535,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1551,7 +1545,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -1560,13 +1560,11 @@
   headers:
     user-agent: 'UCWEB/2.0(Linux; U; Opera Mini/7.1.32052/30.3697; en-us; GT-S6102) U2/1.0.0 UCBrowser/9.4.0.347 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-S6102
     marketingName: 'Galaxy Y Duos'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -1575,13 +1573,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1589,7 +1583,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -1598,13 +1598,11 @@
   headers:
     user-agent: 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; SM-J110H Build/KTU84P) U2/1.0.0 UCBrowser/10.9.2.962 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-J110H
     marketingName: 'Galaxy J1 Ace LTE'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 800
       height: 480
@@ -1613,13 +1611,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1627,7 +1621,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -1636,13 +1636,11 @@
   headers:
     user-agent: 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; SAMSUNG-GT-S5380K) U2/1.0.0 UCBrowser/9.4.1.377 U2/1.0.0 Mobile UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-S5380K
     marketingName: 'Wave Y'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 480
       height: 320
@@ -1651,13 +1649,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1665,7 +1659,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -1674,13 +1674,11 @@
   headers:
     user-agent: 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; SAMSUNG-GT-S5380D) U2/1.0.0 UCBrowser/9.5.0.449 U2/1.0.0 Mobile UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-S5380D
     marketingName: 'Wave Y'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 480
       height: 320
@@ -1689,13 +1687,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1703,7 +1697,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -1712,13 +1712,11 @@
   headers:
     user-agent: 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; SAMSUNG-GT-S8530) U2/1.0.0 UCBrowser/9.5.0.449 U2/1.0.0 Mobile UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-S8530
     marketingName: 'Wave 2'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -1727,13 +1725,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1741,7 +1735,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -1750,13 +1750,11 @@
   headers:
     user-agent: 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; GT-S5603) U2/1.0.0 UCBrowser/9.5.0.449 U2/1.0.0 Mobile UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-S5603
     marketingName: 'Galaxy Star 3G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -1765,13 +1763,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1779,7 +1773,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -1788,13 +1788,11 @@
   headers:
     user-agent: SAMSUNG-OMNIA7/UCWEB2.4.0.188/47/32079
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-I8700
     marketingName: 'Omnia 7'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -1803,13 +1801,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1817,7 +1811,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: null
     version: null
@@ -1829,13 +1829,11 @@
     x-ucbrowser-device: 'samsung#-GT-S5250'
     user-agent: 'UCWEB/2.0 (Java; U; MIDP-2.0; xx; SAMSUNG-GT-S5250) U2/1.0.0 UCBrowser/9.5.0.449 U2/1.0.0 Mobile UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-S5250
     marketingName: 'Wave 525'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -1844,13 +1842,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1858,7 +1852,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -1870,13 +1870,11 @@
     x-ucbrowser-device: 'samsung#-gt-s5380d'
     user-agent: 'Mozilla/5.0 (Windows; U; Windows NT 6.0; xx; Desktop) AppleWebKit/534.13 (KHTML, like Gecko) UCBrowser/9.2.0.311 UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-S5380D
     marketingName: 'Wave Y'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 480
       height: 320
@@ -1885,13 +1883,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1899,7 +1893,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -1911,13 +1911,11 @@
     x-ucbrowser-device: 'samsung#-GT-S5380K'
     user-agent: 'Mozilla/5.0 (Windows; U; Windows NT 6.0; xx; Desktop) AppleWebKit/534.13 (KHTML, like Gecko) UCBrowser/9.4.1.377 UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-S5380K
     marketingName: 'Wave Y'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 480
       height: 320
@@ -1926,13 +1924,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1940,7 +1934,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -1949,13 +1949,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 9; en-US; SM-G965F Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.11.2.1184 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G965F
     marketingName: 'Galaxy S9+ (Europe, Global)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2960
       height: 1440
@@ -1964,13 +1962,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1978,7 +1972,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 57.0.2987.108
@@ -1987,13 +1987,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 9; en-US; SM-J610FN Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.136 UCBrowser/12.9.7.1158 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-J610FN
     marketingName: 'Galaxy J6+ (2018)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1480
       height: 720
@@ -2002,13 +2000,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2016,7 +2010,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 74.0.3729.136
@@ -2025,13 +2025,11 @@
   headers:
     user-agent: 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; SM-G360G) U2/1.0.0 UCBrowser/9.7.0.520 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G360G
     marketingName: 'Galaxy Core Prime'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -2040,13 +2038,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2054,7 +2048,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -2063,13 +2063,11 @@
   headers:
     user-agent: 'UCWEB/2.0(Linux; U; Opera Mini/7.1.32052/30.3697; en-US; GT-S7262 Build/JZO54K) U2/1.0.0 UCBrowser/10.7.2.645 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-S7262
     marketingName: 'Galaxy Star Pro'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -2078,13 +2076,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2092,7 +2086,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -2101,13 +2101,11 @@
   headers:
     user-agent: 'UCWEB/2.0(Linux; U; Opera Mini/7.1.32052/30.3697; en-US; SM-G935F Build/MMB29K) U2/1.0.0 UCBrowser/10.9.0.731 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G935F
     marketingName: 'Galaxy S7 Edge (Global)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2560
       height: 1440
@@ -2116,13 +2114,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2130,7 +2124,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -2139,13 +2139,11 @@
   headers:
     user-agent: 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; GT-I9190 Build/JDQ39) U2/1.0.0 UCBrowser/10.7.9.856 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-I9190
     marketingName: 'Galaxy S4 Mini'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 960
       height: 540
@@ -2154,13 +2152,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2168,7 +2162,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -2177,13 +2177,11 @@
   headers:
     user-agent: 'UCWEB/2.0(Linux; U; Opera Mini/7.1.32052/30.3697; en-us; GT-I9060I Build/KTU84P) U2/1.0.0 UCBrowser/9.9.0.459 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT-I9060I
     marketingName: 'Galaxy Grand Neo Plus'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -2192,13 +2190,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2206,7 +2200,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -2215,13 +2215,11 @@
   headers:
     user-agent: 'UCWEB/2.0(Linux; U; Opera Mini/7.1.32052/30.3697; en-US; SM-J200G Build/LMY47X) U2/1.0.0 UCBrowser/10.5.2.582 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-J200G
     marketingName: 'Galaxy J2 4G Duos'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 960
       height: 540
@@ -2230,13 +2228,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2244,7 +2238,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -2253,13 +2253,11 @@
   headers:
     user-agent: 'UCWEB/2.0(Linux; U; Opera Mini/7.1.32052/30.3697; en-US; SHV-E160L Build/JZO54K) U2/1.0.0 UCBrowser/10.10.8.820 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SHV-E160L
     marketingName: 'Galaxy Note'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 800
@@ -2268,13 +2266,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2282,7 +2276,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -2291,13 +2291,11 @@
   headers:
     user-agent: 'UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; ; SM-J105B) U2/1.0.0 UCBrowser/9.6.0.514 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-J105B
     marketingName: 'Galaxy J1 Mini (2016)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -2306,13 +2304,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2320,7 +2314,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -2329,13 +2329,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 9; en-US; SM-A505FN Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.13.5.1209 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A505FN
     marketingName: 'Galaxy A50'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -2344,13 +2342,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2358,7 +2352,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 57.0.2987.108
@@ -2367,13 +2367,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 10; en-US; SM-G975F Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.12.9.1226 Mobile Safari/537.36 comdirect/1.0 (appVersion:20.3.0;deviceType:mobile)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G975F
     marketingName: 'Galaxy S10+ (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 3040
       height: 1440
@@ -2382,13 +2380,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2396,7 +2390,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 57.0.2987.108
@@ -2405,13 +2405,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 9; en-US; SM-A705FN Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/13.0.8.1291 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A705FN
     marketingName: 'Galaxy A70 (Global)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -2420,13 +2418,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2434,7 +2428,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 57.0.2987.108
@@ -2443,13 +2443,11 @@
   headers:
     user-agent: 'UCWEB/2.0 (Java; U; MIDP-2.0; Nokia203/20.37) U2/1.0.0 UCMini/11.0.6.1040 (SpeedMode; Proxy; Android 9; SM-C111 ) U2/1.0.0 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-C111
     marketingName: 'Galaxy K Zoom G3'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 720
@@ -2458,13 +2456,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser Mini'
     modus: null
@@ -2472,7 +2466,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -2481,13 +2481,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; SM-G960F Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.136 Mobile Safari/537.36 agentweb/4.0.2  UCBrowser/11.6.4.950 comdirect/1.0 (appVersion:20.9.0;deviceType:mobile)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G960F
     marketingName: 'Galaxy S9'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2960
       height: 1440
@@ -2496,13 +2494,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2510,7 +2504,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 74.0.3729.136
@@ -2519,13 +2519,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 10; en-US; SM-J610F Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.3.5.1304 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-J610F
     marketingName: 'Galaxy J6+ (2018)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1480
       height: 720
@@ -2534,13 +2532,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2548,7 +2542,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -2557,13 +2557,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 10; en-US; SM-M305M Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.3.5.1304 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-M305M
     marketingName: 'Galaxy M30'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -2572,13 +2570,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2586,7 +2580,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -2595,13 +2595,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 10; en-US; SM-M205F Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.3.2.1303 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-M205F
     marketingName: 'Galaxy M20 (India, Africa, Arabic)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -2610,13 +2608,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2624,7 +2618,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -2633,13 +2633,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 10; en-US; SM-A750GN Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.3.2.1303 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A750G
     marketingName: 'Galaxy A7 (2018)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2220
       height: 1080
@@ -2648,13 +2646,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2662,7 +2656,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -2671,13 +2671,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 10; en-US; SM-M205F Build/QP1A.190711.020) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/13.3.2.1303 (SpeedMode) U4/1.0 UCWEB/2.0 Mobile Safari/534.30'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-M205F
     marketingName: 'Galaxy M20 (India, Africa, Arabic)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -2686,13 +2684,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2700,7 +2694,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: U4
     version: 1.0.0
@@ -2709,13 +2709,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 11; en-US; SM-G996B Build/RP1A.200720.012) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.12.9.1226 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G996B
     marketingName: 'Galaxy S21+ 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -2724,13 +2722,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2738,7 +2732,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 57.0.2987.108
@@ -2747,13 +2747,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Mobile; Windows Phone 8.1; Android 4.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; SAMSUNG; SM-W750V) like iPhone OS 7_0_3 Mac OS X AppleWebKit/537 (KHTML, like Gecko) Mobile Safari/537 UCBrowser/4.2.1.541 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-W750V
     marketingName: 'Ativ SE'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1080
@@ -2762,13 +2760,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.1.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2776,7 +2770,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.1.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 7.0.0
@@ -2785,13 +2785,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 11; en-US; SM-A525F Build/RP1A.200720.012) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.3.8.1305 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A525F
     marketingName: 'Galaxy A52 4G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -2800,13 +2798,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2814,7 +2808,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -2823,13 +2823,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 12; en-US; SM-G973F Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.4.0.1306 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G973F
     marketingName: 'Galaxy S10 (Global)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 3040
       height: 1440
@@ -2838,13 +2836,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2852,7 +2846,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -2861,13 +2861,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 12; en-US; SM-G977N Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4887.155 UCBrowser/13.4.0.1306 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G977N
     marketingName: 'Galaxy S10 5G (Korea)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 3040
       height: 1440
@@ -2876,13 +2874,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2890,7 +2884,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 101.0.4887.155
@@ -2899,13 +2899,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 12; en-US; SM-G990B Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.4.0.1306 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G990B
     marketingName: 'Galaxy S21 FE 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -2914,13 +2912,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2928,7 +2922,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -2939,13 +2939,11 @@
     x-ucbrowser-ua: 'dv(SM-A536B);pr(UCBrowser/13.4.0.1306);ov(Android 13);ss(360*722);pi(1080*2168);bt(GJ);pm(1);bv(1);nm(0);im(0);sr(0);nt(2);bi(355);fi(145);dn(40731193682-1d66da77);ai(720089404747345);'
     user-agent: 'Mozilla/5.0 (Linux; U; Android 13; ar-SA; SM-A536B Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.4.0.1306 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A536B
     marketingName: 'Galaxy A53 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -2954,13 +2952,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -2968,7 +2962,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -2977,13 +2977,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 9; en-US; SM-M307F Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/13.2.0.1296 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-M307F
     marketingName: 'Galaxy M30s (India)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -2992,13 +2990,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -3006,7 +3000,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 57.0.2987.108
@@ -3015,13 +3015,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 14; SM-S9210 Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 UCBrowser/16.4.0.1291 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S9210
     marketingName: 'Galaxy S24 (China)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -3030,13 +3028,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -3044,7 +3038,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 100.0.4896.58
@@ -3053,13 +3053,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 11; en-US; SM-A8050 Build/RP1A.200720.012) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 UCBrowser/13.7.0.1319 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A8050
     marketingName: 'Galaxy A80 (2019)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -3068,13 +3066,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -3082,7 +3076,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 100.0.4896.58
@@ -3091,13 +3091,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 13; en-US; SM-E346B Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.5.8.1314 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-E346B
     marketingName: 'Galaxy F34 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -3106,13 +3104,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -3120,7 +3114,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -3129,13 +3129,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 14; en-US; SM-A546V Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 UCBrowser/13.7.5.1321 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A546V
     marketingName: 'Galaxy A54 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -3144,13 +3142,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -3158,7 +3152,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 100.0.4896.58
@@ -3167,13 +3167,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 10; en-US; SM-A750F Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 UCBrowser/13.7.8.1322 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A750F
     marketingName: 'Galaxy A7 (2018)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2220
       height: 1080
@@ -3182,13 +3180,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -3196,7 +3190,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 100.0.4896.58
@@ -3205,13 +3205,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 14; en-US; SM-M356B Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 UCBrowser/13.7.8.1322 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-M356B
     marketingName: 'Galaxy M35 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -3220,13 +3218,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -3234,7 +3228,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 100.0.4896.58
@@ -3243,13 +3243,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 15; en-US; SM-S921B Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/14.4.8.1356 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S921B
     marketingName: 'Galaxy S24'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -3258,13 +3256,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -3272,7 +3266,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.6312.80
@@ -3281,13 +3281,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 10; en-US; SM-G973F Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 UCBrowser/13.4.0.1305 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G973F
     marketingName: 'Galaxy S10 (Global)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 3040
       height: 1440
@@ -3296,13 +3294,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -3310,7 +3304,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: 537.36.0
@@ -3320,13 +3320,11 @@
     x-requested-with: com.uc.browser.en
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-A505FN Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.101 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A505FN
     marketingName: 'Galaxy A50'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -3335,13 +3333,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser Mini'
     modus: null
@@ -3349,7 +3343,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 98.0.4758.101
@@ -3358,13 +3358,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 9; en-US; SM-J727S Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 UCBrowser/13.7.5.1321 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-J727S
     marketingName: 'Galaxy J7 (2017)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 720
@@ -3373,13 +3371,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -3387,7 +3381,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 100.0.4896.58
@@ -3396,13 +3396,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; en-US; SM-S948W Build/BP4A.251205.006) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 UCBrowser/14.2.0.1345 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S948W
     marketingName: 'Galaxy S26 Ultra (Canada)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 3120
       height: 1440
@@ -3411,13 +3409,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -3425,7 +3419,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 100.0.4896.58
@@ -3434,13 +3434,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; en-US; SM-S948Q Build/BP4A.251205.006) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.9.1395 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S948Q
     marketingName: 'Galaxy S26 Ultra'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 3120
       height: 1440
@@ -3449,13 +3447,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -3463,7 +3457,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.6312.80
@@ -3472,13 +3472,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; en-US; SM-S937W Build/BP4A.251205.006) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.9.1395 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S937W
     marketingName: 'Galaxy S25 Edge (Canada)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 3120
       height: 1440
@@ -3487,13 +3485,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -3501,7 +3495,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.6312.80
@@ -3510,13 +3510,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; en-US; SM-S731U Build/BP4A.251205.006) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.9.1395 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S731U
     marketingName: 'Galaxy S25 FE (USA)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -3525,13 +3523,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -3539,7 +3533,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.6312.80
@@ -3548,13 +3548,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; en-US; SM-S721U1 Build/BP4A.251205.006) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.9.1395 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S721U1
     marketingName: 'Galaxy S24 FE (USA)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -3563,13 +3561,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -3577,7 +3571,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.6312.80
@@ -3586,13 +3586,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; en-US; SM-F966Z Build/BP4A.251205.006) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.8.1394 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-F966Z
     marketingName: 'Galaxy Z Fold 7'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2184
       height: 1968
@@ -3601,13 +3599,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -3615,7 +3609,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.6312.80
@@ -3624,13 +3624,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; en-US; SM-F766U1 Build/BP4A.251205.006) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.9.1395 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-F766U1
     marketingName: 'Galaxy Z Flip 7 5G (USA)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2520
       height: 1080
@@ -3639,13 +3637,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -3653,7 +3647,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.6312.80
@@ -3662,13 +3662,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; en-US; SM-A253C Build/BP2A.250605.031.A3) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.9.1395 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A253C
     marketingName: 'Galaxy A25 5G (Japan)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -3677,13 +3675,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -3691,7 +3685,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.6312.80
@@ -3700,13 +3700,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; en-US; SCG33 Build/BP2A.250605.031.A3) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.9.1395 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SCG33
     marketingName: 'Galaxy A25 5G (Japan)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -3715,13 +3713,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -3729,7 +3723,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.6312.80
@@ -3738,13 +3738,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 14; en-US; SM-A145FB Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.9.1395 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A145FB
     marketingName: 'Galaxy A14 4G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2408
       height: 1080
@@ -3753,13 +3751,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -3767,7 +3761,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.6312.80
@@ -3776,13 +3776,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 11; es-LA; SM-A305G Build/RP1A.200720.012) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 UCBrowser/12.3.0.1290 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A305G
     marketingName: 'Galaxy A30'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -3791,13 +3789,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -3805,7 +3799,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91

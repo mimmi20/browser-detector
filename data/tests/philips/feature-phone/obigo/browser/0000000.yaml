@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Philips292 / Obigo Browser 2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '292'
     marketingName: '292'
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: Obigo
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: obigo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Teleca
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Philips9@9k/R08 NXP5210/DV7 Release/9.12.2007 Mozilla/Obigo/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 9@9k
     marketingName: 9@9k
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -55,13 +53,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: Obigo
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: obigo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Teleca
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'PhilipsK700/Obigo Browser 2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: K700
     marketingName: K700
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -93,13 +91,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: Obigo
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: obigo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Teleca
     version: null
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'PhilipsX100/OBIGO_Q03C/WAP2.0 Profile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X100
     marketingName: X100
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -131,13 +129,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: Obigo
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: obigo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Teleca
     version: null
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'PhilipsX520/1.0 NXP5210/DV9 Release/9.01.2008 Browser/Obigo2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X520
     marketingName: Xenium
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -169,13 +167,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: Obigo
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: obigo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Teleca
     version: null
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'PhilipsX600/1.0 NXP5210/DV9 Release/9.01.2008 Browser/Obigo2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X600
     marketingName: Xenium
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -207,13 +205,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: Obigo
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: obigo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Teleca
     version: null
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'PhilipsX703/Obigo Browser 2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X703
     marketingName: X703
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -245,13 +243,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: Obigo
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: obigo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Teleca
     version: null
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'PhilipsX800/1.0 MTK6229/07A Release/10.06.2008 Browser/Obigo2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X800
     marketingName: X800
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -283,13 +281,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: Obigo
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: obigo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Teleca
     version: null
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'PhilipsX830/1.0 MTK6239/08A Release/11.11.2008 Browser/Obigo2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X830
     marketingName: Xenium
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -321,13 +319,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: Obigo
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: obigo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Teleca
     version: null
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'Philips E210/Obigo Browser wap2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: E210
     marketingName: E210
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -359,13 +357,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: Obigo
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: obigo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Teleca
     version: null
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'PHILIPS859 ObigoInternetBrowser/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '859'
     marketingName: '859'
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -397,13 +395,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: Obigo
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: obigo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Teleca
     version: null
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'PHILIPS855 ObigoInternetBrowser/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '855'
     marketingName: '855'
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -435,13 +433,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: Obigo
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: obigo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Teleca
     version: null
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'PHILIPS760 ObigoInternetBrowser/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '760'
     marketingName: '760'
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -473,13 +471,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: Obigo
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: obigo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Teleca
     version: null
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'PHILIPS755 ObigoInternetBrowser/2.0 UP.Link/1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '755'
     marketingName: '755'
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -511,13 +509,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: Obigo
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: obigo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Teleca
     version: null
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'PHILIPS660 ObigoInternetBrowser/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '660'
     marketingName: '660'
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 1
     display:
       width: 128
       height: 128
@@ -549,13 +547,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: Obigo
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: obigo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Teleca
     version: null
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'PHILIPS650 ObigoInternetBrowser/2.0 UP.Link/1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '650'
     marketingName: '650'
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -587,13 +585,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: Obigo
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: obigo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Teleca
     version: null
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'PHILIPS362-2 ObigoInternetBrowser/Q03C EGE/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 362-2
     marketingName: '362'
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -625,13 +623,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Obigo Q'
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: obigo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Teleca
     version: null
@@ -648,13 +648,11 @@
   headers:
     user-agent: 'PHILIPS362-1 ObigoInternetBrowser/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 362-1
     marketingName: '362'
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -663,13 +661,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: Obigo
     modus: null
@@ -677,7 +671,13 @@
     manufacturer: obigo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Teleca
     version: null
@@ -686,13 +686,11 @@
   headers:
     user-agent: 'PHILIPS355j ObigoInternetBrowser/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 355j
     marketingName: '355'
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 1
     display:
       width: 128
       height: 128
@@ -701,13 +699,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: Obigo
     modus: null
@@ -715,7 +709,13 @@
     manufacturer: obigo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Teleca
     version: null
@@ -724,13 +724,11 @@
   headers:
     user-agent: 'PHILIPS 639 / Obigo Internet Browser 2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '639'
     marketingName: '639'
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 1
     display:
       width: 128
       height: 128
@@ -739,13 +737,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: Obigo
     modus: null
@@ -753,7 +747,13 @@
     manufacturer: obigo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Teleca
     version: null
@@ -762,13 +762,11 @@
   headers:
     user-agent: 'PHILIPS 535 / Obigo Internet Browser 2.0 UP.Link/1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '535'
     marketingName: '535'
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 1
     display:
       width: 128
       height: 128
@@ -777,13 +775,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: Obigo
     modus: null
@@ -791,7 +785,13 @@
     manufacturer: obigo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Teleca
     version: null
@@ -800,13 +800,11 @@
   headers:
     user-agent: 'PHILIPS 530 / Obigo Internet Browser 2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '530'
     marketingName: '530'
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 1
     display:
       width: 128
       height: 128
@@ -815,13 +813,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: Obigo
     modus: null
@@ -829,7 +823,13 @@
     manufacturer: obigo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Teleca
     version: null
@@ -838,13 +838,11 @@
   headers:
     user-agent: 'PHILIPS 355 / Obigo Internet Browser 2.2 UP.Link/1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '355'
     marketingName: '355'
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 1
     display:
       width: 128
       height: 128
@@ -853,13 +851,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: Obigo
     modus: null
@@ -867,7 +861,13 @@
     manufacturer: obigo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Teleca
     version: null
@@ -876,13 +876,11 @@
   headers:
     user-agent: 'PHILIPS 350 / Obigo Internet Browser 2.0 UP.Link/1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '350'
     marketingName: '350'
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 1
     display:
       width: 112
       height: 112
@@ -891,13 +889,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: Obigo
     modus: null
@@ -905,7 +899,13 @@
     manufacturer: obigo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Teleca
     version: null

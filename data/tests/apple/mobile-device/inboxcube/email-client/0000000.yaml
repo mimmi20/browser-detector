@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Inboxcube/3.0.17 CFNetwork/758.3.15 Darwin/15.4.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 9.3.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Inboxcube
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: inboxcube
     type: email-client
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 9.3.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 758.3.15

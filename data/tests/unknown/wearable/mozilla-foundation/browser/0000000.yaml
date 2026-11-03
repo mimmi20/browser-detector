@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 12; Mobile VR; rv:81.0) Gecko/81.0 Firefox/81.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Wearable Device'
     marketingName: 'general Wearable Device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: wearable
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Firefox Reality'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 81.0.0

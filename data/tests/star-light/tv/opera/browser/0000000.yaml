@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Opera/9.80 (Linux mips; ) Presto/2.12.407 Version/12.51 MB95/3.6.2.f (STAR LIGHT, Si2157LG32, wireless) HbbTV/1.2.1 (; CUS:STAR LIGHT; MB95; 3.6.2.f; 1.0;) SmartTvA/3.0.0 CE-HTML/1.0 NETRANGEMMH iplayerV3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Star-Light tv'
     marketingName: 'general Star-Light tv'
     manufacturer: star-light
     brand: star-light
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Opera
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Presto
     version: 2.12.407

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'YouViewHTML/1.0 AppleWebKit/538.1 (Humax; DTRT2000; 84B07000; CDS/31.8.0; API/3.1.5; PS/3.5.20) (+DVR+FLASH+HTML+MHEG+IPCMC+DASH)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: DTRT2000
     marketingName: DTRT2000
     manufacturer: humax
     brand: humax
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: tv-set-top-box
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: YouView
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: youview
     type: multimedia-player
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 538.1.0
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'YouView (Humax; DTRT2120; 84B08520; CDS/22.18.0; API/2.10.4; PS/2.10.32) (+DVR+FLASH+HTML+MHEG+IPCMC)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: DTRT2120
     marketingName: DTRT2120
     manufacturer: humax
     brand: humax
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: tv-set-top-box
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: YouView
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: youview
     type: multimedia-player
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'YouViewHTML/1.0 AppleWebKit/538.1 (Humax; DTRT2120; 84B08520; CDS/31.8.0; API/3.1.5; PS/3.5.20) (+DVR+FLASH+HTML+MHEG+IPCMC+DASH)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: DTRT2120
     marketingName: DTRT2120
     manufacturer: humax
     brand: humax
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -93,13 +91,9 @@
     type: tv-set-top-box
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: YouView
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: youview
     type: multimedia-player
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 538.1.0

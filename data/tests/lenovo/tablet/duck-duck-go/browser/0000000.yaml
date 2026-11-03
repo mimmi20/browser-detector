@@ -3,13 +3,11 @@
     x-requested-with: com.duckduckgo.mobile.android
     user-agent: 'Mozilla/5.0 (Linux; Android 10; Lenovo TB-8505F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.131 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TB-8505F
     marketingName: 'Tab M8'
     manufacturer: lenovo
     brand: lenovo
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1280
       height: 800
@@ -18,13 +16,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
@@ -32,7 +26,13 @@
     manufacturer: duck-duck-go
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.5735.131
@@ -50,13 +50,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TB328FU
     marketingName: 'Tab M10 Wi-Fi (3rd Gen)'
     manufacturer: lenovo
     brand: lenovo
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -65,13 +63,9 @@
     type: tablet
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
@@ -79,7 +73,13 @@
     manufacturer: duck-duck-go
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 126.0.0
@@ -97,13 +97,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TB310FU
     marketingName: 'Tab M9 Wi-Fi'
     manufacturer: lenovo
     brand: lenovo
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1340
       height: 800
@@ -112,13 +110,9 @@
     type: tablet
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
@@ -126,7 +120,13 @@
     manufacturer: duck-duck-go
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.0
@@ -146,13 +146,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TB351FU
     marketingName: 'Tab Plus Wi-Fi'
     manufacturer: lenovo
     brand: lenovo
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2000
       height: 1200
@@ -161,13 +159,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
@@ -175,7 +169,13 @@
     manufacturer: duck-duck-go
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 140.0.0
@@ -195,13 +195,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TB311FU
     marketingName: 'Tab K10 Wi-Fi (2nd Gen)'
     manufacturer: lenovo
     brand: lenovo
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -210,13 +208,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
@@ -224,7 +218,13 @@
     manufacturer: duck-duck-go
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 145.0.0
@@ -244,13 +244,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TB125FU
     marketingName: 'Tab M10 Plus Wi-Fi (3rd Gen)'
     manufacturer: lenovo
     brand: lenovo
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2000
       height: 1200
@@ -259,13 +257,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
@@ -273,7 +267,13 @@
     manufacturer: duck-duck-go
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 150.0.0
@@ -293,13 +293,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TB370FU
     marketingName: 'Tab P12 Wi-Fi'
     manufacturer: lenovo
     brand: lenovo
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2944
       height: 1840
@@ -308,13 +306,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
@@ -322,7 +316,13 @@
     manufacturer: duck-duck-go
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 153.0.0

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 16; SM-X520 Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/145.0.7632.159 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X520
     marketingName: 'Galaxy Tab S10 FE 10.9" Wi-Fi'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2304
       height: 1440
@@ -17,13 +15,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 145.0.7632.159
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 16; SM-X210 Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/146.0.7680.119 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X210
     marketingName: 'Galaxy Tab A9+ 11.0" Wi-Fi'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -55,13 +53,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.119
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 13; SM-P610 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/146.0.7680.164 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-P610
     marketingName: 'Galaxy Tab S6 Lite 10.4" Wi-Fi'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2000
       height: 1200
@@ -93,13 +91,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.164
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 14; SM-T733 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/147.0.7727.55 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-T733
     marketingName: 'Galaxy Tab S7 FE 12.4" Wi-Fi'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -131,13 +129,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 147.0.7727.55
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 16; SM-X700 Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/146.0.7680.177 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X700
     marketingName: 'Galaxy Tab S8 11.0" Wi-Fi'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -169,13 +167,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.177
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 13; SM-T870 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.178 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-T870
     marketingName: 'Galaxy Tab S7 11.0" Wi-Fi'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -207,13 +205,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.178
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 16; SM-X510 Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/150.0.7871.124 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X510
     marketingName: 'Galaxy Tab S9 FE 10.9" Wi-Fi'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2304
       height: 1440
@@ -245,13 +243,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 150.0.7871.124
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 14; SM-X200 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/150.0.7871.46 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X200
     marketingName: 'Galaxy Tab A8 10.5" Wi-Fi (2021)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -283,13 +281,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 150.0.7871.46
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 16; SM-X400 Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/150.0.7871.181 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X400
     marketingName: 'Galaxy Tab S10 Lite Wi-Fi'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2112
       height: 1320
@@ -321,13 +319,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 150.0.7871.181
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 11; SM-T510 Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/151.0.7922.83 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-T510
     marketingName: 'Galaxy Tab A 10.1" Wi-Fi (2019)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -359,13 +357,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 151.0.7922.83
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 16; SM-X800 Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/153.0.8010.36 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X800
     marketingName: 'Galaxy Tab S8+ 12.4" Wi-Fi'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2800
       height: 1752
@@ -397,13 +395,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 153.0.8010.36
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 16; SM-X210R Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/153.0.8010.36 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X210R
     marketingName: 'Galaxy Tab A9+ 11.0" Wi-Fi'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -435,13 +433,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 153.0.8010.36
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 16; SM-X230 Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/154.0.8037.57 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X230
     marketingName: 'Galaxy Tab A11+ 11" Wi-Fi'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -473,13 +471,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 154.0.8037.57

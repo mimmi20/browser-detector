@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Bunjalloo/0.7.6(Nintendo DS;U;en)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: DS
     marketingName: DS
     manufacturer: nintendo
     brand: nintendo
-    dualOrientation: false
-    simCount: 0
     display:
       width: 256
       height: 192
@@ -17,13 +15,9 @@
     type: mobile-console
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Bunjalloo
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: unknown
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null

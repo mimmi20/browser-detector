@@ -1,14 +1,12 @@
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 14; C045RGN Build/UKNV.260130.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 9; MIBOX4 Build/PI; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/126.0.6478.71 Mobile Safari/537.36'
   device:
-    architecture: null
-    deviceName: C045RGN
-    marketingName: 'Smart Projector L1 Pro'
+    architecture: ''
+    deviceName: 'Mi Box 4'
+    marketingName: 'Mi Box 4'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,22 +15,24 @@
     type: tv-media-player
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
-    version: 149.0.7827.91
+    version: 126.0.6478.71
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
-    version: 149.0.7827.91
+    version: 126.0.6478.71
     manufacturer: google

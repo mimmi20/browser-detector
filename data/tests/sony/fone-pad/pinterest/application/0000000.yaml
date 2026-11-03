@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Pinterest for Android Tablet/1.8.4 (SGP321; 4.3)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SGP321
     marketingName: 'Xperia Tablet Z LTE'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1200
@@ -17,13 +15,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Pinterest App'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: pinterest
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null

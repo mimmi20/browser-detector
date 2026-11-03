@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; motorola edge Build/QPDS30.114-80-2; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 BingSapphire/21.7.391012302'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Edge
     marketingName: Edge
     manufacturer: lenovo
     brand: motorola
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -17,13 +15,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Bing Search'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: microsoft
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.181

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 5.1.1; KFGIWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 OPR/37.0.2192.105088'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KFGIWI
     marketingName: 'Fire HD 8" (2016)'
     manufacturer: amazon
     brand: amazon
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1280
       height: 800
@@ -17,13 +15,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: 5.0.0
-    manufacturer: amazon
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: 5.0.0
+    manufacturer: amazon
+    bits: 0
   engine:
     name: Blink
     version: 50.0.2661.94
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 5.1.1; de-DE; KFFOWI Build/LMY47O) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 OPR/16.0.2168.102992 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KFFOWI
     marketingName: 'Fire 7" (2015)'
     manufacturer: amazon
     brand: amazon
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1024
       height: 600
@@ -55,13 +53,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: 5.0.0
-    manufacturer: amazon
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: 5.0.0
+    manufacturer: amazon
+    bits: 0
   engine:
     name: Blink
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 4.4.3; KFTHWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Safari/537.36 OPR/21.0.1437.74904'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KFTHWI
     marketingName: 'Kindle Fire HDX 7" Wi-Fi (2013)'
     manufacturer: amazon
     brand: amazon
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -93,13 +91,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: 4.5.1
-    manufacturer: amazon
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: 4.5.1
+    manufacturer: amazon
+    bits: 0
   engine:
     name: Blink
     version: 34.0.1847.116
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 4.4.3; KFAPWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.81 Safari/537.36 OPR/28.0.1764.90386'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KFAPWI
     marketingName: 'Kindle Fire HDX 8.9" Wi-Fi (2013)'
     manufacturer: amazon
     brand: amazon
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -131,13 +129,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: 4.5.1
-    manufacturer: amazon
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: 4.5.1
+    manufacturer: amazon
+    bits: 0
   engine:
     name: Blink
     version: 41.0.2272.81
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 4.0.3; KFOT Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.138 Safari/537.36 OPR/22.0.1485.81203'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KFOT
     marketingName: 'Kindle Fire (2nd Gen)'
     manufacturer: amazon
     brand: amazon
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1024
       height: 600
@@ -169,13 +167,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: 3.0.0
-    manufacturer: amazon
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: 3.0.0
+    manufacturer: amazon
+    bits: 0
   engine:
     name: Blink
     version: 35.0.1916.138
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 4.0.4; KFJWI Build/IMM76D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.107 Safari/537.36 OPR/29.0.1809.93516'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KFJWI
     marketingName: 'Kindle Fire HD 8.9" Wi-Fi (2nd Gen)'
     manufacturer: amazon
     brand: amazon
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -207,13 +205,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: 3.0.0
-    manufacturer: amazon
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: 3.0.0
+    manufacturer: amazon
+    bits: 0
   engine:
     name: Blink
     version: 42.0.2311.107
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 4.4.3; KFSOWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.89 Safari/537.36 OPR/27.0.1698.89115'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KFSOWI
     marketingName: 'Kindle Fire HD 7" Wi-Fi (2013)'
     manufacturer: amazon
     brand: amazon
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1280
       height: 800
@@ -245,13 +243,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: 4.5.1
-    manufacturer: amazon
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: 4.5.1
+    manufacturer: amazon
+    bits: 0
   engine:
     name: Blink
     version: 40.0.2214.89
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 4.0.3; KFTT Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Safari/537.36 OPR/21.0.1437.74904'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KFTT
     marketingName: 'Kindle Fire HD 7" (2nd Gen)'
     manufacturer: amazon
     brand: amazon
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1280
       height: 800
@@ -283,13 +281,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: 3.0.0
-    manufacturer: amazon
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: 3.0.0
+    manufacturer: amazon
+    bits: 0
   engine:
     name: Blink
     version: 34.0.1847.116
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 5.1.1; KFAUWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Safari/537.36 OPR/46.3.2246.127744'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KFAUWI
     marketingName: 'Fire 7" (2017)'
     manufacturer: amazon
     brand: amazon
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1024
       height: 600
@@ -321,13 +319,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: 5.0.0
-    manufacturer: amazon
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: 5.0.0
+    manufacturer: amazon
+    bits: 0
   engine:
     name: Blink
     version: 63.0.3239.111
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 7.1.2; KFKAWI Build/NS6301) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.99 Safari/537.36 OPR/50.3.2426.136976'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KFKAWI
     marketingName: 'Fire HD 8" (2018)'
     manufacturer: amazon
     brand: amazon
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1280
       height: 800
@@ -359,13 +357,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: 6.0.0
-    manufacturer: amazon
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: 6.0.0
+    manufacturer: amazon
+    bits: 0
   engine:
     name: Blink
     version: 71.0.3578.99
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 5.1.1; KFSUWI) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36 OPR/54.2.2672.49907'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KFSUWI
     marketingName: 'Fire HD 10 (2017)'
     manufacturer: amazon
     brand: amazon
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -397,13 +395,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: 5.0.0
-    manufacturer: amazon
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: 5.0.0
+    manufacturer: amazon
+    bits: 0
   engine:
     name: Blink
     version: 76.0.3809.132
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 5.1.1; KFFOWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Safari/537.36 OPT/2.5'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KFFOWI
     marketingName: 'Fire 7" (2015)'
     manufacturer: amazon
     brand: amazon
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1024
       height: 600
@@ -435,13 +433,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: 5.0.0
-    manufacturer: amazon
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Touch'
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: 5.0.0
+    manufacturer: amazon
+    bits: 0
   engine:
     name: Blink
     version: 59.0.3071.125
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; KFMAWI) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36 OPR/61.2.3076.56749'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KFMAWI
     marketingName: 'Fire HD 10" (2019)'
     manufacturer: amazon
     brand: amazon
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -473,13 +471,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: 7.0.0
-    manufacturer: amazon
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: 7.0.0
+    manufacturer: amazon
+    bits: 0
   engine:
     name: Blink
     version: 86.0.4240.198
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; KFTRWI Build/PS7322) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.92 Safari/537.36 OPX/1.4'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KFTRWI
     marketingName: 'Fire HD 10" (2021)'
     manufacturer: amazon
     brand: amazon
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -511,13 +509,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: 7.0.0
-    manufacturer: amazon
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera GX'
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: 7.0.0
+    manufacturer: amazon
+    bits: 0
   engine:
     name: Blink
     version: 96.0.4664.92
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; KFTRWI) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.5615.135 Safari/537.36 OPR/75.0.3978.72220'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KFTRWI
     marketingName: 'Fire HD 10" (2021)'
     manufacturer: amazon
     brand: amazon
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -549,13 +547,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: 7.0.0
-    manufacturer: amazon
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: 7.0.0
+    manufacturer: amazon
+    bits: 0
   engine:
     name: Blink
     version: 112.0.5615.135
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; KFTRPWI) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.192 Safari/537.36 OPR/74.1.3922.71199'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KFTRPWI
     marketingName: 'Fire HD 10" Plus (2021)'
     manufacturer: amazon
     brand: amazon
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -587,13 +585,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: 7.0.0
-    manufacturer: amazon
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: 7.0.0
+    manufacturer: amazon
+    bits: 0
   engine:
     name: Blink
     version: 110.0.5481.192

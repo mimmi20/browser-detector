@@ -2,13 +2,11 @@
   headers:
     user-agent: nokia6600Windows-Media-Player/7.0.0.41/69/352
   device:
-    architecture: null
+    architecture: ''
     deviceName: '6600'
     marketingName: '6600'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 208
       height: 176
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: Windows
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Windows Media Player'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: microsoft
     type: multimedia-player
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: Windows
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: null

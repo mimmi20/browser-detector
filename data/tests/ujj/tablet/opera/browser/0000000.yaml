@@ -11,13 +11,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 OPR/94.0.0.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: U6_EEA
     marketingName: U6_EEA
     manufacturer: ujj
     brand: ujj
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1280
       height: 800
@@ -26,13 +24,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -40,7 +34,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 143.0.0

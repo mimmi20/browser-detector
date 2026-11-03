@@ -2,13 +2,11 @@
   headers:
     user-agent: 'SIE-SX1/1.1 SymbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Link/1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SX1
     marketingName: SX1
     manufacturer: siemens
     brand: siemens
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Series 60'
-    marketingName: 'Series 60'
-    version: 1.2.0
-    manufacturer: nokia
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia OSS Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Series 60'
+    marketingName: 'Series 60'
+    version: 1.2.0
+    manufacturer: nokia
+    bits: 0
   engine:
     name: null
     version: null

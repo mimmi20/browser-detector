@@ -2,13 +2,11 @@
   headers:
     user-agent: 'TenFourFox/20.10 (Ark Linux 1.8; ar_AE;)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Ark Linux'
-    marketingName: 'Ark Linux'
-    version: 1.8.0
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: TenFourFox
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: cameron-kaiser
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Ark Linux'
+    marketingName: 'Ark Linux'
+    version: 1.8.0
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Gecko
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'TenFourFox/6.13 (CentOS Linux 1.6; fr_CH;)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Cent OS Linux'
-    marketingName: 'Cent OS Linux'
-    version: 1.6.0
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: TenFourFox
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: cameron-kaiser
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Cent OS Linux'
+    marketingName: 'Cent OS Linux'
+    version: 1.6.0
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Gecko
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'TenFourFox/19.18 (Debian Linux 5.5; ca_ES;)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -93,13 +91,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Debian
-    marketingName: Debian
-    version: 5.5.0
-    manufacturer: softwareInThePublicInterest
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: TenFourFox
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: cameron-kaiser
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Debian
+    marketingName: Debian
+    version: 5.5.0
+    manufacturer: softwareInThePublicInterest
+    bits: 0
   engine:
     name: Gecko
     version: null
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'TenFourFox/15.8 (Windows NT 2.3; ar_JO;)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Windows Desktop'
     marketingName: 'Windows Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -131,13 +129,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Windows NT'
-    marketingName: 'Windows NT'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: TenFourFox
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: cameron-kaiser
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows NT'
+    marketingName: 'Windows NT'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Gecko
     version: null

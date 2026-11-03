@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Unibox/283 CFNetwork/673.0.3 Darwin/13.0.0 (x86_64) (MacPro1%2C1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'MacPro 1,1'
     marketingName: 'Mac Pro (2006)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.9.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Unibox
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: eightloops
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.9.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 673.0.3
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Unibox/366 CFNetwork/673.6 Darwin/13.4.0 (x86_64) (iMac14%2C2)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 14,2'
     marketingName: 'iMac 27" (2013)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 2560
       height: 1440
@@ -55,13 +53,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.9.4
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Unibox
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: eightloops
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.9.4
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 673.6.0
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Unibox/283 CFNetwork/673.5 Darwin/13.4.0 (x86_64) (Macmini5%2C2)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Mac Mini 5,2'
     marketingName: 'Mac Mini (2011)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -93,13 +91,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.9.4
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Unibox
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: eightloops
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.9.4
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 673.5.0
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Unibox/283 CFNetwork/596.5 Darwin/12.5.0 (x86_64) (iMac13%2C2)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: iMac
     marketingName: iMac
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -131,13 +129,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.8.5
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Unibox
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: eightloops
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.8.5
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 596.5.0
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Unibox/366 CFNetwork/798.3 Darwin/16.0.0 (x86_64)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Macintosh
     marketingName: Macintosh
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -169,13 +167,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 10.12.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Unibox
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: eightloops
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 10.12.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 798.3.0
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Unibox/137 CFNetwork/673.0.3 Darwin/13.0.0 (x86_64) (iMac10%2C1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 10,1'
     marketingName: 'iMac 21.5" (2009)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -207,13 +205,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.9.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Unibox
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: eightloops
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.9.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 673.0.3
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Unibox/160 CFNetwork/673.2.1 Darwin/13.1.0 (x86_64) (MacPro5%2C1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'MacPro 5,1'
     marketingName: 'Mac Pro (2010)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -245,13 +243,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.9.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Unibox
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: eightloops
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.9.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 673.2.1
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Unibox/160 CFNetwork/673.2.1 Darwin/13.1.0 (x86_64) (iMac11%2C1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 11,1'
     marketingName: 'iMac 27" (2009)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 2560
       height: 1440
@@ -283,13 +281,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.9.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Unibox
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: eightloops
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.9.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 673.2.1
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Unibox/172 CFNetwork/673.2.1 Darwin/13.1.0 (x86_64) (iMac11%2C3)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 11,3'
     marketingName: 'iMac 27" (2010)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 2560
       height: 1440
@@ -321,13 +319,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.9.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Unibox
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: eightloops
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.9.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 673.2.1
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'Unibox/190 CFNetwork/673.2.1 Darwin/13.1.0 (x86_64) (iMac9%2C1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 9,1'
     marketingName: 'iMac 20" (2009)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1680
       height: 1050
@@ -359,13 +357,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.9.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Unibox
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: eightloops
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.9.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 673.2.1
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'Unibox/190 CFNetwork/673.3 Darwin/13.2.0 (x86_64) (MacPro3%2C1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'MacPro 3,1'
     marketingName: 'Mac Pro (2008)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -397,13 +395,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.9.2
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Unibox
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: eightloops
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.9.2
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 673.3.0
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'Unibox/193 CFNetwork/673.2.1 Darwin/13.1.0 (x86_64) (Macmini6%2C2)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Mac Mini 6,2'
     marketingName: 'Mac Mini (2012)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -435,13 +433,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.9.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Unibox
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: eightloops
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.9.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 673.2.1
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'Unibox/190 CFNetwork/673.2.1 Darwin/13.1.0 (x86_64) (iMac12%2C1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 12,1'
     marketingName: 'iMac 21.5" (2011)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -473,13 +471,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.9.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Unibox
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: eightloops
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.9.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 673.2.1
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'Unibox/190 CFNetwork/673.2.1 Darwin/13.1.0 (x86_64) (iMac8%2C1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 8,1'
     marketingName: 'iMac 20" (2008)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1680
       height: 1050
@@ -511,13 +509,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.9.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Unibox
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: eightloops
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.9.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 673.2.1
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'Unibox/190 CFNetwork/673.4 Darwin/13.1.0 (x86_64) (Macmini6%2C1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Mac Mini 6,1'
     marketingName: 'Mac Mini (2012)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -549,13 +547,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.9.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Unibox
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: eightloops
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.9.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 673.4.0
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'Unibox/190 CFNetwork/673.4 Darwin/13.2.0 (x86_64) (Macmini5%2C1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Mac Mini 5,1'
     marketingName: 'Mac Mini (2011)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -587,13 +585,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.9.2
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Unibox
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: eightloops
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.9.2
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 673.4.0
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'Unibox/190 CFNetwork/673.4 Darwin/13.3.0 (x86_64) (MacPro6%2C1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'MacPro 6,1'
     marketingName: 'Mac Pro (2013)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -625,13 +623,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.9.3
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Unibox
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: eightloops
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.9.3
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 673.4.0

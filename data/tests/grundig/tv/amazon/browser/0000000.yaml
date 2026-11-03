@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; AFTEU011) AppleWebKit/537.36 (KHTML, like Gecko) Silk/80.1.145 like Chrome/80.0.3987.119 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AFTEU011
     marketingName: 'Vision 6 HD (2019)'
     manufacturer: grundig
     brand: grundig
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -17,13 +15,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: 7.0.0
-    manufacturer: amazon
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Silk
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: amazon
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: 7.0.0
+    manufacturer: amazon
+    bits: 0
   engine:
     name: Blink
     version: 80.0.3987.119
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; AFTEU014) AppleWebKit/537.36 (KHTML, like Gecko) Silk/104.2.16 like Chrome/104.0.5112.114 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AFTEU014
     marketingName: 'Vision 7 4K (2019)'
     manufacturer: grundig
     brand: grundig
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -55,13 +53,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: 7.0.0
-    manufacturer: amazon
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Silk
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: amazon
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: 7.0.0
+    manufacturer: amazon
+    bits: 0
   engine:
     name: Blink
     version: 104.0.5112.114

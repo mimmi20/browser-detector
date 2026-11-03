@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Zeasn/2.0 NETTV/4.5.0 Mozilla/5.0 (Linux armv7i;CE-HTML/1.0;U;en), Chrome/61.0.3163.100 Safari/537.36 AppleWebKit 537.36 (KHTML, like Gecko) Tbrowser/2.0, _TV_UNKONWN/V8-NT563LA-LF1V200 (AKAI,AK3219NF,wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AK3219NF
     marketingName: AK3219NF
     manufacturer: akai
     brand: akai
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -17,13 +15,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Whale OS'
-    marketingName: 'Whale OS'
-    version: null
-    manufacturer: whaleTV
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: TBrowser
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: browser-edson-thiago
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Whale OS'
+    marketingName: 'Whale OS'
+    version: null
+    manufacturer: whaleTV
+    bits: 0
   engine:
     name: Blink
     version: 61.0.3163.100

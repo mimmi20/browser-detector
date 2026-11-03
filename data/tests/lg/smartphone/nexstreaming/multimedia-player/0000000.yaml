@@ -2,13 +2,11 @@
   headers:
     user-agent: 'LG-P880/V10h-NOV-19-2012; LG-Player/NexPlayer4.0 for Android(stagefright alternative)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: P880
     marketingName: 'Optimus 4X HD'
     manufacturer: lg
     brand: lg
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 720
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: NexPlayer
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: nexstreaming
     type: multimedia-player
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'BBCNewsUKWatchApp/4.3.0 (Watch1,2; watchOS 3.2.2)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Watch 1,2'
     marketingName: 'Watch (42mm)'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 390
       height: 312
@@ -17,13 +15,9 @@
     type: smart-watch
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: watchOS
-    marketingName: watchOS
-    version: 3.2.2
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'BBC News'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: bbc
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: watchOS
+    marketingName: watchOS
+    version: 3.2.2
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null

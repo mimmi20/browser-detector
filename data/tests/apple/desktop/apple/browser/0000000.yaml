@@ -2,13 +2,11 @@
   headers:
     user-agent: 'NewsBlur Feed Finder (Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_1) AppleWebKit/534.48.3 (KHTML, like Gecko) Version/5.1 Safari/534.48.3)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Macintosh
     marketingName: Macintosh
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.7.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.7.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 534.48.3
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/6.0 (Macintosh; U; Amiga-AWeb) Safari 3.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Macintosh
     marketingName: Macintosh
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Amiga OS'
-    marketingName: 'Amiga OS'
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Amiga OS'
+    marketingName: 'Amiga OS'
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Safari/6534.59.8 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (Macmini1%2C1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Mac Mini'
     marketingName: 'Mac Mini'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -93,13 +91,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.6.8
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.6.8
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 454.12.4
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Safari/8536.30.1 CFNetwork/596.4.3 Darwin/12.4.0 (x86_64) (Macmini6%2C2)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Mac Mini 6,2'
     marketingName: 'Mac Mini (2012)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -131,13 +129,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.8.4
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.8.4
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 596.4.3
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Safari/9537.73.11 CFNetwork/673.0.3 Darwin/13.0.0 (x86_64) (iMac8%2C1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 8,1'
     marketingName: 'iMac 20" (2008)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1680
       height: 1050
@@ -169,13 +167,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.9.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.9.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 673.0.3
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Cyberdog/2.0 (Macintosh; PPC)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Macintosh
     marketingName: Macintosh
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -207,13 +205,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Macintosh
-    marketingName: Macintosh
-    version: null
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Macintosh
+    marketingName: Macintosh
+    version: null
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12) AppleWebKit/602.1.32 (KHTML, like Gecko) Version/10.0 Safari/602.1.32'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Macintosh
     marketingName: Macintosh
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -245,13 +243,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 10.12.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 10.12.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 602.1.32
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Safari/8537.85.17.9.1 CFNetwork/596.6.4 Darwin/12.6.0 (x86_64) (iMac12%2C2)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: iMac
     marketingName: iMac
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -283,13 +281,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.8.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.8.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 596.6.4
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Safari/9537.86.3.9.1 CFNetwork/673.6 Darwin/13.4.0 (x86_64) (iMac10%2C1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 10,1'
     marketingName: 'iMac 21.5" (2009)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -321,13 +319,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.9.4
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.9.4
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 673.6.0
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'Safari/8537.85.17.9.1 CFNetwork/596.6.4 Darwin/12.6.0 (x86_64) (Macmini5%2C2)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Mac Mini 5,2'
     marketingName: 'Mac Mini (2011)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -359,13 +357,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.8.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.8.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 596.6.4
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'Safari/9537.85.15.3 CFNetwork/673.5 Darwin/13.4.0 (x86_64) (iMac12%2C1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 12,1'
     marketingName: 'iMac 21.5" (2011)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -397,13 +395,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.9.4
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.9.4
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 673.5.0
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'Safari/9537.85.15.3 CFNetwork/673.5 Darwin/13.4.0 (x86_64) (MacPro3%2C1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'MacPro 3,1'
     marketingName: 'Mac Pro (2008)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -435,13 +433,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.9.4
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.9.4
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 673.5.0
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'Safari/9537.85.17.9.1 CFNetwork/673.5 Darwin/13.4.0 (x86_64) (iMac11%2C3)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 11,3'
     marketingName: 'iMac 27" (2010)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 2560
       height: 1440
@@ -473,13 +471,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.9.4
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.9.4
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 673.5.0
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'Safari/6534.59.10 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (iMac9%2C1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 9,1'
     marketingName: 'iMac 20" (2009)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1680
       height: 1050
@@ -511,13 +509,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.6.8
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.6.8
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 454.12.4
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'Safari/9537.85.17.9.1 CFNetwork/673.6 Darwin/13.4.0 (x86_64) (MacPro4%2C1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: MacPro
     marketingName: MacPro
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -549,13 +547,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.9.4
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.9.4
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 673.6.0
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_90) AppleWebKit/600.1.25 (KHTML, like Gecko) QuickLook/5.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Macintosh
     marketingName: Macintosh
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -587,13 +585,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 10.90.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: QuickLook
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 10.90.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 600.1.25
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'Safari/9537.85.10.17.1 CFNetwork/673.3 Darwin/13.4.0 (x86_64) (iMac14%2C1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 14,1'
     marketingName: 'iMac 21.5" (2013)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -625,13 +623,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.9.4
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -639,60 +633,26 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.9.4
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 673.3.0
     manufacturer: apple
 -
   headers:
-    user-agent: 'Safari5533.22.3 CFNetwork/438.16 Darwin/9.8.0 (Power%20Macintosh) (PowerMac12%2C1)'
-  device:
-    architecture: null
-    deviceName: PowerMac
-    marketingName: PowerMac
-    manufacturer: apple
-    brand: apple
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.5.8
-    manufacturer: apple
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: null
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 438.16.0
-    manufacturer: apple
--
-  headers:
     user-agent: 'Safari/6534.59.10 CFNetwork/454.12.4 Darwin/10.8.0 (x86_64) (MacPro5%2C1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'MacPro 5,1'
     marketingName: 'Mac Pro (2010)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -701,13 +661,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.6.8
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -715,7 +671,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.6.8
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 454.12.4
@@ -724,13 +686,11 @@
   headers:
     user-agent: 'Safari%20Technology%20Preview/12603.1.12 CFNetwork/807.2.14 Darwin/16.3.0 (x86_64)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Macintosh
     marketingName: Macintosh
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -739,13 +699,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 10.12.3
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Safari Technology Preview'
     modus: null
@@ -753,7 +709,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 10.12.3
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 807.2.14
@@ -762,13 +724,11 @@
   headers:
     user-agent: 'Safari/6533.19.4 CFNetwork/454.11.5 Darwin/10.6.0 (i386) (iMac5%2C1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 5,1'
     marketingName: 'iMac 17" (2006)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1440
       height: 900
@@ -777,13 +737,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.6.6
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -791,7 +747,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.6.6
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 454.11.5
@@ -800,13 +762,11 @@
   headers:
     user-agent: 'Safari5533.19.4 CFNetwork/438.16 Darwin/9.8.0 (i386) (MacPro1%2C1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'MacPro 1,1'
     marketingName: 'Mac Pro (2006)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -815,13 +775,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.5.8
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -829,7 +785,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.5.8
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 438.16.0
@@ -838,13 +800,11 @@
   headers:
     user-agent: 'Safari/6533.19.4 CFNetwork/454.11.5 Darwin/10.6.0 (i386) (iMac11%2C1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 11,1'
     marketingName: 'iMac 27" (2009)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 2560
       height: 1440
@@ -853,74 +813,36 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
+  client:
+    name: Safari
+    modus: null
+    version: 5.0.0
+    manufacturer: apple
+    type: browser
+    isbot: false
+    bits: 0
   os:
     name: 'Mac OS X'
     marketingName: 'Mac OS X'
     version: 10.6.6
     manufacturer: apple
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: 5.0.0
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
+    bits: 0
   engine:
     name: WebKit
     version: 454.11.5
-    manufacturer: apple
--
-  headers:
-    user-agent: 'Safari5533.19.4 CFNetwork/438.16 Darwin/9.8.0 (Power%20Macintosh) (PowerMac10%2C1)'
-  device:
-    architecture: null
-    deviceName: 'PowerMac 10,1'
-    marketingName: 'Mac mini G4 (2005)'
-    manufacturer: apple
-    brand: apple
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.5.8
-    manufacturer: apple
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: null
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 438.16.0
     manufacturer: apple
 -
   headers:
     user-agent: 'Safari/6533.19.4 CFNetwork/454.11.5 Darwin/10.5.0 (i386) (iMac4%2C1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 4,1'
     marketingName: 'iMac (2006)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1440
       height: 900
@@ -929,13 +851,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.6.5
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -943,98 +861,26 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.6.5
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 454.11.5
     manufacturer: apple
 -
   headers:
-    user-agent: 'Safari5526.11.2 CFNetwork/422.11 Darwin/9.6.0 (Power%20Macintosh) (PowerMac10%2C2)'
-  device:
-    architecture: null
-    deviceName: 'PowerMac 10,2'
-    marketingName: 'Mac mini G4 (2005)'
-    manufacturer: apple
-    brand: apple
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.5.6
-    manufacturer: apple
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: null
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 422.11.0
-    manufacturer: apple
--
-  headers:
-    user-agent: 'Safari5533.20.27 CFNetwork/438.16 Darwin/9.8.0 (Power%20Macintosh) (PowerMac8%2C1)'
-  device:
-    architecture: null
-    deviceName: 'PowerMac 8,1'
-    marketingName: 'iMac G5 (2004)'
-    manufacturer: apple
-    brand: apple
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: 1440
-      height: 900
-      touch: false
-      size: 17
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.5.8
-    manufacturer: apple
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: null
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 438.16.0
-    manufacturer: apple
--
-  headers:
     user-agent: 'Safari/7534.48.3 CFNetwork/520.0.13 Darwin/11.0.1 (x86_64) (Macmini5%2C1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Mac Mini 5,1'
     marketingName: 'Mac Mini (2011)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1043,13 +889,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.7.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -1057,7 +899,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.7.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 520.0.13
@@ -1066,13 +914,11 @@
   headers:
     user-agent: 'Safari/9537.73.11 CFNetwork/673.0.3 Darwin/13.0.0 (x86_64) (iMac14%2C2)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 14,2'
     marketingName: 'iMac 27" (2013)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 2560
       height: 1440
@@ -1081,13 +927,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.9.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -1095,7 +937,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.9.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 673.0.3
@@ -1104,13 +952,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_4_11; en; ms-office; MSOffice 14) AppleWebKit/525.13 (KHTML, like Gecko) Version/3.1 Safari/525.13'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Macintosh
     marketingName: Macintosh
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1119,13 +965,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: Windows
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -1133,7 +975,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: Windows
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: WebKit
     version: 525.13.0
@@ -1142,13 +990,11 @@
   headers:
     user-agent: 'Elytra/0.10.0 (Macintosh; Ubuntu/14.06) GCDHTTPRequest'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Macintosh
     marketingName: Macintosh
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1157,13 +1003,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: 14.06.0
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -1171,7 +1013,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: 14.06.0
+    manufacturer: canonical
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -1180,13 +1028,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) like Gecko (KHTML, like Gecko)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Macintosh
     marketingName: Macintosh
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1195,13 +1041,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 10.15.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -1209,7 +1051,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 10.15.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: KHTML
     version: null
@@ -1218,13 +1066,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) like Gecko (KHTML, like Gecko)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Macintosh
     marketingName: Macintosh
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1233,13 +1079,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.9.5
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -1247,7 +1089,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.9.5
+    manufacturer: apple
+    bits: 0
   engine:
     name: KHTML
     version: null

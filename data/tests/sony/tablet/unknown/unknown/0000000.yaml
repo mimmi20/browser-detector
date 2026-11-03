@@ -2,13 +2,11 @@
   headers:
     user-agent: 'SonySGP311 Build/10.3.1.C.0.136 UEP/0.1 com.sonyericsson.updatecenter/2.0.1.A.0.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SGP311
     marketingName: 'Xperia Tablet Z Wi-Fi'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -17,13 +15,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: null
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'ACER-Pro80/1.02 UP/4.1.20i UP.Browser/4.1.20i-XXXX'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Pro80
     marketingName: Pro80
     manufacturer: acer
     brand: acer
-    dualOrientation: false
-    simCount: 1
     display:
       width: 240
       height: 160
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null

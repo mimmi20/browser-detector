@@ -2,13 +2,11 @@
   headers:
     user-agent: 'TuneIn Radio/6.2 (Android 10; DROID4; Java)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Java Standard Library'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: oracle
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Anytime/1.2.1 b74 (phone;android QP1A.190711.020.G965USQU9FVB2) https://github.com/amugofjava/anytime_podcast_player'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,59 +53,23 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Java Standard Library'
+    modus: null
+    version: null
+    manufacturer: oracle
+    type: library
+    isbot: false
+    bits: 0
   os:
     name: Android
     marketingName: Android
     version: null
     manufacturer: google
-    bits: null
-  client:
-    name: 'Java Standard Library'
-    modus: null
-    version: null
-    manufacturer: oracle
-    type: library
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'Mozilla/5.0 (NoHTTPS; U; CPU like no JavaScript; de-de) NoSpam/333 +(HTML, like WWW) Version/9.9 Mobile/xyz Web/123 Browser'
-  device:
-    architecture: null
-    deviceName: 'general Mobile device'
-    marketingName: 'general Mobile device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: mobile-device
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
-  client:
-    name: 'Java Standard Library'
-    modus: null
-    version: null
-    manufacturer: oracle
-    type: library
-    isbot: false
-    bits: null
+    bits: 0
   engine:
     name: null
     version: null

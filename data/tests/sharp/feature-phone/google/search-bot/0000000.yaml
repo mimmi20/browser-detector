@@ -2,13 +2,11 @@
   headers:
     user-agent: 'DoCoMo/2.0 SH905i(c100;TB;W24H16) (compatible; Mediapartners-Google/2.1; +http://www.google.com/bot.html)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SH905i
     marketingName: SH905i
     manufacturer: sharp
     brand: ntt-docomo
-    dualOrientation: false
-    simCount: 1
     display:
       width: 854
       height: 480
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'AdSense Bot'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: google
     type: search-bot
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'XBoX 64 (NVidea GForce 3 Architecture)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Xbox
     marketingName: Xbox
     manufacturer: microsoft
     brand: microsoft
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: tv-console
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: null
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null

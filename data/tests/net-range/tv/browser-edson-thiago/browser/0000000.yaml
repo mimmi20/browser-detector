@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Opera/9.80 NETTV/4.5.0 Mozilla/5.0 (Linux armv7i; CE-HTML/1.0; U; en) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36 NETRANGEMMH Tbrowser/2.0 _TV_/V8-NT563LA-LF1V388 (MASTERTECH,32D1902,wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NETRANGEMMH
     marketingName: NETRANGEMMH
     manufacturer: net-range
     brand: net-range
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: TBrowser
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: browser-edson-thiago
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Blink
     version: 49.0.2623.75

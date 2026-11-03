@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; Linux i686; de) AppleWebKit/534.1 (KHTML, like Gecko) HbbTV/1.1.1 (+PVR;Mstar;OWB;;;)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general MSTAR TV'
     marketingName: 'general MSTAR TV'
     manufacturer: mstar
     brand: mstar
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Origyn Web Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: sand-labs
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 534.1.0

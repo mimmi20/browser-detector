@@ -1,14 +1,50 @@
 -
   headers:
+    user-agent: 'LGE-UN272/1.0 UP.Browser/6.2.3.8 (GUI) MMP/2.0'
+  device:
+    architecture: ''
+    deviceName: UN272
+    marketingName: Freedom
+    manufacturer: lg
+    brand: lg
+    display:
+      width: 400
+      height: 240
+      touch: false
+      size: 3
+    type: feature-phone
+    ismobile: true
+    istv: false
+    dualOrientation: false
+    simCount: 1
+    bits: 0
+  client:
+    name: 'Openwave Mobile Browser'
+    modus: null
+    version: 6.2.3.8
+    manufacturer: myriad
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
     user-agent: 'LGE-UN280/1.0 UP.Browser/6.2.3.8 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: UN280
     marketingName: 'Freedom 2'
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -17,13 +53,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -31,7 +63,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -40,13 +78,11 @@
   headers:
     user-agent: 'LGE-VX8300/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VX8300
     marketingName: VX8300
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -55,13 +91,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -69,7 +101,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -78,13 +116,11 @@
   headers:
     user-agent: 'LGE-VI5225/1.0 UP.Browser/6.2.2.5 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VI5225
     marketingName: VI5225
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 120
@@ -93,13 +129,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -107,7 +139,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -116,13 +154,11 @@
   headers:
     user-agent: 'LGE-VI125/1.0 UP.Browser/6.2.3.2.l.1.100 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VI125
     marketingName: VI125
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -131,13 +167,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -145,7 +177,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -154,13 +192,11 @@
   headers:
     user-agent: 'LGE-MX510/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: MX510
     marketingName: MX510
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -169,13 +205,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -183,7 +215,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -192,13 +230,11 @@
   headers:
     user-agent: 'LGE-MM535/1.0 UP.Browser/6.2.3.7.e.1.101 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: MM535
     marketingName: MM535
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -207,13 +243,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -221,7 +253,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -230,13 +268,11 @@
   headers:
     user-agent: 'LGE-CX5450 UP.Browser/6.2.2.3.d.1.103 (GUI) MMP/2.0 UP.Link/6.2.3.15.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CX5450
     marketingName: CX5450
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -245,13 +281,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -259,7 +291,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -268,13 +306,11 @@
   headers:
     user-agent: 'LG-T5100 UP.Browser/6.2.3 (GUI) MMP/1.0 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Link/1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: T5100
     marketingName: T5100
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -283,13 +319,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -297,7 +329,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -306,13 +344,11 @@
   headers:
     user-agent: 'LG-L5100 UP.Browser/6.2.3 (GUI) MMP/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: L5100
     marketingName: L5100
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -321,13 +357,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -335,7 +367,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -344,13 +382,11 @@
   headers:
     user-agent: 'LG-L1400 UP.Browser/6.2.2 (GUI) MMP/1.0 UP.Link/6.3.0.0.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: L1400
     marketingName: L1400
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -359,13 +395,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -373,7 +405,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -382,13 +420,11 @@
   headers:
     user-agent: 'LG-L1200 UP.Browser/6.2.2 (GUI) MMP/1.0 UP.Link/6.3.0.0.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: L1200
     marketingName: L1200
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -397,13 +433,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -411,7 +443,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -420,13 +458,11 @@
   headers:
     user-agent: 'LG-L1100 UP.Browser/6.2.2 (GUI) MMP/1.0 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Link/6.3.0.0.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: L1100
     marketingName: L1100
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -435,13 +471,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -449,7 +481,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -458,13 +496,11 @@
   headers:
     user-agent: 'LG-G7200 UP.Browser/6.2.2 (GUI) MMP/1.0 Profile/MIDP-1.0 Configuration/CLDC-1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: G7200
     marketingName: G7200
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -473,13 +509,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -487,7 +519,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -496,13 +534,11 @@
   headers:
     user-agent: 'LG-G7050 UP.Browser/6.2.2 (GUI) MMP/1.0 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Link/6.3.1.12.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: G7050
     marketingName: G7050
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -511,13 +547,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -525,7 +557,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -534,13 +572,11 @@
   headers:
     user-agent: 'LG-F9100 UP.Browser/6.2.3 (GUI) MMP/1.0 UP.Link/1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: F9100
     marketingName: F9100
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -549,13 +585,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -563,7 +595,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -572,13 +610,11 @@
   headers:
     user-agent: 'LG-F1200 UP.Browser/6.2.3 (GUI) MMP/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: F1200
     marketingName: F1200
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -587,13 +623,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -601,7 +633,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -610,13 +648,11 @@
   headers:
     user-agent: 'LG-C1300 UP.Browser/6.2.2 (GUI) MMP/1.0 UP.Link/6.3.0.0.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C1300
     marketingName: C1300
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 128
       height: 128
@@ -625,13 +661,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -639,7 +671,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -648,13 +686,11 @@
   headers:
     user-agent: 'LG-LG231C[TF268435460900145156000000018438268600] UP.Browser/6.2.3.8 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 231C
     marketingName: 231C
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -663,13 +699,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -677,7 +709,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -686,13 +724,11 @@
   headers:
     user-agent: 'LG-LG235C/1.0[TF268435460910655637002010915409223975] Profile/MIDP-2.1 Configuration/CLDC-1.1 UP.Browser/6.2.3.8 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 235C
     marketingName: 235C
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -701,13 +737,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -715,7 +747,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -724,13 +762,11 @@
   headers:
     user-agent: 'LG-LG236C/1.0[TF268435461209980989000000015402392626] Profile/MIDP-2.1 Configuration/CLDC-1.1 UP.Browser/6.2.3.8 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 236C
     marketingName: 236C
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -739,13 +775,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -753,7 +785,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -762,13 +800,11 @@
   headers:
     user-agent: 'LG-LG505C[TF268435461205861613000000015407483500] Profile/MIDP-2.1 Configuration/CLDC-1.1 UP.Browser/6.2.3.8 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 505C
     marketingName: 505C
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -777,13 +813,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -791,7 +823,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -800,13 +838,11 @@
   headers:
     user-agent: 'LGE-AN160/1.0 UP.Browser/6.2.3.8 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AN160
     marketingName: Fluid
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -815,13 +851,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -829,7 +861,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -838,13 +876,11 @@
   headers:
     user-agent: 'LGE-AN170/1.0 UP.Browser/6.2.3.8 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AN170
     marketingName: 'Fluid II'
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -853,13 +889,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -867,7 +899,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -876,13 +914,11 @@
   headers:
     user-agent: 'LGE-AN272/1.0 UP.Browser/6.2.3.8 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AN272
     marketingName: Converse
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -891,13 +927,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -905,7 +937,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -914,13 +952,11 @@
   headers:
     user-agent: 'LGE-LG108C/1.0[TF270113184102257975002719616415410298] UP.Browser/6.2.3.8 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 108C
     marketingName: 108C
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -929,13 +965,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -943,7 +975,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -952,13 +990,11 @@
   headers:
     user-agent: 'LGE-LG109C/1.0[TF270113184016584199000000017247614010] UP.Browser/6.2.3.8 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 109C
     marketingName: 109C
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -967,13 +1003,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -981,7 +1013,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -990,13 +1028,11 @@
   headers:
     user-agent: 'LGE-LG237C/1.0[TF270113183813187018000540012293145317] Profile/MIDP-2.1 Configuration/CLDC-1.1 UP.Browser/6.2.3.8 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 237C
     marketingName: 237C
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -1005,13 +1041,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1019,7 +1051,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1028,13 +1066,11 @@
   headers:
     user-agent: 'LGE-LG238C/1.0[TF270113184105281500497019215018025292] Profile/MIDP-2.1 Configuration/CLDC-1.1 UP.Browser/6.2.3.8 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 238C
     marketingName: 238C
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -1043,13 +1079,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1057,7 +1089,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1066,13 +1104,11 @@
   headers:
     user-agent: 'LGE-LG305C/1.0[TF268435461215834470002192712282095036] Profile/MIDP-2.1 Configuration/CLDC-1.1 UP.Browser/6.2.3.8 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 305C
     marketingName: 305C
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -1081,13 +1117,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1095,7 +1127,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1104,13 +1142,11 @@
   headers:
     user-agent: 'LGE-MX380/1.0 UP.Browser/6.2.3.9 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: MX380
     marketingName: MX380
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -1119,13 +1155,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1133,7 +1165,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1142,13 +1180,11 @@
   headers:
     user-agent: 'LGE-UN150/1.0 UP.Browser/6.2.3.8 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: UN150
     marketingName: Envoy
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -1157,13 +1193,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1171,7 +1203,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1180,13 +1218,11 @@
   headers:
     user-agent: 'LGE-UN160/1.0 UP.Browser/6.2.3.8 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: UN160
     marketingName: 'Envoy II'
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -1195,13 +1231,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1209,7 +1241,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1218,13 +1256,11 @@
   headers:
     user-agent: 'LGE-UN161/1.0 UP.Browser/6.2.3.8 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: UN161
     marketingName: 'Envoy II'
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -1233,13 +1269,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1247,7 +1279,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1256,13 +1294,11 @@
   headers:
     user-agent: 'LGE-UN170/1.0 UP.Browser/6.2.3.8 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: UN170
     marketingName: 'Envoy III'
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -1271,13 +1307,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1285,7 +1317,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1294,13 +1332,11 @@
   headers:
     user-agent: 'LGE-UN530/1.0 UP.Browser/6.2.3.8 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: UN530
     marketingName: 'Wine III'
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -1309,13 +1345,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1323,7 +1355,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1332,13 +1370,11 @@
   headers:
     user-agent: 'LGE-VN251L/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VN251L
     marketingName: VN251L
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -1347,13 +1383,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1361,7 +1393,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1370,13 +1408,11 @@
   headers:
     user-agent: 'LGE-VX8360/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VX8360
     marketingName: VX8360
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -1385,13 +1421,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1399,7 +1431,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null

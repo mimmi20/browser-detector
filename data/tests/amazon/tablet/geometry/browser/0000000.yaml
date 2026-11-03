@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 5.1.1; KFAUWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Kiwi Chrome/69.0.3440.40 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KFAUWI
     marketingName: 'Fire 7" (2017)'
     manufacturer: amazon
     brand: amazon
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1024
       height: 600
@@ -17,13 +15,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: 5.0.0
-    manufacturer: amazon
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Kiwi
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: geometry
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: 5.0.0
+    manufacturer: amazon
+    bits: 0
   engine:
     name: Blink
     version: 69.0.3440.40

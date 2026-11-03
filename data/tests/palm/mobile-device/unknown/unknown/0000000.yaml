@@ -2,13 +2,11 @@
   headers:
     user-agent: 'CorePlayer/1.0 (Palm OS 5.4.9; ARM Intel PXA27x; en) CorePlayer/1.3.2_6909'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Palm
     marketingName: Palm
     manufacturer: palm
     brand: palm
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: PalmOS
-    marketingName: PalmOS
-    version: 5.4.9
-    manufacturer: palm
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: null
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: PalmOS
+    marketingName: PalmOS
+    version: 5.4.9
+    manufacturer: palm
+    bits: 0
   engine:
     name: null
     version: null

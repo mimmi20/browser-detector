@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (DirectFB; Linux armv7l) AppleWebKit/537.1+ (KHTML, like Gecko) Safari/537.1+ LG Browser/6.00.00(+3D; LGE; Media/BP740; 5037; abc;); LG NetCast.Media-2013 /5037 (LG, Media/BP740, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BP740
     marketingName: BP740
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: tv-set-top-box
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 537.1.0

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 7.1.1; HP Chromebook 11 G5 Build/R79-12607.81.0)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Chromebook 11 G5'
     marketingName: 'Chromebook 11 G5'
     manufacturer: hp
     brand: hp
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1366
       height: 768
@@ -17,13 +15,9 @@
     type: laptop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: ChromeOS
-    marketingName: ChromeOS
-    version: 12607.81.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Android Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: ChromeOS
+    marketingName: ChromeOS
+    version: 12607.81.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 9; HP Chromebook x360 11 G1 EE Build/R80-12739.111.0)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Chromebook x360 11 G1 EE'
     marketingName: 'Chromebook x360 11 G1 EE'
     manufacturer: hp
     brand: hp
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1366
       height: 768
@@ -55,13 +53,9 @@
     type: laptop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: ChromeOS
-    marketingName: ChromeOS
-    version: 12739.111.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Android Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: ChromeOS
+    marketingName: ChromeOS
+    version: 12739.111.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; HP Chromebook 13 G1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.162 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Chromebook 13 G1'
     marketingName: 'Chromebook 13 G1'
     manufacturer: hp
     brand: hp
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3200
       height: 1800
@@ -93,13 +91,9 @@
     type: laptop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: ChromeOS
-    marketingName: ChromeOS
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: ChromeOS
+    marketingName: ChromeOS
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 80.0.3987.162

@@ -7,13 +7,11 @@
     sec-ch-ua-form-factors: Mobile
     user-agent: 'Mozilla/5.0 (Linux; Android 14; LLY-NX1-N31) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.6943.121 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LLY-NX1
     marketingName: '200 Lite 5G'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2412
       height: 1080
@@ -22,13 +20,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Pawxy
     modus: null
@@ -36,7 +30,13 @@
     manufacturer: pawxy
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 133.0.6943.121

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/1.22 (compatible; MSIE 5.01; PalmOS 3.0) EudoraWeb 2'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: PalmOS
-    marketingName: PalmOS
-    version: 3.0.0
-    manufacturer: palm
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: EudoraWeb
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: qualcomm
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: PalmOS
+    marketingName: PalmOS
+    version: 3.0.0
+    manufacturer: palm
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/1.22 (compatible; MSIE 5.01; PalmOS 3.0) EudoraWeb 2.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: PalmOS
-    marketingName: PalmOS
-    version: 3.0.0
-    manufacturer: palm
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: EudoraWeb
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: qualcomm
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: PalmOS
+    marketingName: PalmOS
+    version: 3.0.0
+    manufacturer: palm
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/1.22 (compatible; EudoraWeb 2.0; pdQbrowser; PalmOS 2.0)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -93,13 +91,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: PalmOS
-    marketingName: PalmOS
-    version: 2.0.0
-    manufacturer: palm
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: EudoraWeb
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: qualcomm
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: PalmOS
+    marketingName: PalmOS
+    version: 2.0.0
+    manufacturer: palm
+    bits: 0
   engine:
     name: Gecko
     version: null

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'MOT-Motorola V500/0B.09.38R MIB/2.2 Profile/MIDP-2.0 Configuration/CLDC-1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V500
     marketingName: V500
     manufacturer: motorola
     brand: motorola
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Motorola Internet Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: motorola
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null

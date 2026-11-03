@@ -2,13 +2,11 @@
   headers:
     user-agent: 'PHILIPS568/1.0 UP.Browser/6.1.0.7.8 (GUI) MMP/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '568'
     marketingName: '568'
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'PHILIPS-FISIO 822/3.14 UP.Browser/5.0.3.5 (GUI)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Fisio 822'
     marketingName: 'Fisio 822'
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 1
     display:
       width: 112
       height: 112
@@ -55,13 +53,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'PHILIPS-FISIO 820/3.14 UP.Browser/5.0.1.11'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Fisio 820'
     marketingName: 'Fisio 820'
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 1
     display:
       width: 130
       height: 120
@@ -93,13 +91,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'PHILIPS-FISIO 620/3.14 UP.Browser/5.0.1.11 (Google WAP Proxy/1.0)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Fisio 620'
     marketingName: 'Fisio 620'
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 1
     display:
       width: 101
       height: 80
@@ -131,13 +129,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'PHILIPS 960 UP.Browser/6.2.3.9.d.1.100 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '960'
     marketingName: '960'
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -169,13 +167,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'PHILIPS 768 UP.Browser/6.2.3.9.d.1 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '768'
     marketingName: '768'
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -207,13 +205,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null

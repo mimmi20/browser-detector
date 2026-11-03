@@ -3,13 +3,11 @@
     x-requested-with: com.enzo.browser
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-A045M Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/141.0.7390.122 Mobile Safari/537.36 buscari/28'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A045M
     marketingName: 'Galaxy A04 4G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -18,13 +16,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Seekee
     modus: null
@@ -32,7 +26,13 @@
     manufacturer: seekee
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 141.0.7390.122

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; Konqueror/3.5; Darwin)  KHTML/3.5.6 (like Gecko)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Macintosh
     marketingName: Macintosh
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Macintosh
-    marketingName: Macintosh
-    version: null
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Konqueror
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: kde
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Macintosh
+    marketingName: Macintosh
+    version: null
+    manufacturer: apple
+    bits: 0
   engine:
     name: KHTML
     version: 3.5.6

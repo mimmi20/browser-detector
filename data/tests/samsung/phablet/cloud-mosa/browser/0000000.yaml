@@ -3,13 +3,11 @@
     x-puffin-ua: Android/SAMSUNG-SM-N910A/1440x2560
     user-agent: 'Mozilla/5.0 (X11; U; Linux x86_64; xx) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/30.0.1599.114 Safari/537.36 Puffin/4.1.2.1212AP'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-N910A
     marketingName: 'Galaxy Note 4 CDMA (AT&T)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2560
       height: 1440
@@ -18,13 +16,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Puffin
     modus: null
@@ -32,7 +26,13 @@
     manufacturer: cloud-mosa
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 30.0.1599.114
@@ -41,13 +41,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; SM-N960F Build/QP1A.190711.020; en-us) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36 Puffin/8.5.0.42207AP'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-N960F
     marketingName: 'Galaxy Note 9 (Global)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2960
       height: 1440
@@ -56,13 +54,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Puffin
     modus: null
@@ -70,7 +64,13 @@
     manufacturer: cloud-mosa
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 69.0.3497.100
@@ -79,13 +79,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; SM-N950F Build/PPR1.180610.011; de-de) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.136 Mobile Safari/537.36 Puffin/9.0.0.50263AP comdirect/1.0 (appVersion:20.12.0;deviceName:samsung sm-n950f;deviceType:mobile)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-N950F
     marketingName: 'Galaxy Note 8'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2960
       height: 1440
@@ -94,13 +92,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Puffin
     modus: null
@@ -108,7 +102,13 @@
     manufacturer: cloud-mosa
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 79.0.3945.136
@@ -117,13 +117,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 17; SM-F971B Build/CP2A.260605.016; en-in) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Mobile Safari/537.36 Puffin/10.5.1.70541AP'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-F971B
     marketingName: 'Galaxy Z Fold 8 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2448
       height: 1848
@@ -132,13 +130,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 17.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Puffin
     modus: null
@@ -146,7 +140,13 @@
     manufacturer: cloud-mosa
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 17.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 87.0.4280.66
@@ -155,13 +155,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 17; SM-F971N Build/CP2A.260605.016; ko-kr) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Mobile Safari/537.36 Puffin/10.5.1.70541AP'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-F971N
     marketingName: 'Galaxy Z Fold 8 5G (Korea)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2448
       height: 1848
@@ -170,13 +168,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 17.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Puffin
     modus: null
@@ -184,7 +178,13 @@
     manufacturer: cloud-mosa
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 17.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 87.0.4280.66
@@ -193,13 +193,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 17; SM-F971U1 Build/CP2A.260605.016; en-us) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Mobile Safari/537.36 Puffin/10.5.1.70541AP'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-F971U1
     marketingName: 'Galaxy Z Fold 8 5G (USA)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2448
       height: 1848
@@ -208,13 +206,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 17.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Puffin
     modus: null
@@ -222,7 +216,13 @@
     manufacturer: cloud-mosa
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 17.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 87.0.4280.66

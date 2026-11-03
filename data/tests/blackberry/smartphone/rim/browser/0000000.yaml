@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (BB10; Kbd) AppleWebKit/537.10+ (KHTML, like Gecko) Version/10.1.0.4651 Mobile Safari/537.10+'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KBD
     marketingName: KBD
     manufacturer: blackberry
     brand: blackberry
-    dualOrientation: true
-    simCount: 1
     display:
       width: 720
       height: 720
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'RIM OS'
-    marketingName: 'RIM OS'
-    version: 10.1.0.4651
-    manufacturer: rim
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'BlackBerry Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: rim
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'RIM OS'
+    marketingName: 'RIM OS'
+    version: 10.1.0.4651
+    manufacturer: rim
+    bits: 0
   engine:
     name: WebKit
     version: 537.10.0
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (BB10; Touch) AppleWebKit/537.10+ (KHTML, like Gecko) Version/10.1.0.4633 Mobile Safari/537.10+'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Touch
     marketingName: Touch
     manufacturer: blackberry
     brand: blackberry
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 768
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'RIM OS'
-    marketingName: 'RIM OS'
-    version: 10.1.0.4633
-    manufacturer: rim
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'BlackBerry Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: rim
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'RIM OS'
+    marketingName: 'RIM OS'
+    version: 10.1.0.4633
+    manufacturer: rim
+    bits: 0
   engine:
     name: WebKit
     version: 537.10.0

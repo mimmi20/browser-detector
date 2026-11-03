@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (PlayBook; U; RIM Tablet OS 2.1.0; en-US) AppleWebKit/536.2+ (KHTML, like Gecko) Version/7.2.1.0 Safari/536.2+'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'BlackBerry Playbook'
     marketingName: 'BlackBerry Playbook'
     manufacturer: rim
     brand: rim
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1024
       height: 600
@@ -17,13 +15,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'BlackBerry Tablet OS'
-    marketingName: 'BlackBerry Tablet OS'
-    version: 2.1.0
-    manufacturer: rim
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Blackberry Playbook Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: rim
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'BlackBerry Tablet OS'
+    marketingName: 'BlackBerry Tablet OS'
+    version: 2.1.0
+    manufacturer: rim
+    bits: 0
   engine:
     name: WebKit
     version: 536.2.0

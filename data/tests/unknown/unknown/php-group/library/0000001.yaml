@@ -1,128 +1,12 @@
 -
   headers:
-    user-agent: PHP/5.2.14
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: PHP
-    modus: null
-    version: 5.2.14
-    manufacturer: php-group
-    type: library
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'PHP-Stats/0.1 (+http://www.axel-etcheverry.com/)'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: PHP
-    modus: null
-    version: null
-    manufacturer: php-group
-    type: library
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'Exposition PHP Lib Proxy'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: PHP
-    modus: null
-    version: null
-    manufacturer: php-group
-    type: library
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
     user-agent: PHP/5.3.10
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -131,13 +15,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -145,7 +25,13 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -154,13 +40,11 @@
   headers:
     user-agent: 'PECL::HTTP/1.7.0 (PHP/5.3.3-7+squeeze1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -169,13 +53,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'PECL::HTTP'
     modus: null
@@ -183,7 +63,13 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -192,13 +78,11 @@
   headers:
     user-agent: 'PHP test client'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -207,51 +91,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: PHP
-    modus: null
-    version: null
-    manufacturer: php-group
-    type: library
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'PhpDig/1.8.8 (+http://www.phpdig.net/robot.php)'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
     dualOrientation: null
     simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -259,7 +101,13 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -268,13 +116,11 @@
   headers:
     user-agent: 'HTTP_Request2/2.0.0RC2 (http://pear.php.net/package/http_request2) PHP/5.3.3-7+squeeze3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -283,13 +129,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: HTTP_Request2
     modus: null
@@ -297,7 +139,13 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -306,13 +154,11 @@
   headers:
     user-agent: PHP/5.3.8
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -321,13 +167,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -335,7 +177,13 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -344,13 +192,11 @@
   headers:
     user-agent: 'xmlrpc-epi-php/0.2 (PHP)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -359,13 +205,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -373,7 +215,13 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -382,13 +230,11 @@
   headers:
     user-agent: 'HTTP_Request2/2.0.0RC1 (http://pear.php.net/package/http_request2) PHP/5.3.6'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -397,13 +243,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: HTTP_Request2
     modus: null
@@ -411,7 +253,13 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -420,13 +268,11 @@
   headers:
     user-agent: 'XML-RPC for PHP 3.0.0.beta'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -435,13 +281,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -449,7 +291,13 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -458,13 +306,11 @@
   headers:
     user-agent: 'PECL::HTTP/1.6.0 (PHP/5.2.0-8+etch7)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -473,13 +319,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'PECL::HTTP'
     modus: null
@@ -487,7 +329,13 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -496,13 +344,11 @@
   headers:
     user-agent: 'PECL::HTTP/1.7.1 (PHP/5.3.6)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -511,13 +357,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'PECL::HTTP'
     modus: null
@@ -525,7 +367,13 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -534,13 +382,11 @@
   headers:
     user-agent: 'XML-RPC for PHP 2.2.2'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -549,13 +395,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -563,7 +405,13 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -572,13 +420,11 @@
   headers:
     user-agent: 'HTTP_Request2/0.5.1 (http://pear.php.net/package/http_request2) PHP/5.3.6-6~dotdeb.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -587,13 +433,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: HTTP_Request2
     modus: null
@@ -601,7 +443,13 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -610,13 +458,11 @@
   headers:
     user-agent: 'PECL::HTTP/1.7.0 (PHP/5.3.2)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -625,13 +471,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'PECL::HTTP'
     modus: null
@@ -639,7 +481,13 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -648,13 +496,11 @@
   headers:
     user-agent: 'HTTP_Request2/2.0.0RC1 (http://pear.php.net/package/http_request2) PHP/5.3.2'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -663,13 +509,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: HTTP_Request2
     modus: null
@@ -677,7 +519,13 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -686,13 +534,11 @@
   headers:
     user-agent: 'HTTP_Request2/2.0.0beta3 (http://pear.php.net/package/http_request2) PHP/5.3.2'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -701,13 +547,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: HTTP_Request2
     modus: null
@@ -715,7 +557,13 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -724,13 +572,11 @@
   headers:
     user-agent: 'http://php.s3.to/)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -739,13 +585,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -753,7 +595,13 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -762,13 +610,11 @@
   headers:
     user-agent: PHP/5.3.6
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -777,13 +623,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -791,7 +633,13 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -800,13 +648,11 @@
   headers:
     user-agent: PHP-SOAP/5.2.6-1+lenny8
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -815,13 +661,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP-SOAP
     modus: null
@@ -829,45 +671,13 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: PHP_inetmap.net
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
+    bits: 0
   os:
     name: null
     marketingName: null
     version: null
     manufacturer: unknown
-    bits: null
-  client:
-    name: PHP
-    modus: null
-    version: null
-    manufacturer: php-group
-    type: library
-    isbot: false
-    bits: null
+    bits: 0
   engine:
     name: null
     version: null
@@ -876,13 +686,11 @@
   headers:
     user-agent: 'PECL::HTTP/1.7.0 (PHP/5.2.6)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -891,13 +699,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'PECL::HTTP'
     modus: null
@@ -905,7 +709,13 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -914,13 +724,11 @@
   headers:
     user-agent: 'PECL::HTTP/1.6.0 (PHP/5.2.1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -929,13 +737,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'PECL::HTTP'
     modus: null
@@ -943,7 +747,13 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -952,13 +762,11 @@
   headers:
     user-agent: 'The Incutio XML-RPC PHP Library'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -967,97 +775,23 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: PHP
-    modus: null
-    version: null
-    manufacturer: php-group
-    type: library
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'UpdateBrowscap v0.0.2alpha (with freakyPHP4 workaround) [FILE RETRIEVAL UTILITY] (jsturner@chiark.greenend.org.uk)'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
     dualOrientation: null
     simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
+    bits: 0
+  client:
+    name: PHP
+    modus: null
+    version: null
+    manufacturer: php-group
+    type: library
+    isbot: false
+    bits: 0
   os:
     name: null
     marketingName: null
     version: null
     manufacturer: unknown
-    bits: null
-  client:
-    name: PHP
-    modus: null
-    version: 4.0.0
-    manufacturer: php-group
-    type: library
-    isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'UpdateBrowscap v0.0.2 (with freakyPHP4 workaround) [FILE RETRIEVAL UTILITY] (jsturner@chiark.greenend.org.uk)'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: PHP
-    modus: null
-    version: 4.0.0
-    manufacturer: php-group
-    type: library
-    isbot: false
-    bits: null
+    bits: 0
   engine:
     name: null
     version: null
@@ -1066,13 +800,11 @@
   headers:
     user-agent: 'TopServer PHP'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1081,13 +813,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -1095,7 +823,13 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -1104,13 +838,11 @@
   headers:
     user-agent: 'STPServer PHP'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1119,13 +851,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -1133,22 +861,26 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: simpletest178533;1256140295;4adf2e07ebb6c0.95512748;3B88ne/Z3inHxPHpUTh/Ho/6DjQ=
+    user-agent: 'Slike/alpha FirePHP/0.2.4'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1157,21 +889,23 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: PHP
+    modus: null
+    version: 0.2.4
+    manufacturer: php-group
+    type: library
+    isbot: false
+    bits: 0
   os:
     name: null
     marketingName: null
     version: null
     manufacturer: unknown
-    bits: null
-  client:
-    name: PHP
-    modus: null
-    version: null
-    manufacturer: php-group
-    type: library
-    isbot: false
-    bits: null
+    bits: 0
   engine:
     name: null
     version: null
@@ -1180,13 +914,11 @@
   headers:
     user-agent: 'SAPE_Context PHP 1.0.8'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1195,13 +927,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -1209,7 +937,13 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -1218,13 +952,11 @@
   headers:
     user-agent: 'SAPE_Context PHP 1.0.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1233,13 +965,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -1247,7 +975,13 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -1256,13 +990,11 @@
   headers:
     user-agent: 'SAPE_Client PHP 1.0.8'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1271,13 +1003,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -1285,7 +1013,13 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -1294,13 +1028,11 @@
   headers:
     user-agent: 'SAPE_Client PHP 1.0.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1309,13 +1041,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -1323,22 +1051,26 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHPVBH
+    user-agent: PHP/Tera-WURFL_1.5.2
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1347,13 +1079,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -1361,22 +1089,26 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: 'PhpDig/PHPDIG_VERSION ( http://www.phpdig.net/robot.php)'
+    user-agent: PHP/SWeb.ru
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1385,13 +1117,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -1399,22 +1127,26 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: 'PhpDig/1.8.9 RC1 ( http://www.phpdig.net/robot.php)'
+    user-agent: PHP/SMF
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1423,13 +1155,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -1437,22 +1165,26 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: 'PhpBrowscap Updater'
+    user-agent: PHP/5.3.2-dev
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1461,36 +1193,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
-    version: null
+    version: 5.3.2-dev
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_workshops-eindhoven.nl
+    user-agent: PHP/5.3.1
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1499,36 +1231,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
-    version: null
+    version: 5.3.1
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_water-rocks.net
+    user-agent: PHP/5.3.0
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1537,36 +1269,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
-    version: null
+    version: 5.3.0
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_vuudhouse.dk
+    user-agent: PHP/5.2.8
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1575,36 +1307,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
-    version: null
+    version: 5.2.8
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_virtualadministrator.se
+    user-agent: PHP/5.2.6
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1613,36 +1345,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
-    version: null
+    version: 5.2.6
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_urbanknit.net
+    user-agent: PHP/5.2.4
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1651,36 +1383,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
-    version: null
+    version: 5.2.4
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_thelarsen.de
+    user-agent: PHP/5.2.3
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1689,36 +1421,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
-    version: null
+    version: 5.2.3
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_theflyingshuttle57.nl
+    user-agent: PHP/5.2.2
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1727,36 +1459,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
-    version: null
+    version: 5.2.2
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_tarifemonster.de
+    user-agent: PHP/5.2.12
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1765,36 +1497,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
-    version: null
+    version: 5.2.12
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_steveschiltz.me
+    user-agent: PHP/5.2.11
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1803,36 +1535,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
-    version: null
+    version: 5.2.11
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_sothisiswhy.com
+    user-agent: PHP/5.2.1
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1841,36 +1573,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
-    version: null
+    version: 5.2.1
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_snakepreview.com
+    user-agent: PHP/5.2.0
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1879,36 +1611,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
-    version: null
+    version: 5.2.0
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_sjoerdleijten.nl
+    user-agent: PHP/5.1.3RC4-dev
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1917,36 +1649,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
-    version: null
+    version: 5.1.3-RC+4
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_simonwinger.com
+    user-agent: PHP/4.3.11
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1955,36 +1687,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
-    version: null
+    version: 4.3.11
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_salongdominique.se
+    user-agent: PHP/4.2.3
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1993,36 +1725,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
-    version: null
+    version: 4.2.3
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_robingustafsson.se
+    user-agent: PHP/4.2.2
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2031,36 +1763,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
-    version: null
+    version: 4.2.2
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_rightbacktrading.dk
+    user-agent: PHP/4.2.1
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2069,36 +1801,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
-    version: null
+    version: 4.2.1
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_rcdrifters.se
+    user-agent: PHP/4.1.2
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2107,36 +1839,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
-    version: null
+    version: 4.1.2
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_prettygay.dk
+    user-agent: PHP/4.1.1
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2145,36 +1877,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
-    version: null
+    version: 4.1.1
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_phidippides.eu
+    user-agent: PHP/4.0.4pl1
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2183,36 +1915,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
-    version: null
+    version: 4.0.4-patch+1
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_nybrook.se
+    user-agent: 'PHP version tracker (http://www.nexen.net/phpversion/bot.php)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2221,13 +1953,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -2235,22 +1963,26 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_musadzine.com
+    user-agent: 'PHP version tracker'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2259,13 +1991,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -2273,22 +2001,26 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_mro-photo.se
+    user-agent: 'PHP Script - website scjgd.asso.cc-pays-de-gex.fr'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2297,13 +2029,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -2311,22 +2039,26 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_motiontwist.com
+    user-agent: 'PHP on Moonlake.cz'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2335,13 +2067,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -2349,22 +2077,26 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_modellfabriken.se
+    user-agent: 'PHP on home.mrajca.com'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2373,13 +2105,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -2387,22 +2115,26 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_meeriwasberg.se
+    user-agent: 'PHP Logfile Analyser'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2411,13 +2143,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -2425,22 +2153,26 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_medvindmusik.se
+    user-agent: 'PHP HTTP from Emerge2 Digital (www.emerge2.com)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2449,13 +2181,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -2463,22 +2191,26 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_matthieu-idmtal.com
+    user-agent: 'PHP DocWeb Link Crawler (http://doc.php.net)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2487,13 +2219,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -2501,22 +2229,26 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_maatwerkmoerman.be
+    user-agent: 'PHP Browser Caps/0.7 URL-wrapper'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2525,13 +2257,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -2539,22 +2267,26 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_liftogmaskin.no
+    user-agent: 'PHP Browser Capabilities Project/WMS Framework'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2563,13 +2295,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -2577,22 +2305,26 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_lecordonbl.eu
+    user-agent: 'PHP Browser Capabilities Project/0.7a URL-wrapper'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2601,13 +2333,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -2615,22 +2343,26 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_kimhogberg.com
+    user-agent: 'PHP Browser Capabilities Project/0.7 URL-wrapper'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2639,13 +2371,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -2653,22 +2381,26 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
-  engine:
+    bits: 0
+  os:
     name: null
+    marketingName: null
     version: null
     manufacturer: unknown
--
+    bits: 0
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
   headers:
-    user-agent: PHP_kattbo.com
+    user-agent: 'PHP Browser Capabilities Project/0.7 socket'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2677,13 +2409,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -2691,22 +2419,26 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_kattamor.se
+    user-agent: 'PHP Browser Caerpabilities Project/0.7 URL-wrapper'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2715,13 +2447,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -2729,22 +2457,26 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_kartindata.dk
+    user-agent: 'PHP Browser Caerpabilities Project/0.7 socket'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2753,13 +2485,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -2767,22 +2495,26 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_karot.nl
+    user-agent: 'PHP 4.3.7 (private PHP script - contact: postmaster@gingko.homeip.net)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2791,36 +2523,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
-    version: null
+    version: 4.3.7
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_jayscape.net
+    user-agent: 'PHP (www.chinese-shop.net.ua), hosted by www.ukraine.com.ua'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2829,13 +2561,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -2843,22 +2571,26 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_jamfota.se
+    user-agent: 'PECL::HTTP/1.7.0 (PHP/5.2.6-5ex1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2867,36 +2599,74 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'PECL::HTTP'
+    modus: null
+    version: 1.7.0
+    manufacturer: php-group
+    type: library
+    isbot: false
+    bits: 0
   os:
     name: null
     marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: null
     version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'PECL::HTTP/1.6.5 (PHP/5.3.0)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
     manufacturer: unknown
-    bits: null
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
-    name: PHP
+    name: 'PECL::HTTP'
     modus: null
-    version: null
+    version: 1.6.5
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_izzzy.se
+    user-agent: 'PECL::HTTP/1.6.1-dev (PHP/5.2.6)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2905,36 +2675,74 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'PECL::HTTP'
+    modus: null
+    version: 1.6.1-dev
+    manufacturer: php-group
+    type: library
+    isbot: false
+    bits: 0
   os:
     name: null
     marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: null
     version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'PECL::HTTP/1.6.1-dev (PHP/5.2.4)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
     manufacturer: unknown
-    bits: null
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
-    name: PHP
+    name: 'PECL::HTTP'
     modus: null
-    version: null
+    version: 1.6.1-dev
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_istan.se
+    user-agent: php/5.2.13
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2943,36 +2751,74 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: PHP
+    modus: null
+    version: 5.2.13
+    manufacturer: php-group
+    type: library
+    isbot: false
+    bits: 0
   os:
     name: null
     marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: null
     version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: PHP/5.2.16
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
     manufacturer: unknown
-    bits: null
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
-    version: null
+    version: 5.2.16
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_inspireworks.nl
+    user-agent: PHP/5.2.15
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2981,13 +2827,47 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: PHP
+    modus: null
+    version: 5.2.15
+    manufacturer: php-group
+    type: library
+    isbot: false
+    bits: 0
   os:
     name: null
     marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: null
     version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'Chordie.com: (PHP)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
     manufacturer: unknown
-    bits: null
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -2995,22 +2875,26 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_ilionline.net
+    user-agent: 'php-openid/2.1.2 (php/5.2.10)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -3019,36 +2903,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
-    version: null
+    version: 5.2.10
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_idasmycken.se
+    user-agent: 'HTTP_Request2/0.5.1 (http://pear.php.net/package/http_request2) PHP/5.3.2'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -3057,36 +2941,74 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: HTTP_Request2
+    modus: null
+    version: 0.5.1
+    manufacturer: php-group
+    type: library
+    isbot: false
+    bits: 0
   os:
     name: null
     marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: null
     version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: PHP/5.3.2
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
     manufacturer: unknown
-    bits: null
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
-    version: null
+    version: 5.3.2
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_hfck.dk
+    user-agent: PHP/5.2.5
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -3095,36 +3017,74 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: PHP
+    modus: null
+    version: 5.2.5
+    manufacturer: php-group
+    type: library
+    isbot: false
+    bits: 0
   os:
     name: null
     marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: null
     version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: PHP/5.3.4
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
     manufacturer: unknown
-    bits: null
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
-    version: null
+    version: 5.3.4
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_hardikshah.me
+    user-agent: PHP/5.4.17
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -3133,36 +3093,74 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: PHP
+    modus: null
+    version: 5.4.17
+    manufacturer: php-group
+    type: library
+    isbot: false
+    bits: 0
   os:
     name: null
     marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: null
     version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: PHP/5.5
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
     manufacturer: unknown
-    bits: null
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
+    version: 5.5.0
+    manufacturer: php-group
+    type: library
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
     version: null
-    manufacturer: php-group
-    type: library
-    isbot: false
-    bits: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_hamnservice-norrkoping.se
+    user-agent: 'HTTP_Request2/2.2.1 (http://pear.php.net/package/http_request2) PHP/5.5.33'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -3171,36 +3169,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
-    name: PHP
+    name: HTTP_Request2
     modus: null
-    version: null
+    version: 2.2.1
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_habborella.dk
+    user-agent: 'HTTP_Request2/2.2.1 (http://pear.php.net/package/http_request2) PHP/5.5.35'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -3209,36 +3207,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
-    name: PHP
+    name: HTTP_Request2
     modus: null
-    version: null
+    version: 2.2.1
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_groenkontich.be
+    user-agent: PHP-SOAP/7.1.13-1+0~20180105151310.14+jessie~1.gbp1086fa
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -3247,36 +3245,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
-    name: PHP
+    name: PHP-SOAP
     modus: null
-    version: null
+    version: 7.1.13.1
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_groenedegem.net
+    user-agent: PHP-SOAP/7.1.18-1+0~20180611145758.18+jessie~1.gbp2b32f6
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -3285,36 +3283,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
-    name: PHP
+    name: PHP-SOAP
     modus: null
-    version: null
+    version: 7.1.18.1
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_gote-mattsson.se
+    user-agent: 'PHP/5.{3|2}.{1|2|3|4|5|6|7|8|9|0}{1|2|3|4|5|6|7|8|9|0}'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -3323,36 +3321,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
-    version: null
+    version: 5.0.0
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_geirhaha.com
+    user-agent: php-requests/1.7
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -3361,13 +3359,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -3375,22 +3369,26 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_gabber.org.uk
+    user-agent: PHP/5.4
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -3399,36 +3397,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
-    version: null
+    version: 5.4.0
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_framtidstro.org
+    user-agent: php/testing
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -3437,13 +3435,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -3451,22 +3445,26 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_folietjes.be
+    user-agent: 'PHP/{5|6|7}.{3|2}.{1|2|3|4|5|6|7|8|9|0}{1|2|3|4|5|6|7|8|9|0}'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -3475,13 +3473,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -3489,22 +3483,26 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_flitsgaard.dk
+    user-agent: PHP-AYMAPI/1.0
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -3513,13 +3511,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -3527,22 +3521,26 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_fladdor.se
+    user-agent: 'Mozilla/5.0 (compatible; PHP Scraper/0.x; +https://phpscraper.de)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -3551,13 +3549,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -3565,22 +3559,26 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_faellestilmelding.dk
+    user-agent: 'amphp/http-client @ v4.x'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -3589,13 +3587,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
@@ -3603,22 +3597,26 @@
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_eurogoblin.eu
+    user-agent: PHP/5.2.05
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -3627,36 +3625,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
-    version: null
+    version: 5.2.05
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_etrai.net
+    user-agent: PHP/5.2.32
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -3665,36 +3663,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
-    version: null
+    version: 5.2.32
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_eriktreimann.com
+    user-agent: PHP/5.2.33
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -3703,36 +3701,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
-    version: null
+    version: 5.2.33
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_davdo.dk
+    user-agent: PHP/5.2.34
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -3741,36 +3739,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
-    version: null
+    version: 5.2.34
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
     manufacturer: unknown
 -
   headers:
-    user-agent: PHP_contris.nl
+    user-agent: PHP/5.2.46
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -3779,21 +3777,23 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PHP
     modus: null
-    version: null
+    version: 5.2.46
     manufacturer: php-group
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null

@@ -10,13 +10,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 (Ecosia android@111.0.5563.116)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: K118_EEA
     marketingName: K118
     manufacturer: feonal
     brand: feonal
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -25,13 +23,9 @@
     type: tablet
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -39,7 +33,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 111.0.0

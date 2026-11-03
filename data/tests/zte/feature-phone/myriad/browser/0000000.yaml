@@ -2,13 +2,11 @@
   headers:
     user-agent: 'ZTE-C880/1.0 UP.Browser/4.1.27a2'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C880
     marketingName: C880
     manufacturer: zte
     brand: at-t
-    dualOrientation: false
-    simCount: 1
     display:
       width: 146
       height: 128
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null

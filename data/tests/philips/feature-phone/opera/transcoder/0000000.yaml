@@ -5,13 +5,11 @@
     x-operamini-phone: '? # ?'
     user-agent: 'Opera/9.80 (J2ME/MIDP; Opera Mini/4.5.33867/35.3088; U; xx) Presto/2.8.119 Version/11.10'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X2300
     marketingName: X2300
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 3
     display:
       width: 320
       height: 240
@@ -20,13 +18,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 3
+    bits: 0
   client:
     name: 'Opera Mini'
     modus: null
@@ -34,7 +28,13 @@
     manufacturer: opera
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Presto
     version: 2.8.119

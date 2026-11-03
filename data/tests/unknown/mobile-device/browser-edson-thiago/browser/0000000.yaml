@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Zeasn/2.0 Mozilla/5.0 (Linux;CE-HTML/1.0;U;en), Chrome/49.0.2623.87 Safari/537.36 AppleWebKit 537.36 (KHTML, like Gecko) Tbrowser/2.0, _TV_UNKONWN/V8-NT563LA-LF1V250 (WESTPOINT,TETS-4919SM,wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Whale OS'
-    marketingName: 'Whale OS'
-    version: null
-    manufacturer: whaleTV
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: TBrowser
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: browser-edson-thiago
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Whale OS'
+    marketingName: 'Whale OS'
+    version: null
+    manufacturer: whaleTV
+    bits: 0
   engine:
     name: Blink
     version: 49.0.2623.87

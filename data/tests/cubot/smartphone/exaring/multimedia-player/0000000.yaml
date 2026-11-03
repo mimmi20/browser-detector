@@ -2,13 +2,11 @@
   headers:
     user-agent: 'waipu/2023.25.0-40b5976d4b (Phone; CUBOT; NOTE 7; waipu; Android 10)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Note 7'
     marketingName: 'Note 7'
     manufacturer: cubot
     brand: cubot
-    dualOrientation: true
-    simCount: 2
     display:
       width: 960
       height: 442
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: waipu.tv
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: exaring
     type: multimedia-player
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null

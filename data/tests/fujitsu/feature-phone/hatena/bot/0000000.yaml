@@ -2,13 +2,11 @@
   headers:
     user-agent: 'DoCoMo/2.0 D903i(c100;TB;W28H20) (compatible; Hatena-Mobile-Gateway/1.2; +http://mgw.hatena.ne.jp/help)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: D903i
     marketingName: D903i
     manufacturer: fujitsu
     brand: ntt-docomo
-    dualOrientation: false
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: Hatena
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: hatena
     type: bot
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null

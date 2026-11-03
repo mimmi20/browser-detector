@@ -2,13 +2,11 @@
   headers:
     user-agent: 'AndroidHttpClient (Linux; U; Android 16; de_DE; 23127PN0CG; Build/BP2A.250605.031.A3; Cronet/141.0.7340.3)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 23127PN0CG
     marketingName: '14'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2670
       height: 1200
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: AndroidHttpClient
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: unknown
     type: crawler
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null

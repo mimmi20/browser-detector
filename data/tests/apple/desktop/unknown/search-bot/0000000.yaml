@@ -2,13 +2,11 @@
   headers:
     user-agent: 'yacybot (-global; x86_64 Mac OS X 10.13.4; java 1.8.0_144; Europe/en) http://yacy.net/bot.html'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Macintosh
     marketingName: Macintosh
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 10.13.4
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'YaCy Bot'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: unknown
     type: search-bot
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 10.13.4
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null

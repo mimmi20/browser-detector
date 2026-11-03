@@ -15,8 +15,6 @@
     marketingName: Macintosh
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -25,12 +23,8 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: 64
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 12.2.1
-    manufacturer: apple
+    dualOrientation: false
+    simCount: 0
     bits: 64
   client:
     name: 'AVG Secure Browser'
@@ -39,6 +33,12 @@
     manufacturer: avast-software
     type: browser
     isbot: false
+    bits: 64
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 12.2.1
+    manufacturer: apple
     bits: 64
   engine:
     name: Blink
@@ -48,13 +48,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 AVG/113.0.3824.128'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Macintosh
     marketingName: Macintosh
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -63,13 +61,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 10.15.7
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'AVG Secure Browser'
     modus: null
@@ -77,7 +71,13 @@
     manufacturer: avast-software
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 10.15.7
+    manufacturer: apple
+    bits: 0
   engine:
     name: Blink
     version: 113.0.0.0
@@ -86,13 +86,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Avast/119.0.0.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Macintosh
     marketingName: Macintosh
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -101,13 +99,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 10.15.7
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Avast Secure Browser'
     modus: null
@@ -115,7 +109,13 @@
     manufacturer: avast-software
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 10.15.7
+    manufacturer: apple
+    bits: 0
   engine:
     name: Blink
     version: 119.0.0.0

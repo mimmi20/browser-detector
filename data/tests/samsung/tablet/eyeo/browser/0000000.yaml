@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-X700) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.63 Safari/537.36 ABB/3.2.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X700
     marketingName: 'Galaxy Tab S8 11.0" Wi-Fi'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -17,13 +15,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'AdBlock Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: eyeo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 101.0.4951.63
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-T860) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.63 Safari/537.36 ABB/3.2.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-T860
     marketingName: 'Galaxy Tab S6 10.5" Wi-Fi'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -55,13 +53,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'AdBlock Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: eyeo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 101.0.4951.63

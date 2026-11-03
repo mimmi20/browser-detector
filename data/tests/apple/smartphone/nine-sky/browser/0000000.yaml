@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_0 like Mac OS X; zh_cn) AppleWebKit/532.9 (KHTML, like Gecko) Version/4.0.5 Mobile/8A293 Ninesky-android-mobile/2.0.0 Safari/6531.22.7'
   device:
-    architecture: null
+    architecture: ''
     deviceName: iPhone
     marketingName: iPhone
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 480
       height: 320
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Ninesky Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: nine-sky
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: 532.9.0

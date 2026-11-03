@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Opera/9.80 (Linux mips; U; xx) Presto/2.10.287 Version/12.00 DuneHD/1.0 (connect; 140223_0132_b6) CE-HTML/1.0 NETRANGEMMH'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NETRANGEMMH
     marketingName: NETRANGEMMH
     manufacturer: net-range
     brand: net-range
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Opera TV'
-    marketingName: 'Opera TV'
-    version: null
-    manufacturer: opera
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Opera
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Opera TV'
+    marketingName: 'Opera TV'
+    version: null
+    manufacturer: opera
+    bits: 0
   engine:
     name: Presto
     version: 2.10.287
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Opera/9.80 (Linux armv6l; U; NETRANGEMMH;HbbTV/1.1.1;CE-HTML/1.0;IKEA LF1V358; en) Presto/2.10.250 Version/11.60'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NETRANGEMMH
     marketingName: NETRANGEMMH
     manufacturer: net-range
     brand: net-range
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Opera
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Presto
     version: 2.10.250
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Opera/9.80 (Linux sh4; U; HbbTV/1.1.1 (; INTEK; Vantage Full HD Model;;;) hdplusSmartTV/1.0 (NETRANGEMMH;) Bee/3.2 CE-HTML/1.0; FXM-U2FsdGVkX19WaYSyGq70V2qt2C4bR92ULIOEtQrDKma1eRx3WQlWfuTO6eCHMYQm-END; en) Presto/2.10.250 Version/11.60'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NETRANGEMMH
     marketingName: NETRANGEMMH
     manufacturer: net-range
     brand: net-range
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -93,13 +91,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Opera
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Presto
     version: 2.10.250
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36 OPR/22.0.1481.0 OMI/4.2.12.31.Vespa2.0 MB100/0.0.20.0 (OEM, Si2158LG32, wired) HbbTV/1.2.1 (; CUS:OEM; MB100; 0.0.20.0; 1.0;) CE-HTML/1.0 NETRANGEMMH ipl'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NETRANGEMMH
     marketingName: NETRANGEMMH
     manufacturer: net-range
     brand: net-range
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -131,13 +129,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Devices'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Blink
     version: 35.0.1916.153

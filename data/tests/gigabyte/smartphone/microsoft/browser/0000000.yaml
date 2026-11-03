@@ -2,13 +2,11 @@
   headers:
     user-agent: 't600; v3.02.02 (compatible; msie 6.0; windows ce; iemobile 6.12) ppc; 240x320; gigabyte-g-smart'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GSmart
     marketingName: GSmart
     manufacturer: gigabyte
     brand: gigabyte
-    dualOrientation: null
-    simCount: 1
     display:
       width: 480
       height: 320
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: null
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: null

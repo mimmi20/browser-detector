@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Windows Phone Search (Windows Phone OS 7.10;HTC;HD7 T9292;7.10;8862)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: T9292
     marketingName: HD7
     manufacturer: htc
     brand: htc
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 7.10.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Windows Phone Search'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: microsoft
     type: bot
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 7.10.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: null

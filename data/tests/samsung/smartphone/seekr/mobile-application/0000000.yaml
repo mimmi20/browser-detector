@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Seekr/1.6.0.748-debug Dalvik/2.1.0 (Linux; U; Android 14; SM-S928W Build/UP1A.231005.007)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S928W
     marketingName: 'Galaxy S24 Ultra (Canada)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 3120
       height: 1440
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Seekr
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: seekr
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'PugpigBolt 3.8.10 (samsung, Android 13) on phone (model SM-G998U)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G998U
     marketingName: 'Galaxy S21 Ultra 5G (USA)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 3200
       height: 1440
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'PugPig Bolt'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: kaldor
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null

@@ -2,28 +2,22 @@
   headers:
     user-agent: 'HbbTV/1.2.1 (; TCL; 2016FHD;;;)'
   device:
-    architecture: null
-    deviceName: 'general TCL TV'
-    marketingName: 'general TCL TV'
+    architecture: ''
+    deviceName: 'FHD TV (2016)'
+    marketingName: 'FHD TV (2016)'
     manufacturer: tcl
     brand: tcl
-    dualOrientation: false
-    simCount: 0
     display:
-      width: null
-      height: null
+      width: 1920
+      height: 1080
       touch: false
       size: null
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: null
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -40,28 +40,22 @@
   headers:
     user-agent: 'HbbTV/1.2.1 (;TCL;2016FHD; ; ;)'
   device:
-    architecture: null
-    deviceName: 'general TCL TV'
-    marketingName: 'general TCL TV'
+    architecture: ''
+    deviceName: 'FHD TV (2016)'
+    marketingName: 'FHD TV (2016)'
     manufacturer: tcl
     brand: tcl
-    dualOrientation: false
-    simCount: 0
     display:
-      width: null
-      height: null
+      width: 1920
+      height: 1080
       touch: false
       size: null
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: null
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'HbbTV/1.2.1 (+DL; SmarD TV; TCL; 1.32.455; 2.002; WOTV/0.1; SmartTvA/3.0.0.0;)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TCL TV'
     marketingName: 'general TCL TV'
     manufacturer: tcl
     brand: tcl
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -93,13 +91,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: null
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Roku Dynamic Menu/13.10.6 (Roku 14.6.4; en_US; 50S451; Build/9916)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 50S451
     marketingName: 'Smart Roku TV'
     manufacturer: tcl
     brand: tcl
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -131,13 +129,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: null
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null

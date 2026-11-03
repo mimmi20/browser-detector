@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (SH05C;FOMA;like Gecko)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SH-05C
     marketingName: SH-05C
     manufacturer: sharp
     brand: ntt-docomo
-    dualOrientation: true
-    simCount: 1
     display:
       width: 854
       height: 480
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: sharp
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: sharp
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null

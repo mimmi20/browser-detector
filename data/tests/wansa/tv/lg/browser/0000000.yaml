@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chr0me/68.0.3440.106 Safari/537.36 LG Browser/8.00.00(LGE; WUD65KWO60; 04.50.63; 0x00000001; DTV_C20P); webOS.TV-2020; LG NetCast.TV-2013 Compatible (LGE, WUD65KWO60, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: WUD65KWO60
     marketingName: WUD65KWO60
     manufacturer: wansa
     brand: wansa
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -17,13 +15,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 5.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 5.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 68.0.3440.106

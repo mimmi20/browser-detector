@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0; TOB 6.13 (Windows NT 6.2; WOW64; Trident/7.0; MAARJS; rv:11.0) like Gecko'
   device:
-    architecture: null
+    architecture: ''
     deviceName: PC
     marketingName: PC
     manufacturer: acer
     brand: acer
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 8'
-    version: 8.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'T-Online Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: telekom
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 8'
+    version: 8.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 7.0.0

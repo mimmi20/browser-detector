@@ -2,13 +2,11 @@
   headers:
     user-agent: ocaml-cohttp/6.0.0
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,22 +15,24 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: ocaml-cohttp
+    modus: null
+    version: 6.0.0
+    manufacturer: linux-foundation
+    type: library
+    isbot: false
+    bits: 0
   os:
     name: null
     marketingName: null
     version: null
     manufacturer: unknown
-    bits: null
-  client:
-    name: ocaml-cohttp
-    modus: null
-    version: null
-    manufacturer: linux-foundation
-    type: library
-    isbot: false
-    bits: null
+    bits: 0
   engine:
-    name: WebKit
+    name: null
     version: null
-    manufacturer: apple
+    manufacturer: unknown

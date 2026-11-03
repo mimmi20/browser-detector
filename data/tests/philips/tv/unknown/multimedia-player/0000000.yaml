@@ -2,13 +2,11 @@
   headers:
     user-agent: 'com.devcoder.iptvxtreamplayer/111 (Linux; U; Android 12; en; Philips Google TV TA1; Build/STT2.220929.001; Cronet/114.0.5735.33)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Google TV TA1'
     marketingName: 'Google TV TA1'
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -17,13 +15,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Xtream Player'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: unknown
     type: multimedia-player
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null

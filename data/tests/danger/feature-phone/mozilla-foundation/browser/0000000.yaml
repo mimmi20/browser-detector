@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Danger hiptop 3.3; U; rv:1.7.12) Gecko/20050920'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Hiptop
     marketingName: Hiptop
     manufacturer: danger
     brand: danger
-    dualOrientation: null
-    simCount: 1
     display:
       width: 240
       height: 160
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Danger OS'
-    marketingName: 'Danger OS'
-    version: null
-    manufacturer: danger
-    bits: null
+    dualOrientation: null
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Danger OS'
+    marketingName: 'Danger OS'
+    version: null
+    manufacturer: danger
+    bits: 0
   engine:
     name: Gecko
     version: 1.7.12
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Danger hiptop 2.0)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Hiptop 2'
     marketingName: 'Hiptop 2'
     manufacturer: danger
     brand: danger
-    dualOrientation: null
-    simCount: 1
     display:
       width: 240
       height: 160
@@ -55,13 +53,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Danger OS'
-    marketingName: 'Danger OS'
-    version: null
-    manufacturer: danger
-    bits: null
+    dualOrientation: null
+    simCount: 1
+    bits: 0
   client:
     name: 'Mozilla Application Suite'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Danger OS'
+    marketingName: 'Danger OS'
+    version: null
+    manufacturer: danger
+    bits: 0
   engine:
     name: Gecko
     version: null

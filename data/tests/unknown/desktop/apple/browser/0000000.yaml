@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/534+ (KHTML, like Gecko)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Windows Desktop'
     marketingName: 'Windows Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 7'
-    version: 7.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 7'
+    version: 7.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: WebKit
     version: 534.0.0
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.34 (KHTML, like Gecko) Qt/4.8.2'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 534.34.0
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; NLCrawler/2.0.27; Linux 2.6.3-7; i686; en_US)KHTML/3.4.89 (like Gecko)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -93,13 +91,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: 2.6.3.7
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: 2.6.3.7
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: KHTML
     version: 3.4.89
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Safari 531.21.10 (OS X 10_6_2 Intel)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -131,13 +129,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; SunOS sun4u; en-US) AppleWebKit/533.25.20 (KHTML, like Gecko) Version/5.0.2 Safari/533.25.20'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -169,13 +167,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: SunOS
-    marketingName: SunOS
-    version: null
-    manufacturer: oracle
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: SunOS
+    marketingName: SunOS
+    version: null
+    manufacturer: oracle
+    bits: 0
   engine:
     name: WebKit
     version: 533.25.20
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows NT 7.1; en-NZ) AppleWebKit/532.21 (KHTML, like Gecko) Version/5.0.4 Safari/532.21'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Windows Desktop'
     marketingName: 'Windows Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -207,13 +205,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Windows NT'
-    marketingName: 'Windows NT'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows NT'
+    marketingName: 'Windows NT'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: WebKit
     version: 532.21.0
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; SunOS sun4u; en-IE) AppleWebKit/538.15.23 (KHTML, like Gecko) Safari/538.15.23'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -245,13 +243,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: SunOS
-    marketingName: SunOS
-    version: null
-    manufacturer: oracle
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: SunOS
+    marketingName: SunOS
+    version: null
+    manufacturer: oracle
+    bits: 0
   engine:
     name: WebKit
     version: 538.15.23
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; Ubuntu; Linux; en-CA) AppleWebKit/522.10.26 (KHTML, like Gecko) Safari/522.10.26'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -283,13 +281,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -297,98 +291,26 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: WebKit
     version: 522.10.26
     manufacturer: apple
 -
   headers:
-    user-agent: 'Mozilla/5.0 (X11; NetBSD amd64; en-IN) AppleWebKit/523.29.29 (KHTML, like Gecko) Safari/523.29.29'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: NetBSD
-    marketingName: NetBSD
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: 4.0.0
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 523.29.29
-    manufacturer: apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (X11; NetBSD amd64; en-US) AppleWebKit/534.14.35 (KHTML, like Gecko) Safari/534.14.35'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: NetBSD
-    marketingName: NetBSD
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: 4.0.0
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 534.14.35
-    manufacturer: apple
--
-  headers:
     user-agent: 'Mozilla/5.0 (X11; SunOS sun4u; en-US) AppleWebKit/533.15 (KHTML, like Gecko) Version/5.0.4 Safari/533.15'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -397,13 +319,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: SunOS
-    marketingName: SunOS
-    version: null
-    manufacturer: oracle
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -411,7 +329,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: SunOS
+    marketingName: SunOS
+    version: null
+    manufacturer: oracle
+    bits: 0
   engine:
     name: WebKit
     version: 533.15.0
@@ -420,13 +344,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; SunOS sun4u; en-GB) AppleWebKit/527.15 (KHTML, like Gecko) Version/5.0.2 Safari/527.15'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -435,13 +357,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: SunOS
-    marketingName: SunOS
-    version: null
-    manufacturer: oracle
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -449,98 +367,26 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: SunOS
+    marketingName: SunOS
+    version: null
+    manufacturer: oracle
+    bits: 0
   engine:
     name: WebKit
     version: 527.15.0
     manufacturer: apple
 -
   headers:
-    user-agent: 'Mozilla/5.0 (X11; NetBSD amd64; en-MT) AppleWebKit/538.26 (KHTML, like Gecko) Version/5.0.3 Safari/538.26'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: NetBSD
-    marketingName: NetBSD
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: 5.0.3
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 538.26.0
-    manufacturer: apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (X11; NetBSD amd64; en-US) AppleWebKit/522.15.33 (KHTML, like Gecko) Version/5.0.3 Safari/522.15.33'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: NetBSD
-    marketingName: NetBSD
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: 5.0.3
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 522.15.33
-    manufacturer: apple
--
-  headers:
     user-agent: 'Mozilla/5.0 (X11; SunOS sun4u; en-IE) AppleWebKit/528.11.26 (KHTML, like Gecko) Safari/528.11.26'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -549,13 +395,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: SunOS
-    marketingName: SunOS
-    version: null
-    manufacturer: oracle
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -563,7 +405,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: SunOS
+    marketingName: SunOS
+    version: null
+    manufacturer: oracle
+    bits: 0
   engine:
     name: WebKit
     version: 528.11.26
@@ -572,13 +420,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; SunOS sun4u; en-ZA) AppleWebKit/536.23.16 (KHTML, like Gecko) Version/5.0.2 Safari/536.23.16'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -587,13 +433,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: SunOS
-    marketingName: SunOS
-    version: null
-    manufacturer: oracle
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -601,136 +443,26 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: SunOS
+    marketingName: SunOS
+    version: null
+    manufacturer: oracle
+    bits: 0
   engine:
     name: WebKit
     version: 536.23.16
     manufacturer: apple
 -
   headers:
-    user-agent: 'Mozilla/5.0 (X11; NetBSD amd64; en-IN) AppleWebKit/528.23 (KHTML, like Gecko) Safari/528.23'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: NetBSD
-    marketingName: NetBSD
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: 4.0.0
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 528.23.0
-    manufacturer: apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (X11; NetBSD amd64; en-ZA) AppleWebKit/528.18 (KHTML, like Gecko) Safari/528.18'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: NetBSD
-    marketingName: NetBSD
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: 4.0.0
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 528.18.0
-    manufacturer: apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (X11; BSD Four) AppleWebKit/534.34 (KHTML, like Gecko) Qt/4.8.5 Safari/534.34'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: BSD
-    marketingName: BSD
-    version: null
-    manufacturer: berkeley
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: 4.0.0
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 534.34.0
-    manufacturer: apple
--
-  headers:
     user-agent: 'Mozilla/5.0 (Fedora; Linux x86_64) AppleWebKit/538.15 (KHTML, like Gecko) Version/8.0 Safari/538.15'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -739,13 +471,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Fedora Linux'
-    marketingName: 'Fedora Linux'
-    version: null
-    manufacturer: redhat
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -753,7 +481,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fedora Linux'
+    marketingName: 'Fedora Linux'
+    version: null
+    manufacturer: redhat
+    bits: 0
   engine:
     name: WebKit
     version: 538.15.0
@@ -762,13 +496,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows 6.1) (KHTML, 1242116149'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Windows Desktop'
     marketingName: 'Windows Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -777,13 +509,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 7'
-    version: 7.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -791,7 +519,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 7'
+    version: 7.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: KHTML
     version: null
@@ -800,13 +534,11 @@
   headers:
     user-agent: 'Safari 533.19.4 (OS X 10_6_5 Intel)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -815,13 +547,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -829,7 +557,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -838,13 +572,11 @@
   headers:
     user-agent: 'Safari 533.20.27 (OS X 10_6_6 Intel)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -853,13 +585,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -867,7 +595,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -876,13 +610,11 @@
   headers:
     user-agent: 'Safari 534.20.8 (OS X 10_7 Intel)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -891,13 +623,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -905,7 +633,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -914,13 +648,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux i686) AppleWebKit/538.2 (KHTML, like Gecko) Large Screen WebAppManager Safari/538.2'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -929,13 +661,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: null
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -943,516 +671,26 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: null
+    manufacturer: lg
+    bits: 0
   engine:
     name: WebKit
     version: 538.2.0
     manufacturer: apple
 -
   headers:
-    user-agent: 'Mozilla/5.0 (X11; NetBSD amd64; en-AU) AppleWebKit/538.20 (KHTML, like Gecko) Safari/538.20'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: NetBSD
-    marketingName: NetBSD
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: 4.0.0
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 538.20.0
-    manufacturer: apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (X11; NetBSD amd64; en-GB) AppleWebKit/533.29.19 (KHTML, like Gecko) Safari/533.29.19'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: NetBSD
-    marketingName: NetBSD
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: 4.0.0
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 533.29.19
-    manufacturer: apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (X11; NetBSD amd64; en-IE) AppleWebKit/524.15.34 (KHTML, like Gecko) Safari/524.15.34'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: NetBSD
-    marketingName: NetBSD
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: 4.0.0
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 524.15.34
-    manufacturer: apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (X11; NetBSD amd64; en-IN) AppleWebKit/537.11 (KHTML, like Gecko) Safari/537.11'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: NetBSD
-    marketingName: NetBSD
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: 4.0.0
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 537.11.0
-    manufacturer: apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (X11; NetBSD amd64; en-NZ) AppleWebKit/526.18.17 (KHTML, like Gecko) Version/5.0.2 Safari/526.18.17'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: NetBSD
-    marketingName: NetBSD
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: 5.0.2
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 526.18.17
-    manufacturer: apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (X11; NetBSD amd64; en-NZ) AppleWebKit/527.21 (KHTML, like Gecko) Version/5.0.3 Safari/527.21'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: NetBSD
-    marketingName: NetBSD
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: 5.0.3
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 527.21.0
-    manufacturer: apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (X11; NetBSD amd64; en-NZ) AppleWebKit/537.28.25 (KHTML, like Gecko) Version/5.0.2 Safari/537.28.25'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: NetBSD
-    marketingName: NetBSD
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: 5.0.2
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 537.28.25
-    manufacturer: apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (X11; NetBSD amd64; en-PH) AppleWebKit/528.22 (KHTML, like Gecko) Version/5.0.2 Safari/528.22'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: NetBSD
-    marketingName: NetBSD
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: 5.0.2
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 528.22.0
-    manufacturer: apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (X11; NetBSD amd64; en-SG) AppleWebKit/522.28.25 (KHTML, like Gecko) Safari/522.28.25'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: NetBSD
-    marketingName: NetBSD
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: 4.0.0
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 522.28.25
-    manufacturer: apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (X11; NetBSD amd64; en-SG) AppleWebKit/528.13 (KHTML, like Gecko) Safari/528.13'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: NetBSD
-    marketingName: NetBSD
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: 4.0.0
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 528.13.0
-    manufacturer: apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (X11; NetBSD amd64; en-SG) AppleWebKit/535.25 (KHTML, like Gecko) Safari/535.25'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: NetBSD
-    marketingName: NetBSD
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: 4.0.0
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 535.25.0
-    manufacturer: apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (X11; NetBSD amd64; en-US) AppleWebKit/525.15 (KHTML, like Gecko) Version/5.0.2 Safari/525.15'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: NetBSD
-    marketingName: NetBSD
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: 5.0.2
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 525.15.0
-    manufacturer: apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (X11; NetBSD amd64; en-ZA) AppleWebKit/525.12.36 (KHTML, like Gecko) Version/5.0.4 Safari/525.12.36'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: NetBSD
-    marketingName: NetBSD
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: 5.0.4
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 525.12.36
-    manufacturer: apple
--
-  headers:
     user-agent: 'Mozilla/5.0 (X11; SunOS sun4u; en-CA) AppleWebKit/523.18.24 (KHTML, like Gecko) Safari/523.18.24'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1461,21 +699,23 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
+  client:
+    name: Safari
+    modus: null
+    version: 4.0.0
+    manufacturer: apple
+    type: browser
+    isbot: false
+    bits: 0
   os:
     name: SunOS
     marketingName: SunOS
     version: null
     manufacturer: oracle
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: 4.0.0
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
+    bits: 0
   engine:
     name: WebKit
     version: 523.18.24
@@ -1484,13 +724,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; SunOS sun4u; en-IE) AppleWebKit/522.21 (KHTML, like Gecko) Safari/522.21'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1499,13 +737,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: SunOS
-    marketingName: SunOS
-    version: null
-    manufacturer: oracle
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -1513,7 +747,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: SunOS
+    marketingName: SunOS
+    version: null
+    manufacturer: oracle
+    bits: 0
   engine:
     name: WebKit
     version: 522.21.0
@@ -1522,13 +762,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; SunOS sun4u; en-IN) AppleWebKit/524.18 (KHTML, like Gecko) Safari/524.18'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1537,13 +775,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: SunOS
-    marketingName: SunOS
-    version: null
-    manufacturer: oracle
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -1551,7 +785,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: SunOS
+    marketingName: SunOS
+    version: null
+    manufacturer: oracle
+    bits: 0
   engine:
     name: WebKit
     version: 524.18.0
@@ -1560,13 +800,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; SunOS sun4u; en-NZ) AppleWebKit/524.23.25 (KHTML, like Gecko) Version/5.0.3 Safari/524.23.25'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1575,13 +813,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: SunOS
-    marketingName: SunOS
-    version: null
-    manufacturer: oracle
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -1589,7 +823,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: SunOS
+    marketingName: SunOS
+    version: null
+    manufacturer: oracle
+    bits: 0
   engine:
     name: WebKit
     version: 524.23.25
@@ -1598,13 +838,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; SunOS sun4u; en-NZ) AppleWebKit/525.24.30 (KHTML, like Gecko) Safari/525.24.30'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1613,13 +851,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: SunOS
-    marketingName: SunOS
-    version: null
-    manufacturer: oracle
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -1627,7 +861,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: SunOS
+    marketingName: SunOS
+    version: null
+    manufacturer: oracle
+    bits: 0
   engine:
     name: WebKit
     version: 525.24.30
@@ -1636,13 +876,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; SunOS sun4u; en-NZ) AppleWebKit/527.15.36 (KHTML, like Gecko) Version/5.0.3 Safari/527.15.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1651,13 +889,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: SunOS
-    marketingName: SunOS
-    version: null
-    manufacturer: oracle
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -1665,7 +899,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: SunOS
+    marketingName: SunOS
+    version: null
+    manufacturer: oracle
+    bits: 0
   engine:
     name: WebKit
     version: 527.15.36
@@ -1674,13 +914,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; SunOS sun4u; en-NZ) AppleWebKit/534.29 (KHTML, like Gecko) Version/5.0.4 Safari/534.29'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1689,13 +927,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: SunOS
-    marketingName: SunOS
-    version: null
-    manufacturer: oracle
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -1703,7 +937,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: SunOS
+    marketingName: SunOS
+    version: null
+    manufacturer: oracle
+    bits: 0
   engine:
     name: WebKit
     version: 534.29.0
@@ -1712,13 +952,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; SunOS sun4u; en-US) AppleWebKit/523.14 (KHTML, like Gecko) Version/5.0.4 Safari/523.14'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1727,13 +965,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: SunOS
-    marketingName: SunOS
-    version: null
-    manufacturer: oracle
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -1741,7 +975,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: SunOS
+    marketingName: SunOS
+    version: null
+    manufacturer: oracle
+    bits: 0
   engine:
     name: WebKit
     version: 523.14.0
@@ -1750,13 +990,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; SunOS sun4u; en-US) AppleWebKit/524.29 (KHTML, like Gecko) Safari/524.29'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1765,13 +1003,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: SunOS
-    marketingName: SunOS
-    version: null
-    manufacturer: oracle
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -1779,7 +1013,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: SunOS
+    marketingName: SunOS
+    version: null
+    manufacturer: oracle
+    bits: 0
   engine:
     name: WebKit
     version: 524.29.0
@@ -1788,13 +1028,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; SunOS sun4u; en-US) AppleWebKit/535.23.16 (KHTML, like Gecko) Version/5.0.2 Safari/535.23.16'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1803,13 +1041,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: SunOS
-    marketingName: SunOS
-    version: null
-    manufacturer: oracle
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -1817,7 +1051,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: SunOS
+    marketingName: SunOS
+    version: null
+    manufacturer: oracle
+    bits: 0
   engine:
     name: WebKit
     version: 535.23.16
@@ -1826,13 +1066,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; SunOS sun4u; en-US) AppleWebKit/538.14.20 (KHTML, like Gecko) Safari/538.14.20'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1841,13 +1079,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: SunOS
-    marketingName: SunOS
-    version: null
-    manufacturer: oracle
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -1855,7 +1089,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: SunOS
+    marketingName: SunOS
+    version: null
+    manufacturer: oracle
+    bits: 0
   engine:
     name: WebKit
     version: 538.14.20
@@ -1864,13 +1104,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; CrOS i686 2268.111.0) AppleWebKit/536.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1879,13 +1117,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: ChromeOS
-    marketingName: ChromeOS
-    version: 2268.111.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -1893,98 +1127,26 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: ChromeOS
+    marketingName: ChromeOS
+    version: 2268.111.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: 536.1.0
     manufacturer: apple
 -
   headers:
-    user-agent: 'Mozilla/5.0 (X11; BSD Four) AppleWebKit/534.34 (KHTML, like Gecko) webkit2png Safari/534.34'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: BSD
-    marketingName: BSD
-    version: null
-    manufacturer: berkeley
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: 4.0.0
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 534.34.0
-    manufacturer: apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (X11; 78; CentOS; US-en) AppleWebKit/527  (KHTML, like Gecko) Bolt/0.920 Version/3.0 Safari/523.15'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: 'Cent OS Linux'
-    marketingName: 'Cent OS Linux'
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: 3.0.0
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 527.0.0
-    manufacturer: apple
--
-  headers:
     user-agent: 'Mozilla/5.0 (compatible; del.icio.us-thumbnails/1.0; FreeBSD) KHTML/4.3.2 (like Gecko)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1993,21 +1155,23 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
+  client:
+    name: Safari
+    modus: null
+    version: null
+    manufacturer: apple
+    type: browser
+    isbot: false
+    bits: 0
   os:
     name: FreeBSD
     marketingName: FreeBSD
     version: null
     manufacturer: freebsd
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: null
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
+    bits: 0
   engine:
     name: KHTML
     version: 4.3.2
@@ -2016,13 +1180,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (SaferSurf) AppleWebKit/525.19 (KHTML, like Gecko) Version/3.1.2 Safari/525.21'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2031,13 +1193,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -2045,212 +1203,26 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 525.19.0
     manufacturer: apple
 -
   headers:
-    user-agent: 'Mozilla/5.0 (X11; U; BSD Four; pl-PL) AppleWebKit/533.3 (KHTML, like Gecko) Qt/4.7.1 Safari/533.3'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: BSD
-    marketingName: BSD
-    version: null
-    manufacturer: berkeley
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: 4.0.0
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 533.3.0
-    manufacturer: apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (X11; U; BSD Four; C) AppleWebKit/533.3 (KHTML, like Gecko) Qt/4.8.0 Safari/533.3'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: BSD
-    marketingName: BSD
-    version: null
-    manufacturer: berkeley
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: 4.0.0
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 533.3.0
-    manufacturer: apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (X11; U; BSD Four; C) AppleWebKit/533.3 (KHTML, like Gecko) Qt/4.7.3 Safari/533.3'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: BSD
-    marketingName: BSD
-    version: null
-    manufacturer: berkeley
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: 4.0.0
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 533.3.0
-    manufacturer: apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (X11; 78; CentOS; US-en) AppleWebKit/527+ (KHTML, like Gecko) Bolt/0.862 Version/3.0 Safari/523.15'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: 'Cent OS Linux'
-    marketingName: 'Cent OS Linux'
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: 3.0.0
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 527.0.0
-    manufacturer: apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (X11; U; BSD Four; C) AppleWebKit/533.3 (KHTML, like Gecko) Qt/4.7.2 Safari/533.3'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: BSD
-    marketingName: BSD
-    version: null
-    manufacturer: berkeley
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: 4.0.0
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 533.3.0
-    manufacturer: apple
--
-  headers:
     user-agent: 'Safari/13.13 (BeOS 6.2; zh_HK;)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2259,21 +1231,23 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
+  client:
+    name: Safari
+    modus: null
+    version: null
+    manufacturer: apple
+    type: browser
+    isbot: false
+    bits: 0
   os:
     name: BeOS
     marketingName: BeOS
     version: 6.2.0
     manufacturer: access
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: null
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -2282,13 +1256,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; U; Webster 0.1; Syllable) AppleWebKit/420+ (KHTML, like Gecko)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2297,13 +1269,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Syllable
-    marketingName: Syllable
-    version: null
-    manufacturer: syllable
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -2311,7 +1279,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Syllable
+    marketingName: Syllable
+    version: null
+    manufacturer: syllable
+    bits: 0
   engine:
     name: WebKit
     version: 420.0.0
@@ -2320,13 +1294,11 @@
   headers:
     user-agent: 'Safari/5.7 (Debian Linux 6.6; cs_CZ;)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2335,13 +1307,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Debian
-    marketingName: Debian
-    version: 6.6.0
-    manufacturer: softwareInThePublicInterest
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -2349,7 +1317,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Debian
+    marketingName: Debian
+    version: 6.6.0
+    manufacturer: softwareInThePublicInterest
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -2358,13 +1332,11 @@
   headers:
     user-agent: 'Safari/12.6 (BackTrack Linux 2.8; sq_AL;)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2373,74 +1345,36 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
+  client:
+    name: Safari
+    modus: null
+    version: null
+    manufacturer: apple
+    type: browser
+    isbot: false
+    bits: 0
   os:
     name: 'BackTrack Linux'
     marketingName: 'BackTrack Linux'
     version: 2.8.0
     manufacturer: unknown
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: null
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
+    bits: 0
   engine:
     name: WebKit
     version: null
-    manufacturer: apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (X11; U; en-us) AppleWebKit/537.36 (KHTML, like Gecko)'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: null
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 537.36.0
     manufacturer: apple
 -
   headers:
     user-agent: 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:89.0) like Gecko (KHTML, like Gecko)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2449,13 +1383,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -2463,7 +1393,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: KHTML
     version: null
@@ -2472,13 +1408,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; CrOS x86_64 13816.82.0) like Gecko (KHTML, like Gecko)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2487,13 +1421,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: ChromeOS
-    marketingName: ChromeOS
-    version: 13816.82.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -2501,7 +1431,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: ChromeOS
+    marketingName: ChromeOS
+    version: 13816.82.0
+    manufacturer: google
+    bits: 0
   engine:
     name: KHTML
     version: null
@@ -2510,13 +1446,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 6.2; arm64) AppleWebKit/537.36 (KHTML, like Gecko) Safari/10.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Windows Desktop'
     marketingName: 'Windows Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2525,13 +1459,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Windows RT'
-    marketingName: 'Windows RT'
-    version: 8.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -2539,7 +1469,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows RT'
+    marketingName: 'Windows RT'
+    version: 8.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: WebKit
     version: 537.36.0

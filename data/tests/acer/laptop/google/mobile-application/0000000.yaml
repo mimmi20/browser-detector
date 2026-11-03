@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 7.1.1; fr-fr; Chromebook 14 (CB3-431) Build/R66-10452.99.0) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30 GSA/8.7.11.21.x86 CrosArc/4808754 (edgar)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Chromebook 14'
     marketingName: 'Chromebook 14'
     manufacturer: acer
     brand: acer
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -17,13 +15,9 @@
     type: laptop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: ChromeOS
-    marketingName: ChromeOS
-    version: 10452.99.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: ChromeOS
+    marketingName: ChromeOS
+    version: 10452.99.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: 534.30.0

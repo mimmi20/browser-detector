@@ -2,13 +2,11 @@
   headers:
     user-agent: 'curl/7.19.7 (x86_64-redhat-linux-gnu) libcurl/7.19.7 NSS/3.19.1 Basic ECC zlib/1.2.3 libidn/1.18 libssh2/1.4.2'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Redhat Linux'
-    marketingName: 'Redhat Linux'
-    version: null
-    manufacturer: redhat
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Redhat Linux'
+    marketingName: 'Redhat Linux'
+    version: null
+    manufacturer: redhat
+    bits: 0
   engine:
     name: null
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 SlimerJS/0.9.5'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: SlimerJS
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: Gecko
     version: 36.0.0
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.1.0 curl/7.35.0 PHP/5.5.9-1ubuntu4.14'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -93,13 +91,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Guzzle/4.2.3 curl/7.35.0 PHP/5.5.9-1ubuntu4.11'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -131,13 +129,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -154,13 +154,11 @@
   headers:
     user-agent: Lavf/56.15.102
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -169,13 +167,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: ffmpeg
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -192,13 +192,11 @@
   headers:
     user-agent: Lavf52.64.2
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -207,13 +205,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: ffmpeg
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'curl/7.17.1 (mips-unknown-linux-gnu) libcurl/7.17.1 OpenSSL/0.9.8i zlib/1.2.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -245,13 +243,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux x86_64; rv:38.0) Gecko/20100101 SlimerJS/0.9.6'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -283,13 +281,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: SlimerJS
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Gecko
     version: 38.0.0
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'docker/1.11.1 go/go1.5.4 git-commit/5604cbe kernel/4.4.0-21-generic os/linux arch/amd64 UpstreamClient(Docker-Client/1.11.1 \(linux\))'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -321,13 +319,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: docker
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.2.0 curl/7.43.0 PHP/5.6.11-1ubuntu3.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -359,13 +357,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'curl/7.15.1 (x86_64-suse-linux) libcurl/7.15.1 OpenSSL/0.9.8z zlib/1.2.3 libidn/0.6.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -397,13 +395,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Suse Linux'
-    marketingName: 'Suse Linux'
-    version: null
-    manufacturer: suse
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Suse Linux'
+    marketingName: 'Suse Linux'
+    version: null
+    manufacturer: suse
+    bits: 0
   engine:
     name: null
     version: null
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'Curl/PHP 5.5.9-1ubuntu4.14 (http://github.com/shuber/curl)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -435,13 +433,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'Curl/PHP 5.5.9-1ubuntu4.9 (http://github.com/shuber/curl)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -473,13 +471,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'Curl/PHP 5.5.9-1ubuntu4.11 (http://github.com/shuber/curl)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -511,13 +509,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'Curl/PHP 5.3.10-1ubuntu3.15 (http://github.com/shuber/curl)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -549,13 +547,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'Curl/PHP 5.5.9-1ubuntu4.6 (http://github.com/shuber/curl)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -587,13 +585,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'curl/7.10.8 (win32) libcurl/7.10.8 OpenSSL/0.9.7c'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Windows Desktop'
     marketingName: 'Windows Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -625,13 +623,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 95'
-    version: 95.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 95'
+    version: 95.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: null
     version: null
@@ -648,13 +648,11 @@
   headers:
     user-agent: 'curl/7.15.3 (i386-unknown-freebsd6.1) libcurl/7.15.3 OpenSSL/0.9.7e zlib/1.2.2'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -663,13 +661,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 6.1.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -677,7 +671,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 6.1.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -686,13 +686,11 @@
   headers:
     user-agent: 'Guzzle/5.1.0 curl/7.35.0 PHP/5.5.9-1ubuntu4.5'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -701,13 +699,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -715,7 +709,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -724,13 +724,11 @@
   headers:
     user-agent: 'curl/7.24.0 (amd64-portbld-freebsd8.4) libcurl/7.24.0 OpenSSL/0.9.8y zlib/1.2.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -739,13 +737,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 8.4.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -753,7 +747,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 8.4.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -762,13 +762,11 @@
   headers:
     user-agent: 'rest-client/2.0.0.rc2 (linux-gnu x86_64) ruby/2.1.3p242'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -777,13 +775,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: ruby
     modus: null
@@ -791,7 +785,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -800,13 +800,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.2.1 curl/7.47.0 PHP/7.0.8-0ubuntu0.16.04.2'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -815,13 +813,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -829,7 +823,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -838,13 +838,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.2.1 curl/7.47.0 PHP/7.0.13-0ubuntu0.16.04.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -853,13 +851,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -867,7 +861,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -876,13 +876,11 @@
   headers:
     user-agent: Lavf/57.56.100
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -891,13 +889,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: ffmpeg
     modus: null
@@ -905,7 +899,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -914,13 +914,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.2.1 curl/7.47.0 PHP/7.0.15-0ubuntu0.16.04.4'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -929,13 +927,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -943,7 +937,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -952,13 +952,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.2.1 PHP/7.0.15-0ubuntu0.16.04.4'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -967,13 +965,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -981,7 +975,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -990,13 +990,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.2.1 curl/7.50.1 PHP/7.0.15-0ubuntu0.16.10.4'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1005,13 +1003,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -1019,7 +1013,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -1028,13 +1028,11 @@
   headers:
     user-agent: 'Curl/PHP 5.5.9-1ubuntu4.5 (http://github.com/shuber/curl)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1043,13 +1041,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -1057,7 +1051,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -1066,13 +1066,11 @@
   headers:
     user-agent: 'curl/7.24.0 (amd64-portbld-freebsd9.0) libcurl/7.24.0 OpenSSL/0.9.8y zlib/1.2.5'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1081,13 +1079,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 9.0.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -1095,7 +1089,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 9.0.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -1104,13 +1104,11 @@
   headers:
     user-agent: 'Curl/PHP 5.3.10-1ubuntu3.11 (http://github.com/shuber/curl)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1119,13 +1117,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -1133,7 +1127,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -1142,13 +1142,11 @@
   headers:
     user-agent: 'Curl/PHP 5.3.10-1ubuntu3.8 (http://github.com/shuber/curl)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1157,13 +1155,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -1171,7 +1165,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -1180,13 +1180,11 @@
   headers:
     user-agent: 'Curl/PHP 5.3.10-1ubuntu3.9 (http://github.com/shuber/curl)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1195,13 +1193,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -1209,7 +1203,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -1218,13 +1218,11 @@
   headers:
     user-agent: Lavf/55.19.104
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1233,13 +1231,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: ffmpeg
     modus: null
@@ -1247,7 +1241,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -1256,13 +1256,11 @@
   headers:
     user-agent: Lavf/55.44.100
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1271,13 +1269,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: ffmpeg
     modus: null
@@ -1285,7 +1279,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -1294,13 +1294,11 @@
   headers:
     user-agent: 'Guzzle/5.2.0 curl/7.27.0 PHP/5.4.6-1ubuntu1.8'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1309,13 +1307,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -1323,7 +1317,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -1332,13 +1332,11 @@
   headers:
     user-agent: Lavf53.32.100
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1347,13 +1345,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: ffmpeg
     modus: null
@@ -1361,7 +1355,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -1370,13 +1370,11 @@
   headers:
     user-agent: 'Guzzle/5.2.0 PHP/5.5.9-1ubuntu4.7'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1385,13 +1383,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -1399,7 +1393,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -1408,13 +1408,11 @@
   headers:
     user-agent: Lavf/55.12.100
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1423,13 +1421,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: ffmpeg
     modus: null
@@ -1437,7 +1431,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -1446,13 +1446,11 @@
   headers:
     user-agent: 'curl/7.9.8 (i386-unknown-freebsd4.6.2) libcurl 7.9.8 (OpenSSL 0.9.6)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1461,13 +1459,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 4.6.2
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -1475,7 +1469,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 4.6.2
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -1484,13 +1484,11 @@
   headers:
     user-agent: 'curl/7.9.8 (i386-portbld-freebsd4.7) libcurl 7.9.8 (OpenSSL 0.9.6g) (ipv6 enabled)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1499,13 +1497,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 4.7.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -1513,7 +1507,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 4.7.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -1522,13 +1522,11 @@
   headers:
     user-agent: 'curl/7.9.8 (i386-portbld-freebsd4.1) libcurl 7.9.8'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1537,13 +1535,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 4.1.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -1551,7 +1545,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 4.1.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -1560,13 +1560,11 @@
   headers:
     user-agent: 'curl/7.9.8 (i386--freebsd4.6) libcurl 7.9.8 (OpenSSL 0.9.6e)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1575,13 +1573,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 4.6.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -1589,7 +1583,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 4.6.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -1598,13 +1598,11 @@
   headers:
     user-agent: 'curl/7.9 (i386-unknown-freebsd4.2) libcurl 7.9 (OpenSSL 0.9.6i) (ipv6 enabled)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1613,13 +1611,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 4.2.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -1627,7 +1621,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 4.2.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -1636,13 +1636,11 @@
   headers:
     user-agent: 'curl/7.21.1 (i386-portbld-freebsd7.2) libcurl/7.21.1 OpenSSL/0.9.8e zlib/1.2.3 libidn/1.13 libssh2/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1651,13 +1649,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 7.2.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -1665,7 +1659,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 7.2.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -1674,13 +1674,11 @@
   headers:
     user-agent: 'curl/7.20.1 (i386-portbld-freebsd8.0) libcurl/7.20.1 OpenSSL/0.9.8m zlib/1.2.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1689,13 +1687,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 8.0.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -1703,7 +1697,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 8.0.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -1712,13 +1712,11 @@
   headers:
     user-agent: 'curl/7.20.1 (amd64-portbld-freebsd7.2) libcurl/7.20.1 OpenSSL/0.9.8e zlib/1.2.3 libidn/1.14 libssh2/1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1727,13 +1725,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 7.2.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -1741,7 +1735,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 7.2.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -1750,13 +1750,11 @@
   headers:
     user-agent: 'curl/7.19.6 (i586-mandriva-linux-gnu) libcurl/7.19.6 OpenSSL/0.9.8k zlib/1.2.3 libidn/1.15 libssh2/1.2.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1765,13 +1763,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mandriva Linux'
-    marketingName: 'Mandriva Linux'
-    version: null
-    manufacturer: mandriva
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -1779,7 +1773,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mandriva Linux'
+    marketingName: 'Mandriva Linux'
+    version: null
+    manufacturer: mandriva
+    bits: 0
   engine:
     name: null
     version: null
@@ -1788,13 +1788,11 @@
   headers:
     user-agent: 'curl/7.19.6 (amd64-portbld-freebsd7.1) libcurl/7.19.6 OpenSSL/0.9.8e zlib/1.2.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1803,13 +1801,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 7.1.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -1817,7 +1811,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 7.1.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -1826,13 +1826,11 @@
   headers:
     user-agent: 'curl/7.19.5 (i386-unknown-freebsd4.3) libcurl/7.19.5 OpenSSL/0.9.8k zlib/1.2.2 libidn/0.6.10 libssh2/1.2.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1841,13 +1839,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 4.3.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -1855,7 +1849,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 4.3.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -1864,13 +1864,11 @@
   headers:
     user-agent: 'curl/7.19.4 (i386-portbld-freebsd6.2) libcurl/7.19.4 OpenSSL/0.9.7m zlib/1.2.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1879,13 +1877,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 6.2.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -1893,7 +1887,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 6.2.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -1902,13 +1902,11 @@
   headers:
     user-agent: 'curl/7.19.2 (amd64-portbld-freebsd7.1) libcurl/7.19.2 OpenSSL/0.9.8e zlib/1.2.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1917,13 +1915,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 7.1.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -1931,7 +1925,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 7.1.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -1940,13 +1940,11 @@
   headers:
     user-agent: 'curl/7.19.2 (amd64-portbld-freebsd6.3) libcurl/7.19.2 OpenSSL/0.9.7e zlib/1.2.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1955,13 +1953,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 6.3.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -1969,7 +1963,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 6.3.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -1978,13 +1978,11 @@
   headers:
     user-agent: 'curl/7.18.0 (i586-pc-mingw32msvc) libcurl/7.18.0 OpenSSL/0.9.8g zlib/1.2.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1993,13 +1991,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: Windows
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -2007,7 +2001,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: Windows
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: null
     version: null
@@ -2016,13 +2016,11 @@
   headers:
     user-agent: 'curl/7.18.0 (i586-pc-mingw32msvc) libcurl/7.18.0 OpenSSL/0.9.8d zlib/1.2.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2031,13 +2029,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: Windows
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -2045,7 +2039,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: Windows
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: null
     version: null
@@ -2054,13 +2054,11 @@
   headers:
     user-agent: 'curl/7.18.0 (i586-pc-mingw32msvc) libcurl/7.18.0 OpenSSL/0.9.7e zlib/1.2.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2069,13 +2067,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: Windows
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -2083,7 +2077,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: Windows
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: null
     version: null
@@ -2092,13 +2092,11 @@
   headers:
     user-agent: 'curl/7.18.0 (i386-sun-solaris2) libcurl/7.18.0 OpenSSL/0.9.8h zlib/1.2.3 libidn/1.11'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2107,13 +2105,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Solaris
-    marketingName: Solaris
-    version: 2.0.0
-    manufacturer: oracle
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -2121,7 +2115,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Solaris
+    marketingName: Solaris
+    version: 2.0.0
+    manufacturer: oracle
+    bits: 0
   engine:
     name: null
     version: null
@@ -2130,13 +2130,11 @@
   headers:
     user-agent: 'curl/7.18.0 (i386-portbld-freebsd7.1) libcurl/7.18.0 OpenSSL/0.9.8j zlib/1.2.3 libidn/1.9'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2145,13 +2143,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 7.1.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -2159,7 +2153,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 7.1.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -2168,13 +2168,11 @@
   headers:
     user-agent: 'curl/7.18.0 (i386-portbld-freebsd7.0) libcurl/7.18.0 OpenSSL/0.9.8g zlib/1.2.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2183,13 +2181,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 7.0.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -2197,7 +2191,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 7.0.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -2206,13 +2206,11 @@
   headers:
     user-agent: 'curl/7.18.0 (i386-portbld-freebsd6.2) libcurl/7.18.0 OpenSSL/0.9.7e zlib/1.2.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2221,13 +2219,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 6.2.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -2235,7 +2229,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 6.2.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -2244,13 +2244,11 @@
   headers:
     user-agent: 'curl/7.17.1 (i386-unknown-openbsd4.3) libcurl/7.17.1 OpenSSL/0.9.7j zlib/1.2.3 libidn/1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2259,13 +2257,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: OpenBSD
-    marketingName: OpenBSD
-    version: 4.3.0
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -2273,7 +2267,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: OpenBSD
+    marketingName: OpenBSD
+    version: 4.3.0
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -2282,13 +2282,11 @@
   headers:
     user-agent: 'curl/7.16.3 (i686-pc-cygwin) libcurl/7.16.3 OpenSSL/0.9.8k zlib/1.2.3 libssh2/0.15-CVS'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2297,13 +2295,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -2311,7 +2305,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -2320,13 +2320,11 @@
   headers:
     user-agent: 'curl/7.16.3 (i386-pc-solaris2.8) libcurl/7.16.3 OpenSSL/0.9.8e zlib/1.2.3 libidn/0.5.19'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2335,13 +2333,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Solaris
-    marketingName: Solaris
-    version: 2.8.0
-    manufacturer: oracle
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -2349,7 +2343,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Solaris
+    marketingName: Solaris
+    version: 2.8.0
+    manufacturer: oracle
+    bits: 0
   engine:
     name: null
     version: null
@@ -2358,13 +2358,11 @@
   headers:
     user-agent: 'curl/7.16.3 (amd64-portbld-freebsd6.3) libcurl/7.16.3 OpenSSL/0.9.7e zlib/1.2.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2373,13 +2371,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 6.3.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -2387,7 +2381,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 6.3.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -2396,13 +2396,11 @@
   headers:
     user-agent: 'curl/7.16.2 (i386-unknown-openbsd4.2) libcurl/7.16.2 OpenSSL/0.9.7j zlib/1.2.3 libidn/0.6.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2411,13 +2409,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: OpenBSD
-    marketingName: OpenBSD
-    version: 4.2.0
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -2425,7 +2419,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: OpenBSD
+    marketingName: OpenBSD
+    version: 4.2.0
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -2434,13 +2434,11 @@
   headers:
     user-agent: 'curl/7.16.1 (i386-portbld-freebsd4.8) libcurl/7.16.1 OpenSSL/0.9.7g zlib/1.1.4'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2449,13 +2447,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 4.8.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -2463,7 +2457,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 4.8.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -2472,13 +2472,11 @@
   headers:
     user-agent: 'curl/7.16.0 (i386-unknown-openbsd4.1) libcurl/7.16.0 OpenSSL/0.9.7j zlib/1.2.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2487,13 +2485,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: OpenBSD
-    marketingName: OpenBSD
-    version: 4.1.0
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -2501,7 +2495,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: OpenBSD
+    marketingName: OpenBSD
+    version: 4.1.0
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -2510,13 +2510,11 @@
   headers:
     user-agent: 'curl/7.15.5 (i386-portbld-freebsd6.2) libcurl/7.15.5 OpenSSL/0.9.7e zlib/1.2.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2525,13 +2523,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 6.2.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -2539,7 +2533,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 6.2.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -2548,13 +2548,11 @@
   headers:
     user-agent: 'curl/7.15.3 (i386-portbld-freebsd6.1) libcurl/7.15.3 OpenSSL/0.9.7e zlib/1.2.2'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2563,13 +2561,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 6.1.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -2577,7 +2571,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 6.1.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -2586,13 +2586,11 @@
   headers:
     user-agent: 'curl/7.15.3 (i386-portbld-freebsd6.0) libcurl/7.15.3 OpenSSL/0.9.7e zlib/1.2.2'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2601,13 +2599,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 6.0.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -2615,7 +2609,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 6.0.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -2624,13 +2624,11 @@
   headers:
     user-agent: 'curl/7.15.1 (sparc-sun-solaris2.8) libcurl/7.15.1 OpenSSL/0.9.7e zlib/1.1.4'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2639,13 +2637,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Solaris
-    marketingName: Solaris
-    version: 2.8.0
-    manufacturer: oracle
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -2653,7 +2647,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Solaris
+    marketingName: Solaris
+    version: 2.8.0
+    manufacturer: oracle
+    bits: 0
   engine:
     name: null
     version: null
@@ -2662,13 +2662,11 @@
   headers:
     user-agent: 'curl/7.15.1 (i586-pc-mingw32msvc) libcurl/7.15.1 zlib/1.2.2'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2677,13 +2675,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: Windows
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -2691,7 +2685,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: Windows
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: null
     version: null
@@ -2700,13 +2700,11 @@
   headers:
     user-agent: 'curl/7.15.1 (i386-portbld-freebsd4.11) libcurl/7.15.1 OpenSSL/0.9.7d zlib/1.1.4'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2715,13 +2713,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 4.11.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -2729,7 +2723,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 4.11.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -2738,13 +2738,11 @@
   headers:
     user-agent: 'curl/7.14.1 (i386-portbld-freebsd5.4) libcurl/7.14.1 OpenSSL/0.9.7e zlib/1.2.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2753,13 +2751,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 5.4.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -2767,7 +2761,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 5.4.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -2776,13 +2776,11 @@
   headers:
     user-agent: 'curl/7.14.1 (i386-portbld-freebsd4.7) libcurl/7.14.1 OpenSSL/0.9.8 zlib/1.1.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2791,13 +2789,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 4.7.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -2805,7 +2799,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 4.7.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -2814,13 +2814,11 @@
   headers:
     user-agent: 'curl/7.14.0 (powerpc-ibm-aix5.1.0.0) libcurl/7.14.0 OpenSSL/0.9.7d zlib/1.2.2'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2829,13 +2827,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: AIX
-    marketingName: AIX
-    version: 5.1.0.0
-    manufacturer: ibm
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -2843,7 +2837,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: AIX
+    marketingName: AIX
+    version: 5.1.0.0
+    manufacturer: ibm
+    bits: 0
   engine:
     name: null
     version: null
@@ -2852,13 +2852,11 @@
   headers:
     user-agent: 'curl/7.14.0 (i386-portbld-freebsd6.0) libcurl/7.14.0 OpenSSL/0.9.7e zlib/1.2.2'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2867,13 +2865,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 6.0.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -2881,7 +2875,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 6.0.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -2890,13 +2890,11 @@
   headers:
     user-agent: 'curl/7.14.0 (i386-portbld-freebsd5.4) libcurl/7.14.0 OpenSSL/0.9.7e zlib/1.2.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2905,13 +2903,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 5.4.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -2919,7 +2913,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 5.4.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -2928,13 +2928,11 @@
   headers:
     user-agent: 'curl/7.14.0 (i386-portbld-freebsd4.9) libcurl/7.14.0 OpenSSL/0.9.7b zlib/1.1.4'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2943,13 +2941,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 4.9.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -2957,7 +2951,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 4.9.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -2966,13 +2966,11 @@
   headers:
     user-agent: 'curl/7.13.2 (sparc-sun-solaris2.8) libcurl/7.13.2 zlib/1.1.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2981,13 +2979,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Solaris
-    marketingName: Solaris
-    version: 2.8.0
-    manufacturer: oracle
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -2995,7 +2989,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Solaris
+    marketingName: Solaris
+    version: 2.8.0
+    manufacturer: oracle
+    bits: 0
   engine:
     name: null
     version: null
@@ -3004,13 +3004,11 @@
   headers:
     user-agent: 'curl/7.13.2 (sparc-sun-solaris2.8) libcurl/7.13.2 OpenSSL/0.9.7d zlib/1.1.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3019,13 +3017,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Solaris
-    marketingName: Solaris
-    version: 2.8.0
-    manufacturer: oracle
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -3033,7 +3027,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Solaris
+    marketingName: Solaris
+    version: 2.8.0
+    manufacturer: oracle
+    bits: 0
   engine:
     name: null
     version: null
@@ -3042,13 +3042,11 @@
   headers:
     user-agent: 'curl/7.13.1 (i386-portbld-freebsd5.4) libcurl/7.13.1 OpenSSL/0.9.7e zlib/1.2.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3057,13 +3055,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 5.4.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -3071,7 +3065,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 5.4.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -3080,13 +3080,11 @@
   headers:
     user-agent: 'curl/7.13.1 (i386-portbld-freebsd5.3) libcurl/7.13.1 OpenSSL/0.9.7g zlib/1.2.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3095,13 +3093,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 5.3.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -3109,7 +3103,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 5.3.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -3118,13 +3118,11 @@
   headers:
     user-agent: 'curl/7.13.1 (i386-portbld-freebsd4.10) libcurl/7.13.1 OpenSSL/0.9.7d zlib/1.1.4'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3133,13 +3131,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 4.10.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -3147,7 +3141,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 4.10.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -3156,13 +3156,11 @@
   headers:
     user-agent: 'curl/7.12.1 (i386-portbld-freebsd4.3) libcurl/7.12.1 OpenSSL/0.9.6g zlib/1.1.4 libidn/0.5.4'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3171,13 +3169,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 4.3.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -3185,7 +3179,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 4.3.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -3194,13 +3194,11 @@
   headers:
     user-agent: 'curl/7.11.0 (i386-portbld-freebsd4.9) libcurl/7.11.0 OpenSSL/0.9.7c zlib/1.1.4'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3209,13 +3207,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 4.9.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -3223,7 +3217,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 4.9.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -3232,13 +3232,11 @@
   headers:
     user-agent: 'curl/7.11.0 (i386-portbld-freebsd4.10) libcurl/7.11.0 OpenSSL/0.9.7d zlib/1.1.4'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3247,13 +3245,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 4.10.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -3261,7 +3255,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 4.10.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -3270,13 +3270,11 @@
   headers:
     user-agent: 'curl/7.10.7 (i386-portbld-freebsd4.8) libcurl/7.10.7 OpenSSL/0.9.7a ipv6 zlib/1.1.4'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3285,13 +3283,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 4.8.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -3299,7 +3293,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 4.8.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -3308,13 +3308,11 @@
   headers:
     user-agent: 'curl/7.10.7 (i386-portbld-freebsd4.3) libcurl/7.10.7 OpenSSL/0.9.6g zlib/1.1.4'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3323,13 +3321,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 4.3.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -3337,7 +3331,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 4.3.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -3346,13 +3346,11 @@
   headers:
     user-agent: 'curl/7.10.5 (i386-unknown-openbsd3.1) libcurl/7.10.5 OpenSSL/0.9.6b ipv6 zlib/1.1.4'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3361,13 +3359,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: OpenBSD
-    marketingName: OpenBSD
-    version: 3.1.0
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -3375,7 +3369,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: OpenBSD
+    marketingName: OpenBSD
+    version: 3.1.0
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -3384,13 +3384,11 @@
   headers:
     user-agent: 'curl/7.10.3 (i386-unknown-openbsd3.1) libcurl/7.10.3 OpenSSL/0.9.6b ipv6 zlib/1.1.4'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3399,13 +3397,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: OpenBSD
-    marketingName: OpenBSD
-    version: 3.1.0
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -3413,7 +3407,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: OpenBSD
+    marketingName: OpenBSD
+    version: 3.1.0
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -3422,13 +3422,11 @@
   headers:
     user-agent: 'curl/7.24.0 (amd64-portbld-freebsd7.0) libcurl/7.24.0 OpenSSL/0.9.8e zlib/1.2.3 c-ares/1.9.1 librtmp/2.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3437,13 +3435,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 7.0.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -3451,7 +3445,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 7.0.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -3460,13 +3460,11 @@
   headers:
     user-agent: Lavf53.10.0
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3475,13 +3473,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: ffmpeg
     modus: null
@@ -3489,7 +3483,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -3498,13 +3498,11 @@
   headers:
     user-agent: 'curl/7.24.0 (i686-pc-cygwin) libcurl/7.24.0 OpenSSL/1.0.1b zlib/1.2.5 libidn/1.22 libssh2/1.4.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3513,13 +3511,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -3527,7 +3521,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -3536,13 +3536,11 @@
   headers:
     user-agent: 'curl/7.18.0 (i586-pc-mingw32msvc) libcurl/7.18.0 zlib/1.2.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3551,13 +3549,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: Windows
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -3565,7 +3559,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: Windows
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: null
     version: null
@@ -3574,13 +3574,11 @@
   headers:
     user-agent: 'curl/7.25.0 (sparc-sun-solaris2.9) libcurl/7.25.0 OpenSSL/0.9.8x zlib/1.2.5 libidn/1.24'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3589,13 +3587,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Solaris
-    marketingName: Solaris
-    version: 2.9.0
-    manufacturer: oracle
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -3603,7 +3597,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Solaris
+    marketingName: Solaris
+    version: 2.9.0
+    manufacturer: oracle
+    bits: 0
   engine:
     name: null
     version: null
@@ -3612,13 +3612,11 @@
   headers:
     user-agent: 'curl/7.20.0 (i386-portbld-freebsd7.0) libcurl/7.20.0 OpenSSL/0.9.8e zlib/1.2.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3627,13 +3625,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 7.0.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -3641,7 +3635,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 7.0.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: null
     version: null
@@ -3650,13 +3650,11 @@
   headers:
     user-agent: 'node-urllib/2.25.3 Node.js/6.12.2 (Linux 4.4; x64)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3665,13 +3663,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: 4.4.0
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: node-urllib
     modus: null
@@ -3679,7 +3673,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: 4.4.0
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -3688,13 +3688,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.2.1 curl/7.47.0 PHP/7.2.1-1+ubuntu16.04.1+deb.sury.org+1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3703,13 +3701,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -3717,7 +3711,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -3726,13 +3726,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.2.1 curl/7.35.0 PHP/5.6.30-12~ubuntu14.04.1+deb.sury.org+1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3741,13 +3739,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -3755,7 +3749,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -3764,13 +3764,11 @@
   headers:
     user-agent: Lavf/57.25.100
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3779,13 +3777,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: ffmpeg
     modus: null
@@ -3793,7 +3787,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null

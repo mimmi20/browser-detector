@@ -5,13 +5,11 @@
     x-operamini-phone: '? # ?'
     user-agent: 'Opera/9.80 (J2ME/MIDP; Opera Mini/7.1.32052/34.1016; U; xx) Presto/2.8.119 Version/11.10'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Kyocera device'
     marketingName: 'general Kyocera device'
     manufacturer: kyocera
     brand: kyocera
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -20,13 +18,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Brew
-    marketingName: Brew
-    version: 1.0.2
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Mini'
     modus: null
@@ -34,7 +28,13 @@
     manufacturer: opera
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Brew
+    marketingName: Brew
+    version: 1.0.2
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Presto
     version: 2.8.119

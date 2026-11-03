@@ -2,13 +2,11 @@
   headers:
     user-agent: 'com.tcl.browser/660020 (Linux; U; Android 11; tr_TR; Arcelik Android UHD TV; Build/RTM6.230109.219; Cronet/114.0.5735.33)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Android UHD TV'
     marketingName: 'Android UHD TV'
     manufacturer: arcelik
     brand: arcelik
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -17,13 +15,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: BrowseHere
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: tcl
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.5735.33

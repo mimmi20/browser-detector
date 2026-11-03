@@ -2,13 +2,11 @@
   headers:
     user-agent: 'KDDI-CA3H UP.Browser/6.2_7.2.7.1.K.5.214 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CA3H
     marketingName: CA005
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: 854
       height: 480
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'KDDI-SN3V UP.Browser/6.2_7.2.7.1.K.7.113 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SN3V
     marketingName: 'URBANO AFFARE'
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: 854
       height: 480
@@ -55,13 +53,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'KDDI-TS3W UP.Browser/6.2_7.2.7.1.K.6.1.102 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TS3W
     marketingName: X-RAY
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: 854
       height: 480
@@ -93,13 +91,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'KDDI-TS3V UP.Browser/6.2_7.2.7.1.K.6.210 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TS3V
     marketingName: TS3V
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: 854
       height: 480
@@ -131,13 +129,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'KDDI-CA26 UP.Browser/6.2.0.6.2 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CA26
     marketingName: CA26
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -169,13 +167,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'KDDI-CA39 UP.Browser/6.2.0.13.1.5 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CA39
     marketingName: CA39
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -207,13 +205,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'KDDI-SH3J UP.Browser/6.2_7.2.7.1.K.5.212 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SH3J
     marketingName: SH3J
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -245,13 +243,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'KDDI-CA3I UP.Browser/6.2_7.2.7.1.K.5.214 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CA3I
     marketingName: CA3I
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -283,13 +281,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'KDDI-CA3K UP.Browser/6.2_7.2.7.1.K.7.115 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CA3K
     marketingName: CA3K
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -321,13 +319,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'KDDI-SN3S UP.Browser/6.2_7.2.7.1.K.6.212 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SN3S
     marketingName: SN3S
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -359,13 +357,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'KDDI-KC4D UP.Browser/6.2.0.17.2.1.3 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KC4D
     marketingName: KC4D
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -397,13 +395,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'KDDI-KC4H UP.Browser/6.2_7.2.7.1.K.7.1.104 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KC4H
     marketingName: KC4H
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -435,13 +433,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'KDDI-KC46 UP.Browser/6.2_7.2.7.1.K.7.1.102 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KC46
     marketingName: KC46
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -473,13 +471,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'KDDI-CA3J UP.Browser/6.2_7.2.7.1.K.5.214 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CA3J
     marketingName: CA3J
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: 854
       height: 480
@@ -511,13 +509,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'KDDI-TS3Y UP.Browser/6.2_7.2.7.1.K.7.113 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TS3Y
     marketingName: TS3Y
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -549,13 +547,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'KDDI-KC4A UP.Browser/6.2_7.2.7.1.K.7.1.104 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KC4A
     marketingName: KC4A
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: 854
       height: 480
@@ -587,13 +585,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'KDDI-FJ31 UP.Browser/6.2_7.2.7.1.K.8.160 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: FJ31
     marketingName: F001
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -625,13 +623,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -648,13 +648,11 @@
   headers:
     user-agent: 'KDDI-KC4F UP.Browser/6.2_7.2.7.1.K.7.1.104 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KC4F
     marketingName: KC4F
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -663,13 +661,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -677,7 +671,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -686,13 +686,11 @@
   headers:
     user-agent: 'KDDI-TS3S UP.Browser/6.2_7.2.7.1.K.5.179 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TS3S
     marketingName: TS3S
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -701,13 +699,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -715,7 +709,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -724,13 +724,11 @@
   headers:
     user-agent: 'KDDI-TS3E UP.Browser/6.2.0.13.1.5 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TS3E
     marketingName: TS3E
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -739,13 +737,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -753,7 +747,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -762,13 +762,11 @@
   headers:
     user-agent: 'KDDI-TS33 UP.Browser/6.2.0.9.1 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TS33
     marketingName: TS33
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -777,13 +775,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -791,7 +785,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -800,13 +800,11 @@
   headers:
     user-agent: 'KDDI-TS31 UP.Browser/6.2.0.8 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TS31
     marketingName: TS31
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -815,13 +813,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -829,7 +823,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -838,13 +838,11 @@
   headers:
     user-agent: 'KDDI-TS21 UP.Browser/6.0.2.273 (GUI) MMP/1.1 FirePHP/0.1.2'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TS21
     marketingName: TS21
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -853,13 +851,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -867,7 +861,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -876,13 +876,11 @@
   headers:
     user-agent: 'KDDI-SN3C UP.Browser/6.2_7.2.7.1.K.1.5.1.108 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SN3C
     marketingName: SN3C
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -891,13 +889,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -905,7 +899,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -914,13 +914,11 @@
   headers:
     user-agent: 'KDDI-SN39 UP.Browser/6.2.0.11.2.1 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SN39
     marketingName: SN39
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -929,13 +927,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -943,7 +937,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -952,13 +952,11 @@
   headers:
     user-agent: 'KDDI-SN32 UP.Browser/6.2.0.9 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SN32
     marketingName: SN32
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -967,13 +965,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -981,7 +975,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -990,13 +990,11 @@
   headers:
     user-agent: 'KDDI-SN31 UP.Browser/6.2.0.7.3.129 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SN31
     marketingName: SN31
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -1005,13 +1003,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1019,7 +1013,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1028,13 +1028,11 @@
   headers:
     user-agent: 'KDDI-SN27 UP.Browser/6.2.0.6.2 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SN27
     marketingName: SN27
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -1043,13 +1041,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1057,7 +1051,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1066,13 +1066,11 @@
   headers:
     user-agent: 'KDDI-SH34 UP.Browser/6.2.0.13.4 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SH34
     marketingName: SH34
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -1081,13 +1079,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1095,7 +1089,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1104,13 +1104,11 @@
   headers:
     user-agent: 'KDDI-SA3A UP.Browser/6.2.0.13.1.4 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SA3A
     marketingName: SA3A
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -1119,13 +1117,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1133,7 +1127,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1142,13 +1142,11 @@
   headers:
     user-agent: 'KDDI-SA34 UP.Browser/6.2.0.9.1 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SA34
     marketingName: SA34
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -1157,13 +1155,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1171,7 +1165,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1180,13 +1180,11 @@
   headers:
     user-agent: 'KDDI-SA32 UP.Browser/6.2.0.8 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SA32
     marketingName: SA32
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -1195,13 +1193,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1209,7 +1203,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1218,13 +1218,11 @@
   headers:
     user-agent: 'KDDI-SA31 UP.Browser/6.2.0.7.3.129 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SA31
     marketingName: SA31
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -1233,13 +1231,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1247,7 +1241,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1256,13 +1256,11 @@
   headers:
     user-agent: 'KDDI-PT21 UP.Browser/6.2.0.9 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: PT21
     marketingName: PT21
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -1271,13 +1269,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1285,7 +1279,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1294,13 +1294,11 @@
   headers:
     user-agent: 'KDDI-MA33 UP.Browser/6.2.0.13.2 (GUI) MMP/2.0 FirePHP/0.1.2'
   device:
-    architecture: null
+    architecture: ''
     deviceName: MA33
     marketingName: MA33
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -1309,13 +1307,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1323,7 +1317,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1332,13 +1332,11 @@
   headers:
     user-agent: 'KDDI-KC3B UP.Browser/6.2.0.13.2 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KC3B
     marketingName: KC3B
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -1347,13 +1345,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1361,7 +1355,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1370,13 +1370,11 @@
   headers:
     user-agent: 'KDDI-KC38 UP.Browser/6.2.0.11.1.2.2e (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KC38
     marketingName: KC38
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -1385,13 +1383,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1399,7 +1393,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1408,13 +1408,11 @@
   headers:
     user-agent: 'KDDI-KC33 UP.Browser/6.2.0.9 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KC33
     marketingName: KC33
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -1423,13 +1421,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1437,7 +1431,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1446,13 +1446,11 @@
   headers:
     user-agent: 'KDDI-KC32 UP.Browser/6.2.0.7.3.129 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KC32
     marketingName: KC32
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -1461,13 +1459,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1475,7 +1469,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1484,13 +1484,11 @@
   headers:
     user-agent: 'KDDI-HI36 UP.Browser/6.2.0.10.4 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HI36
     marketingName: HI36
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -1499,13 +1497,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1513,7 +1507,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1522,13 +1522,11 @@
   headers:
     user-agent: 'KDDI-HI35 UP.Browser/6.2.0.9.2 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HI35
     marketingName: HI35
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -1537,13 +1535,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1551,7 +1545,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1560,13 +1560,11 @@
   headers:
     user-agent: 'KDDI-HI33 UP.Browser/6.2.0.7.3.129 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HI33
     marketingName: HI33
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -1575,13 +1573,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1589,7 +1583,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1598,13 +1598,11 @@
   headers:
     user-agent: 'KDDI-HI31 UP.Browser/6.2.0.5.c.1.100 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HI31
     marketingName: HI31
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -1613,13 +1611,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1627,7 +1621,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1636,13 +1636,11 @@
   headers:
     user-agent: 'KDDI-CA3G UP.Browser/6.2_7.2.7.1.K.2.234 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CA3G
     marketingName: CA3G
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -1651,13 +1649,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1665,7 +1659,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1674,13 +1674,11 @@
   headers:
     user-agent: 'KDDI-CA37 UP.Browser/6.2.0.12.1.3 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CA37
     marketingName: CA37
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -1689,13 +1687,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1703,7 +1697,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1712,13 +1712,11 @@
   headers:
     user-agent: 'KDDI-CA33 UP.Browser/6.2.0.10.4 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CA33
     marketingName: W41CA
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -1727,13 +1725,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1741,7 +1735,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1750,13 +1750,11 @@
   headers:
     user-agent: 'KDDI-CA31 UP.Browser/6.2.0.7.3.129 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CA31
     marketingName: W21CA(II)
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -1765,13 +1763,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1779,7 +1773,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1788,13 +1788,11 @@
   headers:
     user-agent: 'KDDI-CA28 UP.Browser/6.2.0.9 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CA28
     marketingName: CA28
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -1803,13 +1801,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1817,7 +1811,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1826,13 +1826,11 @@
   headers:
     user-agent: 'KDDI-CA23 UP.Browser/6.2.0.5.136 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CA23
     marketingName: A5401CA
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -1841,13 +1839,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1855,7 +1849,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1864,13 +1864,11 @@
   headers:
     user-agent: 'KDDI-CA3A UP.Browser/6.2.0.13.2 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CA3A
     marketingName: CA3A
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -1879,13 +1877,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1893,7 +1887,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1902,13 +1902,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; Linux i686; Slackware/13.0; ar;) AppleWebKit/530  (OpenSSL/0.9.8l; compatible; KHTML/4.3.2; Smart 2x2; Remote 2x2; rv:1.9.0.15) Gecko/20090412 KDDI-CA33 UP.Browser/6.2.0.10.4 MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CA33
     marketingName: W41CA
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -1917,13 +1915,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Slackware Linux'
-    marketingName: 'Slackware Linux'
-    version: 13.0.0
-    manufacturer: slackware
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1931,7 +1925,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Slackware Linux'
+    marketingName: 'Slackware Linux'
+    version: 13.0.0
+    manufacturer: slackware
+    bits: 0
   engine:
     name: WebKit
     version: 530.0.0
@@ -1940,13 +1940,11 @@
   headers:
     user-agent: 'KDDI-TS25 UP.Browser/6.0.8.3 (GUI) MMP/1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TS25
     marketingName: A1304TII
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: 176
       height: 144
@@ -1955,13 +1953,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -1969,7 +1963,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1978,13 +1978,11 @@
   headers:
     user-agent: 'KDDI-CA22 UP.Browser/6.0.8.1 (GUI) MMP/1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CA22
     marketingName: A5302CA
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -1993,13 +1991,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -2007,7 +2001,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -2016,13 +2016,11 @@
   headers:
     user-agent: 'KDDI-HI3E UP.Browser/6.2_7.2.7.1.K.2.232 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HI3E
     marketingName: W63H
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -2031,13 +2029,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -2045,7 +2039,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -2054,13 +2054,11 @@
   headers:
     user-agent: 'KDDI-SH3F UP.Browser/6.2_7.2.7.1.K.4.304 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SH3F
     marketingName: SH005
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: 854
       height: 480
@@ -2069,13 +2067,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -2083,7 +2077,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -2092,13 +2092,11 @@
   headers:
     user-agent: 'KDDI-SN3I UP.Browser/6.2_7.2.7.1.K.2.123 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SN3I
     marketingName: Premier3
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: 854
       height: 480
@@ -2107,13 +2105,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -2121,7 +2115,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -2130,13 +2130,11 @@
   headers:
     user-agent: 'KDDI-SN3K UP.Browser/6.2.0.7.3.129 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SN3K
     marketingName: G9
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: 854
       height: 480
@@ -2145,13 +2143,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -2159,7 +2153,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -2168,13 +2168,11 @@
   headers:
     user-agent: 'KDDI-HI32 UP.Browser/6.2.0.5 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HI32
     marketingName: W21H
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -2183,13 +2181,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -2197,7 +2191,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -2206,13 +2206,11 @@
   headers:
     user-agent: 'KDDI-PT36 UP.Browser/6.2.0.17.2.4.1.1 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: PT36
     marketingName: PT36
     manufacturer: kddi
     brand: kddi
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -2221,13 +2219,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -2235,7 +2229,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
