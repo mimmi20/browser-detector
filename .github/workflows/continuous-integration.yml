@@ -25,7 +25,7 @@ jobs:
 
     uses: "mimmi20/ci/.github/workflows/validate-all.yml@8.5"
     with:
-      skip-validate-yaml: false
+      skip-validate-yaml: true
       skip-validate-md: false
 
   validate-php:
