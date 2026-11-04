@@ -108,14 +108,6 @@ accserver:
     class: null
     search: null
   engine: unknown
-adnormcrawler:
-  name: AdnormCrawler
-  manufacturer: adnorm
-  type: bot
-  version:
-    class: null
-    search: null
-  engine: unknown
 'adsense snapshot bot':
   name: 'AdSense Snapshot Bot'
   manufacturer: google
@@ -364,14 +356,6 @@ bcklinks:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - BCKLINKS
-  engine: unknown
-'beehive crawler':
-  name: 'Beehive Crawler'
-  manufacturer: unknown
-  type: bot
-  version:
-    class: null
-    search: null
   engine: unknown
 'begun advertising bot':
   name: 'Begun Advertising Bot'
@@ -748,15 +732,6 @@ crawler4j:
     search:
       - crawler4j
   engine: unknown
-crawllybot:
-  name: Crawllybot
-  manufacturer: adnorm
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - Crawllybot
-  engine: unknown
 crawlrobot:
   name: CrawlRobot
   manufacturer: unknown
@@ -1096,23 +1071,6 @@ facebot:
       - 'fastbot crawler beta'
       - 'fastbot crawler'
   engine: unknown
-fatbot:
-  name: FatBot
-  manufacturer: unknown
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - FatBot
-  engine: unknown
-'fdse robot':
-  name: 'FDSE Robot'
-  manufacturer: unknown
-  type: bot
-  version:
-    class: null
-    search: null
-  engine: unknown
 feedblitz:
   name: FeedBlitz
   manufacturer: feedblitz
@@ -1203,15 +1161,6 @@ fr-crawler:
     search:
       - fr\-crawler
   engine: unknown
-fyberspider:
-  name: FyberSpider
-  manufacturer: unknown
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - FyberSpider
-  engine: unknown
 garlikcrawler:
   name: GarlikCrawler
   manufacturer: experian
@@ -1247,14 +1196,6 @@ genderanalyzer:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - Genieo
-  engine: unknown
-'getintent crawler':
-  name: 'Getintent Crawler'
-  manufacturer: getintent
-  type: bot
-  version:
-    class: null
-    search: null
   engine: unknown
 getleft:
   name: Getleft
@@ -1502,15 +1443,6 @@ gslfbot:
     class: null
     search: null
   engine: unknown
-gurujibot:
-  name: GurujiBot
-  manufacturer: unknown
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - GurujiBot
-  engine: unknown
 gwpimages:
   name: GWPImages
   manufacturer: unknown
@@ -1565,15 +1497,6 @@ hrcrawler:
     search:
       - HRCrawler
   engine: unknown
-'ht://dig':
-  name: 'ht://Dig'
-  manufacturer: unknown
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - htdig
-  engine: unknown
 'http kit':
   name: 'HTTP Kit'
   manufacturer: unknown
@@ -1591,15 +1514,6 @@ http_requester:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - http_requester
-  engine: unknown
-httpclient:
-  name: httpclient
-  manufacturer: unknown
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - HTTPClient
   engine: unknown
 hypercrawl:
   name: HyperCrawl
@@ -1627,14 +1541,6 @@ icarus6j:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - Icarus6j
-  engine: unknown
-iccrawler:
-  name: iCCrawler
-  manufacturer: unknown
-  type: bot
-  version:
-    class: null
-    search: null
   engine: unknown
 'icjobs crawler':
   name: 'iCjobs Crawler'
@@ -1716,15 +1622,6 @@ implisensebot:
     search:
       - Infohelfer
   engine: unknown
-'infohelfer webcrawler':
-  name: 'Infohelfer Webcrawler'
-  manufacturer: itam
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - Infohelfer
-  engine: unknown
 infox-wisg:
   name: infoX-WISG
   manufacturer: unknown
@@ -1733,15 +1630,6 @@ infox-wisg:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - infoX\-WISG
-  engine: unknown
-infuzappbot:
-  name: InfuzAppBot
-  manufacturer: unknown
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - InfuzApp
   engine: unknown
 'insite robot':
   name: 'Insite Robot'
@@ -1779,16 +1667,6 @@ integrity:
     search:
       - integromedb.org
   engine: unknown
-intelligent-search-assistant:
-  name: 'intelligent search assistant'
-  manufacturer: unknown
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - isa
-      - intelligentsearchassistant
-  engine: unknown
 'internet archive de':
   name: 'Internet Archive DE'
   manufacturer: internet-archive-de
@@ -1815,15 +1693,6 @@ ipv4scan:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - IPv4Scan
-  engine: unknown
-irlbot:
-  name: IRLbot
-  manufacturer: unknown
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - IRLbot
   engine: unknown
 'isc header collector handlers':
   name: 'isc header collector handlers'
@@ -2039,14 +1908,6 @@ linkscrawler:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - LinksCrawler
-  engine: unknown
-linksmanager:
-  name: LinksManager
-  manufacturer: unknown
-  type: bot
-  version:
-    class: null
-    search: null
   engine: unknown
 'linkstats bot':
   name: 'LinkStats Bot'
@@ -2589,14 +2450,6 @@ notetextview:
     search:
       - NoteTextView
   engine: unknown
-'online link validator':
-  name: 'online link validator'
-  manufacturer: dead-links
-  type: bot
-  version:
-    class: null
-    search: null
-  engine: unknown
 'openbsd ftp':
   name: 'OpenBSD ftp'
   manufacturer: unknown
@@ -2640,15 +2493,6 @@ openweb:
     class: null
     search: null
   engine: unknown
-orbiter:
-  name: 'Orbiter Bot'
-  manufacturer: unknown
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - Orbiter
-  engine: unknown
 ossproxy:
   name: OSSProxy
   manufacturer: marketscore
@@ -2658,15 +2502,6 @@ ossproxy:
     search:
       - OSSProxy
   engine: webkit
-outclicksbot:
-  name: OutclicksBot
-  manufacturer: unknown
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - OutclicksBot
-  engine: unknown
 owasp_secret_browser:
   name: OWASP_SECRET_BROWSER
   manufacturer: unknown
@@ -2969,14 +2804,6 @@ rankflex:
     class: null
     search: null
   engine: unknown
-rankingbot2:
-  name: RankingBot2
-  manufacturer: varocarbas
-  type: bot
-  version:
-    class: null
-    search: null
-  engine: unknown
 'raven link checker':
   name: 'Raven Link Checker'
   manufacturer: unknown
@@ -2985,14 +2812,6 @@ rankingbot2:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - 'Raven Link Checker'
-  engine: unknown
-'rdf crawler':
-  name: 'RDF Crawler'
-  manufacturer: unknown
-  type: bot
-  version:
-    class: null
-    search: null
   engine: unknown
 realplayer:
   name: Realplayer
@@ -3377,15 +3196,6 @@ showyoubot:
     search:
       - ShowyouBot
   engine: unknown
-simplescraper:
-  name: SimpleScraper
-  manufacturer: unknown
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - SimpleScraper
-  engine: unknown
 'sindice fetcher':
   name: 'Sindice Fetcher'
   manufacturer: sindice
@@ -3618,15 +3428,6 @@ sqwidgebot:
     search:
       - Sqwidgebot
   engine: unknown
-srccn!spider:
-  name: SRCCN!Spider
-  manufacturer: unknown
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - SRCCN\!Spider
-  engine: unknown
 sreleasebot:
   name: sReleaseBot
   manufacturer: srelease
@@ -3734,15 +3535,6 @@ synhttpclient:
     class: null
     search: null
   engine: unknown
-synoobot:
-  name: Synoobot
-  manufacturer: unknown
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - Synoobot
-  engine: unknown
 taginspector:
   name: TagInspector
   manufacturer: infotrust
@@ -3834,14 +3626,6 @@ thumbor:
 thumbshots-de-bot:
   name: thumbshots-de-bot
   manufacturer: thumbshots
-  type: bot
-  version:
-    class: null
-    search: null
-  engine: unknown
-thumbshotsbot:
-  name: ThumbShotsBot
-  manufacturer: unknown
   type: bot
   version:
     class: null
@@ -3990,15 +3774,6 @@ twitturls:
     search:
       - Twitturls
   engine: unknown
-ucrawlr:
-  name: uCrawlr
-  manufacturer: ucoz
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - uCrawlr
-  engine: unknown
 uipbot:
   name: Uipbot
   manufacturer: unknown
@@ -4123,14 +3898,6 @@ visionutils:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - visionutils
-  engine: unknown
-vm-crawler:
-  name: VM-Crawler
-  manufacturer: unknown
-  type: bot
-  version:
-    class: null
-    search: null
   engine: unknown
 vocusbot:
   name: VocusBot
@@ -4603,15 +4370,6 @@ wsr-agent:
     search:
       - wsr\-agent
   engine: unknown
-'wume crawler':
-  name: 'wume crawler'
-  manufacturer: unknown
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - wume_crawler
-  engine: unknown
 'www browser':
   name: 'WWW Browser'
   manufacturer: unknown
@@ -4650,14 +4408,6 @@ wwwster:
   engine: unknown
 'xaldon webspider':
   name: 'Xaldon WebSpider'
-  manufacturer: unknown
-  type: bot
-  version:
-    class: null
-    search: null
-  engine: unknown
-'xenus link sleuth':
-  name: 'Xenus Link Sleuth'
   manufacturer: unknown
   type: bot
   version:
@@ -4757,24 +4507,6 @@ yahooexternalcache:
   version:
     class: null
     search: null
-  engine: unknown
-yodaobot:
-  name: YodaoBot
-  manufacturer: unknown
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - YodaoBot
-  engine: unknown
-yodaobot-image:
-  name: YodaoBot-Image
-  manufacturer: unknown
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - YodaoBot\-Image
   engine: unknown
 zend_http_client:
   name: Zend_Http_Client
@@ -4878,15 +4610,6 @@ dmbot:
     search:
       - Dmbot
   engine: unknown
-onbbot:
-  name: ONBbot
-  manufacturer: 'oesterreichische nationalbibliothek'
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - ONBbot
-  engine: unknown
 orbbot:
   name: Orbbot
   manufacturer: unknown
@@ -4986,14 +4709,6 @@ isscyberriskcrawler:
     search:
       - ISSCyberRiskCrawler
   engine: unknown
-unimatrix-zero:
-  name: Unimatrix-Zero
-  manufacturer: unknown
-  type: bot
-  version:
-    class: null
-    search: null
-  engine: unknown
 dongle-emulator-bot:
   name: DongleEmulatorBot
   manufacturer: torus
@@ -5081,14 +4796,6 @@ adreview:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - adreview
-  engine: unknown
-finbot:
-  name: finbot
-  manufacturer: finax
-  type: bot
-  version:
-    class: null
-    search: null
   engine: unknown
 hokifybot:
   name: hokifyBot
@@ -5181,15 +4888,6 @@ mindup-bot:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - mindUpBot
-  engine: unknown
-dcrawl:
-  name: dcrawl
-  manufacturer: unknown
-  type: bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - dcrawl
   engine: unknown
 company-spotter:
   name: companyspotter
